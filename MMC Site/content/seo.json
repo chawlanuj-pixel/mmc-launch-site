@@ -1,0 +1,135 @@
+{
+ "About.html": {
+  "title": "About MMC: Built for How Modern Brands Actually Grow",
+  "description": "Most teams still sell campaigns while buying behaviour has moved on. We built a growth company around five connected systems and a 27-month median tenure.",
+  "ogTitle": "Built for the way modern brands actually grow",
+  "ogDescription": "Not another agency. A growth company shaped around how digital behaviour actually works today."
+ },
+ "Brand Handbook.html": {
+  "title": "DeoBar Case Study: 3.1× to 11.8× ROAS in 90 Days | MMC",
+  "description": "Three agencies in, margin bleeding, retention flat past D60. The full forensic of a 90-day rebuild: ₹24.6Cr net revenue and D90 retention lifted to 78%.",
+  "ogTitle": "How we rebuilt DeoBar in 90 days",
+  "ogDescription": "3.1× to 11.8× ROAS, ₹4.2Cr to ₹24.6Cr revenue, D90 retention from 41% to 78%. The full handbook.",
+  "noindex": true
+ },
+ "Careers.html": {
+  "title": "Careers at MMC: Senior Bands, Zero Account Managers",
+  "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. Average tenure runs 4.2 years. Apply with a single page, no resume required.",
+  "ogTitle": "People who write their own briefs",
+  "ogDescription": "Senior pay, senior expectations, no account-manager layer. Apply with one page, no resume required."
+ },
+ "Contact.html": {
+  "title": "Contact MMC: Book a Strategy Call, WhatsApp or Brief",
+  "description": "Thirty minutes with a senior strategist and a straight read on the three things to fix first. No pitch. We reply inside one working day, often in four.",
+  "ogTitle": "Let's talk about your brand",
+  "ogDescription": "Three ways in: a strategy call, WhatsApp, or a written brief. We come back in one working day."
+ },
+ "Insights.html": {
+  "title": "Insights: Growth Breakdowns and Founder Notes | MMC",
+  "description": "No content marketing, just the working notes of a studio in operation. Growth forensics, team playbooks and a founder's journal, published as we ship them.",
+  "ogTitle": "We write what we actually ship",
+  "ogDescription": "Founder's journal, growth breakdowns and the playbooks we run across the book. Working notes, not SEO."
+ },
+ "Job Detail.html": {
+  "title": "Senior Meta Buyer, Mumbai & Bengaluru | MMC Careers",
+  "description": "Own ₹50L+ of monthly Meta spend across three D2C accounts, brief 60+ creatives a month and report straight to founders. Senior band, ₹24L to ₹38L OTE.",
+  "ogTitle": "Hiring: Senior Meta Buyer, Mumbai & Bengaluru",
+  "ogDescription": "₹50L+ monthly spend, three D2C accounts, no one to manage you. Senior band, ₹24L to ₹38L OTE."
+ },
+ "Our Work.html": {
+  "title": "Our Work: 14 D2C Brands and ₹248Cr+ Compounded | MMC",
+  "description": "Read the handbooks, not the logo wall. What we shipped for each brand, why it worked and what we'd have done sooner. 14/14 renewed, 27-month median tenure.",
+  "ogTitle": "24 brands. One thesis: revenue that compounds.",
+  "ogDescription": "₹248Cr+ compounded, 8.7× median ROAS, 14/14 brands renewed. The handbooks behind the numbers."
+ },
+ "Privacy.html": {
+  "title": "Privacy Policy: What Data We Collect and Your Rights",
+  "description": "We collect the minimum needed to run this site and our retainers, and we have never sold data. Access, correction and deletion honoured in 30 days.",
+  "ogTitle": "Privacy Policy",
+  "ogDescription": "What we collect, how we use it, where it is stored, and how to have it corrected or deleted."
+ },
+ "Service Detail.html": {
+  "title": "Meta Ads Management for D2C Brands: 8.7× ROAS | MMC",
+  "description": "We run Meta as a system: full-funnel structure, 240+ creatives a month, cohort-driven optimisation. Median 8.7× ROAS, live on your account in 14 days.",
+  "ogTitle": "Meta Ads that compound, not just convert",
+  "ogDescription": "Full-funnel structure, daily creative iteration, cohort optimisation. Median 8.7× ROAS across our book."
+ },
+ "Terms.html": {
+  "title": "Terms & Conditions: Site Use, IP and Liability | MMC",
+  "description": "The agreement between MMC and anyone using this site: what you accept on arrival, who owns the content, the limits of our liability and the governing law.",
+  "ogTitle": "Terms & Conditions",
+  "ogDescription": "Acceptance, intellectual property, limits of liability and governing law for this site."
+ },
+ "breakeven-roas-calculator.html": {
+  "title": "Break-even ROAS Calculator: The ROAS You Actually Need",
+  "description": "Stop chasing a ROAS number you heard on a podcast. Enter COGS, shipping, gateway fees and RTO to get the exact break-even your own cost sheet demands.",
+  "ogTitle": "The ROAS you actually need",
+  "ogDescription": "Your break-even ROAS falls out of your own cost sheet. Add COGS, shipping, fees and RTO to find it."
+ },
+ "cac-runway-calculator.html": {
+  "title": "CAC Runway Calculator: How Long Will Your Brand Burn?",
+  "description": "New brands overpay for customers while the account learns. Model falling CAC against repeat purchase to get months to profit and the cash to get there.",
+  "ogTitle": "How long a new brand burns before it turns",
+  "ogDescription": "Months to profitability, total cash required and a 36-month projection for a new D2C brand."
+ },
+ "d2c-marketing-glossary.html": {
+  "title": "D2C Marketing Glossary: 53 Terms in Plain English | MMC",
+  "description": "ROAS, CAC, LTV, AOV, RTO, CM1 to CM3, EBITDA: what each means, how it is calculated, why it hits your P&L. Jargon never explained with more jargon.",
+  "ogTitle": "53 D2C marketing terms, in plain English",
+  "ogDescription": "Every term on the site defined once: what it means, the formula, and why it matters to your P&L."
+ },
+ "funnel-roas-calculator.html": {
+  "title": "Funnel ROAS Calculator: Find Where Your Funnel Leaks",
+  "description": "Set spend, CPM and AOV, then move the five conversion rates between an impression and a paid order. Every rate is benchmarked against Indian D2C medians.",
+  "ogTitle": "Find where your D2C funnel leaks",
+  "ogDescription": "Five conversion rates, benchmarked against Indian D2C medians. See orders, revenue, ROAS and CPO."
+ },
+ "growth-trajectory-calculator.html": {
+  "title": "Revenue Growth Calculator: MoM, YoY and 5-Year Path",
+  "description": "Holding a year-one MoM rate for five years is a hope, not a plan. Project revenue and profit on separate MoM and YoY rates and see months to double.",
+  "ogTitle": "Where this run rate actually gets you",
+  "ogDescription": "Project revenue and net profit with separate MoM and YoY rates. Implied YoY and months to double."
+ },
+ "home-classic.html": {
+  "title": "Momentum, Not Media Spend | MMC Growth Studio, Mumbai",
+  "description": "Campaigns end on the last day of the month. Systems do not. A senior-led studio building performance, brand, retention and tech that compound together.",
+  "ogTitle": "We don't run ads. We build momentum.",
+  "ogDescription": "A senior-led growth studio for modern consumer brands. Performance, brand, retention and technology."
+ },
+ "home-v1.html": {
+  "title": "Revenue Engines, Not Ad Accounts | MMC Growth Studio",
+  "description": "Design, marketing, technology, content and AI in one pod, compounding growth for modern consumer brands. ₹248Cr+ compounded across 14 brands to date.",
+  "ogTitle": "We don't run ads. We build revenue engines.",
+  "ogDescription": "One pod across design, marketing, technology, content and AI. ₹248Cr+ compounded for consumer brands."
+ },
+ "index.html": {
+  "title": "Performance Marketing That Survives the P&L | MMC India",
+  "description": "Media, creative, retention and tech run by one senior team and measured on contribution margin. ₹248Cr+ compounded, 8.7× median blended ROAS.",
+  "ogTitle": "Performance marketing that survives the P&L",
+  "ogDescription": "One senior team across media, creative, retention and tech. ₹248Cr+ compounded, 8.7× median blended ROAS."
+ },
+ "ltv-cac-calculator.html": {
+  "title": "LTV:CAC Calculator: Lifetime Value and CAC Payback",
+  "description": "Model repeat purchase as a decaying cohort to see lifetime contribution, your LTV:CAC against the 3:1 benchmark, and the month acquisition is paid back.",
+  "ogTitle": "What a customer is worth, and when you get it back",
+  "ogDescription": "Lifetime contribution, LTV:CAC against the 3:1 benchmark, and your exact CAC payback month."
+ },
+ "tools.html": {
+  "title": "Free D2C Growth Calculators: ROAS, CAC and LTV | MMC",
+  "description": "Six calculators we run before we take a client, plus a 53-term glossary. Unit economics, break-even ROAS, LTV:CAC and runway. No email wall, no gated PDF.",
+  "ogTitle": "The numbers we run before we take a client",
+  "ogDescription": "Six free D2C calculators and a plain-English glossary. Put your numbers in, no email required."
+ },
+ "unit-economics-calculator.html": {
+  "title": "D2C Unit Economics Calculator: CM1, CM2, CM3 & P&L",
+  "description": "Enter MRP, GST, COGS, fulfilment, RTO and CAC to see what one order leaves behind, then scale it into a monthly P&L with EBITDA and break-even volume.",
+  "ogTitle": "What one order actually leaves behind",
+  "ogDescription": "CM1, CM2 and CM3 per order, a full monthly P&L with EBITDA and PAT, and your break-even volume."
+ },
+ "_report": {
+  "targets": {
+   "title": "50-60 chars",
+   "description": "140-155 chars"
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "_note": "The real client book, supplied by MMC on 2026-08-24. This is the single source of truth for every brand name, logo strip, portfolio grid and trust row on the site. Nothing here may be embellished: the columns below are exactly what was provided, and no performance figure was supplied for any client, so none is shown against any client anywhere on the site. Add a `results` array to a brand only when MMC provides real, checkable numbers for it.",
+  "_from_logo_pack": "The nine brands carrying \"_source\": \"logo-pack\" (Anchor by Panasonic, Flomate, Green Hermitage, Housing.com, JSW, LearningMate, Rustomjee, Saint-Gobain, Gyproc) were added on 2026-08-27 from ../logos/ on instruction, and they are a weaker record than anything else in this file. A logo says who a brand is; it says nothing about what MMC ran for them. So `services` is deliberately EMPTY for all nine rather than guessed, and `type` is inferred only from what each company publicly is: JSW, Saint-Gobain, Gyproc, LearningMate and Flomate as B2B, and Anchor, Green Hermitage, Housing.com and Rustomjee as B2C. Flomate is the least certain, its mark carries no descriptor at all. Supply a service mix per brand, correct the types, then delete each `_source`. Note also that Gyproc is a Saint-Gobain brand and both are listed separately, and that the site renders no service row for a brand with an empty list rather than an empty one.",
+  "_pending_confirmation": "The three brands carrying \"_source\": \"artwork\" (OOsh, Panda Cabs, MVJ College of Engineering) were added on 2026-08-27 from the case-study mockups in ../Case Study/, not from a supplied client record. Their `type` and `services` were read off the artwork and are the only inferred values anywhere in this file: OOsh's own image is captioned 'D2C case study - Website Design & Development - Paid Media & Growth'; Panda Cabs and MVJ College both show a website, Meta lead/traffic ads, Google ads and social creative. Confirm or correct each, then delete its `_source` key. Two further notes: `type` \"B2C\" is new to this file, introduced because a cab service and a college recruiting students are neither D2C product brands nor B2B, and MVJ's artwork also shows SEO work, which has no key in `_services` and so is not claimed on the site.",
+  "_services": {
+    "web": "Website redesign and development",
+    "cro": "Conversion rate optimisation",
+    "leadgen": "Lead generation",
+    "perf": "Performance ads, D2C",
+    "creative": "Performance creative",
+    "social": "Social media",
+    "amazon": "Amazon",
+    "quickcom": "Quick commerce"
+  },
+  "clients": [
+    { "name": "Bloom Edutours", "type": "B2B", "services": ["web", "leadgen", "creative", "social"] },
+    { "name": "Sprouts Edu Tours", "type": "B2B", "services": ["web", "leadgen", "creative", "social"] },
+    { "name": "NM Consultings", "type": "B2B", "services": ["web", "leadgen", "creative"] },
+    { "name": "Skyfling Technologies", "type": "B2B", "services": ["web", "leadgen", "creative"] },
+    { "name": "Lepure", "type": "D2C", "services": ["web", "perf", "creative", "social"] },
+    { "name": "The Growing Giraffe", "type": "D2C", "services": ["cro", "perf", "creative", "amazon", "quickcom"] },
+    { "name": "Mittiy Made", "type": "D2C", "services": ["cro", "perf", "creative"] },
+    { "name": "AwwBaby", "type": "D2C", "services": ["web", "perf", "creative"] },
+    { "name": "Sprnt", "type": "D2C", "services": ["web", "perf", "creative", "social"] },
+    { "name": "Vaga Kids", "type": "D2C", "services": ["web", "perf", "creative"] },
+    { "name": "MyBrownButters", "type": "D2C", "services": ["web", "perf", "creative"] },
+    { "name": "Notic", "type": "D2C", "services": ["web", "perf", "creative", "social"] },
+    { "name": "OOsh", "type": "D2C", "services": ["web", "perf", "creative"], "_source": "artwork" },
+    { "name": "Panda Cabs", "type": "B2C", "services": ["web", "leadgen", "creative", "social"], "_source": "artwork" },
+    { "name": "MVJ College of Engineering", "type": "B2C", "services": ["web", "leadgen", "creative", "social"], "_source": "artwork" },
+    { "name": "Anchor by Panasonic", "type": "B2C", "services": [], "_source": "logo-pack" },
+    { "name": "Flomate", "type": "B2B", "services": [], "_source": "logo-pack" },
+    { "name": "Green Hermitage", "type": "B2C", "services": [], "_source": "logo-pack" },
+    { "name": "Housing.com", "type": "B2C", "services": [], "_source": "logo-pack" },
+    { "name": "JSW", "type": "B2B", "services": [], "_source": "logo-pack" },
+    { "name": "LearningMate", "type": "B2B", "services": [], "_source": "logo-pack" },
+    { "name": "Rustomjee", "type": "B2C", "services": [], "_source": "logo-pack" },
+    { "name": "Saint-Gobain", "type": "B2B", "services": [], "_source": "logo-pack" },
+    { "name": "Gyproc", "type": "B2B", "services": [], "_source": "logo-pack" }
+  ]
+}

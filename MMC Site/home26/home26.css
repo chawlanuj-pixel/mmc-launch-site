@@ -1,0 +1,843 @@
+/* home26/home26.css: MMC homepage, 2026.
+
+   Direction: minimal *within* each band, heavy *between* them. Every section is
+   a full-bleed chapter with its own ground: void black, sun yellow, paper,
+   white, so the page reads as a sequence of confident statements rather than a
+   scroll of cards. Type is MMC's own (Raleway / Nunito / Cormorant) so the new
+   homepage still belongs to the same brand as the other 34 pages. */
+
+:root {
+  --n-void:   #07090F;
+  --n-ink:    #0F1E5E;
+  --n-blue:   #1D4ED8;
+  --n-blue-d: #16329E;
+  --n-sun:    #FFC528;
+  --n-paper:  #FBFAF6;
+  --n-white:  #FFFFFF;
+
+  --n-fg:     #0B1020;
+  --n-fg-2:   #47506A;
+  --n-fg-3:   #7C8598;
+  --n-line:   rgba(11,16,32,0.10);
+  --n-line-2: rgba(11,16,32,0.18);
+
+  --n-on-dark:   rgba(255,255,255,0.94);
+  --n-on-dark-2: rgba(255,255,255,0.62);
+  --n-on-dark-3: rgba(255,255,255,0.34);
+
+  /* Aliases of the site shell. The homepage must not run a second spine. */
+  --n-max: var(--shell-max);
+  --n-pad: var(--shell-pad);
+  --n-band: clamp(64px, 8vw, 128px);
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* Slower out, no overshoot: reads as weight rather than bounce. */
+  --ease-soft: cubic-bezier(0.16, 0.84, 0.24, 1);
+}
+
+/* ── Reset within the page ─────────────────────────────────── */
+.n-app { background: var(--n-paper); color: var(--n-fg); overflow-x: clip; }
+.n-app *, .n-app *::before, .n-app *::after { box-sizing: border-box; }
+.n-wrap { width: 100%; max-width: var(--n-max); margin-inline: auto; padding-inline: var(--n-pad); }
+
+/* Full-bleed chapter */
+.n-band { position: relative; padding: var(--n-band) 0; }
+.n-band--void, .n-band--ink {
+  background: var(--grad-ink); color: var(--n-on-dark);
+  position: relative; isolation: isolate; overflow: clip;
+}
+/* Same drifting highlight the hero and the footer use. */
+.n-band--void::before, .n-band--ink::before {
+  content: ""; position: absolute; inset: -30% -20%; z-index: -1;
+  pointer-events: none; background: var(--grad-glow);
+  animation: inkDrift 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .n-band--void::before, .n-band--ink::before { animation: none; }
+}
+.n-band--void  { background: var(--grad-ink); color: var(--n-on-dark); }
+.n-band--ink   { background: var(--grad-ink); color: var(--n-on-dark); }
+.n-band--sun   { background: var(--n-sun);   color: var(--n-fg); }
+.n-band--paper { background: var(--n-paper); }
+.n-band--white { background: var(--n-white); }
+.n-band--tight { padding: clamp(40px, 5vw, 72px) 0; }
+/* This page paints its own grounds, opt out of the site-wide section wash. */
+.n-band::before, .n-app section::before { content: none !important; }
+
+/* ── Type ──────────────────────────────────────────────────── */
+.n-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-body); font-size: 11px; font-weight: 800;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--n-fg-3);
+}
+.n-band--void .n-eyebrow, .n-band--ink .n-eyebrow { color: var(--n-sun); }
+.n-band--sun .n-eyebrow { color: rgba(11,16,32,0.62); }
+.n-eyebrow::before { content: ""; width: 26px; height: 1.5px; background: currentColor; }
+
+.n-h1 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(40px, 7.4vw, 108px); line-height: 0.94;
+  letter-spacing: -0.045em; margin: 0; text-wrap: balance; color: var(--n-fg);
+}
+.n-h2 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(30px, 4.6vw, 66px); line-height: 1.0;
+  letter-spacing: -0.038em; margin: 0; text-wrap: balance; color: var(--n-fg);
+}
+.n-h3 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(19px, 1.9vw, 26px); line-height: 1.15;
+  letter-spacing: -0.024em; margin: 0; color: var(--n-fg);
+}
+.n-serif {
+  font-family: var(--font-serif); font-style: italic; font-weight: 600;
+  letter-spacing: -0.01em; color: var(--n-blue);
+}
+.n-band--void .n-serif, .n-band--ink .n-serif { color: var(--n-sun); }
+.n-band--void .n-h1, .n-band--void .n-h2, .n-band--void .n-h3,
+.n-band--ink  .n-h1, .n-band--ink  .n-h2, .n-band--ink  .n-h3,
+.n-band--void .n-quote__t, .n-band--ink .n-quote__t { color: #fff; }
+.n-band--sun .n-h1, .n-band--sun .n-h2, .n-band--sun .n-h3 { color: var(--n-fg); }
+.n-lede {
+  font-family: var(--font-body); font-size: clamp(15px, 1.5vw, 19px);
+  line-height: 1.6; color: var(--n-fg-2); max-width: 58ch; margin: 0;
+}
+.n-band--void .n-lede, .n-band--ink .n-lede { color: var(--n-on-dark-2); }
+.n-band--sun .n-lede { color: rgba(11,16,32,0.72); }
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.n-btn {
+  display: inline-flex; align-items: center; gap: 12px; cursor: pointer;
+  font-family: var(--font-body); font-size: 12.5px; font-weight: 800;
+  letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+  padding: 17px 30px; border-radius: 999px; border: 1.5px solid transparent;
+  transition: transform 260ms var(--ease), background 260ms var(--ease),
+              border-color 260ms var(--ease), color 260ms var(--ease);
+}
+.n-btn:hover { transform: translateY(-2px);
+          position: relative; z-index: 2;
+        }
+.n-btn--sun { background: var(--n-sun); color: #0B1020; }
+.n-btn--sun:hover { background: #FFD75C; }
+.n-btn--ink { background: var(--n-ink); color: #fff; }
+.n-btn--ink:hover { background: var(--n-blue); }
+.n-btn--ghost { background: transparent; color: inherit; border-color: currentColor; opacity: 0.75; }
+.n-btn--ghost:hover { opacity: 1; }
+.n-btn__arr { width: 20px; height: 1.5px; background: currentColor; position: relative; transition: width 260ms var(--ease); }
+.n-btn__arr::after {
+  content: ""; position: absolute; right: -1px; top: -4px; width: 9px; height: 9px;
+  border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg);
+}
+.n-btn:hover .n-btn__arr { width: 30px; }
+.n-btn:focus-visible { outline: 2px solid var(--n-sun); outline-offset: 3px; }
+
+/* ── Scroll reveal ─────────────────────────────────────────── */
+.n-rise { opacity: 0; transform: translateY(26px); transition: opacity 900ms var(--ease), transform 900ms var(--ease); }
+.n-rise.is-in { opacity: 1; transform: none; }
+.n-rise.d1 { transition-delay: 90ms; } .n-rise.d2 { transition-delay: 180ms; }
+.n-rise.d3 { transition-delay: 270ms; } .n-rise.d4 { transition-delay: 360ms; }
+@media (prefers-reduced-motion: reduce) {
+  .n-rise { opacity: 1; transform: none; transition: none; }
+  .n-marquee__track { animation: none !important; }
+}
+
+/* ── Hero ──────────────────────────────────────────────────── */
+.n-hero { position: relative; min-height: min(100svh, 940px); display: flex; align-items: center;
+          padding: clamp(120px, 15vh, 190px) 0 clamp(60px, 8vh, 100px); overflow: hidden; }
+.n-hero__glow {
+  position: absolute; inset: -30% -10% auto -10%; height: 130%; pointer-events: none;
+  background:
+    radial-gradient(46% 40% at 18% 30%, rgba(29,78,216,0.42) 0%, rgba(29,78,216,0) 70%),
+    radial-gradient(40% 38% at 82% 22%, rgba(255,197,40,0.22) 0%, rgba(255,197,40,0) 72%),
+    radial-gradient(60% 50% at 50% 100%, rgba(22,50,158,0.34) 0%, rgba(7,9,15,0) 72%);
+  animation: nDrift 22s ease-in-out infinite alternate;
+}
+@keyframes nDrift { from { transform: translate3d(-2%, -1%, 0) scale(1); } to { transform: translate3d(2%, 2%, 0) scale(1.06); } }
+@media (prefers-reduced-motion: reduce) { .n-hero__glow { animation: none; } }
+.n-hero__grid {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+  background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(70% 60% at 50% 40%, #000 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(70% 60% at 50% 40%, #000 0%, transparent 100%);
+}
+.n-hero__in { position: relative; z-index: 1; }
+.n-hero__tag {
+  display: inline-flex; align-items: center; gap: 10px; margin-bottom: 26px;
+  font-family: var(--font-body); font-size: 11.5px; font-weight: 800;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--n-on-dark);
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16);
+  padding: 9px 16px; border-radius: 999px; backdrop-filter: blur(8px);
+}
+.n-hero__tag i { width: 7px; height: 7px; border-radius: 50%; background: var(--n-sun); display: block; }
+.n-hero__h { color: #fff; max-width: 17ch; }
+.n-hero__p { margin-top: 28px; max-width: 52ch; }
+.n-hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px; }
+.n-hero__foot {
+  display: flex; flex-wrap: wrap; gap: 28px 44px; margin-top: clamp(48px, 7vh, 88px);
+  padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.14);
+}
+.n-hero__fact { display: flex; flex-direction: column; gap: 4px; }
+.n-hero__fact b {
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(22px, 2.4vw, 32px);
+  letter-spacing: -0.035em; color: #fff; font-variant-numeric: tabular-nums;
+}
+.n-hero__fact b i { font-style: normal; font-size: 0.62em; letter-spacing: -0.01em; text-transform: none; }
+.n-hero__fact b { text-transform: none; }
+.n-hero__fact span {
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--n-on-dark-2);
+}
+
+/* ── Numbers band (sun) ────────────────────────────────────── */
+.n-nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(20px, 3vw, 48px); }
+@media (max-width: 860px) { .n-nums { grid-template-columns: repeat(2, 1fr); } }
+.n-num { display: flex; flex-direction: column; gap: 6px; }
+.n-num__v {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(38px, 5.4vw, 78px); line-height: 0.9; letter-spacing: -0.05em;
+  font-variant-numeric: tabular-nums; color: #0B1020;
+}
+.n-num__v i { font-style: normal; font-size: 0.46em; letter-spacing: -0.02em; }
+.n-num__l {
+  font-family: var(--font-body); font-size: 12px; font-weight: 700;
+  line-height: 1.4; color: rgba(11,16,32,0.66); max-width: 22ch;
+}
+
+/* ── Marquee ───────────────────────────────────────────────── */
+.n-marquee { position: relative; overflow: hidden; }
+.n-marquee + .n-marquee { margin-top: 14px; }
+.n-marquee__track { display: flex; gap: 14px; width: max-content; animation: nSlide 46s linear infinite; }
+.n-marquee--rev .n-marquee__track { animation-direction: reverse; animation-duration: 58s; }
+@keyframes nSlide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.n-marquee:hover .n-marquee__track { animation-play-state: paused; }
+.n-chip {
+  flex: 0 0 auto; height: 76px; width: 178px; display: flex; align-items: center; justify-content: center;
+  padding: 0 22px; border-radius: 14px; background: #fff; border: 1px solid var(--n-line);
+  transition: border-color 260ms var(--ease), transform 260ms var(--ease);
+}
+.n-chip:hover { border-color: var(--n-blue); transform: translateY(-3px);
+          position: relative; z-index: 2;
+        }
+.n-chip svg { width: 100%; height: 100%; max-height: 34px; display: block; }
+.n-marquee__fade { position: absolute; top: 0; bottom: 0; width: clamp(40px, 8vw, 140px); pointer-events: none; z-index: 2; }
+.n-marquee__fade--l { left: 0;  background: linear-gradient(90deg, var(--n-paper), transparent); }
+.n-marquee__fade--r { right: 0; background: linear-gradient(270deg, var(--n-paper), transparent); }
+
+/* ── Section head ──────────────────────────────────────────── */
+.n-head { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+          gap: clamp(20px, 3vw, 56px); align-items: end; margin-bottom: clamp(36px, 5vw, 68px); }
+@media (max-width: 860px) { .n-head { grid-template-columns: 1fr; align-items: start; } }
+.n-head__l { display: flex; flex-direction: column; gap: 18px; }
+
+/* ── Capability rows ───────────────────────────────────────── */
+/* ── What we run ──────────────────────────────────────────────
+   A list, not a card grid. Hovering a row slides one shared image panel to
+   that row and cross-fades in its portfolio cover, so the section stays quiet
+   until you interrogate it. The numerals are gone: five rows in a bordered
+   list are already ordered, so 01..05 was decoration restating the obvious. */
+.n-caps { border-top: 1px solid var(--n-line); position: relative; }
+
+.n-cap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 44px;
+  gap: clamp(16px, 2vw, 34px); align-items: center;
+  padding: clamp(22px, 2.4vw, 32px) 0; min-height: 196px;
+  border-bottom: 1px solid var(--n-line);
+  text-decoration: none; color: inherit; position: relative;
+  transition: transform 260ms var(--ease-soft), opacity 200ms var(--ease);
+  will-change: transform, opacity;
+}
+/* .n-rise.d1..d4 stagger the scroll-in by 90ms to 360ms, and transition-delay
+   applies to every property in the list. So hovering row four made it sit still
+   for 360ms before it moved: the row was waiting out its own entrance offset
+   before answering the pointer. Measured 300ms of dead time on row three.
+
+   transition-delay takes a per-property list, so the stagger stays on opacity,
+   where the entrance actually reads, and transform answers immediately. */
+.n-caps .n-cap.d1 { transition-delay: 0s, 90ms; }
+.n-caps .n-cap.d2 { transition-delay: 0s, 180ms; }
+.n-caps .n-cap.d3 { transition-delay: 0s, 270ms; }
+.n-caps .n-cap.d4 { transition-delay: 0s, 360ms; }
+/* Once a row has arrived, nothing about it should be delayed again. */
+.n-caps .n-cap.is-in { transition-delay: 0s, 0s; }
+
+/* The row the pointer is on stays at full strength; its neighbours recede, so
+   the eye is led rather than shouted at. */
+.n-caps:hover .n-cap { opacity: 0.42; }
+.n-caps:hover .n-cap.is-at { opacity: 1; }
+.n-cap.is-at { transform: translateX(clamp(10px, 1.2vw, 20px)); }
+
+.n-cap::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+  background: var(--n-blue); transform: scaleX(0); transform-origin: left;
+  transition: transform 340ms var(--ease-soft);
+}
+.n-cap.is-at::after { transform: scaleX(1); }
+
+.n-cap__t { display: flex; flex-direction: column; gap: 8px; }
+.n-cap__t b {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(21px, 2.5vw, 36px); letter-spacing: -0.032em; line-height: 1.04;
+}
+.n-cap__tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.n-cap__tags span {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--n-fg-3);
+  border: 1px solid var(--n-line-2); border-radius: 999px; padding: 4px 10px;
+  transition: border-color 200ms var(--ease), color 200ms var(--ease);
+}
+.n-cap.is-at .n-cap__tags span { border-color: var(--n-blue); color: var(--n-blue); }
+
+.n-cap__d { font-family: var(--font-body); font-size: 14.5px; line-height: 1.6; color: var(--n-fg-2); }
+.n-cap__m {
+  display: inline-block; margin-top: 8px;
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(15px, 1.5vw, 19px);
+  letter-spacing: -0.02em; color: var(--n-blue); white-space: nowrap;
+}
+/* The arrow is the row's state, not a button.
+
+   At rest it sits at 45 degrees, hairline, in the muted ink: the universal
+   "goes somewhere else" glyph. On the active row it swings down to horizontal
+   and thickens into the brand blue, so it reads as "this one, now" and points
+   along the direction of travel. One element, one rotation, no circle to
+   distract from the type.
+
+   The rotation and the nudge share one transform so they cannot overwrite
+   each other, and both run on the compositor. */
+.n-cap__go {
+  justify-self: end;
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--n-fg-3);
+  transform: rotate(-45deg);
+  transition: color 200ms var(--ease), transform 340ms var(--ease-soft);
+}
+.n-cap__go svg { width: 26px; height: 26px; overflow: visible; }
+/* Hollow at rest, solid on the active row. Both states are the same closed
+   path, so the fill grows into an outline that is already the right shape
+   instead of one glyph swapping for another. */
+.n-cap__go svg path {
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+  transition: fill 260ms var(--ease), stroke-width 260ms var(--ease);
+}
+
+.n-cap.is-at .n-cap__go {
+  color: var(--n-blue);
+  transform: rotate(0deg) translateX(4px);
+}
+.n-cap.is-at .n-cap__go svg path { fill: currentColor; stroke-width: 0; }
+
+/* No hover on a touch screen, so the arrow would sit at 45 degrees forever.
+   Point it along the row and let the tap do the talking. */
+@media (hover: none) {
+  .n-cap__go { transform: rotate(0deg); }
+}
+
+/* The peek panel.
+
+   Height is fixed rather than derived from width, because the one thing it
+   must never do is touch the dividers above and below: at that point it stops
+   reading as a preview and starts reading as a rendering fault. The row has a
+   196px floor and the panel is 148px, so there is always 24px of clearance on
+   both sides whatever the viewport does to the copy.
+
+   The move and the fade are the same short duration. Sliding for 620ms while
+   cross-fading over 380ms smeared one photograph through the other. */
+.n-peek {
+  position: absolute; top: 0; right: 0; z-index: 4;
+  height: 148px; aspect-ratio: 4 / 3;
+  margin-top: -74px;
+  border-radius: 12px; overflow: hidden; pointer-events: none;
+  background: var(--n-line);
+  box-shadow: 0 18px 40px -18px rgba(var(--mmc-ink-rgb), 0.4);
+  opacity: 0; visibility: hidden;
+  /* --peek-y is written by the component; the tilt belongs to CSS. Composing
+     them here means the two never overwrite each other the way they would if
+     both were set on the inline style attribute. */
+  transform: translateY(var(--peek-y, 0px)) rotate(-7deg) scale(0.92);
+  transform-origin: 50% 60%;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transition: opacity 170ms var(--ease), transform 300ms var(--ease-soft),
+              visibility 0s linear 170ms;
+}
+.n-peek.is-on {
+  opacity: 1; visibility: visible;
+  transform: translateY(var(--peek-y, 0px)) rotate(var(--peek-tilt, -3deg)) scale(1);
+  transition-delay: 0s, 0s, 0s;
+}
+.n-peek__img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 180ms var(--ease), transform 520ms var(--ease-soft);
+}
+.n-peek__img.is-on { transform: scale(1); }
+.n-peek__img.is-on { opacity: 1; }
+
+/* Wide screens reserve a real column for the panel, so the description never
+   runs underneath it. The arrow is pushed to the fourth column to sit clear. */
+@media (min-width: 1101px) {
+  .n-cap { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 197px 44px; }
+  .n-cap__go { grid-column: 4; }
+  /* Sits in its own column, one gap clear of the arrow. */
+  .n-peek { right: calc(44px + clamp(16px, 2vw, 34px)); }
+}
+
+/* The panel would sit on top of the copy on a narrow screen, and there is no
+   hover to trigger it on a touch device, so it is desktop-only. */
+@media (max-width: 1100px), (hover: none) {
+  .n-peek { display: none; }
+  .n-caps:hover .n-cap { opacity: 1; }
+}
+@media (max-width: 900px) {
+  .n-cap { grid-template-columns: 1fr 40px; }
+  .n-cap__d { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .n-cap, .n-peek, .n-peek__img, .n-cap__go,
+  .n-cap__go svg path { transition-duration: 1ms; }
+  .n-peek, .n-peek.is-on { transform: translateY(var(--peek-y, 0px)); }
+}
+
+/* ── Work cards ────────────────────────────────────────────── */
+.n-work { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 1040px) { .n-work { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .n-work { grid-template-columns: 1fr; } }
+.n-case {
+  position: relative; display: flex; flex-direction: column; justify-content: space-between;
+  min-height: 268px; padding: 26px; border-radius: 18px; text-decoration: none; color: inherit;
+  background: rgba(255,255,255,0.045); border: 1px solid rgba(255,255,255,0.12);
+  overflow: hidden; transition: border-color 300ms var(--ease), transform 300ms var(--ease), background 300ms var(--ease);
+}
+.n-case:hover { border-color: rgba(255,197,40,0.55); transform: translateY(-4px); background: rgba(255,255,255,0.07);
+          position: relative; z-index: 2;
+        }
+.n-case__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.n-case__ind {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 800;
+  letter-spacing: 0.14em; color: var(--n-on-dark-3);
+}
+.n-case__mark {
+  width: 34px; height: 34px; border-radius: 9px; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 800; font-size: 12px; letter-spacing: -0.02em;
+  background: rgba(255,255,255,0.10); color: #fff;
+}
+.n-case__b { display: flex; flex-direction: column; gap: 12px; }
+/* The brand name carries the weight the metric used to. Nothing on this card is
+   a number, so the name is the largest thing on it. */
+.n-case__brand {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(22px, 2.2vw, 28px); line-height: 1.06; letter-spacing: -0.032em; color: #fff;
+}
+.n-case__svc { display: flex; flex-wrap: wrap; gap: 6px; }
+/* Service labels are full sentences from the client book, not three-letter
+   shorthand, so these chips run sentence case rather than tracked-out caps. */
+.n-case__svc span {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.01em; color: var(--n-on-dark-2);
+  border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 4px 10px;
+}
+
+/* ── Showcase (creative / UGC / sites) ─────────────────────── */
+.n-filters { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 26px; }
+.n-filter {
+  font-family: var(--font-body); font-size: 11px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
+  padding: 9px 15px; border-radius: 999px; background: transparent;
+  border: 1px solid var(--n-line-2); color: var(--n-fg-2);
+  transition: background 240ms var(--ease), color 240ms var(--ease), border-color 240ms var(--ease);
+}
+.n-filter:hover { border-color: var(--n-blue); color: var(--n-blue); }
+.n-filter.is-on { background: var(--n-ink); border-color: var(--n-ink); color: #fff; }
+.n-filter:focus-visible { outline: 2px solid var(--n-blue); outline-offset: 2px; }
+
+.n-reels { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+@media (max-width: 1100px) { .n-reels { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 620px)  { .n-reels { grid-template-columns: repeat(2, 1fr); } }
+.n-reel {
+  position: relative; aspect-ratio: 9 / 16; border-radius: 14px; overflow: hidden;
+  background: var(--n-ink); border: 1px solid var(--n-line);
+  transition: transform 320ms var(--ease), box-shadow 320ms var(--ease);
+}
+.n-reel:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(11,16,32,0.20);
+          position: relative; z-index: 2;
+        }
+.n-reel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.n-reel__meta {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 13px 12px;
+  background: linear-gradient(transparent, rgba(7,9,15,0.86));
+  display: flex; flex-direction: column; gap: 3px;
+}
+.n-reel__h { font-family: var(--font-body); font-size: 11.5px; font-weight: 800; color: #fff; }
+.n-reel__c { font-family: var(--font-body); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+
+/* Designed fallback for imagery not uploaded yet: reads as intent, not as a gap. */
+.n-shot { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 8px; text-align: center; padding: 16px;
+  background: var(--grad-ink); }
+.n-shot::after {
+  content: ""; position: absolute; inset: 0; opacity: 0.16;
+  background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(70% 60% at 50% 40%, #000, transparent);
+  -webkit-mask-image: radial-gradient(70% 60% at 50% 40%, #000, transparent);
+}
+.n-shot__b { position: relative; font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(13px, 1.3vw, 17px); letter-spacing: -0.02em; color: #fff; }
+.n-shot__t { position: relative; font-family: var(--font-body); font-size: 9.5px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+
+/* ── Partners ──────────────────────────────────────────────── */
+.n-partners { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(18px, 2.4vw, 32px); }
+@media (max-width: 1040px) { .n-partners { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px)  { .n-partners { grid-template-columns: 1fr; } }
+.n-pgroup { display: flex; flex-direction: column; gap: 14px; }
+.n-pgroup__h {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 800;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--n-sun);
+  padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.16);
+}
+.n-plist { display: flex; flex-direction: column; gap: 8px; }
+.n-plogo {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 11px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
+  transition: background 260ms var(--ease), border-color 260ms var(--ease), transform 260ms var(--ease);
+}
+.n-plogo:hover { background: rgba(255,255,255,0.09); border-color: rgba(255,197,40,0.42); transform: translateX(4px); }
+/* A white tile behind every mark. These are eighteen third-party logos with no
+   common polarity: TikTok and Razorpay are near-black, Amazon and GoKwik ship
+   on a white plate, Shopflo on a black one. Each is drawn for the light ground
+   its own brand guidelines assume, so the tile gives it one and every mark
+   reads at 26px without a single file being recoloured. */
+.n-plogo__m {
+  width: 26px; height: 26px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: #fff; border-radius: 6px; padding: 3px;
+  box-sizing: border-box; overflow: hidden;
+}
+.n-plogo__m svg,
+.n-plogo__img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.n-plogo__n { font-family: var(--font-display); font-weight: 700; font-size: 14px; letter-spacing: -0.015em; color: #fff; }
+.n-plogo__b {
+  margin-left: auto; font-family: var(--font-body); font-size: 8.5px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--n-sun);
+  border: 1px solid rgba(255,197,40,0.4); border-radius: 999px; padding: 3px 8px; white-space: nowrap;
+}
+
+/* ── Process ───────────────────────────────────────────────── */
+.n-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--n-line); border: 1px solid var(--n-line); border-radius: 18px; overflow: hidden; }
+@media (max-width: 900px) { .n-steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .n-steps { grid-template-columns: 1fr; } }
+.n-step { background: var(--n-white); padding: clamp(22px, 2.6vw, 34px); display: flex; flex-direction: column; gap: 12px; }
+.n-step__n { font-family: var(--font-display); font-weight: 800; font-size: 13px; letter-spacing: 0.14em; color: var(--n-blue); }
+.n-step__t { font-family: var(--font-display); font-weight: 800; font-size: clamp(17px, 1.7vw, 21px); letter-spacing: -0.024em; }
+.n-step__d { font-family: var(--font-body); font-size: 13.5px; line-height: 1.6; color: var(--n-fg-2); }
+.n-step__w { margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--n-line-2);
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--n-fg-3); }
+
+/* ── Quote ─────────────────────────────────────────────────── */
+.n-quote { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
+@media (max-width: 900px) { .n-quote { grid-template-columns: 1fr; } }
+.n-quote__t {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(22px, 2.9vw, 40px); line-height: 1.2; letter-spacing: -0.03em; margin: 0;
+}
+.n-quote__t em { font-family: var(--font-serif); font-style: italic; font-weight: 600; color: var(--n-blue); }
+.n-quote__by { display: flex; flex-direction: column; gap: 4px; margin-top: 22px; }
+.n-quote__by b { font-family: var(--font-display); font-weight: 800; font-size: 15px; letter-spacing: -0.015em; }
+.n-quote__by span { font-family: var(--font-body); font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--n-fg-3); }
+
+/* ── Closing CTA ───────────────────────────────────────────── */
+.n-cta { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.n-cta__h { color: #fff; max-width: 18ch; }
+.n-cta__row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 6px; }
+.n-cta__note { font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--n-on-dark-3); }
+
+/* A real photo fades in over the designed tile when the file exists. */
+.n-shot__img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  display: block; opacity: 0; transition: opacity 420ms var(--ease); z-index: 1;
+}
+.n-shot__img.is-on { opacity: 1; }
+
+/* ── Mixed-format creative grid ────────────────────────────────
+   Creative isn't one shape: reels are 9:16, feed video 4:5, statics 1:1, and
+   banners run wide. A fixed grid would crop them all to a lie, so this is a
+   masonry. Every asset keeps its true ratio and the columns pack around it. */
+.n-mix { column-count: 5; column-gap: 12px; }
+@media (max-width: 1240px) { .n-mix { column-count: 4; } }
+@media (max-width: 980px)  { .n-mix { column-count: 3; } }
+@media (max-width: 680px)  { .n-mix { column-count: 2; } }
+
+.n-asset {
+  break-inside: avoid; display: block; position: relative; width: 100%;
+  margin: 0 0 12px; border-radius: 14px; overflow: hidden;
+  background: var(--n-ink); border: 1px solid var(--n-line);
+  transition: transform 320ms var(--ease), box-shadow 320ms var(--ease);
+}
+.n-asset:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(11,16,32,0.20);
+          position: relative; z-index: 2;
+        }
+.n-asset--reel   { aspect-ratio: 9 / 16; }
+.n-asset--feed   { aspect-ratio: 4 / 5; }
+.n-asset--square { aspect-ratio: 1 / 1; }
+.n-asset--wide   { aspect-ratio: 16 / 9; }
+.n-asset img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Format badge, so the ratio is legible even before imagery lands. */
+.n-asset__fmt {
+  position: absolute; top: 10px; left: 10px; z-index: 3;
+  font-family: var(--font-body); font-size: 9px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase; color: #fff;
+  background: rgba(7,9,15,0.62); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 4px 9px;
+}
+.n-asset__play {
+  position: absolute; top: 10px; right: 10px; z-index: 3; width: 24px; height: 24px;
+  border-radius: 50%; background: rgba(7,9,15,0.62); border: 1px solid rgba(255,255,255,0.22);
+  display: flex; align-items: center; justify-content: center; backdrop-filter: blur(6px);
+}
+.n-asset__play::after { content: ""; border-left: 7px solid #fff; border-top: 4.5px solid transparent;
+  border-bottom: 4.5px solid transparent; margin-left: 2px; }
+.n-asset__meta {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; padding: 28px 12px 11px;
+  background: linear-gradient(transparent, rgba(7,9,15,0.88));
+  display: flex; flex-direction: column; gap: 2px;
+}
+.n-asset__b { font-family: var(--font-body); font-size: 11.5px; font-weight: 800; color: #fff; }
+.n-asset__c { font-family: var(--font-body); font-size: 9.5px; font-weight: 700;
+  letter-spacing: 0.06em; color: rgba(255,255,255,0.62); }
+
+/* Two filter rows: what it's for, and what shape it is. */
+.n-filterset { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
+.n-filterrow { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.n-filterrow > b {
+  font-family: var(--font-body); font-size: 10px; font-weight: 800;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--n-fg-3);
+  margin-right: 6px; min-width: 62px;
+}
+
+/* ── Brand & case-study portfolio ──────────────────────────── */
+.n-folio { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 1.8vw, 22px); }
+@media (max-width: 1040px) {
+  .n-folio { grid-template-columns: repeat(2, 1fr); }
+  /* Two columns: nothing can sit beside a full-width feature, so a two-row
+     span would just open a hole. Feature reverts to a normal card. */
+  .n-folio__i:first-child { grid-column: span 2; grid-row: span 1; }
+  .n-folio__i:first-child .n-folio__cover { aspect-ratio: 16 / 7.6; flex: none; min-height: 0; }
+}
+@media (max-width: 660px)  { .n-folio { grid-template-columns: 1fr; } }
+/* The featured card spans two columns AND two rows, so the column beside it
+   stacks two normal cards and the row edges line up instead of going ragged. */
+.n-folio__i:first-child { grid-column: span 2; grid-row: span 2; }
+@media (max-width: 660px) {
+  .n-folio__i:first-child { grid-column: span 1; grid-row: span 1; }
+  .n-folio__i:first-child .n-folio__cover { aspect-ratio: 16 / 10; flex: none; min-height: 0; }
+}
+
+.n-folio__i { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.n-folio__cover {
+  position: relative; aspect-ratio: 16 / 10; border-radius: 16px; overflow: hidden;
+  background: var(--n-ink); border: 1px solid rgba(255,255,255,0.10);
+  transition: transform 340ms var(--ease), box-shadow 340ms var(--ease);
+}
+.n-folio__i:first-child .n-folio__cover { aspect-ratio: auto; flex: 1 1 auto; min-height: 260px; }
+.n-folio__i:hover .n-folio__cover { transform: translateY(-5px); box-shadow: 0 22px 52px rgba(7,9,15,0.42); }
+.n-folio__cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Business type, printed the way the client book spells it: SaaS, B2B, D2C. */
+.n-folio__tag {
+  position: absolute; top: 12px; left: 12px; z-index: 3;
+  font-family: var(--font-body); font-size: 9.5px; font-weight: 800;
+  letter-spacing: 0.12em; color: var(--n-void);
+  background: var(--n-sun); border-radius: 999px; padding: 5px 11px;
+}
+/* The card used to bottom out on a big number over the cover. There is no
+   per-client number to show, so the cover carries the type badge alone and the
+   foot does the talking: brand name first, then the service mix. */
+.n-folio__foot { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 16px 2px 0; }
+/* Logo slot on the folio card. Sized so a wordmark and a square mark both
+   sit on the same baseline as the service chips beneath. */
+.n-folio__logo { display: flex; align-items: center; height: 30px; width: min(100%, 190px); }
+.n-folio__logo .cs-wm { text-align: left; font-size: 17px; }
+.n-folio__name { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+/* What the pills used to say, in one line and at rest. The list itself is on
+   the cover. */
+.n-folio__count {
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--n-fg-3);
+}
+.n-band--ink .n-folio__count, .n-band--void .n-folio__count { color: var(--n-on-dark-3); }
+
+/* The wordmark fallback inherits the light-ground ink, which is all but
+   invisible on the dark band the folio sits on. */
+.n-band--ink .n-folio__logo .cs-wm,
+.n-band--void .n-folio__logo .cs-wm { color: #fff; }
+.n-folio__name b { font-family: var(--font-display); font-weight: 800; font-size: clamp(18px, 1.8vw, 22px); letter-spacing: -0.026em; }
+/* The reveal. Sits on the base of the cover, rises into place on hover. */
+.n-folio__reveal {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+  padding: clamp(12px, 1.4vw, 18px);
+  background: linear-gradient(to top,
+    rgba(7, 14, 42, 0.94) 38%, rgba(7, 14, 42, 0.72) 68%, rgba(7, 14, 42, 0));
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 260ms var(--ease), transform 380ms var(--ease-soft);
+  pointer-events: none;
+}
+.n-folio__i:hover .n-folio__reveal { opacity: 1; transform: none; }
+
+.n-folio__svc { display: flex; flex-wrap: wrap; gap: 5px; }
+/* Each pill trails the one before it, so the list arrives rather than appears. */
+.n-folio__reveal .n-folio__svc span {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 240ms var(--ease), transform 300ms var(--ease-soft);
+  transition-delay: calc(var(--n, 0) * 45ms);
+}
+.n-folio__i:hover .n-folio__reveal .n-folio__svc span {
+  opacity: 1; transform: none;
+}
+/* Full service labels, so sentence case rather than tracked-out caps. */
+.n-folio__svc span {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.01em; color: var(--n-fg-3);
+  border: 1px solid var(--n-line-2); border-radius: 999px; padding: 3px 10px;
+}
+.n-band--ink .n-folio__svc span, .n-band--void .n-folio__svc span {
+  color: var(--n-on-dark-2); border-color: rgba(255,255,255,0.20);
+}
+.n-folio__go { flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid var(--n-line-2); display: flex; align-items: center; justify-content: center;
+  transition: background 300ms var(--ease), border-color 300ms var(--ease), color 300ms var(--ease); }
+.n-band--ink .n-folio__go, .n-band--void .n-folio__go { border-color: rgba(255,255,255,0.24); }
+.n-folio__i:hover .n-folio__go { background: var(--n-sun); border-color: var(--n-sun); color: var(--n-void); }
+.n-folio__go svg { width: 14px; height: 14px; }
+
+
+/* ── Client wall ─────────────────────────────────────────────
+   Two rows running in opposite directions on a white ground, logos held back
+   so the band reads as texture rather than a row of adverts. Hovering a cell
+   brings its mark to full strength and, where a work image exists, covers the
+   cell with it.
+
+   White, because the logos are used exactly as the client supplied them and
+   several are drawn for a light background: some carry a baked-in white plate,
+   and the darkest marks, Rustomjee and Saint-Gobain, were invisible on the
+   dark ground. On white the plates disappear into the page and every mark
+   keeps its own colour untouched.
+
+   The row pauses under the pointer. Without that the thing you just chose to
+   look at slides out from under you, which is the usual failing of a marquee
+   that also wants to be interactive. */
+.n-wall__rows { margin-top: clamp(34px, 4vw, 56px); }
+.n-wall__row + .n-wall__row { margin-top: clamp(10px, 1.2vw, 18px); }
+/* A hovered cell lifts, grows and tilts out of its row, so the row cannot clip
+   it vertically. It still has to clip horizontally or the duplicated track
+   spills across the page, hence clip-path rather than overflow: the inset is
+   flush at the sides and opened up top and bottom. */
+.n-wall .n-marquee { overflow: visible; clip-path: inset(-44px 0px); }
+/* Rows are siblings, so without this the second row paints over a cell popping
+   down out of the first. */
+.n-wall__row:hover { z-index: 3; }
+.n-wall .n-marquee__track { gap: clamp(10px, 1.2vw, 18px); }
+.n-wall .n-marquee:hover .n-marquee__track { animation-play-state: paused; }
+
+/* The fades follow the band, which is white here rather than the cream the
+   site-wide default assumes. */
+.n-wall .n-marquee__fade--l {
+  background: linear-gradient(90deg, var(--n-white), rgba(255, 255, 255, 0));
+}
+.n-wall .n-marquee__fade--r {
+  background: linear-gradient(270deg, var(--n-white), rgba(255, 255, 255, 0));
+}
+
+.n-wall__cell {
+  flex: 0 0 auto;
+  position: relative;
+  width: clamp(196px, 17vw, 260px);
+  aspect-ratio: 16 / 9;
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(14px, 1.6vw, 24px);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--n-white);
+  border: 1px solid var(--n-line);
+  transform-origin: center center;
+  transition: background 260ms var(--ease), border-color 260ms var(--ease),
+              transform 320ms var(--ease), box-shadow 320ms var(--ease);
+}
+/* The pop. Lifts clear of the row, grows 12% and takes the tilt handed to it
+   inline as --n-tilt (5 to 7 degrees, either way, one angle per cell). The
+   shadow is what actually sells it as being above the wall rather than in it. */
+.n-wall__cell:hover {
+  background: var(--n-white);
+  border-color: rgba(11, 16, 32, 0.18);
+  position: relative; z-index: 5;
+  transform: translateY(-8px) scale(1.12) rotate(var(--n-tilt, 0deg));
+  box-shadow: 0 18px 40px rgba(11, 16, 32, 0.18), 0 2px 6px rgba(11, 16, 32, 0.10);
+}
+
+/* The mark, in the client's own colours, held back until asked for.
+
+   It used to be flattened to a white silhouette. That reads well for an
+   outline mark but destroys one whose identity is filled letterforms:
+   AwwBaby and Bloom Edu Tours both collapsed into unreadable blobs, because
+   brightness(0) invert(1) maps every opaque pixel to the same white
+   regardless of what colour it was. Opacity alone does the holding back. */
+.n-wall__mark {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; height: 100%;
+  opacity: 0.82;
+  transition: opacity 260ms var(--ease);
+}
+.n-wall__cell:hover .n-wall__mark { opacity: 1; }
+/* The fallback wordmark is text. On the white ground it takes the page's own
+   ink; the seven brands without a logo file still render as a wordmark. */
+.n-wall__mark .cs-wm { color: var(--n-fg); }
+
+/* The work. Only ever present if the file loaded; onError removes the node,
+   so a missing image is not a broken one. When it does load it takes the whole
+   cell and the mark steps aside. */
+.n-wall__work {
+  position: absolute; inset: 0; z-index: 2;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 300ms var(--ease), transform 620ms var(--ease-soft);
+  pointer-events: none;
+}
+.n-wall__cell:hover .n-wall__work.is-ready { opacity: 1; transform: scale(1); }
+.n-wall__cell:hover .n-wall__work.is-ready ~ .n-wall__mark,
+.n-wall__cell:has(.n-wall__work.is-ready):hover .n-wall__mark { opacity: 0; }
+
+@media (hover: none) {
+  .n-wall__mark { opacity: 0.8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .n-wall__cell, .n-wall__mark, .n-wall__work { transition-duration: 1ms; }
+  /* Keep the reveal, drop the lift, the growth and the tilt. */
+  .n-wall__cell:hover { transform: none; }
+}
+
+
+/* No hover on a touch screen, so the list would never be reachable. Show it. */
+@media (hover: none) {
+  .n-folio__reveal { opacity: 1; transform: none; }
+  .n-folio__reveal .n-folio__svc span { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .n-folio__reveal, .n-folio__reveal .n-folio__svc span {
+    transition-duration: 1ms; transition-delay: 0ms;
+  }
+}

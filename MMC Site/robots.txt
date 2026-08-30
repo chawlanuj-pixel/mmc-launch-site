@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /home-classic.html
+Disallow: /home-v1.html
+
+Sitemap: https://www.mondaymarketing.company/sitemap.xml
+
+# Plain-language summary of the company for answer engines and LLM crawlers.
+# https://llmstxt.org
+LLM-Content: https://www.mondaymarketing.company/llms.txt

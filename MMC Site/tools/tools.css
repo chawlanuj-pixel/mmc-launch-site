@@ -1,0 +1,938 @@
+/* tools/tools.css, MMC calculator suite.
+
+   Design brief: minimal, interactive, chart-led, and encouraging. A founder
+   opening these should feel like there's a path, not like they've been handed
+   a diagnosis. So: soft light surfaces, one big answer per tool, a progress
+   meter toward the goal rather than a verdict, and every negative paired with
+   the specific move that closes the gap.
+
+   Chart palette validated against a #FFFFFF surface (adjacent pairs):
+   worst CVD ΔE 8.6, worst normal-vision ΔE 19.4. Slots under 3:1 contrast
+   ship direct labels and a table view: mandatory relief, not optional. */
+
+:root {
+  --t-blue:    #1D4ED8;
+  --t-blue-d:  #163FA8;
+  --t-ink:     #131A2E;
+  --t-body:    #4A5468;
+  --t-muted:   #7C8598;
+  --t-sun:     #FFC528;
+
+  --t-page:    #FAFBFD;
+  --t-card:    #FFFFFF;
+  --t-soft:    #F4F6FA;
+  --t-line:    #E6EAF2;
+  --t-line-2:  #D6DCE9;
+
+  /* Encouraging, not alarming: a warm amber for shortfalls rather than red. */
+  --t-good:    #12A150;
+  --t-good-bg: #EAF7EF;
+  --t-warn:    #C87A16;
+  --t-warn-bg: #FDF4E3;
+  --t-gap:     #D9694A;
+  --t-gap-bg:  #FCEFEB;
+
+  --c1: #1D4ED8;  --c2: #EB6834;  --c3: #1BAF7A;
+  --c4: #D69A00;  --c5: #E87BA4;  --c6: #4A3AA7;
+
+  --t-r:   14px;
+  --t-r-s: 10px;
+  --t-shadow: 0 1px 2px rgba(19,26,46,0.04), 0 10px 30px rgba(19,26,46,0.06);
+}
+
+body { overflow-x: clip; }
+
+/* ── Opt out of the site-wide section backdrop ──────────────────
+   styles.css paints a 92%-opaque cream ::before over every <section>, inset
+   ~40px from the top with a hairline border. On the tool pages that washed the
+   dark CTA out to unreadable grey and drew a stray line above it. These
+   sections paint their own grounds, so switch the backdrop off. */
+.tl-page::before,
+.tl-below::before,
+.tl-cta::before,
+.tl-cross::before,
+.tl-faq::before,
+.tl-calc::before,
+.gl-body::before,
+.tl-hero::before { content: none !important; }
+
+
+/* The site shell. A calculator that needs a narrower reading column caps the
+   column, never the page, or the footer below it lands on a different edge. */
+.tl-wrap { width: 100%; max-width: var(--shell-max); margin-inline: auto; padding-inline: var(--shell-pad); }
+.tl-page { background: var(--t-page); padding: clamp(78px, 6.4vw, 96px) 0 clamp(30px, 4vw, 52px); }
+
+/* ── Top bar ──────────────────────────────────────────────── */
+.tl-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px; margin-bottom: clamp(20px, 3vw, 34px);
+}
+.tl-crumb {
+  display: flex; align-items: center; gap: 9px;
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--t-muted);
+}
+.tl-crumb a { color: var(--t-muted); text-decoration: none; }
+.tl-crumb a:hover, .tl-crumb [aria-current] { color: var(--t-blue); }
+
+.tl-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; position: relative; }
+.tl-act {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+  font-family: var(--font-body); font-size: 12px; font-weight: 600;
+  color: var(--t-body); background: var(--t-card);
+  border: 1px solid var(--t-line-2); border-radius: 999px; padding: 9px 15px;
+  transition: border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+.tl-act:hover { border-color: var(--t-blue); color: var(--t-blue); box-shadow: 0 2px 10px rgba(29,78,216,0.10); }
+.tl-act:focus-visible { outline: 2px solid var(--t-blue); outline-offset: 2px; }
+.tl-act--cta {
+  background: var(--t-sun); border-color: var(--t-sun); color: #131A2E; font-weight: 800;
+}
+.tl-act--cta:hover { background: #FFD24F; border-color: #FFD24F; color: #131A2E; }
+.tl-acts__toast { font-family: var(--font-body); font-size: 11.5px; font-weight: 700; color: var(--t-good); }
+
+
+/* ── Content-page header (tools hub, glossary) ──────────────────
+   These pages predate the calculator rebuild and still use .tl-hero. Restyled
+   to match the calculators' light language rather than the old dark band,
+   the CSS rebuild had dropped these rules, leaving the hub title under the
+   fixed nav and the glossary lede as white text on white. */
+.tl-hero {
+  background: var(--t-page);
+  padding: clamp(78px, 6.4vw, 96px) 0 clamp(18px, 2.4vw, 28px);
+}
+.tl-hero__h {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(30px, 4vw, 50px); line-height: 1.04;
+  letter-spacing: -0.032em; color: var(--t-ink); margin: 0; text-wrap: balance;
+}
+.tl-hero__p {
+  font-family: var(--font-body); font-size: clamp(15px, 1.5vw, 17.5px);
+  line-height: 1.6; color: var(--t-body); max-width: 62ch; margin: 16px 0 0;
+}
+.tl-serif {
+  font-family: var(--font-serif); font-style: italic; font-weight: 600;
+  color: var(--t-blue); letter-spacing: 0;
+}
+.tl-calc { background: var(--t-page); padding: clamp(10px, 1.4vw, 18px) 0 clamp(24px, 3vw, 40px); }
+
+/* The ROAS spectrum sits in its own tinted plot frame. */
+.tl-spec {
+  background: linear-gradient(180deg, #FCFCFE 0%, #F7F9FD 100%);
+  border: 1px solid var(--t-line); border-radius: var(--t-r-s); padding: 6px 4px 0;
+}
+.tl-act__i { font-size: 13px; line-height: 1; }
+
+/* ── Headline ─────────────────────────────────────────────── */
+.tl-head { max-width: 62ch; margin-bottom: clamp(20px, 3vw, 32px); }
+.tl-title {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(30px, 4vw, 50px); line-height: 1.04;
+  letter-spacing: -0.032em; color: var(--t-ink); margin: 0; text-wrap: balance;
+}
+.tl-title em { font-family: var(--font-serif); font-style: italic; font-weight: 600; color: var(--t-blue); letter-spacing: 0; }
+.tl-title__s {
+  font-family: var(--font-body); font-size: clamp(15px, 1.5vw, 17.5px);
+  line-height: 1.55; color: var(--t-body); margin: 14px 0 0; max-width: 56ch;
+}
+
+/* ── The answer ───────────────────────────────────────────── */
+.tl-answer {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(18px, 2.4vw, 32px); align-items: stretch;
+}
+@media (max-width: 940px) { .tl-answer { grid-template-columns: 1fr; } }
+.tl-split__out .tl-answer { grid-template-columns: 1fr; }
+.tl-split__out .tl-facts { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.tl-split__out .tl-big__v { font-size: clamp(44px, 5.4vw, 68px); }
+
+.tl-big {
+  background: var(--t-card); border: 1px solid var(--t-line);
+  border-radius: var(--t-r); box-shadow: var(--t-shadow);
+  padding: clamp(22px, 2.6vw, 32px); display: flex; flex-direction: column; gap: 14px;
+}
+.tl-big__k {
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--t-muted);
+  display: block;
+}
+.tl-big__v {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(48px, 6.4vw, 82px); line-height: 0.94; letter-spacing: -0.045em;
+  color: var(--t-ink); font-variant-numeric: tabular-nums;
+}
+.tl-big__v.is-good { color: var(--t-good); }
+.tl-big__v.is-gap  { color: var(--t-gap); }
+.tl-big__s { font-family: var(--font-body); font-size: 15px; line-height: 1.55; color: var(--t-body); margin: 0; }
+.tl-big__s b { color: var(--t-ink); font-weight: 700; }
+
+/* ── Progress meter: distance to the goal, not a verdict ──── */
+.tl-meter { display: flex; flex-direction: column; gap: 8px; }
+.tl-meter__track {
+  position: relative; height: 12px; border-radius: 999px;
+  background: var(--t-soft); overflow: visible;
+}
+.tl-meter__fill {
+  position: absolute; left: 0; top: 0; height: 100%; border-radius: 999px;
+  background: var(--t-good);
+  transition: width 420ms cubic-bezier(0.22,0.61,0.36,1), background 300ms ease;
+}
+.tl-meter__fill.is-short { background: var(--t-blue); }
+.tl-meter__pin {
+  position: absolute; top: -4px; width: 20px; height: 20px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--t-blue); transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(19,26,46,0.18); transition: left 420ms cubic-bezier(0.22,0.61,0.36,1);
+}
+.tl-meter__goal {
+  position: absolute; top: -5px; bottom: -5px; width: 2px; background: var(--t-ink);
+  opacity: 0.45; transform: translateX(-50%);
+}
+.tl-meter__scale {
+  display: flex; justify-content: space-between; gap: 10px;
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--t-muted);
+}
+.tl-meter__scale b { color: var(--t-ink); font-weight: 800; }
+
+/* ── Secondary stats: quiet, roomy ────────────────────────── */
+.tl-facts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; align-content: start; }
+.tl-facts--3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+@media (max-width: 560px) { .tl-facts, .tl-facts--3 { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+.tl-fact {
+  background: var(--t-card); border: 1px solid var(--t-line); border-radius: var(--t-r-s);
+  padding: 15px 17px; display: flex; flex-direction: column; gap: 5px;
+}
+.tl-fact__l {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--t-muted);
+  display: block; min-width: 0; line-height: 1.4;
+}
+.tl-fact__v {
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(20px, 2.1vw, 26px);
+  line-height: 1.05; letter-spacing: -0.03em; color: var(--t-ink); font-variant-numeric: tabular-nums;
+}
+.tl-fact__s { font-family: var(--font-body); font-size: 11.5px; color: var(--t-muted); line-height: 1.4; }
+.tl-fact--good .tl-fact__v { color: var(--t-good); }
+.tl-fact--gap  .tl-fact__v { color: var(--t-gap); }
+
+
+/* ── Two-column calculator ────────────────────────────────────
+   Controls left, results right, so a slider and the number it moves are on
+   screen together. The controls stay pinned while the results scroll. */
+.tl-split {
+  display: grid; grid-template-columns: minmax(0, 372px) minmax(0, 1fr);
+  gap: clamp(16px, 2vw, 26px); align-items: start;
+}
+@media (max-width: 1040px) { .tl-split { grid-template-columns: 1fr; } }
+@media (min-width: 1041px) { .tl-split__ctrl { position: sticky; top: 84px; } }
+.tl-split__out { display: flex; flex-direction: column; gap: clamp(16px, 2vw, 26px); min-width: 0; }
+.tl-split .tl-card { margin-top: 0; }
+
+/* The control column is narrow, so its inputs run single-file. */
+.tl-split__ctrl .tl-fields--2,
+.tl-split__ctrl .tl-fields { grid-template-columns: 1fr; }
+.tl-split__ctrl .tl-card { padding: clamp(18px, 2vw, 24px); }
+.tl-split__ctrl .tl-card__top { margin-bottom: 16px; }
+
+/* No inner scroll: a capped card just looks truncated, and the last slider gets
+   sliced in half. Let the column run its natural height, sticky pins it while
+   it fits the viewport and simply scrolls with the page when it doesn't. */
+
+/* Inside the narrower results column the answer stacks sooner. */
+
+
+/* ── Cards & sections ─────────────────────────────────────── */
+.tl-card {
+  background: var(--t-card); border: 1px solid var(--t-line);
+  border-radius: var(--t-r); box-shadow: var(--t-shadow);
+  padding: clamp(20px, 2.4vw, 30px); margin-top: clamp(16px, 2.2vw, 26px);
+}
+.tl-card__top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.tl-card__h { font-family: var(--font-display); font-weight: 800; font-size: 20px; letter-spacing: -0.022em; color: var(--t-ink); margin: 0; }
+.tl-card__sub { font-family: var(--font-body); font-size: 13.5px; color: var(--t-muted); margin: 4px 0 0; }
+.tl-sec__h {
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--t-muted); margin: 0 0 12px;
+}
+
+/* ── Sliders: the main input, because they invite play ────── */
+.tl-ctl + .tl-ctl { margin-top: 20px; }
+.tl-ctl__top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 9px; min-height: 34px; }
+.tl-ctl__l {
+  font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--t-body);
+  display: block; flex: 1 1 auto; min-width: 0; line-height: 1.35;
+}
+.tl-slider {
+  width: 100%; margin: 0; height: 30px; -webkit-appearance: none; appearance: none;
+  background: transparent; cursor: grab; display: block;
+}
+.tl-slider:active { cursor: grabbing; }
+.tl-slider::-webkit-slider-runnable-track { height: 6px; border-radius: 999px; background: var(--t-track, var(--t-soft)); }
+.tl-slider::-moz-range-track { height: 6px; border-radius: 999px; background: var(--t-track, var(--t-soft)); }
+.tl-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 22px; height: 22px; margin-top: -8px;
+  border-radius: 50%; background: #fff; border: 3px solid var(--t-blue);
+  box-shadow: 0 2px 8px rgba(19,26,46,0.16); transition: transform 140ms ease;
+}
+.tl-slider::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%; background: #fff;
+  border: 3px solid var(--t-blue); box-shadow: 0 2px 8px rgba(19,26,46,0.16);
+}
+.tl-slider:hover::-webkit-slider-thumb { transform: scale(1.12); }
+.tl-slider:focus-visible { outline: 2px solid var(--t-blue); outline-offset: 5px; }
+.tl-ctl__scale {
+  display: flex; justify-content: space-between; margin-top: 0;
+  font-family: var(--font-body); font-size: 10.5px; color: var(--t-muted);
+}
+.tl-ctl__hint { font-family: var(--font-body); font-size: 12px; line-height: 1.45; color: var(--t-muted); margin-top: 7px; }
+
+/* ── Number fields, for the ones a slider can't express ───── */
+.tl-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px 18px; }
+.tl-fields--2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.tl-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.tl-field__label {
+  font-family: var(--font-body); font-size: 12.5px; font-weight: 600; color: var(--t-body);
+  display: block; min-height: 18px; line-height: 1.35;
+}
+.tl-field__box {
+  display: flex; align-items: center; background: var(--t-card);
+  border: 1px solid var(--t-line-2); border-radius: var(--t-r-s); overflow: hidden;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+.tl-field__box:focus-within { border-color: var(--t-blue); box-shadow: 0 0 0 3px rgba(29,78,216,0.10); }
+.tl-field__affix { font-family: var(--font-display); font-size: 14px; font-weight: 600; color: var(--t-muted); padding: 0 0 0 13px; flex-shrink: 0; }
+.tl-field__affix--suf { padding: 0 13px 0 0; }
+.tl-field__input {
+  flex: 1; min-width: 0; border: 0; background: transparent; outline: none;
+  font-family: var(--font-display); font-size: 16px; font-weight: 700;
+  color: var(--t-ink); padding: 11px 12px; font-variant-numeric: tabular-nums;
+}
+.tl-field__hint { font-family: var(--font-body); font-size: 11.5px; color: var(--t-muted); }
+
+/* ── Quick wins: the motivating half of the page ──────────── */
+.tl-wins { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 900px) { .tl-wins { grid-template-columns: 1fr; } }
+.tl-win {
+  background: var(--t-good-bg); border: 1px solid rgba(18,161,80,0.24);
+  border-radius: var(--t-r-s); padding: 16px 18px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.tl-win__k {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--t-good);
+}
+.tl-win__t { font-family: var(--font-body); font-size: 13.5px; line-height: 1.5; color: var(--t-body); margin: 0; }
+.tl-win__t b { color: var(--t-ink); font-weight: 700; }
+.tl-win__v { font-family: var(--font-display); font-size: 22px; font-weight: 800; letter-spacing: -0.03em; color: var(--t-good); font-variant-numeric: tabular-nums; }
+.tl-win__b {
+  margin-top: auto; align-self: flex-start; cursor: pointer;
+  font-family: var(--font-body); font-size: 11.5px; font-weight: 700;
+  color: var(--t-good); background: #fff; border: 1px solid rgba(18,161,80,0.34);
+  border-radius: 999px; padding: 7px 14px; transition: background 160ms ease, color 160ms ease;
+}
+.tl-win__b:hover { background: var(--t-good); color: #fff; }
+.tl-win__b:focus-visible { outline: 2px solid var(--t-good); outline-offset: 2px; }
+
+/* ── Charts ───────────────────────────────────────────────── */
+.tl-chart { position: relative; width: 100%; }
+.tl-chart svg { display: block; width: 100%; overflow: visible; }
+.tl-chart__grid { stroke: var(--t-line); stroke-width: 1; shape-rendering: crispEdges; }
+.tl-chart__axis { stroke: var(--t-line-2); stroke-width: 1; shape-rendering: crispEdges; }
+.tl-chart__tick { font-family: var(--font-body); font-size: 10.5px; font-weight: 500; fill: var(--t-muted); font-variant-numeric: tabular-nums; }
+.tl-chart__line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.tl-chart__dot { stroke: #fff; stroke-width: 2.5; }
+.tl-chart__bar { transition: opacity 160ms ease; }
+.tl-chart__cross { stroke: var(--t-line-2); stroke-width: 1; stroke-dasharray: 3 4; }
+.tl-tip {
+  position: absolute; pointer-events: none; z-index: 5;
+  background: var(--t-ink); color: #fff; border-radius: 10px; padding: 9px 12px;
+  box-shadow: 0 12px 28px rgba(19,26,46,0.28);
+  font-family: var(--font-body); font-size: 12px; line-height: 1.45; white-space: nowrap;
+  transform: translate(-50%, calc(-100% - 12px));
+}
+.tl-tip__t { font-weight: 700; color: var(--t-sun); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 3px; }
+.tl-tip__r { display: flex; align-items: center; gap: 8px; font-variant-numeric: tabular-nums; }
+.tl-tip__sw { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+.tl-tip__v { font-weight: 700; margin-left: auto; }
+.tl-spec__v { font-family: var(--font-display); font-size: 18px; font-weight: 800; letter-spacing: -0.025em; font-variant-numeric: tabular-nums; }
+.tl-spec__l { font-family: var(--font-body); font-size: 9px; font-weight: 700; letter-spacing: 0.13em; }
+.tl-spec__zone { font-family: var(--font-body); font-size: 9.5px; font-weight: 700; letter-spacing: 0.14em; }
+
+/* Horizontal bar rows */
+.tl-rows { display: flex; flex-direction: column; gap: 9px; }
+.tl-row { display: grid; grid-template-columns: 150px 1fr auto; gap: 14px; align-items: center; }
+@media (max-width: 620px) { .tl-row { grid-template-columns: 104px 1fr auto; gap: 9px; } }
+.tl-row__l { font-family: var(--font-body); font-size: 12.5px; font-weight: 500; color: var(--t-body); text-align: right; line-height: 1.3; }
+.tl-row__bar { display: block; height: 22px; border-radius: 6px; background: var(--t-soft); position: relative; }
+.tl-row__fill { display: block; height: 100%; border-radius: 6px; background: var(--c1); position: absolute; top: 0; min-width: 3px; transition: width 340ms cubic-bezier(0.22,0.61,0.36,1), left 340ms cubic-bezier(0.22,0.61,0.36,1); }
+.tl-row__n { font-family: var(--font-display); font-size: 13.5px; font-weight: 800; color: var(--t-ink); font-variant-numeric: tabular-nums; min-width: 84px; text-align: right; }
+.tl-row__d { font-family: var(--font-body); font-size: 11px; font-weight: 600; color: var(--t-muted); text-align: right; grid-column: 3; font-variant-numeric: tabular-nums; }
+
+/* 100% composition */
+.tl-comp { display: flex; width: 100%; height: 34px; border-radius: 8px; overflow: hidden; background: var(--t-soft); gap: 2px; }
+.tl-comp__seg { height: 100%; min-width: 2px; transition: width 340ms cubic-bezier(0.22,0.61,0.36,1); }
+.tl-legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+.tl-legend__i { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-body); font-size: 12.5px; color: var(--t-body); }
+.tl-legend__sw { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+.tl-legend__v { color: var(--t-muted); font-variant-numeric: tabular-nums; }
+
+/* ── Segmented toggle ─────────────────────────────────────── */
+.tl-seg { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--t-soft); border: 1px solid var(--t-line); }
+.tl-seg__b {
+  font-family: var(--font-body); font-size: 12px; font-weight: 700; cursor: pointer;
+  border: 0; background: transparent; color: var(--t-muted); padding: 7px 18px; border-radius: 999px;
+  transition: background 180ms ease, color 180ms ease;
+}
+.tl-seg__b.is-on { background: var(--t-card); color: var(--t-blue); box-shadow: 0 1px 4px rgba(19,26,46,0.10); }
+.tl-seg__b:focus-visible { outline: 2px solid var(--t-blue); outline-offset: 2px; }
+
+/* ── Info dots ────────────────────────────────────────────── */
+.tl-info { position: relative; display: inline-flex; align-items: center; vertical-align: middle; }
+.tl-info__btn {
+  width: 15px; height: 15px; margin-left: 6px; padding: 0; flex-shrink: 0;
+  border-radius: 50%; cursor: help; border: 1px solid var(--t-line-2);
+  background: var(--t-card); color: var(--t-muted);
+  font-family: var(--font-display); font-size: 9.5px; font-weight: 700;
+  font-style: normal; line-height: 1; text-transform: none; letter-spacing: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+.tl-info__btn:hover, .tl-info__btn.is-on { background: var(--t-blue); border-color: var(--t-blue); color: #fff; }
+.tl-info__btn:focus-visible { outline: 2px solid var(--t-blue); outline-offset: 2px; }
+@media (pointer: coarse) {
+  .tl-info__btn { width: 26px; height: 26px; font-size: 12px; margin-left: 7px; }
+  .tl-slider { height: 34px; }
+}
+.tl-info__pop {
+  position: fixed; z-index: 1200; display: flex; flex-direction: column; gap: 8px;
+  padding: 15px 16px; border-radius: 12px; background: var(--t-ink); color: #fff;
+  box-shadow: 0 20px 46px rgba(19,26,46,0.32);
+  text-transform: none; letter-spacing: normal; text-align: left;
+  animation: tlIn 150ms ease-out both;
+}
+@keyframes tlIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.tl-info__t { font-family: var(--font-display); font-weight: 800; font-size: 13.5px; color: var(--t-sun); }
+.tl-info__d { font-family: var(--font-body); font-size: 12.5px; line-height: 1.55; color: rgba(255,255,255,0.9); font-weight: 400; }
+.tl-info__f { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11px; line-height: 1.45; color: #fff; background: rgba(255,255,255,0.11); padding: 7px 9px; border-radius: 6px; }
+.tl-info__w { font-family: var(--font-body); font-size: 11.5px; line-height: 1.5; color: rgba(255,255,255,0.68); padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.16); }
+.tl-info__more { font-family: var(--font-body); font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--t-sun); text-decoration: none; }
+.tl-info__more:hover { text-decoration: underline; }
+
+/* ── Tables ───────────────────────────────────────────────── */
+.tl-details { margin-top: 18px; }
+.tl-details > summary {
+  cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-body); font-size: 12px; font-weight: 700; color: var(--t-blue); padding: 6px 0;
+}
+.tl-details > summary::-webkit-details-marker { display: none; }
+.tl-details > summary::after { content: "＋"; font-size: 13px; }
+.tl-details[open] > summary::after { content: "−"; }
+.tl-details__body { margin-top: 10px; }
+.tl-tablewrap { overflow-x: auto; border: 1px solid var(--t-line); border-radius: var(--t-r-s); }
+.tl-table { border-collapse: collapse; width: 100%; min-width: 480px; }
+.tl-table th, .tl-table td {
+  text-align: right; padding: 9px 14px; font-size: 12.5px;
+  border-bottom: 1px solid var(--t-line); font-variant-numeric: tabular-nums;
+  font-family: var(--font-body); color: var(--t-body);
+}
+.tl-table th { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--t-muted); background: var(--t-soft); position: sticky; top: 0; }
+.tl-table th:first-child, .tl-table td:first-child { text-align: left; font-weight: 600; color: var(--t-ink); }
+.tl-table tbody tr:last-child td { border-bottom: 0; }
+.tl-table tbody tr:hover td { background: rgba(29,78,216,0.03); }
+.tl-table .is-total td { font-weight: 800; color: var(--t-ink); background: var(--t-soft); }
+.tl-table .num-pos { color: var(--t-good); }
+.tl-table .num-neg { color: var(--t-gap); }
+
+/* ── Explainer band ───────────────────────────────────────── */
+.tl-below { background: var(--t-page); padding: 0 0 clamp(30px, 4vw, 52px); }
+.tl-below__grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(16px, 2.4vw, 30px); align-items: start; }
+@media (max-width: 900px) { .tl-below__grid { grid-template-columns: 1fr; } }
+.tl-lede__p { font-family: var(--font-body); font-size: 14.5px; line-height: 1.68; color: var(--t-body); margin: 0; max-width: 60ch; }
+.tl-lede__p strong { color: var(--t-ink); font-weight: 700; }
+.tl-insight { background: var(--t-card); border: 1px solid var(--t-line); border-left: 3px solid var(--t-sun); border-radius: var(--t-r-s); padding: clamp(18px, 2.2vw, 26px); }
+.tl-insight__h { font-family: var(--font-display); font-weight: 800; font-size: 17px; letter-spacing: -0.02em; margin: 0 0 9px; color: var(--t-ink); }
+.tl-insight__p { font-family: var(--font-body); font-size: 14px; line-height: 1.65; color: var(--t-body); margin: 0; }
+.tl-insight__p + .tl-insight__p { margin-top: 10px; }
+.tl-insight strong { color: var(--t-ink); font-weight: 700; }
+
+/* ── FAQ ──────────────────────────────────────────────────────
+   The visible half of each page's FAQPage JSON-LD. Same accordion grammar as
+   .tl-details, sized up: this is body copy a visitor reads, not a toggle for a
+   table. Sits between the explainer band and the cross-links, so it inherits
+   the page ground and needs no top padding of its own. */
+.tl-faq { background: var(--t-page); padding: 0 0 clamp(30px, 4vw, 52px); }
+.tl-faq__h {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(19px, 2.2vw, 24px); letter-spacing: -0.025em;
+  color: var(--t-ink); margin: 0 0 14px; text-wrap: balance;
+}
+.tl-faq__list {
+  max-width: 78ch; background: var(--t-card);
+  border: 1px solid var(--t-line); border-radius: var(--t-r-s); overflow: hidden;
+}
+.tl-faq__item + .tl-faq__item { border-top: 1px solid var(--t-line); }
+.tl-faq__q {
+  cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: 14px;
+  font-family: var(--font-display); font-weight: 800; font-size: 15.5px;
+  letter-spacing: -0.015em; color: var(--t-ink); padding: 15px 20px;
+  transition: color 160ms ease;
+}
+.tl-faq__q::-webkit-details-marker { display: none; }
+.tl-faq__q::after {
+  content: "＋"; margin-left: auto; flex: 0 0 auto;
+  font-size: 13px; font-weight: 700; color: var(--t-blue);
+}
+.tl-faq__item[open] > .tl-faq__q::after { content: "−"; }
+.tl-faq__q:hover { color: var(--t-blue); }
+.tl-faq__q:focus-visible { outline: 2px solid var(--t-blue); outline-offset: -2px; }
+.tl-faq__a {
+  font-family: var(--font-body); font-size: 14px; line-height: 1.7;
+  color: var(--t-body); margin: 0; padding: 0 20px 17px; max-width: 68ch;
+}
+
+/* ── Cross-links & CTA ────────────────────────────────────── */
+.tl-cross { background: var(--t-card); padding: clamp(30px, 4vw, 50px) 0; border-top: 1px solid var(--t-line); }
+/* Same spine as .tl-wrap and the footer below it. */
+.tl-cross__lead {
+  display: block; font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--t-muted);
+  width: 100%; max-width: var(--shell-max); margin: 0 auto 16px;
+  padding-inline: var(--shell-pad);
+}
+.tl-cross__grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;
+  width: 100%; max-width: var(--shell-max); margin: 0 auto;
+  padding-inline: var(--shell-pad);
+}
+.tl-cross__card {
+  display: flex; flex-direction: column; gap: 7px; text-decoration: none;
+  padding: 20px 22px; border-radius: var(--t-r-s);
+  border: 1px solid var(--t-line); background: var(--t-page);
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+.tl-cross__card:hover { border-color: var(--t-blue); transform: translateY(-3px); box-shadow: var(--t-shadow);
+          position: relative; z-index: 2;
+        }
+.tl-cross__name { font-family: var(--font-display); font-weight: 800; font-size: 17px; letter-spacing: -0.02em; color: var(--t-ink); display: inline-flex; align-items: center; gap: 9px; }
+.tl-cross__arr { width: 16px; height: 1.5px; background: var(--t-blue); position: relative; transition: width 200ms ease; }
+.tl-cross__arr::after { content: ""; position: absolute; right: -1px; top: -3.5px; width: 8px; height: 8px; border-top: 1.5px solid var(--t-blue); border-right: 1.5px solid var(--t-blue); transform: rotate(45deg); }
+.tl-cross__card:hover .tl-cross__arr { width: 26px; }
+.tl-cross__blurb { font-family: var(--font-body); font-size: 13px; line-height: 1.5; color: var(--t-muted); }
+
+.tl-cta { background: var(--t-ink); color: #fff; padding: clamp(38px, 5vw, 66px) 0; }
+.tl-cta__h { font-family: var(--font-display); font-weight: 800; font-size: clamp(24px, 3vw, 36px); letter-spacing: -0.028em; margin: 0; color: #fff; text-wrap: balance; }
+.tl-cta__p { font-family: var(--font-body); font-size: 15px; line-height: 1.65; color: rgba(255,255,255,0.74); max-width: 60ch; margin: 14px 0 0; }
+.tl-cta__row { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 24px; }
+.tl-btn {
+  display: inline-flex; align-items: center; gap: 11px; cursor: pointer;
+  font-family: var(--font-body); font-size: 12.5px; font-weight: 700;
+  letter-spacing: 0.06em; padding: 15px 26px; border-radius: 999px; border: 1px solid transparent;
+  transition: transform 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+.tl-btn:hover { transform: translateY(-2px);
+          position: relative; z-index: 2;
+        }
+.tl-btn--sun { background: var(--t-sun); color: #131A2E; font-weight: 800; }
+.tl-btn--sun:hover { background: #FFD24F; }
+.tl-btn--ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.34); }
+.tl-btn--ghost:hover { border-color: #fff; }
+.tl-btn__arr { width: 18px; height: 1.5px; background: currentColor; position: relative; }
+.tl-btn__arr::after { content: ""; position: absolute; right: -1px; top: -3.5px; width: 8px; height: 8px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); }
+.tl-btn:focus-visible { outline: 2px solid var(--t-sun); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-meter__fill, .tl-meter__pin, .tl-row__fill, .tl-comp__seg,
+  .tl-btn, .tl-cross__card, .tl-chart__bar, .tl-info__pop { transition: none; animation: none; }
+}
+/* ── Glossary page ──────────────────────────────────────────
+   A reading page, not a tool. It may scroll, so it breathes. */
+.gl-hero { padding: clamp(84px, 7vw, 100px) 0 clamp(22px, 2.6vw, 34px); }
+.gl-hero__h { font-size: clamp(28px, 3.6vw, 46px); }
+.gl-hero__p {
+  font-family: var(--font-body); font-size: clamp(14px, 1.4vw, 16.5px);
+  line-height: 1.62; color: var(--t-body); max-width: 62ch; margin: 16px 0 0;
+}
+
+.gl-body { background: var(--t-page); padding: clamp(22px, 3vw, 34px) 0 clamp(36px, 5vw, 60px); }
+
+.gl-controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 14px; }
+.gl-search {
+  display: flex; align-items: center; gap: 10px; background: #fff;
+  border: 1.5px solid var(--t-line-2); border-radius: 12px; padding: 0 14px;
+  transition: border-color 200ms ease;
+}
+.gl-search:focus-within { border-color: var(--t-blue); }
+.gl-search__icon { font-size: 18px; color: var(--t-muted); line-height: 1; }
+.gl-search__input {
+  flex: 1; min-width: 0; border: 0; outline: none; background: transparent;
+  font-family: var(--font-body); font-size: 15px; color: var(--t-ink);
+  padding: 13px 0;
+}
+.gl-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.gl-chip {
+  font-family: var(--font-body); font-size: 10.5px; font-weight: 800;
+  letter-spacing: 0.11em; text-transform: uppercase; cursor: pointer;
+  padding: 8px 13px; border-radius: 999px;
+  border: 1.5px solid var(--t-line-2); background: #fff; color: var(--t-muted);
+  transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
+}
+.gl-chip:hover { border-color: var(--t-blue); color: var(--t-blue); }
+.gl-chip.is-on { background: var(--t-blue); border-color: var(--t-blue); color: #fff; }
+.gl-chip:focus-visible { outline: 2px solid var(--t-blue); outline-offset: 2px; }
+
+.gl-count {
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.13em; text-transform: uppercase; color: var(--t-muted); margin: 0 0 20px;
+}
+.gl-empty { font-family: var(--font-body); font-size: 15px; color: var(--t-body); }
+.gl-reset {
+  background: none; border: 0; padding: 0; cursor: pointer; font: inherit;
+  color: var(--t-blue); text-decoration: underline;
+}
+
+.gl-group + .gl-group { margin-top: clamp(26px, 3.4vw, 40px); }
+.gl-group__h {
+  font-family: var(--font-display); font-weight: 800; font-size: 12px;
+  letter-spacing: 0.17em; text-transform: uppercase; color: var(--t-blue);
+  margin: 0 0 12px; padding-bottom: 9px; border-bottom: 1px solid var(--t-line-2);
+}
+.gl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 12px; }
+.gl-card {
+  background: #fff; border: 1.5px solid var(--t-line);
+  border-radius: 13px; padding: 17px 19px; scroll-margin-top: 110px;
+  transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+.gl-card.is-target { border-color: var(--t-sun); box-shadow: 0 0 0 4px rgba(255,197,40,0.28); }
+.gl-card__t {
+  font-family: var(--font-display); font-weight: 800; font-size: 16.5px;
+  letter-spacing: -0.018em; color: var(--t-ink); margin: 0 0 7px;
+  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+}
+.gl-card__abbr {
+  font-family: var(--font-body); font-size: 9.5px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  background: rgba(29,78,216,0.10); color: var(--t-blue);
+  padding: 3px 7px; border-radius: 4px;
+}
+.gl-card__d { font-family: var(--font-body); font-size: 13.5px; line-height: 1.58; color: var(--t-body); margin: 0; }
+.gl-card__f {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 11.5px; line-height: 1.45; color: var(--t-ink);
+  background: var(--t-soft); border-radius: 7px; padding: 8px 10px; margin: 10px 0 0;
+  overflow-x: auto;
+}
+.gl-card__w {
+  font-family: var(--font-body); font-size: 12.5px; line-height: 1.55;
+  color: var(--t-muted); margin: 10px 0 0; padding-top: 9px;
+  border-top: 1px dashed var(--t-line-2);
+}
+.gl-card__w span {
+  display: block; font-size: 9.5px; font-weight: 800; letter-spacing: 0.13em;
+  text-transform: uppercase; color: var(--t-warn); margin-bottom: 4px;
+}
+
+.gl-tools { margin-top: clamp(32px, 4vw, 48px); padding-top: clamp(24px, 3vw, 34px); border-top: 1px solid rgba(29,78,216,0.14); }
+.gl-tools__lead {
+  display: block; font-family: var(--font-body); font-size: 10.5px; font-weight: 800;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--t-muted); margin-bottom: 14px;
+}
+
+/* ── Tall rig: many inputs, so the readout stays pinned while the deck scrolls ── */
+.tl-rig--tall { overflow: visible; box-shadow: none; background: transparent; gap: 12px; }
+.tl-rig--tall .tl-rig__deck { border-radius: 16px; box-shadow: 0 1px 2px rgba(15,30,94,0.06), 0 14px 40px rgba(15,30,94,0.10); }
+.tl-rig--tall .tl-rig__read {
+  border-radius: 16px; background: #fff; align-self: start;
+  box-shadow: 0 1px 2px rgba(15,30,94,0.06), 0 14px 40px rgba(15,30,94,0.10);
+}
+@media (min-width: 961px) { .tl-rig--tall .tl-rig__read { position: sticky; top: 84px; } }
+.tl-rig--tall .tl-rig__deck { max-height: none; }
+
+.tl-rig--split { overflow: visible; box-shadow: none; background: transparent; gap: 12px; align-items: start; }
+.tl-rig--split .tl-rig__deck,
+.tl-rig--split .tl-rig__read {
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(15,30,94,0.06), 0 14px 40px rgba(15,30,94,0.10);
+}
+.tl-rig--split .tl-rig__read { background: #fff; }
+.tl-rig--tall .tl-rig__deck { align-self: start; }
+
+/* Waterfall rows carry an offset, so the fill is positioned not just sized. */
+.tl-step--wf .tl-step__bar { background: #F4F6FA; }
+.tl-wf-note {
+  font-family: var(--font-body); font-size: 10.5px; color: var(--t-muted);
+  margin: 7px 0 0; display: flex; flex-wrap: wrap; gap: 4px 14px;
+}
+.tl-wf-note span { display: inline-flex; align-items: center; gap: 6px; }
+.tl-wf-note i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+
+
+/* ── Print report (MMC-branded PDF) ───────────────────────── */
+.tl-print, .tl-printfoot { display: none; }
+
+@media print {
+  @page { size: A4; margin: 14mm 12mm; }
+  html, body { background: #fff !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  .mmc-nav, .topnav, .mmc-menu, .ft, footer, [class*="cookie"],
+  .tl-toolbar, .tl-acts, .tl-cross, .tl-cta, .tl-faq, .tl-details > summary,
+  .mmc-book, .tl-info__pop, .tl-seg, .tl-win__b, .tl-act { display: none !important; }
+
+  .tl-print, .tl-printfoot { display: block !important; }
+  .tl-print__bar { display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #1D4ED8; padding-bottom: 10px; margin-bottom: 14px; }
+  .tl-print__logo { width: 46px; height: auto; }
+  .tl-print__meta { display: flex; flex-direction: column; font-family: var(--font-body); font-size: 9pt; color: #4A5468; line-height: 1.45; }
+  .tl-print__meta strong { font-family: var(--font-display); font-size: 12pt; color: #131A2E; }
+  .tl-print__h { font-family: var(--font-display); font-size: 20pt; font-weight: 800; color: #131A2E; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .tl-print__sub { font-family: var(--font-body); font-size: 9.5pt; color: #7C8598; margin: 0 0 14px; }
+  .tl-print__inputs { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  .tl-print__inputs caption { text-align: left; font-family: var(--font-body); font-size: 8.5pt; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: #7C8598; padding-bottom: 6px; }
+  .tl-print__inputs th, .tl-print__inputs td { border: 1px solid #E6EAF2; padding: 4px 8px; font-family: var(--font-body); font-size: 9pt; text-align: left; }
+  .tl-print__inputs th { background: #F4F6FA; color: #4A5468; font-weight: 600; width: 58%; }
+  .tl-print__inputs td { font-weight: 800; color: #131A2E; text-align: right; font-variant-numeric: tabular-nums; }
+
+  .tl-page, .tl-below { padding: 0 !important; background: #fff !important; }
+  .tl-wrap { max-width: none !important; padding: 0 !important; }
+  .tl-card, .tl-big, .tl-fact, .tl-insight { box-shadow: none !important; page-break-inside: avoid; }
+  .tl-answer { display: grid !important; grid-template-columns: 1fr 1fr !important; }
+  .tl-split { display: block !important; }
+  .tl-split__ctrl { position: static !important; }
+  .tl-split__ctrl > .tl-card { max-height: none !important; overflow: visible !important; }
+  .tl-split__out { display: block !important; }
+  .tl-split__out > * { margin-top: 14px; }
+  .tl-details { display: block !important; }
+  .tl-details__body { display: block !important; margin-top: 0; }
+  .tl-tablewrap { overflow: visible !important; }
+  .tl-chart, .tl-rows, .tl-comp, .tl-wins, .tl-meter { page-break-inside: avoid; }
+  .tl-info__btn { display: none !important; }
+
+  .tl-printfoot {
+    margin-top: 16px; padding-top: 10px; border-top: 2px solid #FFC528;
+    display: flex !important; flex-direction: column; gap: 4px;
+    font-family: var(--font-body); font-size: 9pt; color: #7C8598; page-break-inside: avoid;
+  }
+  .tl-printfoot strong { font-family: var(--font-display); font-size: 11pt; color: #131A2E; }
+}
+
+/* Editable value chip: the slider is a convenience, not the only way in. */
+/* Single definition, the earlier duplicate was dead weight in the cascade. */
+.tl-ctl__v {
+  display: inline-flex; align-items: baseline; gap: 2px; justify-content: flex-end;
+  flex: 0 0 auto; min-width: 84px;
+  font-family: var(--font-display); font-variant-numeric: tabular-nums;
+  background: var(--t-soft); border: 1px solid transparent; border-radius: 8px;
+  padding: 3px 9px; transition: border-color 160ms ease, background 160ms ease;
+}
+.tl-ctl__v:focus-within { background: var(--t-card); border-color: var(--t-blue); box-shadow: 0 0 0 3px rgba(29,78,216,0.10); }
+.tl-ctl__fix { font-family: var(--font-display); font-size: 14px; font-weight: 600; color: var(--t-muted); }
+.tl-ctl__in {
+  border: 0; background: transparent; outline: none; padding: 0; max-width: 100%;
+  font-family: var(--font-display); font-size: 17px; font-weight: 800;
+  letter-spacing: -0.02em; color: var(--t-ink); font-variant-numeric: tabular-nums;
+  text-align: right; width: 9ch; -moz-appearance: textfield;
+}
+.tl-ctl__in::-webkit-outer-spin-button, .tl-ctl__in::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.tl-ctl__in:hover { cursor: text; }
+
+/* A cost bigger than what was left to spend runs off the left of its track. */
+.tl-row__under {
+  position: absolute; left: 0; top: -2px; bottom: -2px; width: 3px;
+  border-radius: 2px; background: var(--t-gap);
+}
+
+/* ── Advanced groups: one open at a time keeps the column short ── */
+.tl-groups { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--t-line); display: flex; flex-direction: column; gap: 8px; }
+.tl-group { border: 1px solid var(--t-line); border-radius: var(--t-r-s); background: var(--t-page); }
+.tl-group > summary {
+  cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; padding: 12px 14px;
+  font-family: var(--font-body); font-size: 13px; font-weight: 700; color: var(--t-ink);
+}
+.tl-group > summary::-webkit-details-marker { display: none; }
+.tl-group > summary span {
+  font-family: var(--font-display); font-size: 12.5px; font-weight: 700; color: var(--t-muted);
+  font-variant-numeric: tabular-nums;
+}
+.tl-group > summary::after {
+  content: "＋"; font-size: 13px; color: var(--t-blue); flex-shrink: 0; margin-left: 2px;
+}
+.tl-group[open] > summary::after { content: "−"; }
+.tl-group[open] > summary { border-bottom: 1px solid var(--t-line); }
+.tl-group > summary:hover { color: var(--t-blue); }
+.tl-group > summary:focus-visible { outline: 2px solid var(--t-blue); outline-offset: -2px; }
+.tl-group .tl-fields { padding: 14px; gap: 12px; }
+
+/* The answer stays pinned, so you can always see what a change did. */
+/* The answer is deliberately NOT sticky: pinning the first card in a scrolling
+   column parks it on top of everything after it. The controls column carries
+   the sticky behaviour instead. */
+
+/* Groups used as the primary control layout sit flush in the card. */
+.tl-groups--flush { margin-top: 0; padding-top: 0; border-top: 0; }
+.tl-groups--flush .tl-group .tl-fields { display: block; padding: 6px 14px 14px; }
+.tl-groups--flush .tl-group .tl-ctl:first-child { margin-top: 8px; }
+
+
+/* ── Shared blue hero card (assets/page-hero.css) ───────────────
+   tools.html and d2c-marketing-glossary.html now open on the shared
+   secondary-page hero. Their hero element changed from <header> to <section>,
+   because every base rule in page-hero.css is written as section.page-hero and
+   a <header> picks up none of them.
+
+   This file is linked AFTER page-hero.css, so the light-ground .tl-hero /
+   .gl-hero rules above sit later in the cascade. Most of them already lose on
+   specificity: section.page-hero (0,1,1) outranks .tl-hero (0,1,0), which is
+   what takes the cream ground, the old padding and the ink headline off the
+   card. What follows covers the ones that do not lose on their own, and states
+   the rest explicitly so a later edit up there cannot quietly win.
+
+   Every selector is prefixed with section.page-hero. The six calculators now
+   carry that class too, on the compact variant, so the .tl-crumb rules at the
+   foot of this block are shared with them by design; everything else here is
+   gated behind .tl-hero / .gl-hero / .tl-wrap, which the compact card has
+   none of. Calculator-only overrides live in the block below. */
+
+/* The card paints its own gradient. Only the colour layer is cleared, never
+   background/background-image, or this would erase the card itself. */
+section.page-hero.tl-hero { background-color: transparent; }
+
+/* .tl-wrap caps the column at --shell-max and centres it with --shell-pad.
+   Inside the card the card's own padding is the inset, so a second centred
+   column would float the copy into the middle of a full-bleed card. */
+section.page-hero > .tl-wrap {
+  max-width: none;
+  width: 100%;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+/* Headline and lede were --t-ink / --t-body on a near-white page. */
+section.page-hero .tl-hero__h,
+section.page-hero .gl-hero__h { color: #fff; }
+section.page-hero .tl-hero__p,
+section.page-hero .gl-hero__p { color: rgba(255, 255, 255, 0.76); }
+
+/* The emphasis serif is yellow on the card. These two pages carry .tl-serif
+   only inside the hero, but the scope keeps it blue anywhere else it lands. */
+section.page-hero .tl-serif { color: var(--mmc-yellow); }
+
+/* Breadcrumb: --t-muted grey with a --t-blue current state, both of which
+   disappear on deep blue. page-hero.css only lightens [class*="__crumb"] and
+   the compact calculator crumb, so .tl-crumb needs its own line. */
+section.page-hero .tl-crumb { color: rgba(255, 255, 255, 0.6); }
+section.page-hero .tl-crumb a { color: rgba(255, 255, 255, 0.72); }
+section.page-hero .tl-crumb a:hover,
+section.page-hero .tl-crumb [aria-current] { color: #fff; }
+
+
+/* ── The calculators on the shared compact hero ─────────────────
+   assets/page-hero.css puts the toolbar + headline block on the blue card and
+   already lightens h1, the lede and the breadcrumb. These are the pieces it
+   cannot know about: rules written here for a cream ground that still need
+   answering on blue, plus the seam between the card and the calculator.
+
+   Every selector is prefixed with section.page-hero--compact so it outranks
+   the shared sheet (which loads first) and touches nothing off the card.
+   The .tl-act pills keep their dark type: each carries its own opaque white
+   or yellow ground, so lightening them would be the mistake. */
+
+/* The head was a 62ch reading column on cream. On a full-bleed card that
+   squeezes the title into a narrow strip at the left, and the compact rule
+   already frees h1; the lede keeps its own 62ch measure from the shared file. */
+section.page-hero--compact .tl-head { max-width: none; margin-bottom: 0; }
+
+/* Tighter than the cream layout: the point of the compact card is that the
+   instrument is on screen without scrolling. */
+section.page-hero--compact .tl-toolbar { margin-bottom: clamp(14px, 1.6vw, 20px); }
+
+/* The emphasis serif is blue on cream and yellow on the card, same as every
+   other hero in the system. */
+section.page-hero--compact .tl-title em { color: var(--mmc-yellow); }
+
+/* A blue focus ring is invisible on a blue card. */
+section.page-hero--compact .tl-act:focus-visible { outline-color: #FFFFFF; }
+
+/* The "Link copied" toast is #12A150 on cream: ~2:1 on the card. Lifted to a
+   mint that still reads as success, ~5.7:1 where the toolbar actually sits. */
+section.page-hero--compact .tl-acts__toast { color: #A7F3D0; }
+
+/* .tl-page's 78–96px top padding existed to clear the fixed nav. The hero's
+   own top margin does that now, so without this the calculator sits behind a
+   band of dead ground. */
+section.page-hero--compact + .tl-page { padding-top: clamp(8px, 1.2vw, 16px); }
+
+/* The printed report already opens with the branded .tl-print cover, so the
+   card flattens back to the page rather than laying a blue slab across it.
+   Colours here are the on-cream values these elements print with today. */
+@media print {
+  section.page-hero--compact {
+    background: #fff !important;
+    color: #131A2E !important;
+    min-height: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  section.page-hero--compact::after { content: none !important; }
+  section.page-hero--compact .tl-title { color: #131A2E !important; }
+  section.page-hero--compact .tl-title em { color: #1D4ED8 !important; }
+  section.page-hero--compact .tl-title__s { color: #4A5468 !important; }
+}
+
+
+/* ── Tool hero: crumb, title, promise ────────────────────────
+   The action buttons used to live up here and wrapped into three ragged rows
+   on a narrow screen. They are working controls, not hero furniture, so they
+   now sit in their own bar directly above the instrument they operate. */
+section.page-hero--compact .tl-crumb {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.56); margin: 0 0 clamp(14px, 1.6vw, 20px);
+}
+section.page-hero--compact .tl-crumb a { color: rgba(255, 255, 255, 0.72); text-decoration: none; }
+section.page-hero--compact .tl-crumb a:hover { color: #fff; }
+section.page-hero--compact .tl-head { max-width: 46ch; }
+section.page-hero--compact .tl-title { margin: 0; }
+section.page-hero--compact .tl-title em {
+  font-family: var(--font-serif); font-style: italic; font-weight: 600;
+  color: var(--mmc-yellow);
+}
+section.page-hero--compact .tl-title__s {
+  margin-top: 10px; color: rgba(255, 255, 255, 0.76);
+  font-size: clamp(14px, 1.05vw, 16.5px); line-height: 1.55;
+}
+
+/* The promise. A calculator that tells a founder their CAC is upside down is
+   only useful if they keep reading, so the card says plainly what it is not. */
+.tl-reassure {
+  margin: clamp(20px, 2.2vw, 30px) 0 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--mmc-yellow);
+  max-width: 62ch;
+  font-family: var(--font-body);
+  font-size: clamp(13.5px, 1vw, 15.5px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+.tl-reassure b { color: #fff; font-weight: 800; }
+
+/* On the hub the same note sits on cream, not on the card. */
+.tl-hero .tl-reassure { color: var(--fg-2); }
+.tl-hero .tl-reassure b { color: var(--fg-1); }
+section.page-hero .tl-hero .tl-reassure,
+section.page-hero .tl-reassure { color: rgba(255, 255, 255, 0.7); }
+section.page-hero .tl-reassure b { color: #fff; }
+
+/* ── Action bar ──────────────────────────────────────────────
+   Sits between the hero and the instrument, right-aligned so the eye lands on
+   the calculator first and finds the controls only when it wants them. */
+.tl-actionbar {
+  display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px;
+  margin: 0 0 clamp(14px, 1.6vw, 20px);
+}
+@media (max-width: 720px) {
+  .tl-actionbar { justify-content: flex-start; }
+}
