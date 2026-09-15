@@ -146,7 +146,9 @@ function NClients() {
   /* Each cell holds two layers: the mark, and the work. Hovering swaps them,
      and pauses the row it is in so the image can actually be looked at. A
      client with no work image simply brightens, which is the honest state
-     until MMC drops the files in.
+     until MMC drops the file in and lists its id in MMC_WORK_ART
+     (clients-strip.jsx). Only listed brands request an image, so the rest
+     cost no 404.
 
      The track carries the row twice so translateX(-50%) lands exactly on the
      duplicate and the loop has no seam. */
@@ -157,11 +159,13 @@ function NClients() {
           <span className="n-wall__cell" key={c.id + "-" + i} title={c.name}
                 style={{ "--n-tilt": nTilt(c.id + i) }}>
             <span className="n-wall__mark">{c.w}</span>
-            <img className="n-wall__work"
-                 src={"assets/clients/" + c.id + "-work.jpg"}
-                 alt="" loading="lazy" decoding="async"
-                 onLoad={(e) => e.target.classList.add("is-ready")}
-                 onError={(e) => e.target.remove()} />
+            {(window.MMC_WORK_ART || []).includes(c.id) && (
+              <img className="n-wall__work"
+                   src={"assets/clients/" + c.id + "-work.jpg"}
+                   alt="" loading="lazy" decoding="async"
+                   onLoad={(e) => e.target.classList.add("is-ready")}
+                   onError={(e) => e.target.remove()} />
+            )}
           </span>
         ))}
       </div>

@@ -1,7 +1,9 @@
 # Client logos and work images
 
 Two files per client, both in this folder. Drop them in and they appear
-everywhere that client is shown. No code change; just re-run `./build.sh`.
+everywhere that client is shown. A logo needs no code change. A work image
+also needs its id added to `MMC_WORK_ART` in `clients-strip.jsx` and an `img`
+on its row in `home26/showcase.jsx`. Then re-run `./build.sh`.
 
 ## 1. The logo
 
@@ -43,6 +45,10 @@ made for that client.
   no transparency to keep.
 - A client with no work image simply brightens on hover instead. Nothing
   breaks, so add them as the work is cleared for use.
+- **List the id in `MMC_WORK_ART`** (`clients-strip.jsx`) when the file lands.
+  Unlisted brands never request an image, which is what keeps missing files
+  from firing a 404 on every visit, but it also means an unlisted file is
+  never shown.
 
 ## Filenames
 

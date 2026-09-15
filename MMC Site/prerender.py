@@ -58,6 +58,10 @@ SETTLE_JS = r"""
   document.querySelectorAll('[data-count-to]').forEach(e => {
     e.textContent = e.getAttribute('data-count-to');
   });
+  // The cookie banner is per-visitor state: it renders only when this browser
+  // has no stored choice, so whether it got baked depended on which Chrome
+  // profile ran the build. It is never page content.
+  document.querySelectorAll('.cookie[role="dialog"]').forEach(e => e.remove());
   return document.getElementById('root') ? 1 : 0;
 })()
 """

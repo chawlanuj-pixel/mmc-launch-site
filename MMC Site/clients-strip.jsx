@@ -91,6 +91,15 @@ const CS_ROW_B = CS_LOGOS.slice(7).concat(CS_LOGOS.slice(0, 7));
 
 window.MMC_CLIENT_LOGOS = CS_LOGOS;
 
+/* Brands with a work image at assets/clients/<id>-work.jpg, in book order. The
+   homepage wall and the Our Work grid request the file only for these: asking
+   for every brand's image fired a 404 per missing file on each visit. When a
+   new work image lands, add its id here. */
+window.MMC_WORK_ART = [
+  "bloom", "sprouts", "nmc", "skyfling", "lepure", "giraffe", "mittiy", "awwbaby",
+  "sprnt", "vagakids", "mbb", "notic", "oosh", "pandacabs", "mvj",
+];
+
 /* One logo slot for the whole site. Anything showing a client name calls this
    instead of printing the string, so dropping a file into assets/clients/
    updates every surface at once: the marquee, the grid, the trust rows on the

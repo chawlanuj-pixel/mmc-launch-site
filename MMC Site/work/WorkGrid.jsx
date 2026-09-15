@@ -7,20 +7,20 @@
    unless it comes from that file.
 
    Artwork is the one thing a card takes from outside clients.json. Drop a
-   1280x720 JPEG at assets/clients/<id>-work.jpg and that brand's card shows
-   the work instead of its gradient; the same file is what the homepage client
-   wall reveals on hover, so one image serves both surfaces. See
-   assets/clients/README.md for the spec.
+   1280x720 JPEG at assets/clients/<id>-work.jpg, add the id to MMC_WORK_ART in
+   clients-strip.jsx, and that brand's card shows the work instead of its
+   gradient; the same file is what the homepage client wall reveals on hover,
+   so one image serves both surfaces. See assets/clients/README.md for the spec.
 */
 
 /* The art panel. A brand shows its gradient and its mark until real work lands
    at assets/clients/<id>-work.jpg, at which point the shot takes the panel and
    the mark steps aside.
 
-   The <img> is always mounted rather than conditionally rendered, the same
-   trick clients-strip.jsx uses: nothing here can know in advance which files
-   exist, so the load event is the test and onError leaves the gradient alone.
-   That is what keeps a nine-brands-without-artwork grid from looking broken. */
+   Only brands listed in window.MMC_WORK_ART (clients-strip.jsx) mount the
+   <img>. Mounting one for every brand and letting onError sort it out fired a
+   404 per brand without artwork on every visit. The load event still gates the
+   swap, so a listed file that fails to load leaves the gradient alone. */
 function WgArt({ c }) {
   const [shot, setShot] = React.useState(false);
   return (
@@ -31,7 +31,7 @@ function WgArt({ c }) {
           ? <window.MMCLogo name={c.brand} className="wg__art-logo" />
           : c.mark}
       </span>
-      {c.id && (
+      {(window.MMC_WORK_ART || []).includes(c.id) && (
         <img className="wg__art-shot"
              src={"assets/clients/" + c.id + "-work.jpg"}
              alt="" loading="lazy" decoding="async"
