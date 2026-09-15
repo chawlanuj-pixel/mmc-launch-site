@@ -25,7 +25,8 @@ function WorkBlueprints() {
     { type: "D2C",  services: ["web", "perf", "creative", "social"] },                        // Notic
     { type: "D2C",  services: ["web", "perf", "creative"] },                                  // OOsh
     { type: "B2C",  services: ["web", "leadgen", "creative", "social"] },                     // Panda Cabs
-    { type: "B2C",  services: ["web", "leadgen", "creative", "social"] },                     // MVJ College of Engineering    { type: "B2C",  services: [] },                                                                  // Anchor by Panasonic
+    { type: "B2C",  services: ["web", "leadgen", "creative", "social"] },                     // MVJ College of Engineering
+    { type: "B2C",  services: [] },                                                                  // Anchor by Panasonic
     { type: "B2B",  services: [] },                                                                  // Flomate
     { type: "B2C",  services: [] },                                                                  // Green Hermitage
     { type: "B2C",  services: [] },                                                                  // Housing.com
@@ -34,6 +35,7 @@ function WorkBlueprints() {
     { type: "B2C",  services: [] },                                                                  // Rustomjee
     { type: "B2B",  services: [] },                                                                  // Saint-Gobain
     { type: "B2B",  services: [] },                                                                  // Gyproc
+    { type: "B2C",  services: [] },                                                                  // Club Mahindra
   ];
 
   const runs = (c, ...keys) => keys.every((k) => c.services.includes(k));

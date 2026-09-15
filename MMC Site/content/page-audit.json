@@ -1,7 +1,7 @@
 {
   "pages": {
     "index.html": {
-      "words": 1316,
+      "words": 1322,
       "h1": 1,
       "h2": 8,
       "title": "Performance Marketing That Survives the P&L | MMC India",
@@ -17,14 +17,14 @@
       ],
       "internalLinks": 45,
       "externalLinks": 3,
-      "images": 136,
+      "images": 139,
       "imagesMissingAlt": 0,
       "hasOgImage": true,
       "prerendered": true,
       "issues": []
     },
     "About.html": {
-      "words": 1461,
+      "words": 1469,
       "h1": 1,
       "h2": 11,
       "title": "About MMC: Built for How Modern Brands Actually Grow",
@@ -38,7 +38,7 @@
       ],
       "internalLinks": 29,
       "externalLinks": 4,
-      "images": 98,
+      "images": 102,
       "imagesMissingAlt": 0,
       "hasOgImage": true,
       "prerendered": true,
@@ -111,26 +111,28 @@
       "issues": []
     },
     "Careers.html": {
-      "words": 667,
+      "words": 1144,
       "h1": 1,
-      "h2": 4,
+      "h2": 6,
       "title": "Careers at MMC: Senior Bands, Zero Account Managers",
       "titleLen": 51,
-      "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. Average tenure runs 4.2 years. Apply with a single page, no resume required.",
-      "descLen": 153,
+      "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. A team of four, hiring across every discipline. Apply with a single page, no resume required.",
+      "descLen": 170,
       "canonical": "https://www.mondaymarketing.company/Careers.html",
       "schemaTypes": [
         "BreadcrumbList",
         "ItemList",
         "WebPage"
       ],
-      "internalLinks": 35,
+      "internalLinks": 28,
       "externalLinks": 3,
-      "images": 2,
+      "images": 19,
       "imagesMissingAlt": 0,
       "hasOgImage": true,
       "prerendered": true,
-      "issues": []
+      "issues": [
+        "meta description is 170 chars, over the 155 that fit in search results"
+      ]
     },
     "Contact.html": {
       "words": 607,
@@ -221,7 +223,7 @@
       "issues": []
     },
     "home-classic.html": {
-      "words": 1840,
+      "words": 1844,
       "h1": 1,
       "h2": 8,
       "title": "Momentum, Not Media Spend | MMC Growth Studio, Mumbai",
@@ -325,7 +327,7 @@
       "issues": []
     },
     "Our Work.html": {
-      "words": 702,
+      "words": 707,
       "h1": 1,
       "h2": 3,
       "title": "Our Work: 14 D2C Brands and ₹248Cr+ Compounded | MMC",
@@ -337,9 +339,9 @@
         "BreadcrumbList",
         "CollectionPage"
       ],
-      "internalLinks": 52,
+      "internalLinks": 53,
       "externalLinks": 3,
-      "images": 50,
+      "images": 52,
       "imagesMissingAlt": 0,
       "hasOgImage": true,
       "prerendered": true,

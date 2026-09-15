@@ -9,3 +9,6 @@ __pycache__/
 # GitHub hard-rejects any file over 100MB, so this cannot be pushed as-is.
 # Track it with Git LFS, or keep it in cloud storage alongside the repo.
 Video portfolio/
+
+# Backup copies of edited files
+*.bak

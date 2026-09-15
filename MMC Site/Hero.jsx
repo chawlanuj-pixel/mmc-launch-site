@@ -402,7 +402,7 @@ function DashboardPreview({ enter }) {
           <span className="dash__brand-mark">M</span>
           <div>
             <div className="dash__brand-name">MMC · Client book</div>
-            <div className="dash__brand-meta">24 brands · last 90d</div>
+            <div className="dash__brand-meta">25 brands · last 90d</div>
           </div>
         </div>
         <div className="dash__live">

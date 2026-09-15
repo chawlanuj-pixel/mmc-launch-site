@@ -182,7 +182,7 @@ function NClients() {
             </h2>
           </div>
           <p className="n-lede">
-            Twenty-four brands across B2B, B2C and D2C. Hover any one to see the
+            Twenty-five brands across B2B, B2C and D2C. Hover any one to see the
             work.
           </p>
         </div>
@@ -334,7 +334,7 @@ function NWork() {
         <div className="n-head n-rise">
           <div className="n-head__l">
             <span className="n-eyebrow">The client book</span>
-            <h2 className="n-h2">Twenty-four brands,<br /><span className="n-serif">and the work behind each.</span></h2>
+            <h2 className="n-h2">Twenty-five brands,<br /><span className="n-serif">and the work behind each.</span></h2>
           </div>
           <p className="n-lede">
             B2B, B2C and D2C. Every card lists the services we actually run for that brand,

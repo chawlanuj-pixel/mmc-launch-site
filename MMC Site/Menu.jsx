@@ -31,11 +31,11 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
       hint: "We build revenue engines."
     },
     {
-      n: "03", label: "Our Work", url: "Our Work.html",
+      n: "02", label: "Our Work", url: "Our Work.html",
       hint: "Featured · Growth Blueprints · Industries"
     },
     {
-      n: "04", label: "Free Tools", url: "tools.html",
+      n: "03", label: "Free Tools", url: "tools.html",
       hint: "Six calculators + a 53-term glossary",
       sub: [
         {
@@ -54,11 +54,11 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
       ]
     },
     {
-      n: "05", label: "About Us", url: "About.html",
+      n: "04", label: "About Us", url: "About.html",
       hint: "Story · Team · Awards · Press"
     },
     {
-      n: "06", label: "Careers", url: "Careers.html",
+      n: "05", label: "Careers", url: "Careers.html",
       hint: "6 open senior roles · Apply with one page",
       sub: [
         {
@@ -400,7 +400,7 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
         {/* Footer */}
         <div className="sunmenu__foot">
           <div className="sm-fade sunmenu__foot-cols">
-            <span><span className="t-muted">Currently building for</span>&nbsp; 24 brands</span>
+            <span><span className="t-muted">Currently building for</span>&nbsp; 25 brands</span>
             <span><span className="t-muted">In market since</span>&nbsp; 2019</span>
             <span><span className="t-muted">Revenue compounded</span>&nbsp; ₹248Cr+</span>
           </div>

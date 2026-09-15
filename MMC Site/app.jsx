@@ -36,8 +36,6 @@ function App() {
 
   return (
     <>
-      <Sky />
-
       <Nav
         menuBtnRef={menuBtnRef}
         menuOpen={menuOpen}

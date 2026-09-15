@@ -212,7 +212,7 @@
    "@id": "https://www.mondaymarketing.company/Careers.html#webpage",
    "url": "https://www.mondaymarketing.company/Careers.html",
    "name": "Careers at MMC: Senior Bands, Zero Account Managers",
-   "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. Average tenure runs 4.2 years. Apply with a single page, no resume required.",
+   "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. A team of four, hiring across every discipline. Apply with a single page, no resume required.",
    "isPartOf": {
     "@id": "https://www.mondaymarketing.company/#website"
    },

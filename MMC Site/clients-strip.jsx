@@ -1,5 +1,5 @@
 /* clients-strip.jsx, Cross-scrolling client strip.
-   The twenty-four brands MMC actually runs, taken from content/clients.json.
+   The twenty-five brands MMC actually runs, taken from content/clients.json.
    Names are set as wordmarks in the site's own display type rather than
    hand-drawn imitations of anyone's logo artwork, the same approach
    home26/partners.jsx uses for platform names. Nothing but the name and the
@@ -34,6 +34,7 @@ const CS_CLIENTS = [
   { id: "rustomjee",  name: "Rustomjee",                    type: "B2C"  },
   { id: "saintgobain",  name: "Saint-Gobain",                 type: "B2B"  },
   { id: "gyproc",     name: "Gyproc",                       type: "B2B"  },
+  { id: "clubmahindra", name: "Club Mahindra",           type: "B2C"  },
 ];
 
 /* Wordmarks have to sit inside fixed-size cards, and the names vary from three
@@ -165,7 +166,7 @@ function ClientsStrip() {
         <header className="cs-strip__head">
           <div className="eyebrow">The client book</div>
           <h2 className="cs-strip__h">
-            Twenty-four brands across B2B, B2C{" "}
+            Twenty-five brands across B2B, B2C{" "}
             <span className="em-serif" style={{ color: "var(--mmc-blue)" }}>&amp; D2C.</span>
           </h2>
         </header>
@@ -278,7 +279,7 @@ function ClientsStrip() {
 window.ClientsStrip = ClientsStrip;
 
 
-/* ClientsLogoGrid: the same twenty-four brands as the marquee above, rendered as
+/* ClientsLogoGrid: the same twenty-five brands as the marquee above, rendered as
    a filterable grid. Used inside the homepage proof section so a visitor can
    check we've handled their kind of business. The filter runs on the business
    type MMC supplied for each brand, one source of truth for both renderings. */

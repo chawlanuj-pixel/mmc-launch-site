@@ -9,7 +9,7 @@ function TrustLayer() {
     "Mittiy Made", "AwwBaby", "Sprnt", "Vaga Kids",
     "MyBrownButters", "Notic", "OOsh", "Panda Cabs",
     "MVJ College of Engineering",
-    "Anchor by Panasonic", "Flomate", "Green Hermitage", "Housing.com", "JSW", "LearningMate", "Rustomjee", "Saint-Gobain", "Gyproc"
+    "Anchor by Panasonic", "Flomate", "Green Hermitage", "Housing.com", "JSW", "LearningMate", "Rustomjee", "Saint-Gobain", "Gyproc", "Club Mahindra"
   ];
   const stats = [
     { num: "₹248", suffix: "Cr+", lbl: "Revenue compounded since 2019" },
@@ -24,7 +24,7 @@ function TrustLayer() {
         <div className="trust__head">
           <div className="eyebrow">Trusted by fast-growing brands</div>
           <h2 className="trust__h">
-            24 brands. <span className="em-serif" style={{color:"var(--mmc-blue)"}}>One thesis.</span>{" "}
+            25 brands. <span className="em-serif" style={{color:"var(--mmc-blue)"}}>One thesis.</span>{" "}
             Revenue that compounds.
           </h2>
         </div>

@@ -23,7 +23,6 @@ function SdApp() {
 
   return (
     <>
-      <window.Sky />
       <window.Nav
         menuBtnRef={menuBtnRef}
         menuOpen={menuOpen}

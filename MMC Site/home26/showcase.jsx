@@ -214,6 +214,7 @@ const N_FOLIO = [
   { b: "Rustomjee",                    t: "B2C",   svc: [] },
   { b: "Saint-Gobain",                 t: "B2B",   svc: [] },
   { b: "Gyproc",                       t: "B2B",   svc: [] },
+  { b: "Club Mahindra",                t: "B2C",   svc: [] },
 ];
 
 function NBrands() {
@@ -247,7 +248,7 @@ function NBrands() {
             <h2 className="n-h2">Selected work,<br /><span className="n-serif">and what we run on it.</span></h2>
           </div>
           <p className="n-lede">
-            Ten of the twenty-four. Each card carries the brand, the kind of business it is in
+            Ten of the twenty-five. Each card carries the brand, the kind of business it is in
             and exactly the services we run for it. Nothing else is claimed on their behalf.
           </p>
         </div>

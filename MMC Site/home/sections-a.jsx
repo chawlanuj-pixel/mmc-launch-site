@@ -193,13 +193,13 @@ function ProofV2({ active }) {
         <div className="ken">
           <image-slot id="home-proof" placeholder="Drop a grid of client / product photography" fit="cover" style={{width:"100%",height:"100%"}}></image-slot>
         </div>
-        <span className="media-tag"><span className="dot"></span>24 brands · 4 countries</span>
+        <span className="media-tag"><span className="dot"></span>25 brands · 4 countries</span>
       </div>
 
       <div className="sec__content">
         <span className="eyebrow2 r d1">Trusted by fast-growing brands</span>
         <h2 className="sec__h r d2" style={{fontSize:"clamp(30px,3vw,52px)"}}>
-          24 brands. <span className="serif-accent">One thesis.</span><br/>Revenue that compounds.
+          25 brands. <span className="serif-accent">One thesis.</span><br/>Revenue that compounds.
         </h2>
         <div className="stats r d3">
           <div className="stat stat-top"><span className="stat__n"><i>₹</i><Count to={248} run={active} /><i>Cr+</i></span><span className="stat__l">Revenue compounded since 2019</span></div>

@@ -14,9 +14,9 @@ function WorkHero({ onAudit }) {
       <div className="container wh__inner">
         {/* The book has no country column, so the old "4 countries" claim had no
             source. The type split does, straight from content/clients.json. */}
-        <div className={"eyebrow " + (enter ? "in" : "")}>Our work · 24 brands · 9 B2B, 9 D2C, 6 B2C</div>
+        <div className={"eyebrow " + (enter ? "in" : "")}>Our work · 25 brands · 9 B2B, 9 D2C, 7 B2C</div>
         <h1 className="wh__h">
-          <span className={clip("d1")}><span>24 brands.</span></span>
+          <span className={clip("d1")}><span>25 brands.</span></span>
           <span className={clip("d2")}><span><span className="em-serif">One</span> common thesis:</span></span>
           <span className={clip("d3")}><span>revenue that compounds.</span></span>
         </h1>

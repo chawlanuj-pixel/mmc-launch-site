@@ -1,6 +1,6 @@
 /* work/WorkGrid.jsx, the client book with a business-type filter.
 
-   The 24 brands below mirror content/clients.json, which is the single source
+   The 25 brands below mirror content/clients.json, which is the single source
    of truth. MMC supplied a business type and a service mix per brand and
    nothing else: no revenue, no ROAS, no lift, no timeframes. Nothing numeric
    is shown against a brand name here, and nothing may be added to a card
@@ -84,6 +84,7 @@ function WorkGrid() {
     { brand: "Rustomjee",                    id: "rustomjee",      type: "B2C",  art: "graphite",   mark: "RJ",    services: [] },
     { brand: "Saint-Gobain",                 id: "saintgobain",    type: "B2B",  art: "violet",     mark: "SG",    services: [] },
     { brand: "Gyproc",                       id: "gyproc",         type: "B2B",  art: "azure",      mark: "GY",    services: [] },
+    { brand: "Club Mahindra",                 id: "clubmahindra",   type: "B2C",  art: "sage",       mark: "CM",    services: [] },
   ];
 
   // Exactly the types present in clients.json, in book order. Nothing else may
