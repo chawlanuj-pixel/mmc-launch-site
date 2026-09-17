@@ -1,0 +1,4218 @@
+{
+ "Main": {
+  "height": 10695,
+  "words": 1068,
+  "sections": [
+   {
+    "tag": "SECTION",
+    "h": 800,
+    "y": 0,
+    "words": 90,
+    "ctas": 2,
+    "title": "Performance marketing that survives the "
+   },
+   {
+    "tag": "SECTION",
+    "h": 80,
+    "y": 800,
+    "words": 5,
+    "ctas": 0,
+    "title": "Selected work Impact created for"
+   },
+   {
+    "tag": "SECTION",
+    "h": 2231,
+    "y": 880,
+    "words": 190,
+    "ctas": 0,
+    "title": "Our Work."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1350,
+    "y": 3111,
+    "words": 129,
+    "ctas": 0,
+    "title": "Services."
+   },
+   {
+    "tag": "SECTION",
+    "h": 942,
+    "y": 4461,
+    "words": 56,
+    "ctas": 2,
+    "title": "Focus."
+   },
+   {
+    "tag": "SECTION",
+    "h": 413,
+    "y": 5403,
+    "words": 14,
+    "ctas": 0,
+    "title": "₹248Cr+ REVENUE COMPOUNDED 8.7× MEDIAN B"
+   },
+   {
+    "tag": "SECTION",
+    "h": 641,
+    "y": 5817,
+    "words": 65,
+    "ctas": 1,
+    "title": "Your numbers. Our senior team. Let’s tal"
+   },
+   {
+    "tag": "SECTION",
+    "h": 742,
+    "y": 6458,
+    "words": 72,
+    "ctas": 0,
+    "title": "Testimonials."
+   },
+   {
+    "tag": "SECTION",
+    "h": 738,
+    "y": 7200,
+    "words": 110,
+    "ctas": 1,
+    "title": "FAQ."
+   },
+   {
+    "tag": "SECTION",
+    "h": 941,
+    "y": 7937,
+    "words": 80,
+    "ctas": 0,
+    "title": "Latest insights."
+   },
+   {
+    "tag": "SECTION",
+    "h": 744,
+    "y": 8878,
+    "words": 83,
+    "ctas": 1,
+    "title": "Get in touch."
+   },
+   {
+    "tag": "SECTION",
+    "h": 401,
+    "y": 9622,
+    "words": 89,
+    "ctas": 0,
+    "title": "Every engagement is built for long-term,"
+   },
+   {
+    "tag": "FOOTER",
+    "h": 672,
+    "y": 10023,
+    "words": 80,
+    "ctas": 0,
+    "title": "DESIGN × MARKETING × TECHNOLOGY × CONTEN"
+   },
+   {
+    "tag": "DIV",
+    "h": 56,
+    "y": 728,
+    "words": 5,
+    "ctas": 0,
+    "title": "Ready to grow? Say hi"
+   }
+  ],
+  "ctaCount": 7,
+  "ctas": [
+   "BOOK A STRATEGY CALL",
+   "SEE OUR WORK",
+   "EXPLORE D2C GROWTH",
+   "EXPLORE ADMISSIONS",
+   "SCHEDULE CONSULTATION",
+   "LET US KNOW",
+   "SUBMIT REQUEST"
+  ],
+  "actionLike": [
+   "Book a call",
+   "Book a strategy call",
+   "See our work",
+   "Explore the work",
+   "View project",
+   "View project",
+   "View project",
+   "View project",
+   "View project",
+   "View project",
+   "View all projects",
+   "Explore D2C growth",
+   "Explore admissions",
+   "Book a free 30-minute strategy call today.",
+   "Schedule consultation",
+   "Let us know",
+   "Read more",
+   "Read more",
+   "Read more",
+   "Schedule a",
+   "Explore",
+   "Submit request",
+   "Book a call"
+  ],
+  "actionLikeCount": 23,
+  "smallButtons": [
+   "View project",
+   "View project",
+   "View project",
+   "View project",
+   "View project",
+   "View project"
+  ],
+  "chipsAndPills": 63,
+  "tags": 18,
+  "chips": 33,
+  "panels": 2,
+  "cards": 11,
+  "longestParaChars": 371,
+  "parasOver90": 5,
+  "bigTitles": [
+   "Our Work",
+   ".",
+   "Services",
+   ".",
+   "Focus",
+   ".",
+   "₹248",
+   "8.7",
+   "14/14",
+   "27",
+   "Testimonials",
+   ".",
+   "FAQ",
+   ".",
+   "Latest insights",
+   ".",
+   "Get in touch",
+   "."
+  ],
+  "radii": [
+   [
+    "50%",
+    48
+   ],
+   [
+    "50px",
+    36
+   ],
+   [
+    "4px",
+    24
+   ],
+   [
+    "6px",
+    18
+   ],
+   [
+    "16px",
+    10
+   ],
+   [
+    "14px",
+    10
+   ],
+   [
+    "12px",
+    7
+   ],
+   [
+    "20px",
+    6
+   ],
+   [
+    "999px",
+    4
+   ],
+   [
+    "8px",
+    3
+   ],
+   [
+    "14px 14px 4px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.9) 0px 40px 80px -40px",
+    2
+   ],
+   [
+    "rgba(17, 24, 39, 0.14) 0px 18px 48px -20px",
+    1
+   ],
+   [
+    "rgba(43, 181, 115, 0.18) 0px 0px 0px 4px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.85) 0px 30px 60px -24px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 30px 70px -40px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 14px 34px -14px",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.6) 0px 14px 30px -10px",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    82
+   ],
+   [
+    "14px",
+    55
+   ],
+   [
+    "16px",
+    32
+   ],
+   [
+    "13px",
+    31
+   ],
+   [
+    "18px",
+    23
+   ],
+   [
+    "20px",
+    16
+   ],
+   [
+    "11px",
+    14
+   ],
+   [
+    "100px",
+    14
+   ],
+   [
+    "15px",
+    8
+   ],
+   [
+    "30px",
+    7
+   ],
+   [
+    "10px",
+    5
+   ],
+   [
+    "40px",
+    5
+   ],
+   [
+    "13.5px",
+    5
+   ],
+   [
+    "46px",
+    4
+   ],
+   [
+    "90px",
+    4
+   ],
+   [
+    "46.8px",
+    3
+   ],
+   [
+    "54px",
+    3
+   ],
+   [
+    "26px",
+    3
+   ],
+   [
+    "32px",
+    3
+   ],
+   [
+    "11.5px",
+    2
+   ],
+   [
+    "60px",
+    2
+   ],
+   [
+    "56px",
+    2
+   ],
+   [
+    "9.5px",
+    1
+   ],
+   [
+    "52px",
+    1
+   ],
+   [
+    "28.6px",
+    1
+   ],
+   [
+    "15.5px",
+    1
+   ]
+  ],
+  "fontWeights": [
+   [
+    "600",
+    170
+   ],
+   [
+    "400",
+    74
+   ],
+   [
+    "500",
+    68
+   ],
+   [
+    "700",
+    15
+   ]
+  ],
+  "letterSpacings": [
+   [
+    "normal",
+    92
+   ],
+   [
+    "-0.48px",
+    33
+   ],
+   [
+    "-0.64px",
+    22
+   ],
+   [
+    "-0.12px",
+    18
+   ],
+   [
+    "0.065px",
+    16
+   ],
+   [
+    "-0.54px",
+    13
+   ],
+   [
+    "0.66px",
+    11
+   ],
+   [
+    "-0.72px",
+    10
+   ],
+   [
+    "-0.8px",
+    8
+   ],
+   [
+    "0.28px",
+    7
+   ],
+   [
+    "-8px",
+    7
+   ],
+   [
+    "-2px",
+    7
+   ],
+   [
+    "-0.6px",
+    7
+   ],
+   [
+    "-0.56px",
+    7
+   ],
+   [
+    "-1.2px",
+    6
+   ],
+   [
+    "-0.7px",
+    6
+   ],
+   [
+    "0.48px",
+    6
+   ],
+   [
+    "-4.05px",
+    4
+   ],
+   [
+    "1.2px",
+    4
+   ],
+   [
+    "-0.07px",
+    4
+   ],
+   [
+    "0.6px",
+    3
+   ],
+   [
+    "-0.936px",
+    3
+   ],
+   [
+    "-1.08px",
+    3
+   ],
+   [
+    "-1.04px",
+    3
+   ],
+   [
+    "-1.6px",
+    3
+   ],
+   [
+    "1.44px",
+    2
+   ],
+   [
+    "-2.6px",
+    2
+   ],
+   [
+    "-2.3px",
+    2
+   ],
+   [
+    "-0.92px",
+    2
+   ],
+   [
+    "-1.68px",
+    2
+   ],
+   [
+    "0.8px",
+    2
+   ],
+   [
+    "-1.05px",
+    2
+   ],
+   [
+    "-0.14px",
+    1
+   ],
+   [
+    "0.95px",
+    1
+   ],
+   [
+    "0.92px",
+    1
+   ],
+   [
+    "0.96px",
+    1
+   ],
+   [
+    "-3.3px",
+    1
+   ],
+   [
+    "0.52px",
+    1
+   ],
+   [
+    "0.72px",
+    1
+   ],
+   [
+    "2.64px",
+    1
+   ],
+   [
+    "0.24px",
+    1
+   ],
+   [
+    "-0.065px",
+    1
+   ]
+  ],
+  "textColours": [
+   [
+    "rgb(14, 22, 38)",
+    130
+   ],
+   [
+    "rgb(255, 255, 255)",
+    42
+   ],
+   [
+    "rgb(79, 90, 107)",
+    34
+   ],
+   [
+    "rgb(255, 197, 40)",
+    28
+   ],
+   [
+    "rgba(255, 255, 255, 0.78)",
+    22
+   ],
+   [
+    "rgb(182, 188, 200)",
+    21
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    9
+   ],
+   [
+    "rgb(154, 163, 178)",
+    9
+   ],
+   [
+    "rgb(29, 78, 216)",
+    8
+   ],
+   [
+    "rgba(255, 255, 255, 0.85)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    5
+   ],
+   [
+    "rgb(15, 30, 94)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.8)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.55)",
+    2
+   ],
+   [
+    "rgb(250, 250, 250)",
+    1
+   ],
+   [
+    "rgba(250, 250, 250, 0.82)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.75)",
+    1
+   ],
+   [
+    "rgb(46, 56, 73)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.6)",
+    1
+   ]
+  ],
+  "bgColours": [
+   [
+    "rgb(255, 255, 255)",
+    68
+   ],
+   [
+    "rgb(15, 30, 94)",
+    17
+   ],
+   [
+    "gradient",
+    14
+   ],
+   [
+    "rgb(255, 197, 40)",
+    9
+   ],
+   [
+    "rgb(29, 78, 216)",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.14)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.16)",
+    2
+   ],
+   [
+    "rgb(251, 250, 246)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.82)",
+    1
+   ],
+   [
+    "rgb(43, 181, 115)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.15)",
+    1
+   ],
+   [
+    "rgb(227, 234, 252)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    1
+   ],
+   [
+    "rgb(37, 211, 102)",
+    1
+   ]
+  ],
+  "distinct": {
+   "radii": 11,
+   "shadows": 7,
+   "fontSizes": 26,
+   "fontWeights": 4,
+   "letterSpacings": 42,
+   "textColours": 20,
+   "bgColours": 15
+  }
+ },
+ "D2C": {
+  "height": 8614,
+  "words": 915,
+  "sections": [
+   {
+    "tag": "SECTION",
+    "h": 740,
+    "y": 0,
+    "words": 97,
+    "ctas": 2,
+    "title": "Grow the brand. Keep the margin."
+   },
+   {
+    "tag": "SECTION",
+    "h": 798,
+    "y": 740,
+    "words": 125,
+    "ctas": 0,
+    "title": "Leaks."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1305,
+    "y": 1538,
+    "words": 127,
+    "ctas": 0,
+    "title": "Services."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1535,
+    "y": 2843,
+    "words": 112,
+    "ctas": 0,
+    "title": "Our Work."
+   },
+   {
+    "tag": "SECTION",
+    "h": 413,
+    "y": 4378,
+    "words": 13,
+    "ctas": 0,
+    "title": "8.7× MEDIAN BLENDED ROAS ₹248Cr+ REVENUE"
+   },
+   {
+    "tag": "SECTION",
+    "h": 947,
+    "y": 4791,
+    "words": 104,
+    "ctas": 0,
+    "title": "Scorecard."
+   },
+   {
+    "tag": "SECTION",
+    "h": 818,
+    "y": 5738,
+    "words": 106,
+    "ctas": 3,
+    "title": "Plans."
+   },
+   {
+    "tag": "SECTION",
+    "h": 641,
+    "y": 6556,
+    "words": 65,
+    "ctas": 1,
+    "title": "Your numbers. Our senior team. Let’s tal"
+   },
+   {
+    "tag": "SECTION",
+    "h": 745,
+    "y": 7197,
+    "words": 81,
+    "ctas": 1,
+    "title": "FAQ."
+   },
+   {
+    "tag": "FOOTER",
+    "h": 672,
+    "y": 7942,
+    "words": 80,
+    "ctas": 0,
+    "title": "DESIGN × MARKETING × TECHNOLOGY × CONTEN"
+   },
+   {
+    "tag": "DIV",
+    "h": 56,
+    "y": 664,
+    "words": 5,
+    "ctas": 0,
+    "title": "Ready to grow? Say hi"
+   }
+  ],
+  "ctaCount": 7,
+  "ctas": [
+   "AUDIT MY BRAND",
+   "SEE D2C WORK",
+   "TALK TO US",
+   "TALK TO US",
+   "TALK TO US",
+   "SCHEDULE CONSULTATION",
+   "ASK US ON WHATSAPP"
+  ],
+  "actionLike": [
+   "Book a call",
+   "Audit my brand",
+   "See D2C work",
+   "View project",
+   "View project",
+   "View project",
+   "View project",
+   "Talk to us",
+   "Talk to us",
+   "Talk to us",
+   "Book a free 30-minute strategy call today.",
+   "Schedule consultation",
+   "Ask us on WhatsApp",
+   "Book a call"
+  ],
+  "actionLikeCount": 14,
+  "smallButtons": [
+   "View project",
+   "View project",
+   "View project",
+   "View project"
+  ],
+  "chipsAndPills": 41,
+  "tags": 12,
+  "chips": 20,
+  "panels": 3,
+  "cards": 15,
+  "longestParaChars": 167,
+  "parasOver90": 3,
+  "bigTitles": [
+   "Leaks",
+   ".",
+   "Services",
+   ".",
+   "Our Work",
+   ".",
+   "8.7",
+   "₹248",
+   "14/14",
+   "27",
+   "Scorecard",
+   ".",
+   "Plans",
+   ".",
+   "FAQ",
+   "."
+  ],
+  "radii": [
+   [
+    "50%",
+    44
+   ],
+   [
+    "4px",
+    21
+   ],
+   [
+    "50px",
+    20
+   ],
+   [
+    "14px",
+    13
+   ],
+   [
+    "6px",
+    12
+   ],
+   [
+    "4px 4px 2px 2px",
+    12
+   ],
+   [
+    "16px",
+    9
+   ],
+   [
+    "20px",
+    7
+   ],
+   [
+    "999px",
+    4
+   ],
+   [
+    "12px",
+    1
+   ],
+   [
+    "14px 14px 4px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.9) 0px 40px 80px -40px",
+    2
+   ],
+   [
+    "rgba(17, 24, 39, 0.14) 0px 18px 48px -20px",
+    1
+   ],
+   [
+    "rgba(43, 181, 115, 0.18) 0px 0px 0px 4px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.8) 0px 40px 80px -30px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 30px 70px -40px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 14px 34px -14px",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.6) 0px 14px 30px -10px",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    58
+   ],
+   [
+    "14px",
+    52
+   ],
+   [
+    "16px",
+    25
+   ],
+   [
+    "13px",
+    25
+   ],
+   [
+    "15px",
+    24
+   ],
+   [
+    "14.5px",
+    20
+   ],
+   [
+    "20px",
+    13
+   ],
+   [
+    "100px",
+    12
+   ],
+   [
+    "18px",
+    10
+   ],
+   [
+    "15.5px",
+    7
+   ],
+   [
+    "11px",
+    7
+   ],
+   [
+    "24px",
+    6
+   ],
+   [
+    "40px",
+    5
+   ],
+   [
+    "30px",
+    5
+   ],
+   [
+    "13.5px",
+    5
+   ],
+   [
+    "12.5px",
+    4
+   ],
+   [
+    "90px",
+    4
+   ],
+   [
+    "22px",
+    4
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "46.8px",
+    3
+   ],
+   [
+    "64px",
+    3
+   ],
+   [
+    "9.5px",
+    2
+   ],
+   [
+    "11.5px",
+    2
+   ],
+   [
+    "60px",
+    2
+   ],
+   [
+    "56px",
+    2
+   ]
+  ],
+  "fontWeights": [
+   [
+    "600",
+    150
+   ],
+   [
+    "400",
+    89
+   ],
+   [
+    "500",
+    42
+   ],
+   [
+    "700",
+    22
+   ]
+  ],
+  "letterSpacings": [
+   [
+    "normal",
+    136
+   ],
+   [
+    "-0.48px",
+    21
+   ],
+   [
+    "0.065px",
+    16
+   ],
+   [
+    "-0.12px",
+    12
+   ],
+   [
+    "-0.64px",
+    10
+   ],
+   [
+    "-0.8px",
+    9
+   ],
+   [
+    "0.28px",
+    7
+   ],
+   [
+    "0.66px",
+    7
+   ],
+   [
+    "-1.2px",
+    6
+   ],
+   [
+    "-8px",
+    6
+   ],
+   [
+    "-2px",
+    6
+   ],
+   [
+    "-1.08px",
+    6
+   ],
+   [
+    "-0.6px",
+    5
+   ],
+   [
+    "-0.54px",
+    5
+   ],
+   [
+    "-0.72px",
+    5
+   ],
+   [
+    "-0.7px",
+    4
+   ],
+   [
+    "0.48px",
+    4
+   ],
+   [
+    "-4.05px",
+    4
+   ],
+   [
+    "1.2px",
+    4
+   ],
+   [
+    "-0.88px",
+    4
+   ],
+   [
+    "-0.07px",
+    4
+   ],
+   [
+    "-0.936px",
+    3
+   ],
+   [
+    "-3.84px",
+    3
+   ],
+   [
+    "0.95px",
+    2
+   ],
+   [
+    "1.44px",
+    2
+   ],
+   [
+    "1px",
+    2
+   ],
+   [
+    "-1.68px",
+    2
+   ],
+   [
+    "-0.14px",
+    1
+   ],
+   [
+    "0.92px",
+    1
+   ],
+   [
+    "0.96px",
+    1
+   ],
+   [
+    "0.6px",
+    1
+   ],
+   [
+    "-3.3px",
+    1
+   ],
+   [
+    "2.64px",
+    1
+   ],
+   [
+    "0.24px",
+    1
+   ],
+   [
+    "-0.065px",
+    1
+   ]
+  ],
+  "textColours": [
+   [
+    "rgb(14, 22, 38)",
+    96
+   ],
+   [
+    "rgb(79, 90, 107)",
+    48
+   ],
+   [
+    "rgb(255, 255, 255)",
+    33
+   ],
+   [
+    "rgba(255, 255, 255, 0.78)",
+    22
+   ],
+   [
+    "rgb(255, 197, 40)",
+    20
+   ],
+   [
+    "rgb(182, 188, 200)",
+    19
+   ],
+   [
+    "rgb(46, 56, 73)",
+    12
+   ],
+   [
+    "rgb(29, 78, 216)",
+    11
+   ],
+   [
+    "rgb(21, 128, 61)",
+    9
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    9
+   ],
+   [
+    "rgba(255, 255, 255, 0.85)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.74)",
+    5
+   ],
+   [
+    "rgb(15, 30, 94)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.6)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.55)",
+    2
+   ],
+   [
+    "rgba(250, 250, 250, 0.82)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ]
+  ],
+  "bgColours": [
+   [
+    "rgb(255, 255, 255)",
+    54
+   ],
+   [
+    "rgb(255, 197, 40)",
+    18
+   ],
+   [
+    "rgb(15, 30, 94)",
+    14
+   ],
+   [
+    "rgba(29, 78, 216, 0.2)",
+    11
+   ],
+   [
+    "gradient",
+    10
+   ],
+   [
+    "rgb(29, 78, 216)",
+    5
+   ],
+   [
+    "rgb(251, 250, 246)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.82)",
+    1
+   ],
+   [
+    "rgb(43, 181, 115)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.15)",
+    1
+   ],
+   [
+    "rgb(227, 234, 252)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    1
+   ],
+   [
+    "rgb(37, 211, 102)",
+    1
+   ]
+  ],
+  "distinct": {
+   "radii": 11,
+   "shadows": 7,
+   "fontSizes": 25,
+   "fontWeights": 4,
+   "letterSpacings": 35,
+   "textColours": 18,
+   "bgColours": 14
+  }
+ },
+ "Education": {
+  "height": 9851,
+  "words": 1061,
+  "sections": [
+   {
+    "tag": "SECTION",
+    "h": 800,
+    "y": 0,
+    "words": 92,
+    "ctas": 2,
+    "title": "Every seat, filled with the right studen"
+   },
+   {
+    "tag": "SECTION",
+    "h": 109,
+    "y": 800,
+    "words": 29,
+    "ctas": 0,
+    "title": "Choose your institute Each playbook has "
+   },
+   {
+    "tag": "SECTION",
+    "h": 661,
+    "y": 909,
+    "words": 125,
+    "ctas": 0,
+    "title": "Journey."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1453,
+    "y": 1570,
+    "words": 165,
+    "ctas": 0,
+    "title": "Services."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1450,
+    "y": 3023,
+    "words": 111,
+    "ctas": 1,
+    "title": "Our Work."
+   },
+   {
+    "tag": "SECTION",
+    "h": 413,
+    "y": 4473,
+    "words": 19,
+    "ctas": 0,
+    "title": "<5min FIRST REPLY TO AN ENQUIRY 6 INSTIT"
+   },
+   {
+    "tag": "SECTION",
+    "h": 887,
+    "y": 4887,
+    "words": 67,
+    "ctas": 1,
+    "title": "Calendar."
+   },
+   {
+    "tag": "SECTION",
+    "h": 666,
+    "y": 5773,
+    "words": 93,
+    "ctas": 1,
+    "title": "What does one admission really cost you?"
+   },
+   {
+    "tag": "SECTION",
+    "h": 802,
+    "y": 6439,
+    "words": 38,
+    "ctas": 0,
+    "title": "Testimonials."
+   },
+   {
+    "tag": "SECTION",
+    "h": 555,
+    "y": 7241,
+    "words": 65,
+    "ctas": 0,
+    "title": "Compliant."
+   },
+   {
+    "tag": "SECTION",
+    "h": 650,
+    "y": 7796,
+    "words": 93,
+    "ctas": 1,
+    "title": "FAQ."
+   },
+   {
+    "tag": "SECTION",
+    "h": 734,
+    "y": 8446,
+    "words": 79,
+    "ctas": 1,
+    "title": "Fill next year’s seats."
+   },
+   {
+    "tag": "FOOTER",
+    "h": 672,
+    "y": 9180,
+    "words": 80,
+    "ctas": 0,
+    "title": "DESIGN × MARKETING × TECHNOLOGY × CONTEN"
+   },
+   {
+    "tag": "DIV",
+    "h": 56,
+    "y": 728,
+    "words": 5,
+    "ctas": 0,
+    "title": "Ready to grow? Say hi"
+   }
+  ],
+  "ctaCount": 7,
+  "ctas": [
+   "PLAN MY ADMISSION SEASON",
+   "SEE EDUCATION WORK",
+   "EXPLORE SCHOOL SALES",
+   "BUILD MY CALENDAR",
+   "OPEN THE CALCULATOR",
+   "ASK US ON WHATSAPP",
+   "PLAN MY ADMISSION SEASON"
+  ],
+  "actionLike": [
+   "Book a call",
+   "Plan my admission season",
+   "See education work",
+   "Booked, but never confirmed, reminded or followed up.",
+   "View project",
+   "View project",
+   "Explore school sales",
+   "Build my calendar",
+   "Open the calculator",
+   "Ask us on WhatsApp",
+   "Plan my admission season",
+   "Book a call"
+  ],
+  "actionLikeCount": 12,
+  "smallButtons": [
+   "View project",
+   "View project"
+  ],
+  "chipsAndPills": 35,
+  "tags": 6,
+  "chips": 20,
+  "panels": 4,
+  "cards": 17,
+  "longestParaChars": 192,
+  "parasOver90": 8,
+  "bigTitles": [
+   "Journey",
+   ".",
+   "Services",
+   ".",
+   "Our Work",
+   ".",
+   "<5",
+   "6",
+   "12",
+   "1",
+   "Calendar",
+   ".",
+   "Testimonials",
+   ".",
+   "“",
+   "Compliant",
+   ".",
+   "FAQ",
+   ".",
+   "Fill next year’s seats",
+   "."
+  ],
+  "radii": [
+   [
+    "50px",
+    30
+   ],
+   [
+    "50%",
+    23
+   ],
+   [
+    "6px",
+    16
+   ],
+   [
+    "14px",
+    16
+   ],
+   [
+    "4px",
+    15
+   ],
+   [
+    "20px",
+    7
+   ],
+   [
+    "16px",
+    6
+   ],
+   [
+    "8px",
+    5
+   ],
+   [
+    "999px",
+    4
+   ],
+   [
+    "12px",
+    2
+   ],
+   [
+    "14px 14px 4px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.9) 0px 40px 80px -40px",
+    2
+   ],
+   [
+    "rgba(17, 24, 39, 0.14) 0px 18px 48px -20px",
+    1
+   ],
+   [
+    "rgba(43, 181, 115, 0.18) 0px 0px 0px 4px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.8) 0px 40px 80px -30px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 30px 70px -40px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 14px 34px -14px",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.6) 0px 14px 30px -10px",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    61
+   ],
+   [
+    "16px",
+    37
+   ],
+   [
+    "14px",
+    35
+   ],
+   [
+    "13px",
+    32
+   ],
+   [
+    "15px",
+    17
+   ],
+   [
+    "18px",
+    16
+   ],
+   [
+    "100px",
+    14
+   ],
+   [
+    "20px",
+    11
+   ],
+   [
+    "11px",
+    10
+   ],
+   [
+    "24px",
+    9
+   ],
+   [
+    "30px",
+    9
+   ],
+   [
+    "12.5px",
+    7
+   ],
+   [
+    "13.5px",
+    7
+   ],
+   [
+    "40px",
+    6
+   ],
+   [
+    "90px",
+    5
+   ],
+   [
+    "17px",
+    5
+   ],
+   [
+    "15.5px",
+    4
+   ],
+   [
+    "11.5px",
+    3
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "9.5px",
+    2
+   ],
+   [
+    "22px",
+    2
+   ],
+   [
+    "60px",
+    2
+   ],
+   [
+    "46px",
+    2
+   ],
+   [
+    "46.8px",
+    2
+   ],
+   [
+    "56px",
+    2
+   ],
+   [
+    "88px",
+    2
+   ],
+   [
+    "34px",
+    1
+   ]
+  ],
+  "fontWeights": [
+   [
+    "600",
+    159
+   ],
+   [
+    "400",
+    74
+   ],
+   [
+    "500",
+    61
+   ],
+   [
+    "700",
+    12
+   ]
+  ],
+  "letterSpacings": [
+   [
+    "normal",
+    105
+   ],
+   [
+    "-0.48px",
+    21
+   ],
+   [
+    "-0.64px",
+    20
+   ],
+   [
+    "0.065px",
+    16
+   ],
+   [
+    "-0.54px",
+    10
+   ],
+   [
+    "-1.08px",
+    9
+   ],
+   [
+    "-0.6px",
+    8
+   ],
+   [
+    "-1.2px",
+    7
+   ],
+   [
+    "0.28px",
+    7
+   ],
+   [
+    "-8px",
+    7
+   ],
+   [
+    "-2px",
+    7
+   ],
+   [
+    "-0.8px",
+    7
+   ],
+   [
+    "-0.45px",
+    6
+   ],
+   [
+    "-0.12px",
+    6
+   ],
+   [
+    "-0.72px",
+    6
+   ],
+   [
+    "-0.56px",
+    6
+   ],
+   [
+    "-0.51px",
+    5
+   ],
+   [
+    "-4.05px",
+    4
+   ],
+   [
+    "1.2px",
+    4
+   ],
+   [
+    "-0.42px",
+    4
+   ],
+   [
+    "-0.07px",
+    4
+   ],
+   [
+    "0.66px",
+    3
+   ],
+   [
+    "-1.35px",
+    3
+   ],
+   [
+    "0.95px",
+    2
+   ],
+   [
+    "1.44px",
+    2
+   ],
+   [
+    "0.6px",
+    2
+   ],
+   [
+    "-0.7px",
+    2
+   ],
+   [
+    "0.48px",
+    2
+   ],
+   [
+    "-0.936px",
+    2
+   ],
+   [
+    "-1.68px",
+    2
+   ],
+   [
+    "-0.14px",
+    1
+   ],
+   [
+    "0.92px",
+    1
+   ],
+   [
+    "0.96px",
+    1
+   ],
+   [
+    "-0.88px",
+    1
+   ],
+   [
+    "-3.3px",
+    1
+   ],
+   [
+    "-2.3px",
+    1
+   ],
+   [
+    "-0.92px",
+    1
+   ],
+   [
+    "1px",
+    1
+   ],
+   [
+    "0.72px",
+    1
+   ],
+   [
+    "-0.66px",
+    1
+   ],
+   [
+    "-1.8px",
+    1
+   ],
+   [
+    "-1.53px",
+    1
+   ],
+   [
+    "-7.04px",
+    1
+   ],
+   [
+    "-1.76px",
+    1
+   ],
+   [
+    "2.64px",
+    1
+   ],
+   [
+    "0.24px",
+    1
+   ],
+   [
+    "-0.065px",
+    1
+   ]
+  ],
+  "textColours": [
+   [
+    "rgb(14, 22, 38)",
+    95
+   ],
+   [
+    "rgb(79, 90, 107)",
+    58
+   ],
+   [
+    "rgb(255, 255, 255)",
+    42
+   ],
+   [
+    "rgb(255, 197, 40)",
+    25
+   ],
+   [
+    "rgba(255, 255, 255, 0.78)",
+    22
+   ],
+   [
+    "rgb(29, 78, 216)",
+    11
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    10
+   ],
+   [
+    "rgb(46, 56, 73)",
+    9
+   ],
+   [
+    "rgba(255, 255, 255, 0.85)",
+    6
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    6
+   ],
+   [
+    "rgb(154, 163, 178)",
+    6
+   ],
+   [
+    "rgb(15, 30, 94)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.66)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.6)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.55)",
+    2
+   ],
+   [
+    "rgba(250, 250, 250, 0.82)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.76)",
+    1
+   ],
+   [
+    "rgb(21, 128, 61)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ]
+  ],
+  "bgColours": [
+   [
+    "rgb(255, 255, 255)",
+    58
+   ],
+   [
+    "rgb(15, 30, 94)",
+    19
+   ],
+   [
+    "gradient",
+    13
+   ],
+   [
+    "rgb(255, 197, 40)",
+    11
+   ],
+   [
+    "rgb(29, 78, 216)",
+    8
+   ],
+   [
+    "rgb(238, 242, 251)",
+    5
+   ],
+   [
+    "rgb(227, 234, 252)",
+    3
+   ],
+   [
+    "rgb(37, 211, 102)",
+    2
+   ],
+   [
+    "rgb(251, 250, 246)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.82)",
+    1
+   ],
+   [
+    "rgb(43, 181, 115)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.15)",
+    1
+   ],
+   [
+    "rgba(15, 30, 94, 0.12)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.16)",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.16)",
+    1
+   ],
+   [
+    "rgb(143, 176, 245)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    1
+   ]
+  ],
+  "distinct": {
+   "radii": 11,
+   "shadows": 7,
+   "fontSizes": 27,
+   "fontWeights": 4,
+   "letterSpacings": 47,
+   "textColours": 19,
+   "bgColours": 18
+  }
+ },
+ "Service": {
+  "height": 9710,
+  "words": 1015,
+  "sections": [
+   {
+    "tag": "SECTION",
+    "h": 797,
+    "y": 108,
+    "words": 105,
+    "ctas": 0,
+    "title": "Meta Ads that compound, not just convert"
+   },
+   {
+    "tag": "SECTION",
+    "h": 638,
+    "y": 955,
+    "words": 93,
+    "ctas": 0,
+    "title": "Fit."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1138,
+    "y": 1593,
+    "words": 111,
+    "ctas": 0,
+    "title": "Pillars."
+   },
+   {
+    "tag": "SECTION",
+    "h": 720,
+    "y": 2731,
+    "words": 92,
+    "ctas": 1,
+    "title": "A creative engine that never waits for a"
+   },
+   {
+    "tag": "SECTION",
+    "h": 616,
+    "y": 3451,
+    "words": 78,
+    "ctas": 0,
+    "title": "Month one."
+   },
+   {
+    "tag": "SECTION",
+    "h": 460,
+    "y": 4067,
+    "words": 26,
+    "ctas": 1,
+    "title": "[PHOTO] “ [A line from the MMC lead who "
+   },
+   {
+    "tag": "SECTION",
+    "h": 910,
+    "y": 4527,
+    "words": 66,
+    "ctas": 1,
+    "title": "Our Work."
+   },
+   {
+    "tag": "SECTION",
+    "h": 818,
+    "y": 5437,
+    "words": 105,
+    "ctas": 3,
+    "title": "Plans."
+   },
+   {
+    "tag": "SECTION",
+    "h": 765,
+    "y": 6255,
+    "words": 79,
+    "ctas": 0,
+    "title": "Compare."
+   },
+   {
+    "tag": "SECTION",
+    "h": 625,
+    "y": 7020,
+    "words": 71,
+    "ctas": 1,
+    "title": "FAQ."
+   },
+   {
+    "tag": "SECTION",
+    "h": 674,
+    "y": 7645,
+    "words": 48,
+    "ctas": 1,
+    "title": "Related."
+   },
+   {
+    "tag": "SECTION",
+    "h": 718,
+    "y": 8319,
+    "words": 32,
+    "ctas": 2,
+    "title": "Let’s look inside your Meta account."
+   },
+   {
+    "tag": "FOOTER",
+    "h": 672,
+    "y": 9038,
+    "words": 80,
+    "ctas": 0,
+    "title": "DESIGN × MARKETING × TECHNOLOGY × CONTEN"
+   },
+   {
+    "tag": "DIV",
+    "h": 56,
+    "y": 900,
+    "words": 5,
+    "ctas": 0,
+    "title": "Ready to grow? Say hi"
+   }
+  ],
+  "ctaCount": 10,
+  "ctas": [
+   "SEE THE CREATIVE WORK",
+   "MEET THE TEAM",
+   "ALL D2C WORK",
+   "START WITH SPARK",
+   "START WITH COMPOUND",
+   "START WITH SCALE",
+   "LET US KNOW",
+   "OPEN CALCULATOR",
+   "AUDIT MY META ACCOUNT",
+   "SEE PACKAGES"
+  ],
+  "actionLike": [
+   "Book a call",
+   "Audit my Meta account",
+   "See the work",
+   "See packages",
+   "See the creative work",
+   "Audit",
+   "Meet the team",
+   "All D2C work",
+   "View project",
+   "View project",
+   "Start with Spark",
+   "Start with Compound",
+   "Start with Scale",
+   "Let us know",
+   "Open calculator",
+   "Audit my Meta account",
+   "See packages",
+   "Book a call"
+  ],
+  "actionLikeCount": 18,
+  "smallButtons": [
+   "See packages",
+   "View project",
+   "View project"
+  ],
+  "chipsAndPills": 28,
+  "tags": 6,
+  "chips": 16,
+  "panels": 4,
+  "cards": 14,
+  "longestParaChars": 140,
+  "parasOver90": 6,
+  "bigTitles": [
+   "Services",
+   "Fit",
+   ".",
+   "Pillars",
+   ".",
+   "Month one",
+   ".",
+   "“",
+   "Our Work",
+   ".",
+   "Plans",
+   ".",
+   "Compare",
+   ".",
+   "FAQ",
+   ".",
+   "Related",
+   ".",
+   "Let’s look inside your Meta",
+   "account."
+  ],
+  "radii": [
+   [
+    "50%",
+    20
+   ],
+   [
+    "50px",
+    20
+   ],
+   [
+    "4px",
+    20
+   ],
+   [
+    "14px",
+    16
+   ],
+   [
+    "16px",
+    6
+   ],
+   [
+    "12px",
+    6
+   ],
+   [
+    "6px",
+    6
+   ],
+   [
+    "999px",
+    5
+   ],
+   [
+    "20px",
+    5
+   ],
+   [
+    "29px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ],
+   [
+    "14px 14px 4px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(7, 14, 42, 0.55) 0px 30px 60px -30px",
+    3
+   ],
+   [
+    "rgba(17, 24, 39, 0.14) 0px 18px 48px -20px",
+    1
+   ],
+   [
+    "rgba(43, 181, 115, 0.18) 0px 0px 0px 4px",
+    1
+   ],
+   [
+    "rgba(6, 14, 44, 0.55) 0px 18px 44px -18px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.5) 0px 24px 50px -24px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 14px 34px -14px",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.6) 0px 14px 30px -10px",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    36
+   ],
+   [
+    "16px",
+    34
+   ],
+   [
+    "13px",
+    31
+   ],
+   [
+    "14px",
+    25
+   ],
+   [
+    "100px",
+    16
+   ],
+   [
+    "15.5px",
+    13
+   ],
+   [
+    "13.5px",
+    12
+   ],
+   [
+    "15px",
+    11
+   ],
+   [
+    "11.5px",
+    10
+   ],
+   [
+    "20px",
+    10
+   ],
+   [
+    "17px",
+    9
+   ],
+   [
+    "18px",
+    9
+   ],
+   [
+    "19px",
+    8
+   ],
+   [
+    "11px",
+    7
+   ],
+   [
+    "10.5px",
+    5
+   ],
+   [
+    "30px",
+    5
+   ],
+   [
+    "38px",
+    4
+   ],
+   [
+    "23.56px",
+    4
+   ],
+   [
+    "22px",
+    4
+   ],
+   [
+    "40px",
+    4
+   ],
+   [
+    "26px",
+    4
+   ],
+   [
+    "64px",
+    3
+   ],
+   [
+    "24px",
+    3
+   ],
+   [
+    "60px",
+    2
+   ],
+   [
+    "56px",
+    2
+   ],
+   [
+    "84px",
+    2
+   ],
+   [
+    "9.5px",
+    1
+   ],
+   [
+    "302px",
+    1
+   ],
+   [
+    "19.4px",
+    1
+   ],
+   [
+    "90px",
+    1
+   ],
+   [
+    "36px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ]
+  ],
+  "fontWeights": [
+   [
+    "600",
+    124
+   ],
+   [
+    "400",
+    59
+   ],
+   [
+    "500",
+    57
+   ],
+   [
+    "700",
+    29
+   ],
+   [
+    "800",
+    10
+   ]
+  ],
+  "letterSpacings": [
+   [
+    "normal",
+    80
+   ],
+   [
+    "-0.48px",
+    18
+   ],
+   [
+    "0.065px",
+    16
+   ],
+   [
+    "-0.64px",
+    13
+   ],
+   [
+    "0.28px",
+    10
+   ],
+   [
+    "-1.14px",
+    8
+   ],
+   [
+    "-8px",
+    8
+   ],
+   [
+    "-2px",
+    8
+   ],
+   [
+    "-0.6px",
+    8
+   ],
+   [
+    "-0.51px",
+    8
+   ],
+   [
+    "-0.32px",
+    8
+   ],
+   [
+    "1.38px",
+    7
+   ],
+   [
+    "-0.665px",
+    7
+   ],
+   [
+    "-0.72px",
+    6
+   ],
+   [
+    "-0.12px",
+    6
+   ],
+   [
+    "1.47px",
+    5
+   ],
+   [
+    "1.43px",
+    4
+   ],
+   [
+    "-0.8px",
+    4
+   ],
+   [
+    "-1.2px",
+    4
+   ],
+   [
+    "-1.17px",
+    4
+   ],
+   [
+    "-0.07px",
+    4
+   ],
+   [
+    "1.44px",
+    3
+   ],
+   [
+    "-0.88px",
+    3
+   ],
+   [
+    "-3.84px",
+    3
+   ],
+   [
+    "-1.08px",
+    3
+   ],
+   [
+    "0.88px",
+    2
+   ],
+   [
+    "-0.7px",
+    2
+   ],
+   [
+    "-0.54px",
+    2
+   ],
+   [
+    "0.48px",
+    2
+   ],
+   [
+    "-0.14px",
+    1
+   ],
+   [
+    "0.95px",
+    1
+   ],
+   [
+    "0.92px",
+    1
+   ],
+   [
+    "0.96px",
+    1
+   ],
+   [
+    "-13.59px",
+    1
+   ],
+   [
+    "2.53px",
+    1
+   ],
+   [
+    "-2.1px",
+    1
+   ],
+   [
+    "-0.3px",
+    1
+   ],
+   [
+    "0.81px",
+    1
+   ],
+   [
+    "0.54px",
+    1
+   ],
+   [
+    "-0.19px",
+    1
+   ],
+   [
+    "0.66px",
+    1
+   ],
+   [
+    "-2.24px",
+    1
+   ],
+   [
+    "-1.12px",
+    1
+   ],
+   [
+    "-1.8px",
+    1
+   ],
+   [
+    "-1.62px",
+    1
+   ],
+   [
+    "1px",
+    1
+   ],
+   [
+    "-1.35px",
+    1
+   ],
+   [
+    "-5.04px",
+    1
+   ],
+   [
+    "-1.68px",
+    1
+   ],
+   [
+    "2.64px",
+    1
+   ],
+   [
+    "0.24px",
+    1
+   ],
+   [
+    "-0.065px",
+    1
+   ]
+  ],
+  "textColours": [
+   [
+    "rgb(14, 22, 38)",
+    86
+   ],
+   [
+    "rgb(79, 90, 107)",
+    41
+   ],
+   [
+    "rgb(255, 255, 255)",
+    36
+   ],
+   [
+    "rgb(255, 197, 40)",
+    29
+   ],
+   [
+    "rgba(255, 255, 255, 0.78)",
+    22
+   ],
+   [
+    "rgb(29, 78, 216)",
+    13
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    6
+   ],
+   [
+    "rgb(15, 30, 94)",
+    6
+   ],
+   [
+    "rgba(255, 255, 255, 0.74)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.58)",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.85)",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.66)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    3
+   ],
+   [
+    "rgb(21, 128, 61)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.86)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.76)",
+    2
+   ],
+   [
+    "rgb(22, 50, 158)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.8)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.55)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.05)",
+    1
+   ],
+   [
+    "rgb(180, 83, 9)",
+    1
+   ],
+   [
+    "rgb(46, 56, 73)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.6)",
+    1
+   ]
+  ],
+  "bgColours": [
+   [
+    "rgb(255, 255, 255)",
+    45
+   ],
+   [
+    "rgb(255, 197, 40)",
+    22
+   ],
+   [
+    "gradient",
+    15
+   ],
+   [
+    "rgb(15, 30, 94)",
+    15
+   ],
+   [
+    "rgb(29, 78, 216)",
+    4
+   ],
+   [
+    "rgb(220, 243, 228)",
+    4
+   ],
+   [
+    "rgba(15, 30, 94, 0.07)",
+    3
+   ],
+   [
+    "rgb(22, 50, 158)",
+    2
+   ],
+   [
+    "rgb(251, 250, 246)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.82)",
+    1
+   ],
+   [
+    "rgb(43, 181, 115)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.86)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.94)",
+    1
+   ],
+   [
+    "rgb(8, 102, 255)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    1
+   ],
+   [
+    "rgb(37, 211, 102)",
+    1
+   ]
+  ],
+  "distinct": {
+   "radii": 12,
+   "shadows": 7,
+   "fontSizes": 32,
+   "fontWeights": 5,
+   "letterSpacings": 52,
+   "textColours": 24,
+   "bgColours": 16
+  }
+ },
+ "HomeMobile": {
+  "height": 10800,
+  "words": 623,
+  "sections": [
+   {
+    "tag": "SECTION",
+    "h": 1040,
+    "y": 0,
+    "words": 59,
+    "ctas": 2,
+    "title": "Performance marketing that survives the "
+   },
+   {
+    "tag": "SECTION",
+    "h": 143,
+    "y": 1040,
+    "words": 5,
+    "ctas": 0,
+    "title": "Selected work Impact created for"
+   },
+   {
+    "tag": "SECTION",
+    "h": 1689,
+    "y": 1183,
+    "words": 97,
+    "ctas": 1,
+    "title": "Our Work."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1547,
+    "y": 2872,
+    "words": 114,
+    "ctas": 0,
+    "title": "Services."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1221,
+    "y": 4419,
+    "words": 44,
+    "ctas": 2,
+    "title": "Focus."
+   },
+   {
+    "tag": "SECTION",
+    "h": 358,
+    "y": 5639,
+    "words": 14,
+    "ctas": 0,
+    "title": "₹248Cr+ REVENUE COMPOUNDED 8.7× MEDIAN B"
+   },
+   {
+    "tag": "SECTION",
+    "h": 560,
+    "y": 5997,
+    "words": 32,
+    "ctas": 1,
+    "title": "Your numbers. Our senior team. Let’s tal"
+   },
+   {
+    "tag": "SECTION",
+    "h": 938,
+    "y": 6557,
+    "words": 39,
+    "ctas": 0,
+    "title": "Testimonials."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1047,
+    "y": 7495,
+    "words": 79,
+    "ctas": 1,
+    "title": "FAQ."
+   },
+   {
+    "tag": "SECTION",
+    "h": 861,
+    "y": 8542,
+    "words": 55,
+    "ctas": 1,
+    "title": "Get in touch."
+   },
+   {
+    "tag": "FOOTER",
+    "h": 1398,
+    "y": 9402,
+    "words": 80,
+    "ctas": 0,
+    "title": "DESIGN × MARKETING × TECHNOLOGY × CONTEN"
+   },
+   {
+    "tag": "DIV",
+    "h": 56,
+    "y": 770,
+    "words": 5,
+    "ctas": 0,
+    "title": "Ready to grow? Say hi"
+   }
+  ],
+  "ctaCount": 8,
+  "ctas": [
+   "BOOK A STRATEGY CALL",
+   "SEE OUR WORK",
+   "VIEW ALL PROJECTS",
+   "EXPLORE D2C GROWTH",
+   "EXPLORE ADMISSIONS",
+   "SCHEDULE CONSULTATION",
+   "LET US KNOW",
+   "SUBMIT REQUEST"
+  ],
+  "actionLike": [
+   "Book a strategy call",
+   "See our work",
+   "Explore the work",
+   "View project",
+   "View project",
+   "View project",
+   "View all projects",
+   "Explore D2C growth",
+   "Explore admissions",
+   "Book a free 30-minute strategy call today.",
+   "Schedule consultation",
+   "Let us know",
+   "Schedule a",
+   "Submit request",
+   "Book a call"
+  ],
+  "actionLikeCount": 15,
+  "smallButtons": [
+   "View project",
+   "View project",
+   "View project"
+  ],
+  "chipsAndPills": 40,
+  "tags": 9,
+  "chips": 23,
+  "panels": 2,
+  "cards": 7,
+  "longestParaChars": 170,
+  "parasOver90": 2,
+  "bigTitles": [],
+  "radii": [
+   [
+    "50px",
+    23
+   ],
+   [
+    "4px",
+    21
+   ],
+   [
+    "14px",
+    15
+   ],
+   [
+    "50%",
+    14
+   ],
+   [
+    "6px",
+    9
+   ],
+   [
+    "10px",
+    5
+   ],
+   [
+    "999px",
+    3
+   ],
+   [
+    "20px",
+    3
+   ],
+   [
+    "16px",
+    2
+   ],
+   [
+    "12px",
+    1
+   ],
+   [
+    "14px 14px 4px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.9) 0px 30px 60px -30px",
+    2
+   ],
+   [
+    "rgba(17, 24, 39, 0.14) 0px 18px 48px -20px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.85) 0px 30px 60px -24px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 30px 70px -40px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 14px 34px -14px",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.6) 0px 14px 30px -10px",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    45
+   ],
+   [
+    "13px",
+    25
+   ],
+   [
+    "14px",
+    24
+   ],
+   [
+    "16px",
+    22
+   ],
+   [
+    "18px",
+    13
+   ],
+   [
+    "11px",
+    12
+   ],
+   [
+    "58px",
+    10
+   ],
+   [
+    "15px",
+    9
+   ],
+   [
+    "24px",
+    8
+   ],
+   [
+    "32px",
+    5
+   ],
+   [
+    "13.5px",
+    5
+   ],
+   [
+    "34px",
+    4
+   ],
+   [
+    "50px",
+    4
+   ],
+   [
+    "10px",
+    3
+   ],
+   [
+    "46px",
+    3
+   ],
+   [
+    "25px",
+    3
+   ],
+   [
+    "44px",
+    2
+   ],
+   [
+    "38px",
+    2
+   ],
+   [
+    "10.5px",
+    1
+   ],
+   [
+    "25.3px",
+    1
+   ],
+   [
+    "20px",
+    1
+   ],
+   [
+    "72px",
+    1
+   ],
+   [
+    "17px",
+    1
+   ],
+   [
+    "12.5px",
+    1
+   ],
+   [
+    "19px",
+    1
+   ],
+   [
+    "15.5px",
+    1
+   ],
+   [
+    "11.5px",
+    1
+   ]
+  ],
+  "fontWeights": [
+   [
+    "600",
+    117
+   ],
+   [
+    "500",
+    44
+   ],
+   [
+    "400",
+    39
+   ],
+   [
+    "700",
+    8
+   ]
+  ],
+  "letterSpacings": [
+   [
+    "normal",
+    42
+   ],
+   [
+    "-0.48px",
+    40
+   ],
+   [
+    "0.065px",
+    16
+   ],
+   [
+    "-0.12px",
+    9
+   ],
+   [
+    "0.28px",
+    8
+   ],
+   [
+    "-2.5px",
+    7
+   ],
+   [
+    "-4.35px",
+    5
+   ],
+   [
+    "-1.16px",
+    5
+   ],
+   [
+    "-0.64px",
+    5
+   ],
+   [
+    "-0.96px",
+    5
+   ],
+   [
+    "-0.45px",
+    5
+   ],
+   [
+    "0.44px",
+    5
+   ],
+   [
+    "-0.72px",
+    5
+   ],
+   [
+    "0.88px",
+    4
+   ],
+   [
+    "-0.39px",
+    4
+   ],
+   [
+    "-0.07px",
+    4
+   ],
+   [
+    "0.6px",
+    3
+   ],
+   [
+    "-0.63px",
+    3
+   ],
+   [
+    "0.48px",
+    3
+   ],
+   [
+    "-0.42px",
+    3
+   ],
+   [
+    "-0.68px",
+    3
+   ],
+   [
+    "1.44px",
+    2
+   ],
+   [
+    "-2.3px",
+    2
+   ],
+   [
+    "-1.7px",
+    2
+   ],
+   [
+    "-1.52px",
+    2
+   ],
+   [
+    "-1.2px",
+    2
+   ],
+   [
+    "-0.13px",
+    1
+   ],
+   [
+    "-2.42px",
+    1
+   ],
+   [
+    "-0.88px",
+    1
+   ],
+   [
+    "0.63px",
+    1
+   ],
+   [
+    "-0.8px",
+    1
+   ],
+   [
+    "-3.45px",
+    1
+   ],
+   [
+    "-0.92px",
+    1
+   ],
+   [
+    "-1.44px",
+    1
+   ],
+   [
+    "-1.08px",
+    1
+   ],
+   [
+    "0.66px",
+    1
+   ],
+   [
+    "-0.57px",
+    1
+   ],
+   [
+    "2.64px",
+    1
+   ],
+   [
+    "0.24px",
+    1
+   ],
+   [
+    "-0.065px",
+    1
+   ]
+  ],
+  "textColours": [
+   [
+    "rgb(14, 22, 38)",
+    77
+   ],
+   [
+    "rgb(255, 255, 255)",
+    35
+   ],
+   [
+    "rgb(255, 197, 40)",
+    25
+   ],
+   [
+    "rgba(255, 255, 255, 0.78)",
+    22
+   ],
+   [
+    "rgb(79, 90, 107)",
+    12
+   ],
+   [
+    "rgba(255, 255, 255, 0.8)",
+    6
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    5
+   ],
+   [
+    "rgb(154, 163, 178)",
+    5
+   ],
+   [
+    "rgb(15, 30, 94)",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    4
+   ],
+   [
+    "rgb(46, 56, 73)",
+    3
+   ],
+   [
+    "rgb(29, 78, 216)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.75)",
+    2
+   ],
+   [
+    "rgba(255, 255, 255, 0.55)",
+    2
+   ],
+   [
+    "rgba(250, 250, 250, 0.82)",
+    1
+   ],
+   [
+    "rgb(182, 188, 200)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.6)",
+    1
+   ]
+  ],
+  "bgColours": [
+   [
+    "rgb(255, 255, 255)",
+    46
+   ],
+   [
+    "rgb(15, 30, 94)",
+    12
+   ],
+   [
+    "gradient",
+    11
+   ],
+   [
+    "rgb(255, 197, 40)",
+    8
+   ],
+   [
+    "rgb(29, 78, 216)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.16)",
+    2
+   ],
+   [
+    "rgb(251, 250, 246)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.82)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.15)",
+    1
+   ],
+   [
+    "rgb(227, 234, 252)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    1
+   ],
+   [
+    "rgb(37, 211, 102)",
+    1
+   ]
+  ],
+  "distinct": {
+   "radii": 11,
+   "shadows": 6,
+   "fontSizes": 27,
+   "fontWeights": 4,
+   "letterSpacings": 40,
+   "textColours": 18,
+   "bgColours": 13
+  }
+ },
+ "EducationMobile": {
+  "height": 12271,
+  "words": 838,
+  "sections": [
+   {
+    "tag": "SECTION",
+    "h": 972,
+    "y": 0,
+    "words": 67,
+    "ctas": 2,
+    "title": "Every seat, filled with the right studen"
+   },
+   {
+    "tag": "SECTION",
+    "h": 110,
+    "y": 972,
+    "words": 20,
+    "ctas": 0,
+    "title": "Choose your institute Colleges & univers"
+   },
+   {
+    "tag": "SECTION",
+    "h": 1168,
+    "y": 1083,
+    "words": 117,
+    "ctas": 0,
+    "title": "Journey."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1748,
+    "y": 2251,
+    "words": 131,
+    "ctas": 0,
+    "title": "Services."
+   },
+   {
+    "tag": "SECTION",
+    "h": 1726,
+    "y": 3999,
+    "words": 99,
+    "ctas": 1,
+    "title": "Our Work."
+   },
+   {
+    "tag": "SECTION",
+    "h": 387,
+    "y": 5725,
+    "words": 19,
+    "ctas": 0,
+    "title": "<5min FIRST REPLY TO AN ENQUIRY 6 INSTIT"
+   },
+   {
+    "tag": "SECTION",
+    "h": 837,
+    "y": 6112,
+    "words": 52,
+    "ctas": 1,
+    "title": "Calendar."
+   },
+   {
+    "tag": "SECTION",
+    "h": 650,
+    "y": 6950,
+    "words": 39,
+    "ctas": 1,
+    "title": "What does one admission really cost you?"
+   },
+   {
+    "tag": "SECTION",
+    "h": 938,
+    "y": 7599,
+    "words": 38,
+    "ctas": 0,
+    "title": "Testimonials."
+   },
+   {
+    "tag": "SECTION",
+    "h": 623,
+    "y": 8537,
+    "words": 45,
+    "ctas": 0,
+    "title": "Compliant."
+   },
+   {
+    "tag": "SECTION",
+    "h": 856,
+    "y": 9160,
+    "words": 71,
+    "ctas": 1,
+    "title": "FAQ."
+   },
+   {
+    "tag": "SECTION",
+    "h": 858,
+    "y": 10016,
+    "words": 55,
+    "ctas": 1,
+    "title": "Fill next year’s seats."
+   },
+   {
+    "tag": "FOOTER",
+    "h": 1398,
+    "y": 10874,
+    "words": 80,
+    "ctas": 0,
+    "title": "DESIGN × MARKETING × TECHNOLOGY × CONTEN"
+   },
+   {
+    "tag": "DIV",
+    "h": 56,
+    "y": 770,
+    "words": 5,
+    "ctas": 0,
+    "title": "Ready to grow? Say hi"
+   }
+  ],
+  "ctaCount": 7,
+  "ctas": [
+   "PLAN MY ADMISSION SEASON",
+   "SEE EDUCATION WORK",
+   "EXPLORE SCHOOL SALES",
+   "BUILD MY CALENDAR",
+   "OPEN THE CALCULATOR",
+   "ASK US ON WHATSAPP",
+   "PLAN MY ADMISSION SEASON"
+  ],
+  "actionLike": [
+   "Plan my admission season",
+   "See education work",
+   "Booked, but never confirmed, reminded or followed up.",
+   "View project",
+   "View project",
+   "Explore school sales",
+   "Build my calendar",
+   "Open the calculator",
+   "Ask us on WhatsApp",
+   "Plan my admission season",
+   "Book a call"
+  ],
+  "actionLikeCount": 11,
+  "smallButtons": [
+   "View project",
+   "View project"
+  ],
+  "chipsAndPills": 28,
+  "tags": 6,
+  "chips": 14,
+  "panels": 4,
+  "cards": 16,
+  "longestParaChars": 141,
+  "parasOver90": 3,
+  "bigTitles": [],
+  "radii": [
+   [
+    "50px",
+    24
+   ],
+   [
+    "14px",
+    21
+   ],
+   [
+    "50%",
+    21
+   ],
+   [
+    "6px",
+    18
+   ],
+   [
+    "4px",
+    15
+   ],
+   [
+    "20px",
+    4
+   ],
+   [
+    "999px",
+    3
+   ],
+   [
+    "16px",
+    3
+   ],
+   [
+    "12px",
+    1
+   ],
+   [
+    "10px",
+    1
+   ],
+   [
+    "14px 14px 4px",
+    1
+   ]
+  ],
+  "shadows": [
+   [
+    "rgba(0, 0, 0, 0.9) 0px 30px 60px -30px",
+    2
+   ],
+   [
+    "rgba(17, 24, 39, 0.14) 0px 18px 48px -20px",
+    1
+   ],
+   [
+    "rgba(0, 0, 0, 0.8) 0px 40px 80px -30px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 30px 70px -40px",
+    1
+   ],
+   [
+    "rgba(7, 14, 42, 0.35) 0px 14px 34px -14px",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.6) 0px 14px 30px -10px",
+    1
+   ]
+  ],
+  "fontSizes": [
+   [
+    "12px",
+    36
+   ],
+   [
+    "14px",
+    36
+   ],
+   [
+    "13px",
+    28
+   ],
+   [
+    "11px",
+    23
+   ],
+   [
+    "16px",
+    23
+   ],
+   [
+    "14.5px",
+    14
+   ],
+   [
+    "15px",
+    11
+   ],
+   [
+    "20px",
+    10
+   ],
+   [
+    "58px",
+    10
+   ],
+   [
+    "13.5px",
+    9
+   ],
+   [
+    "32px",
+    8
+   ],
+   [
+    "12.5px",
+    7
+   ],
+   [
+    "24px",
+    7
+   ],
+   [
+    "11.5px",
+    6
+   ],
+   [
+    "18px",
+    6
+   ],
+   [
+    "50px",
+    6
+   ],
+   [
+    "9.5px",
+    4
+   ],
+   [
+    "19px",
+    4
+   ],
+   [
+    "10px",
+    2
+   ],
+   [
+    "44px",
+    2
+   ],
+   [
+    "25px",
+    2
+   ],
+   [
+    "52px",
+    2
+   ],
+   [
+    "38px",
+    2
+   ],
+   [
+    "17px",
+    2
+   ],
+   [
+    "46px",
+    2
+   ],
+   [
+    "9px",
+    1
+   ],
+   [
+    "72px",
+    1
+   ],
+   [
+    "15.5px",
+    1
+   ]
+  ],
+  "fontWeights": [
+   [
+    "600",
+    148
+   ],
+   [
+    "400",
+    59
+   ],
+   [
+    "500",
+    48
+   ],
+   [
+    "700",
+    10
+   ]
+  ],
+  "letterSpacings": [
+   [
+    "normal",
+    88
+   ],
+   [
+    "-0.48px",
+    29
+   ],
+   [
+    "0.065px",
+    16
+   ],
+   [
+    "-0.42px",
+    12
+   ],
+   [
+    "-0.9px",
+    9
+   ],
+   [
+    "0.28px",
+    7
+   ],
+   [
+    "-0.45px",
+    7
+   ],
+   [
+    "-0.64px",
+    7
+   ],
+   [
+    "-0.96px",
+    6
+   ],
+   [
+    "-0.12px",
+    6
+   ],
+   [
+    "-2.5px",
+    6
+   ],
+   [
+    "-4.35px",
+    5
+   ],
+   [
+    "-1.16px",
+    5
+   ],
+   [
+    "-0.435px",
+    5
+   ],
+   [
+    "0.88px",
+    4
+   ],
+   [
+    "-0.72px",
+    4
+   ],
+   [
+    "-0.405px",
+    4
+   ],
+   [
+    "-0.07px",
+    4
+   ],
+   [
+    "0.57px",
+    3
+   ],
+   [
+    "-0.76px",
+    3
+   ],
+   [
+    "-0.39px",
+    3
+   ],
+   [
+    "1.44px",
+    2
+   ],
+   [
+    "0.6px",
+    2
+   ],
+   [
+    "-0.63px",
+    2
+   ],
+   [
+    "0.48px",
+    2
+   ],
+   [
+    "-1.52px",
+    2
+   ],
+   [
+    "-0.68px",
+    2
+   ],
+   [
+    "-0.13px",
+    1
+   ],
+   [
+    "-2.42px",
+    1
+   ],
+   [
+    "-0.88px",
+    1
+   ],
+   [
+    "0.9px",
+    1
+   ],
+   [
+    "-0.8px",
+    1
+   ],
+   [
+    "-1.6px",
+    1
+   ],
+   [
+    "-3.9px",
+    1
+   ],
+   [
+    "-1.04px",
+    1
+   ],
+   [
+    "0.95px",
+    1
+   ],
+   [
+    "-3.45px",
+    1
+   ],
+   [
+    "-0.92px",
+    1
+   ],
+   [
+    "0.66px",
+    1
+   ],
+   [
+    "-0.57px",
+    1
+   ],
+   [
+    "-1.44px",
+    1
+   ],
+   [
+    "-1.08px",
+    1
+   ],
+   [
+    "-3.75px",
+    1
+   ],
+   [
+    "-1px",
+    1
+   ],
+   [
+    "2.64px",
+    1
+   ],
+   [
+    "0.24px",
+    1
+   ],
+   [
+    "-0.065px",
+    1
+   ]
+  ],
+  "textColours": [
+   [
+    "rgb(14, 22, 38)",
+    80
+   ],
+   [
+    "rgb(79, 90, 107)",
+    48
+   ],
+   [
+    "rgb(255, 255, 255)",
+    40
+   ],
+   [
+    "rgb(255, 197, 40)",
+    25
+   ],
+   [
+    "rgba(255, 255, 255, 0.78)",
+    22
+   ],
+   [
+    "rgb(29, 78, 216)",
+    10
+   ],
+   [
+    "rgba(255, 255, 255, 0.72)",
+    7
+   ],
+   [
+    "rgba(255, 255, 255, 0.8)",
+    6
+   ],
+   [
+    "rgb(46, 56, 73)",
+    6
+   ],
+   [
+    "rgb(15, 30, 94)",
+    5
+   ],
+   [
+    "rgba(255, 255, 255, 0.7)",
+    4
+   ],
+   [
+    "rgba(255, 255, 255, 0.66)",
+    3
+   ],
+   [
+    "rgb(154, 163, 178)",
+    3
+   ],
+   [
+    "rgba(255, 255, 255, 0.55)",
+    2
+   ],
+   [
+    "rgba(250, 250, 250, 0.82)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.75)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.6)",
+    1
+   ]
+  ],
+  "bgColours": [
+   [
+    "rgb(255, 255, 255)",
+    48
+   ],
+   [
+    "rgb(15, 30, 94)",
+    18
+   ],
+   [
+    "gradient",
+    12
+   ],
+   [
+    "rgb(255, 197, 40)",
+    11
+   ],
+   [
+    "rgb(29, 78, 216)",
+    7
+   ],
+   [
+    "rgb(238, 242, 251)",
+    5
+   ],
+   [
+    "rgb(227, 234, 252)",
+    3
+   ],
+   [
+    "rgb(251, 250, 246)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.82)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.15)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.16)",
+    1
+   ],
+   [
+    "rgba(29, 78, 216, 0.16)",
+    1
+   ],
+   [
+    "rgb(143, 176, 245)",
+    1
+   ],
+   [
+    "rgb(22, 50, 158)",
+    1
+   ],
+   [
+    "rgba(255, 255, 255, 0.34)",
+    1
+   ],
+   [
+    "rgb(37, 211, 102)",
+    1
+   ]
+  ],
+  "distinct": {
+   "radii": 11,
+   "shadows": 6,
+   "fontSizes": 28,
+   "fontWeights": 4,
+   "letterSpacings": 47,
+   "textColours": 18,
+   "bgColours": 16
+  }
+ }
+}

@@ -1,0 +1,499 @@
+UNIQUE /industries/ URLs linked: 402
+by depth [(1, 1), (2, 22), (3, 153), (4, 226)]
+leaf segments at depth>=4 (service suffixes): [('seo', 50), ('lead-generation', 37), ('social-media', 30), ('ppc', 17), ('statistics', 16), ('web-design', 13), ('agency', 5), ('marketing-budget', 5), ('marketing-ideas', 5), ('local-seo', 4), ('trends', 3), ('best-marketing-agencies', 2), ('marketing-examples', 2), ('email-marketing', 2), ('crm', 2), ('best-government-marketing-agencies', 1), ('education-marketing-roi', 1), ('co-op-dollars', 1), ('digital-marketing-for-resorts', 1), ('budget', 1), ('insurance-marketing-strategies', 1), ('video-marketing', 1), ('best-seo-companies-for-lawyers', 1), ('law-firm-website-design-cost', 1), ('digital-marketing-for-skid-steer-attachment-companies', 1)]
+UNIQUE /locations/ URLs linked: 57
+by depth [(1, 1), (2, 34), (3, 22)]
+location leaf suffixes depth3: [('ppc', 12), ('seo', 9), ('generative-engine-optimization', 1)]
+
+# education URLs
+/industries/education/ 15
+/industries/education/agency/ 3
+/industries/education/ai/ 5
+/industries/education/best-education-marketing-agencies/ 3
+/industries/education/edtech/ 10
+/industries/education/edtech/lead-generation/ 4
+/industries/education/edtech/seo/ 3
+/industries/education/edtech/social-media/ 5
+/industries/education/higher-education/ 9
+/industries/education/higher-education/agency/ 3
+/industries/education/higher-education/best-college-websites/ 4
+/industries/education/higher-education/education-marketing-roi/ 7
+/industries/education/higher-education/education-trends/ 5
+/industries/education/higher-education/email-marketing/ 3
+/industries/education/higher-education/future-of-higher-education-marketing/ 3
+/industries/education/higher-education/how-to-increase-college-enrollment/ 3
+/industries/education/higher-education/how-to-market-a-college/ 3
+/industries/education/higher-education/seo/ 4
+/industries/education/higher-education/social-media/ 3
+/industries/education/higher-education/statistics/ 7
+/industries/education/higher-education/student-recruitment-strategies/ 5
+/industries/education/higher-education/website-examples/ 4
+/industries/education/marketing-budget/ 4
+/industries/education/online-education/ 10
+/industries/education/private-schools/ 9
+/industries/education/technical-schools/ 10
+
+# all industries URLs (depth<=3)
+/industries/ 451
+/industries/automotive-transportation/ 7
+/industries/automotive-transportation/auto-manufacturing/ 5
+/industries/automotive-transportation/motorcycle-dealers/ 6
+/industries/automotive-transportation/truck-and-trailer-companies/ 4
+/industries/dealers-distributors/ 11
+/industries/dealers-distributors/aircraft-sales/ 4
+/industries/dealers-distributors/building-material-suppliers/ 5
+/industries/dealers-distributors/dealer-inventory-product-feeds/ 5
+/industries/dealers-distributors/dealerfx/ 7
+/industries/dealers-distributors/farm-equipment-suppliers/ 4
+/industries/education/ 15
+/industries/education/agency/ 3
+/industries/education/ai/ 5
+/industries/education/best-education-marketing-agencies/ 3
+/industries/education/edtech/ 10
+/industries/education/higher-education/ 9
+/industries/education/marketing-budget/ 4
+/industries/education/online-education/ 10
+/industries/education/private-schools/ 9
+/industries/education/technical-schools/ 10
+/industries/finance/ 9
+/industries/finance/accountants/ 7
+/industries/finance/agency/ 3
+/industries/finance/banks/ 4
+/industries/finance/best-finance-marketing-agencies/ 2
+/industries/finance/cpa-firms/ 4
+/industries/finance/credit-unions/ 2
+/industries/finance/finance-trends/ 2
+/industries/finance/fintech/ 3
+/industries/finance/marketing-budget/ 3
+/industries/finance/private-equity/ 4
+/industries/finance/wealth-management/ 8
+/industries/food-beverage/ 5
+/industries/food-beverage/best-food-beverage-marketing-agencies/ 3
+/industries/food-beverage/food-beverage-manufacturing/ 4
+/industries/food-beverage/grocery-stores/ 5
+/industries/food-beverage/marketing-budget/ 2
+/industries/food-beverage/restaurants/ 5
+/industries/food-beverage/trends/ 1
+/industries/franchises/ 8
+/industries/franchises/agency/ 4
+/industries/franchises/co-ops/ 5
+/industries/franchises/email-marketing/ 3
+/industries/franchises/lead-generation/ 3
+/industries/franchises/local-seo/ 5
+/industries/franchises/seo/ 2
+/industries/franchises/social-media/ 6
+/industries/franchises/statistics/ 2
+/industries/franchises/web-design/ 7
+/industries/franchises/website-examples/ 2
+/industries/general/ 3
+/industries/general/agriculture/ 3
+/industries/health/ 2
+/industries/health/alternative-medicine/ 1
+/industries/health/doctors-offices-medical-practices/ 3
+/industries/health/ehr-companies/ 2
+/industries/health/hospice/ 1
+/industries/health/occupational-therapy/ 2
+/industries/healthcare/ 13
+/industries/healthcare/agency/ 3
+/industries/healthcare/dentist/ 3
+/industries/healthcare/dermatology/ 4
+/industries/healthcare/doctors-offices-medical-practices/ 3
+/industries/healthcare/fertility-clinics/ 1
+/industries/healthcare/plastic-surgery/ 1
+/industries/healthcare/podiatry/ 1
+/industries/healthcare/rehab-addiction-treatment/ 1
+/industries/healthcare/telehealth/ 1
+/industries/heavy-equipment/ 10
+/industries/heavy-equipment/best-heavy-equipment-marketing-agencies/ 2
+/industries/heavy-equipment/equipment-rentals/ 6
+/industries/heavy-equipment/excavators/ 5
+/industries/heavy-equipment/forklift-dealers/ 7
+/industries/heavy-equipment/heavy-equipment/ 7
+/industries/heavy-equipment/marketing-benchmarks/ 1
+/industries/heavy-equipment/paving-companies/ 3
+/industries/heavy-equipment/trends/ 2
+/industries/home-repair/home-improvement/ 2
+/industries/home-repair/home-services/ 2
+/industries/home-repair/interior-design/ 2
+/industries/home-repair/landscaping/ 2
+/industries/home-repair/pest-control/ 1
+/industries/home-repair/renewable-energy/ 3
+/industries/home-repair/restoration-companies/ 2
+/industries/home-repair/tree-care/ 1
+/industries/home-repair/wildlife-removal/ 1
+/industries/home-repair/window-door-companies/ 2
+/industries/home-services/ 15
+/industries/home-services/agency/ 5
+/industries/home-services/construction/ 2
+/industries/home-services/contractor/ 1
+/industries/home-services/window-door-companies/ 2
+/industries/industrial/ 8
+/industries/industrial/agency/ 1
+/industries/industrial/building-material-suppliers/ 1
+/industries/industrial/fire-protection/ 3
+/industries/industrial/lumber-companies/ 1
+/industries/industrial/manufacturing/ 2
+/industries/industrial/metal-fabricators/ 1
+/industries/industrial/oil-gas/ 2
+/industries/insurance/ 7
+/industries/insurance/best-insurance-marketing-agencies/ 2
+/industries/insurance/health-insurance/ 7
+/industries/insurance/insurance/ 14
+/industries/insurance/trends/ 3
+/industries/legal/ 7
+/industries/legal/law-firms/ 5
+/industries/local-consumer-services/ 7
+/industries/local-consumer-services/assisted-and-senior-living-centers/ 3
+/industries/local-consumer-services/auctioneers/ 4
+/industries/local-consumer-services/childcare-providers/ 3
+/industries/local-consumer-services/dog-trainers/ 4
+/industries/local-consumer-services/dry-cleaners/ 3
+/industries/local-consumer-services/florist/ 3
+/industries/local-consumer-services/funeral-homes/ 1
+/industries/local-consumer-services/in-home-care-providers/ 2
+/industries/local-consumer-services/storage-facilities/ 2
+/industries/local-consumer-services/veterinarians/ 1
+/industries/local-consumer-services/waste-management/ 2
+/industries/local-consumer-services/water-treatment/ 2
+/industries/manufacturing/ 13
+/industries/manufacturing/agency/ 2
+/industries/manufacturing/medical-equipment-companies/ 2
+/industries/professional-services/ 9
+/industries/professional-services/agency/ 2
+/industries/professional-services/architecture/ 4
+/industries/professional-services/b2g/ 2
+/industries/professional-services/budget/ 2
+/industries/professional-services/consultants/ 5
+/industries/professional-services/delivery-services/ 3
+/industries/professional-services/engineering/ 1
+/industries/professional-services/environmental-testing-companies/ 2
+/industries/professional-services/marketing-automation/ 1
+/industries/professional-services/mergers-and-acquisitions/ 5
+/industries/professional-services/payroll-services/ 2
+/industries/professional-services/sign-companies/ 2
+/industries/professional-services/translation-and-interpretation-services/ 3
+/industries/professional-services/transportation-and-logistics/ 9
+/industries/professional-services/trends/ 1
+/industries/professional-services/wholesale-suppliers/ 5
+/industries/professional-services/workforce-management/ 2
+/industries/real-estate/ 12
+/industries/real-estate/property-management/ 6
+/industries/recreation-entertainment/ 10
+/industries/recreation-entertainment/best-entertainment-media-marketing-agencies/ 4
+/industries/recreation-entertainment/boat-dealers/ 3
+/industries/recreation-entertainment/campgrounds-rv-parks/ 4
+/industries/recreation-entertainment/country-clubs/ 3
+/industries/recreation-entertainment/golf-courses/ 3
+/industries/recreation-entertainment/outdoor-products/ 4
+/industries/recreation-entertainment/recreation/ 2
+/industries/recreation-entertainment/rv-dealers/ 7
+/industries/recreation-entertainment/services/ 3
+/industries/recreation-entertainment/spas/ 5
+/industries/recreation-entertainment/swimming-pool-companies/ 2
+/industries/retail-ecommerce/ 21
+/industries/retail-ecommerce/ecommerce/ 11
+/industries/retail-ecommerce/exercise-equipment-companies/ 1
+/industries/retail-ecommerce/furniture-stores/ 5
+/industries/retail-ecommerce/jewelers/ 5
+/industries/retail-ecommerce/luxury-brands/ 4
+/industries/retail-ecommerce/retail/ 9
+/industries/tech/ 8
+/industries/tech/3d-printing/ 5
+/industries/tech/cloud-computing/ 4
+/industries/tech/cybersecurity/ 4
+/industries/tech/ehr-companies/ 2
+/industries/tech/robotics/ 4
+/industries/tech/software/ 8
+/industries/tech/tech-companies/ 3
+/industries/tech/telecommunications/ 3
+/industries/tourism-hospitality/ 5
+/industries/tourism-hospitality/hospitality/ 5
+/industries/tourism-hospitality/hotels/ 7
+/industries/tourism-hospitality/tourism/ 4
+
+# all industries URLs depth4
+/industries/automotive-transportation/auto-service/automotive-marketing-ideas/
+/industries/automotive-transportation/motorcycle-dealers/lead-generation/
+/industries/automotive-transportation/motorcycle-dealers/seo/
+/industries/dealers-distributors/aircraft-sales/lead-generation/
+/industries/education/edtech/lead-generation/
+/industries/education/edtech/seo/
+/industries/education/edtech/social-media/
+/industries/education/higher-education/agency/
+/industries/education/higher-education/best-college-websites/
+/industries/education/higher-education/education-marketing-roi/
+/industries/education/higher-education/education-trends/
+/industries/education/higher-education/email-marketing/
+/industries/education/higher-education/future-of-higher-education-marketing/
+/industries/education/higher-education/how-to-increase-college-enrollment/
+/industries/education/higher-education/how-to-market-a-college/
+/industries/education/higher-education/seo/
+/industries/education/higher-education/social-media/
+/industries/education/higher-education/statistics/
+/industries/education/higher-education/student-recruitment-strategies/
+/industries/education/higher-education/website-examples/
+/industries/finance/accountants/ppc/
+/industries/finance/accountants/seo/
+/industries/finance/banks/lead-generation/
+/industries/finance/banks/ppc/
+/industries/finance/banks/seo/
+/industries/finance/banks/trends/
+/industries/finance/credit-unions/web-design/
+/industries/finance/private-equity/lead-generation/
+/industries/finance/private-equity/seo/
+/industries/food-beverage/food-beverage-manufacturing/seo/
+/industries/food-beverage/food-beverage-manufacturing/statistics/
+/industries/food-beverage/grocery-stores/seo/
+/industries/food-beverage/restaurants/agency/
+/industries/food-beverage/restaurants/facebook-ads-for-restaurants/
+/industries/food-beverage/restaurants/lead-generation/
+/industries/food-beverage/restaurants/local-seo/
+/industries/food-beverage/restaurants/marketing-examples/
+/industries/food-beverage/restaurants/statistics/
+/industries/food-beverage/restaurants/web-design/
+/industries/franchises/co-ops/co-op-dollars/
+/industries/franchises/co-ops/social-media/
+/industries/health/dentist/lead-generation/
+/industries/health/dentist/local-seo/
+/industries/health/dermatology/marketing-ideas/
+/industries/health/dermatology/seo/
+/industries/health/doctors-offices-medical-practices/long-tail-keywords-for-medical-practices/
+/industries/health/doctors-offices-medical-practices/seo/
+/industries/health/hospitals-healthcare/lead-generation/
+/industries/health/hospitals-healthcare/local-seo/
+/industries/health/hospitals-healthcare/seo/
+/industries/health/hospitals-healthcare/statistics/
+/industries/health/hospitals-healthcare/top-healthcare-marketing-agencies/
+/industries/health/medical-equipment-companies/lead-generation/
+/industries/health/medical-equipment-companies/ppc/
+/industries/health/psychiatrists/lead-generation/
+/industries/heavy-equipment/equipment-rentals/ppc/
+/industries/heavy-equipment/equipment-rentals/seo/
+/industries/heavy-equipment/equipment-rentals/social-media/
+/industries/heavy-equipment/excavators/lead-generation/
+/industries/heavy-equipment/excavators/seo/
+/industries/heavy-equipment/excavators/social-media/
+/industries/heavy-equipment/forklift-dealers/ppc/
+/industries/heavy-equipment/forklift-dealers/seo/
+/industries/heavy-equipment/forklift-dealers/social-media/
+/industries/heavy-equipment/heavy-equipment/digital-marketing-for-skid-steer-attachment-companies/
+/industries/heavy-equipment/heavy-equipment/email-marketing/
+/industries/heavy-equipment/heavy-equipment/ppc/
+/industries/heavy-equipment/heavy-equipment/seo/
+/industries/heavy-equipment/heavy-equipment/social-media/
+/industries/heavy-equipment/heavy-equipment/statistics/
+/industries/heavy-equipment/heavy-equipment/web-design/
+/industries/home-repair/construction/statistics/
+/industries/home-repair/contractor/lead-generation/
+/industries/home-repair/home-services/crm/
+/industries/home-repair/home-services/is-angies-list-worth-it-for-home-services-companies/
+/industries/home-repair/home-services/lead-generation/
+/industries/home-repair/home-services/statistics/
+/industries/home-repair/home-services/trends/
+/industries/home-repair/pest-control/lead-generation/
+/industries/home-repair/plumbers/statistics/
+/industries/home-services/electrician/ppc/
+/industries/home-services/energy-and-utilities/best-marketing-agencies/
+/industries/home-services/garage-doors/ppc/
+/industries/home-services/hvac/best-marketing-agencies/
+/industries/home-services/hvac/ppc/
+/industries/home-services/hvac/seo/
+/industries/home-services/landscaping/ppc/
+/industries/home-services/window-door-companies/ppc/
+/industries/industrial/agriculture/ppc/
+/industries/industrial/agriculture/social-media/
+/industries/industrial/building-material-suppliers/local-seo/
+/industries/industrial/building-material-suppliers/social-media/
+/industries/industrial/farms/lead-generation/
+/industries/industrial/fire-protection/seo/
+/industries/industrial/manufacturing/lead-generation/
+/industries/industrial/manufacturing/social-media/
+/industries/insurance/health-insurance/lead-generation/
+/industries/insurance/health-insurance/ppc/
+/industries/insurance/health-insurance/seo/
+/industries/insurance/insurance/insurance-marketing-strategies/
+/industries/insurance/insurance/lead-generation/
+/industries/insurance/insurance/marketing-budget/
+/industries/insurance/insurance/seo/
+/industries/insurance/insurance/statistics/
+/industries/insurance/insurance/web-design/
+/industries/legal/law-firms/best-seo-companies-for-lawyers/
+/industries/legal/law-firms/law-firm-website-design-cost/
+/industries/legal/law-firms/ppc/
+/industries/legal/law-firms/seo/
+/industries/legal/law-firms/statistics/
+/industries/legal/law-firms/video-marketing/
+/industries/legal/law-firms/web-design/
+/industries/local-consumer-services/assisted-and-senior-living-centers/lead-generation/
+/industries/local-consumer-services/assisted-and-senior-living-centers/nursing-home-marketing-ideas/
+/industries/local-consumer-services/assisted-and-senior-living-centers/ppc/
+/industries/local-consumer-services/auctioneers/seo/
+/industries/local-consumer-services/auctioneers/statistics/
+/industries/local-consumer-services/childcare-providers/seo/
+/industries/local-consumer-services/dog-trainers/seo/
+/industries/local-consumer-services/dry-cleaners/seo/
+/industries/local-consumer-services/florist/seo/
+/industries/local-consumer-services/florist/social-media/
+/industries/local-consumer-services/in-home-care-providers/lead-generation/
+/industries/local-consumer-services/in-home-care-providers/seo/
+/industries/local-consumer-services/storage-facilities/marketing-ideas/
+/industries/local-consumer-services/storage-facilities/seo/
+/industries/local-consumer-services/veterinarians/marketing-ideas/
+/industries/local-consumer-services/veterinarians/seo/
+/industries/local-consumer-services/waste-management/seo/
+/industries/local-consumer-services/water-treatment/lead-generation/
+/industries/local-consumer-services/water-treatment/seo/
+/industries/local-consumer-services/water-treatment/social-media/
+/industries/local-consumer-services/water-treatment/web-design/
+/industries/manufacturing/agency/web-design/
+/industries/professional-services/architecture/lead-generation/
+/industries/professional-services/architecture/marketing-ideas/
+/industries/professional-services/architecture/seo/
+/industries/professional-services/architecture/social-media/
+/industries/professional-services/b2g/best-government-marketing-agencies/
+/industries/professional-services/b2g/government-contracts/
+/industries/professional-services/b2g/lead-generation/
+/industries/professional-services/b2g/marketing-for-government-contractors/
+/industries/professional-services/b2g/marketing-strategies/
+/industries/professional-services/consultants/seo/
+/industries/professional-services/delivery-services/lead-generation/
+/industries/professional-services/delivery-services/social-media/
+/industries/professional-services/engineering/seo/
+/industries/professional-services/engineering/statistics/
+/industries/professional-services/mergers-and-acquisitions/seo/
+/industries/professional-services/mergers-and-acquisitions/social-media/
+/industries/professional-services/payroll-services/seo/
+/industries/professional-services/sign-companies/seo/
+/industries/professional-services/sign-companies/social-media/
+/industries/professional-services/transportation-and-logistics/lead-generation/
+/industries/professional-services/transportation-and-logistics/marketing-budget/
+/industries/professional-services/transportation-and-logistics/seo/
+/industries/professional-services/transportation-and-logistics/web-design/
+/industries/professional-services/wholesale-suppliers/lead-generation/
+/industries/professional-services/wholesale-suppliers/seo/
+/industries/professional-services/wholesale-suppliers/web-design/
+/industries/professional-services/workforce-management/seo/
+/industries/real-estate/property-management/ppc/
+/industries/real-estate/property-management/social-media/
+/industries/recreation-entertainment/boat-dealers/seo/
+/industries/recreation-entertainment/campgrounds-rv-parks/ppc/
+/industries/recreation-entertainment/campgrounds-rv-parks/seo/
+/industries/recreation-entertainment/country-clubs/social-media/
+/industries/recreation-entertainment/country-clubs/web-design/
+/industries/recreation-entertainment/golf-courses/social-media/
+/industries/recreation-entertainment/outdoor-products/lead-generation/
+/industries/recreation-entertainment/rv-dealers/lead-generation/
+/industries/recreation-entertainment/spas/seo/
+/industries/recreation-entertainment/swimming-pool-companies/seo/
+/industries/retail-ecommerce/ecommerce/agency/
+/industries/retail-ecommerce/ecommerce/budget/
+/industries/retail-ecommerce/ecommerce/crm/
+/industries/retail-ecommerce/ecommerce/ecommerce-marketing-strategies/
+/industries/retail-ecommerce/ecommerce/lead-generation/
+/industries/retail-ecommerce/ecommerce/marketing-ideas/
+/industries/retail-ecommerce/ecommerce/seo/
+/industries/retail-ecommerce/ecommerce/social-media/
+/industries/retail-ecommerce/ecommerce/web-design/
+/industries/retail-ecommerce/exercise-equipment-companies/lead-generation/
+/industries/retail-ecommerce/furniture-stores/lead-generation/
+/industries/retail-ecommerce/jewelers/lead-generation/
+/industries/retail-ecommerce/jewelers/social-media/
+/industries/retail-ecommerce/luxury-brands/content-marketing/
+/industries/retail-ecommerce/luxury-brands/lead-generation/
+/industries/retail-ecommerce/luxury-brands/seo/
+/industries/retail-ecommerce/luxury-brands/social-media/
+/industries/retail-ecommerce/retail/agency/
+/industries/retail-ecommerce/retail/best-retail-marketing-agencies/
+/industries/retail-ecommerce/retail/marketing-budget/
+/industries/retail-ecommerce/retail/marketing-examples/
+/industries/retail-ecommerce/retail/seo/
+/industries/retail-ecommerce/retail/social-media/
+/industries/retail-ecommerce/retail/statistics/
+/industries/tech/cloud-computing/statistics/
+/industries/tech/cybersecurity/seo/
+/industries/tech/cybersecurity/social-media/
+/industries/tech/cybersecurity/web-design/
+/industries/tech/robotics/lead-generation/
+/industries/tech/robotics/social-media/
+/industries/tech/robotics/web-design/
+/industries/tech/software/best-saas-marketing-agencies/
+/industries/tech/software/marketing-budget/
+/industries/tech/software/saas-marketing-strategies/
+/industries/tech/software/social-media/
+/industries/tech/software/trends/
+/industries/tech/tech-companies/agency/
+/industries/tech/tech-companies/lead-generation/
+/industries/tech/tech-companies/seo-internet-service-providers/
+/industries/tech/tech-companies/social-media/
+/industries/tech/telecommunications/seo/
+/industries/tourism-hospitality/hospitality/lead-generation/
+/industries/tourism-hospitality/hospitality/seo/
+/industries/tourism-hospitality/hospitality/social-media/
+/industries/tourism-hospitality/hotels/digital-marketing-for-resorts/
+/industries/tourism-hospitality/hotels/seo/
+/industries/tourism-hospitality/hotels/social-media/
+/industries/tourism-hospitality/hotels/statistics/
+/industries/tourism-hospitality/tourism/lead-generation/
+/industries/tourism-hospitality/tourism/marketing-budget/
+/industries/tourism-hospitality/tourism/social-media/
+/industries/tourism-hospitality/tourism/statistics/
+/industries/tourism-hospitality/tourism/travel-trends/
+
+# all locations URLs
+/locations/ 451
+/locations/ann-arbor-mi/ 2
+/locations/atlanta-ga/ 11
+/locations/baltimore-md/ 10
+/locations/baltimore-md/ppc/ 1
+/locations/boston-ma/ 11
+/locations/charlotte-nc/ 11
+/locations/chicago-il/ 10
+/locations/cincinnati-oh/ 9
+/locations/cleveland-oh/ 9
+/locations/columbus-oh/ 9
+/locations/dallas-tx/ 9
+/locations/dallas-tx/ppc/ 2
+/locations/dallas-tx/seo/ 1
+/locations/denver-co/ 9
+/locations/denver-co/ppc/ 2
+/locations/denver-co/seo/ 1
+/locations/detroit-mi/ 7
+/locations/ft-myers-fl/ 9
+/locations/ft-myers-fl/ppc/ 1
+/locations/ft-myers-fl/seo/ 1
+/locations/harrisburg-pa/ 14
+/locations/harrisburg-pa/generative-engine-optimization/ 1
+/locations/harrisburg-pa/ppc/ 1
+/locations/harrisburg-pa/seo/ 1
+/locations/houston-tx/ 10
+/locations/indianapolis-in/ 6
+/locations/jacksonville-fl/ 8
+/locations/jacksonville-fl/ppc/ 2
+/locations/jacksonville-fl/seo/ 1
+/locations/lancaster-pa/ 11
+/locations/lancaster-pa/ppc/ 1
+/locations/lancaster-pa/seo/ 1
+/locations/london-uk/ 8
+/locations/los-angeles-ca/ 11
+/locations/minneapolis-mn/ 13
+/locations/minneapolis-mn/ppc/ 1
+/locations/new-orleans-la/ 14
+/locations/new-york-city/ 15
+/locations/norfolk-va/ 51
+/locations/norfolk-va/ppc/ 1
+/locations/norfolk-va/seo/ 1
+/locations/orlando-fl/ 13
+/locations/orlando-fl/ppc/ 1
+/locations/philadelphia-pa/ 16
+/locations/pittsburgh-pa/ 14
+/locations/raleigh-nc/ 14
+/locations/richmond-va/ 15
+/locations/san-francisco-ca/ 7
+/locations/tampa-fl/ 7
+/locations/tampa-fl/ppc/ 1
+/locations/tampa-fl/seo/ 1
+/locations/toronto-ca/ 1
+/locations/washington-dc/ 6
+/locations/york-pa/ 8
+/locations/york-pa/ppc/ 1
+/locations/york-pa/seo/ 1

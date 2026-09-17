@@ -1,0 +1,88 @@
+== CTA labels (non-template) by page type: avg per page, top labels ==
+service          inline proposal/quote/audit CTAs per page 4.0 | top: [('Send Me a Proposal', 344), ('Check out our client testimonials', 214), ('Request a Free Proposal', 87), ('GET STARTED', 69), ('Get My Custom Quote', 37), ('Learn More', 19)]
+industry         inline proposal/quote/audit CTAs per page 2.2 | top: [('Read Full Case Study', 180), ('Get a Quote', 61), ('Request a Proposal', 60), ('View pricing', 50), ('Get a Proposal (inline, beyond header x2)', 28), ('View Marketing Services', 24)]
+case-study       inline proposal/quote/audit CTAs per page 0.0 | top: [('Check out our client testimonials', 2), ('Get a Free Proposal', 1)]
+pricing          inline proposal/quote/audit CTAs per page 2.0 | top: [('GET STARTED', 36), ('Get a Proposal (inline, beyond header x2)', 32), ('Learn More', 31), ('Get a Custom Quote', 23), ('Read Full Case Study', 18), ('See Case Study', 14)]
+about/brand      inline proposal/quote/audit CTAs per page 0.4 | top: [('Visit Hub', 53), ('Learn More', 15), ('First', 8), ('Last', 8), ('WebFX SEO Services', 7), ('Get Directions', 6)]
+blog-post        inline proposal/quote/audit CTAs per page 1.6 | top: [('Plan Your Marketing Budget', 28), ('See the Strategy', 22), ('Add WebFX as a preferred source on Google', 20), ('Get My Custom Strategy', 5), ('Submit', 5), ('View the Case Study', 4)]
+learn            inline proposal/quote/audit CTAs per page 0.9 | top: [('Get a Proposal (inline, beyond header x2)', 9), ('View The List', 6), ('Send Me a Proposal', 6), ('Solve Calculation', 5), ('1', 5), ('2', 5)]
+hub              inline proposal/quote/audit CTAs per page 0.7 | top: [('Get a Proposal (inline, beyond header x2)', 7), ('Learn More', 6), ('Discover Our Tech', 2), ('Get a free proposal', 2), ('Amazon Marketing Basics', 1), ('Amazon Marketing Glossary', 1)]
+technology       inline proposal/quote/audit CTAs per page 1.8 | top: [('Send Me a Proposal', 12), ('Check out our client testimonials', 10), ('See 1,100+ Happy Clients’ Testimonials', 4), ('Get a Proposal (inline, beyond header x2)', 4), ('Get a Free Proposal', 4), ('Get Started', 3)]
+location         inline proposal/quote/audit CTAs per page 2.7 | top: [('Get a free proposal', 18), ('Get a Free Proposal', 9), ('Read Now', 9), ('View Case Study', 5), ('Get Directions', 1), ('View Services', 1)]
+tool             inline proposal/quote/audit CTAs per page 0.6 | top: [('View More', 6), ('Recent Calculations 0', 3), ('Clear History', 3), ('Calculate Readability', 3), ('1', 2), ('2', 2)]
+statistics       inline proposal/quote/audit CTAs per page 1.9 | top: [('Read Full Case Study', 9), ('Get a Proposal (inline, beyond header x2)', 5), ('Get a Quote', 4), ('Plan Your Marketing Budget', 4), ('Request a Proposal', 3), ('View pricing', 3)]
+glossary         inline proposal/quote/audit CTAs per page 1.0 | top: [('Get a Proposal (inline, beyond header x2)', 3), ('Browse All Of Our Digital Advertising Resources', 1), ('Check out these PPC trends for 2026', 1), ('Learn more: How Long Does it Take PPC to Work?', 1), ('Browse All Of Our PPC Resources', 1), ('View Glossary', 1)]
+proposal-form    inline proposal/quote/audit CTAs per page 1.0 | top: [('Request a Proposal', 3), ('SPEAK WITH A STRATEGIST: 888-874-2601', 3)]
+marketing-guide  inline proposal/quote/audit CTAs per page 0.0 | top: []
+portfolio-index  inline proposal/quote/audit CTAs per page 0.3 | top: [('Read Reviews', 2), ('View Case Studies', 1), ('View Design Portfolio', 1), ('View Full Portfolio', 1), ('View All Case Studies', 1), ('Get a free proposal', 1)]
+blog-index       inline proposal/quote/audit CTAs per page 0.0 | top: [('Get Your SEO Score', 1)]
+home             inline proposal/quote/audit CTAs per page 6.0 | top: [('Get My Free Proposal', 5), ('Traditional Marketing', 1), ('Revenue Marketing', 1), ('Revenue Platform', 1), ('Strategic Execution', 1), ('AI-Powered Intelligence', 1)]
+
+== Forms by page type (footer 'Enter your website' proposal form is on every page) ==
+service          extra website-capture forms/page 1.15 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.01
+industry         extra website-capture forms/page 0.26 | newsletter forms/page 0.04 | other email forms/page 0.08 | calculator forms/page 0.01
+case-study       extra website-capture forms/page 0.02 | newsletter forms/page 0.00 | other email forms/page 0.98 | calculator forms/page 0.00
+pricing          extra website-capture forms/page 0.85 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.10
+about/brand      extra website-capture forms/page 0.14 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+blog-post        extra website-capture forms/page 0.55 | newsletter forms/page 0.05 | other email forms/page 0.00 | calculator forms/page 0.00
+learn            extra website-capture forms/page 0.95 | newsletter forms/page 0.05 | other email forms/page 0.00 | calculator forms/page 0.26
+hub              extra website-capture forms/page 0.71 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+technology       extra website-capture forms/page 0.93 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+location         extra website-capture forms/page 2.70 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+tool             extra website-capture forms/page 0.20 | newsletter forms/page 0.10 | other email forms/page 0.10 | calculator forms/page 0.60
+statistics       extra website-capture forms/page 0.44 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+glossary         extra website-capture forms/page 1.33 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+proposal-form    extra website-capture forms/page 0.00 | newsletter forms/page 0.00 | other email forms/page 0.67 | calculator forms/page 0.00
+marketing-guide  extra website-capture forms/page 0.00 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+portfolio-index  extra website-capture forms/page 0.00 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+blog-index       extra website-capture forms/page 1.00 | newsletter forms/page 3.00 | other email forms/page 0.00 | calculator forms/page 0.00
+home             extra website-capture forms/page 4.00 | newsletter forms/page 0.00 | other email forms/page 0.00 | calculator forms/page 0.00
+
+== Template/QA leaks ==
+ 125 unrendered [stat ...] shortcode in JSON-LD: by type {'hub': 14, 'blog-post': 6, 'learn': 10, 'glossary': 3, 'pricing': 10, 'industry': 71, 'statistics': 5, 'service': 5, 'technology': 1} e.g. ['amazon', 'analytics', 'blog_healthcare_dentist_facebook_ads_guide', 'blog_healthcare_legitscript_for_google_ads']
+   1 utm_source=chatgpt.com in body links/text: by type {'blog-post': 1} e.g. ['blog_home_services_how_to_choose_construction_marketing_agency']
+   1 'Test Block' visible: by type {'learn': 1} e.g. ['digital_marketing_learn_how_to_measure_digital_roi']
+   2 Sarah Berry 'Time Magazine Person of the Year' joke bio: by type {'blog-post': 2} e.g. ['blog_marketing_roas', 'blog_seo_2019_search_market_share']
+   1 'Table view' chart fallback: by type {'blog-post': 1} e.g. ['blog_seo_2019_search_market_share']
+  19 'Summarize in ChatGPT' button: by type {'blog-post': 18, 'industry': 1} e.g. ['blog_ai_ai_brand_discovery_research', 'blog_ai_generative_engine_optimization', 'blog_healthcare_dentist_facebook_ads_guide', 'blog_healthcare_legitscript_for_google_ads']
+  25 'Add WebFX as a preferred source on Google': by type {'blog-post': 20, 'statistics': 2, 'industry': 2, 'pricing': 1} e.g. ['blog_ai_ai_brand_discovery_research', 'blog_ai_generative_engine_optimization', 'blog_healthcare_dentist_facebook_ads_guide', 'blog_healthcare_legitscript_for_google_ads']
+  36 'Key Takeaways' block: by type {'blog-post': 4, 'pricing': 29, 'industry': 3} e.g. ['blog_ai_ai_brand_discovery_research', 'blog_ai_generative_engine_optimization', 'blog_ppc_much_cost_advertise_google_adwords', 'blog_seo_2019_search_market_share']
+   1 'TL;DR': by type {'blog-post': 1} e.g. ['blog_seo_2019_search_market_share']
+  42 'Reviewed by:' line: by type {'pricing': 40, 'blog-post': 1, 'service': 1} e.g. ['analytics_pricing', 'blog_home_services_google_local_services_ads', 'content_marketing_pricing', 'content_marketing_services_expert_copy']
+  18 'Expert insights from' quote box: by type {'about/brand': 1, 'service': 7, 'blog-post': 2, 'learn': 3, 'pricing': 1, 'industry': 3, 'technology': 1} e.g. ['about_our_approach_my_website_doesnt_convert', 'amazon_services_amazon_seo_listing_optimization_service', 'blog_marketing_revenue_marketing', 'blog_marketing_roas']
+  12 'Last reviewed'/'Last Updated' visible: by type {'about/brand': 2, 'blog-post': 3, 'pricing': 6, 'learn': 1} e.g. ['about_our_approach_why_is_my_website_traffic_going_down', 'blog_home_services_google_local_services_ads', 'blog_ppc_much_cost_advertise_google_adwords', 'blog_web_design_wordpress_statistics']
+  11 'Powered by N hours of X experience': by type {'blog-post': 7, 'statistics': 2, 'industry': 2} e.g. ['blog_healthcare_dentist_facebook_ads_guide', 'blog_healthcare_legitscript_for_google_ads', 'blog_home_services_google_local_services_ads', 'blog_industrial_marketing_guide']
+   7 'Our methodology' (ranked listicle): by type {'learn': 6, 'industry': 1} e.g. ['content_marketing_learn_top_video_marketing_companies', 'industries_recreation_entertainment_best_entertainment_media_marketing_agencies', 'ppc_learn_best_ppc_companies', 'ppc_learn_google_ads_companies']
+
+== Stale-year / freshness inconsistencies in primary content ==
+  blog_marketing_revenue_marketing: desc['2026'] vs title['2027']
+  blog_ppc_much_cost_advertise_google_adwords: desc['2025'] vs title['2026']
+  blog_seo_2019_search_market_share: url['2019'] vs title['2026']
+  blog_social_media_best_social_media_platforms_for_businesses: headings['2025'] vs title['2026']
+dateModified present on 34 blog/learn/stats pages; in 2026: 33; median 2026-07-28
+published vs modified: blog_ai_ai_brand_discovery_research 2026-01-29->2026-06-30; blog_ai_generative_engine_optimization 2026-02-05->2026-09-11; blog_home_services_google_local_services 2025-06-13->2026-09-02; blog_home_services_how_to_choose_constru 2025-06-24->2026-09-14; blog_industrial_marketing_guide 2026-03-27->2026-09-09; blog_manufacturing_metal_fabricator_mark 2024-09-06->2026-08-24; blog_manufacturing_social_media_guide 2025-03-17->2026-08-10; blog_marketing_revenue_marketing 2025-04-03->2026-06-10; blog_marketing_roas 2024-11-14->2026-05-26; blog_ppc_much_cost_advertise_google_adwo 2026-07-16->2026-07-16; blog_seo_2019_search_market_share 2026-03-25->2026-08-07; blog_seo_omniseo_approach 2025-03-25->2026-09-09; blog_social_media_best_social_media_plat 2025-07-07->2026-05-27; blog_social_media_should_you_outsource_y 2026-01-01->2026-06-22; blog_web_design_outsource_web_design 2024-10-08->2026-06-05; blog_web_design_wordpress_statistics 2025-03-20->2026-05-27; content_marketing_learn_top_video_market 2026-08-12->2026-09-02; digital_marketing_learn_digital_marketin 2025-01-14->2026-09-01; digital_marketing_learn_how_to_measure_d 2025-04-02->2026-08-31; ppc_learn_best_ppc_companies 2026-06-15->2026-07-17; ppc_learn_google_ads_companies 2026-07-17->2026-07-17; ppc_learn_top_adtech_companies 2026-08-20->2026-09-02; seo_learn_best_seo_companies 2026-02-03->2026-08-05; seo_learn_how_to_hire_seo_experts 2026-04-17->2026-09-11; social_media_learn_best_facebook_adverti 2026-08-19->2026-09-02; industries_education_higher_education_st 2024-08-26->2026-05-26; industries_food_beverage_restaurants_sta 2024-06-26->2025-06-23; industries_health_hospitals_healthcare_s 2024-04-22->2026-05-28; industries_home_repair_home_services_sta 2024-08-07->2026-08-10; industries_retail_ecommerce_retail_stati 2024-08-26->2026-07-28; ppc_statistics 2025-06-13->2026-06-05; seo_statistics 2025-01-22->2026-05-26; social_media_statistics 2025-05-14->2026-05-26; web_design_statistics 2024-12-13->2026-06-05
+
+== Statistics pages: cited external domains & source density ==
+  industries_education_higher_education_statistics   stat-like lines  85 | external links  47 | unique domains  30 | '(Source)' markers 0 | top [('nces.ed.gov', 12), ('devlinpeck.com', 3), ('statista.com', 3), ('learning.linkedin.com', 2), ('educationdata.org', 2)]
+  industries_food_beverage_restaurants_statistics    stat-like lines  66 | external links  18 | unique domains  14 | '(Source)' markers 0 | top [('restaurant.org', 5), ('financesonline.com', 1), ('nrn.com', 1), ('touchbistro.com', 1), ('menutiger.com', 1)]
+  industries_health_hospitals_healthcare_statistics  stat-like lines  85 | external links  45 | unique domains  27 | '(Source)' markers 0 | top [('statista.com', 13), ('ibisworld.com', 3), ('businesswire.com', 2), ('ruleranalytics.com', 2), ('globenewswire.com', 2)]
+  industries_home_repair_home_services_statistics    stat-like lines 114 | external links  20 | unique domains  18 | '(Source)' markers 102 | top [('verifiedmarketresearch.com', 2), ('thisoldhouse.com', 2), ('amenify.com', 1), ('statista.com', 1), ('gitnux.org', 1)]
+  industries_retail_ecommerce_retail_statistics      stat-like lines  98 | external links  51 | unique domains  38 | '(Source)' markers 0 | top [('nrf.com', 5), ('statista.com', 4), ('shopify.com', 3), ('capitaloneshopping.com', 3), ('blog.gwi.com', 2)]
+  ppc_statistics                                     stat-like lines  63 | external links  23 | unique domains  11 | '(Source)' markers 54 | top [('statista.com', 12), ('wordstream.com', 2), ('invoca.com', 1), ('optinmonster.com', 1), ('singlegrain.com', 1)]
+  seo_statistics                                     stat-like lines 104 | external links  45 | unique domains  29 | '(Source)' markers 0 | top [('statista.com', 8), ('backlinko.com', 5), ('thinkwithgoogle.com', 3), ('ahrefs.com', 3), ('gs.statcounter.com', 2)]
+  social_media_statistics                            stat-like lines 113 | external links  57 | unique domains   9 | '(Source)' markers 0 | top [('statista.com', 49), ('blog.twitter.com', 1), ('blog.x.com', 1), ('business.pinterest.com', 1), ('news.linkedin.com', 1)]
+  web_design_statistics                              stat-like lines  58 | external links  29 | unique domains  18 | '(Source)' markers 0 | top [('statista.com', 6), ('topdesignfirms.com', 4), ('prnewswire.com', 3), ('cxl.com', 2), ('siteefy.com', 1)]
+  blog_web_design_wordpress_statistics               stat-like lines  38 | external links  20 | unique domains  18 | '(Source)' markers 27 | top [('w3techs.com', 2), ('en-gb.wordpress.org', 2), ('wpzoom.com', 1), ('techjury.net', 1), ('reviewhosting.co.uk', 1)]
+  top cited domains across stats pages: [('statista.com', 97), ('nces.ed.gov', 12), ('backlinko.com', 6), ('restaurant.org', 5), ('nrf.com', 5), ('globenewswire.com', 4), ('ibisworld.com', 4), ('thinkwithgoogle.com', 4), ('topdesignfirms.com', 4), ('devlinpeck.com', 3), ('businesswire.com', 3), ('verifiedmarketresearch.com', 3), ('mordorintelligence.com', 3), ('forbes.com', 3), ('insiderintelligence.com', 3), ('shopify.com', 3), ('capitaloneshopping.com', 3), ('ahrefs.com', 3), ('prnewswire.com', 3), ('learning.linkedin.com', 2), ('educationdata.org', 2), ('finance.yahoo.com', 2), ('zippia.com', 2), ('ruleranalytics.com', 2), ('precedenceresearch.com', 2), ('grandviewresearch.com', 2), ('fortunebusinessinsights.com', 2), ('gitnux.org', 2), ('thisoldhouse.com', 2), ('oberlo.com', 2)]
+
+== Geography: US vs India references (primary content pages) ==
+  78 primary pages. mentions: {'US': 180, 'India': 7, 'UK/Europe': 20, 'dollar amounts': 397}; pages containing: {'US': 27, 'India': 4, 'UK/Europe': 12, 'dollar amounts': 46}
+  INDIA ctx [content_marketing_learn_top_video_marketing_companies]:  Below you’ll find an overview of each video marketing agency, from the U.S. to India:
+  INDIA ctx [industries_education_higher_education_statistics]: 1% each were American Indian/Alaska Native and Pacific Islander
+  INDIA ctx [industries_education_higher_education_statistics]: 48. 2.7 million students are Asian, 0.5 million are American Indian or Alaska Native, and 0.2 million identify as Pacific Islanders.
+  INDIA ctx [seo_learn_best_seo_companies]: Location: Chandigarh, India
+  INDIA ctx [seo_learn_best_seo_companies]: Location: Chandigarh, India
+  INDIA ctx [seo_learn_best_seo_companies]: e app and web development expertise, add iMark Infotech to your shortlist. This India-based SEO agency has over 200 reviews on Clutch, where it has a solid 4.9 avera
+  INDIA ctx [seo_statistics]: América,” (2) “UEFA European Championship,” (3) “ICC Men’s T20 World Cup,” (4) “India vs England,” and (5) “Liam Payne.”
+  India mentions across all 460 pages: 13; rupee symbol pages: 0
+  education pages sitewide: ['industries_education', 'industries_education_edtech', 'industries_education_edtech_social_media', 'industries_education_higher_education', 'industries_education_higher_education_education_marketing_roi', 'industries_education_higher_education_social_media', 'industries_education_higher_education_statistics', 'industries_education_online_education', 'industries_education_private_schools', 'industries_education_technical_schools']

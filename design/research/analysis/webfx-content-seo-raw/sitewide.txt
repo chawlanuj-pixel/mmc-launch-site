@@ -1,0 +1,346 @@
+PAGES 460; template (nav/footer) hrefs on >=60% of pages: 139
+
+== Page type counts ==
+service            137
+industry           89
+case-study         55
+pricing            41
+about/brand        28
+blog-post          20
+learn              19
+hub                14
+technology         14
+location           10
+tool               10
+statistics         9
+glossary           3
+proposal-form      3
+marketing-guide    3
+portfolio-index    3
+blog-index         1
+home               1
+
+== Title / description / H1 by type ==
+type               n title med  t>60 |WebFX  year desc med  d>160  d<120 noDesc  H1=1  H1~T
+service          137        56   12%    40%    1%      137     4%    15%     0%   99%   15%
+industry          89        54    9%    18%    7%      137     0%    17%     0%  100%   31%
+case-study        55        53   11%    75%    0%      121     2%    49%     0%  100%    2%
+pricing           41        56   12%    10%   46%      132     2%    12%     0%  100%   39%
+about/brand       28        40   11%    61%    0%      120     4%    39%     7%   86%    0%
+blog-post         20        52   10%     5%   40%      145     5%     5%     0%  100%   15%
+learn             19        50    5%    32%   21%      142     0%     5%     0%  100%   21%
+hub               14        39    7%    86%    0%      130     0%    29%     0%  100%    7%
+technology        14        56   21%    36%    0%      138     0%    21%     0%  100%   14%
+location          10        56   30%    80%    0%      142     0%     0%     0%  100%    0%
+tool              10        52   10%    50%    0%      130     0%    40%     0%  100%    0%
+statistics         9        57    0%    11%   89%      129     0%    33%     0%  100%   33%
+glossary           3        59    0%    33%   67%      129     0%    33%     0%  100%    0%
+proposal-form      3        42    0%   100%    0%       98     0%    67%    33%    0%    0%
+marketing-guide    3        33    0%   100%    0%      149     0%     0%     0%  100%    0%
+portfolio-index    3        58    0%   100%    0%      140     0%     0%     0%  100%    0%
+blog-index         1        51    0%     0%    0%       78     0%   100%     0%  100%    0%
+home               1        56    0%   100%    0%      147     0%     0%     0%  100%    0%
+
+== Title suffix patterns (sitewide) ==
+ 289 (no separator suffix)
+  92 | WebFX
+  15 - WebFX
+   2 | Case Study
+   1 | FXBuilds
+   1 | Expert Advice
+   1 | How We've Driven $10B for Clients
+   1 | Harrisburg STEM Training Program
+   1 | Best Place to Work In PA
+   1 | 65+ Content Types Offered
+   1 | 6 Social Media Sites for Video
+   1 | Yelp Advertising Partner
+
+== Title duplication ==
+duplicate titles: 6 pages across 2 titles: ['PPC Resource Hub for Marketers | WebFX', 'Hear from an expert! Free Quote from WebFX']
+duplicate descriptions: 6 pages across 2
+duplicate H1: 7 pages; examples ['PPC Resource Hub: Grow Your PPC Knowledge', 'Download Your Free Guide']
+pages with 0 H1: 3; >1 H1: 5 ['about', 'about_charities', 'about_results', 'careers', 'digital_advertising_services_yelp']
+
+== Canonical / robots ==
+canonical present: 459/460; self-referencing: 455; non-self: [('careers', 'https://www.webfx.com/fxinternational/'), ('ppc_page_2', 'https://www.webfx.com/ppc/'), ('ppc_page_3', 'https://www.webfx.com/ppc/'), ('ppc_page_4', 'https://www.webfx.com/ppc/')]
+missing canonical: ['free_quote_bv2']
+ 458 robots=index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+   1 robots=index, nofollow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+   1 robots=noindex, follow
+noindex pages: ['free_quote_bv2']
+og:title present: 460/460; og differs from title: 452
+
+== Schema types by page type (share of pages) ==
+all schema @types sitewide (pages containing): Organization=460, ImageObject=460, WebSite=459, SearchAction=459, EntryPoint=459, PropertyValueSpecification=459, QuantitativeValue=459, ReadAction=458, BreadcrumbList=456, ListItem=456, WebPage=455, VideoObject=192, Person=167, Article=163, AggregateRating=58, Service=55, Product=53, PostalAddress=47, LocalBusiness=46, GeoCoordinates=46, OpeningHoursSpecification=46, FAQPage=44, Question=44, Answer=44, Brand=44, ItemList=31, Offer=27, Article/BlogPosting=25, Dataset=20, DataCatalog=20, OfferCatalog=16, HowTo=9, WebApplication=9, HowToStep=8, UnitPriceSpecification=7, PropertyValue=7, Country=6, CreativeWork=6, DefinedTerm=5, Audience=4, Guide=4, SoftwareApplication=3, WebPage/ContactPage=2, Table=2, Review=2, Rating=2, WebPage/AboutPage=1, GeoShape=1, Place=1, Specialty=1, Thing=1, WebPage/CollectionPage=1, Action=1
+type               n   Article Article/B   WebPage WebPage/C Breadcrum Organizat    Person   FAQPage     HowTo VideoObje WebApplic   Service   Product     Offer    Review Aggregate   Dataset  ItemList LocalBusi ImageObje     Table
+service          137        4%        0%      100%        0%       98%      100%        5%       18%        1%       77%        1%       35%       26%       14%        1%       29%        0%        2%       25%      100%        1%
+industry          89       84%        2%      100%        0%      100%      100%       82%        2%        0%       19%        0%        1%       10%        0%        0%       10%        0%        4%        0%      100%        0%
+case-study        55       11%        0%      100%        0%      100%      100%        0%        0%        0%        9%        0%       11%        0%        0%        0%        0%        0%       11%        0%      100%        0%
+pricing           41       93%        2%      100%        0%      100%      100%       71%       10%        7%       22%        0%        0%        0%        0%        0%        0%       49%       24%        0%      100%        2%
+about/brand       28        0%        0%       93%        0%      100%      100%        0%        0%        4%       29%        0%        0%        0%        0%        0%        0%        0%       11%       11%      100%        0%
+blog-post         20        0%      100%      100%        0%      100%      100%      100%       20%       15%       40%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+learn             19       84%        0%      100%        0%      100%      100%       74%       11%        5%       47%        0%        0%        0%        0%        0%        0%        0%       26%        0%      100%        0%
+hub               14      100%        0%      100%        0%      100%      100%      100%       14%        0%       50%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+technology        14        7%        0%      100%        0%      100%      100%        7%       14%        0%       57%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+location          10        0%        0%      100%        0%      100%      100%        0%        0%        0%       90%        0%        0%       90%        0%        0%       90%        0%        0%       90%      100%        0%
+tool              10        0%        0%       90%        0%       90%      100%        0%       20%        0%       20%       80%        0%        0%       80%        0%        0%        0%        0%        0%      100%        0%
+statistics         9       56%       22%      100%        0%      100%      100%       67%       11%        0%       22%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+glossary           3      100%        0%      100%        0%      100%      100%      100%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+proposal-form      3        0%        0%       67%        0%      100%      100%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+marketing-guide    3        0%        0%      100%        0%      100%      100%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+portfolio-index    3        0%        0%      100%        0%      100%      100%        0%        0%        0%       67%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+blog-index         1        0%        0%        0%      100%      100%      100%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+home               1        0%        0%      100%        0%      100%      100%        0%        0%        0%      100%        0%        0%        0%        0%        0%        0%        0%        0%        0%      100%        0%
+
+== Dates & authors (schema) by type ==
+service          datePublished  42% dateModified  41% visibleDate   0% authors {'WebFX Team': 5}
+industry         datePublished  22% dateModified  22% visibleDate   1% authors {'WebFX Team': 71, 'Aaron Alexander': 2}
+case-study       datePublished 100% dateModified 100% visibleDate   0% authors {}
+pricing          datePublished  73% dateModified  71% visibleDate  17% authors {'Abby Fields': 13, 'WebFX Team': 10, 'Celeste Yates': 2, 'Sam Wixted': 2, 'Kevin Randolph': 1, 'Matthew Gibbons': 1}
+about/brand      datePublished  36% dateModified  36% visibleDate   4% authors {}
+blog-post        datePublished  80% dateModified  80% visibleDate  80% authors {'WebFX Team': 7, 'Abby Fields': 3, 'Trevin Shirey': 2, 'Macy Storm': 2, 'Lornah Ngugi': 2, 'Sarah Berry': 2}
+learn            datePublished  47% dateModified  47% visibleDate   5% authors {'WebFX Team': 10, 'Abbey Stephan': 1, 'Kevin Randolph': 1, 'Savannah Swanson': 1, 'Lornah Ngugi': 1}
+hub              datePublished   0% dateModified   0% visibleDate   0% authors {'WebFX Team': 14}
+technology       datePublished  43% dateModified  43% visibleDate   0% authors {'WebFX Team': 1}
+location         datePublished  90% dateModified  90% visibleDate   0% authors {}
+tool             datePublished  30% dateModified  30% visibleDate   0% authors {}
+statistics       datePublished 100% dateModified 100% visibleDate  22% authors {'WebFX Team': 5, 'Abby Fields': 1}
+glossary         datePublished   0% dateModified   0% visibleDate   0% authors {'WebFX Team': 3}
+proposal-form    datePublished   0% dateModified   0% visibleDate   0% authors {}
+marketing-guide  datePublished 100% dateModified 100% visibleDate   0% authors {}
+portfolio-index  datePublished  33% dateModified  33% visibleDate   0% authors {}
+blog-index       datePublished 100% dateModified 100% visibleDate   0% authors {}
+home             datePublished 100% dateModified 100% visibleDate   0% authors {}
+
+== Images / alt / video by type ==
+service          imgs/page med  128  missing-alt 269/16695 (2% ) pages with video 82%
+industry         imgs/page med   48  missing-alt 148/4897 (3% ) pages with video 74%
+case-study       imgs/page med   69  missing-alt 62/3914 (2% ) pages with video 13%
+pricing          imgs/page med   54  missing-alt 74/2301 (3% ) pages with video 39%
+about/brand      imgs/page med   53  missing-alt 39/1770 (2% ) pages with video 39%
+blog-post        imgs/page med   65  missing-alt 40/1294 (3% ) pages with video 65%
+learn            imgs/page med   66  missing-alt 34/1307 (3% ) pages with video 68%
+hub              imgs/page med   68  missing-alt 26/967 (3% ) pages with video 79%
+technology       imgs/page med   66  missing-alt 16/994 (2% ) pages with video 57%
+location         imgs/page med  106  missing-alt 20/1059 (2% ) pages with video 90%
+tool             imgs/page med   50  missing-alt 12/699 (2% ) pages with video 20%
+statistics       imgs/page med   50  missing-alt 16/491 (3% ) pages with video 56%
+glossary         imgs/page med   69  missing-alt 6/192 (3% ) pages with video 67%
+proposal-form    imgs/page med   61  missing-alt 4/185 (2% ) pages with video 0%
+marketing-guide  imgs/page med   54  missing-alt 6/162 (4% ) pages with video 0%
+portfolio-index  imgs/page med  225  missing-alt 6/1461 (0% ) pages with video 67%
+blog-index       imgs/page med   95  missing-alt 2/95 (2% ) pages with video 0%
+home             imgs/page med   85  missing-alt 3/85 (4% ) pages with video 100%
+
+== Word counts by type ==
+service          n=137 min   744 med   1836 max  4033
+industry         n= 89 min    85 med   1780 max  4079
+case-study       n= 55 min   590 med    819 max  1288
+pricing          n= 41 min   403 med   1934 max  4620
+about/brand      n= 28 min   138 med    606 max  3327
+blog-post        n= 20 min  1070 med   2002 max  5272
+learn            n= 19 min  1037 med   1951 max  4925
+hub              n= 14 min  1458 med   2142 max  3170
+technology       n= 14 min   484 med   1120 max  3304
+location         n= 10 min   705 med   1130 max  1336
+tool             n= 10 min   198 med    636 max  1675
+statistics       n=  9 min  1433 med   1894 max  2529
+glossary         n=  3 min  3221 med   4254 max  5629
+proposal-form    n=  3 min   709 med    803 max   807
+marketing-guide  n=  3 min   148 med    157 max   174
+portfolio-index  n=  3 min   565 med    719 max  1823
+blog-index       n=  1 min   825 med    825 max   825
+home             n=  1 min   937 med    937 max   937
+
+== Content features by type ==
+type                    toc   faq_text key_takeaw  read_time summarize_ preferred_   reviewed number_in_ email_fiel website_fi  expertInsights(avg)
+service                 82%        94%         1%         2%         0%         0%         1%        21%         0%       100%  0.1
+industry                72%        26%         6%         2%         1%         2%         0%        43%         8%       100%  0.0
+case-study               0%         5%         0%         0%         0%         0%         0%         4%        98%       100%  0.0
+pricing                 93%        63%        71%        56%         0%         2%        98%        51%         0%       100%  0.0
+about/brand              7%        11%         0%         0%         0%         0%         4%        11%         0%       100%  0.0
+blog-post               80%        40%        20%       100%        90%       100%         5%        55%         5%       100%  0.1
+learn                   95%        58%        11%        11%         0%         0%         0%        53%         5%       100%  0.2
+hub                     43%        36%         0%        93%         0%         0%         0%         0%         0%       100%  0.0
+technology              21%        14%         7%        29%         0%         0%         0%         0%         0%       100%  0.1
+location                 0%        90%         0%         0%         0%         0%         0%        40%         0%       100%  0.0
+tool                     0%        40%         0%         0%         0%         0%         0%        10%        20%       100%  0.0
+statistics             100%         0%         0%        22%         0%        22%         0%       100%         0%       100%  0.0
+glossary               100%         0%         0%         0%         0%         0%         0%        67%         0%       100%  0.0
+proposal-form            0%         0%         0%         0%         0%         0%         0%         0%        67%       100%  0.0
+marketing-guide          0%         0%         0%         0%         0%         0%         0%         0%         0%       100%  0.0
+portfolio-index          0%         0%         0%         0%         0%         0%         0%         0%         0%       100%  0.0
+blog-index               0%       100%         0%       100%         0%         0%         0%         0%       100%       100%  0.0
+home                     0%         0%         0%         0%         0%         0%         0%         0%         0%       100%  0.0
+
+== Internal link flows: BODY links (template nav/footer subtracted) per page, by source type ==
+source             n  body   service   pricing proposal/ case-stud  industry technolog      tool      blog learn/sta       hub     about  external other-int  commercial%
+service          137    16       4.9       1.4       0.0       1.3       0.4       0.1       0.1       2.7       1.9       0.2       0.0       1.2       2.1  39%
+industry          89    28       1.8       0.2       0.0       3.9      10.3       0.2       1.7       2.9       1.3       0.0       0.0       1.2       0.8  7%
+case-study        55    10       0.1       0.0       0.0       6.9       1.0       0.0       0.0       0.0       0.0       0.0       0.0       1.0       0.0  1%
+pricing           41    15       1.4       3.5       0.1       0.7       1.5       0.0       0.0       4.3       1.7       0.2       0.0       1.5       0.2  33%
+about/brand       28    12       0.8       0.1       0.0       0.2       0.4       0.1       0.1       0.4       0.2       0.0       3.2       6.0       0.3  8%
+blog-post         20    29       1.0       0.4       0.0       2.7       1.1       0.1       0.1      11.9       0.8       0.0       0.0       2.4       7.2  5%
+learn             19    29       0.7       1.3       0.0       1.1       4.9       0.2       0.0      10.4       5.7       0.0       0.0       4.4       0.3  7%
+hub               14    50       5.1       3.0       0.0       0.1       4.3       0.1       0.4      12.9      11.5       6.1       0.1       2.1       4.4  16%
+technology        14    12       2.4       0.1       0.2       0.1       0.0       5.6       0.0       0.7       0.2       0.1       0.0       0.9       1.9  23%
+location          10    20       5.1       0.0       0.0       0.6       0.2       0.0       0.0       0.0       0.0       0.0       0.6       5.9       0.0  25%
+tool              10     8       0.2       0.0       0.0       0.4       0.0       0.1       4.1       0.6       0.4       0.0       0.0       1.4       0.5  3%
+statistics         9    66       1.8       0.2       0.0       2.2       6.6       0.0       0.9       9.7       3.1       0.0       0.0      37.6       2.2  3%
+glossary           3    28       3.7       0.3       0.0       0.0       3.3       0.0       0.7      10.3       7.3       0.3       0.0       1.3       0.7  14%
+proposal-form      3     1       0.0       0.0       0.7       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0  100%
+marketing-guide    3     2       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       2.3       0.0       0.0       0.0       0.0  0%
+portfolio-index    3    23       0.0       0.0       0.0      22.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0       0.0  0%
+blog-index         1    41       0.0       0.0       0.0       0.0       0.0       0.0       0.0      37.0       0.0       0.0       0.0       4.0       0.0  0%
+home               1    12       0.0       0.0       0.0       2.0       0.0       2.0       0.0       0.0       0.0       0.0       0.0       0.0       7.0  0%
+
+== ALL links incl. template per page, by source type ==
+service          total   155 service=61.6 pricing=5.3 proposal=2.0 case-stu=3.3 industry=1.4 technolo=7.1 tool=10.1 blog=18.6 learn/st=1.9 hub=6.2 about=15.9 external=9.2 other-in=6.1
+industry         total   167 service=58.8 pricing=4.2 proposal=2.0 case-stu=5.9 industry=11.3 technolo=7.2 tool=11.7 blog=18.9 learn/st=1.3 hub=6.0 about=16.0 external=9.2 other-in=4.8
+case-study       total   149 service=57.1 pricing=4.0 proposal=2.0 case-stu=8.9 industry=2.0 technolo=7.0 tool=10.0 blog=16.0 learn/st=0.0 hub=6.0 about=16.0 external=9.0 other-in=4.0
+pricing          total   154 service=58.4 pricing=7.5 proposal=2.1 case-stu=2.7 industry=2.5 technolo=7.0 tool=10.0 blog=20.3 learn/st=1.7 hub=6.2 about=16.0 external=9.5 other-in=4.2
+about/brand      total   150 service=57.1 pricing=4.0 proposal=2.0 case-stu=2.1 industry=1.4 technolo=7.0 tool=10.0 blog=16.4 learn/st=0.2 hub=6.0 about=18.8 external=14.0 other-in=4.2
+blog-post        total   168 service=58.0 pricing=4.4 proposal=2.0 case-stu=4.7 industry=2.1 technolo=7.0 tool=10.2 blog=27.9 learn/st=0.8 hub=6.0 about=16.0 external=10.3 other-in=11.2
+learn            total   168 service=57.7 pricing=5.3 proposal=2.0 case-stu=3.1 industry=5.9 technolo=7.2 tool=10.0 blog=26.4 learn/st=5.7 hub=6.0 about=16.0 external=12.4 other-in=4.3
+hub              total   189 service=62.1 pricing=7.0 proposal=2.0 case-stu=2.1 industry=5.3 technolo=7.1 tool=10.4 blog=28.9 learn/st=11.5 hub=12.1 about=16.1 external=10.1 other-in=8.4
+technology       total   151 service=59.4 pricing=4.1 proposal=2.2 case-stu=2.1 industry=1.0 technolo=12.6 tool=10.0 blog=16.7 learn/st=0.2 hub=6.1 about=16.0 external=8.9 other-in=5.9
+location         total   159 service=62.1 pricing=4.0 proposal=2.0 case-stu=2.6 industry=1.2 technolo=7.0 tool=10.0 blog=16.0 learn/st=0.0 hub=6.0 about=16.6 external=13.9 other-in=4.0
+tool             total   147 service=57.2 pricing=4.0 proposal=2.0 case-stu=2.4 industry=1.0 technolo=7.1 tool=14.1 blog=16.6 learn/st=0.4 hub=6.0 about=16.0 external=9.4 other-in=4.5
+statistics       total   205 service=58.8 pricing=4.2 proposal=2.0 case-stu=4.2 industry=7.6 technolo=7.0 tool=10.9 blog=25.7 learn/st=3.1 hub=6.0 about=16.0 external=45.6 other-in=6.2
+glossary         total   167 service=60.7 pricing=4.3 proposal=2.0 case-stu=2.0 industry=4.3 technolo=7.0 tool=10.7 blog=26.3 learn/st=7.3 hub=6.3 about=16.0 external=9.3 other-in=4.7
+proposal-form    total   140 service=57.0 pricing=4.0 proposal=2.7 case-stu=2.0 industry=1.0 technolo=7.0 tool=10.0 blog=16.0 learn/st=0.0 hub=6.0 about=16.0 external=8.0 other-in=4.0
+marketing-guide  total   141 service=57.0 pricing=4.0 proposal=2.0 case-stu=2.0 industry=1.0 technolo=7.0 tool=10.0 blog=16.0 learn/st=2.3 hub=6.0 about=16.0 external=8.0 other-in=4.0
+portfolio-index  total   162 service=57.0 pricing=4.0 proposal=2.0 case-stu=24.0 industry=1.0 technolo=7.0 tool=10.0 blog=16.0 learn/st=0.0 hub=6.0 about=16.0 external=8.0 other-in=4.0
+blog-index       total   180 service=57.0 pricing=4.0 proposal=2.0 case-stu=2.0 industry=1.0 technolo=7.0 tool=10.0 blog=53.0 learn/st=0.0 hub=6.0 about=16.0 external=12.0 other-in=4.0
+home             total   151 service=57.0 pricing=4.0 proposal=2.0 case-stu=4.0 industry=1.0 technolo=9.0 tool=10.0 blog=16.0 learn/st=0.0 hub=6.0 about=16.0 external=8.0 other-in=11.0
+
+== Template hrefs by target class ==
+{'about': 16, 'home': 3, 'proposal/contact': 2, 'service': 57, 'technology': 7, 'portfolio': 2, 'blog': 16, 'case-study': 2, 'pricing': 4, 'tool': 10, 'other-internal': 4, 'external': 8, 'hub': 6, 'industry': 1, 'location': 1}
+proposal hrefs in template: {'https://www.webfx.com/free-quote/': 1, 'https://www.webfx.com/contact/': 1}
+
+== Per content page: body links to service/pricing/proposal/case-study/tool ==
+hub        amazon                                                  body= 35 svc= 6 price= 2 prop= 0 case= 0 ind= 0 tool= 3 blog=  3 learn= 9 ext=  1 | tlen=38 dlen=155 pub=None mod=None vis=None auth=['WebFX Team']
+hub        analytics                                               body= 38 svc= 5 price= 1 prop= 0 case= 0 ind= 0 tool= 0 blog=  8 learn= 8 ext=  5 | tlen=44 dlen=132 pub=None mod=None vis=None auth=['WebFX Team']
+hub        content_marketing                                       body= 53 svc= 7 price= 1 prop= 0 case= 0 ind= 4 tool= 0 blog= 16 learn=12 ext=  1 | tlen=35 dlen=148 pub=None mod=None vis=None auth=['WebFX Team']
+hub        digital_advertising                                     body= 46 svc= 9 price= 4 prop= 0 case= 0 ind= 0 tool= 0 blog=  9 learn=16 ext=  1 | tlen=48 dlen=107 pub=None mod=None vis=None auth=['WebFX Team']
+hub        digital_marketing                                       body= 59 svc= 3 price= 3 prop= 0 case= 0 ind= 8 tool= 0 blog= 12 learn=14 ext=  4 | tlen=35 dlen=145 pub=None mod=None vis=None auth=['WebFX Team']
+hub        email_marketing                                         body= 29 svc= 2 price= 3 prop= 0 case= 0 ind= 0 tool= 0 blog=  2 learn=13 ext=  0 | tlen=38 dlen=144 pub=None mod=None vis=None auth=['WebFX Team']
+hub        lead_generation                                         body= 45 svc= 7 price= 6 prop= 0 case= 0 ind=14 tool= 0 blog=  3 learn= 9 ext=  2 | tlen=33 dlen=128 pub=None mod=None vis=None auth=['WebFX Team']
+hub        local_seo                                               body= 34 svc= 1 price= 0 prop= 0 case= 0 ind= 6 tool= 0 blog= 12 learn= 3 ext=  2 | tlen=53 dlen=136 pub=None mod=None vis=None auth=['WebFX Team']
+hub        martech                                                 body= 30 svc= 5 price= 3 prop= 0 case= 0 ind= 0 tool= 0 blog=  5 learn= 6 ext=  4 | tlen=50 dlen=122 pub=None mod=None vis=None auth=['WebFX Team']
+hub        ppc                                                     body= 54 svc= 5 price= 5 prop= 0 case= 0 ind= 0 tool= 1 blog= 13 learn=14 ext=  3 | tlen=38 dlen=127 pub=None mod=None vis=None auth=['WebFX Team']
+hub        seo                                                     body= 70 svc= 4 price= 3 prop= 0 case= 0 ind= 0 tool= 1 blog= 13 learn=31 ext=  3 | tlen=62 dlen=119 pub=None mod=None vis=None auth=['WebFX Team']
+hub        social_media                                            body=159 svc=13 price= 5 prop= 0 case= 0 ind=28 tool= 0 blog= 82 learn=17 ext=  1 | tlen=40 dlen=153 pub=None mod=None vis=None auth=['WebFX Team']
+hub        web_design                                              body= 28 svc= 2 price= 2 prop= 0 case= 0 ind= 0 tool= 1 blog=  1 learn= 7 ext=  1 | tlen=33 dlen=108 pub=None mod=None vis=None auth=['WebFX Team']
+hub        web_development                                         body= 22 svc= 3 price= 4 prop= 0 case= 1 ind= 0 tool= 0 blog=  1 learn= 2 ext=  1 | tlen=46 dlen=108 pub=None mod=None vis=None auth=['WebFX Team']
+learn      content_marketing_learn_content_marketing_roi           body= 17 svc= 0 price= 0 prop= 0 case= 0 ind= 3 tool= 0 blog=  7 learn= 6 ext=  1 | tlen=50 dlen=142 pub=None mod=None vis=None auth=['WebFX Team']
+learn      content_marketing_learn_top_video_marketing_companies   body= 36 svc= 1 price= 4 prop= 0 case= 3 ind= 4 tool= 0 blog= 11 learn= 4 ext=  9 | tlen=38 dlen=123 pub=2026-08-12 mod=2026-09-02 vis=None auth=['Abbey Stephan']
+learn      digital_marketing_learn_customer_acquisition_cost_per_c body= 24 svc= 0 price= 0 prop= 0 case= 0 ind=10 tool= 0 blog= 11 learn= 2 ext=  1 | tlen=37 dlen=138 pub=None mod=None vis=None auth=[]
+learn      digital_marketing_learn_digital_marketing_strategies    body= 32 svc= 4 price= 0 prop= 0 case= 0 ind= 5 tool= 0 blog= 17 learn= 4 ext=  0 | tlen=59 dlen=146 pub=2025-01-14 mod=2026-09-01 vis=None auth=['WebFX Team']
+learn      digital_marketing_learn_how_to_measure_digital_roi      body= 30 svc= 0 price= 1 prop= 0 case= 0 ind= 0 tool= 0 blog= 10 learn= 8 ext=  9 | tlen=60 dlen=151 pub=2025-04-02 mod=2026-08-31 vis=April 2, 2025 auth=['Kevin Randolph']
+learn      ppc_learn                                               body= 13 svc= 1 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  4 learn= 5 ext=  2 | tlen=48 dlen=142 pub=None mod=None vis=None auth=['WebFX Team']
+learn      ppc_learn_best_ppc_companies                            body= 44 svc= 1 price= 0 prop= 0 case= 4 ind= 6 tool= 0 blog= 15 learn= 3 ext= 12 | tlen=38 dlen=112 pub=2026-06-15 mod=2026-07-17 vis=None auth=['Savannah Swanson']
+learn      ppc_learn_free_ppc_audit                                body= 24 svc= 1 price= 0 prop= 0 case= 1 ind= 7 tool= 0 blog=  8 learn= 5 ext=  2 | tlen=61 dlen=126 pub=None mod=None vis=None auth=['WebFX Team']
+learn      ppc_learn_google_ads_companies                          body= 46 svc= 1 price= 0 prop= 0 case= 4 ind= 7 tool= 0 blog= 12 learn= 5 ext= 17 | tlen=48 dlen=146 pub=2026-07-17 mod=2026-07-17 vis=None auth=[]
+learn      ppc_learn_google_partner_agency                         body= 19 svc= 0 price= 3 prop= 0 case= 0 ind= 7 tool= 0 blog=  5 learn= 2 ext=  2 | tlen=50 dlen=153 pub=None mod=None vis=None auth=['WebFX Team']
+learn      ppc_learn_most_important_kpis_for_google_ads            body= 24 svc= 0 price= 0 prop= 0 case= 0 ind= 6 tool= 0 blog= 14 learn= 4 ext=  0 | tlen=48 dlen=146 pub=None mod=None vis=None auth=['WebFX Team']
+learn      ppc_learn_ppc_experts                                   body= 30 svc= 2 price= 1 prop= 0 case= 0 ind= 5 tool= 0 blog= 12 learn= 4 ext=  5 | tlen=59 dlen=134 pub=None mod=None vis=None auth=['WebFX Team']
+learn      ppc_learn_ppc_roi_formula                               body= 29 svc= 1 price= 0 prop= 0 case= 0 ind= 7 tool= 0 blog= 12 learn= 9 ext=  0 | tlen=38 dlen=134 pub=None mod=None vis=None auth=['WebFX Team']
+learn      ppc_learn_top_adtech_companies                          body= 36 svc= 0 price= 0 prop= 0 case= 3 ind= 5 tool= 0 blog= 12 learn= 5 ext= 10 | tlen=32 dlen=135 pub=2026-08-20 mod=2026-09-02 vis=None auth=[]
+learn      seo_learn_best_seo_companies                            body= 28 svc= 0 price= 1 prop= 0 case= 3 ind= 1 tool= 0 blog= 13 learn= 8 ext=  2 | tlen=52 dlen=150 pub=2026-02-03 mod=2026-08-05 vis=None auth=[]
+learn      seo_learn_how_to_hire_seo_experts                       body= 41 svc= 0 price= 3 prop= 0 case= 0 ind= 6 tool= 0 blog= 11 learn=19 ext=  1 | tlen=52 dlen=148 pub=2026-04-17 mod=2026-09-11 vis=None auth=['Lornah Ngugi']
+learn      seo_learn_seo_from_upwork                               body= 24 svc= 1 price= 2 prop= 0 case= 0 ind= 5 tool= 0 blog=  9 learn= 6 ext=  1 | tlen=56 dlen=149 pub=None mod=None vis=None auth=['WebFX Team']
+learn      social_media_learn_best_facebook_advertising_companies  body= 35 svc= 1 price= 5 prop= 0 case= 3 ind= 3 tool= 0 blog=  9 learn= 5 ext=  9 | tlen=44 dlen=143 pub=2026-08-19 mod=2026-09-02 vis=None auth=[]
+learn      social_media_learn_find_an_instagram_marketing_agency   body= 20 svc= 0 price= 4 prop= 0 case= 0 ind= 7 tool= 0 blog=  5 learn= 4 ext=  0 | tlen=51 dlen=124 pub=None mod=None vis=None auth=['WebFX Team']
+statistics industries_education_higher_education_statistics        body= 77 svc= 1 price= 0 prop= 0 case= 4 ind=13 tool= 4 blog=  1 learn= 1 ext= 47 | tlen=40 dlen=102 pub=2024-08-26 mod=2026-05-26 vis=None auth=[]
+statistics industries_food_beverage_restaurants_statistics         body= 50 svc= 2 price= 0 prop= 0 case= 4 ind=12 tool= 4 blog=  1 learn= 1 ext= 18 | tlen=48 dlen=139 pub=2024-06-26 mod=2025-06-23 vis=None auth=[]
+statistics industries_health_hospitals_healthcare_statistics       body= 78 svc= 2 price= 0 prop= 0 case= 4 ind= 1 tool= 0 blog= 17 learn= 3 ext= 45 | tlen=57 dlen=140 pub=2024-04-22 mod=2026-05-28 vis=Apr 22, 2024 auth=['Abby Fields']
+statistics industries_home_repair_home_services_statistics         body= 45 svc= 2 price= 0 prop= 0 case= 4 ind= 2 tool= 0 blog= 11 learn= 1 ext= 20 | tlen=43 dlen=137 pub=2024-08-07 mod=2026-08-10 vis=Aug 7, 2024 auth=['WebFX Team']
+statistics industries_retail_ecommerce_retail_statistics           body= 75 svc= 2 price= 0 prop= 0 case= 4 ind=14 tool= 0 blog=  2 learn= 0 ext= 51 | tlen=58 dlen=126 pub=2024-08-26 mod=2026-07-28 vis=None auth=[]
+statistics ppc_statistics                                          body= 50 svc= 3 price= 0 prop= 0 case= 0 ind= 4 tool= 0 blog= 15 learn= 4 ext= 23 | tlen=57 dlen=150 pub=2025-06-13 mod=2026-06-05 vis=None auth=['WebFX Team']
+statistics seo_statistics                                          body= 76 svc= 3 price= 1 prop= 0 case= 0 ind= 6 tool= 0 blog= 13 learn= 5 ext= 48 | tlen=42 dlen=129 pub=2025-01-22 mod=2026-05-26 vis=None auth=['WebFX Team']
+statistics social_media_statistics                                 body= 81 svc= 0 price= 0 prop= 0 case= 0 ind= 3 tool= 0 blog= 17 learn= 3 ext= 57 | tlen=60 dlen=107 pub=2025-05-14 mod=2026-05-26 vis=None auth=['WebFX Team']
+statistics web_design_statistics                                   body= 59 svc= 1 price= 1 prop= 0 case= 0 ind= 4 tool= 0 blog= 10 learn=10 ext= 29 | tlen=57 dlen=98 pub=2024-12-13 mod=2026-06-05 vis=None auth=['WebFX Team']
+glossary   digital_advertising_glossary                            body= 18 svc= 3 price= 0 prop= 0 case= 0 ind= 1 tool= 0 blog=  6 learn= 6 ext=  0 | tlen=59 dlen=113 pub=None mod=None vis=None auth=['WebFX Team']
+glossary   ppc_glossary                                            body= 39 svc= 7 price= 0 prop= 0 case= 0 ind= 4 tool= 2 blog= 14 learn=10 ext=  1 | tlen=44 dlen=131 pub=None mod=None vis=None auth=['WebFX Team']
+glossary   social_media_glossary                                   body= 27 svc= 1 price= 1 prop= 0 case= 0 ind= 5 tool= 0 blog= 11 learn= 6 ext=  3 | tlen=60 dlen=129 pub=None mod=None vis=None auth=['WebFX Team']
+blog-post  blog_ai_ai_brand_discovery_research                     body= 27 svc= 0 price= 0 prop= 0 case= 5 ind= 0 tool= 0 blog= 10 learn= 0 ext=  1 | tlen=52 dlen=150 pub=2026-01-29 mod=2026-06-30 vis=Jan 29, 2026 auth=['Trevin Shirey']
+blog-post  blog_ai_generative_engine_optimization                  body= 33 svc= 0 price= 0 prop= 0 case= 6 ind= 0 tool= 0 blog= 18 learn= 0 ext=  0 | tlen=52 dlen=125 pub=2026-02-05 mod=2026-09-11 vis=Feb 4, 2026 auth=['Macy Storm']
+blog-post  blog_healthcare_dentist_facebook_ads_guide              body= 29 svc= 3 price= 1 prop= 0 case= 4 ind= 0 tool= 0 blog= 12 learn= 0 ext=  0 | tlen=51 dlen=134 pub=None mod=None vis=None auth=['WebFX Team']
+blog-post  blog_healthcare_legitscript_for_google_ads              body= 26 svc= 2 price= 0 prop= 0 case= 4 ind= 0 tool= 0 blog= 12 learn= 0 ext=  3 | tlen=45 dlen=122 pub=None mod=None vis=None auth=['WebFX Team']
+blog-post  blog_home_services_google_local_services_ads            body= 19 svc= 2 price= 0 prop= 0 case= 1 ind= 0 tool= 0 blog=  9 learn= 0 ext=  2 | tlen=51 dlen=145 pub=2025-06-13 mod=2026-09-02 vis=Jun 13, 2025 auth=['WebFX Team']
+blog-post  blog_home_services_how_to_choose_construction_marketing body= 25 svc= 1 price= 1 prop= 0 case= 4 ind= 1 tool= 0 blog= 13 learn= 0 ext=  0 | tlen=45 dlen=151 pub=2025-06-24 mod=2026-09-14 vis=Jun 24, 2025 auth=['Lornah Ngugi']
+blog-post  blog_industrial_marketing_guide                         body= 36 svc= 2 price= 1 prop= 0 case= 4 ind= 3 tool= 0 blog= 14 learn= 3 ext=  0 | tlen=53 dlen=155 pub=2026-03-27 mod=2026-09-09 vis=Mar 27, 2026 auth=['WebFX Team']
+blog-post  blog_industrial_what_is_industrial_advertising          body= 32 svc= 2 price= 3 prop= 0 case= 4 ind= 0 tool= 0 blog= 11 learn= 0 ext=  1 | tlen=57 dlen=150 pub=None mod=None vis=None auth=['WebFX Team']
+blog-post  blog_manufacturing_metal_fabricator_marketing_guide     body= 27 svc= 2 price= 0 prop= 0 case= 4 ind= 2 tool= 1 blog= 10 learn= 0 ext=  0 | tlen=60 dlen=130 pub=2024-09-06 mod=2026-08-24 vis=Sep 6, 2024 auth=['Matthew Gibbons']
+blog-post  blog_manufacturing_social_media_guide                   body= 27 svc= 3 price= 0 prop= 0 case= 4 ind= 1 tool= 0 blog=  9 learn= 0 ext=  0 | tlen=50 dlen=145 pub=2025-03-17 mod=2026-08-10 vis=Mar 17, 2025 auth=['WebFX Team']
+blog-post  blog_marketing_revenue_marketing                        body= 29 svc= 1 price= 0 prop= 0 case= 1 ind= 3 tool= 0 blog= 14 learn= 1 ext=  3 | tlen=41 dlen=149 pub=2025-04-03 mod=2026-06-10 vis=Apr 3, 2025 auth=['Macy Storm']
+blog-post  blog_marketing_roas                                     body= 23 svc= 0 price= 0 prop= 0 case= 1 ind= 1 tool= 0 blog=  9 learn= 3 ext=  0 | tlen=43 dlen=144 pub=2024-11-14 mod=2026-05-26 vis=Nov 14, 2024 auth=['Sarah Berry']
+blog-post  blog_ppc_much_cost_advertise_google_adwords             body= 21 svc= 0 price= 0 prop= 0 case= 2 ind= 1 tool= 1 blog= 11 learn= 1 ext=  0 | tlen=56 dlen=206 pub=2026-07-16 mod=2026-07-16 vis=Jul 16, 2026 auth=['Abby Fields']
+blog-post  blog_ppc_ppc_report                                     body= 29 svc= 0 price= 0 prop= 0 case= 2 ind= 0 tool= 1 blog= 15 learn= 2 ext=  1 | tlen=63 dlen=123 pub=None mod=None vis=None auth=['Abby Fields']
+blog-post  blog_seo_2019_search_market_share                       body= 36 svc= 0 price= 0 prop= 0 case= 1 ind= 3 tool= 0 blog= 16 learn= 0 ext=  6 | tlen=60 dlen=159 pub=2026-03-25 mod=2026-08-07 vis=Mar 25, 2026 auth=['Sarah Berry']
+blog-post  blog_seo_omniseo_approach                               body= 23 svc= 0 price= 0 prop= 0 case= 1 ind= 3 tool= 0 blog=  9 learn= 0 ext=  1 | tlen=55 dlen=136 pub=2025-03-25 mod=2026-09-09 vis=Mar 25, 2025 auth=['Trevin Shirey']
+blog-post  blog_social_media_best_social_media_platforms_for_busin body= 50 svc= 1 price= 0 prop= 0 case= 2 ind= 0 tool= 0 blog= 20 learn= 1 ext=  7 | tlen=64 dlen=148 pub=2025-07-07 mod=2026-05-27 vis=Jul 7, 2025 auth=['Lornah Ngugi']
+blog-post  blog_social_media_should_you_outsource_your_social_medi body= 21 svc= 0 price= 0 prop= 0 case= 2 ind= 2 tool= 0 blog=  8 learn= 2 ext=  2 | tlen=49 dlen=148 pub=2026-01-01 mod=2026-06-22 vis=Jan 1, 2026 auth=['WebFX Team']
+blog-post  blog_web_design_outsource_web_design                    body= 25 svc= 0 price= 2 prop= 0 case= 1 ind= 2 tool= 0 blog= 11 learn= 3 ext=  0 | tlen=51 dlen=109 pub=2024-10-08 mod=2026-06-05 vis=Oct 8, 2024 auth=['Maria Carpena']
+blog-post  blog_web_design_wordpress_statistics                    body= 38 svc= 1 price= 0 prop= 0 case= 1 ind= 0 tool= 0 blog=  7 learn= 1 ext= 20 | tlen=44 dlen=139 pub=2025-03-20 mod=2026-05-27 vis=Mar 20, 2025 auth=['Abby Fields']
+marketing-guide marketing_guides_how_to_use_instagram_for_marketing     body=  2 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  0 learn= 2 ext=  0 | tlen=42 dlen=149 pub=2025-04-03 mod=2026-09-02 vis=None auth=[]
+marketing-guide marketing_guides_social_media_for_business              body=  3 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  0 learn= 3 ext=  0 | tlen=33 dlen=144 pub=2025-04-03 mod=2025-08-22 vis=None auth=[]
+marketing-guide marketing_guides_social_media_services_rfp              body=  2 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  0 learn= 2 ext=  0 | tlen=33 dlen=150 pub=2025-04-03 mod=2025-08-22 vis=None auth=[]
+tool       seo_checker                                             body=  5 svc= 0 price= 0 prop= 0 case= 3 ind= 0 tool= 1 blog=  0 learn= 0 ext=  1 | tlen=48 dlen=148 pub=2026-02-25 mod=2026-09-09 vis=None auth=[]
+tool       tools                                                   body= 20 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool=19 blog=  0 learn= 0 ext=  0 | tlen=37 dlen=115 pub=None mod=None vis=None auth=[]
+tool       tools_conversion_rate_calculator                        body= 13 svc= 1 price= 0 prop= 0 case= 0 ind= 0 tool= 5 blog=  4 learn= 2 ext=  1 | tlen=57 dlen=154 pub=None mod=None vis=None auth=[]
+tool       tools_cpc_calculator                                    body=  8 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 5 blog=  0 learn= 1 ext=  2 | tlen=51 dlen=75 pub=None mod=None vis=None auth=[]
+tool       tools_data_maturity_score_card                          body=  3 svc= 0 price= 0 prop= 0 case= 1 ind= 0 tool= 0 blog=  1 learn= 0 ext=  0 | tlen=32 dlen=146 pub=2025-06-27 mod=2026-06-18 vis=None auth=[]
+tool       tools_emoji_cheat_sheet                                 body=  1 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  0 learn= 0 ext=  1 | tlen=54 dlen=96 pub=None mod=None vis=None auth=[]
+tool       tools_lorem_ipsum_generator                             body=  1 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  0 learn= 0 ext=  0 | tlen=57 dlen=134 pub=None mod=None vis=None auth=[]
+tool       tools_marketing_calculator                              body=  8 svc= 1 price= 0 prop= 0 case= 0 ind= 0 tool= 6 blog=  0 learn= 1 ext=  0 | tlen=64 dlen=126 pub=2026-05-13 mod=2026-08-20 vis=None auth=[]
+tool       tools_read_able                                         body= 13 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 0 blog=  1 learn= 0 ext=  9 | tlen=24 dlen=155 pub=None mod=None vis=None auth=[]
+tool       tools_roas_calculator                                   body=  5 svc= 0 price= 0 prop= 0 case= 0 ind= 0 tool= 5 blog=  0 learn= 0 ext=  0 | tlen=53 dlen=111 pub=None mod=None vis=None auth=[]
+
+== Boilerplate share of visible text (lines >20 chars appearing on >=10% of pages) ==
+service          median boilerplate share 28%
+industry         median boilerplate share 2%
+case-study       median boilerplate share 2%
+pricing          median boilerplate share 0%
+about/brand      median boilerplate share 1%
+blog-post        median boilerplate share 0%
+learn            median boilerplate share 0%
+hub              median boilerplate share 0%
+technology       median boilerplate share 1%
+location         median boilerplate share 1%
+tool             median boilerplate share 1%
+statistics       median boilerplate share 1%
+glossary         median boilerplate share 0%
+proposal-form    median boilerplate share 1%
+marketing-guide  median boilerplate share 3%
+portfolio-index  median boilerplate share 1%
+blog-index       median boilerplate share 1%
+home             median boilerplate share 1%
+
+Top repeated long lines:
+ 460 Skip to main content ↓
+ 121 Rated 4.9/5 stars on Clutch
+ 120 CLIENT SATISFACTION SCORE
+ 119 Industry average: 72%
+ 115 WebFX has thousands of reviews praising our transparency, communication, and results.
+ 115 WHY IS OUR SATISFACTION SCORE SO HIGH?
+ 114 based on over 550 third-party reviews
+ 113 Check out our client testimonials
+ 107 In-house project management software, 24/7 help desk, and direct client phone line
+ 102 Increase in website traffic and leads
+ 101 Industry average: 50%
+ 101 WHY IS OUR RETENTION RATE SO HIGH?
+  98 WHY IS OUR NPS SO HIGH?
+  98 Consistent communication
+  98 Real business results
+  95 “My practice has grown quickly and improved our accessibility to those we serve or hope to serve within our community. WebFX is directly responsible f
+  95 “Rather than pushing us to make changes on our website that would make it more similar to so many other websites, WebFX offers suggestions for simple 
+  95 HIGHER NPS® SCORE THAN
+  94 S.M.A.R.T. goals, but limited resources needed to execute
+  94 Cookie-cutter checklists and solutions for optimizing your campaigns
+  94 Reporting roadblocks leading to project delays and wasted spend
+  94 In-depth analysis of your business goals, industry, and competitors
+  94 Analytics suite for measuring and improving campaign performance
+  94 RevenueCloudFX access for optimizing, measuring, and reporting ROI
+  94 One or two team members trying to keep up with fast-paced marketing advancements

@@ -12,3 +12,7 @@ Video portfolio/
 
 # Backup copies of edited files
 *.bak
+
+# Design mockups: generated artboards and screenshots, rebuilt by each round's build.py
+design/mockups/*/out/
+design/mockups/*/preview/

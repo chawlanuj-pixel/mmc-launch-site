@@ -1,0 +1,156 @@
+{
+ "where": {
+  "click": "ok",
+  "m": {
+   "pill": {
+    "x": 288,
+    "y": 102,
+    "w": 850,
+    "h": 66,
+    "radius": "32px",
+    "shadow": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "text": "Where When Add dates Who Add guests"
+   },
+   "panels": [],
+   "activeSegment": [
+    {
+     "x": 288,
+     "y": 102,
+     "w": 278,
+     "h": 66,
+     "radius": "32px",
+     "shadow": "rgba(0, 0, 0, 0.1) 0px 3px 12px 0px, rgba(0, 0, 0, 0.08) 0px 1px 2px 0px",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "0px",
+     "text": ""
+    }
+   ],
+   "rows": [],
+   "steppers": [],
+   "days": [],
+   "chips": [],
+   "scrollY": 0
+  },
+  "url": "https://www.airbnb.co.in/"
+ },
+ "when": {
+  "click": "ok",
+  "m": {
+   "pill": {
+    "x": 288,
+    "y": 102,
+    "w": 850,
+    "h": 66,
+    "radius": "32px",
+    "shadow": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "text": "Where When Add dates Who Add guests"
+   },
+   "panels": [],
+   "activeSegment": [
+    {
+     "x": 571,
+     "y": 102,
+     "w": 283,
+     "h": 66,
+     "radius": "32px",
+     "shadow": "rgba(0, 0, 0, 0.1) 0px 3px 12px 0px, rgba(0, 0, 0, 0.08) 0px 1px 2px 0px",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "0px",
+     "text": ""
+    }
+   ],
+   "rows": [],
+   "steppers": [],
+   "days": [],
+   "chips": [
+    {
+     "x": 556,
+     "y": 218,
+     "w": 150,
+     "h": 36,
+     "radius": "100px",
+     "shadow": "none",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "8px 12px",
+     "text": "Dates"
+    },
+    {
+     "x": 709,
+     "y": 218,
+     "w": 150,
+     "h": 36,
+     "radius": "100px",
+     "shadow": "none",
+     "bg": "rgba(0, 0, 0, 0)",
+     "pad": "8px 12px",
+     "text": "Flexible"
+    }
+   ],
+   "scrollY": 0
+  },
+  "url": "https://www.airbnb.co.in/"
+ },
+ "who": {
+  "click": "ok",
+  "m": {
+   "pill": {
+    "x": 288,
+    "y": 102,
+    "w": 850,
+    "h": 66,
+    "radius": "32px",
+    "shadow": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "text": "Where When Add dates Who Add guests"
+   },
+   "panels": [],
+   "activeSegment": [
+    {
+     "x": 859,
+     "y": 102,
+     "w": 278,
+     "h": 66,
+     "radius": "32px",
+     "shadow": "rgba(0, 0, 0, 0.1) 0px 3px 12px 0px, rgba(0, 0, 0, 0.08) 0px 1px 2px 0px",
+     "bg": "rgb(255, 255, 255)",
+     "pad": "0px",
+     "text": ""
+    }
+   ],
+   "rows": [],
+   "steppers": [
+    {
+     "x": 981,
+     "y": 225,
+     "w": 32,
+     "h": 32,
+     "radius": "50%",
+     "shadow": "none",
+     "bg": "rgb(242, 242, 242)",
+     "pad": "0px",
+     "text": ""
+    },
+    {
+     "x": 1049,
+     "y": 225,
+     "w": 32,
+     "h": 32,
+     "radius": "50%",
+     "shadow": "none",
+     "bg": "rgb(242, 242, 242)",
+     "pad": "0px",
+     "text": ""
+    }
+   ],
+   "days": [],
+   "chips": [],
+   "scrollY": 0
+  },
+  "url": "https://www.airbnb.co.in/"
+ }
+}

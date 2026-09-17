@@ -1,0 +1,45 @@
+term              json         edtech.json  edtech_socia higher_educa higher_educa higher_educa higher_educa online_educa private_scho technical_sc 
+enrol             0            1            0            6            0            0            24           2            10           2            
+application       0            0            0            0            0            1            1            1            0            0            
+apply             0            0            0            0            0            2            0            0            0            2            
+admission         0            0            0            0            0            0            0            0            0            0            
+inquir            0            0            0            0            0            0            0            0            0            0            
+cost per          0            1            1            1            1            1            1            1            1            1            
+open house        0            0            0            0            0            0            0            0            0            0            
+tour              0            0            0            1            0            0            0            0            0            0            
+campus visit      0            0            0            1            0            0            0            0            0            0            
+financial aid     0            0            0            0            0            0            0            0            0            0            
+scholarship       0            0            0            0            0            0            0            0            0            0            
+tuition           0            0            0            0            0            0            0            1            1            1            
+parent            0            0            0            2            0            0            0            0            22           0            
+alumni            0            0            0            0            0            9            0            0            1            0            
+donor             0            0            0            1            0            1            0            0            0            0            
+ferpa             0            0            0            0            0            0            0            0            0            0            
+compliance        0            0            0            0            0            0            0            0            0            0            
+regulat           0            0            0            0            0            0            0            0            0            0            
+counsel           0            0            0            0            0            0            0            0            0            0            
+crm               0            0            0            0            0            0            0            0            0            0            
+speed             0            1            0            0            0            0            0            0            0            0            
+whatsapp          0            0            0            0            0            0            0            0            0            0            
+international     0            0            0            0            0            0            0            0            0            0            
+deadline          0            0            0            0            0            0            0            0            1            0            
+season            0            0            0            0            0            0            1            0            0            0            
+intake            0            0            0            0            0            0            0            0            0            0            
+semester          0            0            0            1            0            0            0            0            0            0            
+lead quality      0            0            0            0            0            0            0            0            0            0            
+landing page      0            1            0            0            0            0            0            0            0            0            
+video             0            0            7            1            0            3            0            0            0            0            
+youtube           0            0            5            0            0            1            0            0            0            0            
+tiktok            0            0            0            0            0            0            0            0            0            0            
+reels             0            0            0            0            0            0            0            0            0            0            
+review            0            0            0            0            0            0            0            0            1            0            
+ranking           0            3            0            2            2            0            0            3            4            1            
+geofenc           0            0            0            0            0            0            0            0            0            0            
+remarketing       0            1            0            0            0            0            0            0            0            0            
+retarget          0            0            0            0            0            0            0            0            0            0            
+attribution       0            0            0            0            0            0            0            0            0            0            
+b2b               0            0            1            0            0            0            0            0            0            0            
+district          0            0            0            0            0            0            0            0            0            0            
+procurement       0            0            0            0            0            0            0            0            0            0            
+decision-maker    0            0            0            0            0            0            0            0            0            0            
+academic director 0            1            0            0            0            0            0            0            0            0            

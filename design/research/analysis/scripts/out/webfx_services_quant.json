@@ -1,0 +1,6357 @@
+{
+ "n_pages": 70,
+ "rows": [
+  {
+   "slug": "amazon_services_advertising",
+   "discipline": "amazon_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 2042,
+   "n_h2": 13,
+   "n_h3": 18,
+   "n_h4": 22,
+   "cta_clicks": 16,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 5,
+   "faq_schema": 2,
+   "images": 92,
+   "videos": 3,
+   "body_links": 13,
+   "title": "PPC Agency for Amazon: Get a 25% Lift in Sales",
+   "title_len": 46,
+   "desc_len": 155,
+   "h1": "PPC Agency for Amazon: Get a 25% Lift in Sales",
+   "kw": "PPC services for Amazon",
+   "kw_occ": 14,
+   "kw_per_1000": 6.9,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": false,
+   "starting_price": [
+    "$1,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 6
+  },
+  {
+   "slug": "amazon_services_amazon_seo_listing_optimization_service",
+   "discipline": "amazon_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 2236,
+   "n_h2": 12,
+   "n_h3": 17,
+   "n_h4": 21,
+   "cta_clicks": 17,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 5,
+   "faq_schema": 0,
+   "images": 99,
+   "videos": 0,
+   "body_links": 14,
+   "title": "SEO Services for Amazon | WebFX",
+   "title_len": 31,
+   "desc_len": 147,
+   "h1": "SEO Services for Amazon Product Listing Optimization",
+   "kw": "SEO services for Amazon",
+   "kw_occ": 15,
+   "kw_per_1000": 6.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$1,300"
+   ],
+   "section_seq": [
+    "process",
+    "pricing_preview",
+    "process",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 10
+  },
+  {
+   "slug": "amazon_services_retail_media",
+   "discipline": "amazon_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 1252,
+   "n_h2": 11,
+   "n_h3": 10,
+   "n_h4": 22,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 95,
+   "videos": 6,
+   "body_links": 17,
+   "title": "Amazon Retail Ad Service: Streamline Your Ad Management | WebFX",
+   "title_len": 63,
+   "desc_len": 146,
+   "h1": "Get More Sales With Amazon\u2019s Retail Ad Service",
+   "kw": "Amazon's Retail Ad Service",
+   "kw_occ": 0,
+   "kw_per_1000": 0.0,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "other",
+    "faq",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "analytics_services",
+   "discipline": "analytics_services",
+   "level": "top-level",
+   "axis": "hub",
+   "family": "A: legacy conversion template",
+   "words": 2301,
+   "n_h2": 12,
+   "n_h3": 27,
+   "n_h4": 19,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 140,
+   "videos": 6,
+   "body_links": 17,
+   "title": "Marketing Analytics Services | WebFX",
+   "title_len": 36,
+   "desc_len": 136,
+   "h1": "Marketing Analytics Services from WebFX",
+   "kw": "marketing analytics services",
+   "kw_occ": 22,
+   "kw_per_1000": 9.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_webfx",
+    "faq",
+    "process",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "analytics_services_channel_attribution_forecasting",
+   "discipline": "analytics_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1898,
+   "n_h2": 11,
+   "n_h3": 23,
+   "n_h4": 18,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 134,
+   "videos": 6,
+   "body_links": 3,
+   "title": "Channel Attribution & Forecasting Services | WebFX",
+   "title_len": 50,
+   "desc_len": 129,
+   "h1": "Channel Attribution & Forecasting: Amplify Your Accuracy & ROI",
+   "kw": "channel attribution & forecasting",
+   "kw_occ": 4,
+   "kw_per_1000": 2.1,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "analytics_services_marketing_mix_modeling",
+   "discipline": "analytics_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "C: bespoke/other",
+   "words": 1382,
+   "n_h2": 8,
+   "n_h3": 14,
+   "n_h4": 23,
+   "cta_clicks": 8,
+   "distinct_cta": 5,
+   "forms": 2,
+   "faq_visible": 11,
+   "faq_schema": 0,
+   "images": 81,
+   "videos": 0,
+   "body_links": 16,
+   "title": "Marketing Mix Modeling Services for Smarter Marketing Decisions",
+   "title_len": 63,
+   "desc_len": 145,
+   "h1": "Marketing Mix Modeling Services for Better Budgeting and ROI",
+   "kw": "Marketing Mix Modeling Services",
+   "kw_occ": 14,
+   "kw_per_1000": 10.1,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [],
+   "section_seq": [
+    "included",
+    "process",
+    "included",
+    "why_service",
+    "why_webfx",
+    "closing_cta",
+    "related_links",
+    "faq"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_advertising_services",
+   "discipline": "digital_advertising_services",
+   "level": "top-level",
+   "axis": "hub",
+   "family": "B: 2025-26 redesign",
+   "words": 1542,
+   "n_h2": 15,
+   "n_h3": 18,
+   "n_h4": 24,
+   "cta_clicks": 10,
+   "distinct_cta": 8,
+   "forms": 4,
+   "faq_visible": 7,
+   "faq_schema": 0,
+   "images": 140,
+   "videos": 3,
+   "body_links": 12,
+   "title": "Top-Rated Digital Advertising Services That Cut CPL By 15%",
+   "title_len": 58,
+   "desc_len": 151,
+   "h1": "Digital Advertising Services That Drive 15% Lower CPL and Higher ROI",
+   "kw": "digital advertising services",
+   "kw_occ": 10,
+   "kw_per_1000": 6.5,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "why_service",
+    "why_webfx",
+    "included",
+    "why_webfx",
+    "tech",
+    "stat_h2",
+    "pricing_preview",
+    "closing_cta",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 7
+  },
+  {
+   "slug": "digital_advertising_services_account_based_marketing",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "business model",
+   "family": "A: legacy conversion template",
+   "words": 1678,
+   "n_h2": 12,
+   "n_h3": 28,
+   "n_h4": 21,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 4,
+   "faq_schema": 0,
+   "images": 117,
+   "videos": 4,
+   "body_links": 5,
+   "title": "Account-Based Marketing Agency With $10B in Client Revenue",
+   "title_len": 58,
+   "desc_len": 139,
+   "h1": "Full-Service Account-Based Marketing Agency With $10B in Proven Client Results",
+   "kw": "account-based marketing services",
+   "kw_occ": 8,
+   "kw_per_1000": 4.8,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_table",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "tech",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_advertising_services_chatgpt",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A-: partial legacy",
+   "words": 942,
+   "n_h2": 9,
+   "n_h3": 6,
+   "n_h4": 20,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 3,
+   "faq_visible": 8,
+   "faq_schema": 4,
+   "images": 122,
+   "videos": 0,
+   "body_links": 16,
+   "title": "ChatGPT Advertising Services: Reach Buyers on ChatGPT Early",
+   "title_len": 59,
+   "desc_len": 151,
+   "h1": "ChatGPT Advertising Services: Reach Your Buyers at the Start of Their Search",
+   "kw": "ChatGPT ad services",
+   "kw_occ": 1,
+   "kw_per_1000": 1.1,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "why_service",
+    "ends_here",
+    "comparison_roi",
+    "closing_cta",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "digital_advertising_services_crm_retargeting",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 2207,
+   "n_h2": 11,
+   "n_h3": 24,
+   "n_h4": 21,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 143,
+   "videos": 6,
+   "body_links": 10,
+   "title": "CRM Retargeting Services That Grow Your Business | WebFX",
+   "title_len": 56,
+   "desc_len": 124,
+   "h1": "CRM Retargeting Services That Grow Your Business",
+   "kw": "CRM retargeting services",
+   "kw_occ": 8,
+   "kw_per_1000": 3.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_advertising_services_geofencing",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 2141,
+   "n_h2": 13,
+   "n_h3": 15,
+   "n_h4": 53,
+   "cta_clicks": 14,
+   "distinct_cta": 9,
+   "forms": 2,
+   "faq_visible": 23,
+   "faq_schema": 0,
+   "images": 151,
+   "videos": 6,
+   "body_links": 20,
+   "title": "Competitor Geofencing Advertising Agency That Accelerates Growth",
+   "title_len": 64,
+   "desc_len": 176,
+   "h1": "Competitor Geofencing Advertising Agency That Converts Local Prospects Into Revenue",
+   "kw": "Competitor Geofencing Advertising Agency",
+   "kw_occ": 6,
+   "kw_per_1000": 2.8,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$1,000",
+    "$550"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_webfx",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_advertising_services_ott_connected_tv",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "channel",
+   "family": "A: legacy conversion template",
+   "words": 1723,
+   "n_h2": 10,
+   "n_h3": 19,
+   "n_h4": 20,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 131,
+   "videos": 4,
+   "body_links": 14,
+   "title": "OTT/CTV Advertising Services That Turn Viewers Into Customers",
+   "title_len": 61,
+   "desc_len": 172,
+   "h1": "Turn Streaming Viewers Into Customers With OTT/CTV Advertising Services",
+   "kw": "OTT",
+   "kw_occ": 19,
+   "kw_per_1000": 11.0,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 7
+  },
+  {
+   "slug": "digital_advertising_services_programmatic",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "channel",
+   "family": "A: legacy conversion template",
+   "words": 2492,
+   "n_h2": 14,
+   "n_h3": 24,
+   "n_h4": 23,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 9,
+   "faq_schema": 0,
+   "images": 151,
+   "videos": 6,
+   "body_links": 16,
+   "title": "Programmatic Advertising Agency That Boosts Your ROI",
+   "title_len": 52,
+   "desc_len": 157,
+   "h1": "Programmatic Advertising Agency That Drives a Better ROI",
+   "kw": "programmatic advertising services",
+   "kw_occ": 11,
+   "kw_per_1000": 4.4,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$650",
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "included",
+    "faq",
+    "included",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 12
+  },
+  {
+   "slug": "digital_advertising_services_sem",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "channel",
+   "family": "A-: partial legacy",
+   "words": 2211,
+   "n_h2": 12,
+   "n_h3": 24,
+   "n_h4": 20,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 5,
+   "faq_schema": 0,
+   "images": 154,
+   "videos": 3,
+   "body_links": 18,
+   "title": "Search Engine Marketing Services That Drive Better ROI",
+   "title_len": 54,
+   "desc_len": 148,
+   "h1": "Search Engine Marketing Services That Fill Your Pipeline With Qualified Leads",
+   "kw": "search engine marketing services",
+   "kw_occ": 5,
+   "kw_per_1000": 2.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "why_webfx",
+    "pricing_badge",
+    "process",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "digital_advertising_services_video_advertising",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "channel",
+   "family": "A: legacy conversion template",
+   "words": 1596,
+   "n_h2": 10,
+   "n_h3": 11,
+   "n_h4": 16,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 140,
+   "videos": 4,
+   "body_links": 7,
+   "title": "Video Advertising Services | 6 Social Media Sites for Video",
+   "title_len": 59,
+   "desc_len": 135,
+   "h1": "Video Advertising Services",
+   "kw": "video advertising services",
+   "kw_occ": 10,
+   "kw_per_1000": 6.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "15% of ad spend"
+   ],
+   "section_seq": [
+    "why_service",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_advertising_services_walmart",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 1572,
+   "n_h2": 11,
+   "n_h3": 8,
+   "n_h4": 17,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 131,
+   "videos": 6,
+   "body_links": 7,
+   "title": "Walmart Online Marketplace Advertising Management by WebFX",
+   "title_len": 58,
+   "desc_len": 106,
+   "h1": "Walmart Marketplace Advertising Management Services",
+   "kw": "Walmart Marketplace advertising management services",
+   "kw_occ": 5,
+   "kw_per_1000": 3.2,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$1,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_table",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_advertising_services_yelp",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "B: 2025-26 redesign",
+   "words": 1869,
+   "n_h2": 14,
+   "n_h3": 11,
+   "n_h4": 29,
+   "cta_clicks": 15,
+   "distinct_cta": 11,
+   "forms": 6,
+   "faq_visible": 14,
+   "faq_schema": 0,
+   "images": 162,
+   "videos": 3,
+   "body_links": 8,
+   "title": "Yelp Ad Management Services | Yelp Advertising Partner",
+   "title_len": 54,
+   "desc_len": 154,
+   "h1": "Yelp Advertising Partner",
+   "kw": "outsourcing Yelp ad management",
+   "kw_occ": 1,
+   "kw_per_1000": 0.5,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "stat_h2",
+    "tech",
+    "pricing_table",
+    "ends_here",
+    "closing_cta",
+    "case_proof",
+    "why_webfx",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_advertising_services_youtube",
+   "discipline": "digital_advertising_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 2030,
+   "n_h2": 13,
+   "n_h3": 16,
+   "n_h4": 19,
+   "cta_clicks": 14,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 2,
+   "faq_schema": 0,
+   "images": 100,
+   "videos": 1,
+   "body_links": 15,
+   "title": "YouTube Advertising Services to Grow Your Brand",
+   "title_len": 47,
+   "desc_len": 154,
+   "h1": "YouTube Advertising Services That Drive Brand Growth",
+   "kw": "YouTube advertising services",
+   "kw_occ": 14,
+   "kw_per_1000": 6.9,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$975"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "why_webfx",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "digital_marketing_services",
+   "discipline": "digital_marketing_services",
+   "level": "top-level",
+   "axis": "hub",
+   "family": "C: bespoke/other",
+   "words": 2286,
+   "n_h2": 10,
+   "n_h3": 11,
+   "n_h4": 37,
+   "cta_clicks": 14,
+   "distinct_cta": 11,
+   "forms": 2,
+   "faq_visible": 12,
+   "faq_schema": 0,
+   "images": 87,
+   "videos": 0,
+   "body_links": 22,
+   "title": "Digital Marketing Services That Drive 20% Higher ROI",
+   "title_len": 52,
+   "desc_len": 111,
+   "h1": "Award-Winning Digital Marketing Services That Deliver 20% Higher ROI",
+   "kw": "digital marketing services",
+   "kw_occ": 12,
+   "kw_per_1000": 5.2,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "other",
+    "tech",
+    "case_proof",
+    "pricing_preview",
+    "ends_here",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 9
+  },
+  {
+   "slug": "digital_marketing_services_ai",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "AI / emerging",
+   "family": "A: legacy conversion template",
+   "words": 1383,
+   "n_h2": 12,
+   "n_h3": 19,
+   "n_h4": 21,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 102,
+   "videos": 6,
+   "body_links": 15,
+   "title": "AI Marketing Services: Accelerate Your ROI With AI",
+   "title_len": 50,
+   "desc_len": 124,
+   "h1": "AI Marketing Services to Accelerate Your ROI",
+   "kw": "AI marketing services",
+   "kw_occ": 13,
+   "kw_per_1000": 9.4,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_table",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_marketing_services_business_consulting",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 1919,
+   "n_h2": 11,
+   "n_h3": 22,
+   "n_h4": 17,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 2,
+   "faq_schema": 0,
+   "images": 137,
+   "videos": 3,
+   "body_links": 4,
+   "title": "Business Consulting Services | Unlock 750+ Experts - WebFX",
+   "title_len": 58,
+   "desc_len": 124,
+   "h1": "Business Consulting Services That Improve Your Bottom Line",
+   "kw": "business consulting services",
+   "kw_occ": 9,
+   "kw_per_1000": 4.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_closed_loop_analytics",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1884,
+   "n_h2": 11,
+   "n_h3": 21,
+   "n_h4": 16,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 141,
+   "videos": 9,
+   "body_links": 14,
+   "title": "Closed-Loop Analytics Services | Leverage Data to Fuel Revenue",
+   "title_len": 62,
+   "desc_len": 135,
+   "h1": "Closed-Loop Analytics Services That Skyrocket Your ROI",
+   "kw": "closed-loop analytics services",
+   "kw_occ": 7,
+   "kw_per_1000": 3.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "tech",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_marketing_services_competitor_analysis",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1792,
+   "n_h2": 11,
+   "n_h3": 21,
+   "n_h4": 20,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 4,
+   "faq_schema": 0,
+   "images": 132,
+   "videos": 6,
+   "body_links": 12,
+   "title": "Digital Marketing Competitor Analysis Services | WebFX",
+   "title_len": 54,
+   "desc_len": 130,
+   "h1": "Digital Marketing Competitor Analysis",
+   "kw": "digital marketing competitor analysis services",
+   "kw_occ": 4,
+   "kw_per_1000": 2.2,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_marketing_services_contact_enrichment",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1330,
+   "n_h2": 11,
+   "n_h3": 13,
+   "n_h4": 16,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 85,
+   "videos": 9,
+   "body_links": 12,
+   "title": "Contact Enrichment and List Segmentation Services From WebFX",
+   "title_len": 60,
+   "desc_len": 121,
+   "h1": "Market Better to Leads With Contact Enrichment Services",
+   "kw": "contact enrichment",
+   "kw_occ": 11,
+   "kw_per_1000": 8.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "included",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "digital_marketing_services_conversion_rate_optimization",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1819,
+   "n_h2": 14,
+   "n_h3": 19,
+   "n_h4": 21,
+   "cta_clicks": 15,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 8,
+   "faq_schema": 0,
+   "images": 97,
+   "videos": 3,
+   "body_links": 6,
+   "title": "Conversion Rate Optimization Services for Higher ROI",
+   "title_len": 52,
+   "desc_len": 162,
+   "h1": "Conversion Rate Optimization Services That Convert the Right Visitors",
+   "kw": "CRO services",
+   "kw_occ": 5,
+   "kw_per_1000": 2.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$1,500"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_webfx",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_cookie_consent",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "C: bespoke/other",
+   "words": 759,
+   "n_h2": 5,
+   "n_h3": 11,
+   "n_h4": 9,
+   "cta_clicks": 14,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 63,
+   "videos": 0,
+   "body_links": 0,
+   "title": "Cookie Consent Solutions That Keep You Compliant",
+   "title_len": 48,
+   "desc_len": 122,
+   "h1": "Cookie Consent Solutions That Make Cookie Configuration Simple",
+   "kw": "cookie consent management",
+   "kw_occ": 5,
+   "kw_per_1000": 6.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "faq",
+    "tech",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_digital_due_diligence",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 1447,
+   "n_h2": 10,
+   "n_h3": 8,
+   "n_h4": 16,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 129,
+   "videos": 7,
+   "body_links": 10,
+   "title": "Digital Due Diligence Services for Smarter Acquisitions",
+   "title_len": 55,
+   "desc_len": 136,
+   "h1": "Make Confident Investment Decisions With Digital Due Diligence Services",
+   "kw": "digital due diligence",
+   "kw_occ": 13,
+   "kw_per_1000": 9.0,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "digital_marketing_services_digital_recruitment",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "use case",
+   "family": "A: legacy conversion template",
+   "words": 1401,
+   "n_h2": 10,
+   "n_h3": 12,
+   "n_h4": 19,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 4,
+   "faq_schema": 0,
+   "images": 140,
+   "videos": 3,
+   "body_links": 8,
+   "title": "Hire Smarter With Digital Recruitment Marketing Services",
+   "title_len": 56,
+   "desc_len": 146,
+   "h1": "Hire Top Talent With Digital Recruitment Marketing Services",
+   "kw": "digital recruitment marketing services",
+   "kw_occ": 8,
+   "kw_per_1000": 5.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "process",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_marketing_services_digital_transformation",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 1829,
+   "n_h2": 10,
+   "n_h3": 22,
+   "n_h4": 24,
+   "cta_clicks": 17,
+   "distinct_cta": 12,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 148,
+   "videos": 3,
+   "body_links": 13,
+   "title": "Digital Transformation Services Powered by Data Insights",
+   "title_len": 56,
+   "desc_len": 154,
+   "h1": "Digital Transformation Services That Turn Data Insights Into Business Growth",
+   "kw": "digital transformation services",
+   "kw_occ": 7,
+   "kw_per_1000": 3.8,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "digital_marketing_services_ecommerce",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "business model",
+   "family": "A: legacy conversion template",
+   "words": 2516,
+   "n_h2": 12,
+   "n_h3": 25,
+   "n_h4": 30,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 9,
+   "faq_schema": 2,
+   "images": 160,
+   "videos": 6,
+   "body_links": 13,
+   "title": "Ecommerce Marketing Services | Custom Plans. Proven Results.",
+   "title_len": 60,
+   "desc_len": 139,
+   "h1": "Ecommerce Marketing Services That Drive Sales",
+   "kw": "ecommerce marketing services",
+   "kw_occ": 17,
+   "kw_per_1000": 6.8,
+   "schema_has_faq": true,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_marketing_services_ecommerce_pim",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1318,
+   "n_h2": 10,
+   "n_h3": 9,
+   "n_h4": 18,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 130,
+   "videos": 6,
+   "body_links": 5,
+   "title": "Ecommerce PIM Services | Measure Your Catalog's ROI | WebFX",
+   "title_len": 59,
+   "desc_len": 121,
+   "h1": "Measure Your Product Catalog\u2019s ROI With Ecommerce PIM",
+   "kw": "ecommerce PIM services",
+   "kw_occ": 8,
+   "kw_per_1000": 6.1,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "tech",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 5
+  },
+  {
+   "slug": "digital_marketing_services_end_to_end_marketing_solutions",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 1927,
+   "n_h2": 11,
+   "n_h3": 27,
+   "n_h4": 20,
+   "cta_clicks": 20,
+   "distinct_cta": 15,
+   "forms": 2,
+   "faq_visible": 2,
+   "faq_schema": 0,
+   "images": 148,
+   "videos": 11,
+   "body_links": 13,
+   "title": "End-to-End Marketing Solutions | Unlock 750+ Experts - WebFX",
+   "title_len": 60,
+   "desc_len": 135,
+   "h1": "End-to-End Marketing Solutions: Capture More Revenue With Experts",
+   "kw": "end-to-end marketing solutions",
+   "kw_occ": 10,
+   "kw_per_1000": 5.2,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "other",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_marketing_operations",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1961,
+   "n_h2": 11,
+   "n_h3": 22,
+   "n_h4": 24,
+   "cta_clicks": 17,
+   "distinct_cta": 12,
+   "forms": 2,
+   "faq_visible": 2,
+   "faq_schema": 0,
+   "images": 141,
+   "videos": 6,
+   "body_links": 20,
+   "title": "Marketing Operations Services to Drive Sales and Revenue",
+   "title_len": 56,
+   "desc_len": 133,
+   "h1": "Marketing Operations Services to Drive Sales and Revenue",
+   "kw": "marketing operations services",
+   "kw_occ": 12,
+   "kw_per_1000": 6.1,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_multi_location",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "business model",
+   "family": "B: 2025-26 redesign",
+   "words": 1311,
+   "n_h2": 11,
+   "n_h3": 7,
+   "n_h4": 18,
+   "cta_clicks": 11,
+   "distinct_cta": 7,
+   "forms": 4,
+   "faq_visible": 6,
+   "faq_schema": 2,
+   "images": 104,
+   "videos": 0,
+   "body_links": 11,
+   "title": "Multi-Location Marketing Services for Smarter Market Growth",
+   "title_len": 59,
+   "desc_len": 143,
+   "h1": "Multi-Location Marketing Services That Scale Growth Across Every Market",
+   "kw": "multi-location marketing services",
+   "kw_occ": 13,
+   "kw_per_1000": 9.9,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [],
+   "section_seq": [
+    "included",
+    "case_proof",
+    "tech",
+    "process",
+    "ends_here",
+    "why_webfx",
+    "case_proof",
+    "why_webfx",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_online_press_releases",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1520,
+   "n_h2": 12,
+   "n_h3": 10,
+   "n_h4": 20,
+   "cta_clicks": 15,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 2,
+   "faq_schema": 0,
+   "images": 92,
+   "videos": 6,
+   "body_links": 9,
+   "title": "Online Press Release Services: Promote & Grow Your Company",
+   "title_len": 58,
+   "desc_len": 130,
+   "h1": "Online Press Release Services: Promote & Grow Your Company",
+   "kw": "press release services",
+   "kw_occ": 13,
+   "kw_per_1000": 8.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$300"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "included",
+    "faq",
+    "why_webfx",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "digital_marketing_services_packages",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "price tier",
+   "family": "A: legacy conversion template",
+   "words": 1837,
+   "n_h2": 12,
+   "n_h3": 16,
+   "n_h4": 24,
+   "cta_clicks": 26,
+   "distinct_cta": 11,
+   "forms": 2,
+   "faq_visible": 7,
+   "faq_schema": 0,
+   "images": 110,
+   "videos": 6,
+   "body_links": 18,
+   "title": "Revenue-Driving Digital Marketing Packages for Businesses",
+   "title_len": 57,
+   "desc_len": 163,
+   "h1": "Build a Revenue-Driving Plan With Digital Marketing Packages",
+   "kw": "Internet marketing packages",
+   "kw_occ": 4,
+   "kw_per_1000": 2.2,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "closing_cta",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "pricing_table",
+    "why_webfx",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "digital_marketing_services_performance_marketing",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 1878,
+   "n_h2": 11,
+   "n_h3": 23,
+   "n_h4": 18,
+   "cta_clicks": 15,
+   "distinct_cta": 10,
+   "forms": 2,
+   "faq_visible": 5,
+   "faq_schema": 0,
+   "images": 142,
+   "videos": 6,
+   "body_links": 12,
+   "title": "Top-Rated Performance Marketing Agency for Revenue Growth",
+   "title_len": 57,
+   "desc_len": 148,
+   "h1": "A Performance Marketing Agency That Turns Spend Into Revenue",
+   "kw": "performance marketing services",
+   "kw_occ": 10,
+   "kw_per_1000": 5.3,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$300"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "digital_marketing_services_revenue_marketing",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "C: bespoke/other",
+   "words": 2987,
+   "n_h2": 12,
+   "n_h3": 24,
+   "n_h4": 23,
+   "cta_clicks": 7,
+   "distinct_cta": 5,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 120,
+   "videos": 3,
+   "body_links": 14,
+   "title": "Revenue Marketing Services That Grow Your Business",
+   "title_len": 50,
+   "desc_len": 91,
+   "h1": "Revenue Marketing Services That Drive Bottom-Line Growth",
+   "kw": "revenue marketing services",
+   "kw_occ": 14,
+   "kw_per_1000": 4.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "why_service",
+    "tech",
+    "included",
+    "case_proof",
+    "pricing_preview",
+    "process",
+    "ends_here",
+    "faq",
+    "why_webfx",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "digital_marketing_services_revenue_operations",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1272,
+   "n_h2": 12,
+   "n_h3": 14,
+   "n_h4": 16,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 89,
+   "videos": 9,
+   "body_links": 9,
+   "title": "Revenue Operations Services from An Industry-Leading Agency",
+   "title_len": 59,
+   "desc_len": 132,
+   "h1": "Revenue Operations Services from An Industry-Leading Agency",
+   "kw": "revenue operations services",
+   "kw_occ": 12,
+   "kw_per_1000": 9.4,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "tech",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "included",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "digital_marketing_services_target",
+   "discipline": "digital_marketing_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 1296,
+   "n_h2": 11,
+   "n_h3": 8,
+   "n_h4": 14,
+   "cta_clicks": 11,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 0,
+   "faq_schema": 0,
+   "images": 128,
+   "videos": 3,
+   "body_links": 6,
+   "title": "Target Plus\u2122 Online Marketplace Management by WebFX",
+   "title_len": 51,
+   "desc_len": 112,
+   "h1": "Target Plus\u2122 Management & Optimization Services",
+   "kw": "Target Plus\u2122 Online Marketplace Management by WebFX",
+   "kw_occ": 0,
+   "kw_per_1000": 0.0,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$1,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "lead_generation_services_lead_management",
+   "discipline": "lead_generation_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1908,
+   "n_h2": 11,
+   "n_h3": 23,
+   "n_h4": 15,
+   "cta_clicks": 13,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 2,
+   "faq_schema": 0,
+   "images": 135,
+   "videos": 6,
+   "body_links": 7,
+   "title": "Lead Management Services: Convert More Leads with WebFX",
+   "title_len": 55,
+   "desc_len": 130,
+   "h1": "Lead Management Services That Help You Convert More Qualified Leads",
+   "kw": "lead management services",
+   "kw_occ": 14,
+   "kw_per_1000": 7.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "included",
+    "faq",
+    "included",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "local_seo_services",
+   "discipline": "local_seo_services",
+   "level": "top-level",
+   "axis": "hub",
+   "family": "A: legacy conversion template",
+   "words": 2345,
+   "n_h2": 15,
+   "n_h3": 48,
+   "n_h4": 50,
+   "cta_clicks": 14,
+   "distinct_cta": 9,
+   "forms": 3,
+   "faq_visible": 10,
+   "faq_schema": 0,
+   "images": 163,
+   "videos": 6,
+   "body_links": 24,
+   "title": "Capture More Revenue with the Best Local SEO Services",
+   "title_len": 53,
+   "desc_len": 138,
+   "h1": "Capture More Revenue with the Best Local SEO Services",
+   "kw": "local SEO solutions",
+   "kw_occ": 4,
+   "kw_per_1000": 1.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$575"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "tech",
+    "case_proof",
+    "ends_here",
+    "pricing_badge",
+    "comparison_roi",
+    "process",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "ppc_services",
+   "discipline": "ppc_services",
+   "level": "top-level",
+   "axis": "hub",
+   "family": "B: 2025-26 redesign",
+   "words": 1250,
+   "n_h2": 13,
+   "n_h3": 7,
+   "n_h4": 29,
+   "cta_clicks": 10,
+   "distinct_cta": 7,
+   "forms": 3,
+   "faq_visible": 10,
+   "faq_schema": 2,
+   "images": 115,
+   "videos": 3,
+   "body_links": 11,
+   "title": "Top PPC Management Services [25% Lift in PPC Sales]",
+   "title_len": 51,
+   "desc_len": 143,
+   "h1": "PPC Management Services That Turn Ad Spend into Qualified Leads",
+   "kw": "PPC services",
+   "kw_occ": 10,
+   "kw_per_1000": 8.0,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "why_service",
+    "tech",
+    "stat_h2",
+    "why_webfx",
+    "process",
+    "pricing_preview",
+    "comparison_roi",
+    "why_webfx",
+    "faq",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 5
+  },
+  {
+   "slug": "ppc_services_affordable",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "price tier",
+   "family": "C: bespoke/other",
+   "words": 1536,
+   "n_h2": 8,
+   "n_h3": 6,
+   "n_h4": 13,
+   "cta_clicks": 11,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 5,
+   "faq_schema": 0,
+   "images": 69,
+   "videos": 7,
+   "body_links": 18,
+   "title": "Affordable PPC Management Services That Protect Your Budget",
+   "title_len": 59,
+   "desc_len": 151,
+   "h1": "Affordable PPC Management Services That Maximize Your Budget and ROI",
+   "kw": "Affordable PPC Management Services",
+   "kw_occ": 6,
+   "kw_per_1000": 3.9,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "case_proof",
+    "pricing_table",
+    "pricing_badge",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "ppc_services_ai",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "AI / emerging",
+   "family": "A: legacy conversion template",
+   "words": 2076,
+   "n_h2": 13,
+   "n_h3": 18,
+   "n_h4": 25,
+   "cta_clicks": 15,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 7,
+   "faq_schema": 0,
+   "images": 108,
+   "videos": 6,
+   "body_links": 9,
+   "title": "AI PPC Services & AI-Powered PPC Management",
+   "title_len": 43,
+   "desc_len": 113,
+   "h1": "AI PPC Services for Smarter Bidding & Higher ROAS",
+   "kw": "AI-powered PPC services",
+   "kw_occ": 4,
+   "kw_per_1000": 1.9,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_table",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "ppc_services_consultants",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A-: partial legacy",
+   "words": 2147,
+   "n_h2": 11,
+   "n_h3": 20,
+   "n_h4": 24,
+   "cta_clicks": 15,
+   "distinct_cta": 9,
+   "forms": 2,
+   "faq_visible": 10,
+   "faq_schema": 0,
+   "images": 94,
+   "videos": 3,
+   "body_links": 13,
+   "title": "PPC Consulting for ROI | WebFX Pay-Per-Click Consultants",
+   "title_len": 56,
+   "desc_len": 153,
+   "h1": "Expert PPC Consulting to Maximize Your Ad Performance",
+   "kw": "PPC consulting",
+   "kw_occ": 20,
+   "kw_per_1000": 9.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "stat_h2",
+    "included",
+    "tech",
+    "pricing_preview",
+    "pricing_table",
+    "ends_here",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 5
+  },
+  {
+   "slug": "ppc_services_ecommerce",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "business model",
+   "family": "A: legacy conversion template",
+   "words": 2363,
+   "n_h2": 14,
+   "n_h3": 20,
+   "n_h4": 27,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 7,
+   "faq_schema": 0,
+   "images": 144,
+   "videos": 18,
+   "body_links": 15,
+   "title": "Ecommerce PPC Management Services: Get a 25% Lift in Sales",
+   "title_len": 58,
+   "desc_len": 135,
+   "h1": "Ecommerce PPC Management Services: Increase Your ROAS",
+   "kw": "ecommerce PPC management services",
+   "kw_occ": 8,
+   "kw_per_1000": 3.4,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$975"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "pricing_table",
+    "faq",
+    "why_webfx",
+    "pricing_table",
+    "case_proof",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "ppc_services_enterprise",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "company size",
+   "family": "A: legacy conversion template",
+   "words": 2368,
+   "n_h2": 13,
+   "n_h3": 20,
+   "n_h4": 22,
+   "cta_clicks": 15,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 8,
+   "faq_schema": 0,
+   "images": 102,
+   "videos": 3,
+   "body_links": 8,
+   "title": "Enterprise PPC Services & Management | AI-Driven Paid Media",
+   "title_len": 59,
+   "desc_len": 142,
+   "h1": "Enterprise PPC Services for Scalable, AI-Driven Growth",
+   "kw": "enterprise PPC services",
+   "kw_occ": 14,
+   "kw_per_1000": 5.9,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "process",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 4
+  },
+  {
+   "slug": "ppc_services_google_ads_management",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 1971,
+   "n_h2": 13,
+   "n_h3": 56,
+   "n_h4": 77,
+   "cta_clicks": 17,
+   "distinct_cta": 12,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 227,
+   "videos": 6,
+   "body_links": 40,
+   "title": "Google Ads Management Services for ROI-Driven PPC Campaigns",
+   "title_len": 59,
+   "desc_len": 156,
+   "h1": "Google Ads Management Services for PPC Growth & ROI",
+   "kw": "Google Ads management services",
+   "kw_occ": 17,
+   "kw_per_1000": 8.6,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_table",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "pricing_table",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "ppc_services_google_local_services_ads",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 2079,
+   "n_h2": 13,
+   "n_h3": 22,
+   "n_h4": 24,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 9,
+   "faq_schema": 0,
+   "images": 149,
+   "videos": 6,
+   "body_links": 21,
+   "title": "Google Local Services Ads Services for Local Lead Generation",
+   "title_len": 60,
+   "desc_len": 151,
+   "h1": "Google Local Services Ads Management Services",
+   "kw": "Google LSAs management services",
+   "kw_occ": 1,
+   "kw_per_1000": 0.5,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "ppc_services_landing_page_design",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "C: bespoke/other",
+   "words": 4033,
+   "n_h2": 12,
+   "n_h3": 18,
+   "n_h4": 26,
+   "cta_clicks": 17,
+   "distinct_cta": 11,
+   "forms": 2,
+   "faq_visible": 3,
+   "faq_schema": 0,
+   "images": 72,
+   "videos": 3,
+   "body_links": 20,
+   "title": "Landing Page Design Services | Accelerate Your Sales | WebFX",
+   "title_len": 60,
+   "desc_len": 123,
+   "h1": "Landing Page Design Services For Your PPC Campaigns",
+   "kw": "landing page design services",
+   "kw_occ": 28,
+   "kw_per_1000": 6.9,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [],
+   "section_seq": [
+    "pricing_table",
+    "included",
+    "pricing_preview",
+    "why_webfx",
+    "why_service",
+    "process",
+    "why_service",
+    "why_webfx",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 8
+  },
+  {
+   "slug": "ppc_services_remarketing",
+   "discipline": "ppc_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 2319,
+   "n_h2": 14,
+   "n_h3": 21,
+   "n_h4": 28,
+   "cta_clicks": 17,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 7,
+   "faq_schema": 0,
+   "images": 120,
+   "videos": 6,
+   "body_links": 5,
+   "title": "Remarketing Services & Retargeting Campaign Management",
+   "title_len": 54,
+   "desc_len": 135,
+   "h1": "Remarketing Services That Increase Conversions & ROI",
+   "kw": "remarketing services",
+   "kw_occ": 24,
+   "kw_per_1000": 10.3,
+   "schema_has_faq": true,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [
+    "$750"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_table",
+    "why_service",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "why_service",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "seo_services",
+   "discipline": "seo_services",
+   "level": "top-level",
+   "axis": "hub",
+   "family": "B: 2025-26 redesign",
+   "words": 1212,
+   "n_h2": 10,
+   "n_h3": 8,
+   "n_h4": 32,
+   "cta_clicks": 17,
+   "distinct_cta": 14,
+   "forms": 3,
+   "faq_visible": 17,
+   "faq_schema": 3,
+   "images": 108,
+   "videos": 6,
+   "body_links": 15,
+   "title": "SEO Services: Get Discovered in AI & Traditional Search",
+   "title_len": 55,
+   "desc_len": 147,
+   "h1": "SEO Services That Keep You Visible No Matter How Search Changes",
+   "kw": "SEO Services",
+   "kw_occ": 22,
+   "kw_per_1000": 18.2,
+   "schema_has_faq": true,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "tech",
+    "process",
+    "closing_cta",
+    "tech",
+    "stat_h2",
+    "why_service",
+    "pricing_preview",
+    "closing_cta",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 9
+  },
+  {
+   "slug": "seo_services_ai",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "AI / emerging",
+   "family": "C: bespoke/other",
+   "words": 991,
+   "n_h2": 6,
+   "n_h3": 2,
+   "n_h4": 12,
+   "cta_clicks": 17,
+   "distinct_cta": 12,
+   "forms": 4,
+   "faq_visible": 5,
+   "faq_schema": 4,
+   "images": 45,
+   "videos": 3,
+   "body_links": 4,
+   "title": "AI SEO Services for Faster Visibility and Higher ROI",
+   "title_len": 52,
+   "desc_len": 150,
+   "h1": "SEO Services Made Smarter with AI, Guided by Experts",
+   "kw": "AI-powered SEO services",
+   "kw_occ": 5,
+   "kw_per_1000": 5.0,
+   "schema_has_faq": true,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [],
+   "section_seq": [
+    "why_webfx",
+    "process",
+    "tech",
+    "closing_cta",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 8
+  },
+  {
+   "slug": "seo_services_ai_brand_positioning",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "AI / emerging",
+   "family": "C: bespoke/other",
+   "words": 1175,
+   "n_h2": 11,
+   "n_h3": 4,
+   "n_h4": 12,
+   "cta_clicks": 12,
+   "distinct_cta": 8,
+   "forms": 4,
+   "faq_visible": 7,
+   "faq_schema": 0,
+   "images": 93,
+   "videos": 3,
+   "body_links": 6,
+   "title": "AI Brand Positioning Services | WebFX",
+   "title_len": 37,
+   "desc_len": 149,
+   "h1": "AI Brand Positioning Services Manage What AI Says About Your Brand",
+   "kw": "AI Brand Positioning Services",
+   "kw_occ": 9,
+   "kw_per_1000": 7.7,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [],
+   "section_seq": [
+    "why_service",
+    "included",
+    "why_service",
+    "closing_cta",
+    "why_webfx",
+    "tech",
+    "closing_cta",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "seo_services_ai_search_optimization",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "AI / emerging",
+   "family": "C: bespoke/other",
+   "words": 1281,
+   "n_h2": 10,
+   "n_h3": 14,
+   "n_h4": 20,
+   "cta_clicks": 13,
+   "distinct_cta": 9,
+   "forms": 5,
+   "faq_visible": 10,
+   "faq_schema": 0,
+   "images": 86,
+   "videos": 3,
+   "body_links": 9,
+   "title": "AI Search Optimization Services & GEO Services",
+   "title_len": 46,
+   "desc_len": 115,
+   "h1": "Generative Engine Optimization Services: Get Discovered in AI Search",
+   "kw": "AI search optimization services",
+   "kw_occ": 7,
+   "kw_per_1000": 5.5,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [],
+   "section_seq": [
+    "why_service",
+    "stat_h2",
+    "tech",
+    "process",
+    "why_service",
+    "ends_here",
+    "closing_cta",
+    "faq",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 4
+  },
+  {
+   "slug": "seo_services_b2b",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "business model",
+   "family": "A: legacy conversion template",
+   "words": 1990,
+   "n_h2": 13,
+   "n_h3": 19,
+   "n_h4": 31,
+   "cta_clicks": 21,
+   "distinct_cta": 11,
+   "forms": 3,
+   "faq_visible": 10,
+   "faq_schema": 0,
+   "images": 115,
+   "videos": 3,
+   "body_links": 17,
+   "title": "B2B SEO Services | B2B SEO Company Driving Revenue",
+   "title_len": 50,
+   "desc_len": 124,
+   "h1": "Make Lead Gen Predictable With B2B SEO Services",
+   "kw": "B2B SEO services",
+   "kw_occ": 16,
+   "kw_per_1000": 8.0,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "process",
+    "tech",
+    "case_proof",
+    "pricing_badge",
+    "ends_here",
+    "comparison_roi",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 4
+  },
+  {
+   "slug": "seo_services_chatgpt_optimization",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "B: 2025-26 redesign",
+   "words": 1621,
+   "n_h2": 9,
+   "n_h3": 10,
+   "n_h4": 21,
+   "cta_clicks": 11,
+   "distinct_cta": 7,
+   "forms": 3,
+   "faq_visible": 9,
+   "faq_schema": 0,
+   "images": 85,
+   "videos": 3,
+   "body_links": 5,
+   "title": "ChatGPT Optimization Services: Get Cited in ChatGPT",
+   "title_len": 51,
+   "desc_len": 152,
+   "h1": "ChatGPT Optimization Services: Track, Earn, and Own Your ChatGPT Presence",
+   "kw": "ChatGPT optimization services",
+   "kw_occ": 9,
+   "kw_per_1000": 5.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [],
+   "section_seq": [
+    "process",
+    "other",
+    "tech",
+    "process",
+    "stat_h2",
+    "ends_here",
+    "why_webfx",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "seo_services_consulting",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 3793,
+   "n_h2": 13,
+   "n_h3": 78,
+   "n_h4": 145,
+   "cta_clicks": 18,
+   "distinct_cta": 9,
+   "forms": 2,
+   "faq_visible": 15,
+   "faq_schema": 0,
+   "images": 267,
+   "videos": 6,
+   "body_links": 65,
+   "title": "SEO Consulting Services | Achieve 20% Higher ROI With WebFX",
+   "title_len": 59,
+   "desc_len": 110,
+   "h1": "SEO Consulting Services: Earn a 20% Higher ROI",
+   "kw": "SEO Consulting Services",
+   "kw_occ": 16,
+   "kw_per_1000": 4.2,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "other",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "process",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "seo_services_ecommerce",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "business model",
+   "family": "A: legacy conversion template",
+   "words": 1739,
+   "n_h2": 12,
+   "n_h3": 13,
+   "n_h4": 25,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 5,
+   "images": 142,
+   "videos": 0,
+   "body_links": 9,
+   "title": "Ecommerce SEO Services With Transparent Plans & Pricing",
+   "title_len": 55,
+   "desc_len": 154,
+   "h1": "Ecommerce SEO Services: Grow Your Online Sales",
+   "kw": "ecommerce SEO services",
+   "kw_occ": 12,
+   "kw_per_1000": 6.9,
+   "schema_has_faq": true,
+   "schema_has_product_rating": true,
+   "schema_has_service": false,
+   "starting_price": [
+    "$2,500",
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_table",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "seo_services_enterprise",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "company size",
+   "family": "B: 2025-26 redesign",
+   "words": 751,
+   "n_h2": 12,
+   "n_h3": 10,
+   "n_h4": 15,
+   "cta_clicks": 9,
+   "distinct_cta": 7,
+   "forms": 6,
+   "faq_visible": 11,
+   "faq_schema": 0,
+   "images": 90,
+   "videos": 12,
+   "body_links": 6,
+   "title": "Enterprise SEO Services: Grow With Corporate SEO Services",
+   "title_len": 57,
+   "desc_len": 146,
+   "h1": "Enterprise SEO Agency for Scalable Growth & Revenue",
+   "kw": "enterprise SEO",
+   "kw_occ": 29,
+   "kw_per_1000": 38.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$11,500"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "tech",
+    "why_webfx",
+    "stat_h2",
+    "closing_cta",
+    "ends_here",
+    "closing_cta",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 1
+  },
+  {
+   "slug": "seo_services_enterprise_ai_search_optimization",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "company size + AI",
+   "family": "B: 2025-26 redesign",
+   "words": 1264,
+   "n_h2": 9,
+   "n_h3": 7,
+   "n_h4": 10,
+   "cta_clicks": 11,
+   "distinct_cta": 9,
+   "forms": 4,
+   "faq_visible": 9,
+   "faq_schema": 5,
+   "images": 94,
+   "videos": 9,
+   "body_links": 4,
+   "title": "Enterprise AI Search & GEO Services | WebFX",
+   "title_len": 43,
+   "desc_len": 157,
+   "h1": "Enterprise AI Search Optimization Services (GEO)",
+   "kw": "enterprise generative engine optimization services",
+   "kw_occ": 1,
+   "kw_per_1000": 0.8,
+   "schema_has_faq": true,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [],
+   "section_seq": [
+    "why_service",
+    "included",
+    "process",
+    "case_proof",
+    "closing_cta",
+    "tech",
+    "process",
+    "faq",
+    "related_links"
+   ],
+   "emdash": 16
+  },
+  {
+   "slug": "seo_services_keyword_research",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 2300,
+   "n_h2": 12,
+   "n_h3": 16,
+   "n_h4": 19,
+   "cta_clicks": 18,
+   "distinct_cta": 8,
+   "forms": 3,
+   "faq_visible": 0,
+   "faq_schema": 0,
+   "images": 117,
+   "videos": 6,
+   "body_links": 7,
+   "title": "Keyword Research Services | Capture More Revenue From Search",
+   "title_len": 60,
+   "desc_len": 153,
+   "h1": "Keyword Research Services: Capture Keywords That Convert",
+   "kw": "Keyword Research Services",
+   "kw_occ": 14,
+   "kw_per_1000": 6.1,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "process",
+    "comparison_roi",
+    "why_service",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 5
+  },
+  {
+   "slug": "seo_services_monthly_seo",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "engagement model",
+   "family": "A: legacy conversion template",
+   "words": 2341,
+   "n_h2": 13,
+   "n_h3": 30,
+   "n_h4": 28,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 9,
+   "faq_schema": 0,
+   "images": 151,
+   "videos": 6,
+   "body_links": 17,
+   "title": "Expert Monthly SEO Services With Transparent Plans & Pricing",
+   "title_len": 60,
+   "desc_len": 152,
+   "h1": "Expert Monthly SEO Services Proven To Grow Your Revenue",
+   "kw": "monthly SEO services",
+   "kw_occ": 15,
+   "kw_per_1000": 6.4,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "pricing_preview",
+    "included",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "other",
+    "faq",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 3
+  },
+  {
+   "slug": "seo_services_off_page_seo",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 2476,
+   "n_h2": 12,
+   "n_h3": 24,
+   "n_h4": 30,
+   "cta_clicks": 12,
+   "distinct_cta": 7,
+   "forms": 2,
+   "faq_visible": 9,
+   "faq_schema": 0,
+   "images": 155,
+   "videos": 3,
+   "body_links": 12,
+   "title": "Off-Page SEO Services: 100% Genuine and Spam Free | WebFX",
+   "title_len": 57,
+   "desc_len": 180,
+   "h1": "Off-Page SEO Services: 100% Genuine and Spam Free",
+   "kw": "off-page SEO",
+   "kw_occ": 37,
+   "kw_per_1000": 14.9,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "included",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "seo_services_on_page_seo",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "C: bespoke/other",
+   "words": 2123,
+   "n_h2": 9,
+   "n_h3": 22,
+   "n_h4": 22,
+   "cta_clicks": 15,
+   "distinct_cta": 9,
+   "forms": 2,
+   "faq_visible": 6,
+   "faq_schema": 0,
+   "images": 125,
+   "videos": 0,
+   "body_links": 18,
+   "title": "On-Page SEO Services | Improve Your On-Site SEO | WebFX",
+   "title_len": 55,
+   "desc_len": 145,
+   "h1": "Data-Driven On-Page SEO Services",
+   "kw": "on-page SEO services",
+   "kw_occ": 13,
+   "kw_per_1000": 6.1,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "case_proof",
+    "closing_cta",
+    "process",
+    "why_webfx",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 0
+  },
+  {
+   "slug": "seo_services_seo_audits",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A-: partial legacy",
+   "words": 2227,
+   "n_h2": 11,
+   "n_h3": 80,
+   "n_h4": 140,
+   "cta_clicks": 13,
+   "distinct_cta": 8,
+   "forms": 2,
+   "faq_visible": 8,
+   "faq_schema": 0,
+   "images": 279,
+   "videos": 3,
+   "body_links": 59,
+   "title": "SEO Audit Services: Get a Complete Audit and Action Plan",
+   "title_len": 56,
+   "desc_len": 153,
+   "h1": "SEO Audit Services: Get a Complete Audit & Action Plan",
+   "kw": "SEO audit services",
+   "kw_occ": 14,
+   "kw_per_1000": 6.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$8,600"
+   ],
+   "section_seq": [
+    "included",
+    "tech",
+    "pricing_preview",
+    "ends_here",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "process",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 13
+  },
+  {
+   "slug": "seo_services_smb",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "company size",
+   "family": "A: legacy conversion template",
+   "words": 2382,
+   "n_h2": 14,
+   "n_h3": 29,
+   "n_h4": 34,
+   "cta_clicks": 19,
+   "distinct_cta": 10,
+   "forms": 2,
+   "faq_visible": 5,
+   "faq_schema": 0,
+   "images": 135,
+   "videos": 4,
+   "body_links": 20,
+   "title": "Small Business SEO Services",
+   "title_len": 27,
+   "desc_len": 145,
+   "h1": "Small Business SEO Services for Long-Term Growth",
+   "kw": "small business SEO services",
+   "kw_occ": 11,
+   "kw_per_1000": 4.6,
+   "schema_has_faq": false,
+   "schema_has_product_rating": true,
+   "schema_has_service": true,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "process",
+    "tech",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "faq",
+    "process",
+    "closing_cta",
+    "pricing_table",
+    "related_links"
+   ],
+   "emdash": 2
+  },
+  {
+   "slug": "seo_services_voice_search_content_optimization",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "tactic",
+   "family": "A: legacy conversion template",
+   "words": 1666,
+   "n_h2": 11,
+   "n_h3": 10,
+   "n_h4": 19,
+   "cta_clicks": 11,
+   "distinct_cta": 6,
+   "forms": 2,
+   "faq_visible": 4,
+   "faq_schema": 0,
+   "images": 132,
+   "videos": 3,
+   "body_links": 11,
+   "title": "Voice Search Optimization Services | Voice SEO | WebFX",
+   "title_len": 54,
+   "desc_len": 115,
+   "h1": "Voice Search Optimization Services",
+   "kw": "voice search optimization services",
+   "kw_occ": 10,
+   "kw_per_1000": 6.0,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [
+    "$3,000"
+   ],
+   "section_seq": [
+    "included",
+    "pricing_preview",
+    "ends_here",
+    "pricing_badge",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "faq",
+    "closing_cta",
+    "related_links"
+   ],
+   "emdash": 4
+  },
+  {
+   "slug": "seo_services_wordpress_consultant",
+   "discipline": "seo_services",
+   "level": "sub-service",
+   "axis": "platform",
+   "family": "A: legacy conversion template",
+   "words": 1318,
+   "n_h2": 6,
+   "n_h3": 10,
+   "n_h4": 15,
+   "cta_clicks": 10,
+   "distinct_cta": 5,
+   "forms": 2,
+   "faq_visible": 0,
+   "faq_schema": 0,
+   "images": 84,
+   "videos": 6,
+   "body_links": 3,
+   "title": "WordPress SEO Consultant | 500+ WordPress SEO Experts | WebFX",
+   "title_len": 61,
+   "desc_len": 138,
+   "h1": "Grow Your Rankings & Revenue With a WordPress SEO Consultant",
+   "kw": "WordPress SEO Consultant",
+   "kw_occ": 7,
+   "kw_per_1000": 5.3,
+   "schema_has_faq": false,
+   "schema_has_product_rating": false,
+   "schema_has_service": false,
+   "starting_price": [],
+   "section_seq": [
+    "included",
+    "ends_here",
+    "case_proof",
+    "comparison_roi",
+    "why_service",
+    "related_links"
+   ],
+   "emdash": 1
+  }
+ ],
+ "families": {
+  "A: legacy conversion template": 48,
+  "C: bespoke/other": 10,
+  "B: 2025-26 redesign": 8,
+  "A-: partial legacy": 4
+ },
+ "words": {
+  "all": {
+   "n": 70,
+   "min": 751,
+   "p25": 1388,
+   "median": 1874,
+   "p75": 2210,
+   "max": 4033,
+   "mean": 1855
+  },
+  "amazon_services": {
+   "n": 3,
+   "min": 1252,
+   "p25": 1647,
+   "median": 2042,
+   "p75": 2139,
+   "max": 2236,
+   "mean": 1843
+  },
+  "sub-service": {
+   "n": 64,
+   "min": 751,
+   "p25": 1396,
+   "median": 1874,
+   "p75": 2162,
+   "max": 4033,
+   "mean": 1858
+  },
+  "A: legacy conversion template": {
+   "n": 48,
+   "min": 1252,
+   "p25": 1648,
+   "median": 1914,
+   "p75": 2252,
+   "max": 3793,
+   "mean": 1936
+  },
+  "analytics_services": {
+   "n": 3,
+   "min": 1382,
+   "p25": 1640,
+   "median": 1898,
+   "p75": 2100,
+   "max": 2301,
+   "mean": 1860
+  },
+  "top-level": {
+   "n": 6,
+   "min": 1212,
+   "p25": 1323,
+   "median": 1914,
+   "p75": 2297,
+   "max": 2345,
+   "mean": 1823
+  },
+  "C: bespoke/other": {
+   "n": 10,
+   "min": 759,
+   "p25": 1202,
+   "median": 1459,
+   "p75": 2245,
+   "max": 4033,
+   "mean": 1855
+  },
+  "digital_advertising_services": {
+   "n": 12,
+   "min": 942,
+   "p25": 1590,
+   "median": 1796,
+   "p75": 2158,
+   "max": 2492,
+   "mean": 1834
+  },
+  "B: 2025-26 redesign": {
+   "n": 8,
+   "min": 751,
+   "p25": 1240,
+   "median": 1288,
+   "p75": 1562,
+   "max": 1869,
+   "mean": 1352
+  },
+  "A-: partial legacy": {
+   "n": 4,
+   "min": 942,
+   "p25": 1846,
+   "median": 2179,
+   "p75": 2215,
+   "max": 2227,
+   "mean": 1882
+  },
+  "digital_marketing_services": {
+   "n": 22,
+   "min": 759,
+   "p25": 1343,
+   "median": 1806,
+   "p75": 1910,
+   "max": 2987,
+   "mean": 1712
+  },
+  "lead_generation_services": {
+   "n": 1,
+   "min": 1908,
+   "p25": 1908,
+   "median": 1908,
+   "p75": 1908,
+   "max": 1908,
+   "mean": 1908
+  },
+  "local_seo_services": {
+   "n": 1,
+   "min": 2345,
+   "p25": 2345,
+   "median": 2345,
+   "p75": 2345,
+   "max": 2345,
+   "mean": 2345
+  },
+  "ppc_services": {
+   "n": 10,
+   "min": 1250,
+   "p25": 1997,
+   "median": 2113,
+   "p75": 2352,
+   "max": 4033,
+   "mean": 2214
+  },
+  "seo_services": {
+   "n": 18,
+   "min": 751,
+   "p25": 1268,
+   "median": 1702,
+   "p75": 2282,
+   "max": 3793,
+   "mean": 1814
+  }
+ },
+ "canonical_sections": [
+  [
+   "included",
+   87,
+   0.0
+  ],
+  [
+   "tech",
+   74,
+   0.1
+  ],
+  [
+   "pricing_preview",
+   46,
+   0.17
+  ],
+  [
+   "ends_here",
+   83,
+   0.24
+  ],
+  [
+   "stat_h2",
+   11,
+   0.26
+  ],
+  [
+   "pricing_badge",
+   70,
+   0.3
+  ],
+  [
+   "other",
+   9,
+   0.4
+  ],
+  [
+   "process",
+   31,
+   0.45
+  ],
+  [
+   "case_proof",
+   79,
+   0.5
+  ],
+  [
+   "comparison_roi",
+   79,
+   0.6
+  ],
+  [
+   "why_webfx",
+   29,
+   0.61
+  ],
+  [
+   "why_service",
+   49,
+   0.67
+  ],
+  [
+   "faq",
+   96,
+   0.78
+  ],
+  [
+   "closing_cta",
+   79,
+   0.85
+  ],
+  [
+   "pricing_table",
+   49,
+   0.9
+  ],
+  [
+   "related_links",
+   100,
+   1.0
+  ]
+ ],
+ "family_canonical": {
+  "A: legacy conversion template": [
+   [
+    "included",
+    94,
+    0.0
+   ],
+   [
+    "pricing_preview",
+    44,
+    0.11
+   ],
+   [
+    "tech",
+    71,
+    0.11
+   ],
+   [
+    "ends_here",
+    100,
+    0.22
+   ],
+   [
+    "pricing_badge",
+    98,
+    0.33
+   ],
+   [
+    "case_proof",
+    98,
+    0.44
+   ],
+   [
+    "comparison_roi",
+    100,
+    0.56
+   ],
+   [
+    "process",
+    19,
+    0.62
+   ],
+   [
+    "other",
+    8,
+    0.65
+   ],
+   [
+    "why_service",
+    44,
+    0.67
+   ],
+   [
+    "why_webfx",
+    15,
+    0.7
+   ],
+   [
+    "faq",
+    94,
+    0.75
+   ],
+   [
+    "closing_cta",
+    79,
+    0.88
+   ],
+   [
+    "pricing_table",
+    54,
+    0.9
+   ],
+   [
+    "related_links",
+    100,
+    1.0
+   ]
+  ],
+  "C: bespoke/other": [
+   [
+    "included",
+    70,
+    0.0
+   ],
+   [
+    "other",
+    10,
+    0.0
+   ],
+   [
+    "stat_h2",
+    10,
+    0.11
+   ],
+   [
+    "why_service",
+    60,
+    0.18
+   ],
+   [
+    "tech",
+    70,
+    0.22
+   ],
+   [
+    "case_proof",
+    40,
+    0.24
+   ],
+   [
+    "pricing_preview",
+    40,
+    0.29
+   ],
+   [
+    "pricing_table",
+    30,
+    0.33
+   ],
+   [
+    "process",
+    60,
+    0.39
+   ],
+   [
+    "pricing_badge",
+    10,
+    0.5
+   ],
+   [
+    "why_webfx",
+    60,
+    0.54
+   ],
+   [
+    "ends_here",
+    30,
+    0.56
+   ],
+   [
+    "comparison_roi",
+    10,
+    0.56
+   ],
+   [
+    "closing_cta",
+    80,
+    0.69
+   ],
+   [
+    "faq",
+    100,
+    0.78
+   ],
+   [
+    "related_links",
+    100,
+    1.0
+   ]
+  ],
+  "B: 2025-26 redesign": [
+   [
+    "why_service",
+    50,
+    0.0
+   ],
+   [
+    "included",
+    62,
+    0.0
+   ],
+   [
+    "other",
+    12,
+    0.12
+   ],
+   [
+    "tech",
+    100,
+    0.21
+   ],
+   [
+    "process",
+    62,
+    0.25
+   ],
+   [
+    "case_proof",
+    38,
+    0.38
+   ],
+   [
+    "why_webfx",
+    75,
+    0.42
+   ],
+   [
+    "stat_h2",
+    75,
+    0.44
+   ],
+   [
+    "ends_here",
+    50,
+    0.51
+   ],
+   [
+    "pricing_preview",
+    50,
+    0.52
+   ],
+   [
+    "closing_cta",
+    75,
+    0.53
+   ],
+   [
+    "pricing_table",
+    25,
+    0.6
+   ],
+   [
+    "comparison_roi",
+    25,
+    0.66
+   ],
+   [
+    "faq",
+    100,
+    0.88
+   ],
+   [
+    "related_links",
+    100,
+    1.0
+   ]
+  ],
+  "A-: partial legacy": [
+   [
+    "included",
+    100,
+    0.0
+   ],
+   [
+    "tech",
+    75,
+    0.1
+   ],
+   [
+    "stat_h2",
+    25,
+    0.1
+   ],
+   [
+    "pricing_preview",
+    75,
+    0.2
+   ],
+   [
+    "why_webfx",
+    25,
+    0.2
+   ],
+   [
+    "pricing_badge",
+    25,
+    0.3
+   ],
+   [
+    "case_proof",
+    25,
+    0.4
+   ],
+   [
+    "ends_here",
+    75,
+    0.43
+   ],
+   [
+    "comparison_roi",
+    100,
+    0.54
+   ],
+   [
+    "why_service",
+    75,
+    0.6
+   ],
+   [
+    "process",
+    50,
+    0.6
+   ],
+   [
+    "faq",
+    100,
+    0.75
+   ],
+   [
+    "closing_cta",
+    75,
+    0.8
+   ],
+   [
+    "pricing_table",
+    75,
+    0.9
+   ],
+   [
+    "related_links",
+    100,
+    1.0
+   ]
+  ]
+ },
+ "top_sequences": [
+  [
+   "included > tech > ends_here > pricing_badge > case_proof > comparison_roi > why_service > faq > closing_cta > related_links",
+   6
+  ],
+  [
+   "included > tech > ends_here > pricing_badge > case_proof > comparison_roi > faq > closing_cta > related_links",
+   2
+  ],
+  [
+   "included > pricing_preview > ends_here > pricing_badge > case_proof > comparison_roi > why_service > faq > closing_cta > pricing_table > related_links",
+   1
+  ],
+  [
+   "process > pricing_preview > process > ends_here > pricing_badge > case_proof > comparison_roi > faq > closing_cta > pricing_table > related_links",
+   1
+  ],
+  [
+   "included > tech > ends_here > pricing_badge > case_proof > comparison_roi > other > faq > pricing_table > related_links",
+   1
+  ],
+  [
+   "included > tech > ends_here > pricing_badge > case_proof > comparison_roi > why_webfx > faq > process > closing_cta > related_links",
+   1
+  ],
+  [
+   "included > process > included > why_service > why_webfx > closing_cta > related_links > faq",
+   1
+  ],
+  [
+   "why_service > why_webfx > included > why_webfx > tech > stat_h2 > pricing_preview > closing_cta > comparison_roi > why_service > faq > related_links",
+   1
+  ]
+ ],
+ "h2_exact_top": [
+  [
+   "pricing custom to you.",
+   49
+  ],
+  [
+   "starting at $# per month.",
+   48
+  ],
+  [
+   "solving key challenges for businesses",
+   42
+  ],
+  [
+   "#%",
+   8
+  ],
+  [
+   "powerful data activation for ppc",
+   7
+  ],
+  [
+   "scale your business performance",
+   7
+  ],
+  [
+   "scale your search performance",
+   7
+  ],
+  [
+   "accelerate your roas",
+   5
+  ],
+  [
+   "scale your advertising success",
+   5
+  ],
+  [
+   "data-powered seo campaigns",
+   5
+  ],
+  [
+   "unlock a #% greater marketing roi with webfx's award-winning seo team",
+   4
+  ],
+  [
+   "data-driven digital marketing",
+   4
+  ],
+  [
+   "unlock a #% greater marketing roi with webfx's web marketing services",
+   4
+  ],
+  [
+   "maximize your advertising performance",
+   4
+  ],
+  [
+   "scale your digital marketing success",
+   4
+  ],
+  [
+   "more on our internet marketing solutions",
+   3
+  ],
+  [
+   "work with the experts at webfx",
+   3
+  ],
+  [
+   "advanced technology to support digital marketing decision making",
+   3
+  ],
+  [
+   "data-driven marketing strategies",
+   3
+  ],
+  [
+   "accelerate your digital marketing growth",
+   3
+  ],
+  [
+   "tailored to your business goals",
+   3
+  ],
+  [
+   "increase your search visibility and revenue",
+   3
+  ],
+  [
+   "more on our seo solutions",
+   3
+  ],
+  [
+   "scale your amazon sales",
+   2
+  ],
+  [
+   "software for smarter ecommerce marketing",
+   2
+  ],
+  [
+   "faqs",
+   2
+  ],
+  [
+   "transparent digital marketing pricing",
+   2
+  ],
+  [
+   "view all deliverables in our seo offerings",
+   2
+  ],
+  [
+   "what do our ppc services for amazon include?",
+   1
+  ],
+  [
+   "transparent ppc pricing for amazon",
+   1
+  ],
+  [
+   "your search for ppc services for amazon ends here",
+   1
+  ],
+  [
+   "unlock a #% lift in ppc performance with webfx's award-winning ppc for amazon team",
+   1
+  ],
+  [
+   "why use ppc management services for amazon?",
+   1
+  ],
+  [
+   "faqs about ppc services for amazon",
+   1
+  ],
+  [
+   "increase your ecommerce sales with ad management services for amazon from webfx",
+   1
+  ],
+  [
+   "decrease your acos with ppc services for amazon",
+   1
+  ],
+  [
+   "ppc management services for amazon",
+   1
+  ],
+  [
+   "how do our optimization services for amazon work?",
+   1
+  ],
+  [
+   "transparent pricing for amazon seo services",
+   1
+  ],
+  [
+   "what to expect from our optimization services for amazon",
+   1
+  ]
+ ],
+ "unclassified_h2": [
+  [
+   "amazon_services_retail_media",
+   "Discover how WebFX\u2019s retail ad management services for Amazon deliver a 25% higher ROI"
+  ],
+  [
+   "digital_marketing_services",
+   "The Omnichannel Marketing Services Powered by 750+ Experts and Proprietary AI"
+  ],
+  [
+   "digital_marketing_services_end_to_end_marketing_solutions",
+   "What do you get with our end-to-end marketing solutions?"
+  ],
+  [
+   "seo_services_chatgpt_optimization",
+   "Dedicated Team for Digital PR and Authoritative Mentions to Improve Your Visibility and Position in ChatGPT"
+  ],
+  [
+   "seo_services_consulting",
+   "Boost your revenue with proven SEO consulting services"
+  ],
+  [
+   "seo_services_monthly_seo",
+   "How to choose the right SEO company for monthly SEO services"
+  ]
+ ],
+ "cta_pages": [
+  [
+   "888-874-2601",
+   70
+  ],
+  [
+   "Send Me a Proposal!",
+   70
+  ],
+  [
+   "Get a Proposal",
+   70
+  ],
+  [
+   "Send Me a Proposal",
+   64
+  ],
+  [
+   "Check out our client testimonials",
+   59
+  ],
+  [
+   "Request a Free Proposal",
+   49
+  ],
+  [
+   "Get My Custom Quote",
+   16
+  ],
+  [
+   "GET STARTED",
+   15
+  ],
+  [
+   "Get My Custom Strategy",
+   9
+  ],
+  [
+   "Request My Custom Strategy",
+   7
+  ],
+  [
+   "Get My Custom Proposal",
+   7
+  ],
+  [
+   "Get My Free Proposal",
+   4
+  ],
+  [
+   "Our Reviews",
+   3
+  ],
+  [
+   "Our Approach",
+   3
+  ],
+  [
+   "2",
+   3
+  ],
+  [
+   "1",
+   3
+  ],
+  [
+   "3",
+   3
+  ],
+  [
+   "Read More on The Blog",
+   2
+  ],
+  [
+   "Explore Digital Marketing Services",
+   2
+  ],
+  [
+   "Request my Custom Strategy",
+   2
+  ],
+  [
+   "Get a Custom Quote",
+   2
+  ],
+  [
+   "Learn More About Nutshell",
+   2
+  ],
+  [
+   "Learn More About RevenueCloudFX",
+   2
+  ],
+  [
+   "Learn More About Our PPC Services",
+   2
+  ],
+  [
+   "Learn More About Our Web Design Services",
+   2
+  ],
+  [
+   "Learn More About Our SEO Services",
+   2
+  ],
+  [
+   "Get a Free Proposal",
+   2
+  ],
+  [
+   "Learn More",
+   2
+  ],
+  [
+   "4",
+   2
+  ],
+  [
+   "Get a free proposal",
+   2
+  ],
+  [
+   "View All Case Studies",
+   2
+  ],
+  [
+   "Discover RevenueCloudFX",
+   2
+  ],
+  [
+   "Hear the Client\u2019s Story",
+   1
+  ],
+  [
+   "Talk to a Strategist",
+   1
+  ],
+  [
+   "Our Technology",
+   1
+  ],
+  [
+   "Explore SEO Services",
+   1
+  ],
+  [
+   "Explore Content Marketing Services",
+   1
+  ],
+  [
+   "Explore Social Media Services",
+   1
+  ],
+  [
+   "Explore PPC Services",
+   1
+  ],
+  [
+   "Explore Web Design Services",
+   1
+  ]
+ ],
+ "cta_total": [
+  [
+   "Send Me a Proposal",
+   177
+  ],
+  [
+   "Get a Proposal",
+   142
+  ],
+  [
+   "888-874-2601",
+   140
+  ],
+  [
+   "Check out our client testimonials",
+   118
+  ],
+  [
+   "Send Me a Proposal!",
+   70
+  ],
+  [
+   "GET STARTED",
+   56
+  ],
+  [
+   "Request a Free Proposal",
+   49
+  ],
+  [
+   "Get My Custom Quote",
+   16
+  ],
+  [
+   "Get My Custom Strategy",
+   9
+  ],
+  [
+   "Request My Custom Strategy",
+   7
+  ],
+  [
+   "View our pricing",
+   7
+  ],
+  [
+   "Get My Custom Proposal",
+   7
+  ],
+  [
+   "View Plans",
+   5
+  ],
+  [
+   "Learn More",
+   5
+  ],
+  [
+   "Get My Free Proposal",
+   4
+  ],
+  [
+   "Our Approach",
+   3
+  ],
+  [
+   "Our Reviews",
+   3
+  ],
+  [
+   "1",
+   3
+  ],
+  [
+   "2",
+   3
+  ],
+  [
+   "3",
+   3
+  ],
+  [
+   "View AI SEO Case Studies",
+   3
+  ],
+  [
+   "By Quote",
+   3
+  ],
+  [
+   "Customize My Plan",
+   3
+  ],
+  [
+   "Explore Digital Marketing Services",
+   2
+  ],
+  [
+   "Read More on The Blog",
+   2
+  ],
+  [
+   "Request my Custom Strategy",
+   2
+  ],
+  [
+   "Get a Custom Quote",
+   2
+  ],
+  [
+   "Learn More About Nutshell",
+   2
+  ],
+  [
+   "Learn More About RevenueCloudFX",
+   2
+  ],
+  [
+   "Learn More About Our SEO Services",
+   2
+  ],
+  [
+   "Learn More About Our PPC Services",
+   2
+  ],
+  [
+   "Learn More About Our Web Design Services",
+   2
+  ],
+  [
+   "Get My Multi-Location Plan",
+   2
+  ],
+  [
+   "Get a Free Proposal",
+   2
+  ],
+  [
+   "Get My Custom PPC Strategy",
+   2
+  ],
+  [
+   "Explore All Reviews",
+   2
+  ],
+  [
+   "Get My SEO Proposal",
+   2
+  ],
+  [
+   "4",
+   2
+  ],
+  [
+   "Get a free proposal",
+   2
+  ],
+  [
+   "View All Case Studies",
+   2
+  ]
+ ],
+ "cta_buckets": [
+  [
+   "proposal",
+   459
+  ],
+  [
+   "phone",
+   140
+  ],
+  [
+   "proof",
+   135
+  ],
+  [
+   "get started",
+   56
+  ],
+  [
+   "explore/learn",
+   51
+  ],
+  [
+   "other",
+   28
+  ],
+  [
+   "quote",
+   22
+  ],
+  [
+   "strategy",
+   20
+  ],
+  [
+   "pricing/plans",
+   20
+  ]
+ ],
+ "cta_href": {
+  "Get a Proposal": [
+   [
+    "/free-quote/",
+    70
+   ]
+  ],
+  "innovative advertising strategy": [
+   [
+    "/digital-advertising/learn/best-online-advertising-strategies/",
+    1
+   ]
+  ],
+  "Request a Quote": [
+   [
+    "https://business.yelp.com/services/products/request-a-quote/",
+    1
+   ]
+  ],
+  "digital marketing strategy": [
+   [
+    "/digital-marketing/learn/digital-marketing-strategies/",
+    1
+   ]
+  ],
+  "Request a Proposal": [
+   [
+    "/free-quote-alt/",
+    1
+   ]
+  ],
+  "ongoing strategy": [
+   [
+    "/seo/learn/is-seo-an-ongoing-process/",
+    1
+   ]
+  ]
+ },
+ "form_fields": [
+  [
+   "Enter your website",
+   154
+  ],
+  [
+   "Enter your website + submit",
+   7
+  ],
+  [
+   "Enter Your Website",
+   3
+  ],
+  [
+   "id + ev + dl + rl + if + ts + iw + sw + sh + v + r + ec + o + aems + fbp + cs_est + ler + cdl + pmd[title] + pmd[locale]",
+   2
+  ],
+  [
+   "Number of locations",
+   1
+  ],
+  [
+   "Select business size + Your target market location + Industry Competition + reach_local + reach_local + Enter number of locations + content_creation + content_creation",
+   1
+  ]
+ ],
+ "faq_norm_top": [
+  [
+   "what are x ?",
+   26
+  ],
+  [
+   "how much do x cost?",
+   16
+  ],
+  [
+   "how much do x services cost?",
+   5
+  ],
+  [
+   "what is x ?",
+   4
+  ],
+  [
+   "what are x services?",
+   4
+  ],
+  [
+   "what do x include?",
+   4
+  ],
+  [
+   "what are the benefits of x ?",
+   3
+  ],
+  [
+   "what is x advertising?",
+   3
+  ],
+  [
+   "how does x work?",
+   3
+  ],
+  [
+   "how much do x ads cost?",
+   2
+  ],
+  [
+   "what are the advantages of x ?",
+   2
+  ],
+  [
+   "what do your x include?",
+   2
+  ],
+  [
+   "what are ai x services?",
+   2
+  ],
+  [
+   "what is ecommerce x ?",
+   2
+  ],
+  [
+   "what do x services include?",
+   2
+  ],
+  [
+   "what is omniseo\u00ae?",
+   2
+  ],
+  [
+   "is x optimization a separate service from x ?",
+   2
+  ],
+  [
+   "how much does it cost for x ?",
+   1
+  ],
+  [
+   "what does an x specialist do?",
+   1
+  ],
+  [
+   "is x worth it?",
+   1
+  ],
+  [
+   "what are x sponsored product ads?",
+   1
+  ],
+  [
+   "how is x for x different than traditional x ?",
+   1
+  ],
+  [
+   "do i need to invest in x services?",
+   1
+  ],
+  [
+   "why choose webfx for x ?",
+   1
+  ],
+  [
+   "what is x retail ad service?",
+   1
+  ],
+  [
+   "why advertise through x retail ad service?",
+   1
+  ],
+  [
+   "who can advertise using x retail ad service?",
+   1
+  ],
+  [
+   "where do these retail ads appear?",
+   1
+  ],
+  [
+   "do i have to sell on x to use x retail ad service?",
+   1
+  ],
+  [
+   "what is marketing analytics?",
+   1
+  ],
+  [
+   "how to use your website data?",
+   1
+  ],
+  [
+   "what is the benefit to x ?",
+   1
+  ],
+  [
+   "how to choose an agency for x services?",
+   1
+  ],
+  [
+   "what do marketing mix modeling services include?",
+   1
+  ],
+  [
+   "how much do marketing mix modeling services cost?",
+   1
+  ],
+  [
+   "how do i choose the best marketing mix modeling agency or provider?",
+   1
+  ],
+  [
+   "how long does it take to see results from marketing mix modeling?",
+   1
+  ],
+  [
+   "what is marketing mix modeling?",
+   1
+  ],
+  [
+   "why is marketing mix modeling important?",
+   1
+  ],
+  [
+   "how do marketing mix models differ from attribution reports?",
+   1
+  ],
+  [
+   "can marketing mix modeling measure offline and online channels together?",
+   1
+  ],
+  [
+   "how often should a marketing mix model be updated?",
+   1
+  ],
+  [
+   "is marketing mix modeling right for midsized b2b companies?",
+   1
+  ],
+  [
+   "can marketing mix modeling help allocate budget across regions, products, or business units?",
+   1
+  ],
+  [
+   "how much do paid x cost?",
+   1
+  ]
+ ],
+ "faq_intents": [
+  [
+   "definition (what is X)",
+   119
+  ],
+  [
+   "other",
+   68
+  ],
+  [
+   "cost / pricing",
+   65
+  ],
+  [
+   "what's included / deliverables",
+   45
+  ],
+  [
+   "how it works / process",
+   42
+  ],
+  [
+   "benefits / is it worth it",
+   37
+  ],
+  [
+   "choosing an agency / why WebFX",
+   24
+  ],
+  [
+   "AI usage",
+   16
+  ],
+  [
+   "measurement / ROI / reporting",
+   13
+  ],
+  [
+   "how long / timeline",
+   9
+  ],
+  [
+   "who / eligibility",
+   4
+  ],
+  [
+   "contract / ownership / terms",
+   4
+  ]
+ ],
+ "faq_visible": {
+  "n": 70,
+  "min": 0,
+  "p25": 3,
+  "median": 6,
+  "p75": 9,
+  "max": 23,
+  "mean": 6
+ },
+ "faq_schema": {
+  "n": 70,
+  "min": 0,
+  "p25": 0,
+  "median": 0,
+  "p75": 0,
+  "max": 5,
+  "mean": 0
+ },
+ "pages_with_schema_faq_questions": 9,
+ "schema_types": [
+  [
+   "ReadAction",
+   70
+  ],
+  [
+   "ImageObject",
+   70
+  ],
+  [
+   "BreadcrumbList",
+   70
+  ],
+  [
+   "Organization",
+   70
+  ],
+  [
+   "ListItem",
+   70
+  ],
+  [
+   "PropertyValueSpecification",
+   70
+  ],
+  [
+   "EntryPoint",
+   70
+  ],
+  [
+   "SearchAction",
+   70
+  ],
+  [
+   "WebSite",
+   70
+  ],
+  [
+   "WebPage",
+   70
+  ],
+  [
+   "QuantitativeValue",
+   70
+  ],
+  [
+   "VideoObject",
+   60
+  ],
+  [
+   "Service",
+   33
+  ],
+  [
+   "AggregateRating",
+   28
+  ],
+  [
+   "PostalAddress",
+   25
+  ],
+  [
+   "Brand",
+   25
+  ],
+  [
+   "Product",
+   25
+  ],
+  [
+   "OpeningHoursSpecification",
+   24
+  ],
+  [
+   "LocalBusiness",
+   24
+  ],
+  [
+   "GeoCoordinates",
+   24
+  ],
+  [
+   "Question",
+   13
+  ],
+  [
+   "FAQPage",
+   13
+  ],
+  [
+   "Answer",
+   13
+  ],
+  [
+   "Offer",
+   9
+  ],
+  [
+   "OfferCatalog",
+   8
+  ],
+  [
+   "Country",
+   4
+  ],
+  [
+   "UnitPriceSpecification",
+   4
+  ],
+  [
+   "Audience",
+   4
+  ],
+  [
+   "Person",
+   1
+  ],
+  [
+   "Article",
+   1
+  ],
+  [
+   "GeoShape",
+   1
+  ],
+  [
+   "DefinedTerm",
+   1
+  ],
+  [
+   "Place",
+   1
+  ],
+  [
+   "HowTo",
+   1
+  ],
+  [
+   "HowToStep",
+   1
+  ],
+  [
+   "Specialty",
+   1
+  ]
+ ],
+ "rating_schema": [
+  [
+   "4.9 from 441 ratings",
+   21
+  ],
+  [
+   "4.9 from 437 ratings",
+   1
+  ]
+ ],
+ "numbers_df": [
+  [
+   "93%",
+   60
+  ],
+  [
+   "750+",
+   59
+  ],
+  [
+   "72%",
+   59
+  ],
+  [
+   "1,100+",
+   55
+  ],
+  [
+   "91%",
+   53
+  ],
+  [
+   "50%",
+   53
+  ],
+  [
+   "100%",
+   50
+  ],
+  [
+   "540%",
+   47
+  ],
+  [
+   "2X",
+   47
+  ],
+  [
+   "500+",
+   46
+  ],
+  [
+   "25%",
+   35
+  ],
+  [
+   "$3,000",
+   34
+  ],
+  [
+   "$10 billion",
+   31
+  ],
+  [
+   "$500K+",
+   29
+  ],
+  [
+   "20%",
+   25
+  ],
+  [
+   "200+",
+   21
+  ],
+  [
+   "15%",
+   16
+  ],
+  [
+   "$750",
+   15
+  ],
+  [
+   "10%",
+   9
+  ],
+  [
+   "1,200+",
+   9
+  ],
+  [
+   "488%",
+   9
+  ],
+  [
+   "$5,000",
+   8
+  ],
+  [
+   "12%",
+   8
+  ],
+  [
+   "$1,500",
+   8
+  ],
+  [
+   "$975",
+   7
+  ],
+  [
+   "$100",
+   7
+  ],
+  [
+   "$30,000",
+   6
+  ],
+  [
+   "$1,125",
+   6
+  ],
+  [
+   "$400",
+   6
+  ],
+  [
+   "1.8x",
+   6
+  ],
+  [
+   "$1,800",
+   6
+  ],
+  [
+   "$9,200",
+   6
+  ],
+  [
+   "$4,500",
+   5
+  ],
+  [
+   "$1,000",
+   5
+  ],
+  [
+   "90%",
+   5
+  ],
+  [
+   "$10B",
+   5
+  ],
+  [
+   "$1,200",
+   5
+  ],
+  [
+   "$2,250",
+   5
+  ],
+  [
+   "$5,800",
+   5
+  ],
+  [
+   "$30,001+",
+   5
+  ],
+  [
+   "$300",
+   5
+  ],
+  [
+   "$5,750",
+   5
+  ],
+  [
+   "$2,800",
+   5
+  ],
+  [
+   "$8,600",
+   5
+  ],
+  [
+   "150%",
+   4
+  ]
+ ],
+ "body_link_targets": [
+  [
+   "/digital-advertising/services/geofencing/",
+   13
+  ],
+  [
+   "/digital-advertising/services/chatgpt/",
+   12
+  ],
+  [
+   "/seo/services/ecommerce/",
+   12
+  ],
+  [
+   "/digital-marketing/services/end-to-end-marketing-solutions/",
+   11
+  ],
+  [
+   "/ppc/services/remarketing/",
+   10
+  ],
+  [
+   "/ppc/services/ecommerce/",
+   10
+  ],
+  [
+   "/ppc/services/google-ads-management/",
+   10
+  ],
+  [
+   "/digital-marketing/services/ai/",
+   10
+  ],
+  [
+   "/seo/services/ai/",
+   9
+  ],
+  [
+   "/digital-marketing/services/ecommerce/",
+   8
+  ],
+  [
+   "/digital-marketing/pricing/",
+   8
+  ],
+  [
+   "/seo/services/seo-audits/",
+   8
+  ],
+  [
+   "/ppc/services/ai/",
+   8
+  ],
+  [
+   "/ppc/services/consultants/",
+   8
+  ],
+  [
+   "/seo/learn/seo-from-upwork/",
+   7
+  ],
+  [
+   "/martech/services/",
+   7
+  ],
+  [
+   "/digital-advertising/services/b2b-ar-vr/",
+   7
+  ],
+  [
+   "/digital-advertising/services/online-media-buying/",
+   7
+  ],
+  [
+   "/seo/pricing/enterprise/",
+   7
+  ],
+  [
+   "/digital-marketing/services/revenue-marketing/",
+   7
+  ],
+  [
+   "/seo/services/consulting/",
+   7
+  ],
+  [
+   "/digital-marketing/services/business-consulting/",
+   7
+  ],
+  [
+   "/digital-marketing/services/digital-transformation/",
+   7
+  ],
+  [
+   "/digital-marketing/services/marketing-operations/",
+   7
+  ],
+  [
+   "/digital-marketing/services/ecommerce-pim/",
+   7
+  ],
+  [
+   "/ppc/services/affordable/",
+   7
+  ],
+  [
+   "/technology/revenuecloudfx/adtechfx/",
+   6
+  ],
+  [
+   "/portfolio/case-studies/",
+   6
+  ],
+  [
+   "/portfolio/case-studies/paulb-parts/",
+   6
+  ],
+  [
+   "/digital-marketing/services/closed-loop-analytics/",
+   6
+  ],
+  [
+   "/digital-marketing/learn/digital-marketing-strategies/",
+   6
+  ],
+  [
+   "/digital-marketing/learn/how-to-measure-digital-roi/",
+   6
+  ],
+  [
+   "/digital-marketing/services/packages/",
+   6
+  ],
+  [
+   "/digital-marketing/agency/enterprise/",
+   6
+  ],
+  [
+   "/digital-marketing/services/online-press-releases/",
+   6
+  ],
+  [
+   "/seo/learn/how-to-hire-seo-experts/",
+   6
+  ],
+  [
+   "/blog/marketing/how-to-choose-right-seo-company/",
+   6
+  ],
+  [
+   "/portfolio/case-studies/thompson-tractor-omniseo/",
+   6
+  ],
+  [
+   "/seo/learn/seo-partner/",
+   5
+  ],
+  [
+   "/seo/pricing/how-much-does-seo-audit-cost/",
+   5
+  ],
+  [
+   "/digital-marketing/pricing/channel-partner-marketing/",
+   5
+  ],
+  [
+   "/content-marketing/learn/top-video-marketing-companies/",
+   5
+  ],
+  [
+   "/martech/services/crm-integration/",
+   5
+  ],
+  [
+   "/martech/services/house-call-pro-consulting/",
+   5
+  ],
+  [
+   "/portfolio/case-studies/york-saw-knife/",
+   5
+  ]
+ ],
+ "body_link_cats": [
+  [
+   "service page",
+   360
+  ],
+  [
+   "case study/portfolio",
+   176
+  ],
+  [
+   "blog",
+   153
+  ],
+  [
+   "other",
+   117
+  ],
+  [
+   "pricing page",
+   83
+  ],
+  [
+   "industry/location",
+   30
+  ],
+  [
+   "agency (industry) page",
+   14
+  ],
+  [
+   "technology (RevenueCloudFX etc.)",
+   13
+  ],
+  [
+   "tools",
+   4
+  ],
+  [
+   "quote/contact",
+   2
+  ]
+ ],
+ "cross_discipline": [
+  [
+   "same discipline",
+   251
+  ],
+  [
+   "other discipline",
+   109
+  ]
+ ],
+ "title_feats": [
+  [
+   "no brand in title",
+   48
+  ],
+  [
+   "outcome word (ROI/revenue/sales/leads/growth)",
+   28
+  ],
+  [
+   "pipe separator",
+   25
+  ],
+  [
+   "ends with brand",
+   16
+  ],
+  [
+   "contains number",
+   13
+  ],
+  [
+   "colon benefit",
+   12
+  ],
+  [
+   "agency/company/consultant noun",
+   10
+  ],
+  [
+   "'X That [verb]' clause",
+   10
+  ],
+  [
+   "superlative (top/best/expert/leading)",
+   9
+  ],
+  [
+   "contains %",
+   7
+  ],
+  [
+   "pricing/plans in title",
+   3
+  ],
+  [
+   "bracketed claim [..]",
+   1
+  ]
+ ],
+ "desc_feats": [
+  [
+   "brand named",
+   52
+  ],
+  [
+   "exclamation mark",
+   37
+  ],
+  [
+   "ends with 'today/now' CTA",
+   22
+  ],
+  [
+   "opens with a question",
+   10
+  ],
+  [
+   "pricing/plans",
+   9
+  ],
+  [
+   "mentions proposal/quote",
+   9
+  ],
+  [
+   "contains number",
+   8
+  ],
+  [
+   "award-winning",
+   6
+  ]
+ ],
+ "h1_feats": [
+  [
+   "'X Services That [outcome]'",
+   22
+  ],
+  [
+   "'X Services: [benefit]'",
+   13
+  ],
+  [
+   "'X Services for/to [outcome]'",
+   13
+  ],
+  [
+   "imperative verb first",
+   13
+  ],
+  [
+   "bare keyword only",
+   12
+  ],
+  [
+   "number in H1",
+   7
+  ]
+ ],
+ "title_len": {
+  "n": 70,
+  "min": 27,
+  "p25": 52,
+  "median": 56,
+  "p75": 59,
+  "max": 64,
+  "mean": 54
+ },
+ "desc_len": {
+  "n": 70,
+  "min": 91,
+  "p25": 130,
+  "median": 143,
+  "p75": 152,
+  "max": 180,
+  "mean": 140
+ },
+ "lexicon_total": [
+  [
+   "leads",
+   689
+  ],
+  [
+   "AI",
+   545
+  ],
+  [
+   "ROI",
+   506
+  ],
+  [
+   "revenue",
+   466
+  ],
+  [
+   "RevenueCloudFX",
+   394
+  ],
+  [
+   "custom/customized",
+   267
+  ],
+  [
+   "expert(s)",
+   200
+  ],
+  [
+   "transparent/transparency",
+   158
+  ],
+  [
+   "ChatGPT",
+   147
+  ],
+  [
+   "dedicated",
+   130
+  ],
+  [
+   "750+",
+   104
+  ],
+  [
+   "proprietary",
+   76
+  ],
+  [
+   "award-winning",
+   65
+  ],
+  [
+   "91% retention",
+   64
+  ],
+  [
+   "93% satisfaction",
+   64
+  ],
+  [
+   "bottom line",
+   61
+  ],
+  [
+   "2026",
+   47
+  ],
+  [
+   "data-driven/data-powered",
+   45
+  ],
+  [
+   "30 years/30-year",
+   43
+  ],
+  [
+   "$10 billion/$10B",
+   41
+  ],
+  [
+   "ROAS",
+   23
+  ],
+  [
+   "proactive",
+   17
+  ],
+  [
+   "first-party data",
+   13
+  ],
+  [
+   "cookie-cutter",
+   8
+  ],
+  [
+   "guarantee",
+   3
+  ]
+ ],
+ "lexicon_pages": [
+  [
+   "revenue",
+   68
+  ],
+  [
+   "ROI",
+   68
+  ],
+  [
+   "expert(s)",
+   67
+  ],
+  [
+   "transparent/transparency",
+   66
+  ],
+  [
+   "leads",
+   66
+  ],
+  [
+   "RevenueCloudFX",
+   65
+  ],
+  [
+   "custom/customized",
+   65
+  ],
+  [
+   "93% satisfaction",
+   60
+  ],
+  [
+   "750+",
+   59
+  ],
+  [
+   "91% retention",
+   53
+  ],
+  [
+   "dedicated",
+   51
+  ],
+  [
+   "AI",
+   49
+  ],
+  [
+   "proprietary",
+   48
+  ],
+  [
+   "award-winning",
+   45
+  ],
+  [
+   "bottom line",
+   34
+  ],
+  [
+   "$10 billion/$10B",
+   33
+  ],
+  [
+   "data-driven/data-powered",
+   31
+  ],
+  [
+   "30 years/30-year",
+   31
+  ],
+  [
+   "ChatGPT",
+   27
+  ],
+  [
+   "2026",
+   22
+  ],
+  [
+   "ROAS",
+   12
+  ],
+  [
+   "proactive",
+   11
+  ],
+  [
+   "cookie-cutter",
+   8
+  ],
+  [
+   "first-party data",
+   8
+  ],
+  [
+   "guarantee",
+   3
+  ]
+ ],
+ "case_blocks": [
+  [
+   "Hurst Pediatric Dentistry / Merrimack Valley Psychological Associates / Net Friends",
+   42,
+   [
+    "amazon_services_advertising",
+    "amazon_services_amazon_seo_listing_optimization_service",
+    "amazon_services_retail_media",
+    "analytics_services",
+    "analytics_services_channel_attribution_forecasting",
+    "digital_advertising_services_account_based_marketing",
+    "digital_advertising_services_crm_retargeting",
+    "digital_advertising_services_geofencing",
+    "digital_advertising_services_ott_connected_tv",
+    "digital_advertising_services_programmatic",
+    "digital_advertising_services_video_advertising",
+    "digital_advertising_services_walmart",
+    "digital_advertising_services_youtube",
+    "digital_marketing_services_ai",
+    "digital_marketing_services_business_consulting",
+    "digital_marketing_services_closed_loop_analytics",
+    "digital_marketing_services_competitor_analysis",
+    "digital_marketing_services_contact_enrichment",
+    "digital_marketing_services_conversion_rate_optimization",
+    "digital_marketing_services_digital_due_diligence",
+    "digital_marketing_services_digital_recruitment",
+    "digital_marketing_services_digital_transformation",
+    "digital_marketing_services_ecommerce",
+    "digital_marketing_services_ecommerce_pim",
+    "digital_marketing_services_end_to_end_marketing_solutions",
+    "digital_marketing_services_marketing_operations",
+    "digital_marketing_services_online_press_releases",
+    "digital_marketing_services_packages",
+    "digital_marketing_services_performance_marketing",
+    "digital_marketing_services_revenue_operations",
+    "digital_marketing_services_target",
+    "lead_generation_services_lead_management",
+    "ppc_services_ai",
+    "ppc_services_ecommerce",
+    "ppc_services_enterprise",
+    "ppc_services_google_local_services_ads",
+    "ppc_services_remarketing",
+    "seo_services_ecommerce",
+    "seo_services_monthly_seo",
+    "seo_services_off_page_seo",
+    "seo_services_voice_search_content_optimization",
+    "seo_services_wordpress_consultant"
+   ]
+  ]
+ ],
+ "unlock_claims": [
+  [
+   "25% greater marketing roi",
+   31
+  ],
+  [
+   "20% increase in roi",
+   12
+  ],
+  [
+   "20% greater marketing roi",
+   2
+  ],
+  [
+   "25% lift in ppc performance",
+   1
+  ],
+  [
+   "25% greater advertising roi",
+   1
+  ],
+  [
+   "8% increase in sales",
+   1
+  ],
+  [
+   "11% increase in conversions",
+   1
+  ],
+  [
+   "16% more recruitment leads",
+   1
+  ],
+  [
+   "16% increase in leads",
+   1
+  ],
+  [
+   "8% increase in closed sales",
+   1
+  ]
+ ],
+ "hero_stats": [
+  [
+   "93% CLIENT SATISFACTION SCORE",
+   57
+  ],
+  [
+   "91% RETENTION RATE",
+   49
+  ],
+  [
+   "10% AVERAGE TRAFFIC INCREASE",
+   4
+  ],
+  [
+   "115+ SEO AWARDS",
+   3
+  ],
+  [
+   "15% CPL REDUCTION WITHIN THE FIRST 6 MONTHS",
+   2
+  ],
+  [
+   "1.8x FASTER REVENUE GROWTH",
+   2
+  ],
+  [
+   "$177M MANAGED AD SPEND",
+   1
+  ],
+  [
+   "$151K AVERAGE MONTHLY AMAZON SALES",
+   1
+  ],
+  [
+   "1.8X FASTER LEAD GROWTH THAN INDUSTRY AVERAGE",
+   1
+  ],
+  [
+   "900M WEEKLY USERS ON CHATGPT",
+   1
+  ],
+  [
+   "$5K MINIMUM RECOMMENDED",
+   1
+  ],
+  [
+   "94% B2B BUYERS USE LLMS",
+   1
+  ],
+  [
+   "20 LOCAL EXPERTS",
+   1
+  ],
+  [
+   "10M LEADS DRIVEN FROM YELP",
+   1
+  ],
+  [
+   "220+ DIGITAL MARKETING AWARDS",
+   1
+  ],
+  [
+   "30% HIGHER NPS\u00ae SCORE THAN",
+   1
+  ],
+  [
+   "11% AVERAGE LIFT IN CONVERSIONS",
+   1
+  ],
+  [
+   "15% PIPELINE INCREASE",
+   1
+  ],
+  [
+   "93% CLIENT SATISFACTION",
+   1
+  ],
+  [
+   "1.8x REVENUE GROWTH",
+   1
+  ],
+  [
+   "15% CPL REDUCTION",
+   1
+  ],
+  [
+   "$10,085,355,239+ IN CLIENT REVENUE",
+   1
+  ],
+  [
+   "24,859,684 IN LEADS FOR OUR CLIENTS",
+   1
+  ],
+  [
+   "750 DIGITAL MARKETING EXPERTS",
+   1
+  ],
+  [
+   "1.8x FASTER SEO REVENUE GROWTH",
+   1
+  ]
+ ],
+ "toc_pages": 57,
+ "phone_in_copy_pages": 50,
+ "pricing_table_pages": 8,
+ "tier_names": [
+  [
+   "Platinum",
+   5
+  ],
+  [
+   "Bronze",
+   4
+  ],
+  [
+   "Gold",
+   4
+  ],
+  [
+   "Silver",
+   4
+  ],
+  [
+   "Enterprise",
+   4
+  ],
+  [
+   "Enterprise+",
+   1
+  ]
+ ],
+ "ad_spend_pct_mentions": [
+  [
+   12,
+   7
+  ],
+  [
+   15,
+   4
+  ],
+  [
+   10,
+   1
+  ],
+  [
+   20,
+   1
+  ]
+ ],
+ "sentence_len_mean_per_page": {
+  "n": 70,
+  "min": 10,
+  "p25": 12,
+  "median": 13,
+  "p75": 14,
+  "max": 15,
+  "mean": 13
+ },
+ "long_sentence_share_pct": {
+  "n": 70,
+  "min": 1,
+  "p25": 5,
+  "median": 6,
+  "p75": 8,
+  "max": 14,
+  "mean": 6
+ },
+ "kw_density": [
+  [
+   "seo_services_enterprise",
+   "enterprise SEO",
+   29,
+   38.6
+  ],
+  [
+   "seo_services",
+   "SEO Services",
+   22,
+   18.2
+  ],
+  [
+   "seo_services_off_page_seo",
+   "off-page SEO",
+   37,
+   14.9
+  ],
+  [
+   "digital_advertising_services_ott_connected_tv",
+   "OTT",
+   19,
+   11.0
+  ],
+  [
+   "ppc_services_remarketing",
+   "remarketing services",
+   24,
+   10.3
+  ],
+  [
+   "analytics_services_marketing_mix_modeling",
+   "Marketing Mix Modeling Services",
+   14,
+   10.1
+  ],
+  [
+   "digital_marketing_services_multi_location",
+   "multi-location marketing services",
+   13,
+   9.9
+  ],
+  [
+   "analytics_services",
+   "marketing analytics services",
+   22,
+   9.6
+  ],
+  [
+   "digital_marketing_services_ai",
+   "AI marketing services",
+   13,
+   9.4
+  ],
+  [
+   "digital_marketing_services_revenue_operations",
+   "revenue operations services",
+   12,
+   9.4
+  ],
+  [
+   "ppc_services_consultants",
+   "PPC consulting",
+   20,
+   9.3
+  ],
+  [
+   "digital_marketing_services_digital_due_diligence",
+   "digital due diligence",
+   13,
+   9.0
+  ],
+  [
+   "digital_marketing_services_online_press_releases",
+   "press release services",
+   13,
+   8.6
+  ],
+  [
+   "ppc_services_google_ads_management",
+   "Google Ads management services",
+   17,
+   8.6
+  ],
+  [
+   "digital_marketing_services_contact_enrichment",
+   "contact enrichment",
+   11,
+   8.3
+  ],
+  [
+   "ppc_services",
+   "PPC services",
+   10,
+   8.0
+  ],
+  [
+   "seo_services_b2b",
+   "B2B SEO services",
+   16,
+   8.0
+  ],
+  [
+   "seo_services_ai_brand_positioning",
+   "AI Brand Positioning Services",
+   9,
+   7.7
+  ],
+  [
+   "lead_generation_services_lead_management",
+   "lead management services",
+   14,
+   7.3
+  ],
+  [
+   "amazon_services_advertising",
+   "PPC services for Amazon",
+   14,
+   6.9
+  ],
+  [
+   "digital_advertising_services_youtube",
+   "YouTube advertising services",
+   14,
+   6.9
+  ],
+  [
+   "ppc_services_landing_page_design",
+   "landing page design services",
+   28,
+   6.9
+  ],
+  [
+   "seo_services_ecommerce",
+   "ecommerce SEO services",
+   12,
+   6.9
+  ],
+  [
+   "digital_marketing_services_ecommerce",
+   "ecommerce marketing services",
+   17,
+   6.8
+  ],
+  [
+   "amazon_services_amazon_seo_listing_optimization_service",
+   "SEO services for Amazon",
+   15,
+   6.7
+  ],
+  [
+   "digital_marketing_services_cookie_consent",
+   "cookie consent management",
+   5,
+   6.6
+  ],
+  [
+   "digital_advertising_services",
+   "digital advertising services",
+   10,
+   6.5
+  ],
+  [
+   "seo_services_monthly_seo",
+   "monthly SEO services",
+   15,
+   6.4
+  ],
+  [
+   "digital_advertising_services_video_advertising",
+   "video advertising services",
+   10,
+   6.3
+  ],
+  [
+   "seo_services_seo_audits",
+   "SEO audit services",
+   14,
+   6.3
+  ],
+  [
+   "digital_marketing_services_ecommerce_pim",
+   "ecommerce PIM services",
+   8,
+   6.1
+  ],
+  [
+   "digital_marketing_services_marketing_operations",
+   "marketing operations services",
+   12,
+   6.1
+  ],
+  [
+   "seo_services_keyword_research",
+   "Keyword Research Services",
+   14,
+   6.1
+  ],
+  [
+   "seo_services_on_page_seo",
+   "on-page SEO services",
+   13,
+   6.1
+  ],
+  [
+   "seo_services_voice_search_content_optimization",
+   "voice search optimization services",
+   10,
+   6.0
+  ],
+  [
+   "ppc_services_enterprise",
+   "enterprise PPC services",
+   14,
+   5.9
+  ],
+  [
+   "digital_marketing_services_digital_recruitment",
+   "digital recruitment marketing services",
+   8,
+   5.7
+  ],
+  [
+   "seo_services_chatgpt_optimization",
+   "ChatGPT optimization services",
+   9,
+   5.6
+  ],
+  [
+   "seo_services_ai_search_optimization",
+   "AI search optimization services",
+   7,
+   5.5
+  ],
+  [
+   "digital_marketing_services_performance_marketing",
+   "performance marketing services",
+   10,
+   5.3
+  ],
+  [
+   "seo_services_wordpress_consultant",
+   "WordPress SEO Consultant",
+   7,
+   5.3
+  ],
+  [
+   "digital_marketing_services",
+   "digital marketing services",
+   12,
+   5.2
+  ],
+  [
+   "digital_marketing_services_end_to_end_marketing_solutions",
+   "end-to-end marketing solutions",
+   10,
+   5.2
+  ],
+  [
+   "seo_services_ai",
+   "AI-powered SEO services",
+   5,
+   5.0
+  ],
+  [
+   "digital_advertising_services_account_based_marketing",
+   "account-based marketing services",
+   8,
+   4.8
+  ],
+  [
+   "digital_marketing_services_business_consulting",
+   "business consulting services",
+   9,
+   4.7
+  ],
+  [
+   "digital_marketing_services_revenue_marketing",
+   "revenue marketing services",
+   14,
+   4.7
+  ],
+  [
+   "seo_services_smb",
+   "small business SEO services",
+   11,
+   4.6
+  ],
+  [
+   "digital_advertising_services_programmatic",
+   "programmatic advertising services",
+   11,
+   4.4
+  ],
+  [
+   "seo_services_consulting",
+   "SEO Consulting Services",
+   16,
+   4.2
+  ],
+  [
+   "ppc_services_affordable",
+   "Affordable PPC Management Services",
+   6,
+   3.9
+  ],
+  [
+   "digital_marketing_services_digital_transformation",
+   "digital transformation services",
+   7,
+   3.8
+  ],
+  [
+   "digital_marketing_services_closed_loop_analytics",
+   "closed-loop analytics services",
+   7,
+   3.7
+  ],
+  [
+   "digital_advertising_services_crm_retargeting",
+   "CRM retargeting services",
+   8,
+   3.6
+  ],
+  [
+   "ppc_services_ecommerce",
+   "ecommerce PPC management services",
+   8,
+   3.4
+  ],
+  [
+   "digital_advertising_services_walmart",
+   "Walmart Marketplace advertising management services",
+   5,
+   3.2
+  ],
+  [
+   "digital_advertising_services_geofencing",
+   "Competitor Geofencing Advertising Agency",
+   6,
+   2.8
+  ],
+  [
+   "digital_marketing_services_conversion_rate_optimization",
+   "CRO services",
+   5,
+   2.7
+  ],
+  [
+   "digital_advertising_services_sem",
+   "search engine marketing services",
+   5,
+   2.3
+  ],
+  [
+   "digital_marketing_services_competitor_analysis",
+   "digital marketing competitor analysis services",
+   4,
+   2.2
+  ],
+  [
+   "digital_marketing_services_packages",
+   "Internet marketing packages",
+   4,
+   2.2
+  ],
+  [
+   "analytics_services_channel_attribution_forecasting",
+   "channel attribution & forecasting",
+   4,
+   2.1
+  ],
+  [
+   "ppc_services_ai",
+   "AI-powered PPC services",
+   4,
+   1.9
+  ],
+  [
+   "local_seo_services",
+   "local SEO solutions",
+   4,
+   1.7
+  ],
+  [
+   "digital_advertising_services_chatgpt",
+   "ChatGPT ad services",
+   1,
+   1.1
+  ],
+  [
+   "seo_services_enterprise_ai_search_optimization",
+   "enterprise generative engine optimization services",
+   1,
+   0.8
+  ],
+  [
+   "digital_advertising_services_yelp",
+   "outsourcing Yelp ad management",
+   1,
+   0.5
+  ],
+  [
+   "ppc_services_google_local_services_ads",
+   "Google LSAs management services",
+   1,
+   0.5
+  ],
+  [
+   "amazon_services_retail_media",
+   "Amazon's Retail Ad Service",
+   0,
+   0.0
+  ],
+  [
+   "digital_marketing_services_target",
+   "Target Plus\u2122 Online Marketplace Management by WebFX",
+   0,
+   0.0
+  ]
+ ],
+ "emdash_per_page": {
+  "n": 70,
+  "min": 0,
+  "p25": 1,
+  "median": 2,
+  "p75": 4,
+  "max": 16,
+  "mean": 3
+ },
+ "you_we_ratio": {
+  "n": 70,
+  "min": 25,
+  "p25": 66,
+  "median": 81,
+  "p75": 105,
+  "max": 359,
+  "mean": 99
+ },
+ "cta_per_page": {
+  "n": 70,
+  "min": 7,
+  "p25": 11,
+  "median": 12,
+  "p75": 15,
+  "max": 26,
+  "mean": 13
+ },
+ "distinct_cta_per_page": {
+  "n": 70,
+  "min": 5,
+  "p25": 6,
+  "median": 7,
+  "p75": 9,
+  "max": 15,
+  "mean": 8
+ },
+ "forms_per_page": {
+  "n": 70,
+  "min": 2,
+  "p25": 2,
+  "median": 2,
+  "p75": 2,
+  "max": 6,
+  "mean": 2
+ },
+ "body_links_per_page": {
+  "n": 70,
+  "min": 0,
+  "p25": 7,
+  "median": 12,
+  "p75": 17,
+  "max": 65,
+  "mean": 14
+ },
+ "images_per_page": {
+  "n": 70,
+  "min": 45,
+  "p25": 96,
+  "median": 126,
+  "p75": 142,
+  "max": 279,
+  "mean": 124
+ },
+ "videos_per_page": {
+  "n": 70,
+  "min": 0,
+  "p25": 3,
+  "median": 5,
+  "p75": 6,
+  "max": 18,
+  "mean": 5
+ },
+ "date_modified": [
+  [
+   "2026-09",
+   11
+  ],
+  [
+   "2026-08",
+   7
+  ],
+  [
+   "2026-06",
+   7
+  ],
+  [
+   "2026-07",
+   6
+  ],
+  [
+   "2026-05",
+   1
+  ]
+ ],
+ "axis_counts": [
+  [
+   "tactic",
+   21
+  ],
+  [
+   "platform",
+   12
+  ],
+  [
+   "engagement model",
+   9
+  ],
+  [
+   "hub",
+   6
+  ],
+  [
+   "business model",
+   6
+  ],
+  [
+   "AI / emerging",
+   5
+  ],
+  [
+   "channel",
+   4
+  ],
+  [
+   "company size",
+   3
+  ],
+  [
+   "price tier",
+   2
+  ],
+  [
+   "use case",
+   1
+  ],
+  [
+   "company size + AI",
+   1
+  ]
+ ],
+ "discipline_counts": [
+  [
+   "digital_marketing_services",
+   22
+  ],
+  [
+   "seo_services",
+   18
+  ],
+  [
+   "digital_advertising_services",
+   12
+  ],
+  [
+   "ppc_services",
+   10
+  ],
+  [
+   "amazon_services",
+   3
+  ],
+  [
+   "analytics_services",
+   3
+  ],
+  [
+   "lead_generation_services",
+   1
+  ],
+  [
+   "local_seo_services",
+   1
+  ]
+ ]
+}
