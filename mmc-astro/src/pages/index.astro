@@ -1,0 +1,263 @@
+---
+// Home v2: its own hero and its own section shapes. Does not import src/components/hub/Hero.astro,
+// Answer.astro or Stages.astro. Keeps the two client-approved hover-to-project islands (HomeCaps, HomeBrands)
+// but reframes them in fresh containers. See DIFFERENTIATION-BRIEF.md.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import HomeCaps from "../islands/home/HomeCaps.jsx";
+import HomeBrands from "../islands/home/HomeBrands.jsx";
+import { pageHead } from "../lib/pagehead";
+import { href } from "../lib/links";
+import "../styles/hub-extra.css";
+import "../styles/home3.css";
+
+const SITE = "https://www.mondaymarketing.company";
+const TITLE = "MMC: A Marketing Agency for D2C, B2B and Education | India";
+const DESC = "Monday Marketing Company is a marketing agency in India for D2C brands, B2B companies and educational institutes. Paid media, creative, retention and websites, measured on profit.";
+const OG_DESC = "One senior team for D2C, B2B and education. Media, creative, retention and websites, measured on profit.";
+
+const head = pageHead("home", "/");
+const jsonld: any[] = JSON.parse(JSON.stringify(head.jsonld));
+const org = jsonld.find((b) => b["@type"] === "Organization");
+if (org) {
+  org.description = "Monday Marketing Company is an India-based marketing agency for D2C brands, B2B companies and educational institutes. Paid media, creative, retention and websites, measured on profit.";
+  delete org.numberOfEmployees;
+}
+const wp = jsonld.find((b) => b["@type"] === "WebPage");
+if (wp) { wp.name = TITLE; wp.description = DESC; }
+if (!jsonld.some((b) => b["@type"] === "ProfessionalService") && org) {
+  jsonld.push({
+    "@context": "https://schema.org", "@type": "ProfessionalService", "@id": SITE + "/#service",
+    name: "Monday Marketing Company", url: SITE + "/", image: SITE + "/assets/og-card.jpg",
+    description: "Paid media, creative, retention marketing and websites for D2C brands, B2B companies and educational institutes.",
+    address: org.address, telephone: org.telephone, email: org.email, areaServed: org.areaServed,
+    parent: { "@id": SITE + "/#organization" }, provider: { "@id": SITE + "/#organization" },
+  });
+}
+
+/* Who we're for */
+const AUDIENCES = [
+  { id: "d2c", n: "D2C brands", d: "Ads, creative, conversion and retention for brands that sell direct to shoppers.", img: "d2c/unboxing.jpg", href: "d2c.html" },
+  { id: "b2b", n: "B2B companies", d: "Website, creative and paid media for a purchase that takes longer and involves several people.", img: "b2b/call.jpg", href: "b2b.html" },
+  { id: "edu", n: "Education", d: "Search, landing pages, CRM and follow-up for institutes that earn a family's trust over weeks.", img: "edu/students.jpg", href: "education.html" },
+];
+
+/* Selected work: real case-study brands with artwork, cross-referenced against ../MMC Site/content/clients.json.
+   The id is also the /work/<id>/ route slug the case-study detail pages use. */
+const PROOF = [
+  { id: "oosh", name: "OOsh", type: "D2C" },
+  { id: "giraffe", name: "The Growing Giraffe", type: "D2C" },
+  { id: "sprnt", name: "Sprnt", type: "D2C" },
+  { id: "awwbaby", name: "AwwBaby", type: "D2C" },
+  { id: "lepure", name: "Lepure", type: "D2C" },
+].map((c) => ({ ...c, slug: c.id, img: `/assets/clients/${c.id}-work.jpg` }));
+
+/* Trust bar: real logos only, straight from the client book, shown immediately
+   after the hero (every researched competitor does this before explaining a
+   single service). No claim, no count, just the marks themselves. */
+const TRUST = ["giraffe","oosh","sprnt","lepure","bloom","mvj","nmc","notic","awwbaby","mittiy","skyfling","vagakids"];
+
+/* Differentiator: the honest contrast, vector icons only, no new photography. */
+const DIFF = [
+  { icon: "gauge", t: "A platform reports what it wants to.", d: "Meta, Google and your store each count sales their own way, so the totals never quite agree. We start from your store's real orders." },
+  { icon: "margin", t: "A ROAS number hides the loss.", d: "A campaign can look healthy on ROAS and still lose money once product, shipping and returns are paid. We read every account against contribution margin." },
+  { icon: "team", t: "Five vendors means five stories.", d: "Media, creative, retention and the website are usually bought separately and never quite agree with each other. One team plans all four together." },
+  { icon: "loop", t: "A quarterly report is too late to matter.", d: "By the time a slide deck says what went wrong, the budget is already spent. We read the numbers weekly and change course inside the month." },
+];
+
+/* Navigation aid: a wayfinder, not a repeated FAQ list */
+const WAYS = [
+  { t: "Services", tag: "Five systems, one team", href: "services.html" },
+  { t: "D2C", tag: "Sold direct to shoppers", href: "d2c.html" },
+  { t: "B2B", tag: "Sold to other businesses", href: "b2b.html" },
+  { t: "Education", tag: "Enquiries to enrolments", href: "education.html" },
+  { t: "Our work", tag: "A few of the brands", href: "Our Work.html" },
+  { t: "Guides & tools", tag: "Margin, ROAS, attribution", href: "guides.html" },
+];
+
+---
+<BaseLayout title={TITLE} description={DESC} path="/" ogTitle={head.ogTitle} ogDescription={OG_DESC} ogAlt={head.ogAlt} jsonld={jsonld}>
+  <script is:inline src="/assets/mmc-popularity.js"></script>
+  <Shell>
+    <main class="app-main hn">
+
+      <!-- HERO: type-as-hero scale, one photograph, one accent word. The trust proof is fused
+           directly to the hero's own bottom edge instead of floating in a separate section far
+           below it, matching the pattern that repeated across the researched performance sites. -->
+      <section class="hn-hero" id="top">
+        <div class="hn-hero__bg"><img src="/assets/home2/hero-main.jpg" width="1600" height="1067" alt="" fetchpriority="high" decoding="async" /></div>
+        <div class="hn-hero__inner hn-wrap">
+          <span class="hn-hero__chip"><i></i>Marketing for D2C, B2B and education</span>
+          <h1>One senior team, <em>measured on profit.</em></h1>
+          <div class="hn-hero__row">
+            <p class="hn-hero__sub">Paid media, creative, retention and websites for D2C brands, B2B companies and educational institutes, judged on what an order or a lead is actually worth.</p>
+            <div class="hn-hero__actions">
+              <button class="btn btn--primary glow-btn" type="button" data-book="home-hero">
+                <span class="glow-btn__glow" aria-hidden="true"></span>
+                <span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span>
+              </button>
+              <a class="btn btn--link" href="#work">See our work<span class="arrow"></span></a>
+            </div>
+          </div>
+          <div class="hn-proofline">
+            <span class="hn-proofline__label">A few of the brands we work with</span>
+            <div class="hn-proofline__row">
+              {TRUST.map((id) => (
+                <span class="hn-proofline__logo"><img src={`/assets/clients/${id}.png`} alt="" loading="lazy" decoding="async" width="110" height="36" /></span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROOF: selected work, pulled up right after the hero — real proof positioned high on
+           the page rather than several scrolls down, one large lead card plus four supporting. -->
+      <section class="hn-proof" id="work">
+        <div class="hn-wrap">
+          <div class="hn-proof__top">
+            <div>
+              <p class="hn-eyebrow">Selected work</p>
+              <h2>A few of the brands we've built for.</h2>
+            </div>
+            <a class="hn-proof__all" href={href("Our Work.html")}>See all our work<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <div class="hn-proof__row">
+            {PROOF.map((c) => (
+              <a class="hn-proof__card" href={"/work/" + c.slug + "/"}>
+                <span class="hn-proof__shot">
+                  <img src={c.img} alt="" loading="lazy" decoding="async" width="800" height="600" onerror="this.closest('.hn-proof__card').querySelector('.hn-proof__shot').style.background='#F4F6FA'" />
+                  <span class="hn-proof__pill">{c.type}</span>
+                </span>
+                <span class="hn-proof__meta">
+                  <b>{c.name}</b>
+                  <span>View case study</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- POSITIONING: a compact single-line statement, not a full-viewport navy slab -->
+      <section class="hn-claim">
+        <div class="hn-claim__wrap">
+          <p>We start from your margins, not the platform's dashboard, and build the media, creative, retention and website around <em>what a sale actually leaves behind.</em></p>
+          <a class="hn-claim__go" href={href("services.html")}>How we work<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </section>
+
+      <!-- DIFFERENTIATOR: the honest contrast, pill-badge cards, single accent only on hover -->
+      <section class="hn-diff">
+        <div class="hn-wrap">
+          <div class="hn-diff__head">
+            <p class="hn-eyebrow">Why not just a platform</p>
+            <h2>The dashboard is not the whole story.</h2>
+          </div>
+          <div class="hn-diff__grid">
+            {DIFF.map((d) => (
+              <div class="hn-diff__card">
+                <span class="hn-diff__ico" data-ico={d.icon} aria-hidden="true">
+                  {d.icon === "gauge" && <svg viewBox="0 0 40 40" fill="none"><path d="M8 28a12 12 0 1 1 24 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M20 28 26 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" class="hn-diff__needle"/><circle cx="20" cy="28" r="1.6" fill="currentColor"/></svg>}
+                  {d.icon === "margin" && <svg viewBox="0 0 40 40" fill="none"><path d="M7 27 15 18 21 23 33 10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="hn-diff__line"/><path d="M26 10h7v7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>}
+                  {d.icon === "team" && <svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="16" r="4.5" stroke="currentColor" stroke-width="1.7"/><circle cx="26" cy="16" r="4.5" stroke="currentColor" stroke-width="1.7"/><path d="M6 32c1-5 4-8 8-8s7 3 8 8M18 32c1-5 4-8 8-8s7 3 8 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>}
+                  {d.icon === "loop" && <svg viewBox="0 0 40 40" fill="none"><path d="M10 16a10 10 0 0 1 17-6l3 3M30 24a10 10 0 0 1-17 6l-3-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" class="hn-diff__spin"/><path d="M27 10h4v4M13 30H9v-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>}
+                </span>
+                <h3>{d.t}</h3>
+                <p>{d.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO WE'RE FOR: unequal photographic cards, D2C leads but never D2C-only -->
+      <section class="hn-aud" id="who">
+        <div class="hn-wrap">
+          <div class="hn-aud__head">
+            <figure class="hn-aud__mark"><img src="/assets/d2c/unboxing.jpg" alt="" loading="lazy" decoding="async" width="200" height="200" /></figure>
+            <div>
+              <p class="hn-eyebrow">Who we work with</p>
+              <h2>Three kinds of business, one way of working.</h2>
+            </div>
+          </div>
+          <div class="hn-aud__grid">
+            {AUDIENCES.map((a, i) => (
+              <a class="hn-aud__card" href={href(a.href)}>
+                <img src={"/assets/" + a.img} alt="" loading={i === 0 ? "eager" : "lazy"} decoding="async" width="900" height="1050" />
+                <span class="hn-aud__tag">{"0" + (i + 1)}</span>
+                <span class="hn-aud__body">
+                  <h3>{a.n}</h3>
+                  <p>{a.d}</p>
+                  <span class="hn-aud__go">See the page<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT WE RUN: five systems, services hover-to-project kept working, sticky-intro frame -->
+      <section class="hn-sys" id="systems">
+        <div class="hn-wrap hn-sys__grid">
+          <div class="hn-sys__intro">
+            <p class="hn-eyebrow" style="color:var(--n-sun)">What we run</p>
+            <h2>Five systems, one team.</h2>
+            <p>Most brands buy these from five vendors and spend their week translating between them. Hover a row to see the work behind it.</p>
+          </div>
+          <HomeCaps client:visible />
+        </div>
+      </section>
+
+      <!-- BRANDS: logo wall, hover-to-project, kept working -->
+      <section class="hn-brands" id="brands">
+        <div class="hn-wrap">
+          <div class="hn-brands__head">
+            <div>
+              <p class="hn-eyebrow">The brands</p>
+              <h2>A few of the brands we work with.</h2>
+            </div>
+            <p>Across D2C, B2B and education. On a computer, hover a logo to see the work.</p>
+          </div>
+          <HomeBrands client:visible />
+        </div>
+      </section>
+
+      <!-- WAYFINDER: a pill chip cluster, connective tissue rather than a repeated FAQ list -->
+      <section class="hn-way">
+        <div class="hn-wrap">
+          <div class="hn-way__top">
+            <h2>Jump straight to what you're after</h2>
+          </div>
+          <div class="hn-way__chips">
+            {WAYS.map((w) => (
+              <a class="hn-way__chip" href={href(w.href)}>{w.t}<span>{w.tag}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSING: one last moment -->
+      <section class="hn-close">
+        <div class="hn-wrap">
+          <div class="hn-close__card">
+            <img src="/assets/home2/closing.jpg" alt="" loading="lazy" decoding="async" width="1200" height="800" />
+            <div class="hn-close__body">
+              <p class="hn-eyebrow" style="color:var(--n-sun)">Book a strategy call</p>
+              <h2>Find out what an order or a lead is <em>actually worth.</em></h2>
+              <p>A conversation with a senior strategist about your numbers. You leave with the first things to fix, and a straight answer on whether we are the right team.</p>
+              <div class="hn-close__actions">
+                <button type="button" class="btn btn--primary glow-btn" data-book="home-final">
+                  <span class="glow-btn__glow" aria-hidden="true"></span>
+                  <span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span>
+                </button>
+                <a class="hn-close__link" href={href("tools.html")}>Run the numbers yourself<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </Shell>
+  <script>import "../scripts/hub.ts";</script>
+</BaseLayout>

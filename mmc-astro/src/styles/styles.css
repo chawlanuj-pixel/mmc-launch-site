@@ -1,0 +1,354 @@
+/* ============================================================
+   MMC Marketing site, Hero + Sunrise Menu + Sky + Footer
+   ============================================================ */
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html {
+  background: var(--mmc-paper);
+}
+body {
+  background: transparent;
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  position: relative;
+}
+img { max-width: 100%; display: block; }
+button { font: inherit; cursor: pointer; background: none; border: 0; padding: 0; color: inherit; }
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--mmc-yellow-100); color: var(--mmc-blue-700); }
+
+/* Main content wrapper sits above the fixed Sky */
+.app-main {
+  position: relative;
+  z-index: 1;
+}
+
+/* The shell. Every page-level wrapper is this and only this, so the nav,
+   the hero card, each section and the footer share one left and right edge. */
+.container {
+  width: 100%;
+  max-width: var(--shell-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--shell-pad);
+  padding-right: var(--shell-pad);
+}
+
+/* Text measure. A full-bleed shell would otherwise produce 150-character
+   lines on a wide monitor, so prose and headline groups cap themselves. */
+.measure       { max-width: var(--measure); }
+.measure-wide  { max-width: var(--measure-wide); }
+
+/* ---------- Section paper backdrop -------------------------- */
+/* Soft cream paper layer behind every <section> so text reads cleanly
+   against the moving sun + sky. Universal: applies to all sections by default.
+   Opt out on an individual section by adding the .no-section-bg class. */
+section,
+.section-bg {
+  position: relative;
+  isolation: isolate;
+}
+section:not(.no-section-bg)::before,
+.section-bg::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: clamp(24px, 3vw, 48px);
+  bottom: clamp(24px, 3vw, 48px);
+  background:
+    radial-gradient(ellipse 95% 80% at 50% 50%,
+      rgba(255, 252, 244, 0.92) 0%,
+      rgba(251, 250, 246, 0.88) 60%,
+      rgba(251, 250, 246, 0.82) 100%);
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+  border-top: 1px solid rgba(var(--mmc-blue-rgb), 0.08);
+  border-bottom: 1px solid rgba(var(--mmc-blue-rgb), 0.08);
+  z-index: -1;
+  pointer-events: none;
+}
+/* FAQ provides its own paper backdrop, don't double up */
+
+/* Any section that paints its own deliberate solid/gradient background
+   (usually a dark band) must cancel this cream backdrop the same way
+   .page-hero already does, or the semi-opaque cream ::before layer paints
+   ON TOP of that background (it sits above the section's own background in
+   the stacking order, only below normal in-flow content), washing the whole
+   band out to pale grey everywhere except the few pixels of top/bottom
+   inset it doesn't cover. That exact symptom (true colour only in a thin
+   strip at the very top and bottom edges, washed out in the middle) showed
+   up independently on the Home "in one sentence" band, the Home "five
+   systems" band, and was about to hit every dark hub Loop/Numbers band and
+   the Careers hero too. Fixed once, here, for all of them, instead of
+   patching one section at a time. Add a class here whenever a new section
+   sets its own solid or gradient background directly on the <section>. */
+.n-band--void::before, .n-band--ink::before,
+.h2-claim::before, .h2-way::before, .h2-sys::before,
+.cr-hero::before {
+  content: none !important;
+}
+
+/* Last section before the footer: extend the paper backdrop all the way down
+   so the fixed Sky doesn't bleed through in the gap between the section's
+   inset paper and the blue footer above it. */
+.app-main > *:has(+ #footer)::before,
+.app-main > *:last-child:not(#footer)::before {
+  bottom: 0 !important;
+}
+
+/* ---------- Eyebrow ---------------------------------------- */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mmc-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1.5px;
+  background: var(--mmc-yellow);
+}
+
+.em-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+/* ---------- Buttons ---------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 16px 26px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition:
+    transform var(--dur-quick) var(--ease-out),
+    box-shadow var(--dur-quick) var(--ease-out),
+    background var(--dur-base) var(--ease-out),
+    color var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out);
+}
+.btn .arrow {
+  position: relative;
+  width: 18px;
+  height: 1.5px;
+  background: currentColor;
+  transition: width var(--dur-base) var(--ease-out);
+}
+.btn .arrow::after {
+  content: "";
+  position: absolute;
+  right: -1px; top: -4px;
+  width: 8px; height: 8px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+.btn:hover .arrow { width: 28px; }
+
+.btn--primary {
+  background: var(--mmc-yellow);
+  color: var(--mmc-blue-700);
+}
+.btn--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px -16px rgba(var(--mmc-yellow-rgb), 0.55);
+          position: relative; z-index: 2;
+        }
+
+/* Glow button, radial highlight follows cursor (set --gx/--gy from app.jsx) */
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  --gx: 50%;
+  --gy: 50%;
+}
+.glow-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    140px circle at var(--gx) var(--gy),
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(255, 255, 255, 0.2) 28%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  opacity: 0;
+  transition: opacity 280ms var(--ease-out);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+.glow-btn:hover::before { opacity: 1; }
+.glow-btn > * { position: relative; z-index: 1; }
+.glow-btn .glow-btn__glow {
+  position: absolute;
+  pointer-events: none;
+  width: 60px; height: 60px;
+  left: var(--gx); top: var(--gy);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0;
+  transition: opacity 200ms var(--ease-out);
+  z-index: 0;
+  border-radius: 50%;
+}
+.glow-btn:hover .glow-btn__glow { opacity: 0.9; }
+.glow-btn .glow-btn__inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--mmc-blue);
+  border: 1px solid rgba(var(--mmc-blue-rgb), 0.18);
+}
+.btn--ghost:hover { border-color: var(--mmc-blue); }
+.btn--link {
+  padding: 8px 0;
+  border-radius: 0;
+  color: var(--mmc-blue);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Reveal ---------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 900ms var(--ease-out), transform 900ms var(--ease-out);
+}
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal.d1 { transition-delay: 100ms; }
+.reveal.d2 { transition-delay: 200ms; }
+.reveal.d3 { transition-delay: 320ms; }
+.reveal.d4 { transition-delay: 440ms; }
+.reveal.d5 { transition-delay: 560ms; }
+.reveal.d6 { transition-delay: 680ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: opacity 100ms linear; transform: none; }
+}
+
+/* ---------- Masked clip reveal for hero words ------------- */
+.clip-reveal {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.clip-reveal > span {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 1100ms var(--ease-out);
+}
+.clip-reveal.in > span { transform: translateY(0); }
+.clip-reveal.d1 > span { transition-delay: 60ms; }
+.clip-reveal.d2 > span { transition-delay: 180ms; }
+.clip-reveal.d3 > span { transition-delay: 300ms; }
+.clip-reveal.d4 > span { transition-delay: 420ms; }
+
+/* ---------- Paper grain ----------------------------------- */
+.paper-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.07  0 0 0 0 0.05  0 0 0 0 0.03  0 0 0 0.045 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+
+/* A card arrived at from a homepage portfolio click. The ring fades out on its
+   own so the page does not stay decorated after the answer has landed. */
+.wg__card.is-landed {
+  box-shadow: 0 0 0 2px var(--mmc-yellow), 0 18px 44px -22px rgba(var(--mmc-ink-rgb), 0.4);
+  transition: box-shadow 400ms ease;
+}
+.wg__card { scroll-margin-top: 140px; }
+@media (prefers-reduced-motion: reduce) {
+  .wg__card.is-landed { transition: none; }
+}
+
+
+/* ── The dark ground ─────────────────────────────────────────
+   Any blue surface opts in with .ink-ground. The base ramp is a token; the
+   glow is a pseudo-element that drifts, because animating a gradient's own
+   background-position repaints the whole surface every frame while moving a
+   layer does not. Add .ink-ground--soft for a lighter ramp where large
+   headline type sits on it. */
+.ink-ground {
+  position: relative;
+  isolation: isolate;
+  /* The glow layers are inset negatively so they can drift without their edge
+     ever entering the frame. That has to be clipped or the page gains a
+     horizontal scrollbar. `clip` rather than `hidden` so it does not become a
+     scroll container and break any sticky child. */
+  overflow: clip;
+  background: var(--grad-ink);
+  color: #fff;
+}
+.ink-ground--soft { background: var(--grad-ink-soft); }
+
+.ink-ground::before {
+  content: "";
+  position: absolute;
+  inset: -30% -20%;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--grad-glow);
+  animation: inkDrift 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+/* A second, slower pass at a different scale, so the movement never reads as
+   one shape sliding back and forth on a loop. */
+.ink-ground::after {
+  content: "";
+  position: absolute;
+  inset: -25% -15%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+  background: var(--grad-glow);
+  animation: inkDrift2 31s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes inkDrift {
+  from { transform: translate3d(-9%, -7%, 0) scale(1); }
+  to   { transform: translate3d(9%, 6%, 0) scale(1.18); }
+}
+@keyframes inkDrift2 {
+  from { transform: translate3d(12%, 8%, 0) scale(1.12); }
+  to   { transform: translate3d(-10%, -5%, 0) scale(0.94); }
+}
+
+/* Movement for its own sake is the first thing to go. */
+@media (prefers-reduced-motion: reduce) {
+  .ink-ground::before, .ink-ground::after { animation: none; }
+}

@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import PageFx from "../components/pages/PageFx.astro";
+import "../styles/tools.css";
+import { metaHead } from "../lib/metaHead";
+import { Glossary } from "../islands/tools/Glossary.jsx";
+---
+<BaseLayout {...metaHead("glossary", "/glossary/")}>
+  <Shell>
+    <main class="app-main"><Glossary client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

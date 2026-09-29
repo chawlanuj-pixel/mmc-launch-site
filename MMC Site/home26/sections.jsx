@@ -179,14 +179,14 @@ function NClients() {
       <div className="n-wrap">
         <div className="n-head n-rise">
           <div className="n-head__l">
-            <span className="n-eyebrow">Trusted by {logos.length} brands</span>
+            <span className="n-eyebrow">Trusted by growing brands</span>
             <h2 className="n-h2">
               We are not for everyone.<br />
               <span className="n-serif">Just for the ones who ship.</span>
             </h2>
           </div>
           <p className="n-lede">
-            Twenty-five brands across B2B, B2C and D2C. Hover any one to see the
+            Brands across B2B, B2C and D2C. Hover any one to see the
             work.
           </p>
         </div>
@@ -338,7 +338,7 @@ function NWork() {
         <div className="n-head n-rise">
           <div className="n-head__l">
             <span className="n-eyebrow">The client book</span>
-            <h2 className="n-h2">Twenty-five brands,<br /><span className="n-serif">and the work behind each.</span></h2>
+            <h2 className="n-h2">The brands,<br /><span className="n-serif">and the work behind each.</span></h2>
           </div>
           <p className="n-lede">
             B2B, B2C and D2C. Every card lists the services we actually run for that brand,
@@ -438,25 +438,10 @@ function NQuote() {
 /* ── Closing CTA ───────────────────────────────────────────── */
 function NCta() {
   return (
-    <section className="n-band n-band--void" id="talk">
-      <div className="n-wrap">
-        <div className="n-cta n-rise">
-          <span className="n-eyebrow">Ready when you are</span>
-          <h2 className="n-h2 n-cta__h">Let's find out what an order is <span className="n-serif">actually worth.</span></h2>
-          <p className="n-lede" style={{ textAlign: "center", margin: "0 auto" }}>
-            Thirty minutes with a senior strategist. No deck, no pitch, a direct read on the
-            three things to fix first.
-          </p>
-          <div className="n-cta__row">
-            <button className="n-btn n-btn--sun" onClick={(e) => window.mmcBookCall("home-cta", e)}>
-              Book a strategy call<span className="n-btn__arr" aria-hidden="true" />
-            </button>
-            <a className="n-btn n-btn--ghost" href="tools.html">Run the numbers yourself<span className="n-btn__arr" aria-hidden="true" /></a>
-          </div>
-          <span className="n-cta__note">Avg. response 4 hours · sales-in@mondaymarketing.company</span>
-        </div>
-      </div>
-    </section>
+    <window.MmcCta eyebrow="Ready when you are" h2a="Let's find out what an order is" h2b="actually worth."
+      lede="Thirty minutes with a senior strategist. No deck, no pitch, a direct read on the three things to fix first."
+      label="Book a strategy call" onBook={(e) => window.mmcBookCall("home-cta", e)}
+      secondary={{ href: "tools.html", label: "Run the numbers yourself" }} />
   );
 }
 

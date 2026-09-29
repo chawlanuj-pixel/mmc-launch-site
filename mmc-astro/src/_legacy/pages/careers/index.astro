@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import { metaHead } from "../../lib/metaHead";
+import CareersApp from "../../islands/careers/CareersApp.jsx";
+---
+<BaseLayout {...metaHead("careers", "/careers/")}>
+  <Shell>
+    <main class="app-main"><CareersApp client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

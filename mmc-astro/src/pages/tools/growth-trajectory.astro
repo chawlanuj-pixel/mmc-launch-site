@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import "../../styles/tools.css";
+import { metaHead } from "../../lib/metaHead";
+import { GrowthTrajectory } from "../../islands/tools/GrowthTrajectory.jsx";
+---
+<BaseLayout {...metaHead("tools__growth-trajectory", "/tools/growth-trajectory/")}>
+  <Shell>
+    <main class="app-main"><GrowthTrajectory client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

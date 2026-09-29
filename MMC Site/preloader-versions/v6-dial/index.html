@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MMC Preloader - Option 6 Dial</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F1F5FE;font-family:"Nunito","Helvetica Neue",Arial,sans-serif;color:#0F1E5E;overflow-x:hidden}
+.page{min-height:100vh;padding:0 6vw 80px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;font-weight:700}
+nav span{display:flex;gap:28px;font-size:15px;color:#2E3849}
+@media(max-width:640px){nav span{display:none}}
+.hero{padding:9vh 0 6vh}
+h1{font-family:"Raleway","Helvetica Neue",Arial,sans-serif;font-weight:800;font-size:clamp(44px,9vw,140px);line-height:.98;letter-spacing:-.03em;margin:0 0 24px;color:#0F1E5E}
+h1 em{font-style:normal;color:#1D4ED8}
+p.lead{font-size:clamp(17px,1.6vw,24px);max-width:36ch;color:#2E3849;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+button{background:#1D4ED8;color:#fff;border:0;border-radius:999px;padding:15px 28px;font:700 16px "Nunito",sans-serif;cursor:pointer}
+button.alt{background:#FFC528;color:#0F1E5E}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:8vh}
+.card{background:#fff;border-radius:22px;padding:28px;min-height:190px;box-shadow:0 10px 30px rgba(15,30,94,.07)}
+.card b{display:block;font:800 22px "Raleway","Helvetica Neue",Arial,sans-serif;margin-bottom:8px}
+.card i{display:block;width:44px;height:44px;border-radius:50%;background:#FFC528;margin-bottom:22px}
+</style></head>
+<body>
+<div class="page">
+  <nav><b>Monday Marketing Company</b><span><a>Services</a><a>Work</a><a>Insights</a><a>Contact</a></span></nav>
+  <section class="hero">
+    <h1>Growth that<br>was already <em>there.</em></h1>
+    <p class="lead">Performance marketing for D2C, B2B and education brands. We measure, then we compound it.</p>
+    <div class="btns"><button onclick="MMCPreloader.play(true)">Replay preloader</button><button class="alt">Book an audit</button></div>
+  </section>
+  <section class="cards">
+    <div class="card"><i></i><b>D2C growth</b>Paid social, search and creative built around your unit economics.</div>
+    <div class="card"><i></i><b>B2B pipeline</b>Demand that shows up in the CRM, not just the dashboard.</div>
+    <div class="card"><i></i><b>Education</b>Admissions funnels that fill cohorts on schedule.</div>
+  </section>
+</div>
+<script src="mmc-preloader.js"></script>
+</body></html>

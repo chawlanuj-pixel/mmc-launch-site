@@ -1,0 +1,21 @@
+---
+import { href } from "../../lib/links";
+interface Card { n: string; d: string; img: string; href: string; link: string }
+interface Props { h2: string; cards: Card[] }
+const { h2, cards } = Astro.props;
+---
+<section class="editorial art-related">
+  <div class="ed-wrap">
+    <span class="ed-kicker">Keep reading</span>
+    <h2 class="art-related__h2 ed-rise">{h2}</h2>
+    <div class="art-related__grid">
+      {cards.map((c) => (
+        <a class="art-related__card ed-rise" href={href(c.href)}>
+          <figure class="art-related__fig"><img src={"/assets/" + c.img} alt="" width="600" height="400" loading="lazy" decoding="async" /></figure>
+          <h3>{c.n}</h3>
+          <p>{c.d}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

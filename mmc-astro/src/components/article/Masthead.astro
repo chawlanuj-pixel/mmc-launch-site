@@ -1,0 +1,28 @@
+---
+// Guide article masthead: title, standfirst, byline and a full-width lead photograph.
+// Own markup/CSS (.art-hero*), no hub Hero.astro tile mosaic, no invented read time.
+interface Props {
+  kicker: string;
+  h1: [string, [string, string, string], string];
+  sub: string;
+  published: string;
+  tag: string;
+  img: string;
+}
+const { kicker, h1, sub, published, tag, img } = Astro.props;
+const date = new Date(published + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+---
+<header class="editorial art-hero" id="top">
+  <div class="ed-wrap">
+    <span class="ed-kicker">{kicker}</span>
+    <div class="art-hero__meta">
+      <span><b>{tag}</b></span>
+      <span>Published {date}</span>
+      <span>Written by Monday Marketing Company</span>
+      <span>Free to read, no email wall</span>
+    </div>
+    <h1 class="art-hero__h1">{h1[0]} {h1[1][0]}<em>{h1[1][1]}</em>{h1[1][2]} {h1[2]}</h1>
+    <p class="art-hero__sub">{sub}</p>
+    <figure class="art-hero__fig"><img src={img} alt="" width="1600" height="700" loading="eager" decoding="async" fetchpriority="high" /></figure>
+  </div>
+</header>

@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import PageFx from "../components/pages/PageFx.astro";
+import { metaHead } from "../lib/metaHead";
+import ContactApp from "../islands/contact/ContactApp.jsx";
+---
+<BaseLayout {...metaHead("contact", "/contact/")}>
+  <Shell>
+    <main class="app-main"><ContactApp client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

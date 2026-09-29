@@ -171,7 +171,7 @@ function CrPage({ onAudit }) {
               <span className="em-serif">The work.</span>
             </h2>
             <p className="cr-work__lead">
-              Twenty-five brands across B2B, B2C and D2C, run by four people. Whatever you join
+              Brands across B2B, B2C and D2C, run by four people. Whatever you join
               to do, you will touch several of these in your first quarter.
             </p>
           </header>

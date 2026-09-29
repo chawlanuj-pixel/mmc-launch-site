@@ -1,0 +1,2019 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monday Marketing Company — Kinetic Homepage (v2)</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/logo-mark.png">
+<link rel="stylesheet" href="../design-system/colors_and_type.css">
+<style>
+/* ===================== RESET (required, see LOCKED_NAV_FOOTER note) ===================== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg-1); overflow-x: hidden; }
+img { max-width: 100%; display: block; }
+button { font: inherit; cursor: pointer; }
+
+/* ===================== SHARED SECTION SHELL ===================== */
+.shell {
+  width: 100%;
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding-left: var(--shell-pad);
+  padding-right: var(--shell-pad);
+}
+section { position: relative; }
+
+/* ===================== REVEAL ENGINE ===================== */
+/* Elements carrying [data-reveal] start hidden/offset and animate in when
+   .is-in is added by the IntersectionObserver in the script block below.
+   Reduced-motion: everything is simply visible, no transform, no transition. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 900ms var(--ease-out), transform 900ms var(--ease-out);
+  will-change: transform, opacity;
+}
+[data-reveal].is-in { opacity: 1; transform: translateY(0); }
+[data-reveal="scale"] { transform: translateY(20px) scale(0.94); }
+[data-reveal="scale"].is-in { transform: translateY(0) scale(1); }
+[data-reveal="left"] { transform: translateX(-36px); }
+[data-reveal="left"].is-in { transform: translateX(0); }
+[data-reveal="right"] { transform: translateX(36px); }
+[data-reveal="right"].is-in { transform: translateX(0); }
+
+/* Stagger children of a [data-stagger] container using inline --d set by JS,
+   falls back to nth-child if JS hasn't run. */
+[data-stagger] > * { transition-delay: var(--d, 0ms); }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===================== AMBIENT MOTION (continuous, idle) ===================== */
+/* A slow drifting sun/ray field behind the hero: brand geometry (the mark's
+   own sun-and-rays motif), not abstract art. Paused entirely under
+   reduced-motion via the .no-ambient class the script applies. */
+.ambient-sun {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.ambient-sun__disc {
+  position: absolute;
+  top: -18%;
+  right: -12%;
+  width: min(64vw, 900px);
+  height: min(64vw, 900px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 40%, rgba(255,197,40,0.9) 0%, rgba(255,197,40,0.35) 38%, rgba(255,197,40,0) 70%);
+  filter: blur(2px);
+  animation: sunDrift 22s ease-in-out infinite;
+}
+.ambient-sun__rays {
+  position: absolute;
+  top: -18%;
+  right: -12%;
+  width: min(64vw, 900px);
+  height: min(64vw, 900px);
+  animation: rayTurn 90s linear infinite;
+  opacity: 0.35;
+}
+.ambient-sun__rays svg { width: 100%; height: 100%; }
+@keyframes sunDrift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-3%, 3%) scale(1.06); }
+}
+@keyframes rayTurn {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.no-ambient .ambient-sun__disc,
+.no-ambient .ambient-sun__rays { animation: none !important; }
+
+/* ===================== HERO ===================== */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  background: var(--grad-ink);
+  color: #fff;
+  padding-top: clamp(120px, 14vh, 180px);
+  padding-bottom: clamp(60px, 8vh, 100px);
+}
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: end;
+}
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mmc-yellow);
+  margin-bottom: 22px;
+}
+.hero__eyebrow::before {
+  content: "";
+  width: 26px; height: 1.5px;
+  background: var(--mmc-yellow);
+}
+/* Kinetic headline: each word is its own inline-block that assembles
+   (rises + fades) in sequence via [data-word] + nth-of-type delays set by JS */
+.hero__headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 6.4vw, 92px);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 26px;
+  max-width: 16ch;
+  color: #fff;
+}
+.hero__headline .word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+.hero__headline .word span {
+  display: inline-block;
+  transform: translateY(115%);
+  transition: transform 900ms var(--ease-out);
+}
+.hero.is-assembled .hero__headline .word span { transform: translateY(0); }
+.hero__headline .accent {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--mmc-yellow);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__headline .word span { transform: none !important; transition: none !important; }
+}
+
+.hero__lead {
+  font-family: var(--font-body);
+  font-size: var(--fs-lead);
+  color: rgba(255,255,255,0.78);
+  max-width: 52ch;
+  margin: 0 0 34px;
+}
+.hero__ctas { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 16px 28px;
+  background: var(--mmc-yellow);
+  color: var(--mmc-blue-700);
+  border: 0;
+  border-radius: 999px;
+  font-family: var(--font-body); font-weight: 700; font-size: 13px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  transition: transform var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+}
+.btn-primary:hover { transform: translateY(-2px); background: #FFC940; box-shadow: var(--shadow-yellow); }
+.btn-primary .arrow { width: 18px; height: 1.5px; background: currentColor; position: relative; transition: width var(--dur-base) var(--ease-out); }
+.btn-primary .arrow::after { content: ""; position: absolute; right: -1px; top: -4px; width: 8px; height: 8px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); }
+.btn-primary:hover .arrow { width: 28px; }
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: none; border: 1px solid rgba(255,255,255,0.28);
+  color: #fff; padding: 15px 22px; border-radius: 999px;
+  font-family: var(--font-body); font-weight: 700; font-size: 13px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  transition: border-color var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out);
+}
+.btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+
+/* Live ROAS dial card, right column: literal, ties directly to real DeoBar
+   numbers, and pulses gently as an idle ambient element. */
+.hero__card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: var(--radius-lg);
+  padding: clamp(22px, 2.4vw, 32px);
+  backdrop-filter: blur(10px);
+}
+.hero__card-label {
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); margin-bottom: 14px;
+}
+.hero__card-metric {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(38px, 4.2vw, 58px);
+  color: var(--mmc-yellow);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.hero__card-sub {
+  font-family: var(--font-body); font-size: 13px;
+  color: rgba(255,255,255,0.7); margin-top: 10px;
+}
+.hero__card-bar {
+  margin-top: 20px;
+  height: 8px; border-radius: 999px;
+  background: rgba(255,255,255,0.14);
+  overflow: hidden;
+}
+.hero__card-bar-fill {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--mmc-yellow), #FFDA73);
+  border-radius: 999px;
+  transition: width 1.6s var(--ease-out) 0.3s;
+}
+.hero.is-assembled .hero__card-bar-fill { width: 88%; }
+
+.scroll-cue {
+  position: absolute; left: var(--shell-pad); bottom: 28px;
+  display: flex; align-items: center; gap: 10px;
+  color: rgba(255,255,255,0.55);
+  font-family: var(--font-body); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  z-index: 2;
+}
+.scroll-cue__line { width: 1px; height: 26px; background: rgba(255,255,255,0.35); position: relative; overflow: hidden; }
+.scroll-cue__line::after {
+  content: ""; position: absolute; left: 0; top: -100%; width: 100%; height: 100%;
+  background: var(--mmc-yellow);
+  animation: cueDrop 1.8s ease-in-out infinite;
+}
+@keyframes cueDrop { 0% { top: -100%; } 60% { top: 100%; } 100% { top: 100%; } }
+.no-ambient .scroll-cue__line::after { animation: none; top: 0; }
+
+@media (max-width: 900px) {
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__card { order: -1; }
+}
+
+/* ===================== SECTION HEADERS (shared pattern) ===================== */
+.sec-head { max-width: 720px; margin: 0 0 clamp(40px, 5vw, 64px); }
+.sec-eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-body); font-size: 12px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--mmc-blue); margin-bottom: 16px;
+}
+.sec-eyebrow::before { content: ""; width: 24px; height: 1.5px; background: var(--mmc-blue); }
+.sec-title { font-size: var(--fs-h2); margin: 0 0 16px; }
+.sec-lead { font-family: var(--font-body); font-size: var(--fs-lead); color: var(--fg-2); max-width: 58ch; margin: 0; }
+
+/* ===================== SERVICES ===================== */
+.services { background: var(--bg-1); padding: clamp(80px, 10vw, 140px) 0; }
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background: var(--mmc-border);
+  border: 1px solid var(--mmc-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.svc-card {
+  background: var(--bg-1);
+  padding: clamp(24px, 2.4vw, 34px) clamp(20px, 2vw, 28px);
+  min-height: 300px;
+  display: flex; flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  transition: background var(--dur-slow) var(--ease-out);
+}
+.svc-card:hover, .svc-card.is-open { background: var(--mmc-blue-50); }
+.svc-card__n {
+  font-family: var(--font-body); font-weight: 700; font-size: 12px;
+  letter-spacing: 0.14em; color: var(--fg-3); margin-bottom: 22px;
+}
+.svc-card__icon {
+  width: 46px; height: 46px; margin-bottom: 20px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--mmc-blue-100);
+  color: var(--mmc-blue);
+  transition: transform 500ms var(--ease-out), background var(--dur-base) var(--ease-out);
+}
+.svc-card:hover .svc-card__icon, .svc-card.is-open .svc-card__icon {
+  transform: rotate(-8deg) scale(1.08);
+  background: var(--mmc-blue);
+  color: #fff;
+}
+.svc-card__icon svg { width: 24px; height: 24px; }
+.svc-card__title { font-family: var(--font-display); font-weight: 700; font-size: 19px; margin: 0 0 10px; letter-spacing: -0.01em; }
+.svc-card__hint { font-family: var(--font-body); font-size: 13.5px; color: var(--fg-2); margin: 0; flex: 1; }
+/* animate-open detail list */
+.svc-card__list {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 480ms var(--ease-out);
+  margin-top: 6px;
+}
+.svc-card.is-open .svc-card__list { grid-template-rows: 1fr; }
+.svc-card__list-inner { overflow: hidden; }
+.svc-card__list ul { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.svc-card__list li {
+  font-family: var(--font-body); font-size: 12.5px; color: var(--mmc-blue-700);
+  padding-left: 14px; position: relative;
+}
+.svc-card__list li::before { content: "→"; position: absolute; left: 0; color: var(--mmc-yellow-700); }
+.svc-card__toggle {
+  margin-top: 16px;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-body); font-weight: 700; font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--mmc-blue); background: none; border: 0; padding: 0;
+  align-self: flex-start;
+}
+.svc-card__toggle-plus { display: inline-block; width: 14px; height: 14px; position: relative; }
+.svc-card__toggle-plus::before, .svc-card__toggle-plus::after {
+  content: ""; position: absolute; background: currentColor; transition: transform var(--dur-base) var(--ease-out);
+}
+.svc-card__toggle-plus::before { left: 0; top: 6px; width: 14px; height: 1.5px; }
+.svc-card__toggle-plus::after { left: 6px; top: 0; width: 1.5px; height: 14px; }
+.svc-card.is-open .svc-card__toggle-plus::after { transform: rotate(90deg); opacity: 0; }
+@media (max-width: 980px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .services__grid { grid-template-columns: 1fr; } }
+
+/* ===================== PROOF / COUNT-UP ===================== */
+.proof { background: var(--grad-ink); color: #fff; padding: clamp(80px, 10vw, 140px) 0; position: relative; overflow: hidden; }
+.proof .sec-eyebrow, .proof .sec-eyebrow::before { color: var(--mmc-yellow); background: var(--mmc-yellow); }
+.proof .sec-title { color: #fff; }
+.proof .sec-lead { color: rgba(255,255,255,0.72); }
+.proof__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 2.4vw, 32px);
+}
+.stat {
+  border-top: 2px solid rgba(255,255,255,0.18);
+  padding-top: 20px;
+}
+.stat__num {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(40px, 4.6vw, 64px);
+  color: var(--mmc-yellow);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.stat__label {
+  margin-top: 12px;
+  font-family: var(--font-body); font-size: 13.5px;
+  color: rgba(255,255,255,0.7);
+  max-width: 24ch;
+}
+@media (max-width: 900px) { .proof__grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ===================== CASE STUDY ===================== */
+.case { background: var(--bg-2); padding: clamp(80px, 10vw, 140px) 0; }
+.case__panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+  background: var(--bg-1);
+  border: 1px solid var(--mmc-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(28px, 4vw, 56px);
+  box-shadow: var(--shadow-3);
+}
+.case__quote {
+  font-family: var(--font-serif); font-style: italic; font-weight: 500;
+  font-size: clamp(20px, 2vw, 26px);
+  color: var(--fg-1);
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+.case__brand {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-body); font-weight: 700; font-size: 12px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--mmc-blue); margin-bottom: 18px;
+}
+.case__stats { display: flex; gap: 32px; margin-top: 26px; flex-wrap: wrap; }
+.case__stats .stat__num { font-size: clamp(28px, 3vw, 38px); color: var(--mmc-blue); }
+.case__stats .stat__label { color: var(--fg-3); }
+
+/* Animated ROAS bar-draw graphic */
+.roas-chart { position: relative; }
+.roas-chart svg { width: 100%; height: auto; display: block; }
+.roas-bar { transform-origin: bottom; transform: scaleY(0); transition: transform 1.2s var(--ease-out); }
+.case.is-in .roas-bar--before { transition-delay: 0.1s; }
+.case.is-in .roas-bar--after { transition-delay: 0.5s; }
+.case.is-in .roas-bar { transform: scaleY(1); }
+.roas-line { stroke-dasharray: 400; stroke-dashoffset: 400; transition: stroke-dashoffset 1.6s var(--ease-out) 0.3s; }
+.case.is-in .roas-line { stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .roas-bar, .roas-line { transition: none !important; transform: scaleY(1) !important; stroke-dashoffset: 0 !important; }
+}
+@media (max-width: 900px) { .case__panel { grid-template-columns: 1fr; } }
+
+/* ===================== AUDIENCE ===================== */
+.audience { background: var(--bg-1); padding: clamp(80px, 10vw, 140px) 0; }
+.aud__tabs {
+  display: flex; gap: 10px; margin-bottom: clamp(28px, 3vw, 40px); flex-wrap: wrap;
+}
+.aud__tab {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--mmc-border-strong);
+  background: var(--bg-1);
+  font-family: var(--font-body); font-weight: 700; font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--fg-2);
+  transition: background var(--dur-base) var(--ease-out), color var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
+}
+.aud__tab.is-active { background: var(--mmc-blue); color: #fff; border-color: var(--mmc-blue); }
+.aud__panels { position: relative; min-height: 340px; }
+.aud__panel {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 4vw, 56px);
+  align-items: center;
+}
+.aud__panel.is-active { display: grid; }
+.aud__panel-copy .sec-eyebrow { margin-bottom: 14px; }
+.aud__panel h3 { font-size: var(--fs-h3); margin: 0 0 14px; }
+.aud__panel p { color: var(--fg-2); max-width: 46ch; }
+.aud__panel-list { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.aud__panel-list li {
+  font-family: var(--font-body); font-size: 14px; color: var(--fg-1);
+  padding-left: 22px; position: relative;
+}
+.aud__panel-list li::before {
+  content: ""; position: absolute; left: 0; top: 7px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--mmc-yellow);
+}
+.aud__panel-visual {
+  background: var(--mmc-surface);
+  border: 1px solid var(--mmc-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  min-height: 280px;
+  display: flex; flex-direction: column; justify-content: center; gap: 14px;
+}
+.aud__logo-row { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.aud__logo-row img { height: 34px; width: auto; object-fit: contain; filter: grayscale(1) opacity(0.7); transition: filter var(--dur-base) var(--ease-out); }
+.aud__logo-row img:hover { filter: none; }
+.aud__logo-cap { font-family: var(--font-body); font-size: 12px; color: var(--fg-3); margin-top: 10px; }
+@media (max-width: 860px) { .aud__panel { grid-template-columns: 1fr; } }
+
+/* ===================== FINAL CTA ===================== */
+.final-cta {
+  background: var(--grad-ink);
+  color: #fff;
+  padding: clamp(90px, 12vw, 160px) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta__inner { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+.final-cta .sec-eyebrow { justify-content: center; color: var(--mmc-yellow); }
+.final-cta .sec-eyebrow::before { display: none; }
+.final-cta h2 { font-size: clamp(34px, 5vw, 60px); color: #fff; margin: 0 0 20px; letter-spacing: -0.02em; }
+.final-cta p { color: rgba(255,255,255,0.75); font-size: var(--fs-lead); max-width: 56ch; margin: 0 auto 36px; }
+.final-cta__ctas { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+
+/* utility */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+</style>
+
+<!-- ===================== LOCKED NAV+MENU+FOOTER STYLE (verbatim from LOCKED_NAV_FOOTER.html) ===================== -->
+<style>
+/* Required global reset, verbatim from styles.css line 5. Not part of
+   Nav.jsx/Menu.jsx/Footer.jsx's own inline styles, but load-bearing:
+   without it .ft__container (width:100% + padding) overflows its box. */
+* { box-sizing: border-box; }
+
+/* ---- from Nav.jsx + Menu.jsx (nav bar + full-screen menu overlay) ---- */
+.mmc-nav {
+          position: fixed;
+          top: 20px;
+          left: 0; right: 0;
+          z-index: 80;
+          display: flex;
+          justify-content: center;
+          padding-inline: var(--shell-gutter);
+          pointer-events: none;
+          transition: top 280ms var(--ease-out);
+        }
+        .mmc-nav.is-scrolled { top: 12px; }
+        .mmc-nav__inner {
+          pointer-events: auto;
+          /* Outer edge lands on the shell edge, so the bar and the hero card
+             below it start and end at the same x. A fixed 1240 here was why
+             the bar looked small beside a full-bleed section. */
+          width: 100%;
+          max-width: calc(var(--shell-max) - var(--shell-gutter) * 2);
+          background: rgba(255, 255, 255, 0.82);
+          backdrop-filter: blur(22px) saturate(150%);
+          -webkit-backdrop-filter: blur(22px) saturate(150%);
+          border: 1px solid var(--mmc-border);
+          border-radius: 999px;
+          padding: 8px 8px 8px var(--shell-gutter);
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          box-shadow: var(--shadow-3);
+          transition: background 280ms var(--ease-out), border-color 280ms var(--ease-out);
+        }
+        /* When menu is open, keep nav clearly legible on cream background */
+        .mmc-nav.is-menu-open .mmc-nav__inner {
+          background: rgba(255, 255, 255, 0.92);
+          border-color: rgba(var(--mmc-blue-rgb), 0.16);
+        }
+
+        .mmc-nav__mark {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--mmc-blue);
+          flex: 0 0 auto;
+        }
+        .mmc-nav__mark-icon {
+          width: 38px;
+          height: 38px;
+          object-fit: contain;
+          flex-shrink: 0;
+          display: block;
+        }
+        .mmc-nav__name {
+          display: flex;
+          flex-direction: column;
+          line-height: 1.15;
+        }
+        .mmc-nav__name-mmc {
+          font-family: var(--font-display);
+          font-weight: 700;
+          font-size: 14px;
+          letter-spacing: -0.01em;
+          color: var(--mmc-blue);
+        }
+        .mmc-nav__name-tag {
+          font-family: var(--font-body);
+          font-weight: 600;
+          font-size: 9.5px;
+          color: var(--fg-3);
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-top: 3px;
+        }
+
+        .mmc-nav__meta {
+          margin-left: auto;
+          margin-right: 0;
+          font-family: var(--font-body);
+          font-size: 11.5px;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          color: var(--fg-3);
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          text-transform: uppercase;
+        }
+        .mmc-nav__meta-dot {
+          width: 7px; height: 7px;
+          border-radius: 50%;
+          background: #2BB573;
+          box-shadow: 0 0 0 4px rgba(43, 181, 115, 0.18);
+          animation: pulse 2.4s var(--ease-out) infinite;
+        }
+        @keyframes pulse {
+          0%, 100% { box-shadow: 0 0 0 4px rgba(43, 181, 115, 0.18); }
+          50%      { box-shadow: 0 0 0 7px rgba(43, 181, 115, 0.05); }
+        }
+
+        .mmc-nav__actions {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          /* Always the last thing on the right. The auto margin used to live on
+             .mmc-nav__meta, which is hidden under 880px, so below that width the
+             menu button slid back against the logo. */
+          margin-left: auto;
+          flex: 0 0 auto;
+        }
+
+        /* ---- Audit pill ---- */
+        .mmc-nav__audit {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 16px 10px 18px;
+          border-radius: 999px;
+          background: transparent;
+          color: var(--mmc-blue);
+          border: 1px solid rgba(var(--mmc-blue-rgb), 0.18);
+          font-family: var(--font-body);
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          transition: border-color var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out),
+                      background var(--dur-base) var(--ease-out);
+        }
+        .mmc-nav__audit:hover {
+          border-color: var(--mmc-blue);
+          background: var(--mmc-blue);
+          color: #fff;
+        }
+        .mmc-nav__audit-arrow {
+          position: relative;
+          display: inline-block;
+          width: 14px; height: 1.5px;
+          background: currentColor;
+          transition: width var(--dur-base) var(--ease-out);
+        }
+        .mmc-nav__audit-arrow::after {
+          content: "";
+          position: absolute; right: -1px; top: -3px;
+          width: 7px; height: 7px;
+          border-top: 1.5px solid currentColor;
+          border-right: 1.5px solid currentColor;
+          transform: rotate(45deg);
+        }
+        .mmc-nav__audit:hover .mmc-nav__audit-arrow { width: 22px; }
+
+        /* ---- Menu trigger ---- */
+        .mmc-menu-btn {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          padding: 10px 16px 10px 18px;
+          border-radius: 999px;
+          background: var(--mmc-blue);
+          color: #fff;
+          font-family: var(--font-body);
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          overflow: hidden;
+          isolation: isolate;
+          transition: background var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out);
+        }
+        .mmc-menu-btn:hover { background: var(--mmc-blue-700); }
+        /* Open state, clearly visible on paper menu bg */
+        .mmc-menu-btn.is-open {
+          background: var(--mmc-yellow);
+          color: var(--mmc-blue-700);
+        }
+        .mmc-menu-btn.is-open:hover { background: #F8A800; }
+
+        .mmc-menu-btn__halo {
+          position: absolute;
+          inset: -40%;
+          background: radial-gradient(circle at 50% 50%, rgba(var(--mmc-yellow-rgb), 0.85) 0%, rgba(var(--mmc-yellow-rgb), 0) 60%);
+          opacity: 0;
+          transform: scale(0.4);
+          transition: transform var(--dur-slow) var(--ease-out), opacity var(--dur-slow) var(--ease-out);
+          z-index: -1;
+        }
+        .mmc-menu-btn:hover .mmc-menu-btn__halo { opacity: 0.45; transform: scale(1); }
+        .mmc-menu-btn.is-open .mmc-menu-btn__halo { opacity: 0; }
+
+        .mmc-menu-btn__label {
+          position: relative;
+          display: inline-block;
+          height: 14px;
+          line-height: 14px;
+          overflow: hidden;
+        }
+        .mmc-menu-btn__word {
+          display: block;
+          transition: transform var(--dur-base) var(--ease-out);
+        }
+        .mmc-menu-btn.is-open .mmc-menu-btn__word { transform: translateY(-14px); }
+
+        .mmc-menu-btn__icon {
+          position: relative;
+          width: 16px;
+          height: 14px;
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .mmc-menu-btn__icon span {
+          display: block;
+          height: 1.5px;
+          background: currentColor;
+          border-radius: 1px;
+          transform-origin: center;
+          transition: transform 380ms var(--ease-out), opacity 240ms var(--ease-out);
+        }
+        .mmc-menu-btn__icon span:nth-child(1) { width: 16px; }
+        .mmc-menu-btn__icon span:nth-child(2) { width: 11px; align-self: flex-end; }
+        .mmc-menu-btn__icon span:nth-child(3) { width: 16px; }
+
+        .mmc-menu-btn.is-open .mmc-menu-btn__icon span:nth-child(1) {
+          transform: translateY(6px) rotate(45deg);
+        }
+        .mmc-menu-btn.is-open .mmc-menu-btn__icon span:nth-child(2) { opacity: 0; }
+        .mmc-menu-btn.is-open .mmc-menu-btn__icon span:nth-child(3) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+
+        @media (max-width: 880px) {
+          .mmc-nav__meta { display: none; }
+          .mmc-nav__name-tag { display: none; }
+        }
+        @media (max-width: 720px) {
+          .mmc-nav__audit { display: none; }
+          .mmc-nav__inner { padding-left: 14px; padding-right: 6px; gap: 10px; }
+          .mmc-nav__mark { min-width: 0; }
+          .mmc-nav__name-mmc { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+          .mmc-nav__mark-icon { width: 32px; height: 32px; }
+          .mmc-nav__name-mmc { font-size: 13px; }
+        }
+
+
+
+        .sunmenu {
+          position: fixed; inset: 0;
+          z-index: 70;
+          visibility: hidden;
+          pointer-events: none;
+          isolation: isolate;
+        }
+        /* White glow circle: expands first from the button origin,
+           sits behind the paper so it ends covered once paper completes */
+        .sunmenu__disc {
+          position: absolute; border-radius: 50%;
+          background:
+            radial-gradient(circle at 50% 50%,
+              rgba(255,255,255,1) 0%,
+              rgba(255,255,255,0.96) 30%,
+              rgba(235,242,255,0.85) 55%,
+              rgba(200,218,245,0.45) 80%,
+              rgba(180,200,235,0) 100%);
+          box-shadow:
+            0 0 120px 30px rgba(255,255,255,0.35),
+            0 0 220px 60px rgba(255,255,255,0.18);
+          will-change: transform, opacity;
+          transform-origin: center;
+          z-index: 1;
+        }
+        /* Brand blue circle: trails by 200ms, covers the white disc */
+        .sunmenu__paper {
+          position: absolute; border-radius: 50%;
+          background: var(--mmc-blue); /* brand blue var(--mmc-blue) */
+          will-change: transform, opacity;
+          transform-origin: center;
+          z-index: 2;
+        }
+        /* Subtle highlight in the top-right corner, kept faint enough
+           to not tint the brand blue */
+        .sunmenu__corona {
+          position: absolute;
+          right: clamp(-120px, -5vw, -40px);
+          top: clamp(-160px, -9vw, -80px);
+          width: clamp(380px, 50vmin, 640px);
+          height: clamp(380px, 50vmin, 640px);
+          border-radius: 50%;
+          background: radial-gradient(circle at 50% 50%,
+            rgba(255, 255, 255, 0.14) 0%,
+            rgba(255, 255, 255, 0.06) 40%,
+            rgba(255, 255, 255, 0) 72%);
+          filter: blur(14px); pointer-events: none;
+          z-index: 3;
+          opacity: 0;
+          mix-blend-mode: screen;
+          transform-origin: center;
+        }
+        .sunmenu__heat { display: none; }
+
+        .sunmenu__content {
+          position: absolute;
+          inset: 0;
+          z-index: 3;
+          padding: clamp(90px, 9vh, 110px) clamp(28px, 5vw, 80px) 22px;
+          display: grid;
+          grid-template-rows: auto auto 1fr auto;
+          gap: clamp(10px, 1.2vw, 18px);
+          color: #FFFFFF;
+        }
+
+        /* Header */
+        .sunmenu__head {
+          display: flex; align-items: center; justify-content: space-between;
+          gap: 24px;
+          padding-bottom: 14px;
+          border-bottom: 1px solid rgba(255,255,255,0.22);
+        }
+        .sunmenu__eyebrow {
+          font-family: var(--font-body); font-size: 11px; font-weight: 700;
+          letter-spacing: 0.22em; text-transform: uppercase;
+          color: #FFFFFF;
+          display: inline-flex; align-items: center; gap: 12px;
+        }
+        .sunmenu__eyebrow::before {
+          content: ""; width: 24px; height: 1.5px; background: var(--mmc-yellow);
+        }
+        .sunmenu__head-meta {
+          display: inline-flex; align-items: center; gap: 14px;
+          font-family: var(--font-body); font-size: 11.5px; font-weight: 600;
+          letter-spacing: 0.14em; text-transform: uppercase;
+          color: rgba(255,255,255,0.7);
+        }
+        .sunmenu__head-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--mmc-yellow); }
+
+        /* Tagline */
+        .sunmenu__multi {
+          display: flex; flex-wrap: wrap; gap: 14px; align-items: baseline;
+          padding: 4px 0 14px;
+          font-family: var(--font-display); font-weight: 700;
+          font-size: clamp(18px, 2vw, 26px);
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+          border-bottom: 1px solid rgba(255,255,255,0.22);
+        }
+        .sunmenu__multi .x {
+          font-family: var(--font-serif); font-style: italic; font-weight: 500;
+          color: var(--mmc-yellow); opacity: 0.95; font-size: 0.95em;
+        }
+
+        /* TWO-PANE NAV */
+        .sunmenu__panes {
+          display: grid;
+          grid-template-columns: 0.4fr 0.6fr;
+          gap: clamp(28px, 4vw, 64px);
+          padding-top: clamp(8px, 1.2vw, 16px);
+          min-height: 0;
+        }
+
+        /* Primary nav (left) */
+        .sunmenu__primary { min-width: 0; }
+        .sunmenu__primary ul { list-style: none; margin: 0; padding: 0; }
+        .sunmenu__primary-row { border-bottom: 1px solid rgba(255,255,255,0.16); }
+        .sunmenu__primary-row:last-child { border-bottom: 0; }
+        .sunmenu__primary-row.is-active { background: rgba(255,255,255,0.08); }
+        .sunmenu__primary-link {
+          display: block;
+          padding: clamp(6px, min(1.4vw, 1.25vh), 16px) clamp(10px, 1.4vw, 18px) clamp(6px, min(1.4vw, 1.25vh), 16px) 0;
+          color: rgba(255,255,255,0.78);
+          transition: padding var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__primary-row.is-active .sunmenu__primary-link,
+        .sunmenu__primary-link:hover {
+          padding-left: 18px;
+          color: #FFFFFF;
+        }
+        .sunmenu__link-clip { display: block; overflow: hidden; }
+        .sm-link {
+          display: inline-flex; align-items: baseline; gap: 16px;
+          font-family: var(--font-display); font-weight: 700;
+          font-size: clamp(22px, min(3vw, 4.3vh), 44px);
+          letter-spacing: -0.025em; line-height: 1;
+          color: inherit;
+          width: 100%;
+        }
+        .sunmenu__primary-n {
+          font-family: var(--font-body); font-weight: 600;
+          font-size: 11px; letter-spacing: 0.18em;
+          color: rgba(255,255,255,0.5);
+          transform: translateY(-0.4em);
+        }
+        .sunmenu__primary-label { flex: 1; }
+        .sunmenu__primary-arrow {
+          color: rgba(255,255,255,0.4);
+          display: inline-flex; align-items: center;
+          transform: translateY(-0.2em);
+          transition: transform var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__primary-row.is-active .sunmenu__primary-arrow,
+        .sunmenu__primary-link:hover .sunmenu__primary-arrow {
+          color: var(--mmc-yellow);
+          transform: translate(4px, -0.2em);
+        }
+
+        /* Sub-menu (right) */
+        .sunmenu__sub {
+          min-width: 0;
+          padding-left: clamp(20px, 2.4vw, 36px);
+          border-left: 1px solid rgba(255,255,255,0.18);
+          overflow-y: auto;
+          overscroll-behavior: contain;
+        }
+        /* Waterfall reveal, each row of the right pane drops in top-to-bottom.
+           Delays are set inline so they cascade on open and on every swap. */
+        .sm-wf { opacity: 0; will-change: transform, opacity; animation: smWaterfall 0.52s var(--ease-out) both; }
+        @keyframes smWaterfall {
+          from { opacity: 0; transform: translateY(18px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .sm-wf { opacity: 1; animation: none; }
+        }
+        .sunmenu__sub-head {
+          display: flex; align-items: center; gap: 14px;
+          margin-bottom: 4px;
+        }
+        .sunmenu__sub-eyebrow {
+          font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+          letter-spacing: 0.22em; text-transform: uppercase;
+          color: var(--mmc-yellow);
+        }
+        .sunmenu__sub-rule {
+          flex: 1; height: 1px;
+          background: linear-gradient(90deg, rgba(255,255,255,0.3), transparent);
+        }
+        .sunmenu__sub-overview {
+          font-family: var(--font-body); font-size: 11px; font-weight: 700;
+          letter-spacing: 0.14em; text-transform: uppercase;
+          color: #FFFFFF;
+          display: inline-flex; align-items: center; gap: 6px;
+        }
+        .sunmenu__sub-overview .arrow {
+          transition: transform var(--dur-base) var(--ease-out);
+          display: inline-block;
+        }
+        .sunmenu__sub-overview:hover .arrow { transform: translateX(4px); }
+
+        .sunmenu__sub-hint {
+          font-family: var(--font-serif); font-style: italic; font-weight: 500;
+          font-size: 14px; color: rgba(255,255,255,0.85);
+          margin: 0 0 12px;
+        }
+
+        /* Minimal CTA for items without sub-services */
+        .sunmenu__sub-cta {
+          display: inline-flex;
+          align-items: center;
+          gap: 14px;
+          margin-top: 12px;
+          padding: 18px 24px;
+          background: var(--mmc-yellow);
+          color: var(--mmc-blue-700);
+          border-radius: 999px;
+          font-family: var(--font-body);
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          transition: background var(--dur-base) var(--ease-out),
+                      transform var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-cta:hover {
+          background: #FFC940;
+          color: var(--mmc-blue-700);
+          transform: translateY(-1px);
+          position: relative; z-index: 2;
+        }
+        .sunmenu__sub-cta .arrow {
+          font-family: var(--font-display); font-size: 16px;
+          transition: transform var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-cta:hover .arrow { transform: translateX(4px); }
+
+        .sunmenu__sub-list { list-style: none; margin: 0; padding: 0; }
+        .sunmenu__sub-item { border-top: 1px solid rgba(255,255,255,0.14); }
+        .sunmenu__sub-item:first-child { border-top: 0; }
+        .sunmenu__sub-row {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 0;
+          align-items: stretch;
+        }
+        .sunmenu__sub-link {
+          display: grid;
+          grid-template-columns: 32px 1fr 22px;
+          gap: 12px;
+          align-items: center;
+          padding: 12px 14px 12px 0;
+          color: rgba(255,255,255,0.82);
+          transition: padding var(--dur-base) var(--ease-out),
+                      background var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-link:hover {
+          padding-left: 10px;
+          background: rgba(255,255,255,0.06);
+          color: #FFFFFF;
+        }
+        .sunmenu__sub-n {
+          font-family: var(--font-body); font-weight: 700;
+          font-size: 10.5px; letter-spacing: 0.2em;
+          color: var(--mmc-yellow); opacity: 0.75;
+        }
+        .sunmenu__sub-body {
+          display: flex; flex-direction: column; gap: 2px;
+          min-width: 0;
+        }
+        .sunmenu__sub-name {
+          font-family: var(--font-display); font-weight: 700;
+          font-size: clamp(15px, 1.3vw, 17px);
+          letter-spacing: -0.012em;
+          color: inherit;
+          transition: color var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-link:hover .sunmenu__sub-name { color: #FFFFFF; }
+        .sunmenu__sub-desc {
+          font-family: var(--font-body); font-size: 11.5px;
+          color: rgba(255,255,255,0.6);
+          letter-spacing: 0.01em;
+        }
+        .sunmenu__sub-go {
+          color: rgba(255,255,255,0.4);
+          display: inline-flex; align-items: center;
+          transition: transform var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-link:hover .sunmenu__sub-go {
+          transform: translateX(4px);
+          color: var(--mmc-yellow);
+        }
+
+        /* Expand button for service rows */
+        .sunmenu__sub-expand {
+          width: 38px;
+          background: transparent;
+          border-left: 1px solid rgba(255,255,255,0.14);
+          color: rgba(255,255,255,0.85);
+          position: relative;
+          cursor: pointer;
+          transition: background var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-expand:hover { background: rgba(255,255,255,0.08); }
+        .sunmenu__sub-expand span {
+          position: absolute; left: 50%; top: 50%;
+          width: 11px; height: 1.5px;
+          background: currentColor;
+          transform: translate(-50%, -50%);
+          transition: transform var(--dur-base) var(--ease-out),
+                      opacity var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__sub-expand span:nth-child(2) {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+        .sunmenu__sub-item.is-expanded .sunmenu__sub-expand span:nth-child(2) {
+          transform: translate(-50%, -50%) rotate(0);
+          opacity: 0;
+        }
+
+        /* Inner sub-services accordion */
+        .sunmenu__inner {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 440ms var(--ease-out);
+        }
+        .sunmenu__sub-item.is-expanded .sunmenu__inner {
+          grid-template-rows: 1fr;
+        }
+        .sunmenu__inner-inner { overflow: hidden; }
+        .sunmenu__inner ul {
+          list-style: none; margin: 0; padding: 0 0 16px 44px;
+          display: grid; grid-template-columns: 1fr 1fr;
+          gap: 0 18px;
+          opacity: 0;
+          transform: translateY(-4px);
+          transition: opacity 320ms var(--ease-out) 100ms,
+                      transform 320ms var(--ease-out) 100ms;
+        }
+        .sunmenu__sub-item.is-expanded .sunmenu__inner ul {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .sunmenu__inner a {
+          display: grid;
+          grid-template-columns: 24px 1fr 16px;
+          gap: 8px;
+          align-items: center;
+          padding: 8px 0;
+          color: rgba(255,255,255,0.78);
+          border-bottom: 1px solid rgba(255,255,255,0.10);
+          transition: padding var(--dur-base) var(--ease-out),
+                      color var(--dur-base) var(--ease-out);
+        }
+        .sunmenu__inner a:hover {
+          padding-left: 8px;
+          color: #FFFFFF;
+        }
+        .ix-n {
+          font-family: var(--font-body); font-weight: 700;
+          font-size: 9.5px; letter-spacing: 0.2em;
+          color: var(--mmc-yellow); opacity: 0.7;
+        }
+        .ix-name {
+          font-family: var(--font-display); font-weight: 600;
+          font-size: 13.5px; letter-spacing: -0.005em;
+          color: inherit;
+        }
+        .ix-arr { color: var(--mmc-yellow); font-size: 11px; opacity: 0.85; }
+
+        /* Footer */
+        .sunmenu__foot {
+          display: flex; align-items: center; justify-content: space-between;
+          gap: 22px; flex-wrap: wrap;
+          padding-top: 16px;
+          border-top: 1px solid rgba(255,255,255,0.22);
+        }
+        .sunmenu__foot-cols {
+          display: flex; gap: 28px; flex-wrap: wrap;
+          font-family: var(--font-body); font-size: 12px;
+          font-weight: 600; letter-spacing: 0.04em;
+          color: #FFFFFF;
+        }
+        .sunmenu__foot-cols .t-muted {
+          color: rgba(255,255,255,0.55); font-weight: 500;
+        }
+        /* CTA: yellow button reads boldly on blue ground */
+        .btn--solid-blue {
+          background: var(--mmc-yellow); color: var(--mmc-blue-700);
+        }
+        .btn--solid-blue:hover {
+          transform: translateY(-1px);
+          background: #FFC940;
+          color: var(--mmc-blue-700);
+          box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.45);
+          position: relative; z-index: 2;
+        }
+
+        @media (max-width: 980px) {
+          .sunmenu__panes { grid-template-columns: 1fr; gap: 22px; }
+          .sunmenu__sub { padding-left: 0; border-left: 0; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.22); }
+          .sunmenu__primary { max-height: 38vh; overflow-y: auto; }
+          .sm-link { font-size: clamp(22px, 4vw, 32px); }
+        }
+        @media (max-width: 720px) {
+          .sunmenu__content { padding: 90px 22px 18px; }
+          .sunmenu__multi { font-size: clamp(15px, 4vw, 20px); gap: 10px; }
+          .sunmenu__inner ul { grid-template-columns: 1fr; padding-left: 32px; }
+          .sunmenu__head-meta { display: none; }
+        }
+        @media (max-height: 760px) {
+          .sunmenu__content { padding-top: 80px; gap: 8px; }
+          .sm-link { font-size: clamp(22px, 2.8vw, 36px); }
+          .sunmenu__multi { padding: 4px 0 10px; font-size: 18px; }
+        }
+
+/* ---- from Footer.jsx ---- */
+.ft {
+          position: relative;
+          z-index: 1;
+          isolation: isolate;
+          padding: clamp(34px, 3.2vw, 52px) 0 18px;
+          color: rgba(255, 255, 255, 0.9);
+          /* The same ground the case-study covers use: royal blue at the top
+             shoulder, sinking to near-black by the base. Reusing the recipe
+             rather than approximating it keeps one dark surface across the
+             site instead of two that nearly match. */
+          background: var(--grad-ink);
+        }
+        /* The same faint grid, masked so it fades out before the legal line. */
+        .ft::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: -1;
+          opacity: 0.16;
+          pointer-events: none;
+          background-image: linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+          background-size: 26px 26px;
+          -webkit-mask-image: radial-gradient(70% 60% at 50% 12%, #000, transparent);
+                  mask-image: radial-gradient(70% 60% at 50% 12%, #000, transparent);
+        }
+        .ft__container {
+          position: relative;
+          width: 100%;
+          max-width: var(--container-max);
+          margin: 0 auto;
+          padding-left: var(--gutter);
+          padding-right: var(--gutter);
+        }
+
+        /* Top row */
+        .ft__top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 28px;
+          flex-wrap: wrap;
+          padding-bottom: clamp(22px, 2.4vw, 30px);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .ft__brand {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          color: #fff;
+        }
+        .ft__brand:hover { color: #fff; }
+        .ft__brand-img {
+          height: 64px;
+          width: auto;
+          max-width: 250px;
+          object-fit: contain;
+          display: block;
+          flex-shrink: 0;
+        }
+        .ft__brand-tag {
+          font-family: var(--font-body);
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.78);
+          max-width: 40ch;
+          line-height: 1.5;
+        }
+
+        .ft__cta-stack { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+        .ft__cta-alt {
+          background: none; border: 0; padding: 0; cursor: pointer;
+          font-family: var(--font-body); font-size: 12px; font-weight: 600;
+          letter-spacing: 0.02em; color: rgba(255,255,255,0.6);
+          text-decoration: none;
+          border-bottom: 1px solid rgba(255,255,255,0.26); padding-bottom: 2px;
+          transition: color var(--dur-base) var(--ease-out);
+        }
+        .ft__cta-alt:hover { color: #fff; border-bottom-color: var(--mmc-yellow); }
+        @media (max-width: 720px) { .ft__cta-stack { align-items: flex-start; } }
+        .ft__cta {
+          display: inline-flex;
+          align-items: center;
+          gap: 14px;
+          padding: 14px 24px;
+          background: var(--mmc-yellow);
+          color: var(--mmc-blue-700);
+          border-radius: 999px;
+          font-family: var(--font-body);
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          transition: background var(--dur-base) var(--ease-out),
+                      transform var(--dur-base) var(--ease-out);
+          align-self: flex-end;
+        }
+        .ft__cta:hover {
+          background: #F8A800;
+          transform: translateY(-1px);
+          color: var(--mmc-blue-700);
+          position: relative; z-index: 2;
+        }
+        .ft__cta .arrow {
+          width: 18px; height: 1.5px;
+          background: currentColor;
+          position: relative;
+          transition: width var(--dur-base) var(--ease-out);
+        }
+        .ft__cta .arrow::after {
+          content: "";
+          position: absolute; right: -1px; top: -4px;
+          width: 8px; height: 8px;
+          border-top: 1.5px solid currentColor;
+          border-right: 1.5px solid currentColor;
+          transform: rotate(45deg);
+        }
+        .ft__cta:hover .arrow { width: 28px; }
+
+        /* Services grid */
+        .ft__cols {
+          display: grid;
+          /* The full-bleed shell made four equal 328px columns very wide and
+             very empty. Capping each one keeps the link lists readable and
+             stops the block spreading to 1400px on a large monitor. */
+          /* Four equal columns that fill the shell, so the block's right edge
+             lands on the same line as the CTA above it. Capping the columns
+             left 284px of dead gutter and made the two masses look unrelated. */
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: clamp(20px, 2.6vw, 44px);
+          padding: clamp(30px, 3.4vw, 44px) 0;
+          border-bottom: 0;
+        }
+        @media (max-width: 900px) {
+          .ft__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 520px) {
+          .ft__cols { grid-template-columns: 1fr; }
+        }
+        .ft__col {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+        .ft__col-label {
+          font-family: var(--font-display);
+          font-weight: 700;
+          font-size: 14px;
+          letter-spacing: -0.005em;
+          color: var(--mmc-yellow);
+          padding-bottom: 8px;
+          border-bottom: 1px solid rgba(var(--mmc-yellow-rgb), 0.22);
+        }
+        .ft__col ul {
+          list-style: none;
+          margin: 0; padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        .ft__col a {
+          font-family: var(--font-body);
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.78);
+          letter-spacing: 0.005em;
+          transition: color var(--dur-base) var(--ease-out);
+        }
+        .ft__col a:hover { color: #fff; }
+
+        /* Nav row */
+        /* One bar: contact on the left, social and cookies on the right. */
+        .ft__base {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 14px 28px;
+          padding: clamp(20px, 2.4vw, 28px) 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .ft__base-l, .ft__base-r {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px 22px;
+        }
+        .ft__base a {
+          font-family: var(--font-body);
+          font-size: 13.5px;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.78);
+          text-decoration: none;
+          transition: color 200ms var(--ease-out);
+        }
+        .ft__base a:hover { color: var(--mmc-yellow); }
+        .ft__dot {
+          width: 3px; height: 3px; border-radius: 50%;
+          background: rgba(255, 255, 255, 0.34); flex: none;
+        }
+
+        .ft__legal {
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 14px;
+          padding-top: 22px;
+          font-family: var(--font-body);
+          font-size: 11.5px;
+          color: rgba(255, 255, 255, 0.55);
+        }
+        .ft__legal-links {
+          display: inline-flex;
+          gap: 18px;
+        }
+        .ft__legal-links a {
+          color: rgba(255, 255, 255, 0.62);
+          transition: color var(--dur-base) var(--ease-out);
+        }
+        .ft__legal-links a:hover { color: var(--mmc-yellow); }
+        .ft__tagline {
+          color: rgba(255, 255, 255, 0.55);
+          font-size: 13px;
+        }
+
+        @media (max-width: 1100px) {
+          .ft__cols { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 720px) {
+          .ft__top { flex-direction: column; align-items: flex-start; }
+          .ft__cta { align-self: flex-start; }
+          .ft__cols { grid-template-columns: 1fr 1fr; }
+          .ft__meta { flex-direction: column; align-items: flex-start; }
+          .ft__legal { flex-direction: column; align-items: flex-start; }
+          .ft__brand { flex-direction: column; align-items: flex-start; gap: 14px; }
+          .ft__brand-tag { max-width: 100%; }
+        }
+        @media (max-width: 460px) {
+          .ft__cols { grid-template-columns: 1fr; }
+          .ft__brand-img { height: 72px; }
+        }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV (locked, verbatim) ===================== -->
+<nav class="mmc-nav "><div class="mmc-nav__inner"><a class="mmc-nav__mark" href="../index.html" aria-label="Monday Marketing Company"><img class="mmc-nav__mark-icon" src="../assets/logo-mark.png" alt="MMC"><span class="mmc-nav__name"><span class="mmc-nav__name-mmc">Monday Marketing Company</span><span class="mmc-nav__name-tag">Design × Marketing × Technology × Content × AI</span></span></a><div class="mmc-nav__meta"><span class="mmc-nav__meta-dot"></span><span>Onboarding · Clients · Hires  · 23:12 IST</span></div><div class="mmc-nav__actions"><button class="mmc-nav__audit"><span>Book a call</span><span class="mmc-nav__audit-arrow" aria-hidden="true"></span></button><button class="mmc-menu-btn " aria-expanded="false" aria-label="Open menu"><span class="mmc-menu-btn__halo" aria-hidden="true"></span><span class="mmc-menu-btn__label"><span class="mmc-menu-btn__word mmc-menu-btn__word--menu">Menu</span><span class="mmc-menu-btn__word mmc-menu-btn__word--close">Close</span></span><span class="mmc-menu-btn__icon" aria-hidden="true"><span></span><span></span><span></span></span></button></div></div></nav><div class="sunmenu" aria-hidden="true"><div class="sunmenu__paper" aria-hidden="true"></div><div class="sunmenu__disc" aria-hidden="true"></div><div class="sunmenu__corona" aria-hidden="true"></div><div class="sunmenu__heat" aria-hidden="true"></div><div class="sunmenu__content"><div class="sunmenu__head"><div class="sm-fade sunmenu__eyebrow">The Index</div><div class="sm-fade sunmenu__head-meta"><span>06 surfaces · 30+ services</span><span class="dot"></span><span>Est. 2019 · Thane</span></div></div><div class="sm-fade sunmenu__multi"><span>Design</span><span class="x">×</span><span>Marketing</span><span class="x">×</span><span>Technology</span><span class="x">×</span><span>Content</span><span class="x">×</span><span>AI</span></div><div class="sunmenu__panes"><nav class="sunmenu__primary" aria-label="Primary"><ul><li class="sunmenu__primary-row is-active"><a href="../index.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">01</span><span class="sunmenu__primary-label">Home</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../services.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">02</span><span class="sunmenu__primary-label">Services</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../industries.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">03</span><span class="sunmenu__primary-label">Industries</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../Our Work.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">04</span><span class="sunmenu__primary-label">Our Work</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../resources.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">05</span><span class="sunmenu__primary-label">Resources</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../About.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">06</span><span class="sunmenu__primary-label">About Us</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../Careers.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">07</span><span class="sunmenu__primary-label">Careers</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../Insights.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">08</span><span class="sunmenu__primary-label">Insights</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li><li class="sunmenu__primary-row "><a href="../Contact.html" class="sunmenu__primary-link"><span class="sunmenu__link-clip"><span class="sm-link"><span class="sunmenu__primary-n">09</span><span class="sunmenu__primary-label">Contact</span><span class="sunmenu__primary-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></span></a></li></ul></nav><div class="sunmenu__sub"><div class="sm-wf sunmenu__sub-head" style="animation-delay: 0.95s;"><span class="sunmenu__sub-eyebrow">Services</span><span class="sunmenu__sub-rule"></span></div><p class="sm-wf sunmenu__sub-hint" style="animation-delay: 1.02s;">Paid media, search, creative, brand and build</p><ul class="sunmenu__sub-list"><li class="sm-wf sunmenu__sub-item " style="animation-delay: 1.09s;"><div class="sunmenu__sub-row"><a href="../performance-marketing.html" class="sunmenu__sub-link"><span class="sunmenu__sub-n">01</span><span class="sunmenu__sub-body"><span class="sunmenu__sub-name">Performance marketing</span><span class="sunmenu__sub-desc">Paid media read against profit</span></span><span class="sunmenu__sub-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a><button class="sunmenu__sub-expand" aria-expanded="false" aria-label="Expand inner services"><span></span><span></span></button></div><div class="sunmenu__inner"><div class="sunmenu__inner-inner"><ul><li><a href="../performance-marketing.html"><span class="ix-n">01</span><span class="ix-name">Performance marketing overview</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../meta-ads.html"><span class="ix-n">02</span><span class="ix-name">Meta Ads</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../google-ads.html"><span class="ix-n">03</span><span class="ix-name">Google Ads</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../amazon-ads.html"><span class="ix-n">04</span><span class="ix-name">Amazon Ads</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../quick-commerce-ads.html"><span class="ix-n">05</span><span class="ix-name">Quick commerce ads</span><span class="ix-arr" aria-hidden="true">↗</span></a></li></ul></div></div></li><li class="sm-wf sunmenu__sub-item " style="animation-delay: 1.16s;"><div class="sunmenu__sub-row"><a href="../lead-generation.html" class="sunmenu__sub-link"><span class="sunmenu__sub-n">02</span><span class="sunmenu__sub-body"><span class="sunmenu__sub-name">Leads and retention</span><span class="sunmenu__sub-desc">Win the right customers, keep them</span></span><span class="sunmenu__sub-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a><button class="sunmenu__sub-expand" aria-expanded="false" aria-label="Expand inner services"><span></span><span></span></button></div><div class="sunmenu__inner"><div class="sunmenu__inner-inner"><ul><li><a href="../lead-generation.html"><span class="ix-n">01</span><span class="ix-name">Lead generation</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../retention-marketing.html"><span class="ix-n">02</span><span class="ix-name">Retention marketing</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../online-reputation-management.html"><span class="ix-n">03</span><span class="ix-name">Online reputation management</span><span class="ix-arr" aria-hidden="true">↗</span></a></li></ul></div></div></li><li class="sm-wf sunmenu__sub-item " style="animation-delay: 1.23s;"><div class="sunmenu__sub-row"><a href="../seo.html" class="sunmenu__sub-link"><span class="sunmenu__sub-n">03</span><span class="sunmenu__sub-body"><span class="sunmenu__sub-name">Search and conversion</span><span class="sunmenu__sub-desc">Get found, then get chosen</span></span><span class="sunmenu__sub-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a><button class="sunmenu__sub-expand" aria-expanded="false" aria-label="Expand inner services"><span></span><span></span></button></div><div class="sunmenu__inner"><div class="sunmenu__inner-inner"><ul><li><a href="../seo.html"><span class="ix-n">01</span><span class="ix-name">SEO</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../conversion-rate-optimisation.html"><span class="ix-n">02</span><span class="ix-name">Conversion optimisation</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../shopify-development.html"><span class="ix-n">03</span><span class="ix-name">Shopify development</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../web-development.html"><span class="ix-n">04</span><span class="ix-name">Website development</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../mobile-app-development.html"><span class="ix-n">05</span><span class="ix-name">Mobile app development</span><span class="ix-arr" aria-hidden="true">↗</span></a></li></ul></div></div></li><li class="sm-wf sunmenu__sub-item " style="animation-delay: 1.3s;"><div class="sunmenu__sub-row"><a href="../branding.html" class="sunmenu__sub-link"><span class="sunmenu__sub-n">04</span><span class="sunmenu__sub-body"><span class="sunmenu__sub-name">Creative and brand</span><span class="sunmenu__sub-desc">Look and sound like one brand</span></span><span class="sunmenu__sub-go" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a><button class="sunmenu__sub-expand" aria-expanded="false" aria-label="Expand inner services"><span></span><span></span></button></div><div class="sunmenu__inner"><div class="sunmenu__inner-inner"><ul><li><a href="../branding.html"><span class="ix-n">01</span><span class="ix-name">Branding</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../packaging-design.html"><span class="ix-n">02</span><span class="ix-name">Packaging design</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../ui-ux-design.html"><span class="ix-n">03</span><span class="ix-name">UI/UX design</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../ugc-and-video.html"><span class="ix-n">04</span><span class="ix-name">UGC and video</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../social-media-creatives.html"><span class="ix-n">05</span><span class="ix-name">Social media creatives</span><span class="ix-arr" aria-hidden="true">↗</span></a></li><li><a href="../influencer-marketing.html"><span class="ix-n">06</span><span class="ix-name">Influencer marketing</span><span class="ix-arr" aria-hidden="true">↗</span></a></li></ul></div></div></li></ul></div></div><div class="sunmenu__foot"><div class="sm-fade sunmenu__foot-cols"><span><span class="t-muted">Working with</span>&nbsp; D2C, B2B and education brands</span><span><span class="t-muted">In market since</span>&nbsp; 2019</span><span><span class="t-muted">Revenue compounded</span>&nbsp; ₹248Cr+</span></div><div class="sm-fade sunmenu__cta-wrap"><button class="btn btn--solid-blue glow-btn"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Get a free brand audit<span class="arrow"></span></span></button></div></div></div></div>
+<!-- /NAV -->
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="ambient-sun" aria-hidden="true">
+    <div class="ambient-sun__disc"></div>
+    <div class="ambient-sun__rays">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <g stroke="#FFC528" stroke-width="6" stroke-linecap="round" opacity="0.7">
+          <line x1="200" y1="40" x2="200" y2="90"/>
+          <line x1="320" y1="80" x2="290" y2="118"/>
+          <line x1="360" y1="200" x2="310" y2="200"/>
+          <line x1="320" y1="320" x2="290" y2="282"/>
+          <line x1="80" y1="80" x2="110" y2="118"/>
+          <line x1="40" y1="200" x2="90" y2="200"/>
+          <line x1="80" y1="320" x2="110" y2="282"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="shell hero__inner">
+    <div class="hero__copy">
+      <div class="hero__eyebrow">Monday Marketing Company</div>
+      <h1 class="hero__headline" id="heroHeadline">
+        <span class="word"><span>Growth</span></span> <span class="word"><span>that</span></span> <span class="word"><span>compounds,</span></span><br>
+        <span class="word"><span class="accent">built</span></span> <span class="word"><span>for</span></span> <span class="word"><span>D2C</span></span> <span class="word"><span>first.</span></span>
+      </h1>
+      <p class="hero__lead">We run performance media, retention, search and brand as one system — for D2C brands leading the charge, and for the B2B and education teams who hire us the same way.</p>
+      <div class="hero__ctas">
+        <button class="btn-primary" id="heroCtaCall" data-audit-cta>
+          <span>Book a free brand audit</span>
+          <span class="arrow" aria-hidden="true"></span>
+        </button>
+        <a class="btn-ghost" href="../Our Work.html">See the work</a>
+      </div>
+    </div>
+    <aside class="hero__card" data-reveal="right">
+      <div class="hero__card-label">DeoBar · 90-day engagement</div>
+      <div class="hero__card-metric" id="heroMetric">0.0×</div>
+      <div class="hero__card-sub">Blended ROAS, before → after MMC took over media and retention</div>
+      <div class="hero__card-bar"><div class="hero__card-bar-fill"></div></div>
+    </aside>
+  </div>
+  <div class="scroll-cue"><span class="scroll-cue__line"></span><span>Scroll</span></div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services" id="services">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <div class="sec-eyebrow">What we run</div>
+      <h2 class="sec-title">Four disciplines, one growth system.</h2>
+      <p class="sec-lead">Tap a card to open it — each one runs the specific services underneath it, not a generic label.</p>
+    </div>
+    <div class="services__grid" data-stagger>
+      <article class="svc-card" data-reveal="scale" tabindex="0" role="button" aria-expanded="false">
+        <div class="svc-card__n">01</div>
+        <div class="svc-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 18L9 11L13 15L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="svc-card__title">Performance marketing</h3>
+        <p class="svc-card__hint">Paid media read against profit, not vanity ROAS.</p>
+        <div class="svc-card__list"><div class="svc-card__list-inner"><ul>
+          <li>Meta Ads</li><li>Google Ads</li><li>Amazon Ads</li><li>Quick commerce ads</li>
+        </ul></div></div>
+        <button class="svc-card__toggle" type="button" aria-hidden="true" tabindex="-1"><span class="svc-card__toggle-plus"></span> Open</button>
+      </article>
+      <article class="svc-card" data-reveal="scale" tabindex="0" role="button" aria-expanded="false">
+        <div class="svc-card__n">02</div>
+        <div class="svc-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 4 15.5 4 9.5C4 6.46 6.46 4 9.5 4C10.99 4 12 4.5 12 4.5C12 4.5 13.01 4 14.5 4C17.54 4 20 6.46 20 9.5C20 15.5 12 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="svc-card__title">Leads &amp; retention</h3>
+        <p class="svc-card__hint">Win the right customers, then keep them past D90.</p>
+        <div class="svc-card__list"><div class="svc-card__list-inner"><ul>
+          <li>Lead generation</li><li>Retention marketing</li><li>Online reputation management</li>
+        </ul></div></div>
+        <button class="svc-card__toggle" type="button" aria-hidden="true" tabindex="-1"><span class="svc-card__toggle-plus"></span> Open</button>
+      </article>
+      <article class="svc-card" data-reveal="scale" tabindex="0" role="button" aria-expanded="false">
+        <div class="svc-card__n">03</div>
+        <div class="svc-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="svc-card__title">Search &amp; conversion</h3>
+        <p class="svc-card__hint">Get found, then get chosen once they land.</p>
+        <div class="svc-card__list"><div class="svc-card__list-inner"><ul>
+          <li>SEO</li><li>Conversion rate optimisation</li><li>Shopify development</li><li>Website development</li><li>Mobile app development</li>
+        </ul></div></div>
+        <button class="svc-card__toggle" type="button" aria-hidden="true" tabindex="-1"><span class="svc-card__toggle-plus"></span> Open</button>
+      </article>
+      <article class="svc-card" data-reveal="scale" tabindex="0" role="button" aria-expanded="false">
+        <div class="svc-card__n">04</div>
+        <div class="svc-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 4H20V16H8L4 20V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="svc-card__title">Creative &amp; brand</h3>
+        <p class="svc-card__hint">Look and sound like one brand, everywhere.</p>
+        <div class="svc-card__list"><div class="svc-card__list-inner"><ul>
+          <li>Branding</li><li>Packaging design</li><li>UI/UX design</li><li>UGC &amp; video</li><li>Social creatives</li><li>Influencer marketing</li>
+        </ul></div></div>
+        <button class="svc-card__toggle" type="button" aria-hidden="true" tabindex="-1"><span class="svc-card__toggle-plus"></span> Open</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROOF / COUNT-UP ===================== -->
+<section class="proof" id="proof">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <div class="sec-eyebrow">The numbers</div>
+      <h2 class="sec-title">Measured on staying, not just starting.</h2>
+      <p class="sec-lead">Performance metrics compounded across a few of the brands we run media, retention and search for since 2019.</p>
+    </div>
+    <div class="proof__grid" data-stagger>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count-to="248" data-prefix="₹" data-suffix="Cr+">0</div>
+        <div class="stat__label">Revenue compounded for clients since 2019</div>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count-to="8.7" data-decimals="1" data-suffix="×">0</div>
+        <div class="stat__label">Median blended ROAS, last 12 months</div>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count-to="20" data-suffix="+">0</div>
+        <div class="stat__label">Ad and commerce platforms operated day to day</div>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-count-to="27" data-suffix="mo">0</div>
+        <div class="stat__label">Median client tenure — we're measured on staying</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CASE STUDY ===================== -->
+<section class="case" id="case">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <div class="sec-eyebrow">Named case study</div>
+      <h2 class="sec-title">DeoBar: three agencies in, margin bleeding.</h2>
+      <p class="sec-lead">Retention flat past D60, ROAS stuck at 3.1×. Here's what changed in 90 days once media, retention and creative moved under one system.</p>
+    </div>
+    <div class="case__panel" data-reveal="scale">
+      <div class="case__copy">
+        <div class="case__brand">DeoBar · D2C personal care</div>
+        <p class="case__quote">"Three agencies in, margin bleeding, retention flat past D60 — we needed one team that owned the whole funnel, not another media buyer."</p>
+        <div class="case__stats">
+          <div>
+            <div class="stat__num" data-count-to="24.6" data-decimals="1" data-prefix="₹" data-suffix="Cr">0</div>
+            <div class="stat__label">Net revenue at day 90, up from ₹4.2Cr</div>
+          </div>
+          <div>
+            <div class="stat__num" data-count-to="78" data-suffix="%">0</div>
+            <div class="stat__label">D90 retention, up from 41%</div>
+          </div>
+        </div>
+      </div>
+      <div class="roas-chart">
+        <svg viewBox="0 0 320 220" role="img" aria-label="ROAS chart: 3.1x before, rising to 11.8x after 90 days">
+          <line x1="30" y1="190" x2="300" y2="190" stroke="var(--mmc-border-strong)" stroke-width="1"/>
+          <rect class="roas-bar roas-bar--before" x="60" y="150" width="56" height="40" rx="4" fill="var(--mmc-blue-100)"/>
+          <text x="88" y="140" text-anchor="middle" font-family="Raleway, sans-serif" font-weight="700" font-size="15" fill="var(--mmc-blue-700)">3.1×</text>
+          <text x="88" y="208" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" fill="var(--fg-3)">Day 0</text>
+          <rect class="roas-bar roas-bar--after" x="196" y="34" width="56" height="156" rx="4" fill="var(--mmc-blue)"/>
+          <text x="224" y="24" text-anchor="middle" font-family="Raleway, sans-serif" font-weight="700" font-size="15" fill="var(--mmc-blue-700)">11.8×</text>
+          <text x="224" y="208" text-anchor="middle" font-family="Nunito, sans-serif" font-size="11" fill="var(--fg-3)">Day 90</text>
+          <path class="roas-line" d="M88 150 C 140 150, 170 60, 224 34" fill="none" stroke="var(--mmc-yellow-700)" stroke-width="2.5" stroke-dasharray="6 5"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AUDIENCE ===================== -->
+<section class="audience" id="audience">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <div class="sec-eyebrow">Who we work with</div>
+      <h2 class="sec-title">D2C leads. B2B and education run the same system.</h2>
+      <p class="sec-lead">The growth engine doesn't change by audience — only what "winning" looks like does.</p>
+    </div>
+    <div class="aud__tabs" role="tablist" data-reveal>
+      <button class="aud__tab is-active" role="tab" data-tab="d2c" aria-selected="true">D2C brands</button>
+      <button class="aud__tab" role="tab" data-tab="b2b" aria-selected="false">B2B companies</button>
+      <button class="aud__tab" role="tab" data-tab="edu" aria-selected="false">Education</button>
+    </div>
+    <div class="aud__panels" data-reveal="scale">
+      <div class="aud__panel is-active" data-panel="d2c">
+        <div class="aud__panel-copy">
+          <div class="sec-eyebrow">Lead audience</div>
+          <h3>Where the revenue-compounding story lives</h3>
+          <p>Full-funnel media, retention and creative for direct-to-consumer brands — the work most of our named case studies (like DeoBar) come from.</p>
+          <ul class="aud__panel-list">
+            <li>Paid media read against contribution margin, not platform ROAS</li>
+            <li>Retention systems built to move D90 numbers, not just D7</li>
+            <li>Creative testing pipelines tied to actual conversion lift</li>
+          </ul>
+        </div>
+        <div class="aud__panel-visual">
+          <div class="aud__logo-row">
+            <img src="../assets/clients/bloom.png" alt="Bloom logo">
+            <img src="../assets/clients/mbb.png" alt="MBB logo">
+            <img src="../assets/clients/giraffe.png" alt="Giraffe logo">
+            <img src="../assets/clients/awwbaby.png" alt="AwwBaby logo">
+          </div>
+          <div class="aud__logo-cap">A few of the D2C brands we run media, retention and creative for.</div>
+        </div>
+      </div>
+      <div class="aud__panel" data-panel="b2b">
+        <div class="aud__panel-copy">
+          <div class="sec-eyebrow">Also serving</div>
+          <h3>Pipeline and reputation, not just impressions</h3>
+          <p>For B2B companies, the same system runs lead generation and online reputation management instead of a D2C storefront funnel.</p>
+          <ul class="aud__panel-list">
+            <li>Lead generation tied to sales-qualified pipeline, not form fills</li>
+            <li>Online reputation management across review and search surfaces</li>
+            <li>SEO and web development built for longer consideration cycles</li>
+          </ul>
+        </div>
+        <div class="aud__panel-visual">
+          <div class="aud__logo-row">
+            <img src="../assets/clients/gyproc.png" alt="Gyproc logo">
+            <img src="../assets/clients/jsw.png" alt="JSW logo">
+            <img src="../assets/clients/housing.png" alt="Housing.com logo">
+          </div>
+          <div class="aud__logo-cap">A few of the B2B brands running lead generation and search with us.</div>
+        </div>
+      </div>
+      <div class="aud__panel" data-panel="edu">
+        <div class="aud__panel-copy">
+          <div class="sec-eyebrow">Also serving</div>
+          <h3>Admissions funnels that behave like D2C funnels</h3>
+          <p>Educational institutes get the same performance-marketing and conversion discipline we bring to D2C, pointed at admissions and enrolment instead of checkout.</p>
+          <ul class="aud__panel-list">
+            <li>Paid media and lead generation for admissions cycles</li>
+            <li>Conversion rate optimisation on enquiry and application flows</li>
+            <li>Brand and content work for institutional trust, not just clicks</li>
+          </ul>
+        </div>
+        <div class="aud__panel-visual">
+          <div class="aud__logo-row">
+            <img src="../assets/clients/learningmate.png" alt="LearningMate logo">
+            <img src="../assets/clients/greenhermitage.png" alt="Green Hermitage logo">
+          </div>
+          <div class="aud__logo-cap">A few of the education brands we run admissions performance for.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final-cta" id="final-cta">
+  <div class="ambient-sun" aria-hidden="true">
+    <div class="ambient-sun__disc" style="top:-40%; right:auto; left:-10%;"></div>
+  </div>
+  <div class="shell final-cta__inner" data-reveal="scale">
+    <div class="sec-eyebrow">Ready when you are</div>
+    <h2>Get a free brand audit before you book anyone else.</h2>
+    <p>Twenty minutes, no deck. We'll look at your funnel, your retention and your creative pipeline and tell you exactly where the compounding is stuck.</p>
+    <div class="final-cta__ctas">
+      <button class="btn-primary" id="finalCtaCall" data-audit-cta>
+        <span>Book a free brand audit</span>
+        <span class="arrow" aria-hidden="true"></span>
+      </button>
+      <a class="btn-ghost" href="../unit-economics-calculator.html">Try the Unit Economics Calculator</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER (locked, verbatim) ===================== -->
+<footer id="footer" class="ft ink-ground"><div class="ft__container"><div class="ft__top"><a class="ft__brand" href="../index.html" aria-label="Monday Marketing Company"><img src="../assets/logo-white-yellow.png" alt="MMC · Monday Marketing Company" class="ft__brand-img" style="width: 158px; height: 127px;"><div class="ft__brand-tag">Design × Marketing × Technology × Content × AI</div></a><div class="ft__cta-stack"><a class="ft__cta" href="https://calendly.com/mmc-agency-ww/audit-onboarding-calls" target="_blank" rel="noreferrer">Book a call<span class="arrow"></span></a><button type="button" class="ft__cta-alt">Not ready for a call? Send a brief instead</button></div></div><div class="ft__cols"><div class="ft__col"><div class="ft__col-label">Company</div><ul><li><a href="../About.html">About MMC</a></li><li><a href="../Our Work.html">Our Work</a></li><li><a href="../Insights.html">Insights</a></li><li><a href="../Careers.html">Careers</a></li><li><a href="../Contact.html">Contact</a></li></ul></div><div class="ft__col"><div class="ft__col-label">What we do</div><ul><li><a href="../services.html">Services</a></li><li><a href="../performance-marketing.html">Performance marketing</a></li><li><a href="../lead-generation.html">Lead generation</a></li><li><a href="../retention-marketing.html">Retention marketing</a></li><li><a href="../seo.html">SEO</a></li><li><a href="../web-development.html">Web development</a></li></ul></div><div class="ft__col"><div class="ft__col-label">Industries and resources</div><ul><li><a href="../industries.html">Industries</a></li><li><a href="../d2c.html">D2C brands</a></li><li><a href="../b2b.html">B2B companies</a></li><li><a href="../education.html">Education</a></li><li><a href="../resources.html">Resources</a></li><li><a href="../guides.html">Guides</a></li></ul></div><div class="ft__col"><div class="ft__col-label">Free tools</div><ul><li><a href="../unit-economics-calculator.html">Unit Economics</a></li><li><a href="../growth-trajectory-calculator.html">Growth Trajectory</a></li><li><a href="../cac-runway-calculator.html">CAC Runway</a></li><li><a href="../funnel-roas-calculator.html">Funnel ROAS</a></li><li><a href="../breakeven-roas-calculator.html">Break-even ROAS</a></li><li><a href="../ltv-cac-calculator.html">LTV : CAC</a></li><li><a href="../d2c-marketing-glossary.html">D2C Marketing Glossary</a></li></ul></div></div><div class="ft__base"><div class="ft__base-l"><a href="tel:+917666309102">+91 766 630 9102</a><span class="ft__dot"></span><a href="../Contact.html">Thane · Mumbai · Maharashtra</a></div><div class="ft__base-r"><a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">Instagram</a><a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">LinkedIn</a><a href="../Privacy.html">Privacy</a><a href="../Terms.html">Terms</a><a href="#">Cookies</a></div></div><div class="ft__legal"><span>© 2026 Monday Marketing Company</span><span class="em-serif ft__tagline">Quietly outperforming, since 2019.</span></div></div></footer>
+<!-- /FOOTER -->
+
+<!-- ===================== NAV + MENU SCRIPT (locked, verbatim) ===================== -->
+<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+(function () {
+  "use strict";
+  if (!window.mmcBookCall) {
+    window.mmcBookCall = function (source, e) {
+      if (e && e.preventDefault) e.preventDefault();
+      console.log("[stub] mmcBookCall:", source);
+      window.open("https://calendly.com/mmc-agency-ww/audit-onboarding-calls", "_blank", "noreferrer");
+    };
+  }
+  if (!window.mmcOpenBrief) {
+    window.mmcOpenBrief = function (e) {
+      if (e && e.preventDefault) e.preventDefault();
+      console.log("[stub] mmcOpenBrief");
+    };
+  }
+  if (!window.__mmcOpenCookies) {
+    window.__mmcOpenCookies = function () { console.log("[stub] openCookies"); };
+  }
+
+  var nav = document.querySelector(".mmc-nav");
+  var menuBtn = document.querySelector(".mmc-menu-btn");
+  var overlay = document.querySelector(".sunmenu");
+  if (!nav || !menuBtn || !overlay) return;
+
+  var discEl = overlay.querySelector(".sunmenu__disc");
+  var paperEl = overlay.querySelector(".sunmenu__paper");
+  var contentEl = overlay.querySelector(".sunmenu__content");
+  var corona = overlay.querySelector(".sunmenu__corona");
+  var heat = overlay.querySelector(".sunmenu__heat");
+
+  var open = false;
+  var mounted = false;
+  var openTl = null, closeTl = null;
+
+  window.addEventListener("scroll", function () {
+    nav.classList.toggle("is-scrolled", window.scrollY > 24);
+  }, { passive: true });
+
+  var metaSpan = nav.querySelector(".mmc-nav__meta span:last-child");
+  function tick() {
+    if (!metaSpan) return;
+    var d = new Date();
+    var opts = { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Asia/Kolkata" };
+    var time = d.toLocaleTimeString("en-IN", opts) + " IST";
+    metaSpan.textContent = "Onboarding · Clients · Hires  · " + time;
+  }
+  tick();
+  setInterval(tick, 30000);
+
+  function buildOpenTl() {
+    var gsap = window.gsap;
+    if (!gsap) return null;
+    var links = contentEl.querySelectorAll(".sm-link");
+    var fades = contentEl.querySelectorAll(".sm-fade");
+    var tl = gsap.timeline({ paused: true });
+    tl
+      .set(overlay, { pointerEvents: "auto", visibility: "visible" }, 0)
+      .set([discEl, paperEl], { scale: 0, opacity: 1 }, 0)
+      .set([corona, heat], { opacity: 0 }, 0)
+      .set(links, { yPercent: -120 }, 0)
+      .set(fades, { opacity: 0, y: 14 }, 0)
+      .to(discEl, { scale: 1, duration: 0.95, ease: "expo.out" }, 0)
+      .to(paperEl, { scale: 1, duration: 0.95, ease: "expo.out" }, 0.2)
+      .to([corona, heat], { opacity: 1, duration: 0.5, ease: "power2.out" }, 0.85)
+      .to(links, { yPercent: 0, duration: 0.9, stagger: 0.055, ease: "expo.out" }, 0.9)
+      .to(fades, { opacity: 1, y: 0, duration: 0.65, stagger: 0.045, ease: "power3.out" }, 1.0);
+    return tl;
+  }
+
+  function buildCloseTl() {
+    var gsap = window.gsap;
+    if (!gsap) return null;
+    var links = contentEl.querySelectorAll(".sm-link");
+    var fades = contentEl.querySelectorAll(".sm-fade");
+    var tl = gsap.timeline({ paused: true });
+    tl
+      .to(fades, { opacity: 0, y: 10, duration: 0.3, stagger: 0.02, ease: "power2.in" }, 0)
+      .to(links, { yPercent: -120, duration: 0.5, stagger: 0.035, ease: "expo.in" }, 0.05)
+      .to([corona, heat], { opacity: 0, duration: 0.3, ease: "power2.in" }, 0.25)
+      .to(paperEl, { scale: 0, duration: 0.85, ease: "expo.in" }, 0.45)
+      .to(discEl, { scale: 0, duration: 0.85, ease: "expo.in" }, 0.65)
+      .set(overlay, { pointerEvents: "none", visibility: "hidden" });
+    return tl;
+  }
+
+  openTl = buildOpenTl();
+  closeTl = buildCloseTl();
+
+  function setOpen(next) {
+    open = next;
+    nav.classList.toggle("is-menu-open", open);
+    menuBtn.classList.toggle("is-open", open);
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    overlay.setAttribute("aria-hidden", open ? "false" : "true");
+
+    var gsap = window.gsap;
+    if (!openTl || !closeTl || !gsap) {
+      if (open) {
+        overlay.style.visibility = "visible";
+        overlay.style.pointerEvents = "auto";
+        overlay.style.opacity = "1";
+        document.body.style.overflow = "hidden";
+        mounted = true;
+      } else if (mounted) {
+        overlay.style.visibility = "hidden";
+        overlay.style.pointerEvents = "none";
+        document.body.style.overflow = "";
+      }
+      return;
+    }
+
+    if (open) {
+      var btnRect = menuBtn.getBoundingClientRect();
+      var cx = btnRect.left + btnRect.width / 2;
+      var cy = btnRect.top + btnRect.height / 2;
+      var farX = Math.max(cx, window.innerWidth - cx);
+      var farY = Math.max(cy, window.innerHeight - cy);
+      var radius = Math.ceil(Math.hypot(farX, farY)) + 40;
+      var size = radius * 2;
+      gsap.set([discEl, paperEl], { width: size, height: size, left: cx - radius, top: cy - radius });
+      if (closeTl.isActive()) closeTl.pause(0);
+      openTl.play(0);
+      document.body.style.overflow = "hidden";
+      mounted = true;
+    } else if (mounted) {
+      if (openTl.isActive()) openTl.pause();
+      closeTl.play(0);
+      document.body.style.overflow = "";
+    }
+  }
+
+  menuBtn.addEventListener("click", function () { setOpen(!open); });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && open) setOpen(false);
+  });
+})();
+</script>
+<!-- /NAV+MENU SCRIPT -->
+
+<!-- ===================== PRELOADER (Navy Dial, v6) ===================== -->
+<script src="../assets/preloaders/navy-dial.js"></script>
+
+<!-- ===================== HOMEPAGE BODY MOTION (this build's own JS) ===================== -->
+<script>
+(function () {
+  "use strict";
+
+  var reduceMQ = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+  var reduceMotion = !!(reduceMQ && reduceMQ.matches);
+  if (reduceMotion) document.documentElement.classList.add("no-ambient");
+  if (reduceMQ && reduceMQ.addEventListener) {
+    reduceMQ.addEventListener("change", function (e) {
+      reduceMotion = e.matches;
+      document.documentElement.classList.toggle("no-ambient", reduceMotion);
+    });
+  }
+
+  /* ---- Book-a-call CTAs: sensible stub wired to the real Calendly flow ---- */
+  document.querySelectorAll("[data-audit-cta]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      if (window.mmcBookCall) window.mmcBookCall("homepage-v2-kinetic", e);
+    });
+  });
+
+  /* ---- Hero headline assembly + ROAS card ---- */
+  var hero = document.getElementById("hero");
+  function assembleHero() {
+    if (!hero) return;
+    hero.classList.add("is-assembled");
+    animateHeroMetric();
+  }
+  if (reduceMotion) {
+    assembleHero();
+  } else {
+    // Play right after the preloader beat completes, or on a safety timeout
+    // if the preloader is skipped/absent, so the hero never sits blank.
+    var assembled = false;
+    function once() { if (assembled) return; assembled = true; assembleHero(); }
+    if (window.MMCPreloader) {
+      window.MMCPreloader.onBeat = function (name) { if (name === "done" || name === "lift") once(); };
+    }
+    document.addEventListener("mmc:preloader-done", once);
+    setTimeout(once, 2600);
+  }
+
+  function animateHeroMetric() {
+    var el = document.getElementById("heroMetric");
+    if (!el) return;
+    var from = 3.1, to = 11.8, dur = 1600, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = from + (to - from) * eased;
+      el.textContent = val.toFixed(1) + "×";
+      if (p < 1) requestAnimationFrame(step);
+    }
+    if (reduceMotion) { el.textContent = to.toFixed(1) + "×"; return; }
+    requestAnimationFrame(step);
+  }
+
+  /* ---- Generic scroll-reveal engine ---- */
+  var revealTargets = document.querySelectorAll("[data-reveal]");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealTargets.forEach(function (el) { el.classList.add("is-in"); });
+  } else {
+    // Stagger children inside [data-stagger] containers
+    document.querySelectorAll("[data-stagger]").forEach(function (container) {
+      Array.prototype.forEach.call(container.children, function (child, i) {
+        child.style.setProperty("--d", (i * 90) + "ms");
+      });
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
+    revealTargets.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---- Count-up stats ---- */
+  var counters = document.querySelectorAll("[data-count-to]");
+  function formatCount(val, decimals) {
+    return decimals ? val.toFixed(decimals) : Math.round(val).toString();
+  }
+  function runCounter(el) {
+    var to = parseFloat(el.getAttribute("data-count-to"));
+    var decimals = parseInt(el.getAttribute("data-decimals") || "0", 10);
+    var prefix = el.getAttribute("data-prefix") || "";
+    var suffix = el.getAttribute("data-suffix") || "";
+    if (reduceMotion) {
+      el.textContent = prefix + formatCount(to, decimals) + suffix;
+      return;
+    }
+    var dur = 1400, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + formatCount(to * eased, decimals) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    counters.forEach(runCounter);
+  } else {
+    var counterIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          runCounter(entry.target);
+          counterIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { counterIo.observe(el); });
+  }
+
+  /* ---- Case study section: trigger the bar/line draw-in class ---- */
+  var caseSection = document.getElementById("case");
+  if (caseSection) {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      caseSection.classList.add("is-in");
+    } else {
+      var caseIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            caseSection.classList.add("is-in");
+            caseIo.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.35 });
+      caseIo.observe(caseSection);
+    }
+  }
+
+  /* ---- Service cards: animate open on click/keyboard ---- */
+  document.querySelectorAll(".svc-card").forEach(function (card) {
+    function toggle() {
+      var isOpen = card.classList.toggle("is-open");
+      card.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+    card.addEventListener("click", toggle);
+    card.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+    });
+  });
+
+  /* ---- Audience tabs ---- */
+  var tabs = document.querySelectorAll(".aud__tab");
+  var panels = document.querySelectorAll(".aud__panel");
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var key = tab.getAttribute("data-tab");
+      tabs.forEach(function (t) {
+        var active = t === tab;
+        t.classList.toggle("is-active", active);
+        t.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      panels.forEach(function (p) {
+        p.classList.toggle("is-active", p.getAttribute("data-panel") === key);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

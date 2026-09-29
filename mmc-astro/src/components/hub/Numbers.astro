@@ -1,0 +1,24 @@
+---
+import Arrow from "./Arrow.astro";
+import { href } from "../../lib/links";
+const N = Astro.props.N;
+---
+{N && (
+<section class="n-band n-band--ink pm-band" id="numbers">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">{N.eyebrow}</span>
+      <h2 class="n-h2">{N.h2a} <span class="n-serif">{N.h2b}</span></h2>
+      <p>{N.note}</p>
+    </div>
+    <div class="dcn n-rise d1">
+      {N.cards.map((x: any) => x.href ? (
+        <a class="dcn__card" href={x.href}><b>{x.n}</b><span>{x.d}</span><i>Open the calculator<Arrow /></i></a>
+      ) : (
+        <div class="dcn__card dcn__card--static"><b>{x.n}</b><span>{x.d}</span></div>
+      ))}
+    </div>
+    {N.link && <p class="hbn__link n-rise d2"><a class="pm-textlink pm-textlink--quiet" href={N.link.href}>{N.link.text}<Arrow /></a></p>}
+  </div>
+</section>
+)}

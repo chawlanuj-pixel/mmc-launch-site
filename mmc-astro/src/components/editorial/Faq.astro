@@ -1,0 +1,20 @@
+---
+// Shared FAQ accordion for the Insights index and guide article pages. Own markup/CSS (.ed-faq*),
+// distinct from the service/industry/guide-hub template's Faq.astro (.pm-faq).
+interface Props { kicker?: string; title: string; faq: { q: string; a: string }[] }
+const { kicker = "Questions", title, faq } = Astro.props;
+---
+<section class="ed-band editorial" id="faq">
+  <div class="ed-wrap ed-faq">
+    <span class="ed-kicker">{kicker}</span>
+    <h2 class="ed-faq__h2 ed-rise">{title}</h2>
+    <div class="ed-faq__list ed-rise">
+      {faq.map((f, k) => (
+        <details open={k === 0}>
+          <summary>{f.q}</summary>
+          <div class="ed-faq__a" set:html={f.a} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

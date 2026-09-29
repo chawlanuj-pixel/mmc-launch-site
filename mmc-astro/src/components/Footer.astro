@@ -1,0 +1,106 @@
+---
+// Footer: static. Ported from Footer.jsx. Link lists are verbatim, urls run through href().
+import { href } from "../lib/links";
+const ctaLabel = "Book a call";
+const ctaHref = "https://calendly.com/mmc-agency-ww/audit-onboarding-calls";
+const cols = [
+  {
+    title: "Company",
+    items: [
+    { name: "About MMC", url: "About.html" },
+    { name: "Our Work", url: "Our Work.html" },
+    { name: "Insights", url: "Insights.html" },
+    { name: "Careers", url: "Careers.html" },
+    { name: "Contact", url: "Contact.html" }]
+  },
+  {
+    title: "What we do",
+    items: [
+    { name: "Services", url: "services.html" },
+    { name: "Performance marketing", url: "performance-marketing.html" },
+    { name: "Lead generation", url: "lead-generation.html" },
+    { name: "Retention marketing", url: "retention-marketing.html" },
+    { name: "SEO", url: "seo.html" },
+    { name: "Web development", url: "web-development.html" }]
+  },
+  {
+    title: "Industries and resources",
+    items: [
+    { name: "Industries", url: "industries.html" },
+    { name: "D2C brands", url: "d2c.html" },
+    { name: "B2B companies", url: "b2b.html" },
+    { name: "Education", url: "education.html" },
+    { name: "Resources", url: "resources.html" },
+    { name: "Guides", url: "guides.html" }]
+  },
+  {
+    title: "Free tools",
+    items: [
+    { name: "Unit Economics", url: "unit-economics-calculator.html" },
+    { name: "Growth Trajectory", url: "growth-trajectory-calculator.html" },
+    { name: "CAC Runway", url: "cac-runway-calculator.html" },
+    { name: "Funnel ROAS", url: "funnel-roas-calculator.html" },
+    { name: "Break-even ROAS", url: "breakeven-roas-calculator.html" },
+    { name: "LTV : CAC", url: "ltv-cac-calculator.html" },
+    { name: "D2C Marketing Glossary", url: "d2c-marketing-glossary.html" }]
+  }];
+---
+<footer id="footer" class="ft ink-ground">
+  <div class="ft__container">
+    <div class="ft__top">
+      <a class="ft__brand" href="/" aria-label="Monday Marketing Company">
+        <img src="/assets/logo-white-yellow.png" alt="MMC · Monday Marketing Company" class="ft__brand-img" style="width:158px;height:127px" />
+        <div class="ft__brand-tag">Design × Marketing × Technology × Content × AI</div>
+      </a>
+      <div class="ft__cta-stack">
+        <a class="ft__cta" href={ctaHref} target="_blank" rel="noreferrer" data-ft-book>
+          {ctaLabel}
+          <span class="arrow"></span>
+        </a>
+        <button type="button" class="ft__cta-alt" data-ft-brief>Not ready for a call? Send a brief instead</button>
+      </div>
+    </div>
+
+    <div class="ft__cols">
+      {cols.map((c) => (
+        <div class="ft__col">
+          <div class="ft__col-label">{c.title}</div>
+          <ul>
+            {c.items.map((it) => <li><a href={href(it.url)}>{it.name}</a></li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="ft__base">
+      <div class="ft__base-l">
+        <a href="tel:+917666309102">+91 766 630 9102</a>
+        <span class="ft__dot"></span>
+        <a href={href("Contact.html")}>Thane · Mumbai · Maharashtra</a>
+      </div>
+      <div class="ft__base-r">
+        <a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href={href("Privacy.html")}>Privacy</a>
+        <a href={href("Terms.html")}>Terms</a>
+        <a href="#" data-ft-cookies>Cookies</a>
+      </div>
+    </div>
+
+    <div class="ft__legal">
+      <span>© 2026 Monday Marketing Company</span>
+      <span class="em-serif ft__tagline">Quietly outperforming, since 2019.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Wire the footer buttons to the global helpers from public/assets/mmc-forms.js and the cookie banner.
+  const w = window as any;
+  document.querySelectorAll("[data-ft-book]").forEach((el) =>
+    el.addEventListener("click", (e) => { if (w.mmcBookCall) w.mmcBookCall("footer", e); }));
+  document.querySelectorAll("[data-ft-brief]").forEach((el) =>
+    el.addEventListener("click", (e) => { if (w.mmcOpenBrief) w.mmcOpenBrief(e); }));
+  document.querySelectorAll("[data-ft-cookies]").forEach((el) =>
+    el.addEventListener("click", (e) => { e.preventDefault(); if (w.__mmcOpenCookies) w.__mmcOpenCookies(); }));
+</script>

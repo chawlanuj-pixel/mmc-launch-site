@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MMC Preloader w3 Dawn (white)</title>
+<link rel="stylesheet" href="../../design-system/colors_and_type.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F1F5FE;font-family:"Nunito","Helvetica Neue",Arial,sans-serif;color:#0F1E5E;overflow-x:hidden}
+/* page sits fully painted at rest under the sting: no entrance animation runs behind it */
+.page{padding:0 6vw}
+nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;font-weight:800;font-family:"Raleway","Nunito",sans-serif}
+nav span{display:flex;gap:28px;font-size:15px;color:#2E3849;font-family:"Nunito",sans-serif;font-weight:700}
+.hero{min-height:calc(70vh - 78px);padding:6vh 0 4vh}
+h1{font-family:"Raleway","Nunito",sans-serif;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:1;letter-spacing:-.03em;margin:0 0 22px;color:#0F1E5E}
+h1 em{font-style:normal;color:#1D4ED8}
+p.lead{font-size:clamp(17px,1.6vw,24px);max-width:36ch;color:#2E3849;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+button{background:#1D4ED8;color:#fff;border:0;border-radius:999px;padding:15px 28px;font:700 16px "Nunito",sans-serif;cursor:pointer}
+button.alt{background:#FFC528;color:#0F1E5E}
+.band{background:#1D4ED8;color:#fff;height:60vh;padding:0 6vw;display:flex;align-items:center}
+.band h2{color:#fff;font:800 clamp(32px,5vw,64px)/1.05 "Raleway","Nunito",sans-serif;margin:0;max-width:16ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;padding:8vh 6vw 80px}
+.card{background:#fff;border-radius:22px;padding:28px;min-height:190px;box-shadow:0 10px 30px rgba(15,30,94,.07)}
+.card b{display:block;font:800 22px "Raleway",sans-serif;margin-bottom:8px}
+.card i{display:block;width:44px;height:44px;border-radius:50%;background:#FFC528;margin-bottom:22px}
+@media(max-width:600px){nav span{display:none}}
+</style></head>
+<body>
+<div class="page">
+  <nav><b>Monday Marketing Company</b><span><a>Services</a><a>Work</a><a>Insights</a><a>Contact</a></span></nav>
+  <section class="hero">
+    <h1>Growth that<br>was already <em>there.</em></h1>
+    <p class="lead">Performance marketing for D2C, B2B and education brands. We measure, then we light it up.</p>
+    <div class="btns"><button onclick="MMCPreloader.play(true)">Replay preloader</button><button class="alt">Book an audit</button></div>
+  </section>
+</div>
+<section class="band"><h2>Brands that grow on purpose.</h2></section>
+<section class="cards">
+  <div class="card"><i></i><b>D2C growth</b>Paid social, search and creative built around your unit economics.</div>
+  <div class="card"><i></i><b>B2B pipeline</b>Demand that shows up in the CRM, not just the dashboard.</div>
+  <div class="card"><i></i><b>Education</b>Admissions funnels that fill cohorts on schedule.</div>
+</section>
+<script src="mmc-preloader.js"></script>
+</body></html>

@@ -1,0 +1,68 @@
+---
+import Img from "./Img.astro";
+const L = Astro.props.L;
+const ICONS = [
+  '<rect x="9" y="7" width="30" height="34" rx="5" fill="none" stroke="currentColor" stroke-width="2.4" /><path d="M16 17 H32 M16 24 H32" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /><rect x="16" y="30" width="16" height="6" rx="3" fill="currentColor" />',
+  '<rect x="6" y="9" width="36" height="30" rx="5" fill="none" stroke="currentColor" stroke-width="2.4" /><path d="M6 19 H42 M6 29 H42 M20 19 V39" stroke="currentColor" stroke-width="2.4" /><path d="M25 34 L28.5 37.2 L35 31" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />',
+  '<circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="4 4" /><path d="M14 21 H31 M27 16.5 L32 21 L27 25.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><path d="M34 29 H17 M21 24.5 L16 29 L21 33.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />',
+];
+const BAD = [0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0];
+const GOOD = [1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1];
+---
+{L && (
+<section class="n-band n-band--ink pm-band cap" id="quality">
+  <div class="n-wrap">
+    <div class="cap__head n-rise">
+      <div class="pm-head">
+        <span class="n-eyebrow">{L.eyebrow}</span>
+        <h2 class="n-h2">{L.h2a} <span class="n-serif">{L.h2b}</span></h2>
+        <p>{L.lede}</p>
+      </div>
+      <figure class="cap__shot">
+        <Img name={L.img} ratio="3 / 2" />
+        <figcaption>{L.imgCaption}</figcaption>
+      </figure>
+    </div>
+    <ol class="cap__flow n-rise d1">
+      {L.steps.map((s: any, k: number) => (
+        <>
+          <li class="cap__node">
+            <span class="cap__step">Step {k + 1}</span>
+            <span class={"cap__icon" + (k === 3 ? " is-meta" : "")}>
+              {k === 3 ? <img src="/assets/platforms/meta.svg" alt="" width="34" height="34" loading="lazy" decoding="async" /> : <svg viewBox="0 0 48 48" aria-hidden="true" set:html={ICONS[k]} />}
+            </span>
+            <b>{s.k}</b>
+            <span class="cap__d">{s.d}</span>
+            <em class="cap__chip">{s.chip}</em>
+          </li>
+          {k < L.steps.length - 1 && <li class="cap__conn" aria-hidden="true"><i></i></li>}
+        </>
+      ))}
+    </ol>
+    <div class="cap__return n-rise d2" aria-hidden="true">
+      <svg viewBox="0 0 1000 70" preserveAspectRatio="none">
+        <defs><marker id="cap-head" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" /></marker></defs>
+        <path class="cap__loopline" d="M 880 2 C 880 66, 120 66, 120 8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="7 7" vector-effect="non-scaling-stroke" marker-end="url(#cap-head)" />
+      </svg>
+      <span>{L.returnLabel}</span>
+    </div>
+    <div class="cap__vs n-rise d2">
+      {[["bad", "Without the CRM feedback", L.without, BAD], ["good", "With CRM and CAPI", L.with, GOOD]].map(([kind, tag, c, pat]: any) => (
+        <article class={"cap__panel cap__panel--" + kind}>
+          <span class="cap__tag">
+            {kind === "bad"
+              ? <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" /><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" stroke="#0B1020" stroke-width="2" stroke-linecap="round" /></svg>
+              : <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" /><path d="M5.5 10.5 L8.7 13.6 L14.5 7" fill="none" stroke="#0B1020" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>}
+            {tag}
+          </span>
+          <h3>{c.t}</h3>
+          <div class={"cap__dots cap__dots--" + kind} aria-hidden="true">{pat.map((g: number) => <i class={g ? "is-fit" : ""}></i>)}</div>
+          <p class="cap__key"><span><i class="is-fit"></i>Leads sales would accept</span><span><i class="is-poor"></i>Poor fit</span></p>
+          <p>{c.d}</p>
+        </article>
+      ))}
+    </div>
+    <p class="cap__note"><span class="cap__ill">Illustration of the idea, not a client result.</span></p>
+  </div>
+</section>
+)}

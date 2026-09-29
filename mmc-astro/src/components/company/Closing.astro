@@ -1,0 +1,28 @@
+---
+// Closing card in the cta2 style, with its own image, chip and buttons (the shared Cta is audit-specific).
+import { href } from "../../lib/links";
+interface Props { eyebrow: string; h2a: string; h2b: string; lede: string; image: string; chip: string; label: string; book?: string; brief?: boolean; secondary?: { href: string; label: string } }
+const { eyebrow, h2a, h2b, lede, image, chip, label, book, brief = false, secondary } = Astro.props;
+const arr = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg>';
+---
+<section class="n-band n-band--paper cta2" id="talk">
+  <div class="n-wrap">
+    <div class="cta2__card n-rise">
+      <figure class="cta2__fig">
+        <img src={"/assets/" + image} alt="" width="1200" height="800" loading="lazy" decoding="async" />
+        <figcaption class="cta2__chip"><i aria-hidden="true"></i>{chip}</figcaption>
+      </figure>
+      <div class="cta2__body">
+        <span class="cta2__eyebrow">{eyebrow}</span>
+        <h2 class="cta2__h">{h2a} <em>{h2b}</em></h2>
+        <p class="cta2__lede">{lede}</p>
+        <div class="cta2__act">
+          {brief
+            ? <button type="button" class="cta2__btn" onclick="window.mmcOpenBrief(event)"><Fragment set:html={label + arr} /></button>
+            : <button type="button" class="cta2__btn" onclick={`window.mmcBookCall('${book}', event)`}><Fragment set:html={label + arr} /></button>}
+          {secondary && <a class="cta2__link" href={href(secondary.href)}><Fragment set:html={secondary.label + arr} /></a>}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

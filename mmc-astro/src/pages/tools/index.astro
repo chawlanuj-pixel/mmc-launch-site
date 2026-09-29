@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Img from "../../components/hub/Img.astro";
+import Answer from "../../components/hub/Answer.astro";
+import Beyond from "../../components/hub/Beyond.astro";
+import Faq from "../../components/hub/Faq.astro";
+import "../../styles/hub-extra.css";
+import "../../styles/tools-new.css";
+import { href, fixHtml } from "../../lib/links";
+
+const SITE = "https://www.mondaymarketing.company";
+const title = "Free D2C Calculators: ROAS, CAC, LTV and Unit Economics | MMC";
+const description = "Six free calculators and a plain-English glossary for D2C marketing: break-even ROAS, funnel ROAS, unit economics, CAC runway, growth trajectory and LTV:CAC.";
+
+const T = {
+  unit: { name: "Unit Economics Calculator", href: "/tools/unit-economics/", img: "res/unit.jpg", tag: "Unit economics", bad: "Looking at revenue per order and not at what is left after COGS, fulfilment, RTO and CAC.", use: "you want to know whether one order really contributes, and the volume you need to break even." },
+  roas: { name: "Break-even ROAS Calculator", href: "/tools/breakeven-roas/", img: "res/roas.jpg", tag: "Break-even ROAS", bad: "Chasing a ROAS number you heard somewhere, instead of the one your own cost sheet gives.", use: "you are setting or judging a ROAS target and want the exact break-even, and the one that hits your target margin." },
+  ltv: { name: "LTV : CAC Calculator", href: "/tools/ltv-cac/", img: "res/ltv.jpg", tag: "LTV : CAC", bad: "Judging a customer by the first order alone.", use: "you plan to keep customers and want to see the month your acquisition cost is paid back." },
+  funnel: { name: "Funnel ROAS Calculator", href: "/tools/funnel-roas/", img: "res/funnel.jpg", tag: "Funnel ROAS", bad: "Raising spend to fix efficiency, when spend buys volume and not efficiency.", use: "ROAS is low and you want to see which step between an impression and a paid order is leaking." },
+  runway: { name: "CAC Runway Calculator", href: "/tools/cac-runway/", img: "res/runway.jpg", tag: "CAC runway", bad: "Expecting a new brand to hit break-even CAC on day one.", use: "you are launching or relaunching and need to know how long it takes to turn, and how much cash it burns." },
+  growth: { name: "Growth Trajectory Calculator", href: "/tools/growth-trajectory/", img: "contact/growth.jpg", tag: "Growth trajectory", bad: "Holding a year-one month-on-month growth rate for five years.", use: "you want to see where today's run rate actually gets you." },
+  gloss: { name: "D2C Marketing Glossary", href: "/glossary/", img: "res/glossary.jpg", tag: "Glossary", bad: "Nodding along to ROAS, RTO or contribution margin without being sure what they mean.", use: "a term in a calculator, a report or an ad account is unclear." },
+};
+const groups = [
+  { q: ["Can I afford to pay for", "a customer?"], tag: "Cost and profit", keys: ["unit", "roas", "ltv"] },
+  { q: ["Where does my ad funnel", "leak?"], tag: "Efficiency", keys: ["funnel"] },
+  { q: ["How long until it works,", "and how far does it go?"], tag: "Time and growth", keys: ["runway", "growth"] },
+  { q: ["What does that term", "mean?"], tag: "Plain English", keys: ["gloss"] },
+];
+let counter = 0;
+
+const tiles = [
+  { img: "res/roas.jpg", label: "ROAS", note: "Break-even and funnel" },
+  { img: "res/unit.jpg", label: "Unit economics", note: "What one order leaves" },
+  { img: "res/ltv.jpg", label: "LTV : CAC", note: "When a customer pays back" },
+  { img: "res/glossary.jpg", label: "Glossary", note: "Terms in plain English" },
+];
+
+const answer = {
+  label: "In short",
+  lead: "MMC's free tools are six calculators and a glossary that help a D2C brand work out what a customer can cost, where the funnel leaks, and how long profit takes.",
+  hl: "what a customer can cost",
+  who: "There is no email wall and no sign-up. Put your numbers in and take the answer with you.",
+  points: [
+    { icon: "coin", title: "Cost and profit", text: "Unit economics, break-even ROAS and LTV:CAC." },
+    { icon: "chart", title: "Efficiency", text: "Funnel ROAS shows which step loses the most people." },
+    { icon: "gauge", title: "Time and growth", text: "CAC runway and growth trajectory show how long and how far." },
+  ],
+  image: "res/roas.jpg",
+  chip: "Your numbers, on screen",
+};
+
+const beyond = { eyebrow: "Guides", h2a: "Want the reasoning", h2b: "behind the numbers?", cards: [
+  { n: "Contribution margin and break-even ROAS", d: "How to work out the ROAS your business needs before it makes money.", img: "guides/cost.jpg", href: href("guide-contribution-margin-roas.html"), link: "Read the guide" },
+  { n: "Why ad dashboards over-count", d: "Attribution overlap between platforms, and how to read your real result.", img: "guides/overlap.jpg", href: href("guide-attribution-overlap.html"), link: "Read the guide" },
+  { n: "How to test creative", d: "A simple way to test ads so the winner is not a coincidence.", img: "guides/test.jpg", href: href("guide-creative-testing.html"), link: "Read the guide" },
+] };
+
+const faq = [
+  { q: "Are the tools free?", a: "Yes. There is no email wall and no gated download. You put your numbers in and see the answer." },
+  { q: "Which calculator should I start with?", a: "Start with <a href=\"/tools/unit-economics/\">unit economics</a>. If one order does not contribute, nothing downstream matters. Then use break-even ROAS for the efficiency you need and LTV:CAC for how patient you can be." },
+  { q: "Is the result a verdict on my brand?", a: "No. A number shows the shape of the problem and the order worth fixing it in. It does not judge your brand." },
+  { q: "Can MMC run these numbers with me?", a: "Yes. <a href=\"/contact/\">Book a strategy call</a> and bring the question that is stuck." },
+].map((f) => ({ q: f.q, a: fixHtml(f.a) }));
+const plain = (s: string) => s.replace(/<[^>]+>/g, "");
+const list = Object.values(T).filter((t) => t.href !== "/glossary/");
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + "/tools/#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" }, { "@type": "ListItem", position: 2, name: "Free tools", item: SITE + "/tools/" } ] },
+  { "@context": "https://schema.org", "@type": "CollectionPage", "@id": SITE + "/tools/#webpage", url: SITE + "/tools/", name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + "/tools/#breadcrumb" }, publisher: { "@id": SITE + "/#organization" }, inLanguage: "en",
+    mainEntity: { "@type": "ItemList", itemListElement: Object.values(T).map((t, i) => ({ "@type": "ListItem", position: i + 1, name: t.name, url: SITE + t.href })) } },
+  { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/tools/#faq", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: plain(f.a) } })) },
+];
+---
+<BaseLayout title={title} description={description} path="/tools/" ogTitle="Free calculators for D2C marketing numbers" ogDescription="Break-even ROAS, unit economics, LTV:CAC, CAC runway and more. Free, no email wall." ogAlt="Monday Marketing Company: free D2C calculators." jsonld={jsonld}>
+  <Shell>
+    <main class="app-main n-app">
+      <section class="page-hero pm-hero" id="top" data-wm="Tools">
+        <span class="page-hero__wm" aria-hidden="true">Tools</span>
+        <div class="container pm-hero__inner">
+          <div class="pmh__grid">
+            <div class="pmh__l">
+              <div class="eyebrow" data-enter><span>● Free tools</span></div>
+              <h1 class="pmh__h">
+                <span class="clip-reveal d1" data-enter><span>Free calculators to</span></span>
+                <span class="clip-reveal d2" data-enter><span>check your <span class="em-serif">numbers</span></span></span>
+                <span class="clip-reveal d3" data-enter><span>before you spend.</span></span>
+              </h1>
+              <p class="reveal d4 pmh__sub" data-enter>Six calculators and a plain-English glossary for D2C marketing. No email wall, no gated PDF: put your numbers in and take the answer with you.</p>
+              <div class="reveal d5 pmh__actions" data-enter>
+                <a class="btn btn--primary glow-btn" href="#tools"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Pick a calculator<span class="arrow"></span></span></a>
+                <a class="btn btn--link" href="/glossary/">Open the glossary<span class="arrow"></span></a>
+              </div>
+            </div>
+            <div class="pmh__r" data-enter>
+              <div class="pmh__mosaic">
+                {tiles.map((t, k) => (
+                  <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+                    <Img name={t.img} ratio="1 / 1.05" class="pmh__img" eager={k < 2} />
+                    <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Answer {...answer} />
+
+      <section class="n-band n-band--white pm-band" id="tools">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">The tools</span><h2 class="n-h2">Start from the decision, <span class="n-serif">not the tool.</span></h2><p class="n-lede">Each calculator is grouped by the question it helps you answer.</p></div>
+          {groups.map((g) => (
+            <div class="tx-group">
+              <div class="tx-group__head n-rise"><h3 class="tx-group__q">{g.q[0]} <em>{g.q[1]}</em></h3><span class="tx-group__tag">{g.tag}</span></div>
+              <div>
+                {g.keys.map((k) => { const t = (T as any)[k]; counter++; return (
+                  <article class="tx-tool n-rise">
+                    <figure class="tx-tool__fig">
+                      <Img name={t.img} ratio="3 / 2" class="tx-tool__img" />
+                      <span class="tx-tool__n">{String(counter).padStart(2, "0")} · {t.tag}</span>
+                    </figure>
+                    <div class="tx-tool__body">
+                      <h4 class="tx-tool__h">{t.name}</h4>
+                      <div class="tx-bad"><span class="tx-tag">What you may be doing instead</span><p>{t.bad}</p></div>
+                      <div class="tx-good"><span class="tx-tag">Use this when</span><p>{t.use.charAt(0).toUpperCase() + t.use.slice(1)}</p><a class="tx-go" href={t.href}>{k === "gloss" ? "Open the glossary" : "Open the calculator"}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a></div>
+                    </div>
+                  </article>
+                ); })}
+              </div>
+            </div>
+          ))}
+          <p class="tx-note">Screens on this page are illustrative recreations, not real results.</p>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="read">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">Reading the results</span><h2 class="n-h2">A number is not <span class="n-serif">a verdict.</span></h2><p class="n-lede">Nothing here judges your brand. It shows the shape of the problem and the order worth fixing it in.</p></div>
+          <div class="tx-read n-rise d1">
+            <article class="tx-read__c"><img src="/assets/guides/review.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><h3>Use your own numbers</h3><p>Start from your cost sheet and your ad account, not from a figure you heard elsewhere. Your break-even is specific to you.</p></article>
+            <article class="tx-read__c"><img src="/assets/guides/mer.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><h3>Change one input at a time</h3><p>Move one number, see what changes, then move the next. That shows which lever matters most.</p></article>
+            <article class="tx-read__c"><img src="/assets/guides/returns.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><h3>Count returns and fees</h3><p>RTO, shipping and gateway fees quietly reduce what an order leaves behind. Put them in before you trust a result.</p></article>
+          </div>
+          <div class="tx-order n-rise d2">
+            <h3>Which order to run them in</h3>
+            <p>Start with unit economics: if one order does not contribute, nothing downstream matters. Funnel ROAS then shows where efficiency is lost, break-even ROAS shows the efficiency you need, and LTV:CAC shows how patient you can afford to be. CAC runway answers how long a new brand burns before it turns, and growth trajectory projects the margin forward.</p>
+          </div>
+        </div>
+      </section>
+
+      <Beyond Y={beyond} />
+      <Faq title={["What people ask about", "the tools."]} faq={faq} />
+
+      <section class="n-band n-band--paper cta2" id="talk">
+        <div class="n-wrap">
+          <div class="cta2__card n-rise">
+            <figure class="cta2__fig"><img src="/assets/au/audit-call.jpg" alt="" width="1024" height="688" loading="lazy" decoding="async" /><figcaption class="cta2__chip"><i aria-hidden="true"></i>Your numbers, on screen</figcaption></figure>
+            <div class="cta2__body">
+              <span class="cta2__eyebrow">Skip the arithmetic</span>
+              <h2 class="cta2__h">Run the numbers <em>with us.</em></h2>
+              <p class="cta2__lede">On a call, with a senior strategist. Bring your cost sheet and the question that is stuck.</p>
+              <div class="cta2__act">
+                <button type="button" class="cta2__btn" data-book="tools-final">Book a strategy call<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></button>
+                <a class="cta2__link" href={href("guides.html")}>Browse the guides<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </Shell>
+  <style is:global>
+    [data-enter] { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .eyebrow[data-enter], .reveal[data-enter], .pmh__r[data-enter] { animation: heroIn .7s cubic-bezier(.2,.7,.2,1) both; }
+    .clip-reveal[data-enter] > span { transform: none !important; transition: none !important; animation: heroClip .8s cubic-bezier(.2,.7,.2,1) both; }
+    .clip-reveal.d2[data-enter] > span { animation-delay: .15s; } .clip-reveal.d3[data-enter] > span { animation-delay: .25s; }
+    @keyframes heroIn { from { opacity: .01; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes heroClip { from { transform: translateY(105%); } to { transform: none; } }
+    @media (prefers-reduced-motion: reduce) { [data-enter], .clip-reveal[data-enter] > span { animation: none !important; } }
+  </style>
+  <script>import "../../scripts/hub.ts";</script>
+</BaseLayout>

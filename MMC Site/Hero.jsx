@@ -142,7 +142,7 @@ function Hero({ heroVariant, onAudit }) {
               <text fontSize="8.5" fontWeight="700" letterSpacing="2.6" fill="var(--mmc-blue)" fontFamily="Raleway, sans-serif">
                 <textPath href="#circ">FULL-SERVICE · PERFORMANCE · RETENTION · CREATIVE · </textPath>
               </text>
-              <text x="60" y="66" textAnchor="middle" fontFamily="Cormorant Garamond, serif"
+              <text x="60" y="66" textAnchor="middle" fontFamily="Raleway, sans-serif"
                 fontStyle="italic" fontSize="22" fill="var(--mmc-blue)">m.</text>
             </svg>
           </div>
@@ -402,7 +402,7 @@ function DashboardPreview({ enter }) {
           <span className="dash__brand-mark">M</span>
           <div>
             <div className="dash__brand-name">MMC · Client book</div>
-            <div className="dash__brand-meta">25 brands · last 90d</div>
+            <div className="dash__brand-meta">All brands · last 90d</div>
           </div>
         </div>
         <div className="dash__live">

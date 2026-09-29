@@ -54,12 +54,12 @@ function CaseStudies() {
               by <span className="em-serif" style={{color:"var(--mmc-yellow)"}}>brand</span>.
             </h2>
             <p className="cs__lead">
-              Three of the twenty-five. Scroll to deal them out.
+              A few of our brands. Scroll to deal them out.
               Each card stacks on the last, the way a client book builds.
             </p>
           </div>
           <a className="cs__head-link" href="Our Work.html">
-            <span>All 25 brands</span>
+            <span>All brands</span>
             <span className="arrow"></span>
           </a>
         </header>

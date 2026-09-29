@@ -1,0 +1,77 @@
+---
+import { CLIENTS, WORK_ART, csFit, tilt } from "../../lib/hub";
+import book from "../../data/work-clients.json";
+import caseBook from "../../data/case-studies.json";
+
+const SVC: Record<string, string> = (book as any)._services;
+const byName: Record<string, string> = Object.fromEntries(Object.entries(CLIENTS).map(([id, c]) => [c.name, id]));
+const CASE_IDS = new Set(((caseBook as any).items as any[]).map((c) => c.id));
+const EDU = ["MVJ College of Engineering", "LearningMate"];
+function group(c: any): string {
+  if (EDU.includes(c.name)) return "edu";
+  if (c.type === "D2C") return "d2c";
+  if (c.type === "B2B") return "b2b";
+  return "consumer";
+}
+const order = ["d2c", "b2b", "edu", "consumer"];
+const items = (book as any).clients
+  .map((c: any) => ({ id: byName[c.name], name: c.name, g: group(c), svc: (c.services || []).map((s: string) => SVC[s]).filter(Boolean) }))
+  .filter((c: any) => c.id)
+  .sort((a: any, b: any) => order.indexOf(a.g) - order.indexOf(b.g));
+const tabs = [
+  { k: "all", l: "All brands" },
+  { k: "d2c", l: "D2C" },
+  { k: "b2b", l: "B2B" },
+  { k: "edu", l: "Education" },
+  { k: "consumer", l: "Other consumer brands" },
+];
+---
+<section class="n-band n-band--paper pm-band wk" id="brands">
+  <div class="n-wrap">
+    <div class="pm-head n-rise" style="margin-bottom:0">
+      <span class="n-eyebrow">The full wall</span>
+      <h2 class="n-h2">Every brand on record, <span class="n-serif">by kind.</span></h2>
+      <p class="n-lede">Filter by the kind of brand. Hover over or tap a logo to see a project, where we have one to show; a linked logo opens its full case study. The tags under each brand are the services recorded for it.</p>
+    </div>
+    <div class="wk__tabs" role="tablist" aria-label="Filter brands by kind">
+      {tabs.map((t, i) => <button type="button" role="tab" class={"wk__tab" + (i === 0 ? " is-on" : "")} data-f={t.k} aria-selected={i === 0 ? "true" : "false"}>{t.l}</button>)}
+    </div>
+    <div class="n-wall pm-wall wk__wall" data-wkwall>
+      {items.map((p: any) => {
+        const hasCase = CASE_IDS.has(p.id);
+        const Cell = hasCase ? "a" : "span";
+        const cellProps: Record<string, string> = hasCase ? { href: `/work/${p.id}/` } : {};
+        return (
+          <div class="pm-wall__item wk__item" data-g={p.g}>
+            <Cell class="n-wall__cell" title={hasCase ? `${p.name}: read the case study` : p.name} style={`--n-tilt:${tilt(p.id)}`} {...cellProps}>
+              <span class="n-wall__mark">
+                <span class="cs-logo">
+                  <span class="cs-wm" style={`--cs-wm-k:${csFit(p.name)}`}>{p.name}</span>
+                  <img class="cs-logo__img" src={`/assets/clients/${p.id}.png`} alt={p.name} loading="lazy" decoding="async" />
+                </span>
+              </span>
+              {WORK_ART.includes(p.id) && <img class="n-wall__work" src={`/assets/clients/${p.id}-work.jpg`} alt="" loading="lazy" decoding="async" />}
+            </Cell>
+            <span class="pm-wall__svc">{p.svc.join(" · ")}{hasCase && <a class="wk__csln" href={`/work/${p.id}/`}>Case study →</a>}</span>
+          </div>
+        );
+      })}
+    </div>
+    <p class="wk__empty" hidden>Nothing in this group yet.</p>
+    <p class="wk__note">Work images are illustrative mockups of the project, not screenshots of live results.</p>
+  </div>
+</section>
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>(".wk__tab");
+  const items = document.querySelectorAll<HTMLElement>(".wk__item");
+  const empty = document.querySelector<HTMLElement>(".wk__empty");
+  function apply(k: string) {
+    let n = 0;
+    items.forEach((el) => { const show = k === "all" || el.dataset.g === k; el.hidden = !show; if (show) n++; });
+    tabs.forEach((t) => { const on = t.dataset.f === k; t.classList.toggle("is-on", on); t.setAttribute("aria-selected", on ? "true" : "false"); });
+    if (empty) empty.hidden = n > 0;
+  }
+  tabs.forEach((t) => t.addEventListener("click", () => apply(t.dataset.f || "all")));
+  const q = new URLSearchParams(location.search).get("kind");
+  if (q && [...tabs].some((t) => t.dataset.f === q)) apply(q);
+</script>

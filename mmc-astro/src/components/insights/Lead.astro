@@ -1,0 +1,23 @@
+---
+interface Guide { n: string; tag: string; h: string; d: string; href: string; img: string }
+interface Props { g: Guide }
+const { g } = Astro.props;
+---
+<section class="editorial ix-lead" id="guides">
+  <div class="ed-wrap">
+    <a class="ix-lead__card ed-rise" href={g.href}>
+      <figure class="ix-lead__fig">
+        <img src={g.img} alt="" width="1200" height="900" loading="eager" decoding="async" />
+        <figcaption class="ix-lead__tag">{g.tag}</figcaption>
+      </figure>
+      <div>
+        <span class="ix-lead__num">Guide {g.n} · Start here</span>
+        <h2 class="ix-lead__h2">{g.h}</h2>
+        <p class="ix-lead__d">{g.d}</p>
+        <span class="ix-lead__go">Read the guide
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>

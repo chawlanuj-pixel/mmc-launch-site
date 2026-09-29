@@ -1,0 +1,13 @@
+/* hub/hb.css: small overrides for the audience-hub and service pages (B2B, education, lead generation).
+   Everything else reuses performance/pm.css and d2c/dc.css. */
+
+/* In-page jumps (for example "How CRM and CAPI work") must not land under the fixed nav. */
+#leaks, #quality, #brands, #numbers, #beyond, #faq { scroll-margin-top: 100px; }
+
+/* Brand wall: fill the row evenly, so six logos are one row of six (or two of three), never five and one. */
+@media (min-width: 861px) {
+  .n-wall.pm-wall { grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+}
+
+/* Three related cards sit in one row on wide screens (index pages) */
+@media (min-width: 1000px) { .dcb--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

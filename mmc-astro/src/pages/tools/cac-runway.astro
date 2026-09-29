@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import "../../styles/tools.css";
+import { metaHead } from "../../lib/metaHead";
+import { CacRunway } from "../../islands/tools/CacRunway.jsx";
+---
+<BaseLayout {...metaHead("tools__cac-runway", "/tools/cac-runway/")}>
+  <Shell>
+    <main class="app-main"><CacRunway client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

@@ -1,0 +1,26 @@
+---
+// Mobile sticky CTA: shows once the hero has scrolled away, hides while the cookie banner or the closing band is on screen.
+const { label, book } = Astro.props as { label: string; book: string };
+---
+<div class="pm-sticky" id="pg-sticky" aria-hidden="true">
+  <button tabindex="-1" onclick={`window.mmcBookCall('${book}', event)`}>{label}</button>
+</div>
+<script>
+  const box = document.getElementById("pg-sticky");
+  const btn = box?.querySelector("button");
+  if (box && btn) {
+    const tick = () => {
+      const hero = document.getElementById("top"), talk = document.getElementById("talk"), cookie = document.querySelector(".cookie");
+      const pastHero = hero ? hero.getBoundingClientRect().bottom < 0 : false;
+      const atEnd = talk ? talk.getBoundingClientRect().top < window.innerHeight * 0.9 : false;
+      const on = pastHero && !atEnd && !cookie;
+      box.classList.toggle("is-on", on);
+      box.setAttribute("aria-hidden", String(!on));
+      btn.tabIndex = on ? 0 : -1;
+    };
+    tick();
+    window.addEventListener("scroll", tick, { passive: true });
+    window.addEventListener("resize", tick);
+    setInterval(tick, 700);
+  }
+</script>

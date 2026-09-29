@@ -1,0 +1,24 @@
+---
+// Shared closing CTA for the Insights index and guide article pages. Own markup/CSS (.ed-cta*),
+// distinct from the hub template's Cta.astro (.cta2).
+import { href } from "../../lib/links";
+interface Props { eyebrow: string; h2a: string; h2b: string; lede: string; bookKey: string; list?: string[] }
+const { eyebrow, h2a, h2b, lede, bookKey, list = ["Break-even economics", "Account structure", "Tracking", "Creative"] } = Astro.props;
+const audit = href("audit.html");
+---
+<section class="ed-band editorial" id="talk">
+  <div class="ed-wrap ed-cta">
+    <div class="ed-cta__card ed-rise">
+      <div>
+        <span class="ed-cta__eyebrow">{eyebrow}</span>
+        <h2 class="ed-cta__h2">{h2a} <em>{h2b}</em></h2>
+        <p class="ed-cta__p">{lede}</p>
+        <div class="ed-cta__act">
+          <button type="button" class="ed-cta__btn" data-book={bookKey + "-final"}>Get a paid-media audit</button>
+          <a class="ed-cta__link" href={audit}>How the audit works</a>
+        </div>
+      </div>
+      <ul class="ed-cta__list">{list.map((t) => <li>{t}</li>)}</ul>
+    </div>
+  </div>
+</section>

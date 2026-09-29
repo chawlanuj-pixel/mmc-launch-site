@@ -1,0 +1,427 @@
+{
+ "file": "education.html",
+ "path": "/industries/education/",
+ "key": "education",
+ "title": "Marketing for Colleges and Education Brands in India | MMC",
+ "description": "MMC runs lead generation, CRM and Meta CAPI tracking, retention funnels and reputation management for colleges and education brands in India.",
+ "ogTitle": "Marketing for colleges and education brands in India",
+ "ogDescription": "Websites, creative and lead generation judged on the cost of an enrolment.",
+ "ogAlt": "Monday Marketing Company: marketing for colleges and education brands in india.",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/education.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Education",
+     "item": "https://www.mondaymarketing.company/education.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/education.html#webpage",
+   "url": "https://www.mondaymarketing.company/education.html",
+   "name": "Marketing for Colleges and Education Brands in India | MMC",
+   "description": "MMC runs lead generation, CRM and Meta CAPI tracking, retention funnels and reputation management for colleges and education brands in India.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/education.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "@id": "https://www.mondaymarketing.company/education.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is education marketing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the work of reaching students and parents, turning their interest into enquiries, and following those up until they enrol. The measure that matters is the cost of an enrolment, not the number of clicks or enquiries."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do CRM and Meta CAPI improve lead quality?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An enquiry form only tells Meta that someone showed interest. When your enquiries sit in a CRM, we send what happened next (contacted, applied, admitted, enrolled) back to Meta through the Conversions API (CAPI). Meta then learns which families actually apply and finds more of them, instead of optimising for the cheapest enquiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are retention funnels in education?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Structured follow-up sequences over WhatsApp, email and calls that guide an enquiry through application and enrolment, and bring back the ones who went quiet. Most enquiries are not ready on day one, so the follow-up decides how many enrol."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is ORM and why does it matter for a college?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ORM is online reputation management. Parents and students check ratings, reviews and social posts before they apply. We help you collect reviews, reply to them and keep the picture families find trustworthy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does MMC do for colleges and education brands?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Websites, creative, social and lead generation, with a CRM and Meta CAPI set up so lead quality can be judged, retention funnels to nurture enquiries, and reputation management. The tags on this page show what we run for some of the brands we work with."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you measure it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On the cost of a qualified enquiry, an application and an enrolment, and on how quickly enquiries get a reply. Admissions decides what counts as a good enquiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you only work with education brands?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. We also work with D2C brands and B2B companies. Tell us what you run and we will say which approach fits."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on scope and, for media, on ad spend, so we quote after the audit call, once we have seen your accounts."
+     }
+    }
+   ]
+  }
+ ],
+ "hub": {
+  "key": "education",
+  "wm": "Edu",
+  "eyebrow": "● Colleges and education brands",
+  "h1": [
+   "Marketing for",
+   [
+    "",
+    "colleges",
+    " and"
+   ],
+   "education brands."
+  ],
+  "sub": "Lead generation, retention funnels and reputation management that turn a parent's search into an enquiry, and an enquiry into an enrolment.",
+  "tiles": [
+   {
+    "img": "edu/campus.jpg",
+    "pos": "50% 50%",
+    "label": "Campus",
+    "note": "Open days and visits"
+   },
+   {
+    "img": "edu/students.jpg",
+    "pos": "50% 50%",
+    "label": "Students",
+    "note": "Who you are talking to"
+   },
+   {
+    "img": "shared/education.jpg",
+    "pos": "50% 50%",
+    "label": "Counselling",
+    "note": "The conversation that decides"
+   },
+   {
+    "img": "edu/site.jpg",
+    "pos": "50% 50%",
+    "label": "The website",
+    "note": "Courses, fees and eligibility"
+   }
+  ],
+  "answer": {
+   "label": "In short",
+   "lead": "Education marketing wins enquiries from students and parents, then turns them into enrolments. More than one person makes the decision, and there is often a deadline, so speed and clarity matter.",
+   "hl": "turns them into enrolments",
+   "who": "Monday Marketing Company (MMC) builds websites, creative and lead generation for colleges and education brands in India.",
+   "points": [
+    {
+     "icon": "link",
+     "title": "Connect the enquiry",
+     "text": "Enquiries go to a CRM and Meta's Conversions API (CAPI), so campaigns learn from real applicants."
+    },
+    {
+     "icon": "loop",
+     "title": "Nurture to enrolment",
+     "text": "Retention funnels follow enquiries up until they enrol, and online reputation (ORM) is managed alongside."
+    },
+    {
+     "icon": "gauge",
+     "title": "Measure the enrolment",
+     "text": "The work is measured by the cost of an enrolment."
+    }
+   ],
+   "image": "edu/students.jpg",
+   "chip": "Measured by cost of an enrolment"
+  },
+  "leaks": {
+   "style": "stack",
+   "eyebrow": "Where admissions go missing",
+   "h2a": "Seven places a family slips away.",
+   "h2b": "Seven services that stop it.",
+   "lede": "An admission is a considered decision with a deadline. Each stage below is a moment where a family can leave, and the service that keeps them."
+  },
+  "stages": [
+   {
+    "k": "Be found",
+    "tag": "Search and paid media",
+    "breaks": "Parents research on their phones long before anyone calls you.",
+    "why": "A course decision is made over weeks, and a parent compares colleges before they ever enquire. If you are not on the first screen for your course and city, you are not in the comparison.",
+    "does": "We run search and paid campaigns around the courses, cities and intakes families search for, and build the SEO that keeps you visible between intakes.",
+    "href": "services.html#organic",
+    "img": "edu/search.jpg"
+   },
+   {
+    "k": "Explain the course",
+    "tag": "Website development",
+    "breaks": "The page a parent lands on hides the answers.",
+    "why": "Fees, eligibility, placements and campus life decide the shortlist. When they sit behind a brochure download, families leave for the college that shows them.",
+    "does": "We build course pages that answer those questions in plain words, load fast on a phone and lead to one clear next step.",
+    "href": "services.html#tech",
+    "img": "edu/site.jpg"
+   },
+   {
+    "k": "Capture the enquiry",
+    "tag": "Conversion and landing pages",
+    "breaks": "The enquiry form asks too much of a parent on a phone.",
+    "why": "Most enquiries start on a small screen, often in the evening. Every extra field costs you a family who was already interested.",
+    "does": "We design short, mobile-first forms and course-specific landing pages, and test them so more of the visitors you pay for become enquiries.",
+    "href": "services.html#organic",
+    "img": "edu/enquiry.jpg"
+   },
+   {
+    "k": "Qualify",
+    "tag": "Lead generation, CRM and Meta CAPI",
+    "breaks": "The ad platform is told a form was filled, so it finds cheap fills.",
+    "why": "A form fill is not an applicant. Optimised on fills, Meta brings volume that admissions cannot convert, and counsellors spend intake season on families who were never going to apply.",
+    "does": "We connect your enquiries to a CRM and send the applied and enrolled stages back to Meta through the Conversions API (CAPI), so campaigns learn from real applicants.",
+    "href": "#quality",
+    "img": "edu/crm.jpg"
+   },
+   {
+    "k": "Nurture",
+    "tag": "Retention marketing",
+    "breaks": "One call, then silence.",
+    "why": "Most families are not ready on day one. The college that follows up sensibly, at the right moments before the deadline, is the one they remember.",
+    "does": "We build retention funnels of WhatsApp, email and call reminders around your intake calendar, to guide each family to apply and to win back the quiet ones.",
+    "href": "services.html#revenue",
+    "img": "edu/nurture.jpg"
+   },
+   {
+    "k": "Protect your reputation",
+    "tag": "Online reputation management",
+    "breaks": "Reviews and ratings go unanswered.",
+    "why": "Before applying, parents read what students and other parents wrote. A low rating with no reply, or no reviews at all, raises doubt at the last step.",
+    "does": "We encourage genuine reviews, reply to them, and keep the profile families see on Google and review sites accurate and credible.",
+    "href": "services.html#brand",
+    "img": "edu/orm.jpg"
+   },
+   {
+    "k": "Reach enrolment",
+    "tag": "Tracking and reporting",
+    "breaks": "Nobody can say which campaign produced a seat.",
+    "why": "Without ad-to-enrolment tracking, budget follows clicks instead of admissions, and your strongest channel looks the same as your weakest.",
+    "does": "We track each family from ad to enquiry to enrolment in your CRM, so spend is judged on the cost of an enrolment, not on clicks.",
+    "href": "audit.html",
+    "img": "edu/enrol.jpg"
+   }
+  ],
+  "loop": {
+   "img": "edu/crm.jpg",
+   "imgCaption": "Enquiry stages in the CRM, events into Meta",
+   "eyebrow": "Lead quality",
+   "h2a": "How CRM and Meta CAPI bring in better",
+   "h2b": "applicants.",
+   "lede": "An enquiry form tells Meta that someone showed interest, not that they will apply. Your CRM knows what happened next. The Conversions API (CAPI) carries that back to Meta.",
+   "steps": [
+    {
+     "k": "The enquiry arrives",
+     "d": "An ad brings a form fill, a call or a WhatsApp message.",
+     "chip": "An enquiry"
+    },
+    {
+     "k": "Your CRM records what happens",
+     "d": "Admissions marks it contacted, applied, admitted or enrolled.",
+     "chip": "Applied · Admitted · Enrolled"
+    },
+    {
+     "k": "CAPI sends the stage to Meta",
+     "d": "The stage goes back to Meta as a server-side event, not a browser guess.",
+     "chip": "Server-side event"
+    },
+    {
+     "k": "Meta learns your best applicants",
+     "d": "The platform stops chasing cheap enquiries and finds more families like the ones who enrolled.",
+     "chip": "Better targeting"
+    }
+   ],
+   "returnLabel": "The next ads find more families like the ones who enrolled",
+   "without": {
+    "t": "Optimised for enquiries",
+    "d": "The platform sees only that a form was submitted. It finds whoever fills forms cheapest, and counsellors spend the week on families who were never going to apply."
+   },
+   "with": {
+    "t": "Optimised for applicants",
+    "d": "The platform sees which enquiries applied and which enrolled. Spend moves toward those families, and the cost of an enrolment becomes the number to watch."
+   }
+  },
+  "numbers": {
+   "eyebrow": "The numbers we start with",
+   "h2a": "Know these four before the",
+   "h2b": "next intake.",
+   "note": "The numbers an admissions team should be able to read at any time, from your CRM.",
+   "cards": [
+    {
+     "n": "Cost per qualified enquiry",
+     "d": "What you pay for a family that admissions accepts, not for any form fill."
+    },
+    {
+     "n": "Enquiry-to-application rate",
+     "d": "The share of enquiries that go on to apply."
+    },
+    {
+     "n": "Cost per enrolment",
+     "d": "What you pay, in total, for a confirmed seat."
+    },
+    {
+     "n": "Response time",
+     "d": "How long an enquiry waits before someone replies."
+    }
+   ],
+   "link": {
+    "href": "audit.html",
+    "text": "See how the audit reads them"
+   }
+  },
+  "brands": {
+   "h2a": "Some of the education brands we",
+   "h2b": "work with.",
+   "lede": "The tags show what we run for each. On a computer, hover a logo to see the work.",
+   "list": [
+    {
+     "id": "mvj",
+     "svc": [
+      "Web",
+      "Lead generation",
+      "Creative",
+      "Social"
+     ]
+    },
+    {
+     "id": "bloom",
+     "svc": [
+      "Web",
+      "Lead generation",
+      "Creative",
+      "Social"
+     ]
+    },
+    {
+     "id": "sprouts",
+     "svc": [
+      "Web",
+      "Lead generation",
+      "Creative",
+      "Social"
+     ]
+    },
+    {
+     "id": "learningmate",
+     "svc": []
+    }
+   ]
+  },
+  "beyond": {
+   "eyebrow": "Other audiences",
+   "h2a": "Selling to shoppers or businesses",
+   "h2b": "instead?",
+   "cards": [
+    {
+     "n": "D2C brands",
+     "d": "Ads, creative, conversion and retention for brands that sell direct to shoppers.",
+     "img": "d2c/packing.jpg",
+     "href": "d2c.html",
+     "link": "See the D2C page"
+    },
+    {
+     "n": "B2B companies",
+     "d": "Websites, creative and lead generation for companies that win business from other businesses.",
+     "img": "shared/b2b.jpg",
+     "href": "b2b.html",
+     "link": "See the B2B page"
+    }
+   ]
+  },
+  "faqTitle": [
+   "What admissions teams ask",
+   "first."
+  ],
+  "faq": [
+   {
+    "q": "What is education marketing?",
+    "a": "It is the work of reaching students and parents, turning their interest into enquiries, and following those up until they enrol. The measure that matters is the cost of an enrolment, not the number of clicks or enquiries."
+   },
+   {
+    "q": "How do CRM and Meta CAPI improve lead quality?",
+    "a": "An enquiry form only tells Meta that someone showed interest. When your enquiries sit in a CRM, we send what happened next (contacted, applied, admitted, enrolled) back to Meta through the Conversions API (CAPI). Meta then learns which families actually apply and finds more of them, instead of optimising for the cheapest enquiry."
+   },
+   {
+    "q": "What are retention funnels in education?",
+    "a": "Structured follow-up sequences over WhatsApp, email and calls that guide an enquiry through application and enrolment, and bring back the ones who went quiet. Most enquiries are not ready on day one, so the follow-up decides how many enrol."
+   },
+   {
+    "q": "What is ORM and why does it matter for a college?",
+    "a": "ORM is online reputation management. Parents and students check ratings, reviews and social posts before they apply. We help you collect reviews, reply to them and keep the picture families find trustworthy."
+   },
+   {
+    "q": "What does MMC do for colleges and education brands?",
+    "a": "Websites, creative, social and lead generation, with a CRM and Meta CAPI set up so lead quality can be judged, retention funnels to nurture enquiries, and reputation management. The tags on this page show what we run for some of the brands we work with."
+   },
+   {
+    "q": "How do you measure it?",
+    "a": "On the cost of a qualified enquiry, an application and an enrolment, and on how quickly enquiries get a reply. Admissions decides what counts as a good enquiry."
+   },
+   {
+    "q": "Do you only work with education brands?",
+    "a": "No. We also work with <a href=\"d2c.html\">D2C brands</a> and <a href=\"b2b.html\">B2B companies</a>. Tell us what you run and we will say which approach fits."
+   },
+   {
+    "q": "What does it cost?",
+    "a": "It depends on scope and, for media, on ad spend, so we quote after the <a href=\"audit.html\">audit call</a>, once we have seen your accounts."
+   }
+  ],
+  "cta": {
+   "h2a": "Find what an enrolment",
+   "h2b": "really costs.",
+   "lede": "On a call, with a senior strategist. We read your campaigns against what a confirmed seat is worth to you."
+  }
+ }
+}

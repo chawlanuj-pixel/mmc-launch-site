@@ -1,0 +1,83 @@
+{
+ "title": "CAC Runway Calculator: How Long Will Your Brand Burn?",
+ "description": "New brands overpay for customers while the account learns. Model falling CAC against repeat purchase to get months to profit and the cash to get there.",
+ "ogTitle": "How long a new brand burns before it turns",
+ "ogDescription": "Months to profitability, total cash required and a 36-month projection for a new D2C brand.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Free tools",
+     "item": "https://www.mondaymarketing.company/tools.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "CAC Runway & Burn Calculator",
+     "item": "https://www.mondaymarketing.company/cac-runway-calculator.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebApplication",
+   "name": "CAC Runway & Burn Calculator",
+   "url": "https://www.mondaymarketing.company/cac-runway-calculator.html",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Any (web browser)",
+   "description": "Free CAC runway calculator for new D2C brands. Model how long you burn before break-even when your acquisition cost starts above break-even CAC, with CAC improving month on month and repeat purchase closing the gap. Get months to profitability, total cash required, and a 36-month projection.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monday Marketing Company",
+    "url": "https://www.mondaymarketing.company/"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How long does a new D2C brand take to reach break-even CAC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on how far above break-even you start and how fast the account learns. A brand paying 900 rupees against a 670 rupee break-even CAC, improving 6% a month, typically crosses into monthly profit somewhere between month 8 and month 14, but the number that matters is the cumulative cash burned getting there, not the month itself."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much cash does a new D2C brand need before it turns profitable?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Total burn equals the deepest point of your cumulative cash curve. Every month of losses added together before the first profitable month. It is almost always larger than founders expect, because growing faster increases the trough before it shortens it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does growing faster shorten the burn?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not usually. Faster growth means more new customers acquired above break-even CAC each month, which deepens the cash trough even though it brings the profitable month closer. Repeat rate is the lever that shortens the burn from both ends, because repeat orders cost nothing to acquire."
+     }
+    }
+   ]
+  }
+ ]
+}

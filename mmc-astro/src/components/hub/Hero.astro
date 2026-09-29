@@ -1,0 +1,56 @@
+---
+import Img from "./Img.astro";
+const { H } = Astro.props;
+const dl = ["d1", "d2", "d3"];
+---
+<section class="page-hero pm-hero" id="top" data-wm={H.wm}>
+  <span class="page-hero__wm" aria-hidden="true">{H.wm}</span>
+  <div class="container pm-hero__inner">
+    <div class="pmh__grid">
+      <div class="pmh__l">
+        <div class="eyebrow" data-enter><span>{H.eyebrow}</span></div>
+        <h1 class="pmh__h">
+          <span class="clip-reveal d1" data-enter><span>{H.h1[0]}</span></span>
+          <span class="clip-reveal d2" data-enter><span>{H.h1[1][0]}<span class="em-serif">{H.h1[1][1]}</span>{H.h1[1][2]}</span></span>
+          <span class="clip-reveal d3" data-enter><span>{H.h1[2]}</span></span>
+        </h1>
+        <p class="reveal d4 pmh__sub" data-enter>{H.sub}</p>
+        <div class="reveal d5 pmh__actions" data-enter>
+          <button class="btn btn--primary glow-btn" type="button" data-book={H.key + "-hero"}>
+            <span class="glow-btn__glow" aria-hidden="true"></span>
+            <span class="glow-btn__inner">Get a paid-media audit<span class="arrow"></span></span>
+          </button>
+          {H.hero2
+            ? <a class="btn btn--link" href={H.hero2.href}>{H.hero2.label}<span class="arrow"></span></a>
+            : H.brands && H.brands.list && H.brands.list.length
+            ? <a class="btn btn--link" href="#brands">See the brands<span class="arrow"></span></a>
+            : <a class="btn btn--link" href="#leaks">See how it works<span class="arrow"></span></a>}
+        </div>
+      </div>
+      <div class="pmh__r" data-enter>
+        <div class="pmh__mosaic">
+          {H.tiles.map((t: any, k: number) => (
+            <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+              <Img name={t.img} ratio="1 / 1.05" class="pmh__img" pos={t.pos} eager={k < 2} />
+              <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style is:global>
+  /* Hero entrance runs from CSS on load, so the first paint (and LCP) never waits for JavaScript. */
+  [data-enter] { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .eyebrow[data-enter], .reveal[data-enter], .pmh__r[data-enter] { animation: heroIn .7s cubic-bezier(.2,.7,.2,1) both; }
+  .clip-reveal[data-enter] > span { transform: none !important; transition: none !important; animation: heroClip .8s cubic-bezier(.2,.7,.2,1) both; }
+  .clip-reveal.d1[data-enter] > span { animation-delay: .05s; } .clip-reveal.d2[data-enter] > span { animation-delay: .15s; } .clip-reveal.d3[data-enter] > span { animation-delay: .25s; }
+  .reveal.d4[data-enter] { animation-delay: .3s; } .reveal.d5[data-enter] { animation-delay: .4s; }
+  .pmh__r[data-enter] { animation-delay: .15s; }
+  @keyframes heroIn { from { opacity: .01; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes heroClip { from { transform: translateY(105%); } to { transform: none; } }
+  @media (prefers-reduced-motion: reduce) { [data-enter], .clip-reveal[data-enter] > span { animation: none !important; } }
+</style>
+<script is:inline>requestAnimationFrame(function(){requestAnimationFrame(function(){document.querySelectorAll("[data-enter]").forEach(function(e){e.classList.add("in")})})})</script>
+<noscript><style>[data-enter]{opacity:1!important;transform:none!important}[data-enter].clip-reveal>span{transform:none!important}.n-rise{opacity:1!important;transform:none!important}</style></noscript>

@@ -1,0 +1,50 @@
+{
+ "title": "Privacy Policy: What Data We Collect and Your Rights",
+ "description": "We collect the minimum needed to run this site and our retainers, and we have never sold data. Access, correction and deletion honoured in 30 days.",
+ "ogTitle": "Privacy Policy",
+ "ogDescription": "What we collect, how we use it, where it is stored, and how to have it corrected or deleted.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Privacy.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Privacy Policy",
+     "item": "https://www.mondaymarketing.company/Privacy.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Privacy.html#webpage",
+   "url": "https://www.mondaymarketing.company/Privacy.html",
+   "name": "Privacy Policy: What Data We Collect and Your Rights",
+   "description": "We collect the minimum needed to run this site and our retainers, and we have never sold data. Access, correction and deletion honoured in 30 days.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Privacy.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ]
+}

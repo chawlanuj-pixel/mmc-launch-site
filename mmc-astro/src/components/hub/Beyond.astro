@@ -1,0 +1,25 @@
+---
+import Img from "./Img.astro";
+import Arrow from "./Arrow.astro";
+const Y = Astro.props.Y;
+---
+{Y && (
+<section class="n-band n-band--white pm-band" id="beyond">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">{Y.eyebrow}</span>
+      <h2 class="n-h2">{Y.h2a} <span class="n-serif">{Y.h2b}</span></h2>
+    </div>
+    <div class={"dcb n-rise d1" + (Y.cards.length === 3 ? " dcb--3" : "")}>
+      {Y.cards.map((c: any) => (
+        <article class="dcb__card">
+          <Img name={c.img} ratio="3 / 2" class="dcb__img" />
+          <h3>{c.n}</h3>
+          <p>{c.d}</p>
+          <a class="pm-textlink" href={c.href}>{c.link}<Arrow /></a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+)}

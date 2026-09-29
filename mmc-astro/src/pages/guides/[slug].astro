@@ -1,0 +1,57 @@
+---
+// The 3 guide articles: their own editorial layout (src/components/article/*, src/components/editorial/*,
+// src/styles/editorial.css), reading as one family with /insights/ and deliberately apart from the
+// service/industry/guide-hub template at src/pages/[...slug].astro (no Hero/Answer/Stages/Article from
+// src/components/hub). Content is ported unchanged from src/data/guides/*.json (moved out of
+// src/data/hubs/ so the hub route no longer generates these 3 paths).
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Masthead from "../../components/article/Masthead.astro";
+import Toc from "../../components/article/Toc.astro";
+import Body from "../../components/article/Body.astro";
+import Related from "../../components/article/Related.astro";
+import Faq from "../../components/editorial/Faq.astro";
+import Cta from "../../components/editorial/Cta.astro";
+import "../../styles/editorial.css";
+import { fixDeep } from "../../lib/links";
+import { rewriteJsonld } from "../../lib/hub";
+
+const META: Record<string, { n: string; tag: string }> = {
+  "contribution-margin-roas": { n: "01", tag: "Margin and measurement" },
+  "attribution-overlap": { n: "02", tag: "Margin and measurement" },
+  "creative-testing": { n: "03", tag: "Creative" },
+};
+
+export async function getStaticPaths() {
+  const mods = import.meta.glob("../../data/guides/*.json", { eager: true, import: "default" }) as Record<string, any>;
+  return Object.values(mods).map((d) => ({
+    params: { slug: d.path.replace(/^\/guides\/|\/$/g, "") },
+    props: { d },
+  }));
+}
+
+const { d } = Astro.props;
+const { slug } = Astro.params as { slug: string };
+const H = fixDeep(d.hub);
+const jsonld = rewriteJsonld(d.jsonld);
+const meta = META[slug] || { n: "", tag: "Guide" };
+const published = (d.jsonld.find((b: any) => b["@type"] === "Article")?.datePublished as string) || "2026-09-28";
+const heroImg = "/assets/" + (H.answer?.image || H.tiles?.[0]?.img);
+---
+<BaseLayout title={d.title} description={d.description} path={d.path} ogTitle={d.ogTitle} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld}>
+  <Shell>
+    <main class="app-main editorial">
+      <Masthead kicker={"Guide " + meta.n} h1={H.h1} sub={H.sub} published={published} tag={meta.tag} img={heroImg} />
+      <div class="editorial art-body">
+        <div class="ed-wrap art-grid">
+          <Toc blocks={H.article.blocks} />
+          <Body blocks={H.article.blocks} />
+        </div>
+      </div>
+      <Related h2={H.beyond.h2a + " " + H.beyond.h2b} cards={H.beyond.cards} />
+      <Faq kicker="Common questions" title={H.faqTitle.join(" ")} faq={H.faq} />
+      <Cta eyebrow="A free paid-media audit" h2a={H.cta.h2a} h2b={H.cta.h2b} lede={H.cta.lede} bookKey={H.key} />
+    </main>
+  </Shell>
+  <script>import "../../scripts/editorial.ts";</script>
+</BaseLayout>

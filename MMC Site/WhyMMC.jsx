@@ -65,8 +65,8 @@ function WhyMMC() {
     {
       n: "05",
       layout: "stat",
-      hook: "We renewed every retainer last year.",
-      proof: { num: "14/14", lbl: "Brands renewed · median tenure 27 months" },
+      hook: "Clients stay with us.",
+      proof: { num: "27 mo", lbl: "Median client tenure" },
       title: "Accountability is staying.",
       desc: "Growth that compounds takes time. The reason we keep clients isn't a creative quarterly review: it's that the math kept working. We say no to brands we can't help.",
       tag: "Compounding"

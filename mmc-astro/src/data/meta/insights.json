@@ -1,0 +1,50 @@
+{
+ "title": "Insights: Growth Breakdowns and Founder Notes | MMC",
+ "description": "No content marketing, just the working notes of a studio in operation. Growth forensics, team playbooks and a founder's journal, published as we ship them.",
+ "ogTitle": "We write what we actually ship",
+ "ogDescription": "Founder's journal, growth breakdowns and the playbooks we run across the book. Working notes, not SEO.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": "noindex, nofollow",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Insights.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Insights",
+     "item": "https://www.mondaymarketing.company/Insights.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Insights.html#webpage",
+   "url": "https://www.mondaymarketing.company/Insights.html",
+   "name": "Insights: Growth Breakdowns and Founder Notes | MMC",
+   "description": "No content marketing, just the working notes of a studio in operation. Growth forensics, team playbooks and a founder's journal, published as we ship them.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Insights.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ]
+}

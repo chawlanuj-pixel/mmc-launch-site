@@ -1,0 +1,10 @@
+---
+// One cell of the logo wall: wordmark, and the work image swapped in on hover. Used on the home marquee and the brand walls.
+import Wordmark from "./Wordmark.astro";
+import { CLIENTS, WORK_ART, tilt } from "../../lib/hub";
+const { id, tiltKey } = Astro.props as { id: string; tiltKey?: string };
+---
+<span class="n-wall__cell" title={CLIENTS[id]?.name} style={`--n-tilt:${tilt(tiltKey || id)}`}>
+  <span class="n-wall__mark"><Wordmark id={id} /></span>
+  {WORK_ART.includes(id) && <img class="n-wall__work" src={`/assets/clients/${id}-work.jpg`} alt="" loading="lazy" decoding="async" onload="this.classList.add('is-ready')" onerror="this.remove()" />}
+</span>

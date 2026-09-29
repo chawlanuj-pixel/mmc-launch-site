@@ -1,0 +1,242 @@
+/* hub/hb-data-guideattr.js: Why platform dashboards over-count page. Reuses the audience-hub template. No result, price or client outcome is stated.
+   Brand tags come from content/clients.json. */
+window.HUB = {
+  "key": "guideattr",
+  "wm": "Guide",
+  "eyebrow": "● Guide",
+  "h1": [
+    "Why ad dashboards",
+    [
+      "report more ",
+      "sales",
+      " than you made."
+    ],
+    ""
+  ],
+  "sub": "Each platform reports the conversions it can link to its own ads. Add them up and they often exceed your real orders. Here is how to read the results anyway.",
+  "tiles": [
+    {
+      "img": "guides/overlap.jpg",
+      "pos": "50% 50%",
+      "label": "Overlap",
+      "note": "Two platforms, one sale"
+    },
+    {
+      "img": "guides/ga4.jpg",
+      "pos": "50% 50%",
+      "label": "Paths",
+      "note": "Many touches"
+    },
+    {
+      "img": "guides/survey.jpg",
+      "pos": "50% 50%",
+      "label": "Ask",
+      "note": "How they found you"
+    },
+    {
+      "img": "guides/mer.jpg",
+      "pos": "50% 50%",
+      "label": "Blend",
+      "note": "Total over total"
+    }
+  ],
+  "answer": {
+    "label": "In short",
+    "lead": "Attribution overlap is what happens when several platforms each claim credit for the same sale, so the reported total is larger than the orders you actually received.",
+    "hl": "several platforms each claim credit for the same sale",
+    "who": "Monday Marketing Company (MMC) starts from your store's orders, reads platform numbers as direction and not as totals, and sends cleaner signals back to the platforms with tools such as the Meta Conversions API.",
+    "points": [
+      {
+        "icon": "layers",
+        "title": "Each platform counts its own",
+        "text": "Meta, Google and analytics each report the sales they can link to themselves."
+      },
+      {
+        "icon": "gauge",
+        "title": "Store orders come first",
+        "text": "Real orders and real revenue are the base."
+      },
+      {
+        "icon": "link",
+        "title": "Better signals help",
+        "text": "Server-side tracking makes the platform data more complete."
+      }
+    ],
+    "image": "guides/overlap.jpg",
+    "chip": "Start from real orders"
+  },
+  "beyond": {
+    "eyebrow": "Related",
+    "h2a": "Keep reading and",
+    "h2b": "check your own numbers.",
+    "cards": [
+      {
+        "n": "Contribution margin and break-even ROAS",
+        "d": "What an order really leaves behind, and the ROAS you need to break even.",
+        "img": "guides/cost.jpg",
+        "href": "guide-contribution-margin-roas.html",
+        "link": "Read the guide"
+      },
+      {
+        "n": "Funnel ROAS calculator",
+        "d": "Move the five conversion rates between an impression and a paid order.",
+        "img": "res/funnel.jpg",
+        "href": "funnel-roas-calculator.html",
+        "link": "Open the calculator"
+      },
+      {
+        "n": "Meta Ads",
+        "d": "Instagram and Facebook campaigns built as one funnel.",
+        "img": "meta/creative.jpg",
+        "href": "meta-ads.html",
+        "link": "See Meta Ads"
+      }
+    ]
+  },
+  "faqTitle": [
+    "Questions people ask about",
+    "why platform dashboards over-count."
+  ],
+  "faq": [
+    {
+      "q": "Why do Meta and Google both report the same sale?",
+      "a": "Each counts conversions it can link to its own ads, using its own rules. A customer who touched both can be counted by both."
+    },
+    {
+      "q": "Which number should I trust?",
+      "a": "Start from real orders in your store. Use blended ROAS as the headline and platform numbers as direction."
+    },
+    {
+      "q": "What is blended ROAS?",
+      "a": "Total revenue divided by total ad spend across every channel. Because it does not depend on who claims credit, it cannot double count."
+    },
+    {
+      "q": "Does the Conversions API fix over-counting?",
+      "a": "It does not remove overlap, but it gives platforms more complete data, which improves reporting and optimisation."
+    },
+    {
+      "q": "How do I test whether a channel really works?",
+      "a": "Pause it for a planned period or run a holdout, and watch total orders. The change shows what it added."
+    }
+  ],
+  "cta": {
+    "h2a": "Find out what your",
+    "h2b": "ads really did.",
+    "lede": "On a call, with a senior strategist. We start from your store orders and read the platforms against them."
+  },
+  "article": {
+    "blocks": [
+      {
+        "id": "what",
+        "h": "What attribution overlap is",
+        "paras": [
+          "A customer often sees an Instagram ad, later searches on Google, and buys after clicking an email. Each platform can legitimately claim that sale under its own rules, so each one reports it. Put the three reports side by side and you count the same sale three times.",
+          "Nothing is broken when this happens. The platforms are each answering a different question: which of my ads did this person interact with?"
+        ],
+        "img": "guides/overlap.jpg",
+        "cap": "Two ad platforms can both report the same purchase."
+      },
+      {
+        "id": "example",
+        "h": "An illustrative example",
+        "paras": [
+          "The numbers below are made up to show the pattern. Your own will differ."
+        ],
+        "table": {
+          "caption": "Illustrative example, not a benchmark",
+          "head": [
+            "Source",
+            "Orders reported"
+          ],
+          "rows": [
+            [
+              "Meta Ads Manager",
+              "120"
+            ],
+            [
+              "Google Ads",
+              "90"
+            ],
+            [
+              "Analytics tool",
+              "140"
+            ],
+            [
+              "Store admin (real orders)",
+              "150"
+            ],
+            [
+              "Sum of the three reports",
+              "350"
+            ]
+          ]
+        },
+        "callout": {
+          "title": "What it shows",
+          "text": "The three reports add up to more than twice the real orders. Trusting any single dashboard, or adding them together, gives the wrong picture."
+        }
+      },
+      {
+        "id": "why",
+        "h": "Why it happens",
+        "list": [
+          "Each platform uses its own attribution settings and its own way of counting a conversion.",
+          "A person can touch several channels before buying, and more than one can claim the credit.",
+          "Privacy settings, blocked cookies and app-to-web journeys mean each platform sees only part of the journey.",
+          "Some reports count views as well as clicks, which widens what is credited to ads."
+        ]
+      },
+      {
+        "id": "read",
+        "h": "How to read your results anyway",
+        "steps": [
+          {
+            "t": "Start from store orders",
+            "d": "Your store admin holds the real orders and revenue. Treat it as the base every other number is compared with."
+          },
+          {
+            "t": "Track blended ROAS",
+            "d": "Divide total revenue by total ad spend across all channels. It ignores who claims credit, so it cannot double count."
+          },
+          {
+            "t": "Ask customers",
+            "d": "Add a short 'How did you hear about us?' question after purchase. It catches channels that dashboards miss."
+          },
+          {
+            "t": "Use platforms for direction",
+            "d": "Within one platform, compare ads and audiences against each other. The comparison is useful even when the total is not exact."
+          },
+          {
+            "t": "Test by switching off",
+            "d": "Pause a channel for a planned period, or run a holdout, and watch total orders. The change shows what the channel really added."
+          }
+        ],
+        "img": "guides/survey.jpg",
+        "cap": "A post-purchase question adds a signal that dashboards cannot."
+      },
+      {
+        "id": "signals",
+        "h": "Send the platforms better signals",
+        "paras": [
+          "Overlap is a measuring problem, and part of the fix is better data. Server-side tracking, such as the <a href=\"lead-generation.html\">Meta Conversions API</a>, sends purchase events from your server instead of relying only on the browser. That gives the platform a more complete view, which improves both reporting and the audiences it learns to find.",
+          "Clean event set-up in your analytics tool also helps you see the paths customers take before they buy."
+        ],
+        "img": "guides/ga4.jpg",
+        "cap": "Analytics reports show the paths that lead to a purchase."
+      },
+      {
+        "id": "blend",
+        "h": "Put it together",
+        "paras": [
+          "Track blended ROAS as the headline, use platform numbers to compare ads within a platform, and use surveys and switch-off tests to check the big spending decisions. Read all of it against your <a href=\"guide-contribution-margin-roas.html\">break-even ROAS</a>, so the answer is whether the campaign makes money, not whether a dashboard looks good."
+        ],
+        "img": "guides/mer.jpg",
+        "cap": "Blended ROAS is total revenue divided by total ad spend."
+      }
+    ]
+  },
+  "hero2": {
+    "href": "#guide",
+    "label": "Read the guide"
+  }
+};

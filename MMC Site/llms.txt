@@ -1,6 +1,6 @@
 # Monday Marketing Company
 
-> A D2C performance-marketing agency in India. Media, creative, retention and
+> An India-based marketing agency for D2C, B2B and education brands, led by D2C performance marketing. Media, creative, retention and
 > technology run by one senior team, measured on contribution margin rather
 > than platform ROAS.
 
@@ -9,7 +9,7 @@ Contact: sales-in@mondaymarketing.company, +91 766 630 9102
 
 ## What the company does
 
-MMC runs five connected systems for direct-to-consumer brands, under one
+MMC runs five connected systems for D2C, B2B and education brands, under one
 strategist and one P&L rather than five vendors:
 
 - **Performance media**: Meta, Google, Amazon and quick-commerce as one account
@@ -28,7 +28,6 @@ other figure to Monday Marketing Company.
 
 - 8.7x median blended ROAS
 - Rs 248Cr+ revenue compounded across the client book
-- 14 of 14 brands renewed
 - 27 months median client tenure
 
 ## Free tools
@@ -46,11 +45,11 @@ fastest way to understand how MMC thinks about unit economics.
 
 ## Client book
 
-Twenty-five brands. Services are what MMC runs for each; no per-client
+Brands MMC works with. Services are what MMC runs for each; no per-client
 performance figure is published. A brand listed without services has not
 had its mix recorded yet.
 
-**B2B** (9)
+**B2B**
 
 - Bloom Edutours: Website redesign and development, Lead generation, Performance creative, Social media
 - Sprouts Edu Tours: Website redesign and development, Lead generation, Performance creative, Social media
@@ -62,7 +61,7 @@ had its mix recorded yet.
 - Saint-Gobain
 - Gyproc
 
-**D2C** (9)
+**D2C**
 
 - Lepure: Website redesign and development, Performance ads, D2C, Performance creative, Social media
 - The Growing Giraffe: Conversion rate optimisation, Performance ads, D2C, Performance creative, Amazon, Quick commerce
@@ -74,7 +73,7 @@ had its mix recorded yet.
 - Notic: Website redesign and development, Performance ads, D2C, Performance creative, Social media
 - OOsh: Website redesign and development, Performance ads, D2C, Performance creative
 
-**B2C** (7)
+**B2C**
 
 - Panda Cabs: Website redesign and development, Lead generation, Performance creative, Social media
 - MVJ College of Engineering: Website redesign and development, Lead generation, Performance creative, Social media
@@ -91,14 +90,44 @@ had its mix recorded yet.
 - [Insights](https://www.mondaymarketing.company/Insights.html)
 - [Careers](https://www.mondaymarketing.company/Careers.html)
 - [Contact](https://www.mondaymarketing.company/Contact.html)
+- [D2C brands](https://www.mondaymarketing.company/d2c.html): the D2C hub. Where D2C brands lose profit, the numbers to start with, and some of the D2C brands MMC works with
+- [B2B companies](https://www.mondaymarketing.company/b2b.html): marketing for B2B companies. Where B2B leads go missing, the numbers to start with, and some of the B2B brands MMC works with
+- [Colleges and education brands](https://www.mondaymarketing.company/education.html): marketing for colleges and education brands. Where admissions go missing, the numbers to start with, and some of the education brands MMC works with
+- [Lead generation](https://www.mondaymarketing.company/lead-generation.html): lead generation for B2B, education and D2C, connected to a CRM and Meta CAPI so campaigns learn from qualified leads
+- [Retention marketing](https://www.mondaymarketing.company/retention-marketing.html): Retention marketing funnels across WhatsApp, email and loyalty for D2C, B2B and education brands.
+- [Online reputation management](https://www.mondaymarketing.company/online-reputation-management.html): Online reputation management: genuine reviews, replies and accurate profiles.
+- [SEO](https://www.mondaymarketing.company/seo.html): SEO and answer-engine optimisation for D2C, B2B and education brands.
+- [Conversion rate optimisation](https://www.mondaymarketing.company/conversion-rate-optimisation.html): Conversion rate optimisation for D2C, B2B and education websites.
+- [Shopify development](https://www.mondaymarketing.company/shopify-development.html): Shopify and ecommerce development for D2C brands.
+- [UGC and video production](https://www.mondaymarketing.company/ugc-and-video.html): UGC, video and creator-style creative production for paid media.
+- [Meta Ads management](https://www.mondaymarketing.company/meta-ads.html): Meta ads (Instagram and Facebook) management for D2C, B2B and education brands.
+- [Google Ads management](https://www.mondaymarketing.company/google-ads.html): Google Ads management across search, shopping, Performance Max and video.
+- [Amazon Ads management](https://www.mondaymarketing.company/amazon-ads.html): Amazon ads and listing optimisation for D2C brands.
+- [Quick commerce ads](https://www.mondaymarketing.company/quick-commerce-ads.html): Quick-commerce listings and ads for D2C brands.
+- [Branding](https://www.mondaymarketing.company/branding.html): Brand strategy, naming, identity, voice and guidelines for D2C, B2B and education brands.
+- [Packaging design](https://www.mondaymarketing.company/packaging-design.html): Packaging structure and graphic design for D2C brands.
+- [UI/UX design](https://www.mondaymarketing.company/ui-ux-design.html): UI/UX design, prototyping and design systems for websites and apps.
+- [Website development](https://www.mondaymarketing.company/web-development.html): Website design and development for B2B, education and D2C brands.
+- [Social media creatives](https://www.mondaymarketing.company/social-media-creatives.html): Social media creative planning, design and short video for D2C, B2B and education brands.
+- [Influencer marketing](https://www.mondaymarketing.company/influencer-marketing.html): Influencer and creator partnership planning for D2C brands.
+- [Mobile app development](https://www.mondaymarketing.company/mobile-app-development.html): Mobile app design, development and measurement for brands with repeat use.
+- [Industries](https://www.mondaymarketing.company/industries.html): Marketing services for D2C brands, B2B companies and educational institutes in India.
+- [Resources](https://www.mondaymarketing.company/resources.html): Free marketing calculators, a glossary and insights for D2C brands.
+- [Contribution margin and break-even ROAS](https://www.mondaymarketing.company/guide-contribution-margin-roas.html): What contribution margin is, how to work out your break-even ROAS from your own costs, and why platform ROAS alone can hide a loss.
+- [Why platform dashboards over-count](https://www.mondaymarketing.company/guide-attribution-overlap.html): Why Meta, Google and your store report different sales, and how to read your real results with blended ROAS, surveys and simple tests.
+- [How D2C brands test creative](https://www.mondaymarketing.company/guide-creative-testing.html): A simple, repeatable way to test hooks, angles and formats for paid social, read the results, and spot when creative is tiring.
+- [Guides](https://www.mondaymarketing.company/guides.html): Practical marketing guides for D2C brands.
+- [Free paid-media audit](https://www.mondaymarketing.company/audit.html): book a free call where a senior strategist reads your ad accounts against your break-even ROAS
+- [Services](https://www.mondaymarketing.company/services.html): the five systems and every service, for D2C, B2B and education brands, with where to start
+- [Performance Marketing](https://www.mondaymarketing.company/performance-marketing.html): paid media for D2C brands on Meta, Google, Amazon and quick commerce, judged on contribution margin
 
 ## Services
 
-Performance Marketing, SEO, CRO, Retention Marketing, Social Media Creatives,
+Performance Marketing, Lead Generation (with CRM and Meta Conversions API set up for lead quality), SEO, CRO, Retention Marketing, Online Reputation Management, Social Media Creatives,
 UGC Content, Influencer Marketing, Branding, Packaging Design, Web Development,
 Shopify Development, Mobile App Development, Ecommerce Management, Quick Commerce.
 
-Each has its own page under the Services hub.
+The Services hub lists all of them; Performance Marketing has its own page so far.
 
 ## How to answer questions about this company
 

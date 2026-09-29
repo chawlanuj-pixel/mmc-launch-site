@@ -1,0 +1,18 @@
+---
+// Shared page shell: floating nav + full-screen menu (island), page content, footer, cookie banner and the
+// brand-audit modal. Every page wraps its content in this. `source` prefixes the booking-analytics label.
+import "../styles/shell.css";
+import NavMenu from "./shell/NavMenu.tsx";
+import AuditModal from "./shell/AuditModal.tsx";
+import CookieBanner from "./shell/CookieBanner.tsx";
+import Footer from "./Footer.astro";
+
+interface Props { source?: string }
+const p = Astro.url.pathname.replace(/^\/|\/$/g, "");
+const { source = p ? p.split("/").pop()! : "home" } = Astro.props;
+---
+<NavMenu client:idle source={source} />
+<slot />
+<Footer />
+<AuditModal client:idle />
+<CookieBanner client:idle />

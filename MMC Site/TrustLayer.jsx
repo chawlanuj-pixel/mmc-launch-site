@@ -14,7 +14,7 @@ function TrustLayer() {
   const stats = [
     { num: "₹248", suffix: "Cr+", lbl: "Revenue compounded since 2019" },
     { num: "8.7", suffix: "×",   lbl: "Median blended ROAS · last 12 months" },
-    { num: "14",  suffix: "/14", lbl: "Brands renewed last year" },
+    { num: "27",  suffix: " mo", lbl: "Median client tenure" },
     { num: "4",   suffix: "",    lbl: "Countries · India · UAE · UK · US" },
   ];
 
@@ -24,7 +24,7 @@ function TrustLayer() {
         <div className="trust__head">
           <div className="eyebrow">Trusted by fast-growing brands</div>
           <h2 className="trust__h">
-            25 brands. <span className="em-serif" style={{color:"var(--mmc-blue)"}}>One thesis.</span>{" "}
+            Brands of every kind. <span className="em-serif" style={{color:"var(--mmc-blue)"}}>One thesis.</span>{" "}
             Revenue that compounds.
           </h2>
         </div>

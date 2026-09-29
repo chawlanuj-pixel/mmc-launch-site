@@ -1,0 +1,19 @@
+---
+const { title, faq } = Astro.props;
+---
+<section class="n-band n-band--paper pm-band" id="faq">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">Common questions</span>
+      <h2 class="n-h2">{title[0]} <span class="n-serif">{title[1]}</span></h2>
+    </div>
+    <div class="pm-faq n-rise">
+      {faq.map((f: any, k: number) => (
+        <details open={k === 0}>
+          <summary>{f.q}</summary>
+          <div class="pm-faq__a"><p set:html={f.a} /></div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

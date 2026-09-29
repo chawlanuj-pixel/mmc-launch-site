@@ -1,0 +1,29 @@
+---
+import { href } from "../../lib/links";
+const { C, hubKey } = Astro.props;
+const looks = ["Break-even economics", "Account structure", "Tracking", "Creative"];
+const sec = { href: href("audit.html"), label: "How the audit works" };
+---
+<section class="n-band n-band--paper cta2" id="talk">
+  <div class="n-wrap">
+    <div class="cta2__card n-rise">
+      <figure class="cta2__fig">
+        <img src="/assets/au/audit-call.jpg" alt="" width="1024" height="688" loading="lazy" decoding="async" />
+        <figcaption class="cta2__chip"><i aria-hidden="true"></i>Your numbers, on screen</figcaption>
+      </figure>
+      <div class="cta2__body">
+        <span class="cta2__eyebrow">A free paid-media audit</span>
+        <h2 class="cta2__h">{C.h2a} <em>{C.h2b}</em></h2>
+        <p class="cta2__lede">{C.lede}</p>
+        <div class="cta2__looks">
+          <span class="cta2__looks-t">What the audit reads</span>
+          <ul>{looks.map((t) => <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>{t}</li>)}</ul>
+        </div>
+        <div class="cta2__act">
+          <button type="button" class="cta2__btn" data-book={hubKey + "-final"}>Get a paid-media audit<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></button>
+          <a class="cta2__link" href={sec.href}>{sec.label}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

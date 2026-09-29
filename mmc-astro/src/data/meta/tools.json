@@ -1,0 +1,28 @@
+{
+ "title": "Free D2C Growth Calculators: ROAS, CAC and LTV | MMC",
+ "description": "Six calculators we run before we take a client, plus a 53-term glossary. Unit economics, break-even ROAS, LTV:CAC and runway. No email wall, no gated PDF.",
+ "ogTitle": "The numbers we run before we take a client",
+ "ogDescription": "Six free D2C calculators and a plain-English glossary. Put your numbers in, no email required.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Free tools",
+     "item": "https://www.mondaymarketing.company/tools.html"
+    }
+   ]
+  }
+ ]
+}

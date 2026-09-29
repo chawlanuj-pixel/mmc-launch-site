@@ -1,0 +1,50 @@
+{
+ "title": "Terms & Conditions: Site Use, IP and Liability | MMC",
+ "description": "The agreement between MMC and anyone using this site: what you accept on arrival, who owns the content, the limits of our liability and the governing law.",
+ "ogTitle": "Terms & Conditions",
+ "ogDescription": "Acceptance, intellectual property, limits of liability and governing law for this site.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Terms.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Terms & Conditions",
+     "item": "https://www.mondaymarketing.company/Terms.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Terms.html#webpage",
+   "url": "https://www.mondaymarketing.company/Terms.html",
+   "name": "Terms & Conditions: Site Use, IP and Liability | MMC",
+   "description": "The agreement between MMC and anyone using this site: what you accept on arrival, who owns the content, the limits of our liability and the governing law.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Terms.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ]
+}

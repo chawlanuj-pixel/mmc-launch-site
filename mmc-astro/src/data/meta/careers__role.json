@@ -1,0 +1,53 @@
+{
+ "title": "Senior Meta Buyer, Mumbai & Bengaluru | MMC Careers",
+ "description": "Own ₹50L+ of monthly Meta spend across three D2C accounts, brief 60+ creatives a month and report straight to founders. Senior band, ₹24L to ₹38L OTE.",
+ "ogTitle": "Hiring: Senior Meta Buyer, Mumbai & Bengaluru",
+ "ogDescription": "₹50L+ monthly spend, three D2C accounts, no one to manage you. Senior band, ₹24L to ₹38L OTE.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": "noindex, nofollow",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Job%20Detail.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Careers",
+     "item": "https://www.mondaymarketing.company/Careers.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Senior Meta Buyer",
+     "item": "https://www.mondaymarketing.company/Job%20Detail.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Job%20Detail.html#webpage",
+   "url": "https://www.mondaymarketing.company/Job%20Detail.html",
+   "name": "Senior Meta Buyer, Mumbai & Bengaluru | MMC Careers",
+   "description": "Own ₹50L+ of monthly Meta spend across three D2C accounts, brief 60+ creatives a month and report straight to founders. Senior band, ₹24L to ₹38L OTE.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Job%20Detail.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en"
+  }
+ ]
+}

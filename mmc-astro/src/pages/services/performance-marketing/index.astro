@@ -1,0 +1,267 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Shell from "../../../components/Shell.astro";
+import PageHero from "../../../components/pages/PageHero.astro";
+import PageFx from "../../../components/pages/PageFx.astro";
+import Cta from "../../../components/pages/Cta.astro";
+import Sticky from "../../../components/pages/Sticky.astro";
+import BrandWall from "../../../components/pages/BrandWall.astro";
+import AnswerCta from "../../../components/pages/AnswerCta.astro";
+import Img from "../../../components/hub/Img.astro";
+import Arrow from "../../../components/hub/Arrow.astro";
+import PmMargin from "../../../islands/pages/PmMargin.jsx";
+import PmPayback from "../../../islands/pages/PmPayback.jsx";
+import { pageHead } from "../../../lib/pagehead";
+import { fixDeep, href } from "../../../lib/links";
+import raw from "../../../data/pages/pm.json";
+import "../../../styles/pg-wordmark.css";
+
+const D = fixDeep(raw);
+const AUDIT = "Get a paid-media audit";
+const book = (s: string) => `window.mmcBookCall('${s}', event)`;
+/* Generated channel art lives in assets/pm-v3/, everything else in pm-v2/ unless the name carries a folder. */
+const V3 = ["channel-meta.jpg", "channel-google.jpg", "channel-amazon.jpg", "channel-quickcommerce.jpg", "process.jpg"];
+const img = (n: string) => (n.includes("/") ? n : (V3.includes(n) ? "pm-v3/" : "pm-v2/") + n);
+
+const TILES = [
+  { img: "channel-meta.jpg", pos: "50% 38%", label: "Meta", note: "Reels" },
+  { img: "channel-google.jpg", pos: "60% 50%", label: "Google", note: "Search + Shopping" },
+  { img: "channel-amazon.jpg", pos: "50% 50%", label: "Amazon", note: "Sponsored ads" },
+  { img: "channel-quickcommerce.jpg", pos: "42% 50%", label: "Quick commerce", note: "10-minute delivery" },
+];
+const CLAIMS = [
+  { n: "Meta", mark: "/assets/platforms/meta.svg", how: "Saw the Reel, bought within 7 days of clicking" },
+  { n: "Google", mark: "/assets/platforms/google.svg", how: "Searched the brand name, then bought" },
+  { n: "Amazon", mark: "/assets/platforms/amazon.svg", how: "Sponsored ad on the way to the same purchase" },
+];
+const CHANNELS = [
+  { id: "meta", pos: "50% 40%", img: "channel-meta.jpg", name: "Meta", mark: "/assets/platforms/meta.svg", href: "meta-ads.html", link: "Meta Ads, in detail",
+    rows: [["Structure", "Prospecting, retargeting and conversion built as one funnel."], ["Creative", "New angles tested against a single brand thesis."], ["Measurement", "Server-side events checked against GA4 and your store data."]] },
+  { id: "google", pos: "50% 55%", img: "channel-google.jpg", name: "Google", mark: "/assets/platforms/google.svg", href: "google-ads.html", link: "Google Ads, in detail",
+    rows: [["Structure", "Search and shopping split by intent, with brand search kept separate."], ["Creative", "Feeds, ad copy and landing pages written for the query."], ["Measurement", "Judged on contribution, not on the conversions Google reports."]] },
+  { id: "amazon", pos: "50% 50%", img: "channel-amazon.jpg", name: "Amazon", mark: "/assets/platforms/amazon.svg", href: "amazon-ads.html", link: "Amazon Ads, in detail", tag: "We run this for The Growing Giraffe",
+    rows: [["Structure", "Sponsored ads sit inside the wider account budget."], ["Creative", "Listing content and A+ built alongside the ads."], ["Measurement", "Read against total sales, not only ad-attributed sales."]] },
+  { id: "qc", pos: "50% 55%", img: "channel-quickcommerce.jpg", name: "Quick commerce", mark: null, href: "quick-commerce-ads.html", link: "Quick commerce ads, in detail", tag: "We run this for The Growing Giraffe",
+    rows: [["Structure", "Platform ads planned with availability and stock."], ["Creative", "Tiles and listings made for a scroll of seconds."], ["Measurement", "Tracked at blended level, since platform data is thin."]] },
+];
+const STEPS = [
+  ["Audit", "What your accounts and unit economics say today."],
+  ["Structure", "Campaigns and budgets set against contribution."],
+  ["Creative", "Angles briefed, made and tested."],
+  ["Scale", "Budget moves to what clears break-even."],
+  ["Report", "Performance shown as contribution, not platform ROAS."],
+];
+const PROOF = [
+  { id: "lepure", svc: ["Performance", "Web", "Creative", "Social"] },
+  { id: "giraffe", svc: ["Performance", "CRO", "Creative", "Amazon", "Quick commerce"] },
+  { id: "mittiy", svc: ["Performance", "CRO", "Creative"] },
+  { id: "awwbaby", svc: ["Performance", "Web", "Creative"] },
+  { id: "sprnt", svc: ["Performance", "Web", "Creative", "Social"] },
+  { id: "oosh", svc: ["Performance", "Web", "Creative"] },
+];
+---
+<BaseLayout {...pageHead("pm", "/services/performance-marketing/")}>
+  <Shell>
+    <main class="app-main n-app">
+      <PageHero wm="Services" eyebrow="● Performance marketing"
+        lines={["Performance marketing", 'for <span class="em-serif">D2C</span> brands', "in India."]}
+        sub="Paid media run against profit, not platform screenshots. Monday Marketing Company (MMC) is an India-based performance marketing agency for D2C brands, with lead generation for B2B and education."
+        primary={{ label: AUDIT, book: "pm-hero" }} secondary={{ label: "See the work", href: "#proof" }}>
+        <ul slot="chips" class="reveal d6 pmh__chips" data-enter aria-label="Channels we run">
+          {TILES.map((t) => <li>{t.label}</li>)}
+        </ul>
+        <div class="pmh__mosaic">
+          {TILES.map((t, k) => (
+            <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+              <Img name={img(t.img)} ratio="1 / 1.05" class="pmh__img" pos={t.pos} eager={k < 2} />
+              <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+            </figure>
+          ))}
+        </div>
+        <a class="pmh__check" href="#margin" aria-label="Illustration: a 3x ROAS order that loses 33 rupees. See the maths.">
+          <span class="pmh__check-k">The platform says</span>
+          <span class="pmh__check-v">3.0x ROAS</span>
+          <span class="pmh__check-rule" aria-hidden="true"></span>
+          <span class="pmh__check-k">The order keeps</span>
+          <span class="pmh__check-v pmh__check-v--loss">−₹33</span>
+          <span class="pmh__check-foot">Illustration: one ₹1,000 order, ₹300 contribution. <u>See the maths ↓</u></span>
+        </a>
+      </PageHero>
+
+      <AnswerCta
+        lead="A performance marketing agency buys and manages paid media for a brand, then answers for what it returns."
+        hl="answers for what it returns"
+        who="MMC runs the account structure, the creative and the reporting as one system."
+        points={[
+          { icon: "grid", title: "Four channels", text: "Meta, Google, Amazon and quick commerce." },
+          { icon: "layers", title: "One system", text: "Account structure, creative and reporting are run together." },
+          { icon: "gauge", title: "Contribution margin", text: "The measure is the profit left after variable costs." },
+        ]}
+        image="au/look-tracking.jpg" chip="Judged on contribution margin" cta={{ label: AUDIT, book: "pm-answer" }} />
+
+      <PmMargin client:visible breakeven={href("breakeven-roas-calculator.html")} funnel={href("funnel-roas-calculator.html")} unit={href("unit-economics-calculator.html")} />
+
+      <section class="n-band n-band--white pm-band" id="claims">
+        <div class="n-wrap">
+          <header class="pm-head n-rise">
+            <span class="n-eyebrow">Attribution</span>
+            <h2 class="n-h2">One order. <span class="n-serif">Three dashboards</span> claim it.</h2>
+            <p class="n-lede">A customer sees a Reel, searches your brand and buys. Each platform counts the sale under its own rules, so the dashboards add up to more revenue than you banked.</p>
+          </header>
+          <figure class="pmc n-rise d1" style="margin:0" aria-label="Illustration: three platform dashboards each report the same ₹1,000 order, while the bank shows ₹1,000 once">
+            <div class="pmc__claims">
+              {CLAIMS.map((c) => (
+                <article class="pmc__claim">
+                  <div class="pmc__who"><img src={c.mark} alt="" width="28" height="28" loading="lazy" /><b>{c.n} reports</b></div>
+                  <div class="pmc__val">₹1,000</div>
+                  <div class="pmc__unit">1 purchase</div>
+                  <p>{c.how}</p>
+                </article>
+              ))}
+            </div>
+            <div class="pmc__join" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="pmc__sum">
+              <div class="pmc__sum-l"><span>Dashboards add up to</span><b class="pmc__over">₹3,000</b></div>
+              <span class="pmc__ne" aria-hidden="true">≠</span>
+              <div class="pmc__sum-r"><span>Actually in your bank</span><b>₹1,000</b></div>
+            </div>
+            <figcaption class="pmc__note">Illustration, not a client result. One order, one customer, three attribution windows.</figcaption>
+          </figure>
+          <div class="pmc__how n-rise d2">
+            <b>How we handle it</b>
+            <p>We judge the account on the total: revenue in your store and bank against total ad spend. Platform numbers are used to compare campaigns inside one platform, not to add up the business.</p>
+          </div>
+        </div>
+      </section>
+
+      <PmPayback client:visible />
+
+      <section class="n-band n-band--white pm-band" id="channels">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">What we run</span>
+            <h2 class="n-h2">Four channels, one <span class="n-serif">account structure.</span></h2>
+            <p class="n-lede">Most brands buy these from separate vendors. Here they share a budget, a creative thesis and one definition of a good result.</p>
+          </div>
+          <div class="pm-channels">
+            {CHANNELS.map((c, k) => (
+              <article class={"pm-ch n-rise d" + ((k % 2) + 1)}>
+                <Img name={img(c.img)} ratio="16 / 10" class="pm-ch__img" pos={c.pos} />
+                <div class="pm-ch__top">
+                  <div class="pm-ch__mark">
+                    {c.mark ? <img src={c.mark} alt="" loading="lazy" width="32" height="32" /> : (
+                      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M18 3 7 18h7l-2 11 11-15h-7z" fill="#0B1020" /></svg>
+                    )}
+                    <h3 class="pm-ch__name">{c.name}</h3>
+                  </div>
+                  {c.tag && <span class="pm-ch__tag">{c.tag}</span>}
+                </div>
+                <dl class="pm-ch__list">
+                  {c.rows.map(([k2, v]) => (<div><dt>{k2}</dt><dd>{v}</dd></div>))}
+                </dl>
+                {c.href
+                  ? <a class="pm-textlink" href={href(c.href)}>{c.link}<Arrow /></a>
+                  : <button class="pm-textlink" onclick={book("pm-ch-" + c.id)}>Talk to us about {c.name}<Arrow /></button>}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="process">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">How it works</span>
+            <h2 class="n-h2">The plan has to survive <span class="n-serif">the maths.</span></h2>
+          </div>
+          <Img name={img("process.jpg")} ratio="21 / 9" class="pm-process__img" pos="50% 58%" />
+          <div class="pm-rail">
+            {STEPS.map(([t, d], k) => (
+              <div class={"pm-step n-rise d" + Math.min(4, k + 1)}>
+                <span class="pm-step__n">{k + 1}</span>
+                <div><span class="pm-step__t">{t}</span><span class="pm-step__d">{d}</span></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white pm-band" id="who">
+        <div class="n-wrap">
+          <div class="pm-who">
+            <div class="pm-who__main n-rise">
+              <div class="pm-who__text">
+                <span class="pm-who__k">Who this is for</span>
+                <h2 class="n-h2 pm-who__h" style="margin-bottom:24px">D2C brands that know their margins, <span class="n-serif">or want to.</span></h2>
+                <p>If you sell direct online and want ad spend judged on profit, this is built for you.</p>
+                <p>We are not for everyone. If ROAS alone is the target, we will say so early.</p>
+              </div>
+              <Img name="d2c/packing.jpg" ratio="4 / 3" class="pm-who__img" pos="50% 50%" />
+            </div>
+            <div class="pm-who__side n-rise d2">
+              <div class="pm-who__pair">
+                <Img name="shared/b2b.jpg" ratio="4 / 3" class="pm-who__img2" pos="50% 50%" />
+                <Img name="shared/education.jpg" ratio="4 / 3" class="pm-who__img2" pos="50% 50%" />
+              </div>
+              <span class="pm-who__k">B2B or education?</span>
+              <p>We also run paid media as lead generation for B2B companies and educational institutes, where the goal is qualified leads and enrolments, not baskets.</p>
+              <a class="pm-textlink" href={href("b2b.html")}>B2B companies<Arrow /></a>
+              <a class="pm-textlink" href={href("education.html")}>Education brands<Arrow /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="proof">
+        <div class="n-wrap">
+          <div class="pm-head n-rise" style="margin-bottom:0">
+            <span class="n-eyebrow">Proof</span>
+            <h2 class="n-h2">A few of the brands we run paid media <span class="n-serif">for.</span></h2>
+            <p class="n-lede">Hover any one to see the work.</p>
+          </div>
+          <BrandWall items={PROOF} />
+          <div class="pm-proof__foot">
+            <p>We share account-level numbers on the audit call, not on a public page.</p>
+            <button class="pm-textlink" onclick={book("pm-proof")}>See what we would look at in your account<Arrow /></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white pm-band" id="faq">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Common questions</span>
+            <h2 class="n-h2">What people ask <span class="n-serif">first.</span></h2>
+          </div>
+          <div class="pm-faq n-rise">
+            {D.PM_FAQ.map((f: any, k: number) => (
+              <details open={k === 0}>
+                <summary>{f.q}</summary>
+                <div class="pm-faq__a"><p set:html={f.a} /></div>
+              </details>
+            ))}
+          </div>
+          <p style="margin-top:30px">
+            <button class="pm-textlink" onclick={book("pm-faq")}>Still unsure? Book the audit<Arrow /></button>
+          </p>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="related" style="padding-bottom:0">
+        <div class="n-wrap">
+          <div class="pm-related">
+            <a href={href("services.html")}>All services <small>five systems</small></a>
+            <a href={href("d2c.html")}>D2C brands <small>the whole growth stack</small></a>
+            <a href={href("meta-ads.html")}>Meta Ads <small>in detail</small></a>
+            <a href={href("tools.html")}>Free calculators <small>break-even ROAS, unit economics</small></a>
+            <a href={href("Our Work.html")}>Our work <small>the client book</small></a>
+          </div>
+        </div>
+      </section>
+
+      <Cta h2a="Find out what your ad spend" h2b="really returns." lede="On a call, with a senior strategist. We read your accounts against your break-even ROAS." label={AUDIT} book="pm-final" />
+    </main>
+    <Sticky label="Free paid-media audit" book="pm-sticky" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

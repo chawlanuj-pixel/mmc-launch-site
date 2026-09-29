@@ -25,27 +25,35 @@ function Footer({ onAudit, cta }) {
   {
     title: "What we do",
     items: [
-    { name: "Case studies", url: "Our Work.html" },
-    { name: "Free tools", url: "tools.html" }]
+    { name: "Services", url: "services.html" },
+    { name: "Performance marketing", url: "performance-marketing.html" },
+    { name: "Lead generation", url: "lead-generation.html" },
+    { name: "Retention marketing", url: "retention-marketing.html" },
+    { name: "SEO", url: "seo.html" },
+    { name: "Web development", url: "web-development.html" }]
 
   },
   {
-    title: "Calculators",
+    title: "Industries and resources",
+    items: [
+    { name: "Industries", url: "industries.html" },
+    { name: "D2C brands", url: "d2c.html" },
+    { name: "B2B companies", url: "b2b.html" },
+    { name: "Education", url: "education.html" },
+    { name: "Resources", url: "resources.html" },
+    { name: "Guides", url: "guides.html" }]
+
+  },
+  {
+    title: "Free tools",
     items: [
     { name: "Unit Economics", url: "unit-economics-calculator.html" },
     { name: "Growth Trajectory", url: "growth-trajectory-calculator.html" },
     { name: "CAC Runway", url: "cac-runway-calculator.html" },
     { name: "Funnel ROAS", url: "funnel-roas-calculator.html" },
     { name: "Break-even ROAS", url: "breakeven-roas-calculator.html" },
-    { name: "LTV : CAC", url: "ltv-cac-calculator.html" }]
-
-  },
-  {
-    title: "Reference",
-    items: [
-    { name: "D2C Marketing Glossary", url: "d2c-marketing-glossary.html" },
-    { name: "Privacy Policy", url: "Privacy.html" },
-    { name: "Terms & Conditions", url: "Terms.html" }]
+    { name: "LTV : CAC", url: "ltv-cac-calculator.html" },
+    { name: "D2C Marketing Glossary", url: "d2c-marketing-glossary.html" }]
 
   }];
 
@@ -109,6 +117,8 @@ function Footer({ onAudit, cta }) {
           <div className="ft__base-r">
             <a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="Privacy.html">Privacy</a>
+            <a href="Terms.html">Terms</a>
             <a href="#" onClick={(e) => {e.preventDefault();if (window.__mmcOpenCookies) window.__mmcOpenCookies();}}>Cookies</a>
           </div>
         </div>

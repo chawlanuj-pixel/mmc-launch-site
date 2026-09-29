@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import { metaHead } from "../lib/metaHead";
+import LegalApp from "../islands/legal/LegalApp.jsx";
+---
+<BaseLayout {...metaHead("terms", "/terms/")}>
+  <Shell>
+    <main class="app-main"><LegalApp kind="terms" /></main>
+  </Shell>
+</BaseLayout>

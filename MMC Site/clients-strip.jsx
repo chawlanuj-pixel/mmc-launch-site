@@ -175,7 +175,7 @@ function ClientsStrip() {
         <header className="cs-strip__head">
           <div className="eyebrow">The client book</div>
           <h2 className="cs-strip__h">
-            Twenty-five brands across B2B, B2C{" "}
+            Brands across B2B, B2C{" "}
             <span className="em-serif" style={{ color: "var(--mmc-blue)" }}>&amp; D2C.</span>
           </h2>
         </header>

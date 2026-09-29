@@ -1,0 +1,12 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import { createRequire } from 'node:module';
+const here=path.dirname(fileURLToPath(import.meta.url));
+const site=path.dirname(here);
+const require=createRequire(path.resolve(here,'../../mmc-astro/package.json'));
+const {build}=require('esbuild');
+const names=['Nav','Menu','Footer','AuditModal','CookieBanner'];
+const components=await Promise.all(names.map(n=>readFile(path.join(site,n+'.jsx'),'utf8')));
+await build({stdin:{contents:`import React from 'react'; import {createRoot} from 'react-dom/client'; import {gsap} from 'gsap'; window.gsap=gsap;\n${components.join('\n')}\nfunction PreviewShell(){ const [menu,setMenu]=React.useState(false); const [audit,setAudit]=React.useState(false); const ref=React.useRef(null); React.useEffect(()=>{const open=()=>setAudit(true);window.addEventListener('open-audit',open);return()=>window.removeEventListener('open-audit',open)},[]);return <><Nav menuBtnRef={ref} menuOpen={menu} onOpenMenu={()=>setMenu(!menu)} onAudit={()=>window.mmcBookCall('preview-nav')}/><Menu open={menu} triggerRef={ref} onClose={()=>setMenu(false)} onAudit={()=>window.mmcBookCall('preview-menu')}/><AuditModal open={audit} onClose={()=>setAudit(false)}/><CookieBanner/></>;} createRoot(document.getElementById('preview-shell')).render(<PreviewShell/>);createRoot(document.getElementById('preview-footer')).render(<Footer onAudit={()=>window.mmcBookCall('preview-footer')}/>);`,resolveDir:path.resolve(here,'../../mmc-astro'),loader:'jsx'},bundle:true,minify:true,format:'iife',define:{'process.env.NODE_ENV':'"production"'},outfile:path.join(here,'shell.js')});
+console.log('Built preview shell from unchanged shared components.');

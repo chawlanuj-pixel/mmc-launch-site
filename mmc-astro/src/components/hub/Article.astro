@@ -1,0 +1,40 @@
+---
+import Img from "./Img.astro";
+const A = Astro.props.A;
+---
+{A && A.blocks && A.blocks.length ? (
+<section class="n-band n-band--white pm-band gd" id="guide">
+  <div class="n-wrap gd__grid">
+    <nav class="gd__toc" aria-label="In this guide">
+      <span class="n-eyebrow">In this guide</span>
+      <ol>{A.blocks.map((b: any) => <li><a href={"#" + b.id}>{b.h}</a></li>)}</ol>
+    </nav>
+    <div class="gd__body">
+      {A.blocks.map((b: any) => (
+        <section class="gd__sec" id={b.id}>
+          <h2 class="gd__h">{b.h}</h2>
+          {(b.paras || []).map((t: string) => <p set:html={t} />)}
+          {b.img && (
+            <figure class="gd__fig">
+              <Img name={b.img} ratio="3 / 2" class="gd__img" />
+              {b.cap && <figcaption>{b.cap}</figcaption>}
+            </figure>
+          )}
+          {b.list && <ul class="gd__list">{b.list.map((t: string) => <li set:html={t} />)}</ul>}
+          {b.steps && <ol class="gd__steps">{b.steps.map((st: any) => <li><b>{st.t}</b><span set:html={st.d} /></li>)}</ol>}
+          {b.table && (
+            <div class="gd__tablewrap">
+              <table class="gd__table">
+                <caption>{b.table.caption}</caption>
+                <thead><tr>{b.table.head.map((h: string) => <th>{h}</th>)}</tr></thead>
+                <tbody>{b.table.rows.map((r: string[]) => <tr>{r.map((c, j) => j === 0 ? <th scope="row">{c}</th> : <td>{c}</td>)}</tr>)}</tbody>
+              </table>
+            </div>
+          )}
+          {b.callout && <aside class="gd__callout"><b>{b.callout.title}</b><span set:html={b.callout.text} /></aside>}
+        </section>
+      ))}
+    </div>
+  </div>
+</section>
+) : null}

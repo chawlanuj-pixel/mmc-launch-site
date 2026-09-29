@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import PageFx from "../components/pages/PageFx.astro";
+import { metaHead } from "../lib/metaHead";
+import InsightsApp from "../islands/insights/InsightsApp.jsx";
+---
+<BaseLayout {...metaHead("insights", "/insights/")}>
+  <Shell>
+    <main class="app-main"><InsightsApp client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

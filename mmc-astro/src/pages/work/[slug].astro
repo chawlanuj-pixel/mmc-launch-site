@@ -1,0 +1,130 @@
+---
+// Case-study detail page: one per brand with real, client-approved artwork in public/assets/work2/.
+// Its own hero and section shapes (no hub Hero/Answer/Stages) per the differentiation brief.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Closing from "../../components/company/Closing.astro";
+import book from "../../data/case-studies.json";
+import "../../styles/case-study.css";
+import "../../styles/work-pages.css";
+
+const SITE = "https://www.mondaymarketing.company";
+const SVC: Record<string, string> = (book as any)._services;
+const GROUP: Record<string, string> = (book as any)._groupLabel;
+const items = (book as any).items as any[];
+
+export async function getStaticPaths() {
+  const b = (await import("../../data/case-studies.json")).default as any;
+  return b.items.map((c: any) => ({ params: { slug: c.id }, props: { c } }));
+}
+const { c } = Astro.props as { c: any };
+
+const others = items.filter((x) => x.id !== c.id && x.group === c.group).slice(0, 3);
+const fallback = items.filter((x) => x.id !== c.id && !others.includes(x)).slice(0, 3 - others.length);
+const more = [...others, ...fallback].slice(0, 3);
+
+const title = `${c.name}: A ${GROUP[c.group]} Case Study | MMC`;
+const description = c.scope;
+const path = `/work/${c.id}/`;
+
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + path + "#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "Our Work", item: SITE + "/work/" },
+    { "@type": "ListItem", position: 3, name: c.name, item: SITE + path } ] },
+  { "@context": "https://schema.org", "@type": "CreativeWork", "@id": SITE + path + "#work",
+    name: `${c.name} case study`, url: SITE + path, description: c.scope,
+    image: SITE + "/assets/" + c.image, inLanguage: "en",
+    about: { "@type": "Organization", name: c.name },
+    creator: { "@id": SITE + "/#organization" },
+    breadcrumb: { "@id": SITE + path + "#breadcrumb" } },
+];
+---
+<BaseLayout title={title} description={description} path={path} ogTitle={`${c.name}: real work from MMC`} ogDescription={c.scope} ogAlt={`${c.name} case study artwork`} jsonld={jsonld}>
+  <Shell source={`work-${c.id}`}>
+    <main class="app-main n-app">
+      <section class="cs-hero">
+        <div class="n-wrap">
+          <nav class="cs-crumb" aria-label="Breadcrumb">
+            <a href="/work/">Our work</a><span aria-hidden="true">/</span><span>{c.name}</span>
+          </nav>
+          <div class="cs-hero__top n-rise">
+            <span class="cs-hero__logo"><img src={`/assets/clients/${c.id}.png`} alt={c.name} width="200" height="46" loading="eager" decoding="async" /></span>
+            <div class="cs-hero__tags">
+              <span class="cs-tag cs-tag--group">{GROUP[c.group]}</span>
+              {c.services.map((s: string) => <span class="cs-tag">{SVC[s]}</span>)}
+            </div>
+          </div>
+          <h1 class="cs-hero__h1 n-rise d1">{c.name}</h1>
+          <p class="cs-hero__scope n-rise d2">{c.scope}</p>
+        </div>
+      </section>
+
+      <section class="cs-art">
+        <div class="n-wrap">
+          <figure class="cs-art__frame n-rise">
+            <img src={`/assets/${c.image}`} alt={`${c.name} website, ad and social creative, presented together`} width="1600" height="900" loading="eager" decoding="async" />
+          </figure>
+          <p class="cs-art__cap">Real client-approved artwork, supplied by {c.name}. Illustrative presentation, not a live screenshot.</p>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white">
+        <div class="n-wrap cs-body">
+          <div class="cs-shows n-rise">
+            <h2>What this covered</h2>
+            <ul>
+              {c.shows.map((s: string) => <li>{s}</li>)}
+            </ul>
+          </div>
+          <aside class="cs-services n-rise d1">
+            <h2>Services on record</h2>
+            <ul>
+              {c.services.map((s: string) => <li>{SVC[s]}</li>)}
+            </ul>
+            <p>Services recorded for {c.name} in our client book. No performance figures are published for any brand on this site.</p>
+          </aside>
+        </div>
+      </section>
+
+      {more.length > 0 && (
+        <section class="n-band n-band--paper cs-more" id="more">
+          <div class="n-wrap">
+            <span class="n-eyebrow">More work</span>
+            <h2 class="n-h2">A few other <span class="n-serif">case studies.</span></h2>
+            <div class="cs-more__row">
+              {more.map((m: any) => (
+                <a class="cw-card n-rise" href={`/work/${m.id}/`}>
+                  <span class="cw-card__fig">
+                    <img src={`/assets/${m.image}`} alt="" loading="lazy" decoding="async" />
+                    <span class="cw-card__logo"><img src={`/assets/clients/${m.id}.png`} alt={m.name} loading="lazy" decoding="async" /></span>
+                    <span class="cw-card__type">{m.type}</span>
+                  </span>
+                  <span class="cw-card__body">
+                    <strong class="cw-card__name">{m.name}</strong>
+                    <span class="cw-card__go">Read the case study
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+                    </span>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <Closing
+        eyebrow="Want to work with us"
+        h2a="Want your brand"
+        h2b="on this wall next?"
+        lede="Start with a free audit. A senior strategist reads your campaigns against what a sale, a lead or an enrolment is worth to you."
+        image="work/review.jpg"
+        chip="Reviewing work together"
+        label="Get a free audit"
+        brief={true}
+        secondary={{ href: "/work/", label: "See more of our work" }}
+      />
+    </main>
+  </Shell>
+  <script>import "../../scripts/hub.ts";</script>
+</BaseLayout>

@@ -1,0 +1,275 @@
+/* hub/hb-data-guidecm.js: Contribution margin and break-even ROAS page. Reuses the audience-hub template. No result, price or client outcome is stated.
+   Brand tags come from content/clients.json. */
+window.HUB = {
+  "key": "guidecm",
+  "wm": "Guide",
+  "eyebrow": "● Guide",
+  "h1": [
+    "Contribution margin",
+    [
+      "and the ",
+      "ROAS",
+      " you need"
+    ],
+    "to break even."
+  ],
+  "sub": "A plain-English guide to what one order leaves behind after product, shipping, fees and returns, and how that sets the ROAS a campaign must beat.",
+  "tiles": [
+    {
+      "img": "guides/cost.jpg",
+      "pos": "50% 50%",
+      "label": "Costs",
+      "note": "Every line"
+    },
+    {
+      "img": "guides/returns.jpg",
+      "pos": "50% 50%",
+      "label": "Returns",
+      "note": "RTO counts"
+    },
+    {
+      "img": "res/roas.jpg",
+      "pos": "50% 50%",
+      "label": "Break-even",
+      "note": "Your ROAS"
+    },
+    {
+      "img": "guides/review.jpg",
+      "pos": "50% 50%",
+      "label": "Decide",
+      "note": "Scale or fix"
+    }
+  ],
+  "answer": {
+    "label": "In short",
+    "lead": "Contribution margin is what is left of an order's revenue after the costs that come with that order, and break-even ROAS is the ROAS at which ad spend uses up exactly that amount.",
+    "hl": "the ROAS at which ad spend uses up exactly that amount",
+    "who": "Monday Marketing Company (MMC) reads paid media against contribution margin, because a healthy-looking ROAS can still lose money once product, shipping, fees and returns are paid.",
+    "points": [
+      {
+        "icon": "coin",
+        "title": "Start from one order",
+        "text": "What it earns, and what it costs to deliver."
+      },
+      {
+        "icon": "gauge",
+        "title": "One simple formula",
+        "text": "Break-even ROAS is 1 divided by contribution margin."
+      },
+      {
+        "icon": "chart",
+        "title": "Then compare",
+        "text": "Set it against the ROAS the platform reports."
+      }
+    ],
+    "image": "guides/cost.jpg",
+    "chip": "Read against your costs"
+  },
+  "beyond": {
+    "eyebrow": "Related",
+    "h2a": "Keep reading and",
+    "h2b": "check your own numbers.",
+    "cards": [
+      {
+        "n": "Break-even ROAS calculator",
+        "d": "Enter your own costs and get the ROAS your cost sheet demands.",
+        "img": "res/roas.jpg",
+        "href": "breakeven-roas-calculator.html",
+        "link": "Open the calculator"
+      },
+      {
+        "n": "Why platform dashboards over-count",
+        "d": "Why Meta, Google and your store rarely agree, and which number to trust.",
+        "img": "guides/overlap.jpg",
+        "href": "guide-attribution-overlap.html",
+        "link": "Read the guide"
+      },
+      {
+        "n": "Performance marketing",
+        "d": "Paid media read against contribution margin, not platform ROAS.",
+        "img": "pm-v3/channel-meta.jpg",
+        "href": "performance-marketing.html",
+        "link": "See performance marketing"
+      }
+    ]
+  },
+  "faqTitle": [
+    "Questions people ask about",
+    "contribution margin and break-even roas."
+  ],
+  "faq": [
+    {
+      "q": "What is contribution margin?",
+      "a": "It is the money left from an order after the costs that vary with it: product, packaging, shipping, payment fees and returns. It is the pool your ads are paid from."
+    },
+    {
+      "q": "How do you calculate break-even ROAS?",
+      "a": "Divide 1 by your contribution margin before ads, as a share of order value. If the margin is 50%, break-even ROAS is 2.0."
+    },
+    {
+      "q": "Is a ROAS of 3 good?",
+      "a": "It depends on your margin. If break-even ROAS is 2, a ROAS of 3 leaves margin. If break-even is 3.5, the same ROAS loses money."
+    },
+    {
+      "q": "Should the ROAS include tax?",
+      "a": "Compare like with like. Use the same tax basis for the ROAS you read and the margin you calculate."
+    },
+    {
+      "q": "Where can I calculate mine?",
+      "a": "Use the <a href=\"breakeven-roas-calculator.html\">break-even ROAS calculator</a> with your own costs."
+    }
+  ],
+  "cta": {
+    "h2a": "Have your numbers",
+    "h2b": "read with you.",
+    "lede": "On a call, with a senior strategist. Bring your cost sheet to the audit call."
+  },
+  "article": {
+    "blocks": [
+      {
+        "id": "what",
+        "h": "What contribution margin is",
+        "paras": [
+          "Contribution margin is the money an order leaves behind after the costs that vary with that order. For a D2C brand these are product cost, packaging, shipping, payment gateway fees and the cost of returns. Rent, salaries and software are fixed costs and sit outside it.",
+          "It matters because it is the pool your advertising has to be paid from. Whatever an order leaves behind before ads is the most you can spend to win that order and still break even."
+        ],
+        "callout": {
+          "title": "The short version",
+          "text": "Contribution margin before ads, as a share of revenue, sets your break-even ROAS. Break-even ROAS is 1 divided by that share."
+        }
+      },
+      {
+        "id": "why",
+        "h": "Why revenue and platform ROAS mislead",
+        "paras": [
+          "ROAS divides the revenue an ad platform reports by what you spent on ads. It says nothing about what it cost to make and deliver those orders. Two brands can both report the same ROAS and one can be profitable while the other loses money on every sale.",
+          "Also check whether the revenue in your ROAS includes tax. Compare like with like: use the same basis for the ROAS you read and the margin you calculate."
+        ],
+        "img": "guides/review.jpg",
+        "cap": "Reading campaign results against a profit-per-order sheet."
+      },
+      {
+        "id": "calc",
+        "h": "How to work it out, step by step",
+        "steps": [
+          {
+            "t": "Start with the order value",
+            "d": "Use the average order value, before tax if your costs are before tax."
+          },
+          {
+            "t": "Subtract product cost",
+            "d": "What it costs you to buy or make the items in that order."
+          },
+          {
+            "t": "Subtract packaging and shipping",
+            "d": "Include the forward shipping you pay, and cash-on-delivery handling if you offer it."
+          },
+          {
+            "t": "Subtract payment fees",
+            "d": "Gateway and collection charges on the order."
+          },
+          {
+            "t": "Subtract a returns allowance",
+            "d": "The average cost of returns and failed deliveries, spread across all orders."
+          },
+          {
+            "t": "Divide what is left by the order value",
+            "d": "That is your contribution margin before ads. Divide 1 by it to get break-even ROAS."
+          }
+        ],
+        "img": "guides/cost.jpg",
+        "cap": "A cost sheet with each line that comes off an order."
+      },
+      {
+        "id": "example",
+        "h": "A worked example",
+        "paras": [
+          "The numbers below are made up to show the method. Use your own."
+        ],
+        "table": {
+          "caption": "Illustrative example, not a benchmark",
+          "head": [
+            "Line",
+            "Per order (₹)",
+            "Share of order value"
+          ],
+          "rows": [
+            [
+              "Order value (before tax)",
+              "1,000",
+              "100%"
+            ],
+            [
+              "Product cost",
+              "300",
+              "30%"
+            ],
+            [
+              "Packaging",
+              "40",
+              "4%"
+            ],
+            [
+              "Shipping",
+              "90",
+              "9%"
+            ],
+            [
+              "Payment fees",
+              "20",
+              "2%"
+            ],
+            [
+              "Returns allowance",
+              "50",
+              "5%"
+            ],
+            [
+              "Contribution before ads",
+              "500",
+              "50%"
+            ]
+          ]
+        },
+        "callout": {
+          "title": "What that gives",
+          "text": "Contribution before ads is 50% of order value, so break-even ROAS is 1 ÷ 0.5 = 2.0. Break-even cost per order is ₹500. A campaign at ROAS 3.0 leaves margin after ads. A campaign at ROAS 1.8 loses money even though it looks healthy."
+        }
+      },
+      {
+        "id": "returns",
+        "h": "Why returns and failed deliveries change the answer",
+        "paras": [
+          "A returned or refused order earns nothing but still costs shipping, often both ways, plus packaging and handling. For brands that ship cash on delivery, this can move break-even ROAS by a full point or more.",
+          "That is why the returns allowance is its own line. If you do not include it, your break-even ROAS looks lower than it really is, and campaigns look safer than they are."
+        ],
+        "img": "guides/returns.jpg",
+        "cap": "Returned parcels are a cost that ad dashboards do not show."
+      },
+      {
+        "id": "use",
+        "h": "How to use break-even ROAS",
+        "list": [
+          "Set a floor: campaigns below break-even ROAS need a fix or a pause, unless they are bringing customers who reorder.",
+          "Set a target above it: the gap between your ROAS and break-even is the margin your ads leave.",
+          "Change it when your costs change: a price rise, a cheaper courier or lower returns all move break-even ROAS.",
+          "Read repeat customers separately. A first order that only breaks even can still pay off if the customer comes back. See the <a href=\"ltv-cac-calculator.html\">LTV:CAC calculator</a>."
+        ]
+      },
+      {
+        "id": "tool",
+        "h": "Work it out with your own numbers",
+        "paras": [
+          "The <a href=\"breakeven-roas-calculator.html\">break-even ROAS calculator</a> does the sums above with your costs, and the <a href=\"unit-economics-calculator.html\">unit economics calculator</a> scales one order into a monthly profit and loss. Both are free to use.",
+          "If you would like a senior strategist to read your figures with you, bring them to the <a href=\"audit.html\">audit call</a>."
+        ],
+        "img": "res/roas.jpg",
+        "cap": "The break-even ROAS calculator on the MMC site."
+      }
+    ]
+  },
+  "hero2": {
+    "href": "#guide",
+    "label": "Read the guide"
+  }
+};

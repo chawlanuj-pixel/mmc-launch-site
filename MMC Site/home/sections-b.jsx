@@ -136,7 +136,7 @@ function CaseV2({ active }) {
       </div>
 
       <div className="sec__content">
-        <span className="eyebrow2 r d1">Selected work · 25 brands</span>
+        <span className="eyebrow2 r d1">Selected work</span>
         <h2 className="sec__h r d2" style={{ fontSize: "clamp(30px,3.2vw,52px)" }}>
           Real brands. <span className="serif-accent">Real systems.</span>
         </h2>

@@ -1,0 +1,57 @@
+---
+// Shared page shell: tracking, fonts/CSS, SEO head, JSON-LD, and the runtime helpers (booking, forms).
+import tracking from "./tracking.html?raw";
+import "../styles/design-system/colors_and_type.css";
+import "../styles/styles.css";
+import "../styles/page-hero.css";
+import "../styles/home26.css";
+import "../styles/pm.css";
+import "../styles/answer.css";
+import "../styles/dc.css";
+import "../styles/hb.css";
+import "../styles/hb-stack.css";
+import "../styles/hb-loop-b.css";
+import "../styles/hb-article.css";
+
+interface Props {
+  title: string; description: string; path: string;
+  ogTitle?: string; ogDescription?: string; ogAlt?: string;
+  jsonld?: unknown[]; noindex?: boolean;
+}
+const { title, description, path, ogTitle, ogDescription, ogAlt, jsonld = [], noindex = false } = Astro.props;
+const site = "https://www.mondaymarketing.company";
+const url = site + path;
+const image = site + "/assets/og-card.jpg";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <Fragment set:html={tracking} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={url} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Monday Marketing Company" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={ogTitle || title} />
+    <meta property="og:description" content={ogDescription || description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:alt" content={ogAlt || "Monday Marketing Company"} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle || title} />
+    <meta name="twitter:description" content={ogDescription || description} />
+    <meta name="twitter:image" content={image} />
+    <link rel="icon" type="image/png" sizes="any" href="/assets/logo-mark.png" />
+    <link rel="apple-touch-icon" href="/assets/logo-mark.png" />
+    {jsonld.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC22WQZ7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <slot />
+    <script is:inline src="/admin/mmc-data.js"></script>
+    <script is:inline src="/assets/mmc-forms.js"></script>
+  </body>
+</html>

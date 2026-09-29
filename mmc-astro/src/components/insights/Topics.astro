@@ -1,0 +1,23 @@
+---
+interface Topic { h: string; p: string; img: string; links: [string, string][] }
+interface Props { topics: Topic[] }
+const { topics } = Astro.props;
+---
+<section class="editorial ix-topics" id="topics">
+  <div class="ed-wrap">
+    <div class="ix-topics__head">
+      <span class="ed-kicker">Find your way in</span>
+      <h2 class="ix-topics__h2 ed-rise">By topic</h2>
+    </div>
+    <div class="ix-topics__grid">
+      {topics.map((t) => (
+        <div class="ix-topic ed-rise">
+          <figure class="ix-topic__fig"><img src={t.img} alt="" width="600" height="400" loading="lazy" decoding="async" /></figure>
+          <h3>{t.h}</h3>
+          <p>{t.p}</p>
+          <ul class="ix-topic__links">{t.links.map((l) => <li><a href={l[1]}>{l[0]}</a></li>)}</ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

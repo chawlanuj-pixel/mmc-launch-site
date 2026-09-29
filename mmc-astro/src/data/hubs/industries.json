@@ -1,0 +1,284 @@
+{
+ "file": "industries.html",
+ "path": "/industries/",
+ "key": "industries",
+ "title": "Marketing for D2C, B2B and Education Brands in India | MMC",
+ "description": "MMC is a marketing agency for D2C brands, B2B companies and educational institutes in India. Each engagement is shaped around how that business wins customers.",
+ "ogTitle": "Marketing for D2C, B2B and education brands",
+ "ogDescription": "Three kinds of business, each measured on the right scoreboard.",
+ "ogAlt": "Monday Marketing Company: industries.",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/industries.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Industries",
+     "item": "https://www.mondaymarketing.company/industries.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "CollectionPage",
+   "@id": "https://www.mondaymarketing.company/industries.html#webpage",
+   "url": "https://www.mondaymarketing.company/industries.html",
+   "name": "Marketing for D2C, B2B and Education Brands in India | MMC",
+   "description": "MMC is a marketing agency for D2C brands, B2B companies and educational institutes in India. Each engagement is shaped around how that business wins customers.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/industries.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "@id": "https://www.mondaymarketing.company/industries.html#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which kinds of business do you work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "D2C brands, B2B companies and educational institutes. See the D2C, B2B and education pages."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if we are a different kind of business?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tell us what you sell and how customers find you. We will say honestly whether we are a fit, and if we are not, we will say so."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the approach change by industry?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. What counts as a good result, which channels matter and how long a customer takes to decide all differ, so measures and funnels are set per business."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where can I see examples?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "See our work for projects across these kinds of business."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on scope and, for media, on ad spend, so we quote after the audit call, once we have seen your accounts."
+     }
+    }
+   ]
+  }
+ ],
+ "hub": {
+  "key": "industries",
+  "wm": "Sectors",
+  "eyebrow": "● Industries",
+  "h1": [
+   "Marketing built for",
+   [
+    "D2C, B2B and ",
+    "education",
+    ""
+   ],
+   "brands in India."
+  ],
+  "sub": "We work with direct-to-consumer brands, companies that sell to other businesses, and educational institutes, and shape each engagement around how that business actually grows.",
+  "tiles": [
+   {
+    "img": "d2c/checkout.jpg",
+    "pos": "50% 50%",
+    "label": "D2C",
+    "note": "Shoppers to buyers"
+   },
+   {
+    "img": "shared/b2b.jpg",
+    "pos": "50% 50%",
+    "label": "B2B",
+    "note": "Enquiries to deals"
+   },
+   {
+    "img": "shared/education.jpg",
+    "pos": "50% 50%",
+    "label": "Education",
+    "note": "Enquiries to enrolments"
+   },
+   {
+    "img": "au/look-tracking.jpg",
+    "pos": "50% 50%",
+    "label": "Measured",
+    "note": "On the right numbers"
+   }
+  ],
+  "answer": {
+   "label": "In short",
+   "lead": "Industry-specific marketing is the work of adapting strategy, channels and measures to how a particular kind of business actually wins customers.",
+   "hl": "how a particular kind of business actually wins customers",
+   "who": "Monday Marketing Company (MMC) works with D2C brands, B2B companies and educational institutes, and treats each as its own kind of growth problem.",
+   "points": [
+    {
+     "icon": "bag",
+     "title": "D2C brands",
+     "text": "Ads, store, creative and retention read against margin."
+    },
+    {
+     "icon": "users",
+     "title": "B2B companies",
+     "text": "Lead generation judged on fit, not form fills."
+    },
+    {
+     "icon": "target",
+     "title": "Educational institutes",
+     "text": "Enquiries followed through to enrolment."
+    }
+   ],
+   "image": "shared/b2b.jpg",
+   "chip": "Three audiences, one approach"
+  },
+  "leaks": {
+   "style": "stack",
+   "eyebrow": "Where generic marketing goes wrong",
+   "h2a": "The same playbook does not",
+   "h2b": "fit every business.",
+   "lede": "Each kind of business loses customers in a different place. Below is what is often done, and what we do instead."
+  },
+  "stages": [
+   {
+    "k": "D2C brands",
+    "tag": "Direct-to-consumer",
+    "breaks": "Judging every channel on ROAS alone.",
+    "why": "A ROAS number ignores product cost, shipping and returns, so a campaign can look healthy while its orders lose money.",
+    "does": "We read performance against contribution margin, and connect ads, store speed, creative and retention so the whole journey works.",
+    "href": "d2c.html",
+    "img": "d2c/packing.jpg"
+   },
+   {
+    "k": "B2B companies",
+    "tag": "Business-to-business",
+    "breaks": "Treating every enquiry as equal.",
+    "why": "Sales cycles are long and buyer groups are small, so a few good leads matter more than many poor ones, and a form fill says little about fit.",
+    "does": "We connect paid media, a clear website and your CRM, and pass lead stages back to the ad platforms so campaigns learn what a good lead is.",
+    "href": "b2b.html",
+    "img": "shared/b2b.jpg"
+   },
+   {
+    "k": "Educational institutes",
+    "tag": "Colleges, schools and education brands",
+    "breaks": "Counting enquiries and stopping there.",
+    "why": "Admissions depend on the follow-up, on the reputation students and parents find, and on the reminders between an enquiry and an enrolment.",
+    "does": "We build lead generation with CRM and Meta CAPI, manage reviews and reputation, and run retention funnels through the admissions cycle.",
+    "href": "education.html",
+    "img": "shared/education.jpg"
+   }
+  ],
+  "numbers": {
+   "eyebrow": "What we read",
+   "h2a": "Different businesses,",
+   "h2b": "different scoreboards.",
+   "note": "Agreed with you before work starts.",
+   "cards": [
+    {
+     "n": "D2C: contribution after ads",
+     "d": "What an order leaves once product, shipping, returns and ads are paid.",
+     "href": "d2c.html"
+    },
+    {
+     "n": "B2B: qualified leads",
+     "d": "Enquiries that fit your buyer, not every form fill.",
+     "href": "b2b.html"
+    },
+    {
+     "n": "Education: enquiries to enrolments",
+     "d": "How many enquiries become admissions.",
+     "href": "education.html"
+    },
+    {
+     "n": "All: cost per useful outcome",
+     "d": "What each rupee produced, read alongside your total results."
+    }
+   ]
+  },
+  "beyond": {
+   "eyebrow": "Related",
+   "h2a": "See the work that",
+   "h2b": "runs across all three.",
+   "cards": [
+    {
+     "n": "Performance marketing",
+     "d": "Paid media across Meta, Google, Amazon and quick commerce, read against profit.",
+     "img": "pm-v3/channel-meta.jpg",
+     "href": "performance-marketing.html",
+     "link": "See performance marketing"
+    },
+    {
+     "n": "Lead generation",
+     "d": "Paid media and follow-up funnels connected to your CRM and Meta CAPI.",
+     "img": "b2b/qualify.jpg",
+     "href": "lead-generation.html",
+     "link": "See lead generation"
+    },
+    {
+     "n": "Retention marketing",
+     "d": "WhatsApp, email and loyalty funnels that bring buyers back.",
+     "img": "rt/journey.jpg",
+     "href": "retention-marketing.html",
+     "link": "See retention marketing"
+    }
+   ]
+  },
+  "faqTitle": [
+   "What people ask about",
+   "who we work with."
+  ],
+  "faq": [
+   {
+    "q": "Which kinds of business do you work with?",
+    "a": "D2C brands, B2B companies and educational institutes. See the <a href=\"d2c.html\">D2C</a>, <a href=\"b2b.html\">B2B</a> and <a href=\"education.html\">education</a> pages."
+   },
+   {
+    "q": "What if we are a different kind of business?",
+    "a": "Tell us what you sell and how customers find you. We will say honestly whether we are a fit, and if we are not, we will say so."
+   },
+   {
+    "q": "Does the approach change by industry?",
+    "a": "Yes. What counts as a good result, which channels matter and how long a customer takes to decide all differ, so measures and funnels are set per business."
+   },
+   {
+    "q": "Where can I see examples?",
+    "a": "See <a href=\"Our Work.html\">our work</a> for projects across these kinds of business."
+   },
+   {
+    "q": "What does it cost?",
+    "a": "It depends on scope and, for media, on ad spend, so we quote after the <a href=\"audit.html\">audit call</a>, once we have seen your accounts."
+   }
+  ],
+  "cta": {
+   "h2a": "Tell us what kind of",
+   "h2b": "business you run.",
+   "lede": "On a call, with a senior strategist. We will say honestly whether we are a fit."
+  }
+ }
+}

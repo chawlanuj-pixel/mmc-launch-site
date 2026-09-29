@@ -1,0 +1,128 @@
+---
+import Img from "./Img.astro";
+import Arrow from "./Arrow.astro";
+const { L, S } = Astro.props;
+const COLORS = ["#1A2A8C", "#2340B8", "#2A4BD0", "#3D63E0", "#5D82EC", "#F0C13C", "#F5C842"];
+const n = (S || []).length;
+const top = (i: number) => 100 - (i * 44) / n;
+---
+{L && L.style === "stack" && (
+<section class="n-band n-band--paper pm-band stk" id="leaks">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">{L.eyebrow}</span>
+      <h2 class="n-h2">{L.h2a} <span class="n-serif">{L.h2b}</span></h2>
+      <p class="n-lede">{L.lede}</p>
+    </div>
+    <ol class="stk__list" data-stack>
+      {S.map((s: any, k: number) => (
+        <li class="stk__card" style={`--i:${k}`}>
+          <div class="stk__media">
+            <Img name={s.img} ratio="4 / 3" class="stk__img" />
+            <span class="stk__num" aria-hidden="true">{k + 1}</span>
+          </div>
+          <div class="stk__body">
+            <div class="stk__kick">
+              <span class="stk__step">Stage {k + 1} of {S.length}<span class="stk__seg" aria-hidden="true">{S.map((_: any, m: number) => <i class={m <= k ? "is-on" : ""}></i>)}</span></span>
+              <b>{s.k}</b>
+            </div>
+            <h3 class="stk__leak">{s.breaks}</h3>
+            <p class="stk__why">{s.why}</p>
+            <div class="stk__fix">
+              <span class="stk__label">What we do</span>
+              <p>{s.does}</p>
+            </div>
+            <a class="stk__svc" href={s.href}>{s.tag}<Arrow /></a>
+          </div>
+        </li>
+      ))}
+    </ol>
+    {L.note && <p class="stk__note">{L.note}</p>}
+  </div>
+</section>
+)}
+{L && L.style === "funnel" && (
+<section class="n-band n-band--white pm-band fun" id="leaks">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">{L.eyebrow}</span>
+      <h2 class="n-h2">{L.h2a} <span class="n-serif">{L.h2b}</span></h2>
+      <p class="n-lede">{L.lede}</p>
+    </div>
+    <div class="fun__cols n-rise d1" aria-hidden="true">
+      <span class="fun__col fun__col--leak"><svg viewBox="0 0 20 20"><path d="M10 2 C10 2 4 9 4 13 A6 6 0 0 0 16 13 C16 9 10 2 10 2 Z" fill="currentColor" /></svg>Where families slip away</span>
+      <span class="fun__col fun__col--mid">The admissions funnel</span>
+      <span class="fun__col fun__col--plug"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="currentColor" /><path d="M5.5 10.5 L8.7 13.6 L14.5 7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>How we plug it</span>
+    </div>
+    <ol class="fun__list n-rise d1">
+      {S.map((s: any, k: number) => {
+        const t = (100 - top(k)) / 2, b = (100 - top(k + 1)) / 2;
+        return (
+        <li class="fun__row">
+          <article class="fun__leak">
+            <span class="fun__mini fun__mini--leak">Where families slip away</span>
+            <p>{s.breaks}</p>
+            <i class="fun__out" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M16 10 H4 M8.5 5.5 L4 10 L8.5 14.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg></i>
+          </article>
+          <div class="fun__slice" style={`--t:${t}%;--b:${b}%;--c:${COLORS[k % COLORS.length]};--w:${top(k)}%`}>
+            <span class={"fun__shape" + (k >= 5 ? " is-dark" : "")}>
+              <b class="fun__n">{k + 1}</b>
+              <span class="fun__k">{s.k}</span>
+            </span>
+          </div>
+          <article class="fun__plug">
+            <Img name={s.img} ratio="4 / 3" class="fun__img" />
+            <div class="fun__txt">
+              <span class="fun__mini fun__mini--plug">How we plug it</span>
+              <p>{s.does}</p>
+              <a class="fun__link" href={s.href}>{s.link}<Arrow /></a>
+            </div>
+            <i class="fun__in" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M16 10 H4 M8.5 5.5 L4 10 L8.5 14.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg></i>
+          </article>
+        </li>
+        );
+      })}
+    </ol>
+  </div>
+</section>
+)}
+{L && L.style !== "stack" && L.style !== "funnel" && (
+<section class="n-band n-band--white pm-band" id="leaks">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">{L.eyebrow}</span>
+      <h2 class="n-h2">{L.h2a} <span class="n-serif">{L.h2b}</span></h2>
+      <p class="n-lede">{L.lede}</p>
+    </div>
+    <ol class="stg n-rise d1">
+      {S.map((s: any, k: number) => (
+        <li class={"stg__item" + (k % 2 ? " is-flip" : "")}>
+          <figure class="stg__fig">
+            <Img name={s.img} ratio="4 / 3" class="stg__img" />
+            <span class="stg__num" aria-hidden="true">{k + 1}</span>
+            <figcaption class="stg__k">{s.k}</figcaption>
+          </figure>
+          <div class="stg__body">
+            <article class="stg__bad">
+              <span class="stg__tag">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" /><path d="M6.5 6.5 L13.5 13.5 M13.5 6.5 L6.5 13.5" stroke="#fff" stroke-width="2" stroke-linecap="round" /></svg>
+                What you may be doing
+              </span>
+              <p>{s.breaks}</p>
+              <span class="stg__to" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 4 V15 M5 10.5 L10 15.5 L15 10.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+            </article>
+            <article class="stg__good">
+              <span class="stg__tag">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" /><path d="M5.5 10.5 L8.7 13.6 L14.5 7" fill="none" stroke="#1A2A8C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                What we do instead
+              </span>
+              <p>{s.does}</p>
+              <a class="stg__link" href={s.href}>{s.link}<Arrow /></a>
+            </article>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+)}

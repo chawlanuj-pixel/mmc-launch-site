@@ -1,0 +1,302 @@
+---
+// Careers role detail page. Rebuilt from scratch (not patched) after a
+// persistent hero text-overlap report that could not be reproduced in
+// automated testing across seven widths. This version drops the JS-driven
+// clip-reveal text animation on the heading entirely (the most likely
+// remaining fragile mechanism in a real browser) in favour of a plain,
+// generously-spaced, animation-free heading, and uses its own CSS file
+// with a unique class prefix (crp-) so nothing from any other stylesheet
+// can collide with it.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Img from "../../components/hub/Img.astro";
+import Arrow from "../../components/hub/Arrow.astro";
+import roles from "../../data/roles.json";
+import "../../styles/careers-role.css";
+
+export function getStaticPaths() {
+  return roles.map((r) => ({ params: { slug: r.slug }, props: { role: r } }));
+}
+const { role } = Astro.props as { role: (typeof roles)[number] };
+const SITE = "https://www.mondaymarketing.company";
+const path = "/careers/" + role.slug + "/";
+const MODE: Record<string, string> = { ONSITE: "Onsite", HYBRID: "Hybrid", REMOTE: "Remote" };
+const TAG: Record<string, string> = { performance: "Performance", creative: "Creative", strategy: "Strategy", technology: "Technology" };
+const title = `${role.title}, ${role.location} | MMC Careers`;
+const description = `${role.summary} Compensation, the hiring process and the four screening questions for this role.`.slice(0, 300);
+
+// Google for Jobs technical SEO: every role page must emit a valid JobPosting.
+// This block is the single source of truth for that requirement and runs for
+// every entry in roles.json automatically via getStaticPaths, so a new role
+// added later gets full JobPosting markup by default with no extra step.
+// Sensible fallbacks are filled in below for any field a future role entry
+// might omit, so the schema is never silently invalid or incomplete.
+// Required by Google: title, description, datePosted, hiringOrganization,
+// jobLocation (or jobLocationType + applicantLocationRequirements for remote).
+// Recommended and included here: employmentType, baseSalary, identifier,
+// validThrough is deliberately omitted (see note below).
+const remote = role.workMode === "REMOTE";
+const postedDate = role.datePosted || new Date().toISOString().slice(0, 10);
+const empType = role.empType || "FULL_TIME";
+const posting: Record<string, unknown> = {
+  "@context": "https://schema.org", "@type": "JobPosting", "@id": SITE + path + "#job",
+  title: role.title,
+  description: `<p>${role.summary}</p><p><strong>What you will own</strong></p><ul>${role.responsibilities.map((x) => `<li>${x}</li>`).join("")}</ul><p><strong>What you probably are</strong></p><ul>${role.youAre.map((x) => `<li>${x}</li>`).join("")}</ul>`,
+  identifier: { "@type": "PropertyValue", propertyID: "MMC-CAREERS", value: role.slug },
+  datePosted: postedDate,
+  employmentType: empType,
+  industry: role.industry || "Marketing & Advertising",
+  url: SITE + path,
+  directApply: true,
+  hiringOrganization: { "@type": "Organization", name: "Monday Marketing Company", sameAs: SITE, url: SITE, logo: SITE + "/assets/logo-blue.png" },
+  jobLocation: { "@type": "Place", address: { "@type": "PostalAddress", streetAddress: "WeWork, Zenia Building, Hiranandani Business Park", addressLocality: remote ? "Thane" : (role.city || "Thane"), addressRegion: "MH", postalCode: "400607", addressCountry: "IN" } },
+};
+if (role.salaryMin) posting.baseSalary = { "@type": "MonetaryAmount", currency: "INR", value: { "@type": "QuantitativeValue", minValue: role.salaryMin, maxValue: role.salaryMax, unitText: role.salaryUnit || "YEAR" } };
+// validThrough is intentionally left unset: we have no real listing end date
+// for any role ("Rolling, open now"), and Google treats a JobPosting whose
+// validThrough has passed as expired and drops it from Google for Jobs.
+// Omitting the field is the correct, safer choice for a rolling opening;
+// set a real future date here only if a role is given an actual close date.
+if (remote) { posting.jobLocationType = "TELECOMMUTE"; posting.applicantLocationRequirements = { "@type": "Country", name: "India" }; }
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + path + "#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "Careers", item: SITE + "/careers/" },
+    { "@type": "ListItem", position: 3, name: role.title, item: SITE + path } ] },
+  { "@context": "https://schema.org", "@type": "WebPage", "@id": SITE + path + "#webpage", url: SITE + path, name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + path + "#breadcrumb" }, publisher: { "@id": SITE + "/#organization" }, inLanguage: "en", mainEntity: { "@id": SITE + path + "#job" } },
+  posting,
+];
+const screening = role.screening && role.screening.length ? role.screening : [
+  { id: "q1", q: "What's the single piece of work that best represents how you operate?", hint: "Why you picked it." },
+  { id: "q2", q: "Walk us through how you make a hard trade-off at work.", hint: "Specific situation, not theory." },
+  { id: "q3", q: "What's the kind of project you'd quietly hope to be assigned in your first ninety days?", hint: "Be specific." },
+  { id: "q4", q: "Anything else we should know about how you want to work?", hint: "" },
+];
+const hiringSteps = role.hiringSteps && role.hiringSteps.length ? role.hiringSteps : [
+  "A screening call with whoever runs the discipline",
+  "A short, paid piece of real work, scoped to a day",
+  "A final round with the founders and the team you'd work with",
+  "Reference checks and an offer",
+];
+---
+<BaseLayout title={title} description={description} path={path} ogTitle={`Hiring: ${role.title}`} ogDescription={role.hint} ogAlt={`Careers at Monday Marketing Company: ${role.title}.`} jsonld={jsonld}>
+  <Shell>
+    <main class="app-main n-app">
+
+      <section class="crp-hero" id="top">
+        <div class="crp-hero__card">
+          <figure class="crp-hero__fig">
+            <Img name={role.img} ratio="4 / 5" eager={true} class="crp-hero__img" />
+            <figcaption class="crp-hero__chip"><i aria-hidden="true"></i>{TAG[role.discipline]}</figcaption>
+          </figure>
+          <div class="crp-hero__body">
+            <nav class="crp-hero__crumb" aria-label="Breadcrumb"><a href="/careers/">Careers</a><span aria-hidden="true">/</span><span>{role.title}</span></nav>
+            <h1 class="crp-hero__h1">{role.title}</h1>
+            <p class="crp-hero__sub">{role.hint}</p>
+            <ul class="crp-hero__meta">
+              <li>{role.location}</li><li>{MODE[role.workMode]}</li><li>{role.type}</li><li>{role.band}</li>
+              {role.salary && <li>{role.salary}</li>}
+            </ul>
+            <div class="crp-hero__act">
+              <a class="btn btn--primary glow-btn" href="#apply"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Apply for this role<span class="arrow"></span></span></a>
+              <a class="btn btn--link" href="/careers/">All open roles<span class="arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper">
+        <div class="n-wrap">
+          <div class="crp-body">
+            <article class="crp-desc">
+              <div class="crp-sec" data-n="01"><h2>The role</h2><p>{role.summary}</p></div>
+              <div class="crp-sec" data-n="02"><h2>What you will own</h2><ul>{role.responsibilities.map((x) => <li>{x}</li>)}</ul></div>
+              <div class="crp-sec" data-n="03"><h2>You probably are</h2><ul>{role.youAre.map((x) => <li>{x}</li>)}</ul></div>
+              {role.bonus.length > 0 && <div class="crp-sec" data-n="04"><h2>A bonus if you have</h2><ul>{role.bonus.map((x) => <li>{x}</li>)}</ul></div>}
+              <div class="crp-sec" data-n={role.bonus.length > 0 ? "05" : "04"}>
+                <h2>How hiring works</h2>
+                <ol class="crp-steps">{hiringSteps.map((s, k) => <li><b>{String(k + 1).padStart(2, "0")}</b><span>{s}</span></li>)}</ol>
+                <p class="crp-meta-line">Reports to {role.reportsTo || "the discipline lead"} · {role.applyWindow || "Rolling, open now"}</p>
+              </div>
+              <a class="crp-back" href="/careers/">See all open roles<Arrow /></a>
+            </article>
+
+            <aside class="crp-apply" id="apply">
+              <div class="crp-apply__card">
+                <div class="crp-progress" id="crp-progress" role="list" aria-label="Application progress">
+                  <div class="crp-progress__item is-on" data-step="1" role="listitem"><span class="crp-progress__dot">1</span><span>Basics</span></div>
+                  <span class="crp-progress__rule" aria-hidden="true"><span></span></span>
+                  <div class="crp-progress__item" data-step="2" role="listitem"><span class="crp-progress__dot">2</span><span>Screening</span></div>
+                </div>
+
+                <form class="crp-form" id="crp-form-1" data-role={role.title} data-slug={role.slug}>
+                  <div class="crp-form__head">
+                    <span class="eyebrow">Step 1, basics</span>
+                    <h2>Tell us who you are.</h2>
+                    <p>After this you'll answer four short questions about the role. We read every application.</p>
+                  </div>
+                  <label><span>Your full name<i>*</i></span><input name="name" type="text" required autocomplete="name" placeholder="Aanya Sharma" /></label>
+                  <label><span>Email<i>*</i></span><input name="email" type="email" required autocomplete="email" placeholder="aanya@gmail.com" /></label>
+                  <div class="crp-form__row">
+                    <label>Phone<input name="phone" type="tel" autocomplete="tel" placeholder="+91 …" /></label>
+                    <label>LinkedIn<input name="linkedin" type="text" placeholder="linkedin.com/in/…" /></label>
+                  </div>
+                  <div class="crp-form__row">
+                    <label><span>Current CTC<i>*</i></span><input name="currentCtc" type="text" required placeholder={role.salaryUnit === "MONTH" ? "e.g. retainer or day rate" : "₹ per annum"} /></label>
+                    <label><span>Expected CTC<i>*</i></span><input name="expectedCtc" type="text" required placeholder="Negotiable is fine" /></label>
+                  </div>
+                  <label>Notice period<input name="notice" type="text" placeholder="30 days / 60 days / immediate" /></label>
+                  <label class="crp-upload"><span>Resume or CV<i>*</i></span>
+                    <div class="crp-upload__box" id="crp-upload-box">
+                      <input name="cv" type="file" accept=".pdf,.doc,.docx" id="crp-cv-input" />
+                      <span class="crp-upload__msg" id="crp-upload-msg">
+                        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M 10 14 L 10 4 M 6 8 L 10 4 L 14 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M 4 16 L 16 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                        <span><strong>Drop your CV here</strong><em>PDF or Word, max 4MB</em></span>
+                      </span>
+                    </div>
+                  </label>
+                  <p class="crp-cv-error" id="crp-cv-error" hidden></p>
+                  <label>Or paste a link to your CV<input name="cvUrl" type="url" placeholder="https://drive.google.com/…" /><small>Use this if your CV is over 4MB, or you'd rather share a live link.</small></label>
+                  <fieldset class="crp-radio">
+                    <legend><span>How do you want to work?<i>*</i></span></legend>
+                    <div class="crp-radio__opts">
+                      <label class="crp-radio__opt"><input type="radio" name="mode" value="Onsite" required /><span><b>Onsite</b><small>Five days at the Thane studio</small></span></label>
+                      <label class="crp-radio__opt"><input type="radio" name="mode" value="Hybrid" checked={role.workMode === "HYBRID"} /><span><b>Hybrid</b><small>3 in office, 2 from home</small></span></label>
+                      <label class="crp-radio__opt"><input type="radio" name="mode" value="Remote" checked={role.workMode === "REMOTE"} /><span><b>Remote</b><small>Work from home, worldwide</small></span></label>
+                    </div>
+                  </fieldset>
+                  <div class="crp-form__foot">
+                    <button type="submit" class="btn btn--primary glow-btn"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Proceed to screening<span class="arrow"></span></span></button>
+                    <span class="crp-form__fine">4 short role-specific questions next.</span>
+                  </div>
+                </form>
+
+                <form class="crp-form" id="crp-form-2" hidden data-role={role.title} data-slug={role.slug}>
+                  <div class="crp-form__head">
+                    <span class="eyebrow">Step 2, screening</span>
+                    <h2>Four questions about the role.</h2>
+                    <p>Short, specific answers. Aim for one paragraph each. We're looking for how you think, not perfect prose.</p>
+                  </div>
+                  <div class="crp-applied"><span>Applying for</span><b>{role.title}</b></div>
+                  {screening.map((q, i) => (
+                    <label class="crp-screen-q">
+                      <span class="crp-screen-n">{String(i + 1).padStart(2, "0")}</span>
+                      <span class="crp-screen-text">{q.q}{i < 2 && <i> *</i>}{q.hint && <em>{q.hint}</em>}</span>
+                      <textarea name={q.id} rows={i < 2 ? 5 : 4} required={i < 2}></textarea>
+                    </label>
+                  ))}
+                  <div class="crp-form__foot crp-form__foot--split">
+                    <button type="button" class="btn btn--ghost" id="crp-back"><span class="arrow arrow--back"></span>Back</button>
+                    <button type="submit" class="btn btn--primary glow-btn"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Submit application<span class="arrow"></span></span></button>
+                  </div>
+                </form>
+
+                <div class="crp-thanks" id="crp-thanks" hidden>
+                  <span class="crp-thanks__ring" aria-hidden="true"><svg viewBox="0 0 80 80" width="64" height="64"><circle cx="40" cy="40" r="36" fill="none" stroke="var(--n-sun)" stroke-width="2"/><path d="M 26 41 L 36 51 L 56 31" fill="none" stroke="var(--n-blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="crp-thanks__tag">Application received</span>
+                  <h2 id="crp-thanks-name">Thanks.</h2>
+                  <p>A senior on the hiring team will read it within one working day and come back with next steps, or a kind, honest no.</p>
+                  <ul class="crp-thanks__next">
+                    <li><span>01</span>We read every application within one working day.</li>
+                    <li><span>02</span>If we move forward, you'll hear from hr@mondaymarketing.company.</li>
+                    <li><span>03</span>The hiring process is described on the left.</li>
+                  </ul>
+                  <a href="/careers/" class="btn btn--ghost">Back to careers<span class="arrow"></span></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+  </Shell>
+  <script>
+    const MAX_CV_MB = 4;
+    const f1 = document.getElementById("crp-form-1") as HTMLFormElement | null;
+    const f2 = document.getElementById("crp-form-2") as HTMLFormElement | null;
+    const thanks = document.getElementById("crp-thanks");
+    const backBtn = document.getElementById("crp-back");
+    const steps = document.getElementById("crp-progress");
+    const cvInput = document.getElementById("crp-cv-input") as HTMLInputElement | null;
+    const cvMsg = document.getElementById("crp-upload-msg");
+    const cvBox = document.getElementById("crp-upload-box");
+    const cvError = document.getElementById("crp-cv-error");
+    let basics: Record<string, string> = {};
+    let cvPayload: Record<string, unknown> = {};
+
+    const setStep = (n: number) => {
+      steps?.querySelectorAll<HTMLElement>("[data-step]").forEach((el) => {
+        const s = Number(el.dataset.step);
+        el.classList.toggle("is-on", s === n);
+        el.classList.toggle("is-done", s < n);
+      });
+      const rule = steps?.querySelector<HTMLElement>(".crp-progress__rule > span");
+      if (rule) rule.style.width = n > 1 ? "100%" : "0%";
+    };
+
+    cvInput?.addEventListener("change", () => {
+      const file = cvInput.files && cvInput.files[0];
+      if (cvError) { cvError.hidden = true; cvError.textContent = ""; }
+      if (file && file.size > MAX_CV_MB * 1024 * 1024) {
+        if (cvError) { cvError.hidden = false; cvError.textContent = `That file is over ${MAX_CV_MB}MB. Paste a link to it instead.`; }
+        cvInput.value = "";
+        return;
+      }
+      if (file && cvMsg) {
+        cvBox?.classList.add("is-filled");
+        cvMsg.innerHTML = `<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M 3 8 L 7 12 L 13 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>${file.name}<em>change</em></span>`;
+      }
+    });
+
+    const readCv = (file: File | null | undefined) => new Promise((resolve) => {
+      if (!file) return resolve({});
+      const r = new FileReader();
+      r.onload = () => resolve({ cvName: file.name, cvType: file.type || "application/octet-stream", cvSize: file.size, cvBase64: String(r.result).split(",").pop() });
+      r.onerror = () => resolve({ cvName: file.name, cvError: "could not read file" });
+      r.readAsDataURL(file);
+    });
+
+    f1?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const d = Object.fromEntries(new FormData(f1).entries()) as Record<string, string>;
+      const file = cvInput?.files && cvInput.files[0];
+      if (!file && !d.cvUrl) {
+        if (cvError) { cvError.hidden = false; cvError.textContent = "Add a CV file or a link to one."; }
+        return;
+      }
+      cvPayload = await readCv(file);
+      const { cv: _cv, ...rest } = d;
+      basics = rest;
+      f1.hidden = true;
+      if (f2) f2.hidden = false;
+      setStep(2);
+      f2?.scrollIntoView({ block: "start", behavior: "smooth" });
+    });
+
+    backBtn?.addEventListener("click", () => {
+      if (f2) f2.hidden = true;
+      if (f1) f1.hidden = false;
+      setStep(1);
+    });
+
+    f2?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const screen = Object.fromEntries(new FormData(f2).entries());
+      const w = window as any;
+      if (w.MMCForms) {
+        w.MMCForms.submitLead(
+          { role: f2.dataset.role, roleSlug: f2.dataset.slug, ...basics, ...cvPayload, ...screen },
+          { subject: "Application, " + f2.dataset.role + " - " + (basics.name || "candidate") }
+        );
+      }
+      f2.hidden = true;
+      if (thanks) {
+        thanks.hidden = false;
+        const nameEl = document.getElementById("crp-thanks-name");
+        if (nameEl) nameEl.textContent = "Thanks, " + (basics.name ? basics.name.split(" ")[0] : "friend") + ".";
+      }
+      steps?.setAttribute("hidden", "");
+    });
+  </script>
+</BaseLayout>

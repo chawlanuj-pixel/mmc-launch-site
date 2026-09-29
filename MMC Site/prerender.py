@@ -62,6 +62,14 @@ SETTLE_JS = r"""
   // has no stored choice, so whether it got baked depended on which Chrome
   // profile ran the build. It is never page content.
   document.querySelectorAll('.cookie[role="dialog"]').forEach(e => e.remove());
+  // A booking widget mounted by mmcInlineCalendly() is a live third-party iframe.
+  // Baking it in would ship a dead embed to anything that reads the raw HTML.
+  document.querySelectorAll('[data-mmc-mounted]').forEach(e => {
+    e.innerHTML = '';
+    e.removeAttribute('data-mmc-mounted');
+    e.classList.remove('mmc-book__host');
+    e.removeAttribute('style');
+  });
   return document.getElementById('root') ? 1 : 0;
 })()
 """

@@ -1,0 +1,39 @@
+---
+// Hero used by the services, performance, D2C and audit pages (page-hero + pm-hero markup). Right column is the default slot.
+import { href } from "../../lib/links";
+interface Props {
+  wm: string; eyebrow: string; lines: [string, string, string]; sub: string;
+  primary: { label: string; book?: string; href?: string };
+  secondary: { label: string; href?: string; onclick?: string };
+  rightClass?: string;
+}
+const { wm, eyebrow, lines, sub, primary, secondary, rightClass = "" } = Astro.props;
+---
+<section class="page-hero pm-hero" id="top" data-wm={wm}>
+  <span class="page-hero__wm" aria-hidden="true">{wm}</span>
+  <div class="container pm-hero__inner">
+    <div class="pmh__grid">
+      <div class="pmh__l">
+        <div class="eyebrow" data-enter><span>{eyebrow}</span></div>
+        <h1 class="pmh__h">
+          <span class="clip-reveal d1" data-enter><span set:html={lines[0]} /></span>
+          <span class="clip-reveal d2" data-enter><span set:html={lines[1]} /></span>
+          <span class="clip-reveal d3" data-enter><span set:html={lines[2]} /></span>
+        </h1>
+        <p class="reveal d4 pmh__sub" data-enter>{sub}</p>
+        <div class="reveal d5 pmh__actions" data-enter>
+          {primary.href
+            ? <a class="btn btn--primary glow-btn" href={primary.href}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{primary.label}<span class="arrow"></span></span></a>
+            : <button class="btn btn--primary glow-btn" onclick={`window.mmcBookCall('${primary.book}', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{primary.label}<span class="arrow"></span></span></button>}
+          {secondary.onclick
+            ? <button class="btn btn--link" onclick={secondary.onclick}>{secondary.label}<span class="arrow"></span></button>
+            : <a class="btn btn--link" href={href(secondary.href || "#")}>{secondary.label}<span class="arrow"></span></a>}
+        </div>
+        <slot name="chips" />
+      </div>
+      <div class={"pmh__r " + rightClass} data-enter>
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>

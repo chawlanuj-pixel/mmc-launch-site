@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import Hero from "../components/hub/Hero.astro";
+import Answer from "../components/hub/Answer.astro";
+import Article from "../components/hub/Article.astro";
+import Stages from "../components/hub/Stages.astro";
+import Loop from "../components/hub/Loop.astro";
+import LoopB from "../components/hub/LoopB.astro";
+import Numbers from "../components/hub/Numbers.astro";
+import Brands from "../components/hub/Brands.astro";
+import Beyond from "../components/hub/Beyond.astro";
+import Faq from "../components/hub/Faq.astro";
+import Cta from "../components/hub/Cta.astro";
+import Sticky from "../components/hub/Sticky.astro";
+import "../styles/hub-extra.css";
+import { fixDeep } from "../lib/links";
+import { rewriteJsonld } from "../lib/hub";
+
+export async function getStaticPaths() {
+  const mods = import.meta.glob("../data/hubs/*.json", { eager: true, import: "default" }) as Record<string, any>;
+  return Object.values(mods).map((d) => ({
+    params: { slug: d.path.replace(/^\/|\/$/g, "") },
+    props: { d },
+  }));
+}
+const { d } = Astro.props;
+const H = fixDeep(d.hub);
+const jsonld = rewriteJsonld(d.jsonld);
+---
+<BaseLayout title={d.title} description={d.description} path={d.path} ogTitle={d.ogTitle} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld}>
+  <Shell>
+    <main class="app-main n-app">
+      <Hero H={H} />
+      <Answer {...H.answer} />
+      <Article A={H.article} />
+      <Stages L={H.leaks} S={H.stages} />
+      {H.loop && H.loop.variant === "b" ? <LoopB H={H} /> : <Loop L={H.loop} />}
+      <Numbers N={H.numbers} />
+      <Brands B={H.brands} />
+      <Beyond Y={H.beyond} />
+      <Faq title={H.faqTitle} faq={H.faq} />
+      <Cta C={H.cta} hubKey={H.key} />
+    </main>
+    <Sticky hubKey={H.key} />
+  </Shell>
+  <script>import "../scripts/hub.ts";</script>
+</BaseLayout>

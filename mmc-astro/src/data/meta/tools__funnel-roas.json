@@ -1,0 +1,83 @@
+{
+ "title": "Funnel ROAS Calculator: Find Where Your Funnel Leaks",
+ "description": "Set spend, CPM and AOV, then move the five conversion rates between an impression and a paid order. Every rate is benchmarked against Indian D2C medians.",
+ "ogTitle": "Find where your D2C funnel leaks",
+ "ogDescription": "Five conversion rates, benchmarked against Indian D2C medians. See orders, revenue, ROAS and CPO.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Free tools",
+     "item": "https://www.mondaymarketing.company/tools.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Funnel ROAS Calculator",
+     "item": "https://www.mondaymarketing.company/funnel-roas-calculator.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebApplication",
+   "name": "Funnel ROAS Calculator",
+   "url": "https://www.mondaymarketing.company/funnel-roas-calculator.html",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Any (web browser)",
+   "description": "Free funnel ROAS calculator for D2C brands. Set ad spend, CPM and AOV, move the five conversion rates from impression to order, and see orders, revenue, ROAS and cost per order: with every rate benchmarked against Indian D2C medians.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monday Marketing Company",
+    "url": "https://www.mondaymarketing.company/"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a good ROAS for a D2C brand in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no universal number. A good ROAS is any figure above your break-even ROAS, which depends on your COGS, shipping, gateway fees and RTO rate. Brands with 30% COGS and low returns can be profitable at 2.2x, while brands with 55% COGS and 25% RTO may need 4.5x or more."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does increasing ad spend improve ROAS?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Spend determines how many orders you get, not how efficiently you get them. ROAS is set by your CPM, your AOV and the five conversion rates between an impression and a paid order. Doubling spend roughly doubles orders at the same ROAS."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which funnel step should I fix first?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually the one furthest from the benchmark, weighted by traffic volume. Landing-page-to-cart is typically the most expensive step to get wrong because every visitor has already been paid for by that point."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -156,11 +156,6 @@ function AuditModal({ open, onClose }) {
                   </span>
                 </li>
               </ul>
-
-              <div className="audit__left-foot am-stagger">
-                <span className="audit__left-foot-num">14<i>/14</i></span>
-                <span className="audit__left-foot-lbl">brands renewed last year</span>
-              </div>
             </div>
           </aside>
 

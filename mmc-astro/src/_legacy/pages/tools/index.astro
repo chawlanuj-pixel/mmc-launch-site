@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import "../../styles/tools.css";
+import { metaHead } from "../../lib/metaHead";
+import { ToolsHub } from "../../islands/tools/ToolsHub.jsx";
+---
+<BaseLayout {...metaHead("tools", "/tools/")}>
+  <Shell>
+    <main class="app-main"><ToolsHub client:load /></main>
+  </Shell>
+  <PageFx />
+</BaseLayout>

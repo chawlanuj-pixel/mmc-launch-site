@@ -123,7 +123,7 @@ function WorkGrid() {
     <section id="all-work" className="wg">
       <div className="container">
         <header className="wg__head">
-          <div className="eyebrow">The client book · {cases.length} brands</div>
+          <div className="eyebrow">The client book</div>
           <h2 className="wg__h">
             Every brand we run.{" "}
             <span className="em-serif" style={{color:"var(--mmc-blue)"}}>Filter</span>{" "}
@@ -135,11 +135,9 @@ function WorkGrid() {
           <span className="wg__filter-label">Business type</span>
           <div className="wg__chips">
             {types.map((t) => {
-              const count = t === "All" ? cases.length : cases.filter((c) => c.type === t).length;
               return (
                 <button key={t} className={"wg__chip " + (filter === t ? "is-on" : "")} onClick={() => setFilter(t)}>
                   {t}
-                  <span className="wg__chip-n">{count}</span>
                 </button>
               );
             })}

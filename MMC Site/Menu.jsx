@@ -31,12 +31,70 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
       hint: "We build revenue engines."
     },
     {
-      n: "02", label: "Our Work", url: "Our Work.html",
+      n: "02", label: "Services", url: "services.html",
+      hint: "Paid media, search, creative, brand and build",
+      sub: [
+        {
+          name: "Performance marketing", desc: "Paid media read against profit",
+          url: "performance-marketing.html", expandKey: "svc-performance",
+          inner: [
+            { name: "Performance marketing overview", url: "performance-marketing.html" },
+            { name: "Meta Ads",            url: "meta-ads.html" },
+            { name: "Google Ads",          url: "google-ads.html" },
+            { name: "Amazon Ads",          url: "amazon-ads.html" },
+            { name: "Quick commerce ads",  url: "quick-commerce-ads.html" },
+          ]
+        },
+        {
+          name: "Leads and retention", desc: "Win the right customers, keep them",
+          url: "lead-generation.html", expandKey: "svc-leads",
+          inner: [
+            { name: "Lead generation",                url: "lead-generation.html" },
+            { name: "Retention marketing",            url: "retention-marketing.html" },
+            { name: "Online reputation management",   url: "online-reputation-management.html" },
+          ]
+        },
+        {
+          name: "Search and conversion", desc: "Get found, then get chosen",
+          url: "seo.html", expandKey: "svc-search",
+          inner: [
+            { name: "SEO",                     url: "seo.html" },
+            { name: "Conversion optimisation", url: "conversion-rate-optimisation.html" },
+            { name: "Shopify development",     url: "shopify-development.html" },
+            { name: "Website development",     url: "web-development.html" },
+            { name: "Mobile app development",  url: "mobile-app-development.html" },
+          ]
+        },
+        {
+          name: "Creative and brand", desc: "Look and sound like one brand",
+          url: "branding.html", expandKey: "svc-creative",
+          inner: [
+            { name: "Branding",                 url: "branding.html" },
+            { name: "Packaging design",         url: "packaging-design.html" },
+            { name: "UI/UX design",             url: "ui-ux-design.html" },
+            { name: "UGC and video",            url: "ugc-and-video.html" },
+            { name: "Social media creatives",   url: "social-media-creatives.html" },
+            { name: "Influencer marketing",     url: "influencer-marketing.html" },
+          ]
+        },
+      ]
+    },
+    {
+      n: "03", label: "Industries", url: "industries.html",
+      hint: "D2C · B2B · Education",
+      sub: [
+        { name: "D2C brands",             desc: "Ads, store, creative, retention", url: "d2c.html" },
+        { name: "B2B companies",          desc: "Leads judged on fit",             url: "b2b.html" },
+        { name: "Educational institutes", desc: "Enquiries through to enrolment",  url: "education.html" },
+      ]
+    },
+    {
+      n: "04", label: "Our Work", url: "Our Work.html",
       hint: "Featured · Growth Blueprints · Industries"
     },
     {
-      n: "03", label: "Free Tools", url: "tools.html",
-      hint: "Six calculators + a 53-term glossary",
+      n: "05", label: "Resources", url: "resources.html",
+      hint: "Calculators · Glossary · Guides",
       sub: [
         {
           name: "Calculators", desc: "Run your own numbers",
@@ -51,14 +109,24 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
             { name: "D2C Marketing Glossary",      url: "d2c-marketing-glossary.html" },
           ]
         },
+        {
+          name: "Guides", desc: "The method behind the numbers",
+          url: "guides.html", expandKey: "guides",
+          inner: [
+            { name: "All guides",                            url: "guides.html" },
+            { name: "Contribution margin and break-even ROAS", url: "guide-contribution-margin-roas.html" },
+            { name: "Why platform dashboards over-count",    url: "guide-attribution-overlap.html" },
+            { name: "How D2C brands test creative",          url: "guide-creative-testing.html" },
+          ]
+        },
       ]
     },
     {
-      n: "04", label: "About Us", url: "About.html",
+      n: "06", label: "About Us", url: "About.html",
       hint: "Story · Team · Awards · Press"
     },
     {
-      n: "05", label: "Careers", url: "Careers.html",
+      n: "07", label: "Careers", url: "Careers.html",
       hint: "6 open senior roles · Apply with one page",
       sub: [
         {
@@ -94,11 +162,11 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
       ]
     },
     {
-      n: "06", label: "Insights", url: "Insights.html",
+      n: "08", label: "Insights", url: "Insights.html",
       hint: "Founder's Journal · Playbooks · Breakdowns"
     },
     {
-      n: "07", label: "Contact", url: "Contact.html",
+      n: "09", label: "Contact", url: "Contact.html",
       hint: "Book a call · Visit Thane"
     },
   ];
@@ -400,7 +468,7 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
         {/* Footer */}
         <div className="sunmenu__foot">
           <div className="sm-fade sunmenu__foot-cols">
-            <span><span className="t-muted">Currently building for</span>&nbsp; 25 brands</span>
+            <span><span className="t-muted">Working with</span>&nbsp; D2C, B2B and education brands</span>
             <span><span className="t-muted">In market since</span>&nbsp; 2019</span>
             <span><span className="t-muted">Revenue compounded</span>&nbsp; ₹248Cr+</span>
           </div>
@@ -539,7 +607,7 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
         .sunmenu__primary-row.is-active { background: rgba(255,255,255,0.08); }
         .sunmenu__primary-link {
           display: block;
-          padding: clamp(10px, 1.4vw, 16px) clamp(10px, 1.4vw, 18px) clamp(10px, 1.4vw, 16px) 0;
+          padding: clamp(6px, min(1.4vw, 1.25vh), 16px) clamp(10px, 1.4vw, 18px) clamp(6px, min(1.4vw, 1.25vh), 16px) 0;
           color: rgba(255,255,255,0.78);
           transition: padding var(--dur-base) var(--ease-out),
                       color var(--dur-base) var(--ease-out);
@@ -553,7 +621,7 @@ function Menu({ open, triggerRef, onClose, onAudit }) {
         .sm-link {
           display: inline-flex; align-items: baseline; gap: 16px;
           font-family: var(--font-display); font-weight: 700;
-          font-size: clamp(26px, 3vw, 44px);
+          font-size: clamp(22px, min(3vw, 4.3vh), 44px);
           letter-spacing: -0.025em; line-height: 1;
           color: inherit;
           width: 100%;
