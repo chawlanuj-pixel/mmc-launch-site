@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import "../styles/hub-extra.css";
+import "../styles/contact-new.css";
+import { BOOK, TOOLS, PHONE_DISPLAY, PHONE_TEL } from "../lib/site";
+
+const title = "Thank you | Monday Marketing Company";
+const description = "Your enquiry has reached Monday Marketing Company. A senior strategist will reply within one working day.";
+const tools = TOOLS.slice(0, 3);
+---
+<BaseLayout title={title} description={description} path="/thank-you/" noindex={true}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <section class="n-band n-band--paper ty-hero">
+        <div class="n-wrap ty-hero__in">
+          <svg class="ty-ring" width="84" height="84" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="none" stroke="#FFC528" stroke-width="3" /><path d="M26 41L36 51L56 31" fill="none" stroke="#16329E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          <span class="n-eyebrow" id="ty-eyebrow">Brief received</span>
+          <h1 class="n-h2 ty-h1">Thanks, <span class="n-serif" id="ty-name">friend</span>.</h1>
+          <p class="ty-lead" id="ty-lead">A senior strategist will read your details and reply within one working day with a slot and a short pre-read.</p>
+          <p class="ty-mailto" id="ty-mailto" role="status" hidden>Your email app should have opened with the details filled in. If it didn't, send them to <a href="mailto:sales-in@mondaymarketing.company">sales-in@mondaymarketing.company</a>.</p>
+          <div class="ty-actions">
+            <button type="button" class="cx-btn" data-book="thank-you">{BOOK}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></button>
+            <a class="ty-link" href={"tel:" + PHONE_TEL}>Or call {PHONE_DISPLAY}</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white pm-band">
+        <div class="n-wrap">
+          <div class="pm-head"><span class="n-eyebrow">What happens next</span><h2 class="n-h2">Three steps, <span class="n-serif">no surprises.</span></h2></div>
+          <ol class="cx-steps">
+            <li class="cx-step"><figure class="cx-step__fig"><img src="/assets/contact/brief.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="cx-step__n">1</span></figure><h3>We read what you sent</h3><p>The person who replies has read your brief first, so the call starts from your numbers.</p></li>
+            <li class="cx-step"><figure class="cx-step__fig"><img src="/assets/contact/call.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="cx-step__n">2</span></figure><h3>We talk it through</h3><p>A senior strategist goes through your channels, your numbers and where the growth is stuck.</p></li>
+            <li class="cx-step"><figure class="cx-step__fig"><img src="/assets/contact/meeting.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="cx-step__n">3</span></figure><h3>You leave with a next step</h3><p>A direct read on the three things to fix first. If we are a fit, we say how we would work together.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band">
+        <div class="n-wrap">
+          <div class="pm-head"><span class="n-eyebrow">While you wait</span><h2 class="n-h2">Run your own <span class="n-serif">numbers.</span></h2></div>
+          <ul class="ty-cards">
+            {tools.map((t) => <li><a class="ty-card" href={t.href}><b>{t.short}</b><span>{t.blurb}</span><i>Open the calculator</i></a></li>)}
+            <li><a class="ty-card" href="/guides/"><b>Guides</b><span>The method behind the numbers, in plain words.</span><i>Read the guides</i></a></li>
+            <li><a class="ty-card" href="/work/"><b>Our work</b><span>Projects for D2C, B2B and education brands.</span><i>See the work</i></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </Shell>
+  <style is:global>
+    .ty-hero { padding: clamp(120px, 16vw, 180px) 0 clamp(48px, 7vw, 80px); text-align: center; }
+    .ty-hero__in { display: flex; flex-direction: column; align-items: center; max-width: 720px; }
+    .ty-ring { margin-bottom: 18px; }
+    .ty-h1 { margin: 10px 0 14px; }
+    .ty-lead { margin: 0 0 14px; font: 500 clamp(17px, 2vw, 20px)/1.55 var(--font-body); max-width: 56ch; }
+    .ty-mailto { margin: 0 0 16px; padding: 10px 14px; border-radius: 10px; background: rgba(22, 50, 158, .08); font: 600 14px/1.5 var(--font-body); }
+    .ty-mailto[hidden] { display: none; }
+    .ty-mailto a, .ty-link { color: #16329E; border-bottom: 1px solid currentColor; }
+    .ty-actions { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; justify-content: center; margin-top: 8px; }
+    .ty-link { font: 700 15px/1.2 var(--font-body); }
+    .ty-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+    .ty-card { display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 20px; border-radius: 16px; background: #fff; border: 1px solid rgba(22, 50, 158, .12); color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+    .ty-card:hover, .ty-card:focus-visible { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(22, 50, 158, .12); }
+    .ty-card b { font: 800 18px/1.25 var(--font-display); }
+    .ty-card span { font: 500 15px/1.5 var(--font-body); }
+    .ty-card i { margin-top: auto; padding-top: 6px; font: 700 14px/1.2 var(--font-body); font-style: normal; color: #16329E; }
+    @media (prefers-reduced-motion: reduce) { .ty-card { transition: none; } }
+  </style>
+  <script is:inline>
+    /* Personalise from what the form saved, then fire the conversion once per submission. */
+    (function () {
+      var d = null;
+      try { d = JSON.parse(sessionStorage.getItem("mmc_thanks") || "null"); } catch (e) {}
+      if (!d) return;
+      var $ = function (id) { return document.getElementById(id); };
+      if (d.name) $("ty-name").textContent = d.name;
+      if (d.kind === "audit") $("ty-eyebrow").textContent = "Audit request received";
+      if (d.brand) $("ty-lead").textContent = "A senior strategist will read your details for " + d.brand + " and reply within one working day with a slot and a short pre-read.";
+      if (d.mode === "mailto") $("ty-mailto").hidden = false;
+      try {
+        if (!sessionStorage.getItem("mmc_thanks_fired")) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: "lead_thank_you", lead_kind: d.kind || "brief" });
+          if (window.fbq) window.fbq("track", "Lead");
+          sessionStorage.setItem("mmc_thanks_fired", "1");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</BaseLayout>

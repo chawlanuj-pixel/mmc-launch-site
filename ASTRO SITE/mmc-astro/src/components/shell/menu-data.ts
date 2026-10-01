@@ -149,8 +149,8 @@ export const menuLinks: MenuLink[] = [
       ]
     },
     {
-      n: "08", label: "Insights", url: "Insights.html",
-      hint: "Guides · D2C calculators"
+      n: "08", label: "Guides", url: "guides.html",
+      hint: "The method behind the numbers"
     },
     {
       n: "09", label: "Contact", url: "Contact.html",

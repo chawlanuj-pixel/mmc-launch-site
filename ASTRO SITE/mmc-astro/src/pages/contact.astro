@@ -298,13 +298,7 @@ const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site"
         const w = window as any;
         if (!w.MMCForms) { fail(); return; }
         Promise.resolve(w.MMCForms.submitLead({ ...data, source: "Contact page" }, { subject: "New brief, " + (data.brand || data.name || "Contact form") })).then((r: any) => {
-          setBusy(false);
-          (document.getElementById("cx-name") as HTMLElement).textContent = data.name.split(" ")[0] || "friend";
-          (document.getElementById("cx-brand") as HTMLElement).textContent = data.brand || "your brand";
-          (document.getElementById("cx-mailto") as HTMLElement).hidden = !(r && r.mode === "mailto");
-          form.hidden = true;
-          const th = document.getElementById("cx-thanks") as HTMLElement;
-          th.hidden = false; th.focus();
+          w.MMCForms.goThanks("brief", r, data);
         }).catch(fail);
       });
     }

@@ -6,5 +6,5 @@ export default defineConfig({
   site: "https://www.mondaymarketing.company",
   trailingSlash: "always",
   build: { format: "directory" },
-  integrations: [react(), sitemap({ filter: (page) => !/\/(home-previous|home-v2|home-v2b)\/?$/.test(page) })],
+  integrations: [react(), sitemap({ filter: (page) => !/\/(home-previous|home-v2|home-v2b|thank-you)\/?$/.test(page) })],
 });

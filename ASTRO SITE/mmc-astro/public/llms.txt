@@ -78,7 +78,6 @@ had its mix recorded yet.
 - [Home](https://www.mondaymarketing.company/): the five systems and selected work
 - [Our Work](https://www.mondaymarketing.company/work/): the client book by industry
 - [About](https://www.mondaymarketing.company/about/)
-- [Insights](https://www.mondaymarketing.company/insights/)
 - [Careers](https://www.mondaymarketing.company/careers/)
 - [Contact](https://www.mondaymarketing.company/contact/)
 - [D2C brands](https://www.mondaymarketing.company/industries/d2c/): the D2C hub. Where D2C brands lose profit, the numbers to start with, and some of the D2C brands MMC works with

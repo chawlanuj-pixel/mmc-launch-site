@@ -1,0 +1,56 @@
+# MMC launch redirects: old WordPress site -> new Astro site
+# For Hostinger / Apache. Paste at the TOP of public_html/.htaccess (before any other rules).
+# Source: live sitemaps of the old mondaymarketing.company, fetched 2 Oct 2026. Targets checked against the new site's URL list.
+# NOTE: public/_redirects in the Astro repo is NOT read by Hostinger. These rules replace it on Apache.
+
+RewriteEngine On
+
+# 1. Force HTTPS + www (new canonicals use https://www.mondaymarketing.company)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.mondaymarketing.company/$1 [R=301,L]
+
+# 2. Old service pages
+RewriteRule ^performance-marketing/?$ /services/performance-marketing/ [R=301,L]
+RewriteRule ^seo-company/?$ /services/seo/ [R=301,L]
+RewriteRule ^seo-company-thane/?$ /services/seo/ [R=301,L]
+RewriteRule ^e-commerce-seo-page/?$ /services/seo/ [R=301,L]
+RewriteRule ^local-seo(-2)?/?$ /services/seo/ [R=301,L]
+RewriteRule ^ui-ux-design-company-in-india/?$ /services/ui-ux-design/ [R=301,L]
+RewriteRule ^ui-ux-design/?$ /services/ui-ux-design/ [R=301,L]
+RewriteRule ^website-development-company/?$ /services/web-development/ [R=301,L]
+RewriteRule ^landing-page/?$ /services/web-development/ [R=301,L]
+RewriteRule ^pricing/?$ /audit/ [R=301,L]
+
+# 3. Contact and booking
+RewriteRule ^contact-us/?$ /contact/ [R=301,L]
+RewriteRule ^appointments/?$ /contact/ [R=301,L]
+RewriteRule ^appointment-cal/?$ /contact/ [R=301,L]
+RewriteRule ^thank-you/?$ / [R=301,L]
+
+# 4. Legal (paths changed)
+RewriteRule ^privacy-policy/?$ /privacy/ [R=301,L]
+RewriteRule ^terms-conditions/?$ /terms/ [R=301,L]
+
+# 5. Blog (no /blog/ on new site). If GSC shows clicks on a post, migrate it to /guides/ instead.
+RewriteRule ^blog/content-marketing-agency/?$ /services/seo/ [R=301,L]
+RewriteRule ^blog/corporate-video-production-company/?$ /services/ugc-and-video/ [R=301,L]
+RewriteRule ^blog/strategies-for-website-redesign/?$ /services/web-development/ [R=301,L]
+RewriteRule ^blog/?$ /guides/ [R=301,L]
+RewriteRule ^category/.*$ /guides/ [R=301,L]
+RewriteRule ^feed/?$ /guides/ [R=301,L]
+RewriteRule ^author/.*$ /about/ [R=301,L]
+
+# 6. Portfolio (old entries were theme placeholders)
+RewriteRule ^portfolio(/.*)?$ /work/ [R=301,L]
+
+# 7. Careers (/career/ -> /careers/; expired job posts -> hub)
+RewriteRule ^career(/.*)?$ /careers/ [R=301,L]
+
+# 8. Old WordPress sitemaps and system URLs
+RewriteRule ^sitemap\.xml$ /sitemap-index.xml [R=301,L]
+RewriteRule ^(sitemap_index|page-sitemap|post-sitemap|portfolio-sitemap|category-sitemap|e-landing-page-sitemap|awsm_job_openings-sitemap)\.xml$ /sitemap-index.xml [R=301,L]
+RewriteRule ^wp-(admin|login\.php).*$ / [R=301,L]
+
+# 9. Preview homepage variants must never be public
+RewriteRule ^(home-previous|home-v2|home-v2b)(/.*)?$ / [R=301,L]

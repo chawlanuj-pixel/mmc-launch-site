@@ -39,7 +39,7 @@ const H = fixDeep(d.hub);
 const SITE = "https://www.mondaymarketing.company";
 const g = GUIDES.find((x) => x.slug === slug)!;
 const jsonld = rewriteJsonld(d.jsonld).map((b: any) => b["@type"] === "Article" ? {
-  ...b, headline: g.title, description: g.desc, image: SITE + "/assets/" + (d.hub.answer?.image || d.hub.tiles?.[0]?.img), wordCount: 0, timeRequired: "PT0M", articleSection: "", isPartOf: { "@id": SITE + "/insights/#webpage" },
+  ...b, headline: g.title, description: g.desc, image: SITE + "/assets/" + (d.hub.answer?.image || d.hub.tiles?.[0]?.img), wordCount: 0, timeRequired: "PT0M", articleSection: "", isPartOf: { "@id": SITE + "/guides/#webpage" },
 } : b["@type"] === "BreadcrumbList" ? {
   ...b, itemListElement: b.itemListElement.map((it: any, i: number, all: any[]) => i === all.length - 1 ? { ...it, name: g.short } : it),
 } : b);
@@ -72,7 +72,7 @@ for (const b of jsonld) if (b["@type"] === "Article") { b.wordCount = words; b.t
           <nav class="ar-crumbs" aria-label="Breadcrumb">
             <ol>
               <li><a href="/">Home</a></li>
-              <li><a href="/insights/">Insights</a></li>
+              <li><a href="/guides/">Guides</a></li>
               <li><span aria-current="page">{g.tag}</span></li>
             </ol>
           </nav>

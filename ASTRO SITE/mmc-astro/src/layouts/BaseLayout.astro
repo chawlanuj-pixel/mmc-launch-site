@@ -49,7 +49,6 @@ const image = site + "/assets/og-card.jpg";
     {jsonld.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
   </head>
   <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC22WQZ7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <slot />
     <script is:inline src="/admin/mmc-data.js"></script>
     <script is:inline src="/assets/mmc-forms.js"></script>

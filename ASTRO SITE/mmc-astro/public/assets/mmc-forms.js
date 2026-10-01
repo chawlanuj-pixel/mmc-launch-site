@@ -99,7 +99,27 @@
     });
   };
 
-  window.MMCForms = { submitLead: submitLead, buildMailto: buildMailto };
+  /* After a lead is submitted, send the visitor to /thank-you/ so the confirmation has its own URL
+     (a destination for GA4, Google Ads and Meta conversions). The details the page needs go through
+     sessionStorage, not the query string, so no name or email lands in a URL or in analytics.
+     In mailto mode the visitor's mail app is opening, so wait a moment before navigating away. */
+  function goThanks(kind, result, data) {
+    data = data || {};
+    try {
+      sessionStorage.removeItem("mmc_thanks_fired");
+      sessionStorage.setItem("mmc_thanks", JSON.stringify({
+        kind: kind || "brief",
+        mode: (result && result.mode) || "",
+        name: String(data.name || "").split(" ")[0],
+        brand: data.brand || "",
+        at: Date.now()
+      }));
+    } catch (e) {}
+    var go = function () { window.location.assign("/thank-you/"); };
+    if (result && result.mode === "mailto") setTimeout(go, 900); else go();
+  }
+
+  window.MMCForms = { submitLead: submitLead, buildMailto: buildMailto, goThanks: goThanks };
 })();
 
 /* ── Booking ──────────────────────────────────────────────────────────────

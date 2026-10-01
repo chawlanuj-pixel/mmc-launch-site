@@ -30,9 +30,15 @@ export default function CookieBanner() {
       : choice === "reject-non-essential"
       ? { necessary: true, analytics: false, marketing: false, at: Date.now() }
       : { ...prefs, at: Date.now() };
+    let before: any = null;
+    try { before = JSON.parse(localStorage.getItem("mmc-cookies-v1") || "null"); } catch (e) {}
     try { localStorage.setItem("mmc-cookies-v1", JSON.stringify(value)); } catch (e) {}
     setOpen(false);
     setShowPrefs(false);
+    // Tracking only loads after consent. Withdrawing consent needs a reload so already-loaded scripts stop.
+    const withdrew = before && ((before.analytics && !value.analytics) || (before.marketing && !value.marketing));
+    if (withdrew) { window.location.reload(); return; }
+    try { (window as any).mmcApplyConsent && (window as any).mmcApplyConsent(value); } catch (e) {}
   };
 
   if (!open) return null;

@@ -115,7 +115,7 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
     Promise.resolve(forms.submitLead(
       { ...form, source: "Brief modal" },
       { subject: "Brief, " + (form.brand || form.name || "New brand") }
-    )).then((r: any) => { setSending(false); setSentVia(r && r.mode); setSubmitted(true); }).catch(fail);
+    )).then((r: any) => { setSending(false); setSentVia(r && r.mode); setSubmitted(true); forms.goThanks && forms.goThanks("audit", r, form); }).catch(fail);
   };
 
   const revenueBands = [
