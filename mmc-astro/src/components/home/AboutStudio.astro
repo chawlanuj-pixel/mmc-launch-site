@@ -1,0 +1,42 @@
+---
+// About the studio: shaped photo with a rotating "Monday Marketing Company" badge (MMC mark in the centre),
+// a bold-and-light headline, and a three-column row. Copy is the existing About-page copy.
+import { href } from "../../lib/links";
+import "../../styles/about-studio.css";
+const RING = "MONDAY MARKETING COMPANY · ";
+---
+<section class="as no-section-bg" id="studio" aria-labelledby="as-h">
+  <div class="hn-wrap as__wrap">
+    <div class="as__top">
+      <figure class="as__fig">
+        <span class="as__shape" aria-hidden="true"></span>
+        <img class="as__img" src="/assets/home2/hero-main.jpg" alt="The MMC team reviewing campaign results together" loading="lazy" decoding="async" width="1024" height="768" />
+        <span class="as__badge" role="img" aria-label="Monday Marketing Company">
+          <svg class="as__ring" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="as-circle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0" /></defs>
+            <text><textPath href="#as-circle" startOffset="0" textLength="470" lengthAdjust="spacing">{RING + RING.slice(0, -2)}</textPath></text>
+          </svg>
+          <img class="as__mark" src="/assets/logo-mark.png" alt="" width="56" height="56" />
+        </span>
+      </figure>
+      <div class="as__copy">
+        <p class="hn-eyebrow">About the studio</p>
+        <h2 id="as-h"><b>Creative, media and tech</b> run as <em>one growth system.</em></h2>
+        <div class="as__cols">
+          <a class="as__link" href={href("Our Work.html")}><b>Explore</b> our work <br />to learn more</a>
+          <p>MMC is a growth studio for D2C, B2B and education brands. We take on uneven growth, spend that outruns margin, and a brand, site and media plan that pull in different directions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="as__rule" aria-hidden="true"></div>
+    <div class="as__bottom">
+      <ul class="as__links">
+        <li><a href={href("performance-marketing.html")}>Performance media</a></li>
+        <li><a href={href("ugc-and-video.html")}>Creative and UGC</a></li>
+        <li><a href={href("retention-marketing.html")}>Retention and follow-up</a></li>
+      </ul>
+      <div class="as__col"><h3>One team, one number</h3><p>Media, creative, retention and the website sit with one senior team, judged on contribution margin, so the ad, the page and the follow-up are built together.</p></div>
+      <div class="as__col"><h3>Maths before media</h3><p>We model break-even ROAS, CAC ceiling and payback first, so spend buys profit, not just revenue. Then we optimise weekly, and we are measured on staying.</p></div>
+    </div>
+  </div>
+</section>

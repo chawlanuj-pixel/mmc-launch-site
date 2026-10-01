@@ -1,0 +1,224 @@
+---
+// On camera: a 3D fan of portrait video cards. Click a side card to bring it to the centre; press play on the
+// centre card. Only one video ever plays (and only it can make sound). No video bytes are fetched until play:
+// each <video> has preload="none" and no src until the user presses play (posters are small JPEGs).
+//
+// TO ADD A VIDEO: drop <id>.mp4 and <id>.jpg (9:16, poster ~540x960) into /public/assets/voices/ and add a line below.
+// brand: the brand name shown as the caption (leave "" if not confirmed; "label" is shown instead).
+import { href } from "../../lib/links";
+import "../../styles/on-camera.css";
+
+interface Clip { id: string; brand: string; label: string; mp4?: string; poster?: string; }
+interface Props { videos?: Clip[]; }
+
+const CLIPS: Clip[] = [
+  { id: "giraffe-1", brand: "The Growing Giraffe", label: "Video 1" },
+  { id: "giraffe-2", brand: "The Growing Giraffe", label: "Video 2" },
+  // Brand/speaker not confirmed by the owner: neutral caption only.
+  { id: "curly-1", brand: "", label: "Video 3" },
+];
+const videos = (Astro.props.videos ?? CLIPS).map((v) => ({
+  ...v,
+  mp4: v.mp4 ?? `/assets/voices/${v.id}.mp4`,
+  poster: v.poster ?? `/assets/voices/${v.id}.jpg`,
+  cap: v.brand || v.label,
+}));
+const N = videos.length;
+const ic = {
+  play: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor"/></svg>`,
+  pause: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>`,
+  vol: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/></svg>`,
+  mute: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>`,
+  prev: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>`,
+  next: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`,
+};
+---
+<section class="oc no-section-bg" id="voices" aria-labelledby="oc-h" data-oc>
+  <span class="oc__rays" aria-hidden="true"></span>
+  <div class="hn-wrap oc__in">
+    <header class="oc__head">
+      <div>
+        <p class="hn-eyebrow">On camera</p>
+        <h2 id="oc-h">Videos from the brands <em>we work with.</em></h2>
+      </div>
+      <a class="btn btn--link oc__all" href={href("Our Work.html")}>See the projects behind them<span class="arrow"></span></a>
+    </header>
+
+    <div class="oc__stage" data-oc-stage role="group" aria-roledescription="carousel" aria-label="Brand videos. Left and right arrow keys move between videos." tabindex="0">
+      <ul class="oc__fan" data-oc-fan>
+        {videos.map((v, i) => (
+          <li class="oc-card" data-oc-card data-src={v.mp4} style={`--p:${i};--a:${i}`} aria-roledescription="slide" aria-label={`${i + 1} of ${N}: ${v.cap}`}>
+            <div class="oc-card__in">
+              <video preload="none" playsinline poster={v.poster} muted data-oc-video aria-label={`${v.cap} video`}></video>
+              <button type="button" class="oc-card__hit" data-oc-hit aria-label={`Show video ${i + 1} of ${N}: ${v.cap}`}></button>
+              <button type="button" class="oc-card__play" data-oc-play aria-label={`Play video: ${v.cap}`}>
+                <span class="oc-card__disc" set:html={ic.play}></span>
+              </button>
+              <div class="oc-bar" data-oc-bar>
+                <button type="button" class="oc-bar__b" data-oc-toggle aria-label="Pause video">
+                  <span data-i-pause set:html={ic.pause}></span><span data-i-play hidden set:html={ic.play}></span>
+                </button>
+                <button type="button" class="oc-bar__b" data-oc-mute aria-label="Mute video" aria-pressed="false">
+                  <span data-i-vol set:html={ic.vol}></span><span data-i-mute hidden set:html={ic.mute}></span>
+                </button>
+                <input class="oc-bar__r" type="range" min="0" max="1000" value="0" step="1" data-oc-seek aria-label="Video progress" />
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="oc__foot">
+      <button type="button" class="oc__nav" data-oc-prev aria-label="Previous video" set:html={ic.prev}></button>
+      <p class="oc__cap" aria-live="polite"><b data-oc-cap>{videos[0].cap}</b><span data-oc-count>1 / {N}</span></p>
+      <button type="button" class="oc__nav" data-oc-next aria-label="Next video" set:html={ic.next}></button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-oc]").forEach((root) => {
+    const fan = root.querySelector<HTMLElement>("[data-oc-fan]")!;
+    const stage = root.querySelector<HTMLElement>("[data-oc-stage]")!;
+    const cards = Array.from(root.querySelectorAll<HTMLElement>("[data-oc-card]"));
+    const N = cards.length;
+    const capEl = root.querySelector("[data-oc-cap]")!;
+    const countEl = root.querySelector("[data-oc-count]")!;
+    const vids = cards.map((c) => c.querySelector("video") as HTMLVideoElement);
+    const q = <T extends HTMLElement>(c: HTMLElement, s: string) => c.querySelector(s) as T;
+    let cur = 0;
+    let rowMode = true;
+    const mq = window.matchMedia("(max-width: 700px), (prefers-reduced-motion: reduce)");
+
+    const rel = (i: number) => ((i - cur + N + Math.floor(N / 2)) % N) - Math.floor(N / 2);
+    const capOf = (i: number) => cards[i].getAttribute("aria-label")!.replace(/^\d+ of \d+: /, "");
+
+    function pauseAll(except?: HTMLVideoElement) {
+      vids.forEach((v) => { if (v !== except && !v.paused) v.pause(); });
+    }
+    function sync(i: number) {
+      const v = vids[i], c = cards[i];
+      const playing = !v.paused && !v.ended;
+      c.classList.toggle("is-playing", playing);
+      c.classList.toggle("is-started", v.currentTime > 0 || playing);
+      q(c, "[data-i-pause]").hidden = !playing;
+      q(c, "[data-i-play]").hidden = playing;
+      q(c, "[data-oc-toggle]").setAttribute("aria-label", playing ? "Pause video" : "Play video");
+      q(c, "[data-i-vol]").hidden = v.muted;
+      q(c, "[data-i-mute]").hidden = !v.muted;
+      const m = q(c, "[data-oc-mute]");
+      m.setAttribute("aria-label", v.muted ? "Unmute video" : "Mute video");
+      m.setAttribute("aria-pressed", String(v.muted));
+    }
+    function layout() {
+      cards.forEach((c, i) => {
+        const p = rel(i), a = Math.abs(p), isC = i === cur;
+        c.style.setProperty("--p", String(p));
+        c.style.setProperty("--a", String(a));
+        c.style.zIndex = String(20 - a);
+        c.classList.toggle("is-c", isC);
+        c.classList.toggle("is-far", !rowMode && a > 2);
+        const hit = q(c, "[data-oc-hit]");
+        hit.tabIndex = isC ? -1 : 0;
+        hit.hidden = isC;
+        q(c, "[data-oc-play]").tabIndex = isC ? 0 : -1;
+        q(c, "[data-oc-bar]").hidden = !isC;
+        c.toggleAttribute("inert", !rowMode && a > 2);
+        if (isC) c.setAttribute("aria-current", "true"); else c.removeAttribute("aria-current");
+      });
+      capEl.textContent = capOf(cur);
+      countEl.textContent = cur + 1 + " / " + N;
+    }
+    function go(k: number, opts: { scroll?: boolean } = {}) {
+      const next = (k + N) % N;
+      if (next !== cur) pauseAll();
+      cur = next;
+      layout();
+      vids.forEach((_, i) => sync(i));
+      if (rowMode && opts.scroll !== false) centreInRow(cards[cur], true);
+    }
+    function centreInRow(c: HTMLElement, smooth: boolean) {
+      const left = c.offsetLeft - (fan.clientWidth - c.offsetWidth) / 2;
+      fan.scrollTo({ left, behavior: smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "auto" });
+    }
+    function setMode() {
+      rowMode = mq.matches;
+      root.dataset.ocMode = rowMode ? "row" : "fan";
+      layout();
+      if (rowMode) requestAnimationFrame(() => centreInRow(cards[cur], false));
+    }
+
+    // Playback: the bytes are requested only here, on the first press of play.
+    function play(i: number) {
+      const v = vids[i];
+      if (!v.getAttribute("src")) { v.preload = "metadata"; v.src = cards[i].dataset.src!; }
+      pauseAll(v);
+      v.muted = false; // allowed: this runs inside a user gesture
+      const pr = v.play();
+      if (pr && pr.catch) pr.catch(() => { v.muted = true; v.play().catch(() => {}); });
+    }
+    function toggle(i: number) { const v = vids[i]; if (v.paused || v.ended) play(i); else v.pause(); }
+
+    vids.forEach((v, i) => {
+      v.addEventListener("play", () => { pauseAll(v); sync(i); });
+      ["pause", "ended", "volumechange", "playing", "loadedmetadata"].forEach((e) => v.addEventListener(e, () => sync(i)));
+      v.addEventListener("timeupdate", () => {
+        if (v.duration) (q(cards[i], "[data-oc-seek]") as HTMLInputElement).value = String(Math.round((v.currentTime / v.duration) * 1000));
+      });
+      v.addEventListener("click", () => { if (i === cur) toggle(i); });
+      const c = cards[i];
+      q(c, "[data-oc-hit]").addEventListener("click", () => go(i));
+      q(c, "[data-oc-play]").addEventListener("click", () => { if (i === cur) play(i); });
+      q(c, "[data-oc-toggle]").addEventListener("click", () => toggle(i));
+      q(c, "[data-oc-mute]").addEventListener("click", () => { v.muted = !v.muted; sync(i); });
+      const seek = q<HTMLInputElement>(c, "[data-oc-seek]");
+      seek.addEventListener("input", () => { if (v.duration) v.currentTime = (Number(seek.value) / 1000) * v.duration; });
+    });
+
+    root.querySelector("[data-oc-prev]")!.addEventListener("click", () => go(cur - 1));
+    root.querySelector("[data-oc-next]")!.addEventListener("click", () => go(cur + 1));
+
+    // Keyboard: Left/Right move the fan; Enter/Space on the stage itself plays the centre card.
+    root.addEventListener("keydown", (e) => {
+      const t = e.target as HTMLElement;
+      if (t.tagName === "INPUT") return;
+      if (e.key === "ArrowRight") { e.preventDefault(); go(cur + 1); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); go(cur - 1); }
+      else if ((e.key === "Enter" || e.key === " ") && t === stage) { e.preventDefault(); toggle(cur); }
+      else if (e.key === "Escape") pauseAll();
+    });
+
+    // Swipe on touch tablets in fan mode.
+    let sx: number | null = null, swiped = false;
+    fan.addEventListener("pointerdown", (e) => { if (!rowMode && e.pointerType !== "mouse") { sx = e.clientX; swiped = false; } });
+    fan.addEventListener("pointerup", (e) => {
+      if (sx === null) return;
+      const dx = e.clientX - sx; sx = null;
+      if (Math.abs(dx) > 40) { swiped = true; go(cur + (dx < 0 ? 1 : -1)); }
+    });
+    fan.addEventListener("click", (e) => { if (swiped) { e.stopPropagation(); e.preventDefault(); swiped = false; } }, true);
+
+    // Row mode: the card nearest the middle of the row is the current one.
+    let raf = 0;
+    fan.addEventListener("scroll", () => {
+      if (!rowMode || raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        const mid = fan.scrollLeft + fan.clientWidth / 2;
+        let best = cur, d = Infinity;
+        cards.forEach((c, i) => { const dd = Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid); if (dd < d) { d = dd; best = i; } });
+        if (best !== cur) { pauseAll(); cur = best; layout(); vids.forEach((_, i) => sync(i)); }
+      });
+    }, { passive: true });
+
+    // Never play off-screen or in a hidden tab.
+    if ("IntersectionObserver" in window) new IntersectionObserver((es) => { if (!es[0].isIntersecting) pauseAll(); }, { threshold: 0.25 }).observe(root);
+    document.addEventListener("visibilitychange", () => { if (document.hidden) pauseAll(); });
+
+    mq.addEventListener("change", setMode);
+    setMode();
+    vids.forEach((_, i) => sync(i));
+    root.classList.add("is-ready");
+  });
+</script>

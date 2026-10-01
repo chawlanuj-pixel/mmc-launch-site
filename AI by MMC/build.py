@@ -5,6 +5,7 @@ Copy rules: no invented results, prices, counts or awards; no em dashes."""
 import html, json, os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+import chrome
 SITE = "https://www.mondaymarketing.company"
 e = html.escape
 
@@ -271,19 +272,18 @@ def head_html(title, desc, slug, extra_schema=""):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Raleway:ital,wght@0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/ai.css">
+{chrome.HEAD_EXTRA}
 {extra_schema}</head><body>'''
 
 def nav():
-    return '''<header class="nav"><a class="nav__logo" href="index.html">M<b>M</b>C</a><nav class="nav__links" aria-label="Main">
-<a href="#">Services</a><a href="#">Our Work</a><a href="#">About</a><a href="#">Contact</a>
-<a class="pill" href="index.html" aria-label="AI by MMC">AI by MMC</a></nav></header>'''
+    return chrome.header()
 
 def footer():
-    return ('<footer class="foot"><div class="wrap"><span>\u00a9 2026 Monday Marketing Company</span><span>AI by MMC (standalone build, to be merged into the MMC site)</span></div></footer>'
+    return (chrome.footer_block() +
             '<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>'
             '<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>'
             '<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>'
-            '<script src="assets/ai-motion.js"></script><script src="assets/ai.js"></script></body></html>')
+            '<script src="assets/ai-motion.js"></script><script src="assets/ai.js"></script>' + chrome.SCRIPT + '</body></html>')
 
 def answer_block(text):
     return ('<section class="band band--paper"><div class="wrap"><div class="answer rise">'
@@ -318,7 +318,7 @@ def related(cur):
 
 def cta(h, sub):
     return f'''<section class="band band--sunsoft" id="talk"><div class="wrap"><div class="cta rise"><span class="eyebrow">Start with a conversation</span>
-<h2 data-split>{h}</h2><p class="lede">{sub}</p><div class="hero__act"><a class="btn btn--sun" href="#" data-magnet>Book a call <i class="arr"></i></a><a class="btn btn--ghost" href="index.html">See all AI by MMC</a></div></div></div></section>'''
+<h2 data-split>{h}</h2><p class="lede">{sub}</p><div class="hero__act"><a class="btn btn--sun" href="/contact/" data-magnet>Book a call <i class="arr"></i></a><a class="btn btn--ghost" href="index.html">See all AI by MMC</a></div></div></div></section>'''
 
 def fan(slots_html):
     cards = "".join(f'<div class="fan__c">{s}</div>' for s in slots_html)

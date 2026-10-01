@@ -1,0 +1,18 @@
+/* Performance marketing: creative testing, content and UGC. Prefix pmx-. */
+.pmx-row { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px); }
+.pmx-card { display: grid; align-content: start; gap: 8px; background: #fff; border: 1px solid var(--n-line); border-radius: 20px; padding: 10px 10px clamp(16px, 1.8vw, 22px); }
+.pmx-img { border-radius: 14px; overflow: hidden; }
+.pmx-n { padding: 8px 8px 0; font: 800 13px var(--font-display); letter-spacing: .06em; color: var(--n-blue); }
+.pmx-card h3 { margin: 0; padding-inline: 8px; font: 800 clamp(19px, 1.7vw, 22px)/1.15 var(--font-display); letter-spacing: -.015em; color: var(--n-ink); }
+.pmx-card p { margin: 0; padding-inline: 8px; font-size: 14.5px; line-height: 1.55; color: var(--n-fg-2); }
+.pmx-links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: clamp(28px, 3vw, 40px); }
+@media (max-width: 1100px) {
+  .pmx-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .pmx-card { grid-column: span 2; }
+  .pmx-card:nth-child(n+4) { grid-column: span 3; }
+}
+@media (max-width: 760px) {
+  .pmx-row { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -20px; padding: 0 20px 6px; scroll-padding-inline: 20px; scrollbar-width: none; }
+  .pmx-row::-webkit-scrollbar { display: none; }
+  .pmx-card { flex: 0 0 78%; scroll-snap-align: start; }
+}

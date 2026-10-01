@@ -1,0 +1,92 @@
+/* Floating AI by MMC button and menu. Bottom left, above everything except the nav, menu and modals. */
+.aifab { position: fixed; left: clamp(12px, 2vw, 24px); bottom: max(clamp(12px, 2vw, 24px), var(--aifab-lift, 0px)); z-index: 55; transition: bottom .25s var(--ease); display: grid; gap: 12px; justify-items: start; }
+.aifab__btn { position: relative; display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 20px 0 8px; border: 0; border-radius: 999px; background: var(--n-ink); color: #fff; cursor: pointer; isolation: isolate; overflow: hidden; box-shadow: 0 14px 32px -12px rgba(15,30,94,.55); font: 700 14px var(--font-display); }
+.aifab__ring { position: absolute; inset: -60%; z-index: -2; background: conic-gradient(from 0deg, var(--n-sun), var(--n-blue), #8fb0ff, var(--n-sun), var(--n-blue), var(--n-sun)); animation: aifabSpin 5s linear infinite; }
+.aifab__btn::before { content: ""; position: absolute; inset: 2px; z-index: -1; border-radius: inherit; background: var(--n-ink); }
+.aifab__mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--n-sun); color: var(--n-ink); font: 800 14px var(--font-display); letter-spacing: -.02em; }
+.aifab__btn:focus-visible, .aifab__list a:focus-visible, .aifab__talk:focus-visible, .aifab__wa:focus-visible { outline: 3px solid var(--n-sun); outline-offset: 3px; }
+.aifab__panel { width: min(340px, calc(100vw - 24px)); padding: 16px; border-radius: 22px; background: var(--n-paper); color: var(--n-ink); border: 1px solid var(--n-line-2); box-shadow: 0 28px 64px -20px rgba(15,30,94,.45); max-height: calc(100dvh - 96px - var(--aifab-lift, 0px)); overflow-y: auto; overscroll-behavior: contain; }
+.aifab__head { display: grid; gap: 2px; padding: 4px 6px 12px; }
+.aifab__head b { font: 800 18px var(--font-display); letter-spacing: -.01em; }
+.aifab__head span { font-size: 13px; color: var(--n-fg-2); }
+.aifab__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.aifab__list a { display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 4px 10px 4px 4px; border-radius: 16px; text-decoration: none; color: var(--n-ink); font: 700 15px var(--font-display); transition: background .15s var(--ease); }
+.aifab__list a:hover { background: color-mix(in srgb, var(--n-blue) 9%, transparent); }
+.aifab__list img { width: 52px; height: 52px; object-fit: cover; border-radius: 12px; flex: none; }
+@keyframes aifabSpin { to { transform: rotate(360deg); } }
+/* Phones: icon only, lifted above the sticky booking bar so the two never overlap. */
+@media (max-width: 760px) {
+  .aifab { bottom: max(calc(84px + env(safe-area-inset-bottom, 0px)), var(--aifab-lift, 0px)); left: 12px; }
+  .aifab__panel { max-height: calc(100dvh - 156px - var(--aifab-lift, 0px)); }
+  .aifab__btn { width: 52px; padding: 0 8px; justify-content: center; }
+  .aifab__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* ---------- Open / close motion ---------- */
+.aifab { --aifab-ease: cubic-bezier(.2, .8, .2, 1); }
+/* Panel: grows out of the button (bottom-left origin) and settles; rows rise in one after another. */
+.aifab__panel { transform-origin: 28px 100%; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(18px) scale(.86); clip-path: inset(40% 0 0 0 round 28px);
+  transition: opacity .22s var(--aifab-ease), transform .42s var(--aifab-ease), clip-path .42s var(--aifab-ease), visibility 0s linear .42s; }
+.aifab.is-open .aifab__panel { opacity: 1; visibility: visible; pointer-events: auto; transform: none; clip-path: inset(0 0 0 0 round 22px);
+  transition: opacity .2s var(--aifab-ease), transform .5s var(--aifab-ease), clip-path .5s var(--aifab-ease), visibility 0s; }
+.aifab__head, .aifab__list li, .aifab__cta { opacity: 0; transform: translateY(12px); transition: opacity .2s var(--aifab-ease), transform .2s var(--aifab-ease); }
+.aifab.is-open .aifab__head, .aifab.is-open .aifab__list li, .aifab.is-open .aifab__cta { opacity: 1; transform: none; transition: opacity .35s var(--aifab-ease), transform .45s var(--aifab-ease); transition-delay: calc(110ms + var(--i, 0) * 55ms); }
+.aifab.is-open .aifab__head { transition-delay: 60ms; }
+/* Button: the AI disc turns into a cross, the ring speeds up, the label swaps, and a soft pulse invites a click while closed. */
+.aifab__btn { transition: transform .3s var(--aifab-ease), box-shadow .3s var(--aifab-ease); }
+.aifab__btn:hover { transform: translateY(-2px); }
+.aifab__btn:active { transform: scale(.96); }
+.aifab:not(.is-open) .aifab__btn { animation: aifabPulse 3.6s ease-in-out 2s infinite; }
+.aifab.is-open .aifab__ring { animation-duration: 1.6s; }
+.aifab__mark { position: relative; transition: transform .45s var(--aifab-ease), background .3s var(--aifab-ease); }
+.aifab__mark i { position: absolute; inset: 0; display: grid; place-items: center; font-style: normal; transition: opacity .25s var(--aifab-ease), transform .45s var(--aifab-ease); }
+.aifab__x { font: 700 24px/1 var(--font-body); opacity: 0; transform: rotate(-90deg) scale(.5); }
+.aifab.is-open .aifab__ai { opacity: 0; transform: rotate(90deg) scale(.5); }
+.aifab.is-open .aifab__x { opacity: 1; transform: none; }
+.aifab.is-open .aifab__mark { transform: rotate(180deg); background: #fff; }
+.aifab__label { position: relative; display: inline-grid; }
+.aifab__label em { grid-area: 1 / 1; font-style: normal; transition: opacity .25s var(--aifab-ease), transform .35s var(--aifab-ease); }
+.aifab__label em + em { opacity: 0; transform: translateY(8px); }
+.aifab.is-open .aifab__label em:first-child { opacity: 0; transform: translateY(-8px); }
+.aifab.is-open .aifab__label em + em { opacity: 1; transform: none; }
+@keyframes aifabPulse { 0%, 70%, 100% { box-shadow: 0 14px 32px -12px rgba(15,30,94,.55), 0 0 0 0 rgba(255,197,40,0); } 85% { box-shadow: 0 14px 32px -12px rgba(15,30,94,.55), 0 0 0 10px rgba(255,197,40,.28); } }
+.aifab__list a:hover img { transform: scale(1.06); }
+.aifab__list img { transition: transform .3s var(--aifab-ease); }
+
+/* Footer row: three quarters "Talk to our AI expert now", one quarter WhatsApp. */
+.aifab__cta { display: grid; grid-template-columns: 3fr 1fr; gap: 8px; margin-top: 12px; }
+.aifab__talk { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; padding: 0 12px; border: 0; border-radius: 999px; background: var(--n-sun); color: var(--n-ink); font: 700 14px/1.15 var(--font-body); cursor: pointer; text-align: center; transition: transform .2s var(--aifab-ease), filter .2s var(--aifab-ease); }
+.aifab__talk:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.aifab__live { width: 9px; height: 9px; border-radius: 50%; background: #1f9d55; box-shadow: 0 0 0 0 rgba(31,157,85,.5); animation: aifabLive 2s ease-out infinite; flex: none; }
+.aifab__wa { display: grid; place-items: center; min-height: 48px; border-radius: 999px; background: #fff; border: 1px solid var(--n-line-2); transition: transform .2s var(--aifab-ease), border-color .2s var(--aifab-ease); }
+.aifab__wa:hover { transform: translateY(-1px); border-color: var(--n-blue); }
+@keyframes aifabLive { 70%, 100% { box-shadow: 0 0 0 8px rgba(31,157,85,0); } }
+@media (prefers-reduced-motion: reduce) {
+  .aifab__ring, .aifab__live, .aifab:not(.is-open) .aifab__btn { animation: none; }
+  .aifab, .aifab__panel, .aifab__head, .aifab__list li, .aifab__cta, .aifab__mark, .aifab__mark i, .aifab__label em, .aifab__btn { transition-duration: .01s !important; transition-delay: 0s !important; }
+  .aifab__panel { transform: none; clip-path: none; }
+}
+
+/* Phones: the animated label must stay out of the layout, or it squeezes the disc into an oval. */
+.aifab__mark { flex: none; width: 36px; height: 36px; aspect-ratio: 1; }
+@media (max-width: 760px) {
+  .aifab__btn { width: 52px; height: 52px; padding: 0; gap: 0; justify-content: center; }
+  .aifab .aifab__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* ---------- Round-2 audit fixes ---------- */
+/* D1: the wrapper must never intercept clicks. The closed panel takes no layout space and only live controls take pointer events. */
+.aifab { pointer-events: none; display: block; }
+.aifab__btn, .aifab.is-open .aifab__panel { pointer-events: auto; }
+.aifab__panel { position: absolute; left: 0; bottom: calc(100% + 12px); }
+/* D2: the cookie banner is a bottom-right card on desktop, so only phones lift the button above it. */
+@media (min-width: 761px) { .aifab { --aifab-lift: 0px !important; } }
+/* D20: the panel is solid while it opens; only its contents and its shape animate. */
+.aifab__panel { opacity: 1; transition: transform .5s var(--aifab-ease), clip-path .5s var(--aifab-ease), visibility 0s linear .42s; }
+.aifab.is-open .aifab__panel { transition: transform .5s var(--aifab-ease), clip-path .5s var(--aifab-ease), visibility 0s; }
+
+/* Phones: keep the panel below the fixed nav and let its contents scroll; the expert row stays reachable. */
+@media (max-width: 760px) {
+  .aifab__panel { max-height: calc(100dvh - 236px - var(--aifab-lift, 0px)); }
+  .aifab__cta { position: sticky; bottom: 0; background: var(--n-paper); padding-top: 8px; margin-top: 8px; }
+}

@@ -15,6 +15,7 @@ import { pageHead } from "../../../lib/pagehead";
 import { fixDeep, href } from "../../../lib/links";
 import raw from "../../../data/pages/pm.json";
 import "../../../styles/pg-wordmark.css";
+import "../../../styles/pm-creative.css";
 
 const D = fixDeep(raw);
 const AUDIT = "Get a paid-media audit";
@@ -43,6 +44,13 @@ const CHANNELS = [
     rows: [["Structure", "Sponsored ads sit inside the wider account budget."], ["Creative", "Listing content and A+ built alongside the ads."], ["Measurement", "Read against total sales, not only ad-attributed sales."]] },
   { id: "qc", pos: "50% 55%", img: "channel-quickcommerce.jpg", name: "Quick commerce", mark: null, href: "quick-commerce-ads.html", link: "Quick commerce ads, in detail", tag: "We run this for The Growing Giraffe",
     rows: [["Structure", "Platform ads planned with availability and stock."], ["Creative", "Tiles and listings made for a scroll of seconds."], ["Measurement", "Tracked at blended level, since platform data is thin."]] },
+];
+const CREATIVE = [
+  { img: "ugc/brief.jpg", t: "Brief", d: "One brand thesis, then several angles: the hook, the offer and the proof, written before anything is shot." },
+  { img: "ugc/shoot.jpg", t: "Shoot", d: "Creator and UGC-style video, founder and product footage, shot so it can be cut into many ads." },
+  { img: "ugc/edit.jpg", t: "Edit", d: "Hooks, lengths and formats cut from the same footage, plus statics and carousels." },
+  { img: "ugc/test.jpg", t: "Test", d: "Angles run against each other on a fixed budget, with a rule agreed up front for what counts as a winner." },
+  { img: "ugc/refresh.jpg", t: "Refresh", d: "Creative tires. New versions of the winners go in before results slip." },
 ];
 const STEPS = [
   ["Audit", "What your accounts and unit economics say today."],
@@ -164,6 +172,32 @@ const PROOF = [
                   : <button class="pm-textlink" onclick={book("pm-ch-" + c.id)}>Talk to us about {c.name}<Arrow /></button>}
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="creative">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Creative, content and UGC</span>
+            <h2 class="n-h2">Creative decides <span class="n-serif">who stops scrolling.</span></h2>
+            <p class="n-lede">On Meta, YouTube and quick commerce, the ad itself does most of the targeting and most of the selling. So we run creative as a testing programme, not a one-off shoot, and judge every new angle on the same contribution margin as the media.</p>
+          </div>
+          <ol class="pmx-row">
+            {CREATIVE.map((c, k) => (
+              <li class={"pmx-card n-rise d" + Math.min(4, k + 1)}>
+                <Img name={c.img} ratio="4 / 3" class="pmx-img" pos="50% 50%" />
+                <span class="pmx-n">{String(k + 1).padStart(2, "0")}</span>
+                <h3>{c.t}</h3>
+                <p>{c.d}</p>
+              </li>
+            ))}
+          </ol>
+          <div class="pmx-links n-rise">
+            <a class="pm-textlink" href={href("guide-creative-testing.html")}>How D2C brands test ad creative<Arrow /></a>
+            <a class="pm-textlink" href={href("ugc-and-video.html")}>UGC and video production<Arrow /></a>
+            <a class="pm-textlink" href={href("social-media-creatives.html")}>Social media creatives<Arrow /></a>
+            <a class="pm-textlink" href={href("influencer-marketing.html")}>Influencer marketing<Arrow /></a>
           </div>
         </div>
       </section>

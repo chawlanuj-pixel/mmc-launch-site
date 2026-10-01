@@ -1,0 +1,126 @@
+/* On camera: 3D fan of portrait video cards. Prefix oc-. Light "sunburst" background, ink text, sun focus rings.
+   Fan mode (desktop, motion allowed) is set by script via [data-oc-mode="fan"]; otherwise a simple scroll-snap row
+   (phones, reduced motion, and no-JS). */
+.oc {
+  --oc-ink: #0F1E5E; --oc-sun: #FFC528;
+  /* vertical chrome around the cards: heading block + caption row + gaps */
+  --oc-chrome: clamp(170px, 27svh, 250px);
+  --oc-ch: clamp(120px, min(calc(100svh - var(--hv-nav) - var(--hv-top) - var(--hv-bot) - var(--sp-1) - var(--oc-chrome)), calc((100vw - var(--hv-pad) * 2) * 16 / 9 / 3.9), 660px), 900px);
+  --oc-cw: calc(var(--oc-ch) * 9 / 16);
+  position: relative; overflow: hidden; color: var(--oc-ink);
+  background: radial-gradient(120% 90% at 50% 55%, #fffaf0 0%, #f6f3fb 45%, #e8ebfa 100%);
+}
+.oc__rays {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse farthest-corner at 50% 58%, rgba(246,243,251,0) 12%, rgba(246,243,251,.5) 60%, rgba(246,243,251,.82) 100%),
+    repeating-conic-gradient(from 0deg at 50% 58%, rgba(255,197,40,.2) 0 6deg, rgba(255,197,40,0) 6deg 14deg);
+}
+.oc::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(circle 4px at 12% 24%, rgba(63,81,181,.35) 98%, transparent),
+    radial-gradient(circle 3px at 88% 20%, rgba(63,81,181,.3) 98%, transparent),
+    radial-gradient(circle 5px at 79% 72%, rgba(63,81,181,.22) 98%, transparent),
+    radial-gradient(circle 4px at 7% 78%, rgba(63,81,181,.28) 98%, transparent),
+    radial-gradient(circle 3px at 31% 12%, rgba(255,197,40,.6) 98%, transparent),
+    radial-gradient(circle 3px at 94% 55%, rgba(255,197,40,.55) 98%, transparent);
+}
+.oc__in { position: relative; display: flex; flex-direction: column; gap: clamp(8px, 1.6svh, 18px); min-height: 0; }
+
+.oc__head { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--sp-2) var(--sp-3); flex-wrap: wrap; }
+.oc__head h2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.028em; line-height: 1.06; font-size: var(--t-h2); margin: 0; color: var(--oc-ink); max-width: 20ch; }
+.oc__head h2 em { color: var(--n-blue); }
+.oc .hn-eyebrow { margin-bottom: 6px; color: #2B3A99; }
+.oc__all { color: var(--oc-ink); font-weight: 700; }
+.oc__all:hover { color: var(--n-blue); }
+
+/* ---------- stage / fan ---------- */
+.oc__stage { position: relative; outline: none; border-radius: 28px; }
+.oc__stage:focus-visible { outline: 3px solid var(--oc-sun); outline-offset: 4px; }
+.oc__fan { list-style: none; margin: 0; padding: 0; position: relative; }
+.oc button:focus-visible, .oc a:focus-visible, .oc input:focus-visible { outline: 3px solid var(--oc-sun); outline-offset: 3px; box-shadow: 0 0 0 6px var(--oc-ink); }
+.oc__all:focus-visible { box-shadow: none; outline-color: var(--oc-ink); }
+
+.oc-card { position: relative; width: var(--oc-cw); flex: 0 0 auto; }
+.oc-card__in {
+  position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden; background: #dfe3f5; isolation: isolate;
+  border: 6px solid #fff; border-radius: 22px;
+  box-shadow: 0 34px 60px -14px rgba(20,47,91,.42), 0 8px 18px rgba(20,47,91,.12);
+}
+.oc-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; background: #dfe3f5; }
+.oc-card__hit { position: absolute; inset: 0; z-index: 3; border: 0; padding: 0; background: transparent; cursor: pointer; border-radius: inherit; }
+.oc-card__hit[hidden], .oc-bar[hidden] { display: none; }
+.oc-card:not(.is-c) video { filter: saturate(.92); }
+
+.oc-card__play { position: absolute; inset: 0; z-index: 2; border: 0; padding: 0; background: linear-gradient(180deg, rgba(15,30,94,0) 55%, rgba(15,30,94,.38)); display: none; place-items: center; cursor: pointer; color: var(--oc-ink); }
+.oc-card.is-c:not(.is-playing) .oc-card__play { display: grid; }
+.oc-card__disc { width: clamp(56px, calc(var(--oc-cw) * .3), 84px); aspect-ratio: 1; border-radius: 50%; background: var(--oc-sun); display: grid; place-items: center; box-shadow: 0 10px 28px rgba(15,30,94,.4); transition: transform .2s ease; }
+.oc-card__disc svg { width: 46%; height: 46%; margin-left: 6%; }
+.oc-card__play:hover .oc-card__disc { transform: scale(1.08); }
+.oc-card__play:focus-visible { outline-offset: -6px; box-shadow: none; }
+
+.oc-bar { position: absolute; z-index: 4; left: 6px; right: 6px; bottom: 6px; display: none; align-items: center; gap: 2px; padding: 2px 8px 2px 2px; border-radius: 16px; background: rgba(15,30,94,.82); color: #fff; backdrop-filter: blur(6px); }
+.oc-card.is-started .oc-bar { display: flex; }
+.oc-bar__b { width: 44px; height: 44px; flex: 0 0 44px; border: 0; background: transparent; color: #fff; display: grid; place-items: center; cursor: pointer; border-radius: 12px; padding: 0; }
+.oc-bar__b[hidden], .oc-bar__b span[hidden] { display: none; }
+.oc-bar__b svg { width: 22px; height: 22px; }
+.oc-bar__b:hover { color: var(--oc-sun); }
+.oc-bar__r { flex: 1; min-width: 0; height: 44px; margin: 0; background: transparent; accent-color: var(--oc-sun); cursor: pointer; }
+
+/* ---------- caption row ---------- */
+.oc__foot { display: flex; align-items: center; justify-content: center; gap: var(--sp-2); }
+.oc__cap { margin: 0; min-width: min(60vw, 280px); text-align: center; display: grid; gap: 1px; }
+.oc__cap b { font: 800 clamp(15px, 2.2svh, 18px) var(--font-display); color: var(--oc-ink); }
+.oc__cap span { font: 700 12.5px var(--font-body); letter-spacing: .08em; color: #2B3A99; }
+.oc__nav { flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--oc-ink); background: #fff; color: var(--oc-ink); display: grid; place-items: center; cursor: pointer; padding: 0; transition: background .2s, color .2s; }
+.oc__nav svg { width: 20px; height: 20px; }
+.oc__nav:hover { background: var(--oc-ink); color: #fff; }
+
+/* ---------- ROW mode (default / phones / reduced motion) ---------- */
+.oc__fan { display: flex; gap: clamp(10px, 2vw, 22px); align-items: center; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 30px calc(50vw - var(--oc-cw) / 2) 72px; margin: -20px calc(var(--hv-pad) * -1) -58px; }
+.oc__fan::-webkit-scrollbar { display: none; }
+.oc-card { scroll-snap-align: center; scroll-snap-stop: always; transition: transform .35s ease, opacity .35s ease; }
+.oc-card:not(.is-c) { transform: scale(.86); opacity: .8; }
+
+/* ---------- FAN mode ---------- */
+.oc[data-oc-mode="fan"] .oc__fan { display: block; overflow: visible; padding: 0; margin: 0; height: calc(var(--oc-ch) + var(--oc-pad, 28px)); scroll-snap-type: none; }
+.oc[data-oc-mode="fan"] .oc-card {
+  position: absolute; left: 50%; top: 50%;
+  transform:
+    translate(calc(-50% + var(--p) * 74%), calc(-50% + var(--a) * 2.2% ))
+    rotate(calc(var(--p) * 7deg)) scale(calc(1 - var(--a) * .13));
+  transition: transform .8s cubic-bezier(.22,.9,.28,1), opacity .5s ease;
+  opacity: calc(1 - var(--a) * .22);
+}
+.oc[data-oc-mode="fan"] .oc-card.is-c { opacity: 1; }
+.oc[data-oc-mode="fan"] .oc-card.is-far { opacity: 0; visibility: hidden; pointer-events: none; }
+.oc[data-oc-mode="fan"] .oc-card:not(.is-c) .oc-card__in { cursor: pointer; }
+.oc[data-oc-mode="fan"] .oc-card__in { animation: oc-float 7s ease-in-out infinite; }
+.oc[data-oc-mode="fan"] .oc-card:nth-child(2n) .oc-card__in { animation-delay: -2.4s; }
+.oc[data-oc-mode="fan"] .oc-card:nth-child(3n) .oc-card__in { animation-delay: -4.2s; }
+.oc[data-oc-mode="fan"] .oc-card.is-playing .oc-card__in { animation-play-state: paused; }
+@keyframes oc-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+.oc[data-oc-mode="fan"] .oc-card:not(.is-c):hover .oc-card__in { box-shadow: 0 40px 70px -14px rgba(20,47,91,.5), 0 8px 18px rgba(20,47,91,.14); }
+
+@media (prefers-reduced-motion: reduce) {
+  .oc-card, .oc-card__in { transition: none !important; animation: none !important; }
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 700px) {
+  .oc { --oc-chrome: clamp(190px, 29svh, 250px); --oc-ch: clamp(120px, min(calc(100svh - var(--hv-nav) - var(--hv-top) - var(--hv-bot) - var(--sp-1) - var(--oc-chrome)), 118vw), 520px); }
+  .hv .oc .oc__all { display: none; }
+  .oc__head h2 { max-width: none; }
+}
+@media (max-height: 560px) {
+  .oc { --oc-chrome: 128px; --oc-pad: 6px; }
+  .oc__head h2 { font-size: clamp(20px, 6svh, 28px); max-width: none; }
+  .hv .oc .oc__all { display: none; }
+  .oc .hn-eyebrow { margin-bottom: 2px; }
+  .oc .oc__nav { width: 44px; height: 44px; }
+  .oc__foot { gap: var(--sp-1); }
+}
+
+/* Acceptance fix: the fan overlaps the arrows on phones (negative margin), so lift the controls above it. */
+.oc__foot { position: relative; z-index: 30; }
