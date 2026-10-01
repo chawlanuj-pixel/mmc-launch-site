@@ -88,6 +88,7 @@ const org = jsonld.find((b) => b["@type"] === "Organization");
 if (org) {
   org.description = "Monday Marketing Company is an India-based growth partner for D2C brands, B2B companies and educational institutes. Paid media, creative, retention and websites, measured on profit.";
   delete org.numberOfEmployees;
+  org.knowsAbout = ["Contribution margin", "Performance marketing", "D2C marketing", "Meta Ads", "Google Ads", "Amazon Ads", "Quick commerce ads", "Shopify development", "Conversion rate optimisation", "Retention marketing", "Admission marketing", "B2B lead generation"];
 }
 const wp = jsonld.find((b) => b["@type"] === "WebPage");
 if (wp) { wp.name = TITLE; wp.description = DESC; }

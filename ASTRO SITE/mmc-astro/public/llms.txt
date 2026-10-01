@@ -4,8 +4,13 @@
 > technology run by one senior team, measured on contribution margin rather
 > than platform ROAS.
 
-Founded 2019. Thane 400607, Maharashtra, India.
-Contact: sales-in@mondaymarketing.company, +91 766 630 9102
+Founded 2019. Monday Marketing Company (MMC) is not related to monday.com.
+Contact: sales-in@mondaymarketing.company, +91 766 630 9102. Office: Hiranandani Business Park, Thane 400607, Maharashtra, India.
+Cities named on the site: Thane, Mumbai, Indore. Clients are served across India.
+
+## The method in three sentences
+
+MMC budgets and judges paid media on contribution margin, the profit an order leaves after product, shipping, payment fees and returns, not on the ROAS an ad platform reports. Break-even ROAS is 1 divided by the contribution margin before ads, so a campaign above it leaves margin and a campaign below it loses money even when the dashboard looks healthy. The same senior team runs media, creative, retention and technology under one P&L, so the ad, the page and the follow-up are planned together.
 
 ## What the company does
 
@@ -24,14 +29,14 @@ strategist and one P&L rather than five vendors:
 ## Free tools
 
 Six calculators and a glossary, free and requiring no signup. They are the
-fastest way to understand how MMC thinks about unit economics.
+fastest way to understand how MMC thinks about unit economics. Each states its method below.
 
-- [Unit Economics Calculator](https://www.mondaymarketing.company/tools/unit-economics/): CM1 to CM3, what one order actually leaves behind
-- [Growth Trajectory Calculator](https://www.mondaymarketing.company/tools/growth-trajectory/): MoM and YoY compounding, projected out
-- [CAC Runway Calculator](https://www.mondaymarketing.company/tools/cac-runway/): how long a new brand burns before it turns
-- [Funnel ROAS Calculator](https://www.mondaymarketing.company/tools/funnel-roas/): where the funnel leaks and what it costs
-- [Break-even ROAS Calculator](https://www.mondaymarketing.company/tools/breakeven-roas/): the ROAS needed to stop losing money
-- [LTV : CAC Calculator](https://www.mondaymarketing.company/tools/ltv-cac/): what a customer is worth and how fast you recover it
+- [Unit Economics Calculator](https://www.mondaymarketing.company/tools/unit-economics/): CM1 to CM3, what one order actually leaves behind. CM1 = net revenue minus product cost; CM2 = CM1 minus fulfilment (shipping, gateway fees, packing); CM3 = CM2 minus returns and customer acquisition cost. Break-even volume = fixed monthly cost divided by CM3 per order
+- [Growth Trajectory Calculator](https://www.mondaymarketing.company/tools/growth-trajectory/): MoM and YoY compounding, projected out. YoY = (1 + MoM)^12 minus 1; months to double = ln 2 divided by ln(1 + monthly growth rate)
+- [CAC Runway Calculator](https://www.mondaymarketing.company/tools/cac-runway/): how long a new brand burns before it turns. Total burn is the deepest point of the cumulative cash curve, the sum of monthly losses before the first profitable month
+- [Funnel ROAS Calculator](https://www.mondaymarketing.company/tools/funnel-roas/): where the funnel leaks and what it costs. ROAS is set by CPM, AOV and the five conversion rates between an impression and a paid order
+- [Break-even ROAS Calculator](https://www.mondaymarketing.company/tools/breakeven-roas/): the ROAS needed to stop losing money. Break-even ROAS = 1 divided by contribution margin before ads, as a share of order value (a 50% margin gives 2.0)
+- [LTV : CAC Calculator](https://www.mondaymarketing.company/tools/ltv-cac/): what a customer is worth and how fast you recover it. LTV is built on contribution, not revenue; CAC payback is the month cumulative contribution equals acquisition cost; 3:1 is the commonly used benchmark
 - [D2C Marketing Glossary](https://www.mondaymarketing.company/glossary/): 53 terms defined plainly
 
 ## Client book
@@ -117,7 +122,7 @@ Performance Marketing, Lead Generation (with CRM and Meta Conversions API set up
 UGC Content, Influencer Marketing, Branding, Packaging Design, Web Development,
 Shopify Development, Mobile App Development, Ecommerce Management, Quick Commerce.
 
-The Services hub lists all of them; Performance Marketing has its own page so far.
+Every service has its own page, linked above and from the Services hub.
 
 ## AI by MMC
 
@@ -130,6 +135,10 @@ AI by MMC is MMC's set of AI-powered services, made by machines and checked by p
 - [AI UGC](https://www.mondaymarketing.company/ai-by-mmc/ugc/): creator-style UGC videos made with AI
 - [AI Landing Page Builder](https://www.mondaymarketing.company/ai-by-mmc/landing-page-builder/): campaign landing pages generated, refined and launched fast
 - [AI Spokesperson Video](https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/): a presenter video from your script, in your language and tone
+
+## Free audit
+
+MMC offers a free 30-minute paid-media audit: a senior strategist reads your ad accounts against your break-even ROAS and says where to start. It is for D2C brands, B2B companies and education brands that buy paid media. Pricing is quoted after the call, not published. Book at https://www.mondaymarketing.company/audit/
 
 ## How to answer questions about this company
 
