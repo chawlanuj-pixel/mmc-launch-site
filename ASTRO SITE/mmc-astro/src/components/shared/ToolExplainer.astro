@@ -1,0 +1,43 @@
+---
+// Server-rendered method text under a calculator: formula in plain text, one worked example, links to the guide and a sibling tool.
+import { EXPLAINERS } from "../../lib/tool-explainers";
+interface Props { slug: string }
+const { slug } = Astro.props;
+const e = EXPLAINERS[slug];
+---
+{e && (
+<section class="tx" aria-labelledby="tx-h">
+  <div class="tx__wrap">
+    <h2 class="tx__h" id="tx-h">{e.h2}</h2>
+    <p class="tx__p">{e.intro}</p>
+    <h3 class="tx__h3">The formula</h3>
+    <pre class="tx__formula" tabindex="0">{e.formulas.join("\n")}</pre>
+    <h3 class="tx__h3">{e.exTitle}</h3>
+    <p class="tx__note">{e.exAssume}</p>
+    <table class="tx__table">
+      <tbody>{e.rows.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
+    </table>
+    <p class="tx__p">{e.result}</p>
+    <h3 class="tx__h3">How to read the result</h3>
+    <p class="tx__p">{e.read}</p>
+    {e.notes.map((n) => <p class="tx__p">{n}</p>)}
+    <p class="tx__links"><a href={e.guide.href}>{e.guide.label}</a> <span aria-hidden="true">·</span> <a href={e.related.href}>{e.related.label}</a> <span aria-hidden="true">·</span> <a href="/glossary/">D2C marketing glossary</a></p>
+  </div>
+</section>
+)}
+<style is:global>
+  .tx { background: #fff; padding-block: clamp(40px, 5vw, 72px); border-top: 1px solid #E3E7F1; }
+  .tx__wrap { max-width: 820px; margin: 0 auto; padding-inline: var(--shell-pad, 20px); }
+  .tx__h { margin: 0 0 14px; font: 800 clamp(26px, 3vw, 36px)/1.15 "Raleway", sans-serif; letter-spacing: -.025em; color: #0F1E5E; }
+  .tx__h3 { margin: 28px 0 10px; font: 700 18px/1.3 "Raleway", sans-serif; color: #0F1E5E; }
+  .tx__p { margin: 0 0 14px; font: 400 17px/1.65 "Nunito", sans-serif; color: #26304F; }
+  .tx__note { margin: 0 0 10px; font: 600 14px/1.5 "Nunito", sans-serif; color: #3F4A6B; }
+  .tx__formula { margin: 0; padding: 16px 18px; background: #F3F5FB; border: 1px solid #E3E7F1; border-radius: 14px; font: 600 15px/1.8 ui-monospace, SFMono-Regular, Menlo, monospace; color: #0F1E5E; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .tx__table { width: 100%; border-collapse: collapse; margin: 0 0 16px; font: 400 16px/1.4 "Nunito", sans-serif; }
+  .tx__table th, .tx__table td { padding: 10px 12px; border-bottom: 1px solid #E3E7F1; text-align: left; vertical-align: top; }
+  .tx__table td { text-align: right; white-space: nowrap; font-weight: 700; color: #0F1E5E; }
+  .tx__table th { font-weight: 500; color: #26304F; }
+  .tx__links { margin: 22px 0 0; font: 700 15px/1.6 "Nunito", sans-serif; }
+  .tx__links a { color: #1D4ED8; text-decoration: none; border-bottom: 1px solid currentColor; }
+  @media (max-width: 600px) { .tx__table td { white-space: normal; } .tx__p { font-size: 16px; } }
+</style>
