@@ -629,3 +629,13 @@
 
 /* Acceptance fix: calculator cards meet the 44px tap target on phones. */
 .hv-num__card { min-height: 44px; }
+
+/* Who we work with: the card under the pointer (or keyboard focus) grows wider and the others make room.
+   Desktop pointers only; phones and touch keep the fixed layout and show everything at rest. */
+@media (hover: hover) and (min-width: 901px) {
+  .hv-who__grid { transition: grid-template-columns .55s var(--ease); }
+  .hv-who__grid:has(.hv-who__card--d2c:is(:hover, :focus-visible)) { grid-template-columns: 1.9fr .9fr .9fr; }
+  .hv-who__grid:has(.hv-who__card--b2b:is(:hover, :focus-visible)) { grid-template-columns: .9fr 1.9fr .9fr; }
+  .hv-who__grid:has(.hv-who__card--edu:is(:hover, :focus-visible)) { grid-template-columns: .9fr .9fr 1.9fr; }
+}
+@media (prefers-reduced-motion: reduce) { .hv-who__grid { transition: none; } }
