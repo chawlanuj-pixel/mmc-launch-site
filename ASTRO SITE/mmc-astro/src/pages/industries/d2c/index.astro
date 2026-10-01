@@ -3,6 +3,8 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Shell from "../../../components/Shell.astro";
 import PageHero from "../../../components/pages/PageHero.astro";
 import PageFx from "../../../components/pages/PageFx.astro";
+import LinkStrip from "../../../components/shared/LinkStrip.astro";
+import { guidesFor } from "../../../lib/links-map";
 import PreFooterCta from "../../../components/shared/PreFooterCta.astro";
 import StickyBookingBar from "../../../components/shared/StickyBookingBar.astro";
 import { BOOK } from "../../../lib/site";
@@ -95,6 +97,7 @@ const TILES = [
       <Faq tone="white" title={["Questions about", "D2C marketing."]} faq={D.DC_FAQ} />
 
       <FreeToolsStrip page="industries-d2c" bg="white" />
+      <LinkStrip id="read-the-method" eyebrow="Read the method" h1="Guides behind" h2="the numbers." cards={guidesFor("industries-d2c").map((g) => ({ title: g.short, meta: g.tag, text: g.desc, href: g.href, go: "Read the guide" }))} bg="paper" all={{ href: "/guides/", label: "All guides" }} />
       <PreFooterCta source="d2c" h2a="Find where your D2C profit" h2b="leaks." lede="On a call, with a senior strategist. We read your accounts against your break-even ROAS and plan the first 30 days." />
     </main>
     <StickyBookingBar source="d2c" />

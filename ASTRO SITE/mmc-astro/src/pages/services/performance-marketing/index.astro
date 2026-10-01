@@ -4,6 +4,9 @@ import Shell from "../../../components/Shell.astro";
 import PageHero from "../../../components/pages/PageHero.astro";
 import PageFx from "../../../components/pages/PageFx.astro";
 import FreeToolsStrip from "../../../components/shared/FreeToolsStrip.astro";
+import LinkStrip from "../../../components/shared/LinkStrip.astro";
+import { guidesFor, casesFor } from "../../../lib/links-map";
+import { tagsFor } from "../../../lib/work";
 import PreFooterCta from "../../../components/shared/PreFooterCta.astro";
 import StickyBookingBar from "../../../components/shared/StickyBookingBar.astro";
 import { BOOK } from "../../../lib/site";
@@ -212,6 +215,8 @@ const CREATIVE = [
       <Faq tone="paper" title={["Questions about", "performance marketing."]} faq={D.PM_FAQ} />
 
       <FreeToolsStrip page="performance-marketing" bg="white" />
+      <LinkStrip id="from-the-work" eyebrow="From the work" h1="Brands we have" h2="worked with." cards={casesFor("performance-marketing").map((c) => ({ title: c.name, meta: c.label, text: tagsFor(c.id, true).join(" · "), href: c.href!, go: "Read the case study" }))} bg="paper" all={{ href: "/work/", label: "See all our work" }} />
+      <LinkStrip id="read-the-method" eyebrow="Read the method" h1="Guides behind" h2="the numbers." cards={guidesFor("performance-marketing").map((g) => ({ title: g.short, meta: g.tag, text: g.desc, href: g.href, go: "Read the guide" }))} bg="white" all={{ href: "/guides/", label: "All guides" }} />
       <PreFooterCta source="pm" h2a="Find out what your ad spend" h2b="really returns." lede="On a call, with a senior strategist. We read your accounts against your break-even ROAS and plan the first 30 days." />
     </main>
     <StickyBookingBar source="pm" />

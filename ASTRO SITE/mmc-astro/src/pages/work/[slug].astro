@@ -10,6 +10,7 @@ import TestimonialBlock from "../../components/work/TestimonialBlock.astro";
 import ProofSlots from "../../components/work/ProofSlots.astro";
 import { ARTWORK_LINE, BOOK, SECONDARY } from "../../lib/site";
 import { CASES, tagsFor, whatWeDid, moreWork } from "../../lib/work";
+import { servicePageFor, industryPageFor } from "../../lib/links-map";
 import "../../styles/case-study.css";
 import "../../styles/work-pages.css";
 
@@ -23,6 +24,8 @@ const { c } = Astro.props as { c: (typeof CASES)[number] };
 const more = moreWork(c.id);
 const tags = tagsFor(c.id);
 const did = whatWeDid(c);
+const svcLinks = c.services.map((k: string, i: number) => ({ label: tags[i], href: servicePageFor(k, c.group) })).filter((x: any) => x.href && x.label);
+const industry = industryPageFor(c.group);
 
 const title = `${c.name}: ${c.label} case study | MMC`;
 const description = c.scope;
@@ -84,6 +87,12 @@ const jsonld = [
           <aside class="cs-services n-rise d1">
             <h2>What we did</h2>
             {did && <p class="cs-services__did">{did}</p>}
+            {svcLinks.length > 0 && (
+              <ul class="cs-services__links" aria-label="Services used">
+                {svcLinks.map((l: any) => <li><a href={l.href}>{l.label}</a></li>)}
+              </ul>
+            )}
+            {industry && <p class="cs-services__ind">More on <a href={industry.href}>{industry.label}</a>.</p>}
             {!(c.metrics && c.metrics.length) && <p>No performance figures are shown on this page.</p>}
           </aside>
         </div>

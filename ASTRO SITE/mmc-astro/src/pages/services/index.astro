@@ -4,6 +4,8 @@ import Shell from "../../components/Shell.astro";
 import PageHero from "../../components/pages/PageHero.astro";
 import PageFx from "../../components/pages/PageFx.astro";
 import FreeToolsStrip from "../../components/shared/FreeToolsStrip.astro";
+import LinkStrip from "../../components/shared/LinkStrip.astro";
+import { guidesFor } from "../../lib/links-map";
 import PreFooterCta from "../../components/shared/PreFooterCta.astro";
 import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
 import { BOOK } from "../../lib/site";
@@ -110,6 +112,7 @@ const book = (s: string) => `window.mmcBookCall('${s}', event)`;
       <Faq tone="white" title={["Questions about", "our services."]} faq={D.SV_FAQ} />
 
       <FreeToolsStrip page="performance-marketing" bg="white" />
+      <LinkStrip id="read-the-method" eyebrow="Read the method" h1="Guides behind" h2="the numbers." cards={guidesFor("performance-marketing").map((g) => ({ title: g.short, meta: g.tag, text: g.desc, href: g.href, go: "Read the guide" }))} bg="paper" all={{ href: "/guides/", label: "All guides" }} />
       <PreFooterCta source="services" h2a="Tell us the problem." h2b="We will name the system." lede="On a call, with a senior strategist. We say where to start, what the first 30 days look like and who works on your account." />
     </main>
     <StickyBookingBar source="services" />

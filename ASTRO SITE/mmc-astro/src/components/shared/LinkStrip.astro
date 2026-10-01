@@ -1,0 +1,57 @@
+---
+// A strip of 2-3 link cards. Used for "Read the method" (guides) and "From the work" (case studies) on service and industry pages.
+// Same look as FreeToolsStrip (fts), with its own CSS so it works on pages that do not render that strip.
+interface Card { title: string; meta?: string; text: string; href: string; go: string }
+interface Props { eyebrow: string; h1: string; h2: string; cards: Card[]; bg?: "white" | "paper"; id: string; all?: { href: string; label: string } }
+const { eyebrow, h1, h2, cards, bg = "paper", id, all } = Astro.props;
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+---
+{cards.length > 0 && (
+<section class={`ls ls--${bg}`} id={id} aria-labelledby={id + "-h"}>
+  <div class="ls__wrap">
+    <div class="ls__head">
+      <div>
+        <p class="ls__eyebrow">{eyebrow}</p>
+        <h2 class="ls__h" id={id + "-h"}><b>{h1}</b> <em>{h2}</em></h2>
+      </div>
+      {all && <a class="ls__all" href={all.href}>{all.label}<Fragment set:html={arrow} /></a>}
+    </div>
+    <div class={"ls__grid ls__grid--" + Math.min(cards.length, 3)}>
+      {cards.map((c) => (
+        <a class="ls__card" href={c.href}>
+          {c.meta && <span class="ls__meta">{c.meta}</span>}
+          <b>{c.title}</b>
+          <span class="ls__d">{c.text}</span>
+          <span class="ls__go">{c.go}<span class="ls__chip" aria-hidden="true"><Fragment set:html={arrow} /></span></span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+)}
+<style is:global>
+  .ls { padding-block: clamp(40px, 5vw, 72px); }
+  .ls--white { background: #fff; } .ls--paper { background: #FBFAF6; }
+  .ls__wrap { width: 100%; max-width: var(--shell-max, 1240px); margin: 0 auto; padding-inline: var(--shell-pad, 20px); }
+  .ls__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 32px; margin-bottom: clamp(20px, 2.6vw, 32px); }
+  .ls__eyebrow { margin: 0 0 8px; font: 700 12.5px/1.2 "Nunito", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #1E40AF; }
+  .ls__h { margin: 0; font: 400 clamp(26px, 3vw, 38px)/1.1 "Raleway", sans-serif; letter-spacing: -.028em; color: #0F1E5E; text-wrap: balance; }
+  .ls__h b { font-weight: 800; } .ls__h em { font-weight: 600; color: #1D4ED8; }
+  .ls__all { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font: 700 14px "Nunito", sans-serif; color: #1E40AF; text-decoration: none; }
+  .ls__all svg { width: 16px; height: 16px; transition: transform .2s ease; } .ls__all:hover svg { transform: translateX(4px); }
+  .ls__grid { display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ls__grid--1 { grid-template-columns: minmax(0, 420px); } .ls__grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ls__card { display: flex; flex-direction: column; gap: 8px; padding: 20px; background: #fff; border: 1px solid #E3E7F1; border-radius: 22px; text-decoration: none; color: inherit; transition: border-color .2s ease, transform .25s ease, box-shadow .25s ease; }
+  .ls--white .ls__card { background: #FBFAF6; }
+  .ls__card:hover, .ls__card:focus-visible { border-color: #1D4ED8; transform: translateY(-4px); box-shadow: 0 14px 34px rgba(15,30,94,.12); }
+  .ls__card:focus-visible { outline: 3px solid #1D4ED8; outline-offset: 2px; }
+  .ls__meta { font: 700 12px/1.2 "Nunito", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #1E40AF; }
+  .ls__card b { font: 800 20px/1.25 "Raleway", sans-serif; letter-spacing: -.015em; color: #0F1E5E; }
+  .ls__d { font: 400 15px/1.5 "Nunito", sans-serif; color: #3F4A6B; }
+  .ls__go { margin-top: auto; padding-top: 4px; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 44px; font: 700 14px "Nunito", sans-serif; color: #1E40AF; }
+  .ls__chip { flex: none; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: #0F1E5E; color: #fff; transition: transform .2s ease, background .2s ease; }
+  .ls__chip svg { width: 15px; height: 15px; } .ls__card:hover .ls__chip { transform: translateX(4px); background: #1D4ED8; }
+  @media (max-width: 1000px) { .ls__grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .ls__grid, .ls__grid--2, .ls__grid--3 { grid-template-columns: 1fr; } .ls__card b { font-size: 19px; } }
+  @media (prefers-reduced-motion: reduce) { .ls__card, .ls__chip, .ls__all svg { transition: none; } .ls__card:hover { transform: none; } }
+</style>

@@ -17,6 +17,9 @@ import Faq from "../components/hub/Faq.astro";
 import FreeToolsStrip from "../components/shared/FreeToolsStrip.astro";
 import { TOOLS_FOR } from "../lib/site";
 import PreFooterCta from "../components/shared/PreFooterCta.astro";
+import LinkStrip from "../components/shared/LinkStrip.astro";
+import { guidesFor, casesFor } from "../lib/links-map";
+import { tagsFor } from "../lib/work";
 import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
 import "../styles/hub-extra.css";
 import { fixDeep } from "../lib/links";
@@ -41,6 +44,9 @@ const jsonld = rewriteJsonld(d.jsonld);
 const seg = d.path.replace(/^\/|\/$/g, "").split("/");
 const toolsKey = seg[0] === "industries" ? "industries-" + seg[1] : seg[seg.length - 1];
 const C = closingFor(H.key, H.cta);
+const hasTools = !!TOOLS_FOR[toolsKey];
+const caseCards = (H.key === "guides" || H.key === "resources" || H.key === "industries") ? [] : casesFor(toolsKey).map((c) => ({ title: c.name, meta: c.label, text: tagsFor(c.id, true).join(" · "), href: c.href!, go: "Read the case study" }));
+const guideCards = (H.key === "guides" || H.key === "resources" || H.key === "industries") ? [] : guidesFor(toolsKey).map((g) => ({ title: g.short, meta: g.tag, text: g.desc, href: g.href, go: "Read the guide" }));
 ---
 <BaseLayout title={d.title} description={d.description} path={d.path} ogTitle={d.ogTitle} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld}>
   <Shell>
@@ -59,6 +65,8 @@ const C = closingFor(H.key, H.cta);
       <AiVersion slug={seg[seg.length - 1]} />
       <Faq title={H.faqTitle} faq={H.faq} tone="white" />
       {TOOLS_FOR[toolsKey] && <FreeToolsStrip page={toolsKey} bg="paper" />}
+      <LinkStrip id="from-the-work" eyebrow="From the work" h1="Brands we have" h2="worked with." cards={caseCards} bg={hasTools ? "white" : "paper"} all={{ href: "/work/", label: "See all our work" }} />
+      <LinkStrip id="read-the-method" eyebrow="Read the method" h1="Guides behind" h2="the numbers." cards={guideCards} bg={hasTools ? "paper" : "white"} all={{ href: "/guides/", label: "All guides" }} />
       <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
     </main>
     <StickyBookingBar source={H.key} />
