@@ -1,0 +1,522 @@
+{
+ "title": "D2C Marketing Glossary: 53 Terms in Plain English | MMC",
+ "description": "ROAS, CAC, LTV, AOV, RTO, CM1 to CM3, EBITDA: what each means, how it is calculated, why it hits your P&L. Jargon never explained with more jargon.",
+ "ogTitle": "53 D2C marketing terms, in plain English",
+ "ogDescription": "Every term on the site defined once: what it means, the formula, and why it matters to your P&L.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Resources",
+     "item": "https://www.mondaymarketing.company/resources.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Glossary",
+     "item": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "DefinedTermSet",
+   "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html",
+   "name": "D2C & Performance Marketing Glossary",
+   "url": "https://www.mondaymarketing.company/d2c-marketing-glossary.html",
+   "description": "A plain-English glossary of D2C and performance marketing terms: ROAS, CAC, LTV, AOV, COGS, RTO, CM1/CM2/CM3, EBITDA, MoM and YoY. What each means, how it's calculated, and why it matters to your P&L. Free, no email required.",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monday Marketing Company",
+    "url": "https://www.mondaymarketing.company/"
+   },
+   "hasDefinedTerm": [
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#aov",
+     "name": "Average Order Value",
+     "alternateName": "AOV",
+     "description": "The average rupee value of a single order. Total revenue divided by number of orders.",
+     "termCode": "AOV",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cogs",
+     "name": "Cost of Goods Sold",
+     "alternateName": "COGS",
+     "description": "What the product itself costs you to make and land in your warehouse: materials, manufacturing, inbound freight, duties. Usually quoted as a percentage of selling price.",
+     "termCode": "COGS",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#contribution-margin",
+     "name": "Contribution Margin",
+     "description": "What's left from an order after every variable cost: product, shipping, payment fees, returns - but before marketing and salaries. It's the money actually available to buy the next customer.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#net-margin",
+     "name": "Net Margin",
+     "description": "The percentage of revenue left as profit after absolutely everything, marketing included.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#gmv",
+     "name": "Gross Merchandise Value",
+     "alternateName": "GMV",
+     "description": "The total rupee value of everything sold before returns, discounts and fees are stripped out.",
+     "termCode": "GMV",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#roas",
+     "name": "Return on Ad Spend",
+     "alternateName": "ROAS",
+     "description": "How much revenue each rupee of ad spend produced. A 3× ROAS means ₹100 of ads returned ₹300 of revenue.",
+     "termCode": "ROAS",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#blended-roas",
+     "name": "Blended ROAS",
+     "description": "Total revenue from all sources divided by total ad spend across all platforms, not the number any single ad platform reports.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#breakeven-roas",
+     "name": "Break-even ROAS",
+     "description": "The exact ROAS at which an order makes you neither profit nor loss. Below it you are paying for revenue.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cac",
+     "name": "Customer Acquisition Cost",
+     "alternateName": "CAC",
+     "description": "What you pay in marketing to win one new customer.",
+     "termCode": "CAC",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cpm",
+     "name": "Cost Per Mille",
+     "alternateName": "CPM",
+     "description": "What it costs to show your ad one thousand times. 'Mille' is Latin for thousand.",
+     "termCode": "CPM",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cpc",
+     "name": "Cost Per Click",
+     "alternateName": "CPC",
+     "description": "What you pay for one click on your ad.",
+     "termCode": "CPC",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cpo",
+     "name": "Cost Per Order",
+     "alternateName": "CPO",
+     "description": "Advertising cost divided by the number of orders it produced, including repeat buyers.",
+     "termCode": "CPO",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#ctr",
+     "name": "Click-Through Rate",
+     "alternateName": "CTR",
+     "description": "The share of people who clicked after seeing your ad.",
+     "termCode": "CTR",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#impressions",
+     "name": "Impressions",
+     "description": "The number of times your ad was displayed. Not people: the same person seeing it three times is three impressions.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#mer",
+     "name": "Marketing Efficiency Ratio",
+     "alternateName": "MER",
+     "description": "Total company revenue divided by total marketing spend: a whole-business view rather than a campaign one.",
+     "termCode": "MER",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#attribution",
+     "name": "Attribution",
+     "description": "Deciding which ad or channel gets credit for a sale when a customer saw several before buying.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#creative-fatigue",
+     "name": "Creative Fatigue",
+     "description": "The decline in an ad's performance as the same audience sees it repeatedly.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#conversion-rate",
+     "name": "Conversion Rate",
+     "alternateName": "CVR",
+     "description": "The share of visitors who complete the action you wanted: usually placing an order.",
+     "termCode": "CVR",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#atc",
+     "name": "Add to Cart",
+     "alternateName": "ATC",
+     "description": "A visitor putting an item in their basket. The first real signal of purchase intent.",
+     "termCode": "ATC",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cro",
+     "name": "Conversion Rate Optimisation",
+     "alternateName": "CRO",
+     "description": "Systematically improving the share of visitors who buy: through page structure, offer, pricing, proof and checkout flow.",
+     "termCode": "CRO",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#checkout-abandonment",
+     "name": "Checkout Abandonment",
+     "description": "Shoppers who reach checkout and leave without paying.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#landing-page",
+     "name": "Landing Page",
+     "alternateName": "LP",
+     "description": "The page someone arrives on after clicking your ad.",
+     "termCode": "LP",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#bounce-rate",
+     "name": "Bounce Rate",
+     "description": "The share of visitors who leave without interacting at all.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#ltv",
+     "name": "Lifetime Value",
+     "alternateName": "LTV",
+     "description": "The total contribution one customer produces across every order they ever place, not their total spend.",
+     "termCode": "LTV",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#ltv-cac",
+     "name": "LTV to CAC Ratio",
+     "alternateName": "LTV:CAC",
+     "description": "How many rupees of lifetime contribution you get for every rupee spent acquiring the customer.",
+     "termCode": "LTV:CAC",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cac-payback",
+     "name": "CAC Payback Period",
+     "description": "How long it takes for a customer's cumulative contribution to repay what you spent acquiring them.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#repeat-rate",
+     "name": "Repeat Purchase Rate",
+     "description": "The share of customers who buy again within a given period.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#purchase-cycle",
+     "name": "Purchase Cycle",
+     "description": "The typical gap between one order and a customer's next. A supplement might be 30 days; a jacket, a year.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cohort",
+     "name": "Cohort",
+     "description": "A group of customers who first bought in the same period, tracked together over time.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#churn",
+     "name": "Churn",
+     "description": "The share of customers who stop buying over a given period.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#rfm",
+     "name": "RFM",
+     "alternateName": "RFM",
+     "description": "Recency, Frequency, Monetary value: a way of segmenting customers by how recently they bought, how often, and how much they spend.",
+     "termCode": "RFM",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#d2c",
+     "name": "Direct to Consumer",
+     "alternateName": "D2C",
+     "description": "Selling straight to the customer from your own store, rather than through a retailer or distributor.",
+     "termCode": "D2C",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#rto",
+     "name": "Return to Origin",
+     "alternateName": "RTO",
+     "description": "An order that ships out, fails to be delivered or is refused, and comes back to you. Overwhelmingly a cash-on-delivery problem.",
+     "termCode": "RTO",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cod",
+     "name": "Cash on Delivery",
+     "alternateName": "COD",
+     "description": "The customer pays the courier in cash when the parcel arrives, rather than paying online up front.",
+     "termCode": "COD",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#prepaid-ratio",
+     "name": "Prepaid Ratio",
+     "description": "The share of orders paid online before dispatch, as opposed to COD.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#gateway-fee",
+     "name": "Payment Gateway Fee",
+     "description": "The cut a payment processor takes on each online transaction, typically around 2% in India.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#marketplace-commission",
+     "name": "Marketplace Commission",
+     "description": "The percentage Amazon, Flipkart, Myntra, Nykaa and similar platforms take from each sale.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#quick-commerce",
+     "name": "Quick Commerce",
+     "alternateName": "Q-commerce",
+     "description": "Ten-to-thirty-minute delivery platforms: Blinkit, Zepto, Instamart, Flipkart Minutes.",
+     "termCode": "Q-commerce",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#fulfilment-cost",
+     "name": "Fulfilment Cost",
+     "description": "Everything it takes to get an order to the door: pick, pack, packaging materials and courier charges.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cm1",
+     "name": "Contribution Margin 1",
+     "alternateName": "CM1",
+     "description": "What's left of net revenue after the product itself: raw material, packaging, labour, inbound freight. The first rung of the ladder.",
+     "termCode": "CM1",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cm2",
+     "name": "Contribution Margin 2",
+     "alternateName": "CM2",
+     "description": "CM1 minus the cost of getting the order to the customer's door: shipping, payment gateway, packing and warehousing.",
+     "termCode": "CM2",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#cm3",
+     "name": "Contribution Margin 3",
+     "alternateName": "CM3",
+     "description": "CM2 minus returns and the cost of acquiring the customer. The true per-order contribution: the only one that pays for salaries, rent and profit.",
+     "termCode": "CM3",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#fixed-overhead",
+     "name": "Fixed Overhead",
+     "description": "Monthly costs that don't move with order volume: salaries, rent, software, retainers.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#breakeven-units",
+     "name": "Break-even Units",
+     "description": "The number of orders a month at which total contribution exactly covers fixed costs.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#ebitda",
+     "name": "Earnings Before Interest, Tax, Depreciation & Amortisation",
+     "alternateName": "EBITDA",
+     "description": "Operating profit before financing costs, tax and non-cash charges. A rough proxy for cash generated by the business itself.",
+     "termCode": "EBITDA",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#ebit",
+     "name": "Earnings Before Interest & Tax",
+     "alternateName": "EBIT",
+     "description": "EBITDA after depreciation and amortisation. Also called operating profit.",
+     "termCode": "EBIT",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#pat",
+     "name": "Profit After Tax",
+     "alternateName": "PAT",
+     "description": "What the business actually keeps once everything: costs, depreciation and tax - is paid. Also called net profit.",
+     "termCode": "PAT",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#da",
+     "name": "Depreciation & Amortisation",
+     "alternateName": "D&A",
+     "description": "The spread-out cost of assets you already paid for: moulds, machinery, tooling, software - charged a bit each month.",
+     "termCode": "D&A",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#mrp",
+     "name": "Maximum Retail Price",
+     "alternateName": "MRP",
+     "description": "The printed price including GST: the number on the pack, before any discount.",
+     "termCode": "MRP",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#gst",
+     "name": "Goods & Services Tax",
+     "alternateName": "GST",
+     "description": "Indian indirect tax included in the price the customer pays. It's collected on the government's behalf, never yours.",
+     "termCode": "GST",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#mom",
+     "name": "Month-on-Month Growth",
+     "alternateName": "MoM",
+     "description": "How much a figure grew against the previous month.",
+     "termCode": "MoM",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#yoy",
+     "name": "Year-on-Year Growth",
+     "alternateName": "YoY",
+     "description": "A period compared against the same period twelve months earlier.",
+     "termCode": "YoY",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    },
+    {
+     "@type": "DefinedTerm",
+     "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#run-rate",
+     "name": "Run Rate",
+     "description": "The current month's revenue projected forward as if it held for twelve months.",
+     "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a good ROAS for a D2C brand?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Any figure above your break-even ROAS, which comes from your own cost sheet: COGS, shipping, payment fees and RTO rate. A 3x ROAS is excellent for one cost structure and loss-making for another."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between ROAS and MER?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ROAS is revenue divided by ad spend, usually per platform and subject to attribution disputes. MER, or Marketing Efficiency Ratio, is total company revenue divided by total marketing spend, so it never has to assign credit to a channel."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should LTV be calculated on revenue or contribution?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Contribution. Lifetime revenue ignores COGS, shipping and fees, which badly flatters the number. LTV built on contribution tells you what is genuinely available to pay for acquisition."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is RTO and why does it matter in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "RTO means return to origin: an order that ships, fails delivery or is refused, and comes back. It is largely a cash-on-delivery problem. A returned order earns nothing but still pays shipping in both directions, so a high RTO rate can move break-even ROAS by more than a full turn."
+     }
+    }
+   ]
+  }
+ ]
+}

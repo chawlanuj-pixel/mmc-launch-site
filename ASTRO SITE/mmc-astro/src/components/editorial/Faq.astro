@@ -1,0 +1,21 @@
+---
+// Shared FAQ accordion (Insights index + guide pages). Native <details>, 56px summaries, answers at 16px.
+interface Props { kicker?: string; title: string; faq: { q: string; a: string }[]; tone?: "white" | "paper" }
+const { kicker = "Common questions", title, faq, tone = "white" } = Astro.props;
+---
+<section class={"ix-band ix-band--" + tone} id="faq">
+  <div class="n-wrap">
+    <div class="ix-head ed-rise">
+      <p class="ix-eyebrow">{kicker}</p>
+      <h2 class="ix-h2" set:html={title} />
+    </div>
+    <div class="ix-faq ed-rise">
+      {faq.map((f, k) => (
+        <details open={k === 0}>
+          <summary>{f.q}</summary>
+          <div class="ix-faq__a" set:html={f.a} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

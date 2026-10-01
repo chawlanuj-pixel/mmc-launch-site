@@ -1,0 +1,379 @@
+{
+  "file": "conversion-rate-optimisation.html",
+  "path": "/services/cro/",
+  "key": "cro",
+  "title": "Conversion Rate Optimisation (CRO) in India | MMC",
+  "description": "MMC's conversion rate optimisation finds where visitors drop off and tests fixes on product pages, checkout and forms, for D2C, B2B and education.",
+  "ogTitle": "Conversion optimisation that turns visitors into buyers",
+  "ogDescription": "Find where visitors drop off, then test fixes.",
+  "ogAlt": "Monday Marketing Company: conversion rate optimisation.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Conversion rate optimisation",
+          "item": "https://www.mondaymarketing.company/conversion-rate-optimisation.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#webpage",
+      "url": "https://www.mondaymarketing.company/conversion-rate-optimisation.html",
+      "name": "Conversion Rate Optimisation (CRO) in India | MMC",
+      "description": "MMC's conversion rate optimisation finds where visitors drop off and tests fixes on product pages, checkout and forms, for D2C, B2B and education.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#service",
+      "name": "Conversion rate optimisation",
+      "serviceType": "Conversion rate optimisation",
+      "description": "Conversion rate optimisation for D2C, B2B and education websites.",
+      "url": "https://www.mondaymarketing.company/conversion-rate-optimisation.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is conversion optimisation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conversion rate optimisation (CRO) is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes to the pages, checkout and forms they use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does conversion optimisation work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We start from your funnel data and how visitors actually behave, rank possible changes by what the leak costs and how easy the fix is, test them one at a time, and keep only what beats the current page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does conversion optimisation cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scoped after a call, based on your traffic, the pages in scope and how many tests you want run. We quote once we have seen your funnel data. Any ad spend stays with the platforms and outside our fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Some tests win and some do not, so we cannot promise an uplift. We commit to a structured process, tests run long enough to trust, and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is conversion optimisation for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C stores whose website gets traffic but does not convert, and B2B and education sites that lose enquiries at the landing page or the form. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to Analytics and your store or CMS, a sense of your traffic by source, and the ability to ship changes or give us access to do it."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "cro",
+    "wm": "CRO",
+    "eyebrow": "● Conversion optimisation",
+    "h1": [
+      "Conversion optimisation",
+      [
+        "that ",
+        "turns visitors into buyers",
+        "."
+      ]
+    ],
+    "sub": "Find where visitors drop off, then test fixes on product pages, checkout and forms, so your existing traffic produces more orders and enquiries.",
+    "tiles": [
+      {
+        "img": "cro/leaks.jpg",
+        "pos": "50% 50%",
+        "label": "Find the leaks",
+        "note": "Funnel and behaviour"
+      },
+      {
+        "img": "cro/pdp.jpg",
+        "pos": "50% 50%",
+        "label": "Pages",
+        "note": "Where visitors click"
+      },
+      {
+        "img": "cro/cart.jpg",
+        "pos": "50% 50%",
+        "label": "Checkout",
+        "note": "Fewer steps, more orders"
+      },
+      {
+        "img": "cro/forms.jpg",
+        "pos": "50% 50%",
+        "label": "Forms",
+        "note": "Short and clear"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Conversion rate optimisation is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes.",
+      "hl": "more of your existing visitors",
+      "who": "Monday Marketing Company (MMC) runs CRO for D2C brands on product pages, carts and checkout, and for B2B and education sites on landing pages and forms.",
+      "points": [
+        {
+          "icon": "chart",
+          "title": "Find the leaks",
+          "text": "Funnel data and session behaviour show where visitors leave."
+        },
+        {
+          "icon": "window",
+          "title": "Fix the pages that matter",
+          "text": "Product pages, checkout, landing pages and forms come first."
+        },
+        {
+          "icon": "loop",
+          "title": "Test, then keep",
+          "text": "Changes are tested against the current page, and only proven ones stay."
+        }
+      ],
+      "image": "cro/pdp.jpg",
+      "chip": "Test, then keep what works"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where conversions go missing",
+      "h2a": "Five ways conversion",
+      "h2b": "goes wrong.",
+      "lede": "You pay to bring visitors in, then lose most of them. Each stage below is where they leave, and the CRO work that keeps them."
+    },
+    "stages": [
+      {
+        "k": "Find the real leaks",
+        "tag": "Funnel analysis",
+        "breaks": "Guessing which page needs a redesign.",
+        "why": "Redesigns based on opinion often fix the wrong page. The biggest leak is usually somewhere less obvious.",
+        "does": "We analyse funnel steps and session behaviour to find where visitors drop off, and rank the leaks by how much they cost.",
+        "href": "audit.html",
+        "img": "cro/leaks.jpg"
+      },
+      {
+        "k": "Make the page persuade",
+        "tag": "Product and landing pages",
+        "breaks": "A page that describes the product but does not answer doubts.",
+        "why": "Visitors leave when price, delivery, returns, proof or fit are not clear near the decision.",
+        "does": "We rework key pages so the questions a visitor has are answered where they arise, with clear proof and one obvious next step.",
+        "href": "services.html#organic",
+        "img": "cro/pdp.jpg"
+      },
+      {
+        "k": "Shorten the path to pay",
+        "tag": "Cart and checkout",
+        "breaks": "A long checkout with surprises at the end.",
+        "why": "Extra steps, forced sign-ups and unexpected costs make people abandon a purchase they had already decided on.",
+        "does": "We simplify the cart and checkout, including the payment options Indian shoppers expect such as UPI and cash on delivery, and remove friction.",
+        "href": "d2c.html",
+        "img": "cro/cart.jpg"
+      },
+      {
+        "k": "Make forms easy",
+        "tag": "Forms and lead capture",
+        "breaks": "Long forms that ask for everything at once.",
+        "why": "Most enquiries start on a phone. Every extra field costs you a lead who was already interested.",
+        "does": "We test shorter forms, clearer calls to action and options like WhatsApp, so more interested visitors become leads.",
+        "href": "lead-generation.html",
+        "img": "cro/forms.jpg"
+      },
+      {
+        "k": "Test before you keep",
+        "tag": "A/B testing",
+        "breaks": "Changing pages and hoping the numbers improve.",
+        "why": "Without a test you cannot tell whether a change helped, or whether sales rose for another reason.",
+        "does": "We run controlled tests on the changes worth making and keep only what beats the current page, so the gains are real.",
+        "href": "audit.html",
+        "img": "cro/test.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "CRO is working.",
+      "note": "Read against your own costs and margin.",
+      "cards": [
+        {
+          "n": "Conversion rate by step",
+          "d": "The share of visitors who reach each next step."
+        },
+        {
+          "n": "Cart abandonment",
+          "d": "How many people start to buy and stop."
+        },
+        {
+          "n": "Funnel ROAS",
+          "d": "Where the funnel leaks and what it costs."
+        },
+        {
+          "n": "Unit economics",
+          "d": "What each order leaves behind after costs."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where conversion optimisation fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing, speed and checkout.",
+          "img": "shop/design.jpg",
+          "href": "shopify-development.html",
+          "link": "See Shopify development"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "UI/UX design",
+          "d": "Research, flows, screens and a design system.",
+          "img": "ux/screens.jpg",
+          "href": "ui-ux-design.html",
+          "link": "See UI/UX design"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "conversion optimisation."
+    ],
+    "faq": [
+      {
+        "q": "What is conversion optimisation?",
+        "a": "Conversion rate optimisation (CRO) is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes to the pages, checkout and forms they use."
+      },
+      {
+        "q": "How does conversion optimisation work with MMC?",
+        "a": "We start from your funnel data and how visitors actually behave, rank possible changes by what the leak costs and how easy the fix is, test them one at a time, and keep only what beats the current page."
+      },
+      {
+        "q": "What does conversion optimisation cost?",
+        "a": "Scoped after a call, based on your traffic, the pages in scope and how many tests you want run. We quote once we have seen your funnel data. Any ad spend stays with the platforms and outside our fee."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. Some tests win and some do not, so we cannot promise an uplift. We commit to a structured process, tests run long enough to trust, and honest reporting."
+      },
+      {
+        "q": "Who is conversion optimisation for?",
+        "a": "D2C stores whose website gets traffic but does not convert, and B2B and education sites that lose enquiries at the landing page or the form. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to Analytics and your store or CMS, a sense of your traffic by source, and the ability to ship changes or give us access to do it."
+      }
+    ],
+    "cta": {
+      "h2a": "Find where your visitors",
+      "h2b": "leave.",
+      "lede": "On a call, with a senior strategist. We look at your funnel together."
+    },
+    "proof": {
+      "codes": [
+        "cro"
+      ],
+      "does": "run CRO for"
+    },
+    "process": {
+      "h2a": "How we run conversion work,",
+      "h2b": "test by test.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Find the real leaks",
+          "d": "Funnel data, session behaviour and form analytics show where visitors leave and what each leak costs.",
+          "out": "A ranked list of leaks by cost and ease of fix."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Fix and test",
+          "d": "Product pages, cart, checkout or lead forms are changed one test at a time, run long enough to be trustworthy.",
+          "out": "Changes proven against the current page."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Keep what wins",
+          "d": "Only winners stay, results feed the next round, and the learnings go back to your ads and creative.",
+          "out": "A higher share of visitors who buy or enquire."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Conversion work for sites with",
+      "h2b": "traffic worth converting.",
+      "good": {
+        "t": "You already get steady traffic or enquiries but too few turn into orders.",
+        "why": "D2C stores with a website that gets traffic but does not convert, and B2B and education sites losing enquiries at the form, benefit most."
+      },
+      "not": {
+        "t": "You have very little traffic, or want a redesign dressed up as testing.",
+        "why": "Tests need enough visitors to mean something, and a rebuild is a different job."
+      }
+    }
+  }
+}

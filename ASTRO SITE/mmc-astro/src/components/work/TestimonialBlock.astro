@@ -1,0 +1,18 @@
+---
+// A client quote, shown ONLY when real, client-approved words exist in the data (case-studies.json `testimonial`).
+// No quote on record means this renders nothing: no placeholder, no heading, no empty frame.
+import type { Quote } from "../../lib/work";
+interface Props { testimonial: Quote | null | undefined }
+const t = Astro.props.testimonial;
+const ok = !!(t && t.quote && t.quote.trim() && t.name && t.name.trim());
+---
+{ok && (
+  <section class="n-band n-band--white cs-quote" aria-label="What the client said">
+    <div class="n-wrap">
+      <figure class="cs-quote__fig n-rise">
+        <blockquote><p>{t!.quote}</p></blockquote>
+        <figcaption><b>{t!.name}</b>{t!.role && <span>{t!.role}</span>}</figcaption>
+      </figure>
+    </div>
+  </section>
+)}

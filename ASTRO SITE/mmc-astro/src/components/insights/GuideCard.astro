@@ -1,0 +1,15 @@
+---
+// Homepage "Latest insights" card anatomy: image, tag, title, excerpt, read link with arrow chip. Whole card is the link.
+interface Props { href: string; img: string; tag?: string; title: string; d: string; meta?: string; go?: string; topic?: string }
+const { href, img, tag = "Guide", title, d, meta, go = "Read the guide", topic } = Astro.props;
+---
+<a class="ix-card ed-rise" href={href} data-topic={topic}>
+  <span class="ix-card__shot"><img src={img} alt="" loading="lazy" decoding="async" width="700" height="460" /></span>
+  <span class="ix-card__body">
+    <span class="ix-tag">{tag}</span>
+    <h3>{title}</h3>
+    <p>{d}</p>
+    {meta && <span class="ix-meta">{meta}</span>}
+    <span class="ix-go">{go}<span class="ix-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+  </span>
+</a>

@@ -16,3 +16,10 @@ Video portfolio/
 # Design mockups: generated artboards and screenshots, rebuilt by each round's build.py
 design/mockups/*/out/
 design/mockups/*/preview/
+
+# Dependencies, caches and secrets
+node_modules/
+.astro/
+.env
+.env.*
+.review-tmp/

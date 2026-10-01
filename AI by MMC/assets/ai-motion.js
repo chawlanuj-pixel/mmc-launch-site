@@ -178,7 +178,11 @@
     });
     fl.el.insertBefore(svg, fl.el.firstChild);
     shimmers.forEach(function (s, i) { G.fromTo(s, { strokeDashoffset: 500 }, { strokeDashoffset: 0, duration: 2.6, repeat: -1, ease: "none", delay: i * .3 }); });
-    G.set(fl.chips, { xPercent: -50, yPercent: -50 });
+    /* The -50% centring only belongs to the desktop ring layout. Under 700px the
+       chips are static, flex-wrapped pills (see ai.css); shifting them there
+       pushed every chip half a width left and up, so they overlapped. */
+    var ring = window.matchMedia("(min-width: 701px)").matches;
+    if (ring) G.set(fl.chips, { xPercent: -50, yPercent: -50 });
     G.from(fl.chips, { scale: .3, opacity: 0, stagger: .08, duration: .8, ease: "back.out(1.6)", scrollTrigger: { trigger: fl.el, start: "top 75%", once: true } });
   });
 

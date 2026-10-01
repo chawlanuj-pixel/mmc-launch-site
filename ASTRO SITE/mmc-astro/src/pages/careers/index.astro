@@ -1,0 +1,240 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import Img from "../../components/hub/Img.astro";
+import Arrow from "../../components/hub/Arrow.astro";
+import { fixDeep, href } from "../../lib/links";
+import { roles, stepsFor, processFaq, roleCount } from "../../lib/roles";
+import { SECONDARY } from "../../lib/site";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import "../../styles/careers2.css";
+
+const SITE = "https://www.mondaymarketing.company";
+const title = "Careers at MMC | Marketing Jobs in Thane and Mumbai";
+const description = "Open roles at Monday Marketing Company across performance, creative, strategy and technology. Apply with a single page, no resume required.";
+const TAG: Record<string, string> = { performance: "Performance", creative: "Creative", strategy: "Strategy", technology: "Technology" };
+
+const WHY = [
+  ["No account-manager layer.", "The person doing the work talks to the client. Strategists own the relationship.", "company/call.jpg"],
+  ["Own verticals, not tasks.", "We do not hand out projects, we hand out P&Ls. You carry the outcome, not just the task list.", "company/strategy.jpg"],
+  ["Write your own brief.", "Every senior here is expected to ship a brief unprompted in their first 90 days.", "company/onepage.jpg"],
+  ["Early enough to shape it.", "The person who joins next helps decide how this place works, not just what it ships.", "careers2/team-screen.jpg"],
+];
+
+const STEPS = stepsFor("careersPage");
+
+const NOT_FOR = [
+  ["You want a defined lane", "The lane changes. Some weeks you will do work that is not yours."],
+  ["You need a manager to unblock you", "There is no manager layer. You decide, ship, and tell us afterwards."],
+  ["You want a big-company benefits sheet", "We do not have one, and we would rather say so than list things we cannot back."],
+  ["You are waiting for process to arrive", "You would be the person writing it. That is the job, not a phase before the job."],
+];
+const GOOD_FIT = [
+  ["You have done the work yourself", "Not managed someone doing it. The person with the plan also builds it."],
+  ["You want the client in the room", "You will be on the call, owning the number, without anyone translating for you."],
+  ["You would rather own an outcome than a task", "We hand out P&Ls. You will carry several, and all of the result."],
+  ["You want a say in what this becomes", "The shape of the company is still an open question."],
+];
+
+const FAQ = [
+  { q: "Do I need a resume?", a: "No. Apply with a single page: what you would own, what you would change in the first ninety days, and what you need from us. If you have a CV, you can add a link." },
+  { q: "What is the hiring process?", a: processFaq() },
+  { q: "Is the work test paid?", a: "Yes. We pay for the piece of work either way." },
+  { q: "Where will I work?", a: "MMC is based in Thane, Maharashtra. Each role page states its location and whether it is onsite, hybrid or remote." },
+  { q: "What if my role is not listed?", a: "Write the role yourself. Send one page saying what you would own and what you would change in ninety days, using the button on this page." },
+  { q: "Which kinds of brands would I work on?", a: "D2C brands, B2B companies and educational institutes. D2C is where we go deepest. See <a href=\"Our Work.html\">a few of the brands we work with</a>." },
+];
+const FAQF = fixDeep(FAQ);
+
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + "/careers/#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "Careers", item: SITE + "/careers/" } ] },
+  { "@context": "https://schema.org", "@type": "CollectionPage", "@id": SITE + "/careers/#webpage", url: SITE + "/careers/", name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + "/careers/#breadcrumb" }, publisher: { "@id": SITE + "/#organization" },
+    mainEntity: { "@id": SITE + "/careers/#open-roles" }, inLanguage: "en" },
+  { "@context": "https://schema.org", "@type": "ItemList", "@id": SITE + "/careers/#open-roles", name: "Open roles at Monday Marketing Company", url: SITE + "/careers/",
+    numberOfItems: roles.length, itemListOrder: "https://schema.org/ItemListUnordered",
+    itemListElement: roles.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.title, url: SITE + "/careers/" + r.slug + "/" })) },
+  { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/careers/#faq", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") } })) },
+];
+---
+<BaseLayout title={title} description={description} path="/careers/" ogTitle="People who write their own briefs" ogDescription="Open roles across performance, creative, strategy and technology. Apply with one page, no resume required." ogAlt="Careers at Monday Marketing Company." jsonld={jsonld}>
+  <Shell footerCta={{ nav: true, label: "View open roles", href: "/careers/#roles" }}>
+    <main id="main" tabindex="-1" class="app-main n-app">
+
+      <section class="cr-hero" id="top">
+        <div class="n-wrap cr-hero__top">
+          <p class="cr-hero__crumb" data-enter><span>● Careers at MMC</span> <span>Thane and Mumbai, with a few roles remote</span></p>
+          <div class="cr-hero__head">
+            <div>
+              <h1 class="cr-hero__h1"><span class="clip-reveal d1" data-enter><span>People who write</span></span> <span class="clip-reveal d2" data-enter><span><em>their own</em></span></span> <span class="clip-reveal d3" data-enter><span>briefs.</span></span></h1>
+              <p class="cr-hero__sub reveal d4" data-enter>We hire senior people and hand them ownership. Roles across performance, creative, strategy and technology. Apply with a single page, no resume required.</p>
+              <div class="cr-hero__actions reveal d5" data-enter>
+                <a class="btn btn--primary glow-btn" href="#roles"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">See open roles<span class="arrow"></span></span></a>
+                <button class="btn btn--link" type="button" onclick="window.mmcOpenBrief(event)">Or pitch us your own role<span class="arrow"></span></button>
+              </div>
+            </div>
+            <div class="cr-hero__stat reveal d5" data-enter>
+              <b>{String(roleCount).padStart(2, "0")}</b>
+              <span>Roles open right now, each with its own page</span>
+            </div>
+          </div>
+        </div>
+        <figure class="cr-hero__photo">
+          <Img name="careers2/studio-wide.jpg" ratio="21 / 9" eager={true} />
+          <figcaption class="cr-hero__cap"><i aria-hidden="true"></i>The studio, mid-review. Illustrative scene.</figcaption>
+        </figure>
+        <div class="cr-ticker" aria-hidden="true">
+          <div class="cr-ticker__track">
+            <div class="cr-ticker__seg">
+              {roles.map((r) => (<span><i></i><b>{r.title}</b> {r.location}</span>))}
+            </div>
+            <div class="cr-ticker__seg">
+              {roles.map((r) => (<span><i></i><b>{r.title}</b> {r.location}</span>))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white" id="job">
+        <div class="n-wrap cr-brief">
+          <div class="n-rise">
+            <p class="cr-brief__q">MMC hires senior people across performance, creative, strategy and technology, and <mark>gives them ownership</mark> from day one.</p>
+            <p class="cr-brief__who">Apply with one page. No resume, no portal.</p>
+            <ul class="cr-brief__list">
+              <li><b>No account-manager layer</b><span>The person doing the work talks to the client.</span></li>
+              <li><b>You own an outcome</b><span>We hand out P&amp;Ls, not task lists.</span></li>
+              <li><b>One page to apply</b><span>What you would own and change in ninety days.</span></li>
+            </ul>
+          </div>
+          <figure class="cr-brief__fig n-rise d1">
+            <Img name="careers2/brief-review.jpg" ratio="4 / 5" />
+            <figcaption><i aria-hidden="true"></i>Two people, one page. Illustrative scene.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper" id="why">
+        <div class="n-wrap">
+          <div class="pm-head n-rise" style="margin-bottom:clamp(28px,3vw,44px)">
+            <span class="n-eyebrow">Why work here</span>
+            <h2 class="n-h2">Four things you would feel <span class="n-serif">in your first month.</span></h2>
+          </div>
+          <ul class="cr-why n-rise d1">
+            {WHY.map((b, k) => (
+              <li>
+                <figure class="cr-why__img"><Img name={b[2]} ratio="4 / 3" /></figure>
+                <div>
+                  <b class="cr-why__n">{String(k + 1).padStart(2, "0")}</b>
+                  <strong>{b[0]}</strong>
+                  <p>{b[1]}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white" id="roles">
+        <div class="n-wrap">
+          <div class="pm-head n-rise" style="margin-bottom:clamp(20px,2.4vw,32px)">
+            <span class="n-eyebrow">Open roles</span>
+            <h2 class="n-h2">Where we are <span class="n-serif">hiring.</span></h2>
+            <p class="n-lede">Each role has its own page with the details and an application form.</p>
+          </div>
+          <div class="cr-roles n-rise d1">
+            {roles.map((r, i) => (
+              <a class="cr-role" href={"/careers/" + r.slug + "/"}>
+                <span class="cr-role__n">{String(i + 1).padStart(2, "0")}</span>
+                <span class="cr-role__mid">
+                  <span class="cr-role__tag">{TAG[r.discipline]}</span>
+                  <h3>{r.title}</h3>
+                  <span class="cr-role__meta"><span>{r.location}</span><span>·</span><span>{r.type}</span><span>·</span><span>{r.band}</span></span>
+                  <p class="cr-role__hint">{r.hint}</p>
+                </span>
+                <span class="cr-role__end">
+                  <span class="cr-role__thumb"><Img name={r.img} ratio="3 / 2" /></span>
+                  <span class="cr-role__go">View the role<Arrow /></span>
+                </span>
+              </a>
+            ))}
+            <div class="cr-role--own">
+              <div>
+                <h3>Not listed? Write the role yourself.</h3>
+                <p>One page: what you would own, what you would change in the first ninety days, and what you need from us.</p>
+              </div>
+              <button type="button" onclick="window.mmcOpenBrief(event)">Pitch us your role</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper" id="hiring">
+        <div class="n-wrap">
+          <div class="pm-head n-rise" style="margin-bottom:clamp(28px,3vw,44px)">
+            <span class="n-eyebrow">How hiring works</span>
+            <h2 class="n-h2">Four steps. <span class="n-serif">No portal.</span></h2>
+            <p class="n-lede">You meet the people you would work with before anyone makes a decision.</p>
+          </div>
+          <ol class="cr-steps n-rise d1">
+            {STEPS.map((s, k) => (
+              <li class="cr-step">
+                <span class="cr-step__dot" aria-hidden="true"></span>
+                <figure class="cr-step__img"><Img name={s.img || "company/onepage.jpg"} ratio="4 / 3" /></figure>
+                <h3>Step {k + 1}. {s.h}</h3>
+                <p>{s.d}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white" id="fit">
+        <div class="n-wrap">
+          <div class="pm-head n-rise" style="margin-bottom:clamp(24px,2.8vw,36px)">
+            <span class="n-eyebrow">Before you apply</span>
+            <h2 class="n-h2">Small is the job, <span class="n-serif">not a phase.</span></h2>
+          </div>
+          <div class="cr-fit n-rise d1">
+            <div class="cr-fit__col cr-fit__col--no">
+              <span class="cr-fit__stamp">Will frustrate you</span>
+              <ul>{NOT_FOR.map((t) => <li><b>{t[0]}</b><span>{t[1]}</span></li>)}</ul>
+            </div>
+            <div class="cr-fit__col cr-fit__col--yes">
+              <span class="cr-fit__stamp">You would do well</span>
+              <ul>{GOOD_FIT.map((t) => <li><b>{t[0]}</b><span>{t[1]}</span></li>)}</ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper" id="faq">
+        <div class="n-wrap">
+          <div class="pm-head n-rise" style="margin-bottom:clamp(20px,2.4vw,32px)">
+            <span class="n-eyebrow">Common questions</span>
+            <h2 class="n-h2">Questions before <span class="n-serif">you apply.</span></h2>
+          </div>
+          <div class="cr-faq n-rise d1">
+            {FAQF.map((f: any, k: number) => (
+              <details open={k === 0}>
+                <summary>{f.q}</summary>
+                <div class="cr-faq__a"><p set:html={f.a} /></div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <PreFooterCta source="careers" eyebrow="How to apply" h2a="One page." h2b="That is the application."
+        lede="Pick a role above and use its form, or write your own: what you would own, change in ninety days, and need from us."
+        primary={{ label: "Pitch us your role", brief: true }} secondary={{ label: SECONDARY.roles, href: "#roles" }} />
+
+    </main>
+    <StickyBookingBar source="careers" mode="roles" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

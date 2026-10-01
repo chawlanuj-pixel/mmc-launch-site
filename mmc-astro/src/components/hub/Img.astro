@@ -1,7 +1,0 @@
----
-import { dims } from "../../lib/hub";
-interface Props { name: string; ratio: string; class?: string; eager?: boolean; pos?: string }
-const { name, ratio, class: cls = "", eager = false, pos } = Astro.props;
-const [w, h] = dims(ratio);
----
-<img class={"pm-img " + cls} src={"/assets/" + name} alt="" width={w} height={h} decoding="async" loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : undefined} style={`aspect-ratio:${ratio};object-position:${pos || "50% 50%"}`} />

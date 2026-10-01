@@ -1,0 +1,17 @@
+---
+// The line under a brand on every brand list: its label (one field) and its service tags (one fixed order).
+// Reads src/lib/work.ts only. Short forms are used because these strips are narrow.
+import { brand, tagsFor } from "../../lib/work";
+import "../../styles/proof-chips.css";
+interface Props { id: string; short?: boolean; caseLink?: boolean }
+const { id, short = true, caseLink = false } = Astro.props as Props;
+const b = brand(id);
+const tags = tagsFor(id, short);
+---
+{b && (
+  <span class="pm-wall__svc bm">
+    <span class="bm__g">{b.label}</span>
+    {tags.map((t) => <span class="bm__t">{t}</span>)}
+    {caseLink && b.href && <a class="bm__go" href={b.href}>Read the case study<span aria-hidden="true"> →</span></a>}
+  </span>
+)}

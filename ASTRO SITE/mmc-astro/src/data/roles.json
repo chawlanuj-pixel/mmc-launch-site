@@ -1,0 +1,422 @@
+{
+  "hiringProcess": {
+    "_note": "ONE source for the hiring process. Both /careers/ (careersPageUses) and every role page (rolePagesUse) render from here. The two variants below are the two stories that were live on the site; the owner has not yet said which is true. When they do, set both pointers to the same key (and edit that variant) so the two places say the same thing. A role may still override with its own hiringSteps array.",
+    "careersPageUses": "conversation",
+    "rolePagesUse": "stages",
+    "variants": {
+      "conversation": {
+        "faq": "Four steps: one page, a conversation with whoever runs the discipline, one paid piece of real work scoped to a day, and a meeting with the rest of the team before anyone decides.",
+        "steps": [
+          {
+            "img": "company/onepage.jpg",
+            "h": "One page",
+            "d": "What you would own, what you would change in ninety days, and what you need from us. No resume, no portal."
+          },
+          {
+            "img": "company/call.jpg",
+            "h": "A conversation",
+            "d": "A call with whoever runs the discipline. Mostly you asking us things."
+          },
+          {
+            "img": "careers2/desk-close.jpg",
+            "h": "A real problem",
+            "d": "One paid piece of actual work from a live account, scoped to a day. We pay for it either way."
+          },
+          {
+            "img": "careers2/team-screen.jpg",
+            "h": "The rest of the team",
+            "d": "You meet everyone before anyone decides."
+          }
+        ]
+      },
+      "stages": {
+        "steps": [
+          {
+            "d": "30-minute screening call with the Head of Performance"
+          },
+          {
+            "d": "A 90-minute case study you complete on your own time"
+          },
+          {
+            "d": "Final round, a 2-hour panel with founders and the team you'd work with"
+          },
+          {
+            "d": "Reference checks and an offer within 7 days"
+          }
+        ]
+      }
+    }
+  },
+  "roles": [
+    {
+      "slug": "senior-meta-buyer",
+      "title": "Senior Meta Buyer",
+      "discipline": "performance",
+      "dept": "Performance",
+      "location": "Mumbai",
+      "city": "Mumbai",
+      "region": "MH",
+      "workMode": "HYBRID",
+      "type": "Full-time",
+      "empType": "FULL_TIME",
+      "industry": "Marketing & Advertising",
+      "band": "Senior, 5 to 9 years",
+      "datePosted": "2026-05-01",
+      "hint": "Run Meta for D2C accounts, with creative as the lever.",
+      "summary": "You will own daily operations on our biggest Meta accounts for D2C brands, work closely with the creative team and report to founders every week. You are the senior we do not have to manage.",
+      "responsibilities": [
+        "Own the full Meta account architecture across D2C accounts",
+        "Daily campaign optimisation, weekly cohort reviews and monthly reporting",
+        "Work with the creative team on the volume of creative each brand needs",
+        "Server-side CAPI implementation and measurement triangulation",
+        "Mentor mid-level buyers and review their work weekly",
+        "Run the brief on quarterly strategy resets"
+      ],
+      "youAre": [
+        "5 to 9 years running Meta at brands or agencies, D2C preferred",
+        "Comfortable owning a P&L and explaining it to founders",
+        "You treat creative as the lever, not the bottleneck",
+        "You read data daily, optimise weekly and never overreact"
+      ],
+      "bonus": [
+        "Klaviyo or WebEngage familiarity",
+        "Shopify Plus tagging experience",
+        "Cohort modelling tools such as Triple Whale or Northbeam"
+      ],
+      "img": "company/performance.jpg",
+      "salary": "₹24L to ₹38L, OTE",
+      "salaryMin": 2400000,
+      "salaryMax": 3800000,
+      "salaryUnit": "YEAR",
+      "screening": [
+        {
+          "id": "q1",
+          "q": "Walk us through the largest Meta account you've personally managed.",
+          "hint": "Monthly spend, ROAS, account structure."
+        },
+        {
+          "id": "q2",
+          "q": "Describe a creative test that meaningfully moved CPM or hook rate.",
+          "hint": "What changed, what you measured, what you learned."
+        },
+        {
+          "id": "q3",
+          "q": "How do you split BAU optimisation vs. weekly creative refresh?",
+          "hint": "Cadence, decision rules, who you collaborate with."
+        },
+        {
+          "id": "q4",
+          "q": "A brand of yours just blew through the daily budget on a single campaign. First three things you do.",
+          "hint": "60 seconds, then a paragraph."
+        }
+      ],
+      "reportsTo": "Head of Performance",
+      "applyWindow": "Rolling, open now"
+    },
+    {
+      "slug": "google-amazon-specialist",
+      "title": "Google + Amazon Specialist",
+      "discipline": "performance",
+      "dept": "Performance",
+      "location": "Mumbai",
+      "city": "Mumbai",
+      "region": "MH",
+      "workMode": "ONSITE",
+      "type": "Full-time",
+      "empType": "FULL_TIME",
+      "industry": "Marketing & Advertising",
+      "band": "Mid to senior, 4 to 7 years",
+      "datePosted": "2026-04-22",
+      "hint": "Search, Performance Max and Amazon Ads as one connected stack.",
+      "summary": "Run Google and Amazon as one connected stack for our D2C brands: Search, Performance Max, Shopping and Demand Gen on Google, Sponsored Products and DSP on Amazon.",
+      "responsibilities": [
+        "Daily campaign management across Google and Amazon",
+        "Performance Max structure, asset feeds and budget allocation",
+        "Amazon Ads strategy across Sponsored Products, Brands, Display and DSP",
+        "Cross-channel reporting and attribution triangulation",
+        "Weekly creative briefs to the studio"
+      ],
+      "youAre": [
+        "4 to 7 years running Google and Amazon Ads at agencies or brands",
+        "Amazon Ads experience across India and the US is a strong plus"
+      ],
+      "bonus": [
+        "Looker or advanced GA4 reporting",
+        "Amazon DSP"
+      ],
+      "img": "company/google-amazon.jpg",
+      "salary": "₹18L to ₹32L, OTE",
+      "salaryMin": 1800000,
+      "salaryMax": 3200000,
+      "salaryUnit": "YEAR",
+      "screening": [
+        {
+          "id": "q1",
+          "q": "Describe your most successful PMax structure to date.",
+          "hint": "Asset groups, audience signals, exclusions, outcome."
+        },
+        {
+          "id": "q2",
+          "q": "How do you decide between Sponsored Products vs. Sponsored Brand budget on Amazon?",
+          "hint": "Heuristics, lifecycle, category."
+        },
+        {
+          "id": "q3",
+          "q": "Walk us through cross-channel attribution between Google Ads and Amazon for a multi-marketplace brand.",
+          "hint": "Tools, model, gotchas."
+        },
+        {
+          "id": "q4",
+          "q": "How would you triage a brand whose Google CAC has doubled in a quarter?",
+          "hint": "Diagnostic and first ship."
+        }
+      ],
+      "reportsTo": "Head of Performance",
+      "applyWindow": "Rolling, open now"
+    },
+    {
+      "slug": "senior-art-director",
+      "title": "Senior Art Director",
+      "discipline": "creative",
+      "dept": "Creative",
+      "location": "Mumbai or remote",
+      "city": "Mumbai",
+      "region": "MH",
+      "workMode": "HYBRID",
+      "type": "Full-time",
+      "empType": "FULL_TIME",
+      "industry": "Design",
+      "band": "Senior, 6+ years",
+      "datePosted": "2026-04-18",
+      "hint": "Lead brand identity and performance creative across the D2C book.",
+      "summary": "Direct identity systems, packaging and performance creative for our brands. You own visual standards across every touchpoint.",
+      "responsibilities": [
+        "Brand identity rebuilds and design systems",
+        "Direct UGC, motion and static creative for performance",
+        "Packaging direction with manufacturing partners",
+        "Mentor mid-level designers"
+      ],
+      "youAre": [
+        "6+ years in brand or D2C creative",
+        "A portfolio with shipped identity systems",
+        "Comfortable directing photo and video shoots"
+      ],
+      "bonus": [
+        "Motion or After Effects fluency",
+        "A type design background"
+      ],
+      "img": "company/creative.jpg",
+      "salary": "₹22L to ₹34L",
+      "salaryMin": 2200000,
+      "salaryMax": 3400000,
+      "salaryUnit": "YEAR",
+      "screening": [
+        {
+          "id": "q1",
+          "q": "Walk us through a brand identity system you've shipped end to end.",
+          "hint": "From positioning to packaging to performance creative."
+        },
+        {
+          "id": "q2",
+          "q": "How do you direct a UGC shoot for a brand the audience has never heard of?",
+          "hint": "Casting, scripting, on-set choices."
+        },
+        {
+          "id": "q3",
+          "q": "Describe the brief you'd write for a 60-asset performance creative sprint.",
+          "hint": "Constraints, format mix, success criteria."
+        },
+        {
+          "id": "q4",
+          "q": "Pick one of your projects and explain a design choice that was hard to defend.",
+          "hint": "Be honest about the trade-off."
+        }
+      ],
+      "reportsTo": "Head of Performance",
+      "applyWindow": "Rolling, open now"
+    },
+    {
+      "slug": "performance-copywriter",
+      "title": "Performance Copywriter",
+      "discipline": "creative",
+      "dept": "Creative",
+      "location": "Remote, India",
+      "city": "Remote (India)",
+      "region": "",
+      "workMode": "REMOTE",
+      "type": "Full-time",
+      "empType": "FULL_TIME",
+      "industry": "Marketing & Advertising",
+      "band": "Mid to senior, 3 to 6 years",
+      "datePosted": "2026-04-30",
+      "hint": "Hooks, scripts, landing pages and lifecycle copy.",
+      "summary": "Write the words that move the maths: ad scripts, hooks, landing-page copy and email flows for D2C brands.",
+      "responsibilities": [
+        "Write hooks and scripts for UGC and direct response",
+        "Build landing-page copy systems",
+        "Write email and WhatsApp lifecycle copy",
+        "Pair daily with art directors and buyers"
+      ],
+      "youAre": [
+        "3 to 6 years writing direct-response copy",
+        "You have published your own writing",
+        "You speak both brand and performance"
+      ],
+      "bonus": [
+        "A personal newsletter or Substack",
+        "Beauty or food category fluency"
+      ],
+      "img": "ugc/brief.jpg",
+      "salary": "₹14L to ₹24L",
+      "salaryMin": 1400000,
+      "salaryMax": 2400000,
+      "salaryUnit": "YEAR",
+      "screening": [
+        {
+          "id": "q1",
+          "q": "Paste the best three-second hook you've written, then tell us why it worked.",
+          "hint": "Brand, format, the data you saw."
+        },
+        {
+          "id": "q2",
+          "q": "How do you write copy differently for cold acquisition vs. warm retention?",
+          "hint": "Specifics on tone, frame, payoff."
+        },
+        {
+          "id": "q3",
+          "q": "Describe your weekly volume cadence on your last role.",
+          "hint": "Scripts, headlines, emails, with realistic numbers."
+        },
+        {
+          "id": "q4",
+          "q": "A founder pushes back on copy you believe in. How do you respond?",
+          "hint": "What you ask, what you concede, what you hold."
+        }
+      ],
+      "reportsTo": "Head of Performance",
+      "applyWindow": "Rolling, open now"
+    },
+    {
+      "slug": "growth-strategist",
+      "title": "Growth Strategist, D2C",
+      "discipline": "strategy",
+      "dept": "Strategy",
+      "location": "Mumbai",
+      "city": "Mumbai",
+      "region": "MH",
+      "workMode": "ONSITE",
+      "type": "Full-time",
+      "empType": "FULL_TIME",
+      "industry": "Marketing & Advertising",
+      "band": "Senior, 5 to 9 years",
+      "datePosted": "2026-05-05",
+      "hint": "Own a P&L, lead a pod and run quarterly strategy.",
+      "summary": "You own D2C accounts end to end: strategy, P&L, the pod around each account and the founder relationship. The senior we trust with the brand.",
+      "responsibilities": [
+        "P&L ownership across your D2C accounts",
+        "Lead the pod: buyer, creative, retention and tech",
+        "Weekly founder calls and quarterly reviews",
+        "Drive the 90-day roadmap on each account"
+      ],
+      "youAre": [
+        "5 to 9 years in growth strategy, or as a founder",
+        "You read a P&L the way most people read a tweet",
+        "You can write a one-page thesis without a deck"
+      ],
+      "bonus": [
+        "D2C founder experience",
+        "A consulting background"
+      ],
+      "img": "company/strategy.jpg",
+      "salary": "₹26L to ₹42L, OTE",
+      "salaryMin": 2600000,
+      "salaryMax": 4200000,
+      "salaryUnit": "YEAR",
+      "screening": [
+        {
+          "id": "q1",
+          "q": "Walk us through a P&L you've owned and the levers you pulled.",
+          "hint": "Revenue, margin, CAC payback period."
+        },
+        {
+          "id": "q2",
+          "q": "Write the one-page growth thesis you'd hand a founder on day one.",
+          "hint": "Diagnose first, then 90-day moves."
+        },
+        {
+          "id": "q3",
+          "q": "Describe the pod structure you'd build around a large annual retainer.",
+          "hint": "Roles, ratios, weekly cadence."
+        },
+        {
+          "id": "q4",
+          "q": "Tell us about a brand you said no to, or would say no to. Why.",
+          "hint": "Be specific. We respect this."
+        }
+      ],
+      "reportsTo": "Head of Performance",
+      "applyWindow": "Rolling, open now"
+    },
+    {
+      "slug": "shopify-engineer",
+      "title": "Shopify Plus Engineer",
+      "discipline": "technology",
+      "dept": "Technology",
+      "location": "Remote",
+      "city": "Remote",
+      "region": "",
+      "workMode": "REMOTE",
+      "type": "Contract",
+      "empType": "CONTRACTOR",
+      "industry": "Software Development",
+      "band": "Senior, 4+ years on Shopify Plus",
+      "datePosted": "2026-04-12",
+      "hint": "Shopify Plus and headless. Speed, AOV, retention.",
+      "summary": "Run Shopify Plus engineering for our D2C brands: theme architecture, headless storefronts, app integrations and speed.",
+      "responsibilities": [
+        "Theme and headless storefront builds",
+        "Speed optimisation and Core Web Vitals",
+        "Klaviyo, Razorpay and GA4 integrations",
+        "Liquid, React and JavaScript"
+      ],
+      "youAre": [
+        "4+ years on Shopify Plus",
+        "You have shipped headless on a real brand",
+        "Comfortable with CI/CD and GitHub"
+      ],
+      "bonus": [
+        "Hydrogen or Oxygen",
+        "Next.js commerce"
+      ],
+      "img": "company/technology.jpg",
+      "salary": "₹5L to ₹10L a month, retainer",
+      "salaryMin": 500000,
+      "salaryMax": 1000000,
+      "salaryUnit": "MONTH",
+      "screening": [
+        {
+          "id": "q1",
+          "q": "Describe the largest Shopify Plus build you've shipped.",
+          "hint": "Architecture, integrations, performance numbers."
+        },
+        {
+          "id": "q2",
+          "q": "How do you approach LCP and Core Web Vitals on a heavy product page?",
+          "hint": "Concrete techniques, not theory."
+        },
+        {
+          "id": "q3",
+          "q": "Walk us through a headless migration you've led.",
+          "hint": "Why headless, what broke, what you'd do differently."
+        },
+        {
+          "id": "q4",
+          "q": "Show us a piece of Liquid or JS you're proud of.",
+          "hint": "Paste or link. Tell us why."
+        }
+      ],
+      "reportsTo": "Head of Performance",
+      "applyWindow": "Rolling, open now"
+    }
+  ]
+}

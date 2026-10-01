@@ -1,0 +1,83 @@
+{
+ "title": "Break-even ROAS Calculator: The ROAS You Actually Need",
+ "description": "Stop chasing a ROAS number you heard on a podcast. Enter COGS, shipping, gateway fees and RTO to get the exact break-even your own cost sheet demands.",
+ "ogTitle": "The ROAS you actually need",
+ "ogDescription": "Your break-even ROAS falls out of your own cost sheet. Add COGS, shipping, fees and RTO to find it.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "D2C calculators",
+     "item": "https://www.mondaymarketing.company/tools.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Break-even ROAS Calculator",
+     "item": "https://www.mondaymarketing.company/breakeven-roas-calculator.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebApplication",
+   "name": "Break-even ROAS Calculator",
+   "url": "https://www.mondaymarketing.company/breakeven-roas-calculator.html",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Any (web browser)",
+   "description": "Free break-even ROAS calculator. Enter AOV, COGS, shipping, gateway fees and RTO rate to get the exact ROAS that breaks even, your break-even CAC, your contribution margin, and the ROAS required to hit a target net margin.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monday Marketing Company",
+    "url": "https://www.mondaymarketing.company/"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do you calculate break-even ROAS?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Break-even ROAS is revenue divided by contribution, worked out per attempted order. Take AOV, subtract the value lost to returns, then subtract COGS, shipping on both legs for returned orders, payment gateway fees and any marketplace commission. What remains is contribution: the most you can spend acquiring that order."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a good contribution margin for D2C?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Above 45% of delivered revenue gives comfortable room to buy customers. Between 28% and 45% is workable but constrains how hard you can scale. Below 28% means most acquisition channels will be unprofitable regardless of how well the ads are run."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does RTO matter so much for break-even ROAS?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A returned order earns nothing but still pays shipping on both legs plus packaging and handling. At a 25% RTO rate you lose a quarter of your revenue while paying roughly 125% of your forward shipping cost, which can move break-even ROAS by more than a full turn."
+     }
+    }
+   ]
+  }
+ ]
+}

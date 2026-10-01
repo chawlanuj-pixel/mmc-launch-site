@@ -383,7 +383,7 @@ def service_page(slug):
     if p.get("integrations"):
         chips = "".join(f'<span class="flow__n" data-i="{i}">{e(x)}</span>' for i, x in enumerate(p["integrations"]))
         integ = ('<section class="band band--ink"><div class="wrap"><div class="head head--c"><span class="eyebrow">Connects to your stack</span><h2 data-split>Works with the tools <span class="serif">you already use.</span></h2>'
-                 '<p class="lede">The exact list is confirmed when we scope the work. Live build: replace names with official logos.</p></div>'
+                 '<p class="lede">The exact list is confirmed when we scope the work.</p></div>'
                  f'<div class="flow" data-flow><div class="flow__hub"><b>MMC</b><span>AI agent</span></div>{chips}</div></div></section>')
     marq = ""
     if slug in ("ai-ugc", "ai-spokesperson-video"):

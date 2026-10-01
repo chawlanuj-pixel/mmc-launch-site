@@ -1,0 +1,384 @@
+{
+  "file": "google-ads.html",
+  "path": "/services/performance-marketing/google-ads/",
+  "key": "googleads",
+  "title": "Google Ads Agency in India | MMC",
+  "description": "MMC manages Google Ads across search, shopping, Performance Max and video, judged on contribution margin or the cost of a qualified lead.",
+  "ogTitle": "Google Ads management for growing brands",
+  "ogDescription": "Search, shopping and video aimed at buying intent, judged on profit.",
+  "ogAlt": "Monday Marketing Company: google ads management.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/google-ads.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Performance marketing",
+          "item": "https://www.mondaymarketing.company/performance-marketing.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Google Ads",
+          "item": "https://www.mondaymarketing.company/google-ads.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/google-ads.html#webpage",
+      "url": "https://www.mondaymarketing.company/google-ads.html",
+      "name": "Google Ads Agency in India | MMC",
+      "description": "MMC manages Google Ads across search, shopping, Performance Max and video, judged on contribution margin or the cost of a qualified lead.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/google-ads.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/google-ads.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/google-ads.html#service",
+      "name": "Google Ads management",
+      "serviceType": "Google Ads management",
+      "description": "Google Ads management across search, shopping, Performance Max and video.",
+      "url": "https://www.mondaymarketing.company/google-ads.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/google-ads.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Ads management is the work of running paid campaigns across Google Search, Shopping, YouTube and automated formats such as Performance Max, aimed at people already looking for what you sell."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Google Ads work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We separate brand search from everything else, build search and shopping around intent, fix the product feed, give automated campaigns clean inputs, and review the account every week. Results are judged on contribution margin, not on what a platform reports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Google Ads cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your ad spend is paid to Google and sits outside our fee. We quote our fee after a call, once we have seen the account and agreed what we will run. We do not publish a price list, because the right scope depends on your spend and your margins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee clicks, rankings or sales, because demand and competition are outside anyone's control. We commit to a clear structure, accurate tracking and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Google Ads for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands that sell products people search for, B2B companies whose buyers search for the problem, and colleges and schools whose families search for courses. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your Google Ads and Analytics accounts, your product feed or catalogue, your margins or the value of a qualified lead, and the landing pages you want to use."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "googleads",
+    "wm": "Google",
+    "eyebrow": "● Google Ads",
+    "h1": [
+      "Google Ads",
+      [
+        "that ",
+        "reach buyers ready to buy",
+        "."
+      ]
+    ],
+    "sub": "Search, shopping and video aimed at buying intent, brand search kept apart, and results judged on contribution margin, not on what a platform reports.",
+    "tiles": [
+      {
+        "img": "google/search.jpg",
+        "pos": "50% 50%",
+        "label": "Search",
+        "note": "Buying intent"
+      },
+      {
+        "img": "google/feed.jpg",
+        "pos": "50% 50%",
+        "label": "Shopping",
+        "note": "Feeds that sell"
+      },
+      {
+        "img": "google/pmax.jpg",
+        "pos": "50% 50%",
+        "label": "Automation",
+        "note": "Assets and signals"
+      },
+      {
+        "img": "google/report.jpg",
+        "pos": "50% 50%",
+        "label": "Reporting",
+        "note": "Judged on contribution"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Google Ads management is the work of running paid campaigns on Google Search, Shopping, YouTube and its automated formats, aimed at people already looking for what you sell.",
+      "hl": "already looking for what you sell",
+      "who": "Monday Marketing Company (MMC) runs Google Ads for D2C brands and lead-based businesses, judged on contribution margin or the cost of a qualified lead.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Intent first",
+          "text": "Search and shopping reach people who are ready to buy or enquire."
+        },
+        {
+          "icon": "grid",
+          "title": "Feeds and assets",
+          "text": "Product feeds, ad copy and landing pages written for the query."
+        },
+        {
+          "icon": "gauge",
+          "title": "Judged on profit",
+          "text": "Not on the conversions Google reports."
+        }
+      ],
+      "image": "google/search.jpg",
+      "chip": "Aimed at buying intent"
+    },
+    "leaks": {
+      "style": "stack",
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "eyebrow": "Where Google Ads go wrong",
+      "h2a": "Five ways Google spend",
+      "h2b": "goes wrong.",
+      "lede": "Google shows your ads to people who are searching, so quality of structure and data decides the result. Each stage below is where spend leaks, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Split by intent",
+        "tag": "Search structure",
+        "breaks": "Mixing brand and non-brand searches in one campaign.",
+        "why": "Brand searches convert easily and can make a campaign look better than it is, hiding wasted spend on generic terms.",
+        "does": "We keep brand search separate from generic and competitor searches, and structure campaigns by intent so each can be judged fairly.",
+        "href": "services.html#revenue",
+        "img": "google/search.jpg"
+      },
+      {
+        "k": "Fix the feed",
+        "tag": "Shopping and product feeds",
+        "breaks": "Uploading a product feed and leaving it alone.",
+        "why": "For Shopping, the feed is the ad. Weak titles, missing attributes and wrong prices limit what shows and who clicks.",
+        "does": "We clean and optimise the feed: titles, attributes, categories and pricing, so the right products show for the right searches.",
+        "href": "shopify-development.html",
+        "img": "google/feed.jpg"
+      },
+      {
+        "k": "Give automation good inputs",
+        "tag": "Performance Max and automated campaigns",
+        "breaks": "Handing budget to automation with no direction.",
+        "why": "Automated campaigns are only as good as the assets, audience signals and conversion data you give them.",
+        "does": "We feed them strong creative assets, clear audience signals and accurate conversion data, and check where the spend actually goes.",
+        "href": "services.html#revenue",
+        "img": "google/pmax.jpg"
+      },
+      {
+        "k": "Reach people who are watching",
+        "tag": "YouTube and video",
+        "breaks": "Ignoring video, or running it with no follow-up.",
+        "why": "Video builds interest before the search, but only pays off if it is joined up with the rest of the account.",
+        "does": "We use video to reach and warm audiences, and connect it to search and shopping so interest turns into demand.",
+        "href": "ugc-and-video.html",
+        "img": "google/video.jpg"
+      },
+      {
+        "k": "Judge it on profit",
+        "tag": "Measurement",
+        "breaks": "Trusting the conversions Google reports.",
+        "why": "Reported conversions can include low-value actions and repeats, and leave out cost of goods and returns.",
+        "does": "We set up conversion tracking that matches real business value, and judge campaigns on contribution margin or the cost of a qualified lead.",
+        "href": "performance-marketing.html",
+        "img": "google/report.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "Google Ads are working.",
+      "note": "Read against your own costs and margin.",
+      "cards": [
+        {
+          "n": "Break-even ROAS",
+          "d": "The ROAS you need to stop losing money."
+        },
+        {
+          "n": "Unit economics",
+          "d": "What each order leaves behind after costs."
+        },
+        {
+          "n": "Cost per qualified lead",
+          "d": "What you pay for a lead your team accepts."
+        },
+        {
+          "n": "Share of spend on brand search",
+          "d": "How much of the budget goes to people who already know you."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where Google Ads fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Performance marketing",
+          "d": "Media buying on Meta, Google, Amazon and quick commerce, judged on contribution margin.",
+          "img": "pm-v3/channel-meta.jpg",
+          "href": "performance-marketing.html",
+          "link": "See Performance marketing"
+        },
+        {
+          "n": "SEO",
+          "d": "Technical health, search intent and answer-engine visibility.",
+          "img": "seo/aeo.jpg",
+          "href": "seo.html",
+          "link": "See SEO"
+        },
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing, speed and checkout.",
+          "img": "shop/design.jpg",
+          "href": "shopify-development.html",
+          "link": "See Shopify development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Google Ads."
+    ],
+    "faq": [
+      {
+        "q": "What is Google Ads?",
+        "a": "Google Ads management is the work of running paid campaigns across Google Search, Shopping, YouTube and automated formats such as Performance Max, aimed at people already looking for what you sell."
+      },
+      {
+        "q": "How does Google Ads work with MMC?",
+        "a": "We separate brand search from everything else, build search and shopping around intent, fix the product feed, give automated campaigns clean inputs, and review the account every week. Results are judged on contribution margin, not on what a platform reports."
+      },
+      {
+        "q": "What does Google Ads cost?",
+        "a": "Your ad spend is paid to Google and sits outside our fee. We quote our fee after a call, once we have seen the account and agreed what we will run. We do not publish a price list, because the right scope depends on your spend and your margins."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee clicks, rankings or sales, because demand and competition are outside anyone's control. We commit to a clear structure, accurate tracking and honest reporting."
+      },
+      {
+        "q": "Who is Google Ads for?",
+        "a": "D2C brands that sell products people search for, B2B companies whose buyers search for the problem, and colleges and schools whose families search for courses. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your Google Ads and Analytics accounts, your product feed or catalogue, your margins or the value of a qualified lead, and the landing pages you want to use."
+      }
+    ],
+    "cta": {
+      "h2a": "Find out where your Google spend",
+      "h2b": "really goes.",
+      "lede": "On a call, with a senior strategist. We read your Google account against your break-even numbers."
+    },
+    "platform": "google",
+    "proof": {
+      "codes": [],
+      "does": "run Google Ads for"
+    },
+    "process": {
+      "h2a": "How we run Google Ads,",
+      "h2b": "week to week.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit and split by intent",
+          "d": "We separate brand search, non-brand search and shopping so each can be judged fairly, and clean up tracking and the product feed.",
+          "out": "An account where every campaign has a clear job."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Fix the inputs",
+          "d": "Feeds, ad copy and landing pages are rewritten for the query, and automated campaigns get the assets and signals they need.",
+          "out": "Automation that works from good inputs, not guesses."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Judge it on profit and scale",
+          "d": "Budget moves to what clears your break-even on contribution margin, or on the cost of a qualified lead for B2B and education.",
+          "out": "Spend that follows profit, not reported conversions."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Google Ads for brands that are",
+      "h2b": "already being searched.",
+      "good": {
+        "t": "People already search for what you sell, and you want that demand captured at a profit.",
+        "why": "Search and shopping work best when buyers have intent, so they suit D2C brands, B2B companies with a clear problem to solve, and colleges and schools that families search for."
+      },
+      "not": {
+        "t": "You want Google to create demand from nothing, or a guaranteed ranking.",
+        "why": "Search captures demand that exists; if nobody is looking yet, other channels or brand work should come first, and we will say so."
+      }
+    }
+  }
+}

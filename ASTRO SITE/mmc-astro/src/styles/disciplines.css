@@ -1,0 +1,99 @@
+/* Our expertise: six disciplines (prefix dz-). Deep navy, lighter-navy cards, static 3D art on the right.
+   Section grows with its content (not one screen). Entrance plays once; hover only on precise pointers. */
+.dz { --dz-bg: var(--n-ink, #0F1E5E); --dz-card: color-mix(in srgb, #fff 6%, var(--dz-bg)); --dz-card-hi: color-mix(in srgb, #fff 11%, var(--dz-bg));
+  --dz-line: rgba(255,255,255,.14); --dz-line-hi: rgba(255,255,255,.34); --dz-ease: cubic-bezier(.22,.61,.36,1);
+  background: var(--dz-bg); color: #fff; padding-block: clamp(64px, 8vw, 120px); }
+.hv > section.dz { height: auto; min-height: 0; max-height: none; display: block; justify-content: normal; overflow: visible;
+  padding-block: calc(var(--hv-nav, 104px) + 16px) calc(var(--hv-bot, 96px) + 24px); }
+.dz__wrap { width: 100%; max-width: 1320px; margin-inline: auto; padding-inline: clamp(20px, 4.2vw, 72px); box-sizing: border-box; }
+.dz__head { max-width: 760px; margin: 0 0 clamp(36px, 5vw, 64px); }
+.dz__eyebrow { margin: 0 0 14px; font: 700 12px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--n-sun); }
+.dz h2 { margin: 0; font-family: var(--font-display); font-weight: 800; letter-spacing: -.03em; line-height: 1.04; font-size: clamp(36px, 4.6vw, 64px); color: #fff; text-wrap: balance; }
+.dz h2 em { font-style: normal; color: var(--n-sun); }
+.dz__sub { margin: 18px 0 0; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.55; color: rgba(255,255,255,.78); }
+
+.dz__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.dz__item { display: flex; }
+.dz__card { position: relative; flex: 1; display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); grid-template-areas: "copy art"; align-items: center; column-gap: 16px;
+  min-height: 250px; padding: clamp(24px, 2.4vw, 32px); box-sizing: border-box; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit;
+  background: var(--dz-card); border: 1px solid var(--dz-line);
+  transition: transform .26s var(--dz-ease), background-color .26s var(--dz-ease), border-color .26s var(--dz-ease); }
+.dz__card::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--n-sun); transform: scaleX(0); transform-origin: left; transition: transform .3s var(--dz-ease); }
+.dz__num { position: absolute; top: clamp(24px, 2.4vw, 32px); left: clamp(24px, 2.4vw, 32px); font: 700 13px/1 var(--font-body); letter-spacing: .1em; color: rgba(255,255,255,.62); }
+.dz__arrow { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; display: grid; place-items: center; color: rgba(255,255,255,.72); transition: transform .24s var(--dz-ease), color .24s var(--dz-ease); }
+.dz__copy { grid-area: copy; display: grid; gap: 10px; align-content: center; padding-top: 30px; min-width: 0; }
+.dz__title { font: 800 clamp(24px, 2.1vw, 30px)/1.12 var(--font-display); letter-spacing: -.02em; color: #fff; text-wrap: balance; }
+.dz__desc { font-size: 16px; line-height: 1.5; color: rgba(255,255,255,.82); }
+.dz__caps { display: flex; flex-wrap: wrap; gap: 4px 0; margin-top: 4px; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,.7); }
+.dz__caps span:not(:last-child)::after { content: "\00b7"; margin-inline: .6em; color: var(--n-sun); font-weight: 800; }
+.dz__art { grid-area: art; align-self: stretch; display: grid; place-items: center; min-width: 0; padding-top: 28px; }
+.dz__art img { width: 100%; height: auto; max-height: 230px; object-fit: contain; display: block; transform: scale(var(--s, 1)); transform-origin: 50% 60%;
+  transition: transform .4s var(--dz-ease); will-change: transform; }
+
+/* Keyboard focus mirrors hover */
+.dz__card:focus-visible { outline: 3px solid var(--n-sun); outline-offset: 4px; transform: translateY(-4px); background: var(--dz-card-hi); border-color: var(--dz-line-hi); }
+.dz__card:focus-visible::after { transform: scaleX(1); }
+.dz__card:focus-visible .dz__arrow { color: var(--n-sun); transform: translate(3px, -3px); }
+.dz__card:focus-visible .dz__art img { transform: translateY(-5px) scale(calc(var(--s, 1) * 1.03)); }
+/* Hover: precise pointers only */
+@media (hover: hover) and (pointer: fine) {
+  .dz__card:hover { transform: translateY(-4px); background: var(--dz-card-hi); border-color: var(--dz-line-hi); }
+  .dz__card:hover::after { transform: scaleX(1); }
+  .dz__card:hover .dz__arrow { color: var(--n-sun); transform: translate(3px, -3px); }
+  .dz__card:hover .dz__art img { transform: translateY(-5px) scale(calc(var(--s, 1) * 1.03)); }
+}
+/* Touch: brief pressed feedback only */
+@media (hover: none) { .dz__card:active { background: var(--dz-card-hi); border-color: var(--dz-line-hi); } }
+
+/* Entrance: plays once. Heading and cards fade up; cards stagger. Hover transforms live on the inner card, so they do not conflict. */
+.dz--pre [data-dz-reveal] { opacity: 0; transform: translateY(16px); }
+.dz--pre .dz__head { transform: translateY(12px); }
+.dz--in [data-dz-reveal] { opacity: 1; transform: none; transition: opacity .5s var(--dz-ease), transform .5s var(--dz-ease); }
+.dz--in .dz__item { transition-delay: calc(var(--i, 0) * 70ms + 120ms); }
+
+/* Tablet: one column once two would feel cramped */
+@media (max-width: 1060px) {
+  .dz { padding-block: clamp(56px, 8vw, 80px); }
+  .dz__grid { grid-template-columns: 1fr; gap: 20px; }
+  .dz__card { padding: 24px; min-height: 220px; }
+  .dz__num { top: 24px; left: 24px; }
+  .dz__art img { max-height: 210px; }
+}
+/* Phones: number + arrow on top, copy, then art underneath on the right */
+@media (max-width: 639px) {
+  .dz__wrap { padding-inline: 20px; }
+  .dz__grid { gap: 16px; }
+  .dz h2 { font-size: clamp(36px, 10vw, 44px); }
+  .dz__card { grid-template-columns: 1fr; grid-template-areas: "copy" "art"; row-gap: 8px; padding: 20px; min-height: 0; align-items: start; }
+  .dz__num { position: static; grid-row: 1; }
+  .dz__copy { padding-top: 40px; }
+  .dz__arrow { top: 12px; right: 12px; width: 44px; height: 44px; }
+  .dz__num { position: absolute; top: 20px; left: 20px; }
+  .dz__title { font-size: clamp(22px, 6.2vw, 26px); }
+  .dz__desc { font-size: 16px; }
+  .dz__caps { font-size: 14px; }
+  .dz__art { padding-top: 0; justify-items: end; place-items: center end; height: clamp(120px, 38vw, 150px); }
+  .dz__art img { max-height: 100%; width: auto; height: 100%; max-width: 70%; }
+  .dz--pre [data-dz-reveal] { transform: none; }
+  .dz--in [data-dz-reveal] { transition: opacity .35s var(--dz-ease); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dz--pre [data-dz-reveal], .dz--in [data-dz-reveal] { opacity: 1; transform: none; transition: none; }
+  .dz__card, .dz__card::after, .dz__arrow, .dz__art img { transition: none; }
+  .dz__card:hover, .dz__card:focus-visible { transform: none; }
+  .dz__card:hover .dz__art img, .dz__card:focus-visible .dz__art img { transform: scale(var(--s, 1)); }
+  .dz__card:hover .dz__arrow, .dz__card:focus-visible .dz__arrow { transform: none; }
+}
+
+/* Fix: the <picture> wrapper must not become the grid item, or phone alignment and sizing break. */
+.dz__art picture { display: contents; }
+@media (max-width: 639px) {
+  .dz__art { padding-bottom: 4px; height: clamp(124px, 38vw, 156px); justify-items: end; align-items: end; }
+  .dz__art img { height: 100%; width: auto; max-width: 72%; max-height: 100%; transform: none; transform-origin: 100% 100%; }
+  .dz__card:hover .dz__art img, .dz__card:focus-visible .dz__art img { transform: none; }
+}
+/* Phones: the artwork fills a fixed-height slot exactly, bottom-right, so it can never grow past the card padding. */
+@media (max-width: 639px) {
+  .dz__art { position: relative; display: block; padding: 0; height: clamp(124px, 38vw, 156px); }
+  .dz__art img { position: absolute; right: 0; bottom: 0; height: 100%; width: auto; max-width: 100%; max-height: none; }
+}

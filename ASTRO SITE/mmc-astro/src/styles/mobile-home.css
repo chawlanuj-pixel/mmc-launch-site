@@ -1,0 +1,213 @@
+/* Homepage on phones (<= 760px). Imported LAST by pages/index.astro.
+   Everything here is inside a max-width media query, so nothing above 760px can change.
+
+   Principles
+   - Content-driven height: no section is a screen tall any more. Each takes the height its content needs plus
+     one rhythm unit of padding (--mh-y) above and below, so two neighbours are about 2 x 44px apart.
+   - The nav clearance is applied to the hero only. The end of the page carries one spacer (the footer) that
+     keeps the sticky booking bar and the AI circle off the last links.
+   - Type steps: h1 32-40, section h2 28-32, card titles 20-24, body 16, labels 12-14.
+   - Gutter 16-20px everywhere (--hv-pad). */
+
+@media (max-width: 760px) {
+
+  .hv {
+    --hv-pad: clamp(16px, 5vw, 20px);
+    --mh-y: 44px;
+    --t-display: clamp(32px, 9.4vw, 40px);
+    --t-h2: clamp(28px, 7.6vw, 32px);
+    --t-h3: 22px;
+    --hv-bot: 0px; /* the per-section bottom reserve is gone; the footer carries the single spacer */
+  }
+
+  /* ---------- Section shell: natural height, one rhythm ---------- */
+  .hv > section:is(#top, #clients, #tools, #studio, #who, #services, #work, #voices, #insights, #process, #close) {
+    height: auto; min-height: 0; max-height: none;
+    display: block; justify-content: normal;
+    padding-block: var(--mh-y);
+    scroll-margin-top: 28px;
+  }
+  .hv > section#top { padding-block: 96px 40px; scroll-margin-top: 0; }
+  .hv > section#tools { padding-block: 32px; }
+  .hv .hv-head { max-width: none; margin: 0 0 24px; }
+  .hv .hv-head .hn-eyebrow { display: block; margin-bottom: 10px; }
+  .hv .hv-head h2, .hv .hv-close h2, .hv .oc__head h2, .hv .wk h2, .hv .hv-plat h2, .hv .hv-ins h2 { font-size: var(--t-h2); line-height: 1.1; text-wrap: balance; }
+  .hv .hv-head__p { font-size: 16px; line-height: 1.55; margin-top: 12px; max-width: none; }
+  .hv .btn--link, .hv .hn-work__all { min-height: 44px; }
+
+  /* ---------- Hero ---------- */
+  .hv .hs-hero .hv-chip { display: inline-flex; margin-bottom: 18px !important; }
+  .hv .hs-hero h1 { font-size: var(--t-display); line-height: 1.06; margin: 0 0 16px; text-wrap: balance; }
+  .hv .hs-hero .hv-hero__sub { display: block; overflow: visible; -webkit-line-clamp: unset; font-size: 16px; line-height: 1.55; max-width: none; margin: 0 0 24px; }
+  .hv .hs-hero .hv-hero__cta { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .hv .hs-hero .hv-hero__cta .btn--primary { width: 100%; justify-content: center; }
+  .hv .hs-hero .hv-hero__cta .btn--link { justify-self: start; }
+  .hv .hs-hero .hs-grid { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 28px; align-items: start; flex: none; }
+  .hv .hs-hero { --mh-d: min(calc(100vw - var(--hv-pad) * 2), 420px); }
+  .hv .hs-hero .hs-visual { width: var(--mh-d); height: calc(var(--mh-d) * .92); justify-self: center; }
+
+  /* ---------- Clients ---------- */
+  .hv > section#clients .hv-head { margin-bottom: 0; }
+  .hv-clients .hv-head--row { display: block; }
+  .hv-clients .hv-head__p { display: block; }
+  .hv-clients .hv-head__p .p-l { display: none; }
+  .hv-clients .hv-head__p .p-s { display: inline; }
+  .hv-clients .hn-work__all { display: inline-flex; margin-top: 4px; }
+  .hv-clients .hv-head .hn-eyebrow { display: block; }
+  .hv-cl { margin-top: 16px; --cl-gap: 14px; }
+  .hv-cl__vp { padding-block: 8px 12px; }
+  .hv-client { padding: 16px; gap: 12px; }
+  .hv .hv-client__logo { height: clamp(84px, 26vw, 112px); }
+  .hv-client__meta b { font-size: 20px; }
+  .hv-client__tags { display: grid; }
+  .hv-client__tags span { font-size: 13px; }
+  .hv-client__tags span:nth-child(n+2) { display: none; }
+
+  /* ---------- Tools ribbon ---------- */
+  .hv .hv-plat__head { display: block; margin-bottom: 20px; }
+  .hv .hv-plat__head p { display: block; margin-top: 10px; font-size: 16px; line-height: 1.5; }
+  .hv .hv-plat__chip { padding-block: 14px; padding-inline: 20px; gap: 10px; }
+
+  /* ---------- About the studio ---------- */
+  .hv .as { min-height: 0; padding-block: var(--mh-y); display: block; }
+  .hv .as .as__wrap { gap: 20px; }
+  .hv .as .as__top { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .hv .as .as__fig { width: 100%; margin: 0 10px 10px 0; max-width: 460px; }
+  .hv .as .as__img { max-height: none; height: auto; aspect-ratio: 4 / 3; }
+  .hv .as .as__badge { width: 88px; top: -14px; right: -6px; }
+  .hv .as .as__copy h2 { font-size: var(--t-h2); line-height: 1.1; }
+  .hv .as .as__cols { grid-template-columns: minmax(0, 1fr); gap: 4px; margin-top: 14px; }
+  .hv .as .as__cols p { display: block; font-size: 16px; line-height: 1.55; }
+  .hv .as .as__link { font-size: 16px; min-height: 44px; }
+  .hv .as .as__bottom { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hv .as .as__col h3 { min-height: 40px; padding: 0 16px; font-size: 14px; }
+
+  /* ---------- Who we work with ---------- */
+  .hv-who .hv-head { margin-bottom: 24px; }
+  .hv-who__grid { gap: 12px; }
+  .hv-who__card { min-height: 0; }
+  .hv-who__pic, .hv-who__card--d2c .hv-who__pic { width: 34%; }
+  .hv-who__body { padding: 14px 16px; gap: 6px; justify-content: center; }
+  .hv-who__hd { gap: 10px; }
+  .hv-who__ic { width: 32px; height: 32px; }
+  .hv-who__ic svg { width: 16px; height: 16px; }
+  .hv-who__body b { font-size: 20px; }
+  .hv-who__d { font-size: 15px; line-height: 1.45; }
+  .hv-who__go { display: inline-flex; padding-top: 2px; }
+
+  /* ---------- Services (design untouched: gaps and the art slot only) ---------- */
+  .hv .dz__wrap { padding-inline: var(--hv-pad); }
+  .hv .dz__head { margin: 0 0 24px; }
+  .hv .dz h2 { font-size: var(--t-h2); line-height: 1.1; }
+  .hv .dz__sub { margin-top: 12px; font-size: 16px; }
+  .hv .dz__grid { gap: 14px; }
+  .hv .dz__card { padding: 20px; row-gap: 4px; }
+  .hv .dz__title { font-size: 22px; }
+  .hv .dz__art { height: clamp(92px, 26vw, 108px); }
+  .hv .dz__copy { padding-top: 36px; }
+
+  /* ---------- Selected work ---------- */
+  .hv .wk__head { margin-bottom: 20px; gap: 0; }
+  .hv .wk__title .hn-eyebrow { margin-bottom: 10px; }
+  .hv .wk__track { gap: 14px; }
+  .hv .wk__card:not(.wk__card--end) { aspect-ratio: 16 / 10; }
+  .hv .wk__card--end { min-height: 0; padding: 22px; }
+
+  /* ---------- On camera (row mode, <= 700px) ---------- */
+  .hv > section#voices .oc__in { gap: 14px; }
+  .hv .oc__head { display: block; }
+  .hv .oc .hn-eyebrow { margin-bottom: 10px; }
+  .hv .oc__foot { margin-top: 0; justify-content: space-between; }
+  .hv .oc__cap { min-width: 0; flex: 1 1 auto; }
+
+  /* ---------- Insights ---------- */
+  .hv-ins__top { display: block; margin-bottom: 20px; }
+  .hv-ins .hn-eyebrow { display: block; margin-bottom: 10px; }
+  .hv-ins__side { margin-top: 12px; max-width: none; gap: 0; }
+  .hv-ins__side p { display: block; font-size: 16px; }
+  .hv-ins__shot { height: clamp(130px, 38vw, 170px); }
+  .hv-ins__card { flex-basis: 80%; }
+  .hv-ins__body { padding: 16px; gap: 8px; }
+  .hv-ins__body h3 { font-size: 20px; }
+  .hv-ins__body p { font-size: 15px; }
+
+  /* ---------- Process ---------- */
+  .hv-proc .hv-head .hn-eyebrow { display: block; }
+  .hv-proc .hv-head__p .p-l { display: inline; }
+  .hv-proc .hv-head__p .p-s { display: none; }
+  .hv .hv-proc__pic { height: clamp(120px, 36vw, 156px); }
+  .hv-proc__card { flex-basis: 80%; gap: 8px; }
+  .hv-proc__card h3 { font-size: 22px; }
+  .hv-proc__card p { font-size: 15px; }
+
+  /* ---------- Closing ---------- */
+  .hv-close__in { grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
+  .hv-close__in p:not(.hn-eyebrow) { display: block; margin-top: 14px; }
+  .hv-close__in p .p-l { display: inline; }
+  .hv-close__in p .p-s { display: none; }
+  .hv-close__cta { justify-items: stretch; gap: 4px; }
+  .hv-close__cta .btn--primary { width: 100%; justify-content: center; }
+  .hv .hv-close__cta .btn--link { display: inline-flex; justify-self: start; }
+  .hv-close__tools { margin-top: 28px; padding-top: 24px; }
+  .hv-close__tools .hn-eyebrow { display: block; }
+  .hv .hv-close .hv-close__tl { display: block; font-size: 22px; margin-bottom: 14px; }
+  .hv-num__grid { gap: 10px; }
+  .hv-num__card { min-height: 56px; }
+
+  /* ---------- Footer: tidy stacked groups, 44px targets, one end spacer for the fixed layers ---------- */
+  body:has(.hv) .ft { padding: 40px 0 calc(136px + env(safe-area-inset-bottom, 0px)); }
+  body:has(.hv) .ft .ft__container { padding-inline: clamp(16px, 5vw, 20px); }
+  body:has(.hv) .ft .ft__top { gap: 20px; padding-bottom: 24px; }
+  body:has(.hv) .ft .ft__brand { flex-direction: column; align-items: flex-start; gap: 12px; }
+  body:has(.hv) .ft .ft__brand-img { margin-block: -22px -14px; }  /* the artwork sits in a 158x127 box with air around it */
+  body:has(.hv) .ft .ft__brand-tag { font-size: 12px; letter-spacing: .16em; }
+  body:has(.hv) .ft .ft__cta-stack { align-items: stretch; width: 100%; gap: 4px; }
+  body:has(.hv) .ft .ft__cta { align-self: stretch; justify-content: center; min-height: 52px; font-size: 13px; }
+  body:has(.hv) .ft .ft__cta-alt { align-self: center; min-height: 44px; font-size: 13px; border-bottom: 0; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(255,255,255,.35); padding: 0 4px; }
+  body:has(.hv) .ft .ft__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; padding: 28px 0 20px; }
+  body:has(.hv) .ft .ft__col { gap: 6px; }
+  body:has(.hv) .ft .ft__col-label { font-size: 15px; padding-bottom: 8px; min-height: 0; }
+  body:has(.hv) .ft .ft__col ul { gap: 0; }
+  body:has(.hv) .ft .ft__col a { display: flex; align-items: center; min-height: 44px; font-size: 15px; line-height: 1.25; }
+  body:has(.hv) .ft .ft__base { gap: 0; padding: 12px 0; }
+  body:has(.hv) .ft .ft__base-l, body:has(.hv) .ft .ft__base-r { gap: 0 20px; }
+  body:has(.hv) .ft .ft__base-l { flex-direction: column; align-items: flex-start; width: 100%; }
+  body:has(.hv) .ft .ft__dot { display: none; }
+  body:has(.hv) .ft .ft__base a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; font-size: 15px; }
+  body:has(.hv) .ft .ft__legal { gap: 6px; padding-top: 18px; font-size: 13px; }
+  body:has(.hv) .ft .ft__tagline { font-size: 14px; }
+}
+
+@media (min-width: 361px) and (max-width: 560px) { .hv .wk__card:not(.wk__card--end) { aspect-ratio: 16 / 9; } }
+@media (max-width: 430px) {
+  body:has(.hv) .ft .ft__col:nth-child(n+3) .ft__col-label { min-height: 2.7em; box-sizing: border-box; }
+}
+
+/* ---------- Header pill: 44px tap targets for the logo link and the Menu button ---------- */
+@media (max-width: 760px) {
+  .mmc-nav__inner { padding-block: 4px; }
+  .mmc-nav__mark { min-height: 44px; }
+  .mmc-menu-btn { min-height: 44px; }
+}
+
+/* ---------- Narrow phones ---------- */
+@media (max-width: 360px) {
+  .hv-num__card { grid-template-columns: minmax(0, 1fr); row-gap: 2px; align-content: center; }
+  .hv .hs-hero .hv-chip { letter-spacing: .04em; }
+  body:has(.hv) .ft .ft__cols { gap: 24px 14px; }
+  body:has(.hv) .ft .ft__col a { font-size: 14px; }
+}
+
+/* ---------- On camera card size (row mode only) ---------- */
+@media (max-width: 700px) {
+  .hv .oc { --oc-ch: calc(min(60vw, 250px) * 16 / 9); }
+  .hv .oc .oc__fan { padding: 16px calc(50vw - var(--oc-cw) / 2) 40px; margin: -6px calc(var(--hv-pad) * -1) -24px; }
+}
+
+/* ---------- Nav pill at 320-340px: the Menu button's icon was pushed past the pill edge ---------- */
+@media (max-width: 340px) {
+  .mmc-nav__inner { gap: 4px; }
+  .mmc-nav__mark { flex: 1 1 auto; overflow: hidden; }
+  .mmc-nav__name-mmc { font-size: 12px; white-space: normal; line-height: 1.12; text-overflow: clip; }
+  .mmc-menu-btn { gap: 8px; padding: 10px 12px 10px 14px; letter-spacing: .08em; }
+}

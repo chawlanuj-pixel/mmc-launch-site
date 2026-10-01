@@ -1,0 +1,45 @@
+---
+// The ONE pre-footer. Full-bleed brand-navy band: eyebrow, bold line + italic yellow accent line, one sentence,
+// one filled yellow button that opens the booking modal, one text link. No photo, no tick list.
+// Used by every marketing page; the right props per page type live in src/lib/prefooter.ts.
+// It has no framework dependency, so it can sit after an island (tool pages) as well as inside Astro pages.
+import "../../styles/prefooter.css";
+import { BOOK, SECONDARY } from "../../lib/site";
+import { href } from "../../lib/links";
+
+interface Link { label: string; href?: string; brief?: boolean }
+interface Props {
+  /** Booking analytics id; the button reports `${source}-final`. */
+  source: string;
+  h2a: string; h2b: string; lede: string;
+  eyebrow?: string;
+  /** Defaults to the single booking label that opens the booking modal. `brief` opens the brief form instead (careers only). */
+  primary?: Link;
+  /** One text link. Pass null for none. Defaults to "How the audit works". */
+  secondary?: Link | null;
+  compact?: boolean;
+  id?: string;
+}
+const { source, h2a, h2b, lede, eyebrow = "Ready when you are", primary, compact = false, id = "talk" } = Astro.props;
+const secondary = Astro.props.secondary === undefined ? { label: SECONDARY.audit, href: "/audit/" } : Astro.props.secondary;
+const p = primary || { label: BOOK };
+---
+<section class={"pfc no-section-bg" + (compact ? " pfc--compact" : "")} id={id} aria-labelledby={id + "-h"}>
+  <div class="pfc__in">
+    <div class="pfc__copy">
+      <p class="pfc__eyebrow">{eyebrow}</p>
+      <h2 class="pfc__h" id={id + "-h"}><b>{h2a}</b> <em>{h2b}</em></h2>
+      <p class="pfc__p">{lede}</p>
+    </div>
+    <div class="pfc__act">
+      {p.brief
+        ? <button type="button" class="btn btn--primary glow-btn" onclick="window.mmcOpenBrief(event)"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{p.label}<span class="arrow"></span></span></button>
+        : <button type="button" class="btn btn--primary glow-btn" onclick={`window.mmcBookCall('${source}-final', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{p.label}<span class="arrow"></span></span></button>}
+      {secondary
+        ? (secondary.brief
+          ? <button type="button" class="btn btn--link" onclick="window.mmcOpenBrief(event)">{secondary.label}<span class="arrow"></span></button>
+          : <a class="btn btn--link" href={href(secondary.href || "#")}>{secondary.label}<span class="arrow"></span></a>)
+        : null}
+    </div>
+  </div>
+</section>

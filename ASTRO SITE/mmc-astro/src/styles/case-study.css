@@ -1,0 +1,132 @@
+/* Work/portfolio: bespoke hero + case-study detail template. Own visual shape,
+   deliberately not the service-page hero/answer/stack family. Shares only the
+   n-band/n-wrap/n-eyebrow rhythm and the site palette. */
+
+/* ---------- Index hero ---------- */
+.cw-hero { position: relative; padding: clamp(120px, 13vw, 168px) 0 clamp(56px, 6vw, 88px); overflow: hidden; }
+.cw-hero__wm { position: absolute; top: clamp(64px, 9vw, 128px); left: 50%; transform: translateX(-50%); font: 800 clamp(90px, 16vw, 240px)/1 var(--font-display); letter-spacing: -0.03em; color: rgba(11,16,32,0.045); white-space: nowrap; pointer-events: none; user-select: none; z-index: 0; }
+.cw-hero__grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(28px, 4vw, 64px); align-items: end; }
+.cw-hero__eyebrow { display: inline-flex; align-items: center; gap: 8px; font: 700 13px/1 var(--font-display); letter-spacing: 0.06em; text-transform: uppercase; color: #16329E; }
+.cw-hero__eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #FFC528; }
+.cw-hero__h1 { margin: 18px 0 0; font: 700 clamp(38px, 5.4vw, 72px)/1.04 var(--font-display); letter-spacing: -0.03em; color: var(--n-fg); }
+.cw-hero__h1 em { font: 400 italic clamp(38px, 5.4vw, 72px)/1.04 var(--font-serif, Georgia, serif); color: #16329E; }
+.cw-hero__sub { margin: 22px 0 0; max-width: 46ch; font: 400 clamp(16px, 1.3vw, 19px)/1.6 var(--font-body); color: var(--n-fg-2); }
+.cw-hero__row { margin-top: clamp(24px, 2.6vw, 34px); display: flex; flex-wrap: wrap; gap: 14px; }
+.cw-hero__figs { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cw-hero__fig { border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 3; box-shadow: 0 30px 60px -34px rgba(11,16,32,.45); }
+.cw-hero__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cw-hero__fig:nth-child(2) { margin-top: clamp(18px, 3vw, 40px); }
+@media (max-width: 900px) {
+  .cw-hero__grid { grid-template-columns: 1fr; }
+  .cw-hero__figs { order: -1; margin-bottom: 8px; }
+}
+
+/* ---------- Case studies grid (index) ---------- */
+.cw-grid__head { max-width: 62ch; }
+.cw-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: clamp(24px, 2.8vw, 34px) 0 0; }
+.cw-grid { margin-top: clamp(28px, 3vw, 44px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 2vw, 28px); }
+@media (max-width: 1000px) { .cw-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .cw-grid { grid-template-columns: 1fr; } }
+.cw-card { display: flex; flex-direction: column; border-radius: 24px; overflow: hidden; background: #fff; border: 1px solid rgba(11,16,32,.08); text-decoration: none; color: inherit; box-shadow: 0 22px 46px -32px rgba(11,16,32,.35); transition: transform .32s cubic-bezier(.2,.7,.2,1), box-shadow .32s; }
+.cw-card:hover { transform: translateY(-6px); box-shadow: 0 34px 60px -30px rgba(11,16,32,.48); }
+.cw-card:focus-visible { outline: 3px solid #FFC528; outline-offset: 3px; }
+.cw-card__fig { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #F3F1EC; }
+.cw-card__fig img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.cw-card:hover .cw-card__fig img { transform: scale(1.05); }
+.cw-card__logo { position: absolute; left: 14px; top: 14px; height: 34px; padding: 6px 12px; border-radius: 10px; background: rgba(255,255,255,.94); display: flex; align-items: center; }
+.cw-card__logo img { max-height: 20px; max-width: 110px; width: auto; height: auto; object-fit: contain; }
+.cw-card__type { position: absolute; right: 14px; top: 14px; font: 700 12px/1 var(--font-display); letter-spacing: .05em; text-transform: uppercase; color: #0F1E5E; background: #FFC528; padding: 7px 11px; border-radius: 999px; }
+.cw-card__body { padding: clamp(18px, 2vw, 24px); display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.cw-card__name { margin: 0; font: 700 19px/1.24 var(--font-display); letter-spacing: -0.01em; color: var(--n-fg); }
+.cw-card__scope { margin: 0; font: 400 14.5px/1.55 var(--font-body); color: var(--n-fg-2); flex: 1; }
+.cw-card__svc { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.cw-card__svc span { font: 600 12px/1 var(--font-body); color: var(--n-fg-2); background: var(--n-paper, #F3F1EC); border-radius: 999px; padding: 6px 10px; }
+.cw-card__go { margin-top: 6px; display: inline-flex; align-items: center; gap: 6px; font: 700 13.5px/1 var(--font-display); color: #16329E; }
+.cw-card__go svg { transition: transform .25s ease; }
+.cw-card:hover .cw-card__go svg { transform: translateX(3px); }
+
+/* ---------- Wall-only note ---------- */
+.cw-note { margin: 26px 0 0; font: 400 13px/1.5 var(--font-body); color: var(--n-fg-3); }
+
+/* ---------- How we work strip (plain cards, not the stacking template) ---------- */
+.cw-kinds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 1.8vw, 24px); }
+@media (max-width: 980px) { .cw-kinds { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .cw-kinds { grid-template-columns: 1fr; } }
+.cw-kind { border-radius: 22px; background: #fff; border: 1px solid rgba(11,16,32,.08); padding: clamp(20px, 2.2vw, 28px); display: grid; gap: 10px; align-content: start; }
+.cw-kind__k { display: inline-flex; align-self: start; font: 700 12px/1 var(--font-display); letter-spacing: .05em; text-transform: uppercase; color: #0F1E5E; background: #FFC528; padding: 7px 12px; border-radius: 999px; }
+.cw-kind h3 { margin: 4px 0 0; font: 700 clamp(19px, 1.7vw, 22px)/1.25 var(--font-display); letter-spacing: -0.01em; color: var(--n-fg); }
+.cw-kind p { margin: 0; font: 400 14.5px/1.58 var(--font-body); color: var(--n-fg-2); }
+.cw-kind a { margin-top: 4px; font: 700 13.5px/1 var(--font-display); color: #16329E; text-decoration: none; }
+.cw-kind a:hover { text-decoration: underline; }
+
+/* ================================================================
+   Case-study detail page
+   ================================================================ */
+.cs-hero { position: relative; box-sizing: border-box; padding: clamp(120px, 12vw, 156px) 0 clamp(40px, 5vw, 64px); }
+.cs-crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font: 500 13px/1 var(--font-body); color: var(--n-fg-3); }
+.cs-crumb a { color: var(--n-fg-3); text-decoration: none; }
+.cs-crumb a:hover { color: #16329E; }
+.cs-hero__top { margin-top: clamp(24px, 3vw, 36px); display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; }
+.cs-hero__logo { height: 46px; display: flex; align-items: center; }
+.cs-hero__logo img { max-height: 100%; max-width: 200px; width: auto; height: auto; object-fit: contain; }
+.cs-hero__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.cs-tag { font: 700 13px/1 var(--font-display); letter-spacing: 0; padding: 9px 14px; border-radius: 999px; border: 1.5px solid rgba(11,16,32,.14); color: var(--n-fg-2); }
+.cs-tag--group { background: #16329E; border-color: #16329E; color: #fff; }
+.cs-hero__h1 { margin: 20px 0 0; font: 700 clamp(34px, 5vw, 60px)/1.06 var(--font-display); letter-spacing: -0.03em; color: var(--n-fg); max-width: 20ch; }
+.cs-hero__cta { margin-top: clamp(22px, 2.4vw, 32px); }
+.cs-hero__cta .btn { min-height: 48px; }
+.cs-hero__scope { margin: 20px 0 0; max-width: 62ch; font: 400 clamp(16px, 1.25vw, 19px)/1.62 var(--font-body); color: var(--n-fg-2); }
+
+.cs-art { padding: 0 0 clamp(40px, 5vw, 64px); }
+/* Fixed frame ratios (3 / 2, 16 / 9 or 3 / 1, picked per brand in case-studies.json): the artwork is never cropped. */
+.cs-art__frame { margin: 0; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(11,16,32,.5); border: 1px solid rgba(11,16,32,.08); aspect-ratio: var(--cs-ratio, 3 / 2); background: #F3F1EC; }
+.cs-art__frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.cs-art__cap { margin: 14px 2px 0; font: 400 13px/1.5 var(--font-body); color: var(--n-fg-3); }
+
+.cs-body { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(28px, 4vw, 64px); align-items: start; }
+@media (max-width: 860px) { .cs-body { grid-template-columns: 1fr; } }
+.cs-shows h2, .cs-services h2 { margin: 0 0 14px; font: 700 clamp(20px, 1.8vw, 24px)/1.25 var(--font-display); letter-spacing: -0.02em; color: var(--n-fg); }
+.cs-shows ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.cs-shows li { display: flex; align-items: flex-start; gap: 12px; font: 400 15.5px/1.55 var(--font-body); color: var(--n-fg-2); }
+.cs-shows li::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 8px; border-radius: 50%; background: #FFC528; }
+.cs-services { border-radius: 22px; background: var(--n-paper, #F3F1EC); padding: clamp(22px, 2.4vw, 28px); }
+.cs-services ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 9px; }
+.cs-services li { font: 600 13px/1 var(--font-body); color: var(--n-fg); background: #fff; border: 1px solid rgba(11,16,32,.1); padding: 9px 13px; border-radius: 999px; }
+.cs-services p { margin: 14px 0 0; font: 400 13px/1.5 var(--font-body); color: var(--n-fg-3); }
+
+.cs-more { padding-top: clamp(48px, 5vw, 72px); }
+.cs-more__row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 1.8vw, 24px); margin-top: clamp(22px, 2.4vw, 30px); }
+@media (max-width: 900px) { .cs-more__row { grid-template-columns: 1fr; } }
+
+/* ---------- Hero: fixed height on desktop so name wrapping and tag count never move the page ---------- */
+@media (min-width: 900px) { .cs-hero { min-height: var(--cs-hero-h, 680px); } }
+.cs-hero__h1 { min-height: 2.12em; }
+@media (max-width: 899px) { .cs-hero__h1 { min-height: 0; } }
+
+/* ---------- What we did note ---------- */
+.cs-services__did { margin: 0; font: 400 15.5px/1.6 var(--font-body); color: var(--n-fg-2); }
+.cs-services__did + p { margin-top: 14px; }
+
+/* ---------- Optional proof slots (render only with real data) ---------- */
+.cs-proof { padding-top: clamp(40px, 4.4vw, 64px); padding-bottom: clamp(40px, 4.4vw, 64px); }
+.cs-proof__meta { display: flex; flex-wrap: wrap; gap: 14px 40px; margin: 0 0 clamp(22px, 2.6vw, 34px); }
+.cs-proof__meta div { display: grid; gap: 4px; }
+.cs-proof__meta dt { font: 700 12px/1 var(--font-display); letter-spacing: .06em; text-transform: uppercase; color: #16329E; }
+.cs-proof__meta dd { margin: 0; font: 500 16px/1.5 var(--font-body); color: var(--n-fg); max-width: 60ch; }
+.cs-proof__metrics { list-style: none; margin: 0 0 clamp(22px, 2.6vw, 34px); padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+.cs-proof__metrics li { background: #fff; border: 1px solid rgba(15,30,94,.1); border-radius: 22px; padding: 22px; display: grid; gap: 6px; align-content: start; }
+.cs-proof__v { font: 800 clamp(30px, 3vw, 42px)/1.05 var(--font-display); letter-spacing: -0.02em; color: #0F1E5E; }
+.cs-proof__l { font: 700 15px/1.3 var(--font-display); color: var(--n-fg); }
+.cs-proof__b { font: 400 13px/1.5 var(--font-body); color: var(--n-fg-3); }
+.cs-proof__team h2 { margin: 0 0 12px; font: 700 clamp(20px, 1.8vw, 24px)/1.25 var(--font-display); letter-spacing: -0.02em; color: var(--n-fg); }
+.cs-proof__team ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.cs-proof__team li { display: grid; gap: 2px; background: #fff; border: 1px solid rgba(15,30,94,.1); border-radius: 14px; padding: 12px 16px; }
+.cs-proof__team li b { font: 700 15px/1.3 var(--font-display); color: var(--n-fg); }
+.cs-proof__team li span { font: 400 13px/1.4 var(--font-body); color: var(--n-fg-3); }
+
+/* ---------- Testimonial (renders only with a real, approved quote) ---------- */
+.cs-quote__fig { margin: 0; max-width: 820px; }
+.cs-quote__fig blockquote { margin: 0; }
+.cs-quote__fig p { margin: 0; font: 400 italic clamp(22px, 2.4vw, 32px)/1.4 var(--font-serif, Georgia, serif); color: #0F1E5E; }
+.cs-quote__fig figcaption { margin-top: 18px; display: grid; gap: 2px; font: 400 14px/1.4 var(--font-body); color: var(--n-fg-3); }
+.cs-quote__fig figcaption b { font: 700 16px/1.3 var(--font-display); color: var(--n-fg); }

@@ -1,0 +1,347 @@
+{
+  "_note": "The real client book, supplied by MMC on 2026-08-24, and the ONE source for every brand name, label, service tag and logo/portfolio/trust row on the site (home tiles and work rail, /work/ cards and wall, case studies, industries and services brand strips). Read it through src/lib/work.ts; never retype a name or a tag array on a page. Nothing here may be embellished: no performance figure was supplied for any client, so none is shown. Add a `results` array to a brand only when MMC provides real, checkable numbers with a time period and basis.",
+  "_from_logo_pack": "The ten brands carrying \"_source\": \"logo-pack\" (Anchor by Panasonic, Flomate, Green Hermitage, Housing.com, JSW, LearningMate, Rustomjee, Saint-Gobain, Gyproc, Club Mahindra) were added on 2026-08-27 from ../logos/ on instruction, and they are a weaker record than anything else in this file. A logo says who a brand is; it says nothing about what MMC ran for them. So `services` is deliberately EMPTY for all nine rather than guessed, and `type` is inferred only from what each company publicly is: JSW, Saint-Gobain, Gyproc, LearningMate and Flomate as B2B, and Anchor, Green Hermitage, Housing.com and Rustomjee as B2C. Flomate is the least certain, its mark carries no descriptor at all. Supply a service mix per brand, correct the types, then delete each `_source`. Note also that Gyproc is a Saint-Gobain brand and both are listed separately, and that the site renders no service row for a brand with an empty list rather than an empty one.",
+  "_pending_confirmation": "The three brands carrying \"_source\": \"artwork\" (OOsh, Panda Cabs, MVJ College of Engineering) were added on 2026-08-27 from the case-study artwork in ../Case Study/, not from a supplied client record. Their `type` and `services` were read off the artwork and are the only inferred values anywhere in this file: OOsh's own image is captioned 'D2C case study - Website Design & Development - Paid Media & Growth'; Panda Cabs and MVJ College both show a website, Meta lead/traffic ads, Google ads and social creative. Confirm or correct each, then delete its `_source` key. Two further notes: `type` \"B2C\" is new to this file, introduced because a cab service and a college recruiting students are neither D2C product brands nor B2B, and MVJ's artwork also shows SEO work, which has no key in `_services` and so is not claimed on the site.",
+  "_labels": "`group` is the ONE classification field. Its label (see `groups`) is what every surface shows: card badge, hero tag, filter chip, brand lists, home tiles. The old `type` field (D2C / B2B / B2C) is retired; B2C was never a public label. Values below are exactly the groups the filters and wall already used. Classification of MVJ, Panda Cabs, OOsh, Sprouts Edu Tours and Bloom Edutours is PENDING the owner; do not change it here without a decision.",
+  "_names": "`name` is the one display name, used everywhere. Spellings pending client confirmation (kept as the most-used form today): Bloom Edutours (also written Bloom Edu Tours in a code comment), Sprouts Edu Tours, Sprnt (scope copy used SPRNT; now rendered from `name`), NM Consultings (scope copy used NM HR & Recruitment Consultancy), MyBrownButters (My Brown Butters not found on pages).",
+  "groups": [
+    {
+      "key": "d2c",
+      "label": "D2C"
+    },
+    {
+      "key": "b2b",
+      "label": "B2B"
+    },
+    {
+      "key": "edu",
+      "label": "Education"
+    },
+    {
+      "key": "consumer",
+      "label": "Other consumer"
+    }
+  ],
+  "services": [
+    {
+      "key": "web",
+      "label": "Website development",
+      "short": "Website"
+    },
+    {
+      "key": "cro",
+      "label": "Conversion optimisation",
+      "short": "CRO"
+    },
+    {
+      "key": "perf",
+      "label": "Performance marketing",
+      "short": "Performance"
+    },
+    {
+      "key": "amazon",
+      "label": "Amazon Ads",
+      "short": "Amazon"
+    },
+    {
+      "key": "quickcom",
+      "label": "Quick commerce ads",
+      "short": "Quick commerce"
+    },
+    {
+      "key": "leadgen",
+      "label": "Lead generation",
+      "short": "Lead generation"
+    },
+    {
+      "key": "creative",
+      "label": "Performance creative",
+      "short": "Creative"
+    },
+    {
+      "key": "social",
+      "label": "Social media creatives",
+      "short": "Social"
+    }
+  ],
+  "_services_note": "Labels follow the menu names (Website development, Conversion optimisation, Performance marketing, Amazon Ads, Quick commerce ads, Lead generation, Social media creatives). 'Performance creative' has no menu twin and is kept as the recorded wording. The list order IS the display order everywhere. `short` is used only where space demands (home tiles, rail cards, brand strips).",
+  "home": {
+    "rail": [
+      "giraffe",
+      "oosh",
+      "bloom",
+      "sprnt",
+      "skyfling",
+      "lepure",
+      "awwbaby",
+      "mvj",
+      "notic",
+      "nmc",
+      "mittiy",
+      "vagakids"
+    ],
+    "tiles": [
+      "giraffe",
+      "oosh",
+      "sprnt",
+      "awwbaby",
+      "lepure",
+      "notic",
+      "mittiy",
+      "vagakids",
+      "bloom",
+      "skyfling",
+      "nmc",
+      "mvj"
+    ]
+  },
+  "clients": [
+    {
+      "id": "bloom",
+      "name": "Bloom Edutours",
+      "group": "b2b",
+      "services": [
+        "web",
+        "leadgen",
+        "creative",
+        "social"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "sprouts",
+      "name": "Sprouts Edu Tours",
+      "group": "b2b",
+      "services": [
+        "web",
+        "leadgen",
+        "creative",
+        "social"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "nmc",
+      "name": "NM Consultings",
+      "group": "b2b",
+      "services": [
+        "web",
+        "leadgen",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "skyfling",
+      "name": "Skyfling Technologies",
+      "group": "b2b",
+      "services": [
+        "web",
+        "leadgen",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "lepure",
+      "name": "Lepure",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative",
+        "social"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "giraffe",
+      "name": "The Growing Giraffe",
+      "group": "d2c",
+      "services": [
+        "cro",
+        "perf",
+        "amazon",
+        "quickcom",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "mittiy",
+      "name": "Mittiy Made",
+      "group": "d2c",
+      "services": [
+        "cro",
+        "perf",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "awwbaby",
+      "name": "AwwBaby",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "sprnt",
+      "name": "Sprnt",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative",
+        "social"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "vagakids",
+      "name": "Vaga Kids",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "mbb",
+      "name": "MyBrownButters",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "notic",
+      "name": "Notic",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative",
+        "social"
+      ],
+      "workArt": true
+    },
+    {
+      "id": "oosh",
+      "name": "OOsh",
+      "group": "d2c",
+      "services": [
+        "web",
+        "perf",
+        "creative"
+      ],
+      "workArt": true,
+      "_source": "artwork"
+    },
+    {
+      "id": "pandacabs",
+      "name": "Panda Cabs",
+      "group": "consumer",
+      "services": [
+        "web",
+        "leadgen",
+        "creative",
+        "social"
+      ],
+      "workArt": true,
+      "_source": "artwork"
+    },
+    {
+      "id": "mvj",
+      "name": "MVJ College of Engineering",
+      "group": "edu",
+      "services": [
+        "web",
+        "leadgen",
+        "creative",
+        "social"
+      ],
+      "workArt": true,
+      "_source": "artwork"
+    },
+    {
+      "id": "anchor",
+      "name": "Anchor by Panasonic",
+      "group": "consumer",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "flomate",
+      "name": "Flomate",
+      "group": "b2b",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "greenhermitage",
+      "name": "Green Hermitage",
+      "group": "consumer",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "housing",
+      "name": "Housing.com",
+      "group": "consumer",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "jsw",
+      "name": "JSW",
+      "group": "b2b",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "learningmate",
+      "name": "LearningMate",
+      "group": "edu",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "rustomjee",
+      "name": "Rustomjee",
+      "group": "consumer",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "saintgobain",
+      "name": "Saint-Gobain",
+      "group": "b2b",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "gyproc",
+      "name": "Gyproc",
+      "group": "b2b",
+      "services": [],
+      "_source": "logo-pack"
+    },
+    {
+      "id": "clubmahindra",
+      "name": "Club Mahindra",
+      "group": "consumer",
+      "services": [],
+      "_source": "logo-pack"
+    }
+  ]
+}

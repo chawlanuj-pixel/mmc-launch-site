@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageHero from "../../components/pages/PageHero.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import Img from "../../components/hub/Img.astro";
+import Arrow from "../../components/hub/Arrow.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import { BOOK, SECONDARY } from "../../lib/site";
+import { pageHead } from "../../lib/pagehead";
+import { fixDeep, href } from "../../lib/links";
+import raw from "../../data/pages/audit.json";
+import "../../styles/au.css";
+
+const D = fixDeep(raw);
+const img = (n: string) => (n.includes("/") ? n : "au/" + n);
+const brief = "window.mmcOpenBrief && window.mmcOpenBrief(event)";
+---
+<BaseLayout {...pageHead("audit", "/audit/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <PageHero wm="Audit" eyebrow="● Free · with a senior strategist"
+        lines={["A free paid-media", '<span class="em-serif">audit</span> for brands', "in India."]}
+        sub="We read your ad accounts against your break-even numbers and tell you where to start."
+        primary={{ label: BOOK, href: "#book" }} secondary={{ label: SECONDARY.brief, onclick: brief }} rightClass="auh__r">
+        <figure class="auh__fig">
+          <Img name={img("audit-call.jpg")} ratio="4 / 3" class="auh__img" eager />
+        </figure>
+      </PageHero>
+
+      <section class="n-band n-band--white pm-band" id="looks">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">What we look at</span>
+            <h2 class="n-h2">Four things, <span class="n-serif">in your numbers.</span></h2>
+          </div>
+          <ul class="aul n-rise d1">
+            {D.AU_LOOKS.map((x: any) => (
+              <li>
+                <Img name={img(x.img)} ratio="3 / 2" class="aul__img" />
+                <b>{x.n}</b><span>{x.d}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="how">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">How it works</span>
+            <h2 class="n-h2">One call. <span class="n-serif">A clear next step.</span></h2>
+          </div>
+          <div class="pm-rail aus">
+            {D.AU_STEPS.map(([t, d, i]: string[], k: number) => (
+              <div class={"pm-step n-rise d" + (k + 1)}>
+                <span class="pm-step__n">{k + 1}</span>
+                <div><Img name={img(i)} ratio="3 / 2" class="aus__img" /><span class="pm-step__t">{t}</span><span class="pm-step__d">{d}</span></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--ink pm-band" id="book">
+        <div class="n-wrap">
+          <div class="aub">
+            <div class="aub__copy n-rise">
+              <span class="n-eyebrow">Book the audit</span>
+              <h2 class="n-h2" style="margin:18px 0 22px">Pick a time that <span class="n-serif">suits you.</span></h2>
+              <p>Choose a slot on the calendar. It works on a phone too.</p>
+              <h3 class="aub__h3">Helpful to have ready</h3>
+              <ul class="aub__list">
+                {D.AU_BRING.map((b: string) => <li>{b}</li>)}
+              </ul>
+              <p class="aub__alt">Prefer to write first? <button class="pm-textlink pm-textlink--quiet" onclick={brief}>Send a brief<Arrow /></button></p>
+            </div>
+            <div class="aub__cal n-rise d1">
+              <div class="aub__host" id="au-cal" aria-label="Booking calendar"></div>
+              <noscript>Booking needs JavaScript. Email sales-in@mondaymarketing.company instead.</noscript>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white pm-band" id="fit">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Who it suits</span>
+            <h2 class="n-h2">Built for brands that <span class="n-serif">buy media.</span></h2>
+          </div>
+          <div class="auf n-rise d1">
+            {D.AU_FIT.map((x: any) => (
+              <article class="auf__card">
+                <Img name={img(x.img)} ratio="3 / 2" class="auf__img" />
+                <h3>{x.n}</h3>
+                <p>{x.d}</p>
+              </article>
+            ))}
+          </div>
+          <p class="auf__not n-rise d2">Probably not a fit: brands where ROAS alone is the target, or where there is no paid media to review yet. We will say so early and point you somewhere useful.</p>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="faq">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Common questions</span>
+            <h2 class="n-h2">Before you <span class="n-serif">book.</span></h2>
+          </div>
+          <div class="pm-faq n-rise">
+            {D.AU_FAQ.map((f: any, k: number) => (
+              <details open={k === 0}>
+                <summary>{f.q}</summary>
+                <div class="pm-faq__a"><p>{f.a}</p></div>
+              </details>
+            ))}
+          </div>
+          <p style="margin-top:30px">
+            <a class="pm-textlink" href={href("services.html")}>See all services<Arrow /></a>
+          </p>
+        </div>
+      </section>
+
+      <PreFooterCta source="audit" compact h2a="Bring your ad accounts." h2b="Leave with a plan."
+        lede="On a call, with a senior strategist. We read your ad accounts against your break-even numbers and plan the first 30 days."
+        secondary={{ label: SECONDARY.brief, brief: true }} />
+    </main>
+  </Shell>
+  <PageFx />
+  <script>
+    // Mount the Calendly widget inline once the section is near the viewport (same behaviour as the original).
+    const el = document.getElementById("au-cal");
+    const w = window as any;
+    if (el) {
+      const mount = () => w.mmcInlineCalendly && w.mmcInlineCalendly(el);
+      if (!("IntersectionObserver" in window)) mount();
+      else {
+        const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); mount(); } }, { rootMargin: "300px" });
+        io.observe(el);
+      }
+    }
+  </script>
+</BaseLayout>

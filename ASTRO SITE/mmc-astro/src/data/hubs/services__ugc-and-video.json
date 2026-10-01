@@ -1,0 +1,378 @@
+{
+  "file": "ugc-and-video.html",
+  "path": "/services/ugc-and-video/",
+  "key": "ugc",
+  "title": "UGC and Video Ads in India | MMC",
+  "description": "MMC produces UGC and short video ads for D2C brands in India, briefed against one brand thesis, made to run as ads and refreshed before they tire.",
+  "ogTitle": "UGC and video ads made to run as ads",
+  "ogDescription": "Creator-style video briefed, edited and refreshed for paid media.",
+  "ogAlt": "Monday Marketing Company: ugc and video production.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/ugc-and-video.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "UGC and video",
+          "item": "https://www.mondaymarketing.company/ugc-and-video.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/ugc-and-video.html#webpage",
+      "url": "https://www.mondaymarketing.company/ugc-and-video.html",
+      "name": "UGC and Video Ads in India | MMC",
+      "description": "MMC produces UGC and short video ads for D2C brands in India, briefed against one brand thesis, made to run as ads and refreshed before they tire.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/ugc-and-video.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/ugc-and-video.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/ugc-and-video.html#service",
+      "name": "UGC and video production",
+      "serviceType": "UGC and video production",
+      "description": "UGC, video and creator-style creative production for paid media.",
+      "url": "https://www.mondaymarketing.company/ugc-and-video.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/ugc-and-video.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is UGC and video production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UGC means user-generated content. In advertising it usually means creator-style video with real people talking about a product, made to run as paid ads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does UGC and video production work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We brief one brand thesis, direct creators against it, edit many versions for the ad platforms, test them against each other and refresh before they tire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does UGC and video production cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee a winning ad, because nobody can. We commit to a clear testing method, a refresh schedule and honest reporting on what worked."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is UGC and video production for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands that run paid ads, mostly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your product or service, brand guidelines, access to ad performance, and a person who can approve scripts and cuts."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "ugc",
+    "wm": "UGC",
+    "eyebrow": "● UGC and video",
+    "h1": [
+      "UGC and video",
+      [
+        "that ",
+        "works as ads",
+        "."
+      ]
+    ],
+    "sub": "Creator-style video briefed against one brand thesis, edited for the ad platforms, and refreshed on a schedule before creative goes stale.",
+    "tiles": [
+      {
+        "img": "ugc/brief.jpg",
+        "pos": "50% 50%",
+        "label": "Brief",
+        "note": "One brand thesis"
+      },
+      {
+        "img": "ugc/shoot.jpg",
+        "pos": "50% 50%",
+        "label": "Shoot",
+        "note": "Creators and UGC"
+      },
+      {
+        "img": "ugc/edit.jpg",
+        "pos": "50% 50%",
+        "label": "Edit",
+        "note": "Hooks and formats"
+      },
+      {
+        "img": "ugc/test.jpg",
+        "pos": "50% 50%",
+        "label": "Test",
+        "note": "What holds attention"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "UGC and video production is the work of making creator-style content that is built to run as paid ads, then testing which versions hold attention.",
+      "hl": "built to run as paid ads",
+      "who": "Monday Marketing Company (MMC) produces UGC, video and creative for D2C brands, and creative for B2B and education campaigns.",
+      "points": [
+        {
+          "icon": "layers",
+          "title": "One brand thesis",
+          "text": "Every video is briefed against a single idea, so tests have a direction."
+        },
+        {
+          "icon": "users",
+          "title": "Creators, not stock",
+          "text": "Real people talking about the product in a natural way."
+        },
+        {
+          "icon": "loop",
+          "title": "A steady refresh",
+          "text": "New versions arrive on a schedule, before results tire."
+        }
+      ],
+      "image": "ugc/shoot.jpg",
+      "chip": "Made to run as ads"
+    },
+    "leaks": {
+      "style": "stack",
+      "eyebrow": "Where creative goes wrong",
+      "h2a": "Five ways ad creative",
+      "h2b": "goes wrong.",
+      "lede": "Creative is one of the biggest levers in paid media and one of the first to tire. Each stage below is where it goes wrong, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Start from one idea",
+        "tag": "Brand thesis and briefs",
+        "breaks": "Making videos with no shared idea behind them.",
+        "why": "Random creative cannot be compared, so nothing is learned. A clear idea gives every new video a reason.",
+        "does": "We write a brand thesis and short briefs for each video, so every test asks a clear question.",
+        "href": "services.html#brand",
+        "img": "ugc/brief.jpg"
+      },
+      {
+        "k": "Use real people",
+        "tag": "UGC and creator shoots",
+        "breaks": "Polished ads that look like ads.",
+        "why": "Feeds tend to reward content that looks like it belongs there. Creator-style video often earns more attention than a studio spot.",
+        "does": "We brief and shoot creator-style videos with real people, on location or at home, matched to your audience.",
+        "href": "services.html#content",
+        "img": "ugc/shoot.jpg"
+      },
+      {
+        "k": "Edit for the platform",
+        "tag": "Editing for ads",
+        "breaks": "Posting the same cut everywhere.",
+        "why": "The first seconds decide whether anyone keeps watching, and each platform and placement has its own shape.",
+        "does": "We edit each video with strong hooks and cut versions for the formats and placements you run.",
+        "href": "services.html#content",
+        "img": "ugc/edit.jpg"
+      },
+      {
+        "k": "Test what holds attention",
+        "tag": "Creative testing",
+        "breaks": "Choosing winners on opinion.",
+        "why": "The videos a team likes are not always the ones an audience watches. Only results show which ones hold attention.",
+        "does": "We test versions against each other and read the results together with your media buying, so the next round builds on what worked.",
+        "href": "performance-marketing.html",
+        "img": "ugc/test.jpg"
+      },
+      {
+        "k": "Refresh before it tires",
+        "tag": "Refresh cadence",
+        "breaks": "Running the same creative until it stops working.",
+        "why": "Every ad tires. A steady supply of new versions keeps results from falling off suddenly.",
+        "does": "We plan a steady flow of new versions, so fresh creative is ready before the current set tires.",
+        "href": "services.html#content",
+        "img": "ugc/refresh.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "creative is working.",
+      "note": "Read together with your cost per order or lead.",
+      "cards": [
+        {
+          "n": "Hook rate",
+          "d": "The share of viewers who stay past the opening seconds."
+        },
+        {
+          "n": "Hold rate",
+          "d": "How far through the video people keep watching."
+        },
+        {
+          "n": "Cost per order or lead",
+          "d": "What each result costs, by creative."
+        },
+        {
+          "n": "Time to fatigue",
+          "d": "How long a creative works before results fall."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where UGC and video fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Performance marketing",
+          "d": "Media buying on Meta, Google, Amazon and quick commerce, judged on contribution margin.",
+          "img": "pm-v3/channel-meta.jpg",
+          "href": "performance-marketing.html",
+          "link": "See Performance marketing"
+        },
+        {
+          "n": "Meta Ads",
+          "d": "Instagram and Facebook campaigns built as one funnel.",
+          "img": "meta/creative.jpg",
+          "href": "meta-ads.html",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "Influencer marketing",
+          "d": "Creator partnerships briefed against a single brand thesis.",
+          "img": "inf/shortlist.jpg",
+          "href": "influencer-marketing.html",
+          "link": "See Influencer marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "UGC and video production."
+    ],
+    "faq": [
+      {
+        "q": "What is UGC and video production?",
+        "a": "UGC means user-generated content. In advertising it usually means creator-style video with real people talking about a product, made to run as paid ads."
+      },
+      {
+        "q": "How does UGC and video production work with MMC?",
+        "a": "We brief one brand thesis, direct creators against it, edit many versions for the ad platforms, test them against each other and refresh before they tire."
+      },
+      {
+        "q": "What does UGC and video production cost?",
+        "a": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee a winning ad, because nobody can. We commit to a clear testing method, a refresh schedule and honest reporting on what worked."
+      },
+      {
+        "q": "Who is UGC and video production for?",
+        "a": "D2C brands that run paid ads, mostly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Your product or service, brand guidelines, access to ad performance, and a person who can approve scripts and cuts."
+      }
+    ],
+    "cta": {
+      "h2a": "See what your next round of",
+      "h2b": "creative should be.",
+      "lede": "On a call, with a senior strategist. We look at the creative you run today and what to test next."
+    },
+    "proof": {
+      "codes": [
+        "creative"
+      ],
+      "does": "make creative for"
+    },
+    "process": {
+      "h2a": "How we make creative,",
+      "h2b": "round by round.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Brief one thesis",
+          "d": "One brand thesis, then several angles for hook, offer and proof.",
+          "out": "A brief your media team can test."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Shoot and edit",
+          "d": "Creator and UGC-style footage cut into many hooks, lengths and formats.",
+          "out": "A bank of ads ready to run."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Test and refresh",
+          "d": "Angles run against each other, winners are refreshed before they tire.",
+          "out": "Creative that keeps holding attention."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "UGC and video for brands that",
+      "h2b": "live on creative.",
+      "good": {
+        "t": "Your ads tire fast and your team cannot make enough good creative.",
+        "why": "D2C brands get more angles to test, and B2B and education brands get video that explains and builds trust."
+      },
+      "not": {
+        "t": "You want one big film, or creative with no media plan.",
+        "why": "Creative earns its place by being tested in ads, so it needs a media plan."
+      }
+    }
+  }
+}

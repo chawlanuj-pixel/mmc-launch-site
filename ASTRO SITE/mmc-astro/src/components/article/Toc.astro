@@ -1,0 +1,18 @@
+---
+// Contents list: sticky beside the text on desktop, a collapsed disclosure above the text on tablet and phone.
+interface Props { blocks: { id: string; h: string }[]; faqHref?: string }
+const { blocks, faqHref = "#faq" } = Astro.props;
+---
+<details class="ar-toc" open data-art-toc>
+  <summary>In this guide</summary>
+  <ol>
+    {blocks.map((b) => <li><a href={"#" + b.id}>{b.h}</a></li>)}
+  </ol>
+  <div class="ar-toc__extra">
+    <a href={faqHref}>Jump to the questions</a>
+    <a href="/insights/">All insights</a>
+  </div>
+</details>
+<script is:inline>
+  (function () { var d = document.querySelector(".ar-toc"); if (d && window.matchMedia("(max-width: 999px)").matches) d.open = false; })();
+</script>

@@ -1,0 +1,9 @@
+/* Brand label + service chips: one look for every brand list (industries and services strips, the /work/ wall).
+   Sentence case, at least 12px, label first, then the service tags in the fixed order from src/lib/work.ts. */
+.pm-wall__svc.bm { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 12px; font-weight: 600; letter-spacing: 0; text-transform: none; line-height: 1.2; color: var(--n-fg-2); }
+.bm__g { font-weight: 800; color: #fff; background: var(--n-ink, #0F1E5E); border-radius: 999px; padding: 5px 10px; }
+.bm__t { background: var(--n-paper, #F3F1EC); border: 1px solid rgba(15,30,94,.12); border-radius: 999px; padding: 4px 9px; color: var(--n-fg-2, #3a4468); }
+.n-band--paper .bm__t { background: #fff; }
+.bm__go { font-weight: 700; color: #16329E; text-decoration: none; padding: 10px 2px; margin-left: 2px; }
+.bm__go:hover { text-decoration: underline; }
+.bm__go:focus-visible { outline: 3px solid #FFC528; outline-offset: 2px; border-radius: 6px; }

@@ -1,0 +1,30 @@
+---
+// "Good fit" and "Not a fit", one sentence of reasoning each. The "we are not for everyone" tone from the performance page.
+import "../../styles/svc-blocks.css";
+import { iconPaths } from "./icons";
+interface Side { t: string; why: string }
+interface Props { h2a: string; h2b: string; good: Side; not: Side; foot?: string; tone?: "white" | "paper" }
+const { h2a, h2b, good, not, foot, tone = "paper" } = Astro.props as Props;
+const S = { width: 16, height: 16, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": 2.6, "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true", focusable: "false" };
+---
+<section class={"n-band pm-band n-band--" + tone} id="who" aria-labelledby="who-h">
+  <div class="n-wrap">
+    <div class="svb-head n-rise">
+      <span class="n-eyebrow">Who it is for</span>
+      <h2 class="n-h2" id="who-h">{h2a} <span class="n-serif">{h2b}</span></h2>
+    </div>
+    <div class="svb-who n-rise d1">
+      <article class="svb-who__card svb-who__card--yes">
+        <span class="svb-who__tag"><span class="svb-who__ic"><svg {...S} set:html={iconPaths("check")} /></span>Good fit</span>
+        <h3 class="svb-who__t">{good.t}</h3>
+        <p class="svb-who__why">{good.why}</p>
+      </article>
+      <article class="svb-who__card svb-who__card--no">
+        <span class="svb-who__tag"><span class="svb-who__ic"><svg {...S} set:html={iconPaths("cross")} /></span>Not a fit</span>
+        <h3 class="svb-who__t">{not.t}</h3>
+        <p class="svb-who__why">{not.why}</p>
+      </article>
+    </div>
+    {foot ? <p class="svb-who__foot n-rise d2">{foot}</p> : null}
+  </div>
+</section>

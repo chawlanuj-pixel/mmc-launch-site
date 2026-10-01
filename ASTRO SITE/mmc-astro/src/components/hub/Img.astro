@@ -1,0 +1,8 @@
+---
+import { dims } from "../../lib/hub";
+/* Fixed ratio set: 1 / 1.05 (hero tiles), 4 / 3 (stage cards), 3 / 2 (related, channel and article images). alt is empty only when a heading or caption beside the image carries the meaning. */
+interface Props { name: string; ratio: string; class?: string; eager?: boolean; pos?: string; alt?: string }
+const { name, ratio, class: cls = "", eager = false, pos, alt = "" } = Astro.props;
+const [w, h] = dims(ratio);
+---
+<img class={"pm-img " + cls} src={"/assets/" + name} alt={alt} width={w} height={h} decoding="async" loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : undefined} style={`aspect-ratio:${ratio};object-position:${pos || "50% 50%"}`} />

@@ -1,0 +1,220 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Shell from "../../../components/Shell.astro";
+import PageHero from "../../../components/pages/PageHero.astro";
+import PageFx from "../../../components/pages/PageFx.astro";
+import FreeToolsStrip from "../../../components/shared/FreeToolsStrip.astro";
+import PreFooterCta from "../../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../../components/shared/StickyBookingBar.astro";
+import { BOOK } from "../../../lib/site";
+import Answer from "../../../components/hub/Answer.astro";
+import Beyond from "../../../components/hub/Beyond.astro";
+import Faq from "../../../components/hub/Faq.astro";
+import ProcessBand from "../../../components/shared/ProcessBand.astro";
+import WhoFor from "../../../components/shared/WhoFor.astro";
+import ProofWall from "../../../components/shared/ProofWall.astro";
+import { relatedCards } from "../../../lib/related";
+import Img from "../../../components/hub/Img.astro";
+import Arrow from "../../../components/hub/Arrow.astro";
+import PmMargin from "../../../islands/pages/PmMargin.jsx";
+import PmPayback from "../../../islands/pages/PmPayback.jsx";
+import { pageHead } from "../../../lib/pagehead";
+import { fixDeep, href } from "../../../lib/links";
+import raw from "../../../data/pages/pm.json";
+import "../../../styles/pg-wordmark.css";
+import "../../../styles/pm-creative.css";
+
+const D = fixDeep(raw);
+const AUDIT = BOOK;
+const book = (s: string) => `window.mmcBookCall('${s}', event)`;
+/* Generated channel art lives in assets/pm-v3/, everything else in pm-v2/ unless the name carries a folder. */
+const V3 = ["channel-meta.jpg", "channel-google.jpg", "channel-amazon.jpg", "channel-quickcommerce.jpg", "process.jpg"];
+const img = (n: string) => (n.includes("/") ? n : (V3.includes(n) ? "pm-v3/" : "pm-v2/") + n);
+
+const TILES = [
+  { img: "channel-meta.jpg", pos: "50% 38%", label: "Meta", note: "Reels" },
+  { img: "channel-google.jpg", pos: "60% 50%", label: "Google", note: "Search + Shopping" },
+  { img: "channel-amazon.jpg", pos: "50% 50%", label: "Amazon", note: "Sponsored ads" },
+  { img: "channel-quickcommerce.jpg", pos: "42% 50%", label: "Quick commerce", note: "10-minute delivery" },
+];
+const CLAIMS = [
+  { n: "Meta", mark: "/assets/platforms/meta.svg", how: "Saw the Reel, bought within 7 days of clicking" },
+  { n: "Google", mark: "/assets/platforms/google.svg", how: "Searched the brand name, then bought" },
+  { n: "Amazon", mark: "/assets/platforms/amazon.svg", how: "Sponsored ad on the way to the same purchase" },
+];
+const CHANNELS = [
+  { id: "meta", pos: "50% 40%", img: "channel-meta.jpg", name: "Meta", mark: "/assets/platforms/meta.svg", href: "meta-ads.html", link: "Meta Ads, in detail",
+    rows: [["Structure", "Prospecting, retargeting and conversion built as one funnel."], ["Creative", "New angles tested against a single brand thesis."], ["Measurement", "Server-side events checked against GA4 and your store data."]] },
+  { id: "google", pos: "50% 55%", img: "channel-google.jpg", name: "Google", mark: "/assets/platforms/google.svg", href: "google-ads.html", link: "Google Ads, in detail",
+    rows: [["Structure", "Search and shopping split by intent, with brand search kept separate."], ["Creative", "Feeds, ad copy and landing pages written for the query."], ["Measurement", "Judged on contribution, not on the conversions Google reports."]] },
+  { id: "amazon", pos: "50% 50%", img: "channel-amazon.jpg", name: "Amazon", mark: "/assets/platforms/amazon.svg", href: "amazon-ads.html", link: "Amazon Ads, in detail", tag: "We run this for The Growing Giraffe",
+    rows: [["Structure", "Sponsored ads sit inside the wider account budget."], ["Creative", "Listing content and A+ built alongside the ads."], ["Measurement", "Read against total sales, not only ad-attributed sales."]] },
+  { id: "qc", pos: "50% 55%", img: "channel-quickcommerce.jpg", name: "Quick commerce", mark: null, href: "quick-commerce-ads.html", link: "Quick commerce ads, in detail", tag: "We run this for The Growing Giraffe",
+    rows: [["Structure", "Platform ads planned with availability and stock."], ["Creative", "Tiles and listings made for a scroll of seconds."], ["Measurement", "Tracked at blended level, since platform data is thin."]] },
+];
+const CREATIVE = [
+  { img: "ugc/brief.jpg", t: "Brief", d: "One brand thesis, then several angles: the hook, the offer and the proof, written before anything is shot." },
+  { img: "ugc/shoot.jpg", t: "Shoot", d: "Creator and UGC-style video, founder and product footage, shot so it can be cut into many ads." },
+  { img: "ugc/edit.jpg", t: "Edit", d: "Hooks, lengths and formats cut from the same footage, plus statics and carousels." },
+  { img: "ugc/test.jpg", t: "Test", d: "Angles run against each other on a fixed budget, with a rule agreed up front for what counts as a winner." },
+  { img: "ugc/refresh.jpg", t: "Refresh", d: "Creative tires. New versions of the winners go in before results slip." },
+];
+---
+<BaseLayout {...pageHead("pm", "/services/performance-marketing/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <PageHero wm="Services" eyebrow="● Performance marketing"
+        lines={["Performance marketing", 'that <span class="em-serif">pays back in profit</span>.']}
+        sub="Meta, Google, Amazon and quick-commerce media for D2C, B2B and education brands, judged on contribution margin, not on what a platform reports."
+        primary={{ label: AUDIT, book: "pm-hero" }} secondary={{ label: "See the work", href: "#proof" }}>
+        <ul slot="chips" class="reveal d6 pmh__chips" data-enter aria-label="Channels we run">
+          {TILES.map((t) => <li>{t.label}</li>)}
+        </ul>
+        <div class="pmh__mosaic">
+          {TILES.map((t, k) => (
+            <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+              <Img name={img(t.img)} ratio="1 / 1.05" class="pmh__img" pos={t.pos} eager={k < 2} />
+              <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+            </figure>
+          ))}
+        </div>
+        <a class="pmh__check" href="#margin" aria-label="Illustration: a 3x ROAS order that loses 33 rupees. See the maths.">
+          <span class="pmh__check-k">The platform says</span>
+          <span class="pmh__check-v">3.0x ROAS</span>
+          <span class="pmh__check-rule" aria-hidden="true"></span>
+          <span class="pmh__check-k">The order keeps</span>
+          <span class="pmh__check-v pmh__check-v--loss">−₹33</span>
+          <span class="pmh__check-foot">Illustration: one ₹1,000 order, ₹300 contribution. <u>See the maths ↓</u></span>
+        </a>
+      </PageHero>
+
+      <Answer
+        lead="Performance marketing buys and manages paid media for a brand, then answers for what it returns."
+        hl="answers for what it returns"
+        who="MMC runs the account structure, the creative and the reporting as one system, judged on contribution margin, not on what a platform reports."
+        points={[
+          { icon: "grid", title: "Four channels", text: "Meta, Google, Amazon and quick commerce." },
+          { icon: "layers", title: "One system", text: "Account structure, creative and reporting are run together." },
+          { icon: "gauge", title: "Contribution margin", text: "The measure is the profit left after variable costs." },
+        ]}
+        image="au/look-tracking.jpg" chip="Judged on contribution margin" />
+
+      <PmMargin client:visible breakeven={href("breakeven-roas-calculator.html")} funnel={href("funnel-roas-calculator.html")} unit={href("unit-economics-calculator.html")} />
+
+      <section class="n-band n-band--white pm-band" id="claims">
+        <div class="n-wrap">
+          <header class="pm-head n-rise">
+            <span class="n-eyebrow">Attribution</span>
+            <h2 class="n-h2">One order. <span class="n-serif">Three dashboards</span> claim it.</h2>
+            <p class="n-lede">A customer sees a Reel, searches your brand and buys. Each platform counts the sale under its own rules, so the dashboards add up to more revenue than you banked.</p>
+          </header>
+          <figure class="pmc n-rise d1" style="margin:0" aria-label="Illustration: three platform dashboards each report the same ₹1,000 order, while the bank shows ₹1,000 once">
+            <div class="pmc__claims">
+              {CLAIMS.map((c) => (
+                <article class="pmc__claim">
+                  <div class="pmc__who"><img src={c.mark} alt="" width="28" height="28" loading="lazy" /><b>{c.n} reports</b></div>
+                  <div class="pmc__val">₹1,000</div>
+                  <div class="pmc__unit">1 purchase</div>
+                  <p>{c.how}</p>
+                </article>
+              ))}
+            </div>
+            <div class="pmc__join" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="pmc__sum">
+              <div class="pmc__sum-l"><span>Dashboards add up to</span><b class="pmc__over">₹3,000</b></div>
+              <span class="pmc__ne" aria-hidden="true">≠</span>
+              <div class="pmc__sum-r"><span>Actually in your bank</span><b>₹1,000</b></div>
+            </div>
+            <figcaption class="pmc__note">Illustration, not a client result. One order, one customer, three attribution windows.</figcaption>
+          </figure>
+          <div class="pmc__how n-rise d2">
+            <b>How we handle it</b>
+            <p>We judge the account on the total: revenue in your store and bank against total ad spend. Platform numbers are used to compare campaigns inside one platform, not to add up the business.</p>
+          </div>
+        </div>
+      </section>
+
+      <PmPayback client:visible />
+
+      <section class="n-band n-band--white pm-band" id="channels">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">What we run</span>
+            <h2 class="n-h2">Four channels, one <span class="n-serif">account structure.</span></h2>
+            <p class="n-lede">Most brands buy these from separate vendors. Here they share a budget, a creative thesis and one definition of a good result.</p>
+          </div>
+          <div class="pm-channels">
+            {CHANNELS.map((c, k) => (
+              <article class={"pm-ch n-rise d" + ((k % 2) + 1)}>
+                <Img name={img(c.img)} ratio="3 / 2" class="pm-ch__img" pos={c.pos} />
+                <div class="pm-ch__top">
+                  <div class="pm-ch__mark">
+                    {c.mark ? <img src={c.mark} alt="" loading="lazy" width="32" height="32" /> : (
+                      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M18 3 7 18h7l-2 11 11-15h-7z" fill="#0B1020" /></svg>
+                    )}
+                    <h3 class="pm-ch__name">{c.name}</h3>
+                  </div>
+                  {c.tag && <span class="pm-ch__tag">{c.tag}</span>}
+                </div>
+                <dl class="pm-ch__list">
+                  {c.rows.map(([k2, v]) => (<div><dt>{k2}</dt><dd>{v}</dd></div>))}
+                </dl>
+                {c.href
+                  ? <a class="pm-textlink" href={href(c.href)}>{c.link}<Arrow /></a>
+                  : <button class="pm-textlink" onclick={book("pm-ch-" + c.id)}>Talk to us about {c.name}<Arrow /></button>}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="creative">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Creative, content and UGC</span>
+            <h2 class="n-h2">Creative decides <span class="n-serif">who stops scrolling.</span></h2>
+            <p class="n-lede">On Meta, YouTube and quick commerce, the ad itself does most of the targeting and most of the selling. So we run creative as a testing programme, not a one-off shoot, and judge every new angle on the same contribution margin as the media.</p>
+          </div>
+          <ol class="pmx-row">
+            {CREATIVE.map((c, k) => (
+              <li class={"pmx-card n-rise d" + Math.min(4, k + 1)}>
+                <Img name={c.img} ratio="4 / 3" class="pmx-img" pos="50% 50%" />
+                <span class="pmx-n">{String(k + 1).padStart(2, "0")}</span>
+                <h3>{c.t}</h3>
+                <p>{c.d}</p>
+              </li>
+            ))}
+          </ol>
+          <div class="pmx-links n-rise">
+            <a class="pm-textlink" href={href("guide-creative-testing.html")}>How D2C brands test ad creative<Arrow /></a>
+            <a class="pm-textlink" href={href("ugc-and-video.html")}>UGC and video production<Arrow /></a>
+            <a class="pm-textlink" href={href("social-media-creatives.html")}>Social media creatives<Arrow /></a>
+            <a class="pm-textlink" href={href("influencer-marketing.html")}>Influencer marketing<Arrow /></a>
+          </div>
+        </div>
+      </section>
+
+      <ProcessBand h2a="How we run performance marketing," h2b="week to week." tone="paper" note="The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes." steps={[
+        { when: "Days 1 to 30", t: "Audit and set the floor", d: "We read your accounts and unit economics, fix tracking and agree your break-even ROAS before changing spend.", out: "A clear floor: the result each rupee has to clear." },
+        { when: "Days 31 to 60", t: "Structure and test", d: "Campaigns and budgets are set against contribution, and creative runs as a testing programme with a rule for what counts as a winner.", out: "A structure where every channel has a job." },
+        { when: "Days 61 to 90", t: "Scale what clears the floor", d: "Budget moves to what holds up on contribution margin, and weekly reporting shows profit, not platform ROAS.", out: "Spend that grows only where the maths still works." },
+      ]} />
+
+      <WhoFor h2a="Performance marketing for brands that" h2b="know their margins, or want to." tone="white"
+        good={{ t: "You sell direct online and want ad spend judged on profit.", why: "Founders and growth heads whose ROAS has dropped, CAC keeps rising or creative has gone stale get a plan built on their margins; B2B and education teams get the same method measured on qualified leads and enquiries." }}
+        not={{ t: "You want a guaranteed ROAS, or to change agencies every few months.", why: "A ROAS target alone can hide a loss, and accounts need a steady hand for creative and learning to compound." }}
+        foot="B2B or education? We run paid media as lead generation too, where the goal is qualified leads and enrolments, not baskets." />
+
+      <ProofWall codes={["perf"]} does="run paid media for" book="pm-proof" tone="paper" />
+
+      <Beyond tone="white" Y={{ eyebrow: "Related", h2a: "Where performance marketing fits in", h2b: "the wider picture.", cards: relatedCards(["meta-ads.html", "google-ads.html", "d2c.html"]) }} />
+
+      <Faq tone="paper" title={["Questions about", "performance marketing."]} faq={D.PM_FAQ} />
+
+      <FreeToolsStrip page="performance-marketing" bg="white" />
+      <PreFooterCta source="pm" h2a="Find out what your ad spend" h2b="really returns." lede="On a call, with a senior strategist. We read your accounts against your break-even ROAS and plan the first 30 days." />
+    </main>
+    <StickyBookingBar source="pm" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

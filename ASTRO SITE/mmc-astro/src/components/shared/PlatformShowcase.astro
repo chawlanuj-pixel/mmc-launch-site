@@ -1,0 +1,100 @@
+---
+// Real platform marks plus a dashboard-style panel for the four paid-channel pages. The panel is illustrative:
+// it shows how we structure an account, with no figures, and says so. Only real logo files are used; apps without
+// a logo file (Blinkit, Zepto, Instamart) are named in text.
+import "../../styles/svc-blocks.css";
+interface Row { n: string; s?: string; pill?: string; tone?: "warn" | "info"; bars?: [number, number] }
+interface Props { kind: "meta" | "google" | "amazon" | "qc" }
+const { kind } = Astro.props as Props;
+const D = {
+  meta: {
+    eyebrow: "Inside the account", h2a: "Meta, set up as", h2b: "one funnel.",
+    lede: "Prospecting, retargeting and a creative test lane share one budget and one definition of a good result.",
+    marks: [{ n: "Meta", src: "/assets/platforms/meta.svg" }],
+    bar: { title: "Meta Ads Manager", logo: "/assets/platforms/meta.svg", tag: "Campaigns" },
+    rows: [
+      { n: "Prospecting", s: "New audiences, several creative angles", pill: "Active", bars: [78, 52] },
+      { n: "Retargeting", s: "Visitors and past buyers, capped", pill: "Active", bars: [42, 64] },
+      { n: "Creative test lane", s: "New angles against the current winner", pill: "Testing", tone: "info", bars: [28, 40] },
+      { n: "Conversions API", s: "Server events checked against your store", pill: "Checked", bars: [90, 90] },
+    ] as Row[],
+    key: ["Spend", "Contribution"],
+  },
+  google: {
+    eyebrow: "Inside the account", h2a: "Google, split by", h2b: "buying intent.",
+    lede: "Brand search is kept apart so it cannot hide how the rest of the account is doing.",
+    marks: [{ n: "Google Ads", src: "/assets/platforms/google.svg" }],
+    bar: { title: "Google Ads", logo: "/assets/platforms/google.svg", tag: "Campaigns" },
+    rows: [
+      { n: "Brand search", s: "Kept separate, judged separately", pill: "Separate", tone: "info", bars: [24, 70] },
+      { n: "Non-brand search", s: "By intent, with negatives maintained", pill: "Active", bars: [60, 48] },
+      { n: "Shopping", s: "Product feed cleaned before spend", pill: "Active", bars: [66, 56] },
+      { n: "Performance Max", s: "Given clean inputs and asset groups", pill: "Watched", tone: "warn", bars: [48, 38] },
+    ] as Row[],
+    key: ["Spend", "Contribution"],
+  },
+  amazon: {
+    eyebrow: "Inside the account", h2a: "Amazon ads, read against", h2b: "total sales.",
+    lede: "Sponsored ads are planned with the listing and your stock, then judged next to total sales, not only the sales Amazon attributes to ads.",
+    marks: [{ n: "Amazon Ads", src: "/assets/platforms/amazon.svg" }],
+    bar: { title: "Amazon Ads console", logo: "/assets/platforms/amazon.svg", tag: "Sponsored ads" },
+    rows: [
+      { n: "Sponsored Products", s: "Best-stocked, best-converting listings first", pill: "Active", bars: [72, 50] },
+      { n: "Sponsored Brands", s: "Brand store and category defence", pill: "Active", bars: [38, 44] },
+      { n: "Sponsored Display", s: "Retargeting, capped", pill: "Watched", tone: "warn", bars: [26, 30] },
+      { n: "Total sales view", s: "Ad-attributed next to everything else", pill: "Reported", tone: "info", bars: [86, 62] },
+    ] as Row[],
+    key: ["Ad-attributed", "Total"],
+  },
+  qc: {
+    eyebrow: "Inside the listing", h2a: "Quick commerce, planned around", h2b: "what is in stock.",
+    lede: "Shoppers choose in seconds and availability decides what they see, so tiles, sponsored placements and stock are planned together.",
+    marks: [{ n: "Blinkit" }, { n: "Zepto" }, { n: "Instamart" }],
+    bar: { title: "Quick-commerce app", logo: "", tag: "Listings and ads" },
+    rows: [
+      { n: "Listing tile", s: "Pack, name and first image legible at thumbnail size", pill: "Checked", bars: [80, 60] },
+      { n: "Sponsored placement", s: "Search and category, where it counts", pill: "Active", bars: [54, 46] },
+      { n: "Availability by dark store", s: "Ads paused where stock runs low", pill: "Low stock", tone: "warn", bars: [34, 20] },
+      { n: "Blended view", s: "App numbers read next to total sales", pill: "Reported", tone: "info", bars: [70, 58] },
+    ] as Row[],
+    key: ["Spend", "Sales"],
+  },
+}[kind];
+---
+<section class="n-band n-band--white pm-band" id="platform" aria-labelledby="plat-h">
+  <div class="n-wrap">
+    <div class="svb-plat">
+      <div class="n-rise">
+        <div class="svb-head" style="margin-bottom:0">
+          <span class="n-eyebrow">{D.eyebrow}</span>
+          <h2 class="n-h2" id="plat-h">{D.h2a} <span class="n-serif">{D.h2b}</span></h2>
+          <p class="svb-lede">{D.lede}</p>
+        </div>
+        <ul class="svb-plat__marks" aria-label="Platforms we run" style="list-style:none;padding:0">
+          {D.marks.map((m: any) => (
+            <li class={"svb-plat__mark" + (m.src ? "" : " svb-plat__mark--text")}>
+              {m.src ? <img src={m.src} alt="" width="26" height="26" loading="lazy" decoding="async" /> : null}{m.n}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <figure class="svb-dash n-rise d1" style="margin:0" aria-label={"Illustration of a " + D.bar.title + " view. Not a client result."}>
+        <div class="svb-dash__bar">
+          {D.bar.logo ? <img src={D.bar.logo} alt="" width="26" height="26" loading="lazy" decoding="async" /> : null}
+          <b>{D.bar.title}</b><span>{D.bar.tag}</span>
+        </div>
+        <ul class="svb-dash__rows" style="list-style:none">
+          {D.rows.map((r: Row) => (
+            <li class="svb-dash__row">
+              <span class="svb-dash__name">{r.n}<small>{r.s}</small></span>
+              <span class={"svb-dash__pill" + (r.tone ? " svb-dash__pill--" + r.tone : "")}>{r.pill}</span>
+              <span class="svb-dash__bars" aria-hidden="true"><i style={`width:${r.bars?.[0]}%`}></i><i style={`width:${r.bars?.[1]}%`}></i></span>
+            </li>
+          ))}
+        </ul>
+        <div class="svb-dash__key" aria-hidden="true">{D.key.map((k: string) => <span>{k}</span>)}</div>
+        <figcaption class="svb-dash__foot">Illustrative layout of how we structure an account. Bars show no real figures and this is not a client result.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

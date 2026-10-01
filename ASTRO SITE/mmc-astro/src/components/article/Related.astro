@@ -1,0 +1,29 @@
+---
+// "Read next": the other guides (from the registry, in the index card anatomy), then related tools and services.
+import { href } from "../../lib/links";
+import GuideCard from "../insights/GuideCard.astro";
+interface Card { n: string; d: string; img: string; href: string; link: string }
+interface Props { guides: { h: string; d: string; img: string; href: string; tag: string; min: number }[]; cards: Card[]; eyebrow?: string }
+const { guides, cards, eyebrow = "Related" } = Astro.props;
+const kind = (u: string) => /^\/tools\//.test(u) ? ["Free tool", "Open the calculator"] : ["Service", "See the service"];
+const others = cards.map((c) => ({ ...c, href: href(c.href) })).filter((c) => !/^\/guides\//.test(c.href));
+---
+<section class="ix-band ix-band--paper" id="related">
+  <div class="n-wrap">
+    <div class="ix-head ed-rise">
+      <p class="ix-eyebrow">Read next</p>
+      <h2 class="ix-h2"><b>Keep</b> <em>reading.</em></h2>
+    </div>
+    <div class="ix-grid ix-grid--2">
+      {guides.map((g) => <GuideCard href={g.href} img={g.img} tag={g.tag} title={g.h} d={g.d} meta={g.min + " min read"} />)}
+    </div>
+    {others.length > 0 && (
+      <div class="ar-more">
+        <p class="ix-eyebrow ed-rise">{eyebrow + " tools and services"}</p>
+        <div class="ix-grid">
+          {others.map((c) => <GuideCard href={c.href} img={"/assets/" + c.img} tag={kind(c.href)[0]} title={c.n} d={c.d} go={c.link || kind(c.href)[1]} />)}
+        </div>
+      </div>
+    )}
+  </div>
+</section>

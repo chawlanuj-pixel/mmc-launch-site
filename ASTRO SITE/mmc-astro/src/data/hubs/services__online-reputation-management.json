@@ -1,0 +1,377 @@
+{
+  "file": "online-reputation-management.html",
+  "path": "/services/online-reputation-management/",
+  "key": "orm",
+  "title": "Online Reputation Management in India | MMC",
+  "description": "MMC manages online reputation: genuine reviews, honest replies and accurate profiles on Google and review sites, for education, B2B and D2C.",
+  "ogTitle": "Online reputation management that earns trust",
+  "ogDescription": "Genuine reviews, honest replies and accurate profiles.",
+  "ogAlt": "Monday Marketing Company: online reputation management.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/online-reputation-management.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Online reputation management",
+          "item": "https://www.mondaymarketing.company/online-reputation-management.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/online-reputation-management.html#webpage",
+      "url": "https://www.mondaymarketing.company/online-reputation-management.html",
+      "name": "Online Reputation Management in India | MMC",
+      "description": "MMC manages online reputation: genuine reviews, honest replies and accurate profiles on Google and review sites, for education, B2B and D2C.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/online-reputation-management.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/online-reputation-management.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/online-reputation-management.html#service",
+      "name": "Online reputation management",
+      "serviceType": "Online reputation management",
+      "description": "Online reputation management: genuine reviews, replies and accurate profiles.",
+      "url": "https://www.mondaymarketing.company/online-reputation-management.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/online-reputation-management.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is online reputation management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Online reputation management is the work of making sure the ratings, reviews and profiles people find about you are accurate, current and a fair picture of your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does online reputation management work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We audit what people see, help you ask real customers, parents and students for honest reviews, reply to every review, keep profiles accurate and report on what changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does online reputation management cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot promise to remove reviews or lift a rating, and genuine reviews stay. We commit to honest replies, real review requests and clear reporting. We never write or buy reviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is online reputation management for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Education brands, B2B companies and D2C brands whose buyers check reviews first. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your review and business profiles, your customer or student contact process, and a person who can approve replies."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "orm",
+    "wm": "ORM",
+    "eyebrow": "● Online reputation management",
+    "h1": [
+      "Online reputation management",
+      [
+        "that ",
+        "earns trust",
+        "."
+      ]
+    ],
+    "sub": "Genuine reviews, thoughtful replies and accurate profiles, so the picture a buyer, parent or student finds before they contact you is a fair one.",
+    "tiles": [
+      {
+        "img": "orm/audit.jpg",
+        "pos": "50% 50%",
+        "label": "Audit",
+        "note": "Where you stand today"
+      },
+      {
+        "img": "orm/earn.jpg",
+        "pos": "50% 50%",
+        "label": "Earn reviews",
+        "note": "Ask genuine customers"
+      },
+      {
+        "img": "orm/reply.jpg",
+        "pos": "50% 50%",
+        "label": "Reply",
+        "note": "Every review, well handled"
+      },
+      {
+        "img": "orm/profile.jpg",
+        "pos": "50% 50%",
+        "label": "Profiles",
+        "note": "Accurate everywhere"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Online reputation management is the work of making sure the ratings, reviews and profiles people find about you are accurate, current and a fair picture of your business.",
+      "hl": "accurate, current",
+      "who": "Monday Marketing Company (MMC) manages reputation for education brands, B2B companies and D2C brands, with a focus on genuine reviews and honest replies.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Audit first",
+          "text": "We map what people see on Google, review sites and social before we change anything."
+        },
+        {
+          "icon": "users",
+          "title": "Genuine reviews",
+          "text": "We help you ask real customers, parents and students, and reply to every review."
+        },
+        {
+          "icon": "gauge",
+          "title": "Reported monthly",
+          "text": "Ratings, review volume, response time and the themes behind them."
+        }
+      ],
+      "image": "orm/reply.jpg",
+      "chip": "Genuine reviews, honest replies"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where reputation goes missing",
+      "h2a": "Five ways reputation",
+      "h2b": "goes wrong.",
+      "lede": "Buyers, parents and students check you before they contact you. Each stage below is a place that check can go wrong, and the work that prevents it."
+    },
+    "stages": [
+      {
+        "k": "See what they see",
+        "tag": "Reputation audit",
+        "breaks": "Not knowing what people find when they search your name.",
+        "why": "Most people look you up before they enquire. If you have never checked what shows up, you are guessing at the first impression.",
+        "does": "We audit your ratings, reviews, profiles and search results across Google, review sites and social, and show you what a prospective customer sees.",
+        "href": "audit.html",
+        "img": "orm/audit.jpg"
+      },
+      {
+        "k": "Earn more real reviews",
+        "tag": "Review generation",
+        "breaks": "Hoping happy customers will leave reviews on their own.",
+        "why": "Unhappy customers are more likely to post unprompted, so a few loud complaints can outweigh many quiet, satisfied customers.",
+        "does": "We set up simple, honest ways to ask genuine customers, parents and students for a review at the right moment, within each platform's rules.",
+        "href": "services.html#brand",
+        "img": "orm/earn.jpg"
+      },
+      {
+        "k": "Reply to every review",
+        "tag": "Response management",
+        "breaks": "Leaving reviews unanswered, or answering defensively.",
+        "why": "A reply is read by everyone who reads the review. A calm, specific answer shows how you treat people when something goes wrong.",
+        "does": "We draft and manage replies to positive and negative reviews in your voice, and pass genuine problems to your team to resolve.",
+        "href": "services.html#brand",
+        "img": "orm/reply.jpg"
+      },
+      {
+        "k": "Keep the facts right",
+        "tag": "Profile and listing management",
+        "breaks": "Old hours, wrong phone numbers and half-filled profiles.",
+        "why": "Out-of-date or inconsistent information across listings makes a business look careless, and sends people to the wrong place.",
+        "does": "We keep your profiles and listings accurate and consistent, with current photos, contact details and answers to common questions.",
+        "href": "services.html#brand",
+        "img": "orm/profile.jpg"
+      },
+      {
+        "k": "Watch and report",
+        "tag": "Monitoring and reporting",
+        "breaks": "Finding out about a problem weeks after it started.",
+        "why": "Reputation changes gradually, then suddenly. Without regular reporting, a fall in rating or a new theme of complaints goes unnoticed.",
+        "does": "We monitor ratings and reviews and report monthly on rating, review volume, response time and the themes behind what people say.",
+        "href": "audit.html",
+        "img": "orm/report.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "your reputation is working.",
+      "note": "The numbers a prospective customer reads, whether or not you do.",
+      "cards": [
+        {
+          "n": "Average rating",
+          "d": "How you look across Google and review sites."
+        },
+        {
+          "n": "Review volume and recency",
+          "d": "Whether the reviews are plentiful and recent."
+        },
+        {
+          "n": "Response time",
+          "d": "How quickly and how well reviews are answered."
+        },
+        {
+          "n": "Themes in feedback",
+          "d": "What people keep praising, and what they keep raising."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where reputation management fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Educational institutes",
+          "d": "Websites, lead generation and reputation for colleges and education brands.",
+          "img": "shared/education.jpg",
+          "href": "education.html",
+          "link": "See Educational institutes"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Branding",
+          "d": "Positioning, naming, logo, voice and guidelines.",
+          "img": "brand/logo.jpg",
+          "href": "branding.html",
+          "link": "See Branding"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "online reputation management."
+    ],
+    "faq": [
+      {
+        "q": "What is online reputation management?",
+        "a": "Online reputation management is the work of making sure the ratings, reviews and profiles people find about you are accurate, current and a fair picture of your business."
+      },
+      {
+        "q": "How does online reputation management work with MMC?",
+        "a": "We audit what people see, help you ask real customers, parents and students for honest reviews, reply to every review, keep profiles accurate and report on what changes."
+      },
+      {
+        "q": "What does online reputation management cost?",
+        "a": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot promise to remove reviews or lift a rating, and genuine reviews stay. We commit to honest replies, real review requests and clear reporting. We never write or buy reviews."
+      },
+      {
+        "q": "Who is online reputation management for?",
+        "a": "Education brands, B2B companies and D2C brands whose buyers check reviews first. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your review and business profiles, your customer or student contact process, and a person who can approve replies."
+      }
+    ],
+    "cta": {
+      "h2a": "See what people find when",
+      "h2b": "they search your name.",
+      "lede": "On a call, with a senior strategist. We look at your ratings and profiles together."
+    },
+    "proof": {
+      "codes": [],
+      "does": "manage reputation for"
+    },
+    "process": {
+      "h2a": "How we manage reputation,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "See what they see",
+          "d": "We audit ratings, reviews, profiles and search results across the places buyers look.",
+          "out": "A clear picture of your reputation today."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Earn and answer reviews",
+          "d": "We help you ask real customers, parents and students for honest reviews, and reply to every review.",
+          "out": "More genuine reviews and calm, thoughtful replies."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Keep the facts right",
+          "d": "Profiles and listings are kept accurate, and monitoring is reported to you.",
+          "out": "A fair picture that stays current."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Reputation work for brands where",
+      "h2b": "trust decides.",
+      "good": {
+        "t": "Buyers, parents or students check your reviews before they contact you.",
+        "why": "Colleges and schools lose enquiries to doubtful ratings, and B2B and D2C brands gain from a picture that matches reality."
+      },
+      "not": {
+        "t": "You want bad reviews removed or good ones bought.",
+        "why": "We never create or buy reviews, and genuine reviews stay."
+      }
+    }
+  }
+}

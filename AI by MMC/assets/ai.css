@@ -541,3 +541,40 @@ h1,h2{color:var(--ink)}
   .svcx__stage{aspect-ratio:16/10;min-height:0;order:-1}
   .svcx__txt span{white-space:normal}
 }
+
+
+/* ── Mobile polish ─────────────────────────────────────────────────────── */
+.fab-panel{max-height:calc(100vh - 150px);max-height:calc(100dvh - 150px);overflow-y:auto;overscroll-behavior:contain}
+.fab-panel a.all{min-height:44px;display:inline-flex;align-items:center}
+.related a{min-height:44px;display:inline-flex;align-items:center}
+.answer__tag{font-size:12px}
+.flow__hub span{font-size:12px}
+
+@media(max-width:700px){
+  /* The hub gets its own row; the chips go back to compact pills instead of
+     stretching to the hub's height. */
+  .flow{align-items:center}
+  /* 118px circle whose side margins add up to the rest of the row, so it sits
+     alone on its line without stretching to the full width. */
+  .flow__hub{flex:0 0 118px;width:118px;height:118px;margin:0 calc((100% - 118px) / 2) 8px}
+  .flow__n{padding:10px 16px}
+  .fab{width:64px;height:64px}
+  .fab__ai{font-size:18px}
+  .hero__tools{font-size:16px}
+  .fab-panel{bottom:80px}
+  .fab-panel p{font-size:15px}
+  /* Touch cannot hover to pause, so the loops pause for motion-sensitive users
+     and run slower for everyone else. */
+  .marq *{animation-duration:calc(var(--marq-s,40s) * 1.6)}
+}
+@media(max-width:900px){
+  /* Hero copy before the visual stack so the headline and CTAs sit above the fold. */
+  .hero__grid > .fan{order:2}
+  .hero__grid > .hero__txt{order:1}
+  .stack{min-height:min(84vw,340px)}
+}
+@media(min-width:701px) and (max-width:900px){
+  .aud{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(hover:none){.marq:active *{animation-play-state:paused}}
+@media(prefers-reduced-motion:reduce){.marq *{animation:none!important}}

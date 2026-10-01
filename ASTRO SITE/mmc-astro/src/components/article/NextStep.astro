@@ -1,0 +1,16 @@
+---
+// End-of-article panel: one quiet link (calculator or service). The one booking action is the closing band below.
+interface Props { h: string; lede: string; label: string; href: string; img: string }
+const { h, lede, label, href, img } = Astro.props;
+---
+<aside class="ar-next" aria-labelledby="ar-next-h">
+  <span class="ar-next__pic"><img src={img} alt="" width="480" height="320" loading="lazy" decoding="async" /></span>
+  <div class="ar-next__txt">
+    <p class="ix-eyebrow">Next step</p>
+    <h2 id="ar-next-h">{h}</h2>
+    <p>{lede}</p>
+    <div class="ar-next__act">
+      <a class="ix-all" href={href}>{label}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</aside>

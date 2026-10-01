@@ -1,0 +1,98 @@
+---
+// The 3 guide articles: shared blue PageHero, a reading layout (contents, key takeaways, body at ~68ch),
+// the matching calculator, related guide cards, FAQ, prev/next and the closing band. Styles: insights-v2.css (ix-)
+// and article-v2.css (ar-). Content comes unchanged from src/data/guides/*.json.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageHero from "../../components/pages/PageHero.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import Summary from "../../components/article/Summary.astro";
+import NextStep from "../../components/article/NextStep.astro";
+import Toc from "../../components/article/Toc.astro";
+import Body from "../../components/article/Body.astro";
+import Related from "../../components/article/Related.astro";
+import Faq from "../../components/editorial/Faq.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import "../../styles/insights-v2.css";
+import "../../styles/article-v2.css";
+import { BOOK } from "../../lib/site";
+import { GUIDES, readMinutes, wordCount, guideTitleTag } from "../../lib/guides";
+import { fixDeep } from "../../lib/links";
+import { rewriteJsonld } from "../../lib/hub";
+import { closingFor } from "../../lib/prefooter";
+
+export async function getStaticPaths() {
+  const mods = import.meta.glob("../../data/guides/*.json", { eager: true, import: "default" }) as Record<string, any>;
+  return Object.values(mods).map((d) => ({
+    params: { slug: d.path.replace(/^\/guides\/|\/$/g, "") },
+    props: { d },
+  }));
+}
+
+const { d } = Astro.props;
+const allMods = import.meta.glob("../../data/guides/*.json", { eager: true, import: "default" }) as Record<string, any>;
+const allBlocks: Record<string, any[]> = {};
+for (const m of Object.values(allMods)) allBlocks[m.path.replace(/^\/guides\/|\/$/g, "")] = m.hub.article.blocks;
+const { slug } = Astro.params as { slug: string };
+const H = fixDeep(d.hub);
+const SITE = "https://www.mondaymarketing.company";
+const g = GUIDES.find((x) => x.slug === slug)!;
+const jsonld = rewriteJsonld(d.jsonld).map((b: any) => b["@type"] === "Article" ? {
+  ...b, headline: g.title, description: g.desc, image: SITE + "/assets/" + (d.hub.answer?.image || d.hub.tiles?.[0]?.img), wordCount: 0, timeRequired: "PT0M", articleSection: "", isPartOf: { "@id": SITE + "/insights/#webpage" },
+} : b["@type"] === "BreadcrumbList" ? {
+  ...b, itemListElement: b.itemListElement.map((it: any, i: number, all: any[]) => i === all.length - 1 ? { ...it, name: g.short } : it),
+} : b);
+const C = closingFor(H.key, H.cta);
+const gi = GUIDES.indexOf(g);
+const mins = readMinutes(H.article.blocks);
+const words = wordCount(H.article.blocks);
+const others = GUIDES.filter((x) => x.slug !== slug).map((x) => ({ h: x.title, d: x.desc, img: x.img, href: x.href, tag: x.tag, min: readMinutes(allBlocks[x.slug]) }));
+const heroImg = "/assets/" + (H.answer?.image || H.tiles?.[0]?.img);
+const lines: [string, string, string] = [H.h1[0], `${H.h1[1][0]}<span class="em-serif">${H.h1[1][1]}</span>${H.h1[1][2]}`, H.h1[2]];
+// The tool is a quiet link only where it is topically right; creative testing has none.
+const toolFits = slug !== "creative-testing";
+const toolImg = g.tool.href.includes("funnel") ? "/assets/res/funnel.jpg" : "/assets/res/roas.jpg";
+for (const b of jsonld) if (b["@type"] === "Article") { b.wordCount = words; b.timeRequired = "PT" + mins + "M"; b.articleSection = g.tag; }
+---
+<BaseLayout title={guideTitleTag(g)} description={g.desc} path={d.path} ogTitle={g.short} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app ix">
+      <PageHero wm="Guide" eyebrow={"● " + g.tag} lines={lines} sub={g.stand}
+        primary={{ label: BOOK, book: H.key + "-hero" }} secondary={toolFits ? { label: g.tool.label, href: g.tool.href } : { label: g.next.label, href: g.next.href }} rightClass="ar-hero__r">
+        <figure class="ar-hero-fig"><img src={heroImg} alt={H.answer?.chip || g.title} width="1200" height="900" loading="eager" decoding="async" fetchpriority="high" /></figure>
+        <ul slot="chips" class="pmh__chips">
+          <li>{mins + " min read"}</li>
+          <li>By Monday Marketing Company</li>
+        </ul>
+      </PageHero>
+
+      <section class="ix-band ix-band--white" id="article" style="padding-top: clamp(32px, 4vw, 56px)">
+        <div class="n-wrap">
+          <nav class="ar-crumbs" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><a href="/insights/">Insights</a></li>
+              <li><span aria-current="page">{g.tag}</span></li>
+            </ol>
+          </nav>
+          <div class="ar-grid">
+            <Toc blocks={H.article.blocks} />
+            <article>
+              <Summary lead={H.answer.lead} points={H.answer.points} />
+              <Body blocks={H.article.blocks} after={g.after} tool={toolFits ? { label: g.tool.label, href: g.tool.href, line: g.tryIt, img: toolImg } : undefined} />
+              <NextStep {...g.next} />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <Related guides={others} cards={H.beyond.cards} eyebrow={H.beyond.eyebrow} />
+      <Faq title={`<b>${H.faqTitle[0].replace(/\bd2c\b/g, "D2C")}</b> <em>${H.faqTitle[1].replace(/\broas\b/g, "ROAS").replace(/\bd2c\b/g, "D2C")}</em>`} faq={H.faq} />
+      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} secondary={C.secondary} />
+      <StickyBookingBar source={H.key} />
+    </main>
+  </Shell>
+  <PageFx />
+  <script>import "../../scripts/editorial.ts";</script>
+</BaseLayout>

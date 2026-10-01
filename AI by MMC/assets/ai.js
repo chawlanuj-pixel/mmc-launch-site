@@ -97,6 +97,10 @@
   function setOpen(o) {
     panel.classList.toggle("open", o); btn.setAttribute("aria-expanded", o);
     if (o) track("ai_fab_open", { page: location.pathname });
+    /* Opening snaps the button to the bottom edge so its ~520px panel always has
+       room above it; closing lets the drift resume from the next scroll tick. */
+    if (o) wrap.style.bottom = "calc(20px + env(safe-area-inset-bottom))";
+    else window.dispatchEvent(new Event("scroll"));
   }
   btn.addEventListener("click", function () { setOpen(!panel.classList.contains("open")); });
   if (window.__aiMagnet) window.__aiMagnet(btn, .22);
@@ -111,6 +115,11 @@
     var ticking = false;
     function drift() {
       ticking = false;
+      /* On phones the button stays pinned bottom-right: drifting it mid-screen
+         covered headlines and CTAs. It also holds still while its panel is open,
+         otherwise the panel opens above the viewport. */
+      if (innerWidth <= 700) { wrap.style.bottom = "calc(16px + env(safe-area-inset-bottom))"; return; }
+      if (panel.classList.contains("open")) return;
       var max = document.documentElement.scrollHeight - innerHeight;
       var p = max > 0 ? scrollY / max : 0;
       var lift = (Math.sin(p * Math.PI * 4) * .5 + .5) * Math.max(0, innerHeight - 260);
@@ -118,5 +127,6 @@
     }
     addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(drift); } }, { passive: true });
     drift();
+    addEventListener("resize", drift);
   }
 })();

@@ -1,0 +1,117 @@
+{
+ "DC_STAGES": [
+  {
+   "k": "Acquire",
+   "breaks": "Scaling ad spend on platform-reported ROAS without checking what each order keeps after costs.",
+   "does": "Budgets set against your contribution margin, with Meta, Google, Amazon and quick commerce run as one account.",
+   "href": "performance-marketing.html",
+   "img": "sv/revenue.jpg",
+   "why": "A ROAS number ignores product cost, shipping and returns, so a campaign can look healthy while every order loses money.",
+   "tag": "Performance marketing"
+  },
+  {
+   "k": "Persuade",
+   "breaks": "Running the same three ads until they stop working.",
+   "does": "A steady flow of creator-style video, statics and landing-page copy, tested against one brand thesis.",
+   "href": "ugc-and-video.html",
+   "img": "sv/content.jpg",
+   "why": "Creative tires fast. When the same few ads run too long, results slip and CAC creeps up before anyone notices.",
+   "tag": "UGC and video"
+  },
+  {
+   "k": "Convert",
+   "breaks": "Sending paid traffic to a slow product page with a long checkout.",
+   "does": "Product-page, cart and checkout testing, and Shopify builds tuned for speed.",
+   "href": "conversion-rate-optimisation.html",
+   "img": "d2c/checkout.jpg",
+   "why": "Paid traffic is the most expensive visitor you will buy. A slow page or a long checkout throws part of that spend away.",
+   "tag": "Conversion optimisation"
+  },
+  {
+   "k": "Return",
+   "breaks": "Treating every order as a one-off, so each one has to pay its own ad cost.",
+   "does": "Retention funnels across email, WhatsApp and loyalty that bring customers back, so the first order does not carry everything.",
+   "href": "retention-marketing.html",
+   "img": "d2c/retention.jpg",
+   "why": "If every order has to pay its own ad cost, the brand never gets the benefit of a customer who comes back.",
+   "tag": "Retention marketing"
+  },
+  {
+   "k": "Expand",
+   "breaks": "Selling on your own site only, or running marketplace ads without looking at stock.",
+   "does": "Amazon and quick-commerce ads planned around stock and availability, and read against total sales.",
+   "href": "amazon-ads.html",
+   "img": "pm-v3/channel-quickcommerce.jpg",
+   "why": "Marketplaces and quick commerce add reach, but ads without stock or total-sales context can spend without adding profit.",
+   "tag": "Amazon Ads and quick commerce ads"
+  }
+ ],
+ "DC_NUMBERS": [
+  {
+   "n": "Unit economics",
+   "d": "CM1 to CM3: what one order actually leaves behind.",
+   "href": "unit-economics-calculator.html"
+  },
+  {
+   "n": "Break-even ROAS",
+   "d": "The ROAS you need to stop losing money.",
+   "href": "breakeven-roas-calculator.html"
+  },
+  {
+   "n": "CAC runway",
+   "d": "How long a new brand burns before it turns.",
+   "href": "cac-runway-calculator.html"
+  },
+  {
+   "n": "LTV:CAC",
+   "d": "What a customer is worth and how fast you recover it.",
+   "href": "ltv-cac-calculator.html"
+  }
+ ],
+ "DC_BRANDS": [
+  {
+   "id": "lepure"
+  },
+  {
+   "id": "giraffe"
+  },
+  {
+   "id": "mittiy"
+  },
+  {
+   "id": "sprnt"
+  },
+  {
+   "id": "vagakids"
+  },
+  {
+   "id": "notic"
+  }
+ ],
+ "DC_FAQ": [
+  {
+   "q": "What is D2C marketing?",
+   "a": "D2C (direct-to-consumer) marketing sells a brand's products straight to shoppers online, with no retailer in between. Acquisition cost, delivery, returns and repeat purchase all sit on the brand's own P&L, so the marketing is judged on contribution margin, not on what a platform reports."
+  },
+  {
+   "q": "How does D2C marketing work with MMC?",
+   "a": "In the first 30 days we audit your accounts and unit economics, fix tracking and agree your break-even ROAS. Then we rebuild the account structure, run creative as a testing programme and work on conversion and repeat purchase. One senior team handles ads, creative, conversion and retention, and reviews weekly, so you talk to the person doing the thinking."
+  },
+  {
+   "q": "What does D2C marketing cost?",
+   "a": "Your ad spend is paid to the platforms and sits outside our fee. We quote our fee after a call, once we have seen your accounts and agreed what we will run. We do not publish a price list, because the right scope depends on your spend, your margins and how many channels you want run."
+  },
+  {
+   "q": "Do you guarantee results?",
+   "a": "No. Nobody can honestly guarantee a ROAS, and we would not trust anyone who did. We commit to plans that survive the maths, accurate tracking, weekly optimisation and honest reporting, with results judged on contribution margin, not on what a platform reports."
+  },
+  {
+   "q": "Who is D2C marketing for?",
+   "a": "D2C founders and growth heads who sell direct online and want ad spend judged on profit, especially when ROAS has dropped, CAC keeps rising, creative is fatigued or the site gets traffic but does not convert. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions. See the <a href=\"b2b.html\">B2B</a> and <a href=\"education.html\">education</a> pages."
+  },
+  {
+   "q": "What do you need from us?",
+   "a": "Access to your ad accounts and store data, your product margins and return rates, and a named person who can approve creative. We tell you on the first call exactly what we need."
+  }
+ ]
+}

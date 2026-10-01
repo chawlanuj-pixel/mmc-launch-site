@@ -1,0 +1,9 @@
+---
+import AiPage from "../../components/ai/AiPage.astro";
+import pages from "../../data/ai/pages.json";
+export function getStaticPaths() {
+  return Object.keys(pages).filter((k) => k !== "index").map((slug) => ({ params: { slug } }));
+}
+const { slug } = Astro.params;
+---
+<AiPage pageKey={slug!} />

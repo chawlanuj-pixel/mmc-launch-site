@@ -1,0 +1,386 @@
+{
+  "file": "meta-ads.html",
+  "path": "/services/performance-marketing/meta-ads/",
+  "key": "metaads",
+  "title": "Meta Ads Agency in India for D2C, B2B and Education Brands | MMC",
+  "description": "MMC manages Meta ads on Instagram and Facebook for D2C, B2B and education brands, with creative testing and Conversions API tracking.",
+  "ogTitle": "Meta ads management for growing brands",
+  "ogDescription": "Instagram and Facebook campaigns built as one funnel, with real results sent back to Meta.",
+  "ogAlt": "Monday Marketing Company: meta ads management.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/meta-ads.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Performance marketing",
+          "item": "https://www.mondaymarketing.company/performance-marketing.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Meta Ads",
+          "item": "https://www.mondaymarketing.company/meta-ads.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/meta-ads.html#webpage",
+      "url": "https://www.mondaymarketing.company/meta-ads.html",
+      "name": "Meta Ads Agency in India for D2C, B2B and Education Brands | MMC",
+      "description": "MMC manages Meta ads on Instagram and Facebook for D2C, B2B and education brands, with creative testing and Conversions API tracking.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/meta-ads.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/meta-ads.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/meta-ads.html#service",
+      "name": "Meta Ads management",
+      "serviceType": "Meta Ads management",
+      "description": "Meta ads (Instagram and Facebook) management for D2C, B2B and education brands.",
+      "url": "https://www.mondaymarketing.company/meta-ads.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/meta-ads.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Meta Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Meta Ads management is the work of running paid campaigns on Instagram and Facebook: structuring the account, briefing and testing creative, setting up tracking, and managing budgets against the results that matter to the business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Meta Ads work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We audit the account against your margins, build one funnel from prospecting to retargeting, test creative against a single idea, send real results back to Meta through the Conversions API (CAPI), and optimise every week. A senior person runs your account and you see the reasoning, not just a report."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Meta Ads cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your ad spend is paid to Meta and sits outside our fee. We quote our fee after a call, once we have seen the account and agreed what we will run. We do not publish a price list, because the right scope depends on your spend and your margins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ROAS, and we would not trust anyone who did. We commit to a clear account structure, a fixed creative testing process, accurate tracking and honest reporting, with results judged on contribution margin, not on what a platform reports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Meta Ads for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands that want ad spend judged on profit, whether the problem is a ROAS that has dropped, a CAC that keeps rising or creative that has gone stale. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your ad account, pixel and store or CRM data, your product margins, and a named person who can approve creative. We tell you on the first call exactly what we need and what we can set up ourselves."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "metaads",
+    "wm": "Meta",
+    "eyebrow": "● Meta Ads",
+    "h1": [
+      "Meta Ads",
+      [
+        "that ",
+        "pay back in profit",
+        "."
+      ]
+    ],
+    "sub": "Instagram and Facebook campaigns built as one funnel, with creative tested against one idea, judged on contribution margin, not on what a platform reports.",
+    "tiles": [
+      {
+        "img": "meta/structure.jpg",
+        "pos": "50% 50%",
+        "label": "Structure",
+        "note": "Campaigns as one funnel"
+      },
+      {
+        "img": "meta/creative.jpg",
+        "pos": "50% 50%",
+        "label": "Creative",
+        "note": "Tested on one idea"
+      },
+      {
+        "img": "meta/audience.jpg",
+        "pos": "50% 50%",
+        "label": "Audiences",
+        "note": "Who sees it"
+      },
+      {
+        "img": "meta/capi.jpg",
+        "pos": "50% 50%",
+        "label": "Tracking",
+        "note": "Server-side events"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Meta ads management is the work of running paid campaigns on Instagram and Facebook: structuring the account, producing and testing creative, and feeding the platform good data.",
+      "hl": "feeding the platform good data",
+      "who": "Monday Marketing Company (MMC) runs Meta ads for D2C brands, judged on contribution margin, and for B2B and education brands, judged on the cost of a qualified lead.",
+      "points": [
+        {
+          "icon": "layers",
+          "title": "One funnel",
+          "text": "Prospecting, retargeting and conversion built to work together."
+        },
+        {
+          "icon": "target",
+          "title": "Creative on one idea",
+          "text": "Versions are tested against a single brand thesis, so each round teaches the next."
+        },
+        {
+          "icon": "link",
+          "title": "Real results back to Meta",
+          "text": "Purchases, and qualified leads from your CRM, sent through the Conversions API (CAPI)."
+        }
+      ],
+      "image": "meta/capi.jpg",
+      "chip": "Judged on profit or lead quality"
+    },
+    "leaks": {
+      "style": "stack",
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "eyebrow": "Where Meta ads go wrong",
+      "h2a": "Five ways Meta spend",
+      "h2b": "goes wrong.",
+      "lede": "Meta rewards good structure, fresh creative and clean data. Each stage below is where accounts lose money, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Structure the account",
+        "tag": "Account structure",
+        "breaks": "Too many campaigns and audiences, each too small to learn.",
+        "why": "Meta's delivery learns from volume. Budgets split across many small ad sets learn slowly and cost more.",
+        "does": "We build the account as one funnel of prospecting, retargeting and conversion, with budgets concentrated enough for the platform to learn.",
+        "href": "services.html#revenue",
+        "img": "meta/structure.jpg"
+      },
+      {
+        "k": "Test creative on one idea",
+        "tag": "Creative testing",
+        "breaks": "Launching many unrelated ads and picking favourites.",
+        "why": "Creative drives much of the difference between accounts. Unrelated tests teach you nothing about why one ad won.",
+        "does": "We brief creative against a single brand thesis and test versions systematically, so each round teaches the next.",
+        "href": "ugc-and-video.html",
+        "img": "meta/creative.jpg"
+      },
+      {
+        "k": "Reach the right people",
+        "tag": "Audiences and targeting",
+        "breaks": "Over-narrow targeting that limits delivery.",
+        "why": "Meta's systems often find buyers better from good signals and broad reach than from hand-picked interests.",
+        "does": "We start from what your best customers have in common, test broader reach alongside tighter audiences, and let results decide.",
+        "href": "services.html#revenue",
+        "img": "meta/audience.jpg"
+      },
+      {
+        "k": "Send real results back",
+        "tag": "Conversions API tracking",
+        "breaks": "Relying on the browser pixel alone.",
+        "why": "Browser tracking misses conversions, and for lead generation it only sees form fills. Meta then optimises on a partial, shallow picture.",
+        "does": "We set up the Conversions API (CAPI) so purchases, and for lead businesses the qualified stages from your CRM, reach Meta as server-side events.",
+        "href": "lead-generation.html",
+        "img": "meta/capi.jpg"
+      },
+      {
+        "k": "Scale against profit",
+        "tag": "Budget and scaling",
+        "breaks": "Raising spend because platform ROAS looks good.",
+        "why": "Platform-reported ROAS leaves out product cost, shipping, returns and fees, so a strong number can hide a loss.",
+        "does": "We set budgets against your contribution margin (D2C) or the cost of a qualified lead (B2B and education), and scale only while that holds.",
+        "href": "performance-marketing.html",
+        "img": "meta/scale.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "Meta Ads are working.",
+      "note": "Read against your own costs and margin.",
+      "cards": [
+        {
+          "n": "Break-even ROAS",
+          "d": "The ROAS you need to stop losing money."
+        },
+        {
+          "n": "Unit economics",
+          "d": "What each order leaves behind after costs."
+        },
+        {
+          "n": "Cost per qualified lead",
+          "d": "What you pay for a lead your team accepts."
+        },
+        {
+          "n": "Creative win rate",
+          "d": "The share of new creatives that beat the current best."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where Meta Ads fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Performance marketing",
+          "d": "Media buying on Meta, Google, Amazon and quick commerce, judged on contribution margin.",
+          "img": "pm-v3/channel-meta.jpg",
+          "href": "performance-marketing.html",
+          "link": "See Performance marketing"
+        },
+        {
+          "n": "UGC and video",
+          "d": "Creator-style video made to run as ads and refreshed before it tires.",
+          "img": "ugc/shoot.jpg",
+          "href": "ugc-and-video.html",
+          "link": "See UGC and video"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Meta Ads."
+    ],
+    "faq": [
+      {
+        "q": "What is Meta Ads?",
+        "a": "Meta Ads management is the work of running paid campaigns on Instagram and Facebook: structuring the account, briefing and testing creative, setting up tracking, and managing budgets against the results that matter to the business."
+      },
+      {
+        "q": "How does Meta Ads work with MMC?",
+        "a": "We audit the account against your margins, build one funnel from prospecting to retargeting, test creative against a single idea, send real results back to Meta through the Conversions API (CAPI), and optimise every week. A senior person runs your account and you see the reasoning, not just a report."
+      },
+      {
+        "q": "What does Meta Ads cost?",
+        "a": "Your ad spend is paid to Meta and sits outside our fee. We quote our fee after a call, once we have seen the account and agreed what we will run. We do not publish a price list, because the right scope depends on your spend and your margins."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. Nobody can honestly guarantee a ROAS, and we would not trust anyone who did. We commit to a clear account structure, a fixed creative testing process, accurate tracking and honest reporting, with results judged on contribution margin, not on what a platform reports."
+      },
+      {
+        "q": "Who is Meta Ads for?",
+        "a": "D2C brands that want ad spend judged on profit, whether the problem is a ROAS that has dropped, a CAC that keeps rising or creative that has gone stale. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your ad account, pixel and store or CRM data, your product margins, and a named person who can approve creative. We tell you on the first call exactly what we need and what we can set up ourselves."
+      }
+    ],
+    "cta": {
+      "h2a": "Find out what your Meta spend",
+      "h2b": "really returns.",
+      "lede": "On a call, with a senior strategist. We read your Meta account against your break-even numbers."
+    },
+    "platform": "meta",
+    "proof": {
+      "codes": [
+        "perf"
+      ],
+      "does": "run Meta ads for"
+    },
+    "process": {
+      "h2a": "How we run Meta Ads,",
+      "h2b": "week to week.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit and set the floor",
+          "d": "We read the account against your margins, fix tracking and agree your break-even ROAS before changing spend.",
+          "out": "A clear floor: the result each rupee has to clear."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Rebuild and test",
+          "d": "One funnel structure, a fixed creative testing rule and Conversions API checked against your store data.",
+          "out": "A test lane that shows which angles earn their budget."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Scale what clears the floor",
+          "d": "Budget moves to what holds up on contribution margin, and weekly optimisation keeps it there as creative tires.",
+          "out": "Spend that grows only where the maths still works."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Meta Ads for brands that watch",
+      "h2b": "their margin.",
+      "good": {
+        "t": "You sell on Instagram and Facebook and want spend judged on profit.",
+        "why": "Our method starts from your margin, so it suits D2C founders and growth heads who feel ROAS has dropped or CAC keeps climbing, and B2B and education teams who judge leads on quality."
+      },
+      "not": {
+        "t": "You want a guaranteed ROAS, or a new agency every few months.",
+        "why": "Nobody can honestly promise a ROAS, and Meta accounts need a steady hand for the creative and learning to compound."
+      }
+    }
+  }
+}

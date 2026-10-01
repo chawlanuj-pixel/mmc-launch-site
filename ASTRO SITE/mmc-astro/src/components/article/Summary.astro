@@ -1,0 +1,14 @@
+---
+// "In short" key-takeaway box, built from the guide's own answer block (real copy, nothing added).
+interface Props { label?: string; lead: string; points?: { title: string; text: string }[] }
+const { label = "In short", lead, points = [] } = Astro.props;
+---
+<aside class="ar-short" aria-label={label}>
+  <p class="ar-short__k">{label}</p>
+  <p class="ar-short__lead">{lead}</p>
+  {points.length > 0 && (
+    <ul class="ar-short__pts">
+      {points.map((p) => <li><b>{p.title}</b><span>{p.text}</span></li>)}
+    </ul>
+  )}
+</aside>

@@ -1,0 +1,28 @@
+---
+// Compact "how it works": 3 or 4 steps, each with what happens and the outcome of the step. No durations or prices.
+import "../../styles/svc-blocks.css";
+interface Step { t: string; d: string; out: string; when?: string }
+interface Props { h2a: string; h2b: string; steps: Step[]; note?: string; eyebrow?: string; tone?: "white" | "paper" }
+const { h2a, h2b, steps, note, eyebrow = "How it works", tone = "white" } = Astro.props as Props;
+if (steps.length < 3 || steps.length > 4) throw new Error("[ProcessBand] needs 3 or 4 steps, got " + steps.length);
+---
+<section class={"n-band pm-band n-band--" + tone} id="process" aria-labelledby="proc-h">
+  <div class="n-wrap">
+    <div class="svb-head n-rise">
+      <span class="n-eyebrow">{eyebrow}</span>
+      <h2 class="n-h2" id="proc-h">{h2a} <span class="n-serif">{h2b}</span></h2>
+    </div>
+    <ol class="svb-proc n-rise d1" style={`--cols:${steps.length}`}>
+      {steps.map((s, k) => (
+        <li class="svb-proc__step">
+          <span class="svb-proc__n" aria-hidden="true">{k + 1}</span>
+          {s.when ? <span class="svb-proc__when">{s.when}</span> : null}
+          <h3 class="svb-proc__t">{s.t}</h3>
+          <p class="svb-proc__d">{s.d}</p>
+          <p class="svb-proc__out"><b>You get</b>{s.out}</p>
+        </li>
+      ))}
+    </ol>
+    {note ? <p class="svb-note">{note}</p> : null}
+  </div>
+</section>

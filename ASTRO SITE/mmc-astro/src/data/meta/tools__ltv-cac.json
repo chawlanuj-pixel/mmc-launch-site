@@ -1,0 +1,83 @@
+{
+ "title": "LTV:CAC Calculator: Lifetime Value and CAC Payback",
+ "description": "Model repeat purchase as a decaying cohort to see lifetime contribution, your LTV:CAC against the 3:1 benchmark, and the month acquisition is paid back.",
+ "ogTitle": "What a customer is worth, and when you get it back",
+ "ogDescription": "Lifetime contribution, LTV:CAC against the 3:1 benchmark, and your exact CAC payback month.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "D2C calculators",
+     "item": "https://www.mondaymarketing.company/tools.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "LTV:CAC Calculator",
+     "item": "https://www.mondaymarketing.company/ltv-cac-calculator.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebApplication",
+   "name": "LTV:CAC Calculator",
+   "url": "https://www.mondaymarketing.company/ltv-cac-calculator.html",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Any (web browser)",
+   "description": "Free LTV:CAC calculator for D2C brands. Model repeat purchase as a decaying cohort to get lifetime contribution, your LTV:CAC ratio against the 3:1 benchmark, and the month your customer acquisition cost is paid back.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monday Marketing Company",
+    "url": "https://www.mondaymarketing.company/"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a good LTV:CAC ratio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "3:1 is the widely used benchmark, three rupees of lifetime contribution for every rupee of acquisition cost. Below 2:1 growth generally burns cash. Far above 4:1 often means you are underspending and leaving growth on the table."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should LTV use revenue or contribution?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Contribution. Lifetime revenue flatters the number badly because it ignores COGS, shipping and fees. LTV built on contribution tells you what is actually available to pay for acquisition and overhead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is CAC payback and why does it matter?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "CAC payback is the month cumulative contribution from a customer finally equals what you paid to acquire them. It governs how fast you can grow without external funding: a brand with three-month payback can recycle cash four times a year, while a twelve-month payback can only do it once."
+     }
+    }
+   ]
+  }
+ ]
+}

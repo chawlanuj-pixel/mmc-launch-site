@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageHero from "../../components/pages/PageHero.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import FreeToolsStrip from "../../components/shared/FreeToolsStrip.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import { BOOK } from "../../lib/site";
+import Beyond from "../../components/hub/Beyond.astro";
+import Faq from "../../components/hub/Faq.astro";
+import ProcessBand from "../../components/shared/ProcessBand.astro";
+import WhoFor from "../../components/shared/WhoFor.astro";
+import ProofWall from "../../components/shared/ProofWall.astro";
+import { relatedCards } from "../../lib/related";
+import Answer from "../../components/hub/Answer.astro";
+import Img from "../../components/hub/Img.astro";
+import Arrow from "../../components/hub/Arrow.astro";
+import { pageHead } from "../../lib/pagehead";
+import { fixDeep, href } from "../../lib/links";
+import raw from "../../data/pages/services.json";
+import "../../styles/sv.css";
+import "../../styles/pg-wordmark.css";
+
+const D = fixDeep(raw);
+const CTA = BOOK;
+const book = (s: string) => `window.mmcBookCall('${s}', event)`;
+---
+<BaseLayout {...pageHead("services", "/services/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <PageHero wm="Services" eyebrow="● Connected systems"
+        lines={["Marketing services", 'that start from <span class="em-serif">your biggest leak</span>.']}
+        sub="Paid media, search, brand, technology and content for D2C, B2B and education brands, run by one senior team."
+        primary={{ label: CTA, book: "services-hero" }} secondary={{ label: "See the work", href: "#proof" }} rightClass="svh__r">
+        <div class="svh__mosaic">
+          {D.SV_SYSTEMS.map((s: any, k: number) => (
+            <a class={"svh__tile svh__tile--" + (k + 1)} href={"#" + s.id} aria-label={s.label}>
+              <Img name={"sv/" + s.img} ratio={k < 2 ? "4 / 3" : "1 / 1"} class="svh__img" pos={s.pos} eager={k < 2} />
+              <span class="svh__cap"><i>{s.n}</i><b>{s.short}</b></span>
+            </a>
+          ))}
+        </div>
+      </PageHero>
+
+      <Answer
+        lead="Monday Marketing Company (MMC) is an India-based growth partner for D2C, B2B and education brands. Its services sit in connected systems: paid media, search and conversion, brand, technology, and content."
+        hl="connected systems"
+        points={[
+          { icon: "grid", title: "Connected systems", text: "Paid media, search and conversion, brand, technology, and content." },
+          { icon: "users", title: "One team runs them all", text: "So the work in one system is judged by what it does for the others." },
+          { icon: "gauge", title: "Judged on contribution margin", text: "Results are judged on contribution margin, not on what a platform reports." },
+        ]}
+        image="pm-v3/process.jpg" chip="One senior team" />
+
+      <div id="systems">
+        {D.SV_SYSTEMS.map((s: any, k: number) => (
+          <section class={"n-band pm-band svs " + (k % 2 ? "n-band--paper" : "n-band--white")} id={s.id}>
+            <div class="n-wrap">
+              <div class={"svs__row" + (k % 2 ? " is-flip" : "")}>
+                <div class="svs__art n-rise"><Img name={"sv/" + s.img} ratio="3 / 2" class="svs__img" pos={s.pos} /></div>
+                <div class="svs__body n-rise d1">
+                  <span class="n-eyebrow">System {s.n}</span>
+                  <h2 class="n-h2 svs__h">{s.label}</h2>
+                  <p class="svs__desc">{s.desc}</p>
+                  <ul class="svs__list">
+                    {s.items.map((it: any) => (
+                      <li>
+                        <b>{it.n}</b>
+                        <span>{it.d}</span>
+                        {it.href && <a class="pm-textlink" href={it.href}>{it.link}<Arrow /></a>}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <section class="n-band n-band--ink pm-band" id="start">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Where to start</span>
+            <h2 class="n-h2">Start from the problem, <span class="n-serif">not the service.</span></h2>
+          </div>
+          <ul class="svt n-rise d1">
+            {D.SV_START.map(([p, id, to]: string[]) => (
+              <li><a href={href(id)}><span>{p}</span><b>{to}<Arrow /></b></a></li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <ProcessBand h2a="How we work with you," h2b="from the first call." tone="white" note="The days show the order of the work, not a promise of results." steps={[
+        { when: "Days 1 to 30", t: "Find the biggest leak", d: "We read your numbers and agree where you lose the most: ad spend, conversion, search, brand, technology or creative.", out: "One agreed place to start." },
+        { when: "Days 31 to 60", t: "Fix it with one team", d: "The right specialists work together on it, so one system's work is judged by what it does for the others.", out: "A plan that survives the maths." },
+        { when: "Days 61 to 90", t: "Review weekly and widen", d: "Weekly optimisation shows what moved, and we add the next system only when the first is working.", out: "Growth you can trace to its cause." },
+      ]} />
+
+      <WhoFor h2a="Services for brands that want" h2b="one team that explains itself." tone="paper"
+        good={{ t: "You are a D2C, B2B or education brand with a clear leak and want a senior team to fix it.", why: "You get strategists who read your margins or your cost per qualified lead, not a rotating account manager." }}
+        not={{ t: "You want a cheap bundle of posts, a guaranteed result, or a new agency every few months.", why: "Good marketing needs a plan, patience and a steady hand, and we would rather say so now than disappoint you later." }} />
+
+      <ProofWall ids={["lepure", "giraffe", "sprnt", "nmc", "skyfling", "bloom", "mvj", "pandacabs"]} does="work with" book="services-proof" tone="white" />
+
+      <Beyond tone="paper" Y={{ eyebrow: "Related", h2a: "Where our services fit in", h2b: "the wider picture.", cards: relatedCards(["d2c.html", "b2b.html", "education.html"]) }} />
+
+      <Faq tone="white" title={["Questions about", "our services."]} faq={D.SV_FAQ} />
+
+      <FreeToolsStrip page="performance-marketing" bg="white" />
+      <PreFooterCta source="services" h2a="Tell us the problem." h2b="We will name the system." lede="On a call, with a senior strategist. We say where to start, what the first 30 days look like and who works on your account." />
+    </main>
+    <StickyBookingBar source="services" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

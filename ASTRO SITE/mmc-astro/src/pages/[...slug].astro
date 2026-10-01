@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import Hero from "../components/hub/Hero.astro";
+import Answer from "../components/hub/Answer.astro";
+import Article from "../components/hub/Article.astro";
+import Stages from "../components/hub/Stages.astro";
+import LoopB from "../components/hub/LoopB.astro";
+import Numbers from "../components/hub/Numbers.astro";
+import ProofWall from "../components/shared/ProofWall.astro";
+import ProcessBand from "../components/shared/ProcessBand.astro";
+import WhoFor from "../components/shared/WhoFor.astro";
+import PlatformShowcase from "../components/shared/PlatformShowcase.astro";
+import Beyond from "../components/hub/Beyond.astro";
+import AiVersion from "../components/hub/AiVersion.astro";
+import Faq from "../components/hub/Faq.astro";
+import FreeToolsStrip from "../components/shared/FreeToolsStrip.astro";
+import { TOOLS_FOR } from "../lib/site";
+import PreFooterCta from "../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
+import "../styles/hub-extra.css";
+import { fixDeep } from "../lib/links";
+import { rewriteJsonld } from "../lib/hub";
+import { GUIDES } from "../lib/guides";
+import { closingFor } from "../lib/prefooter";
+
+export async function getStaticPaths() {
+  const mods = import.meta.glob("../data/hubs/*.json", { eager: true, import: "default" }) as Record<string, any>;
+  return Object.values(mods).map((d) => ({
+    params: { slug: d.path.replace(/^\/|\/$/g, "") },
+    props: { d },
+  }));
+}
+const { d } = Astro.props;
+const H = fixDeep(d.hub);
+// /guides/ card names come from the one guide catalogue (src/lib/guides.ts), never from this JSON.
+if (H.key === "guides" && Array.isArray(H.stages)) {
+  H.stages = H.stages.map((st: any) => { const g = GUIDES.find((x) => String(st.href).includes(x.slug)); return g ? { ...st, tag: g.short, href: g.href, img: st.img } : st; });
+}
+const jsonld = rewriteJsonld(d.jsonld);
+const seg = d.path.replace(/^\/|\/$/g, "").split("/");
+const toolsKey = seg[0] === "industries" ? "industries-" + seg[1] : seg[seg.length - 1];
+const C = closingFor(H.key, H.cta);
+---
+<BaseLayout title={d.title} description={d.description} path={d.path} ogTitle={d.ogTitle} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <Hero H={H} proof={!!H.proof} />
+      <Answer {...H.answer} />
+      <Article A={H.article} />
+      {H.platform ? <PlatformShowcase kind={H.platform} /> : null}
+      <Stages L={H.leaks} S={H.stages} hubKey={H.key} />
+      {H.loop ? <LoopB H={H} /> : null}
+      <Numbers N={H.numbers} />
+      {H.process ? <ProcessBand {...H.process} tone="white" /> : null}
+      {H.who ? <WhoFor {...H.who} tone="paper" /> : null}
+      {H.proof ? <ProofWall {...H.proof} book={H.key + "-proof"} tone="white" /> : null}
+      <Beyond Y={H.beyond} tone="paper" />
+      <AiVersion slug={seg[seg.length - 1]} />
+      <Faq title={H.faqTitle} faq={H.faq} tone="white" />
+      {TOOLS_FOR[toolsKey] && <FreeToolsStrip page={toolsKey} bg="paper" />}
+      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+    </main>
+    <StickyBookingBar source={H.key} />
+  </Shell>
+  <script>import "../scripts/hub.ts";</script>
+</BaseLayout>

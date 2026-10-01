@@ -1,0 +1,240 @@
+{
+  "_note": "The brands with client-approved case-study artwork in public/assets/work2/. Name, group and service tags are NOT stored here: they come from work-clients.json (by id) through src/lib/work.ts, so they cannot drift. `scope` and `shows` describe only what is visibly built in the artwork, never an outcome; `{name}` in scope is replaced with the brand's display name. The word 'mockup' is not used: the authenticity line is ARTWORK_LINE in src/lib/site.ts.",
+  "_proofSlots": "Optional slots, all EMPTY today and rendered only when filled with real, checkable data. Never invent. timeframe: string, e.g. 'First 90 days' (the period the figures cover). basis: string, what the figures are based on (spend band, sample, attribution). whatWeDid: a written note that replaces the sentence built from the service tags. metrics: [{label, value, basis}] each with its own basis. team: [{name, role}] named MMC people on the account. testimonial: {quote, name, role} with a quote the client has approved.",
+  "items": [
+    {
+      "id": "oosh",
+      "image": "work2/oosh-case.jpg",
+      "ratio": "3 / 1",
+      "scope": "A Shopify storefront for {name}'s body essentials range, from the homepage through to a product detail page, on desktop and mobile.",
+      "shows": [
+        "Homepage and product listing",
+        "Mobile product page",
+        "Meta ad",
+        "Google ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "sprouts",
+      "image": "work2/sprouts-case.jpg",
+      "ratio": "16 / 9",
+      "scope": "A website for {name} for schools booking trips: a homepage, a Journeys page, a Safety page for parents and staff, and a school enquiry form.",
+      "shows": [
+        "Homepage on desktop and mobile",
+        "Journeys page",
+        "Safety page",
+        "School enquiry form"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "mbb",
+      "image": "work2/mbb-case.jpg",
+      "ratio": "3 / 2",
+      "scope": "An ecommerce storefront for {name}' body care range, paired with social creative and ads for the same products.",
+      "shows": [
+        "Homepage on desktop and mobile",
+        "Social media creative tiles",
+        "Meta carousel ad",
+        "Google Shopping ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "skyfling",
+      "image": "work2/skyfling-case.jpg",
+      "ratio": "3 / 2",
+      "scope": "A website for {name}, an app and web development company: a homepage with a quote form, a build-day estimator tool and past builds.",
+      "shows": [
+        "Homepage with lead form",
+        "Build-day estimator",
+        "Work showcase",
+        "LinkedIn ad and Google search listing"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "sprnt",
+      "image": "work2/sprnt-case.jpg",
+      "ratio": "3 / 2",
+      "scope": "An ecommerce storefront for {name} kids' activewear, from the homepage through to a product detail page, with matching social creative and ads.",
+      "shows": [
+        "Homepage and category page",
+        "Mobile product detail page",
+        "Social creative tiles",
+        "Meta ad and Google Shopping ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "nmc",
+      "image": "work2/nmc-case.jpg",
+      "ratio": "16 / 9",
+      "scope": "A website for {name}, an HR and recruitment consultancy, with separate paths for employers (a role-brief form) and candidates (an open-roles search).",
+      "shows": [
+        "Homepage with employer and candidate paths",
+        "Role-brief lead form",
+        "Open roles search page",
+        "LinkedIn ad and Google search listing"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "pandacabs",
+      "image": "work2/pandacabs-case.jpg",
+      "ratio": "3 / 2",
+      "scope": "A website for {name} with a fare and booking search covering outstation, one-way, airport and local rides, plus a matching mobile booking flow.",
+      "shows": [
+        "Homepage with booking search",
+        "Mobile booking flow",
+        "Social ad creative",
+        "Meta ad and Google search listing"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "giraffe",
+      "image": "work2/giraffe-case.jpg",
+      "ratio": "3 / 1",
+      "scope": "Storefront and campaign creative for {name}: the homepage, cart and category pages, plus social tiles and ads for a festive gifting push.",
+      "shows": [
+        "Homepage and cart, desktop and mobile",
+        "Shop-by-category page",
+        "Social creative tiles",
+        "Meta ad and Google ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "mvj",
+      "image": "work2/mvj-case.jpg",
+      "ratio": "3 / 2",
+      "scope": "A website for {name} built around admissions: a homepage with programme listings and an apply-now enquiry form, on desktop and mobile.",
+      "shows": [
+        "Admissions homepage and mobile view",
+        "Apply-now enquiry form",
+        "Admissions social creative",
+        "Meta lead ad and Google search listing"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "vagakids",
+      "image": "work2/vagakids-case.jpg",
+      "ratio": "16 / 9",
+      "scope": "An ecommerce storefront for {name}' charm clogs range, from the homepage through to a product detail page, with matching social creative and ads.",
+      "shows": [
+        "Homepage on desktop and mobile",
+        "Mobile product detail page",
+        "Social creative tiles",
+        "Meta ad and Google Shopping ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "awwbaby",
+      "image": "work2/awwbaby-case.jpg",
+      "ratio": "16 / 9",
+      "scope": "An ecommerce storefront for {name} spanning the homepage, category pages for activewear, feeding, toys, bath and accessories, and a product detail page.",
+      "shows": [
+        "Homepage and category tiles",
+        "Mobile product detail page",
+        "Social creative tiles",
+        "Meta ad and Google search ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "mittiy",
+      "image": "work2/mittiy-case.jpg",
+      "ratio": "3 / 2",
+      "scope": "Product and bundle-builder pages for {name}'s car perfume range, paired with social creative and ads for the same products.",
+      "shows": [
+        "Homepage and bundle-builder, desktop and mobile",
+        "Social creative tiles",
+        "Meta ad carousel",
+        "Google Shopping ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    },
+    {
+      "id": "notic",
+      "image": "work2/notic-case.jpg",
+      "ratio": "16 / 9",
+      "scope": "An ecommerce storefront for {name}'s car perfume collection, from the homepage through to the collection page, with matching social ad creative.",
+      "shows": [
+        "Homepage on desktop and mobile",
+        "Collection page",
+        "Social ad creative",
+        "Meta ad and Google search ad"
+      ],
+      "timeframe": null,
+      "basis": null,
+      "whatWeDid": null,
+      "metrics": [],
+      "team": [],
+      "testimonial": null
+    }
+  ]
+}

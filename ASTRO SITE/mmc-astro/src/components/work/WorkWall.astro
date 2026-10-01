@@ -1,0 +1,60 @@
+---
+import { csFit, tilt, WORK_ART } from "../../lib/hub";
+import { BRANDS, GROUPS } from "../../lib/work";
+import BrandMeta from "./BrandMeta.astro";
+import { ARTWORK_LINE } from "../../lib/site";
+
+// Every brand on record, grouped by the one label field (D2C, B2B, Education, Other consumer).
+// Names, labels, tags and case-study links all come from src/lib/work.ts.
+const items = [...BRANDS].sort((a, b) => GROUPS.findIndex((g) => g.key === a.group) - GROUPS.findIndex((g) => g.key === b.group));
+const tabs = [{ k: "all", l: "All brands" }, ...GROUPS.map((g) => ({ k: g.key, l: g.label }))];
+---
+<section class="n-band n-band--paper pm-band wk" id="brands">
+  <div class="n-wrap">
+    <div class="pm-head n-rise" style="margin-bottom:0">
+      <span class="n-eyebrow">The full wall</span>
+      <h2 class="n-h2">Every brand on record, <span class="n-serif">by kind.</span></h2>
+      <p class="n-lede">Filter by the kind of brand. Hover over or tap a logo to see a project, where we have one to show; a linked logo opens its full case study. Under each brand: its kind, then the services recorded for it.</p>
+    </div>
+    <div class="wk__tabs" role="tablist" aria-label="Filter brands by kind">
+      {tabs.map((t, i) => <button type="button" role="tab" class={"wk__tab" + (i === 0 ? " is-on" : "")} data-f={t.k} aria-selected={i === 0 ? "true" : "false"}>{t.l}</button>)}
+    </div>
+    <div class="n-wall pm-wall wk__wall" data-wkwall>
+      {items.map((p) => {
+        const hasCase = p.hasCase;
+        const Cell = hasCase ? "a" : "span";
+        const cellProps: Record<string, string> = hasCase ? { href: `/work/${p.id}/` } : {};
+        return (
+          <div class="pm-wall__item wk__item" data-g={p.group}>
+            <Cell class="n-wall__cell" title={hasCase ? `${p.name}: read the case study` : p.name} style={`--n-tilt:${tilt(p.id)}`} {...cellProps}>
+              <span class="n-wall__mark">
+                <span class="cs-logo">
+                  <span class="cs-wm" style={`--cs-wm-k:${csFit(p.name)}`}>{p.name}</span>
+                  <img class="cs-logo__img" src={`/assets/clients/${p.id}.png`} alt={p.name} loading="lazy" decoding="async" />
+                </span>
+              </span>
+              {WORK_ART.includes(p.id) && <img class="n-wall__work" src={`/assets/clients/${p.id}-work.jpg`} alt="" loading="lazy" decoding="async" />}
+            </Cell>
+            <BrandMeta id={p.id} caseLink />
+          </div>
+        );
+      })}
+    </div>
+    <p class="wk__empty" hidden>Nothing in this group yet.</p>
+    <p class="wk__note">{ARTWORK_LINE}</p>
+  </div>
+</section>
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>(".wk__tabs .wk__tab");
+  const items = document.querySelectorAll<HTMLElement>(".wk__wall .wk__item");
+  const empty = document.querySelector<HTMLElement>(".wk__empty");
+  function apply(k: string) {
+    let n = 0;
+    items.forEach((el) => { const show = k === "all" || el.dataset.g === k; el.hidden = !show; if (show) n++; });
+    tabs.forEach((t) => { const on = t.dataset.f === k; t.classList.toggle("is-on", on); t.setAttribute("aria-selected", on ? "true" : "false"); });
+    if (empty) empty.hidden = n > 0;
+  }
+  tabs.forEach((t) => t.addEventListener("click", () => apply(t.dataset.f || "all")));
+  const q = new URLSearchParams(location.search).get("kind");
+  if (q && [...tabs].some((t) => t.dataset.f === q)) apply(q);
+</script>

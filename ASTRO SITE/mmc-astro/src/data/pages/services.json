@@ -1,0 +1,207 @@
+{
+ "SV_SYSTEMS": [
+  {
+   "id": "revenue",
+   "n": "I",
+   "short": "Revenue",
+   "label": "Revenue Accelerators",
+   "img": "revenue.jpg",
+   "pos": "45% 50%",
+   "desc": "Performance media that compounds, not just spends.",
+   "items": [
+    {
+     "n": "Performance marketing",
+     "d": "Meta, Google, Amazon and quick-commerce media run as one account, judged on contribution margin.",
+     "href": "performance-marketing.html",
+     "link": "See Performance marketing"
+    },
+    {
+     "n": "Lead generation",
+     "d": "Paid enquiries for B2B, education and service businesses, connected to a CRM and Meta's Conversions API (CAPI) so campaigns learn from qualified leads, not form fills.",
+     "href": "lead-generation.html",
+     "link": "See Lead generation"
+    },
+    {
+     "n": "Retention marketing",
+     "d": "Funnels across email, WhatsApp and loyalty that nurture enquiries into customers and bring buyers back.",
+     "href": "retention-marketing.html",
+     "link": "See Retention marketing"
+    }
+   ]
+  },
+  {
+   "id": "organic",
+   "n": "II",
+   "short": "Search",
+   "label": "Organic Growth Engines",
+   "img": "organic.jpg",
+   "pos": "50% 50%",
+   "desc": "Search authority and on-site conversion architecture.",
+   "items": [
+    {
+     "n": "SEO",
+     "d": "Technical fixes, topical content and answer-engine coverage for the searches your buyers make.",
+     "href": "seo.html",
+     "link": "See SEO"
+    },
+    {
+     "n": "Conversion optimisation",
+     "d": "Testing product pages, carts and checkout so the traffic you already pay for turns into orders.",
+     "href": "conversion-rate-optimisation.html",
+     "link": "See Conversion optimisation"
+    }
+   ]
+  },
+  {
+   "id": "brand",
+   "n": "III",
+   "short": "Brand",
+   "label": "Brand Foundation Builders",
+   "img": "brand.jpg",
+   "pos": "50% 50%",
+   "desc": "Identity, UX and product systems that earn memory.",
+   "items": [
+    {
+     "n": "Branding",
+     "d": "Naming, logo, voice and the guidelines that keep them consistent.",
+     "href": "branding.html",
+     "link": "See Branding"
+    },
+    {
+     "n": "UI/UX design",
+     "d": "Interface and design systems for websites and apps.",
+     "href": "ui-ux-design.html",
+     "link": "See UI/UX design"
+    },
+    {
+     "n": "Packaging design",
+     "d": "Structure and graphics for the shelf, marketplaces and quick-commerce listings.",
+     "href": "packaging-design.html",
+     "link": "See Packaging design"
+    },
+    {
+     "n": "Online reputation management",
+     "d": "Ratings, reviews and replies on Google and review sites, so a buyer, parent or student who checks you finds a trustworthy picture.",
+     "href": "online-reputation-management.html",
+     "link": "See Online reputation management"
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "n": "IV",
+   "short": "Technology",
+   "label": "Technology Drivers",
+   "img": "tech.jpg",
+   "pos": "50% 50%",
+   "desc": "Storefronts and apps that load fast and convert.",
+   "items": [
+    {
+     "n": "Shopify development",
+     "d": "Storefronts built for speed, checkout and the way your catalogue is browsed.",
+     "href": "shopify-development.html",
+     "link": "See Shopify development"
+    },
+    {
+     "n": "Website development",
+     "d": "Marketing and B2B websites built to load fast and be found.",
+     "href": "web-development.html",
+     "link": "See Website development"
+    },
+    {
+     "n": "Mobile app development",
+     "d": "Apps for brands whose customers come back on their phones.",
+     "href": "mobile-app-development.html",
+     "link": "See Mobile app development"
+    }
+   ]
+  },
+  {
+   "id": "content",
+   "n": "V",
+   "short": "Content",
+   "label": "Content Magnets",
+   "img": "content.jpg",
+   "pos": "55% 50%",
+   "desc": "UGC, video and creator systems for modern distribution.",
+   "items": [
+    {
+     "n": "UGC and video",
+     "d": "Creator-style video and edits made to run as ads.",
+     "href": "ugc-and-video.html",
+     "link": "See UGC and video"
+    },
+    {
+     "n": "Social media creatives",
+     "d": "Statics, carousels and short video for paid and organic social.",
+     "href": "social-media-creatives.html",
+     "link": "See Social media creatives"
+    },
+    {
+     "n": "Influencer marketing",
+     "d": "Creator partnerships briefed against a single brand thesis.",
+     "href": "influencer-marketing.html",
+     "link": "See Influencer marketing"
+    }
+   ]
+  }
+ ],
+ "SV_START": [
+  [
+   "Ad spend keeps rising and profit does not",
+   "performance-marketing.html",
+   "Performance marketing"
+  ],
+  [
+   "People visit but very few buy",
+   "conversion-rate-optimisation.html",
+   "Conversion optimisation"
+  ],
+  [
+   "Nobody finds us when they search",
+   "seo.html",
+   "SEO"
+  ],
+  [
+   "The brand looks like everyone else's",
+   "branding.html",
+   "Branding"
+  ],
+  [
+   "The website is slow or hard to use",
+   "web-development.html",
+   "Website development"
+  ],
+  [
+   "We cannot produce enough creative",
+   "ugc-and-video.html",
+   "UGC and video"
+  ]
+ ],
+ "SV_FAQ": [
+  {
+   "q": "What is MMC's marketing services?",
+   "a": "MMC's services sit in connected systems: Revenue Accelerators (performance marketing, lead generation, retention), Organic Growth Engines (SEO and conversion), Brand Foundation Builders (branding, UI/UX, packaging, reputation), Technology Drivers (Shopify, websites, apps) and Content Magnets (UGC and video, social, influencers). One senior team runs all of them."
+  },
+  {
+   "q": "How does MMC's marketing services work with MMC?",
+   "a": "You do not have to buy everything. Start with the one that fixes your biggest leak: ad spend that rises while profit does not, visitors who do not buy, a brand that looks like everyone else's. A call settles where to start, and we plan the work so it survives the maths."
+  },
+  {
+   "q": "What does MMC's marketing services cost?",
+   "a": "It depends on the service. For paid media, your ad spend is paid to the platforms and our fee is quoted after a call. For branding, packaging, UI/UX, web, app and Shopify, we quote per project after a call. For SEO, retention, social, influencer, reputation and UGC, we agree a monthly scope after a call. For lead generation and conversion work, we scope after a call. We do not publish a price list."
+  },
+  {
+   "q": "Do you guarantee results?",
+   "a": "No. Nobody can honestly guarantee a ROAS, a ranking, a lead count or an admission. We commit to plans that survive the maths, accurate tracking, weekly optimisation and honest reporting, with results judged on contribution margin, not on what a platform reports."
+  },
+  {
+   "q": "Who is MMC's marketing services for?",
+   "a": "Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions. See the <a href=\"d2c.html\">D2C</a>, <a href=\"b2b.html\">B2B</a> and <a href=\"education.html\">education</a> pages."
+  },
+  {
+   "q": "What do you need from us?",
+   "a": "Access to your accounts or site, your margins or the value of a qualified lead or admission, and a named person on your side. We tell you on the first call exactly what is needed."
+  }
+ ]
+}

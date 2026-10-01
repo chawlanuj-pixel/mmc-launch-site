@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import { TOOL_CLOSINGS } from "../../lib/prefooter";
+import "../../styles/tools.css";
+import { metaHead } from "../../lib/metaHead";
+import { LtvCac } from "../../islands/tools/LtvCac.jsx";
+---
+<BaseLayout {...metaHead("tools__ltv-cac", "/tools/ltv-cac/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main"><LtvCac client:load />
+      <PreFooterCta source="tool-ltv-cac" eyebrow="Next step" {...TOOL_CLOSINGS["ltv-cac"]} />
+    </main>
+    <StickyBookingBar source="tool-ltv-cac" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

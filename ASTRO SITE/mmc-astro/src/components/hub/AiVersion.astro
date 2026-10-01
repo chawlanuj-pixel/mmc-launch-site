@@ -1,0 +1,37 @@
+---
+// "Also built with AI": links a service page to its AI by MMC counterpart, so the two
+// halves of the site read as one module. Slugs are the last segment of the hub path.
+const MAP: Record<string, { n: string; d: string; href: string }[]> = {
+  "ugc-and-video": [
+    { n: "AI UGC", d: "Creator-style ad video made with AI presenters.", href: "/ai-by-mmc/ugc/" },
+    { n: "AI video generation", d: "Short product and brand films generated from a brief.", href: "/ai-by-mmc/video-generation/" },
+    { n: "AI spokesperson video", d: "One script, one presenter, one clip.", href: "/ai-by-mmc/spokesperson-video/" },
+  ],
+  "social-media": [{ n: "AI photoshoot", d: "Product and lifestyle imagery without a studio day.", href: "/ai-by-mmc/photoshoot/" }],
+  "branding": [{ n: "AI photoshoot", d: "Product and lifestyle imagery without a studio day.", href: "/ai-by-mmc/photoshoot/" }],
+  "lead-generation": [{ n: "AI sales agent", d: "Answers and qualifies enquiries, then hands over to your team.", href: "/ai-by-mmc/sales-agent/" }],
+  "web-development": [{ n: "AI landing page builder", d: "Landing pages drafted from your offer, ready to test.", href: "/ai-by-mmc/landing-page-builder/" }],
+  "cro": [{ n: "AI landing page builder", d: "Landing pages drafted from your offer, ready to test.", href: "/ai-by-mmc/landing-page-builder/" }],
+};
+const key = (Astro.props.slug as string) || "";
+const items = MAP[key] || [];
+---
+{items.length > 0 && (
+<section class="n-band n-band--white" id="ai-version" aria-labelledby="ai-version-h">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">AI by MMC</span>
+      <h2 class="n-h2" id="ai-version-h">Also built <span class="n-serif">with AI.</span></h2>
+    </div>
+    <ul class="aiv" style="list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))">
+      {items.map((i) => (
+        <li style="border:1px solid rgba(11,16,32,.12);border-radius:16px;padding:18px 20px;background:#fff">
+          <h3 style="margin:0 0 6px;font:800 18px/1.2 var(--font-display,inherit)">{i.n}</h3>
+          <p style="margin:0 0 12px;font-size:16px;line-height:1.5;color:var(--n-fg-2,#47506A)">{i.d}</p>
+          <a class="pm-textlink" href={i.href} style="min-height:44px;display:inline-flex;align-items:center">See {i.n}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+)}

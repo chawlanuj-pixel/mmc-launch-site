@@ -1,0 +1,377 @@
+{
+  "file": "seo.html",
+  "path": "/services/seo/",
+  "key": "seo",
+  "title": "SEO and AI Search Visibility in India | MMC",
+  "description": "MMC's SEO covers technical health, search intent, content and answer-engine visibility, for D2C, B2B and education brands in India.",
+  "ogTitle": "SEO that gets you found by buyers and by AI",
+  "ogDescription": "Technical health, search intent and answer-engine visibility.",
+  "ogAlt": "Monday Marketing Company: seo.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/seo.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO",
+          "item": "https://www.mondaymarketing.company/seo.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/seo.html#webpage",
+      "url": "https://www.mondaymarketing.company/seo.html",
+      "name": "SEO and AI Search Visibility in India | MMC",
+      "description": "MMC's SEO covers technical health, search intent, content and answer-engine visibility, for D2C, B2B and education brands in India.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/seo.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/seo.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/seo.html#service",
+      "name": "SEO",
+      "serviceType": "SEO",
+      "description": "SEO and answer-engine optimisation for D2C, B2B and education brands.",
+      "url": "https://www.mondaymarketing.company/seo.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/seo.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO is the work of making your website easy for search engines and AI assistants to find, understand and recommend for the searches your buyers make, so qualified visitors find you without paid clicks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does SEO work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We audit and fix the technical foundation, map your buyers' questions to pages, write clear answers that search engines and AI assistants can quote, and report on qualified traffic, enquiries and orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does SEO cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ranking or a timeline. We commit to the work in the monthly scope and to reporting on qualified traffic, enquiries and orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is SEO for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands with a catalogue, B2B companies whose buyers research alone, and education brands whose families search for courses. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your site, Search Console and Analytics, your product or course list, and someone who can approve content. If you are mid-redesign, tell us first."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "seo",
+    "wm": "SEO",
+    "eyebrow": "● SEO",
+    "h1": [
+      "SEO",
+      [
+        "that ",
+        "gets you found by buyers and AI",
+        "."
+      ]
+    ],
+    "sub": "Technical health, content built around search intent, and the structure that lets search engines and AI assistants understand and quote you.",
+    "tiles": [
+      {
+        "img": "seo/tech.jpg",
+        "pos": "50% 50%",
+        "label": "Technical health",
+        "note": "Crawlable and fast"
+      },
+      {
+        "img": "seo/intent.jpg",
+        "pos": "50% 50%",
+        "label": "Search intent",
+        "note": "Topics buyers search"
+      },
+      {
+        "img": "seo/pages.jpg",
+        "pos": "50% 50%",
+        "label": "Pages",
+        "note": "Built to rank and convert"
+      },
+      {
+        "img": "seo/aeo.jpg",
+        "pos": "50% 50%",
+        "label": "AI answers",
+        "note": "Structured to be quoted"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "SEO is the work of making your website easy for search engines and AI assistants to find, understand and recommend for the searches your buyers make.",
+      "hl": "find, understand and recommend",
+      "who": "Monday Marketing Company (MMC) does SEO for D2C, B2B and education brands, including the answer-engine work that decides whether AI assistants quote you.",
+      "points": [
+        {
+          "icon": "grid",
+          "title": "Technical foundation",
+          "text": "A site that loads fast and can be crawled and understood."
+        },
+        {
+          "icon": "target",
+          "title": "Content for intent",
+          "text": "Pages built around what buyers actually search, in the order they search it."
+        },
+        {
+          "icon": "link",
+          "title": "Structured to be quoted",
+          "text": "Clear definitions and structured data, so answers can be lifted accurately."
+        }
+      ],
+      "image": "seo/aeo.jpg",
+      "chip": "Found by search and by AI"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where search visibility goes missing",
+      "h2a": "Five ways SEO",
+      "h2b": "goes wrong.",
+      "lede": "Ranking is not one trick. Each stage below is where visibility is lost, and the SEO work that recovers it."
+    },
+    "stages": [
+      {
+        "k": "Fix the foundation",
+        "tag": "Technical SEO",
+        "breaks": "Publishing content on a site search engines struggle to read.",
+        "why": "Slow pages, broken links and blocked resources stop good content from being found, however well it is written.",
+        "does": "We audit and fix the technical basics: speed, crawlability, mobile usability, page structure and duplicate content.",
+        "href": "services.html#tech",
+        "img": "seo/tech.jpg"
+      },
+      {
+        "k": "Follow the buyer's questions",
+        "tag": "Search intent and topics",
+        "breaks": "Writing about what you want to say, not what people search.",
+        "why": "Buyers search in stages, from a vague problem to a specific supplier. Content that ignores those stages misses most of them.",
+        "does": "We map the searches buyers, parents and shoppers make, group them into topics, and plan content that answers each stage.",
+        "href": "services.html#organic",
+        "img": "seo/intent.jpg"
+      },
+      {
+        "k": "Build pages that rank and convert",
+        "tag": "Landing and category pages",
+        "breaks": "Thin pages that neither rank nor persuade.",
+        "why": "A page that ranks but does not answer the question or show the next step sends traffic away.",
+        "does": "We build category, service and landing pages with clear structure, answers and a next step, so traffic becomes enquiries and orders.",
+        "href": "services.html#organic",
+        "img": "seo/pages.jpg"
+      },
+      {
+        "k": "Be the answer AI quotes",
+        "tag": "Answer-engine optimisation",
+        "breaks": "Ignoring how AI assistants pick their sources.",
+        "why": "More people now ask an assistant instead of scrolling results. Assistants tend to quote pages that give a clear, well-structured answer.",
+        "does": "We add clear definitions, FAQs and structured data, so that search engines and AI assistants can understand and accurately quote your pages.",
+        "href": "services.html#organic",
+        "img": "seo/aeo.jpg"
+      },
+      {
+        "k": "Earn trust and measure it",
+        "tag": "Authority and reporting",
+        "breaks": "Judging SEO on rankings alone.",
+        "why": "A ranking that brings no enquiries or sales is not a result. Visibility only matters when it leads to business.",
+        "does": "We build authority through relevant mentions and links, and report on qualified traffic, enquiries and orders rather than rankings alone.",
+        "href": "audit.html",
+        "img": "seo/authority.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "SEO is working.",
+      "note": "Rankings alone are not on the list.",
+      "cards": [
+        {
+          "n": "Qualified organic traffic",
+          "d": "Visitors from search who fit who you sell to."
+        },
+        {
+          "n": "Rankings for buying searches",
+          "d": "Position for the searches that lead to sales, not vanity terms."
+        },
+        {
+          "n": "Enquiries or orders from search",
+          "d": "What search actually produces for the business."
+        },
+        {
+          "n": "Answers that quote you",
+          "d": "How often search and AI answers use your pages."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where SEO fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready websites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "web-development.html",
+          "link": "See Website development"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Google Ads",
+          "d": "Search, shopping and video aimed at buying intent.",
+          "img": "google/search.jpg",
+          "href": "google-ads.html",
+          "link": "See Google Ads"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "SEO."
+    ],
+    "faq": [
+      {
+        "q": "What is SEO?",
+        "a": "SEO is the work of making your website easy for search engines and AI assistants to find, understand and recommend for the searches your buyers make, so qualified visitors find you without paid clicks."
+      },
+      {
+        "q": "How does SEO work with MMC?",
+        "a": "We audit and fix the technical foundation, map your buyers' questions to pages, write clear answers that search engines and AI assistants can quote, and report on qualified traffic, enquiries and orders."
+      },
+      {
+        "q": "What does SEO cost?",
+        "a": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. Nobody can honestly guarantee a ranking or a timeline. We commit to the work in the monthly scope and to reporting on qualified traffic, enquiries and orders."
+      },
+      {
+        "q": "Who is SEO for?",
+        "a": "D2C brands with a catalogue, B2B companies whose buyers research alone, and education brands whose families search for courses. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your site, Search Console and Analytics, your product or course list, and someone who can approve content. If you are mid-redesign, tell us first."
+      }
+    ],
+    "cta": {
+      "h2a": "Find out what search",
+      "h2b": "is missing about you.",
+      "lede": "On a call, with a senior strategist. We look at how you appear in search and in AI answers."
+    },
+    "proof": {
+      "codes": [],
+      "does": "do SEO for"
+    },
+    "process": {
+      "h2a": "How we run SEO,",
+      "h2b": "month to month.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit and fix the foundation",
+          "d": "Crawl, speed, structure and indexing are checked and the technical blockers fixed first.",
+          "out": "A site search engines can read cleanly."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Map the buyer's questions",
+          "d": "We build the topic map around the searches your buyers, parents or students actually make, and the pages that answer them.",
+          "out": "A content plan tied to search intent."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Publish, structure and report",
+          "d": "Pages go live with clear definitions and structured data so answer engines can quote them, and reporting follows qualified traffic.",
+          "out": "Progress read in enquiries and orders, not rankings alone."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "SEO for brands that are",
+      "h2b": "in it for the long run.",
+      "good": {
+        "t": "You want buyers to find you without paying for every click, and can wait for it to compound.",
+        "why": "SEO suits D2C brands with a catalogue, B2B companies whose buyers research alone, and colleges whose families search for courses."
+      },
+      "not": {
+        "t": "You need leads next week, or a guaranteed ranking.",
+        "why": "Search takes time and nobody controls rankings, so urgent demand is better served by paid media while SEO builds."
+      }
+    }
+  }
+}

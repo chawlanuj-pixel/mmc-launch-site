@@ -1,0 +1,378 @@
+{
+  "file": "packaging-design.html",
+  "path": "/services/packaging-design/",
+  "key": "packaging",
+  "title": "Packaging Design for D2C Brands in India | MMC",
+  "description": "MMC designs packaging structure and graphics for shelves, marketplaces and quick-commerce listings, for D2C brands in India.",
+  "ogTitle": "Packaging design that earns attention",
+  "ogDescription": "Structure and graphics for shelf, tile and doorstep.",
+  "ogAlt": "Monday Marketing Company: packaging design.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/packaging-design.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Packaging design",
+          "item": "https://www.mondaymarketing.company/packaging-design.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/packaging-design.html#webpage",
+      "url": "https://www.mondaymarketing.company/packaging-design.html",
+      "name": "Packaging Design for D2C Brands in India | MMC",
+      "description": "MMC designs packaging structure and graphics for shelves, marketplaces and quick-commerce listings, for D2C brands in India.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/packaging-design.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/packaging-design.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/packaging-design.html#service",
+      "name": "Packaging design",
+      "serviceType": "Packaging design",
+      "description": "Packaging structure and graphic design for D2C brands.",
+      "url": "https://www.mondaymarketing.company/packaging-design.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/packaging-design.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is packaging design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Packaging design is the work of shaping and decorating the pack so it is noticed, understood and chosen, on the shelf, on a phone screen and at the door."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does packaging design work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We study the shelf and the screen, design the structure and graphics together, test hierarchy at full size and thumbnail size, and prepare print-ready files."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does packaging design cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can guarantee a pack will lift sales. We commit to research, a tested hierarchy and print-ready files, and honest advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is packaging design for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands with physical products, mostly. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your product and range, brand assets, sizes and materials constraints, your printer's specifications, and where the pack will be sold."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "packaging",
+    "wm": "Pack",
+    "eyebrow": "● Packaging design",
+    "h1": [
+      "Packaging design",
+      [
+        "that ",
+        "earns attention on shelf and screen",
+        "."
+      ]
+    ],
+    "sub": "Structure and graphics designed for the shelf, the marketplace tile and the unboxing, so the pack sells before anyone reads the label.",
+    "tiles": [
+      {
+        "img": "pack/shelf.jpg",
+        "pos": "50% 50%",
+        "label": "Shelf",
+        "note": "Seen in seconds"
+      },
+      {
+        "img": "pack/structure.jpg",
+        "pos": "50% 50%",
+        "label": "Structure",
+        "note": "Made to hold and ship"
+      },
+      {
+        "img": "pack/hierarchy.jpg",
+        "pos": "50% 50%",
+        "label": "Hierarchy",
+        "note": "Name, variant, claim"
+      },
+      {
+        "img": "pack/tile.jpg",
+        "pos": "50% 50%",
+        "label": "On screen",
+        "note": "Tile-sized legibility"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Packaging design is the work of shaping and decorating the pack so that it is noticed, understood and chosen, on the shelf, on a phone screen and at the door.",
+      "hl": "noticed, understood and chosen",
+      "who": "Monday Marketing Company (MMC) designs packaging for D2C brands, from structure to graphics.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Seen in seconds",
+          "text": "A clear hierarchy of brand, product, variant and claim."
+        },
+        {
+          "icon": "grid",
+          "title": "Works on a tile",
+          "text": "Tested at thumbnail size for marketplaces and quick commerce."
+        },
+        {
+          "icon": "layers",
+          "title": "Ready to print",
+          "text": "Files prepared with room for the label information your product needs."
+        }
+      ],
+      "image": "pack/hierarchy.jpg",
+      "chip": "Shelf, tile and doorstep"
+    },
+    "leaks": {
+      "style": "stack",
+      "eyebrow": "Where packaging goes wrong",
+      "h2a": "Five ways packaging",
+      "h2b": "goes wrong.",
+      "lede": "A pack has seconds to work. Each stage below is where packs lose that moment, and how we design for it."
+    },
+    "stages": [
+      {
+        "k": "Understand the shelf",
+        "tag": "Category and shopper research",
+        "breaks": "Designing a pack in isolation.",
+        "why": "A pack is judged next to its neighbours. What stands out depends on what surrounds it.",
+        "does": "We study the category shelf and marketplace listings, so the pack is designed to be seen among real competitors.",
+        "href": "services.html#brand",
+        "img": "pack/shelf.jpg"
+      },
+      {
+        "k": "Design the structure",
+        "tag": "Structural design",
+        "breaks": "Choosing a box because it is cheap or standard.",
+        "why": "Shape and material affect how a pack feels, how it protects the product and what it costs to ship.",
+        "does": "We design structure and materials around the product, protection, shipping cost and the feeling you want when it is opened.",
+        "href": "services.html#brand",
+        "img": "pack/structure.jpg"
+      },
+      {
+        "k": "Set the hierarchy",
+        "tag": "Graphic design",
+        "breaks": "Giving every message the same weight.",
+        "why": "When brand, product, variant and claims all shout, none is read.",
+        "does": "We set a clear order of information, so a shopper sees the brand, understands the product and finds the variant at a glance.",
+        "href": "branding.html",
+        "img": "pack/hierarchy.jpg"
+      },
+      {
+        "k": "Test it small",
+        "tag": "Tile and thumbnail testing",
+        "breaks": "Judging the pack only at full size.",
+        "why": "Most first impressions now happen on a phone screen, where the pack is a thumbnail.",
+        "does": "We test packs at thumbnail size and on marketplace and quick-commerce tiles, so they stay clear when small.",
+        "href": "quick-commerce-ads.html",
+        "img": "pack/tile.jpg"
+      },
+      {
+        "k": "Prepare for print",
+        "tag": "Artwork and production",
+        "breaks": "Sending artwork to print without checks.",
+        "why": "Colour, dielines and label information are easy to get wrong, and costly to reprint.",
+        "does": "We prepare print-ready artwork, check colour and dielines, and leave room for the label information your product requires.",
+        "href": "services.html#brand",
+        "img": "pack/print.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we check",
+      "h2a": "Four checks before a pack",
+      "h2b": "goes to print.",
+      "note": "Each one is tested, not assumed.",
+      "cards": [
+        {
+          "n": "Legibility at thumbnail size",
+          "d": "Whether the pack still reads on a small screen."
+        },
+        {
+          "n": "Distinction on shelf",
+          "d": "Whether it stands out among real competitors."
+        },
+        {
+          "n": "Protection and shipping",
+          "d": "Whether it survives the journey and its cost."
+        },
+        {
+          "n": "Print accuracy",
+          "d": "Whether colour and dielines will hold in production."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where packaging design fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Branding",
+          "d": "Positioning, naming, logo, voice and guidelines.",
+          "img": "brand/logo.jpg",
+          "href": "branding.html",
+          "link": "See Branding"
+        },
+        {
+          "n": "Quick commerce ads",
+          "d": "Listings and placements on quick-commerce apps.",
+          "img": "pm-v3/channel-quickcommerce.jpg",
+          "href": "quick-commerce-ads.html",
+          "link": "See Quick commerce ads"
+        },
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing, speed and checkout.",
+          "img": "shop/design.jpg",
+          "href": "shopify-development.html",
+          "link": "See Shopify development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "packaging design."
+    ],
+    "faq": [
+      {
+        "q": "What is packaging design?",
+        "a": "Packaging design is the work of shaping and decorating the pack so it is noticed, understood and chosen, on the shelf, on a phone screen and at the door."
+      },
+      {
+        "q": "How does packaging design work with MMC?",
+        "a": "We study the shelf and the screen, design the structure and graphics together, test hierarchy at full size and thumbnail size, and prepare print-ready files."
+      },
+      {
+        "q": "What does packaging design cost?",
+        "a": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. Nobody can guarantee a pack will lift sales. We commit to research, a tested hierarchy and print-ready files, and honest advice."
+      },
+      {
+        "q": "Who is packaging design for?",
+        "a": "D2C brands with physical products, mostly. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Your product and range, brand assets, sizes and materials constraints, your printer's specifications, and where the pack will be sold."
+      }
+    ],
+    "cta": {
+      "h2a": "See how your pack looks",
+      "h2b": "at a glance.",
+      "lede": "On a call, with a senior strategist. We look at your packaging on the shelf and on a screen."
+    },
+    "proof": {
+      "codes": [],
+      "does": "design packaging for"
+    },
+    "process": {
+      "h2a": "How we design your pack,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "Understand the shelf",
+          "d": "Category and shopper research, on shelf and on screen.",
+          "out": "A view of what your pack must beat."
+        },
+        {
+          "t": "Design structure and graphics",
+          "d": "Structure, materials and graphics designed together.",
+          "out": "Designs that work as a pack, not only a print."
+        },
+        {
+          "t": "Test small",
+          "d": "Hierarchy and legibility tested at full size and tile size.",
+          "out": "A pack that reads on a phone."
+        },
+        {
+          "t": "Prepare for print",
+          "d": "Print-ready files, dielines and colour checked with your printer.",
+          "out": "Artwork ready to produce."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Packaging for brands that",
+      "h2b": "sell on shelf and screen.",
+      "good": {
+        "t": "You sell physical products and the pack is not helping the sale.",
+        "why": "D2C brands on marketplaces and quick commerce need a pack that reads at tile size and feels right at the door."
+      },
+      "not": {
+        "t": "You want only a quick label change, or have no plan for production.",
+        "why": "A pack touches structure, cost and print, so it needs a plan."
+      }
+    }
+  }
+}

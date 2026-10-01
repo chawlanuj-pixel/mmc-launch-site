@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Shell from "../../../components/Shell.astro";
+import PageHero from "../../../components/pages/PageHero.astro";
+import PageFx from "../../../components/pages/PageFx.astro";
+import PreFooterCta from "../../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../../components/shared/StickyBookingBar.astro";
+import { BOOK } from "../../../lib/site";
+import FreeToolsStrip from "../../../components/shared/FreeToolsStrip.astro";
+import Beyond from "../../../components/hub/Beyond.astro";
+import Faq from "../../../components/hub/Faq.astro";
+import Stages from "../../../components/hub/Stages.astro";
+import ProcessBand from "../../../components/shared/ProcessBand.astro";
+import WhoFor from "../../../components/shared/WhoFor.astro";
+import ProofWall from "../../../components/shared/ProofWall.astro";
+import { relatedCards } from "../../../lib/related";
+import Answer from "../../../components/hub/Answer.astro";
+import Img from "../../../components/hub/Img.astro";
+import Arrow from "../../../components/hub/Arrow.astro";
+import { pageHead } from "../../../lib/pagehead";
+import { fixDeep, href } from "../../../lib/links";
+import raw from "../../../data/pages/d2c.json";
+import "../../../styles/pg-wordmark.css";
+
+const D = fixDeep(raw);
+const CTA = BOOK;
+const img = (n: string) => (n.includes("/") ? n : "d2c/" + n);
+const TILES = [
+  { img: "packing.jpg", pos: "50% 50%", label: "Fulfilment", note: "Every order packed" },
+  { img: "unboxing.jpg", pos: "50% 50%", label: "Unboxing", note: "The first impression" },
+  { img: "checkout.jpg", pos: "50% 50%", label: "Checkout", note: "Where orders are won or lost" },
+  { img: "range.jpg", pos: "50% 50%", label: "The range", note: "Beauty, food, kids and more" },
+];
+---
+<BaseLayout {...pageHead("d2c", "/industries/d2c/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <PageHero wm="D2C" eyebrow="● Direct-to-consumer brands"
+        lines={["D2C marketing", 'that <span class="em-serif">protects your margin</span>.']}
+        sub="One senior team for the whole D2C growth stack, from ads and creative to conversion and retention, judged on contribution margin."
+        primary={{ label: CTA, book: "d2c-hero" }} secondary={{ label: "See the work", href: "#proof" }}>
+        <div class="pmh__mosaic">
+          {TILES.map((t, k) => (
+            <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+              <Img name={img(t.img)} ratio="1 / 1.05" class="pmh__img" pos={t.pos} eager={k < 2} />
+              <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+            </figure>
+          ))}
+        </div>
+      </PageHero>
+
+      <Answer
+        lead="D2C marketing sells a brand's products straight to shoppers online, with no retailer in between."
+        hl="straight to shoppers"
+        who="Monday Marketing Company (MMC) runs the whole stack for D2C brands in India."
+        points={[
+          { icon: "coin", title: "It all lands on your P&L", text: "Acquisition cost, delivery, returns and repeat purchase sit with the brand, not a retailer." },
+          { icon: "layers", title: "One stack, one team", text: "Ads, creative, conversion and retention, run together." },
+          { icon: "gauge", title: "Judged on contribution margin", text: "The profit left after variable costs." },
+        ]}
+        image="d2c/unboxing.jpg" chip="No retailer in between" />
+
+      <Stages hubKey="d2c" L={{ style: "stack", eyebrow: "Where D2C brands lose profit", h2a: "Five places the money leaks.", h2b: "Five services that stop it.", lede: "Follow one customer from first ad to second order. Each stage has its own way of costing you margin, and its own fix." }} S={D.DC_STAGES.map((x: any) => ({ ...x, img: img(x.img) }))} />
+
+      <section class="n-band n-band--ink pm-band" id="numbers">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">What we read</span>
+            <h2 class="n-h2">Four numbers that show whether <span class="n-serif">D2C marketing is working.</span></h2>
+            <p>Read against your own costs and margin.</p>
+          </div>
+          <div class="dcn n-rise d1">
+            {D.DC_NUMBERS.map((x: any) => (
+              <div class="dcn__card dcn__card--static"><b>{x.n}</b><span>{x.d}</span></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      <ProcessBand h2a="How we run D2C marketing," h2b="week to week." tone="white" note="The days show the order of the work, not a promise of results. What we find in your accounts decides how long each part takes." steps={[
+        { when: "Days 1 to 30", t: "Audit and set the floor", d: "We read your accounts and unit economics, fix tracking and agree your break-even ROAS before changing spend.", out: "A clear floor: the result each rupee has to clear." },
+        { when: "Days 31 to 60", t: "Rebuild and test", d: "Account structure, a creative testing programme and conversion fixes on the pages that take the traffic.", out: "A system where every ad and page has a job." },
+        { when: "Days 61 to 90", t: "Scale and bring buyers back", d: "Budget moves to what clears the floor, and retention flows work on the second order.", out: "Growth that does not depend on a single order paying for itself." },
+      ]} />
+
+      <WhoFor h2a="D2C marketing for brands that" h2b="know their margins, or want to." tone="paper"
+        good={{ t: "You are a D2C founder or growth head whose ROAS has dropped, CAC keeps rising or creative has tired.", why: "Our method starts from your contribution margin, so spend is judged on profit, and one senior team does the thinking instead of just sending reports." }}
+        not={{ t: "You want a guaranteed ROAS, or you are pre-revenue and want brand building on a very small monthly budget.", why: "No agency can honestly promise a ROAS, and a thin budget does more good spent on testing the product first." }} />
+
+      <ProofWall codes={["perf"]} types={["D2C"]} does="work with" book="d2c-proof" tone="white" />
+
+      <Beyond tone="paper" Y={{ eyebrow: "Related", h2a: "Where D2C marketing fits in", h2b: "the wider picture.", cards: relatedCards(["performance-marketing.html", "b2b.html", "education.html"]) }} />
+
+      <Faq tone="white" title={["Questions about", "D2C marketing."]} faq={D.DC_FAQ} />
+
+      <FreeToolsStrip page="industries-d2c" bg="white" />
+      <PreFooterCta source="d2c" h2a="Find where your D2C profit" h2b="leaks." lede="On a call, with a senior strategist. We read your accounts against your break-even ROAS and plan the first 30 days." />
+    </main>
+    <StickyBookingBar source="d2c" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

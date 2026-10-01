@@ -1,0 +1,382 @@
+{
+  "file": "web-development.html",
+  "path": "/services/web-development/",
+  "key": "webdev",
+  "title": "Website Development in India | MMC",
+  "description": "MMC builds fast, search-ready websites for D2C, B2B and education brands, with forms connected to your CRM, built to convert and be found.",
+  "ogTitle": "Website development built to convert and be found",
+  "ogDescription": "Fast, search-ready websites connected to your CRM.",
+  "ogAlt": "Monday Marketing Company: website development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/web-development.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Website development",
+          "item": "https://www.mondaymarketing.company/web-development.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/web-development.html#webpage",
+      "url": "https://www.mondaymarketing.company/web-development.html",
+      "name": "Website Development in India | MMC",
+      "description": "MMC builds fast, search-ready websites for D2C, B2B and education brands, with forms connected to your CRM, built to convert and be found.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/web-development.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/web-development.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/web-development.html#service",
+      "name": "Website development",
+      "serviceType": "Website development",
+      "description": "Website design and development for B2B, education and D2C brands.",
+      "url": "https://www.mondaymarketing.company/web-development.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/web-development.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is website development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Website development is the work of planning, designing and building a site that explains what you do, loads quickly, can be found in search and turns visitors into enquiries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does website development work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We plan the structure and messaging, design and build on a content system your team can edit, build in speed, accessibility and search foundations, and connect forms to your CRM before launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does website development cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee traffic or enquiries from a website alone. We commit to a fast, search-ready build, forms that reach your CRM, and honest reporting after launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is website development for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "B2B companies and educational institutes that need a credible site, and D2C brands that want a marketing site. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions. For online stores, see Shopify development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your brand assets, what you want the site to say, who approves content, and access to your domain, CRM and analytics."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "webdev",
+    "wm": "Web",
+    "eyebrow": "● Website development",
+    "h1": [
+      "Website development",
+      [
+        "that ",
+        "converts and gets found",
+        "."
+      ]
+    ],
+    "sub": "Fast, search-ready websites for D2C, B2B and education brands, with forms connected to your CRM so every enquiry can be followed.",
+    "tiles": [
+      {
+        "img": "web/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Plan",
+        "note": "Built for the buyer"
+      },
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Build",
+        "note": "Clean and maintainable"
+      },
+      {
+        "img": "web/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Fast and accessible"
+      },
+      {
+        "img": "web/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Forms and CRM",
+        "note": "Every lead followed"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Website development is the work of planning, designing and building a site that explains what you do, loads quickly, can be found in search, and turns visitors into enquiries.",
+      "hl": "turns visitors into enquiries",
+      "who": "Monday Marketing Company (MMC) builds websites for B2B companies and educational institutes, and marketing sites for D2C brands.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Built for the buyer",
+          "text": "Structure and content that answer a buying committee or a family."
+        },
+        {
+          "icon": "gauge",
+          "title": "Fast and accessible",
+          "text": "Quick to load on a phone and usable by everyone."
+        },
+        {
+          "icon": "link",
+          "title": "Connected to your CRM",
+          "text": "Forms and events feed your lead follow-up."
+        }
+      ],
+      "image": "web/build.jpg",
+      "chip": "Built to convert and be found"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where websites go wrong",
+      "h2a": "Five ways a website",
+      "h2b": "goes wrong.",
+      "lede": "A site is judged in seconds by people with a question. Each stage below is where sites fail them, and how we build it."
+    },
+    "stages": [
+      {
+        "k": "Plan for the buyer",
+        "tag": "Site architecture and messaging",
+        "breaks": "Organising the site around your departments.",
+        "why": "Buyers and families look for answers to their own questions, not for your org chart.",
+        "does": "We plan the structure and messaging around what visitors need to decide, and write the key pages to answer it.",
+        "href": "seo.html",
+        "img": "web/plan.jpg"
+      },
+      {
+        "k": "Build it cleanly",
+        "tag": "Design and development",
+        "breaks": "Building pages that only the original developer can edit.",
+        "why": "A site your team cannot update goes stale, and every change becomes a project.",
+        "does": "We build with reusable components and a content system your team can maintain without a developer.",
+        "href": "ui-ux-design.html",
+        "img": "web/build.jpg"
+      },
+      {
+        "k": "Make it fast",
+        "tag": "Speed and accessibility",
+        "breaks": "Ignoring speed and accessibility until launch.",
+        "why": "Slow, hard-to-use pages lose visitors and can exclude people who need accessible design.",
+        "does": "We build for speed and accessibility from the start, and test both before launch.",
+        "href": "conversion-rate-optimisation.html",
+        "img": "web/speed.jpg"
+      },
+      {
+        "k": "Build it to be found",
+        "tag": "SEO foundations",
+        "breaks": "Treating search as something to add later.",
+        "why": "Structure, titles and structured data are much easier to build in than to retrofit.",
+        "does": "We build in clean structure, page titles, descriptions and structured data, so search engines and AI assistants can understand the site.",
+        "href": "seo.html",
+        "img": "web/seo.jpg"
+      },
+      {
+        "k": "Connect the forms",
+        "tag": "Forms, CRM and tracking",
+        "breaks": "Forms that email someone and are forgotten.",
+        "why": "Without a CRM and tracking, you cannot see which enquiries came from where, or what became of them.",
+        "does": "We connect forms to your CRM and set up tracking, so every enquiry can be followed and campaigns can learn from it.",
+        "href": "lead-generation.html",
+        "img": "web/crm.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "a site is working.",
+      "note": "Set before the build, checked after.",
+      "cards": [
+        {
+          "n": "Mobile page speed",
+          "d": "How fast the site loads on a typical phone."
+        },
+        {
+          "n": "Enquiry rate",
+          "d": "The share of visitors who get in touch."
+        },
+        {
+          "n": "Accessibility checks",
+          "d": "Whether the site works for everyone."
+        },
+        {
+          "n": "Enquiries traced to source",
+          "d": "Whether you can see where each one came from."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where website development fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing, speed and checkout.",
+          "img": "shop/design.jpg",
+          "href": "shopify-development.html",
+          "link": "See Shopify development"
+        },
+        {
+          "n": "UI/UX design",
+          "d": "Research, flows, screens and a design system.",
+          "img": "ux/screens.jpg",
+          "href": "ui-ux-design.html",
+          "link": "See UI/UX design"
+        },
+        {
+          "n": "SEO",
+          "d": "Technical health, search intent and answer-engine visibility.",
+          "img": "seo/aeo.jpg",
+          "href": "seo.html",
+          "link": "See SEO"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "website development."
+    ],
+    "faq": [
+      {
+        "q": "What is website development?",
+        "a": "Website development is the work of planning, designing and building a site that explains what you do, loads quickly, can be found in search and turns visitors into enquiries."
+      },
+      {
+        "q": "How does website development work with MMC?",
+        "a": "We plan the structure and messaging, design and build on a content system your team can edit, build in speed, accessibility and search foundations, and connect forms to your CRM before launch."
+      },
+      {
+        "q": "What does website development cost?",
+        "a": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee traffic or enquiries from a website alone. We commit to a fast, search-ready build, forms that reach your CRM, and honest reporting after launch."
+      },
+      {
+        "q": "Who is website development for?",
+        "a": "B2B companies and educational institutes that need a credible site, and D2C brands that want a marketing site. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions. For online stores, see <a href=\"shopify-development.html\">Shopify development</a>."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Your brand assets, what you want the site to say, who approves content, and access to your domain, CRM and analytics."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan a site that gets",
+      "h2b": "enquiries.",
+      "lede": "On a call, with a senior strategist. We look at your site and where it loses visitors."
+    },
+    "proof": {
+      "codes": [
+        "web"
+      ],
+      "does": "build websites for",
+      "mix": true
+    },
+    "process": {
+      "h2a": "How we build your website,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "Plan for the buyer",
+          "d": "Structure and messaging are planned around who decides and what they need to see.",
+          "out": "A sitemap and message plan you have signed off."
+        },
+        {
+          "t": "Design and build",
+          "d": "Clean design and development on a content system your team can update.",
+          "out": "A site your team can run without a developer."
+        },
+        {
+          "t": "Make it fast and findable",
+          "d": "Speed, accessibility and search foundations are built in, not added later.",
+          "out": "A site that loads quickly and can be found."
+        },
+        {
+          "t": "Connect and launch",
+          "d": "Forms go to your CRM and tracking is checked before launch.",
+          "out": "Enquiries you can follow from first click."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Websites for brands that need",
+      "h2b": "to be believed.",
+      "good": {
+        "t": "Your site is outdated, slow or hard to trust, and buyers, parents or students check it before they call.",
+        "why": "B2B companies and colleges win or lose credibility on the site, and D2C brands get marketing sites that match their stores."
+      },
+      "not": {
+        "t": "You want a site with no plan for traffic, or a rebuild every few months.",
+        "why": "A site earns its keep when it is built for search, forms and follow-up, which needs a plan."
+      }
+    }
+  }
+}
