@@ -2,8 +2,8 @@
   "file": "shopify-development.html",
   "path": "/services/shopify-development/",
   "key": "shopify",
-  "title": "Shopify Marketing and Development for D2C Brands in India | MMC",
-  "description": "MMC builds and redesigns Shopify stores for D2C brands in India, built for speed, checkout and the way shoppers browse.",
+  "title": "Shopify Development Agency India for D2C | MMC",
+  "description": "Shopify development agency in India building and redesigning fast D2C stores, with checkout, UPI and COD set up and tracking connected from day one.",
   "ogTitle": "Shopify development for D2C brands in India",
   "ogDescription": "Stores built for browsing, speed and checkout.",
   "ogAlt": "Monday Marketing Company: shopify development.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/shopify-development.html#webpage",
       "url": "https://www.mondaymarketing.company/shopify-development.html",
-      "name": "Shopify Marketing and Development for D2C Brands in India | MMC",
-      "description": "MMC builds and redesigns Shopify stores for D2C brands in India, built for speed, checkout and the way shoppers browse.",
+      "name": "Shopify Development Agency India for D2C | MMC",
+      "description": "Shopify development agency in India building and redesigning fast D2C stores, with checkout, UPI and COD set up and tracking connected from day one.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "shopify",
     "wm": "Shopify",
-    "eyebrow": "● Shopify development",
+    "eyebrow": "● Shopify development agency",
     "h1": [
       "Shopify development",
       [

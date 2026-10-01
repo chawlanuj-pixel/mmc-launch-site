@@ -2,8 +2,8 @@
   "file": "google-ads.html",
   "path": "/services/performance-marketing/google-ads/",
   "key": "googleads",
-  "title": "Google Ads Agency in India | MMC",
-  "description": "MMC manages Google Ads across search, shopping, Performance Max and video, judged on contribution margin or the cost of a qualified lead.",
+  "title": "Google Ads Agency in India for D2C and B2B | MMC",
+  "description": "Google Ads agency in India running search, Shopping, Performance Max and video for D2C, B2B and education, judged on contribution margin, not clicks.",
   "ogTitle": "Google Ads management for growing brands",
   "ogDescription": "Search, shopping and video aimed at buying intent, judged on profit.",
   "ogAlt": "Monday Marketing Company: google ads management.",
@@ -44,8 +44,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/google-ads.html#webpage",
       "url": "https://www.mondaymarketing.company/google-ads.html",
-      "name": "Google Ads Agency in India | MMC",
-      "description": "MMC manages Google Ads across search, shopping, Performance Max and video, judged on contribution margin or the cost of a qualified lead.",
+      "name": "Google Ads Agency in India for D2C and B2B | MMC",
+      "description": "Google Ads agency in India running search, Shopping, Performance Max and video for D2C, B2B and education, judged on contribution margin, not clicks.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -135,7 +135,7 @@
   "hub": {
     "key": "googleads",
     "wm": "Google",
-    "eyebrow": "● Google Ads",
+    "eyebrow": "● Google Ads agency",
     "h1": [
       "Google Ads",
       [

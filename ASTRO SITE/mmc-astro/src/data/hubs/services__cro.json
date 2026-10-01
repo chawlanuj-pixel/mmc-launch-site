@@ -2,8 +2,8 @@
   "file": "conversion-rate-optimisation.html",
   "path": "/services/cro/",
   "key": "cro",
-  "title": "Conversion Rate Optimisation (CRO) in India | MMC",
-  "description": "MMC's conversion rate optimisation finds where visitors drop off and tests fixes on product pages, checkout and forms, for D2C, B2B and education.",
+  "title": "CRO Agency India for Shopify and D2C Stores | MMC",
+  "description": "CRO agency in India finding where visitors drop off and testing fixes on product pages, checkout and forms for Shopify, D2C, B2B and education sites.",
   "ogTitle": "Conversion optimisation that turns visitors into buyers",
   "ogDescription": "Find where visitors drop off, then test fixes.",
   "ogAlt": "Monday Marketing Company: conversion rate optimisation.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/conversion-rate-optimisation.html#webpage",
       "url": "https://www.mondaymarketing.company/conversion-rate-optimisation.html",
-      "name": "Conversion Rate Optimisation (CRO) in India | MMC",
-      "description": "MMC's conversion rate optimisation finds where visitors drop off and tests fixes on product pages, checkout and forms, for D2C, B2B and education.",
+      "name": "CRO Agency India for Shopify and D2C Stores | MMC",
+      "description": "CRO agency in India finding where visitors drop off and testing fixes on product pages, checkout and forms for Shopify, D2C, B2B and education sites.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "cro",
     "wm": "CRO",
-    "eyebrow": "● Conversion optimisation",
+    "eyebrow": "● CRO agency",
     "h1": [
       "Conversion optimisation",
       [

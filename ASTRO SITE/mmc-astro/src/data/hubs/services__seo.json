@@ -2,8 +2,8 @@
   "file": "seo.html",
   "path": "/services/seo/",
   "key": "seo",
-  "title": "SEO and AI Search Visibility in India | MMC",
-  "description": "MMC's SEO covers technical health, search intent, content and answer-engine visibility, for D2C, B2B and education brands in India.",
+  "title": "SEO Agency for Ecommerce India, AEO and GEO | MMC",
+  "description": "SEO agency in India for ecommerce, B2B and education brands. Technical health, search-intent content and AEO and GEO so AI assistants can quote you.",
   "ogTitle": "SEO that gets you found by buyers and by AI",
   "ogDescription": "Technical health, search intent and answer-engine visibility.",
   "ogAlt": "Monday Marketing Company: seo.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/seo.html#webpage",
       "url": "https://www.mondaymarketing.company/seo.html",
-      "name": "SEO and AI Search Visibility in India | MMC",
-      "description": "MMC's SEO covers technical health, search intent, content and answer-engine visibility, for D2C, B2B and education brands in India.",
+      "name": "SEO Agency for Ecommerce India, AEO and GEO | MMC",
+      "description": "SEO agency in India for ecommerce, B2B and education brands. Technical health, search-intent content and AEO and GEO so AI assistants can quote you.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "seo",
     "wm": "SEO",
-    "eyebrow": "● SEO",
+    "eyebrow": "● SEO agency",
     "h1": [
       "SEO",
       [

@@ -2,8 +2,8 @@
  "file": "resources.html",
  "path": "/resources/",
  "key": "resources",
- "title": "D2C Calculators, Glossary and Insights | MMC",
- "description": "Free calculators, a plain-English glossary and working notes from MMC, so you can check your own numbers before you spend on marketing.",
+ "title": "D2C Calculators, Glossary and Guides | MMC",
+ "description": "Free D2C calculators, a plain-English marketing glossary and practical guides from MMC, so you can check your own numbers before you spend on marketing.",
  "ogTitle": "Free marketing calculators, glossary and insights",
  "ogDescription": "Check your own numbers before you spend.",
  "ogAlt": "Monday Marketing Company: resources.",
@@ -32,8 +32,8 @@
    "@type": "CollectionPage",
    "@id": "https://www.mondaymarketing.company/resources.html#webpage",
    "url": "https://www.mondaymarketing.company/resources.html",
-   "name": "D2C Calculators, Glossary and Insights | MMC",
-   "description": "Free calculators, a plain-English glossary and working notes from MMC, so you can check your own numbers before you spend on marketing.",
+   "name": "D2C Calculators, Glossary and Guides | MMC",
+   "description": "Free D2C calculators, a plain-English marketing glossary and practical guides from MMC, so you can check your own numbers before you spend on marketing.",
    "isPartOf": {
     "@id": "https://www.mondaymarketing.company/#website"
    },

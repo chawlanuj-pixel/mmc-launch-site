@@ -333,7 +333,7 @@
   "crumb": "AI Video Generation"
  },
  "sales-agent": {
-  "title": "AI Sales Agent: Chat and WhatsApp Lead Qualification | AI by MMC",
+  "title": "AI Sales Agent for WhatsApp and Chat Leads | AI by MMC",
   "description": "An AI sales agent that answers questions, qualifies enquiries and books calls on your website and WhatsApp. Built by MMC for D2C, B2B and education.",
   "path": "/ai-by-mmc/sales-agent/",
   "jsonld": [
@@ -342,7 +342,7 @@
     "@type": "WebPage",
     "@id": "https://www.mondaymarketing.company/ai-by-mmc/sales-agent/#webpage",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/sales-agent/",
-    "name": "AI Sales Agent: Chat and WhatsApp Lead Qualification | AI by MMC",
+    "name": "AI Sales Agent for WhatsApp and Chat Leads | AI by MMC",
     "description": "An AI sales agent that answers questions, qualifies enquiries and books calls on your website and WhatsApp. Built by MMC for D2C, B2B and education.",
     "isPartOf": {
      "@id": "https://www.mondaymarketing.company/#website"

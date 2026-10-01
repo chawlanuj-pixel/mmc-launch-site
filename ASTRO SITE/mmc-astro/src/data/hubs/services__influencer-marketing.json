@@ -2,8 +2,8 @@
   "file": "influencer-marketing.html",
   "path": "/services/influencer-marketing/",
   "key": "influencer",
-  "title": "Influencer Marketing for D2C Brands in India | MMC",
-  "description": "MMC plans influencer and creator partnerships for D2C brands: shortlisting, briefs, usage rights and results read against sales.",
+  "title": "Influencer Marketing Agency for D2C Brands | MMC",
+  "description": "Influencer marketing agency for D2C brands in India. Creator shortlists, briefs, usage rights and results read against sales, not follower counts.",
   "ogTitle": "Influencer marketing chosen for fit",
   "ogDescription": "Creators shortlisted for audience fit and read against sales.",
   "ogAlt": "Monday Marketing Company: influencer marketing.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/influencer-marketing.html#webpage",
       "url": "https://www.mondaymarketing.company/influencer-marketing.html",
-      "name": "Influencer Marketing for D2C Brands in India | MMC",
-      "description": "MMC plans influencer and creator partnerships for D2C brands: shortlisting, briefs, usage rights and results read against sales.",
+      "name": "Influencer Marketing Agency for D2C Brands | MMC",
+      "description": "Influencer marketing agency for D2C brands in India. Creator shortlists, briefs, usage rights and results read against sales, not follower counts.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "influencer",
     "wm": "Creators",
-    "eyebrow": "● Influencer marketing",
+    "eyebrow": "● Influencer marketing agency",
     "h1": [
       "Influencer marketing",
       [

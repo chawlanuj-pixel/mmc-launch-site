@@ -2,8 +2,8 @@
   "file": "ugc-and-video.html",
   "path": "/services/ugc-and-video/",
   "key": "ugc",
-  "title": "UGC and Video Ads in India | MMC",
-  "description": "MMC produces UGC and short video ads for D2C brands in India, briefed against one brand thesis, made to run as ads and refreshed before they tire.",
+  "title": "UGC Ads Agency India: UGC Video Production | MMC",
+  "description": "UGC ads agency in India producing creator-style video for D2C brands, briefed against one brand thesis, made to run as ads and refreshed before they tire.",
   "ogTitle": "UGC and video ads made to run as ads",
   "ogDescription": "Creator-style video briefed, edited and refreshed for paid media.",
   "ogAlt": "Monday Marketing Company: ugc and video production.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/ugc-and-video.html#webpage",
       "url": "https://www.mondaymarketing.company/ugc-and-video.html",
-      "name": "UGC and Video Ads in India | MMC",
-      "description": "MMC produces UGC and short video ads for D2C brands in India, briefed against one brand thesis, made to run as ads and refreshed before they tire.",
+      "name": "UGC Ads Agency India: UGC Video Production | MMC",
+      "description": "UGC ads agency in India producing creator-style video for D2C brands, briefed against one brand thesis, made to run as ads and refreshed before they tire.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "ugc",
     "wm": "UGC",
-    "eyebrow": "● UGC and video",
+    "eyebrow": "● UGC ads agency",
     "h1": [
       "UGC and video",
       [

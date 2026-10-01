@@ -2,8 +2,8 @@
   "file": "web-development.html",
   "path": "/services/web-development/",
   "key": "webdev",
-  "title": "Website Development in India | MMC",
-  "description": "MMC builds fast, search-ready websites for D2C, B2B and education brands, with forms connected to your CRM, built to convert and be found.",
+  "title": "Website Development Company in India | MMC",
+  "description": "Website development company in India building fast, search-ready sites for B2B, education and D2C brands, with forms wired to your CRM and tracking.",
   "ogTitle": "Website development built to convert and be found",
   "ogDescription": "Fast, search-ready websites connected to your CRM.",
   "ogAlt": "Monday Marketing Company: website development.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/web-development.html#webpage",
       "url": "https://www.mondaymarketing.company/web-development.html",
-      "name": "Website Development in India | MMC",
-      "description": "MMC builds fast, search-ready websites for D2C, B2B and education brands, with forms connected to your CRM, built to convert and be found.",
+      "name": "Website Development Company in India | MMC",
+      "description": "Website development company in India building fast, search-ready sites for B2B, education and D2C brands, with forms wired to your CRM and tracking.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "webdev",
     "wm": "Web",
-    "eyebrow": "● Website development",
+    "eyebrow": "● Website development company",
     "h1": [
       "Website development",
       [

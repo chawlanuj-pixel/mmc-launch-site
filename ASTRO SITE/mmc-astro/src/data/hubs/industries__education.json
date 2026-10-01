@@ -2,8 +2,8 @@
   "file": "education.html",
   "path": "/industries/education/",
   "key": "education",
-  "title": "Admission Marketing for Colleges in India | MMC",
-  "description": "MMC runs lead generation, CRM and Meta CAPI tracking, retention funnels and reputation management for colleges and education brands in India.",
+  "title": "Admission Marketing Agency for Colleges, India | MMC",
+  "description": "Admission marketing agency for colleges and education brands in India. Lead generation, CRM and Meta CAPI tracking, follow-up funnels and reputation work.",
   "ogTitle": "Marketing for colleges and education brands in India",
   "ogDescription": "Websites, creative and lead generation judged on the cost of an enrolment.",
   "ogAlt": "Monday Marketing Company: marketing for colleges and education brands in india.",
@@ -32,8 +32,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/education.html#webpage",
       "url": "https://www.mondaymarketing.company/education.html",
-      "name": "Admission Marketing for Colleges in India | MMC",
-      "description": "MMC runs lead generation, CRM and Meta CAPI tracking, retention funnels and reputation management for colleges and education brands in India.",
+      "name": "Admission Marketing Agency for Colleges, India | MMC",
+      "description": "Admission marketing agency for colleges and education brands in India. Lead generation, CRM and Meta CAPI tracking, follow-up funnels and reputation work.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -104,7 +104,7 @@
   "hub": {
     "key": "education",
     "wm": "Edu",
-    "eyebrow": "● Educational institutes",
+    "eyebrow": "● Admission marketing agency",
     "h1": [
       "Admission marketing",
       [

@@ -2,8 +2,8 @@
   "file": "quick-commerce-ads.html",
   "path": "/services/performance-marketing/quick-commerce/",
   "key": "qcads",
-  "title": "Quick Commerce Ads in India: Blinkit, Zepto | MMC",
-  "description": "MMC runs listings and ads on quick-commerce apps such as Blinkit, Zepto and Instamart, planned around availability and read at blended level.",
+  "title": "Quick Commerce Ads: Blinkit, Zepto, Instamart | MMC",
+  "description": "Quick commerce ads agency for Blinkit, Zepto and Instamart. Listings and ads planned around availability and read at blended level for D2C brands.",
   "ogTitle": "Quick commerce ads for D2C brands",
   "ogDescription": "Listings, sponsored placements and availability planning.",
   "ogAlt": "Monday Marketing Company: quick commerce ads.",
@@ -44,8 +44,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/quick-commerce-ads.html#webpage",
       "url": "https://www.mondaymarketing.company/quick-commerce-ads.html",
-      "name": "Quick Commerce Ads in India: Blinkit, Zepto | MMC",
-      "description": "MMC runs listings and ads on quick-commerce apps such as Blinkit, Zepto and Instamart, planned around availability and read at blended level.",
+      "name": "Quick Commerce Ads: Blinkit, Zepto, Instamart | MMC",
+      "description": "Quick commerce ads agency for Blinkit, Zepto and Instamart. Listings and ads planned around availability and read at blended level for D2C brands.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -135,7 +135,7 @@
   "hub": {
     "key": "qcads",
     "wm": "Quick",
-    "eyebrow": "● Quick commerce ads",
+    "eyebrow": "● Quick commerce ads agency",
     "h1": [
       "Quick commerce ads",
       [

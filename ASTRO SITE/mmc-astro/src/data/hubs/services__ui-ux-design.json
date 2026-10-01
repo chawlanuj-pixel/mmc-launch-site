@@ -2,8 +2,8 @@
   "file": "ui-ux-design.html",
   "path": "/services/ui-ux-design/",
   "key": "uiux",
-  "title": "UI/UX Design for Websites and Apps in India | MMC",
-  "description": "MMC designs interfaces and design systems for websites and apps: research, flows, screens, testing and a system that scales.",
+  "title": "UI UX Design Agency India for Websites, Apps | MMC",
+  "description": "UI UX design agency in India for websites and apps: research, flows, screens, testing and a design system that scales as your product grows.",
   "ogTitle": "UI/UX design that people find easy to use",
   "ogDescription": "Research, flows, screens and a design system.",
   "ogAlt": "Monday Marketing Company: ui/ux design.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/ui-ux-design.html#webpage",
       "url": "https://www.mondaymarketing.company/ui-ux-design.html",
-      "name": "UI/UX Design for Websites and Apps in India | MMC",
-      "description": "MMC designs interfaces and design systems for websites and apps: research, flows, screens, testing and a system that scales.",
+      "name": "UI UX Design Agency India for Websites, Apps | MMC",
+      "description": "UI UX design agency in India for websites and apps: research, flows, screens, testing and a design system that scales as your product grows.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "uiux",
     "wm": "UX",
-    "eyebrow": "● UI/UX design",
+    "eyebrow": "● UI/UX design agency",
     "h1": [
       "UI/UX design",
       [

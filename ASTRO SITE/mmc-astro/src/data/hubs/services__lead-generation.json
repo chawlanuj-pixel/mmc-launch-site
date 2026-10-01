@@ -2,8 +2,8 @@
   "file": "lead-generation.html",
   "path": "/services/lead-generation/",
   "key": "leadgen",
-  "title": "Lead Generation Agency in India for B2B, Education and D2C | MMC",
-  "description": "MMC runs lead generation connected to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. For B2B, education and D2C.",
+  "title": "Lead Generation Agency India with CRM and CAPI | MMC",
+  "description": "Lead generation agency in India connecting paid media to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. B2B, education, D2C.",
   "ogTitle": "Lead generation that brings in qualified leads",
   "ogDescription": "Paid media, landing pages and follow-up funnels connected to your CRM and Meta's Conversions API.",
   "ogAlt": "Monday Marketing Company: lead generation connected to your CRM and Meta CAPI.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/lead-generation.html#webpage",
       "url": "https://www.mondaymarketing.company/lead-generation.html",
-      "name": "Lead Generation Agency in India for B2B, Education and D2C | MMC",
-      "description": "MMC runs lead generation connected to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. For B2B, education and D2C.",
+      "name": "Lead Generation Agency India with CRM and CAPI | MMC",
+      "description": "Lead generation agency in India connecting paid media to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. B2B, education, D2C.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "leadgen",
     "wm": "Leads",
-    "eyebrow": "● Lead generation",
+    "eyebrow": "● Lead generation agency",
     "h1": [
       "Lead generation",
       [

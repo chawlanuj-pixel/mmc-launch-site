@@ -2,8 +2,8 @@
   "file": "amazon-ads.html",
   "path": "/services/performance-marketing/amazon-ads/",
   "key": "amazonads",
-  "title": "Amazon Ads Management for D2C Brands in India | MMC",
-  "description": "MMC runs Amazon ads and listing optimisation for D2C brands, planned around stock and read against total sales, not ad-attributed sales alone.",
+  "title": "Amazon Ads Agency in India for D2C Brands | MMC",
+  "description": "Amazon ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.",
   "ogTitle": "Amazon ads management for D2C brands",
   "ogDescription": "Sponsored ads, listings and brand content planned around stock.",
   "ogAlt": "Monday Marketing Company: amazon ads management.",
@@ -44,8 +44,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/amazon-ads.html#webpage",
       "url": "https://www.mondaymarketing.company/amazon-ads.html",
-      "name": "Amazon Ads Management for D2C Brands in India | MMC",
-      "description": "MMC runs Amazon ads and listing optimisation for D2C brands, planned around stock and read against total sales, not ad-attributed sales alone.",
+      "name": "Amazon Ads Agency in India for D2C Brands | MMC",
+      "description": "Amazon ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -135,7 +135,7 @@
   "hub": {
     "key": "amazonads",
     "wm": "Amazon",
-    "eyebrow": "● Amazon Ads",
+    "eyebrow": "● Amazon Ads agency",
     "h1": [
       "Amazon Ads",
       [

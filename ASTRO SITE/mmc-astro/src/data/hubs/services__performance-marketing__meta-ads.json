@@ -2,8 +2,8 @@
   "file": "meta-ads.html",
   "path": "/services/performance-marketing/meta-ads/",
   "key": "metaads",
-  "title": "Meta Ads Agency in India for D2C, B2B and Education Brands | MMC",
-  "description": "MMC manages Meta ads on Instagram and Facebook for D2C, B2B and education brands, with creative testing and Conversions API tracking.",
+  "title": "Meta Ads Agency India for D2C and B2B Brands | MMC",
+  "description": "Meta ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.",
   "ogTitle": "Meta ads management for growing brands",
   "ogDescription": "Instagram and Facebook campaigns built as one funnel, with real results sent back to Meta.",
   "ogAlt": "Monday Marketing Company: meta ads management.",
@@ -44,8 +44,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/meta-ads.html#webpage",
       "url": "https://www.mondaymarketing.company/meta-ads.html",
-      "name": "Meta Ads Agency in India for D2C, B2B and Education Brands | MMC",
-      "description": "MMC manages Meta ads on Instagram and Facebook for D2C, B2B and education brands, with creative testing and Conversions API tracking.",
+      "name": "Meta Ads Agency India for D2C and B2B Brands | MMC",
+      "description": "Meta ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -135,7 +135,7 @@
   "hub": {
     "key": "metaads",
     "wm": "Meta",
-    "eyebrow": "● Meta Ads",
+    "eyebrow": "● Meta Ads agency",
     "h1": [
       "Meta Ads",
       [

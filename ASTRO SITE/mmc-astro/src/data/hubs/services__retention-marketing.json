@@ -2,8 +2,8 @@
   "file": "retention-marketing.html",
   "path": "/services/retention-marketing/",
   "key": "retention",
-  "title": "Retention Marketing in India | MMC",
-  "description": "MMC builds retention funnels across WhatsApp, email and loyalty that bring buyers back and nurture enquiries, for D2C, B2B and education.",
+  "title": "Retention Marketing Agency India: WhatsApp, Email | MMC",
+  "description": "Retention marketing agency in India building WhatsApp, email and loyalty funnels that bring D2C buyers back and nurture B2B and education enquiries.",
   "ogTitle": "Retention marketing that brings buyers back",
   "ogDescription": "WhatsApp, email and loyalty funnels built on your own data.",
   "ogAlt": "Monday Marketing Company: retention marketing.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/retention-marketing.html#webpage",
       "url": "https://www.mondaymarketing.company/retention-marketing.html",
-      "name": "Retention Marketing in India | MMC",
-      "description": "MMC builds retention funnels across WhatsApp, email and loyalty that bring buyers back and nurture enquiries, for D2C, B2B and education.",
+      "name": "Retention Marketing Agency India: WhatsApp, Email | MMC",
+      "description": "Retention marketing agency in India building WhatsApp, email and loyalty funnels that bring D2C buyers back and nurture B2B and education enquiries.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "retention",
     "wm": "Retain",
-    "eyebrow": "● Retention marketing",
+    "eyebrow": "● Retention marketing agency",
     "h1": [
       "Retention marketing",
       [

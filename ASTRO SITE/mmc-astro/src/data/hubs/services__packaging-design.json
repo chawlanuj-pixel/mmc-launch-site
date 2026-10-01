@@ -2,8 +2,8 @@
   "file": "packaging-design.html",
   "path": "/services/packaging-design/",
   "key": "packaging",
-  "title": "Packaging Design for D2C Brands in India | MMC",
-  "description": "MMC designs packaging structure and graphics for shelves, marketplaces and quick-commerce listings, for D2C brands in India.",
+  "title": "Packaging Design Agency India for D2C Brands | MMC",
+  "description": "Packaging design agency in India for D2C brands: structure and graphics built for the shelf, marketplaces and quick-commerce listings, concept to print.",
   "ogTitle": "Packaging design that earns attention",
   "ogDescription": "Structure and graphics for shelf, tile and doorstep.",
   "ogAlt": "Monday Marketing Company: packaging design.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/packaging-design.html#webpage",
       "url": "https://www.mondaymarketing.company/packaging-design.html",
-      "name": "Packaging Design for D2C Brands in India | MMC",
-      "description": "MMC designs packaging structure and graphics for shelves, marketplaces and quick-commerce listings, for D2C brands in India.",
+      "name": "Packaging Design Agency India for D2C Brands | MMC",
+      "description": "Packaging design agency in India for D2C brands: structure and graphics built for the shelf, marketplaces and quick-commerce listings, concept to print.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "packaging",
     "wm": "Pack",
-    "eyebrow": "● Packaging design",
+    "eyebrow": "● Packaging design agency",
     "h1": [
       "Packaging design",
       [

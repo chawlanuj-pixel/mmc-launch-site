@@ -2,8 +2,8 @@
   "file": "mobile-app-development.html",
   "path": "/services/mobile-app-development/",
   "key": "appdev",
-  "title": "Mobile App Development in India | MMC",
-  "description": "MMC builds mobile apps for brands whose customers return on their phones: planned around real use, built to be fast and measurable.",
+  "title": "Mobile App Development Company India | MMC",
+  "description": "Mobile app development company in India building fast, measurable apps for brands whose customers come back on their phones, planned around real use.",
   "ogTitle": "Mobile app development for customers who come back",
   "ogDescription": "Planned around real use, built to be fast and measurable.",
   "ogAlt": "Monday Marketing Company: mobile app development.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/mobile-app-development.html#webpage",
       "url": "https://www.mondaymarketing.company/mobile-app-development.html",
-      "name": "Mobile App Development in India | MMC",
-      "description": "MMC builds mobile apps for brands whose customers return on their phones: planned around real use, built to be fast and measurable.",
+      "name": "Mobile App Development Company India | MMC",
+      "description": "Mobile app development company in India building fast, measurable apps for brands whose customers come back on their phones, planned around real use.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "appdev",
     "wm": "Apps",
-    "eyebrow": "● Mobile app development",
+    "eyebrow": "● Mobile app development company",
     "h1": [
       "Mobile app development",
       [

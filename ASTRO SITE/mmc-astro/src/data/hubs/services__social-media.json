@@ -2,8 +2,8 @@
   "file": "social-media-creatives.html",
   "path": "/services/social-media/",
   "key": "social",
-  "title": "Social Media Creatives in India | MMC",
-  "description": "MMC plans and produces social media creatives for D2C, B2B and education brands: content pillars, designs and short video.",
+  "title": "Social Media Creatives Agency for D2C and B2B | MMC",
+  "description": "Social media creatives agency for D2C, B2B and education brands: content pillars, statics, carousels and short video for paid and organic social.",
   "ogTitle": "Social media creatives that keep a brand present",
   "ogDescription": "Content pillars, designed posts and short video.",
   "ogAlt": "Monday Marketing Company: social media creatives.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/social-media-creatives.html#webpage",
       "url": "https://www.mondaymarketing.company/social-media-creatives.html",
-      "name": "Social Media Creatives in India | MMC",
-      "description": "MMC plans and produces social media creatives for D2C, B2B and education brands: content pillars, designs and short video.",
+      "name": "Social Media Creatives Agency for D2C and B2B | MMC",
+      "description": "Social media creatives agency for D2C, B2B and education brands: content pillars, statics, carousels and short video for paid and organic social.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "social",
     "wm": "Social",
-    "eyebrow": "● Social media creatives",
+    "eyebrow": "● Social media creatives agency",
     "h1": [
       "Social media creatives",
       [

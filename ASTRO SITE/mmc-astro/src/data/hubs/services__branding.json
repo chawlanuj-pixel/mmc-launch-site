@@ -2,8 +2,8 @@
   "file": "branding.html",
   "path": "/services/branding/",
   "key": "branding",
-  "title": "Branding and Brand Identity in India | MMC",
-  "description": "MMC builds brand identity: positioning, naming, logo, voice and guidelines, for D2C, B2B and education brands in India.",
+  "title": "D2C Branding Agency India: Brand Identity | MMC",
+  "description": "Branding agency in India for D2C, B2B and education brands: positioning, naming, logo, voice and the guidelines that keep a brand consistent.",
   "ogTitle": "Branding and identity that makes you memorable",
   "ogDescription": "Positioning, naming, logo, voice and guidelines.",
   "ogAlt": "Monday Marketing Company: branding.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/branding.html#webpage",
       "url": "https://www.mondaymarketing.company/branding.html",
-      "name": "Branding and Brand Identity in India | MMC",
-      "description": "MMC builds brand identity: positioning, naming, logo, voice and guidelines, for D2C, B2B and education brands in India.",
+      "name": "D2C Branding Agency India: Brand Identity | MMC",
+      "description": "Branding agency in India for D2C, B2B and education brands: positioning, naming, logo, voice and the guidelines that keep a brand consistent.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "branding",
     "wm": "Brand",
-    "eyebrow": "● Branding",
+    "eyebrow": "● Branding agency",
     "h1": [
       "Branding",
       [

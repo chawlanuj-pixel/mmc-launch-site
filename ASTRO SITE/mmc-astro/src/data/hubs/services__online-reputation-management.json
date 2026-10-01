@@ -2,8 +2,8 @@
   "file": "online-reputation-management.html",
   "path": "/services/online-reputation-management/",
   "key": "orm",
-  "title": "Online Reputation Management in India | MMC",
-  "description": "MMC manages online reputation: genuine reviews, honest replies and accurate profiles on Google and review sites, for education, B2B and D2C.",
+  "title": "Review Management and Online Reputation | MMC",
+  "description": "Online reputation management in India: genuine reviews, honest replies and accurate profiles on Google and review sites for education, B2B and D2C.",
   "ogTitle": "Online reputation management that earns trust",
   "ogDescription": "Genuine reviews, honest replies and accurate profiles.",
   "ogAlt": "Monday Marketing Company: online reputation management.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/online-reputation-management.html#webpage",
       "url": "https://www.mondaymarketing.company/online-reputation-management.html",
-      "name": "Online Reputation Management in India | MMC",
-      "description": "MMC manages online reputation: genuine reviews, honest replies and accurate profiles on Google and review sites, for education, B2B and D2C.",
+      "name": "Review Management and Online Reputation | MMC",
+      "description": "Online reputation management in India: genuine reviews, honest replies and accurate profiles on Google and review sites for education, B2B and D2C.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -129,7 +129,7 @@
   "hub": {
     "key": "orm",
     "wm": "ORM",
-    "eyebrow": "● Online reputation management",
+    "eyebrow": "● Review management",
     "h1": [
       "Online reputation management",
       [
