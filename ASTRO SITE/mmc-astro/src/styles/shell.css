@@ -1638,7 +1638,8 @@ main:focus { outline: none; }
     position: absolute; inset: 0; display: flex; flex-direction: column; min-height: 0;
     transition: transform 260ms var(--ease-out), opacity 260ms var(--ease-out), visibility 0s linear 260ms;
   }
-  .mm-view.is-current { transform: none; opacity: 1; visibility: visible; transition-delay: 0s; }
+  /* inherit, not visible: the overlay itself is visibility:hidden until the menu opens, and a child set to visible would show through it */
+  .mm-view.is-current { transform: none; opacity: 1; visibility: inherit; transition-delay: 0s; }
   .mm-view.is-left  { transform: translateX(-28%); opacity: 0; visibility: hidden; }
   .mm-view.is-right { transform: translateX(100%); opacity: 0; visibility: hidden; }
 
