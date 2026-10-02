@@ -1617,3 +1617,75 @@ main:focus { outline: none; }
 @media (prefers-reduced-motion: reduce) {
   .mmc-nav__meta-dot, [class*="cs-strip"], [class*="cs__strip"] { animation: none !important; }
 }
+
+/* ===== Phone menu (<= 720px): root -> directory -> category, one overlay. Desktop and tablet are unchanged. ===== */
+@media (max-width: 720px) {
+  .sunmenu__content--phone {
+    display: flex; flex-direction: column; gap: 10px;
+    padding: calc(env(safe-area-inset-top, 0px) + 84px) max(20px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px));
+    height: 100vh; height: 100dvh;
+  }
+  .mm-head { flex: none; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.22); }
+  /* "The Index" and the descriptor stay, in a smaller size than the desktop menu */
+  .mm-index { font-size: 10px; letter-spacing: 0.2em; margin-bottom: 6px; }
+  .mm-index::before { width: 18px; }
+  .sunmenu__multi.mm-multi { padding: 0; border: 0; gap: 6px; font-size: 13px; letter-spacing: -0.01em; line-height: 1.3; }
+  .mm-nav { flex: 1 1 auto; min-height: 0; position: relative; overflow: hidden; }
+  .mm-views { position: relative; height: 100%; }
+
+  /* Views slide horizontally; the hidden ones are visibility:hidden (and inert), so they are never focusable. */
+  .mm-view {
+    position: absolute; inset: 0; display: flex; flex-direction: column; min-height: 0;
+    transition: transform 260ms var(--ease-out), opacity 260ms var(--ease-out), visibility 0s linear 260ms;
+  }
+  .mm-view.is-current { transform: none; opacity: 1; visibility: visible; transition-delay: 0s; }
+  .mm-view.is-left  { transform: translateX(-28%); opacity: 0; visibility: hidden; }
+  .mm-view.is-right { transform: translateX(100%); opacity: 0; visibility: hidden; }
+
+  .mm-list { list-style: none; margin: 0; padding: 0; }
+  .mm-scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  .mm-list > li { border-bottom: 1px solid rgba(255,255,255,0.16); }
+  .mm-list > li:last-child { border-bottom: 0; }
+
+  .mm-row {
+    display: flex; align-items: center; gap: 14px; width: 100%; min-height: 46px; padding: 8px 2px;
+    background: transparent; border: 0; border-radius: 0; text-align: left; cursor: pointer; text-decoration: none;
+    color: rgba(255,255,255,0.9); font: inherit; -webkit-tap-highlight-color: transparent;
+    transition: background-color 150ms var(--ease-out), color 150ms var(--ease-out);
+  }
+  .mm-row:active, .mm-row:hover { background: rgba(255,255,255,0.08); color: #fff; }
+  .mm-row:focus-visible, .mm-back:focus-visible, .mm-page:focus-visible { outline: 2px solid var(--mmc-yellow); outline-offset: -2px; background: rgba(255,255,255,0.08); color: #fff; }
+  .mm-n { flex: none; width: 22px; font-family: var(--font-body); font-weight: 600; font-size: 11px; letter-spacing: 0.14em; color: rgba(255,255,255,0.85); }
+  .mm-label { flex: 1; min-width: 0; font-family: var(--font-display); font-weight: 700; font-size: 20px; letter-spacing: -0.02em; line-height: 1.15; }
+  .mm-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+  .mm-body .mm-label { flex: none; font-size: 18px; }
+  .mm-desc { font-family: var(--font-body); font-weight: 500; font-size: 12.5px; line-height: 1.3; color: rgba(255,255,255,0.75); }
+  .mm-arr { flex: none; display: inline-flex; color: var(--mmc-yellow); padding-right: 2px; }
+  .mm-row--two { min-height: 56px; }
+
+  .mm-bar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .mm-back, .mm-page {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 4px; background: transparent; border: 0; cursor: pointer;
+    font-family: var(--font-body); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: #fff;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mm-back svg { color: var(--mmc-yellow); }
+  .mm-page { color: var(--mmc-yellow); }
+  .mm-back:active, .mm-page:active { opacity: 0.7; }
+  .mm-title { flex: none; margin: 2px 0 2px; font-family: var(--font-display); font-weight: 700; font-size: 26px; letter-spacing: -0.025em; line-height: 1.1; color: #fff; }
+  .mm-hint { flex: none; margin: 0 0 8px; font-family: var(--font-body); font-style: italic; font-size: 13px; line-height: 1.35; color: rgba(255,255,255,0.8); }
+
+  .mm-cta { flex: none; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.22); }
+  .mm-cta .btn { width: 100%; justify-content: center; min-height: 48px; }
+  .mm-cta .glow-btn__inner { justify-content: center; }
+
+  @media (max-height: 700px) {
+    .sunmenu__content--phone { gap: 8px; padding-top: calc(env(safe-area-inset-top, 0px) + 78px); }
+    .mm-row { min-height: 44px; padding-block: 6px; }
+    .mm-row--two { min-height: 52px; }
+    .mm-title { font-size: 23px; }
+  }
+}
+@media (max-width: 720px) and (prefers-reduced-motion: reduce) {
+  .mm-view { transition: none; }
+}

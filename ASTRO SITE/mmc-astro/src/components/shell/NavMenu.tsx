@@ -23,10 +23,174 @@ const mmcTrapTab = (e: KeyboardEvent, root: HTMLElement | null) => {
   else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
 };
 
+/* Phone menu Tab trap. Tab order is Close button, then the current view, then the CTA, wrapping at both ends.
+   Every Tab is handled here, so focus never reaches the page behind. Hidden views are inert and left out. */
+const phoneTrapTab = (e: KeyboardEvent, root: HTMLElement | null, closeBtn: HTMLElement | null) => {
+  if (e.key !== "Tab" || !root) return;
+  const f = [
+    ...(closeBtn ? [closeBtn] : []),
+    ...Array.from(root.querySelectorAll<HTMLElement>(".mm-view.is-current a[href], .mm-view.is-current button, .mm-cta button")),
+  ];
+  if (!f.length) return;
+  const i = f.indexOf(document.activeElement as HTMLElement);
+  const next = i < 0 ? (e.shiftKey ? f.length - 1 : 0) : (i + (e.shiftKey ? -1 : 1) + f.length) % f.length;
+  e.preventDefault();
+  f[next].focus();
+};
+
+/* The phone menu has no .sm-link rows; give GSAP a detached stand-in so an empty selection does not log "target not found". */
+const orStandIn = (n: ArrayLike<Element>): any => (n.length ? Array.from(n) : [document.createElement("i")]);
+
 const bookCall = (src: string) => { const w = window as any; if (w.mmcBookCall) w.mmcBookCall(src); };
+
+/* ---------------- Phone menu (<= 720px) ----------------
+   Three levels in one overlay: root list -> directory (a primary link's sub items) -> category (its inner links).
+   Every view stays mounted so each list keeps its own scroll position; only the current view is visible and focusable.
+   Built from menuLinks, so no label or link is retyped here. Desktop and tablet keep the two-pane menu. */
+const ARROW = (
+  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+    <path d="M 4 8 H 12 M 9 5 L 12 8 L 9 11" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+const BACK = (
+  <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+    <path d="M 12 8 H 4 M 7 5 L 4 8 L 7 11" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+type Pos = { level: 0 | 1 | 2; p: string; c: string };
+const pad2 = (i: number) => String(i + 1).padStart(2, "0");
+
+function PhoneMenu({ navigate, overlayRef }: { navigate: (e: React.MouseEvent, url: string) => void; overlayRef: React.RefObject<HTMLDivElement> }) {
+  const [pos, setPos] = React.useState<Pos>({ level: 0, p: "", c: "" });
+  const from = React.useRef<string>("");
+  const dir = React.useRef<"fwd" | "back">("fwd");
+  const lastMove = React.useRef(0);
+  const first = React.useRef(true);
+
+  // Ignore a second tap while a view is still sliding (260ms), so it cannot land on a different row.
+  const move = (to: Pos, rowKey: string, d: "fwd" | "back") => {
+    const now = Date.now();
+    if (now - lastMove.current < 280) return;
+    lastMove.current = now; from.current = rowKey; dir.current = d; setPos(to);
+  };
+  const go = (next: Pos, rowKey: string) => move(next, rowKey, "fwd");
+  const back = (to: Pos, rowKey: string) => move(to, rowKey, "back");
+
+  // Move focus with the view: forward -> the new view's back control; back -> the row we came from.
+  React.useEffect(() => {
+    if (first.current) { first.current = false; return; }
+    const root = overlayRef.current; if (!root) return;
+    const t = setTimeout(() => {
+      const el = dir.current === "fwd"
+        ? root.querySelector<HTMLElement>(".mm-view.is-current .mm-back")
+        : root.querySelector<HTMLElement>(`.mm-view.is-current [data-rowkey="${from.current}"]`);
+      (el || root.querySelector<HTMLElement>(".mm-view.is-current .mm-row"))?.focus({ preventScroll: true });
+    }, 30);
+    return () => clearTimeout(t);
+  }, [pos, overlayRef]);
+
+  const state = (level: number, p: string, c: string) => {
+    const here = pos.level === level && (level === 0 || (pos.p === p && (level === 1 || pos.c === c)));
+    if (here) return "is-current";
+    return pos.level > level ? "is-left" : "is-right";
+  };
+  const inert = (cls: string) => (cls === "is-current" ? {} : ({ inert: "" } as any));
+  const withSub = links.filter((l) => l.sub);
+
+  return (
+    <div className="mm-views">
+      {/* Level 0: root */}
+      <div className={"mm-view " + state(0, "", "")} {...inert(state(0, "", ""))}>
+        <ul className="mm-list mm-scroll" aria-label="Primary">
+          {links.map((l) => (
+            <li key={l.label}>
+              {l.sub ? (
+                <button type="button" className="mm-row" data-rowkey={"r:" + l.label} aria-label={l.label + ", open submenu"}
+                        onClick={() => go({ level: 1, p: l.label, c: "" }, "r:" + l.label)}>
+                  <span className="mm-n">{l.n}</span><span className="mm-label">{l.label}</span><span className="mm-arr">{ARROW}</span>
+                </button>
+              ) : (
+                <a className="mm-row" href={href(l.url)} data-rowkey={"r:" + l.label} onClick={(e) => navigate(e, href(l.url))}>
+                  <span className="mm-n">{l.n}</span><span className="mm-label">{l.label}</span><span className="mm-arr">{ARROW}</span>
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Level 1: directory for each primary link that has sub items */}
+      {withSub.map((l) => {
+        const st = state(1, l.label, "");
+        return (
+          <div key={"d:" + l.label} className={"mm-view " + st} {...inert(st)}>
+            <div className="mm-bar">
+              <button type="button" className="mm-back" onClick={() => back({ level: 0, p: "", c: "" }, "r:" + l.label)}>{BACK}<span>Menu</span></button>
+              <a className="mm-page" href={href(l.url)} onClick={(e) => navigate(e, href(l.url))}>{l.label} page{ARROW}</a>
+            </div>
+            <h2 className="mm-title">{l.label}</h2>
+            <p className="mm-hint">{l.hint}</p>
+            <ul className="mm-list mm-scroll" aria-label={l.label}>
+              {l.sub!.map((s, i) => (
+                <li key={s.name}>
+                  {s.inner ? (
+                    <button type="button" className="mm-row mm-row--two" data-rowkey={"d:" + l.label + ":" + s.expandKey} aria-label={s.name + ", open submenu"}
+                            onClick={() => go({ level: 2, p: l.label, c: s.expandKey! }, "d:" + l.label + ":" + s.expandKey)}>
+                      <span className="mm-n">{pad2(i)}</span>
+                      <span className="mm-body"><span className="mm-label">{s.name}</span><span className="mm-desc">{s.desc}</span></span>
+                      <span className="mm-arr">{ARROW}</span>
+                    </button>
+                  ) : (
+                    <a className="mm-row mm-row--two" href={href(s.url)} onClick={(e) => navigate(e, href(s.url))}>
+                      <span className="mm-n">{pad2(i)}</span>
+                      <span className="mm-body"><span className="mm-label">{s.name}</span><span className="mm-desc">{s.desc}</span></span>
+                      <span className="mm-arr">{ARROW}</span>
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+
+      {/* Level 2: one category's links */}
+      {withSub.flatMap((l) => l.sub!.filter((s) => s.inner).map((s) => {
+        const st = state(2, l.label, s.expandKey!);
+        return (
+          <div key={"c:" + l.label + ":" + s.expandKey} className={"mm-view " + st} {...inert(st)}>
+            <div className="mm-bar">
+              <button type="button" className="mm-back" onClick={() => back({ level: 1, p: l.label, c: "" }, "d:" + l.label + ":" + s.expandKey)}>{BACK}<span>All {l.label}</span></button>
+            </div>
+            <h2 className="mm-title">{s.name}</h2>
+            <p className="mm-hint">{s.desc}</p>
+            <ul className="mm-list mm-scroll" aria-label={s.name}>
+              {s.inner!.map((it, i) => (
+                <li key={it.name}>
+                  <a className="mm-row" href={href(it.url)} onClick={(e) => navigate(e, href(it.url))}>
+                    <span className="mm-n">{pad2(i)}</span><span className="mm-label">{it.name}</span><span className="mm-arr">{ARROW}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      }))}
+    </div>
+  );
+}
 
 export default function NavMenu({ source = "site" }: { source?: string }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  // Phone layout (<= 720px). False on the server and first render, so the full link tree stays in the server HTML.
+  const [isPhone, setIsPhone] = React.useState(false);
+  React.useEffect(() => {
+    const mq = window.matchMedia("(max-width: 720px)");
+    const sync = () => setIsPhone(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
   const menuBtnRef = React.useRef<HTMLButtonElement>(null);
   const onClose = React.useCallback(() => setMenuOpen(false), []);
 
@@ -76,7 +240,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
   };
 
   const buildOpenTl = React.useCallback(() => {
-    const ls = contentRef.current!.querySelectorAll(".sm-link");
+    const ls = orStandIn(contentRef.current!.querySelectorAll(".sm-link"));
     const fades = contentRef.current!.querySelectorAll(".sm-fade");
     const corona = overlayRef.current!.querySelector(".sunmenu__corona");
     const heat   = overlayRef.current!.querySelector(".sunmenu__heat");
@@ -105,7 +269,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
   }, []);
 
   const buildCloseTl = React.useCallback(() => {
-    const ls = contentRef.current!.querySelectorAll(".sm-link");
+    const ls = orStandIn(contentRef.current!.querySelectorAll(".sm-link"));
     const fades = contentRef.current!.querySelectorAll(".sm-fade");
     const corona = overlayRef.current!.querySelector(".sunmenu__corona");
     const heat   = overlayRef.current!.querySelector(".sunmenu__heat");
@@ -136,7 +300,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
       openTlRef.current && openTlRef.current.kill();
       closeTlRef.current && closeTlRef.current.kill();
     };
-  }, [buildOpenTl, buildCloseTl]);
+  }, [buildOpenTl, buildCloseTl, isPhone]);
 
   // Open / close.
   React.useEffect(() => {
@@ -192,12 +356,15 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      else if (isPhone) phoneTrapTab(e, overlayRef.current, triggerRef && triggerRef.current);
       else mmcTrapTab(e, overlayRef.current);
     };
     window.addEventListener("keydown", onKey);
     // Move focus into the menu once the open animation has made it visible.
     const t = setTimeout(() => {
-      const first = overlayRef.current && overlayRef.current.querySelector<HTMLElement>(".sm-link")?.closest<HTMLElement>("a, button");
+      const first = overlayRef.current && (isPhone
+        ? overlayRef.current.querySelector<HTMLElement>(".mm-view.is-current .mm-row")
+        : overlayRef.current.querySelector<HTMLElement>(".sm-link")?.closest<HTMLElement>("a, button"));
       if (first) first.focus({ preventScroll: true });
     }, 450);
     const trigger = triggerRef && triggerRef.current;
@@ -207,7 +374,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
       // Closing: hand focus back to the Menu button (unless a link click is navigating away).
       if (trigger && overlayRef.current && overlayRef.current.contains(document.activeElement)) trigger.focus({ preventScroll: true });
     };
-  }, [open, onClose, triggerRef]);
+  }, [open, onClose, triggerRef, isPhone]);
 
   const navigate = (e: React.MouseEvent, url: string) => {
     e.preventDefault();
@@ -277,7 +444,31 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
       <div className="sunmenu__corona" aria-hidden="true"></div>
       <div className="sunmenu__heat" aria-hidden="true"></div>
 
-      <div className="sunmenu__content" ref={contentRef}>
+      <div className={"sunmenu__content" + (isPhone ? " sunmenu__content--phone" : "")} ref={contentRef}>
+        {isPhone ? (
+          <>
+            <div className="sm-fade mm-head">
+              <div className="sunmenu__eyebrow mm-index">The Index</div>
+              <div className="sunmenu__multi mm-multi" aria-label="Design, Marketing, Technology, Content, AI">
+                <span>Design</span><span className="x">×</span><span>Marketing</span><span className="x">×</span><span>Technology</span><span className="x">×</span><span>Content</span><span className="x">×</span><span>AI</span>
+              </div>
+            </div>
+            <nav className="sm-fade mm-nav" aria-label="Menu">
+              <PhoneMenu key={openEpoch} navigate={navigate} overlayRef={overlayRef} />
+            </nav>
+            <div className="sm-fade mm-cta">
+              <button className="btn btn--solid-blue glow-btn"
+                      onClick={() => { onClose(); setTimeout(() => bookCall(source + "-menu"), 420); }}>
+                <span className="glow-btn__glow" aria-hidden="true"></span>
+                <span className="glow-btn__inner">
+                  {BOOK}
+                  <span className="arrow"></span>
+                </span>
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
         {/* Header */}
         <div className="sunmenu__head">
           <div className="sm-fade sunmenu__eyebrow">The Index</div>
@@ -432,6 +623,8 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
             </button>
           </div>
         </div>
+          </>
+        )}
       </div>
     </div>
     </>
