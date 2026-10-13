@@ -1,0 +1,19 @@
+{
+  "_note": "Margin guard settings. minYieldInrPerHour is ONE cost floor in rupees per logged man-hour for every audience, because the same India team hour is worked whoever the client is. It is a STAND-IN for MMC's true loaded cost per hour (set at the card's cheapest standard execution rate, graphic designer Rs.800 an hour): replace it with loaded cost x (1 + minimum margin) once known. A US$ price is tested as price x fxInrPerUsd / hours against the same rupee floor, so the dollar floor is minYieldInrPerHour / fxInrPerUsd (about $9.4 an hour). fxInrPerUsd is a conservative assumption, not a market quote. whiteLabelFactorInr and whiteLabelFactorUsd set the agency price as a share of the client list price per currency (whiteLabelFactor is the fallback); the floor trims any discount that would sell below cost-plus. enforceFloorOnClientPrices: when true, every client-facing price is raised to at least the floor x logged hours; default off. clientPriceOverrides replaces named client list prices (and so the white-label base) with an owner decision, see V2-PRICING-DECISIONS.md. excludeFromYield lists lines that are pass-through rates, not billable man-hours.",
+  "minYieldInrPerHour": 800,
+  "whiteLabelFactor": 0.8,
+  "enforceFloorOnClientPrices": false,
+  "whiteLabelFactorInr": 0.7,
+  "whiteLabelFactorUsd": 0.75,
+  "fxInrPerUsd": 85,
+  "clientPriceOverrides": {
+    "soc-community": {
+      "inr": 18500
+    }
+  },
+  "excludeFromYield": [
+    "shoot-camera",
+    "shoot-light",
+    "shoot-assist"
+  ]
+}

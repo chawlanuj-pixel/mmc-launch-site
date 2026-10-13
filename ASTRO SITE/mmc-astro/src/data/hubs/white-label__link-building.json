@@ -1,0 +1,507 @@
+{
+  "file": "white-label-link-building.html",
+  "path": "/white-label/link-building/",
+  "key": "wl_link_building",
+  "title": "White-Label Link Building Services | MMC",
+  "description": "White-label link building and digital PR for agencies: outreach, guest posts and editorial placements, with reports you can send to your client as yours.",
+  "ogTitle": "White-label link building for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label link building.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/link-building/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label link building",
+          "item": "https://www.mondaymarketing.company/white-label/link-building/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/link-building/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/link-building/",
+      "name": "White-Label Link Building Services | MMC",
+      "description": "White-label link building and digital PR for agencies: outreach, guest posts and editorial placements, with reports you can send to your client as yours.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/link-building/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/link-building/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/link-building/#service",
+      "name": "White-label Link Building",
+      "serviceType": "White-label link building",
+      "description": "White-label link building delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/link-building/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/link-building/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are the links paid for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some publishers charge for sponsored content. We tell you which placements are sponsored and how they are labelled before anything goes live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee a number of links per month?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We agree a target in the scope. Outreach depends on editors, so we do not promise an exact count and we say so up front."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you use private blog networks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We do not use link networks, and we avoid practices that search engines treat as schemes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I get in the report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A log of live links with the site, page, date and anchor, plus notes on outreach in progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label link building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Share the client, the market and the target pages. We sign the NDA and return a target list for your approval."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_link_building",
+    "wm": "White-label Link Building",
+    "eyebrow": "● White-label link building",
+    "h1": [
+      "White-label link building",
+      [
+        "for agencies that need ",
+        "earned authority",
+        "."
+      ]
+    ],
+    "sub": "Outreach, editorial placements and digital PR for your SEO clients, with a placement log you can pass on under your name.",
+    "tiles": [
+      {
+        "img": "seo/authority.jpg",
+        "pos": "50% 50%",
+        "label": "Outreach",
+        "note": "Pitched by real people"
+      },
+      {
+        "img": "seo/pages.jpg",
+        "pos": "50% 50%",
+        "label": "Content",
+        "note": "Written for the host site"
+      },
+      {
+        "img": "seo/intent.jpg",
+        "pos": "50% 50%",
+        "label": "Anchors",
+        "note": "Natural and varied"
+      },
+      {
+        "img": "res/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Log",
+        "note": "Every link recorded"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label link building is outreach and content placement carried out for your client's website while you present it as your own work. We research targets, pitch editors, place content and send a log of every link, so your SEO retainers have an authority workstream behind them.",
+      "hl": "outreach and content placement",
+      "who": "Monday Marketing Company (MMC) delivers link building for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "link",
+          "title": "Earned placements",
+          "text": "Relevant sites, pitched by hand."
+        },
+        {
+          "icon": "target",
+          "title": "Target research",
+          "text": "Sites chosen for relevance, not volume."
+        },
+        {
+          "icon": "chart",
+          "title": "Placement log",
+          "text": "Every link recorded for your report."
+        }
+      ],
+      "image": "seo/authority.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "link-approach",
+          "h": "How we approach white-label link building",
+          "paras": [
+            "We avoid link schemes and bulk networks. Placements come from outreach to real sites with real audiences, and each is chosen for relevance to your client's market.",
+            "Link building works best alongside <a href=\"/white-label/seo/\">white-label SEO</a>, because links to weak pages rarely help. If your client has not had an audit, start there."
+          ],
+          "img": "seo/authority.jpg",
+          "cap": "Illustrative scene: outreach targets being reviewed.",
+          "table": {
+            "caption": "Link building methods compared",
+            "head": [
+              "Method",
+              "How it works",
+              "Good for"
+            ],
+            "rows": [
+              [
+                "Digital PR",
+                "Newsworthy angles pitched to journalists",
+                "Brands with a story to tell"
+              ],
+              [
+                "Guest content",
+                "Articles written for relevant sites",
+                "B2B and niche topics"
+              ],
+              [
+                "Resource and listing outreach",
+                "Requests for inclusion on relevant resource pages",
+                "Local and category visibility"
+              ],
+              [
+                "Broken link outreach",
+                "Offering a live replacement for a dead link",
+                "Content-rich sites"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label link building.",
+      "lede": "Outreach and placements, with a record of each.",
+      "items": [
+        {
+          "t": "Target research",
+          "d": "Sites scored for relevance and audience before any pitch goes out.",
+          "img": "seo/intent.jpg",
+          "alt": "Target research: illustrative scene"
+        },
+        {
+          "t": "Digital PR",
+          "d": "Angles built from client data, news and expertise, pitched to editors.",
+          "img": "seo/authority.jpg",
+          "alt": "Digital PR: illustrative scene"
+        },
+        {
+          "t": "Guest content",
+          "d": "Articles written to the host site's standards, with a natural link.",
+          "img": "seo/pages.jpg",
+          "alt": "Guest content: illustrative scene"
+        },
+        {
+          "t": "Resource page outreach",
+          "d": "Requests to be listed where users already look for resources.",
+          "img": "seo/aeo.jpg",
+          "alt": "Resource page outreach: illustrative scene"
+        },
+        {
+          "t": "Link audits",
+          "d": "Review of existing links and flags for risky ones.",
+          "img": "seo/tech.jpg",
+          "alt": "Link audits: illustrative scene"
+        },
+        {
+          "t": "Placement log",
+          "d": "A record of each link, date, page and anchor for your report.",
+          "img": "res/insights.jpg",
+          "alt": "Placement log: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label link building.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "seo/authority.jpg",
+      "alt": "Why agencies choose MMC for white-label link building. Illustrative scene.",
+      "items": [
+        {
+          "t": "Relevance over volume",
+          "d": "Targets are chosen for fit with your client's market."
+        },
+        {
+          "t": "No schemes",
+          "d": "We do not use link networks or paid link farms."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label link building works,",
+      "h2b": "step by step.",
+      "img": "seo/authority.jpg",
+      "alt": "How white-label link building works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Share the goal",
+          "d": "You tell us the client, the market and the pages that need authority."
+        },
+        {
+          "t": "Research and approve",
+          "d": "We send a target list for you to approve."
+        },
+        {
+          "t": "Pitch and place",
+          "d": "We do the outreach and writing."
+        },
+        {
+          "t": "Log and report",
+          "d": "Each placement is logged for your monthly report."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label link building for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells link building but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label link building fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label GEO and AEO",
+          "d": "AI search work delivered behind your brand.",
+          "img": "seo/aeo.jpg",
+          "href": "/white-label/geo-aeo/",
+          "link": "See white-label GEO and AEO"
+        },
+        {
+          "n": "White-label PPC",
+          "d": "Google Ads managed behind your brand.",
+          "img": "google/search.jpg",
+          "href": "/white-label/ppc/",
+          "link": "See white-label PPC"
+        },
+        {
+          "n": "White-label Meta Ads",
+          "d": "Facebook and Instagram ads behind your brand.",
+          "img": "meta/creative.jpg",
+          "href": "/white-label/meta-ads/",
+          "link": "See white-label Meta Ads"
+        },
+        {
+          "n": "SEO",
+          "d": "Technical health, search intent and answer-engine visibility.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "link building."
+    ],
+    "faq": [
+      {
+        "q": "Are the links paid for?",
+        "a": "Some publishers charge for sponsored content. We tell you which placements are sponsored and how they are labelled before anything goes live."
+      },
+      {
+        "q": "Can you guarantee a number of links per month?",
+        "a": "We agree a target in the scope. Outreach depends on editors, so we do not promise an exact count and we say so up front."
+      },
+      {
+        "q": "Do you use private blog networks?",
+        "a": "No. We do not use link networks, and we avoid practices that search engines treat as schemes."
+      },
+      {
+        "q": "What do I get in the report?",
+        "a": "A log of live links with the site, page, date and anchor, plus notes on outreach in progress."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label link building?",
+        "a": "Share the client, the market and the target pages. We sign the NDA and return a target list for your approval."
+      }
+    ],
+    "cta": {
+      "h2a": "Add link building",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first link building client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Targets",
+        "tag": "Research",
+        "breaks": "Targets are picked by size, not by fit.",
+        "why": "A big site that does not cover your client's topic adds little and can look odd.",
+        "does": "Every site is scored for topic and audience first, and you approve the list before an editor hears from us."
+      },
+      {
+        "k": "Pitch",
+        "tag": "Outreach",
+        "breaks": "One pitch template goes to every editor.",
+        "why": "Editors can tell, and your client's name gets linked with spam.",
+        "does": "Each pitch is written around an angle the editor's readers would use, sent from an address you have approved."
+      },
+      {
+        "k": "Placement",
+        "tag": "Quality",
+        "breaks": "The link lands where nobody reads.",
+        "why": "A link in a footer or on a thin page earns little and is hard to defend to the client.",
+        "does": "We aim for placements inside useful content, and tell you when a placement misses the standard we agreed."
+      },
+      {
+        "k": "Anchors",
+        "tag": "Risk",
+        "breaks": "Anchor text repeats and looks forced.",
+        "why": "Repeating one phrase is easy to spot and a risk to the client's site.",
+        "does": "Anchors are varied and natural, set against a plan for the client, and checked before a link goes live."
+      },
+      {
+        "k": "Log",
+        "tag": "Reporting",
+        "breaks": "You cannot show the client what was done.",
+        "why": "Without a record, a retainer for authority looks like nothing happened.",
+        "does": "Every link goes into a log with date, page, anchor and status, in a format you can drop into your report."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label link building",
+      "h2b": "goes wrong.",
+      "lede": "Link building is easy to do badly and hard to explain. Each stage below is where it goes wrong for an agency, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first link building",
+      "h2b": "client gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. Editors reply on their own time, so the pilot sets the pace.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA and link standards",
+          "d": "We sign the NDA, then agree what counts as a good site, which anchors are allowed and what we will not do.",
+          "out": "Written link standards for your client."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot outreach batch",
+          "d": "A small batch of targets is pitched for one client, so you see the pitch, the replies and the log before you commit more.",
+          "out": "A pilot log you can show the client."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Outreach SOPs",
+          "d": "Who approves targets, how pitches are worded and how editor replies reach you are written down.",
+          "out": "A short outreach playbook."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale the workstream",
+          "d": "Monthly outreach runs to the agreed plan, and more clients join without extra headcount on your side.",
+          "out": "A steady authority workstream across clients."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

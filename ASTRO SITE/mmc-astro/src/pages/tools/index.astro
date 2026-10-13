@@ -44,7 +44,7 @@ const tiles = [
 
 const answer = {
   label: "In short",
-  lead: "MMC's free tools are calculators and a glossary that help a D2C brand work out what a customer can cost, where the funnel leaks, and how long profit takes.",
+  lead: "MMC's free tools are calculators and a glossary that help a D2C brand work out what a customer can cost, where the funnel leaks, and how long profit takes. They cover unit economics, break-even ROAS, funnel ROAS, LTV:CAC and CAC runway. There is no email wall or sign-up, and your own numbers decide the answer.",
   hl: "what a customer can cost",
   who: "There is no email wall and no sign-up. Put your numbers in and take the answer with you.",
   points: [
@@ -66,7 +66,7 @@ const faq = [
   { q: "Are the tools free?", a: "Yes. There is no email wall and no gated download. You put your numbers in and see the answer." },
   { q: "Which calculator should I start with?", a: "Start with <a href=\"/tools/unit-economics/\">unit economics</a>. If one order does not contribute, nothing downstream matters. Then use break-even ROAS for the efficiency you need and LTV:CAC for how patient you can be." },
   { q: "Is the result a verdict on my brand?", a: "No. A number shows the shape of the problem and the order worth fixing it in. It does not judge your brand." },
-  { q: "Can MMC run these numbers with me?", a: "Yes. <a href=\"/contact/\">Book a strategy call</a> and bring the question that is stuck." },
+  { q: "Can MMC run these numbers with me?", a: "We can. <a href=\"/contact/\">Book a strategy call</a> and bring the question that is stuck." },
 ].map((f) => ({ q: f.q, a: fixHtml(f.a) }));
 const plain = (s: string) => s.replace(/<[^>]+>/g, "");
 const list = Object.values(T).filter((t) => t.href !== "/glossary/");

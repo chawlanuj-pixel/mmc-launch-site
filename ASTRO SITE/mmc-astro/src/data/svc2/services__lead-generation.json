@@ -1,0 +1,186 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__lead-generation.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "shared/b2b.jpg",
+    "pos": "50% 50%",
+    "alt": "Two colleagues reviewing a sales pipeline on a laptop.",
+    "facts": [
+      {
+        "t": "Qualified, defined first.",
+        "d": "Sales agrees what a good lead is."
+      },
+      {
+        "t": "Every lead in a CRM.",
+        "d": "Stages go back to Meta."
+      },
+      {
+        "t": "Judged on quality.",
+        "d": "Cost per qualified lead."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "CrmLoop",
+    "eyebrow": "The work, shown",
+    "h2a": "How a form fill becomes",
+    "h2b": "a qualified lead.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Capture each lead with its source attached.",
+        "d": "A form fill lands in your CRM as a new lead, tagged with the campaign that brought it."
+      },
+      {
+        "n": "02",
+        "t": "Keep the WhatsApp thread on the lead card.",
+        "d": "Sales or admissions see the whole conversation beside the lead, not in a separate inbox."
+      },
+      {
+        "n": "03",
+        "t": "Define each pipeline stage in plain words.",
+        "d": "Qualified, meeting booked, applied, won: your team and ours agree what each stage means before we report."
+      },
+      {
+        "n": "04",
+        "t": "Send qualified stages back through the Conversions API.",
+        "d": "Meta learns from the leads your team accepted, not only from form fills."
+      },
+      {
+        "n": "05",
+        "t": "Optimise on cost per qualified lead.",
+        "d": "The cheapest campaign on form fills is rarely cheapest on qualified leads, so budget follows quality."
+      }
+    ],
+    "illustrative": "Illustrative layout of a lead form, CRM and Meta Conversions API loop. Not a client account, no real figures. Meta, WhatsApp and their logos belong to their owners."
+  },
+  "leak": {
+    "visual": "LeadDropoff",
+    "barLogo": "",
+    "barTitle": "Lead quality view",
+    "pinsLabel": "Five places lead quality drops",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Definition"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Targeting"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Capture"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Tracking"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Follow-up"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we generate leads for.",
+    "tiles": [
+      {
+        "id": "bloom",
+        "line": "An education consultancy: the site, the ads and lead capture built as one path."
+      },
+      {
+        "id": "sprouts",
+        "line": "Study tours: enquiries come through a page made to capture them."
+      },
+      {
+        "id": "mvj",
+        "line": "An engineering college: creative and a site that turns interest into enquiries."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run lead generation,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Define a qualified lead",
+        "d": "We agree with sales or admissions what a good lead looks like, then audit forms, pages and CRM stages.",
+        "get": "One definition of a qualified lead, in writing.",
+        "img": "b2b/capture.jpg",
+        "alt": "A lead form on a landing page open on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Connect the CRM and CAPI",
+        "d": "Lead stages go back to Meta, so campaigns learn from the leads you accept.",
+        "get": "Ad platforms that learn from the leads you accept.",
+        "img": "leadgen/capi.jpg",
+        "alt": "A CRM lead list beside an ads manager window on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Build the follow-up",
+        "d": "WhatsApp, email and call reminders trigger from the CRM, so no lead waits days for a reply.",
+        "get": "A reply routine that keeps leads warm.",
+        "img": "b2b/followup.jpg",
+        "alt": "A hand holding a phone with a WhatsApp follow-up message.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Optimise on lead quality",
+        "d": "Budget moves to the campaigns that produce qualified leads, reviewed with your team every week.",
+        "get": "A cost per qualified lead you can track.",
+        "img": "b2b/qualify.jpg",
+        "alt": "A lead pipeline dashboard on a monitor, with a person pointing at a stage.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      },
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "AI sales agent by MMC",
+        "href": "/ai-by-mmc/sales-agent/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

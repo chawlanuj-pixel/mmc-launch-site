@@ -7,3 +7,6 @@
 .bm__go { font-weight: 700; color: #16329E; text-decoration: none; padding: 10px 2px; margin-left: 2px; }
 .bm__go:hover { text-decoration: underline; }
 .bm__go:focus-visible { outline: 3px solid #FFC528; outline-offset: 2px; border-radius: 6px; }
+
+/* Phones: 44px tap target for the "Read the case study" link in each brand row. */
+@media (max-width: 760px) { .bm__go { display: inline-flex; align-items: center; min-height: 44px; padding-block: 0; } }

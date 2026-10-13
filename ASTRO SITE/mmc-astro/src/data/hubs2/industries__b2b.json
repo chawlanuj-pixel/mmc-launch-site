@@ -1,0 +1,133 @@
+{
+  "_note": "hubs2 layer for /industries/b2b/. Copy, FAQ, CTA, title, meta and JSON-LD stay in src/data/hubs/industries__b2b.json. This file only adds the hubs2 visuals, links and curation; delete it to fall back to the classic template.",
+  "kind": "audience",
+  "hero": {
+    "img": "b2b/call.jpg",
+    "pos": "62% 50%",
+    "alt": "A sales lead talking to a B2B buyer on a video call at a laptop.",
+    "cap": {
+      "label": "The sales call",
+      "note": "Where a qualified lead becomes a conversation"
+    },
+    "route": [
+      "Search",
+      "Website",
+      "Landing page",
+      "CRM",
+      "Qualified lead"
+    ]
+  },
+  "lede": {
+    "img": "b2b/seminar.jpg",
+    "alt": "A speaker presenting to a room of business buyers at a seminar."
+  },
+  "journey": {
+    "eyebrow": "The B2B journey",
+    "h2a": "From the first search to",
+    "h2b": "a qualified lead.",
+    "stages": [
+      {
+        "href": "/services/seo/",
+        "go": "See SEO",
+        "alt": "A buyer searching for a supplier on a laptop."
+      },
+      {
+        "href": "/services/web-development/",
+        "go": "See Website development",
+        "alt": "A B2B website with case studies, open on a laptop and a phone."
+      },
+      {
+        "href": "/services/cro/",
+        "go": "See Conversion optimisation",
+        "alt": "A landing page with a short demo request form on a laptop."
+      },
+      {
+        "href": "/services/lead-generation/",
+        "go": "See Lead generation",
+        "alt": "A CRM lead pipeline on a desktop screen."
+      },
+      {
+        "href": "/services/retention-marketing/",
+        "go": "See Retention marketing",
+        "alt": "A WhatsApp follow-up message to a lead on a phone."
+      }
+    ]
+  },
+  "loop": true,
+  "work": {
+    "ids": [
+      "nmc",
+      "skyfling",
+      "sprouts"
+    ],
+    "h2a": "B2B work,",
+    "h2b": "built to bring in leads.",
+    "lede": "Websites, lead generation and creative for companies that sell to other businesses."
+  },
+  "sectors": {
+    "eyebrow": "Go deeper",
+    "h2a": "B2B sectors",
+    "h2b": "we plan for.",
+    "groups": [
+      {
+        "label": "B2B sectors",
+        "note": "Each sector has its own buyers, cycle and proof.",
+        "items": [
+          {
+            "n": "Manufacturing",
+            "d": "Search, proof and quote funnels for manufacturers and suppliers.",
+            "img": "/ai-by-mmc/assets/img/photoshoot-use-b2b.jpg",
+            "href": "/industries/b2b/manufacturing/",
+            "alt": "An engineer with a tablet on a factory floor."
+          },
+          {
+            "n": "SaaS and software",
+            "d": "Search, funnels and CRM signals for trial-led software buyers.",
+            "img": "/ai-by-mmc/assets/img/lp-use-b2b.jpg",
+            "href": "/industries/b2b/saas-and-software/",
+            "alt": "A software product landing page open on a laptop."
+          }
+        ],
+        "services": [
+          {
+            "n": "Lead generation",
+            "href": "/services/lead-generation/"
+          },
+          {
+            "n": "Website development",
+            "href": "/services/web-development/"
+          },
+          {
+            "n": "AI SEO",
+            "href": "/services/seo/ai-seo/"
+          },
+          {
+            "n": "Content marketing",
+            "href": "/services/content-marketing/"
+          }
+        ]
+      },
+      {
+        "label": "Other audiences",
+        "note": "Set up differently for each.",
+        "items": [
+          {
+            "n": "D2C brands",
+            "d": "Ads, creative, conversion and retention for brands that sell direct to shoppers.",
+            "img": "d2c/packing.jpg",
+            "href": "/industries/d2c/",
+            "alt": "A team packing D2C orders at a workbench."
+          },
+          {
+            "n": "Educational institutes",
+            "d": "Websites, lead generation and reputation for colleges and education brands.",
+            "img": "shared/education.jpg",
+            "href": "/industries/education/",
+            "alt": "An admissions counsellor talking with a student and parent."
+          }
+        ]
+      }
+    ]
+  },
+  "loopImg": "leadgen/capi.jpg"
+}

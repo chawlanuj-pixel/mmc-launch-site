@@ -1,0 +1,111 @@
+---
+// PANEL: SerpAndAnswer (kind "SerpAndAnswer"). A search results page, a featured snippet and an AI answer panel that cites a source.
+// No platform mark (the page is a generic search layout, no real brand answers; the source is "yourstore.example"). 5 steps.
+//   1 Before: your page sits fourth in a plain list of results. Tab: All.
+//   2 Structure: markup is valid (Product, FAQ chips), your page moves to second and gains sitelinks. Tab: All.
+//   3 Featured snippet: a short direct answer is lifted above the results, with your page as the source. Tab: All.
+//   4 AI answer: an AI answer panel with a written answer and a "Sources" row citing your page. Tab: AI answers.
+//   5 Tracking: a list of questions buyers ask, each marked Cited or Not yet, with a trend line. Tab: Tracking.
+// Needs S.work.illustrative. Styles scoped to this file (prefix serp-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+// Optional per-page copy in S.work.serp (all keys optional; the defaults below are the SEO page).
+const C = (W.serp ?? {}) as any;
+const tabs: string[] = C.tabs ?? ["All", "AI answers", "Tracking"];
+const q: string = C.q ?? "how to choose a running shoe for flat feet";
+const others: string[] = C.others ?? ["guide.example", "reviews.example", "forum.example"];
+const youTitle: string = C.youTitle ?? "Choosing a running shoe for flat feet";
+const snip: string = C.snip ?? "A stable running shoe has a firm midsole, a wide base and room in the toe box.";
+const ai: string = C.ai ?? "Pick a stable shoe with firm midfoot support and room in the toe box. Try pairs on late in the day, when feet are at their widest.";
+const aiLabel: string = C.aiLabel ?? "AI answer";
+const snipLabel: string = C.snipLabel ?? "Featured snippet";
+const sources: string[] = C.sources ?? ["yourstore.example", "guide.example"];
+const trackCap: string = C.trackCap ?? "Answer tracking";
+const trackSub: string = C.trackSub ?? "Are we cited when buyers ask?";
+const track: string[][] = C.track ?? [["how to choose a running shoe", "Cited"], ["running shoe for flat feet", "Cited"], ["running shoe for a first marathon", "Not yet"]];
+const okState: string[] = C.okState ?? ["Cited"];
+const foot: string = C.foot ?? "Checked on a fixed list of buyer questions, month after month.";
+const chips: string[] = C.chips ?? ["Product markup valid", "FAQ markup valid"];
+---
+<Frame title="Search" label="Illustration of a search results page with a featured snippet and an AI answer. No real brand answers." caption={W.illustrative} tabs={tabs} tabFor={[0, 0, 0, 1, 2]} accent="#1D4ED8" accentSoft="#E3EAFC" cls="serp-ui">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4">
+    <div class="serp-q"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="M13 13l5 5" /></svg><span>{q}</span></div>
+    <div class="serp-stack">
+      <div class="s2p-card serp-ai">
+        <p class="s2p-lbl"><span class="serp-spark" aria-hidden="true"></span>{aiLabel}</p>
+        <p class="serp-txt">{ai}</p>
+        <div class="serp-src"><span class="s2p-mute">Sources</span>{sources.map((u, k) => <span class={"s2p-chip" + (k === 0 ? " s2p-chip--blue" : "")}>{u}</span>)}</div>
+      </div>
+      <div class="s2p-card serp-snip">
+        <p class="s2p-lbl">{snipLabel}</p>
+        <p class="serp-txt">{snip}</p>
+        <small class="serp-url">yourstore.example <span>› running › flat-feet</span></small>
+      </div>
+      <ul class="serp-res">
+        {others.map((u, k) => (
+          <li class="serp-r" style={`order:${k < 1 ? 1 : k + 2}`}><small class="serp-url">{u}</small><b class="serp-t"><i class="s2p-line s2p-line--m"></i></b><i class="s2p-line s2p-line--s"></i></li>
+        ))}
+        <li class="serp-r serp-you s2p-hl-2 s2p-hl-3 s2p-hl-4">
+          <small class="serp-url">yourstore.example <span>› guides</span></small>
+          <b class="serp-t serp-t--me">{youTitle}</b>
+          <i class="s2p-line s2p-line--m"></i>
+          <span class="serp-meta">{chips.map((c) => <span class="s2p-chip s2p-chip--ok">{c}</span>)}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">{trackCap} <span>{trackSub}</span></p>
+    <ul class="serp-track">
+      {track.map(([t, s]) => (
+        <li class="s2p-card"><span>{t}</span><em class={"s2p-chip " + (okState.includes(s) ? "s2p-chip--ok" : "")}>{s}</em></li>
+      ))}
+    </ul>
+    <svg class="serp-trend" viewBox="0 0 300 60" aria-hidden="true"><path d="M4 48 C 40 46, 60 40, 90 36 S 140 30, 170 22 S 240 14, 296 8" /><circle cx="296" cy="8" r="4" /></svg>
+    <small class="s2-st__foot">{foot}</small>
+  </div>
+</Frame>
+<style is:global>
+.serp-q { display: flex; align-items: center; gap: .7em; padding: .65em 1em; border: 1px solid #DADDE1; border-radius: 99px; box-shadow: 0 .2em .6em -.3em rgba(0, 0, 0, .25); font: 600 1.02em var(--font-body); color: #1C2B33; flex: none; }
+.serp-q svg { width: 1.2em; height: 1.2em; fill: none; stroke: #65676B; stroke-width: 2; stroke-linecap: round; flex: none; }
+.serp-stack { position: relative; flex: 1; min-height: 0; display: flex; flex-direction: column; gap: .7em; }
+.serp-ai, .serp-snip { gap: .5em; flex: none; }
+.serp-ai { background: linear-gradient(135deg, #F1F5FF, #fff 70%); border-color: #C9DBFF; }
+.serp-snip { border-color: #C9DBFF; }
+.serp-spark { display: inline-block; width: .9em; height: .9em; margin-right: .5em; vertical-align: -.1em; background: conic-gradient(from 45deg, var(--mmc-blue), #8AB0FF, var(--mmc-blue)); clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); }
+.serp-txt { margin: 0; font: 600 .95em/1.4 var(--font-body); color: #1C2B33; }
+.serp-src { display: flex; align-items: center; flex-wrap: wrap; gap: .5em; font-size: .85em; }
+.serp-res { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .75em; min-height: 0; overflow: hidden; }
+.serp-r { display: grid; gap: .3em; padding: .55em .7em; border-radius: .8em; border: 1px solid transparent; transition: border-color .3s, box-shadow .3s; }
+.serp-you { order: 4; }
+.s2-work:not([data-step="1"]) .serp-you { order: 2; }
+.serp-url { font: 600 .82em var(--font-body); color: #1C2B33; } .serp-url span { color: #65676B; }
+.serp-t { display: block; font: 700 1.05em/1.2 var(--font-body); color: var(--mmc-blue); }
+.serp-t .s2p-line { height: .7em; background: #B9C9F2; }
+.serp-t--me { font-size: 1.08em; }
+.serp-meta { display: flex; flex-wrap: wrap; gap: .5em; }
+.serp-ai, .serp-snip, .serp-meta { display: none; }
+.s2-work[data-step="3"] .serp-snip, .s2-work[data-step="4"] .serp-ai { display: grid; }
+.s2-work:is([data-step="2"], [data-step="3"], [data-step="4"]) .serp-meta { display: flex; }
+.s2-work[data-step="3"] .serp-res .serp-r:nth-child(3), .s2-work[data-step="4"] .serp-res .serp-r:nth-child(3), .s2-work[data-step="4"] .serp-res .serp-r:nth-child(1) { display: none; }
+@media (max-width: 560px) {
+  .serp-ui.s2-ui .s2-st { font-size: 9.5px; padding: 8px 12px; gap: .5em; }
+  .serp-ui .s2-st__cap > span { display: none; }
+  .serp-q { padding: .45em .9em; }
+  .serp-stack { gap: .45em; }
+  .serp-r { padding: .3em .55em; gap: .2em; }
+  .serp-res { gap: .3em; }
+  .serp-r .s2p-line--s, .serp-url span { display: none; }
+  .serp-res .serp-r:nth-child(3) { display: none; }
+  .s2-work:is([data-step="3"], [data-step="4"]) .serp-res .serp-r:not(.serp-you) { display: none; }
+  .serp-ai, .serp-snip { padding: .45em .7em; }
+  .serp-meta { gap: .3em; }
+  .serp-trend { max-height: 3.5em; }
+  .serp-track { gap: .35em; } .serp-track li { padding: .4em .7em; }
+}
+.serp-track { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.serp-track li { display: flex; justify-content: space-between; align-items: center; gap: 1em; font: 700 .95em var(--font-body); }
+.serp-trend { width: 100%; flex: 1; min-height: 0; max-height: 7em; fill: none; stroke: var(--mmc-blue); stroke-width: 3; stroke-linecap: round; }
+.serp-trend circle { fill: #fff; }
+</style>

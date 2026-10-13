@@ -1,0 +1,554 @@
+{
+  "file": "ai-seo.html",
+  "path": "/services/seo/ai-seo/",
+  "key": "aiseo",
+  "title": "AI SEO Services India: Be Found in AI Search | MMC",
+  "description": "AI SEO for D2C, B2B and education brands in India. One plan for classic search and AI answers, with technical health, clear content and honest reporting.",
+  "ogTitle": "AI SEO: be found where buyers now ask",
+  "ogDescription": "One plan for classic search and AI answers.",
+  "ogAlt": "Monday Marketing Company: ai seo.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/seo/ai-seo/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AI SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/ai-seo/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/ai-seo/#webpage",
+      "url": "https://www.mondaymarketing.company/services/seo/ai-seo/",
+      "name": "AI SEO Services India: Be Found in AI Search | MMC",
+      "description": "AI SEO for D2C, B2B and education brands in India. One plan for classic search and AI answers, with technical health, clear content and honest reporting.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/seo/ai-seo/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/seo/ai-seo/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/seo/ai-seo/#service",
+      "name": "AI SEO",
+      "serviceType": "AI SEO",
+      "description": "AI SEO for D2C, B2B and education brands: a single plan for visibility in classic search results and in AI-generated answers.",
+      "url": "https://www.mondaymarketing.company/services/seo/ai-seo/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/ai-seo/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AI SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI SEO is a single programme that keeps your brand visible in classic search results and in AI-generated answers from Google AI Overviews, ChatGPT, Perplexity and Gemini. It combines technical SEO, answer-first content, structured data and consistent mentions across the web."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is AI SEO different from SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO is the foundation: crawlability, speed, content and authority. AI SEO adds the work specific to answer engines, such as direct answers, FAQ structure, entity consistency and tracking how you appear in generated answers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is AI SEO different from AEO and GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI SEO is the overall plan. AEO focuses on becoming the short answer in snippets, voice and answer boxes. GEO focuses on being cited by generative AI tools. We scope them together so the work is not duplicated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee a mention in ChatGPT or Google AI Overviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody outside an AI or search company can promise a citation, a ranking or a position in an answer, and the systems change often. We commit to the work in the monthly scope and to reporting what we can observe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does AI SEO cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is AI SEO for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brands whose buyers research before they buy. We do this for D2C, B2B and education brands and set it up differently for each: D2C on products and repeat purchase, B2B on specifications and enquiries, education on courses and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your site, Search Console and Analytics, your product or course list, the questions your sales or support team hear most, and someone who can approve content. If you are mid-redesign, tell us first."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "aiseo",
+    "wm": "AI SEO",
+    "eyebrow": "● AI SEO",
+    "h1": [
+      "AI SEO",
+      [
+        "for brands ",
+        "buyers ask AI about",
+        "."
+      ]
+    ],
+    "sub": "Buyers now get answers from search results, AI Overviews and assistants. We plan one SEO programme that keeps you visible in all of them.",
+    "tiles": [
+      {
+        "img": "seo/aeo.jpg",
+        "pos": "50% 50%",
+        "label": "AI answers",
+        "note": "Written to be quoted"
+      },
+      {
+        "img": "seo/intent.jpg",
+        "pos": "50% 50%",
+        "label": "Questions",
+        "note": "What buyers ask"
+      },
+      {
+        "img": "seo/tech.jpg",
+        "pos": "50% 50%",
+        "label": "Foundation",
+        "note": "Readable by machines"
+      },
+      {
+        "img": "seo/authority.jpg",
+        "pos": "50% 50%",
+        "label": "Trust",
+        "note": "Mentions that count"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "AI SEO is the work of keeping your brand visible and accurately described wherever buyers now look for answers: classic search results, Google AI Overviews and assistants such as ChatGPT, Perplexity and Gemini. It joins technical SEO, clear content and trusted mentions into one plan.",
+      "hl": "visible and accurately described",
+      "who": "Monday Marketing Company (MMC) runs AI SEO for D2C, B2B and education brands, as the umbrella over our answer-engine and generative-engine work.",
+      "points": [
+        {
+          "icon": "grid",
+          "title": "One plan, not three",
+          "text": "Classic SEO, AEO and GEO are scoped together so work is not duplicated."
+        },
+        {
+          "icon": "target",
+          "title": "Questions first",
+          "text": "Pages are built around what buyers actually ask, in the order they ask it."
+        },
+        {
+          "icon": "link",
+          "title": "Accurate by design",
+          "text": "Facts, entities and structure that make being quoted correctly more likely."
+        }
+      ],
+      "image": "seo/aeo.jpg",
+      "chip": "Visible in search and in AI answers"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "what-changed",
+          "h": "What AI search changes",
+          "paras": [
+            "A buyer who used to scroll ten blue links may now read a generated summary, ask an assistant a follow-up and only then visit a site. Some of those answers name brands and link to sources; many do not send a click at all.",
+            "That makes two things matter more than before: whether your pages are the clear, accurate source an answer can draw from, and whether trusted places beyond your own site describe you the same way. Neither replaces the SEO basics. Both sit on top of them."
+          ],
+          "img": "seo/aeo.jpg",
+          "cap": "Illustrative scene: a buyer asking an assistant about a purchase."
+        },
+        {
+          "id": "which-page",
+          "h": "AI SEO, AEO and GEO: which page is which",
+          "paras": [
+            "The three terms overlap, so this is how we separate them. AI SEO is the overall programme. <a href=\"/services/seo/aeo/\">AEO</a> and <a href=\"/services/seo/geo/\">GEO</a> are the two specialist workstreams inside it. The foundation under all three is <a href=\"/services/seo/\">SEO</a>."
+          ],
+          "table": {
+            "caption": "How AI SEO, AEO and GEO differ",
+            "head": [
+              "",
+              "AI SEO",
+              "AEO",
+              "GEO"
+            ],
+            "rows": [
+              [
+                "Question it answers",
+                "How do we stay visible across search and AI?",
+                "How do we become the short answer?",
+                "How do we get cited by generative AI?"
+              ],
+              [
+                "Where it shows up",
+                "Search results and AI answers together",
+                "Featured snippets, voice answers, answer boxes",
+                "ChatGPT, Perplexity, Gemini, AI Overviews"
+              ],
+              [
+                "Main work",
+                "Plan, foundation, measurement",
+                "Answer-first copy, FAQs, schema",
+                "Entities, sources, citations, mentions"
+              ],
+              [
+                "Read the page",
+                "This page",
+                "<a href=\"/services/seo/aeo/\">AEO</a>",
+                "<a href=\"/services/seo/geo/\">GEO</a>"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Start with the foundation.",
+            "text": "If your site is slow to crawl or unclear about what you sell, fix that first. See <a href=\"/services/seo/\">SEO</a> and the <a href=\"/guides/\">guides</a> for how we read results."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where AI visibility is lost",
+      "h2a": "Five ways AI search",
+      "h2b": "visibility goes missing.",
+      "lede": "Each stage below is where a brand drops out of the answer, and the AI SEO work that brings it back."
+    },
+    "stages": [
+      {
+        "k": "Check how you appear today",
+        "tag": "AI visibility audit",
+        "breaks": "Assuming you show up because you rank.",
+        "why": "Ranking in classic results does not guarantee a mention in a generated answer, and assistants can describe a brand wrongly.",
+        "does": "We ask the questions your buyers ask across search and assistants, record what is said about you and where the gaps are.",
+        "href": "/services/seo/",
+        "img": "seo/intent.jpg"
+      },
+      {
+        "k": "Make the site readable by machines",
+        "tag": "Technical foundation",
+        "breaks": "Pages that crawlers and AI systems struggle to parse.",
+        "why": "Content hidden behind scripts, blocked by robots rules or lacking structure is harder to retrieve and quote.",
+        "does": "We fix crawling, indexing, speed and structured data, and review what AI crawlers are allowed to read.",
+        "href": "/services/seo/",
+        "img": "seo/tech.jpg"
+      },
+      {
+        "k": "Answer the real questions",
+        "tag": "Answer-first content",
+        "breaks": "Writing about the brand instead of the buyer's question.",
+        "why": "Assistants favour pages that state a clear answer near the top and back it with specifics.",
+        "does": "We rewrite and build pages with a direct answer first, then detail, FAQs and proof. See <a href=\"/services/seo/aeo/\">AEO</a>.",
+        "href": "/services/seo/aeo/",
+        "img": "seo/pages.jpg"
+      },
+      {
+        "k": "Be described the same way everywhere",
+        "tag": "Entities and mentions",
+        "breaks": "Your own site says one thing and the web says another.",
+        "why": "Generative systems draw on many sources, so conflicting names, descriptions or facts weaken how you are summarised.",
+        "does": "We align your name, offer and facts across your site, profiles and trusted third-party sources. See <a href=\"/services/seo/geo/\">GEO</a>.",
+        "href": "/services/seo/geo/",
+        "img": "seo/authority.jpg"
+      },
+      {
+        "k": "Measure what can be measured",
+        "tag": "Reporting",
+        "breaks": "Reporting only rankings.",
+        "why": "AI answers vary by question, time and user, so one screenshot proves little.",
+        "does": "We track a fixed set of buyer questions over time, plus qualified traffic, enquiries and orders from search.",
+        "href": "/audit/",
+        "img": "seo/aeo.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four things that show whether",
+      "h2b": "AI SEO is working.",
+      "note": "We watch these over time, not as a one-off screenshot.",
+      "cards": [
+        {
+          "n": "Presence in AI answers",
+          "d": "How often a fixed set of buyer questions names or cites you."
+        },
+        {
+          "n": "Accuracy of what is said",
+          "d": "Whether answers describe your offer, pricing and location correctly."
+        },
+        {
+          "n": "Qualified organic traffic",
+          "d": "Visitors from search who fit who you sell to."
+        },
+        {
+          "n": "Enquiries or orders from search",
+          "d": "What search actually produces for the business."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where AI SEO fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Answer-engine optimisation",
+          "d": "Short, structured answers for featured snippets, voice and AI answers.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/aeo/",
+          "link": "See AEO"
+        },
+        {
+          "n": "Generative-engine optimisation",
+          "d": "Being cited by ChatGPT, Perplexity, Gemini and Google AI Overviews.",
+          "img": "seo/authority.jpg",
+          "href": "/services/seo/geo/",
+          "link": "See GEO"
+        },
+        {
+          "n": "SEO",
+          "d": "The technical base, search intent and authority that all three AI search disciplines sit on.",
+          "img": "seo/tech.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "White-label GEO and AEO",
+          "d": "AI search work delivered behind your brand.",
+          "img": "seo/aeo.jpg",
+          "href": "/white-label/geo-aeo/",
+          "link": "See white-label GEO and AEO"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "AI SEO."
+    ],
+    "faq": [
+      {
+        "q": "What is AI SEO?",
+        "a": "AI SEO is a single programme that keeps your brand visible in classic search results and in AI-generated answers from Google AI Overviews, ChatGPT, Perplexity and Gemini. It combines technical SEO, answer-first content, structured data and consistent mentions across the web."
+      },
+      {
+        "q": "How is AI SEO different from SEO?",
+        "a": "SEO is the foundation: crawlability, speed, content and authority. AI SEO adds the work specific to answer engines, such as direct answers, FAQ structure, entity consistency and tracking how you appear in generated answers."
+      },
+      {
+        "q": "How is AI SEO different from AEO and GEO?",
+        "a": "AI SEO is the overall plan. AEO focuses on becoming the short answer in snippets, voice and answer boxes. GEO focuses on being cited by generative AI tools. We scope them together so the work is not duplicated."
+      },
+      {
+        "q": "Can you guarantee a mention in ChatGPT or Google AI Overviews?",
+        "a": "No. Nobody outside an AI or search company can promise a citation, a ranking or a position in an answer, and the systems change often. We commit to the work in the monthly scope and to reporting what we can observe."
+      },
+      {
+        "q": "What does AI SEO cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Who is AI SEO for?",
+        "a": "Brands whose buyers research before they buy. We do this for D2C, B2B and education brands and set it up differently for each: D2C on products and repeat purchase, B2B on specifications and enquiries, education on courses and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your site, Search Console and Analytics, your product or course list, the questions your sales or support team hear most, and someone who can approve content. If you are mid-redesign, tell us first."
+      }
+    ],
+    "cta": {
+      "h2a": "See how AI",
+      "h2b": "describes your brand.",
+      "lede": "On a call, with a senior strategist. We show how search and assistants describe you today and what to fix first."
+    },
+    "process": {
+      "h2a": "How we run AI SEO,",
+      "h2b": "month to month.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit and baseline",
+          "d": "We record how you appear in search and assistants for a fixed set of buyer questions and fix the technical blockers.",
+          "out": "A baseline you can compare against."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Plan the questions and pages",
+          "d": "We map the questions to pages, mark what to fix, merge or create, and align facts across your profiles.",
+          "out": "A page and entity plan."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Publish, structure and track",
+          "d": "Answer-first pages and structured data go live, and we start the repeat checks.",
+          "out": "Progress read over time, not from one screenshot."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "AI SEO for brands that",
+      "h2b": "expect to be asked.",
+      "good": {
+        "t": "You sell something buyers research first, and you want to be named when they ask search or an assistant.",
+        "why": "This suits D2C brands with a catalogue, B2B companies whose buyers shortlist alone, and colleges and consultancies whose families compare options."
+      },
+      "not": {
+        "t": "You need a guaranteed citation or fast leads.",
+        "why": "Nobody controls what an AI system says, and search takes time. Urgent demand is better served by paid media while this builds."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "AI SEO.",
+      "lede": "From the first audit to repeat tracking, for D2C, B2B and education sites.",
+      "items": [
+        {
+          "t": "AI visibility audit",
+          "d": "The buyer questions that matter, checked across search and assistants and recorded.",
+          "img": "seo/intent.jpg",
+          "alt": "AI visibility audit: illustrative scene"
+        },
+        {
+          "t": "Technical foundation",
+          "d": "Crawling, indexing, speed and AI crawler access reviewed and fixed.",
+          "img": "seo/tech.jpg",
+          "alt": "Technical foundation: illustrative scene"
+        },
+        {
+          "t": "Answer-first content",
+          "d": "Pages that open with a direct answer, then give detail and proof.",
+          "img": "seo/pages.jpg",
+          "alt": "Answer-first content: illustrative scene"
+        },
+        {
+          "t": "Structured data",
+          "d": "Schema for organisation, product, course, FAQ and article where it fits.",
+          "img": "web/seo.jpg",
+          "alt": "Structured data: illustrative scene"
+        },
+        {
+          "t": "Entity and mention work",
+          "d": "Consistent facts across your site, profiles and trusted third-party sources.",
+          "img": "seo/authority.jpg",
+          "alt": "Entity and mention work: illustrative scene"
+        },
+        {
+          "t": "Tracking and reporting",
+          "d": "A fixed question set checked over time, next to organic enquiries and orders.",
+          "img": "sv/organic.jpg",
+          "alt": "Tracking and reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for AI SEO.",
+      "lede": "The ground is moving, so we keep the plan simple and the reporting honest.",
+      "img": "seo/aeo.jpg",
+      "alt": "Why brands choose MMC for AI SEO. Illustrative scene.",
+      "items": [
+        {
+          "t": "Built on real SEO",
+          "d": "We fix the foundation first, because AI answers draw on the same web your site sits on."
+        },
+        {
+          "t": "No promises we cannot keep",
+          "d": "We do not guarantee citations. We commit to the work and report what we observe."
+        },
+        {
+          "t": "One plan across AEO and GEO",
+          "d": "The specialist workstreams are scoped together, so nothing is done twice."
+        },
+        {
+          "t": "Joined up with paid",
+          "d": "Search data feeds our ads, and ad data shows which pages deserve more effort."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How an AI SEO engagement runs,",
+      "h2b": "step by step.",
+      "img": "seo/authority.jpg",
+      "alt": "How an AI SEO engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit and baseline",
+          "d": "Technical health, content gaps and a fixed question set are recorded."
+        },
+        {
+          "t": "Plan pages and entities",
+          "d": "A priority list of pages to fix, merge or create, and the facts to align."
+        },
+        {
+          "t": "Build and publish",
+          "d": "Answer-first pages, schema and internal links go live in batches."
+        },
+        {
+          "t": "Track and extend",
+          "d": "The question set is rechecked and the plan updated each month."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

@@ -1,0 +1,53 @@
+---
+// VISUAL: SaContentPath (kind "SaContentPath"). A content pipeline in five cards (audience, calendar, article, format, reach), each
+// showing where a content programme stops earning. Pins in a row above (y = 0, x = 10, 30, 50, 70, 90). No figures. Prefix scp-.
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X } = Astro.props as Props;
+---
+<div class="scp-row" aria-hidden="true"></div>
+<div class="scp-art" role="img" aria-label="Five steps of a content programme, each with the place it stops earning.">
+  <div class="scp-c">
+    <b class="scp-h">Audience</b>
+    <div class="scp-b"><span class="scp-dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="scp-tx">Everyone</span></div>
+    <em class="scp-chip">No one in focus</em>
+  </div>
+  <div class="scp-c">
+    <b class="scp-h">Calendar</b>
+    <div class="scp-b"><span class="scp-cal"><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></span></div>
+    <em class="scp-chip">Gaps and guesses</em>
+  </div>
+  <div class="scp-c">
+    <b class="scp-h">Article</b>
+    <div class="scp-b"><span class="scp-pg"><u></u><u></u></span></div>
+    <em class="scp-chip">Nothing new</em>
+  </div>
+  <div class="scp-c">
+    <b class="scp-h">Format</b>
+    <div class="scp-b"><span class="scp-fm">Blog post</span><span class="scp-fm scp-fm--e">Video</span><span class="scp-fm scp-fm--e">Email</span></div>
+    <em class="scp-chip">One format only</em>
+  </div>
+  <div class="scp-c">
+    <b class="scp-h">Reach</b>
+    <div class="scp-b"><span class="scp-rc"><i></i></span><span class="scp-tx">Published</span></div>
+    <em class="scp-chip">No one reads it</em>
+  </div>
+</div>
+<div class="scp-base" aria-hidden="true"><span>From a buyer's question to an enquiry</span></div>
+<style is:global>
+.scp-row { height: 78px; }
+.scp-art { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(6px, 1.2vw, 14px); }
+.scp-c { position: relative; display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: clamp(8px, 1.1vw, 14px); border: 1px solid #DADDE1; border-radius: 14px; background: #fff; }
+.scp-c::after { content: ""; position: absolute; left: 50%; bottom: -18px; width: 0; height: 18px; border-left: 2px dashed #9DB8F7; }
+.scp-h { font: 800 clamp(10px, .95vw, 12.5px)/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; }
+.scp-b { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; min-height: 92px; }
+.scp-tx { font: 700 11px var(--font-body); color: #47506A; }
+.scp-dots { display: grid; grid-template-columns: repeat(4, 12px); gap: 5px; } .scp-dots i { width: 12px; height: 12px; border-radius: 50%; background: #B8BFCC; }
+.scp-cal { width: 100%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; } .scp-cal i { aspect-ratio: 1.3; border-radius: 5px; border: 1px dashed #B8BFCC; } .scp-cal i.on { border: 0; background: var(--mmc-blue); }
+.scp-pg { width: 100%; display: grid; gap: 6px; padding: 9px; border-radius: 9px; background: #F1F5FF; } .scp-pg u { display: block; height: 6px; border-radius: 9px; background: #B9C9F2; } .scp-pg u:first-child { width: 70%; background: var(--mmc-blue); }
+.scp-fm { padding: 5px 9px; border-radius: 8px; background: #DCE6FB; font: 700 11px var(--font-body); color: var(--mmc-blue-900); } .scp-fm--e { background: transparent; border: 1px dashed #8A93A6; color: #65676B; }
+.scp-rc { width: 100%; height: 8px; border-radius: 9px; background: #E4E6EB; } .scp-rc i { display: block; width: 14%; height: 100%; border-radius: 9px; background: var(--mmc-blue); }
+.scp-chip { align-self: flex-start; padding: 4px 9px; border-radius: 99px; background: #FFF3D6; color: #8A5A00; font: 800 10px/1.25 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; }
+.scp-base { margin-top: 18px; height: 40px; border-radius: 12px; background: var(--mmc-blue-900); display: grid; place-items: center; padding-inline: 12px; } .scp-base span { font: 800 12px var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: #fff; text-align: center; }
+@media (max-width: 760px) { .scp-row { height: 58px; } .scp-h { display: none; } .scp-b { min-height: 70px; } .scp-tx, .scp-fm { font-size: 9px; } .scp-dots { grid-template-columns: repeat(4, 8px); gap: 3px; } .scp-dots i { width: 8px; height: 8px; } .scp-chip { font-size: 8.5px; padding: 3px 6px; } .scp-c { padding: 6px; gap: 6px; } .scp-base { height: 32px; } .scp-base span { font-size: 10px; } }
+@media (max-width: 440px) { .scp-art { gap: 4px; } .scp-c { padding: 5px 4px; } .scp-tx, .scp-fm { font-size: 8px; padding-inline: 4px; overflow-wrap: anywhere; } .scp-chip { font-size: 7.5px; letter-spacing: 0; padding: 3px 5px; overflow-wrap: anywhere; } }
+</style>

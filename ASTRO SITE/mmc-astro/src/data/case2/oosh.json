@@ -1,0 +1,57 @@
+{
+ "id": "oosh",
+ "about": "OOsh is a D2C brand that sells everyday body essentials.",
+ "description": "{name} case study: a Shopify storefront for a body essentials range, from homepage to product page on desktop and mobile, with matching Meta and Google Ads.",
+ "heroTone": "paper",
+ "kind": "D2C brand, body essentials",
+ "channels": [
+  "Meta Ads",
+  "Google Ads"
+ ],
+ "brief": [
+  "{name} sells everyday body essentials. This page covers a Shopify storefront, from the homepage through to a product detail page on desktop and mobile, together with the Meta and Google Ads that point at it.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage and product listing, with a mobile product page",
+   "text": "A calm, product-first homepage with the range listed beneath the hero, and a phone-sized product page with colour choice, add to bag and expandable details.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "right",
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google ad",
+   "text": "Both ads reuse the product photography and the soft palette of the storefront, so the click lands on a page that looks like the ad.",
+   "crops": [
+    "ads"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "The products behind the pages",
+   "text": "Product photography from the same artwork.",
+   "crops": [
+    "product"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, product listing and mobile product page",
+  "reach": "Meta ad and Google ad",
+  "make": "Product-led creative in the same palette"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "ads": "{name} Meta and Google Ads, client-approved artwork",
+  "product": "{name} product photography, client-approved artwork"
+ }
+}

@@ -1,0 +1,507 @@
+{
+  "file": "white-label-meta-ads.html",
+  "path": "/white-label/meta-ads/",
+  "key": "wl_meta_ads",
+  "title": "White-Label Meta Ads and Social Advertising | MMC",
+  "description": "White-label Facebook and Instagram advertising for agencies: creative testing, audience structure, tracking and reporting delivered behind your brand.",
+  "ogTitle": "White-label Meta Ads for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label Meta Ads.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label Meta Ads",
+          "item": "https://www.mondaymarketing.company/white-label/meta-ads/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/meta-ads/",
+      "name": "White-Label Meta Ads and Social Advertising | MMC",
+      "description": "White-label Facebook and Instagram advertising for agencies: creative testing, audience structure, tracking and reporting delivered behind your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#service",
+      "name": "White-label Meta Ads",
+      "serviceType": "White-label Meta Ads",
+      "description": "White-label Meta Ads delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/meta-ads/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to send creative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can send it, or we can brief and source it through our creative team as a separate scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which accounts do you work in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The client's Meta Business account, with access shared through you. They keep ownership."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you run Instagram-only or WhatsApp campaigns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, within Meta's ad formats and policies. We scope the placements per client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you share learnings across my clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We keep each client separate and confidential. We do not share one client's data with another."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label Meta Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add us to the client's ad account through your agency. After the NDA we audit tracking and structure before launching."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_meta_ads",
+    "wm": "White-label Meta Ads",
+    "eyebrow": "● White-label Meta Ads",
+    "h1": [
+      "White-label Meta Ads",
+      [
+        "for agencies selling ",
+        "paid social",
+        "."
+      ]
+    ],
+    "sub": "Facebook and Instagram campaigns built, tested and reported behind your brand, in your client's ad account.",
+    "tiles": [
+      {
+        "img": "meta/structure.jpg",
+        "pos": "50% 50%",
+        "label": "Structure",
+        "note": "Simple and testable"
+      },
+      {
+        "img": "meta/creative.jpg",
+        "pos": "50% 50%",
+        "label": "Creative",
+        "note": "Tested in rounds"
+      },
+      {
+        "img": "meta/audience.jpg",
+        "pos": "50% 50%",
+        "label": "Audiences",
+        "note": "Built from signals"
+      },
+      {
+        "img": "meta/capi.jpg",
+        "pos": "50% 50%",
+        "label": "Tracking",
+        "note": "Pixel and CAPI"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label Meta Ads means MMC plans, builds and manages Facebook and Instagram campaigns for your client while you present them as yours. The work includes audience structure, creative testing, conversion tracking and weekly optimisation, with a report written for your client call.",
+      "hl": "plans, builds and manages Facebook and Instagram campaigns",
+      "who": "Monday Marketing Company (MMC) delivers Meta Ads for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Structure",
+          "text": "Campaigns built around the goal."
+        },
+        {
+          "icon": "layers",
+          "title": "Creative testing",
+          "text": "Hooks and formats tested in order."
+        },
+        {
+          "icon": "chart",
+          "title": "Reporting",
+          "text": "Results in your format."
+        }
+      ],
+      "image": "meta/creative.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "meta-wl",
+          "h": "What white-label Meta Ads covers",
+          "paras": [
+            "Paid social is the service agencies are most often asked to take on, and the one that most often goes wrong when staffed thinly. We bring a team that handles structure, creative and tracking together.",
+            "The method is the same as our own <a href=\"/services/performance-marketing/meta-ads/\">Meta Ads service</a>. For creative production, pair it with <a href=\"/white-label/creative-and-video/\">white-label creative and video</a>."
+          ],
+          "img": "meta/structure.jpg",
+          "cap": "Illustrative scene: a Meta campaign structure planned for a client.",
+          "table": {
+            "caption": "Meta Ads goals and what we run",
+            "head": [
+              "Goal",
+              "Campaign setup",
+              "Main lever"
+            ],
+            "rows": [
+              [
+                "Sales for ecommerce",
+                "Catalogue and prospecting campaigns",
+                "Creative and feed quality"
+              ],
+              [
+                "Leads for services",
+                "Lead forms or landing page campaigns",
+                "Offer and follow-up speed"
+              ],
+              [
+                "Retargeting",
+                "Site and engagement audiences",
+                "Frequency and message order"
+              ],
+              [
+                "Awareness",
+                "Video and reach campaigns",
+                "Hook and audience"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label Meta Ads.",
+      "lede": "Paid social that your team does not have to staff.",
+      "items": [
+        {
+          "t": "Account audit",
+          "d": "Structure, tracking and creative review to start a client off.",
+          "img": "meta/structure.jpg",
+          "alt": "Account audit: illustrative scene"
+        },
+        {
+          "t": "Campaign build",
+          "d": "Campaigns, ad sets and ads set up for the client's goal.",
+          "img": "meta/scale.jpg",
+          "alt": "Campaign build: illustrative scene"
+        },
+        {
+          "t": "Creative testing plan",
+          "d": "A rotation of hooks, formats and offers to test.",
+          "img": "meta/creative.jpg",
+          "alt": "Creative testing plan: illustrative scene"
+        },
+        {
+          "t": "Audience and signal setup",
+          "d": "Custom and lookalike audiences from first-party data.",
+          "img": "meta/audience.jpg",
+          "alt": "Audience and signal setup: illustrative scene"
+        },
+        {
+          "t": "Pixel and CAPI",
+          "d": "Browser and server tracking installed and checked.",
+          "img": "meta/capi.jpg",
+          "alt": "Pixel and CAPI: illustrative scene"
+        },
+        {
+          "t": "Weekly optimisation",
+          "d": "Budget, creative and audience changes with notes for you.",
+          "img": "res/insights.jpg",
+          "alt": "Weekly optimisation: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label Meta Ads.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "meta/creative.jpg",
+      "alt": "Why agencies choose MMC for white-label Meta Ads. Illustrative scene.",
+      "items": [
+        {
+          "t": "Creative-led",
+          "d": "We treat creative as the main lever, not an afterthought."
+        },
+        {
+          "t": "Tracking checked",
+          "d": "We confirm events fire before scaling spend."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label Meta Ads works,",
+      "h2b": "step by step.",
+      "img": "meta/creative.jpg",
+      "alt": "How white-label Meta Ads works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Access and goals",
+          "d": "The client adds us through your agency; you share the goal."
+        },
+        {
+          "t": "Audit and set up",
+          "d": "We audit tracking and build the structure."
+        },
+        {
+          "t": "Test and learn",
+          "d": "Creative and audience tests run in order."
+        },
+        {
+          "t": "Report",
+          "d": "You receive results and next steps each period."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label Meta Ads for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells Meta Ads but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label Meta Ads fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label social media",
+          "d": "Calendars and posts behind your brand.",
+          "img": "social/calendar.jpg",
+          "href": "/white-label/social-media-management/",
+          "link": "See white-label social media management"
+        },
+        {
+          "n": "White-label content marketing",
+          "d": "Articles and guides behind your brand.",
+          "img": "sv/content.jpg",
+          "href": "/white-label/content-marketing/",
+          "link": "See white-label content marketing"
+        },
+        {
+          "n": "White-label email and retention",
+          "d": "Flows and campaigns behind your brand.",
+          "img": "rt/journey.jpg",
+          "href": "/white-label/email-marketing/",
+          "link": "See white-label email and retention"
+        },
+        {
+          "n": "Meta Ads",
+          "d": "Facebook and Instagram advertising.",
+          "img": "meta/creative.jpg",
+          "href": "/services/performance-marketing/meta-ads/",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "Meta Ads."
+    ],
+    "faq": [
+      {
+        "q": "Do I need to send creative?",
+        "a": "You can send it, or we can brief and source it through our creative team as a separate scope."
+      },
+      {
+        "q": "Which accounts do you work in?",
+        "a": "The client's Meta Business account, with access shared through you. They keep ownership."
+      },
+      {
+        "q": "Do you run Instagram-only or WhatsApp campaigns?",
+        "a": "Yes, within Meta's ad formats and policies. We scope the placements per client."
+      },
+      {
+        "q": "Can you share learnings across my clients?",
+        "a": "We keep each client separate and confidential. We do not share one client's data with another."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label Meta Ads?",
+        "a": "Add us to the client's ad account through your agency. After the NDA we audit tracking and structure before launching."
+      }
+    ],
+    "cta": {
+      "h2a": "Add Meta Ads",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first Meta Ads client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Creative",
+        "tag": "Handover",
+        "breaks": "Creative arrives late or off-brief.",
+        "why": "Ads cannot start, or launch with the wrong look, and the first week of spend is wasted.",
+        "does": "Creative briefs and brand rules are collected at handover, and we flag gaps before the launch date, not after."
+      },
+      {
+        "k": "Audience",
+        "tag": "Targeting",
+        "breaks": "Audiences are built on the client's guess.",
+        "why": "Clicks from people who will never buy make the report look busy and the account look weak.",
+        "does": "Audiences come from the client's customer lists and site events, and we explain the structure in plain words."
+      },
+      {
+        "k": "Tracking",
+        "tag": "Data",
+        "breaks": "Tracking is wrong, so the report is too.",
+        "why": "If events double count or go missing, you end up defending numbers you cannot trust.",
+        "does": "Pixel and Conversions API events are checked before scaling, and any fix the client must make is written for you to send."
+      },
+      {
+        "k": "Fatigue",
+        "tag": "Creative",
+        "breaks": "One winning ad runs until it dies.",
+        "why": "Frequency climbs, cost rises and the client asks what changed.",
+        "does": "A rotation plan feeds in new hooks and formats on a schedule you can see, with retired ads noted."
+      },
+      {
+        "k": "Report",
+        "tag": "Reporting",
+        "breaks": "The weekly note says what happened, not why.",
+        "why": "You need a reason to give the client, not a screenshot.",
+        "does": "Each week's note covers what changed, what we learned and what happens next, ready for your own words."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label Meta Ads",
+      "h2b": "goes wrong.",
+      "lede": "Paid social punishes loose handovers fast. Each stage below is where it goes wrong for an agency, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first Meta Ads",
+      "h2b": "client gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. The client's tracking and creative decide how long each stage takes.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA and account access",
+          "d": "We sign the NDA and are added to the client's ad account with the access you grant, then agree the goal and the budget rules.",
+          "out": "An access and goal sheet."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot campaign",
+          "d": "One small campaign launches with a creative test you have approved, so you see how we build and report.",
+          "out": "A pilot you can judge on process."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Creative and report SOPs",
+          "d": "Creative intake, naming, approval of budget changes and the weekly note format are written down.",
+          "out": "A weekly routine for the account."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale spend and clients",
+          "d": "Budget follows margin, and more clients join on the same routine.",
+          "out": "Meta for more clients, same routine."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

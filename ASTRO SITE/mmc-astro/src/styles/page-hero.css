@@ -338,6 +338,10 @@ section.page-hero .btn--link:hover {
   color: #fff;
   border-bottom-color: var(--mmc-yellow);
 }
+/* Tap target: the link draws 39px tall; a transparent layer adds 3px above and below so the clickable area is 45px.
+   Nothing visible moves (small-defects pass). */
+section.page-hero .btn--link { position: relative; }
+section.page-hero .btn--link::before { content: ""; position: absolute; inset: -3px 0; }
 
 /* Several heroes draw a decorative yellow curve sized for cream, where it read
    as a whisper. On the blue card the same stroke cuts across the headline, so

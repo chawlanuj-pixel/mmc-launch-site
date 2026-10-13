@@ -1,0 +1,80 @@
+{
+ "id": "nmc",
+ "about": "{name} is a B2B HR and recruitment consultancy.",
+ "description": "{name} case study: a recruitment website with separate paths for employers and candidates, plus a LinkedIn ad and a Google search listing.",
+ "heroTone": "ink",
+ "kind": "B2B, HR and recruitment consultancy",
+ "channels": [
+  "LinkedIn ad",
+  "Google search listing"
+ ],
+ "brief": [
+  "{name} is an HR and recruitment consultancy. This page covers its website, with separate paths for employers (a role-brief form) and candidates (an open-roles search).",
+  "Two audiences arrive at the same homepage, so it splits them at the top: one card for people who need to hire, one for people looking for work. A LinkedIn ad and a Google search listing carry the same split."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Homepage",
+   "title": "Homepage with employer and candidate paths",
+   "text": "Two clear doors on the first screen, a sector strip beneath them, and a phone version that stacks the same two choices.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Forms and search",
+   "title": "A role-brief form and an open-roles search",
+   "text": "Employers describe the role in a short brief. Candidates search live roles by keyword, location and sector.",
+   "crops": [
+    "employers",
+    "roles"
+   ],
+   "captions": [
+    "Role-brief form",
+    "Open roles search page"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A LinkedIn ad and a Google search listing",
+   "text": "The LinkedIn ad speaks to employers. The Google listing links to both the employer and the candidate path.",
+   "crops": [
+    "linkedin",
+    "google"
+   ],
+   "captions": [
+    "LinkedIn ad",
+    "Google search listing"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "Brand",
+   "title": "The brand on stationery",
+   "text": "From the same artwork.",
+   "crops": [
+    "stationery"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, role-brief form and open-roles search",
+  "reach": "LinkedIn ad and Google search listing",
+  "make": "One brand across the site, ads and print"
+ },
+ "action": "enquiry",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "employers": "{name} employer role-brief form, client-approved artwork",
+  "roles": "{name} open roles search page, client-approved artwork",
+  "linkedin": "{name} LinkedIn ad, client-approved artwork",
+  "google": "{name} Google ad, client-approved artwork",
+  "stationery": "{name} brand stationery, client-approved artwork"
+ }
+}

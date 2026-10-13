@@ -173,7 +173,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Quick commerce marketing is the work of winning visibility and sales on apps that deliver in minutes, where shoppers choose in seconds and availability decides what they see.",
+      "lead": "Quick commerce marketing is the work of winning visibility and sales on apps that deliver in minutes, such as Blinkit, Zepto and Instamart, where shoppers choose in seconds and availability decides what they see. MMC runs listings and ads for D2C brands, making listings legible at tile size and planning placements around stock.",
       "hl": "availability decides what they see",
       "who": "Monday Marketing Company (MMC) runs quick-commerce listings and ads for D2C brands, including The Growing Giraffe, across apps such as Blinkit, Zepto and Instamart.",
       "points": [
@@ -381,6 +381,77 @@
         "t": "You cannot yet supply the apps reliably, or want results from ads alone.",
         "why": "Ads on an out-of-stock listing waste money, so supply has to come first."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do on",
+      "h2b": "quick commerce.",
+      "lede": "Six jobs for brands selling on Blinkit, Zepto and Instamart.",
+      "items": [
+        {
+          "t": "Listing and tile",
+          "d": "Images, titles and pack information tuned to win the tile on a small screen.",
+          "img": "qc/listing.jpg",
+          "alt": "Listing and tile: illustrative scene"
+        },
+        {
+          "t": "Platform ads",
+          "d": "Search and category ads on each platform, matched to the products that sell.",
+          "img": "qc/ads.jpg",
+          "alt": "Platform ads: illustrative scene"
+        },
+        {
+          "t": "Dark store visibility",
+          "d": "Where your stock sits by city and dark store, and what that means for ads.",
+          "img": "qc/darkstore.jpg",
+          "alt": "Dark store visibility: illustrative scene"
+        },
+        {
+          "t": "Availability",
+          "d": "Early warnings so ad spend does not run when shelves are empty.",
+          "img": "qc/availability.jpg",
+          "alt": "Availability: illustrative scene"
+        },
+        {
+          "t": "Pricing and offers",
+          "d": "Offers and price points reviewed against margin and competitors.",
+          "img": "qc/report.jpg",
+          "alt": "Pricing and offers: illustrative scene"
+        },
+        {
+          "t": "Blended reporting",
+          "d": "Quick-commerce results read next to your site and marketplace sales.",
+          "img": "services/performance.jpg",
+          "alt": "Blended reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands grow on quick commerce",
+      "h2b": "with MMC.",
+      "lede": "Speed matters here, and so does knowing where your stock is.",
+      "img": "qc/darkstore.jpg",
+      "alt": "Why brands grow on quick commerce with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Platform specialists",
+          "d": "We run ads on the quick-commerce platforms rather than treating them as an afterthought."
+        },
+        {
+          "t": "Stock and ads in step",
+          "d": "We link ad spend to availability to avoid wasted clicks."
+        },
+        {
+          "t": "Creative for tiny tiles",
+          "d": "Images designed for thumbnail size and fast scanning."
+        },
+        {
+          "t": "Margin-aware",
+          "d": "Offers and spend are judged on what the order leaves after platform costs."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

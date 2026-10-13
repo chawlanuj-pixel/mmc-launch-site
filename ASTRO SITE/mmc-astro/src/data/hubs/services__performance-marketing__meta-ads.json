@@ -3,8 +3,8 @@
   "path": "/services/performance-marketing/meta-ads/",
   "key": "metaads",
   "title": "Meta Ads Agency India for D2C and B2B Brands | MMC",
-  "description": "Meta ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.",
-  "ogTitle": "Meta ads management for growing brands",
+  "description": "Meta Ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.",
+  "ogTitle": "Meta Ads management for growing brands",
   "ogDescription": "Instagram and Facebook campaigns built as one funnel, with real results sent back to Meta.",
   "ogAlt": "Monday Marketing Company: meta ads management.",
   "jsonld": [
@@ -45,7 +45,7 @@
       "@id": "https://www.mondaymarketing.company/meta-ads.html#webpage",
       "url": "https://www.mondaymarketing.company/meta-ads.html",
       "name": "Meta Ads Agency India for D2C and B2B Brands | MMC",
-      "description": "Meta ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.",
+      "description": "Meta Ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -66,7 +66,7 @@
       "@id": "https://www.mondaymarketing.company/meta-ads.html#service",
       "name": "Meta Ads management",
       "serviceType": "Meta Ads management",
-      "description": "Meta ads (Instagram and Facebook) management for D2C, B2B and education brands.",
+      "description": "Meta Ads (Instagram and Facebook) management for D2C, B2B and education brands.",
       "url": "https://www.mondaymarketing.company/meta-ads.html",
       "provider": {
         "@id": "https://www.mondaymarketing.company/#organization"
@@ -173,9 +173,9 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Meta ads management is the work of running paid campaigns on Instagram and Facebook: structuring the account, producing and testing creative, and feeding the platform good data.",
+      "lead": "Meta Ads management is the work of running paid campaigns on Instagram and Facebook: structuring the account, producing and testing creative, and feeding the platform good data. MMC runs it for D2C brands, judged on contribution margin, and for B2B and education brands, judged on the cost of a qualified lead. A senior person runs your account.",
       "hl": "feeding the platform good data",
-      "who": "Monday Marketing Company (MMC) runs Meta ads for D2C brands, judged on contribution margin, and for B2B and education brands, judged on the cost of a qualified lead.",
+      "who": "Monday Marketing Company (MMC) runs Meta Ads for D2C brands, judged on contribution margin, and for B2B and education brands, judged on the cost of a qualified lead.",
       "points": [
         {
           "icon": "layers",
@@ -199,7 +199,7 @@
     "leaks": {
       "style": "stack",
       "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
-      "eyebrow": "Where Meta ads go wrong",
+      "eyebrow": "Where Meta Ads go wrong",
       "h2a": "Five ways Meta spend",
       "h2b": "goes wrong.",
       "lede": "Meta rewards good structure, fresh creative and clean data. Each stage below is where accounts lose money, and how we run it."
@@ -300,6 +300,13 @@
           "img": "b2b/qualify.jpg",
           "href": "lead-generation.html",
           "link": "See Lead generation"
+        },
+        {
+          "n": "White-label Meta Ads",
+          "d": "Facebook and Instagram ads behind your brand.",
+          "img": "meta/creative.jpg",
+          "href": "/white-label/meta-ads/",
+          "link": "See white-label Meta Ads"
         }
       ]
     },
@@ -343,7 +350,7 @@
       "codes": [
         "perf"
       ],
-      "does": "run Meta ads for"
+      "does": "run Meta Ads for"
     },
     "process": {
       "h2a": "How we run Meta Ads,",
@@ -381,6 +388,102 @@
         "t": "You want a guaranteed ROAS, or a new agency every few months.",
         "why": "Nobody can honestly promise a ROAS, and Meta accounts need a steady hand for the creative and learning to compound."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do on",
+      "h2b": "Meta Ads.",
+      "lede": "Six jobs, in the order they move your cost per result for D2C, B2B and education accounts.",
+      "items": [
+        {
+          "t": "Account structure",
+          "d": "One funnel of prospecting, retargeting and conversion, with budgets large enough for Meta to learn.",
+          "img": "meta/structure.jpg",
+          "alt": "Account structure: illustrative scene"
+        },
+        {
+          "t": "Creative testing",
+          "d": "Ads briefed around a single idea and tested in rounds, so every result teaches the next brief.",
+          "img": "meta/creative.jpg",
+          "alt": "Creative testing: illustrative scene"
+        },
+        {
+          "t": "Audience and targeting",
+          "d": "Broad and interest audiences, customer lists and lookalikes set up around who actually buys or enquires.",
+          "img": "meta/audience.jpg",
+          "alt": "Audience and targeting: illustrative scene"
+        },
+        {
+          "t": "Conversions API tracking",
+          "d": "Purchases, or qualified leads from your CRM, sent back to Meta and checked against your own data.",
+          "img": "meta/capi.jpg",
+          "alt": "Conversions API tracking: illustrative scene"
+        },
+        {
+          "t": "Lead and sales funnels",
+          "d": "Instant forms, landing pages and WhatsApp follow-up for B2B and education leads; catalogue ads for D2C.",
+          "img": "meta/scale.jpg",
+          "alt": "Lead and sales funnels: illustrative scene"
+        },
+        {
+          "t": "Scale against profit",
+          "d": "Budget moves only where contribution margin or cost per qualified lead still holds.",
+          "img": "services/performance.jpg",
+          "alt": "Scale against profit: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands run Meta Ads",
+      "h2b": "with MMC.",
+      "lede": "We judge the account on what you keep, not on what the dashboard reports.",
+      "img": "meta/audience.jpg",
+      "alt": "Why brands run Meta Ads with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Profit is the scoreboard",
+          "d": "D2C accounts are judged on contribution margin, B2B and education on the cost of a qualified lead."
+        },
+        {
+          "t": "Creative and media under one roof",
+          "d": "The team that runs the account briefs the creative, so the loop between ad and result is short."
+        },
+        {
+          "t": "Tracking you can trust",
+          "d": "Conversions API is set up and reconciled with your store or CRM before spend scales."
+        },
+        {
+          "t": "Plain weekly reporting",
+          "d": "You see what changed, why it changed and what we do next, in words you can act on."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How we run Meta Ads,",
+      "h2b": "step by step.",
+      "img": "meta/scale.jpg",
+      "alt": "How we run Meta Ads, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit the account and set the floor",
+          "d": "We read the account against your margins, fix tracking and agree the break-even ROAS or lead cost before spend changes."
+        },
+        {
+          "t": "Rebuild the structure",
+          "d": "One funnel, clean audiences and a naming system, so every campaign has a job and a result you can read."
+        },
+        {
+          "t": "Run the creative test lane",
+          "d": "A fixed testing rule, one idea per round, with winners kept and losers retired on evidence."
+        },
+        {
+          "t": "Scale and review weekly",
+          "d": "Budget follows contribution margin or qualified-lead cost, and a weekly note explains each move."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

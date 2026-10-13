@@ -1,0 +1,129 @@
+---
+// White-label agency registration (public, indexable conversion page). Two emails per completed registration:
+// #1 when Next is pressed on step 1, #2 on Submit. Logic: src/lib/register-payload.mjs (pure) + src/lib/register-submit.js (transport).
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Img from "../../components/hub/Img.astro";
+import Breadcrumb from "../../components/shared/Breadcrumb.astro";
+import Faq from "../../components/hub/Faq.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import RegisterApp from "../../islands/pages/RegisterApp.jsx";
+import "../../styles/hub-extra.css";
+import "../../styles/hub-v2.css";
+import "../../styles/svc-blocks.css";
+import "../../styles/register.css";
+import { fixHtml } from "../../lib/links";
+
+const SITE = "https://www.mondaymarketing.company";
+const path = "/white-label/register/";
+const title = "White-Label Agency Partner Registration India | MMC";
+const description = "Register your agency as a white-label partner of MMC in India. Share contact and agency details in two short steps and we reach out to onboard you.";
+
+const tiles = [
+  { img: "company/whiteboard.jpg", label: "Scope", note: "Agreed together" },
+  { img: "company/session.jpg", label: "Delivery", note: "Behind your brand" },
+  { img: "res/insights.jpg", label: "Reports", note: "In your format" },
+  { img: "about2/huddle.jpg", label: "Team", note: "Works as yours" },
+];
+const trust = [
+  { t: "Delivered under your brand", d: "We deliver the work and you sell it as your own." },
+  { t: "Your client stays yours", d: "We do not approach your clients, and we sign an NDA covering client information." },
+  { t: "Reports in your format", d: "Deliverables and reports in your format and name, or numbers for your own template." },
+  { t: "Every discipline", d: "Search, paid, social, content, web, apps and AI." },
+];
+const next = [
+  { t: "You register", d: "Two short steps. The first saves your contact details, the second tells us about your agency and what you want to white label." },
+  { t: "MMC reviews", d: "A senior strategist reads your agency profile and the services you picked." },
+  { t: "We reach out", d: "On the call window you chose, to scope what you sell and agree how we work behind you." },
+];
+const faq = [
+  { q: "What is the white-label agency partner registration?", a: "It is a short two-step form that tells MMC who you are, what your agency sells and which services you want delivered behind your brand. It is a registration form, not a contract." },
+  { q: "Who can register as a white-label partner?", a: "Digital agencies, web studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff. Agencies outside India can register too: see how <a href=\"/white-label/india/\">white label from India</a> works." },
+  { q: "Which services can I list?", a: "Any service MMC delivers behind agency brands, including <a href=\"/white-label/seo/\">white-label SEO</a>, <a href=\"/white-label/ppc/\">white-label PPC</a>, <a href=\"/white-label/meta-ads/\">white-label Meta Ads</a>, <a href=\"/white-label/web-development/\">white-label web development</a> and <a href=\"/white-label/creative-and-video/\">white-label creative and video</a>. The <a href=\"/white-label/\">white-label services overview</a> lists them all." },
+  { q: "Will MMC contact my clients?", a: "No. We do not approach your clients, and we sign an NDA covering client information. Reports can carry your name; see <a href=\"/white-label/reporting/\">white-label reporting</a>." },
+  { q: "What happens after I register?", a: "MMC reviews your details and reaches out on the call window and time zone you chose. The usual path is an NDA, an agreed scope, reporting in your format and a first client together." },
+].map((f) => ({ q: f.q, a: fixHtml(f.a) }));
+
+const plain = (s: string) => s.replace(/<[^>]+>/g, "");
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + path + "#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "White label", item: SITE + "/white-label/" },
+    { "@type": "ListItem", position: 3, name: "Register as a partner", item: SITE + path } ] },
+  { "@context": "https://schema.org", "@type": "WebPage", "@id": SITE + path + "#webpage", url: SITE + path, name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + path + "#breadcrumb" }, publisher: { "@id": SITE + "/#organization" }, inLanguage: "en" },
+  { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + path + "#faq", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: plain(f.a) } })) },
+];
+---
+<BaseLayout title={title} description={description} path={path} ogTitle="Become a white-label partner of MMC" ogDescription="Register your agency in two short steps. Delivery under your brand; your client stays yours." ogAlt="Monday Marketing Company: white-label agency partner registration." jsonld={jsonld}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <section class="page-hero pm-hero" id="top" data-wm="Partner">
+        <span class="page-hero__wm" aria-hidden="true">Partner</span>
+        <div class="container pm-hero__inner">
+          <div class="pmh__grid">
+            <div class="pmh__l">
+              <div class="eyebrow"><span>● White-label partner registration</span></div>
+              <h1 class="pmh__h">Become a <span class="em-serif">white-label</span> partner.</h1>
+              <p class="pmh__sub">Tell us about your agency in two short steps. We deliver the work behind your brand, and your client stays yours.</p>
+              <div class="pmh__actions">
+                <a class="btn btn--primary glow-btn" href="#register"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Register your agency<span class="arrow"></span></span></a>
+                <a class="btn btn--link" href="/white-label/">See white-label services<span class="arrow"></span></a>
+              </div>
+            </div>
+            <div class="pmh__r in">
+              <div class="pmh__mosaic">
+                {tiles.map((t, k) => (
+                  <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+                    <Img name={t.img} ratio="1 / 1.05" class="pmh__img" eager={k < 2} />
+                    <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Breadcrumb jsonld={jsonld} />
+
+      <section class="n-band n-band--paper wlr-band" id="register" aria-labelledby="wlr-reg-h">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">Register your agency</span>
+            <h2 class="n-h2" id="wlr-reg-h">Two short steps, <span class="n-serif">one registration.</span></h2>
+          </div>
+          <div class="wlr-layout">
+            <aside class="wlr-aside" aria-labelledby="wlr-next-h">
+              <figure class="wlr-aside__pic">
+                <Img name="company/strategy.jpg" ratio="3 / 2" alt="A strategist walking a team through a plan at a whiteboard. Illustrative scene." />
+              </figure>
+              <h3 id="wlr-next-h">What happens next</h3>
+              <ol class="wlr-next">
+                {next.map((n, i) => <li><span class="wlr-next__n" aria-hidden="true">{i + 1}</span><div><b>{n.t}</b><p>{n.d}</p></div></li>)}
+              </ol>
+            </aside>
+            <RegisterApp client:load />
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white wlr-trust" aria-labelledby="wlr-trust-h">
+        <div class="n-wrap">
+          <div class="pm-head n-rise">
+            <span class="n-eyebrow">How white label works with MMC</span>
+            <h2 class="n-h2" id="wlr-trust-h">Behind your brand, <span class="n-serif">in plain terms.</span></h2>
+          </div>
+          <ul class="wlr-trust__row">
+            {trust.map((t) => <li><b>{t.t}</b><p>{t.d}</p></li>)}
+          </ul>
+        </div>
+      </section>
+
+      <Faq title={["Questions about", "registering."]} faq={faq} tone="paper" />
+
+      <PreFooterCta source="wl-register" h2a="Prefer to talk" h2b="before you register?" lede="On a call, with a senior strategist. We scope what you sell and agree how we work behind you." secondary={{ label: "White-label services for agencies", href: "/white-label/" }} />
+    </main>
+  </Shell>
+  <script>import "../../scripts/hub.ts";</script>
+</BaseLayout>

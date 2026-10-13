@@ -35,16 +35,6 @@ main.n-app .n-eyebrow { font-size: 12px; }
 .svb-who__why { font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--n-fg-2); margin: 0; }
 .svb-who__foot { margin: 22px 0 0; font-family: var(--font-body); font-size: 16px; color: var(--n-fg-2); }
 
-/* Proof wall */
-.svb-proof .pm-wall { margin-top: clamp(28px, 3vw, 44px); }
-.svb-proof--one .pm-wall, .svb-proof--two .pm-wall { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 20px; }
-.svb-proof--one .pm-wall__item, .svb-proof--two .pm-wall__item { width: min(100%, 280px); flex: 0 0 auto; }
-.svb-proof a.svb-proof__tile { display: block; text-decoration: none; color: inherit; border-radius: 14px; }
-.svb-proof a.svb-proof__tile:focus-visible { outline: 2px solid var(--n-blue); outline-offset: 4px; }
-.svb-proof__none { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding: clamp(22px, 2.6vw, 32px); background: #fff; border: 1px solid var(--n-line); border-radius: 22px; }
-.svb-proof__none p { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: clamp(18px, 1.8vw, 24px); letter-spacing: -.02em; color: var(--n-fg); }
-.svb-proof .pm-wall__svc { font-size: 12px; line-height: 1.4; }
-.svb-proof__foot { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 24px; }
 
 /* Answer block */
 .ans__label { font-family: var(--font-body); font-size: 12px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; margin: 0; }

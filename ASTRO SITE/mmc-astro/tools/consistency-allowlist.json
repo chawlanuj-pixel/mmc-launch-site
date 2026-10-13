@@ -1,0 +1,132 @@
+{
+ "_readme": "Legitimate exceptions to tools/consistency-check.mjs. Every entry needs a reason. rule = rule id, pages = glob or list (default *), match = substring of the finding (optional). Add an entry only when the text is correct and the rule is wrong for it. Never allowlist to hide a real inconsistency.",
+ "entries": [
+  {
+   "rule": "en-dash",
+   "pages": "*",
+   "match": "₹",
+   "reason": "Audit modal and contact form option values (budget and revenue bands). They are sent to the CRM as stored values, so rewording them to 'to' needs an owner decision on the CRM side."
+  },
+  {
+   "rule": "en-dash",
+   "pages": "*",
+   "match": "1–3 months",
+   "reason": "Same form option list as above (timeline 'In 1–3 months')."
+  },
+  {
+   "rule": "email-anuj-public",
+   "pages": [
+    "/contact/",
+    "/thank-you/"
+   ],
+   "reason": "Form-failure fallback: 'If it didn't, send them to anuj@' is the one place the form inbox is shown, by owner decision."
+  },
+  {
+   "rule": "client-count",
+   "pages": "/pricing-model/*",
+   "match": "Clients in",
+   "reason": "'Version 4' followed by the heading 'Clients in India'. Not a count of clients."
+  },
+  {
+   "rule": "american-spelling",
+   "pages": "/white-label/ppc/",
+   "match": "Merchant Center",
+   "reason": "Google Merchant Center is Google's product name."
+  },
+  {
+   "rule": "heading-case",
+   "pages": "/glossary/",
+   "reason": "Glossary headings are term names followed by their acronym (Cost of Goods Sold COGS)."
+  },
+  {
+   "rule": "currency-format",
+   "pages": "/pricing-model/*",
+   "reason": "Private pricing pages follow the rate card (US$ for international clients)."
+  },
+  {
+   "rule": "currency-format",
+   "pages": [
+    "/careers/*",
+    "/tools/*"
+   ],
+   "match": "INR",
+   "reason": "schema.org baseSalary currency code, not visible copy."
+  },
+  {
+   "rule": "white-label-promise",
+   "pages": "/white-label/*",
+   "match": "guarantee",
+   "reason": "The pages say they do NOT guarantee results (FAQ answers 'No'). The word is used to refuse a promise."
+  },
+  {
+   "rule": "service-claims",
+   "pages": "/services/*",
+   "match": "guaranteed",
+   "reason": "'Not a fit: you want a guaranteed ...' lists what the service does not promise."
+  },
+  {
+   "rule": "alt-quality",
+   "pages": "*",
+   "match": "\"MMC\"",
+   "reason": "Logo alt text is the brand name."
+  },
+  {
+   "rule": "alt-quality",
+   "pages": "*",
+   "match": "\"Veo\"",
+   "reason": "Product logo alt text."
+  },
+  {
+   "rule": "alt-quality",
+   "pages": "*",
+   "match": "\"n8n\"",
+   "reason": "Product logo alt text."
+  },
+  {
+   "rule": "alt-quality",
+   "pages": "*",
+   "match": "\"GA4\"",
+   "reason": "Product logo alt text."
+  },
+  {
+   "rule": "alt-quality",
+   "pages": "*",
+   "match": "\"JSW\"",
+   "reason": "Client logo alt text is the brand name."
+  },
+  {
+   "rule": "cta-label",
+   "pages": "*",
+   "match": "\"See all AI by MMC\"",
+   "reason": "Wayfinding link from an AI service page to the AI by MMC hub. The label names the destination; a generic booking CTA would hide where it goes."
+  },
+  {
+   "rule": "cta-label",
+   "pages": "/guides/*",
+   "match": "calculator\"",
+   "reason": "Related-tool cards on guides name the calculator they open (Funnel ROAS, Break-even ROAS). The tool name is the meaningful label; the surrounding block already says 'Open the ... calculator'."
+  },
+  {
+   "rule": "cta-label",
+   "pages": [
+    "/guides/",
+    "/tools/",
+    "/resources/"
+   ],
+   "match": "glossary\"",
+   "reason": "Descriptive link to the glossary, a different destination from a guide or a calculator, so 'Read the guide' and 'Open the calculator' would be wrong."
+  },
+  {
+   "rule": "cta-label",
+   "pages": "/white-label/register/",
+   "match": "\"See white-label services\"",
+   "reason": "Descriptive back-link from the registration page to the white label hub."
+  },
+  {
+   "rule": "cta-label",
+   "pages": "/white-label/register/",
+   "match": "\"White-label services for agencies\"",
+   "reason": "Hub card title linking to the white label hub (matches the hub H1 wording)."
+  }
+ ]
+}

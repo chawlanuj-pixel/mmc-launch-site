@@ -1,0 +1,181 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__ugc-and-video.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "ugc/refresh.jpg",
+    "pos": "50% 50%",
+    "alt": "A wall of creator photos and cut ideas, grouped by week.",
+    "facts": [
+      {
+        "t": "One brand thesis.",
+        "d": "Every video briefed against it."
+      },
+      {
+        "t": "Creators, not stock.",
+        "d": "Real people, natural delivery."
+      },
+      {
+        "t": "A steady refresh.",
+        "d": "New cuts before results tire."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "BriefBoard",
+    "eyebrow": "The work, shown",
+    "h2a": "How one brief becomes",
+    "h2b": "ads that run.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Brief every video around one thesis.",
+        "d": "One idea per round, with a hook, an angle and what to show, so each test asks a clear question."
+      },
+      {
+        "n": "02",
+        "t": "Match creators to your buyer.",
+        "d": "Real people who look and sound like your customers, chosen for the product and the audience."
+      },
+      {
+        "n": "03",
+        "t": "Collect raw clips and cut many hooks.",
+        "d": "Footage is edited into several hooks, lengths and formats for each placement you run."
+      },
+      {
+        "n": "04",
+        "t": "Test the cuts and brief the winner forward.",
+        "d": "Versions run against each other with your media buying, and the winner shapes the next brief before the set tires."
+      }
+    ],
+    "illustrative": "Illustrative layout of a UGC brief and creator board. Not a client account, no real figures or people."
+  },
+  "leak": {
+    "visual": "VideoRetention",
+    "barLogo": "",
+    "barTitle": "Watch-time view",
+    "pinsLabel": "Five places ad creative loses attention",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Thesis"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Creators"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Edit"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Testing"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Refresh"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we make creative for.",
+    "tiles": [
+      {
+        "id": "giraffe",
+        "line": "Gifting: performance creative built to run as ads."
+      },
+      {
+        "id": "vagakids",
+        "line": "Kids' products: ad creative cut for each placement."
+      },
+      {
+        "id": "awwbaby",
+        "line": "Baby products: new ad versions for a range families buy often."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run UGC and video,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Write the brand thesis",
+        "d": "One idea, several angles for hook, offer and proof, agreed before anyone films.",
+        "get": "A brief your media team can test.",
+        "img": "ugc/brief.jpg",
+        "alt": "A team laying out brief cards on a table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Shoot with creators",
+        "d": "Creator and UGC-style footage, on location or at home, matched to your audience.",
+        "get": "Raw footage with real people in it.",
+        "img": "ugc/shoot.jpg",
+        "alt": "A creator holding a small product to a phone on a tripod.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Edit for each placement",
+        "d": "Strong hooks, many lengths and formats cut from the same shoot.",
+        "get": "A bank of ads ready to run.",
+        "img": "ugc/edit.jpg",
+        "alt": "A video editor cutting footage on a monitor.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Test and refresh",
+        "d": "Angles run against each other, and winners are refreshed before they tire.",
+        "get": "Creative that keeps holding attention.",
+        "img": "ugc/test.jpg",
+        "alt": "A video ad creative testing dashboard on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Social media",
+        "href": "/services/social-media/"
+      },
+      {
+        "n": "Influencer marketing",
+        "href": "/services/influencer-marketing/"
+      },
+      {
+        "n": "AI UGC by MMC",
+        "href": "/ai-by-mmc/ugc/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

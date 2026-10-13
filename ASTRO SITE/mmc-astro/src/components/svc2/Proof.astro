@@ -1,0 +1,73 @@
+---
+// 4. Proof: three big project tiles, then the approved logo row (hover or focus a logo and the stage shows that project) beside the
+// four numbers we read, as plain type. Brand names, labels and case-study links come from src/lib/work.ts; project images from
+// public/assets/clients. No client counts, no results.
+import fs from "node:fs";
+import path from "node:path";
+import { brand, tagsFor } from "../../lib/work";
+import { proofRows } from "../../lib/proof";
+interface Props { H: any; S: any }
+const { H, S } = Astro.props as Props;
+const P = S.proof;
+const dir = path.join(process.cwd(), "public/assets/clients");
+const logo = (id: string) => (fs.existsSync(path.join(dir, "sm", id + ".png")) ? `/assets/clients/sm/${id}.png` : `/assets/clients/${id}.png`);
+const tiles = P.tiles.map((t: any) => ({ ...t, b: brand(t.id)! })).filter((t: any) => t.b);
+const rows = proofRows({ ...H.proof, max: 8 }).map((r) => brand(r.id)!).filter(Boolean);
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+---
+{tiles.length > 0 && (
+<section class="s2-band s2-band--white s2-proof" id="proof" aria-labelledby="s2-proof-h">
+  <div class="s2-wrap">
+    <header class="s2-head s2-head--row">
+      <div>
+        <p class="s2-eyebrow">{P.eyebrow}</p>
+        <h2 class="s2-h2" id="s2-proof-h">{P.h2a} <em>{P.h2b}</em></h2>
+      </div>
+      <a class="s2-link" href="/work/">See all our work<Fragment set:html={arrow} /></a>
+    </header>
+    <ul class="s2-tiles">
+      {tiles.map((t: any, k: number) => (
+        <li>
+          <a class="s2-tile" href={t.b.href || "/work/"}>
+            <span class="s2-tile__pic"><img src={`/assets/clients/${t.id}-work.jpg`} alt={t.b.name + " project"} width="1280" height="720" loading="lazy" decoding="async" /></span>
+            <span class="s2-tile__logo"><img src={logo(t.id)} alt={t.b.name} loading="lazy" decoding="async" /></span>
+            <span class="s2-tile__body">
+              <span class="s2-tile__meta">{t.b.label}</span>
+              <span class="s2-tile__line">{t.line}</span>
+              <span class="s2-tile__go">See the work<Fragment set:html={arrow} /></span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div class="s2-proof__row">
+      <div class="s2-brands" data-s2-brands>
+        <p class="s2-sub">{P.moreLabel}</p>
+        <figure class="s2-stage">
+          {rows.map((b, k) => (
+            <img class={k === 0 ? "is-on" : ""} data-brand-img={b.id} src={`/assets/clients/${b.id}-work.jpg`} alt={b.name + " project"} width="1280" height="720" loading="lazy" decoding="async" />
+          ))}
+          {rows.map((b, k) => (
+            <figcaption class={k === 0 ? "is-on" : ""} data-brand-cap={b.id}>
+              <b>{b.name}</b><span>{tagsFor(b.id, true).join(", ")}</span>
+              {b.href ? <a href={b.href}>See the work<Fragment set:html={arrow} /></a> : null}
+            </figcaption>
+          ))}
+        </figure>
+        <ul class="s2-logos">
+          {rows.map((b, k) => (
+            <li><button type="button" class={"s2-logo" + (k === 0 ? " is-on" : "")} data-brand={b.id} aria-label={b.name}><img src={logo(b.id)} alt="" loading="lazy" decoding="async" /></button></li>
+          ))}
+        </ul>
+      </div>
+      <div class="s2-read">
+        <p class="s2-sub">{P.readLabel}</p>
+        <dl class="s2-read__grid">
+          {H.numbers.cards.map((c: any) => <div><dt>{c.n}</dt><dd>{c.d}</dd></div>)}
+        </dl>
+        <p class="s2-read__note">{H.numbers.note}</p>
+      </div>
+    </div>
+  </div>
+</section>
+)}

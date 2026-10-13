@@ -1,0 +1,503 @@
+{
+  "file": "white-label-outsourcing.html",
+  "path": "/white-label/outsourcing/",
+  "key": "wl_outsourcing",
+  "title": "Agency Outsourcing and Dedicated Teams | MMC",
+  "description": "Outsource agency work to a dedicated MMC team: hire marketing, design and developer resources that work as part of your agency, under NDA and your brand.",
+  "ogTitle": "White-label agency outsourcing for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label agency outsourcing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label agency outsourcing",
+          "item": "https://www.mondaymarketing.company/white-label/outsourcing/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/outsourcing/",
+      "name": "Agency Outsourcing and Dedicated Teams | MMC",
+      "description": "Outsource agency work to a dedicated MMC team: hire marketing, design and developer resources that work as part of your agency, under NDA and your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#service",
+      "name": "White-label Agency Outsourcing",
+      "serviceType": "White-label agency outsourcing",
+      "description": "White-label agency outsourcing delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/outsourcing/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is a dedicated team really dedicated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dedicated means assigned to your accounts under the scope we write down. We describe exactly who works on what."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can your team speak to my clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if you invite them as part of your team. Otherwise they stay behind the scenes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which time zones do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We agree overlap hours with you during onboarding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tools can the team use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yours, wherever possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label agency outsourcing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us the roles you need and your tools. After the NDA we propose a team and an onboarding plan."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_outsourcing",
+    "wm": "White-label Agency Outsourcing",
+    "eyebrow": "● White-label agency outsourcing",
+    "h1": [
+      "Agency outsourcing",
+      [
+        "with a team that works ",
+        "as yours",
+        "."
+      ]
+    ],
+    "sub": "Hire a dedicated team of strategists, designers and developers who run your accounts as part of your agency.",
+    "tiles": [
+      {
+        "img": "about2/huddle.jpg",
+        "pos": "50% 50%",
+        "label": "Team",
+        "note": "Works with yours"
+      },
+      {
+        "img": "company/session.jpg",
+        "pos": "50% 50%",
+        "label": "Daily",
+        "note": "Stand-ups and updates"
+      },
+      {
+        "img": "careers2/team-screen.jpg",
+        "pos": "50% 50%",
+        "label": "Tools",
+        "note": "Your tools"
+      },
+      {
+        "img": "about2/callscreen.jpg",
+        "pos": "50% 50%",
+        "label": "Calls",
+        "note": "With your clients if you want"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Agency outsourcing means handing delivery work to a partner so your team can focus on clients and sales. With MMC you can hire a dedicated team, or draw hours as needed, of strategists, designers, developers and writers who work inside your processes, under your brand and an NDA.",
+      "hl": "handing delivery work to a partner",
+      "who": "Monday Marketing Company (MMC) delivers agency outsourcing for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "users",
+          "title": "Dedicated team",
+          "text": "People who work on your accounts."
+        },
+        {
+          "icon": "loop",
+          "title": "Your processes",
+          "text": "Your tools, your rituals."
+        },
+        {
+          "icon": "layers",
+          "title": "Flex up or down",
+          "text": "Add or reduce as demand moves."
+        }
+      ],
+      "image": "about2/huddle.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "out-models",
+          "h": "Ways to work with an outsourced team",
+          "paras": [
+            "There is no single right model. A dedicated team suits steady volume. Hour blocks suit peaks. Project-based work suits one-off builds. We help you choose and write the model into the scope.",
+            "If you only want to resell a defined service, see the <a href=\"/white-label/reseller-programme/\">reseller programme</a>. Costs are discussed on the <a href=\"/white-label/pricing-models/\">pricing models</a> page."
+          ],
+          "img": "about2/huddle.jpg",
+          "cap": "Illustrative scene: a dedicated team working with an agency.",
+          "table": {
+            "caption": "Outsourcing models compared",
+            "head": [
+              "Model",
+              "How it works",
+              "Suits"
+            ],
+            "rows": [
+              [
+                "Dedicated team",
+                "People assigned to your accounts",
+                "Steady volume, many clients"
+              ],
+              [
+                "Hour block",
+                "Hours drawn down when needed",
+                "Peaks and overflow"
+              ],
+              [
+                "Project",
+                "Fixed scope and timeline",
+                "Builds and audits"
+              ],
+              [
+                "Embedded specialist",
+                "One person inside your team",
+                "Gaps in one discipline"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What a dedicated team",
+      "h2b": "can cover.",
+      "lede": "People for strategy, design, build and ads.",
+      "items": [
+        {
+          "t": "Dedicated strategists",
+          "d": "Senior people who plan and run accounts.",
+          "img": "company/strategy.jpg",
+          "alt": "Dedicated strategists: illustrative scene"
+        },
+        {
+          "t": "Dedicated designers",
+          "d": "Design resource for your creative queue.",
+          "img": "social/design.jpg",
+          "alt": "Dedicated designers: illustrative scene"
+        },
+        {
+          "t": "Dedicated developers",
+          "d": "Developers for web and app builds.",
+          "img": "web/build.jpg",
+          "alt": "Dedicated developers: illustrative scene"
+        },
+        {
+          "t": "Content and editorial",
+          "d": "Writers and editors for your clients.",
+          "img": "sv/content.jpg",
+          "alt": "Content and editorial: illustrative scene"
+        },
+        {
+          "t": "Ad managers",
+          "d": "Specialists for Google, Meta and marketplaces.",
+          "img": "pm-v2/channel-meta.jpg",
+          "alt": "Ad managers: illustrative scene"
+        },
+        {
+          "t": "Project coordination",
+          "d": "A coordinator to keep work moving.",
+          "img": "about2/callscreen.jpg",
+          "alt": "Project coordination: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label agency outsourcing.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "about2/huddle.jpg",
+      "alt": "Why agencies choose MMC for white-label agency outsourcing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Works in your tools",
+          "d": "We join your project tools and channels."
+        },
+        {
+          "t": "Scales with you",
+          "d": "Add or reduce roles as client demand changes."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label agency outsourcing works,",
+      "h2b": "step by step.",
+      "img": "about2/huddle.jpg",
+      "alt": "How white-label agency outsourcing works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Define the roles",
+          "d": "You tell us the gaps."
+        },
+        {
+          "t": "Match the team",
+          "d": "We propose people and a manager."
+        },
+        {
+          "t": "Onboard",
+          "d": "We learn your process and tools."
+        },
+        {
+          "t": "Run",
+          "d": "The team works as yours, with regular reviews."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label agency outsourcing for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells agency outsourcing but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label agency outsourcing fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label reseller programme",
+          "d": "Resell MMC services as yours.",
+          "img": "contact/meeting.jpg",
+          "href": "/white-label/reseller-programme/",
+          "link": "See the reseller programme"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        },
+        {
+          "n": "White-label agency India",
+          "d": "An India delivery partner for your agency.",
+          "img": "contact/office.jpg",
+          "href": "/white-label/india/",
+          "link": "See the India partner page"
+        },
+        {
+          "n": "All services",
+          "d": "Everything MMC does directly.",
+          "img": "company/strategy.jpg",
+          "href": "/services/",
+          "link": "See All services"
+        },
+        {
+          "n": "White-label digital marketing",
+          "d": "The full mix behind your brand.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/digital-marketing/",
+          "link": "See white-label digital marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "agency outsourcing."
+    ],
+    "faq": [
+      {
+        "q": "Is a dedicated team really dedicated?",
+        "a": "Dedicated means assigned to your accounts under the scope we write down. We describe exactly who works on what."
+      },
+      {
+        "q": "Can your team speak to my clients?",
+        "a": "Yes, if you invite them as part of your team. Otherwise they stay behind the scenes."
+      },
+      {
+        "q": "Which time zones do you cover?",
+        "a": "We agree overlap hours with you during onboarding."
+      },
+      {
+        "q": "What tools can the team use?",
+        "a": "Yours, wherever possible."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label agency outsourcing?",
+        "a": "Tell us the roles you need and your tools. After the NDA we propose a team and an onboarding plan."
+      }
+    ],
+    "cta": {
+      "h2a": "Add agency outsourcing",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first agency outsourcing client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Match capacity to work",
+        "tag": "Idle bench",
+        "breaks": "Hiring ahead of the work.",
+        "why": "Salaries run before the projects arrive, and your margin carries the gap.",
+        "does": "We scope a pod to the work you have, and seats can be added or paused as the pipeline changes."
+      },
+      {
+        "k": "Keep the same people",
+        "tag": "Team churn",
+        "breaks": "Losing the person who knew the account.",
+        "why": "Each handover to a new freelancer costs weeks of context and a drop in quality.",
+        "does": "A named pod stays on your accounts, with a second person briefed on each, so one absence does not stall the work."
+      },
+      {
+        "k": "Hand off in one place",
+        "tag": "Hand-offs",
+        "breaks": "Passing work around by chat.",
+        "why": "Chat threads lose decisions, and no one is sure which version is final.",
+        "does": "Briefs, drafts and approvals live on one board with an owner for each item."
+      },
+      {
+        "k": "Work in your tools",
+        "tag": "Tooling",
+        "breaks": "Letting the partner use their own tools.",
+        "why": "You lose sight of progress, and moving a project back in-house becomes a rescue job.",
+        "does": "The pod works in your tracker, drive and templates, under your processes, so you always see the work."
+      },
+      {
+        "k": "Review quality on a routine",
+        "tag": "Quality drift",
+        "breaks": "Checking quality only when something breaks.",
+        "why": "Small slips accumulate when no one is looking, and your client notices before you do.",
+        "does": "A weekly review with you, a checklist per deliverable and a coordinator who tracks the open items."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways agency outsourcing",
+      "h2b": "goes wrong for agencies.",
+      "lede": "Outsourcing fails in quiet ways, long before a client notices. These are the five places it slips, and how a dedicated pod avoids each."
+    },
+    "process": {
+      "h2a": "How we onboard your outsourced team,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and team scope",
+          "d": "We sign the NDA, learn your processes and agree which roles you need and what each owns.",
+          "out": "A written pod scope with roles and rhythm."
+        },
+        {
+          "t": "Pilot pod",
+          "d": "A small pod takes a defined slice of your work for a trial period, in your tools.",
+          "out": "A pilot you can judge on speed, quality and communication."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Briefing, approvals, escalation and handover are written down so the pod and your team work from one page.",
+          "out": "A shared operating guide for both teams."
+        },
+        {
+          "t": "Scale the pod",
+          "d": "Seats are added as clients are won, and the same rhythm holds as the pod grows.",
+          "out": "A team that grows with your pipeline."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

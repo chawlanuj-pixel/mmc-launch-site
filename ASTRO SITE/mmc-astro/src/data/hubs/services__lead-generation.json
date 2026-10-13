@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Lead generation is the work of bringing in enquiries from people who are likely to buy, then passing sales or admissions the ones worth a conversation.",
+      "lead": "Lead generation is the work of bringing in enquiries from people who are likely to buy, then passing sales or admissions the ones worth a conversation. MMC runs it for B2B companies, educational institutes and D2C brands with considered purchases, and judges it on the cost of a qualified lead, not on the number of form fills.",
       "hl": "likely to buy",
       "who": "Monday Marketing Company (MMC) runs it for B2B companies, educational institutes and D2C brands with considered purchases.",
       "points": [
@@ -334,6 +334,13 @@
           "img": "shared/b2b.jpg",
           "href": "b2b.html",
           "link": "See B2B companies"
+        },
+        {
+          "n": "White-label lead generation",
+          "d": "Funnels behind your brand.",
+          "img": "leadgen/attract.jpg",
+          "href": "/white-label/lead-generation/",
+          "link": "See white-label lead generation"
         }
       ]
     },
@@ -414,6 +421,102 @@
         "t": "You want guaranteed leads, meetings or admissions, or no follow-up on your side.",
         "why": "Buyers and families decide, and slow follow-up wastes the best ad, so we only work where the team will pick up the phone."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "lead generation.",
+      "lede": "Six parts of a pipeline that brings in qualified enquiries for B2B, education and D2C brands.",
+      "items": [
+        {
+          "t": "Define a qualified lead",
+          "d": "Sales and marketing agree what a good lead is, so every campaign aims at the same target.",
+          "img": "b2b/call.jpg",
+          "alt": "Define a qualified lead: illustrative scene"
+        },
+        {
+          "t": "Attract the right people",
+          "d": "Search, Meta and LinkedIn campaigns aimed at the buyers or families you actually want.",
+          "img": "au/look-structure.jpg",
+          "alt": "Attract the right people: illustrative scene"
+        },
+        {
+          "t": "Landing pages and forms",
+          "d": "Clear offers and short forms that make it easy to enquire.",
+          "img": "b2b/explain.jpg",
+          "alt": "Landing pages and forms: illustrative scene"
+        },
+        {
+          "t": "CRM and CAPI set-up",
+          "d": "Lead outcomes flow back to your ad platforms so they learn what a good lead looks like.",
+          "img": "leadgen/capi.jpg",
+          "alt": "CRM and CAPI set-up: illustrative scene"
+        },
+        {
+          "t": "Follow-up and nurture",
+          "d": "WhatsApp, email and call routines that reply fast and stay in touch with those not ready.",
+          "img": "b2b/followup.jpg",
+          "alt": "Follow-up and nurture: illustrative scene"
+        },
+        {
+          "t": "Reporting to revenue",
+          "d": "Spend read against qualified leads, meetings and closed business, not form fills.",
+          "img": "shared/b2b.jpg",
+          "alt": "Reporting to revenue: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands generate leads",
+      "h2b": "with MMC.",
+      "lede": "We aim at the leads your sales team wants to call back.",
+      "img": "b2b/explain.jpg",
+      "alt": "Why brands generate leads with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Quality over volume",
+          "d": "Campaigns are tuned to qualified leads, which keeps your team away from dead enquiries."
+        },
+        {
+          "t": "The whole path is covered",
+          "d": "Ads, pages, CRM and follow-up are built together, so no stage is left to chance."
+        },
+        {
+          "t": "Built for long sales cycles",
+          "d": "B2B decisions and admissions seasons need nurture, and we plan for it."
+        },
+        {
+          "t": "Clear reporting",
+          "d": "You see which source, message and page produced each qualified lead."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How lead generation runs,",
+      "h2b": "step by step.",
+      "img": "b2b/followup.jpg",
+      "alt": "How lead generation runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Agree what qualifies",
+          "d": "We write down the lead definition with your sales team and set up tracking for it."
+        },
+        {
+          "t": "Launch the capture path",
+          "d": "Campaigns, landing pages and forms go live with a fast reply routine behind them."
+        },
+        {
+          "t": "Connect the CRM",
+          "d": "Lead stages are sent back to the ad platforms so optimisation follows quality."
+        },
+        {
+          "t": "Review and improve weekly",
+          "d": "Sources, messages and follow-up speed are reviewed weekly against qualified leads."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

@@ -1,0 +1,68 @@
+/* faq.css: the ONE FAQ.
+   Markup (everywhere): <div class="mmc-faq"> <details open?> <summary>Q</summary> <div class="mmc-faq__a"><p>A</p></div> </details> … </div>
+   Native <details>/<summary>, no JS. Two looks:
+     light (default)        hairline rows, blue ring icon, for paper / white bands (and calculator pages)
+     dark  (.mmc-faq--dark) translucent glass cards, yellow ring icon, for void / ink bands
+   Section furniture (eyebrow + heading) comes from src/components/hub/Faq.astro. */
+
+.mmc-faq {
+  --faq-fg: var(--n-fg, #0B1020);
+  --faq-body: var(--n-fg-2, #47506A);
+  --faq-line: var(--n-line-2, rgba(11, 16, 32, 0.18));
+  --faq-accent: var(--n-blue, #1D4ED8);
+  --faq-icon: var(--n-blue, #1D4ED8);
+  max-width: 860px;
+  border-top: 1px solid var(--faq-line);
+}
+.mmc-faq details { border-bottom: 1px solid var(--faq-line); }
+.mmc-faq summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  min-height: 56px; padding: 20px 0;
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(17px, 1.6vw, 21px); line-height: 1.3; letter-spacing: -0.015em;
+  color: var(--faq-fg); transition: color 160ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.mmc-faq summary::-webkit-details-marker { display: none; }
+.mmc-faq summary::marker { content: ""; }
+/* Icon: a 30px ring with a drawn plus; the vertical bar collapses to make the minus. */
+.mmc-faq summary::after {
+  content: ""; flex: none; box-sizing: border-box; width: 30px; height: 30px; border-radius: 50%;
+  border: 1.5px solid var(--faq-line); color: var(--faq-icon);
+  background:
+    linear-gradient(currentColor, currentColor) center / 12px 1.75px no-repeat,
+    linear-gradient(currentColor, currentColor) center / 1.75px 12px no-repeat;
+  transition: background-size 220ms ease, border-color 160ms ease, transform 220ms ease;
+}
+.mmc-faq details[open] summary::after { background-size: 12px 1.75px, 1.75px 0; border-color: var(--faq-accent); }
+.mmc-faq summary:hover { color: var(--faq-accent); }
+.mmc-faq summary:hover::after { border-color: var(--faq-accent); }
+.mmc-faq summary:focus-visible { outline: 2px solid var(--faq-accent); outline-offset: 4px; border-radius: 4px; }
+.mmc-faq__a { padding: 0 0 26px; max-width: 68ch; font-family: var(--font-body); font-size: 16px; line-height: 1.65; color: var(--faq-body); }
+.mmc-faq__a p { margin: 0 0 10px; color: inherit; font: inherit; }
+.mmc-faq__a p:last-child { margin-bottom: 0; }
+.mmc-faq__a a { color: var(--faq-accent); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Dark look: glass cards on a void / ink band. */
+.mmc-faq--dark {
+  --faq-fg: #fff;
+  --faq-body: rgba(255, 255, 255, 0.78);
+  --faq-line: rgba(255, 255, 255, 0.14);
+  --faq-accent: var(--n-sun, #FFC528);
+  --faq-icon: var(--n-sun, #FFC528);
+  display: grid; gap: 12px; border-top: 0;
+}
+.mmc-faq--dark details {
+  border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 0 22px;
+  background: rgba(255, 255, 255, 0.05); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.mmc-faq--dark summary { padding: 18px 0; }
+.mmc-faq--dark .mmc-faq__a { padding-bottom: 22px; }
+.mmc-faq--dark summary:focus-visible { outline-color: var(--n-sun, #FFC528); }
+
+@media (max-width: 560px) {
+  .mmc-faq summary { gap: 14px; }
+  .mmc-faq--dark details { padding: 0 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mmc-faq summary, .mmc-faq summary::after { transition: none; }
+}

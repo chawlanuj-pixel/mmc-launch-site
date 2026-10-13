@@ -13,6 +13,17 @@ import { CASES, tagsFor, whatWeDid, moreWork } from "../../lib/work";
 import { servicePageFor, industryPageFor } from "../../lib/links-map";
 import "../../styles/case-study.css";
 import "../../styles/work-pages.css";
+// Redesigned template (src/components/case2). Used when src/data/case2/<id>.json exists; otherwise the earlier template below renders.
+import Hero2 from "../../components/case2/Hero.astro";
+import Facts2 from "../../components/case2/Facts.astro";
+import Brief2 from "../../components/case2/Brief.astro";
+import Showcases2 from "../../components/case2/Showcases.astro";
+import Flow2 from "../../components/case2/Flow.astro";
+import Results2 from "../../components/case2/Results.astro";
+import Pager2 from "../../components/case2/Pager.astro";
+import CaseFaq2 from "../../components/case2/CaseFaq.astro";
+import { case2For, faqFor, cropOf, t as t2 } from "../../lib/case2";
+import "../../styles/case2.css";
 
 const SITE = "https://www.mondaymarketing.company";
 
@@ -28,8 +39,12 @@ const svcLinks = c.services.map((k: string, i: number) => ({ label: tags[i], hre
 const industry = industryPageFor(c.group);
 
 const title = `${c.name}: ${c.label} case study | MMC`;
-const description = c.scope;
+const description = ((s: string) => { for (const x of ["", " A case study from MMC.", " Case study from MMC."]) if ((s + x).length >= 140 && (s + x).length <= 160) return s + x; return s; })(c.scope);
 const path = `/work/${c.id}/`;
+const D = case2For(c.id);
+const faq = D ? faqFor(c, D) : [];
+const title2 = `${c.name}: ${c.label} case study | MMC`.length <= 60 ? `${c.name}: ${c.label} case study | MMC` : `${c.name} case study | MMC`;
+const heroImg = D ? cropOf(c, D, "hero") : null;
 
 const jsonld = [
   { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + path + "#breadcrumb", itemListElement: [
@@ -43,9 +58,38 @@ const jsonld = [
     creator: { "@id": SITE + "/#organization" },
     breadcrumb: { "@id": SITE + path + "#breadcrumb" } },
 ];
+if (D) {
+  const w = jsonld[1] as any;
+  w.image = SITE + heroImg!.src; w.keywords = tags.join(", "); w.genre = "Case study";
+  w.about = { "@type": "Organization", name: c.name, description: t2(D.about, c) };
+  w.provider = { "@id": SITE + "/#organization" };
+  jsonld.push(
+    { "@context": "https://schema.org", "@type": "WebPage", "@id": SITE + path + "#webpage", url: SITE + path, name: title2, description: t2(D.description, c), inLanguage: "en-IN",
+      isPartOf: { "@id": SITE + "/#website" }, primaryImageOfPage: { "@type": "ImageObject", url: SITE + heroImg!.src, width: heroImg!.w, height: heroImg!.h },
+      about: { "@type": "Organization", name: c.name }, mainEntity: { "@id": SITE + path + "#work" }, breadcrumb: { "@id": SITE + path + "#breadcrumb" } },
+    { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + path + "#faq",
+      mainEntity: faq.map((f: any) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  );
+}
 ---
-<BaseLayout title={title} description={description} path={path} ogTitle={`${c.name}: real work from MMC`} ogDescription={c.scope} ogAlt={`${c.name} case study artwork`} jsonld={jsonld}>
+<BaseLayout title={D ? title2 : title} description={D ? t2(D.description, c) : description} path={path} ogTitle={`${c.name}: real work from MMC`} ogDescription={c.scope} ogAlt={`${c.name} case study artwork`} jsonld={jsonld}
+  image={D ? `/assets/og/work-${c.id}.jpg` : undefined} preloadImage={D ? heroImg!.src : undefined}>
   <Shell source={`work-${c.id}`}>
+    {D ? (
+    <main id="main" tabindex="-1" class="app-main n-app c2">
+      <Hero2 c={c} d={D} />
+      <Facts2 c={c} d={D} />
+      <Brief2 c={c} d={D} />
+      <Showcases2 c={c} d={D} />
+      <Flow2 c={c} d={D} />
+      <Results2 c={c} />
+      <Pager2 c={c} />
+      <CaseFaq2 faq={faq} name={c.name} />
+      <PreFooterCta source={`work-${c.id}`} eyebrow="Want to work with us" h2a="Put your brand" h2b="on this wall next."
+        lede="On a call, with a senior strategist. We read your brand against what a sale, a lead or an enrolment is worth to you."
+        secondary={{ label: SECONDARY.audit, href: "/audit/" }} />
+    </main>
+    ) : (
     <main id="main" tabindex="-1" class="app-main n-app">
       <section class="cs-hero" id="top">
         <div class="n-wrap">
@@ -69,7 +113,7 @@ const jsonld = [
 
       <section class="cs-art">
         <div class="n-wrap">
-          <figure class="cs-art__frame n-rise" style={`--cs-ratio:${c.ratio}`}>
+          <figure class="cs-art__frame n-rise" data-ratio={c.ratio} style={`--cs-ratio:${c.ratio}`}>
             <img src={`/assets/${c.image}`} alt={`${c.name} website, ad and social creative, presented together`} width="1600" height="900" loading="eager" decoding="async" />
           </figure>
           <p class="cs-art__cap">{ARTWORK_LINE}</p>
@@ -131,7 +175,9 @@ const jsonld = [
         lede="On a call, with a senior strategist. We read your brand against what a sale, a lead or an enrolment is worth to you."
         secondary={{ label: SECONDARY.moreWork, href: "/work/" }} />
     </main>
+    )}
     <StickyBookingBar source={`work-${c.id}`} />
   </Shell>
   <script>import "../../scripts/hub.ts";</script>
+  {D && <script>import "../../scripts/case2.ts";</script>}
 </BaseLayout>

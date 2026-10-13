@@ -105,17 +105,6 @@
 .ab-practice__list strong { color: var(--fg-1); font-weight: 700; }
 
 /* ================= FAQ (own accordion) ================= */
-.ab-faq { padding: clamp(72px, 9vw, 128px) 0; background: var(--bg-3); }
-.ab-faq__head { max-width: 60ch; margin-bottom: clamp(30px, 4vw, 48px); }
-.ab-faq__head h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(26px, 3vw, 40px); color: var(--fg-1); }
-.ab-faq__list { max-width: 780px; border-top: 1px solid var(--border-2); }
-.ab-faq__list details { border-bottom: 1px solid var(--border-2); padding: 20px 0; }
-.ab-faq__list summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--font-display); font-weight: 700; font-size: clamp(16px, 1.4vw, 18px); color: var(--fg-1); }
-.ab-faq__list summary::-webkit-details-marker { display: none; }
-.ab-faq__list summary::after { content: "+"; flex: none; font-size: 22px; font-weight: 400; color: var(--mmc-blue-700); transition: transform var(--dur-base) var(--ease-out); }
-.ab-faq__list details[open] summary::after { content: "\2212"; }
-.ab-faq__list__a { margin-top: 14px; font-size: var(--fs-sm); line-height: var(--lh-body); color: var(--fg-2); max-width: 62ch; }
-.ab-faq__list__a a { color: var(--mmc-blue-700); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ================= CLOSE ================= */
 
@@ -154,3 +143,18 @@
 .abh__meta { margin-top: 24px; }
 .abh__meta li { white-space: normal; font-size: 12px; line-height: 1.3; }
 @media (max-width: 560px) { .abh__meta { gap: 8px; } .abh__meta li { max-width: 100%; } }
+
+/* Phones: 44px tap targets for the service links in the "system" rows and the closing link. */
+@media (max-width: 760px) {
+  .ab-sys-row__link { min-height: 44px; }
+  .ab-beliefs__item a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
+/* Phones: the hero stacks its photo under the copy, so tighten the top and the photo, and read "Why we exist" at a normal size. */
+@media (max-width: 620px) {
+  .ab-page section.page-hero { padding-top: 40px; }
+  .ab-page .abh__fig { aspect-ratio: 16 / 10; }
+  .ab-page .abh__meta { margin-top: 18px; }
+  .ab-open__body p { font-size: 18px; line-height: 1.6; }
+  .ab-open__cap { font-size: 52px; }
+}

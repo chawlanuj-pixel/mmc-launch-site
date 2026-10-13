@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Mobile app development is the work of designing and building an app that gives customers a reason to return on their phones, and measuring whether it does.",
+      "lead": "Mobile app development is the work of designing and building an app that gives customers a reason to return on their phones, and measuring whether it does. MMC builds apps for brands whose customers use them repeatedly, after first checking that an app beats a mobile website. The core journey is built for speed and measured after launch.",
       "hl": "a reason to return",
       "who": "Monday Marketing Company (MMC) builds mobile apps for brands whose customers use them repeatedly.",
       "points": [
@@ -293,6 +293,13 @@
           "img": "web/build.jpg",
           "href": "web-development.html",
           "link": "See Website development"
+        },
+        {
+          "n": "White-label app development",
+          "d": "Apps built behind your brand.",
+          "img": "app/build.jpg",
+          "href": "/white-label/app-development/",
+          "link": "See white-label app development"
         }
       ]
     },
@@ -373,6 +380,77 @@
         "t": "You want an app for its own sake, or have no plan for getting installs.",
         "why": "An app nobody opens twice does not pay back, and we will say so before you spend."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What app development",
+      "h2b": "covers.",
+      "lede": "Six stages from deciding if you need an app to improving it after launch.",
+      "items": [
+        {
+          "t": "Do you need an app?",
+          "d": "An honest look at whether an app, a fast mobile site or a web app serves your buyers better.",
+          "img": "app/decide.jpg",
+          "alt": "Do you need an app?: illustrative scene"
+        },
+        {
+          "t": "Core journey design",
+          "d": "The few screens that matter most, mapped and prototyped before any build.",
+          "img": "app/journey.jpg",
+          "alt": "Core journey design: illustrative scene"
+        },
+        {
+          "t": "Build",
+          "d": "Reliable code for the platforms you choose, with regular working builds to review.",
+          "img": "app/build.jpg",
+          "alt": "Build: illustrative scene"
+        },
+        {
+          "t": "Analytics from day one",
+          "d": "Events and funnels set up so you learn from the first real users.",
+          "img": "app/data.jpg",
+          "alt": "Analytics from day one: illustrative scene"
+        },
+        {
+          "t": "Store launch",
+          "d": "Listings, review requirements and release steps handled for you.",
+          "img": "app/launch.jpg",
+          "alt": "Store launch: illustrative scene"
+        },
+        {
+          "t": "Improvement cycles",
+          "d": "Updates planned from user data and support feedback.",
+          "img": "ux/flows.jpg",
+          "alt": "Improvement cycles: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build apps",
+      "h2b": "with MMC.",
+      "lede": "We build apps that connect to your marketing, not apps that sit apart from it.",
+      "img": "app/build.jpg",
+      "alt": "Why brands build apps with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "We say when you do not need one",
+          "d": "If a better mobile site is the right answer, we will say so."
+        },
+        {
+          "t": "Marketing-aware builds",
+          "d": "Attribution, deep links and CRM events are planned into the app."
+        },
+        {
+          "t": "Design and engineering together",
+          "d": "One team keeps the design intent through to the shipped product."
+        },
+        {
+          "t": "Useful for any audience",
+          "d": "Customer apps for D2C, tools for B2B teams and portals for education."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

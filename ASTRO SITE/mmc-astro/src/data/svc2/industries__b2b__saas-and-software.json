@@ -1,0 +1,323 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "b2b/call.jpg",
+    "pos": "50% 50%",
+    "alt": "A person on a video call with a client, with a laptop and notes on the desk.",
+    "facts": [
+      {
+        "t": "Intent search.",
+        "d": "Pages for problems, comparisons and alternatives buyers search."
+      },
+      {
+        "t": "Clear funnels.",
+        "d": "Demo, trial and pricing paths that explain the next step."
+      },
+      {
+        "t": "CRM signals.",
+        "d": "Qualified-lead stages sent back to ad platforms."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why SaaS and software companies choose MMC"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to win the",
+    "h2b": "comparison search.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Map the searches buyers make before demos.",
+        "d": "Problems, comparisons, alternatives and integrations are listed, because that is where a shortlist forms."
+      },
+      {
+        "n": "02",
+        "t": "Mark up the pages so they read cleanly.",
+        "d": "Product and FAQ markup help comparison and use-case pages earn richer results."
+      },
+      {
+        "n": "03",
+        "t": "Open every comparison with the direct answer.",
+        "d": "A short, honest answer first gives a search engine something to lift, and a buyer something to trust."
+      },
+      {
+        "n": "04",
+        "t": "Earn the citation in the AI answer.",
+        "d": "Clear pages and facts that match across the web help AI tools name and cite you in comparisons."
+      },
+      {
+        "n": "05",
+        "t": "Track which questions cite you.",
+        "d": "A fixed list of buyer questions is checked each month, so you see where you are named and where you are not."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers.",
+    "serp": {
+      "tabs": [
+        "All",
+        "AI answers",
+        "Tracking"
+      ],
+      "q": "best project tracking tool for small teams",
+      "others": [
+        "review-site.example",
+        "directory.example"
+      ],
+      "youTitle": "Your tool against the alternatives, compared",
+      "snipLabel": "Featured snippet",
+      "snip": "Look for quick setup, simple pricing and easy integrations.",
+      "aiLabel": "AI answer",
+      "ai": "Small teams usually pick a tool that is quick to set up, priced simply and connects to existing apps. Your product is listed with how it compares.",
+      "sources": [
+        "yourtool.example",
+        "review-site.example"
+      ],
+      "chips": [
+        "Product markup valid",
+        "FAQ markup valid"
+      ],
+      "trackCap": "Comparison searches",
+      "trackSub": "Are we named when buyers compare?",
+      "track": [
+        [
+          "best tool for small teams",
+          "Cited"
+        ],
+        [
+          "alternatives to a large suite",
+          "Cited"
+        ],
+        [
+          "tool with a free trial",
+          "Not yet"
+        ]
+      ],
+      "okState": [
+        "Cited"
+      ],
+      "foot": "Checked on a fixed list of buyer questions, month after month."
+    }
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "A SaaS buyer's path",
+    "pinsLabel": "Five places SaaS pipeline leaks",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Comparisons"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Next step"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Roles"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Signals"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Follow-up"
+      }
+    ],
+    "base": "From a comparison search to a won deal",
+    "artLabel": "Five cards: a comparison search where the product is absent, a pricing page with no clear start, ads that miss the buyer role, a CRM that sends only form fills, and a demo request answered late.",
+    "accent": "#1D4ED8",
+    "cols": [
+      {
+        "head": "Search",
+        "k": "search",
+        "rows": [
+          {
+            "t": "best tool for small teams"
+          },
+          {
+            "t": "Review sites rank first",
+            "s": "dim"
+          },
+          {
+            "t": "Your tool: absent",
+            "s": "bad"
+          }
+        ],
+        "chip": "No comparison page",
+        "tone": "b"
+      },
+      {
+        "head": "Next step",
+        "k": "page",
+        "rows": [
+          {
+            "t": "Pricing page"
+          },
+          {
+            "t": "How to start: unclear",
+            "s": "bad"
+          },
+          {
+            "t": "A long demo form",
+            "s": "warn"
+          }
+        ],
+        "chip": "Interest lost",
+        "tone": "w"
+      },
+      {
+        "head": "Roles",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "Broad audience",
+            "s": "warn",
+            "w": 82
+          },
+          {
+            "t": "Buyer role reached",
+            "s": "bad",
+            "w": 14
+          },
+          {
+            "t": "Right company type",
+            "s": "dim",
+            "w": 30
+          }
+        ],
+        "chip": "Wrong roles",
+        "tone": "w"
+      },
+      {
+        "head": "Signals",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Form fill: sent",
+            "s": "ok"
+          },
+          {
+            "t": "Demo held: not sent",
+            "s": "bad"
+          },
+          {
+            "t": "Won: not sent",
+            "s": "bad"
+          }
+        ],
+        "chip": "Platform guesses",
+        "tone": "b"
+      },
+      {
+        "head": "Handoff",
+        "k": "chat",
+        "rows": [
+          {
+            "t": "Can we see a demo?"
+          },
+          {
+            "t": "Generic template reply",
+            "s": "warn"
+          },
+          {
+            "t": "Follow-up next day",
+            "s": "bad"
+          }
+        ],
+        "chip": "Cooled off",
+        "tone": "w"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the B2B",
+    "h2b": "brands we market.",
+    "tiles": [],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a SaaS company,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Audit funnel and CRM",
+        "d": "We review tracking, funnel stages and sales feedback and define what a qualified lead is.",
+        "get": "A shared lead definition.",
+        "img": "company/performance.jpg",
+        "alt": "Illustrative scene: an analyst reading two dashboards.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Build intent pages",
+        "d": "Problem, comparison and integration pages go live with markup.",
+        "get": "Pages for the searches that matter.",
+        "img": "seo/intent.jpg",
+        "alt": "Illustrative scene: a notebook of topic ideas mapped around a centre.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Clear the demo path",
+        "d": "Pricing, demo and trial paths and forms are simplified.",
+        "get": "A funnel that explains itself.",
+        "img": "b2b/capture.jpg",
+        "alt": "Illustrative scene: a request-a-demo page on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Connect signals and scale",
+        "d": "CRM stages go to platforms and campaigns scale on pipeline.",
+        "get": "Reporting on opportunities.",
+        "img": "leadgen/capi.jpg",
+        "alt": "Illustrative scene: a conversion events screen beside a CRM board.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "shared/b2b.jpg",
+    "alt": "A small team around a laptop reviewing a sales funnel.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      },
+      {
+        "n": "Google Ads",
+        "href": "/services/performance-marketing/google-ads/"
+      },
+      {
+        "n": "Lead generation",
+        "href": "/services/lead-generation/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

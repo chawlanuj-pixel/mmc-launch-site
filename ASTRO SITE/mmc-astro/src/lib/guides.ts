@@ -19,7 +19,7 @@ export const GUIDES: GuideMeta[] = [
   { slug: "contribution-margin-roas", n: "01", tag: "Margin and measurement", topic: "margin",
     title: "Contribution margin and the ROAS you need to break even",
     short: "Contribution margin and break-even ROAS",
-    desc: "What one order leaves behind after product, shipping, fees and returns, and the ROAS a campaign must beat.",
+    desc: "What one order leaves behind after product, shipping, fees and returns, and the ROAS a campaign must beat to break even. Includes a calculator for your costs.",
     href: "/guides/contribution-margin-roas/", img: "/assets/guides/cost.jpg",
     tool: { label: "Break-even ROAS calculator", href: "/tools/breakeven-roas/", blurb: "Enter your own costs and get the ROAS your cost sheet demands." }, q: "Is my ROAS actually profitable?",
     stand: "A ROAS can look healthy and still lose money. Here is how to work out what an order really leaves behind, and the ROAS you need to break even.",
@@ -28,7 +28,7 @@ export const GUIDES: GuideMeta[] = [
   { slug: "attribution-overlap", n: "02", tag: "Margin and measurement", topic: "margin",
     title: "Why ad dashboards report more sales than you made",
     short: "Why ad dashboards over-count sales",
-    desc: "Meta, Google and your store each count their own conversions. Here is how to read the total anyway.",
+    desc: "Meta, Google and your store each count their own conversions, so the totals never match. Here is why dashboards over-count and how to read results anyway.",
     href: "/guides/attribution-overlap/", img: "/assets/guides/overlap.jpg",
     tool: { label: "Funnel ROAS calculator", href: "/tools/funnel-roas/", blurb: "See which step between an impression and a paid order is leaking." }, q: "Why do Meta, Google and my store disagree?",
     stand: "Add up what Meta, Google and analytics report and you will often get more sales than you made. Here is why, and how to read your results anyway.",
@@ -37,7 +37,7 @@ export const GUIDES: GuideMeta[] = [
   { slug: "creative-testing", n: "03", tag: "Creative", topic: "creative",
     title: "How D2C brands test ad creative without guessing",
     short: "How D2C brands test ad creative",
-    desc: "A repeatable way to test hooks and angles, read the results and refresh before ads tire.",
+    desc: "A repeatable way to test hooks and angles, read the results against your break-even ROAS and refresh creative before ads tire. Written for D2C brands.",
     href: "/guides/creative-testing/", img: "/assets/guides/cards.jpg",
     tool: { label: "Break-even ROAS calculator", href: "/tools/breakeven-roas/", blurb: "Judge a test by the cost per purchase your break-even ROAS allows." }, q: "How do I find ads that work, not just ads I like?",
     stand: "The ad decides whether the right person stops scrolling. Here is a repeatable way to test hooks and angles, read the results and refresh before ads tire.",
@@ -46,7 +46,7 @@ export const GUIDES: GuideMeta[] = [
 ];
 
 /** The page <title> for a guide article. */
-export const guideTitleTag = (g: GuideMeta) => `${g.title} | MMC`;
+export const guideTitleTag = (g: GuideMeta) => { const t = `${g.title} | MMC`; return t.length <= 60 ? t : g.title; };
 export const guideBySlug = (slug: string) => GUIDES.find((g) => g.slug === slug);
 
 const strip = (s: string) => s.replace(/<[^>]+>/g, " ").replace(/&[a-z]+;/g, " ");

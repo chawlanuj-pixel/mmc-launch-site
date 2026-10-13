@@ -1,0 +1,25 @@
+---
+// Visible breadcrumb bar, fed by the same BreadcrumbList JSON-LD the page emits (so the two cannot drift).
+import "../../styles/hub-v2.css";
+import { href } from "../../lib/links";
+interface Props { jsonld: any[] }
+const { jsonld } = Astro.props as Props;
+const SITE = "https://www.mondaymarketing.company";
+const bl = (jsonld || []).find((b: any) => b && b["@type"] === "BreadcrumbList");
+const items: { name: string; path: string }[] = (bl?.itemListElement || [])
+  .sort((a: any, b: any) => a.position - b.position)
+  .map((i: any) => ({ name: String(i.name), path: String(i.item || "").replace(SITE, "") || "/" }));
+---
+{items.length > 1 ? (
+<nav class="hv2h-crumb" aria-label="Breadcrumb">
+  <ol class="hv2h-crumb__list">
+    {items.map((it, k) => (
+      <li class="hv2h-crumb__item">
+        {k < items.length - 1
+          ? <a class="hv2h-crumb__link" href={href(it.path)}>{it.name}</a>
+          : <span aria-current="page">{it.name}</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+) : null}

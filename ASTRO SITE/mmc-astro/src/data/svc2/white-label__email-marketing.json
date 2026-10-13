@@ -1,0 +1,173 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "contact/call.jpg",
+    "pos": "50% 50%",
+    "alt": "A woman on a phone call at her desk, notebook open.",
+    "facts": [
+      {
+        "t": "Inside the client's tools.",
+        "d": "Flows are built in the platform the client already pays for."
+      },
+      {
+        "t": "Consent respected.",
+        "d": "SMS and WhatsApp run only for customers who opted in."
+      },
+      {
+        "t": "Flow by flow.",
+        "d": "Your report shows what each flow did, not one blended number."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label email and retention"
+  },
+  "work": {
+    "panel": "FlowBuilder",
+    "eyebrow": "The work, shown",
+    "h2a": "How a client's lifecycle flows",
+    "h2b": "get built and approved.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Map the client's lifecycle before building.",
+        "d": "Triggers, segments and consent rules are written down in a flow map you can show the client."
+      },
+      {
+        "n": "02",
+        "t": "Write emails in the client's brand.",
+        "d": "Welcome and post-purchase messages are written and designed in the client's own platform, then sent for your approval."
+      },
+      {
+        "n": "03",
+        "t": "Branch on what the customer did.",
+        "d": "Flows split by purchase and browsing, so a first-time buyer and a repeat buyer get different messages."
+      },
+      {
+        "n": "04",
+        "t": "Add WhatsApp and SMS where opted in.",
+        "d": "Reminders run only for opted-in customers, within channel rules, and you see every template before use."
+      },
+      {
+        "n": "05",
+        "t": "Switch flows on and report by flow.",
+        "d": "Once approved, flows go live in the client's tool, and your report shows what each flow produced."
+      }
+    ],
+    "illustrative": "Illustrative layout of an email flow builder. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "RepeatCurve",
+    "barLogo": "",
+    "barTitle": "Repeat purchase view",
+    "pinsLabel": "Five places white-label retention goes wrong",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Welcome"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "After"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Reorder"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Win-back"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Segments"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first retention client",
+    "h2b": "gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and tool access",
+        "d": "We sign the NDA, then get access to the client's email platform and agree how consent is collected and recorded.",
+        "get": "A tool and consent checklist.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Four colleagues around a whiteboard while one draws out a plan.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot flow",
+        "d": "One flow, such as welcome or abandoned cart, is built in the client's tool and sent to you for approval.",
+        "get": "A working flow you can show the client.",
+        "img": "company/technology.jpg",
+        "alt": "A developer at a laptop with a store design on a second screen.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Flow and QA SOPs",
+        "d": "Approval, testing, link and consent checks before any flow goes live are written down.",
+        "get": "A checklist every flow passes.",
+        "img": "company/onepage.jpg",
+        "alt": "A hand writing a plan in a notebook on a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the lifecycle",
+        "d": "More flows and channels follow on the same routine, and more clients join on it.",
+        "get": "Retention for more clients, same routine.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reviewing dashboards on two monitors.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "about2/huddle.jpg",
+    "alt": "Two colleagues at a whiteboard with a marketing funnel sketched on it.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label content marketing",
+        "href": "/white-label/content-marketing/"
+      },
+      {
+        "n": "White-label lead generation",
+        "href": "/white-label/lead-generation/"
+      },
+      {
+        "n": "White-label ecommerce",
+        "href": "/white-label/ecommerce/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

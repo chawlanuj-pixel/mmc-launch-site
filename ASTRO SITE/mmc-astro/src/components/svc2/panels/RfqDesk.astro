@@ -1,0 +1,99 @@
+---
+// PANEL: RfqDesk (kind "RfqDesk"). How an industrial buyer finds a supplier and sends a request for quote, as five screens. No platform mark. 5 steps.
+//   1 Search by specification: a buyer's spec search; a product page by material and process is in the results. Tab: Search.
+//   2 Capability page: page blocks (machines, quality process, certifications, similar jobs) a buying team can forward. Tab: Capability.
+//   3 Ads by product and region: ad groups per product line and region, with a status and a bar. Tab: Ads.
+//   4 RFQ form: a request form with drawing, material, quantity and timeline, beside a "complete request" check. Tab: RFQ form.
+//   5 Pipeline: enquiry, quote sent, negotiation, order, with the card moving and a "tracked to order" note. Tab: Pipeline.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real company. Styles scoped to this file (prefix rfq-).
+import Frame from "./Frame.astro";
+import { crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const blocks = [["Machines and capacity", "Floor and equipment listed"], ["Quality process", "Inspection steps shown"], ["Certifications", "Held, with copies"], ["Similar jobs", "A forwardable case study"]];
+const groups = [["Machined parts", "West"], ["Castings", "South"], ["Fabrication", "North"]];
+const fields = [["Part or drawing", "Drawing attached", "ok"], ["Material", "Named", "ok"], ["Quantity", "Range given", "ok"], ["Needed by", "Timeline given", "ok"]];
+const cols = [["Enquiry", 2], ["Quote sent", 2], ["Negotiation", 1], ["Order", 1]];
+---
+<Frame cls="rfq-ui" title="Supplier enquiry path" label="Illustration of an industrial buyer's path from a specification search to a request for quote and an order. Not a client account." caption={W.illustrative} tabs={["Search", "Capability", "Ads", "RFQ form", "Pipeline"]} tabFor={[0, 1, 2, 3, 4]} accent="#0F4C81" accentSoft="#E2EDF7">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Found by specification <span>Part, material, process, standard</span></p>
+    <div class="rfq-q"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="M13 13l5 5" /></svg><span>CNC machined aluminium parts supplier</span></div>
+    <ul class="rfq-res">
+      <li class="s2p-card rfq-me"><small class="rfq-url">yourplant.example <span>› products › machined-parts</span></small><b>Machined parts by material and process</b><i class="s2p-line s2p-line--m"></i><span class="rfq-tags"><em class="s2p-chip s2p-chip--ok">Materials listed</em><em class="s2p-chip s2p-chip--ok">Standards named</em></span></li>
+      <li class="rfq-r"><small class="rfq-url">directory.example</small><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i></li>
+      <li class="rfq-r"><small class="rfq-url">marketplace.example</small><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i></li>
+    </ul>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">A page a buying team can forward <span>Proof before they quote</span></p>
+    <ul class="rfq-blk">
+      {blocks.map(([a, b], k) => <li class={"s2p-card" + (k === 3 ? " rfq-on" : "")}><span class="s2p-ph rfq-ph" style={crop("/assets/b2b/casestudy.jpg", [0.3, 0.7, 0.5, 0.72][k], [0.4, 0.5, 0.3, 0.4][k], 2.6, 1.6)} role="img" aria-label="Illustration"></span><b>{a}</b><small class="s2p-mute">{b}</small></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Ads by product line and region <span>Aimed at buyers with a live need</span></p>
+    <ul class="rfq-ads">
+      {groups.map(([n, r], k) => <li class="s2p-card"><b>{n}</b><em class="s2p-chip s2p-chip--blue">{r}</em><span class="rfq-bar"><i style={`width:${[78, 52, 34][k]}%`}></i></span><em class="s2p-chip s2p-chip--ok">Live</em></li>)}
+    </ul>
+    <p class="rfq-ch"><em class="s2p-chip">Search</em><em class="s2p-chip">Professional network</em></p>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">A form that qualifies itself <span>Sales sees a real request</span></p>
+    <div class="rfq-form">
+      <div class="s2p-card rfq-fields">
+        {fields.map(([a, b, c]) => <div class="rfq-f"><small>{a}</small><span>{b}</span></div>)}
+      </div>
+      <div class="s2p-card rfq-score"><p class="s2p-lbl">Request check</p><em class="s2p-chip s2p-chip--ok">Complete request</em><small class="s2p-mute">Goes to sales with every field filled.</small></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Tracked to the order <span>Not just to the enquiry</span></p>
+    <div class="rfq-board">
+      {cols.map(([n, c], k) => (
+        <div class="rfq-col"><p class="s2p-lbl">{n}</p>
+          {Array.from({ length: Number(c) }).map(() => <div class="s2p-card rfq-card"><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i></div>)}
+          {k === 3 ? <div class="s2p-card rfq-card rfq-on"><i class="s2p-line s2p-line--m"></i><em class="s2p-chip s2p-chip--sun">From search</em></div> : null}
+        </div>
+      ))}
+    </div>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .rfq-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.rfq-q { display: flex; align-items: center; gap: .7em; padding: .6em 1em; border: 1px solid #DADDE1; border-radius: 99px; box-shadow: 0 .2em .6em -.3em rgba(0, 0, 0, .25); font: 600 1em var(--font-body); color: #1C2B33; flex: none; min-width: 0; }
+.rfq-q span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rfq-q svg { width: 1.2em; height: 1.2em; fill: none; stroke: #65676B; stroke-width: 2; stroke-linecap: round; flex: none; }
+.rfq-res { list-style: none; margin: 0; padding: 0; display: grid; gap: .7em; }
+.rfq-me { display: grid; gap: .4em; border-color: #0F4C81; box-shadow: 0 0 0 2px #0F4C81; }
+.rfq-me b { font: 800 1.08em/1.2 var(--font-body); color: #0F4C81; }
+.rfq-tags { display: flex; flex-wrap: wrap; gap: .5em; }
+.rfq-r { display: grid; gap: .3em; padding: .4em .8em; opacity: .75; }
+.rfq-url { font: 600 .82em var(--font-body); color: #1C2B33; } .rfq-url span { color: #65676B; }
+.rfq-blk { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .7em; }
+.rfq-blk li { display: grid; grid-template-columns: 4.2em minmax(0, 1fr); grid-template-rows: auto auto; column-gap: .8em; align-items: center; padding: .5em; }
+.rfq-blk b { font: 800 .9em/1.2 var(--font-body); align-self: end; } .rfq-blk small { align-self: start; font-size: .78em; line-height: 1.3; }
+.rfq-ph { grid-row: 1 / 3; display: block; width: 4.2em; height: 3.4em; border-radius: .5em; }
+.rfq-on { border-color: #0F4C81; box-shadow: 0 0 0 2px #0F4C81; }
+.rfq-ads { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.rfq-ads li { display: grid; grid-template-columns: 7em auto minmax(0, 1fr) auto; align-items: center; gap: .8em; padding: .55em .9em; }
+.rfq-ads b { font: 800 .92em var(--font-body); }
+.rfq-bar { display: block; height: .6em; border-radius: 99px; background: #E4E6EB; overflow: hidden; } .rfq-bar i { display: block; height: 100%; background: #0F4C81; border-radius: 99px; }
+.rfq-ch { margin: 0; display: flex; gap: .5em; }
+.rfq-form { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: .8em; align-content: center; }
+.rfq-fields { display: grid; gap: .55em; }
+.rfq-f { display: grid; grid-template-columns: 7em minmax(0, 1fr); align-items: center; gap: .6em; padding: .4em .6em; border: 1px solid #DADDE1; border-radius: .6em; }
+.rfq-f small { font: 800 .76em var(--font-body); text-transform: uppercase; letter-spacing: .05em; color: #65676B; } .rfq-f span { font: 700 .9em var(--font-body); color: #1C2B33; }
+.rfq-score { display: grid; gap: .6em; align-content: center; justify-items: start; }
+.rfq-board { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6em; align-content: center; }
+.rfq-col { display: grid; gap: .5em; align-content: start; padding: .5em; border-radius: .8em; background: #F5F6F7; }
+.rfq-card { display: grid; gap: .4em; padding: .5em .6em; }
+.rfq-card.rfq-on { border-color: var(--s2-sun); box-shadow: 0 0 0 2px var(--s2-sun); }
+@media (max-width: 560px) {
+  .rfq-r:last-child, .rfq-me .s2p-line, .rfq-ads li:nth-child(3), .rfq-ch, .rfq-f:nth-child(4), .rfq-score small { display: none; }
+  .rfq-blk { gap: .4em; } .rfq-blk li { grid-template-columns: 3em minmax(0, 1fr); padding: .3em; } .rfq-ph { width: 3em; height: 2.6em; } .rfq-blk small { display: none; } .rfq-blk b { align-self: center; grid-row: 1 / 3; font-size: .8em; }
+  .rfq-ads li { grid-template-columns: 5.5em minmax(0, 1fr) auto; gap: .5em; padding: .4em .6em; } .rfq-ads li .s2p-chip--blue { display: none; }
+  .rfq-form { grid-template-columns: 1fr; gap: .5em; } .rfq-f { grid-template-columns: 5.4em minmax(0, 1fr); } .rfq-board { grid-template-columns: repeat(2, 1fr); gap: .4em; } .rfq-col { padding: .35em; gap: .35em; } .rfq-col .rfq-card:not(.rfq-on):nth-child(n+3) { display: none; }
+}
+@container (max-height: 230px) { .rfq-res .rfq-r:nth-child(2), .rfq-ads li:nth-child(3) { display: none; } }
+</style>

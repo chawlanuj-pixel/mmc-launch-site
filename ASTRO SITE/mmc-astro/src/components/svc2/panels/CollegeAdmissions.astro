@@ -1,0 +1,91 @@
+---
+// PANEL: CollegeAdmissions (kind "CollegeAdmissions"). A family's path from a course search to an admission, as five screens. No platform mark
+// except WhatsApp on step 4. 5 steps.
+//   1 Course page: eligibility, fees process, documented outcomes and one clear next step. Tab: Course.
+//   2 Enquiry: a short enquiry form on a phone (course, city, who is asking) sending the lead to the CRM. Tab: Enquiry.
+//   3 Counsellor queue: new enquiries listed by course with a "called first" mark and reply state. Tab: Counsellor.
+//   4 Campus visit: an open-day slot picker and a WhatsApp confirmation. Tab: Visit.
+//   5 Source of admissions: which source produced enquiries, visits and admissions, as paired bars. Tab: Admissions.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real college. Styles scoped to this file (prefix cad-).
+import Frame from "./Frame.astro";
+import { crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const queue = [["Course A", "Called first", "ok"], ["Course B", "Reply due", "warn"], ["Course A", "Waiting", ""], ["Course C", "Waiting", ""]];
+const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const src = [["Search", 72, 40, 18], ["Meta ads", 90, 30, 9], ["Referral", 30, 24, 17]];
+---
+<Frame cls="cad-ui" title="Admissions path" label="Illustration of a college admissions path from a course page and enquiry to a campus visit and admission. Not a client account." caption={W.illustrative} tabs={["Course", "Enquiry", "Counsellor", "Visit", "Admissions"]} tabFor={[0, 1, 2, 3, 4]} accent="#B45309" accentSoft="#FDF0E1">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">A course page that answers <span>Before the family has to ask</span></p>
+    <div class="cad-page">
+      <span class="s2p-ph cad-hero" style={crop("/assets/edu/campus.jpg", 0.5, 0.45, 1.6, 2.2)} role="img" aria-label="Campus"></span>
+      <div class="cad-blk"><div class="s2p-card"><p class="s2p-lbl">Eligibility</p><i class="s2p-line s2p-line--m"></i></div><div class="s2p-card"><p class="s2p-lbl">Fees process</p><i class="s2p-line s2p-line--s"></i></div><div class="s2p-card"><p class="s2p-lbl">Outcomes, documented</p><i class="s2p-line s2p-line--m"></i></div></div>
+      <span class="cad-cta">Request a call</span>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">An enquiry that fits a phone <span>Short form, straight to the CRM</span></p>
+    <div class="cad-pair">
+      <div class="cad-phone"><b>Enquire</b><span class="cad-fld">Course</span><span class="cad-fld">City</span><span class="cad-seg"><em class="is-on">Student</em><em>Parent</em></span><span class="cad-cta">Request a call</span></div>
+      <svg class="cad-arrow" viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+      <div class="s2p-card cad-crm"><p class="s2p-lbl">CRM</p><div class="cad-row"><span class="s2p-dot"></span><i class="s2p-line s2p-line--m"></i><em class="s2p-chip s2p-chip--sun">New</em></div><small class="s2p-mute">Source and course recorded</small></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Who calls first <span>Speed decides who a family talks to</span></p>
+    <ul class="cad-q">
+      {queue.map(([n, s, c], k) => <li class={"s2p-card" + (k === 0 ? " cad-on" : "")}><span class="s2p-dot"></span><b>{n}</b><i class="s2p-line s2p-line--s"></i><em class={"s2p-chip" + (c ? " s2p-chip--" + c : "")}>{s}</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Book the campus visit <span>The step that turns an enquiry into an applicant</span></p>
+    <div class="cad-pair">
+      <div class="s2p-card cad-cal"><p class="s2p-lbl">Open day slots</p><span class="cad-days">{days.map((d, k) => <em class={k === 3 ? "is-on" : ""}>{d}</em>)}</span><small class="s2p-mute">Pick a slot, get a confirmation</small></div>
+      <div class="cad-chat"><div class="cad-chat__hd"><img src="/assets/platforms/whatsapp.svg" alt="" width="20" height="20" /><b>WhatsApp</b></div><p class="cad-b cad-b--out">Your campus visit is booked. See you at the open day.</p></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Which source filled the seats <span>Enquiry, visit, admission</span></p>
+    <ul class="cad-src">
+      {src.map(([n, a, b, c]) => <li><span>{n}</span><span class="cad-bars"><i class="cad-e" style={`width:${a}%`}></i><i class="cad-v" style={`width:${b}%`}></i><i class="cad-a" style={`width:${c}%`}></i></span></li>)}
+    </ul>
+    <p class="cad-key"><em class="s2p-chip">Enquiries</em><em class="s2p-chip s2p-chip--blue">Visits</em><em class="s2p-chip s2p-chip--ok">Admissions</em></p>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .cad-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.cad-page { flex: 1; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto auto; gap: .6em; }
+.cad-hero { display: block; border-radius: .7em; min-height: 3.4em; }
+.cad-blk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5em; }
+.cad-blk .s2p-card { display: grid; gap: .4em; padding: .5em .6em; }
+.cad-cta { display: block; padding: .55em; border-radius: .6em; background: #B45309; color: #fff; text-align: center; font: 800 .88em var(--font-body); }
+.cad-pair { flex: 1; min-height: 0; display: flex; align-items: center; gap: .8em; }
+.cad-pair > * { flex: 1; min-width: 0; }
+.cad-phone { display: grid; gap: .5em; padding: .8em; border: .3em solid #1C2B33; border-radius: 1.4em; max-width: 14em; }
+.cad-phone b { font: 800 .95em var(--font-display); }
+.cad-fld { padding: .5em .7em; border: 1px solid #D2D5D8; border-radius: .6em; font: 600 .84em var(--font-body); color: #65676B; }
+.cad-seg { display: flex; gap: .3em; } .cad-seg em { flex: 1; text-align: center; padding: .4em; border-radius: .5em; border: 1px solid #D2D5D8; font: 700 .78em var(--font-body); font-style: normal; } .cad-seg em.is-on { background: #FDF0E1; border-color: #B45309; }
+.cad-arrow { flex: none !important; width: 3.2em; fill: none; stroke: #B45309; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.cad-crm { display: grid; gap: .55em; align-content: start; }
+.cad-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .6em; padding: .45em .6em; border: 1px solid #DADDE1; border-radius: .7em; }
+.cad-q { list-style: none; margin: 0; padding: 0; display: grid; gap: .55em; }
+.cad-q li { display: grid; grid-template-columns: auto 6em minmax(0, 1fr) auto; align-items: center; gap: .8em; padding: .5em .9em; }
+.cad-q b { font: 800 .92em var(--font-body); }
+.cad-on { border-color: #B45309; box-shadow: 0 0 0 2px #B45309; }
+.cad-cal { display: grid; gap: .6em; align-content: start; }
+.cad-days { display: grid; grid-template-columns: repeat(3, 1fr); gap: .35em; } .cad-days em { padding: .5em; text-align: center; border-radius: .5em; background: #F1F2F4; font: 700 .8em var(--font-body); font-style: normal; } .cad-days em.is-on { background: #B45309; color: #fff; }
+.cad-chat { display: flex; flex-direction: column; gap: .5em; padding: .8em; border-radius: .9em; background: #EFEAE2; }
+.cad-chat__hd { display: flex; align-items: center; gap: .5em; font: 800 .95em var(--font-body); }
+.cad-b { margin: 0; padding: .55em .8em; border-radius: .8em; font: 600 .9em/1.3 var(--font-body); color: #1C2B33; } .cad-b--out { background: #D9FDD3; border-top-right-radius: .2em; align-self: flex-end; }
+.cad-src { list-style: none; margin: 0; padding: 0; display: grid; gap: .8em; flex: 1; align-content: center; }
+.cad-src li { display: grid; grid-template-columns: 6em minmax(0, 1fr); align-items: center; gap: .8em; font: 700 .92em var(--font-body); }
+.cad-bars { display: grid; gap: .25em; } .cad-bars i { display: block; height: .55em; border-radius: 99px; } .cad-e { background: #CED0D4; } .cad-v { background: var(--mmc-blue); } .cad-a { background: #1B7A3D; }
+.cad-key { margin: 0; display: flex; gap: .5em; flex-wrap: wrap; }
+@media (max-width: 560px) {
+  .cad-blk .s2p-line, .cad-crm small, .cad-cal small, .cad-q li:nth-child(4), .cad-key { display: none; } .cad-blk { gap: .3em; } .cad-blk .s2p-card { padding: .35em .4em; } .cad-blk .s2p-lbl { font-size: .62em; }
+  .cad-phone { padding: .5em; gap: .3em; max-width: 9em; } .cad-pair { gap: .4em; } .cad-arrow { width: 1.8em; } .cad-q li { grid-template-columns: auto 4.4em minmax(0, 1fr) auto; gap: .5em; padding: .35em .6em; }
+  .cad-src li { grid-template-columns: 4.8em minmax(0, 1fr); } .cad-chat { padding: .5em; }
+}
+@container (max-height: 230px) { .cad-q li:nth-child(n+4) { display: none; } .cad-hero { display: none; } }
+</style>

@@ -1,0 +1,507 @@
+{
+  "file": "white-label-email-marketing.html",
+  "path": "/white-label/email-marketing/",
+  "key": "wl_email_marketing",
+  "title": "White-Label Email Marketing and CRM Services | MMC",
+  "description": "White-label email, CRM, SMS and WhatsApp retention marketing for agencies: flows, campaigns, segmentation and reporting delivered under your brand.",
+  "ogTitle": "White-label email and retention marketing for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label email and retention marketing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/email-marketing/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label email and retention marketing",
+          "item": "https://www.mondaymarketing.company/white-label/email-marketing/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/email-marketing/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/email-marketing/",
+      "name": "White-Label Email Marketing and CRM Services | MMC",
+      "description": "White-label email, CRM, SMS and WhatsApp retention marketing for agencies: flows, campaigns, segmentation and reporting delivered under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/email-marketing/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/email-marketing/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/email-marketing/#service",
+      "name": "White-label Email and Retention Marketing",
+      "serviceType": "White-label email and retention marketing",
+      "description": "White-label email and retention marketing delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/email-marketing/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/email-marketing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which email platforms do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Klaviyo, MoEngage and similar tools are common. Tell us the platform and we will confirm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, within WhatsApp's business rules and the client's provider. Opt-in and templates are part of the setup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you manage one-off campaigns too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, alongside flows. Campaigns are planned on a calendar you approve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from the client?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Platform access, brand assets and customer data permissions, supplied through you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label email and retention marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Give us platform access for one client. After the NDA we audit existing flows and list what to build first."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_email_marketing",
+    "wm": "White-label Email and Retention Marketing",
+    "eyebrow": "● White-label email and retention marketing",
+    "h1": [
+      "White-label email",
+      [
+        "and retention ",
+        "for ecommerce clients",
+        "."
+      ]
+    ],
+    "sub": "Email, SMS and WhatsApp flows, campaigns and segmentation built on your client's CRM, reported under your brand.",
+    "tiles": [
+      {
+        "img": "rt/welcome.jpg",
+        "pos": "50% 50%",
+        "label": "Welcome",
+        "note": "First order, first message"
+      },
+      {
+        "img": "rt/winback.jpg",
+        "pos": "50% 50%",
+        "label": "Win-back",
+        "note": "Lapsed customers"
+      },
+      {
+        "img": "rt/replenish.jpg",
+        "pos": "50% 50%",
+        "label": "Replenish",
+        "note": "Timed to usage"
+      },
+      {
+        "img": "rt/data.jpg",
+        "pos": "50% 50%",
+        "label": "Data",
+        "note": "Segments that fit"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label email and retention marketing means MMC builds and runs your client's lifecycle messaging while you own the relationship. That covers welcome and abandoned-cart flows, post-purchase and win-back sequences, campaigns and segmentation across email, SMS and WhatsApp, in the tools the client already uses.",
+      "hl": "lifecycle messaging",
+      "who": "Monday Marketing Company (MMC) delivers email and retention marketing for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "loop",
+          "title": "Flows",
+          "text": "Welcome, cart, post-purchase and win-back."
+        },
+        {
+          "icon": "users",
+          "title": "Segments",
+          "text": "Lists built from behaviour, not guesses."
+        },
+        {
+          "icon": "chart",
+          "title": "Reports",
+          "text": "Revenue from messages, in your format."
+        }
+      ],
+      "image": "rt/journey.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "rt-wl",
+          "h": "Channels and tools for white-label retention",
+          "paras": [
+            "Retention is where agencies often lack depth. We work inside the platform your client already has, such as Klaviyo or MoEngage, and add WhatsApp and SMS where they fit.",
+            "Our own approach is on the <a href=\"/services/retention-marketing/\">retention marketing</a> page. Retention data also feeds <a href=\"/white-label/cro/\">white-label CRO</a>."
+          ],
+          "img": "rt/journey.jpg",
+          "cap": "Illustrative scene: a customer lifecycle map for a client.",
+          "table": {
+            "caption": "Retention channels compared",
+            "head": [
+              "Channel",
+              "Strength",
+              "Typical use"
+            ],
+            "rows": [
+              [
+                "Email",
+                "Rich content and low cost",
+                "Flows, campaigns, newsletters"
+              ],
+              [
+                "WhatsApp",
+                "High attention, conversational",
+                "Order updates, cart nudges, win-back"
+              ],
+              [
+                "SMS",
+                "Short and immediate",
+                "Time-sensitive offers, alerts"
+              ],
+              [
+                "Push",
+                "For apps and browsers",
+                "Re-engagement"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label retention.",
+      "lede": "Flows, campaigns and segments across channels.",
+      "items": [
+        {
+          "t": "Welcome and onboarding flows",
+          "d": "The first messages new subscribers and customers get.",
+          "img": "rt/welcome.jpg",
+          "alt": "Welcome and onboarding flows: illustrative scene"
+        },
+        {
+          "t": "Abandoned cart and browse",
+          "d": "Timed reminders with the right message order.",
+          "img": "d2c/checkout.jpg",
+          "alt": "Abandoned cart and browse: illustrative scene"
+        },
+        {
+          "t": "Post-purchase and replenish",
+          "d": "Messages around delivery, reviews and reorder.",
+          "img": "rt/replenish.jpg",
+          "alt": "Post-purchase and replenish: illustrative scene"
+        },
+        {
+          "t": "Win-back",
+          "d": "Sequences for customers who have gone quiet.",
+          "img": "rt/winback.jpg",
+          "alt": "Win-back: illustrative scene"
+        },
+        {
+          "t": "Segmentation",
+          "d": "Lists built from purchase and browsing behaviour.",
+          "img": "rt/data.jpg",
+          "alt": "Segmentation: illustrative scene"
+        },
+        {
+          "t": "WhatsApp and SMS",
+          "d": "Opt-in flows within channel rules.",
+          "img": "rt/journey.jpg",
+          "alt": "WhatsApp and SMS: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label email and retention marketing.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "rt/journey.jpg",
+      "alt": "Why agencies choose MMC for white-label email and retention marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Inside your client's tools",
+          "d": "We build in the platform the client already pays for."
+        },
+        {
+          "t": "Consent respected",
+          "d": "We design flows around opt-in rules for each channel."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label email and retention marketing works,",
+      "h2b": "step by step.",
+      "img": "rt/journey.jpg",
+      "alt": "How white-label email and retention marketing works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Tool access",
+          "d": "Access to the CRM or email tool through you."
+        },
+        {
+          "t": "Map the journey",
+          "d": "We map lifecycle stages and gaps."
+        },
+        {
+          "t": "Build flows",
+          "d": "Flows and campaigns are built and tested."
+        },
+        {
+          "t": "Report",
+          "d": "Revenue and engagement from messages, monthly."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label email and retention marketing for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells email and retention marketing but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label email and retention marketing fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label CRO",
+          "d": "Conversion work behind your brand.",
+          "img": "cro/test.jpg",
+          "href": "/white-label/cro/",
+          "link": "See white-label CRO"
+        },
+        {
+          "n": "White-label lead generation",
+          "d": "Funnels behind your brand.",
+          "img": "leadgen/attract.jpg",
+          "href": "/white-label/lead-generation/",
+          "link": "See white-label lead generation"
+        },
+        {
+          "n": "White-label ecommerce and Amazon",
+          "d": "Marketplace work behind your brand.",
+          "img": "amazon/ads.jpg",
+          "href": "/white-label/ecommerce/",
+          "link": "See white-label ecommerce and Amazon"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "Email, SMS and WhatsApp for repeat orders.",
+          "img": "rt/journey.jpg",
+          "href": "/services/retention-marketing/",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "email and retention marketing."
+    ],
+    "faq": [
+      {
+        "q": "Which email platforms do you work with?",
+        "a": "Klaviyo, MoEngage and similar tools are common. Tell us the platform and we will confirm."
+      },
+      {
+        "q": "Do you handle WhatsApp?",
+        "a": "Yes, within WhatsApp's business rules and the client's provider. Opt-in and templates are part of the setup."
+      },
+      {
+        "q": "Can you manage one-off campaigns too?",
+        "a": "Yes, alongside flows. Campaigns are planned on a calendar you approve."
+      },
+      {
+        "q": "What do you need from the client?",
+        "a": "Platform access, brand assets and customer data permissions, supplied through you."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label email and retention marketing?",
+        "a": "Give us platform access for one client. After the NDA we audit existing flows and list what to build first."
+      }
+    ],
+    "cta": {
+      "h2a": "Add email and retention marketing",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first email and retention marketing client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Welcome",
+        "tag": "First message",
+        "breaks": "The first message goes out generic.",
+        "why": "A new customer decides quickly if the brand feels like theirs, and a stock email does not.",
+        "does": "We write the welcome flow in the client's voice and check the first message before anything else."
+      },
+      {
+        "k": "After",
+        "tag": "Post-purchase",
+        "breaks": "Post-purchase goes quiet.",
+        "why": "Between delivery and reorder, nothing reminds the customer the brand exists.",
+        "does": "Delivery, review requests and usage tips are scheduled, with copy you can read before launch."
+      },
+      {
+        "k": "Reorder",
+        "tag": "Replenishment",
+        "breaks": "Reorder reminders are guessed.",
+        "why": "A reminder too early annoys, and one too late misses the reorder.",
+        "does": "We time reminders to how long the product lasts as the client describes it, then adjust on what the data shows."
+      },
+      {
+        "k": "Win-back",
+        "tag": "Lapsed",
+        "breaks": "Win-back arrives after the customer has gone.",
+        "why": "By the time a discount appears, the customer has moved on.",
+        "does": "Quiet customers are caught earlier by a sequence, with the offer agreed with the client first."
+      },
+      {
+        "k": "Segments",
+        "tag": "Targeting",
+        "breaks": "Everyone gets the same blast.",
+        "why": "One campaign to the whole list teaches it to ignore the client.",
+        "does": "Segments from purchase and browsing decide who gets which message, and the report is cut the same way."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label retention",
+      "h2b": "goes wrong.",
+      "lede": "Retention work is invisible until it stops. Each stage below is where it goes wrong for an agency, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first retention client",
+      "h2b": "gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. The client's platform and consent set-up decide how long each stage takes.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA and tool access",
+          "d": "We sign the NDA, then get access to the client's email platform and agree how consent is collected and recorded.",
+          "out": "A tool and consent checklist."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot flow",
+          "d": "One flow, such as welcome or abandoned cart, is built in the client's tool and sent to you for approval.",
+          "out": "A working flow you can show the client."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Flow and QA SOPs",
+          "d": "Approval, testing, link and consent checks before any flow goes live are written down.",
+          "out": "A checklist every flow passes."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale the lifecycle",
+          "d": "More flows and channels follow on the same routine, and more clients join on it.",
+          "out": "Retention for more clients, same routine."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

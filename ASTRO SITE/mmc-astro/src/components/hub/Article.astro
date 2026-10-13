@@ -1,7 +1,11 @@
 ---
 import Img from "./Img.astro";
+import "../../styles/hub-v2.css";
 const A = Astro.props.A;
+const updated: string | undefined = Astro.props.updated;
+const fmt = updated ? new Date(updated + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }) : "";
 ---
+{updated ? <p class="hv2h-updated"><span class="hv2h-updated__in">Last updated <time datetime={updated}>{fmt}</time></span></p> : null}
 {A && A.blocks && A.blocks.length ? (
 <section class="n-band n-band--white pm-band gd" id="guide">
   <div class="n-wrap gd__grid">

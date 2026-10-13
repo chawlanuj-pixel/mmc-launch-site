@@ -1,0 +1,508 @@
+{
+  "file": "white-label-orm.html",
+  "path": "/white-label/orm/",
+  "key": "wl_orm",
+  "title": "White-Label ORM and Reputation Services | MMC",
+  "description": "White-label online reputation management for agencies: review generation, replies, profile cleanup and monitoring delivered under your brand.",
+  "ogTitle": "White-label ORM and reputation management for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label ORM and reputation management.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/orm/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label ORM and reputation management",
+          "item": "https://www.mondaymarketing.company/white-label/orm/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/orm/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/orm/",
+      "name": "White-Label ORM and Reputation Services | MMC",
+      "description": "White-label online reputation management for agencies: review generation, replies, profile cleanup and monitoring delivered under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/orm/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/orm/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/orm/#service",
+      "name": "White-label ORM and Reputation Management",
+      "serviceType": "White-label ORM and reputation management",
+      "description": "White-label ORM and reputation management delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/orm/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/orm/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you remove a bad review?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only when it breaks the platform's rules. We can flag it, but the platform decides."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you buy or write reviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We help real customers leave honest reviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google, common marketplaces and industry sites, agreed per client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly are replies posted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On a schedule agreed in scope, with sensitive cases escalated to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label ORM and reputation management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Share the client's profile links. After the NDA we send an audit of ratings, replies and profile accuracy."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_orm",
+    "wm": "White-label ORM and Reputation Management",
+    "eyebrow": "● White-label ORM and reputation management",
+    "h1": [
+      "White-label ORM",
+      [
+        "for agencies that protect ",
+        "a client's reputation",
+        "."
+      ]
+    ],
+    "sub": "Review generation, reply management, profile clean-up and monitoring for your clients, under your brand.",
+    "tiles": [
+      {
+        "img": "orm/earn.jpg",
+        "pos": "50% 50%",
+        "label": "Earn",
+        "note": "Ask customers"
+      },
+      {
+        "img": "orm/reply.jpg",
+        "pos": "50% 50%",
+        "label": "Reply",
+        "note": "Calm and clear"
+      },
+      {
+        "img": "orm/profile.jpg",
+        "pos": "50% 50%",
+        "label": "Profiles",
+        "note": "Accurate everywhere"
+      },
+      {
+        "img": "orm/report.jpg",
+        "pos": "50% 50%",
+        "label": "Report",
+        "note": "Monthly summary"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label online reputation management is the review and profile work MMC carries out for your client while you present it as your own: asking happy customers for reviews, drafting replies, cleaning up profiles and monitoring what people say. It suits clients whose search results and ratings shape enquiries.",
+      "hl": "asking happy customers for reviews, drafting replies",
+      "who": "Monday Marketing Company (MMC) delivers ORM and reputation management for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Reviews",
+          "text": "Requests sent to real customers."
+        },
+        {
+          "icon": "users",
+          "title": "Replies",
+          "text": "Drafted in your client's voice."
+        },
+        {
+          "icon": "gauge",
+          "title": "Monitoring",
+          "text": "Mentions watched across sites."
+        }
+      ],
+      "image": "orm/reply.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "orm-wl",
+          "h": "What reputation work can and cannot do",
+          "paras": [
+            "We do not fake reviews or buy them. We help real customers leave honest reviews, answer all feedback professionally and correct inaccurate profile information.",
+            "Our direct page is <a href=\"/services/online-reputation-management/\">online reputation management</a>. It pairs with <a href=\"/white-label/seo/\">white-label SEO</a> for search results and <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a> work."
+          ],
+          "img": "orm/reply.jpg",
+          "cap": "Illustrative scene: review replies being drafted.",
+          "table": {
+            "caption": "Reputation tasks and what we can influence",
+            "head": [
+              "Task",
+              "Can we do it?",
+              "Note"
+            ],
+            "rows": [
+              [
+                "Ask for reviews",
+                "Yes",
+                "From real customers only"
+              ],
+              [
+                "Reply to reviews",
+                "Yes",
+                "Drafted, approved by you"
+              ],
+              [
+                "Fix profile information",
+                "Yes",
+                "On platforms the client controls"
+              ],
+              [
+                "Remove negative reviews",
+                "Sometimes",
+                "Only if they break platform rules"
+              ],
+              [
+                "Buy or fake reviews",
+                "No",
+                "Against platform rules"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label ORM.",
+      "lede": "Reviews, replies and profiles.",
+      "items": [
+        {
+          "t": "Review request flows",
+          "d": "Ways to ask customers after a good experience.",
+          "img": "orm/earn.jpg",
+          "alt": "Review request flows: illustrative scene"
+        },
+        {
+          "t": "Reply management",
+          "d": "Drafts for every review, good and bad.",
+          "img": "orm/reply.jpg",
+          "alt": "Reply management: illustrative scene"
+        },
+        {
+          "t": "Profile clean-up",
+          "d": "Correct names, hours, links and categories.",
+          "img": "orm/profile.jpg",
+          "alt": "Profile clean-up: illustrative scene"
+        },
+        {
+          "t": "Monitoring",
+          "d": "Alerts for new reviews and mentions.",
+          "img": "orm/audit.jpg",
+          "alt": "Monitoring: illustrative scene"
+        },
+        {
+          "t": "Search result review",
+          "d": "What appears when people search the brand.",
+          "img": "seo/authority.jpg",
+          "alt": "Search result review: illustrative scene"
+        },
+        {
+          "t": "Monthly reputation report",
+          "d": "Ratings and themes in your format.",
+          "img": "orm/report.jpg",
+          "alt": "Monthly reputation report: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label ORM and reputation management.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "orm/reply.jpg",
+      "alt": "Why agencies choose MMC for white-label ORM and reputation management. Illustrative scene.",
+      "items": [
+        {
+          "t": "Honest reviews only",
+          "d": "No fake reviews, ever."
+        },
+        {
+          "t": "Approval built in",
+          "d": "You approve replies on sensitive cases."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label ORM and reputation management works,",
+      "h2b": "step by step.",
+      "img": "orm/reply.jpg",
+      "alt": "How white-label ORM and reputation management works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit",
+          "d": "We review ratings and profiles."
+        },
+        {
+          "t": "Set up",
+          "d": "Review requests and monitoring go in."
+        },
+        {
+          "t": "Respond",
+          "d": "Replies are drafted and approved."
+        },
+        {
+          "t": "Report",
+          "d": "You get the monthly summary."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label ORM and reputation management for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells ORM and reputation management but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label ORM and reputation management fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label digital marketing",
+          "d": "The full mix behind your brand.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/digital-marketing/",
+          "link": "See white-label digital marketing"
+        },
+        {
+          "n": "Agency outsourcing",
+          "d": "A dedicated team that works as yours.",
+          "img": "about2/huddle.jpg",
+          "href": "/white-label/outsourcing/",
+          "link": "See agency outsourcing"
+        },
+        {
+          "n": "White-label reseller programme",
+          "d": "Resell MMC services as yours.",
+          "img": "contact/meeting.jpg",
+          "href": "/white-label/reseller-programme/",
+          "link": "See the reseller programme"
+        },
+        {
+          "n": "Reputation management",
+          "d": "Reviews and replies.",
+          "img": "orm/reply.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Reputation management"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "ORM and reputation management."
+    ],
+    "faq": [
+      {
+        "q": "Can you remove a bad review?",
+        "a": "Only when it breaks the platform's rules. We can flag it, but the platform decides."
+      },
+      {
+        "q": "Do you buy or write reviews?",
+        "a": "No. We help real customers leave honest reviews."
+      },
+      {
+        "q": "Which platforms do you cover?",
+        "a": "Google, common marketplaces and industry sites, agreed per client."
+      },
+      {
+        "q": "How quickly are replies posted?",
+        "a": "On a schedule agreed in scope, with sensitive cases escalated to you."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label ORM and reputation management?",
+        "a": "Share the client's profile links. After the NDA we send an audit of ratings, replies and profile accuracy."
+      }
+    ],
+    "cta": {
+      "h2a": "Add ORM and reputation management",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first ORM and reputation management client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Ask at the right moment",
+        "tag": "Review requests",
+        "breaks": "Asking every customer at the wrong time.",
+        "why": "Requests sent too early or too late get ignored, or invite complaints instead of praise.",
+        "does": "We time requests around the order or visit, ask only genuine customers and keep the wording in your client's voice."
+      },
+      {
+        "k": "Reply quickly and carefully",
+        "tag": "Reply management",
+        "breaks": "Posting slow or copy-paste replies.",
+        "why": "A generic reply to an angry review makes it worse, and everyone reads it.",
+        "does": "We draft each reply for the specific complaint, in the brand voice, for your approval or under your rules."
+      },
+      {
+        "k": "Keep facts true",
+        "tag": "Profile accuracy",
+        "breaks": "Letting profile facts go stale.",
+        "why": "Wrong hours or an old phone number turn a good review into a lost customer.",
+        "does": "Hours, contact details, photos and answers are checked on a routine and corrected the same week."
+      },
+      {
+        "k": "Name an owner for alerts",
+        "tag": "Monitoring",
+        "breaks": "Seeing a bad review days late.",
+        "why": "Without an owner, a one-star review sits unanswered for the next buyer to read.",
+        "does": "Monitoring runs across the platforms in scope, with alerts to a named person and a drafted reply ready."
+      },
+      {
+        "k": "Promise only what we can do",
+        "tag": "Honest scope",
+        "breaks": "Promising to remove a bad review.",
+        "why": "Platforms decide, not agencies. A promise you cannot keep costs you the client.",
+        "does": "We say what can and cannot be done, flag reviews that break platform rules, and focus on earning better ones."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label reputation work",
+      "h2b": "goes wrong for agencies.",
+      "lede": "Reputation is a promise you make on someone else's behalf. These are the five places agency reputation work goes wrong."
+    },
+    "process": {
+      "h2a": "How we onboard you for reputation work,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and reputation audit",
+          "d": "We sign the NDA, audit a client's search result, profiles and reviews, and write the scope.",
+          "out": "An audit and a scope for the first client."
+        },
+        {
+          "t": "Pilot with one client",
+          "d": "Requests, replies and profile fixes run for a month, with a first report.",
+          "out": "A pilot report to judge us on."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Request wording, reply tone, approval route and escalation rules are written once.",
+          "out": "A reputation playbook in your name."
+        },
+        {
+          "t": "Scale across clients",
+          "d": "More clients join the same routine, with monitoring and a single report format.",
+          "out": "A reputation service you can sell to any local client."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

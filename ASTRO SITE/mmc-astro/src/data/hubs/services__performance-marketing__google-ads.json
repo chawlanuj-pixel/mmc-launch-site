@@ -173,7 +173,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Google Ads management is the work of running paid campaigns on Google Search, Shopping, YouTube and its automated formats, aimed at people already looking for what you sell.",
+      "lead": "Google Ads management is the work of running paid campaigns on Google Search, Shopping, YouTube and its automated formats, aimed at people already looking for what you sell. MMC runs it for D2C brands and lead-based businesses, and judges results on contribution margin or the cost of a qualified lead, not on what the platform reports.",
       "hl": "already looking for what you sell",
       "who": "Monday Marketing Company (MMC) runs Google Ads for D2C brands and lead-based businesses, judged on contribution margin or the cost of a qualified lead.",
       "points": [
@@ -300,6 +300,13 @@
           "img": "shop/design.jpg",
           "href": "shopify-development.html",
           "link": "See Shopify development"
+        },
+        {
+          "n": "White-label PPC",
+          "d": "Google Ads managed behind your brand.",
+          "img": "google/search.jpg",
+          "href": "/white-label/ppc/",
+          "link": "See white-label PPC"
         }
       ]
     },
@@ -379,6 +386,102 @@
         "t": "You want Google to create demand from nothing, or a guaranteed ranking.",
         "why": "Search captures demand that exists; if nobody is looking yet, other channels or brand work should come first, and we will say so."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do on",
+      "h2b": "Google Ads.",
+      "lede": "Search, Shopping, Performance Max and YouTube, set up around intent and judged on profit.",
+      "items": [
+        {
+          "t": "Search by intent",
+          "d": "Brand, category and competitor searches split so each gets its own bid, message and landing page.",
+          "img": "google/search.jpg",
+          "alt": "Search by intent: illustrative scene"
+        },
+        {
+          "t": "Shopping feed fixes",
+          "d": "Titles, categories and attributes cleaned so the right products show for the right searches.",
+          "img": "google/feed.jpg",
+          "alt": "Shopping feed fixes: illustrative scene"
+        },
+        {
+          "t": "Performance Max inputs",
+          "d": "Assets, audience signals and exclusions that give automation good material to learn from.",
+          "img": "google/pmax.jpg",
+          "alt": "Performance Max inputs: illustrative scene"
+        },
+        {
+          "t": "YouTube and Demand Gen",
+          "d": "Video and discovery formats that reach people who are still deciding.",
+          "img": "google/video.jpg",
+          "alt": "YouTube and Demand Gen: illustrative scene"
+        },
+        {
+          "t": "Lead campaigns",
+          "d": "Search and call-led campaigns for B2B and education enquiries, tied to a qualified-lead definition.",
+          "img": "google/report.jpg",
+          "alt": "Lead campaigns: illustrative scene"
+        },
+        {
+          "t": "Profit reporting",
+          "d": "Spend read against margin and total sales, not only the figure Google reports.",
+          "img": "services/performance.jpg",
+          "alt": "Profit reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands run Google Ads",
+      "h2b": "with MMC.",
+      "lede": "Google rewards good inputs. We spend our time on the inputs.",
+      "img": "google/pmax.jpg",
+      "alt": "Why brands run Google Ads with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Intent first",
+          "d": "Campaigns are organised by what the buyer is looking for, which keeps budget off broad, weak searches."
+        },
+        {
+          "t": "Feed and landing page care",
+          "d": "The product feed and the page a click lands on get as much attention as the ad itself."
+        },
+        {
+          "t": "Honest attribution",
+          "d": "We read Google next to your store, CRM and other channels so one platform does not claim all the credit."
+        },
+        {
+          "t": "Built for every audience",
+          "d": "D2C catalogues, B2B lead flows and education admissions each get their own account design."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How we run Google Ads,",
+      "h2b": "step by step.",
+      "img": "google/report.jpg",
+      "alt": "How we run Google Ads, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit and clean the account",
+          "d": "Wasted search terms, mixed intent and feed errors are found and logged before anything is rebuilt."
+        },
+        {
+          "t": "Rebuild around intent",
+          "d": "Campaigns are split by intent and goal, with conversion tracking checked against your own numbers."
+        },
+        {
+          "t": "Feed the automation well",
+          "d": "Assets, signals and negative lists are set so Performance Max and Shopping learn from useful data."
+        },
+        {
+          "t": "Review and refine every week",
+          "d": "Search terms, feed and budgets are reviewed weekly against profit or lead quality."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

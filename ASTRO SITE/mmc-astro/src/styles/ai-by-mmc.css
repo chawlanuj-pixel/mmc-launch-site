@@ -111,12 +111,6 @@ html{scroll-behavior:smooth}
 .ai-scope .aud article div{padding:22px 24px 26px;display:grid;gap:8px}
 .ai-scope .aud p{margin:0;color:var(--fg-2);font-size:16px}
 .ai-scope .aud .slot{border-radius:0}
-.ai-scope .faq{display:grid;gap:12px;max-width:900px}
-.ai-scope .faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 22px}
-.ai-scope .faq summary{cursor:pointer;list-style:none;padding:20px 0;font:800 18px var(--font-display);display:flex;justify-content:space-between;gap:16px}
-.ai-scope .faq summary::after{content:"+";font-size:26px;line-height:1;color:var(--blue);transition:transform .3s var(--ease)}
-.ai-scope .faq details[open] summary::after{transform:rotate(45deg)}
-.ai-scope .faq details p{margin:0 0 20px;color:var(--fg-2)}
 .ai-scope .cta{text-align:center;display:grid;justify-items:center;gap:20px}
 .ai-scope .cta h2{max-width:18ch}
 .ai-scope .related{display:flex;flex-wrap:wrap;gap:10px}
@@ -175,6 +169,8 @@ html.lenis{scroll-behavior:auto}
 .ai-scope .fan .slot--w{--r:4/5}
 @media(max-width:900px){.ai-scope .fan{height:min(92vw,400px);--cw:clamp(120px,34vw,190px)}
 .ai-scope .hero--center .fan{--cw:clamp(120px,34vw,190px)}}
+/* Phones: the hero fan photos were ~130px wide; the motion script scales every offset from the card width, so this just makes the whole fan larger. */
+@media(max-width:600px){.ai-scope .fan,.ai-scope .hero--center .fan{--cw:clamp(150px,46vw,184px);height:min(104vw,420px)}}
 .ai-scope .slot:not(.has-img)::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.1) 46%,transparent 62%);transform:translateX(-100%);animation:ai-sheen 3.8s ease-in-out infinite;pointer-events:none}
 @keyframes ai-sheen{60%,100%{transform:translateX(100%)}}
 .ai-scope .band--void .card,.ai-scope .band--ink .card,.ai-scope .band--glow .card{background:radial-gradient(128% 134% at 61% 78%,rgba(13,13,13,.86) 38%,rgba(29,78,216,.85) 100%);border:1px solid rgba(255,255,255,.12);position:relative;overflow:hidden}
@@ -193,24 +189,15 @@ html.lenis{scroll-behavior:auto}
 .ai-scope .roll{display:inline-flex;flex-direction:column;height:1.2em;line-height:1.2;overflow:hidden;vertical-align:middle}
 .ai-scope .roll>span{display:block;transition:transform .55s var(--ease)}
 .ai-scope .btn:hover .roll>span,.ai-scope .btn:focus-visible .roll>span{transform:translateY(-100%)}
-.ai-scope .faq{position:relative;display:grid;gap:12px;max-width:900px}
-.ai-scope .faq__glow{position:absolute;left:50%;top:45%;width:70%;height:70%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(29,78,216,.5),transparent 70%);filter:blur(50px);pointer-events:none}
-.ai-scope .faq__i{position:relative;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;color:#fff;backdrop-filter:blur(8px)}
-.ai-scope .faq__q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;background:none;border:0;color:inherit;font:800 18px var(--font-display);text-align:left;cursor:pointer}
-.ai-scope .faq__q:focus-visible{outline:2px solid var(--sun);outline-offset:-2px}
-.ai-scope .faq__q i{position:relative;flex:none;width:22px;height:22px;transition:transform .5s var(--ease)}
-.ai-scope .faq__q i::before,.ai-scope .faq__q i::after{content:"";position:absolute;left:0;top:50%;width:100%;height:2px;background:var(--sun);transform:translateY(-50%)}
-.ai-scope .faq__q i::after{transform:translateY(-50%) rotate(90deg)}
-.ai-scope .faq__q[aria-expanded="true"] i{transform:rotate(135deg)}
-.ai-scope .faq__a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease)}
-.ai-scope .faq__a>div{overflow:hidden}
-.ai-scope .faq__a p{margin:0;padding:0 22px 22px;color:var(--on-dark-2)}
-.ai-scope .faq__i.open .faq__a{grid-template-rows:1fr}
 .ai-scope .pin__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
 .ai-scope .pin__t .slot,.ai-scope .pin__base .slot{--r:4/5}
 .ai-scope .pin__base{position:relative;z-index:3}
 .ai-scope .pin__base .slot{box-shadow:0 0 0 3px var(--sun),0 0 60px rgba(255,197,40,.35)}
 @media(max-width:900px){.ai-scope .pin__grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}}
+/* Small phones: two columns so each scene is ~160px wide (three columns made 105px thumbnails); the odd last scene takes the full row. */
+@media(max-width:560px){.ai-scope .pin__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ai-scope .pin__grid > :last-child{grid-column:1 / -1}
+.ai-scope .pin__grid > :last-child .slot{--r:1/1}}
 @media(min-width:901px){html.js-pin .ai-scope .pin{height:100svh;padding:76px 0 0}
 html.js-pin .ai-scope .pin__sticky{height:100%;display:flex;align-items:center;padding-bottom:20px}
 html.js-pin .ai-scope .pin__grid{grid-template-rows:repeat(3,minmax(0,1fr));height:calc(100svh - 330px)}
@@ -267,7 +254,7 @@ html.js-scrub .ai-scope .scrub__sticky{height:100%;display:flex;align-items:cent
 .ai-scope .ss__b:focus-visible,.ai-scope .ss__p:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
 @keyframes ai-fabPop{from{opacity:0;transform:scale(.2) rotate(-120deg)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.ai-scope .fan__c .slot,.ai-scope .slot::after{animation:none}
-.ai-scope .roll>span,.ai-scope .faq__a,.ai-scope .faq__q i{transition:none}}
+.ai-scope .roll>span{transition:none}}
 .ai-scope .hero__txt h1{font-size:clamp(34px,4.3vw,68px);text-wrap:balance}
 .ai-scope .hero--center .hero__txt h1{font-size:clamp(38px,5vw,76px)}
 .ai-scope .band--void{background:linear-gradient(160deg,#16329E 0%,#0F1E5E 48%,#0A1440 100%);color:#fff}
@@ -321,11 +308,6 @@ html.js-scrub .ai-scope .scrub__sticky{height:100%;display:flex;align-items:cent
 .ai-scope .band--blue50 .steps h3{color:var(--ink)}
 .ai-scope .band--blue50 .steps p{color:var(--fg-2)}
 .ai-scope .band--blue50 .steps li::before{color:var(--blue)}
-.ai-scope .faq__i{background:var(--blue-50);border:1px solid var(--line);color:var(--ink);backdrop-filter:none}
-.ai-scope .faq__a p{color:var(--fg-2)}
-.ai-scope .faq__glow{background:radial-gradient(circle,rgba(29,78,216,.16),transparent 70%)}
-.ai-scope .band--void .faq__i,.ai-scope .band--ink .faq__i{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:#fff}
-.ai-scope .band--void .faq__a p,.ai-scope .band--ink .faq__a p{color:var(--on-dark-2)}
 .ai-scope .related a{color:var(--ink)}
 .ai-scope .pin__t .slot,.ai-scope .pin__base .slot{border:4px solid rgba(255,255,255,.9)}
 .ai-scope .plate .slot{border:4px solid rgba(255,255,255,.9)}

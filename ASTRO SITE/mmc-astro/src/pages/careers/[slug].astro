@@ -12,8 +12,9 @@ import Shell from "../../components/Shell.astro";
 import Img from "../../components/hub/Img.astro";
 import Arrow from "../../components/hub/Arrow.astro";
 import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
-import { roles, stepsFor, chips, type Role } from "../../lib/roles";
+import { roles, stepsFor, MODE, type Role } from "../../lib/roles";
 import "../../styles/careers-role.css";
+import "../../styles/careers3-role.css";
 
 export function getStaticPaths() {
   return roles.map((r) => ({ params: { slug: r.slug }, props: { role: r } }));
@@ -24,14 +25,15 @@ const path = "/careers/" + role.slug + "/";
 const TAG: Record<string, string> = { performance: "Performance", creative: "Creative", strategy: "Strategy", technology: "Technology" };
 const title = `${role.title}, ${role.location} | MMC Careers`;
 // Search description, kept to 155 characters or less: the full summary, else its first sentence, else cut at the last comma.
-const description = (() => {
+const fit = (s: string) => { if (s.length >= 140) return s; for (const x of [" Apply to MMC with one page, no resume required.", " Apply to MMC with one page.", " Apply with one page."]) if ((s + x).length >= 140 && (s + x).length <= 160) return s + x; return s; };
+const description = fit((() => {
   const t = String(role.summary || "").trim();
   if (t.length <= 155) return t;
   const first = t.split(". ")[0];
   if (first.length <= 155) return first.replace(/\.$/, "") + ".";
   const cut = t.slice(0, 155);
   return cut.slice(0, cut.lastIndexOf(", ")).replace(/[.,]$/, "") + ".";
-})();
+})());
 
 // Google for Jobs technical SEO: every role page must emit a valid JobPosting.
 // This block is the single source of truth for that requirement and runs for
@@ -49,7 +51,7 @@ const empType = role.empType || "FULL_TIME";
 const posting: Record<string, unknown> = {
   "@context": "https://schema.org", "@type": "JobPosting", "@id": SITE + path + "#job",
   title: role.title,
-  description: `<p>${role.summary}</p><p><strong>What you will own</strong></p><ul>${role.responsibilities.map((x) => `<li>${x}</li>`).join("")}</ul><p><strong>What you probably are</strong></p><ul>${role.youAre.map((x) => `<li>${x}</li>`).join("")}</ul>`,
+  description: `<p>${role.summary}</p><p><strong>What you will do</strong></p><ul>${role.responsibilities.map((x) => `<li>${x}</li>`).join("")}</ul><p><strong>What we look for</strong></p><ul>${role.youAre.map((x) => `<li>${x}</li>`).join("")}</ul>`,
   identifier: { "@type": "PropertyValue", propertyID: "MMC-CAREERS", value: role.slug },
   datePosted: postedDate,
   employmentType: empType,
@@ -81,6 +83,14 @@ const screening = role.screening && role.screening.length ? role.screening : [
   { id: "q3", q: "What's the kind of project you'd quietly hope to be assigned in your first ninety days?", hint: "Be specific." },
   { id: "q4", q: "Anything else we should know about how you want to work?", hint: "" },
 ];
+const FACTS: [string, string][] = [
+  ["Location", role.location],
+  ["Work mode", MODE[role.workMode] || "Onsite"],
+  ["Type", role.type],
+  ["Experience", role.band],
+  ...(role.salary ? [["Pay", role.salary] as [string, string]] : []),
+  ["Applications", role.applyWindow || "Rolling, open now"],
+];
 const own = (role as any).hiringSteps as string[] | undefined;
 const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("rolePages");
 ---
@@ -88,41 +98,67 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
   <Shell footerCta={{ nav: true, label: "Apply for this role", href: "#apply" }}>
     <main id="main" tabindex="-1" class="app-main n-app">
 
-      <section class="crp-hero" id="top">
-        <div class="crp-hero__card">
-          <figure class="crp-hero__fig">
-            <Img name={role.img} ratio="4 / 5" eager={true} class="crp-hero__img" />
-            <figcaption class="crp-hero__chip"><i aria-hidden="true"></i>{TAG[role.discipline]}</figcaption>
-          </figure>
-          <div class="crp-hero__body">
-            <nav class="crp-hero__crumb" aria-label="Breadcrumb"><a href="/careers/">Careers</a><span aria-hidden="true">/</span><span>{role.title}</span></nav>
-            <h1 class="crp-hero__h1">{role.title}</h1>
-            <p class="crp-hero__sub">{role.hint}</p>
-            <ul class="crp-hero__meta">
-              {chips(role).map((c) => <li>{c}</li>)}
-            </ul>
-            <div class="crp-hero__act">
-              <a class="btn btn--primary glow-btn" href="#apply"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Apply for this role<span class="arrow"></span></span></a>
-              <a class="btn btn--link" href="/careers/">All open roles<span class="arrow"></span></a>
+      <section class="crp3-hero" id="top" aria-labelledby="crp3-h1">
+        <div class="n-wrap">
+          <div class="crp3-hero__grid">
+            <div class="crp3-hero__body">
+              <nav class="crp3-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/careers/">Careers</a><span aria-hidden="true">/</span><span aria-current="page">{role.title}</span></nav>
+              <p class="crp3-hero__team"><i aria-hidden="true"></i>{TAG[role.discipline]} team</p>
+              <h1 class="crp3-hero__h1" id="crp3-h1">{role.title}</h1>
+              <p class="crp3-hero__sub">{role.hint}</p>
+              <div class="crp3-hero__act">
+                <a class="btn btn--primary glow-btn" href="#apply"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Apply for this role<span class="arrow"></span></span></a>
+                <a class="btn btn--link crp3-link" href="/careers/#roles">See open roles<span class="arrow"></span></a>
+              </div>
             </div>
+            <figure class="crp3-hero__fig">
+              <Img name={role.img} ratio="4 / 5" eager={true} alt={`Illustrative scene for the ${role.title} role`} />
+              <figcaption><i aria-hidden="true"></i>Illustrative scene</figcaption>
+            </figure>
           </div>
+          <dl class="crp3-facts">
+            {FACTS.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+          </dl>
         </div>
       </section>
 
-      <section class="n-band n-band--paper">
+      <section class="n-band n-band--paper crp3-band">
         <div class="n-wrap">
           <div class="crp-body">
-            <article class="crp-desc">
-              <div class="crp-sec" data-n="01"><h2>The role</h2><p>{role.summary}</p></div>
-              <div class="crp-sec" data-n="02"><h2>What you will own</h2><ul>{role.responsibilities.map((x) => <li>{x}</li>)}</ul></div>
-              <div class="crp-sec" data-n="03"><h2>You probably are</h2><ul>{role.youAre.map((x) => <li>{x}</li>)}</ul></div>
-              {role.bonus.length > 0 && <div class="crp-sec" data-n="04"><h2>A bonus if you have</h2><ul>{role.bonus.map((x) => <li>{x}</li>)}</ul></div>}
-              <div class="crp-sec" data-n={role.bonus.length > 0 ? "05" : "04"}>
-                <h2>How hiring works</h2>
-                <ol class="crp-steps">{hiringSteps.map((s, k) => <li><b>{String(k + 1).padStart(2, "0")}</b><span>{s.h && <strong>{s.h}. </strong>}{s.d}</span></li>)}</ol>
+            <article class="crp3-desc">
+              <section class="crp3-sec crp3-sec--lead" aria-labelledby="crp3-s-role">
+                <h2 id="crp3-s-role" class="crp3-sec__h">The role</h2>
+                <p>{role.summary}</p>
+              </section>
+              <section class="crp3-sec" aria-labelledby="crp3-s-do">
+                <h2 id="crp3-s-do" class="crp3-sec__h" data-n="01">What you will do</h2>
+                <ul class="crp3-list">{role.responsibilities.map((x) => <li>{x}</li>)}</ul>
+              </section>
+              <section class="crp3-sec" aria-labelledby="crp3-s-look">
+                <h2 id="crp3-s-look" class="crp3-sec__h" data-n="02">What we look for</h2>
+                <ul class="crp3-list crp3-list--tick">{role.youAre.map((x) => <li>{x}</li>)}</ul>
+                {role.bonus.length > 0 && (
+                  <div class="crp3-bonus">
+                    <h3>A bonus if you have</h3>
+                    <ul>{role.bonus.map((x) => <li>{x}</li>)}</ul>
+                  </div>
+                )}
+              </section>
+              <section class="crp3-sec" aria-labelledby="crp3-s-hire">
+                <h2 id="crp3-s-hire" class="crp3-sec__h" data-n="03">How we hire</h2>
+                <ol class="crp3-steps">{hiringSteps.map((s, k) => <li><b aria-hidden="true">{String(k + 1).padStart(2, "0")}</b><span>{s.h && <strong>{s.h}. </strong>}{s.d}</span></li>)}</ol>
                 <p class="crp-meta-line">Reports to {role.reportsTo || "the discipline lead"} · {role.applyWindow || "Rolling, open now"}</p>
-              </div>
-              <a class="crp-back" href="/careers/">See all open roles<Arrow /></a>
+              </section>
+              <section class="crp3-sec crp3-where" aria-labelledby="crp3-s-where">
+                <h2 id="crp3-s-where" class="crp3-sec__h" data-n="04">Where you would work</h2>
+                <div class="crp3-where__pics">
+                  <figure><Img name="careers2/studio-wide.jpg" ratio="3 / 2" alt="A team at a long studio table, laptops open, a whiteboard of plans behind them" /></figure>
+                  <figure><Img name="careers2/team-screen.jpg" ratio="3 / 2" alt="A small team gathered round a laptop reviewing creative" /></figure>
+                </div>
+                <p class="crp3-where__cap">Illustrative scenes. MMC is based in Thane, Maharashtra; this role is {remote ? "remote, within India" : "based in " + role.location}.</p>
+                <p class="crp3-where__links"><a href="/about/">About MMC<Arrow /></a><a href="/careers/#why">How we work<Arrow /></a></p>
+              </section>
+              <a class="crp-back" href="/careers/#roles">See all open roles<Arrow /></a>
             </article>
 
             <aside class="crp-apply" id="apply">
@@ -134,6 +170,7 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
                 </div>
 
                 <form class="crp-form" id="crp-form-1" data-role={role.title} data-slug={role.slug}>
+                  <div class="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" name="_hp" tabindex="-1" autocomplete="off" /></label></div>
                   <div class="crp-form__head">
                     <span class="eyebrow">Step 1, basics</span>
                     <h2>Tell us who you are.</h2>
@@ -142,7 +179,7 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
                   <label><span>Your full name<i>*</i></span><input name="name" type="text" required autocomplete="name" placeholder="Aanya Sharma" /></label>
                   <label><span>Email<i>*</i></span><input name="email" type="email" required autocomplete="email" placeholder="you@gmail.com" /></label>
                   <div class="crp-form__row">
-                    <label>Phone<input name="phone" type="tel" autocomplete="tel" placeholder="+91 …" /></label>
+                    <label><span>Phone or WhatsApp<i>*</i></span><input name="phone" type="tel" required inputmode="tel" autocomplete="tel" maxlength="20" placeholder="+91 98765 43210" /></label>
                     <label>LinkedIn<input name="linkedin" type="text" placeholder="linkedin.com/in/…" /></label>
                   </div>
                   <div class="crp-form__row">
@@ -215,13 +252,17 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
         </div>
       </section>
     </main>
+    <div class="crp3-dock" id="crp3-dock" aria-hidden="true">
+      <span class="crp3-dock__t"><b>{role.title}</b><span>{role.location}</span></span>
+      <a class="crp3-dock__btn" href="#apply" tabindex="-1">Apply for this role<span class="crp3-dock__arr" aria-hidden="true"></span></a>
+    </div>
     <StickyBookingBar source={"career-" + role.slug} mode="apply" />
   </Shell>
   <style is:global>
     .crp-consent { display: flex; gap: 10px; align-items: flex-start; margin: 4px 0 16px; font: 500 14px/1.45 var(--font-body); cursor: pointer; }
     .crp-consent input { width: 20px; height: 20px; margin-top: 1px; flex: none; accent-color: #16329E; }
     .crp-consent a { color: #16329E; border-bottom: 1px solid currentColor; }
-    .crp-apply-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, .09); color: #b3261e; font: 600 14px/1.45 var(--font-body); }
+    .crp-apply-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, .09); color: var(--mmc-error); font: 600 13px/1.45 var(--font-body); }
     .crp-apply-err[hidden] { display: none; }
     #crp-thanks:focus { outline: none; }
     #crp-submit[disabled] { opacity: .7; cursor: progress; }
@@ -275,6 +316,14 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
     f1?.addEventListener("submit", async (e) => {
       e.preventDefault();
       const d = Object.fromEntries(new FormData(f1).entries()) as Record<string, string>;
+      const mf = (window as any).MMCForms;
+      const phoneEl = f1.elements.namedItem("phone") as HTMLInputElement | null;
+      if (phoneEl) {
+        const okPhone = mf && mf.validPhone ? mf.validPhone(phoneEl.value) : /\d{8,}/.test(phoneEl.value);
+        phoneEl.setCustomValidity(okPhone ? "" : ((mf && mf.phoneMsg) || "Please enter a valid phone number."));
+        if (!okPhone) { phoneEl.reportValidity(); phoneEl.addEventListener("input", () => phoneEl.setCustomValidity(""), { once: true }); return; }
+        d.phone = mf && mf.cleanPhone ? mf.cleanPhone(phoneEl.value) : phoneEl.value.trim();
+      }
       const file = cvInput?.files && cvInput.files[0];
       if (!file && !d.cvUrl) {
         if (cvError) { cvError.hidden = false; cvError.textContent = "Add a CV file or a link to one."; }
@@ -329,5 +378,29 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
         steps?.setAttribute("hidden", "");
       }).catch(fail);
     });
+  </script>
+  <script>
+    /* Desktop and tablet dock (the phone bar is StickyBookingBar): shows once the hero has gone and the form is off screen. */
+    const dock = document.getElementById("crp3-dock");
+    const dockBtn = dock?.querySelector<HTMLAnchorElement>("a");
+    if (dock && dockBtn) {
+      const tick = () => {
+        const hero = document.getElementById("top"), form = document.getElementById("apply"), foot = document.getElementById("footer");
+        const vh = window.innerHeight;
+        const pastHero = hero ? hero.getBoundingClientRect().bottom < 0 : false;
+        const fr = form ? form.getBoundingClientRect() : null;
+        const formOn = !!fr && fr.top < vh * 0.85 && fr.bottom > vh * 0.15;
+        const atFoot = foot ? foot.getBoundingClientRect().top < vh : false;
+        const blocked = !!document.querySelector(".cookie") || !!document.querySelector(".mmc-book.is-open, .audit.is-open, .brief.is-open");
+        const on = window.innerWidth > 760 && pastHero && !formOn && !atFoot && !blocked;
+        dock.classList.toggle("is-on", on);
+        dock.setAttribute("aria-hidden", String(!on));
+        dockBtn.tabIndex = on ? 0 : -1;
+      };
+      tick();
+      window.addEventListener("scroll", tick, { passive: true });
+      window.addEventListener("resize", tick);
+      setInterval(tick, 800);
+    }
   </script>
 </BaseLayout>

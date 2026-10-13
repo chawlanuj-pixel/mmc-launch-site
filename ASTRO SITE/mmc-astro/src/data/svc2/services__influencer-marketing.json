@@ -1,0 +1,182 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__influencer-marketing.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "inf/brief.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene for influencer marketing.",
+    "facts": [
+      {
+        "t": "Fit over reach.",
+        "d": "Chosen for who follows them."
+      },
+      {
+        "t": "Tracked properly.",
+        "d": "Links and codes against sales."
+      },
+      {
+        "t": "Rights agreed.",
+        "d": "Content that can run as ads."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "BriefBoard",
+    "eyebrow": "The work, shown",
+    "h2a": "How a creator campaign",
+    "h2b": "runs, step by step.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Write one brief around one idea.",
+        "d": "Clear deliverables and room for the creator's own voice, so the post still sounds like them."
+      },
+      {
+        "n": "02",
+        "t": "Shortlist creators by audience fit.",
+        "d": "We check who follows them and how they engage before you commit, not just the follower count."
+      },
+      {
+        "n": "03",
+        "t": "Agree deliverables and usage rights in writing.",
+        "d": "Posts, dates and the right to run content as ads are settled before anything is made."
+      },
+      {
+        "n": "04",
+        "t": "Track creators to sales, reuse the best.",
+        "d": "Links and codes show what each creator drove, and the best content runs as paid ads."
+      }
+    ],
+    "illustrative": "Illustrative layout of a creator brief and shortlist board. Not a client account, no real figures or people.",
+    "variant": "influencer"
+  },
+  "leak": {
+    "visual": "CreatorFit",
+    "barLogo": "",
+    "barTitle": "Shortlist view",
+    "pinsLabel": "Five places influencer campaigns go wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Fit"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Brief"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Terms"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Tracking"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reuse"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we work with.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: ads and creative made for social placements."
+      },
+      {
+        "id": "mbb",
+        "line": "Body care: performance creative and a store ready for creator traffic."
+      },
+      {
+        "id": "awwbaby",
+        "line": "Baby products: a store and ad creative for a parent audience."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run influencer marketing,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Shortlist for fit",
+        "d": "We choose creators by audience fit and content quality, and check them before you commit.",
+        "get": "A shortlist you can approve.",
+        "img": "inf/shortlist.jpg",
+        "alt": "A creator shortlist with audience data on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Brief and contract",
+        "d": "One idea, clear deliverables and usage rights agreed up front.",
+        "get": "Content and terms in writing.",
+        "img": "inf/terms.jpg",
+        "alt": "A printed creator agreement with a pen on a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Run the campaign",
+        "d": "Creators post to the agreed dates, each with a tracked link or code.",
+        "get": "Posts live and every creator tracked.",
+        "img": "inf/tracking.jpg",
+        "alt": "A phone showing a creator post with a discount code, beside a link tracking table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Read it and reuse the best",
+        "d": "Results are read against sales, and the best content, with agreed rights, runs as ads.",
+        "get": "Spend that is read against orders.",
+        "img": "inf/reuse.jpg",
+        "alt": "A paid partnership ad being set up in an ads manager on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "UGC and video",
+        "href": "/services/ugc-and-video/"
+      },
+      {
+        "n": "Social media",
+        "href": "/services/social-media/"
+      },
+      {
+        "n": "AI UGC by MMC",
+        "href": "/ai-by-mmc/ugc/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

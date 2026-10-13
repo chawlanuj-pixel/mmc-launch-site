@@ -142,7 +142,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "B2B marketing wins business from other businesses. Sales cycles are longer, several people take part in the decision, and the goal is a qualified lead rather than a basket.",
+      "lead": "B2B marketing wins business from other businesses. Sales cycles are longer, several people take part in the decision, and the goal is a qualified lead rather than a basket. MMC builds the website, creative and paid media for B2B companies in India, and optimises every week on the cost per qualified lead, agreed with your sales team.",
       "hl": "a qualified lead",
       "who": "Monday Marketing Company (MMC) builds the website, creative and paid media for B2B companies in India.",
       "points": [
@@ -308,6 +308,27 @@
           "img": "d2c/packing.jpg",
           "href": "d2c.html",
           "link": "See D2C brands"
+        },
+        {
+          "n": "Manufacturing",
+          "d": "Search, proof and quote funnels for manufacturers and suppliers.",
+          "img": "b2b/found.jpg",
+          "href": "/industries/b2b/manufacturing/",
+          "link": "See Manufacturing marketing"
+        },
+        {
+          "n": "SaaS and software",
+          "d": "Search, funnels and CRM signals for trial-led software buyers.",
+          "img": "b2b/qualify.jpg",
+          "href": "/industries/b2b/saas-and-software/",
+          "link": "See SaaS and software marketing"
+        },
+        {
+          "n": "AI SEO",
+          "d": "One plan for being found and recommended across classic and AI search.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/ai-seo/",
+          "link": "See AI SEO"
         }
       ]
     },

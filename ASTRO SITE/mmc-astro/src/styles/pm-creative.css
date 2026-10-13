@@ -16,3 +16,11 @@
   .pmx-row::-webkit-scrollbar { display: none; }
   .pmx-card { flex: 0 0 78%; scroll-snap-align: start; }
 }
+
+/* Calculator islands (PmMargin, PmPayback): 44px ROAS toggles and readable dimmed state. */
+.pmm__controls .pm-diagram__toggle button { min-height: 44px; }
+.pmp .pmp__col:not(.is-on) { opacity: 1; }
+.pmp .pmp__col:not(.is-on) .pmp__bar { opacity: .3; }
+.pmp .pmp__col:not(.is-on) .pmp__val,
+.pmp .pmp__col:not(.is-on) .pmp__lbl { color: #5F6A7E; }
+@media (max-width: 760px) { .pmp .pmp__lbl { font-size: 12px; } .pmp .pmp__zero span { font-size: 12px; } }

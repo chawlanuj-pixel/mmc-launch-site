@@ -1,0 +1,704 @@
+{
+  "file": "white-label.html",
+  "path": "/white-label/",
+  "key": "wl",
+  "title": "White-Label Digital Marketing Services for Agencies | MMC",
+  "description": "White-label digital marketing, SEO, PPC, web and creative for agencies. We work behind your brand under NDA, report your way and keep your client yours.",
+  "ogTitle": "White-label services for agencies",
+  "ogDescription": "SEO, ads, web and creative behind your brand.",
+  "ogAlt": "Monday Marketing Company: white-label services.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/",
+      "name": "White-Label Digital Marketing Services for Agencies | MMC",
+      "description": "White-label digital marketing, SEO, PPC, web and creative for agencies. We work behind your brand under NDA, report your way and keep your client yours.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/#service",
+      "name": "White-label services",
+      "serviceType": "White-label digital marketing",
+      "description": "White-label digital marketing and web services delivered by MMC for agencies, studios and consultancies under the agency's brand.",
+      "url": "https://www.mondaymarketing.company/white-label/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is white-label digital marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is when one company delivers marketing work and another sells it under its own brand. The agency owns the client; the white-label partner works behind it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does white-label work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We sign an NDA, agree scope, set up reporting in your format, run a first client together and scale from there. You stay the only point of contact for your client unless you ask otherwise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you contact my clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We do not approach your clients, and we sign an NDA covering client information. If you want us on a client call, you invite us as part of your team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can reports carry our branding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We can supply reports in your format and name, or send numbers for your own template. What the client sees is your decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which services can you white label?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Search, link building, GEO and AEO, ads, social, content, email and retention, CRO, lead generation, ecommerce, creative, web, apps, AI, reporting and ORM. The table on this page links to each."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is white label for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digital agencies, web studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is pricing set up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Through a retainer, a project, a dedicated team, an hourly block or a reseller arrangement. We agree the model on a call and write the scope down. See the pricing models page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with agencies outside India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many overseas agencies work with Indian delivery partners. We explain how time zones, communication and reporting work on our India partner page."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl",
+    "wm": "White-label services",
+    "eyebrow": "● White-label services for agencies",
+    "h1": [
+      "White-label",
+      [
+        "services that let you ",
+        "say yes to every client",
+        "."
+      ]
+    ],
+    "sub": "SEO, ads, social, content, web, apps and AI, delivered behind your brand under NDA. You keep the client. We do the work.",
+    "tiles": [
+      {
+        "img": "company/whiteboard.jpg",
+        "pos": "50% 50%",
+        "label": "Scope",
+        "note": "Agreed together"
+      },
+      {
+        "img": "company/session.jpg",
+        "pos": "50% 50%",
+        "label": "Delivery",
+        "note": "Behind your brand"
+      },
+      {
+        "img": "res/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Reports",
+        "note": "In your format"
+      },
+      {
+        "img": "about2/huddle.jpg",
+        "pos": "50% 50%",
+        "label": "Team",
+        "note": "Works as yours"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White label means we deliver the work and you sell it as your own. Your agency owns the client, the pricing and the relationship; MMC works behind you under an NDA, and reports can carry your brand. It lets you offer more services without hiring a team for each.",
+      "hl": "we deliver the work and you sell it as your own",
+      "who": "Monday Marketing Company (MMC) is a performance and growth agency in India, and white label is how we work with other agencies, studios, consultancies and freelancers.",
+      "points": [
+        {
+          "icon": "users",
+          "title": "Your brand, your client",
+          "text": "We stay behind you and do not approach your clients."
+        },
+        {
+          "icon": "layers",
+          "title": "Every discipline",
+          "text": "Search, paid, social, content, web, apps and AI."
+        },
+        {
+          "icon": "chart",
+          "title": "Reports your way",
+          "text": "Deliverables and reports in your format and name."
+        }
+      ],
+      "image": "company/strategy.jpg",
+      "chip": "A delivery team behind your agency"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "what-white-label-means",
+          "h": "What white label means for an agency",
+          "paras": [
+            "In a white-label arrangement one company does the work and another sells it under its own name. For an agency, that means a partner who can run SEO, ads, web builds or creative for your client while you stay the face of the account.",
+            "It is different from referral work, where a partner takes the client, and from hiring freelancers, where you manage every task. A white-label partner owns delivery quality and timelines against a scope you agree, and you own the relationship."
+          ],
+          "img": "company/strategy.jpg",
+          "cap": "Illustrative scene: an agency scoping work with its delivery partner."
+        },
+        {
+          "id": "how-the-model-works",
+          "h": "How the white-label model works",
+          "paras": [
+            "It runs in five steps: we sign an NDA, agree what you sell and what we deliver, set up your reporting format, run a first client together, then scale to more accounts. Each step is covered below and on the <a href=\"/white-label/outsourcing/\">agency outsourcing page</a>.",
+            "Reporting goes out under your brand. We can supply the report for you to send, or feed the numbers to your own template. Where a client call needs a specialist, we join as a member of your team if you ask us to."
+          ],
+          "callout": {
+            "title": "Confidentiality is the starting point.",
+            "text": "We sign an NDA before we see client details and we do not contact your clients. Read how it works in the FAQs below, and see <a href=\"/white-label/reporting/\">white-label reporting</a> for the reporting side."
+          }
+        },
+        {
+          "id": "white-label-services",
+          "h": "Every white-label service, one page each",
+          "paras": [
+            "Each service below has its own page with scope, process and questions. Start with the one your clients ask for most."
+          ],
+          "table": {
+            "caption": "White-label services from MMC and where to read more",
+            "head": [
+              "Service",
+              "What it covers",
+              "Read more"
+            ],
+            "rows": [
+              [
+                "White-label SEO",
+                "Technical, on-page, content and reporting under your name.",
+                "<a href=\"/white-label/seo/\">See white-label SEO</a>"
+              ],
+              [
+                "White-label link building",
+                "Outreach and digital PR placements, reported by you.",
+                "<a href=\"/white-label/link-building/\">See white-label link building</a>"
+              ],
+              [
+                "White-label GEO and AEO",
+                "AI search and answer engine work for your clients.",
+                "<a href=\"/white-label/geo-aeo/\">See white-label GEO and AEO</a>"
+              ],
+              [
+                "White-label PPC",
+                "Google Ads management your clients see as yours.",
+                "<a href=\"/white-label/ppc/\">See white-label PPC</a>"
+              ],
+              [
+                "White-label Meta Ads",
+                "Facebook and Instagram advertising delivered behind you.",
+                "<a href=\"/white-label/meta-ads/\">See white-label Meta Ads</a>"
+              ],
+              [
+                "White-label social media management",
+                "Calendars, posting, community and reports.",
+                "<a href=\"/white-label/social-media-management/\">See white-label social media management</a>"
+              ],
+              [
+                "White-label content marketing",
+                "Articles, guides and editorial calendars.",
+                "<a href=\"/white-label/content-marketing/\">See white-label content marketing</a>"
+              ],
+              [
+                "White-label email and retention",
+                "Email, CRM, SMS and WhatsApp flows.",
+                "<a href=\"/white-label/email-marketing/\">See white-label email and retention</a>"
+              ],
+              [
+                "White-label CRO",
+                "Research, tests and fixes that lift conversion.",
+                "<a href=\"/white-label/cro/\">See white-label CRO</a>"
+              ],
+              [
+                "White-label lead generation",
+                "Campaigns and funnels that fill your client's pipeline.",
+                "<a href=\"/white-label/lead-generation/\">See white-label lead generation</a>"
+              ],
+              [
+                "White-label ecommerce and Amazon",
+                "Marketplace, quick commerce and store growth.",
+                "<a href=\"/white-label/ecommerce/\">See white-label ecommerce and Amazon</a>"
+              ],
+              [
+                "White-label creative, video and UGC",
+                "Graphic design, video editing and creator content.",
+                "<a href=\"/white-label/creative-and-video/\">See white-label creative, video and UGC</a>"
+              ],
+              [
+                "White-label web design",
+                "Designs and sites delivered to your client's brand.",
+                "<a href=\"/white-label/web-design/\">See white-label web design</a>"
+              ],
+              [
+                "White-label web development",
+                "Front-end and back-end builds from your designs.",
+                "<a href=\"/white-label/web-development/\">See white-label web development</a>"
+              ],
+              [
+                "White-label WordPress development",
+                "Themes, WooCommerce and plugins.",
+                "<a href=\"/white-label/wordpress-development/\">See white-label WordPress development</a>"
+              ],
+              [
+                "White-label website maintenance",
+                "Updates, backups, security and edits for your client sites.",
+                "<a href=\"/white-label/website-maintenance/\">See white-label website maintenance</a>"
+              ],
+              [
+                "White-label Shopify development",
+                "Stores, themes and apps for your D2C clients.",
+                "<a href=\"/white-label/shopify-development/\">See white-label Shopify development</a>"
+              ],
+              [
+                "White-label app development",
+                "Mobile apps built to your client's brief.",
+                "<a href=\"/white-label/app-development/\">See white-label app development</a>"
+              ],
+              [
+                "White-label AI services",
+                "AI content, video, photoshoots and agents.",
+                "<a href=\"/white-label/ai-services/\">See white-label AI services</a>"
+              ],
+              [
+                "White-label reporting",
+                "Dashboards and monthly reports in your format.",
+                "<a href=\"/white-label/reporting/\">See white-label reporting</a>"
+              ],
+              [
+                "White-label ORM",
+                "Reviews, reputation and profile management.",
+                "<a href=\"/white-label/orm/\">See white-label ORM</a>"
+              ],
+              [
+                "White-label digital marketing",
+                "The full mix, delivered as one partner.",
+                "<a href=\"/white-label/digital-marketing/\">See white-label digital marketing</a>"
+              ],
+              [
+                "Agency outsourcing and dedicated teams",
+                "Hire a dedicated team that works as yours.",
+                "<a href=\"/white-label/outsourcing/\">See agency outsourcing and dedicated teams</a>"
+              ],
+              [
+                "White-label reseller programme",
+                "A structured way to resell MMC services.",
+                "<a href=\"/white-label/reseller-programme/\">See white-label reseller programme</a>"
+              ],
+              [
+                "White-label pricing models",
+                "Retainer, project, hourly and hybrid options.",
+                "<a href=\"/white-label/pricing-models/\">See white-label pricing models</a>"
+              ],
+              [
+                "White-label agency India",
+                "An India delivery partner for overseas agencies.",
+                "<a href=\"/white-label/india/\">See white-label agency India</a>"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "engagement-models",
+          "h": "Engagement models and who they suit",
+          "paras": [
+            "Pick the model that matches how you sell. Detail on each is on the <a href=\"/white-label/pricing-models/\">white-label pricing models page</a> and the <a href=\"/white-label/reseller-programme/\">reseller programme page</a>."
+          ],
+          "table": {
+            "caption": "White-label engagement models compared",
+            "head": [
+              "Model",
+              "How it works",
+              "Best for"
+            ],
+            "rows": [
+              [
+                "Retainer",
+                "A monthly scope delivered for each client",
+                "Ongoing SEO, ads, social and content"
+              ],
+              [
+                "Project",
+                "A fixed scope with a start and an end",
+                "Web builds, apps, audits and migrations"
+              ],
+              [
+                "Dedicated team",
+                "People who work only on your accounts",
+                "<a href=\"/white-label/outsourcing/\">Agencies with steady volume</a>"
+              ],
+              [
+                "Hourly block",
+                "Hours bought in advance and drawn down",
+                "Overflow and one-off tasks"
+              ],
+              [
+                "Reseller",
+                "You resell a defined MMC service",
+                "<a href=\"/white-label/reseller-programme/\">Consultancies and networks</a>"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "who-white-label-is-for",
+          "h": "Who white label is for",
+          "paras": [
+            "Digital agencies use it to add disciplines. Web studios use it to add search, ads or maintenance after a build. Consultancies use it to deliver the work they recommend. Freelancers use it to take on bigger clients. In-house marketing teams use it to cover peaks without hiring.",
+            "Overseas agencies often start with our <a href=\"/white-label/india/\">India delivery partner page</a>. If you are not sure which fits, a call settles it quickly."
+          ]
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What you can",
+      "h2b": "white label.",
+      "lede": "Six groups of services, each with its own page and process.",
+      "items": [
+        {
+          "t": "Search and AI visibility",
+          "d": "SEO, link building, GEO and AEO, delivered and reported behind your name.",
+          "img": "seo/authority.jpg",
+          "alt": "Search and AI visibility: illustrative scene"
+        },
+        {
+          "t": "Paid media",
+          "d": "Google, Meta and marketplace advertising managed in your client's accounts.",
+          "img": "pm-v2/channel-google.jpg",
+          "alt": "Paid media: illustrative scene"
+        },
+        {
+          "t": "Social, content and creative",
+          "d": "Social calendars, articles, design, video and creator content.",
+          "img": "social/calendar.jpg",
+          "alt": "Social, content and creative: illustrative scene"
+        },
+        {
+          "t": "Web and apps",
+          "d": "Design, WordPress, Shopify, custom builds, maintenance and mobile apps.",
+          "img": "web/build.jpg",
+          "alt": "Web and apps: illustrative scene"
+        },
+        {
+          "t": "Retention, CRO and leads",
+          "d": "Email and WhatsApp flows, conversion work and lead generation funnels.",
+          "img": "rt/journey.jpg",
+          "alt": "Retention, CRO and leads: illustrative scene"
+        },
+        {
+          "t": "AI, reporting and reputation",
+          "d": "AI services, dashboards, monthly reports and review management.",
+          "img": "orm/report.jpg",
+          "alt": "AI, reporting and reputation: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "as a white-label partner.",
+      "lede": "A partner that behaves like part of your team.",
+      "img": "about2/huddle.jpg",
+      "alt": "Why agencies choose MMC as a white-label partner. Illustrative scene.",
+      "items": [
+        {
+          "t": "Performance roots",
+          "d": "We are a performance and growth agency first, so the work is built around results you can report."
+        },
+        {
+          "t": "Strategist on every account",
+          "d": "A senior person scopes the work and stays reachable, not just a ticket queue."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a white-label engagement runs,",
+      "h2b": "step by step.",
+      "img": "company/session.jpg",
+      "alt": "How a white-label engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Sign the NDA and scope",
+          "d": "We sign an NDA, then agree the services you want, the scope per client and how you want to be reported to."
+        },
+        {
+          "t": "Set up your reporting",
+          "d": "We build the report format with your logo, colours and metrics, or feed numbers to your template."
+        },
+        {
+          "t": "Run a first client together",
+          "d": "We pick one client, onboard them behind you and agree check-in points."
+        },
+        {
+          "t": "Scale to more accounts",
+          "d": "Once the first account is steady, we add clients, services or a dedicated team."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White label for agencies",
+      "h2b": "that want to grow without hiring.",
+      "good": {
+        "t": "Your clients ask for services you do not offer, and hiring a team for each would be slow or risky.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and marketing teams."
+      },
+      "not": {
+        "t": "You want a partner that will approach your clients.",
+        "why": "We do not. That is the opposite of white label, and we will say so on the first call."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Start with the services",
+      "h2b": "agencies ask for most.",
+      "cards": [
+        {
+          "n": "White-label SEO",
+          "d": "Audits, fixes and reports behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/seo/",
+          "link": "See white-label SEO"
+        },
+        {
+          "n": "White-label PPC",
+          "d": "Google Ads managed behind your brand.",
+          "img": "google/search.jpg",
+          "href": "/white-label/ppc/",
+          "link": "See white-label PPC"
+        },
+        {
+          "n": "White-label web development",
+          "d": "Builds delivered under your name.",
+          "img": "web/build.jpg",
+          "href": "/white-label/web-development/",
+          "link": "See white-label web development"
+        },
+        {
+          "n": "White-label creative and video",
+          "d": "Design, video and UGC behind your brand.",
+          "img": "ugc/edit.jpg",
+          "href": "/white-label/creative-and-video/",
+          "link": "See white-label creative and video"
+        },
+        {
+          "n": "White-label AI services",
+          "d": "AI by MMC behind your brand.",
+          "img": "ugc/shoot.jpg",
+          "href": "/white-label/ai-services/",
+          "link": "See white-label AI services"
+        },
+        {
+          "n": "White-label reporting",
+          "d": "Reports and dashboards in your format.",
+          "img": "res/insights.jpg",
+          "href": "/white-label/reporting/",
+          "link": "See white-label reporting"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "white-label services."
+    ],
+    "faq": [
+      {
+        "q": "What is white-label digital marketing?",
+        "a": "It is when one company delivers marketing work and another sells it under its own brand. The agency owns the client; the white-label partner works behind it."
+      },
+      {
+        "q": "How does white-label work with MMC?",
+        "a": "We sign an NDA, agree scope, set up reporting in your format, run a first client together and scale from there. You stay the only point of contact for your client unless you ask otherwise."
+      },
+      {
+        "q": "Will you contact my clients?",
+        "a": "No. We do not approach your clients, and we sign an NDA covering client information. If you want us on a client call, you invite us as part of your team."
+      },
+      {
+        "q": "Can reports carry our branding?",
+        "a": "Yes. We can supply reports in your format and name, or send numbers for your own template. What the client sees is your decision."
+      },
+      {
+        "q": "Which services can you white label?",
+        "a": "Search, link building, GEO and AEO, ads, social, content, email and retention, CRO, lead generation, ecommerce, creative, web, apps, AI, reporting and ORM. The table on this page links to each."
+      },
+      {
+        "q": "Who is white label for?",
+        "a": "Digital agencies, web studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff."
+      },
+      {
+        "q": "How is pricing set up?",
+        "a": "Through a retainer, a project, a dedicated team, an hourly block or a reseller arrangement. We agree the model on a call and write the scope down. See the pricing models page."
+      },
+      {
+        "q": "Do you work with agencies outside India?",
+        "a": "Yes. Many overseas agencies work with Indian delivery partners. We explain how time zones, communication and reporting work on our India partner page."
+      }
+    ],
+    "cta": {
+      "h2a": "Add services",
+      "h2b": "without adding payroll.",
+      "lede": "On a call, with a senior strategist. We scope what you sell and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Brief",
+        "tag": "Handover",
+        "breaks": "The brief reaches us half-formed.",
+        "why": "Client goals, access and brand rules sit in your inbox and your head, so the first draft guesses.",
+        "does": "We send one intake form, hold a short handover call and write back what we understood before any work starts."
+      },
+      {
+        "k": "Deadline",
+        "tag": "Timing",
+        "breaks": "Work lands the night before the client call.",
+        "why": "The date you promised the client never reached the person doing the work.",
+        "does": "Each deliverable gets your client date and an earlier internal one, tracked on a shared board you can open."
+      },
+      {
+        "k": "Quality",
+        "tag": "Review",
+        "breaks": "Quality drifts when you are not looking.",
+        "why": "Different people, different weeks, and the client notices before you do.",
+        "does": "Every piece passes a checklist and a second reviewer before it reaches you, so you approve instead of repair."
+      },
+      {
+        "k": "Report",
+        "tag": "Reporting",
+        "breaks": "Reports show activity, not what it means.",
+        "why": "A wall of metrics gives you nothing to say on the call.",
+        "does": "We add a short note to each report: what moved, why, and what happens next, in your template and voice."
+      },
+      {
+        "k": "Margin",
+        "tag": "Scope",
+        "breaks": "Delivery quietly eats your margin.",
+        "why": "Scope creep, rework and unplanned calls turn a good retainer into a loss.",
+        "does": "Scope is written per client, extras are quoted back to you first, and your costs from us stay easy to predict."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways agency delivery",
+      "h2b": "goes wrong.",
+      "lede": "White label only pays when delivery is boring. Each stage below is where it stops being boring, and how we run it."
+    },
+    "process": {
+      "h2a": "How a white-label engagement",
+      "h2b": "starts, step by step.",
+      "note": "The stages show the order of onboarding, not a promise of timing. Your first client decides how long each stage takes.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "Sign the NDA and agree scope",
+          "d": "We sign an NDA before we see client details, then write down the services you want and the scope per client.",
+          "out": "A written scope you can reuse."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Run one pilot client",
+          "d": "We pick one client, onboard them behind you and set check-in points, with reporting built in your format.",
+          "out": "A pilot you can judge on the work."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Write the SOPs",
+          "d": "Briefs, approvals, file names, deadlines and report layout are written down so delivery does not rely on one person.",
+          "out": "A short operating guide for your account."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale to more accounts",
+          "d": "When the pilot is steady, we add clients and services on the same routine, with the same strategist.",
+          "out": "More services without more payroll."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

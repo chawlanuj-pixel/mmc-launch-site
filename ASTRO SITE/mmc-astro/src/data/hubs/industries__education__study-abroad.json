@@ -1,0 +1,520 @@
+{
+  "file": "study-abroad.html",
+  "path": "/industries/education/study-abroad/",
+  "key": "edusab",
+  "title": "Study Abroad Consultancy Marketing Agency India | MMC",
+  "description": "Marketing for study abroad consultancies in India. Country and course search, webinar and counselling funnels, CRM follow-up and honest claims.",
+  "ogTitle": "Study abroad marketing that books counselling sessions",
+  "ogDescription": "Marketing for study abroad brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: study abroad.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/education/study-abroad/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Education",
+          "item": "https://www.mondaymarketing.company/industries/education/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Study abroad",
+          "item": "https://www.mondaymarketing.company/industries/education/study-abroad/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/education/study-abroad/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/education/study-abroad/",
+      "name": "Study Abroad Consultancy Marketing Agency India | MMC",
+      "description": "Marketing for study abroad consultancies in India. Country and course search, webinar and counselling funnels, CRM follow-up and honest claims.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/education/study-abroad/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/education/study-abroad/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/education/study-abroad/#service",
+      "name": "Study abroad",
+      "serviceType": "Study abroad marketing",
+      "description": "Marketing for study abroad consultancies in India: country and course search, webinar and counselling funnels, CRM follow-up and honest claims.",
+      "url": "https://www.mondaymarketing.company/industries/education/study-abroad/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/education/study-abroad/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is study abroad marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The decision is long, large and shared with parents. Leads need qualifying by country, course and budget, and nurturing across months until the intake."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you promise visas or admissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We do not promise admissions, scholarships or visa outcomes in ads or content, and we advise against it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you qualify leads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With forms and scoring by country, course, budget, test status and intake, so counsellors speak first to the best fits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you run webinars and fairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We promote and follow up webinars and fairs and track attendance. Hosting stays with your team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you connect our CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We connect forms and ads to your CRM and report from enquiry to enrolment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee enrolments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "edusab",
+    "wm": "STUDY ABROAD",
+    "eyebrow": "● Study abroad",
+    "h1": [
+      "Study abroad marketing",
+      [
+        "that books ",
+        "counselling sessions",
+        "."
+      ]
+    ],
+    "sub": "Students and parents research countries, courses and intakes for months. We plan search, ads and follow-up around the counselling session.",
+    "tiles": [
+      {
+        "img": "edu/students.jpg",
+        "pos": "50% 50%",
+        "label": "Students",
+        "note": "Searching countries and courses"
+      },
+      {
+        "img": "edu/enquiry.jpg",
+        "pos": "50% 50%",
+        "label": "Enquiries",
+        "note": "Qualified by country and intake"
+      },
+      {
+        "img": "edu/followup.jpg",
+        "pos": "50% 50%",
+        "label": "Counselling",
+        "note": "Booked and attended"
+      },
+      {
+        "img": "edu/nurture.jpg",
+        "pos": "50% 50%",
+        "label": "Nurture",
+        "note": "Between enquiry and intake"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Study abroad marketing is the work of reaching students and parents who are comparing countries, courses and intakes, and getting them to a counselling session. It combines search by country and course, webinars and fairs, a qualifying enquiry form, fast counsellor follow-up and honest claims about admissions and visas.",
+      "hl": "countries, courses and intakes",
+      "who": "Monday Marketing Company (MMC) markets study abroad consultancies and education agents in India, connecting ads to a CRM so counsellors can follow every lead.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Country and course",
+          "text": "Search and ads by destination, course and intake."
+        },
+        {
+          "icon": "grid",
+          "title": "Counselling funnels",
+          "text": "Webinars and sessions that qualify before a counsellor calls."
+        },
+        {
+          "icon": "link",
+          "title": "Counsellor capacity",
+          "text": "Routing and scoring so time goes to the right leads."
+        }
+      ],
+      "image": "edu/students.jpg",
+      "chip": "Counselling booked, claims honest"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-students-decide",
+          "h": "How study abroad decisions are made",
+          "paras": [
+            "A student and parents compare countries, universities, costs, scholarships and visa routes over months. They search on phones, join webinars and ask agents, alumni and friends.",
+            "Timing follows application intakes and test dates, and trust matters because the decision is large."
+          ],
+          "img": "edu/nurture.jpg",
+          "cap": "Illustrative scene: a nurture series for an applicant."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "Consultancies often receive many unqualified enquiries, spread counsellor time thin, and lose students who need months of nurture. Some also face complaints about over-promising.",
+            "The fix is to qualify by country, course, budget and timeline, route to the right counsellor, nurture until the intake, and avoid promising admissions or visas. See the <a href=\"/industries/education/\">education marketing</a> overview and the <a href=\"/guides/\">guides</a>."
+          ],
+          "callout": {
+            "title": "Never promise an outcome.",
+            "text": "We do not promise admissions, scholarships or visas. Ads must not either."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where study abroad marketing leaks",
+      "h2a": "Five places study abroad",
+      "h2b": "leads are lost.",
+      "lede": "Each stage below is where a student is lost before or after counselling, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Be found by destination and course",
+        "tag": "Search and content",
+        "breaks": "Only advertising the consultancy name.",
+        "why": "Students search the country, course and cost, and compare consultants after.",
+        "does": "We build country, course and process pages and run search around them. See SEO.",
+        "href": "/services/seo/",
+        "img": "edu/search.jpg"
+      },
+      {
+        "k": "Qualify at the first touch",
+        "tag": "Forms and landing pages",
+        "breaks": "A generic enquiry form.",
+        "why": "Without country, course, budget and test status, counsellors waste time.",
+        "does": "We design short qualifying forms that ask what matters. See lead generation.",
+        "href": "/services/lead-generation/",
+        "img": "edu/enquiry.jpg"
+      },
+      {
+        "k": "Run webinars and fairs",
+        "tag": "Events and webinars",
+        "breaks": "Relying on cold calling.",
+        "why": "Sessions let students ask questions and show intent.",
+        "does": "We promote and follow up webinars and fairs, with attendance tracked.",
+        "href": "/services/lead-generation/",
+        "img": "edu/campus.jpg"
+      },
+      {
+        "k": "Follow up and nurture",
+        "tag": "CRM and WhatsApp",
+        "breaks": "Calling once and stopping.",
+        "why": "Decisions take months and interest rises and falls with intakes.",
+        "does": "We route leads, set reply timing and nurture by country and intake. See retention marketing.",
+        "href": "/services/retention-marketing/",
+        "img": "edu/nurture.jpg"
+      },
+      {
+        "k": "Keep claims honest",
+        "tag": "Trust and reviews",
+        "breaks": "Over-promising in ads.",
+        "why": "Over-promising invites complaints and platform action.",
+        "does": "We write honest ads and manage reviews. See reputation management.",
+        "href": "/services/online-reputation-management/",
+        "img": "edu/orm.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "study abroad marketing is working.",
+      "note": "Enquiry volume alone is not on the list.",
+      "cards": [
+        {
+          "n": "Cost per qualified enquiry",
+          "d": "What it costs to reach a real, suitable student."
+        },
+        {
+          "n": "Counselling booked and attended",
+          "d": "How many enquiries become sessions."
+        },
+        {
+          "n": "Counselling to application",
+          "d": "How many sessions lead to applications."
+        },
+        {
+          "n": "Source of enrolments",
+          "d": "Which channels produced students."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where study abroad marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Education marketing",
+          "d": "The overview for colleges and institutes.",
+          "img": "shared/education.jpg",
+          "href": "/industries/education/",
+          "link": "See Education marketing"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and CRM follow-up.",
+          "img": "b2b/qualify.jpg",
+          "href": "/services/lead-generation/",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "WhatsApp and email nurture between enquiry and intake.",
+          "img": "d2c/retention.jpg",
+          "href": "/services/retention-marketing/",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Colleges",
+          "d": "Search, paid media and follow-up for families comparing colleges.",
+          "img": "edu/campus.jpg",
+          "href": "/industries/education/colleges/",
+          "link": "See Colleges marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Study abroad marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is study abroad marketing different?",
+        "a": "The decision is long, large and shared with parents. Leads need qualifying by country, course and budget, and nurturing across months until the intake."
+      },
+      {
+        "q": "Do you promise visas or admissions?",
+        "a": "No. We do not promise admissions, scholarships or visa outcomes in ads or content, and we advise against it."
+      },
+      {
+        "q": "How do you qualify leads?",
+        "a": "With forms and scoring by country, course, budget, test status and intake, so counsellors speak first to the best fits."
+      },
+      {
+        "q": "Do you run webinars and fairs?",
+        "a": "We promote and follow up webinars and fairs and track attendance. Hosting stays with your team."
+      },
+      {
+        "q": "Can you connect our CRM?",
+        "a": "Yes. We connect forms and ads to your CRM and report from enquiry to enrolment."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee enrolments?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Book more of the",
+      "h2b": "right counselling sessions.",
+      "lede": "On a call, with a senior strategist. We review your funnel and show where leads and counsellor time are wasted."
+    },
+    "process": {
+      "h2a": "How we start with a consultancy,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit leads and follow-up",
+          "d": "We review ads, forms, CRM and counsellor workflow, and agree a qualified-lead definition.",
+          "out": "A funnel map."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build search and capture",
+          "d": "Country and course pages, qualifying forms and routing go live.",
+          "out": "A funnel that qualifies."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Run, nurture and track",
+          "d": "Campaigns and nurture series start and counselling is tracked to enrolment.",
+          "out": "Reporting by source."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Study abroad marketing for consultancies that",
+      "h2b": "qualify before they call.",
+      "good": {
+        "t": "You advise students on studying abroad in India and want better-fit leads and booked sessions.",
+        "why": "We plan around country, course, intake and honest claims."
+      },
+      "not": {
+        "t": "You want to promise visas or admissions.",
+        "why": "Platforms and ethics both say no, and we would not run it."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "study abroad consultancies.",
+      "lede": "Search, qualifying forms, events and nurture for study abroad.",
+      "items": [
+        {
+          "t": "Country and course search",
+          "d": "Pages and campaigns by destination, course and intake.",
+          "img": "edu/search.jpg",
+          "alt": "Country and course search: illustrative scene"
+        },
+        {
+          "t": "Qualifying forms",
+          "d": "Short forms that sort leads by fit.",
+          "img": "edu/enquiry.jpg",
+          "alt": "Qualifying forms: illustrative scene"
+        },
+        {
+          "t": "Webinar and fair promotion",
+          "d": "Campaigns and follow-up for sessions.",
+          "img": "edu/campus.jpg",
+          "alt": "Webinar and fair promotion: illustrative scene"
+        },
+        {
+          "t": "CRM and routing",
+          "d": "Leads sent to the right counsellor at the right time.",
+          "img": "edu/crm.jpg",
+          "alt": "CRM and routing: illustrative scene"
+        },
+        {
+          "t": "Nurture series",
+          "d": "WhatsApp and email between enquiry and intake.",
+          "img": "edu/nurture.jpg",
+          "alt": "Nurture series: illustrative scene"
+        },
+        {
+          "t": "Reviews and trust",
+          "d": "Honest reviews and profiles students read.",
+          "img": "edu/orm.jpg",
+          "alt": "Reviews and trust: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why study abroad consultancies choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We protect counsellor time and your name.",
+      "img": "edu/students.jpg",
+      "alt": "Why study abroad consultancies choose MMC for marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Qualified first",
+          "d": "Forms and scoring send counsellors to the best fits."
+        },
+        {
+          "t": "Intake-aware nurture",
+          "d": "Series follow country and intake calendars."
+        },
+        {
+          "t": "Honest claims",
+          "d": "No promised visas or admissions."
+        },
+        {
+          "t": "Tracked to enrolment",
+          "d": "Source recorded from enquiry to enrolment."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a study abroad engagement runs,",
+      "h2b": "step by step.",
+      "img": "edu/nurture.jpg",
+      "alt": "How a study abroad engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit the funnel",
+          "d": "Ads, forms, CRM and counsellor workflow are reviewed."
+        },
+        {
+          "t": "Define a qualified lead",
+          "d": "Country, course, budget and timeline rules are agreed."
+        },
+        {
+          "t": "Build and launch",
+          "d": "Pages, forms and campaigns go live."
+        },
+        {
+          "t": "Nurture and track",
+          "d": "Series run to the intake and enrolment is traced to source."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

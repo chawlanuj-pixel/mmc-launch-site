@@ -1,0 +1,18 @@
+---
+// VISUAL: FeedGrid (kind "FeedGrid"). A social feed grid in five columns: the left columns look unplanned, the right columns look like one brand. Social leak view.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Reads X.zoneLabels (optional) only.
+// Styles are scoped to this file (prefix fg).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const mess = ["#FFC528", "#9DB8F7", "#F2B8B5", "#C7E3C0", "#E4E6EA", "#1D4ED8", "#FBFAF6", "#8A91A6", "#FFC528", "#C7E3C0", "#9DB8F7", "#E4E6EA", "#F2B8B5", "#1D4ED8", "#FBFAF6"];
+---
+<div class="fg__row" aria-hidden="true"></div>
+<div class="fg__art" role="img" aria-label="A grid of social posts. The first columns look unplanned and the last columns look like one brand.">
+  {mess.map((c, i) => { const col = i % 5; const on = col >= 3; const bg = on ? (i % 2 ? "#0F1E5E" : "#FFC528") : c; return <span class={"fg__t" + (on ? " is-on" : "")} style={`background:${bg}`}><i></i></span>; })}
+</div>
+<style is:global>
+.fg__row { height: 78px; }
+.fg__art { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2%; }
+.fg__t { display: block; aspect-ratio: 1.15; border-radius: 12px; padding: 12%; border: 1px solid var(--s2-line); } .fg__t i { display: block; height: 14%; width: 56%; border-radius: 99px; background: rgba(255, 255, 255, .7); } .fg__t.is-on i { background: #fff; }
+@media (max-width: 760px) { .fg__row { height: 58px; } .fg__art { gap: 3px; } .fg__t { border-radius: 8px; } }
+</style>

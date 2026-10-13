@@ -1,0 +1,519 @@
+{
+  "file": "wordpress-development.html",
+  "path": "/services/web-development/wordpress/",
+  "key": "wordpress",
+  "title": "WordPress Development Services India | MMC",
+  "description": "Custom WordPress themes, WooCommerce stores, speed work, migrations and plugin development for brands in India. Built to be edited by your team.",
+  "ogTitle": "WordPress built for your team to edit",
+  "ogDescription": "Custom themes, WooCommerce, speed and migrations.",
+  "ogAlt": "Monday Marketing Company: wordpress development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/web-development/wordpress/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Web development",
+          "item": "https://www.mondaymarketing.company/services/web-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "WordPress development",
+          "item": "https://www.mondaymarketing.company/services/web-development/wordpress/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/web-development/wordpress/#webpage",
+      "url": "https://www.mondaymarketing.company/services/web-development/wordpress/",
+      "name": "WordPress Development Services India | MMC",
+      "description": "Custom WordPress themes, WooCommerce stores, speed work, migrations and plugin development for brands in India. Built to be edited by your team.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/web-development/wordpress/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/web-development/wordpress/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/web-development/wordpress/#service",
+      "name": "WordPress development",
+      "serviceType": "WordPress development",
+      "description": "Custom WordPress themes, WooCommerce stores, speed optimisation, migrations and plugin development.",
+      "url": "https://www.mondaymarketing.company/services/web-development/wordpress/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/web-development/wordpress/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does WordPress development include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Planning, a custom theme, plugin selection or development, forms and tracking, speed work, security setup, migration and a handover guide. Scope is agreed in writing before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you use ready-made themes or build custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We build custom themes to your design. We may use a lightweight starter framework underneath, but the design, templates and blocks are made for your brand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you build a WooCommerce store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We set up the catalogue, cart, checkout, payments, shipping and tax settings. If your catalogue is large or complex we will tell you if Shopify would serve you better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you speed up my existing WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We audit images, scripts, plugins, caching and hosting, then fix what is slowing pages down. We report what changed and what the site now loads like."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you migrate my site to WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From other builders, older CMSs or another host, yes. We map URLs, set redirects and check the pages after the move so search visibility is protected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who maintains the site after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can maintain it in-house with our editing guide, or we can run it under a monthly plan. See our website maintenance page for what that covers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a WordPress site cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on pages, features and integrations. We scope it on a call and write the scope down, so you can compare it with other quotes."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wordpress",
+    "wm": "WordPress development",
+    "eyebrow": "● WordPress development",
+    "h1": [
+      "WordPress",
+      [
+        "that your team ",
+        "can actually edit",
+        "."
+      ]
+    ],
+    "sub": "Custom themes, WooCommerce stores, speed fixes, migrations and plugins. Built so your marketers publish without calling a developer.",
+    "tiles": [
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Theme",
+        "note": "Built to your design"
+      },
+      {
+        "img": "web/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Lean code and caching"
+      },
+      {
+        "img": "web/seo.jpg",
+        "pos": "50% 50%",
+        "label": "Search",
+        "note": "Structure that ranks"
+      },
+      {
+        "img": "web/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Forms and CRM",
+        "note": "Leads reach your team"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "WordPress development is the work of building and extending a site on WordPress: a custom theme, the right plugins, WooCommerce if you sell online, and the speed and security setup behind them. Done well, your team edits pages freely and the site stays fast.",
+      "hl": "a custom theme, the right plugins",
+      "who": "Monday Marketing Company (MMC) builds WordPress sites for B2B, education and D2C brands, and hands them over with a clear editing guide.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Custom themes",
+          "text": "Designed to your brand, not bought and patched."
+        },
+        {
+          "icon": "bag",
+          "title": "WooCommerce",
+          "text": "Catalogue, cart and checkout on WordPress."
+        },
+        {
+          "icon": "gauge",
+          "title": "Speed and security",
+          "text": "Lean code, caching and hardening from day one."
+        }
+      ],
+      "image": "web/build.jpg",
+      "chip": "Built on WordPress, edited by your team"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "wordpress-scope",
+          "h": "What a WordPress project covers",
+          "paras": [
+            "A WordPress site is more than a theme. It is the theme, the plugins, the hosting, the editing experience and the update routine. We plan all five before we write code, so the site is easy to run after launch.",
+            "For stores we build on WooCommerce when the catalogue and checkout are simple enough to live on WordPress, and recommend <a href=\"/services/shopify-development/\">Shopify</a> when they are not. You get a straight recommendation, not whichever platform we prefer."
+          ],
+          "img": "web/plan.jpg",
+          "cap": "Illustrative scene: a WordPress build planned page by page."
+        },
+        {
+          "id": "wordpress-vs",
+          "h": "WordPress compared with the other options",
+          "paras": [
+            "Pick the platform for the job. This is how we frame the choice in the first call."
+          ],
+          "table": {
+            "caption": "WordPress compared with Shopify and a custom build",
+            "head": [
+              "",
+              "WordPress",
+              "Shopify",
+              "Custom build"
+            ],
+            "rows": [
+              [
+                "Best for",
+                "Content-led and lead-gen sites, simple stores",
+                "Catalogue-led D2C stores",
+                "Unusual products or complex logic"
+              ],
+              [
+                "Editing",
+                "Familiar editor for your team",
+                "Store admin for products",
+                "Needs a developer for changes"
+              ],
+              [
+                "Upkeep",
+                "Updates, backups and security needed",
+                "Handled by the platform",
+                "Fully your responsibility"
+              ],
+              [
+                "Read next",
+                "This page",
+                "<a href=\"/services/shopify-development/\">Shopify development</a>",
+                "<a href=\"/services/web-development/\">Web development</a>"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Keep it healthy after launch.",
+            "text": "A WordPress site needs regular updates and backups. See <a href=\"/services/website-maintenance/\">website maintenance</a> for the retainer, or <a href=\"/white-label/wordpress-development/\">white-label WordPress development</a> if you are an agency."
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we build on",
+      "h2b": "WordPress.",
+      "lede": "From theme to plugin, for sites that need to be edited often.",
+      "items": [
+        {
+          "t": "Custom theme development",
+          "d": "A theme built from your design, with reusable blocks your team can arrange.",
+          "img": "web/build.jpg",
+          "alt": "Custom theme development: illustrative scene"
+        },
+        {
+          "t": "WooCommerce stores",
+          "d": "Product pages, cart, checkout, payments and shipping set up for India.",
+          "img": "shop/checkout.jpg",
+          "alt": "WooCommerce stores: illustrative scene"
+        },
+        {
+          "t": "Speed optimisation",
+          "d": "Image handling, caching, script clean-up and hosting advice for faster pages.",
+          "img": "web/speed.jpg",
+          "alt": "Speed optimisation: illustrative scene"
+        },
+        {
+          "t": "Migrations",
+          "d": "Move a site from another platform, host or builder without losing pages or rankings.",
+          "img": "web/plan.jpg",
+          "alt": "Migrations: illustrative scene"
+        },
+        {
+          "t": "Plugin development",
+          "d": "Custom plugins and integrations when an off-the-shelf one is not enough.",
+          "img": "shop/integrate.jpg",
+          "alt": "Plugin development: illustrative scene"
+        },
+        {
+          "t": "Forms, CRM and tracking",
+          "d": "Lead forms wired into your CRM, with analytics and ad tracking installed correctly.",
+          "img": "web/crm.jpg",
+          "alt": "Forms, CRM and tracking: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for WordPress.",
+      "lede": " A WordPress site is only as good as the hands that keep it.",
+      "img": "web/seo.jpg",
+      "alt": "Why brands choose MMC for WordPress. Illustrative scene.",
+      "items": [
+        {
+          "t": "Built to be edited",
+          "d": "Page-builder blocks and clear fields, so changes do not need a developer."
+        },
+        {
+          "t": "Search-ready",
+          "d": "Clean headings, fast pages and schema from the start. We also run <a href=\"/services/seo/\">SEO</a>."
+        },
+        {
+          "t": "One accountable team",
+          "d": "Design, development and ongoing care sit under one roof."
+        },
+        {
+          "t": "Honest platform advice",
+          "d": "If WordPress is the wrong fit, we say so before you spend."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a WordPress project runs,",
+      "h2b": "step by step.",
+      "img": "web/build.jpg",
+      "alt": "How a WordPress project runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Plan the site",
+          "d": "We map pages, templates, editing needs and integrations, then agree the scope in writing."
+        },
+        {
+          "t": "Design and build",
+          "d": "Approved designs become a custom theme, with plugins kept to the few that earn their place."
+        },
+        {
+          "t": "Test and launch",
+          "d": "We test speed, forms, tracking and mobile before the switch, then migrate and redirect carefully."
+        },
+        {
+          "t": "Hand over and support",
+          "d": "Your team gets an editing guide, and we can stay on under <a href=\"/services/website-maintenance/\">website maintenance</a>."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "WordPress for teams that",
+      "h2b": "publish often.",
+      "good": {
+        "t": "You update pages, add landing pages or run a content library, and want to do it yourselves.",
+        "why": "WordPress suits B2B firms, colleges, publishers and D2C brands with a content side."
+      },
+      "not": {
+        "t": "You need a heavy catalogue with complex variants and bundles.",
+        "why": "That usually fits Shopify better, and we will say so in the first call."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where WordPress development fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Web development",
+          "d": "Websites built for search, speed and leads.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/",
+          "link": "See Web development"
+        },
+        {
+          "n": "Website maintenance",
+          "d": "Updates, backups, security and a monthly report.",
+          "img": "web/speed.jpg",
+          "href": "/services/website-maintenance/",
+          "link": "See website maintenance"
+        },
+        {
+          "n": "White-label WordPress",
+          "d": "WordPress builds behind your brand.",
+          "img": "web/build.jpg",
+          "href": "/white-label/wordpress-development/",
+          "link": "See white-label WordPress development"
+        },
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing and checkout.",
+          "img": "shop/design.jpg",
+          "href": "/services/shopify-development/",
+          "link": "See Shopify development"
+        },
+        {
+          "n": "SEO",
+          "d": "Technical health, search intent and answer-engine visibility.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "WooCommerce development",
+          "d": "Stores on WordPress: catalogue, checkout, shipping and speed.",
+          "img": "d2c/checkout.jpg",
+          "href": "/services/web-development/woocommerce/",
+          "link": "See WooCommerce development"
+        },
+        {
+          "n": "Conversion rate optimisation",
+          "d": "Find where visitors leave and test the fix.",
+          "img": "cro/forms.jpg",
+          "href": "/services/cro/",
+          "link": "See Conversion rate optimisation"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "WordPress development."
+    ],
+    "faq": [
+      {
+        "q": "What does WordPress development include?",
+        "a": "Planning, a custom theme, plugin selection or development, forms and tracking, speed work, security setup, migration and a handover guide. Scope is agreed in writing before work starts."
+      },
+      {
+        "q": "Do you use ready-made themes or build custom?",
+        "a": "We build custom themes to your design. We may use a lightweight starter framework underneath, but the design, templates and blocks are made for your brand."
+      },
+      {
+        "q": "Can you build a WooCommerce store?",
+        "a": "Yes. We set up the catalogue, cart, checkout, payments, shipping and tax settings. If your catalogue is large or complex we will tell you if Shopify would serve you better."
+      },
+      {
+        "q": "Can you speed up my existing WordPress site?",
+        "a": "Yes. We audit images, scripts, plugins, caching and hosting, then fix what is slowing pages down. We report what changed and what the site now loads like."
+      },
+      {
+        "q": "Can you migrate my site to WordPress?",
+        "a": "From other builders, older CMSs or another host, yes. We map URLs, set redirects and check the pages after the move so search visibility is protected."
+      },
+      {
+        "q": "Who maintains the site after launch?",
+        "a": "You can maintain it in-house with our editing guide, or we can run it under a monthly plan. See our website maintenance page for what that covers."
+      },
+      {
+        "q": "What does a WordPress site cost?",
+        "a": "It depends on pages, features and integrations. We scope it on a call and write the scope down, so you can compare it with other quotes."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan your WordPress site",
+      "h2b": "with people who edit it.",
+      "lede": "On a call, with a senior strategist. We review your site or brief and say which platform fits."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client site.",
+      "style": "stack",
+      "eyebrow": "Where WordPress builds go wrong",
+      "h2a": "Four ways a WordPress build",
+      "h2b": "goes wrong.",
+      "lede": "A WordPress site is only as good as the hands that keep it. Each stage below is where builds go wrong, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Plan the templates",
+        "tag": "Site planning",
+        "breaks": "Building pages one by one with no template plan.",
+        "why": "Without planned templates, every new page becomes custom work and the site drifts.",
+        "does": "We map pages, templates, editing needs and integrations, then agree the scope in writing."
+      },
+      {
+        "k": "Build a lean theme",
+        "tag": "Theme and plugins",
+        "breaks": "A bought theme patched with plugins.",
+        "why": "Every extra plugin adds weight, update work and risk.",
+        "does": "Approved designs become a custom theme, with plugins kept to the few that earn their place."
+      },
+      {
+        "k": "Test speed and forms",
+        "tag": "Speed and launch",
+        "breaks": "Going live without testing speed, forms and tracking.",
+        "why": "Slow pages and silent forms lose enquiries before anyone notices.",
+        "does": "We test speed, forms, tracking and mobile before the switch, then migrate and redirect carefully."
+      },
+      {
+        "k": "Hand over cleanly",
+        "tag": "Handover",
+        "breaks": "A site only the builder can edit.",
+        "why": "If every change needs a developer, pages go stale.",
+        "does": "Your team gets an editing guide, and we can stay on under website maintenance."
+      }
+    ],
+    "process": {
+      "note": "Timing depends on scope. We agree it with you before work starts."
+    }
+  },
+  "updated": "2026-10-09"
+}

@@ -127,7 +127,7 @@ function CacRunway() {
                            min={50} max={4000} step={25} fmt={(v) => inr(v)} />
                       <Ctl label="CAC falls per month" value={s.improve} onChange={(v) => set("improve", v)}
                            min={0} max={20} step={0.5} fmt={(v) => pct(v, 1)}
-                           hint="Creative, targeting and scale learning. 4–8% is typical." />
+                           hint="Creative, targeting and scale learning. 4 to 8% is typical." />
                       <Ctl label="Realistic CAC floor" value={s.floor} onChange={(v) => set("floor", v)}
                            min={50} max={3000} step={10} fmt={(v) => inr(v)} />
                       <Ctl label="Cash available" value={s.cash} onChange={(v) => set("cash", v)}

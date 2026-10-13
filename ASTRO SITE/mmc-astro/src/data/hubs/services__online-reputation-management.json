@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Online reputation management is the work of making sure the ratings, reviews and profiles people find about you are accurate, current and a fair picture of your business.",
+      "lead": "Online reputation management is the work of making sure the ratings, reviews and profiles people find about you are accurate, current and a fair picture of your business. MMC does this for education, B2B and D2C brands: it audits what people see, asks real customers for honest reviews, replies to every review and reports what changes.",
       "hl": "accurate, current",
       "who": "Monday Marketing Company (MMC) manages reputation for education brands, B2B companies and D2C brands, with a focus on genuine reviews and honest replies.",
       "points": [
@@ -294,6 +294,27 @@
           "img": "brand/logo.jpg",
           "href": "branding.html",
           "link": "See Branding"
+        },
+        {
+          "n": "White-label ORM",
+          "d": "Reviews and replies behind your brand.",
+          "img": "orm/reply.jpg",
+          "href": "/white-label/orm/",
+          "link": "See white-label ORM"
+        },
+        {
+          "n": "Locations",
+          "d": "Thane, Mumbai and Indore, and what a business in each city faces.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See locations"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "Profiles, reviews and local pages.",
+          "img": "orm/profile.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile optimisation"
         }
       ]
     },
@@ -372,6 +393,77 @@
         "t": "You want bad reviews removed or good ones bought.",
         "why": "We never create or buy reviews, and genuine reviews stay."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What reputation work",
+      "h2b": "includes.",
+      "lede": "Six routines that make what people find about you accurate and trustworthy.",
+      "items": [
+        {
+          "t": "Reputation audit",
+          "d": "A look at reviews, search results and listings the way a new customer or family sees them.",
+          "img": "orm/audit.jpg",
+          "alt": "Reputation audit: illustrative scene"
+        },
+        {
+          "t": "Earning real reviews",
+          "d": "Simple, honest ways to ask happy customers, parents and clients to share their experience.",
+          "img": "orm/earn.jpg",
+          "alt": "Earning real reviews: illustrative scene"
+        },
+        {
+          "t": "Review replies",
+          "d": "Timely, polite and specific replies to positive and negative reviews alike.",
+          "img": "orm/reply.jpg",
+          "alt": "Review replies: illustrative scene"
+        },
+        {
+          "t": "Profile accuracy",
+          "d": "Business profiles and listings kept correct, complete and consistent.",
+          "img": "orm/profile.jpg",
+          "alt": "Profile accuracy: illustrative scene"
+        },
+        {
+          "t": "Search results care",
+          "d": "Helpful content that deserves to appear when your name is searched.",
+          "img": "orm/report.jpg",
+          "alt": "Search results care: illustrative scene"
+        },
+        {
+          "t": "Monitoring and reports",
+          "d": "Regular reports on new reviews, themes and issues that need action.",
+          "img": "edu/orm.jpg",
+          "alt": "Monitoring and reports: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands manage reputation",
+      "h2b": "with MMC.",
+      "lede": "Trust decides many purchases and admissions before anyone speaks to you.",
+      "img": "orm/reply.jpg",
+      "alt": "Why brands manage reputation with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Honest methods only",
+          "d": "We help you earn real reviews and never fake them."
+        },
+        {
+          "t": "Fast response routines",
+          "d": "Replies and escalations follow a clear process, so problems are seen early."
+        },
+        {
+          "t": "Linked to SEO",
+          "d": "Reputation work supports local and brand search at the same time."
+        },
+        {
+          "t": "Built for each audience",
+          "d": "D2C brands, B2B firms and schools or colleges face different review worlds."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

@@ -842,3 +842,6 @@
     transition-duration: 1ms; transition-delay: 0ms;
   }
 }
+
+/* Phones: eyebrow labels never under 12px. */
+@media (max-width: 760px) { .n-eyebrow { font-size: 12px; } }

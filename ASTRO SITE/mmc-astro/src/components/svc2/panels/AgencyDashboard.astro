@@ -1,0 +1,70 @@
+---
+// PANEL: AgencyDashboard (kind "AgencyDashboard"). White-label reporting: a dashboard under an agency's own brand. No platform mark (a dashed
+// "Your logo" placeholder stands in for the agency's logo; never a real brand). 4 steps.
+//   1 Client view: the dashboard the client sees, with the agency's logo slot, accent colour, three KPI tiles and a trend chart. Tab: Dashboard.
+//   2 Agency view: the same dashboard with an internal panel (notes, margin, task list) marked "Client does not see this". Tab: Dashboard.
+//   3 Split: two columns, "Client sees" and "Agency sees", listing what appears on each side. Tab: Access.
+//   4 Delivery: a monthly report email sent from the agency's domain with the report attached and the agency's logo. Tab: Reports.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix ag-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const kpis = [["Revenue", "M4 40 L20 34 L36 36 L52 24 L68 26 L84 12"], ["Qualified leads", "M4 36 L20 38 L36 28 L52 30 L68 18 L84 16"], ["Return on spend", "M4 30 L20 32 L36 22 L52 24 L68 14 L84 10"]];
+---
+<Frame title="Your Agency - Client dashboard" label="Illustration of a white-label client dashboard under an agency's own brand. Not a client account." caption={W.illustrative} tabs={["Dashboard", "Access", "Reports"]} tabFor={[0, 0, 1, 2]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1 s2-st--2 ag">
+    <div class="ag-dash">
+      <div class="ag-hd"><span class="ag-logo">Your logo</span><b>Monthly overview</b><em class="s2p-chip s2p-chip--blue s2p-only-1" style="--show:inline-flex">Client view</em><em class="s2p-chip s2p-chip--warn s2p-only-2" style="--show:inline-flex">Agency view</em></div>
+      <ul class="ag-kpi">{kpis.map(([n, d]) => <li class="s2p-card"><small>{n}</small><svg viewBox="0 0 88 46" aria-hidden="true"><path d={d as string} /></svg></li>)}</ul>
+      <svg class="ag-chart" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path class="a" d="M0 60 C 40 56, 70 50, 100 46 S 160 40, 190 30 S 250 20, 300 12" /><path class="b" d="M0 66 C 50 62, 90 62, 130 56 S 200 50, 300 40" /></svg>
+    </div>
+    <aside class="ag-int s2p-only-2" style="--show:grid">
+      <p class="s2p-lbl">Agency only</p>
+      <div class="s2p-card"><b>Internal notes</b><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i></div>
+      <div class="s2p-card"><b>Our margin</b><i class="s2p-line s2p-line--s"></i></div>
+      <div class="s2p-card"><b>Task list</b><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i></div>
+      <em class="s2p-chip s2p-chip--warn">Client does not see this</em>
+    </aside>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Two views, one source <span>Same data, different access</span></p>
+    <div class="ag-split">
+      <div class="s2p-card"><p class="s2p-lbl">Client sees</p><ul><li>Your logo and colours</li><li>Results and trends</li><li>Reports on schedule</li></ul></div>
+      <div class="s2p-card ag-a"><p class="s2p-lbl">Agency sees</p><ul><li>Everything the client sees</li><li>Notes and task list</li><li>Margin and cost</li></ul></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Delivery <span>Sent under your name</span></p>
+    <div class="s2p-card ag-mail">
+      <div class="ag-mail__hd"><span class="ag-logo">Your logo</span><span><b>reports@youragency.example</b><small class="s2p-mute">To: your client</small></span><em class="s2p-chip s2p-chip--blue">Monthly</em></div>
+      <i class="s2p-line s2p-line--m"></i><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i>
+      <span class="ag-file"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2h7l4 4v12H5z M12 2v4h4" /></svg>Monthly report.pdf</span>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.ag { flex-direction: row; gap: 1em; }
+.ag-dash { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: .8em; }
+.ag-hd { display: flex; align-items: center; gap: .8em; } .ag-hd b { font: 800 1.05em var(--font-display); color: #1C2B33; } .ag-hd .s2p-chip { margin-left: auto; } .ag-hd .s2p-chip + .s2p-chip { margin-left: 0; }
+.ag-logo { display: inline-grid; place-items: center; min-width: 5.6em; height: 2.4em; padding: 0 .6em; border: 1.5px dashed #8AA2E6; border-radius: .5em; color: var(--mmc-blue); font: 800 .72em var(--font-body); text-transform: uppercase; letter-spacing: .06em; flex: none; }
+.ag-kpi { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6em; }
+.ag-kpi li { display: grid; gap: .4em; padding: .6em .8em; }
+.ag-kpi small { font: 800 .8em var(--font-body); color: #65676B; }
+.ag-kpi svg { width: 100%; height: 2.6em; fill: none; stroke: var(--mmc-blue); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.ag-chart { flex: 1; min-height: 3em; width: 100%; border: 1px solid #DADDE1; border-radius: .8em; padding: .5em; fill: none; stroke-width: 3; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.ag-chart .a { stroke: var(--mmc-blue); } .ag-chart .b { stroke: var(--mmc-yellow); }
+.ag-chart path { vector-effect: non-scaling-stroke; }
+.ag-int { flex: 0 0 34%; gap: .6em; align-content: start; padding: .8em; border-radius: .9em; background: #FFF9E8; border: 1px dashed #E8A100; }
+.ag-int .s2p-card { display: grid; gap: .4em; padding: .5em .7em; } .ag-int b { font: 800 .9em var(--font-body); }
+.ag-int .s2p-chip { justify-self: start; }
+.ag-split { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-content: center; }
+.ag-split .s2p-card { padding: 1em; display: grid; gap: .6em; align-content: start; }
+.ag-split ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .6em; font: 700 .95em var(--font-body); color: #1C2B33; }
+.ag-split li::before { content: ""; display: inline-block; width: .5em; height: .5em; border-radius: 50%; background: var(--mmc-blue); margin-right: .6em; }
+.ag-a { background: #FFF9E8; border-color: #E8A100; } .ag-a li::before { background: #E8A100; }
+.ag-mail { flex: 1; display: grid; gap: .7em; align-content: center; padding: 1.1em; }
+.ag-mail__hd { display: flex; align-items: center; gap: .8em; } .ag-mail__hd > span:nth-child(2) { display: grid; min-width: 0; } .ag-mail__hd b { font: 800 .95em var(--font-body); overflow-wrap: anywhere; } .ag-mail__hd em { margin-left: auto; }
+.ag-file { display: inline-flex; align-items: center; gap: .6em; justify-self: start; padding: .6em .9em; border: 1px solid #DADDE1; border-radius: .7em; font: 800 .88em var(--font-body); }
+.ag-file svg { width: 1.3em; fill: none; stroke: var(--mmc-blue); stroke-width: 1.6; stroke-linejoin: round; }
+@media (max-width: 560px) { .s2-st.ag { flex-direction: column; } .ag-int { flex-basis: auto; grid-template-columns: 1fr 1fr; } .ag-int > .s2p-lbl, .ag-int > .s2p-chip { grid-column: 1 / -1; } .ag-int .s2p-line:nth-of-type(2) { display: none; } .ag-split { grid-template-columns: 1fr; } .ag-split .s2p-card { padding: .6em .8em; } }
+</style>

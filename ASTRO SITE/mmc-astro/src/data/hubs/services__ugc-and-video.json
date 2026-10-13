@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "UGC and video production is the work of making creator-style content that is built to run as paid ads, then testing which versions hold attention.",
+      "lead": "UGC and video production is the work of making creator-style content that is built to run as paid ads, then testing which versions hold attention. MMC produces UGC, video and creative for D2C brands, and creative for B2B and education campaigns, directing creators against one brand idea and refreshing versions before they tire.",
       "hl": "built to run as paid ads",
       "who": "Monday Marketing Company (MMC) produces UGC, video and creative for D2C brands, and creative for B2B and education campaigns.",
       "points": [
@@ -293,6 +293,13 @@
           "img": "inf/shortlist.jpg",
           "href": "influencer-marketing.html",
           "link": "See Influencer marketing"
+        },
+        {
+          "n": "White-label creative and video",
+          "d": "Design, video and UGC behind your brand.",
+          "img": "ugc/edit.jpg",
+          "href": "/white-label/creative-and-video/",
+          "link": "See white-label creative and video"
         }
       ]
     },
@@ -373,6 +380,77 @@
         "t": "You want one big film, or creative with no media plan.",
         "why": "Creative earns its place by being tested in ads, so it needs a media plan."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What UGC and video",
+      "h2b": "covers.",
+      "lede": "Six steps from a single idea to ads that hold attention.",
+      "items": [
+        {
+          "t": "One-idea brief",
+          "d": "A short brief built on one message, so every video points the same way.",
+          "img": "ugc/brief.jpg",
+          "alt": "One-idea brief: illustrative scene"
+        },
+        {
+          "t": "Real creators",
+          "d": "People who look and speak like your buyers, not stock actors.",
+          "img": "ugc/shoot.jpg",
+          "alt": "Real creators: illustrative scene"
+        },
+        {
+          "t": "Platform edits",
+          "d": "Cuts, captions and hooks edited for the platform and placement.",
+          "img": "ugc/edit.jpg",
+          "alt": "Platform edits: illustrative scene"
+        },
+        {
+          "t": "Hook and format tests",
+          "d": "Variations tested to learn which opening and format hold attention.",
+          "img": "ugc/test.jpg",
+          "alt": "Hook and format tests: illustrative scene"
+        },
+        {
+          "t": "Product and explainer video",
+          "d": "Clear demos and explainers that answer buying questions.",
+          "img": "ugc/refresh.jpg",
+          "alt": "Product and explainer video: illustrative scene"
+        },
+        {
+          "t": "Refresh plan",
+          "d": "New versions scheduled before an ad wears out.",
+          "img": "services/creative.jpg",
+          "alt": "Refresh plan: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands make video",
+      "h2b": "with MMC.",
+      "lede": "We make video that the media team can test and learn from.",
+      "img": "ugc/edit.jpg",
+      "alt": "Why brands make video with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Made for the ad account",
+          "d": "Creative is planned with the person who will run it."
+        },
+        {
+          "t": "Authentic, within the rules",
+          "d": "Real people, clear disclosure and proper usage rights."
+        },
+        {
+          "t": "Testing built in",
+          "d": "Every batch is designed to show what to make next."
+        },
+        {
+          "t": "Works for any audience",
+          "d": "Product videos for D2C, explainers for B2B and campus stories for education."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

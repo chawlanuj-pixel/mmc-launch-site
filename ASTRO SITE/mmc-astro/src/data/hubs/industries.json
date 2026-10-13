@@ -142,7 +142,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Industry-specific marketing is the work of adapting strategy, channels and measures to how a particular kind of business actually wins customers.",
+      "lead": "Industry-specific marketing is the work of adapting strategy, channels and measures to how a particular kind of business actually wins customers. MMC works with D2C brands, B2B companies and educational institutes, and treats each as its own kind of growth problem, agreeing what a good result means first, then reviewing weekly with one senior team.",
       "hl": "how a particular kind of business actually wins customers",
       "who": "Monday Marketing Company (MMC) works with D2C brands, B2B companies and educational institutes, and treats each as its own kind of growth problem.",
       "points": [
@@ -256,6 +256,69 @@
           "img": "shared/education.jpg",
           "href": "education.html",
           "link": "See Educational institutes"
+        },
+        {
+          "n": "Skincare",
+          "d": "Marketing for brands where buyers research ingredients and reorder on a cycle.",
+          "img": "d2c/range.jpg",
+          "href": "/industries/d2c/skincare/",
+          "link": "See Skincare marketing"
+        },
+        {
+          "n": "Baby and kids",
+          "d": "Marketing for brands where parents buy for safety and needs change with age.",
+          "img": "d2c/unboxing.jpg",
+          "href": "/industries/d2c/baby-and-kids/",
+          "link": "See Baby and kids marketing"
+        },
+        {
+          "n": "Food and beverage",
+          "d": "Marketing for low-basket, repeat-order food and drink brands.",
+          "img": "d2c/packing.jpg",
+          "href": "/industries/d2c/food-and-beverage/",
+          "link": "See Food and beverage marketing"
+        },
+        {
+          "n": "Fashion and apparel",
+          "d": "Marketing for brands with heavy browsing, returns and creative fatigue.",
+          "img": "d2c/range.jpg",
+          "href": "/industries/d2c/fashion-and-apparel/",
+          "link": "See Fashion and apparel marketing"
+        },
+        {
+          "n": "Manufacturing",
+          "d": "Search, proof and quote funnels for manufacturers and suppliers.",
+          "img": "b2b/found.jpg",
+          "href": "/industries/b2b/manufacturing/",
+          "link": "See Manufacturing marketing"
+        },
+        {
+          "n": "SaaS and software",
+          "d": "Search, funnels and CRM signals for trial-led software buyers.",
+          "img": "b2b/qualify.jpg",
+          "href": "/industries/b2b/saas-and-software/",
+          "link": "See SaaS and software marketing"
+        },
+        {
+          "n": "Colleges",
+          "d": "Search, paid media and follow-up for families comparing colleges.",
+          "img": "edu/campus.jpg",
+          "href": "/industries/education/colleges/",
+          "link": "See Colleges marketing"
+        },
+        {
+          "n": "Study abroad",
+          "d": "Search, ads and follow-up for students planning countries and intakes.",
+          "img": "edu/students.jpg",
+          "href": "/industries/education/study-abroad/",
+          "link": "See Study abroad marketing"
+        },
+        {
+          "n": "Content marketing",
+          "d": "Strategy, writing and distribution built around buyer questions.",
+          "img": "sv/content.jpg",
+          "href": "/services/content-marketing/",
+          "link": "See Content marketing"
         }
       ]
     },

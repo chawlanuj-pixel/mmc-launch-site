@@ -20,6 +20,12 @@
   .cw-hero__grid { grid-template-columns: 1fr; }
   .cw-hero__figs { order: -1; margin-bottom: 8px; }
 }
+/* Phones: the two hero pictures stack, each a full-width 16:9 (side by side they were 156px thumbnails). */
+@media (max-width: 560px) {
+  .cw-hero__figs { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .cw-hero__fig { aspect-ratio: 16 / 9; border-radius: 18px; }
+  .cw-hero__fig:nth-child(2) { margin-top: 0; }
+}
 
 /* ---------- Case studies grid (index) ---------- */
 .cw-grid__head { max-width: 62ch; }
@@ -81,6 +87,15 @@
 /* Fixed frame ratios (3 / 2, 16 / 9 or 3 / 1, picked per brand in case-studies.json): the artwork is never cropped. */
 .cs-art__frame { margin: 0; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 80px -40px rgba(11,16,32,.5); border: 1px solid rgba(11,16,32,.08); aspect-ratio: var(--cs-ratio, 3 / 2); background: #F3F1EC; }
 .cs-art__frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+/* Phones: a 3 / 1 banner would be a 107px sliver. Keep it whole (never cropped) but give it a readable size
+   and let it scroll sideways inside the same rounded frame. */
+@media (max-width: 640px) {
+  .cs-art__frame[data-ratio="3 / 1"] { aspect-ratio: auto; overflow-x: auto; overflow-y: hidden; border-radius: 20px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .cs-art__frame[data-ratio="3 / 1"]::-webkit-scrollbar { display: none; }
+  .cs-art__frame[data-ratio="3 / 1"] img { width: 640px; max-width: none; height: auto; aspect-ratio: 3 / 1; }
+  .cs-art__frame { border-radius: 20px; }
+  .cs-art__cap { font-size: 14px; margin-top: 16px; }
+}
 .cs-art__cap { margin: 14px 2px 0; font: 400 13px/1.5 var(--font-body); color: var(--n-fg-3); }
 
 .cs-body { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(28px, 4vw, 64px); align-items: start; }
@@ -136,3 +151,11 @@
 .cs-services__links li:hover, .cs-services__links li:focus-within { border-color: #1D4ED8; }
 .cs-services__links a:hover, .cs-services__links a:focus-visible { color: #1D4ED8; }
 .cs-services .cs-services__ind a { color: #1D4ED8; border-bottom: 1px solid currentColor; text-decoration: none; }
+
+/* Phones: 44px tap targets for the breadcrumb and the "See ..." links, and body text that is not squeezed. */
+@media (max-width: 760px) {
+  .cs-crumb a { display: inline-flex; align-items: center; min-height: 44px; margin-block: -16px; }
+  .cw-kind { padding: 22px; gap: 12px; }
+  .cw-kind p { font-size: 15.5px; }
+  .cw-kind a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14.5px; }
+}

@@ -1,0 +1,48 @@
+---
+// 7. Previous / next case study with big thumbnails, then More work (same kind of brand first).
+import { pager, thumbOf, case2For } from "../../lib/case2";
+import { moreWork } from "../../lib/work";
+import type { CaseStudy } from "../../lib/work";
+interface Props { c: CaseStudy }
+const { c } = Astro.props as Props;
+const { prev, next } = pager(c.id);
+const more = moreWork(c.id, 5).filter((m) => m.id !== prev.id && m.id !== next.id).slice(0, 3);
+const card = (x: CaseStudy, dir: string) => ({ x, dir, th: thumbOf(x) });
+---
+<section class="c2-band c2-band--paper c2-pager" id="next" aria-label="Previous and next case study">
+  <div class="c2-wrap">
+    <div class="c2-pager__row">
+      {[card(prev, "Previous case study"), card(next, "Next case study")].map(({ x, dir, th }, i) => (
+        <a class={`c2-pcard c2-rv c2-d${i}`} href={`/work/${x.id}/`} rel={i === 0 ? "prev" : "next"} style={th ? `--c2-bg:${th.bg}` : ""}>
+          <span class="c2-pcard__fig">{th && <img src={th.src} width={th.w} height={th.h} alt="" loading="lazy" decoding="async" />}
+            <span class="c2-pcard__logo"><img src={`/assets/clients/${x.id}.png`} alt={`${x.name} logo`} height="28" loading="lazy" decoding="async" /></span>
+          </span>
+          <span class="c2-pcard__body">
+            <span class="c2-pcard__dir">{i === 0 ? "← " : ""}{dir}{i === 1 ? " →" : ""}</span>
+            <strong>{x.name}</strong>
+            <span class="c2-pcard__sub">{x.label}</span>
+          </span>
+        </a>
+      ))}
+    </div>
+    {more.length > 0 && (
+      <div class="c2-more">
+        <header class="c2-more__head c2-rv">
+          <p class="c2-eyebrow">More work</p>
+          <h2 class="c2-h2 c2-h2--sm">More work like <em>this.</em></h2>
+          <a class="c2-textlink" href="/work/">See all our work<span aria-hidden="true"> →</span></a>
+        </header>
+        <div class="c2-more__row">
+          {more.map((m, i) => { const th = case2For(m.id) ? thumbOf(m) : null; return (
+            <a class={`c2-mcard c2-rv c2-d${i}`} href={m.href!}>
+              <span class="c2-mcard__fig" style={th ? `--c2-bg:${th.bg}` : ""}>
+                <img src={th ? th.src : `/assets/${m.image}`} width={th ? th.w : 1200} height={th ? th.h : 400} alt="" loading="lazy" decoding="async" />
+              </span>
+              <span class="c2-mcard__body"><span class="c2-pill">{m.label}</span><strong>{m.name}</strong><span class="c2-mcard__go">Read the case study<span aria-hidden="true"> →</span></span></span>
+            </a>
+          ); })}
+        </div>
+      </div>
+    )}
+  </div>
+</section>

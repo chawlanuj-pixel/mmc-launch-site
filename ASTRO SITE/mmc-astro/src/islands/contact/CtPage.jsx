@@ -77,7 +77,7 @@ function CtPage({ onAudit }) {
                 {PHONE_DISPLAY}
                 <span className="arrow"></span>
               </span>
-              <div className="ct-channel-foot">Mon–Sat · 10:00 – 19:00 IST</div>
+              <div className="ct-channel-foot">Mon to Sat · 10:00 to 19:00 IST</div>
             </a>
 
             <a className="ct-channel" href="mailto:sales-in@mondaymarketing.company?subject=Proposal request">
@@ -268,7 +268,7 @@ function CtPage({ onAudit }) {
                 <div className="ct-side-block">
                   <div className="ct-side-label">Hours · IST</div>
                   <div className="ct-side-h">Monday → Saturday</div>
-                  <p className="ct-side-body">10:00 – 19:00 · Mon–Fri<br/>10:00 – 14:00 · Sat</p>
+                  <p className="ct-side-body">10:00 to 19:00 · Mon to Fri<br/>10:00 to 14:00 · Sat</p>
                 </div>
 
                 <div className="ct-side-block">

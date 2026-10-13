@@ -1,9 +1,10 @@
 /* Our Work + Insights (bespoke sections) */
 .wk__tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: clamp(28px, 3vw, 40px) 0 0; }
-.wk__tab { font: 700 14px/1 var(--font-display); padding: 12px 20px; border-radius: 999px; border: 1.5px solid var(--n-line-2, rgba(11,16,32,.18)); background: #fff; color: var(--n-fg); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.wk__tabs[hidden] { display: none; }
+.wk__tab { min-height: 44px; font: 700 14px/1 var(--font-display); padding: 12px 20px; border-radius: 999px; border: 1.5px solid var(--n-line-2, rgba(11,16,32,.18)); background: #fff; color: var(--n-fg); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
 .wk__tab:hover { border-color: #16329E; }
 .wk__tab.is-on { background: #16329E; border-color: #16329E; color: #fff; }
-.wk__tab:focus-visible { outline: 3px solid #FFC528; outline-offset: 2px; }
+.wk__tab:focus-visible { outline: var(--focus-w) solid var(--focus-color); outline-offset: var(--focus-offset); }
 .wk__item[hidden], .wk__empty[hidden] { display: none !important; }
 .wk__note { margin: 26px 0 0; font: 400 13px/1.5 var(--font-body); color: var(--n-fg-3); }
 .wk__csln { margin-left: 8px; font: 700 12px/1 var(--font-display); color: #16329E; text-decoration: none; white-space: nowrap; }

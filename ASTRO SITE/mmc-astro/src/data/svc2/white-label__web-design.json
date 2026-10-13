@@ -1,0 +1,228 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "careers2/brief-review.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: two designers reviewing a printed layout together.",
+    "facts": [
+      {
+        "t": "Your brand on every file.",
+        "d": "Layouts, notes and exports carry your name, not ours."
+      },
+      {
+        "t": "Approved in stages.",
+        "d": "Structure first, then visuals, so your client signs off in order."
+      },
+      {
+        "t": "Designed to be built.",
+        "d": "Components and states are specified for your developers."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their web design to MMC"
+  },
+  "work": {
+    "panel": "DesignReview",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do when you hand us a",
+    "h2b": "web design brief.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Turn your client's brief into research.",
+        "d": "We read the brief and brand files you send, then note what users need, so the design starts from evidence you can show."
+      },
+      {
+        "n": "02",
+        "t": "Map the journey before any screen.",
+        "d": "A flow you can walk your client through, with the drop-off point flagged and agreed before layouts start."
+      },
+      {
+        "n": "03",
+        "t": "Wireframe first, then design to the brand.",
+        "d": "Structure is approved in grey before colour arrives, so your client reviews layout once, not five times."
+      },
+      {
+        "n": "04",
+        "t": "Test a prototype before your client sees it.",
+        "d": "A clickable version goes to a few real users, so your presentation holds up when your client asks why."
+      },
+      {
+        "n": "05",
+        "t": "Hand over a system your developers can build.",
+        "d": "Named components, states and notes in your file format, ready for your team or ours."
+      }
+    ],
+    "illustrative": "Illustrative layout of a design workspace, from research to a component library. Not a client project, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Design delivery",
+    "pinsLabel": "Five places white-label web design slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "board",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Brief"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Revisions"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Platform"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Handover"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Feedback"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "doc",
+        "head": "Brief",
+        "lines": [
+          "One line from a call",
+          "No brand files"
+        ],
+        "chip": "Guessing",
+        "tone": "b"
+      },
+      {
+        "glyph": "clock",
+        "head": "Rounds",
+        "lines": [
+          "Feedback with no limit",
+          "Margin drains"
+        ],
+        "chip": "Open-ended",
+        "tone": "w"
+      },
+      {
+        "glyph": "layers",
+        "head": "Platform",
+        "lines": [
+          "Design ignores the CMS",
+          "Rework after build"
+        ],
+        "chip": "Rework",
+        "tone": "b"
+      },
+      {
+        "glyph": "files",
+        "head": "Files",
+        "lines": [
+          "Unnamed layers",
+          "No states"
+        ],
+        "chip": "Unbuildable",
+        "tone": "b"
+      },
+      {
+        "glyph": "chat",
+        "head": "Feedback",
+        "lines": [
+          "Notes in five threads",
+          "Versions mixed up"
+        ],
+        "chip": "Scattered",
+        "tone": "w"
+      }
+    ],
+    "base": "One brief, one round plan, one handover",
+    "artLabel": "Five cards showing where white-label web design slips: the brief, revision rounds, platform limits, handover files and scattered feedback.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for web design,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and brief intake",
+        "d": "We sign the NDA, take your brief and brand files, and write the design scope with revision rounds stated.",
+        "get": "A written scope you can share with your client.",
+        "img": "contact/brief.jpg",
+        "alt": "Illustrative scene: a designer working through a client brief at a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot design",
+        "d": "One small project first, such as a landing page or a few key screens, designed to your client's brand.",
+        "get": "A pilot you can judge on layout, speed and communication.",
+        "img": "ux/test.jpg",
+        "alt": "Illustrative scene: a prototype being tested on a phone.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Briefing form, file naming, feedback route and review rounds are written down so every project runs the same way.",
+        "get": "A one-page working agreement for your studio.",
+        "img": "company/onepage.jpg",
+        "alt": "Illustrative scene: a working agreement being written on a notepad.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale across clients",
+        "d": "More briefs go through the same intake, and we add designers to your queue as your workload grows.",
+        "get": "A design service you can sell again and again.",
+        "img": "about2/desk-open.jpg",
+        "alt": "Illustrative scene: a laptop with a list of active design projects.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label web development",
+        "href": "/white-label/web-development/"
+      },
+      {
+        "n": "White-label WordPress",
+        "href": "/white-label/wordpress-development/"
+      },
+      {
+        "n": "UI/UX design",
+        "href": "/services/ui-ux-design/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

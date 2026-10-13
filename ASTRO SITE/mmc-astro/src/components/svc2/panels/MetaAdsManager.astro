@@ -1,0 +1,162 @@
+---
+// PANEL: MetaAdsManager (kind "MetaAdsManager"). Meta Ads Manager-style view, official Meta mark, 5 steps (data-step 1..5 on the section).
+//   1 Account structure: six small campaigns merge into one funnel (Prospecting, Retargeting, Conversion). Tab: Campaigns.
+//   2 Creative testing: four ad versions built from one idea, one winner highlighted (real product photo crops). Tab: Ads.
+//   3 Audiences: broad, interests, lookalike of best customers, customer list, shown as bars. Tab: Ad sets.
+//   4 Conversions API: store or CRM -> Conversions API -> Meta, with matched / partial event rows. Tab: Events.
+//   5 Scale against profit: budget bars step up while a contribution-margin line holds above a floor. Tab: Insights.
+// Needs S.work.illustrative (caption). No other data. Styles are scoped to this file (is:global, s2- prefixed classes it owns).
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const tabs = ["Campaigns", "Ad sets", "Ads", "Events", "Insights"];
+---
+<Frame logo="/assets/platforms/meta.svg" title="Ads Manager" label="Illustration of a Meta Ads Manager view. Not a client result." caption={W.illustrative} tabs={tabs} cls="s2-ui--meta">
+            <!-- 1: structure -->
+            <div class="s2-st s2-st--1">
+              <p class="s2-st__cap">Account structure</p>
+              <div class="s2-s1">
+                <div class="s2-s1__before">
+                  <span class="s2-pilltag">Before</span>
+                  <ul>
+                    {["Interest A", "Interest B", "Lookalike 1", "Lookalike 2", "Retarget 7d", "Retarget 30d"].map((n, k) => <li style={`--w:${[46, 30, 38, 22, 34, 26][k]}%`}><span>{n}</span><i></i></li>)}
+                  </ul>
+                </div>
+                <svg class="s2-s1__arrow" viewBox="0 0 40 24" aria-hidden="true"><path d="M2 12h32M26 4l8 8-8 8" /></svg>
+                <div class="s2-s1__after">
+                  <span class="s2-pilltag s2-pilltag--on">After: one funnel</span>
+                  <div class="s2-tier" style="--w:100%"><b>Prospecting</b><i></i></div>
+                  <div class="s2-tier" style="--w:78%"><b>Retargeting</b><i></i></div>
+                  <div class="s2-tier" style="--w:56%"><b>Conversion</b><i></i></div>
+                  <small>One budget, one definition of a good result.</small>
+                </div>
+              </div>
+            </div>
+            <!-- 2: creative -->
+            <div class="s2-st s2-st--2">
+              <p class="s2-st__cap">Creative test lane <span>One idea, four versions</span></p>
+              <ul class="s2-ads">
+                {[["Hook A", THUMBS.shirt, "Retired"], ["Hook B", THUMBS.serum, "Retired"], ["Hook C", THUMBS.unbox, "Winner"], ["Hook D", THUMBS.jar, "Testing"]].map(([n, th, state], k) => (
+                  <li class={k === 2 ? "is-win" : ""}>
+                    <span class="s2-ad__img" style={th as string} role="img" aria-label={`${n}: ad image`}><u>Shop now</u></span>
+                    <b>{n}</b>
+                    <i class="s2-ad__ln"></i><i class="s2-ad__ln s2-ad__ln--s"></i>
+                    <em>{state}</em>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <!-- 3: audience -->
+            <div class="s2-st s2-st--3">
+              <p class="s2-st__cap">Audiences <span>Start from your best customers</span></p>
+              <ul class="s2-aud">
+                {[["Broad", "Testing", 92], ["Interests", "Tighter", 48], ["Lookalike of best customers", "Winning", 70], ["Customer list", "Retarget", 28]].map(([n, p, w], k) => (
+                  <li><span class="s2-aud__n">{n}</span><span class="s2-aud__bar"><i style={`--w:${w}%`}></i></span><em class={k === 2 ? "is-on" : ""}>{p}</em></li>
+                ))}
+              </ul>
+              <small class="s2-st__foot">Broad reach runs beside tighter audiences. Results decide.</small>
+            </div>
+            <!-- 4: CAPI -->
+            <div class="s2-st s2-st--4">
+              <p class="s2-st__cap">Conversions API <span>Events checked against your data</span></p>
+              <div class="s2-flow">
+                <span class="s2-flow__n">Your store<br />or CRM</span>
+                <svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+                <span class="s2-flow__n s2-flow__n--on">Conversions<br />API</span>
+                <svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+                <span class="s2-flow__n"><img src="/assets/platforms/meta.svg" alt="" width="22" height="22" />Meta</span>
+              </div>
+              <ul class="s2-ev">
+                <li><span>Purchase</span><em class="is-ok">Matched</em></li>
+                <li><span>Qualified lead from your CRM</span><em class="is-ok">Matched</em></li>
+                <li class="s2-ev__dim"><span>Browser pixel only</span><em>Partial</em></li>
+              </ul>
+            </div>
+            <!-- 5: scale -->
+            <div class="s2-st s2-st--5">
+              <p class="s2-st__cap">Scale against profit <span>Not against ROAS alone</span></p>
+              <svg class="s2-chart" viewBox="0 0 320 170" role="img" aria-label="Budget steps up while contribution margin holds, and stays flat where it dips.">
+                <line class="s2-chart__floor" x1="10" y1="64" x2="310" y2="64" />
+                <text x="308" y="58" text-anchor="end" class="s2-chart__lbl">Margin floor</text>
+                <rect class="s2-chart__b" x="30" y="136" width="34" height="24" rx="3" />
+                <rect class="s2-chart__b" x="82" y="122" width="34" height="38" rx="3" />
+                <rect class="s2-chart__b" x="134" y="106" width="34" height="54" rx="3" />
+                <rect class="s2-chart__b s2-chart__b--hold" x="186" y="106" width="34" height="54" rx="3" />
+                <rect class="s2-chart__b" x="238" y="84" width="34" height="76" rx="3" />
+                <path class="s2-chart__l" d="M12 52 C 50 44, 80 36, 110 30 S 160 22, 190 56 S 250 18, 304 12" />
+                <circle class="s2-chart__dot" cx="190" cy="56" r="4" />
+                <text x="180" y="84" text-anchor="end" class="s2-chart__lbl">Margin dips: budget holds</text>
+              </svg>
+              <div class="s2-key"><span><i class="k-m"></i>Contribution margin</span><span><i class="k-b"></i>Budget</span></div>
+            </div>
+</Frame>
+<style is:global>
+.s2-work[data-step="1"] .s2-ui--meta .s2-ui__tab[data-tab="0"], .s2-work[data-step="2"] .s2-ui--meta .s2-ui__tab[data-tab="2"], .s2-work[data-step="3"] .s2-ui--meta .s2-ui__tab[data-tab="1"],
+.s2-work[data-step="4"] .s2-ui--meta .s2-ui__tab[data-tab="3"], .s2-work[data-step="5"] .s2-ui--meta .s2-ui__tab[data-tab="4"] { color: #0866FF; background: #E7F0FF; }
+/* state 1 */
+.s2-s1 { flex: 1; min-height: 0; display: flex; align-items: center; gap: 2.2%; }
+.s2-s1__before { flex: 0 0 38%; display: grid; gap: .7em; }
+.s2-s1__before ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.s2-s1__before li { display: grid; gap: .25em; }
+.s2-s1__before li span { font: 700 .86em var(--font-body); color: #65676B; }
+.s2-s1__before li i { display: block; height: .5em; width: var(--w); border-radius: 99px; background: #CED0D4; }
+.s2-s1__arrow { flex: none; width: 3.4em; fill: none; stroke: #0866FF; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.s2-s1__after { flex: 1; display: grid; gap: .6em; justify-items: center; }
+.s2-pilltag { justify-self: start; padding: .3em .8em; border-radius: 99px; background: #EEF0F2; color: #65676B; font: 800 .78em var(--font-body); letter-spacing: .05em; text-transform: uppercase; }
+.s2-pilltag--on { background: #E7F0FF; color: var(--mmc-blue); } /* royal blue text: 6.3:1 on the soft tint (Meta's #0866FF was 4.2:1) */
+.s2-tier { width: var(--w); height: 3em; border-radius: .7em; background: linear-gradient(90deg, #0866FF, #4C8DFF); display: flex; align-items: center; padding-inline: .9em; color: #fff; font: 800 1em var(--font-display); }
+.s2-tier:nth-of-type(2) { background: linear-gradient(90deg, var(--mmc-blue), #5B84F0); }
+.s2-tier:nth-of-type(3) { background: linear-gradient(90deg, var(--mmc-blue-700), #3F61D0); }
+.s2-tier i { display: none; }
+.s2-s1__after small { font: 600 .86em var(--font-body); color: #65676B; justify-self: start; }
+/* state 2 */
+.s2-ads { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .9em; align-content: center; }
+.s2-ads li { position: relative; display: grid; gap: .45em; padding: .6em; border: 1px solid #DADDE1; border-radius: .9em; background: #fff; opacity: .6; }
+.s2-ads li.is-win { opacity: 1; border: 2px solid var(--s2-sun); box-shadow: 0 .8em 1.6em -.8em rgba(255, 197, 40, .9); padding: calc(.6em - 1px); }
+.s2-ad__img { display: block; aspect-ratio: 1 / 1; border-radius: .6em; }
+.s2-ads b { font: 800 .95em var(--font-display); }
+.s2-ad__ln { display: block; height: .42em; border-radius: 99px; background: #DADDE1; }
+.s2-ad__ln--s { width: 62%; }
+.s2-ads em { justify-self: start; font: 800 .74em var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .05em; padding: .3em .7em; border-radius: 99px; background: #EEF0F2; color: #65676B; }
+.s2-ads li.is-win em { background: var(--s2-sun); color: var(--s2-ink); }
+/* state 3 */
+.s2-aud { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; align-content: center; gap: .9em; }
+.s2-aud li { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; align-items: center; gap: 1em; padding: .85em 1em; border: 1px solid #DADDE1; border-radius: .9em; }
+.s2-aud__n { font: 800 1em var(--font-body); color: #1C2B33; }
+.s2-aud__bar { height: .65em; border-radius: 99px; background: #EEF0F2; overflow: hidden; }
+.s2-aud__bar i { display: block; height: 100%; width: var(--w); border-radius: 99px; background: #4C8DFF; }
+.s2-aud em { font: 800 .76em var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .05em; padding: .3em .8em; border-radius: 99px; background: #EEF0F2; color: #65676B; }
+.s2-aud em.is-on { background: #E3F6E9; color: #1B7A3D; }
+/* state 4 */
+.s2-flow { display: flex; align-items: center; justify-content: space-between; gap: .6em; margin-block: .4em; }
+.s2-flow__n { flex: none; display: grid; justify-items: center; align-content: center; gap: .3em; min-width: 6.4em; padding: .8em .9em; border: 1px solid #DADDE1; border-radius: .9em; text-align: center; font: 800 .92em/1.25 var(--font-body); background: #fff; }
+.s2-flow__n--on { background: #0866FF; border-color: #0866FF; color: #fff; }
+.s2-flow__n img { width: 1.7em; height: 1.7em; }
+.s2-flow svg { flex: 1; min-width: 1.6em; max-width: 5em; fill: none; stroke: #0866FF; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 5 6; animation: s2dash 1.2s linear infinite; }
+.s2-ev { list-style: none; margin: 0; padding: 0; display: grid; gap: .5em; }
+.s2-ev li { display: flex; align-items: center; justify-content: space-between; gap: 1em; padding: .7em 1em; border: 1px solid #DADDE1; border-radius: .8em; font: 700 .95em var(--font-body); }
+.s2-ev em { font: 800 .76em var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .05em; padding: .3em .8em; border-radius: 99px; background: #EEF0F2; color: #65676B; }
+.s2-ev em.is-ok { background: #E3F6E9; color: #1B7A3D; }
+.s2-ev__dim { opacity: .65; }
+/* state 5 */
+.s2-chart { flex: 1; min-height: 0; width: 100%; }
+.s2-chart__floor { stroke: #BCC0C4; stroke-width: 1.4; stroke-dasharray: 5 5; }
+.s2-chart__lbl { font: 700 10px var(--font-body); fill: #65676B; }
+.s2-chart__b { fill: var(--mmc-yellow); }
+.s2-chart__b--hold { fill: #FFE08A; }
+.s2-chart__l { fill: none; stroke: #0866FF; stroke-width: 3; stroke-linecap: round; }
+.s2-chart__dot { fill: #fff; stroke: #0866FF; stroke-width: 2.5; }
+.s2-key { display: flex; gap: 1.4em; font: 700 .86em var(--font-body); color: #65676B; }
+.s2-key i { display: inline-block; width: .9em; height: .9em; border-radius: 3px; margin-right: .5em; vertical-align: -.1em; }
+.s2 .k-m { background: #0866FF; } .s2 .k-b { background: var(--mmc-yellow); }
+.s2-ad__img { position: relative; background-color: #E7F0FF; background-repeat: no-repeat; overflow: hidden; }
+.s2-ad__img u { position: absolute; left: 6%; right: 6%; bottom: 7%; padding: .28em 0; border-radius: .5em; background: rgba(255, 255, 255, .94); color: #1C2B33; font: 800 .66em var(--font-body); text-decoration: none; text-align: center; }
+.s2-flow { margin-top: auto; } .s2-ev { margin-bottom: auto; }
+@media (max-width: 420px) {
+  .s2-flow__n { min-width: 5em; padding: .55em .5em; }
+  .s2-ev li { padding: .45em .8em; }
+  .s2-ads { gap: .5em; } .s2-ads li { padding: .4em; }
+}
+@media (prefers-reduced-motion: reduce) { .s2-flow svg { animation: none; } }
+</style>

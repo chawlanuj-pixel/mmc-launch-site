@@ -1,0 +1,186 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__performance-marketing__quick-commerce.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "qc/availability.jpg",
+    "pos": "50% 50%",
+    "alt": "A tablet showing a stock availability map by area.",
+    "facts": [
+      {
+        "t": "Tiles first.",
+        "d": "A second or two to earn a tap."
+      },
+      {
+        "t": "Availability decides.",
+        "d": "Ads help only where stock sits."
+      },
+      {
+        "t": "A blended view.",
+        "d": "App data is thin."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "QuickCommerceAds",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on",
+    "h2b": "quick-commerce apps.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Re-cut your product tile for a tiny screen.",
+        "d": "Name, first image and claim are rebuilt to read at a glance, not copied from marketplace listings."
+      },
+      {
+        "n": "02",
+        "t": "Buy sponsored slots for the right search terms.",
+        "d": "Placements follow the terms and categories that fit the product, with bids adjusted as results come in."
+      },
+      {
+        "n": "03",
+        "t": "Run ads only where stock sits.",
+        "d": "Spend follows availability by area, so you do not pay to promote an empty shelf."
+      },
+      {
+        "n": "04",
+        "t": "Share stock signals with your supply team.",
+        "d": "Low-stock warnings reach supply early, so visibility does not lapse."
+      },
+      {
+        "n": "05",
+        "t": "Read quick commerce next to total sales.",
+        "d": "App data is thin, so the channel is judged on blended sales and margin."
+      }
+    ],
+    "illustrative": "Illustrative layout of a quick-commerce category listing. Not a client account, no real figures. Blinkit, Zepto, Instamart, Swiggy and their logos belong to their owners."
+  },
+  "leak": {
+    "visual": "TileLeak",
+    "barLogo": "",
+    "barTitle": "Listing view",
+    "pinsLabel": "Five places quick-commerce spend leaks",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Tile"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Bids"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Stock"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Supply"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Blended"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we run performance marketing for.",
+    "tiles": [
+      {
+        "id": "giraffe",
+        "line": "Kids' products: tiles and listings prepared for quick-commerce apps."
+      },
+      {
+        "id": "awwbaby",
+        "line": "Baby products: performance marketing and creative."
+      },
+      {
+        "id": "vagakids",
+        "line": "Kids' products: performance creative with short names and clear claims."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run quick-commerce ads,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Win the tile",
+        "d": "Pack, name and first image are made legible at thumbnail size, and listings are checked on each app.",
+        "get": "A listing understood at a glance.",
+        "img": "qc/listing.jpg",
+        "alt": "Two phones showing quick-commerce app category screens.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Plan around availability",
+        "d": "Sponsored placements are matched to where stock sits, with your supply team on the signals.",
+        "get": "Ads that run where you can deliver.",
+        "img": "qc/darkstore.jpg",
+        "alt": "A worker picking products in a dark store.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Set the search and category plan",
+        "d": "Terms and categories that fit the product get the budget, and bids move with results.",
+        "get": "Spend that follows what shoppers type.",
+        "img": "qc/ads.jpg",
+        "alt": "A phone showing a quick-commerce search with sponsored products.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Read it at blended level",
+        "d": "App numbers sit beside total sales and margin, then budget moves to what adds profit.",
+        "get": "A channel judged on what it really adds.",
+        "img": "qc/report.jpg",
+        "alt": "A partner dashboard report on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Amazon Ads",
+        "href": "/services/performance-marketing/amazon-ads/"
+      },
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "AI photoshoot by MMC",
+        "href": "/ai-by-mmc/photoshoot/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

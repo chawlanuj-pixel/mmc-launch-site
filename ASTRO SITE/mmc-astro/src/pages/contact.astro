@@ -13,18 +13,18 @@ import { PHONE_DISPLAY, PHONE_TEL } from "../lib/site";
 
 const SITE = "https://www.mondaymarketing.company";
 const title = "Contact MMC: Book a Strategy Call or Send a Brief";
-const description = "Talk to Monday Marketing Company in Thane. Book a 30-minute strategy call, send a brief, or write to us. For D2C, B2B and education brands.";
+const description = "Talk to Monday Marketing Company in Thane. Book a 30-minute strategy call, send a brief or write to us. We reply inside one working day, often in four hours.";
 
 const tiles = [
   { img: "contact/call.jpg", pos: "50% 50%", label: BOOK, note: "30 minutes, no pitch" },
   { img: "contact/brief.jpg", pos: "50% 50%", label: "Send a brief", note: "Tell us about the brand" },
   { img: "contact/meeting.jpg", pos: "50% 50%", label: "Meet the team", note: "Strategists, not sales scripts" },
-  { img: "contact/office.jpg", pos: "50% 50%", label: "Visit us", note: "Hiranandani, Thane" },
+  { img: "contact/office.jpg", pos: "50% 50%", label: "Visit us", note: "Hiranandani Business Park, Thane" },
 ];
 
 const answer = {
   label: "In short",
-  lead: "The quickest way to reach Monday Marketing Company is to book a 30-minute strategy call, or send a short brief if you would rather write.",
+  lead: "The quickest way to reach Monday Marketing Company (MMC) is to book a 30-minute strategy call with a senior strategist, who gives a direct read on the first three things to fix. You can also send a short brief by form or email. MMC works with D2C brands, B2B companies and educational institutes from Thane, Maharashtra.",
   hl: "book a 30-minute strategy call",
   who: "MMC works with D2C brands, B2B companies and educational institutes from Thane, Maharashtra.",
   points: [
@@ -151,13 +151,17 @@ const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site"
 
             <div class="n-rise d1">
               <form class="cx-form" id="cx-form">
+                <div class="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" name="_hp" tabindex="-1" autocomplete="off" /></label></div>
                 <h3>Or tell us about <em>the brand.</em></h3>
                 <p class="cx-form__sub">A rough picture is enough. We read it before we reply.</p>
                 <div class="cx-row">
                   <label class="cx-f"><span>Your name <i>*</i></span><input type="text" name="name" required autocomplete="name" placeholder="Aanya Sharma" /></label>
                   <label class="cx-f"><span>Work email <i>*</i></span><input type="email" name="email" required autocomplete="email" placeholder="you@yourbrand.com" /></label>
                 </div>
-                <label class="cx-f"><span>Brand or institute name <i>*</i></span><input type="text" name="brand" required autocomplete="organization" placeholder="Your brand or institute" /></label>
+                <div class="cx-row">
+                  <label class="cx-f"><span>Phone or WhatsApp <i>*</i></span><input type="tel" name="phone" required inputmode="tel" autocomplete="tel" maxlength="20" placeholder="+91 98765 43210" /></label>
+                  <label class="cx-f"><span>Brand or institute name <i>*</i></span><input type="text" name="brand" required autocomplete="organization" placeholder="Your brand or institute" /></label>
+                </div>
                 <fieldset class="cx-f"><legend>Annual revenue, last 12 months <i>*</i></legend>
                   <div class="cx-chips" data-single="revenue">{revenue.map((b) => <button type="button" class="cx-chip" aria-pressed="false" data-v={b}>{b}</button>)}</div>
                 </fieldset>
@@ -183,7 +187,7 @@ const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site"
                 <svg width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="none" stroke="#FFC528" stroke-width="3" /><path d="M26 41L36 51L56 31" fill="none" stroke="#16329E" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round" /></svg>
                 <h3>Thanks, <span id="cx-name">friend</span>.</h3>
                 <p>We will read your brief for <b id="cx-brand">your brand</b> and come back to you with a slot.</p>
-                <p id="cx-mailto" hidden>Your email app should have opened with the details filled in. If it didn't, send them to <a href="mailto:sales-in@mondaymarketing.company">sales-in@mondaymarketing.company</a>.</p>
+                <p id="cx-mailto" hidden>Your email app should have opened with the details filled in. If it didn't, send them to <a href="mailto:anuj@mondaymarketing.company">anuj@mondaymarketing.company</a>.</p>
               </div>
             </div>
           </div>
@@ -243,7 +247,7 @@ const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site"
     .cx-note a, .cx-consent a { color: #16329E; border-bottom: 1px solid currentColor; }
     .cx-consent { display: flex; gap: 10px; align-items: flex-start; margin: 4px 0 14px; font: 500 14px/1.45 var(--font-body); cursor: pointer; }
     .cx-consent input { width: 20px; height: 20px; margin-top: 1px; flex: none; accent-color: #16329E; }
-    .cx-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, .09); color: #b3261e; font: 600 14px/1.45 var(--font-body); }
+    .cx-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, .09); color: var(--mmc-error); font: 600 13px/1.45 var(--font-body); }
     .cx-note[hidden], .cx-err[hidden], #cx-mailto[hidden] { display: none; }
     #cx-thanks:focus { outline: none; }
     #cx-submit[disabled] { opacity: .7; cursor: progress; }
@@ -265,7 +269,7 @@ const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site"
       const errEl = document.getElementById("cx-err") as HTMLElement;
       const noteEl = document.getElementById("cx-prelaunch") as HTMLElement;
       const submitBtn = document.getElementById("cx-submit") as HTMLButtonElement;
-      const FAIL = "We couldn't send that just now. Please email sales-in@mondaymarketing.company and we'll pick it up.";
+      const FAIL = "We couldn't send that just now. Please email anuj@mondaymarketing.company and we'll pick it up.";
       const showErr = (m: string) => { errEl.textContent = m; errEl.hidden = !m; };
       (["revenue", "spend", "timeline"] as const).forEach((key) => {
         form.querySelectorAll<HTMLElement>(`[data-single="${key}"] .cx-chip`).forEach((b) => b.addEventListener("click", () => {
@@ -287,7 +291,10 @@ const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site"
         e.preventDefault();
         if (submitBtn.disabled) return;
         const fd = new FormData(form);
-        const data = { name: String(fd.get("name") || ""), email: String(fd.get("email") || ""), brand: String(fd.get("brand") || ""), revenue: state.revenue, spend: state.spend, timeline: state.timeline, consent: fd.get("consent") === "on", systems: state.systems.slice(), message: String(fd.get("message") || "") };
+        const w0 = window as any;
+        const phoneRaw = String(fd.get("phone") || "");
+        if (!(w0.MMCForms && w0.MMCForms.validPhone ? w0.MMCForms.validPhone(phoneRaw) : /\d{8,}/.test(phoneRaw))) { showErr((w0.MMCForms && w0.MMCForms.phoneMsg) || "Please enter a valid phone number."); return; }
+        const data = { name: String(fd.get("name") || ""), email: String(fd.get("email") || ""), phone: w0.MMCForms && w0.MMCForms.cleanPhone ? w0.MMCForms.cleanPhone(phoneRaw) : phoneRaw.trim(), brand: String(fd.get("brand") || ""), revenue: state.revenue, spend: state.spend, timeline: state.timeline, consent: fd.get("consent") === "on", systems: state.systems.slice(), message: String(fd.get("message") || "") };
         if (!data.revenue || !data.spend || !data.timeline) { showErr("Please choose your revenue band, monthly budget and start time so we can route this to the right person."); return; }
         showErr("");
         const label = submitBtn.firstChild as Text;

@@ -1,0 +1,72 @@
+---
+// VISUAL: SaSearchTerms (kind "SaSearchTerms"). Google Ads account leak board: five small cards laid out like a search-term report,
+// one per leak (intent split, product feed, automation inputs, video follow-up, reported vs real profit). Pins sit in a row above
+// (y = 0, x = 10, 30, 50, 70, 90). No figures: bar lengths are illustrative. Styles scoped (prefix sgs-).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X } = Astro.props as Props;
+---
+<div class="sgs-row" aria-hidden="true"></div>
+<div class="sgs-art" role="img" aria-label="Five small cards from a Google Ads search-term report, one for each place spend leaks.">
+  <div class="sgs-c">
+    <b class="sgs-h">Search terms</b>
+    <div class="sgs-b">
+      <span class="sgs-t"><i class="sgs-tag">Brand</i><u style="width:78%"></u></span>
+      <span class="sgs-t"><i class="sgs-tag sgs-tag--g">Generic</i><u style="width:46%"></u></span>
+      <span class="sgs-t"><i class="sgs-tag sgs-tag--g">Rival</i><u style="width:30%"></u></span>
+    </div>
+    <em class="sgs-chip sgs-chip--w">All mixed up</em>
+  </div>
+  <div class="sgs-c">
+    <b class="sgs-h">Shopping feed</b>
+    <div class="sgs-b">
+      <span class="sgs-prod"><i></i><s><u style="width:90%"></u><u style="width:55%"></u></s></span>
+      <span class="sgs-prod"><i></i><s><u style="width:70%"></u><u style="width:40%"></u></s></span>
+    </div>
+    <em class="sgs-chip sgs-chip--b">Feed gaps</em>
+  </div>
+  <div class="sgs-c">
+    <b class="sgs-h">Automated campaign</b>
+    <div class="sgs-b">
+      <span class="sgs-slot">Assets</span>
+      <span class="sgs-slot sgs-slot--e">Signals</span>
+      <span class="sgs-slot sgs-slot--e">Data</span>
+    </div>
+    <em class="sgs-chip sgs-chip--w">Inputs thin</em>
+  </div>
+  <div class="sgs-c">
+    <b class="sgs-h">Video</b>
+    <div class="sgs-b">
+      <span class="sgs-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span>
+      <span class="sgs-gap">to Search?</span>
+    </div>
+    <em class="sgs-chip sgs-chip--w">No follow-up</em>
+  </div>
+  <div class="sgs-c">
+    <b class="sgs-h">Conversions</b>
+    <div class="sgs-b">
+      <span class="sgs-t"><i class="sgs-tag">Reported</i><u style="width:88%"></u></span>
+      <span class="sgs-t"><i class="sgs-tag sgs-tag--g">After costs</i><u style="width:44%"></u></span>
+    </div>
+    <em class="sgs-chip sgs-chip--b">Gap to margin</em>
+  </div>
+</div>
+<style is:global>
+.sgs-row { height: 78px; }
+.sgs-art { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(6px, 1.2vw, 14px); }
+.sgs-c { display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: clamp(8px, 1.1vw, 14px); border: 1px solid #DADDE1; border-radius: 14px; background: #F8FAFF; }
+.sgs-h { font: 800 clamp(10px, .95vw, 12.5px)/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; }
+.sgs-b { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 8px; min-height: 92px; }
+.sgs-t { display: grid; gap: 4px; } .sgs-t u { display: block; height: 7px; border-radius: 9px; background: var(--mmc-blue); }
+.sgs-t:nth-child(n+2) u { background: #9DB8F7; }
+.sgs-tag { justify-self: start; font: 800 10.5px/1.2 var(--font-body); font-style: normal; color: var(--mmc-blue-900); } .sgs-tag--g { color: #47506A; }
+.sgs-prod { display: flex; gap: 8px; align-items: center; } .sgs-prod i { flex: none; width: 30px; height: 30px; border-radius: 8px; background: #DCE6FB; }
+.sgs-prod s { flex: 1; display: grid; gap: 5px; text-decoration: none; } .sgs-prod u { display: block; height: 6px; border-radius: 9px; background: #CBD3E4; }
+.sgs-slot { padding: 6px 8px; border-radius: 8px; background: #fff; border: 1px solid #C9DBFF; font: 700 11px/1.2 var(--font-body); color: var(--mmc-blue-900); }
+.sgs-slot--e { border-style: dashed; border-color: #B8BFCC; background: transparent; color: #65676B; }
+.sgs-play { display: grid; place-items: center; aspect-ratio: 16 / 9; border-radius: 8px; background: var(--mmc-blue-900); } .sgs-play svg { width: 22px; height: 22px; fill: #fff; }
+.sgs-gap { padding: 5px 8px; border-radius: 8px; border: 1px dashed #B8BFCC; font: 700 11px var(--font-body); color: #65676B; text-align: center; }
+.sgs-chip { align-self: flex-start; padding: 4px 9px; border-radius: 99px; font: 800 10px/1.25 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; }
+.sgs-chip--w { background: #FFF3D6; color: #8A5A00; } .sgs-chip--b { background: #FDE8E8; color: #B42318; }
+@media (max-width: 760px) { .sgs-row { height: 58px; } .sgs-h { display: none; } .sgs-b { min-height: 70px; } .sgs-tag, .sgs-slot, .sgs-gap { font-size: 9px; } .sgs-prod i { display: none; } .sgs-chip { font-size: 8.5px; padding: 3px 6px; } .sgs-c { padding: 6px; gap: 6px; } }
+@media (max-width: 440px) { .sgs-art { gap: 4px; } .sgs-c { padding: 5px 4px; } .sgs-tag, .sgs-slot, .sgs-gap { font-size: 8px; padding-inline: 4px; overflow-wrap: anywhere; } .sgs-chip { font-size: 7.5px; letter-spacing: 0; padding: 3px 5px; overflow-wrap: anywhere; } }
+</style>

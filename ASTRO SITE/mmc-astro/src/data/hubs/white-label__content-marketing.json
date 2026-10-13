@@ -1,0 +1,507 @@
+{
+  "file": "white-label-content-marketing.html",
+  "path": "/white-label/content-marketing/",
+  "key": "wl_content_marketing",
+  "title": "White-Label Content Marketing Services | MMC",
+  "description": "White-label content marketing for agencies: strategy, articles, guides, email copy and editorial calendars written to your client's voice and brand.",
+  "ogTitle": "White-label content marketing for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label content marketing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label content marketing",
+          "item": "https://www.mondaymarketing.company/white-label/content-marketing/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/content-marketing/",
+      "name": "White-Label Content Marketing Services | MMC",
+      "description": "White-label content marketing for agencies: strategy, articles, guides, email copy and editorial calendars written to your client's voice and brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#service",
+      "name": "White-label Content Marketing",
+      "serviceType": "White-label content marketing",
+      "description": "White-label content marketing delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/content-marketing/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you use AI to write?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use AI for research and drafting support where it helps, and every piece is edited and fact-checked by a person. Tell us if a client wants none."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ownership and usage rights are written into the agreement before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you write for technical topics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with subject-matter notes or interviews supplied through you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you publish to the client's site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We can upload to the CMS if given access, or hand over files."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label content marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Share the client's voice notes and goals. After the NDA we propose a topic plan and one sample piece."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_content_marketing",
+    "wm": "White-label Content Marketing",
+    "eyebrow": "● White-label content marketing",
+    "h1": [
+      "White-label content",
+      [
+        "marketing ",
+        "your clients rely on",
+        "."
+      ]
+    ],
+    "sub": "Articles, guides, case studies and editorial calendars, written to your client's voice and delivered under your brand.",
+    "tiles": [
+      {
+        "img": "sv/content.jpg",
+        "pos": "50% 50%",
+        "label": "Plan",
+        "note": "Topics chosen for a reason"
+      },
+      {
+        "img": "seo/pages.jpg",
+        "pos": "50% 50%",
+        "label": "Articles",
+        "note": "Researched and edited"
+      },
+      {
+        "img": "guides/library.jpg",
+        "pos": "50% 50%",
+        "label": "Guides",
+        "note": "Long-form for buyers"
+      },
+      {
+        "img": "seo/intent.jpg",
+        "pos": "50% 50%",
+        "label": "Briefs",
+        "note": "Built on search intent"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label content marketing is long-form writing and planning that MMC produces for your client while you present it as your agency's work. It covers the editorial plan, articles, guides, case studies and email copy, each researched, fact-checked and written to the client's voice.",
+      "hl": "long-form writing and planning",
+      "who": "Monday Marketing Company (MMC) delivers content marketing for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "grid",
+          "title": "Editorial plan",
+          "text": "Topics tied to search and buyers."
+        },
+        {
+          "icon": "window",
+          "title": "Written content",
+          "text": "Articles, guides and case studies."
+        },
+        {
+          "icon": "target",
+          "title": "Checked and edited",
+          "text": "Facts verified, voice matched."
+        }
+      ],
+      "image": "sv/content.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "content-wl",
+          "h": "How white-label content gets made",
+          "paras": [
+            "Good content starts with a plan and a brief, not a word count. We build briefs from search intent and the client's customers, write to the client's voice, and edit before anything reaches you.",
+            "This pairs with <a href=\"/white-label/seo/\">white-label SEO</a> for ranking, and mirrors our own <a href=\"/services/content-marketing/\">content marketing service</a>."
+          ],
+          "img": "sv/content.jpg",
+          "cap": "Illustrative scene: an editorial calendar being planned.",
+          "table": {
+            "caption": "White-label content formats compared",
+            "head": [
+              "Format",
+              "Best for",
+              "Output"
+            ],
+            "rows": [
+              [
+                "Blog article",
+                "Search and education",
+                "Researched and optimised article"
+              ],
+              [
+                "Pillar guide",
+                "Authority on a topic",
+                "Long-form guide with internal links"
+              ],
+              [
+                "Case study",
+                "Proof for B2B",
+                "Interview-based story from client facts"
+              ],
+              [
+                "Email and newsletter",
+                "Nurture and retention",
+                "Copy for sequences and campaigns"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label content.",
+      "lede": "Plan, write, edit and hand over.",
+      "items": [
+        {
+          "t": "Editorial strategy",
+          "d": "Topics, formats and a calendar tied to the client's goals.",
+          "img": "sv/content.jpg",
+          "alt": "Editorial strategy: illustrative scene"
+        },
+        {
+          "t": "Articles and guides",
+          "d": "Researched, structured and edited long-form content.",
+          "img": "seo/pages.jpg",
+          "alt": "Articles and guides: illustrative scene"
+        },
+        {
+          "t": "Case studies",
+          "d": "Client stories built from facts the client supplies.",
+          "img": "work/review.jpg",
+          "alt": "Case studies: illustrative scene"
+        },
+        {
+          "t": "Email and newsletters",
+          "d": "Copy for campaigns and nurture sequences.",
+          "img": "rt/welcome.jpg",
+          "alt": "Email and newsletters: illustrative scene"
+        },
+        {
+          "t": "Content refreshes",
+          "d": "Updates to older pages that have slipped.",
+          "img": "seo/intent.jpg",
+          "alt": "Content refreshes: illustrative scene"
+        },
+        {
+          "t": "Briefs for writers",
+          "d": "Briefs you can use with your own writers too.",
+          "img": "guides/library.jpg",
+          "alt": "Briefs for writers: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label content marketing.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "sv/content.jpg",
+      "alt": "Why agencies choose MMC for white-label content marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Facts checked",
+          "d": "We verify claims and flag anything unsupported."
+        },
+        {
+          "t": "Voice matched",
+          "d": "We work from tone notes and sample pieces."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label content marketing works,",
+      "h2b": "step by step.",
+      "img": "sv/content.jpg",
+      "alt": "How white-label content marketing works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Voice and goals",
+          "d": "You share tone, audience and goals."
+        },
+        {
+          "t": "Plan",
+          "d": "We propose topics and a calendar."
+        },
+        {
+          "t": "Write and edit",
+          "d": "Pieces are drafted and edited."
+        },
+        {
+          "t": "Deliver",
+          "d": "Final copy goes to you in the format you need."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label content marketing for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells content marketing but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label content marketing fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label email and retention",
+          "d": "Flows and campaigns behind your brand.",
+          "img": "rt/journey.jpg",
+          "href": "/white-label/email-marketing/",
+          "link": "See white-label email and retention"
+        },
+        {
+          "n": "White-label CRO",
+          "d": "Conversion work behind your brand.",
+          "img": "cro/test.jpg",
+          "href": "/white-label/cro/",
+          "link": "See white-label CRO"
+        },
+        {
+          "n": "White-label lead generation",
+          "d": "Funnels behind your brand.",
+          "img": "leadgen/attract.jpg",
+          "href": "/white-label/lead-generation/",
+          "link": "See white-label lead generation"
+        },
+        {
+          "n": "Content marketing",
+          "d": "Articles and guides that earn trust.",
+          "img": "sv/content.jpg",
+          "href": "/services/content-marketing/",
+          "link": "See Content marketing"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "content marketing."
+    ],
+    "faq": [
+      {
+        "q": "Do you use AI to write?",
+        "a": "We use AI for research and drafting support where it helps, and every piece is edited and fact-checked by a person. Tell us if a client wants none."
+      },
+      {
+        "q": "Who owns the content?",
+        "a": "Ownership and usage rights are written into the agreement before work starts."
+      },
+      {
+        "q": "Can you write for technical topics?",
+        "a": "Yes, with subject-matter notes or interviews supplied through you."
+      },
+      {
+        "q": "Do you publish to the client's site?",
+        "a": "We can upload to the CMS if given access, or hand over files."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label content marketing?",
+        "a": "Share the client's voice notes and goals. After the NDA we propose a topic plan and one sample piece."
+      }
+    ],
+    "cta": {
+      "h2a": "Add content marketing",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first content marketing client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Reader",
+        "tag": "Brief",
+        "breaks": "The brief says everyone.",
+        "why": "A piece for everybody reads like it is for nobody, and edits go round in circles.",
+        "does": "We ask for one reader and one question per piece, and write it into the brief before drafting."
+      },
+      {
+        "k": "Plan",
+        "tag": "Calendar",
+        "breaks": "Topics are picked by whoever shouts loudest.",
+        "why": "A calendar with no reason behind it leaves you defending choices to the client.",
+        "does": "Each topic is tied to a buyer question or a goal, and the plan is sent for your sign-off."
+      },
+      {
+        "k": "Draft",
+        "tag": "Quality",
+        "breaks": "Articles repeat what is already online.",
+        "why": "A piece that adds nothing earns no links, shares or rankings.",
+        "does": "Briefs ask for something new: client data, expertise or a clear point of view. Editors check for it."
+      },
+      {
+        "k": "Formats",
+        "tag": "Reuse",
+        "breaks": "One format, used everywhere.",
+        "why": "A post that could be an email, a case study or a short video is left as a blog post.",
+        "does": "Each strong piece is mapped to other formats, so one idea works across the client's channels."
+      },
+      {
+        "k": "Reach",
+        "tag": "Distribution",
+        "breaks": "Published, then forgotten.",
+        "why": "Without a plan to share and refresh it, the piece goes quiet.",
+        "does": "We agree distribution with you, mark pieces to refresh and report on what each one did."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label content",
+      "h2b": "goes wrong.",
+      "lede": "Content looks fine until the client asks what it did. Each stage below is where it goes wrong for an agency, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first content client",
+      "h2b": "gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. The client's approvals and subject experts decide how long each stage takes.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA and voice sheet",
+          "d": "We sign the NDA, then collect the client's voice, terms to use and avoid, and the facts they can supply.",
+          "out": "A voice sheet every draft follows."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot piece",
+          "d": "One article goes from brief to fact-checked draft, so you see how we research, write and edit.",
+          "out": "A finished piece to judge us on."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Brief and edit SOPs",
+          "d": "Brief format, fact-check steps, review rounds and file naming are written down.",
+          "out": "A routine that keeps quality steady."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale the calendar",
+          "d": "A monthly calendar runs on that routine, and more clients join on the same one.",
+          "out": "Content for more clients without more hires."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

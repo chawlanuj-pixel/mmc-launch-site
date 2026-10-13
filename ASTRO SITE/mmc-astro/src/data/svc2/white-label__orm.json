@@ -1,0 +1,228 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "orm/audit.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: a business profile with ratings on a laptop.",
+    "facts": [
+      {
+        "t": "Review work in your name.",
+        "d": "We ask, reply and monitor on your behalf."
+      },
+      {
+        "t": "Replies drafted in the client's voice.",
+        "d": "You approve, or we post to your rules."
+      },
+      {
+        "t": "No bought reviews.",
+        "d": "Only genuine customers are asked."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their reputation work to MMC"
+  },
+  "work": {
+    "panel": "ReviewMonitor",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to protect a",
+    "h2b": "client's reputation.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Audit what customers see first.",
+        "d": "We read the search result, rating and recent reviews the way a buyer does, and write up the gaps for you."
+      },
+      {
+        "n": "02",
+        "t": "Ask genuine customers at the right moment.",
+        "d": "A short request goes after the order or visit, in your client's voice, so the reviews you earn are real."
+      },
+      {
+        "n": "03",
+        "t": "Draft replies for you to approve.",
+        "d": "Replies are written in the brand voice, and a person on your side approves or we follow your rules."
+      },
+      {
+        "n": "04",
+        "t": "Keep profile facts correct.",
+        "d": "Hours, phone, photos and answers are checked on a routine, so the profile matches the business."
+      },
+      {
+        "n": "05",
+        "t": "Report themes, not just a rating.",
+        "d": "A monthly view of rating trend, response time and review themes, ready to forward with your logo on it."
+      }
+    ],
+    "illustrative": "Illustrative layout of a reviews inbox. Not a client account, no real reviews or figures. WhatsApp and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Reputation delivery",
+    "pinsLabel": "Five places white-label reputation work slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "board",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Requests"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Replies"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Facts"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Alerts"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Promises"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "mail",
+        "head": "Requests",
+        "lines": [
+          "Sent to everyone",
+          "No moment chosen"
+        ],
+        "chip": "Mistimed",
+        "tone": "w"
+      },
+      {
+        "glyph": "chat",
+        "head": "Replies",
+        "lines": [
+          "Late or copy-paste",
+          "Anger unanswered"
+        ],
+        "chip": "Slow",
+        "tone": "b"
+      },
+      {
+        "glyph": "globe",
+        "head": "Facts",
+        "lines": [
+          "Hours out of date",
+          "Photos are old"
+        ],
+        "chip": "Stale",
+        "tone": "w"
+      },
+      {
+        "glyph": "bell",
+        "head": "Alerts",
+        "lines": [
+          "Bad review noticed late",
+          "No owner"
+        ],
+        "chip": "Late",
+        "tone": "b"
+      },
+      {
+        "glyph": "flag",
+        "head": "Promises",
+        "lines": [
+          "Removal promised",
+          "Cannot deliver"
+        ],
+        "chip": "Risky",
+        "tone": "b"
+      }
+    ],
+    "base": "Genuine asks, careful replies, true facts",
+    "artLabel": "Five cards showing where white-label reputation work slips: requests, replies, profile facts, alerts and promises.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for reputation work,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and reputation audit",
+        "d": "We sign the NDA, audit a client's search result, profiles and reviews, and write the scope.",
+        "get": "An audit and a scope for the first client.",
+        "img": "company/call.jpg",
+        "alt": "Illustrative scene: a call about a reputation audit.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot with one client",
+        "d": "Requests, replies and profile fixes run for a month, with a first report.",
+        "get": "A pilot report to judge us on.",
+        "img": "about2/desk-open.jpg",
+        "alt": "Illustrative scene: a laptop with a table of client results.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Request wording, reply tone, approval route and escalation rules are written once.",
+        "get": "A reputation playbook in your name.",
+        "img": "company/onepage.jpg",
+        "alt": "Illustrative scene: a reputation playbook being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale across clients",
+        "d": "More clients join the same routine, with monitoring and a single report format.",
+        "get": "A reputation service you can sell to any local client.",
+        "img": "contact/growth.jpg",
+        "alt": "Illustrative scene: a performance view on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "contact/meeting.jpg",
+    "alt": "Three colleagues around a table with sketches.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label digital marketing",
+        "href": "/white-label/digital-marketing/"
+      },
+      {
+        "n": "Agency outsourcing",
+        "href": "/white-label/outsourcing/"
+      },
+      {
+        "n": "Reputation management",
+        "href": "/services/online-reputation-management/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

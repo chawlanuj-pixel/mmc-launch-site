@@ -1,0 +1,88 @@
+{
+  "web-development__wordpress": {
+    "leaks": {
+      "note": "Illustrative layout, not a client site.",
+      "style": "stack",
+      "eyebrow": "Where WordPress builds go wrong",
+      "h2a": "Four ways a WordPress build",
+      "h2b": "goes wrong.",
+      "lede": "A WordPress site is only as good as the hands that keep it. Each stage below is where builds go wrong, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Plan the templates",
+        "tag": "Site planning",
+        "breaks": "Building pages one by one with no template plan.",
+        "why": "Without planned templates, every new page becomes custom work and the site drifts.",
+        "does": "We map pages, templates, editing needs and integrations, then agree the scope in writing."
+      },
+      {
+        "k": "Build a lean theme",
+        "tag": "Theme and plugins",
+        "breaks": "A bought theme patched with plugins.",
+        "why": "Every extra plugin adds weight, update work and risk.",
+        "does": "Approved designs become a custom theme, with plugins kept to the few that earn their place."
+      },
+      {
+        "k": "Test speed and forms",
+        "tag": "Speed and launch",
+        "breaks": "Going live without testing speed, forms and tracking.",
+        "why": "Slow pages and silent forms lose enquiries before anyone notices.",
+        "does": "We test speed, forms, tracking and mobile before the switch, then migrate and redirect carefully."
+      },
+      {
+        "k": "Hand over cleanly",
+        "tag": "Handover",
+        "breaks": "A site only the builder can edit.",
+        "why": "If every change needs a developer, pages go stale.",
+        "does": "Your team gets an editing guide, and we can stay on under website maintenance."
+      }
+    ],
+    "process": {
+      "note": "Timing depends on scope. We agree it with you before work starts."
+    }
+  },
+  "website-maintenance": {
+    "leaks": {
+      "note": "Illustrative layout, not a client site.",
+      "style": "stack",
+      "eyebrow": "Where site care goes wrong",
+      "h2a": "Four ways site care",
+      "h2b": "goes wrong.",
+      "lede": "A site that is cared for keeps earning its place. Each stage below is where care slips, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Audit first",
+        "tag": "Site audit",
+        "breaks": "Updating a site nobody has audited.",
+        "why": "Old plugins, weak hosting and missing backups stay hidden until something breaks.",
+        "does": "We check versions, plugins, hosting, backups, security and speed, and list what needs fixing first."
+      },
+      {
+        "k": "Make updates safe",
+        "tag": "Backups and updates",
+        "breaks": "Updates run straight on the live site.",
+        "why": "One bad update can break a layout or a form.",
+        "does": "We set up backups and monitoring, and a safe copy to test updates before they go live."
+      },
+      {
+        "k": "Keep the routine",
+        "tag": "Security and uptime",
+        "breaks": "Maintenance done when someone remembers.",
+        "why": "Scans, checks and small edits slip when nobody owns them.",
+        "does": "Updates, scans, checks and small edits happen on a schedule you can see."
+      },
+      {
+        "k": "Report and improve",
+        "tag": "Monthly report",
+        "breaks": "No record of what was done.",
+        "why": "Without a summary you cannot tell what was fixed or what comes next.",
+        "does": "Each month you get a summary, and we suggest changes worth making next."
+      }
+    ],
+    "process": {
+      "note": "Timing depends on scope. We agree it with you before work starts."
+    }
+  }
+}

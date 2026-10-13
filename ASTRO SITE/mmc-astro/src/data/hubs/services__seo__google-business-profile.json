@@ -1,0 +1,549 @@
+{
+  "file": "google-business-profile.html",
+  "path": "/services/seo/google-business-profile/",
+  "key": "gbp",
+  "title": "Google Business Profile Optimisation India | MMC",
+  "description": "Google Business Profile and local SEO for brands, colleges and offices in India. Set-up, categories, posts, reviews and local pages to win searches by place.",
+  "ogTitle": "Google Business Profile that wins local search",
+  "ogDescription": "Set-up, reviews and local pages for searches by place.",
+  "ogAlt": "Monday Marketing Company: google business profile optimisation.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/seo/google-business-profile/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Google Business Profile optimisation",
+          "item": "https://www.mondaymarketing.company/services/seo/google-business-profile/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/google-business-profile/#webpage",
+      "url": "https://www.mondaymarketing.company/services/seo/google-business-profile/",
+      "name": "Google Business Profile Optimisation India | MMC",
+      "description": "Google Business Profile and local SEO for brands, colleges and offices in India. Set-up, categories, posts, reviews and local pages to win searches by place.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/seo/google-business-profile/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/seo/google-business-profile/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/seo/google-business-profile/#service",
+      "name": "Google Business Profile optimisation",
+      "serviceType": "Local SEO and Google Business Profile management",
+      "description": "Google Business Profile optimisation and local SEO for stores, colleges and offices in India: profile set-up, categories, photos, posts, review handling and local pages.",
+      "url": "https://www.mondaymarketing.company/services/seo/google-business-profile/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/google-business-profile/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the free listing that appears in Google Search and Maps for a business with a physical location or a defined service area, showing details, photos, reviews and actions such as call and directions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need a physical location?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A profile needs either a place customers can visit or a defined service area. Rules vary and Google can change them, so we check eligibility first and do not set up listings that break the guidelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you manage several locations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Stores, campuses and offices each get their own verified profile with consistent details. Our own offices are in Thane, Mumbai and Indore, so multi-city handling is familiar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you buy or fake reviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never. Fake reviews break Google's rules and damage trust. We help you ask real customers properly and reply to every review honestly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee a top local ranking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is it for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands with stores or experience centres, B2B firms with offices and plants, and colleges and coaching centres with campuses. If you only sell online and have no place customers visit, this is probably not your priority."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "gbp",
+    "wm": "LOCAL",
+    "eyebrow": "● Local search",
+    "h1": [
+      "Google Business Profile",
+      [
+        "that wins ",
+        "searches by place",
+        "."
+      ]
+    ],
+    "sub": "When someone searches near me or for a business in their city, your profile is the first thing they see. We set it up and run it so it is complete, current and trusted.",
+    "tiles": [
+      {
+        "img": "orm/profile.jpg",
+        "pos": "50% 50%",
+        "label": "Profile",
+        "note": "Complete and current"
+      },
+      {
+        "img": "orm/reply.jpg",
+        "pos": "50% 50%",
+        "label": "Reviews",
+        "note": "Answered properly"
+      },
+      {
+        "img": "sv/organic.jpg",
+        "pos": "50% 50%",
+        "label": "Local pages",
+        "note": "One for each place"
+      },
+      {
+        "img": "orm/report.jpg",
+        "pos": "50% 50%",
+        "label": "Reporting",
+        "note": "Calls and directions"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "A Google Business Profile is the free listing that appears in Google Search and Maps for a business with a place, such as a store, college campus or office. Optimising it means correct details, the right categories, current photos, regular posts and handled reviews, so people searching by location choose you.",
+      "hl": "correct details, the right categories, current photos and handled reviews",
+      "who": "Monday Marketing Company (MMC) runs local search for D2C brands with stores, B2B firms with offices and plants, and colleges with campuses. Our own offices are in Thane, Mumbai and Indore.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Complete profile",
+          "text": "Name, address, hours, categories, services and photos kept accurate."
+        },
+        {
+          "icon": "grid",
+          "title": "Reviews handled",
+          "text": "Requests and replies handled in your voice, and problems escalated."
+        },
+        {
+          "icon": "link",
+          "title": "Local pages",
+          "text": "City or branch pages on your site that match the profile."
+        }
+      ],
+      "image": "orm/profile.jpg",
+      "chip": "Found when buyers search by place"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "what-it-is",
+          "h": "Why a profile matters",
+          "paras": [
+            "For local searches, the profile often appears before any website. It shows the name, address, hours, photos, reviews and a button to call or get directions. A missing hour, a wrong phone number or an unanswered review can lose a visit before the buyer sees your site.",
+            "Voice searches such as asking for the nearest branch also draw on this data, which ties the work to <a href=\"/services/seo/aeo/\">AEO</a>."
+          ],
+          "img": "orm/profile.jpg",
+          "cap": "Illustrative scene: a business profile shown in local search."
+        },
+        {
+          "id": "local-vs",
+          "h": "Local SEO compared with national SEO",
+          "paras": [
+            "Local search ranks on different signals from a national SEO programme, though the two work together with <a href=\"/services/seo/\">SEO</a>."
+          ],
+          "table": {
+            "caption": "Local SEO compared with national SEO",
+            "head": [
+              "",
+              "Local SEO",
+              "National SEO"
+            ],
+            "rows": [
+              [
+                "Searches",
+                "Near me, in a city, for a branch",
+                "Topic and product searches anywhere"
+              ],
+              [
+                "Main surface",
+                "Maps, local pack and profile",
+                "Organic results and AI answers"
+              ],
+              [
+                "Key signals",
+                "Relevance, distance, prominence, reviews",
+                "Content, links, technical health"
+              ],
+              [
+                "Key assets",
+                "Profile, reviews, citations, local pages",
+                "Pages, guides, authority"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Reputation is part of it.",
+            "text": "Reviews feed both ranking and trust. See <a href=\"/services/online-reputation-management/\">online reputation management</a> and the <a href=\"/guides/\">guides</a>."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where local visits are lost",
+      "h2a": "Five ways local search",
+      "h2b": "visits go missing.",
+      "lede": "Each stage below is where a place-based buyer is lost, and the profile work that recovers them."
+    },
+    "stages": [
+      {
+        "k": "Claim and verify the listing",
+        "tag": "Set-up",
+        "breaks": "Duplicate, unclaimed or wrongly merged listings.",
+        "why": "Google may show wrong details or let others edit them if the listing is not under your control.",
+        "does": "We claim, verify and merge duplicates for each store, campus or office.",
+        "href": "/services/seo/google-business-profile/",
+        "img": "orm/audit.jpg"
+      },
+      {
+        "k": "Choose categories and services",
+        "tag": "Profile content",
+        "breaks": "Generic categories and thin descriptions.",
+        "why": "Categories and services tell Google which searches the business suits.",
+        "does": "We choose a primary category and secondary categories, list services or products and write the description in plain words.",
+        "href": "/services/seo/google-business-profile/",
+        "img": "orm/profile.jpg"
+      },
+      {
+        "k": "Keep details and photos current",
+        "tag": "Hours, photos and posts",
+        "breaks": "Stale hours, old photos, no posts.",
+        "why": "A listing that looks abandoned loses trust, and wrong hours send customers away.",
+        "does": "We keep hours, holiday timings, photos and posts current, with a simple process for your team.",
+        "href": "/services/seo/google-business-profile/",
+        "img": "sv/organic.jpg"
+      },
+      {
+        "k": "Reply to reviews",
+        "tag": "Review handling",
+        "breaks": "Reviews left unanswered.",
+        "why": "Prospects read how a business replies. Silence reads as indifference.",
+        "does": "We set up a respectful way to ask for reviews and draft honest replies, and escalate problems to you.",
+        "href": "/services/online-reputation-management/",
+        "img": "orm/reply.jpg"
+      },
+      {
+        "k": "Match the website to the profile",
+        "tag": "Local pages and reporting",
+        "breaks": "A site that ignores the places you serve.",
+        "why": "Local pages that match the profile reinforce relevance and give visitors a next step.",
+        "does": "We build location pages with consistent details and report on calls, direction requests and enquiries.",
+        "href": "/audit/",
+        "img": "orm/report.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "local search is working.",
+      "note": "Impressions alone are not on the list.",
+      "cards": [
+        {
+          "n": "Calls and direction requests",
+          "d": "Actions taken from the profile."
+        },
+        {
+          "n": "Local search visibility",
+          "d": "Where the profile appears for the searches that matter."
+        },
+        {
+          "n": "Review rating and volume",
+          "d": "What new customers read, and how fast you reply."
+        },
+        {
+          "n": "Walk-ins, enquiries or admissions",
+          "d": "What the profile produces for the business, where you can track it."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where local search fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "SEO",
+          "d": "The national programme that local search sits beside.",
+          "img": "seo/tech.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "Online reputation management",
+          "d": "Reviews and mentions that shape trust.",
+          "img": "orm/earn.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
+        },
+        {
+          "n": "Answer engine optimisation",
+          "d": "Short answers for voice and near-me questions.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/aeo/",
+          "link": "See AEO"
+        },
+        {
+          "n": "Locations",
+          "d": "Thane, Mumbai and Indore, and what a business in each city faces.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See locations"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Google Business Profile."
+    ],
+    "faq": [
+      {
+        "q": "What is a Google Business Profile?",
+        "a": "It is the free listing that appears in Google Search and Maps for a business with a physical location or a defined service area, showing details, photos, reviews and actions such as call and directions."
+      },
+      {
+        "q": "Do we need a physical location?",
+        "a": "A profile needs either a place customers can visit or a defined service area. Rules vary and Google can change them, so we check eligibility first and do not set up listings that break the guidelines."
+      },
+      {
+        "q": "Can you manage several locations?",
+        "a": "Yes. Stores, campuses and offices each get their own verified profile with consistent details. Our own offices are in Thane, Mumbai and Indore, so multi-city handling is familiar."
+      },
+      {
+        "q": "Do you buy or fake reviews?",
+        "a": "Never. Fake reviews break Google's rules and damage trust. We help you ask real customers properly and reply to every review honestly."
+      },
+      {
+        "q": "Can you guarantee a top local ranking?",
+        "a": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Who is it for?",
+        "a": "D2C brands with stores or experience centres, B2B firms with offices and plants, and colleges and coaching centres with campuses. If you only sell online and have no place customers visit, this is probably not your priority."
+      }
+    ],
+    "cta": {
+      "h2a": "Find out how you",
+      "h2b": "appear on the map.",
+      "lede": "On a call, with a senior strategist. We check your profiles for gaps in details, categories and reviews and tell you what to fix."
+    },
+    "process": {
+      "h2a": "How we run local search,",
+      "h2b": "month to month.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit and set up",
+          "d": "We check every listing, claim or merge duplicates and complete the profile content.",
+          "out": "Accurate, complete profiles."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Reviews and local pages",
+          "d": "We set up the review process and build location pages that match each profile.",
+          "out": "Profiles and pages that agree."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Post and report",
+          "d": "We start regular posts and photos and report on calls, directions and enquiries.",
+          "out": "A monthly local report."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Local search for businesses that",
+      "h2b": "people visit.",
+      "good": {
+        "t": "Customers, students or visitors find you by searching a place, a branch or near me.",
+        "why": "This suits D2C brands with stores, B2B firms with plants and offices, and colleges with campuses."
+      },
+      "not": {
+        "t": "You are online only with no location or service area.",
+        "why": "Local ranking depends on a place. Without one, national SEO and AEO are the better use of effort."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "local search.",
+      "lede": "From claiming listings to local pages, for stores, campuses and offices.",
+      "items": [
+        {
+          "t": "Listing set-up",
+          "d": "Claiming, verifying and merging duplicate listings.",
+          "img": "orm/audit.jpg",
+          "alt": "Listing set-up: illustrative scene"
+        },
+        {
+          "t": "Profile content",
+          "d": "Categories, services, description, attributes and photos.",
+          "img": "orm/profile.jpg",
+          "alt": "Profile content: illustrative scene"
+        },
+        {
+          "t": "Posts and updates",
+          "d": "Regular posts, offers, events and timing changes.",
+          "img": "sv/organic.jpg",
+          "alt": "Posts and updates: illustrative scene"
+        },
+        {
+          "t": "Review handling",
+          "d": "Review requests and replies, with problems escalated.",
+          "img": "orm/reply.jpg",
+          "alt": "Review handling: illustrative scene"
+        },
+        {
+          "t": "Local pages",
+          "d": "Branch or city pages that match the profile.",
+          "img": "web/seo.jpg",
+          "alt": "Local pages: illustrative scene"
+        },
+        {
+          "t": "Local reporting",
+          "d": "Calls, directions and enquiries read each month.",
+          "img": "orm/report.jpg",
+          "alt": "Local reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for local search.",
+      "lede": "We run profiles the way a careful owner would, and report honestly.",
+      "img": "orm/profile.jpg",
+      "alt": "Why brands choose MMC for local search. Illustrative scene.",
+      "items": [
+        {
+          "t": "Rules-first",
+          "d": "We follow Google's guidelines, so your listing is not put at risk."
+        },
+        {
+          "t": "Joined up with SEO",
+          "d": "Local and national search are planned together."
+        },
+        {
+          "t": "Multi-city experience",
+          "d": "Our own offices are in Thane, Mumbai and Indore."
+        },
+        {
+          "t": "Honest reviews",
+          "d": "Real requests and honest replies, never fakes."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a local search engagement runs,",
+      "h2b": "step by step.",
+      "img": "orm/reply.jpg",
+      "alt": "How a local search engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit the listings",
+          "d": "Every location is checked for ownership, duplicates and accuracy."
+        },
+        {
+          "t": "Complete the profile",
+          "d": "Categories, services, photos and descriptions are set."
+        },
+        {
+          "t": "Run reviews and posts",
+          "d": "Review requests, replies and regular posts begin."
+        },
+        {
+          "t": "Report and refine",
+          "d": "Calls, directions and enquiries are reviewed monthly."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

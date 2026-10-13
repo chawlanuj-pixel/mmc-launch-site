@@ -1,0 +1,290 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "b2b/explain.jpg",
+    "pos": "50% 50%",
+    "alt": "A capability website open on a laptop and a phone.",
+    "facts": [
+      {
+        "t": "Search by spec.",
+        "d": "Pages for the parts, processes and standards buyers search."
+      },
+      {
+        "t": "Proof that travels.",
+        "d": "Case studies and capability pages a buying team can forward."
+      },
+      {
+        "t": "RFQs that qualify.",
+        "d": "Forms and CRM tracking that separate real requests from noise."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why manufacturers choose MMC"
+  },
+  "work": {
+    "panel": "RfqDesk",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "manufacturer.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Build pages for how engineers search.",
+        "d": "Product, process and application pages match the part, material and standard a buyer types."
+      },
+      {
+        "n": "02",
+        "t": "Show capability a buying team can forward.",
+        "d": "Capacity, quality process, certifications and similar jobs sit on one page that travels inside a company."
+      },
+      {
+        "n": "03",
+        "t": "Run ads by product line and region.",
+        "d": "Search and professional-network campaigns reach buyers while a need is live, split by what you make and where."
+      },
+      {
+        "n": "04",
+        "t": "Make the RFQ form qualify itself.",
+        "d": "Drawing, material, quantity and timeline are asked up front, so sales can tell a real request from noise."
+      },
+      {
+        "n": "05",
+        "t": "Track every enquiry to quote and order.",
+        "d": "Forms feed your CRM with follow-up steps, and reports run from enquiry to quote to order."
+      }
+    ],
+    "illustrative": "Illustrative layout of a supplier enquiry path. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "An industrial buyer's path",
+    "pinsLabel": "Five places a manufacturer loses an enquiry",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Search"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Proof"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Reach"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "RFQ"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Follow-up"
+      }
+    ],
+    "base": "From a specification search to an order",
+    "artLabel": "Five cards: a spec search where the plant is not found, a brochure with no proof, ads missing while a need is live, an RFQ form that qualifies nothing and an enquiry lost between teams.",
+    "accent": "#0F4C81",
+    "cols": [
+      {
+        "head": "Search",
+        "k": "search",
+        "rows": [
+          {
+            "t": "CNC machined parts supplier"
+          },
+          {
+            "t": "Directory listings first",
+            "s": "dim"
+          },
+          {
+            "t": "Your plant: catalogue only",
+            "s": "bad"
+          }
+        ],
+        "chip": "Not found by spec",
+        "tone": "b"
+      },
+      {
+        "head": "Proof",
+        "k": "page",
+        "rows": [
+          {
+            "t": "Company brochure"
+          },
+          {
+            "t": "No capacity listed",
+            "s": "bad"
+          },
+          {
+            "t": "No certifications",
+            "s": "bad"
+          },
+          {
+            "t": "No similar jobs",
+            "s": "bad"
+          }
+        ],
+        "chip": "Brochure, no proof",
+        "tone": "w"
+      },
+      {
+        "head": "Reach",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "Referrals",
+            "s": "dim",
+            "w": 62
+          },
+          {
+            "t": "Dealers",
+            "s": "dim",
+            "w": 36
+          },
+          {
+            "t": "Search, need is live",
+            "s": "bad",
+            "w": 8
+          }
+        ],
+        "chip": "Waiting for referrals",
+        "tone": "w"
+      },
+      {
+        "head": "RFQ",
+        "k": "form",
+        "rows": [
+          {
+            "t": "Name"
+          },
+          {
+            "t": "Message",
+            "s": "dim"
+          },
+          {
+            "t": "No drawing",
+            "s": "bad"
+          },
+          {
+            "t": "No quantity",
+            "s": "bad"
+          }
+        ],
+        "chip": "Noise from real",
+        "tone": "b"
+      },
+      {
+        "head": "Follow-up",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Enquiry in the inbox",
+            "s": "ok"
+          },
+          {
+            "t": "Passed between teams",
+            "s": "warn"
+          },
+          {
+            "t": "No follow-up",
+            "s": "bad"
+          },
+          {
+            "t": "Order unknown",
+            "s": "bad"
+          }
+        ],
+        "chip": "Lost in handoff",
+        "tone": "w"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the B2B",
+    "h2b": "brands we market.",
+    "tiles": [],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a manufacturer,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Audit and map",
+        "d": "We review site, enquiries and CRM, and list the specifications and proof you hold.",
+        "get": "A map of search and proof.",
+        "img": "b2b/call.jpg",
+        "alt": "Illustrative scene: a person on a video call with a client.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Build the capability pages",
+        "d": "Product and capability pages and case studies go live.",
+        "get": "A site that shows proof.",
+        "img": "seo/pages.jpg",
+        "alt": "Illustrative scene: a product category page on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Build the RFQ path",
+        "d": "An RFQ form and landing pages ask the right questions.",
+        "get": "A form that qualifies.",
+        "img": "cro/forms.jpg",
+        "alt": "Illustrative scene: an enquiry form on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Run demand and track",
+        "d": "Search and paid campaigns start and enquiries are tracked to orders.",
+        "get": "Reporting by qualified enquiry.",
+        "img": "b2b/qualify.jpg",
+        "alt": "Illustrative scene: a lead pipeline on a monitor.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/strategy.jpg",
+    "alt": "A consultant talking with a client at a table, working through their needs.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      },
+      {
+        "n": "Lead generation",
+        "href": "/services/lead-generation/"
+      },
+      {
+        "n": "Web development",
+        "href": "/services/web-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

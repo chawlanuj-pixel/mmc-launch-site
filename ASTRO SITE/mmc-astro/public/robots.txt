@@ -12,6 +12,7 @@ User-agent: Claude-SearchBot
 User-agent: Claude-User
 Allow: /
 Disallow: /admin/
+Disallow: /forms/
 
 # Training crawlers: allowed by default for brand visibility.
 User-agent: GPTBot
@@ -20,9 +21,11 @@ User-agent: ClaudeBot
 User-agent: CCBot
 Allow: /
 Disallow: /admin/
+Disallow: /forms/
 
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /forms/
 
 Sitemap: https://www.mondaymarketing.company/sitemap-index.xml

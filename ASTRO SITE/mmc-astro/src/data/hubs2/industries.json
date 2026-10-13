@@ -1,0 +1,158 @@
+{
+  "_note": "hubs2 layer for /industries/. Copy, FAQ, CTA, title, meta and JSON-LD stay in src/data/hubs/industries.json. This file only adds the hubs2 visuals, links and curation; delete it to fall back to the classic template.",
+  "kind": "industries",
+  "doors": [
+    {
+      "k": "Direct-to-consumer",
+      "n": "D2C brands",
+      "href": "/industries/d2c/",
+      "img": "/assets/d2c/packing.jpg",
+      "pos": "50% 50%",
+      "alt": "A D2C team packing customer orders at a workbench.",
+      "line": "Ads, store, creative and retention, judged on contribution after ads.",
+      "foot": "Skincare, baby and kids, food, fashion"
+    },
+    {
+      "k": "Business-to-business",
+      "n": "B2B companies",
+      "href": "/industries/b2b/",
+      "img": "/ai-by-mmc/assets/img/hub-aud-b2b.jpg",
+      "pos": "40% 50%",
+      "alt": "A B2B team in a meeting room watching a pipeline presentation.",
+      "line": "Websites, content and lead generation, judged on qualified leads.",
+      "foot": "Manufacturing, SaaS and software"
+    },
+    {
+      "k": "Colleges and education brands",
+      "n": "Educational institutes",
+      "href": "/industries/education/",
+      "img": "/ai-by-mmc/assets/img/hub-aud-edu.jpg",
+      "pos": "45% 50%",
+      "alt": "An admissions counsellor talking with a student and her parent.",
+      "line": "Search, enquiries and follow-up, judged on enquiries that become enrolments.",
+      "foot": "Colleges, study abroad"
+    }
+  ],
+  "lede": {
+    "img": "au/step-call.jpg",
+    "alt": "A strategist on a video call reading a client's numbers."
+  },
+  "sectors": {
+    "eyebrow": "Go deeper",
+    "h2a": "Pick your sector.",
+    "h2b": "Each has its own page.",
+    "lede": "The same method, set up for how each kind of business is bought.",
+    "groups": [
+      {
+        "label": "D2C brands",
+        "note": "Orders, margin and repeat purchase.",
+        "all": {
+          "label": "All D2C",
+          "href": "/industries/d2c/"
+        },
+        "items": [
+          {
+            "n": "Skincare",
+            "d": "For brands where buyers research ingredients and reorder on a cycle.",
+            "img": "/ai-by-mmc/assets/img/ugc-use-d2c.jpg",
+            "href": "/industries/d2c/skincare/",
+            "alt": "A woman applying a face serum at a mirror."
+          },
+          {
+            "n": "Baby and kids",
+            "d": "For brands where parents buy for safety and needs change with age.",
+            "img": "d2c/unboxing.jpg",
+            "href": "/industries/d2c/baby-and-kids/",
+            "alt": "A parent opening a delivered box from a D2C brand."
+          },
+          {
+            "n": "Food and beverage",
+            "d": "For low-basket, repeat-order food and drink brands.",
+            "img": "/ai-by-mmc/assets/img/video-use-d2c.jpg",
+            "href": "/industries/d2c/food-and-beverage/",
+            "alt": "A pack of trail mix with nuts and dried fruit around it."
+          },
+          {
+            "n": "Fashion and apparel",
+            "d": "For brands with heavy browsing, returns and creative fatigue.",
+            "img": "d2c/range.jpg",
+            "href": "/industries/d2c/fashion-and-apparel/",
+            "alt": "A folded striped T-shirt beside other D2C products."
+          }
+        ]
+      },
+      {
+        "label": "B2B companies",
+        "note": "Qualified leads and pipeline.",
+        "all": {
+          "label": "All B2B",
+          "href": "/industries/b2b/"
+        },
+        "items": [
+          {
+            "n": "Manufacturing",
+            "d": "Search, proof and quote funnels for manufacturers and suppliers.",
+            "img": "/ai-by-mmc/assets/img/photoshoot-use-b2b.jpg",
+            "href": "/industries/b2b/manufacturing/",
+            "alt": "An engineer with a tablet on a factory floor."
+          },
+          {
+            "n": "SaaS and software",
+            "d": "Search, funnels and CRM signals for trial-led software buyers.",
+            "img": "/ai-by-mmc/assets/img/lp-use-b2b.jpg",
+            "href": "/industries/b2b/saas-and-software/",
+            "alt": "A software product landing page open on a laptop."
+          }
+        ]
+      },
+      {
+        "label": "Educational institutes",
+        "note": "Enquiries through to enrolment.",
+        "all": {
+          "label": "All education",
+          "href": "/industries/education/"
+        },
+        "items": [
+          {
+            "n": "Colleges",
+            "d": "Search, paid media and follow-up for families comparing colleges.",
+            "img": "/ai-by-mmc/assets/img/video-use-edu.jpg",
+            "href": "/industries/education/colleges/",
+            "alt": "A college campus with an open day banner, seen from above."
+          },
+          {
+            "n": "Study abroad",
+            "d": "Search, ads and follow-up for students planning countries and intakes.",
+            "img": "/ai-by-mmc/assets/img/photoshoot-use-edu.jpg",
+            "href": "/industries/education/study-abroad/",
+            "alt": "Students walking across a university campus."
+          }
+        ]
+      }
+    ]
+  },
+  "steps": [
+    {
+      "img": "au/audit-call.jpg",
+      "alt": "A strategist reviewing a client's dashboard on a call."
+    },
+    {
+      "img": "au/step-plan.jpg",
+      "alt": "A prioritised action list written in a notebook."
+    },
+    {
+      "img": "au/look-tracking.jpg",
+      "alt": "A dashboard and order data compared on two screens."
+    }
+  ],
+  "work": {
+    "ids": [
+      "giraffe",
+      "nmc",
+      "mvj"
+    ],
+    "h2a": "Work across",
+    "h2b": "all three audiences.",
+    "lede": "Stores, websites, lead generation and creative, built for D2C, B2B and education."
+  }
+}

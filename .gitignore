@@ -23,3 +23,10 @@ node_modules/
 .env
 .env.*
 .review-tmp/
+
+# Server-only form secrets (reCAPTCHA secret key). Keep out of git.
+ASTRO SITE/mmc-astro/public/forms/config.php
+
+# Local safety backups and the stale V2 snapshot (the live project is ASTRO SITE/mmc-astro)
+ASTRO SITE/mmc-astro-backup-*/
+Astro V2/

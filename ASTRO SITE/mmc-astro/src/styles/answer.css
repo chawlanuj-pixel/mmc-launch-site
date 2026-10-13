@@ -69,7 +69,7 @@
   .ans__card { grid-template-columns: minmax(0, 1fr); grid-template-areas: "main" "pts" "fig"; }
   .ans__fig { padding-top: 0; }
   .ans__sun { display: none; }
-  .ans__arch { flex: none; aspect-ratio: 16 / 6; min-height: 0; border-radius: 22px; }
+  .ans__arch { flex: none; aspect-ratio: 16 / 9; min-height: 0; border-radius: 22px; }
   .ans__arch img { object-position: 50% 40%; }
   .ans__chip { left: 14px; bottom: 14px; }
   .ans__lead { max-width: 30em; }
@@ -77,21 +77,22 @@
 /* Phone: slim photo strip on top, tiles scroll-snap */
 @media (max-width: 640px) {
   .ans { padding: 28px 0; }
-  .ans__card { grid-template-areas: "fig" "main" "pts"; row-gap: 16px; padding: 14px 16px 18px; border-radius: 22px; }
-  .ans__arch { aspect-ratio: auto; height: 88px; border-radius: 16px; }
-  .ans__arch img { object-position: 50% 38%; }
+  .ans__card { grid-template-areas: "fig" "main" "pts"; row-gap: 22px; padding: 16px 16px 22px; border-radius: 22px; }
+  /* A photo, not a strip: it was an 88px-tall band that hid the subject. */
+  .ans__arch { aspect-ratio: 4 / 3; height: auto; border-radius: 18px; }
+  .ans__arch img { object-position: 50% 32%; }
   .ans__chip { display: none; }
-  .ans__label { font-size: 11px; padding: 6px 12px 6px 9px; margin-bottom: 10px; }
-  .ans__lead { font-size: 19px; line-height: 1.27; }
-  .ans__who { font-size: 14px; line-height: 1.5; margin-top: 8px; }
+  .ans__label { font-size: 12px; padding: 7px 13px 7px 10px; margin-bottom: 12px; }
+  .ans__lead { font-size: 21px; line-height: 1.28; }
+  .ans__who { font-size: 16px; line-height: 1.55; margin-top: 12px; }
   .ans__pts, .ans__card--2 .ans__pts, .ans__card--4 .ans__pts {
     display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
     margin-inline: -16px; padding: 4px 16px 6px; scroll-padding-inline: 16px; -webkit-overflow-scrolling: touch;
   }
   .ans__pts::-webkit-scrollbar { display: none; }
-  .ans__pt { flex: 0 0 76%; scroll-snap-align: start; padding: 13px 14px 14px; border-radius: 18px; }
-  .ans__card--2 .ans__pt { flex-basis: 84%; }
-  .ans__pt-x { margin-top: 8px; font-size: 13.5px; line-height: 1.5; }
+  .ans__pt { flex: 0 0 82%; scroll-snap-align: start; padding: 16px 16px 18px; border-radius: 18px; }
+  .ans__card--2 .ans__pt { flex-basis: 88%; }
+  .ans__pt-x { margin-top: 10px; font-size: 15px; line-height: 1.55; }
 }
 
 /* The closing band is the shared PreFooterCta (styles/prefooter.css). */

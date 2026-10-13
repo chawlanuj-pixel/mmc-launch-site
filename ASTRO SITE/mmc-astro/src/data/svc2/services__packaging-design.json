@@ -1,0 +1,181 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__packaging-design.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "pack/tile.jpg",
+    "pos": "50% 50%",
+    "alt": "A phone showing a product grid beside a boxed pack.",
+    "facts": [
+      {
+        "t": "Seen in seconds.",
+        "d": "Brand, product, variant, claim."
+      },
+      {
+        "t": "Works on a tile.",
+        "d": "Tested at thumbnail size."
+      },
+      {
+        "t": "Ready to print.",
+        "d": "Files checked with your printer."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "PackagingMock",
+    "eyebrow": "The work, shown",
+    "h2a": "How a pack goes from",
+    "h2b": "flat file to shelf.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Study the shelf and the screen.",
+        "d": "The category shelf and marketplace listings show what your pack has to stand out from."
+      },
+      {
+        "n": "02",
+        "t": "Design structure and materials together.",
+        "d": "Dieline, board and protection are set around the product and its shipping cost."
+      },
+      {
+        "n": "03",
+        "t": "Set the hierarchy, then test at tile size.",
+        "d": "Brand, product, variant and claim are ordered, then checked small, as marketplaces and quick commerce show them."
+      },
+      {
+        "n": "04",
+        "t": "Prepare print files and show them on shelf.",
+        "d": "Dielines, colour and label areas are checked with your printer, then placed in a shelf render."
+      }
+    ],
+    "illustrative": "Illustrative layout of a packaging flow from dieline to shelf render. Not a client pack, no real figures."
+  },
+  "leak": {
+    "visual": "ShelfLeak",
+    "barLogo": "",
+    "barTitle": "Pack view",
+    "pinsLabel": "Five places packaging goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Shelf"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Structure"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Hierarchy"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Tile test"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Print"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we work with.",
+    "tiles": [
+      {
+        "id": "mbb",
+        "line": "Body care: a website and creative for a product where the pack leads."
+      },
+      {
+        "id": "giraffe",
+        "line": "Gifting: ads and listings where the pack photo does the selling."
+      },
+      {
+        "id": "awwbaby",
+        "line": "Baby products: variants that have to read at a glance in ads and listings."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we design a pack,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Understand the shelf",
+        "d": "Category and shopper research, on the shelf and on screen.",
+        "get": "A view of what your pack must beat.",
+        "img": "pack/shelf.jpg",
+        "alt": "A hand reaching for a pack on a store shelf.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Design structure and graphics",
+        "d": "Structure, materials and graphics are designed together, not one after another.",
+        "get": "Designs that work as a pack, not only a print.",
+        "img": "pack/structure.jpg",
+        "alt": "A designer folding a white box from a flat dieline.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Test small",
+        "d": "Hierarchy and legibility are tested at full size and tile size.",
+        "get": "A pack that reads on a phone.",
+        "img": "pack/hierarchy.jpg",
+        "alt": "Three packs lined up: oats, a shake bottle and a tea box.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Prepare for print",
+        "d": "Print-ready files, dielines and colour are checked with your printer.",
+        "get": "Artwork ready to produce.",
+        "img": "pack/print.jpg",
+        "alt": "Printed pack artwork with colour swatches and a loupe.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Branding",
+        "href": "/services/branding/"
+      },
+      {
+        "n": "Quick-commerce ads",
+        "href": "/services/performance-marketing/quick-commerce/"
+      },
+      {
+        "n": "AI photoshoot by MMC",
+        "href": "/ai-by-mmc/photoshoot/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

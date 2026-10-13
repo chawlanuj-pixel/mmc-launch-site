@@ -44,35 +44,27 @@ section.page-hero p.pmh__sub { font-family: var(--font-body); font-size: clamp(1
 
 .pmh__r { position: relative; opacity: 0; transform: translateY(10px); transition: opacity 800ms var(--ease-out) .3s, transform 800ms var(--ease-out) .3s; padding-bottom: 46px; }
 .pmh__r.in { opacity: 1; transform: none; }
-.pmh__mosaic { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
-.pmh__tile { position: relative; margin: 0; border-radius: 18px; overflow: hidden; background: #0d1b5e; box-shadow: 0 24px 50px -24px rgba(3, 8, 40, .7); }
-.pmh__tile--2, .pmh__tile--4 { margin-top: 34px; }
-.pmh__tile--3 { margin-top: -20px; }
-.pmh__tile--4 { margin-top: 14px; }
-.pmh__img { border-radius: 0; }
+.pmh__mosaic { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x proximity; border-radius: 20px; }
+.pmh__mosaic.is-slider { display: block; overflow: hidden; }
+.pmh__track { display: flex; gap: 14px; transition: transform .8s cubic-bezier(.2, .8, .2, 1); will-change: transform; }
+.pmh__tile { position: relative; margin: 0; flex: 0 0 calc((100% - 28px) / 2.5); aspect-ratio: 4 / 5; scroll-snap-align: start; border-radius: 20px; overflow: hidden; background: #0d1b5e; box-shadow: 0 24px 50px -24px rgba(3, 8, 40, .7); }
+.pmh__tile .pmh__img { border-radius: 0; width: 100%; height: 100%; aspect-ratio: auto !important; object-fit: cover; }
 .pmh__tile figcaption { position: absolute; left: 10px; bottom: 10px; display: inline-flex; flex-direction: column; gap: 1px; padding: 8px 12px; border-radius: 10px; background: rgba(7, 9, 15, .62); backdrop-filter: blur(8px); color: #fff; }
 .pmh__tile figcaption b { font: 700 13px/1.2 var(--font-display); letter-spacing: -0.01em; }
 .pmh__tile figcaption span { font: 500 10.5px/1.2 var(--font-body); letter-spacing: .04em; color: rgba(255,255,255,.75); }
-
-.pmh__check { position: absolute; left: -28px; bottom: 0; width: min(270px, 62%); display: grid; gap: 2px; padding: 18px 20px 16px; border-radius: 16px; background: #fff; color: var(--n-ink, #07090F); text-decoration: none; box-shadow: 0 30px 60px -20px rgba(3, 8, 40, .75); transition: transform var(--dur-base) var(--ease-out); }
-.pmh__check:hover { transform: translateY(-3px); }
-.pmh__check:focus-visible { outline: 2px solid var(--mmc-yellow); outline-offset: 4px; }
-.pmh__check-k { font: 700 10px/1.2 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--fg-3); }
-.pmh__check-v { font: 700 30px/1.1 var(--font-display); letter-spacing: -0.03em; color: var(--mmc-blue); margin-bottom: 8px; }
-.pmh__check-v--loss { color: #C9382B; margin-bottom: 10px; }
-.pmh__check-rule { height: 1px; background: rgba(var(--mmc-blue-rgb), .14); margin: 2px 0 10px; }
-.pmh__check-foot { font: 500 11px/1.4 var(--font-body); color: var(--fg-3); }
-.pmh__check-foot u { color: var(--mmc-blue); text-decoration: none; font-weight: 700; }
+.pmh__dots { display: flex; justify-content: center; gap: 4px; margin-top: 10px; }
+.pmh__dot { width: 44px; min-height: 44px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.pmh__dot::before { content: ""; width: 26px; height: 6px; border-radius: 99px; background: rgba(255,255,255,.3); transition: background .25s; }
+.pmh__dot.is-on::before { background: var(--mmc-yellow); }
+.pmh__dot:focus-visible { outline: 2px solid var(--mmc-yellow); outline-offset: 2px; border-radius: 6px; }
 
 @media (max-width: 900px) {
   .pmh__grid { grid-template-columns: 1fr; }
   .pmh__r { padding-bottom: 0; }
-  .pmh__check { position: relative; left: auto; width: calc(100% - 28px); margin: -34px auto 0; }
-  .pmh__tile--2, .pmh__tile--4 { margin-top: 22px; }
 }
 @media (max-width: 520px) {
-  .pmh__mosaic { gap: 10px; }
-  .pmh__tile { border-radius: 14px; }
+  .pmh__mosaic, .pmh__track { gap: 10px; }
+  .pmh__tile { border-radius: 14px; flex-basis: calc((100% - 20px) / 2.5); }
   .pmh__tile figcaption span { display: none; }
   .pmh__chips li { padding: 8px 12px; font-size: 11.5px; }
 }
@@ -167,21 +159,7 @@ section.page-hero p.pmh__sub { font-family: var(--font-body); font-size: clamp(1
 .pm-proof__foot p { margin: 0; font-family: var(--font-body); font-size: 15px; color: var(--n-fg-2); max-width: 60ch; }
 @media (hover: none) { .pm-wall__item .n-wall__cell { transform: none; } }
 
-/* ── 9 · FAQ: hairline list ────────────────────────────────── */
-.pm-faq { max-width: 860px; border-top: 1px solid var(--n-line-2); }
-.pm-faq details { border-bottom: 1px solid var(--n-line-2); }
-.pm-faq summary {
-  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px;
-  padding: 24px 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(17px, 1.6vw, 21px); letter-spacing: -0.015em; color: var(--n-fg);
-}
-.pm-faq summary::-webkit-details-marker { display: none; }
-.pm-faq summary::after { content: "+"; flex: none; font-family: var(--font-body); font-weight: 400; font-size: 26px; line-height: 1; color: var(--n-blue); transition: transform 200ms; }
-.pm-faq details[open] summary::after { content: "–"; }
-.pm-faq summary:hover { color: var(--n-blue); }
-.pm-faq summary:focus-visible { outline: 2px solid var(--n-blue); outline-offset: 4px; }
-.pm-faq__a { padding: 0 0 26px; max-width: 68ch; font-family: var(--font-body); font-size: 16px; line-height: 1.65; color: var(--n-fg-2); }
-.pm-faq__a p { margin: 0 0 10px; }
-.pm-faq__a a { color: var(--n-blue); text-decoration: underline; text-underline-offset: 3px; }
+/* ── 9 · FAQ: moved to src/styles/faq.css (.mmc-faq) ───────── */
 
 /* ── 10 · Related: a row of links, not cards ───────────────── */
 .pm-related { display: flex; flex-wrap: wrap; gap: 14px 44px; padding-top: 18px; padding-bottom: clamp(40px, 5vw, 64px); border-top: 1px solid var(--n-line-2); }
@@ -361,3 +339,7 @@ section.page-hero p.pmh__sub { font-family: var(--font-body); font-size: clamp(1
 
 .pm-who__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
 .pm-who__pair .pm-who__img2 { margin-bottom: 0; border-radius: 12px; }
+
+/* Phones: 44px tap target for the uppercase text links (the glyphs stay the same size). */
+@media (max-width: 760px) { .pm-textlink { min-height: 44px; padding-block: 0; } }
+@media (max-width: 760px) { .pmc__claim { gap: 8px; padding: 22px 20px; } }

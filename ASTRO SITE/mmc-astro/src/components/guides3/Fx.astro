@@ -1,0 +1,17 @@
+---
+// Reveal-on-scroll for the guides family (gd3-rise). The class on <html> is set synchronously, so nothing is
+// hidden when scripts are off, and every reveal is switched off by prefers-reduced-motion in guides3.css.
+---
+<script is:inline>document.documentElement.classList.add("gd3-fx");</script>
+<script>
+  const els = document.querySelectorAll(".gd3-rise");
+  if (typeof IntersectionObserver === "undefined") els.forEach((el) => el.classList.add("is-in"));
+  else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
+    els.forEach((el) => io.observe(el));
+    /* Never leave a reveal stuck: anything still hidden after a jump link or a fast scroll is shown. */
+    window.addEventListener("hashchange", () => els.forEach((el) => el.classList.add("is-in")));
+  }
+</script>

@@ -1,14 +1,21 @@
-/* Phone action bar: "Book a call" + WhatsApp. Hidden on desktop, under the cookie banner, while the menu or a
-   modal is open, and while the page's own role sticky (careers "roles"/"apply") is showing. */
+/* Phone action bar: "Book a call" + WhatsApp. Hidden on desktop. On phones it slides in only once the hero's own
+   button has scrolled away (html.mbar-on, set by AiFab.tsx), never on form pages (html[data-nobar]), and stays hidden
+   under the cookie banner, while the menu or a modal is open, and while the page's own role sticky (careers
+   "roles"/"apply") is showing. */
 .mbar { display: none; }
 @media (max-width: 820px) {
   .mbar {
-    display: flex; gap: 8px; position: fixed; left: 8px; right: 8px; bottom: 8px; z-index: 55;
+    display: flex; gap: 8px; position: fixed; left: 0; right: 0; bottom: 8px; z-index: 55;
+    width: calc(100% - 16px); max-width: 480px; margin-inline: auto;
     padding: 8px; border-radius: 16px; background: rgba(11,16,32,0.94);
     -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
     box-shadow: 0 10px 30px rgba(11,16,32,0.35);
     padding-bottom: calc(8px + env(safe-area-inset-bottom));
+    transform: translateY(160%); visibility: hidden; pointer-events: none;
+    transition: transform .3s cubic-bezier(.2,.8,.2,1), visibility 0s linear .3s;
   }
+  html.mbar-on .mbar { transform: none; visibility: visible; pointer-events: auto; transition: transform .3s cubic-bezier(.2,.8,.2,1), visibility 0s; }
+  html[data-nobar] .mbar { display: none; }
   .mbar__book, .mbar__wa {
     min-height: 48px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
     font: 800 14px/1 var(--font-body, sans-serif); letter-spacing: 0.02em; text-decoration: none; border: 0; cursor: pointer;
@@ -16,16 +23,40 @@
   .mbar__book { flex: 1 1 auto; background: var(--mmc-yellow, #FFC528); color: #0B1020; }
   .mbar__wa { flex: 0 0 auto; padding: 0 16px; background: #1FA855; color: #fff; }
   .mbar__book:focus-visible, .mbar__wa:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
-  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+
+  /* Room under the footer for the bar: a block in the footer's own bottom colour (the old body padding showed the
+     white page background as a band). The home footer already carries its own bottom padding. */
+  body::after { content: ""; display: block; height: calc(76px + env(safe-area-inset-bottom)); background: #070E2A; }
+  body:has(.hv)::after, html[data-nobar] body::after { display: none; }
+  /* Focused inputs and field errors scroll to above the bar and the AI button. */
+  html { scroll-padding-bottom: 104px; }
+
+  /* The homepage's own sticky "Book a strategy call" (.hn-mcta, markup in pages/index.astro) duplicated this bar. */
+  .hn-mcta { display: none !important; }
+
   /* One bar at a time: the book-mode sticky is replaced by this bar on phones; roles/apply stickies take over from it. */
   .pm-sticky.sbb[data-mode="book"] { display: none !important; }
   body:has(.cookie) .mbar,
   body:has(.sunmenu[aria-hidden="false"]) .mbar,
   body:has(.mmc-book.is-open) .mbar,
   body:has(.audit.is-open) .mbar,
-  body:has(.pm-sticky.sbb.is-on) .mbar { display: none; }
-  body:has(.cookie) { padding-bottom: 0; }
-  /* AI floating button sits above the bar */
-  body:has(.mbar:not([hidden])) .aifab { bottom: max(calc(92px + env(safe-area-inset-bottom, 0px)), var(--aifab-lift, 0px)); }
-  body:has(.cookie) .aifab, body:has(.sunmenu[aria-hidden="false"]) .aifab, body:has(.pm-sticky.sbb.is-on) .aifab { bottom: max(calc(84px + env(safe-area-inset-bottom, 0px)), var(--aifab-lift, 0px)); }
+  body:has(.pm-sticky.sbb:not([data-mode="book"]).is-on) .mbar { display: none; }
+
+  /* Careers "roles" / role-page "apply" sticky: same dark bar as .mbar, so it never floats loose over text. */
+  .pm-sticky.sbb:not([data-mode="book"]) {
+    left: 0; right: 0; bottom: 8px; z-index: 55; width: calc(100% - 16px); max-width: 480px; margin-inline: auto;
+    padding: 8px 8px calc(8px + env(safe-area-inset-bottom)); border-radius: 16px; background: rgba(11,16,32,0.94);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 10px 30px rgba(11,16,32,0.35);
+  }
+  .pm-sticky.sbb:not([data-mode="book"]) a, .pm-sticky.sbb:not([data-mode="book"]) button {
+    min-height: 48px; border-radius: 12px; box-shadow: none; font: 800 14px/1 var(--font-body, sans-serif); letter-spacing: 0.02em; text-transform: none;
+  }
+  .pm-sticky.sbb:not([data-mode="book"]) a:focus-visible, .pm-sticky.sbb:not([data-mode="book"]) button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+  /* AI floating button: bottom-left, above the bar when the bar is showing, above the cookie banner while it shows. */
+  .aifab { bottom: max(calc(16px + env(safe-area-inset-bottom, 0px)), var(--aifab-lift, 0px)); }
+  html.mbar-on .aifab, body:has(.pm-sticky.sbb:not([data-mode="book"]).is-on) .aifab { bottom: max(calc(84px + env(safe-area-inset-bottom, 0px)), var(--aifab-lift, 0px)); }
+
+  /* Tap targets: cookie buttons are 44px tall. */
+  .cookie .cookie__btn { min-height: 44px; }
 }

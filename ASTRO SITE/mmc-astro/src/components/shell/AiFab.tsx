@@ -39,6 +39,60 @@ export default function AiFab() {
     return () => { mo.disconnect(); ro.disconnect(); window.removeEventListener("resize", sync); window.clearInterval(t); };
   }, []);
 
+  /* Phones: step out of the way while the page scrolls down, return on scroll up or at rest. Also decides when the
+     sticky .mbar bar shows: once the hero's own button has scrolled away, and never on form pages. */
+  React.useEffect(() => {
+    const el = root.current;
+    const html = document.documentElement;
+    const form = /^\/(contact|audit|white-label\/register)\/?$/.test(location.pathname);
+    if (form) html.setAttribute("data-nobar", "");
+    let last = window.scrollY, idle = 0, raf = 0, cta: HTMLElement | null = null;
+    const findCta = () => {
+      const all = document.querySelectorAll<HTMLElement>("main [data-book], main .btn--primary, main .glow-btn");
+      for (const n of all) { if (n.offsetParent && n.getBoundingClientRect().width > 0) return n; }
+      return null;
+    };
+    const barState = () => {
+      raf = 0;
+      if (form) { html.classList.remove("mbar-on"); return; }
+      const y = window.scrollY, vh = window.innerHeight;
+      if (!cta || !cta.isConnected || !cta.offsetParent) cta = findCta();
+      let show = y > vh * 0.7;
+      if (cta) {
+        const r = cta.getBoundingClientRect();
+        if (r.top + y < vh * 1.3) show = y > 8 && r.bottom < 56;
+      }
+      html.classList.toggle("mbar-on", show);
+    };
+    /* After a pause the button docks as a slim tab, except at the very end of the page where nothing is behind it. */
+    const dock = (ms: number) => {
+      window.clearTimeout(idle);
+      idle = window.setTimeout(() => {
+        if (!el) return;
+        const atEnd = window.scrollY + window.innerHeight > document.documentElement.scrollHeight - 240;
+        if (atEnd && !document.activeElement?.matches("input, textarea, select")) el.removeAttribute("data-fab"); else el.setAttribute("data-fab", "peek");
+      }, ms);
+    };
+    dock(3500);
+    const onFocus = (e: FocusEvent) => { if ((e.target as HTMLElement)?.matches?.("input, textarea, select")) el?.setAttribute("data-fab", "peek"); };
+    document.addEventListener("focusin", onFocus);
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(barState);
+      const y = window.scrollY, dy = y - last;
+      if (Math.abs(dy) < 4 || !el) return;
+      last = y;
+      const typing = !!document.activeElement?.matches("input, textarea, select");
+      if (typing) el.setAttribute("data-fab", "peek");
+      else if (dy > 0 && y > 120) el.setAttribute("data-fab", "away"); else if (dy < 0) el.removeAttribute("data-fab");
+      dock(dy < 0 && !typing ? 3000 : 1400);
+    };
+    barState();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", barState);
+    const t = window.setInterval(barState, 900);
+    return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", barState); window.clearInterval(t); window.clearTimeout(idle); document.removeEventListener("focusin", onFocus); html.classList.remove("mbar-on"); html.removeAttribute("data-nobar"); };
+  }, []);
+
   React.useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") { setOpen(false); btn.current?.focus(); } };

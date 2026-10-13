@@ -51,6 +51,25 @@ export const TOOLS_FOR: Record<string, string[]> = {
   "ugc-and-video": ["breakeven-roas", "funnel-roas"],
   "industries-d2c": ["unit-economics", "breakeven-roas", "ltv-cac", "cac-runway"],
   "industries-b2b": ["cac-runway", "ltv-cac"],
+  // New hubs. Service pages are looked up by the last path segment, so each has a slug alias beside its key.
+  "aiseo": ["unit-economics", "cac-runway"], "ai-seo": ["unit-economics", "cac-runway"],
+  "aeo": ["unit-economics", "cac-runway"], "geo": ["unit-economics", "cac-runway"],
+  "contentmktg": ["cac-runway", "ltv-cac"], "content-marketing": ["cac-runway", "ltv-cac"],
+  "gbp": ["cac-runway", "ltv-cac"], "google-business-profile": ["cac-runway", "ltv-cac"],
+  "d2cskin": ["unit-economics", "ltv-cac", "breakeven-roas"],
+  "d2cbaby": ["ltv-cac", "unit-economics", "breakeven-roas"],
+  "d2cfnb": ["unit-economics", "breakeven-roas", "ltv-cac"],
+  "d2cfash": ["breakeven-roas", "funnel-roas", "unit-economics"],
+  "b2bmfg": ["cac-runway", "ltv-cac"], "b2bsaas": ["cac-runway", "ltv-cac"],
+  // White label and WordPress hubs (path-slug keys; slugs shared with an existing service key reuse that entry).
+  "wordpress": ["funnel-roas", "unit-economics"], "website-maintenance": ["funnel-roas", "unit-economics"],
+  "white-label": ["unit-economics", "cac-runway"], "ppc": ["breakeven-roas", "unit-economics"], "meta-ads": ["breakeven-roas", "unit-economics"],
+  "social-media-management": ["breakeven-roas", "unit-economics"], "email-marketing": ["ltv-cac", "unit-economics"],
+  "ecommerce": ["unit-economics", "breakeven-roas"], "creative-and-video": ["breakeven-roas", "funnel-roas"],
+  "pricing-models": ["unit-economics", "cac-runway"], "digital-marketing": ["unit-economics", "cac-runway"],
+  // WooCommerce and locations hubs (path-slug keys).
+  "woocommerce": ["funnel-roas", "unit-economics"], "locations": ["cac-runway", "ltv-cac"],
+  "thane": ["cac-runway", "ltv-cac"], "mumbai": ["cac-runway", "ltv-cac"], "indore": ["cac-runway", "ltv-cac"],
 };
 
 /** Contact facts that are settled. */

@@ -1,0 +1,48 @@
+---
+// PANEL: IndiaDesk (kind "IndiaDesk"). A timezone and handover view for an overseas agency working with an India delivery team. No platform mark, no clock times. 4 steps.
+//   1 Overlap: a day bar for "Your team" and "MMC India" with the shared window marked. Tab: Overlap.
+//   2 Handover: an end-of-day note with Done, Blocked and Next. Tab: Handover.
+//   3 Check-in: a daily check-in slot inside the overlap with a three-line agenda. Tab: Check-in.
+//   4 Morning: the feed waiting at the start of your day (draft ready, report built, a question for you). Tab: Morning.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix ind-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="Delivery desk" label="Illustration of a handover view between an overseas agency and an India delivery team: overlap, handover note, check-in and morning feed. Not a client account." caption={W.illustrative} tabs={["Overlap", "Handover", "Check-in", "Morning"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Two working days <span>One shared window</span></p>
+    <div class="ind-tz" aria-hidden="true">
+      <p class="s2p-lbl">Your team</p><span class="ind-row"><i class="ind-a"></i></span>
+      <p class="s2p-lbl">MMC India</p><span class="ind-row"><i class="ind-b"></i><span class="ind-win"><em class="s2p-chip s2p-chip--sun">Overlap</em></span></span>
+      <span class="ind-lap" aria-hidden="true"></span>
+    </div>
+    <small class="s2p-mute">Overlap hours are agreed per account and written into the scope.</small>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">End-of-day note <span>Sent before your day starts</span></p>
+    <div class="ind-note">
+      {[["Done", "s2p-chip--ok", "Pages drafted, report built"], ["Blocked", "s2p-chip--warn", "Waiting on a client asset"], ["Next", "s2p-chip--blue", "Review round, then launch prep"]].map(([h, c, t]) => <div class="s2p-card"><em class={"s2p-chip " + c}>{h}</em><b>{t}</b></div>)}
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Check-in <span>Inside the overlap, same slot daily</span></p>
+    <div class="s2p-card ind-slot"><em class="s2p-chip s2p-chip--blue">Daily check-in</em><ol><li>What moved</li><li>What is blocked</li><li>What you decide</li></ol></div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Your morning <span>Ready when you log on</span></p>
+    <ul class="ind-feed">
+      {[["Draft ready for review", "s2p-chip--ok", "Ready"], ["Monthly report built", "s2p-chip--ok", "Ready"], ["One question for you", "s2p-chip--warn", "Needs you"]].map(([t, c, s]) => <li class="s2p-card"><b>{t}</b><em class={"s2p-chip " + c}>{s}</em></li>)}
+    </ul>
+  </div>
+</Frame>
+<style is:global>
+.ind-tz { position: relative; display: grid; gap: .6em; padding: 1.1em; border: 1px solid #DADDE1; border-radius: .9em; }
+.ind-row { position: relative; display: block; height: 3em; border-radius: .5em; background: #F1F2F4; overflow: hidden; } .ind-row i { position: absolute; top: 0; bottom: 0; border-radius: .5em; } .ind-a { left: 0; width: 62%; background: #8AA9F0; } .ind-b { left: 38%; width: 62%; background: var(--mmc-blue-900); }
+.ind-win { position: absolute; left: 38%; width: 24%; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; } .ind-win .s2p-chip { font-size: .6em; padding: .2em .5em; }
+.ind-lap { position: absolute; left: calc(1.1em + (100% - 2.2em) * .38); width: calc((100% - 2.2em) * .24); top: .5em; bottom: .5em; border: 2px dashed var(--mmc-yellow); border-radius: .6em; background: rgba(255, 197, 40, .14); z-index: 0; pointer-events: none; }
+.ind-note { flex: 1; min-height: 0; display: grid; gap: .6em; align-content: space-evenly; } .ind-note .s2p-card { display: flex; align-items: center; gap: .8em; padding-block: .7em; } .ind-note em { min-width: 5em; justify-content: center; } .ind-note b { font: 800 .98em/1.25 var(--font-body); }
+.ind-slot { display: grid; gap: 1em; justify-items: start; align-content: center; padding: 1.2em; flex: 1; max-height: 15em; } .ind-slot ol { margin: 0; padding-left: 1.4em; display: grid; gap: .5em; font: 800 1em var(--font-body); color: #1C2B33; }
+.ind-feed { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .7em; align-content: space-evenly; } .ind-feed li { display: flex; align-items: center; gap: .8em; padding-block: .75em; } .ind-feed b { margin-right: auto; font: 800 .98em var(--font-body); }
+@media (max-width: 900px) { .s2-ui:has(.ind-tz) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

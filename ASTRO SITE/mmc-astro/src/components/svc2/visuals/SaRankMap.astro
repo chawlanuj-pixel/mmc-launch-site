@@ -1,0 +1,58 @@
+---
+// VISUAL: SaRankMap (kind "SaRankMap"). A page-and-ranking map: five page cards hanging off "Your site", each showing one SEO leak
+// (blocked foundation, unmapped searches, thin page, no direct answer, visits without enquiries). Pins in a row above (y = 0,
+// x = 10, 30, 50, 70, 90). No figures. Styles scoped (prefix srm-).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X } = Astro.props as Props;
+---
+<div class="srm-row" aria-hidden="true"></div>
+<div class="srm-art" role="img" aria-label="A map of five pages hanging off a site, each showing one place search visibility is lost.">
+  <div class="srm-c">
+    <b class="srm-h">Crawl and speed</b>
+    <div class="srm-b"><span class="srm-pg"><u></u><u></u><u></u></span><span class="srm-x">Blocked</span></div>
+    <em class="srm-chip">Can not be read</em>
+  </div>
+  <div class="srm-c">
+    <b class="srm-h">Searches</b>
+    <div class="srm-b"><span class="srm-kw">buy online</span><span class="srm-kw">how to choose</span><span class="srm-kw">best for</span></div>
+    <em class="srm-chip">No page for them</em>
+  </div>
+  <div class="srm-c">
+    <b class="srm-h">Category page</b>
+    <div class="srm-b"><span class="srm-pg srm-pg--thin"><u></u></span></div>
+    <em class="srm-chip">Thin page</em>
+  </div>
+  <div class="srm-c">
+    <b class="srm-h">Answer slot</b>
+    <div class="srm-b"><span class="srm-slot">Direct answer</span><span class="srm-pg"><u></u><u></u></span></div>
+    <em class="srm-chip">Answer buried</em>
+  </div>
+  <div class="srm-c">
+    <b class="srm-h">Reporting</b>
+    <div class="srm-b"><span class="srm-rk"><i></i>Visits</span><span class="srm-rk srm-rk--e"><i></i>Enquiries</span></div>
+    <em class="srm-chip">Visits, no sales</em>
+  </div>
+</div>
+<div class="srm-root" aria-hidden="true"><span>Your site</span></div>
+<style is:global>
+.srm-row { height: 78px; }
+.srm-art { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(6px, 1.2vw, 14px); }
+.srm-c { position: relative; display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: clamp(8px, 1.1vw, 14px); border: 1px solid #DADDE1; border-radius: 14px; background: #fff; }
+.srm-c::after { content: ""; position: absolute; left: 50%; bottom: -18px; width: 0; height: 18px; border-left: 2px dashed #9DB8F7; }
+.srm-h { font: 800 clamp(10px, .95vw, 12.5px)/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; }
+.srm-b { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 7px; min-height: 92px; }
+.srm-pg { display: grid; gap: 6px; padding: 9px; border-radius: 9px; background: #F1F5FF; } .srm-pg u { display: block; height: 6px; border-radius: 9px; background: #B9C9F2; }
+.srm-pg u:first-child { width: 60%; background: var(--mmc-blue); } .srm-pg--thin { min-height: 56px; }
+.srm-x { align-self: flex-start; padding: 3px 8px; border-radius: 6px; background: #B42318; color: #fff; font: 800 10px var(--font-body); text-transform: uppercase; letter-spacing: .05em; }
+.srm-kw { align-self: flex-start; padding: 4px 9px; border-radius: 99px; border: 1px dashed #8A93A6; font: 700 11px var(--font-body); color: #47506A; }
+.srm-slot { padding: 7px 9px; border-radius: 8px; border: 1px dashed #8A93A6; font: 700 11px var(--font-body); color: #65676B; text-align: center; }
+.srm-rk { display: flex; align-items: center; gap: 7px; font: 700 11px var(--font-body); color: var(--mmc-blue-900); } .srm-rk i { width: 52%; height: 8px; border-radius: 9px; background: var(--mmc-blue); }
+.srm-rk--e { color: #65676B; } .srm-rk--e i { width: 16%; background: #9DB8F7; }
+.srm-chip { align-self: flex-start; padding: 4px 9px; border-radius: 99px; background: #FFF3D6; color: #8A5A00; font: 800 10px/1.25 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; }
+.srm-root { margin-top: 18px; height: 40px; border-radius: 12px; background: var(--mmc-blue-900); display: grid; place-items: center; } .srm-root span { font: 800 12px var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: #fff; }
+@media (max-width: 760px) { .srm-row { height: 58px; } .srm-h { display: none; } .srm-b { min-height: 70px; } .srm-kw, .srm-slot, .srm-rk { font-size: 9px; } .srm-chip { font-size: 8.5px; padding: 3px 6px; } .srm-c { padding: 6px; gap: 6px; } .srm-root { height: 32px; } }
+@media (max-width: 440px) { .srm-art { gap: 4px; } .srm-c { padding: 5px 4px; } .srm-kw, .srm-slot, .srm-rk, .srm-x { font-size: 8px; padding-inline: 4px; overflow-wrap: anywhere; } .srm-chip { font-size: 7.5px; letter-spacing: 0; padding: 3px 5px; overflow-wrap: anywhere; } .srm-x { font-size: 7px; letter-spacing: 0; padding: 2px 3px; } .srm-rk { flex-direction: column; align-items: flex-start; gap: 2px; } .srm-rk i { width: 70%; } .srm-rk--e i { width: 30%; } }
+/* Readable floor on phones (small-defects pass, same pattern as SaSurfaceMap): micro labels >= 10px, the chip that names the leak >= 11px. */
+@media (max-width: 760px) { .srm-kw, .srm-slot, .srm-rk, .srm-x { font-size: 11px; } .srm-chip { font-size: 11px; letter-spacing: 0; text-transform: none; } }
+@media (max-width: 440px) { .srm-c { padding: 5px 3px; } .srm-kw, .srm-slot, .srm-rk, .srm-x { font-size: 10px; line-height: 1.2; padding-inline: 1px; hyphens: auto; overflow-wrap: break-word; letter-spacing: 0; text-transform: none; } .srm-chip { align-self: stretch; text-align: center; font-size: 11px; line-height: 1.2; padding: 3px 1px; hyphens: auto; overflow-wrap: break-word; } }
+</style>

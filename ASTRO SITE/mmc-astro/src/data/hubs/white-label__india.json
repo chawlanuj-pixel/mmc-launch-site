@@ -1,0 +1,522 @@
+{
+  "file": "white-label-india.html",
+  "path": "/white-label/india/",
+  "key": "wl_india",
+  "title": "White-Label Agency India for Overseas Agencies | MMC",
+  "description": "White-label agency in India for UK, US, Australian and Middle East agencies: delivery partner for SEO, ads, web and creative, with NDA and overlap hours.",
+  "ogTitle": "White-label agency India partner for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label agency India partner.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/india/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label agency India partner",
+          "item": "https://www.mondaymarketing.company/white-label/india/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/india/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/india/",
+      "name": "White-Label Agency India for Overseas Agencies | MMC",
+      "description": "White-label agency in India for UK, US, Australian and Middle East agencies: delivery partner for SEO, ads, web and creative, with NDA and overlap hours.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/india/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/india/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/india/#service",
+      "name": "White-label agency India partner",
+      "serviceType": "White-label agency India partner",
+      "description": "White-label agency India partner delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/india/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/india/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work with agencies in the UK, US and Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We agree overlap hours and communication rhythm for your time zone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you invoice in my currency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We agree invoicing terms on a call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know my client data is protected?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We sign an NDA and agree who holds access to client accounts. Security terms are set in the agreement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you only work from one office?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work from Thane, Mumbai and Indore."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label agency India partner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us your time zone and the services you need. After the NDA we agree overlap hours and a pilot client."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_india",
+    "wm": "White-label Agency India Partner",
+    "eyebrow": "● White-label agency India partner",
+    "h1": [
+      "White-label agency India",
+      [
+        "for overseas agencies ",
+        "that need a delivery partner",
+        "."
+      ]
+    ],
+    "sub": "A delivery partner in India for agencies in the UK, US, Australia and the Middle East, working to your hours and your brand.",
+    "tiles": [
+      {
+        "img": "contact/office.jpg",
+        "pos": "50% 50%",
+        "label": "Offices",
+        "note": "Thane, Mumbai, Indore"
+      },
+      {
+        "img": "about2/callscreen.jpg",
+        "pos": "50% 50%",
+        "label": "Calls",
+        "note": "In your hours"
+      },
+      {
+        "img": "company/session.jpg",
+        "pos": "50% 50%",
+        "label": "Working",
+        "note": "Behind your brand"
+      },
+      {
+        "img": "res/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Reports",
+        "note": "In your format"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "A white-label agency in India works as the delivery arm for agencies overseas: it runs SEO, paid media, web and creative for your clients while you hold the relationship. MMC does this for agencies abroad with an NDA, overlap hours and reports in your format.",
+      "hl": "the delivery arm for agencies overseas",
+      "who": "Monday Marketing Company (MMC) delivers agency India partner for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "users",
+          "title": "Overlap hours",
+          "text": "Agreed working hours with your time zone."
+        },
+        {
+          "icon": "layers",
+          "title": "Your brand",
+          "text": "Reports and files in your format."
+        },
+        {
+          "icon": "target",
+          "title": "One contact",
+          "text": "A named lead for your agency."
+        }
+      ],
+      "image": "contact/office.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "india-how",
+          "h": "How working with an India partner works",
+          "paras": [
+            "Many overseas agencies partner with delivery teams in India. The practicalities are simple: agree overlap hours, share tools, keep communication in writing and review work on a fixed rhythm.",
+            "We work from Thane, Mumbai and Indore. See the full <a href=\"/white-label/\">white-label range</a> and the <a href=\"/white-label/outsourcing/\">dedicated team model</a>."
+          ],
+          "img": "contact/office.jpg",
+          "cap": "Illustrative scene: an overseas agency planning delivery with its partner.",
+          "table": {
+            "caption": "Working with an Indian delivery partner: what to agree",
+            "head": [
+              "Topic",
+              "What to agree",
+              "Why it matters"
+            ],
+            "rows": [
+              [
+                "Time zones",
+                "Overlap hours for calls",
+                "Quick answers"
+              ],
+              [
+                "Communication",
+                "Tools and response times",
+                "Fewer delays"
+              ],
+              [
+                "Currency and invoicing",
+                "Invoice currency and terms",
+                "Clean billing"
+              ],
+              [
+                "Data and access",
+                "Who holds client accounts",
+                "Security"
+              ],
+              [
+                "Reporting",
+                "Format and calendar",
+                "Consistency"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we deliver for",
+      "h2b": "overseas agencies.",
+      "lede": "The same services, built around your hours.",
+      "items": [
+        {
+          "t": "SEO and content",
+          "d": "Search work for overseas markets.",
+          "img": "seo/authority.jpg",
+          "alt": "SEO and content: illustrative scene"
+        },
+        {
+          "t": "Paid media",
+          "d": "Google and Meta campaigns for your clients.",
+          "img": "pm-v2/channel-google.jpg",
+          "alt": "Paid media: illustrative scene"
+        },
+        {
+          "t": "Web and app development",
+          "d": "Builds from your designs.",
+          "img": "web/build.jpg",
+          "alt": "Web and app development: illustrative scene"
+        },
+        {
+          "t": "Creative and video",
+          "d": "Design and editing queue.",
+          "img": "ugc/edit.jpg",
+          "alt": "Creative and video: illustrative scene"
+        },
+        {
+          "t": "Reporting",
+          "d": "Reports in your format.",
+          "img": "res/insights.jpg",
+          "alt": "Reporting: illustrative scene"
+        },
+        {
+          "t": "Dedicated team",
+          "d": "People on your accounts.",
+          "img": "about2/huddle.jpg",
+          "alt": "Dedicated team: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label agency India partner.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "contact/office.jpg",
+      "alt": "Why agencies choose MMC for white-label agency India partner. Illustrative scene.",
+      "items": [
+        {
+          "t": "Overlap hours",
+          "d": "We agree working windows with you."
+        },
+        {
+          "t": "Written communication",
+          "d": "Decisions are kept in writing."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label agency India partner works,",
+      "h2b": "step by step.",
+      "img": "contact/office.jpg",
+      "alt": "How white-label agency India partner works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Agree basics",
+          "d": "Time zones, tools and reporting."
+        },
+        {
+          "t": "Sign the NDA",
+          "d": "Before any client details are shared."
+        },
+        {
+          "t": "Pilot a client",
+          "d": "Start with one account."
+        },
+        {
+          "t": "Scale",
+          "d": "Add accounts and services."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label agency India partner for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells agency India partner but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label agency India partner fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label SEO",
+          "d": "Audits, fixes and reports behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/seo/",
+          "link": "See white-label SEO"
+        },
+        {
+          "n": "White-label link building",
+          "d": "Outreach and placements behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/link-building/",
+          "link": "See white-label link building"
+        },
+        {
+          "n": "White-label GEO and AEO",
+          "d": "AI search work delivered behind your brand.",
+          "img": "seo/aeo.jpg",
+          "href": "/white-label/geo-aeo/",
+          "link": "See white-label GEO and AEO"
+        },
+        {
+          "n": "Contact MMC",
+          "d": "Scope a white-label engagement.",
+          "img": "contact/call.jpg",
+          "href": "/contact/",
+          "link": "See contact options"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        },
+        {
+          "n": "Locations",
+          "d": "Thane, Mumbai and Indore, and what a business in each city faces.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See locations"
+        },
+        {
+          "n": "White-label outsourcing",
+          "d": "A dedicated team that works as part of yours.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/outsourcing/",
+          "link": "See white-label outsourcing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "agency India partner."
+    ],
+    "faq": [
+      {
+        "q": "Do you work with agencies in the UK, US and Australia?",
+        "a": "Yes. We agree overlap hours and communication rhythm for your time zone."
+      },
+      {
+        "q": "Can you invoice in my currency?",
+        "a": "We agree invoicing terms on a call."
+      },
+      {
+        "q": "How do I know my client data is protected?",
+        "a": "We sign an NDA and agree who holds access to client accounts. Security terms are set in the agreement."
+      },
+      {
+        "q": "Do you only work from one office?",
+        "a": "We work from Thane, Mumbai and Indore."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label agency India partner?",
+        "a": "Tell us your time zone and the services you need. After the NDA we agree overlap hours and a pilot client."
+      }
+    ],
+    "cta": {
+      "h2a": "Add agency India partner",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first agency India partner client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Agree the overlap",
+        "tag": "Overlap hours",
+        "breaks": "Having no hours when both teams are online.",
+        "why": "Every question waits a day, and a two-day task becomes a week.",
+        "does": "We agree an overlap window with you, write it into the scope and keep a daily check-in inside it."
+      },
+      {
+        "k": "Write the handover note",
+        "tag": "Overnight work",
+        "breaks": "Letting work stall between time zones.",
+        "why": "You start the day without knowing what moved or what is blocked.",
+        "does": "An end-of-day note covering done, blocked and next, sent before your day starts."
+      },
+      {
+        "k": "Settle billing early",
+        "tag": "Invoices and currency",
+        "breaks": "Leaving invoicing and currency for later.",
+        "why": "Billing friction wastes your finance team's time and delays approvals.",
+        "does": "Invoice currency and terms are agreed before work starts, so billing is boring, as it should be."
+      },
+      {
+        "k": "Control access to data",
+        "tag": "Client data",
+        "breaks": "Sharing client access loosely.",
+        "why": "Shared passwords and open folders put your client's data and your contract at risk.",
+        "does": "An NDA and written terms before access, scoped logins and a record of who can see what."
+      },
+      {
+        "k": "Do not depend on one person",
+        "tag": "People",
+        "breaks": "Depending on one person on the partner side.",
+        "why": "When they are away, the work stops, and you find out from the client.",
+        "does": "A pod with a second person on every account, and a coordinator who keeps the queue moving."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways an India delivery partner",
+      "h2b": "can go wrong for agencies.",
+      "lede": "Distance is not the problem. A missing routine is. These are the five places overseas agencies lose time with a delivery partner in India."
+    },
+    "process": {
+      "h2a": "How we onboard you from overseas,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and overlap plan",
+          "d": "We sign the NDA, agree the overlap window, check-in and invoice currency, and write them into the scope.",
+          "out": "A written working agreement across time zones."
+        },
+        {
+          "t": "Pilot project",
+          "d": "One live project runs with the daily check-in and the end-of-day note.",
+          "out": "A pilot you can judge on communication and quality."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Handover note format, escalation path, file sharing and access rules are written once.",
+          "out": "A shared playbook for both teams."
+        },
+        {
+          "t": "Scale the team",
+          "d": "More roles and projects join the same rhythm, with the overlap and check-in unchanged.",
+          "out": "A delivery team that grows with your agency."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

@@ -109,15 +109,6 @@
 .cr-fit__col--yes li span { color: var(--n-on-dark-2); }
 
 /* ===== FAQ: flat register ===== */
-.cr-faq { border-top: 1px solid var(--n-line-2); }
-.cr-faq details { border-bottom: 1px solid var(--n-line-2); }
-.cr-faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 2px; font: 800 clamp(16px, 1.3vw, 19px)/1.35 var(--font-display); color: var(--n-fg); letter-spacing: -.01em; }
-.cr-faq summary::-webkit-details-marker { display: none; }
-.cr-faq summary::after { content: "+"; flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid var(--n-line-2); display: grid; place-items: center; font: 400 18px/1 var(--font-body); color: var(--n-blue); transition: transform 220ms var(--ease, ease); }
-.cr-faq details[open] summary::after { content: "\2212"; }
-.cr-faq__a { padding: 0 2px 22px; max-width: 68ch; }
-.cr-faq__a p { margin: 0; font: 400 15.5px/1.65 var(--font-body); color: var(--n-fg-2); }
-.cr-faq__a a { color: var(--n-blue); font-weight: 700; }
 
 /* ===== Closing: job-board footer strip ===== */
 .cr-close { position: relative; overflow: clip; border-radius: clamp(20px, 2.6vw, 32px); background: var(--n-ink, #0F1E5E); color: #fff; padding: 0; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: stretch; }
@@ -155,6 +146,12 @@
   .cr-role--own { grid-template-columns: minmax(0,1fr); }
   .cr-fit { grid-template-columns: minmax(0,1fr); }
   .cr-hero__photo img { height: 260px; }
+  /* Hiring steps: one column so each photo is a real 16:10 picture (two columns made them 75px thumbnails). */
+  .cr-steps { grid-template-columns: minmax(0,1fr); gap: 32px; }
+  .cr-step { gap: 14px; }
+  .cr-step__img { margin: 0; }
+  .cr-step__img img { aspect-ratio: 16 / 10; }
+  .cr-step p { font-size: 15.5px; }
 }
 
 /* ===== Role detail page: a rounded, inset banner card, same box model as every
@@ -291,4 +288,16 @@
   .cr-jd__sec { padding-left: 30px; }
   .cr-jd__back { margin-left: 30px; }
   .cr-rh__inner { padding: 40px var(--shell-gutter) 32px; }
+}
+
+/* Phones: small labels at 12px. */
+@media (max-width: 760px) { .cr-role__tag, .cr-fit__stamp, .cr-form__head .eyebrow { font-size: 12px; } }
+
+/* Phones: eyebrow and its note stack instead of wrapping side by side; inline links get a 44px hit area. */
+@media (max-width: 720px) {
+  .cr-hero__crumb { flex-direction: column; align-items: flex-start; gap: 8px; margin-bottom: 20px; }
+  .cr-hero__crumb span:first-child { white-space: nowrap; }
+  .cr-hero__crumb span:last-child { font-size: 13px; line-height: 1.4; }
+  .app-main:has(.cr-hero) :is(p, li, dd) a { position: relative; }
+  .app-main:has(.cr-hero) :is(p, li, dd) a::after { content: ""; position: absolute; inset: -11px -4px; }
 }

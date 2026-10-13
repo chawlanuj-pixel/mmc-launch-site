@@ -1,0 +1,182 @@
+---
+// /guides/: the guide library. Its own page file (it takes precedence over the [...slug].astro catch-all, which still
+// lists guides.json in getStaticPaths). Title, meta, JSON-LD, the "In short" answer, FAQ and closing copy all come
+// from src/data/hubs/guides.json; guide names, descriptions and questions from the one catalogue (src/lib/guides.ts);
+// read times are computed from the real article text. Editorial family shared with the three guides: guides3.css (gd3-).
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Faq from "../../components/hub/Faq.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import Cover from "../../components/guides3/Cover.astro";
+import Fx from "../../components/guides3/Fx.astro";
+import d from "../../data/hubs/guides.json";
+import { fixDeep } from "../../lib/links";
+import { rewriteJsonld } from "../../lib/hub";
+import { GUIDES, readTimes } from "../../lib/guides";
+import { TOOLS } from "../../lib/site";
+import { closingFor } from "../../lib/prefooter";
+import "../../styles/guides3.css";
+
+const SITE = "https://www.mondaymarketing.company";
+const H: any = fixDeep((d as any).hub);
+const updated: string = (d as any).updated || "2026-10-09";
+const mins = readTimes();
+const C = closingFor(H.key, H.cta);
+
+// "What you will learn" is the hub's own "does" line for each guide, matched by slug.
+const learnFor = (slug: string) => {
+  const st = (H.stages || []).find((s: any) => String(s.href).includes(slug));
+  return st ? String(st.does).replace(/^The guide shows /, "").replace(/^./, (c: string) => c.toUpperCase()) : "";
+};
+const lib = GUIDES.map((g) => ({ ...g, learn: learnFor(g.slug), min: mins[g.slug] }));
+const feat = lib[0];
+// The featured spread uses a second picture from the same guide (two people reading a margin sheet), so the
+// cover below is not repeated on this page.
+const featImg = "/assets/guides/review.jpg";
+
+const jsonld = rewriteJsonld((d as any).jsonld, updated).map((b: any) => b["@type"] === "CollectionPage" ? {
+  ...b,
+  hasPart: GUIDES.map((g) => ({ "@type": "Article", headline: g.title, description: g.desc, url: SITE + g.href })),
+} : b);
+const crumbs = (jsonld.find((b: any) => b["@type"] === "BreadcrumbList") as any)?.itemListElement || [];
+
+// The calculators strip: one photo per calculator (the same pictures the free-tools strip uses).
+const TOOL_IMG: Record<string, string> = {
+  "unit-economics": "/assets/res/unit.jpg", "breakeven-roas": "/assets/res/roas.jpg", "ltv-cac": "/assets/res/ltv.jpg",
+  "funnel-roas": "/assets/res/funnel.jpg", "cac-runway": "/assets/res/runway.jpg", "growth-trajectory": "/assets/contact/growth.jpg",
+};
+const tools = H.beyond.cards.find((c: any) => /^\/tools\/$/.test(c.href));
+const gloss = H.beyond.cards.find((c: any) => /glossary/.test(c.href));
+const others = H.beyond.cards.filter((c: any) => c !== tools && c !== gloss);
+const h1 = H.h1;
+---
+<BaseLayout title={(d as any).title} description={(d as any).description} path={(d as any).path} ogTitle={(d as any).ogTitle} ogDescription={(d as any).ogDescription} ogAlt={(d as any).ogAlt} jsonld={jsonld} preloadImage={featImg}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app gd3">
+      <Fx />
+
+      <!-- 1. Masthead: big type, then the featured guide as a large cover spread -->
+      <section class="gd3-mast" id="top">
+        <div class="n-wrap">
+          <nav class="gd3-crumbs" aria-label="Breadcrumb">
+            <ol>
+              {crumbs.map((c: any, i: number) => i < crumbs.length - 1
+                ? <li><a href={c.item.replace(SITE, "")}>{c.name}</a></li>
+                : <li><span aria-current="page">{c.name}</span></li>)}
+            </ol>
+          </nav>
+          <p class="gd3-kicker">Guides</p>
+          <h1 class="gd3-h1">{h1[0]} {h1[1][0]}<em>{h1[1][1]}</em>{h1[1][2]}</h1>
+          <div class="gd3-mast__row">
+            <p class="gd3-lede">{H.sub}</p>
+            <ul class="gd3-mast__facts">
+              {H.answer.points.map((p: any) => <li><b>{p.title}</b><span>{p.text}</span></li>)}
+            </ul>
+          </div>
+
+          <article class="gd3-feat" aria-labelledby="gd3-feat-h">
+            <a class="gd3-feat__pic" href={feat.href} tabindex="-1" aria-hidden="true">
+              <img src={featImg} alt="" width="1200" height="806" loading="eager" decoding="async" fetchpriority="high" />
+              <span class="gd3-feat__tag">Start here</span>
+            </a>
+            <div class="gd3-feat__txt">
+              <p class="gd3-feat__k"><span class="gd3-feat__n" aria-hidden="true">{feat.n}</span>{feat.tag}</p>
+              <h2 class="gd3-feat__h" id="gd3-feat-h">{feat.title}</h2>
+              <p class="gd3-feat__q">{feat.q}</p>
+              <p class="gd3-feat__p">{feat.stand}</p>
+              <p class="gd3-feat__meta">{feat.min + " min read"}<i aria-hidden="true"></i>By Monday Marketing Company</p>
+              <div class="gd3-feat__act">
+                <a class="btn btn--primary" href={feat.href}>Read the guide<span class="arrow"></span></a>
+                <a class="btn btn--link" href={feat.tool.href}>{feat.tool.label}<span class="arrow"></span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. The answer, first (AEO): the hub's own "In short" lead beside the library photo -->
+      <section class="gd3-band gd3-band--white gd3-short" aria-labelledby="gd3-short-h">
+        <div class="n-wrap gd3-short__grid">
+          <figure class="gd3-short__pic gd3-rise">
+            <img src={"/assets/" + H.answer.image} alt="A laptop open on a resources library, beside printed guides on a desk." width="1200" height="806" loading="lazy" decoding="async" />
+          </figure>
+          <div class="gd3-short__txt gd3-rise">
+            <p class="gd3-label" id="gd3-short-h">{H.answer.label}</p>
+            <p class="gd3-short__lead">{H.answer.lead}</p>
+            <p class="gd3-short__who">{H.answer.who}</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. The library: every guide as a large cover -->
+      <section class="gd3-band gd3-band--paper" id="library" aria-labelledby="gd3-lib-h">
+        <div class="n-wrap">
+          <div class="gd3-head gd3-rise">
+            <span class="n-eyebrow">{H.leaks.eyebrow}</span>
+            <h2 class="n-h2" id="gd3-lib-h">{H.leaks.h2a} <span class="n-serif">{H.leaks.h2b}</span></h2>
+            <p class="n-lede">{H.leaks.lede}</p>
+          </div>
+          <div class="gd3-shelf">
+            {lib.map((g) => <Cover n={g.n} tag={g.tag} title={g.title} href={g.href} img={g.img} learn={g.learn} q={g.q} min={g.min} />)}
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. The numbers we start with: the calculators as a photo strip -->
+      <section class="gd3-band gd3-band--ink gd3-tools" id="tools" aria-labelledby="gd3-tools-h">
+        <div class="n-wrap">
+          <div class="gd3-tools__head gd3-rise">
+            <div>
+              <span class="n-eyebrow">The numbers we start with</span>
+              <h2 class="n-h2" id="gd3-tools-h">Check your own figures <span class="n-serif">beside each guide.</span></h2>
+            </div>
+            <p class="gd3-tools__p">{tools?.d}<a class="gd3-tools__all" href={tools?.href || "/tools/"}>{tools?.link || "See all free tools"}<span aria-hidden="true">→</span></a></p>
+          </div>
+          <ul class="gd3-tools__strip">
+            {TOOLS.map((t) => (
+              <li class="gd3-rise">
+                <a class="gd3-tool" href={t.href}>
+                  <span class="gd3-tool__pic"><img src={TOOL_IMG[t.slug]} alt="" width="1200" height="806" loading="lazy" decoding="async" /></span>
+                  <b class="gd3-tool__h">{t.short}</b>
+                  <span class="gd3-tool__p">{t.blurb}</span>
+                  <span class="gd3-tool__go">Open the calculator<span aria-hidden="true">→</span></span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. Glossary and related service -->
+      {gloss && (
+        <section class="gd3-band gd3-band--paper gd3-gloss" id="glossary" aria-labelledby="gd3-gloss-h">
+          <div class="n-wrap gd3-gloss__grid">
+            <a class="gd3-gloss__pic gd3-rise" href={gloss.href} tabindex="-1" aria-hidden="true">
+              <img src={"/assets/" + gloss.img} alt="" width="1200" height="806" loading="lazy" decoding="async" />
+            </a>
+            <div class="gd3-gloss__txt gd3-rise">
+              <span class="n-eyebrow">{H.beyond.eyebrow}</span>
+              <h2 class="n-h2" id="gd3-gloss-h">The D2C marketing glossary, <span class="n-serif">term by term.</span></h2>
+              <p class="n-lede">{gloss.d}</p>
+              <a class="btn btn--link" href={gloss.href}>{gloss.link}<span class="arrow"></span></a>
+              {others.map((c: any) => (
+                <a class="gd3-gloss__row" href={c.href}>
+                  <span class="gd3-gloss__thumb"><img src={"/assets/" + c.img} alt="" width="1200" height="806" loading="lazy" decoding="async" /></span>
+                  <span><b>{c.n}</b><span>{c.d}</span></span>
+                  <span class="gd3-gloss__go">{c.link}<span aria-hidden="true">→</span></span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <Faq title={H.faqTitle} faq={H.faq} tone="white" />
+      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+    </main>
+    <StickyBookingBar source={H.key} />
+  </Shell>
+  <PageFx />
+</BaseLayout>

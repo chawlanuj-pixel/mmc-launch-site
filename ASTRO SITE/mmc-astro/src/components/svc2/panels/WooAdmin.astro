@@ -1,0 +1,68 @@
+---
+// PANEL: WooAdmin (kind "WooAdmin"). A WooCommerce-style store admin (generic layout, no logo, no real store). 5 steps.
+//   1 Catalogue: Products screen with variable products (size, colour) and a category tree. Nav: Products.
+//   2 Checkout: payment methods list (cards, UPI, cash on delivery, wallet) and a short one-page checkout sketch. Nav: Payments.
+//   3 Shipping and tax: zones by region, rate rules and tax set up per product class. Nav: Shipping.
+//   4 Speed and plugins: a lean plugin list (extras removed), caching on, a speed bar. Nav: Plugins.
+//   5 Orders: an order list with statuses and a stock alert, so the team can run the shop. Nav: Orders.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix wc-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="Store admin" label="Illustration of a WooCommerce-style store admin with products, payments, shipping, plugins and orders. Not a client store." caption={W.illustrative} tabs={["Products", "Payments", "Shipping", "Plugins", "Orders"]} tabFor={[0, 1, 2, 3, 4]} accent="#7F54B3" accentSoft="#F1EAF9">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4 s2-st--5 wc">
+    <nav class="wc-nav" aria-hidden="true">
+      {[["Dashboard", ""], ["Orders", "5"], ["Products", "1"], ["Payments", "2"], ["Shipping", "3"], ["Plugins", "4"], ["Reports", ""]].map(([n, st]) => <span class="wc-nav__i" data-s={st}>{n}</span>)}
+    </nav>
+    <section class="wc-main">
+      <div class="s2p-only-1 wc-pane" style="--show:grid">
+        <p class="s2p-lbl">Products and variations</p>
+        {[["Cotton tee", "Size, Colour"], ["Day pack", "Colour"], ["Gift box", "Simple"]].map(([n, v]) => <div class="s2p-card wc-row"><b>{n}</b><em class="s2p-chip s2p-chip--blue">{v}</em></div>)}
+        <div class="s2p-card wc-row"><b>Categories</b><span class="wc-tree">Men / Women / Gifts</span></div>
+      </div>
+      <div class="s2p-only-2 wc-pane" style="--show:grid">
+        <p class="s2p-lbl">Payment methods</p>
+        {["Cards", "UPI", "Cash on delivery", "Wallet"].map((n) => <div class="s2p-card wc-row"><b>{n}</b><em class="s2p-chip s2p-chip--ok">On</em></div>)}
+        <div class="s2p-card wc-co"><span>Contact</span><span>Address</span><span>Pay</span></div>
+      </div>
+      <div class="s2p-only-3 wc-pane" style="--show:grid">
+        <p class="s2p-lbl">Shipping zones and tax</p>
+        {[["Metro cities", "Flat rate"], ["Rest of India", "By weight"], ["Free shipping", "Over a set cart value"]].map(([n, v]) => <div class="s2p-card wc-row"><b>{n}</b><em class="s2p-chip">{v}</em></div>)}
+        <div class="s2p-card wc-row"><b>Tax</b><em class="s2p-chip s2p-chip--ok">Set per product class</em></div>
+      </div>
+      <div class="s2p-only-4 wc-pane" style="--show:grid">
+        <p class="s2p-lbl">Plugins and speed</p>
+        {["Payments", "Caching", "Search"].map((n) => <div class="s2p-card wc-row"><b>{n}</b><em class="s2p-chip s2p-chip--ok">Active</em></div>)}
+        {["Unused popup", "Second page builder"].map((n) => <div class="s2p-card wc-row wc-off"><b>{n}</b><em class="s2p-chip">Removed</em></div>)}
+        <div class="s2p-card wc-speed"><b>Shop speed</b><span class="wc-meter"><i></i></span></div>
+      </div>
+      <div class="s2p-only-5 wc-pane" style="--show:grid">
+        <p class="s2p-lbl">Orders and stock</p>
+        {[["Order A", "Processing", "blue"], ["Order B", "Shipped", "ok"], ["Order C", "Refund asked", "warn"]].map(([n, v, c]) => <div class="s2p-card wc-row"><b>{n}</b><em class={"s2p-chip s2p-chip--" + c}>{v}</em></div>)}
+        <div class="s2p-card wc-row"><b>Cotton tee, size M</b><em class="s2p-chip s2p-chip--warn">Low stock</em></div>
+      </div>
+    </section>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.wc { flex-direction: row; gap: 1em; }
+.wc-nav { flex: none; width: 24%; display: grid; align-content: start; gap: .2em; padding: .6em; border-radius: .8em; background: #3C2A52; }
+.wc-nav__i { padding: .55em .7em; border-radius: .4em; font: 700 .9em var(--font-body); color: #D9CCEA; }
+.s2-work[data-step="1"] .wc-nav__i[data-s~="1"], .s2-work[data-step="2"] .wc-nav__i[data-s~="2"], .s2-work[data-step="3"] .wc-nav__i[data-s~="3"], .s2-work[data-step="4"] .wc-nav__i[data-s~="4"], .s2-work[data-step="5"] .wc-nav__i[data-s~="5"] { background: #7F54B3; color: #fff; }
+.wc-main { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+.wc-pane { gap: .55em; }
+.wc-row { display: flex; align-items: center; justify-content: space-between; gap: .6em; padding-block: .5em; }
+.wc-row b { font: 800 .95em var(--font-body); min-width: 0; }
+.wc-tree { font: 600 .85em var(--font-body); color: #47506A; }
+.wc-off { opacity: .6; }
+.wc-co { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5em; padding: .5em; }
+.wc-co span { padding: .5em; border: 1px dashed #B9A6D3; border-radius: .5em; text-align: center; font: 700 .8em var(--font-body); color: #5B3F85; }
+.wc-speed { display: grid; gap: .5em; }
+.wc-meter { display: block; height: .9em; border-radius: 99px; background: #E4E6EB; overflow: hidden; }
+.wc-meter i { display: block; height: 100%; width: 0; border-radius: 99px; background: #1B7A3D; transition: width .9s var(--s2-ease); }
+.s2-work[data-step="4"] .wc-meter i { width: 84%; }
+@media (prefers-reduced-motion: reduce) { .wc-meter i { transition: none; } }
+@media (max-width: 560px) { .wc-nav { width: 28%; padding: .3em; } .wc-nav__i { padding: .5em .4em; font-size: .78em; } }
+@media (max-width: 900px) { .s2-ui:has(.wc-row) .s2-st { padding: 10px 12px; gap: .6em; } .wc-pane > .wc-row:nth-of-type(n+5) { display: none; } .wc-co { display: none; } }
+</style>

@@ -1,0 +1,71 @@
+---
+// 7. Close: full-bleed CTA band over a team photo, one snap row that combines the calculators and the guides, three text chips for
+// related services (the AI one included). The existing PreFooterCta and footer follow in the page.
+import { BOOK, SECONDARY, TOOLS_FOR, toolBySlug } from "../../lib/site";
+import { guidesFor } from "../../lib/links-map";
+import { href } from "../../lib/links";
+interface Props { H: any; S: any; source: string; toolsKey: string }
+const { H, S, source, toolsKey } = Astro.props as Props;
+const C = S.close;
+const IMG: Record<string, string> = {
+  "unit-economics": "/assets/res/unit.jpg", "breakeven-roas": "/assets/res/roas.jpg", "ltv-cac": "/assets/res/ltv.jpg",
+  "funnel-roas": "/assets/res/funnel.jpg", "cac-runway": "/assets/res/runway.jpg", "growth-trajectory": "/assets/contact/growth.jpg",
+};
+const tools = (TOOLS_FOR[toolsKey] || []).map((k) => toolBySlug(k)).filter(Boolean).map((t: any) => ({ kind: "Calculator", title: t.short, text: t.blurb, href: t.href, img: IMG[t.slug], go: "Open the calculator" }));
+const guides = guidesFor(toolsKey).map((g: any) => ({ kind: "Guide", title: g.short, text: g.desc, href: g.href, img: g.img, go: "Read the guide" }));
+const cards = [...tools, ...guides];
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+---
+<section class="s2-cta" aria-labelledby="s2-cta-h">
+  <img class="s2-cta__img" src={"/assets/" + C.img} alt={C.alt} width="1200" height="806" loading="lazy" decoding="async" />
+  <div class="s2-cta__shade" aria-hidden="true"></div>
+  <div class="s2-wrap s2-cta__in">
+    <h2 id="s2-cta-h"><b>{H.cta.h2a}</b> <em>{H.cta.h2b}</em></h2>
+    <p>{H.cta.lede}</p>
+    <div class="s2-cta__act">
+      <button type="button" class="s2-btn s2-btn--sun" data-book={source + "-mid"}>{BOOK}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+      <a class="s2-cta__link" href={href(H.cta.secondary?.href || "/audit/")}>{H.cta.secondary?.label || SECONDARY.audit}</a>
+    </div>
+  </div>
+</section>
+{cards.length > 0 && (
+<section class="s2-band s2-band--paper s2-snap" id="free-tools" aria-labelledby="s2-snap-h">
+  <div class="s2-wrap">
+    <header class="s2-head s2-head--row">
+      <div>
+        <p class="s2-eyebrow">{C.toolsLabel}</p>
+        <h2 class="s2-h2 s2-h2--sm" id="s2-snap-h">{C.toolsH1} <em>{C.toolsH2}</em></h2>
+      </div>
+      <a class="s2-link" href="/guides/">All guides and tools<Fragment set:html={arrow} /></a>
+    </header>
+  </div>
+  <ul class="s2-snap__row" tabindex="0" aria-label="Calculators and guides, scroll sideways">
+    {cards.map((c) => (
+      <li>
+        <a class="s2-card" href={c.href}>
+          <span class="s2-card__pic"><img src={c.img} alt="" width="400" height="260" loading="lazy" decoding="async" /><i>{c.kind}</i></span>
+          <b>{c.title}</b>
+          <span class="s2-card__d">{c.text}</span>
+          <span class="s2-card__go">{c.go}<Fragment set:html={arrow} /></span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <div class="s2-wrap">
+    <nav class="s2-chips" aria-label={C.chipsLabel}>
+      <span>{C.chipsLabel}</span>
+      {C.chips.map((c: any) => <a href={href(c.href)}>{c.n}{<Fragment set:html={arrow} />}</a>)}
+    </nav>
+  </div>
+</section>
+)}
+{cards.length === 0 && C.chips?.length > 0 && (
+<section class="s2-band s2-band--paper" aria-label={C.chipsLabel}>
+  <div class="s2-wrap">
+    <nav class="s2-chips" aria-label={C.chipsLabel}>
+      <span>{C.chipsLabel}</span>
+      {C.chips.map((c: any) => <a href={href(c.href)}>{c.n}{<Fragment set:html={arrow} />}</a>)}
+    </nav>
+  </div>
+</section>
+)}

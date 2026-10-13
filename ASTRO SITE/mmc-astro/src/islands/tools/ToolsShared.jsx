@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { MMC_GLOSSARY_BY_ID, MMC_GLOSSARY_URL } from "./glossaryData.js";
 import { TOOLS as SITE_TOOLS } from "../../lib/site";
 
@@ -145,6 +146,9 @@ function InfoDot({ term, label }) {
 
 /* A labelled numeric input with a unit affix. Used for money and counts. */
 function Field({ label, value, onChange, prefix, suffix, step = 1, min = 0, max, hint, info }) {
+  // A typed value can never exceed a sensible ceiling: 100 for a percentage, 1 lakh for a per-unit rupee cost,
+  // 1 crore for monthly money (the step is large only for those fields).
+  const cap = max != null ? max : suffix === "%" ? 100 : step >= 500 ? 10000000 : 100000;
   return (
     <label className="tl-field">
       <span className="tl-field__label">{label}{info && <InfoDot term={info} label={label} />}</span>
@@ -156,10 +160,17 @@ function Field({ label, value, onChange, prefix, suffix, step = 1, min = 0, max,
           value={value}
           step={step}
           min={min}
-          max={max}
+          max={cap}
+          inputMode="decimal"
           onChange={(e) => {
             const v = e.target.value === "" ? "" : Number(e.target.value);
-            onChange(v === "" ? "" : v);
+            if (v === "") return onChange("");
+            if (!isFinite(v)) return;
+            onChange(Math.min(cap, v));
+          }}
+          onBlur={() => {
+            const v = Number(value);
+            if (value !== "" && isFinite(v) && v < min) onChange(min);
           }}
         />
         {suffix && <span className="tl-field__affix tl-field__affix--suf">{suffix}</span>}
@@ -310,17 +321,27 @@ function Ctl({ label, value, onChange, min, max, step = 1, fmt, hint, info, lo, 
         <span className="tl-ctl__v">
           {pre && <span className="tl-ctl__fix">{pre}</span>}
           <input
-            type="number" className="tl-ctl__in" value={draft != null ? draft : v}
-            min={min} max={max} step={step} inputMode="decimal" aria-label={label}
+            type="text" className="tl-ctl__in" inputMode="decimal" autoComplete="off"
+            value={draft != null ? draft : (Math.abs(v) >= 10000 ? v.toLocaleString("en-IN") : String(v))}
+            data-min={min} data-max={max} aria-label={label}
+            onFocus={() => setDraft(String(v))}
             onChange={(e) => {
-              setDraft(e.target.value);
-              const num = Number(e.target.value);
-              if (e.target.value !== "" && isFinite(num)) onChange(num);
+              const raw = e.target.value.replace(/,/g, "");
+              if (!/^-?\d*\.?\d*$/.test(raw)) return;
+              const num = Number(raw);
+              // Typed values stop at the slider's maximum: no 11-digit entries.
+              if (raw !== "" && isFinite(num) && num > max) {
+                setDraft(String(max));
+                onChange(max);
+                return;
+              }
+              setDraft(raw);
+              if (raw !== "" && raw !== "-" && raw !== "." && isFinite(num)) onChange(num);
             }}
             onBlur={() => {
               const num = Number(draft);
               setDraft(null);
-              onChange(!isFinite(num) || draft === "" || draft === null
+              onChange(!isFinite(num) || draft === "" || draft === null || draft === "-" || draft === "."
                 ? v : Math.max(min, Math.min(max, num)));
             }} />
           {suf && <span className="tl-ctl__fix">{suf}</span>}
@@ -360,10 +381,46 @@ function Meter({ value, goal, floor, min, max, fmtV, labels }) {
   );
 }
 
+/* LiveBar: on phones the result sits ~1300px below the sliders, so a compact
+   headline bar follows the reader while they are in the inputs. Shown only
+   while the reader is inside the inputs card and the results panel is not on screen; it never
+   renders on desktop (CSS), and it is portalled so no transformed ancestor
+   can break position:fixed. */
+function LiveBar({ k, v, tone }) {
+  const [host, setHost] = React.useState(null);
+  const [on, setOn] = React.useState(false);
+  React.useEffect(() => {
+    setHost(document.body);
+    const ctrl = document.querySelector(".tl-split__ctrl");
+    const out = document.querySelector(".tl-answer");
+    if (!ctrl || !out) return;
+    let raf = 0;
+    const calc = () => {
+      raf = 0;
+      const vh = window.innerHeight;
+      const c = ctrl.getBoundingClientRect(), r = out.getBoundingClientRect();
+      // Inside the inputs (past the top of the card, not yet at its end) and the result not yet on screen.
+      setOn(c.top < vh * 0.45 && c.bottom > 200 && r.top > vh * 0.6);
+    };
+    const queue = () => { if (!raf) raf = requestAnimationFrame(calc); };
+    window.addEventListener("scroll", queue, { passive: true });
+    window.addEventListener("resize", queue);
+    calc();
+    return () => { window.removeEventListener("scroll", queue); window.removeEventListener("resize", queue); if (raf) cancelAnimationFrame(raf); };
+  }, []);
+  if (!host) return null;
+  return ReactDOM.createPortal(
+    <div className={"tl-live" + (on ? " is-on" : "")} aria-hidden="true">
+      <span className="tl-live__k">{k}</span>
+      <span className={"tl-live__v" + (tone ? " is-" + tone : "")}>{v}</span>
+    </div>, host);
+}
+
 /* BigAnswer: one number, one plain sentence, and the meter under it. */
 function BigAnswer({ k, v, tone, info, children }) {
   return (
     <div className="tl-big">
+      <LiveBar k={k} v={v} tone={tone} />
       <span className="tl-big__k">{k}{info && <InfoDot term={info} label={k} />}</span>
       <span className={"tl-big__v" + (tone ? " is-" + tone : "")}>{v}</span>
       {children}
@@ -490,11 +547,31 @@ function barPath(x, y, w, h, r) {
          ` L${x + w - rr},${y} Q${x + w},${y} ${x + w},${y + rr} L${x + w},${y + h} Z`;
 }
 
+/* Pointer handling shared by the charts: mouse hover, and tap or drag on touch.
+   On touch the tooltip stays after the finger lifts and clears on the next
+   tap outside the chart. */
+function chartPointer(update, clear) {
+  return {
+    onPointerDown: update,
+    onPointerMove: update,
+    onPointerLeave: (e) => { if (e.pointerType !== "touch") clear(); },
+  };
+}
+function useDismissOutside(ref, active, clear) {
+  React.useEffect(() => {
+    if (!active) return;
+    const f = (e) => { if (ref.current && !ref.current.contains(e.target)) clear(); };
+    document.addEventListener("pointerdown", f);
+    return () => document.removeEventListener("pointerdown", f);
+  }, [active]);
+}
+
 /* Line chart: one or two series, crosshair + tooltip, endpoint direct label. */
 function LineChart({ rows, series, fmt, fmtTick, height = 216, xKey = "label", signedY = false }) {
   const wrap = React.useRef(null);
   const W = useWidth(wrap);
   const [hover, setHover] = React.useState(null);
+  useDismissOutside(wrap, hover != null, () => setHover(null));
 
   if (!rows || rows.length === 0) return <div className="tl-chart" />;
   const n = rows.length;
@@ -516,7 +593,10 @@ function LineChart({ rows, series, fmt, fmtTick, height = 216, xKey = "label", s
   P.l = gutter(ticks);
   const iw = Math.max(10, W - P.l - P.r);
   const zeroY = y(0);
-  const every = n > 12 ? Math.ceil(n / 8) : 1;
+  // Thin the x labels by the pixel width available (about one per 44px) and never print a label that would sit on top of the last one.
+  const stepPx = n > 1 ? iw / (n - 1) : iw;
+  const every = Math.max(1, Math.ceil(46 / Math.max(stepPx, 1)));
+  const showX = (i) => i === n - 1 || (i % every === 0 && (n - 1 - i) * stepPx >= 40);
 
   const onMove = (e) => {
     const r = wrap.current.getBoundingClientRect();
@@ -527,8 +607,7 @@ function LineChart({ rows, series, fmt, fmtTick, height = 216, xKey = "label", s
   };
 
   return (
-    <div className="tl-chart" ref={wrap}
-         onMouseMove={onMove} onMouseLeave={() => setHover(null)}>
+    <div className="tl-chart" ref={wrap} {...chartPointer(onMove, () => setHover(null))}>
       <svg width={W} height={height} role="img"
            aria-label={series.map((s) => s.name).join(" and ") + " over time"}>
         {ticks.map((t, i) => (
@@ -539,7 +618,7 @@ function LineChart({ rows, series, fmt, fmtTick, height = 216, xKey = "label", s
         ))}
         <line className="tl-chart__axis" x1={P.l} x2={P.l + iw} y1={zeroY} y2={zeroY} />
 
-        {rows.map((r, i) => (i % every === 0 || i === n - 1) && (
+        {rows.map((r, i) => showX(i) && (
           <text key={i} className="tl-chart__tick" x={x(i)} y={height - 10}
                 textAnchor={i === 0 ? "start" : i === n - 1 ? "end" : "middle"}>{r[xKey]}</text>
         ))}
@@ -571,7 +650,7 @@ function LineChart({ rows, series, fmt, fmtTick, height = 216, xKey = "label", s
       </svg>
 
       {hover != null && (
-        <div className="tl-tip" style={{ left: x(hover) + "px", top: (P.t + 4) + "px" }}>
+        <div className="tl-tip" style={{ left: Math.max(76, Math.min(W - 76, x(hover))) + "px", top: (P.t + 4) + "px" }}>
           <span className="tl-tip__t">{rows[hover][xKey]}</span>
           {series.map((s, si) => (
             <span className="tl-tip__r" key={s.key}>
@@ -591,6 +670,7 @@ function ColumnChart({ rows, valueKey, labelKey = "label", fmt, fmtTick, height 
   const wrap = React.useRef(null);
   const W = useWidth(wrap);
   const [hover, setHover] = React.useState(null);
+  useDismissOutside(wrap, hover != null, () => setHover(null));
 
   if (!rows || rows.length === 0) return <div className="tl-chart" />;
   const P = { l: 58, r: 12, t: 14, b: 32 };
@@ -609,6 +689,8 @@ function ColumnChart({ rows, valueKey, labelKey = "label", fmt, fmtTick, height 
   P.l = Math.max(48, Math.min(96, Math.max(...ticks.map((v) => String(fmtTick(v)).length)) * 6.6 + 16));
   const iw = Math.max(10, W - P.l - P.r);
   const slot = iw / Math.max(1, n);
+  const barEvery = Math.max(1, Math.ceil(40 / Math.max(slot, 1)));
+  const barLabel = (i) => i === n - 1 || (i % barEvery === 0 && (n - 1 - i) * slot >= 36);
   const bw = Math.max(6, Math.min(56, slot - 10));
   const yOf = (v) => P.t + ih - ((v - minV) / span) * ih;
   const zeroY = yOf(0);
@@ -620,7 +702,7 @@ function ColumnChart({ rows, valueKey, labelKey = "label", fmt, fmtTick, height 
   };
 
   return (
-    <div className="tl-chart" ref={wrap} onMouseMove={onMove} onMouseLeave={() => setHover(null)}>
+    <div className="tl-chart" ref={wrap} {...chartPointer(onMove, () => setHover(null))}>
       <svg width={W} height={height} role="img" aria-label="Revenue by year">
         {ticks.map((t, i) => (
           <g key={i}>
@@ -641,14 +723,14 @@ function ColumnChart({ rows, valueKey, labelKey = "label", fmt, fmtTick, height 
               <path className="tl-chart__bar"
                     d={neg ? barPath(bx, by + h, bw, -h, -4) : barPath(bx, by, bw, h, 4)}
                     fill={neg ? negColor : color} opacity={hover == null || hover === i ? 1 : 0.55} />
-              <text className="tl-chart__tick" x={bx + bw / 2} y={height - 10}
-                    textAnchor={i === 0 ? "start" : i === n - 1 ? "end" : "middle"}>{r[labelKey]}</text>
+              {barLabel(i) && <text className="tl-chart__tick" x={bx + bw / 2} y={height - 10}
+                    textAnchor={i === 0 ? "start" : i === n - 1 ? "end" : "middle"}>{r[labelKey]}</text>}
             </g>
           );
         })}
       </svg>
       {hover != null && (
-        <div className="tl-tip" style={{ left: (P.l + slot * hover + slot / 2) + "px",
+        <div className="tl-tip" style={{ left: Math.max(76, Math.min(W - 76, P.l + slot * hover + slot / 2)) + "px",
                                          top: Math.min(zeroY, yOf(rows[hover][valueKey] || 0)) + "px" }}>
           <span className="tl-tip__t">{rows[hover][labelKey]}</span>
           <span className="tl-tip__r">
@@ -665,12 +747,15 @@ function ColumnChart({ rows, valueKey, labelKey = "label", fmt, fmtTick, height 
    profit(R) = contribution − revenue/R, so the curve crosses zero exactly at
    break-even. Zones are coloured by meaning (loss / profitable / past target),
    which is a diverging job, not a categorical one. */
-function RoasSpectrum({ revenue, contribution, breakeven, current, target, fmt, height = 226 }) {
+function RoasSpectrum({ revenue, contribution, breakeven, current, target, fmt, height: h0 = 226 }) {
   const wrap = React.useRef(null);
   const W = useWidth(wrap);
+  // Phones stagger up to three labels, which needs more headroom above the curve.
+  const height = h0 + (W < 500 ? 40 : 0);
   const [hover, setHover] = React.useState(null);
+  useDismissOutside(wrap, hover != null, () => setHover(null));
 
-  const P = { l: 16, r: 16, t: 54, b: 34 };
+  const P = { l: 16, r: 16, t: W < 500 ? 118 : 54, b: 34 };
   const iw = Math.max(10, W - P.l - P.r);
   const ih = Math.max(10, height - P.t - P.b);
 
@@ -711,8 +796,8 @@ function RoasSpectrum({ revenue, contribution, breakeven, current, target, fmt, 
   let lastX = -1e9, level = 0;
   marks.forEach((mk) => {
     const mx = x(mk.R);
-    level = mx - lastX < 60 ? level + 1 : 0;
-    mk.lift = 22 + level * 27;
+    level = mx - lastX < (W < 500 ? 92 : 60) ? level + 1 : 0;
+    mk.lift = 22 + level * (W < 500 ? 36 : 27);
     mk.anchor = mx < 46 ? "start" : mx > P.l + iw - 46 ? "end" : "middle";
     mk.dx = mk.anchor === "start" ? -4 : mk.anchor === "end" ? 4 : 0;
     lastX = mx;
@@ -720,7 +805,7 @@ function RoasSpectrum({ revenue, contribution, breakeven, current, target, fmt, 
 
   const zone = (a, b, label, color) => {
     const cx = (x(Math.max(a, xMin)) + x(Math.min(b, xMax))) / 2;
-    if (x(Math.min(b, xMax)) - x(Math.max(a, xMin)) < 56) return null;
+    if (x(Math.min(b, xMax)) - x(Math.max(a, xMin)) < label.length * (W < 500 ? 9.2 : 7.5) + 16) return null;
     return <text className="tl-spec__zone" x={cx} y={P.t + ih + 20} textAnchor="middle" fill={color}>{label}</text>;
   };
 
@@ -731,7 +816,7 @@ function RoasSpectrum({ revenue, contribution, breakeven, current, target, fmt, 
   };
 
   return (
-    <div className="tl-chart tl-spec" ref={wrap} onMouseMove={onMove} onMouseLeave={() => setHover(null)}>
+    <div className="tl-chart tl-spec" ref={wrap} {...chartPointer(onMove, () => setHover(null))}>
       <svg width={W} height={height} role="img"
            aria-label={"Profit per order across ROAS. Break-even at " + breakeven.toFixed(2) + " times; you are at " + current.toFixed(2) + " times."}>
         <defs>
@@ -778,7 +863,7 @@ function RoasSpectrum({ revenue, contribution, breakeven, current, target, fmt, 
       </svg>
 
       {hover != null && (
-        <div className="tl-tip" style={{ left: x(hover) + "px", top: (P.t + 2) + "px" }}>
+        <div className="tl-tip" style={{ left: Math.max(76, Math.min(W - 76, x(hover))) + "px", top: (P.t + 2) + "px" }}>
           <span className="tl-tip__t">At {hover.toFixed(2)}× ROAS</span>
           <span className="tl-tip__r">
             Profit / order<span className="tl-tip__v">{fmt(profit(hover))}</span>
@@ -864,11 +949,11 @@ function ToolFAQ({ items, heading }) {
         <h2 className="tl-faq__h" id="tl-faq-h">
           {heading || "Questions this calculator answers"}
         </h2>
-        <div className="tl-faq__list">
+        <div className="mmc-faq">
           {items.map((it, i) => (
-            <details className="tl-faq__item" key={it.q} open={i === 0}>
-              <summary className="tl-faq__q">{it.q}</summary>
-              <p className="tl-faq__a">{it.a}</p>
+            <details key={it.q} open={i === 0}>
+              <summary>{it.q}</summary>
+              <div className="mmc-faq__a"><p>{it.a}</p></div>
             </details>
           ))}
         </div>

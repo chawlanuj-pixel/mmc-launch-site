@@ -100,7 +100,8 @@
 .ix-links a:hover { color: var(--n-blue); }
 .ix-links a:hover::after { transform: translateX(4px); }
 @media (max-width: 980px) { .ix-topics { grid-template-columns: 1fr; } .ix-topic { flex-direction: row; } .ix-topic__shot { width: 38%; height: auto; flex: none; } }
-@media (max-width: 620px) { .ix-topic { flex-direction: column; } .ix-topic__shot { width: 100%; height: 150px; } }
+@media (max-width: 620px) { .ix-topic { flex-direction: column; } .ix-topic__shot { width: 100%; height: auto; aspect-ratio: 16 / 10; } }
+@media (max-width: 620px) { .ix-card__shot { height: auto; aspect-ratio: 16 / 10; } .ix-card__body, .ix-topic__body { gap: 10px; } }
 
 /* ---- calculators ---- */
 .ix-calcs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-3); }
@@ -112,18 +113,6 @@
 .ix-calc span.ix-calc__d { font-size: 15px; line-height: 1.5; color: var(--n-fg-2); }
 @media (max-width: 900px) { .ix-calcs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .ix-calcs { grid-template-columns: 1fr; } }
-
-/* ---- FAQ ---- */
-.ix-faq { display: grid; gap: var(--sp-1); max-width: 860px; }
-.ix-faq details { background: var(--n-paper); border: 1px solid var(--n-line); border-radius: var(--r-in); }
-.ix-band--paper .ix-faq details { background: #fff; }
-.ix-faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2); min-height: 56px; padding: 12px var(--sp-3); font: 700 17px/1.3 var(--font-display); color: var(--n-ink); }
-.ix-faq summary::-webkit-details-marker { display: none; }
-.ix-faq summary::after { content: "+"; flex: none; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: var(--n-ink); color: #fff; font: 700 20px/1 var(--font-body); }
-.ix-faq details[open] summary::after { content: "\2212"; background: var(--n-blue); }
-.ix-faq details:hover { border-color: var(--n-blue); }
-.ix-faq__a { padding: 0 var(--sp-3) var(--sp-3); font-size: 16px; line-height: 1.65; color: var(--n-fg-2); max-width: 68ch; }
-.ix-faq__a a { color: var(--n-blue-d); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- closing CTA (homepage .hv-close language) ---- */
 .ix-close { background: var(--n-ink); color: #fff; padding-block: var(--sp-6); }

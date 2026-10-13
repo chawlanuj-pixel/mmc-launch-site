@@ -1,0 +1,85 @@
+{
+ "id": "awwbaby",
+ "about": "{name} is a D2C brand that sells kids' products.",
+ "description": "{name} case study: an ecommerce storefront with category pages for activewear, feeding, toys, bath and accessories, plus social creative and ads.",
+ "heroTone": "paper",
+ "kind": "D2C brand, kids' products",
+ "channels": [
+  "Meta ad",
+  "Google search ad"
+ ],
+ "brief": [
+  "{name} sells kids' products. This page covers an ecommerce storefront spanning the homepage, category pages for activewear, feeding, toys, bath and accessories, and a product detail page.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage and category tiles",
+   "text": "A bright hero, five category tiles and a strip of reassurance points beneath the fold.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "left",
+   "kicker": "Mobile",
+   "title": "Mobile product detail page",
+   "text": "Large photography, size picker and a fixed add to cart.",
+   "crops": [
+    "mobile"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Two portrait tiles that reuse the site's lilac palette.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google search ad",
+   "text": "Product cards that mirror the category tiles on the site.",
+   "crops": [
+    "meta",
+    "google"
+   ],
+   "captions": [
+    "Meta ad",
+    "Google search ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "Product photography",
+   "text": "From the same artwork.",
+   "crops": [
+    "products"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, category tiles and mobile product page",
+  "reach": "Meta ad and Google search ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
+  "social": "{name} social media creative tiles, client-approved artwork",
+  "meta": "{name} Meta ad, client-approved artwork",
+  "google": "{name} Google ad, client-approved artwork",
+  "products": "{name} product photography, client-approved artwork"
+ }
+}

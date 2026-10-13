@@ -1,0 +1,181 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "cro/pdp.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: a product page under review.",
+    "facts": [
+      {
+        "t": "Find the leaks.",
+        "d": "Funnel data and session behaviour show where visitors leave."
+      },
+      {
+        "t": "Fix the pages that matter.",
+        "d": "Product pages, checkout, landing pages and forms come first."
+      },
+      {
+        "t": "Test, then keep.",
+        "d": "Only changes that beat the current page stay."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands run CRO with MMC"
+  },
+  "work": {
+    "panel": "Heatmap",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on your",
+    "h2b": "pages.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Read where clicks go.",
+        "d": "A click heatmap shows what visitors tap and what they ignore on the pages that matter."
+      },
+      {
+        "n": "02",
+        "t": "See where they stop scrolling.",
+        "d": "A scroll map shows how far people get, so proof and the button sit above the drop."
+      },
+      {
+        "n": "03",
+        "t": "Plan one change per test.",
+        "d": "Each test changes one thing, for a stated reason, so the result teaches you something."
+      },
+      {
+        "n": "04",
+        "t": "Keep only what beats the current page.",
+        "d": "Tests run until the gap is clear. Winners stay, and learnings go back to ads and creative."
+      }
+    ],
+    "illustrative": "Illustrative layout of a page analytics view. Not a client page, no real figures."
+  },
+  "leak": {
+    "visual": "PdpFriction",
+    "barLogo": "",
+    "barTitle": "Product page",
+    "pinsLabel": "Five places visitors leave a page",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 8,
+        "y": 0,
+        "label": "Drop-off"
+      },
+      {
+        "x": 36,
+        "y": 0,
+        "label": "Doubts"
+      },
+      {
+        "x": 56,
+        "y": 0,
+        "label": "Cart"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Forms"
+      },
+      {
+        "x": 94,
+        "y": 0,
+        "label": "Testing"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we run CRO for.",
+    "tiles": [
+      {
+        "id": "giraffe",
+        "line": "A festive gifting push, from social tiles and Meta Ads through to the cart."
+      },
+      {
+        "id": "mittiy",
+        "line": "Handmade products: creative and landing pages working together."
+      },
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: the ad and the product page tell one story."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run CRO,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Find the real leaks",
+        "d": "Funnel data, session behaviour and form analytics show where visitors leave and what each leak costs.",
+        "get": "A ranked list of leaks by cost and ease of fix.",
+        "img": "cro/leaks.jpg",
+        "alt": "Illustrative scene: funnel drop-off being reviewed.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Fix the biggest leak first",
+        "d": "Product pages, cart, checkout or lead forms change one test at a time.",
+        "get": "One clear change, with a reason behind it.",
+        "img": "cro/pdp.jpg",
+        "alt": "Illustrative scene: a product page being reworked.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Run the test",
+        "d": "Tests run long enough to be trustworthy, against the current page.",
+        "get": "Changes proven against the current page.",
+        "img": "cro/test.jpg",
+        "alt": "Illustrative scene: an A/B test being read.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Keep what wins",
+        "d": "Only winners stay, and results feed the next round and your ads.",
+        "get": "A higher share of visitors who buy or enquire.",
+        "img": "cro/forms.jpg",
+        "alt": "Illustrative scene: a short lead form on a phone.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "Shopify development",
+        "href": "/services/shopify-development/"
+      },
+      {
+        "n": "Lead generation",
+        "href": "/services/lead-generation/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

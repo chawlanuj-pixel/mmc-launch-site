@@ -352,3 +352,14 @@ section:not(.no-section-bg)::before,
 @media (prefers-reduced-motion: reduce) {
   .ink-ground::before, .ink-ground::after { animation: none; }
 }
+
+/* Keyboard focus for every .btn that has no family-specific ring: tokens from the design system (blue on light; dark-ground families override to yellow). */
+.btn:focus-visible { outline: var(--focus-w, 3px) solid var(--focus-color, var(--mmc-blue)); outline-offset: var(--focus-offset, 2px); }
+
+/* Honeypot spam trap: invisible to people and assistive tech, still present in the form for bots. */
+.hp-field { position: absolute !important; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
+
+/* reCAPTCHA v3: the floating badge is replaced by the visible notice Google requires (added to a form on first use by mmc-forms.js). */
+.grecaptcha-badge { visibility: hidden !important; }
+.rc-note { margin: 14px 0 0; font-size: 12px; line-height: 1.5; color: var(--n-fg-3, #5B6478); }
+.rc-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }

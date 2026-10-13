@@ -1,0 +1,82 @@
+---
+// /work/ case studies: large previews (the case-study hero crop, logo, name, kind of brand, service chips) linking to
+// /work/<id>/. The filter chips work without JavaScript: each chip links to #f-<kind>, and :target hides the other
+// cards (CSS in work3.css). With JavaScript the chips filter in place and keep ?kind= in the URL.
+// Names, labels, tags and the order all come from src/lib/work.ts.
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import { CASES, GROUPS, tagsFor } from "../../lib/work";
+import { ARTWORK_LINE } from "../../lib/site";
+
+const PUB = join(process.cwd(), "public");
+const pic = (id: string, fallback: string) => existsSync(join(PUB, "assets", "case2", id, "hero.jpg")) ? `/assets/case2/${id}/hero.jpg` : `/assets/${fallback}`;
+const present = new Set(CASES.map((c) => c.group));
+const TABS = [{ k: "all", l: "All case studies" }, ...GROUPS.filter((g) => present.has(g.key)).map((g) => ({ k: g.key, l: g.label }))];
+---
+<section class="wk3-band wk3-band--white" id="cases" aria-labelledby="wk3-cases-h">
+  <div class="n-wrap">
+    <div class="wk3-cases__head">
+      <div>
+        <span class="n-eyebrow">Case studies</span>
+        <h2 class="n-h2" id="wk3-cases-h">Brands we have shown <span class="n-serif">in full.</span></h2>
+      </div>
+      <p class="wk3-note">{ARTWORK_LINE}</p>
+    </div>
+    <div class="wk3-flt">
+      {TABS.filter((t) => t.k !== "all").map((t) => <span id={"f-" + t.k} class="wk3-anchor" aria-hidden="true"></span>)}
+      <nav class="wk3-chips" aria-label="Filter case studies by kind">
+        {TABS.map((t, i) => <a class={"wk3-chip" + (i === 0 ? " is-on" : "")} data-cf={t.k} href={t.k === "all" ? "#cases" : "#f-" + t.k} aria-current={i === 0 ? "true" : undefined}>{t.l}</a>)}
+      </nav>
+      <p class="wk3-flt__empty" hidden>No case studies in this group yet.</p>
+      <ul class="wk3-grid" role="list">
+        {CASES.map((c) => {
+          const tags = tagsFor(c.id, true);
+          return (
+            <li class="wk3-case" data-g={c.group}>
+              <a class="wk3-case__a" href={`/work/${c.id}/`}>
+                <span class="wk3-case__pic">
+                  <img src={pic(c.id, c.image)} alt="" width="1400" height="600" loading="lazy" decoding="async" />
+                  <span class="wk3-case__logo"><img src={`/assets/clients/${c.id}.png`} alt="" loading="lazy" decoding="async" /></span>
+                </span>
+                <span class="wk3-case__body">
+                  <span class="wk3-case__top">
+                    <span class="wk3-case__kind">{c.label}</span>
+                    <h3 class="wk3-case__name">{c.name}</h3>
+                  </span>
+                  <span class="wk3-case__scope">{c.scope}</span>
+                  <span class="wk3-case__svc">{tags.map((t) => <span>{t}</span>)}</span>
+                  <span class="wk3-case__go">Read the case study
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+  const chips = document.querySelectorAll<HTMLAnchorElement>(".wk3-chips .wk3-chip");
+  const cards = document.querySelectorAll<HTMLElement>(".wk3-grid [data-g]");
+  const none = document.querySelector<HTMLElement>(".wk3-flt__empty");
+  const flt = document.querySelector<HTMLElement>(".wk3-flt");
+  /* From here the script owns the filter; the :target rules (no-JS path) step aside. */
+  flt?.classList.add("is-js");
+  const keys = [...chips].map((t) => t.dataset.cf || "all");
+  function apply(k: string) {
+    let n = 0;
+    cards.forEach((el) => { const show = k === "all" || el.dataset.g === k; el.hidden = !show; if (show) n++; });
+    chips.forEach((t) => { const on = t.dataset.cf === k; t.classList.toggle("is-on", on); if (on) t.setAttribute("aria-current", "true"); else t.removeAttribute("aria-current"); });
+    if (none) none.hidden = n > 0;
+  }
+  chips.forEach((t) => t.addEventListener("click", (e) => {
+    e.preventDefault();
+    const k = t.dataset.cf || "all";
+    apply(k);
+    try { history.replaceState(null, "", k === "all" ? location.pathname + "#cases" : location.pathname + "?kind=" + k + "#cases"); } catch (_) {}
+  }));
+  const q = new URLSearchParams(location.search).get("kind") || (location.hash.startsWith("#f-") ? location.hash.slice(3) : "");
+  if (q && keys.includes(q)) apply(q);
+</script>

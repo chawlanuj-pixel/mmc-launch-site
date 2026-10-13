@@ -137,6 +137,7 @@
   --mmc-blue: #1D4ED8;        /* royal blue, primary brand */
   --mmc-blue-700: #16329E;    /* deep royal, depth / pressed */
   --mmc-blue-900: #0F1E5E;    /* ink royal, full-screen dark grounds */
+  --mmc-blue-950: #0A1546;    /* deepest ink: photo shades and pressed ink (svc2, case2) */
   --mmc-blue-500: #1D4ED8;
   --mmc-blue-300: #6E8FE6;
   --mmc-blue-100: #E3EAFC;
@@ -303,6 +304,36 @@
   /* Kept as aliases: older rules still reference these names. */
   --container-max: var(--shell-max);
   --gutter: var(--shell-pad);
+
+  /* ---- House components (consistency pass, DESIGN-CONSISTENCY.md) ----
+     The values the approved pages already use, named once so the redesigned
+     families (svc2, case2, register, pricing, home V2) stop restating them. */
+  /* the standard easing; home26.css declares the same value as --ease */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* focus ring: blue on light grounds, sun on ink / blue grounds */
+  --focus-w: 3px;
+  --focus-offset: 3px;
+  --focus-color: var(--mmc-blue);
+  --focus-color-dark: var(--mmc-yellow);
+  /* status colours (forms) */
+  --mmc-error: #B3261E;
+  --mmc-error-bg: #FFF8F8;
+  --mmc-success: #1B7A3D;
+  --mmc-success-bg: #E3F6E9;
+  /* form field border at rest (n-line-2 equivalent, usable outside home26) */
+  --field-line: rgba(11, 16, 32, 0.18);
+  /* radii: inner pieces, cards, large feature media, small labels */
+  --radius-in: 14px;
+  --radius-card: 22px;
+  --radius-media: 28px;
+  --radius-tag: 8px;
+  /* section rhythm: a full chapter band, and the tighter band dense pages use */
+  --band-y: clamp(64px, 8vw, 128px);
+  --band-y-tight: clamp(48px, 6vw, 88px);
+  /* section heading: the display H2 and the compact H2 for split layouts */
+  --h2-size: clamp(30px, 4.6vw, 66px);
+  --h2-size-sm: clamp(28px, 3.1vw, 46px);
+  --h2-track: -0.038em;
 }
 
 /* ---------- Reset-ish ---------------------------------------- */

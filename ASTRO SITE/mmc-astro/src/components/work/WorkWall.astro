@@ -16,7 +16,7 @@ const tabs = [{ k: "all", l: "All brands" }, ...GROUPS.map((g) => ({ k: g.key, l
       <h2 class="n-h2">Every brand on record, <span class="n-serif">by kind.</span></h2>
       <p class="n-lede">Filter by the kind of brand. Hover over or tap a logo to see a project, where we have one to show; a linked logo opens its full case study. Under each brand: its kind, then the services recorded for it.</p>
     </div>
-    <div class="wk__tabs" role="tablist" aria-label="Filter brands by kind">
+    <div class="wk__tabs" role="tablist" aria-label="Filter brands by kind" hidden>
       {tabs.map((t, i) => <button type="button" role="tab" class={"wk__tab" + (i === 0 ? " is-on" : "")} data-f={t.k} aria-selected={i === 0 ? "true" : "false"}>{t.l}</button>)}
     </div>
     <div class="n-wall pm-wall wk__wall" data-wkwall>
@@ -45,6 +45,8 @@ const tabs = [{ k: "all", l: "All brands" }, ...GROUPS.map((g) => ({ k: g.key, l
   </div>
 </section>
 <script>
+  // The tabs are buttons that only work with JavaScript, so they ship hidden and appear once this runs.
+  document.querySelector<HTMLElement>(".wk__tabs")?.removeAttribute("hidden");
   const tabs = document.querySelectorAll<HTMLButtonElement>(".wk__tabs .wk__tab");
   const items = document.querySelectorAll<HTMLElement>(".wk__wall .wk__item");
   const empty = document.querySelector<HTMLElement>(".wk__empty");

@@ -1,24 +1,24 @@
 ---
-// The 3 guide articles: shared blue PageHero, a reading layout (contents, key takeaways, body at ~68ch),
-// the matching calculator, related guide cards, FAQ, prev/next and the closing band. Styles: insights-v2.css (ix-)
-// and article-v2.css (ar-). Content comes unchanged from src/data/guides/*.json.
+// The 3 guide articles, in the guides editorial family (guides3.css, gd3-) shared with /guides/: an editorial header
+// (crumbs, guide number, big title, standfirst, read time) over one wide literal photo, then a reading layout
+// (sticky contents with progress on desktop, a compact disclosure on phones; key takeaways first; text at 68ch),
+// the matching calculator callout, a next-step panel, the other guides as covers, FAQ and the closing band.
+// Content comes unchanged from src/data/guides/*.json; titles from src/lib/guides.ts. The previous version is in
+// tools/backup/gd3-wk3/guides-[slug].astro.bak.
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Shell from "../../components/Shell.astro";
-import PageHero from "../../components/pages/PageHero.astro";
 import PageFx from "../../components/pages/PageFx.astro";
 import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
-import Summary from "../../components/article/Summary.astro";
-import NextStep from "../../components/article/NextStep.astro";
-import Toc from "../../components/article/Toc.astro";
-import Body from "../../components/article/Body.astro";
-import Related from "../../components/article/Related.astro";
-import Faq from "../../components/editorial/Faq.astro";
+import Faq from "../../components/hub/Faq.astro";
 import PreFooterCta from "../../components/shared/PreFooterCta.astro";
-import "../../styles/insights-v2.css";
-import "../../styles/article-v2.css";
+import Cover from "../../components/guides3/Cover.astro";
+import Fx from "../../components/guides3/Fx.astro";
+import Toc from "../../components/guides3/Toc.astro";
+import GuideBody from "../../components/guides3/GuideBody.astro";
+import "../../styles/guides3.css";
 import { BOOK } from "../../lib/site";
 import { GUIDES, readMinutes, wordCount, guideTitleTag } from "../../lib/guides";
-import { fixDeep } from "../../lib/links";
+import { fixDeep, href as fixHref } from "../../lib/links";
 import { rewriteJsonld } from "../../lib/hub";
 import { closingFor } from "../../lib/prefooter";
 
@@ -43,56 +43,121 @@ const jsonld = rewriteJsonld(d.jsonld).map((b: any) => b["@type"] === "Article" 
 } : b["@type"] === "BreadcrumbList" ? {
   ...b, itemListElement: b.itemListElement.map((it: any, i: number, all: any[]) => i === all.length - 1 ? { ...it, name: g.short } : it),
 } : b);
+const art: any = jsonld.find((b: any) => b["@type"] === "Article");
+const crumbs: any[] = (jsonld.find((b: any) => b["@type"] === "BreadcrumbList") as any)?.itemListElement || [];
 const C = closingFor(H.key, H.cta);
-const gi = GUIDES.indexOf(g);
 const mins = readMinutes(H.article.blocks);
 const words = wordCount(H.article.blocks);
-const others = GUIDES.filter((x) => x.slug !== slug).map((x) => ({ h: x.title, d: x.desc, img: x.img, href: x.href, tag: x.tag, min: readMinutes(allBlocks[x.slug]) }));
-const heroImg = "/assets/" + (H.answer?.image || H.tiles?.[0]?.img);
-const lines: [string, string, string] = [H.h1[0], `${H.h1[1][0]}<span class="em-serif">${H.h1[1][1]}</span>${H.h1[1][2]}`, H.h1[2]];
+for (const b of jsonld) if (b["@type"] === "Article") { b.wordCount = words; b.timeRequired = "PT" + mins + "M"; b.articleSection = g.tag; }
+
 // The tool is a quiet link only where it is topically right; creative testing has none.
 const toolFits = slug !== "creative-testing";
-const toolImg = g.tool.href.includes("funnel") ? "/assets/res/funnel.jpg" : "/assets/res/roas.jpg";
-for (const b of jsonld) if (b["@type"] === "Article") { b.wordCount = words; b.timeRequired = "PT" + mins + "M"; b.articleSection = g.tag; }
----
-<BaseLayout title={guideTitleTag(g)} description={g.desc} path={d.path} ogTitle={g.short} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld}>
-  <Shell>
-    <main id="main" tabindex="-1" class="app-main n-app ix">
-      <PageHero wm="Guide" eyebrow={"● " + g.tag} lines={lines} sub={g.stand}
-        primary={{ label: BOOK, book: H.key + "-hero" }} secondary={toolFits ? { label: g.tool.label, href: g.tool.href } : { label: g.next.label, href: g.next.href }} rightClass="ar-hero__r">
-        <figure class="ar-hero-fig"><img src={heroImg} alt={H.answer?.chip || g.title} width="1200" height="900" loading="eager" decoding="async" fetchpriority="high" /></figure>
-        <ul slot="chips" class="pmh__chips">
-          <li>{mins + " min read"}</li>
-          <li>By Monday Marketing Company</li>
-        </ul>
-      </PageHero>
+const toolPic = g.tool.href.includes("funnel") ? "/assets/res/funnel.jpg" : "/assets/res/roas.jpg";
+// No picture appears twice on a page: the calculator box and the next-step panel drop theirs when the body
+// (or the panel) already shows it, and keep their dark ground and text.
+const bodyImgs = new Set(H.article.blocks.map((b: any) => b.img && "/assets/" + b.img).filter(Boolean));
+const nextImg = bodyImgs.has(g.next.img) ? "" : g.next.img;
+const toolImg = bodyImgs.has(toolPic) || toolPic === nextImg ? "" : toolPic;
 
-      <section class="ix-band ix-band--white" id="article" style="padding-top: clamp(32px, 4vw, 56px)">
+// Header photo: the guide's cover picture. The body block that uses the same picture keeps its text, and its
+// caption moves under the header photo, so the picture shows once.
+const heroSrc = g.img.replace(/^\/assets\//, "");
+const heroBlock = H.article.blocks.find((b: any) => b.img === heroSrc);
+const heroCap: string = heroBlock?.cap || "";
+const heroAlt: string = heroBlock?.cap || H.answer?.chip || g.title;
+
+const others = GUIDES.filter((x) => x.slug !== slug).map((x) => ({ ...x, min: readMinutes(allBlocks[x.slug]) }));
+const kind = (u: string) => /^\/tools\//.test(u) ? "Free tool" : "Service";
+const moreCards = (H.beyond?.cards || []).map((c: any) => ({ ...c, href: fixHref(c.href) })).filter((c: any) => !/^\/guides\//.test(c.href) && c.href !== g.next.href && "/assets/" + c.img !== g.next.img);
+const faqTitle = [H.faqTitle[0].replace(/\bd2c\b/g, "D2C"), H.faqTitle[1].replace(/\broas\b/g, "ROAS").replace(/\bd2c\b/g, "D2C")];
+---
+<BaseLayout title={guideTitleTag(g)} description={g.desc} path={d.path} ogTitle={g.short} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld} ogType="article" publishedTime={art?.datePublished} modifiedTime={art?.dateModified} image={SITE + "/assets/" + (d.hub.answer?.image || d.hub.tiles?.[0]?.img)} preloadImage={g.img}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app gd3 gd3--article">
+      <Fx />
+
+      <header class="gd3-ahead" id="top">
         <div class="n-wrap">
-          <nav class="ar-crumbs" aria-label="Breadcrumb">
+          <nav class="gd3-crumbs" aria-label="Breadcrumb">
             <ol>
-              <li><a href="/">Home</a></li>
-              <li><a href="/guides/">Guides</a></li>
-              <li><span aria-current="page">{g.tag}</span></li>
+              {crumbs.map((c: any, i: number) => i < crumbs.length - 1
+                ? <li><a href={c.item.replace(SITE, "")}>{c.name}</a></li>
+                : <li><span aria-current="page">{c.name}</span></li>)}
             </ol>
           </nav>
-          <div class="ar-grid">
-            <Toc blocks={H.article.blocks} />
-            <article>
-              <Summary lead={H.answer.lead} points={H.answer.points} />
-              <Body blocks={H.article.blocks} after={g.after} tool={toolFits ? { label: g.tool.label, href: g.tool.href, line: g.tryIt, img: toolImg } : undefined} />
-              <NextStep {...g.next} />
-            </article>
+          <p class="gd3-kicker"><span>{"Guide " + g.n}</span>{g.tag}</p>
+          <h1 class="gd3-h1 gd3-h1--article">{H.h1[0]} {H.h1[1][0]}<em>{H.h1[1][1]}</em>{H.h1[1][2]} {H.h1[2]}</h1>
+          <div class="gd3-ahead__row">
+            <p class="gd3-lede">{g.stand}</p>
+            <div class="gd3-ahead__side">
+              <ul class="gd3-meta">
+                <li>{mins + " min read"}</li>
+                <li>By Monday Marketing Company</li>
+              </ul>
+              <div class="gd3-ahead__act">
+                <button type="button" class="btn btn--primary" onclick={`window.mmcBookCall && window.mmcBookCall('${H.key}-hero', event)`}>{BOOK}<span class="arrow"></span></button>
+                <a class="btn btn--link" href={toolFits ? g.tool.href : "#" + H.article.blocks[0].id}>{toolFits ? g.tool.label : "Read the guide"}<span class="arrow"></span></a>
+              </div>
+            </div>
           </div>
+        </div>
+        <figure class="gd3-ahead__fig">
+          <div class="n-wrap"><img src={g.img} alt={heroAlt} width="1200" height="806" loading="eager" decoding="async" fetchpriority="high" /></div>
+          {heroCap && <figcaption class="n-wrap">{heroCap}</figcaption>}
+        </figure>
+      </header>
+
+      <section class="gd3-band gd3-band--white gd3-read" id="article" aria-label="The guide">
+        <div class="n-wrap gd3-read__grid">
+          <Toc blocks={H.article.blocks} tool={toolFits ? { label: g.tool.label, href: g.tool.href } : undefined} />
+          <article class="gd3-read__main">
+            <GuideBody blocks={H.article.blocks} lead={H.answer.lead} label={H.answer.label} points={H.answer.points}
+              after={g.after} tool={toolFits ? { label: g.tool.label, href: g.tool.href, line: g.tryIt, img: toolImg } : undefined} skipImg={heroSrc} />
+            <aside class={"gd3-next" + (nextImg ? "" : " gd3-next--text")} aria-labelledby="gd3-next-h">
+              {nextImg && <span class="gd3-next__pic"><img src={nextImg} alt="" width="1200" height="806" loading="lazy" decoding="async" /></span>}
+              <div class="gd3-next__txt">
+                <p class="gd3-label gd3-label--sun">Next step</p>
+                <h2 id="gd3-next-h">{g.next.h}</h2>
+                <p>{g.next.lede}</p>
+                <a class="gd3-next__go" href={g.next.href}>{g.next.label}<span aria-hidden="true">→</span></a>
+              </div>
+            </aside>
+          </article>
         </div>
       </section>
 
-      <Related guides={others} cards={H.beyond.cards} eyebrow={H.beyond.eyebrow} />
-      <Faq title={`<b>${H.faqTitle[0].replace(/\bd2c\b/g, "D2C")}</b> <em>${H.faqTitle[1].replace(/\broas\b/g, "ROAS").replace(/\bd2c\b/g, "D2C")}</em>`} faq={H.faq} />
+      <section class="gd3-band gd3-band--paper" id="related" aria-labelledby="gd3-rel-h">
+        <div class="n-wrap">
+          <div class="gd3-head gd3-rise">
+            <span class="n-eyebrow">Read next</span>
+            <h2 class="n-h2" id="gd3-rel-h">Keep <span class="n-serif">reading.</span></h2>
+          </div>
+          <div class="gd3-shelf gd3-shelf--2">
+            {others.map((x) => <Cover n={x.n} tag={x.tag} title={x.title} href={x.href} img={x.img} q={x.q} min={x.min} />)}
+          </div>
+          {moreCards.length > 0 && (
+            <div class="gd3-more gd3-rise">
+              <p class="gd3-label">{(H.beyond?.eyebrow || "Related") + " tools and services"}</p>
+              <ul>
+                {moreCards.map((c: any) => (
+                  <li>
+                    <a class="gd3-gloss__row" href={c.href}>
+                      <span class="gd3-gloss__thumb"><img src={"/assets/" + c.img} alt="" width="1200" height="806" loading="lazy" decoding="async" /></span>
+                      <span><small>{kind(c.href)}</small><b>{c.n}</b><span>{c.d}</span></span>
+                      <span class="gd3-gloss__go">{c.link || (kind(c.href) === "Free tool" ? "Open the calculator" : "See the service")}<span aria-hidden="true">→</span></span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <Faq title={faqTitle} faq={H.faq} tone="white" />
       <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} secondary={C.secondary} />
-      <StickyBookingBar source={H.key} />
     </main>
+    <StickyBookingBar source={H.key} />
   </Shell>
   <PageFx />
-  <script>import "../../scripts/editorial.ts";</script>
 </BaseLayout>

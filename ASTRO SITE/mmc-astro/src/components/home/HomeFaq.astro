@@ -1,0 +1,27 @@
+---
+// Homepage FAQ: 8 answer-first Q&As in native <details>, a literal photo beside. Data: src/data/pages/home-faq.json,
+// which index.astro also turns into FAQPage JSON-LD, so the visible text and the schema can never drift apart.
+import faqData from "../../data/pages/home-faq.json";
+import { fixHtml } from "../../lib/links";
+import "../../styles/faq.css";
+const { title, faq } = faqData as { title: string[]; faq: { q: string; a: string }[] };
+---
+<section class="hv2-sec hv2-faq no-section-bg" id="faq" aria-labelledby="hv2-faq-h">
+  <div class="hn-wrap hv2-faq__in">
+    <div class="hv2-faq__side">
+      <p class="hn-eyebrow">Common questions</p>
+      <h2 id="hv2-faq-h">{title[0]} <em>{title[1]}</em></h2>
+      <figure class="hv2-faq__fig">
+        <img src="/assets/company/session.jpg" alt="A senior strategist walking a client through their numbers" loading="lazy" decoding="async" width="1200" height="806" />
+      </figure>
+    </div>
+    <div class="mmc-faq hv2-faq__list">
+      {faq.map((f, k) => (
+        <details open={k === 0}>
+          <summary>{f.q}</summary>
+          <div class="mmc-faq__a"><p set:html={fixHtml(f.a)} /></div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

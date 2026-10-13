@@ -1,0 +1,180 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "contact/meeting.jpg",
+    "pos": "50% 50%",
+    "alt": "Three colleagues leaning over a printed plan on a table.",
+    "facts": [
+      {
+        "t": "The full funnel.",
+        "d": "Landing page, campaign, form and follow-up built as one system."
+      },
+      {
+        "t": "Source on every lead.",
+        "d": "Each enquiry is tagged with the campaign that produced it."
+      },
+      {
+        "t": "Quality, not volume.",
+        "d": "Reports show qualified leads and their cost, not form fills alone."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label lead generation"
+  },
+  "work": {
+    "panel": "CrmLoop",
+    "eyebrow": "The work, shown",
+    "h2a": "How an enquiry travels from",
+    "h2b": "ad to qualified lead.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Capture enquiries with their source.",
+        "d": "Every form and call lands in one place, tagged with the campaign that produced it."
+      },
+      {
+        "n": "02",
+        "t": "Reply fast on WhatsApp and email.",
+        "d": "A first reply goes out in the client's tone, with a handover note for whoever calls next."
+      },
+      {
+        "n": "03",
+        "t": "Move leads through a pipeline you can read.",
+        "d": "Stages are named with the client's sales team, so qualified means the same thing to everyone."
+      },
+      {
+        "n": "04",
+        "t": "Send qualified leads back to the ad platforms.",
+        "d": "Conversion events return to Google and Meta, so campaigns learn from real quality and not form fills."
+      },
+      {
+        "n": "05",
+        "t": "Optimise on qualified leads, then report.",
+        "d": "Budget follows the cost of a qualified lead, and your report shows quality alongside volume."
+      }
+    ],
+    "illustrative": "Illustrative layout of a CRM pipeline and chat thread. Not a client account, no real figures or people."
+  },
+  "leak": {
+    "visual": "LeadDropoff",
+    "barLogo": "",
+    "barTitle": "Lead drop-off view",
+    "pinsLabel": "Five places white-label lead generation goes wrong",
+    "zoneLabels": [
+      "Enquiry",
+      "Reply",
+      "Qualified",
+      "Handover",
+      "Won"
+    ],
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Source"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Reply"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Quality"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Handover"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Won"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first lead generation",
+    "h2b": "client gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and offer",
+        "d": "We sign the NDA, then agree the client's offer, ideal customer, CRM access and what qualified means.",
+        "get": "A one-page funnel brief.",
+        "img": "company/call.jpg",
+        "alt": "A strategist on a headset call, notebook open beside a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot funnel",
+        "d": "One landing page, one campaign and one follow-up sequence go live, with every lead tagged by source.",
+        "get": "A pilot funnel you can show the client.",
+        "img": "contact/brief.jpg",
+        "alt": "A woman working on a laptop at a cafe table with a notebook.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Lead handling SOPs",
+        "d": "Reply rules, qualification checks and the handover to sales are written down for the client's team.",
+        "get": "A lead handling guide.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the funnel",
+        "d": "More campaigns and clients join on the same funnel routine, with quality reported each month.",
+        "get": "Lead generation for more clients.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reviewing dashboards on two monitors.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "Colleagues around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label CRO",
+        "href": "/white-label/cro/"
+      },
+      {
+        "n": "White-label PPC",
+        "href": "/white-label/ppc/"
+      },
+      {
+        "n": "White-label email marketing",
+        "href": "/white-label/email-marketing/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

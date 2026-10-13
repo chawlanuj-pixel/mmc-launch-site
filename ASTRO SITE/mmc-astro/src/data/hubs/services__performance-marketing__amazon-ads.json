@@ -3,8 +3,8 @@
   "path": "/services/performance-marketing/amazon-ads/",
   "key": "amazonads",
   "title": "Amazon Ads Agency in India for D2C Brands | MMC",
-  "description": "Amazon ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.",
-  "ogTitle": "Amazon ads management for D2C brands",
+  "description": "Amazon Ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.",
+  "ogTitle": "Amazon Ads management for D2C brands",
   "ogDescription": "Sponsored ads, listings and brand content planned around stock.",
   "ogAlt": "Monday Marketing Company: amazon ads management.",
   "jsonld": [
@@ -45,7 +45,7 @@
       "@id": "https://www.mondaymarketing.company/amazon-ads.html#webpage",
       "url": "https://www.mondaymarketing.company/amazon-ads.html",
       "name": "Amazon Ads Agency in India for D2C Brands | MMC",
-      "description": "Amazon ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.",
+      "description": "Amazon Ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -66,7 +66,7 @@
       "@id": "https://www.mondaymarketing.company/amazon-ads.html#service",
       "name": "Amazon Ads management",
       "serviceType": "Amazon Ads management",
-      "description": "Amazon ads and listing optimisation for D2C brands.",
+      "description": "Amazon Ads and listing optimisation for D2C brands.",
       "url": "https://www.mondaymarketing.company/amazon-ads.html",
       "provider": {
         "@id": "https://www.mondaymarketing.company/#organization"
@@ -173,9 +173,9 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Amazon ads management is the work of running sponsored ads on Amazon and improving the listings they send shoppers to, so the ad spend turns into profitable sales.",
+      "lead": "Amazon Ads management is the work of running sponsored ads on Amazon and improving the listings they send shoppers to, so the ad spend turns into profitable sales. MMC runs it for D2C brands: listing first, then ads structured around stock and margins, with results read next to total sales, because Amazon attributes only some sales to ads.",
       "hl": "profitable sales",
-      "who": "Monday Marketing Company (MMC) runs Amazon ads for D2C brands, including The Growing Giraffe, alongside their website and other channels.",
+      "who": "Monday Marketing Company (MMC) runs Amazon Ads for D2C brands, including The Growing Giraffe, alongside their website and other channels.",
       "points": [
         {
           "icon": "bag",
@@ -199,7 +199,7 @@
     "leaks": {
       "style": "stack",
       "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
-      "eyebrow": "Where Amazon ads go wrong",
+      "eyebrow": "Where Amazon Ads go wrong",
       "h2a": "Five ways Amazon spend",
       "h2b": "goes wrong.",
       "lede": "On Amazon the ad, the listing and the stock work as one system. Each stage below is where it breaks, and how we run it."
@@ -244,7 +244,7 @@
       {
         "k": "Read it against total sales",
         "tag": "Measurement",
-        "breaks": "Judging Amazon ads on ad-attributed sales alone.",
+        "breaks": "Judging Amazon Ads on ad-attributed sales alone.",
         "why": "Ads also lift sales that Amazon does not attribute to them. Reading only attributed sales misjudges what the ads do.",
         "does": "We read ad performance alongside total sales and your margin, so budgets follow what actually adds profit.",
         "href": "performance-marketing.html",
@@ -300,6 +300,13 @@
           "img": "meta/creative.jpg",
           "href": "meta-ads.html",
           "link": "See Meta Ads"
+        },
+        {
+          "n": "White-label ecommerce and Amazon",
+          "d": "Marketplace work behind your brand.",
+          "img": "amazon/ads.jpg",
+          "href": "/white-label/ecommerce/",
+          "link": "See white-label ecommerce and Amazon"
         }
       ]
     },
@@ -336,14 +343,14 @@
     "cta": {
       "h2a": "Find out what your Amazon spend",
       "h2b": "really adds.",
-      "lede": "On a call, with a senior strategist. We read your Amazon ads against total sales and margin."
+      "lede": "On a call, with a senior strategist. We read your Amazon Ads against total sales and margin."
     },
     "platform": "amazon",
     "proof": {
       "codes": [
         "amazon"
       ],
-      "does": "run Amazon ads for"
+      "does": "run Amazon Ads for"
     },
     "process": {
       "h2a": "How we run Amazon Ads,",
@@ -381,6 +388,77 @@
         "t": "You want ads to fix a weak product, a thin margin or a stock problem.",
         "why": "Ads amplify what the listing and the stock already are, so those need to be sound first."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do on",
+      "h2b": "Amazon Ads.",
+      "lede": "Six jobs that turn Amazon from a cost centre into a channel you can read.",
+      "items": [
+        {
+          "t": "Listing improvements",
+          "d": "Titles, images, bullets and A+ content fixed before ad spend is added.",
+          "img": "amazon/listing.jpg",
+          "alt": "Listing improvements: illustrative scene"
+        },
+        {
+          "t": "Sponsored Products and Brands",
+          "d": "Campaign structures built around keywords, products and clear goals.",
+          "img": "amazon/ads.jpg",
+          "alt": "Sponsored Products and Brands: illustrative scene"
+        },
+        {
+          "t": "Stock-aware advertising",
+          "d": "Ads that follow inventory so spend does not chase products you cannot ship.",
+          "img": "amazon/stock.jpg",
+          "alt": "Stock-aware advertising: illustrative scene"
+        },
+        {
+          "t": "Brand Store and presence",
+          "d": "Storefront and brand content that support the ads.",
+          "img": "amazon/store.jpg",
+          "alt": "Brand Store and presence: illustrative scene"
+        },
+        {
+          "t": "Search term care",
+          "d": "Regular pruning of waste and expansion of the terms that convert.",
+          "img": "amazon/report.jpg",
+          "alt": "Search term care: illustrative scene"
+        },
+        {
+          "t": "Total-sales reporting",
+          "d": "Ad spend read against all sales, not only ad-attributed orders.",
+          "img": "services/performance.jpg",
+          "alt": "Total-sales reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands run Amazon",
+      "h2b": "with MMC.",
+      "lede": "We read Amazon next to the rest of your business.",
+      "img": "amazon/stock.jpg",
+      "alt": "Why brands run Amazon with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Listing first",
+          "d": "Ads on a weak listing waste money, so we fix the listing before scaling."
+        },
+        {
+          "t": "Profit-minded",
+          "d": "Targets are set from your margin after fees and returns."
+        },
+        {
+          "t": "Joined up with other channels",
+          "d": "Amazon sits in the same plan as your own store and quick commerce."
+        },
+        {
+          "t": "Clear reports",
+          "d": "You see what changed and what we plan to do next."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

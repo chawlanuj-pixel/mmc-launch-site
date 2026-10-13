@@ -1,0 +1,22 @@
+// ===== panels/index.ts: add these imports =====
+import WebBuild from "./WebBuild.astro";
+import WpDashboard from "./WpDashboard.astro";
+import MaintenanceBoard from "./MaintenanceBoard.astro";
+import DesignReview from "./DesignReview.astro";
+import AppFlow from "./AppFlow.astro";
+// ...add to the `panels` object:
+//   WebBuild, WpDashboard, MaintenanceBoard, DesignReview, AppFlow
+// ...add to `panelSteps`:
+//   WebBuild: 4, WpDashboard: 4, MaintenanceBoard: 5, DesignReview: 5, AppFlow: 4,
+
+// ===== visuals/index.ts: add these imports =====
+import ShopFunnelLeak from "./ShopFunnelLeak.astro";
+import PdpFriction from "./PdpFriction.astro";
+import SiteMapLeak from "./SiteMapLeak.astro";
+// ...add to the `visuals` object:
+//   ShopFunnelLeak, PdpFriction, SiteMapLeak
+
+// ===== WordPress and website-maintenance pages (NOT live yet) =====
+// Their hub JSON has no stages, leaks, process (the svc2 layout needs them), so their svc2 files are parked in
+// src/data/svc2/_pending/ (the glob ignores subfolders). To enable: merge V2-SVC2-HUBPATCH-wp-maintenance.json
+// (keys leaks, stages, process per hub) into the two hub files, then move the two files up to src/data/svc2/.

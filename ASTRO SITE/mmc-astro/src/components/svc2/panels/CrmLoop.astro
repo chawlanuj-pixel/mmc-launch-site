@@ -1,0 +1,105 @@
+---
+// PANEL: CrmLoop (kind "CrmLoop"). The loop Meta lead -> CRM -> WhatsApp enquiry -> Conversions API -> Meta. Meta and WhatsApp marks. 5 steps.
+//   1 Lead arrives: a Meta lead form submission becomes a "New lead" row in the CRM.
+//   2 Enquiry thread: a WhatsApp conversation (customer asks, team replies) next to the CRM lead card, status Contacted.
+//   3 Pipeline: four columns (New, Contacted, Visit booked, Won); the lead card moves to Visit booked.
+//   4 Send back: the stage change leaves the CRM as a Qualified lead event through the Conversions API to Meta, marked Matched.
+//   5 Optimise: two campaigns compared on all leads versus qualified leads; the one that looks cheapest in leads is not the best.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real names. Styles scoped to this file (prefix crm-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const cols = [["New", 2], ["Contacted", 2], ["Visit booked", 1], ["Won", 1]];
+---
+<Frame logo="/assets/platforms/meta.svg" title="Lead loop" label="Illustration of a lead loop from Meta ads to a CRM and back through the Conversions API. Not a client account." caption={W.illustrative} tabs={["Lead form", "WhatsApp", "CRM", "Events", "Insights"]} tabFor={[0, 1, 2, 3, 4]}>
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">A lead arrives <span>Lead form to CRM, in one step</span></p>
+    <div class="crm-pair">
+      <div class="s2p-card crm-form"><p class="s2p-lbl">Lead form</p><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i><i class="s2p-line s2p-line--xs"></i><span class="s2p-chip s2p-chip--blue">Submitted</span></div>
+      <svg class="crm-arrow" viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+      <div class="s2p-card crm-crm"><p class="s2p-lbl">CRM</p>
+        <div class="crm-row"><span class="s2p-dot"></span><i class="s2p-line s2p-line--m"></i><em class="s2p-chip s2p-chip--sun">New lead</em></div>
+        <div class="crm-row crm-row--dim"><span class="s2p-dot s2p-dot--grey"></span><i class="s2p-line"></i></div>
+        <div class="crm-row crm-row--dim"><span class="s2p-dot s2p-dot--grey"></span><i class="s2p-line s2p-line--s"></i></div>
+      </div>
+    </div>
+    <small class="s2-st__foot">The team sees the lead and its source within minutes.</small>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Enquiry thread <span>The conversation stays attached to the lead</span></p>
+    <div class="crm-pair crm-pair--chat">
+      <div class="crm-chat">
+        <div class="crm-chat__hd"><img src="/assets/platforms/whatsapp.svg" alt="" width="20" height="20" /><b>WhatsApp</b></div>
+        <p class="crm-b crm-b--in">Hi, is this still available?</p>
+        <p class="crm-b crm-b--out">Yes. Can I send you the details and a time to visit?</p>
+        <p class="crm-b crm-b--in">Yes please.</p>
+      </div>
+      <div class="s2p-card crm-crm"><p class="s2p-lbl">Lead card</p><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i><em class="s2p-chip s2p-chip--blue">Contacted</em><small class="s2p-mute">Source: Meta lead form</small></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Pipeline <span>Every stage is defined in plain words</span></p>
+    <div class="crm-board">
+      {cols.map(([n, c], k) => (
+        <div class="crm-col"><p class="s2p-lbl">{n}</p>
+          {Array.from({ length: Number(c) }).map(() => <div class="s2p-card crm-card"><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i></div>)}
+          {k === 2 ? <div class="s2p-card crm-card crm-card--on"><i class="s2p-line s2p-line--m"></i><em class="s2p-chip s2p-chip--sun">Moved here</em></div> : null}
+        </div>
+      ))}
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Send it back <span>Conversions API</span></p>
+    <div class="crm-loop">
+      <span class="crm-n">CRM<br />stage change</span>
+      <svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+      <span class="crm-n crm-n--on">Conversions<br />API</span>
+      <svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+      <span class="crm-n"><img src="/assets/platforms/meta.svg" alt="" width="22" height="22" />Meta</span>
+    </div>
+    <ul class="crm-ev"><li><span>Qualified lead</span><em class="s2p-chip s2p-chip--ok">Matched</em></li><li class="crm-ev--dim"><span>Form submitted only</span><em class="s2p-chip">Partial</em></li></ul>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Optimise for the right lead <span>Two campaigns, two readings</span></p>
+    <div class="crm-cmp">
+      <div class="s2p-card"><b>Campaign A</b><span class="crm-m"><small>All leads</small><i style="--w:88%"></i></span><span class="crm-m"><small>Qualified</small><i class="is-q" style="--w:22%"></i></span><em class="s2p-chip s2p-chip--warn">Looks cheap</em></div>
+      <div class="s2p-card crm-win"><b>Campaign B</b><span class="crm-m"><small>All leads</small><i style="--w:54%"></i></span><span class="crm-m"><small>Qualified</small><i class="is-q" style="--w:62%"></i></span><em class="s2p-chip s2p-chip--ok">Delivers qualified</em></div>
+    </div>
+    <small class="s2-st__foot">Budget follows qualified leads, not form fills.</small>
+  </div>
+</Frame>
+<style is:global>
+.crm-pair { flex: 1; min-height: 0; display: flex; align-items: center; gap: .8em; }
+.crm-pair > .s2p-card { flex: 1; display: grid; gap: .55em; align-content: start; }
+.crm-arrow { flex: none; width: 3.4em; fill: none; stroke: #0866FF; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.crm-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .6em; padding: .45em .6em; border: 1px solid #DADDE1; border-radius: .7em; }
+.crm-row--dim { opacity: .5; }
+.crm-pair--chat { align-items: center; }
+.crm-pair .s2p-chip, .crm-pair small { justify-self: start; }
+.crm-chat { flex: 1.2; display: flex; flex-direction: column; gap: .5em; padding: .8em; border-radius: .9em; background: #EFEAE2; }
+.crm-chat__hd { display: flex; align-items: center; gap: .5em; padding-bottom: .3em; font: 800 .95em var(--font-body); color: #1C2B33; }
+.crm-b { margin: 0; max-width: 82%; padding: .55em .8em; border-radius: .8em; font: 600 .9em/1.3 var(--font-body); color: #1C2B33; }
+.crm-b--in { background: #fff; border-top-left-radius: .2em; align-self: flex-start; }
+.crm-b--out { background: #D9FDD3; border-top-right-radius: .2em; align-self: flex-end; }
+.crm-board { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6em; align-content: center; }
+.crm-col { display: grid; gap: .5em; align-content: start; padding: .5em; border-radius: .8em; background: #F5F6F7; }
+.crm-card { display: grid; gap: .4em; padding: .5em .6em; }
+.crm-card--on { border-color: var(--s2-sun); box-shadow: 0 0 0 2px var(--s2-sun); }
+.crm-loop { display: flex; align-items: center; justify-content: space-between; gap: .6em; margin-top: auto; }
+.crm-n { flex: none; display: grid; justify-items: center; align-content: center; gap: .3em; min-width: 6.4em; padding: .8em .9em; border: 1px solid #DADDE1; border-radius: .9em; text-align: center; font: 800 .92em/1.25 var(--font-body); background: #fff; }
+.crm-n--on { background: #0866FF; border-color: #0866FF; color: #fff; }
+.crm-loop svg { flex: 1; min-width: 1.6em; max-width: 5em; fill: none; stroke: #0866FF; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 5 6; animation: s2dash 1.2s linear infinite; }
+.crm-ev { list-style: none; margin: 0 0 auto; padding: 0; display: grid; gap: .5em; }
+.crm-ev li { display: flex; align-items: center; justify-content: space-between; padding: .7em 1em; border: 1px solid #DADDE1; border-radius: .8em; font: 700 .95em var(--font-body); }
+.crm-ev--dim { opacity: .65; }
+.crm-cmp { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-content: center; }
+.crm-cmp .s2p-card { display: grid; gap: .8em; padding: 1em; }
+.crm-cmp b { font: 800 1.05em var(--font-display); }
+.crm-win { border-color: #1B7A3D; box-shadow: 0 0 0 2px #1B7A3D; }
+.crm-m { display: grid; gap: .3em; } .crm-m small { font: 700 .8em var(--font-body); color: #65676B; }
+.crm-m i { display: block; height: .7em; width: var(--w); border-radius: 99px; background: #CED0D4; } .crm-m i.is-q { background: #0866FF; }
+.crm-cmp em { justify-self: start; }
+@media (prefers-reduced-motion: reduce) { .crm-loop svg { animation: none; } }
+@media (max-width: 560px) { .crm-row--dim, .crm-b:nth-of-type(3), .crm-pair small { display: none; } .crm-pair { gap: .4em; } .crm-pair { flex-direction: column; align-items: stretch; } .crm-arrow { align-self: center; transform: rotate(90deg); width: 2.4em; } .crm-board { grid-template-columns: repeat(2, 1fr); } .crm-n { min-width: 5em; padding: .55em .5em; } }
+@container (max-height: 195px) { .crm-form i:nth-of-type(n+2) { display: none; } .crm-chat { padding: .5em; gap: .35em; } .crm-pair--chat .s2p-card i { display: none; } .crm-col > .crm-card:not(.crm-card--on):nth-child(n+3) { display: none; } .crm-col { gap: .35em; padding: .4em; } }
+</style>

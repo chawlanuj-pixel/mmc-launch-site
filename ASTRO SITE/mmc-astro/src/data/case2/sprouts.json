@@ -1,0 +1,62 @@
+{
+ "id": "sprouts",
+ "about": "{name} is a B2B company that plans educational trips for schools.",
+ "description": "{name} case study: a school travel website with Journeys and Safety pages and a school enquiry form, shown as client-approved artwork from MMC.",
+ "heroTone": "ink",
+ "kind": "B2B, educational school travel",
+ "channels": [
+  "School enquiry form"
+ ],
+ "brief": [
+  "{name} plans trips for schools. This page covers its website: a homepage, a Journeys page, a Safety page for parents and staff, and a school enquiry form.",
+  "The site is organised into Journeys, Safety and a school enquiry form, and the enquiry form is the one action it points to."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Homepage",
+   "title": "Homepage on desktop and mobile",
+   "text": "A full-width group photograph in the hero, a clear route to join, and a phone version that keeps the same headline and a Plan a school tour button.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Journeys and Safety",
+   "title": "Two pages for the people who decide",
+   "text": "Journeys sorts trips into themes. Safety sets out supervision, transport, medical preparedness and parent updates for staff and parents.",
+   "crops": [
+    "journeys",
+    "safety"
+   ],
+   "captions": [
+    "Journeys page",
+    "Safety page"
+   ]
+  },
+  {
+   "layout": "stage",
+   "kicker": "Enquiry form",
+   "title": "School enquiry form",
+   "text": "School name, contact person, city, age group, preferred journey and group size, ending in a single Request tour plan button.",
+   "crops": [
+    "form"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, Journeys page and Safety page",
+  "reach": "Search and direct visits to the site",
+  "make": "Photography-led pages"
+ },
+ "action": "enquiry",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "journeys": "{name} Journeys page, client-approved artwork",
+  "safety": "{name} Safety page, client-approved artwork",
+  "form": "{name} enquiry form, client-approved artwork"
+ }
+}

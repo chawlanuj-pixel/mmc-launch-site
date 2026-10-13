@@ -1,0 +1,269 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/technology.jpg",
+    "pos": "50% 50%",
+    "alt": "A developer at a laptop with a store design on a second screen.",
+    "facts": [
+      {
+        "t": "A new line to sell.",
+        "d": "AI search work you can add to existing SEO retainers."
+      },
+      {
+        "t": "Answer first.",
+        "d": "Pages, FAQs and facts built so tools can quote them correctly."
+      },
+      {
+        "t": "Honest reporting.",
+        "d": "Mentions tracked over time, with no promise anyone can guarantee."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label GEO and AEO"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "How you add AI search to",
+    "h2b": "a client retainer.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Run a visibility check you can present.",
+        "d": "A fixed set of the client's buyer questions goes to the main AI tools, and the answers are recorded in your template."
+      },
+      {
+        "n": "02",
+        "t": "Reopen key pages with the answer first.",
+        "d": "Priority pages lead with a direct answer, then detail, so search and AI tools can quote them."
+      },
+      {
+        "n": "03",
+        "t": "Mark up FAQs and facts to match.",
+        "d": "FAQ schema and brand facts are added and validated, and we show you the changes before they go live."
+      },
+      {
+        "n": "04",
+        "t": "Place the client on sources tools read.",
+        "d": "Citation work focuses on sources AI tools commonly draw from, with a log of each placement for you."
+      },
+      {
+        "n": "05",
+        "t": "Recheck the same questions each month.",
+        "d": "Mentions and answer features are tracked against the first check, with an honest note on what has and has not moved."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers.",
+    "serp": {
+      "tabs": [
+        "Search",
+        "AI answers",
+        "Tracking"
+      ],
+      "q": "which accounting software suits a small agency",
+      "others": [
+        "guide.example",
+        "reviews.example",
+        "forum.example"
+      ],
+      "youTitle": "Your client: accounting for small agencies",
+      "snipLabel": "Direct answer",
+      "snip": "Cloud accounting with project billing suits small agencies that invoice by the hour.",
+      "aiLabel": "AI summary",
+      "ai": "Small agencies often choose cloud accounting that handles project billing. Your client's guide is among the sources.",
+      "sources": [
+        "yourclient.example",
+        "review.example"
+      ],
+      "chips": [
+        "FAQ markup valid",
+        "Facts consistent"
+      ],
+      "trackCap": "AI visibility check",
+      "trackSub": "Is the client named, and is it right?",
+      "track": [
+        [
+          "best accounting tool for agencies",
+          "Named"
+        ],
+        [
+          "accounting for freelancers",
+          "Named"
+        ],
+        [
+          "invoice software with project billing",
+          "Not yet"
+        ]
+      ],
+      "okState": [
+        "Named"
+      ],
+      "foot": "The same questions, asked again each month."
+    }
+  },
+  "leak": {
+    "visual": "SaSurfaceMap",
+    "variant": "aeo",
+    "barLogo": "",
+    "barTitle": "AI answer view",
+    "pinsLabel": "Five places white-label GEO and AEO goes wrong",
+    "base": "What the client's buyers see in AI answers",
+    "artLabel": "Five cards showing where AI search work goes wrong for an agency.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Baseline"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Pages"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Markup"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Sources"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Report"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Baseline",
+        "lines": [
+          "No check run",
+          "Client unsure"
+        ],
+        "chip": "Nothing to compare",
+        "tone": "w"
+      },
+      {
+        "head": "Pages",
+        "lines": [
+          "Long intro first",
+          "Answer far down"
+        ],
+        "chip": "Answer buried",
+        "tone": "w"
+      },
+      {
+        "head": "Markup",
+        "lines": [
+          "FAQ copied",
+          "Schema differs"
+        ],
+        "chip": "Mismatch",
+        "tone": "b"
+      },
+      {
+        "head": "Sources",
+        "lines": [
+          "Own site only",
+          "Nothing outside"
+        ],
+        "chip": "Few citations",
+        "tone": "w"
+      },
+      {
+        "head": "Report",
+        "lines": [
+          "A promised rank",
+          "No tracking"
+        ],
+        "chip": "Hard to prove",
+        "tone": "w"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first AI search",
+    "h2b": "client gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and question list",
+        "d": "We sign the NDA, then agree the client's buyer questions and which AI tools to check, so the baseline is fixed.",
+        "get": "A fixed question set for the client.",
+        "img": "contact/call.jpg",
+        "alt": "A woman on a phone call at her desk, notebook open.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot check and rewrites",
+        "d": "One client gets a visibility check and a handful of priority pages rewritten answer first, for your review.",
+        "get": "A check and pages you can show the client.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A video call open on a laptop beside a data table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "SOPs for the new service",
+        "d": "How you describe the service, what you promise and how it is reported are written down, so the claims stay honest.",
+        "get": "Selling and reporting language that holds up.",
+        "img": "about2/huddle.jpg",
+        "alt": "Two colleagues at a whiteboard with a marketing funnel sketched on it.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Add to retainers",
+        "d": "AI search work is attached to existing SEO retainers on the same routine, with the same monthly check.",
+        "get": "A new service line without a new hire.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reviewing dashboards on two monitors.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "Colleagues around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "White-label link building",
+        "href": "/white-label/link-building/"
+      },
+      {
+        "n": "White-label AI services",
+        "href": "/white-label/ai-services/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

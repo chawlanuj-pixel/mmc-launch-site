@@ -1,0 +1,15 @@
+---
+// hubs2 behaviour: scroll reveal for .h2-rv blocks (below the fold only). Content stays visible without JS; the CSS
+// fallback finishes any reveal after 3s, and reduced motion switches it off.
+---
+<script is:inline>document.documentElement.classList.add("h2-js");</script>
+<script>
+  const els = document.querySelectorAll<HTMLElement>(".h2-rv");
+  if (!("IntersectionObserver" in window)) els.forEach((el) => el.classList.add("is-in"));
+  else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0.05 });
+    els.forEach((el) => io.observe(el));
+  }
+</script>

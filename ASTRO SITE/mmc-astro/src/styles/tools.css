@@ -456,39 +456,14 @@ body { overflow-x: clip; }
 
 /* ── FAQ ──────────────────────────────────────────────────────
    The visible half of each page's FAQPage JSON-LD. Same accordion grammar as
-   .tl-details, sized up: this is body copy a visitor reads, not a toggle for a
-   table. Sits between the explainer band and the cross-links, so it inherits
+   .tl-details. Rows use the shared .mmc-faq (src/styles/faq.css). Sits between the explainer band and the cross-links, so it inherits
    the page ground and needs no top padding of its own. */
 .tl-faq { background: var(--t-page); padding: 0 0 clamp(30px, 4vw, 52px); }
 .tl-faq__h {
   font-family: var(--font-display); font-weight: 800;
   font-size: clamp(19px, 2.2vw, 24px); letter-spacing: -0.025em;
-  color: var(--t-ink); margin: 0 0 14px; text-wrap: balance;
+  color: var(--t-ink); margin: 0 0 18px; text-wrap: balance;
 }
-.tl-faq__list {
-  max-width: 78ch; background: var(--t-card);
-  border: 1px solid var(--t-line); border-radius: var(--t-r-s); overflow: hidden;
-}
-.tl-faq__item + .tl-faq__item { border-top: 1px solid var(--t-line); }
-.tl-faq__q {
-  cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: 14px;
-  font-family: var(--font-display); font-weight: 800; font-size: 15.5px;
-  letter-spacing: -0.015em; color: var(--t-ink); padding: 15px 20px;
-  transition: color 160ms ease;
-}
-.tl-faq__q::-webkit-details-marker { display: none; }
-.tl-faq__q::after {
-  content: "＋"; margin-left: auto; flex: 0 0 auto;
-  font-size: 13px; font-weight: 700; color: var(--t-blue);
-}
-.tl-faq__item[open] > .tl-faq__q::after { content: "−"; }
-.tl-faq__q:hover { color: var(--t-blue); }
-.tl-faq__q:focus-visible { outline: 2px solid var(--t-blue); outline-offset: -2px; }
-.tl-faq__a {
-  font-family: var(--font-body); font-size: 14px; line-height: 1.7;
-  color: var(--t-body); margin: 0; padding: 0 20px 17px; max-width: 68ch;
-}
-
 /* ── Cross-links & CTA ────────────────────────────────────── */
 .tl-cross { background: var(--t-card); padding: clamp(30px, 4vw, 50px) 0; border-top: 1px solid var(--t-line); }
 /* Same spine as .tl-wrap and the footer below it. */
@@ -923,3 +898,84 @@ section.page-hero .tl-reassure b { color: #fff; }
 .tl-example { display: inline-block; margin-left: 10px; padding: 3px 10px; border-radius: 999px; background: #FFF4CC; color: #5C4300; font-size: 12px; font-weight: 700; line-height: 1.4; vertical-align: middle; }
 .tl-resultsnote { margin: 4px 4px 0; font-size: 13px; line-height: 1.5; color: #4B5563; }
 @media print { .tl-example { display: none; } }
+
+/* Phones: readable chip/segment labels (12px minimum) and 44px tap targets on touch screens. */
+@media (max-width: 760px) {
+  .gl-chip { font-size: 12px; min-height: 44px; padding: 0 16px; }
+  .tl-win__b { font-size: 13px; min-height: 44px; padding: 0 18px; }
+  .tl-seg__b { font-size: 13px; min-height: 44px; padding: 0 20px; }
+}
+@media (pointer: coarse) {
+  /* The info dot stays 26px visually; its hit area grows to 44px. */
+  .tl-info__btn { position: relative; }
+  .tl-info__btn::after { content: ""; position: absolute; inset: -9px; }
+}
+@media (max-width: 760px) {
+  .tl-cross__card { gap: 10px; padding: 20px; }
+  .tl-win { gap: 12px; }
+}
+/* Phones: no label under 12px; glossary definitions and fact captions at a comfortable size. */
+@media (max-width: 760px) {
+  .tl-big__k, .tl-fact__l, .tl-fact__s, .tl-win__k, .gl-count, .gl-card__abbr, .gl-card__f { font-size: 12px; }
+  .gl-card__d { font-size: 15px; }
+  .tl-fact { padding: 16px 18px; gap: 6px; }
+}
+
+/* ── Phones: live result bar, touch targets, readable small text ───────── */
+.tl-live { display: none; }
+.tl-chart { touch-action: pan-y; }
+.tl-big__v, .tl-fact__v, .tl-row__n { overflow-wrap: anywhere; }
+.tl-ctl__in { max-width: 12ch; width: 10ch; }
+@media (max-width: 720px) {
+  /* Headline result that follows the reader through the inputs; below the nav pill, clear of the AI button (bottom-left) and the booking bar (bottom). */
+  .tl-live {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+    position: fixed; z-index: 40; left: 12px; right: 12px; top: 84px;
+    padding: 9px 16px; border-radius: 14px; background: rgba(255,255,255,0.97);
+    border: 1px solid var(--t-line-2); box-shadow: 0 8px 24px rgba(19,26,46,0.16);
+    pointer-events: none; opacity: 0; transform: translateY(-8px); visibility: hidden;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 0s linear 180ms;
+  }
+  .tl-live.is-on { opacity: 1; transform: none; visibility: visible; transition-delay: 0s; }
+  body:has(.sunmenu[aria-hidden="false"]) .tl-live, body:has(.mmc-book.is-open) .tl-live, body:has(.audit.is-open) .tl-live { display: none; }
+  .tl-live__k { font: 700 12px/1.2 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--t-muted); min-width: 0; }
+  .tl-live__v { font: 800 22px/1 var(--font-display); letter-spacing: -0.03em; color: var(--t-ink); font-variant-numeric: tabular-nums; white-space: nowrap; flex: 0 0 auto; }
+  .tl-live__v.is-good { color: var(--t-good); }
+  .tl-live__v.is-gap { color: var(--t-gap); }
+}
+@media print { .tl-live { display: none !important; } }
+
+@media (pointer: coarse), (max-width: 760px) {
+  /* Info dot: 44px button, 26px circle drawn by ::before so the look is unchanged. */
+  .tl-info__btn {
+    width: 44px; height: 44px; margin: -9px -9px -9px -2px; position: relative;
+    background: transparent; border: 0; box-shadow: none; color: var(--t-muted); font-size: 12px;
+  }
+  .tl-info__btn::before {
+    content: ""; position: absolute; left: 50%; top: 50%; width: 26px; height: 26px; margin: -13px 0 0 -13px;
+    border-radius: 50%; border: 1px solid var(--t-line-2); background: var(--t-card); z-index: -1;
+    transition: background 180ms ease, border-color 180ms ease;
+  }
+  .tl-info__btn::after { display: none; }
+  .tl-info__btn { isolation: isolate; }
+  .tl-info__btn.is-on::before, .tl-info__btn:hover::before { background: var(--t-blue); border-color: var(--t-blue); }
+  .tl-info__btn:hover, .tl-info__btn.is-on { background: transparent; border: 0; color: #fff; }
+}
+@media (max-width: 760px) {
+  /* Number inputs: hit area grows to 44px, the chip keeps its look. */
+  .tl-ctl__in { padding: 13px 0; margin: -13px 0; min-height: 44px; font-size: 16px; width: 8ch; }
+  .tl-ctl__v { min-width: 0; }
+  .tl-field__input { min-height: 44px; }
+  .tl-ctl__l, .tl-field__label { display: flex; align-items: center; }
+  .tl-ctl__scale, .tl-meter__scale, .tl-field__hint, .tl-ctl__hint, .tl-card__sub, .tl-sec__h,
+  .tl-tip__t, .tl-info__more, .tl-info__w, .tl-info__f, .tl-resultsnote { font-size: 12px; }
+  .tl-chart__tick { font-size: 11px; }
+  .tl-spec__l { font-size: 11px; }
+  .tl-spec__zone { font-size: 11px; letter-spacing: 0.1em; }
+}
+/* Inline links inside running copy (hub FAQ): 44px hit area without changing the line. */
+@media (max-width: 760px) {
+  .mmc-faq__a a, .tx-note a, .tx-order a { position: relative; }
+  .mmc-faq__a a::after, .tx-note a::after, .tx-order a::after { content: ""; position: absolute; left: -4px; right: -4px; top: 50%; height: 44px; transform: translateY(-50%); }
+}
+.tl-spec__v, .tl-spec__l { paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }

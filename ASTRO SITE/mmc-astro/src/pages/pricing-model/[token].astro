@@ -1,0 +1,198 @@
+---
+// Private pricing model pages: one static page per audience at /pricing-model/<token>/ (tokens in src/data/pricing/links.json).
+// Not in the menu, footer, sitemap or llms files, and never linked from the site. noindex, nofollow, noarchive.
+// Privacy comes from the private link plus data isolation: buildAudience() hands this page only its own audience's prices.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/PricingShell.astro";
+import links from "../../data/pricing/links.json";
+import { buildAudience, countryNames } from "../../lib/pricing.mjs";
+import { priceTextAll, fillTokens } from "../../lib/pricing-calc.mjs";
+import PricingConfigurator from "../../islands/pricing/PricingConfigurator.jsx";
+import "../../styles/pricing.css";
+
+export function getStaticPaths() {
+  return Object.entries(links.tokens).map(([aud, token]) => ({ params: { token }, props: { aud } }));
+}
+
+const { aud } = Astro.props;
+const { token } = Astro.params;
+const path = `/pricing-model/${token}/`;
+const data = buildAudience(aud);
+const { terms, standardRates, principles, ...island } = data;
+const stages = data.stages;
+const shownPrinciples = aud.startsWith("whitelabel") ? principles : principles.slice(0, 2);
+const cfg = data.cfg;
+const curs = data.curs;
+
+// Titles and descriptions: no prices; the US$ pages name their markets (links.json countries). Title <= 60, description 140 to 160.
+const top = (n) => countryNames.shortList.slice(0, n);
+const pick = (cands, test, what) => {
+  const hit = cands.find(test);
+  if (!hit) throw new Error("no " + what + " variant fits: " + cands.map((c) => c.length + " " + c).join(" | "));
+  return hit;
+};
+const inTitle = (t) => t.length <= 60;
+const inDesc = (d) => d.length >= 140 && d.length <= 160;
+const CS = countryNames.theShort;
+const META = {
+  india: {
+    title: "Pricing for Clients in India | MMC",
+    description: "Build an estimate from the Monday Marketing Company rate card for brands billed in India. Pick services, set quantities, then share or request the quote.",
+  },
+  international: {
+    title: pick([3, 2, 1].flatMap((n) => [`Pricing for the ${top(n).join(", ")} and More | MMC`, `Pricing for the ${top(n).join(", ")} and More | MMC`]), inTitle, "title"),
+    description: pick([
+      `Build an estimate from the Monday Marketing Company rate card for brands in ${CS} and other countries outside India. Pick services, then share or request the quote.`,
+      `Build an estimate from the Monday Marketing Company rate card for brands in ${CS}. Pick services, set quantities, then share or request the quote.`,
+      `Build an estimate from the Monday Marketing Company rate card for brands outside India. Pick services, set quantities, then share or request the quote with us.`,
+    ], inDesc, "description"),
+  },
+  whitelabelIndia: {
+    title: "Agency White-Label Pricing, India | MMC",
+    description: "Agency pricing in rupees for white-label delivery by Monday Marketing Company. Build a cost estimate for your client work, then share it or request the quote.",
+  },
+  whitelabelInternational: {
+    title: pick([3, 2, 1].map((n) => `Agency White-Label Pricing, ${top(n).join(", ")} | MMC`), inTitle, "title"),
+    description: pick([
+      `Agency pricing in US$ for white-label delivery by Monday Marketing Company, for agencies in ${CS}. Build a cost estimate, then share or request it.`,
+      `Agency pricing in US$ for white-label delivery by Monday Marketing Company, for agencies in ${CS} and elsewhere outside India. Build an estimate and share it.`,
+      `Agency pricing in US$ for white-label delivery by Monday Marketing Company, for agencies outside India. Build a cost estimate, then share or request it.`,
+    ], inDesc, "description"),
+  },
+};
+const meta = META[aud];
+const jsonld = [{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: meta.title,
+  description: meta.description,
+  url: "https://www.mondaymarketing.company" + path,
+  inLanguage: "en",
+  isPartOf: { "@type": "WebSite", name: "Monday Marketing Company", url: "https://www.mondaymarketing.company/" },
+  publisher: { "@type": "Organization", name: "Monday Marketing Company" },
+}];
+
+const fill = (t) => fillTokens(t, data.tokens, cfg, null);
+const money = (it) => priceTextAll(it, curs, cfg);
+const unitCell = (it) => it.unit + (it.detail ? ". " + it.detail : "");
+const termBlocks = [
+  { id: "taxes", t: "Taxes and pass-through costs", list: terms.taxes },
+  { id: "payment", t: "Payment", list: terms.payment },
+  { id: "weekend", t: "Weekend work", list: terms.weekend },
+  { id: "lockin", t: "Lock-in", list: terms.lockin },
+  { id: "standard", t: "Service standard", list: terms.standard },
+  { id: "validity", t: "Validity", list: [terms.validity] },
+  { id: "excl", t: "Standard exclusions, billed at actuals", list: terms.excludedBilledAtActuals },
+  { id: "notcov", t: "Not covered", list: terms.notCovered },
+];
+---
+<BaseLayout title={meta.title} description={meta.description} path={path} noindex="noindex, nofollow, noarchive" jsonld={jsonld} ogAlt="Monday Marketing Company">
+  <Shell source="pricing" audit={data.curs[0] === "inr"}>
+    <main id="main" tabindex="-1" class="app-main pc-page" data-audience={aud}>
+      <header class="pc-hero">
+        <div class="pc-wrap">
+          <p class="pc-eyebrow">{data.title}, effective {data.effective}</p>
+          <p class="pc-badge">{data.audienceLabel}</p>
+          <h1 class="pc-h1">{data.h1}</h1>
+          <p class="pc-hero__eff">Effective {data.effective}</p>
+          <p class="pc-hero__intro">{data.intro}</p>
+          <p class="pc-hero__cur">{data.currencyNote} {data.taxLong}</p>
+          <ol class="pc-steps" aria-label="How the stages work">
+            {stages.map((s) => (
+              <li class="pc-step">
+                <span class="pc-step__n" aria-hidden="true">{s.n}</span>
+                <h2 class="pc-step__t">{s.name}</h2>
+                <p class="pc-step__p">{s.purpose}</p>
+                <p class="pc-step__b">{s.billing}</p>
+              </li>
+            ))}
+          </ol>
+          <ul class="pc-principles">
+            {shownPrinciples.map((p) => <li>{p}</li>)}
+          </ul>
+        </div>
+      </header>
+
+      <div class="pc-wrap pc-toolwrap" id="estimate">
+        <noscript><p class="pc-nojs">The interactive estimate needs JavaScript. Every price and term is listed in full further down this page.</p></noscript>
+        <PricingConfigurator client:load data={island} />
+      </div>
+
+      <section class="pc-ratecard" aria-labelledby="pc-rc-h">
+        <div class="pc-wrap">
+          <h2 id="pc-rc-h" class="pc-h2">The full rate card</h2>
+          <p class="pc-lede">Every line, in {curs.length > 1 ? "both currencies" : cfg[curs[0]].name}. {data.taxShort}</p>
+          {stages.map((st) => (
+            <div class="pc-rc-stage">
+              <h3 class="pc-h3">{st.n}. {st.name}</h3>
+              <p class="pc-muted">{st.purpose} {st.billing}.</p>
+              {data.sections.filter((s) => s.stage === st.id).map((s) => (
+                <details class="pc-rc">
+                  <summary>{s.title}</summary>
+                  <div class="pc-rc__body">
+                    <p>{fill(s.blurb)}</p>
+                    {s.rules && <ul>{s.rules.map((r) => <li>{fill(r)}</li>)}</ul>}
+                    <div class="pc-tablewrap">
+                      <table class="pc-table">
+                        <thead><tr><th scope="col">Line</th><th scope="col">Basis</th><th scope="col" class="r">Price</th></tr></thead>
+                        <tbody>
+                          {s.items.map((it) => (
+                            <tr>
+                              <th scope="row">{it.name}</th>
+                              <td>{unitCell(it)}</td>
+                              <td class="r">{money(it)}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    {s.id === "maintenance" && <p>Billing cycles: {s.cycles.map((c) => `${c.label} (${c.months} months)`).join(", ")}. No discount at any cycle.</p>}
+                    {s.notes && <ul>{s.notes.map((n) => <li>{fill(n)}</li>)}</ul>}
+                    {s.includes && <><h4 class="pc-h4">Included</h4><ul>{s.includes.map((x) => <li>{x}</li>)}</ul></>}
+                    {s.excludes && <><h4 class="pc-h4">Not included</h4><ul>{s.excludes.map((x) => <li>{x}</li>)}</ul></>}
+                    {s.items.filter((i) => i.included || i.notIncluded).map((it) => (
+                      <>
+                        <h4 class="pc-h4">{it.name}</h4>
+                        {it.included && <><p class="pc-muted">Included</p><ul>{it.included.map((x) => <li>{x}</li>)}</ul></>}
+                        {it.notIncluded && <><p class="pc-muted">Not included</p><ul>{it.notIncluded.map((x) => <li>{x}</li>)}</ul></>}
+                      </>
+                    ))}
+                    {s.payment && <p><strong>Payment:</strong> {s.payment}</p>}
+                  </div>
+                </details>
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="pc-terms" aria-labelledby="pc-terms-h">
+        <div class="pc-wrap">
+          <h2 id="pc-terms-h" class="pc-h2">Commercial terms</h2>
+          <p class="pc-lede">These apply to every estimate on this page. The signed proposal or statement of work governs each engagement.</p>
+          {termBlocks.map((b) => (
+            <details class="pc-term">
+              <summary>{b.t}</summary>
+              <ul>{b.list.map((x) => <li>{x}</li>)}</ul>
+            </details>
+          ))}
+          <details class="pc-term">
+            <summary>Standard rates</summary>
+            <p>{standardRates.blurb}</p>
+            <div class="pc-tablewrap">
+              <table class="pc-table">
+                <thead><tr><th scope="col">Role</th><th scope="col">Unit</th><th scope="col" class="r">Rate</th></tr></thead>
+                <tbody>
+                  {standardRates.items.map((r) => (
+                    <tr><th scope="row">{r.name}</th><td>{r.unit}</td><td class="r">{money(r)}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <p class="pc-company">{data.company}</p>
+        </div>
+      </section>
+    </main>
+  </Shell>
+</BaseLayout>

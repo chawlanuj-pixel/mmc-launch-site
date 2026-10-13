@@ -1,0 +1,507 @@
+{
+  "file": "white-label-creative-and-video.html",
+  "path": "/white-label/creative-and-video/",
+  "key": "wl_creative_and_video",
+  "title": "White-Label Graphic Design, Video and UGC | MMC",
+  "description": "White-label graphic design, video editing, UGC and ad creative for agencies: static, motion and creator content delivered to your brand guidelines.",
+  "ogTitle": "White-label creative, video and UGC for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label creative, video and UGC.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/creative-and-video/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label creative, video and UGC",
+          "item": "https://www.mondaymarketing.company/white-label/creative-and-video/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/creative-and-video/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/creative-and-video/",
+      "name": "White-Label Graphic Design, Video and UGC | MMC",
+      "description": "White-label graphic design, video editing, UGC and ad creative for agencies: static, motion and creator content delivered to your brand guidelines.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/creative-and-video/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/creative-and-video/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/creative-and-video/#service",
+      "name": "White-label Creative, Video and UGC",
+      "serviceType": "White-label creative, video and UGC",
+      "description": "White-label creative, video and UGC delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/creative-and-video/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/creative-and-video/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you work from my brand guidelines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Share guidelines, fonts and assets and we design to them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who provides the footage for editing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You or the client supply footage, or we recommend a creator for UGC under a separate scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What file formats do you deliver?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common design and video formats, named to your convention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you make AI-generated creative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On request, through our AI by MMC tools. See the white-label AI services page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label creative, video and UGC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send a brief and the brand guidelines for one client. After the NDA we return a sample so you can judge fit."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_creative_and_video",
+    "wm": "White-label Creative, Video and UGC",
+    "eyebrow": "● White-label creative, video and UGC",
+    "h1": [
+      "White-label creative,",
+      [
+        "video and UGC for ",
+        "agency deadlines",
+        "."
+      ]
+    ],
+    "sub": "Ad creative, social design, video editing and creator content delivered fast and to your client's brand.",
+    "tiles": [
+      {
+        "img": "ugc/shoot.jpg",
+        "pos": "50% 50%",
+        "label": "UGC",
+        "note": "Creator content"
+      },
+      {
+        "img": "ugc/edit.jpg",
+        "pos": "50% 50%",
+        "label": "Editing",
+        "note": "Cuts and captions"
+      },
+      {
+        "img": "social/design.jpg",
+        "pos": "50% 50%",
+        "label": "Design",
+        "note": "Statics and carousels"
+      },
+      {
+        "img": "ugc/test.jpg",
+        "pos": "50% 50%",
+        "label": "Testing",
+        "note": "Variants for ads"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label creative, video and UGC means MMC produces the design and content your agency sells: ad creative, social graphics, video edits and creator-style videos, made to your client's brand rules and returned in the formats you need. It covers the busy weeks when your own designers are full.",
+      "hl": "ad creative, social graphics, video edits",
+      "who": "Monday Marketing Company (MMC) delivers creative, video and UGC for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Design",
+          "text": "Statics, carousels and banners."
+        },
+        {
+          "icon": "loop",
+          "title": "Video",
+          "text": "Edits, reels and ad cuts."
+        },
+        {
+          "icon": "users",
+          "title": "UGC",
+          "text": "Creator-style content from briefs."
+        }
+      ],
+      "image": "ugc/edit.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "creative-wl",
+          "h": "Creative services by format",
+          "paras": [
+            "Creative is the part of paid and social work that never stops. We take briefs from you, return drafts for your review and deliver final files in your naming and format.",
+            "Direct versions of this work are on our <a href=\"/services/ugc-and-video/\">UGC and video</a> and <a href=\"/services/social-media/\">social creatives</a> pages. They feed <a href=\"/white-label/meta-ads/\">white-label Meta Ads</a> well."
+          ],
+          "img": "ugc/edit.jpg",
+          "cap": "Illustrative scene: a creative brief being reviewed.",
+          "table": {
+            "caption": "Creative formats and typical turnaround use",
+            "head": [
+              "Format",
+              "Common use",
+              "Briefed by"
+            ],
+            "rows": [
+              [
+                "Static design",
+                "Ads, posts, banners",
+                "Your designer or strategist"
+              ],
+              [
+                "Carousel",
+                "Social and ads",
+                "Your strategist"
+              ],
+              [
+                "Video edit",
+                "Reels, ads and shorts",
+                "Your producer"
+              ],
+              [
+                "UGC-style video",
+                "Paid social",
+                "Your strategist with the product details"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label creative.",
+      "lede": "Design, video and creator content.",
+      "items": [
+        {
+          "t": "Ad creative",
+          "d": "Static and carousel ads built to platform specs.",
+          "img": "social/design.jpg",
+          "alt": "Ad creative: illustrative scene"
+        },
+        {
+          "t": "Video editing",
+          "d": "Cuts, captions and formats from supplied footage.",
+          "img": "ugc/edit.jpg",
+          "alt": "Video editing: illustrative scene"
+        },
+        {
+          "t": "UGC production",
+          "d": "Creator-style videos from briefs and products.",
+          "img": "ugc/shoot.jpg",
+          "alt": "UGC production: illustrative scene"
+        },
+        {
+          "t": "Creative refreshes",
+          "d": "Variants to fight fatigue in running ads.",
+          "img": "ugc/refresh.jpg",
+          "alt": "Creative refreshes: illustrative scene"
+        },
+        {
+          "t": "Brand design support",
+          "d": "Logos, collateral and templates on request.",
+          "img": "brand/logo.jpg",
+          "alt": "Brand design support: illustrative scene"
+        },
+        {
+          "t": "Creative testing support",
+          "d": "Variants prepared for structured tests.",
+          "img": "ugc/test.jpg",
+          "alt": "Creative testing support: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label creative, video and UGC.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "ugc/edit.jpg",
+      "alt": "Why agencies choose MMC for white-label creative, video and UGC. Illustrative scene.",
+      "items": [
+        {
+          "t": "To brand rules",
+          "d": "We design to guidelines you supply."
+        },
+        {
+          "t": "Revisions agreed",
+          "d": "Rounds of changes are set in the scope."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label creative, video and UGC works,",
+      "h2b": "step by step.",
+      "img": "ugc/edit.jpg",
+      "alt": "How white-label creative, video and UGC works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Brief",
+          "d": "You send a brief and assets."
+        },
+        {
+          "t": "Draft",
+          "d": "We return a first version."
+        },
+        {
+          "t": "Revise",
+          "d": "Changes are made within scope."
+        },
+        {
+          "t": "Deliver",
+          "d": "Final files arrive in your format."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label creative, video and UGC for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells creative, video and UGC but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label creative, video and UGC fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label web design",
+          "d": "Designs delivered under your name.",
+          "img": "ux/screens.jpg",
+          "href": "/white-label/web-design/",
+          "link": "See white-label web design"
+        },
+        {
+          "n": "White-label web development",
+          "d": "Builds delivered under your name.",
+          "img": "web/build.jpg",
+          "href": "/white-label/web-development/",
+          "link": "See white-label web development"
+        },
+        {
+          "n": "White-label WordPress",
+          "d": "WordPress builds behind your brand.",
+          "img": "web/build.jpg",
+          "href": "/white-label/wordpress-development/",
+          "link": "See white-label WordPress development"
+        },
+        {
+          "n": "UGC and video",
+          "d": "Creator content and video.",
+          "img": "ugc/edit.jpg",
+          "href": "/services/ugc-and-video/",
+          "link": "See UGC and video"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "creative, video and UGC."
+    ],
+    "faq": [
+      {
+        "q": "Can you work from my brand guidelines?",
+        "a": "Yes. Share guidelines, fonts and assets and we design to them."
+      },
+      {
+        "q": "Who provides the footage for editing?",
+        "a": "You or the client supply footage, or we recommend a creator for UGC under a separate scope."
+      },
+      {
+        "q": "What file formats do you deliver?",
+        "a": "Common design and video formats, named to your convention."
+      },
+      {
+        "q": "Do you make AI-generated creative?",
+        "a": "On request, through our AI by MMC tools. See the white-label AI services page."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label creative, video and UGC?",
+        "a": "Send a brief and the brand guidelines for one client. After the NDA we return a sample so you can judge fit."
+      }
+    ],
+    "cta": {
+      "h2a": "Add creative, video and UGC",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first creative, video and UGC client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Brief",
+        "tag": "Intake",
+        "breaks": "The brief says make it pop.",
+        "why": "A vague brief means three rounds of guessing and a late file.",
+        "does": "We rewrite it as one page of hook, angle, must-show and must-say, and send it back for your yes."
+      },
+      {
+        "k": "Rounds",
+        "tag": "Revisions",
+        "breaks": "Revision rounds have no end.",
+        "why": "Open-ended feedback turns a fixed job into unpaid time.",
+        "does": "Rounds are agreed up front, feedback is gathered into one list per round, and extras are quoted to you first."
+      },
+      {
+        "k": "Brand",
+        "tag": "Review",
+        "breaks": "Brand rules are checked after the file is made.",
+        "why": "A wrong font or colour reaches the client and costs trust.",
+        "does": "Every file is checked against the client's brand sheet before it is sent to you."
+      },
+      {
+        "k": "Formats",
+        "tag": "Delivery",
+        "breaks": "Only one size gets delivered.",
+        "why": "A cut made for one platform does not fit another, and your team is cropping at midnight.",
+        "does": "We deliver each cut in the formats on the brief, named in one convention."
+      },
+      {
+        "k": "Handover",
+        "tag": "Files",
+        "breaks": "Files arrive in a pile.",
+        "why": "A messy folder slows your team and invites mistakes.",
+        "does": "Deliveries arrive in a tidy folder with a note on what is final and what is a draft."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label creative",
+      "h2b": "goes wrong.",
+      "lede": "Creative jobs fail on process, not talent. Each stage below is where an agency gets burned, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first creative client",
+      "h2b": "gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. Your busiest weeks decide how we pace the pilot.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA and brand sheet",
+          "d": "We sign the NDA, then collect the client's brand rules, fonts, colours and the formats you usually need.",
+          "out": "A brand sheet every file is checked against."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot job",
+          "d": "One brief goes through to final files in your naming, so you see how we take a brief and return work.",
+          "out": "A pilot job you can judge on the files."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Revision and naming SOPs",
+          "d": "Revision rounds, file naming, approvals and folder layout are written down.",
+          "out": "A routine that keeps jobs finishing."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Cover your busy weeks",
+          "d": "When your own designers are full, work flows to us on the same routine.",
+          "out": "Capacity you can switch on when needed."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

@@ -1,0 +1,57 @@
+{
+ "id": "giraffe",
+ "about": "{name} is a D2C brand that sells packaged snacks.",
+ "description": "{name} case study: storefront and festive campaign creative, with homepage, cart, category pages, social tiles and ads, shown as artwork.",
+ "heroTone": "ink",
+ "kind": "D2C brand, packaged snacks and gifting",
+ "channels": [
+  "Meta ad",
+  "Google ad"
+ ],
+ "brief": [
+  "{name} sells packaged snacks. This page covers storefront and campaign creative: the homepage, cart and category pages, plus social tiles and ads for a festive gifting push.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage and cart, on desktop and mobile",
+   "text": "A festive homepage hero with a gift hamper offer, a shop-by-category row, and phone screens for the cart and a product page.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Festive and product tiles that echo the hero of the site.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "stage",
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google ad",
+   "text": "Both reuse the festive hamper imagery from the homepage hero.",
+   "crops": [
+    "ads"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, cart and shop-by-category pages",
+  "reach": "Meta ad and Google ad",
+  "make": "Festive social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "social": "{name} social media creative tiles, client-approved artwork",
+  "ads": "{name} Meta and Google Ads, client-approved artwork"
+ }
+}

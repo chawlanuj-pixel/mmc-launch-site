@@ -197,7 +197,7 @@ function BreakevenRoas() {
                   <div className="tl-card__top">
                     <div>
                       <h2 className="tl-card__h">Every ROAS, and what it pays you</h2>
-                      <p className="tl-card__sub">Hover anywhere on the curve to read the profit at that ROAS.</p>
+                      <p className="tl-card__sub">Tap, drag or hover anywhere on the curve to read the profit at that ROAS.</p>
                     </div>
                   </div>
                   <RoasSpectrum

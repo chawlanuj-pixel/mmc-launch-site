@@ -16,11 +16,58 @@
  * ---------------------------------------------------------------------------
  */
 (function () {
-  var ENDPOINT = window.MMC_FORM_ENDPOINT || ""; // <-- set this to go live
-  var FALLBACK_EMAIL = "sales-in@mondaymarketing.company";
+  // Live site: forms post to our own PHP receiver (public/forms/send.php), which emails anuj@mondaymarketing.company.
+  // Anywhere else (local preview, other hosts) there is no receiver, so submissions open a pre-filled email to the same address.
+  var ON_LIVE_SITE = typeof location !== "undefined" && /(^|\.)mondaymarketing\.company$/i.test(location.hostname);
+  var ENDPOINT = window.MMC_FORM_ENDPOINT || (ON_LIVE_SITE ? "/forms/send.php" : "");
+  var FALLBACK_EMAIL = "anuj@mondaymarketing.company";
+
+  // ── Google reCAPTCHA v3 (invisible). The SITE key is public; the secret stays on the server (public/forms/config.php).
+  // Loaded lazily the first time someone touches a form field, only on the live domain, so no Google script runs on pages without a form interaction.
+  var RC_KEY = "6LfbwOstAAAAADxJRLsULpa7OHrY5sjfqvBwtGaU";
+  var rcLoad = null;
+  function loadRecaptcha() {
+    if (!ON_LIVE_SITE) return Promise.resolve(false);
+    if (rcLoad) return rcLoad;
+    rcLoad = new Promise(function (resolve) {
+      var done = false, finish = function (v) { if (!done) { done = true; resolve(v); } };
+      var sc = document.createElement("script");
+      sc.src = "https://www.google.com/recaptcha/api.js?render=" + RC_KEY;
+      sc.async = true;
+      sc.onload = function () { if (window.grecaptcha && window.grecaptcha.ready) window.grecaptcha.ready(function () { finish(true); }); else finish(false); };
+      sc.onerror = function () { finish(false); };
+      document.head.appendChild(sc);
+      setTimeout(function () { finish(false); }, 8000);
+    });
+    return rcLoad;
+  }
+  function captchaToken(action) {
+    return loadRecaptcha().then(function (ok) {
+      if (!ok || !window.grecaptcha) return "";
+      return window.grecaptcha.execute(RC_KEY, { action: action || "mmc_form" }).catch(function () { return ""; });
+    }).catch(function () { return ""; });
+  }
+  window.MMCCaptcha = { token: captchaToken, load: loadRecaptcha, siteKey: RC_KEY };
+  // Google asks that the badge is replaced by a visible notice when it is hidden: add it to a form the first time someone uses it.
+  function addNotice(form) {
+    if (!form || form.querySelector(".rc-note")) return;
+    var p = document.createElement("p");
+    p.className = "rc-note";
+    p.innerHTML = 'This form is protected by reCAPTCHA. The Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.';
+    form.appendChild(p);
+  }
+  if (ON_LIVE_SITE && typeof document !== "undefined") {
+    document.addEventListener("focusin", function (e) {
+      var t = e.target;
+      if (t && t.closest && /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)) {
+        var f = t.closest("form");
+        if (f && (f.querySelector('input[name="_hp"], input[name="company_url"]'))) { loadRecaptcha(); addNotice(f); }
+      }
+    }, true);
+  }
 
   function buildMailto(subject, data) {
-    var lines = Object.keys(data).map(function (k) {
+    var lines = Object.keys(data).filter(function (k) { return k !== "_rc" && k !== "_hp"; }).map(function (k) {
       var v = data[k];
       if (Array.isArray(v)) v = v.join(", ");
       return k + ": " + (v === undefined || v === null || v === "" ? "-" : v);
@@ -30,6 +77,17 @@
       "&body=" + encodeURIComponent(lines.join("\n"));
   }
 
+  // Spam trap: bots fill the hidden `_hp` field, people never see it. Carry a filled one into the payload so the server drops the lead,
+  // and remove an empty one so clean submissions carry no `_hp` at all. Used by every send path (endpoint, store, mailto).
+  function withHoneypot(payload) {
+    try {
+      var hps = document.querySelectorAll('input[name="_hp"]'), val = "";
+      for (var hi = 0; hi < hps.length; hi++) if (hps[hi].value) { val = hps[hi].value; break; }
+      if (val) payload._hp = val; else delete payload._hp;
+    } catch (e) {}
+    return payload;
+  }
+
   function submitLead(data, opts) {
     opts = opts || {};
     var subject = opts.subject || "New enquiry, mondaymarketing.company";
@@ -37,21 +95,30 @@
       _page: (typeof location !== "undefined" ? location.pathname : ""),
       _submittedAt: new Date().toISOString()
     });
+    withHoneypot(payload);
 
     if (ENDPOINT) {
-      return fetch(ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(payload)
-      })
-        .then(function (res) {
-          return { ok: res.ok, mode: "endpoint", status: res.status };
+      return captchaToken("mmc_form").then(function (tok) {
+        if (tok) payload._rc = tok;
+        return fetch(ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(payload)
         })
-        .catch(function (err) {
-          // Network failed, fall back so the lead still reaches a human.
-          try { window.location.href = buildMailto(subject, payload); } catch (e) {}
-          return { ok: true, mode: "mailto", error: String(err) };
-        });
+          .then(function (res) {
+            if (!res.ok) {
+              // The receiver refused (captcha, rate limit) or mail is down: open the pre-filled email so a real lead still reaches a human.
+              try { window.location.href = buildMailto(subject, payload); } catch (e) {}
+              return { ok: true, mode: "mailto", status: res.status };
+            }
+            return { ok: true, mode: "endpoint", status: res.status };
+          })
+          .catch(function (err) {
+            // Network failed, fall back so the lead still reaches a human.
+            try { window.location.href = buildMailto(subject, payload); } catch (e) {}
+            return { ok: true, mode: "mailto", error: String(err) };
+          });
+      });
     }
 
     // No endpoint configured yet: open the visitor's mail client, pre-filled.
@@ -75,7 +142,7 @@
     var store = window.MMCData && window.MMCData.submitLead;
     if (!store) return _submit(payload, opts);
 
-    var enriched = Object.assign({ source: opts.subject || "form" }, payload);
+    var enriched = withHoneypot(Object.assign({ source: opts.subject || "form" }, payload));
     var shared = (window.MMCData.CFG && window.MMCData.CFG.leadWebhook) === ENDPOINT;
     if (!shared) {
       // Separate destinations: both are meant to receive the lead.
@@ -119,7 +186,12 @@
     if (result && result.mode === "mailto") setTimeout(go, 900); else go();
   }
 
-  window.MMCForms = { submitLead: submitLead, buildMailto: buildMailto, goThanks: goThanks };
+  /* Phone: keep a leading +, strip spaces, dashes and brackets; accept 8 to 15 digits (E.164 length). Used by every form. */
+  function cleanPhone(v) { v = String(v || "").trim(); var plus = v.charAt(0) === "+"; var d = v.replace(/\D/g, ""); return d ? (plus ? "+" : "") + d : ""; }
+  function validPhone(v) { var d = cleanPhone(v).replace(/\D/g, ""); return d.length >= 8 && d.length <= 15; }
+  var PHONE_MSG = "Please enter a phone or WhatsApp number we can reach you on, with country code if outside India.";
+
+  window.MMCForms = { submitLead: submitLead, buildMailto: buildMailto, goThanks: goThanks, cleanPhone: cleanPhone, validPhone: validPhone, phoneMsg: PHONE_MSG };
 })();
 
 /* ── Booking ──────────────────────────────────────────────────────────────

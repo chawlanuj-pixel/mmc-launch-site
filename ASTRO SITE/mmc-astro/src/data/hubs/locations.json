@@ -1,0 +1,500 @@
+{
+  "file": "locations.html",
+  "path": "/locations/",
+  "key": "locations",
+  "title": "MMC Locations: Thane, Mumbai and Indore",
+  "description": "Where Monday Marketing Company works: head office in Thane, plus Mumbai and Indore. See what a business in each city faces and how we work with you.",
+  "ogTitle": "Where MMC works",
+  "ogDescription": "Thane, Mumbai and Indore, and what a business in each city faces.",
+  "ogAlt": "Monday Marketing Company: locations in Thane, Mumbai and Indore.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/locations/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://www.mondaymarketing.company/locations/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/locations/#webpage",
+      "url": "https://www.mondaymarketing.company/locations/",
+      "name": "MMC Locations: Thane, Mumbai and Indore",
+      "description": "Where Monday Marketing Company works: head office in Thane, plus Mumbai and Indore. See what a business in each city faces and how we work with you.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/locations/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/locations/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/locations/#service",
+      "name": "Local marketing in Thane, Mumbai and Indore",
+      "serviceType": "Local search, Google Business Profile and local pages",
+      "description": "Local search, profile management, local pages and ads for businesses in Thane, Mumbai and Indore, and across India.",
+      "url": "https://www.mondaymarketing.company/locations/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Thane"
+        },
+        {
+          "@type": "City",
+          "name": "Mumbai"
+        },
+        {
+          "@type": "City",
+          "name": "Indore"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/locations/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where does MMC work from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work from Thane, Mumbai and Indore, and serve brands across India. Our head office is in Thane, at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you publish an address for Mumbai and Indore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The only street address we publish is our Thane head office. For a meeting in Mumbai or Indore, book a call and we will agree where and when."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be in one of these cities to work with you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Most work runs on video calls, shared reports and WhatsApp for quick questions, so your business can be anywhere in India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why have a page for each city?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because a business in each city faces a different problem. The three pages say what that problem is and how we work on it, and they are written separately rather than copied with the city name swapped."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you do for a business in a city?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verify each place on Google, complete the profile, handle reviews, build a page for the place and report calls, directions and enquiries. Ads are added where they suit. See Google Business Profile optimisation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee a top local ranking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+          }
+        }
+      ]
+    }
+  ],
+  "updated": "2026-10-11",
+  "hub": {
+    "key": "locations",
+    "wm": "CITIES",
+    "eyebrow": "● Locations",
+    "h1": [
+      "Where we work:",
+      [
+        "Thane, Mumbai ",
+        "and Indore",
+        "."
+      ]
+    ],
+    "sub": "Our head office is in Thane, and we also work from Mumbai and Indore. A business in each city faces its own problem, so each has its own page.",
+    "tiles": [
+      {
+        "img": "contact/call.jpg",
+        "pos": "50% 50%",
+        "label": "Thane",
+        "note": "Head office"
+      },
+      {
+        "img": "contact/growth.jpg",
+        "pos": "50% 50%",
+        "label": "Mumbai",
+        "note": "Many outlets"
+      },
+      {
+        "img": "company/technology.jpg",
+        "pos": "50% 50%",
+        "label": "Indore",
+        "note": "Beyond the city"
+      },
+      {
+        "img": "about2/huddle.jpg",
+        "pos": "50% 50%",
+        "label": "Anywhere",
+        "note": "On a call"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Monday Marketing Company works from Thane, Mumbai and Indore. Thane is our head office, with a published address. Mumbai and Indore are the other two cities we work from. Wherever your business is in India, most work runs on calls and shared reports, and a meeting can be arranged.",
+      "hl": "Thane, Mumbai and Indore",
+      "who": "MMC was founded in Thane in 2019. Our head office is at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. We do not publish street addresses for Mumbai and Indore. We serve brands across India.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Thane",
+          "text": "Head office, with a published address and hours."
+        },
+        {
+          "icon": "grid",
+          "title": "Mumbai",
+          "text": "A crowded market with many outlets."
+        },
+        {
+          "icon": "link",
+          "title": "Indore",
+          "text": "A regional hub, with buyers beyond the city."
+        }
+      ],
+      "image": "company/performance.jpg",
+      "chip": "Three cities, one senior team"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "locations-why",
+          "h": "Why each city has its own page",
+          "paras": [
+            "A business in Thane, Mumbai or Indore faces a different problem. In Thane it is being seen beside Mumbai results. In Mumbai it is standing out among many outlets. In Indore it is reaching buyers beyond the city.",
+            "So each city page is written on its own, with its own steps and questions. We do not copy one page and change the city name."
+          ],
+          "img": "company/whiteboard.jpg",
+          "cap": "Illustrative scene: a plan drawn city by city."
+        },
+        {
+          "id": "locations-table",
+          "h": "The three cities at a glance",
+          "paras": [
+            "Start with the city closest to your business, or the one where your buyers are."
+          ],
+          "table": {
+            "caption": "MMC locations compared",
+            "head": [
+              "City",
+              "How we work from it",
+              "Read next"
+            ],
+            "rows": [
+              [
+                "Thane",
+                "Head office, with a published address and hours",
+                "<a href=\"/locations/thane/\">Thane</a>"
+              ],
+              [
+                "Mumbai",
+                "One of the three cities we work from, no street address published",
+                "<a href=\"/locations/mumbai/\">Mumbai</a>"
+              ],
+              [
+                "Indore",
+                "One of the three cities we work from, no street address published",
+                "<a href=\"/locations/indore/\">Indore</a>"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Not in these cities?",
+            "text": "Most of the work runs on calls and shared reports, so it does not matter. <a href=\"/contact/\">Book a call</a> or read about <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a>."
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "every city.",
+      "lede": "The same careful work, written for each place.",
+      "items": [
+        {
+          "t": "Verified profiles",
+          "d": "Each place you run is claimed, verified and completed on Google.",
+          "img": "orm/profile.jpg",
+          "alt": "Verified profiles: illustrative scene"
+        },
+        {
+          "t": "City and area pages",
+          "d": "Pages written for the people in each place, not swapped templates.",
+          "img": "web/seo.jpg",
+          "alt": "City and area pages: illustrative scene"
+        },
+        {
+          "t": "Reviews and replies",
+          "d": "A respectful way to ask, and honest replies in your voice.",
+          "img": "orm/reply.jpg",
+          "alt": "Reviews and replies: illustrative scene"
+        },
+        {
+          "t": "Local and wider ads",
+          "d": "Search and Meta campaigns aimed at the places your buyers come from.",
+          "img": "google/search.jpg",
+          "alt": "Local and wider ads: illustrative scene"
+        },
+        {
+          "t": "Enquiry follow-up",
+          "d": "A WhatsApp or call path so every enquiry gets an answer.",
+          "img": "leadgen/capi.jpg",
+          "alt": "Enquiry follow-up: illustrative scene"
+        },
+        {
+          "t": "Monthly report",
+          "d": "Calls, directions and enquiries, read each month.",
+          "img": "orm/report.jpg",
+          "alt": "Monthly report: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "across cities.",
+      "lede": "We work from three cities, and report like a careful owner would.",
+      "img": "orm/earn.jpg",
+      "alt": "Why brands choose MMC across cities. Illustrative scene.",
+      "items": [
+        {
+          "t": "Three cities",
+          "d": "Thane, Mumbai and Indore are where we work from."
+        },
+        {
+          "t": "Written separately",
+          "d": "Each city page speaks to that city's problem."
+        },
+        {
+          "t": "Senior people",
+          "d": "The strategist on the call reads your account."
+        },
+        {
+          "t": "Honest reporting",
+          "d": "We report what we can observe, and never promise a ranking."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How we start with a business in any city,",
+      "h2b": "step by step.",
+      "img": "company/whiteboard.jpg",
+      "alt": "How we start with a business in any city, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Name the places",
+          "d": "We list the cities, neighbourhoods or campuses your buyers come from."
+        },
+        {
+          "t": "Match listings and pages",
+          "d": "Each place gets a verified profile and a page with the same details."
+        },
+        {
+          "t": "Handle the reviews",
+          "d": "Requests and replies are set up for each place."
+        },
+        {
+          "t": "Agree how we meet",
+          "d": "Most work runs on calls, and meetings are arranged when you want them."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Locations for businesses that",
+      "h2b": "people visit.",
+      "good": {
+        "t": "Customers, students or visitors find you by searching a place.",
+        "why": "This suits D2C brands with stores, B2B firms with offices and plants, and colleges with campuses."
+      },
+      "not": {
+        "t": "You are online only, with no place to visit or serve.",
+        "why": "National SEO and ads are the better use of effort. See <a href=\"/services/seo/\">SEO</a>."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where locations fit in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Thane",
+          "d": "Our head office, with a published address.",
+          "img": "contact/meeting.jpg",
+          "href": "/locations/thane/",
+          "link": "See Thane"
+        },
+        {
+          "n": "Mumbai",
+          "d": "A crowded market with many outlets and neighbourhoods.",
+          "img": "sv/organic.jpg",
+          "href": "/locations/mumbai/",
+          "link": "See Mumbai"
+        },
+        {
+          "n": "Indore",
+          "d": "A regional hub for colleges, food and manufacturers.",
+          "img": "edu/search.jpg",
+          "href": "/locations/indore/",
+          "link": "See Indore"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "The method behind the local work, step by step.",
+          "img": "orm/audit.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile optimisation"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "our locations."
+    ],
+    "faq": [
+      {
+        "q": "Where does MMC work from?",
+        "a": "We work from Thane, Mumbai and Indore, and serve brands across India. Our head office is in Thane, at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra."
+      },
+      {
+        "q": "Do you publish an address for Mumbai and Indore?",
+        "a": "No. The only street address we publish is our Thane head office. For a meeting in Mumbai or Indore, book a call and we will agree where and when."
+      },
+      {
+        "q": "Do I need to be in one of these cities to work with you?",
+        "a": "No. Most work runs on video calls, shared reports and WhatsApp for quick questions, so your business can be anywhere in India."
+      },
+      {
+        "q": "Why have a page for each city?",
+        "a": "Because a business in each city faces a different problem. The three pages say what that problem is and how we work on it, and they are written separately rather than copied with the city name swapped."
+      },
+      {
+        "q": "What do you do for a business in a city?",
+        "a": "Verify each place on Google, complete the profile, handle reviews, build a page for the place and report calls, directions and enquiries. Ads are added where they suit. See <a href=\"/services/seo/google-business-profile/\">Google Business Profile optimisation</a>."
+      },
+      {
+        "q": "Do you guarantee a top local ranking?",
+        "a": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+      }
+    ],
+    "cta": {
+      "h2a": "Talk to a team",
+      "h2b": "that works from your city.",
+      "lede": "On a call, with a senior strategist. We read your places and listings and tell you what to fix first."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client account.",
+      "style": "stack",
+      "eyebrow": "Where local visits are lost",
+      "h2a": "Five ways a business",
+      "h2b": "loses visitors by place.",
+      "lede": "Each stage below is where a place-based buyer is lost, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Name the places that matter",
+        "tag": "Places",
+        "breaks": "Marketing a whole country at once.",
+        "why": "Buyers choose by place first, so a broad plan misses the ones next door.",
+        "does": "We list the cities, neighbourhoods or campuses your buyers come from."
+      },
+      {
+        "k": "Make listings and pages agree",
+        "tag": "Listings",
+        "breaks": "Profiles that disagree with the website.",
+        "why": "Wrong hours or numbers send a buyer to someone else.",
+        "does": "We verify each profile and build a page with the same details."
+      },
+      {
+        "k": "Write for the place",
+        "tag": "Pages",
+        "breaks": "One page copied city by city.",
+        "why": "Buyers and search engines can tell when only the name changed.",
+        "does": "Each page says what a buyer in that place needs, in its own words."
+      },
+      {
+        "k": "Handle the reviews",
+        "tag": "Reviews",
+        "breaks": "Reviews left unanswered.",
+        "why": "Prospects read how a business replies.",
+        "does": "We set up a respectful way to ask and draft honest replies."
+      },
+      {
+        "k": "Agree how we meet",
+        "tag": "Meeting",
+        "breaks": "A partner you cannot reach or place.",
+        "why": "You should know where we are and how we work.",
+        "does": "Most work runs on calls. Thane has a published address, and Mumbai and Indore meetings are arranged on a call."
+      }
+    ],
+    "process": {
+      "note": "The days show the order of the work, not a promise of results. What we find in your listings decides how long each part takes.",
+      "h2a": "How we run local work,",
+      "h2b": "month to month.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Name the places",
+          "d": "We list where your buyers are and verify each place.",
+          "out": "A list of places that matter."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Pages and reviews",
+          "d": "We write a page for each place and set up the review routine.",
+          "out": "Profiles and pages that agree."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Report and refine",
+          "d": "We report calls, directions and enquiries, and plan ads where they suit.",
+          "out": "A monthly local report."
+        }
+      ]
+    }
+  }
+}

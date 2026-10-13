@@ -1,0 +1,50 @@
+---
+// Contents for a guide. Desktop (1000px and up): a sticky column with a reading-progress rule and a scroll-spy.
+// Tablet and phone: a compact, collapsed disclosure above the text. Works without JavaScript (plain anchor links).
+interface Props { blocks: { id: string; h: string }[]; tool?: { label: string; href: string } }
+const { blocks, tool } = Astro.props;
+const pad = (i: number) => String(i + 1).padStart(2, "0");
+---
+<div class="gd3-toc" data-gd3-toc>
+  <details class="gd3-toc__box" open>
+    <summary><span>In this guide</span><small>{blocks.length + " sections"}</small></summary>
+    <span class="gd3-toc__bar" aria-hidden="true"><i data-gd3-progress></i></span>
+    <ol>
+      {blocks.map((b, i) => <li><a href={"#" + b.id}><span aria-hidden="true">{pad(i)}</span>{b.h}</a></li>)}
+    </ol>
+    <div class="gd3-toc__extra">
+      <a href="#faq">Jump to the questions</a>
+      {tool && <a href={tool.href}>{tool.label}</a>}
+      <a href="/guides/">All guides</a>
+    </div>
+  </details>
+</div>
+<script is:inline>
+  (function () { var d = document.querySelector(".gd3-toc__box"); if (d && window.matchMedia("(max-width: 999px)").matches) d.open = false; })();
+</script>
+<script>
+  const root = document.querySelector<HTMLElement>("[data-gd3-toc]");
+  const box = root?.querySelector<HTMLDetailsElement>("details");
+  const bar = root?.querySelector<HTMLElement>("[data-gd3-progress]");
+  const links = root ? [...root.querySelectorAll<HTMLAnchorElement>("ol a")] : [];
+  const secs = links.map((a) => document.getElementById((a.getAttribute("href") || "").slice(1))).filter((s): s is HTMLElement => !!s);
+  const body = document.querySelector<HTMLElement>("[data-gd3-body]");
+  const mq = window.matchMedia("(min-width: 1000px)");
+  /* Desktop keeps the contents open; on a phone a tapped link closes the disclosure again. */
+  mq.addEventListener?.("change", (e) => { if (box) box.open = e.matches; });
+  links.forEach((a) => a.addEventListener("click", () => { if (box && !mq.matches) box.open = false; }));
+  let ticking = false;
+  const tick = () => {
+    ticking = false;
+    if (!body || !secs.length) return;
+    const r = body.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, (innerHeight * 0.3 - r.top) / Math.max(1, r.height - innerHeight * 0.5)));
+    if (bar) bar.style.transform = `scaleX(${p.toFixed(3)})`;
+    let cur = secs[0].id;
+    for (const s of secs) if (s.getBoundingClientRect().top < innerHeight * 0.32) cur = s.id;
+    links.forEach((a) => { const on = a.getAttribute("href") === "#" + cur; a.classList.toggle("is-on", on); if (on) a.setAttribute("aria-current", "location"); else a.removeAttribute("aria-current"); });
+  };
+  addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(tick); } }, { passive: true });
+  addEventListener("resize", tick);
+  tick();
+</script>

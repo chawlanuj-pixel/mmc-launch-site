@@ -1,0 +1,284 @@
+{
+  "_note": "Source: MMC Master Rate Card v4 (Man-Hours Edition), effective 1 October 2026. Man-hour figures are internal costing and are deliberately NOT included here. India fees exclude GST. inr/usd are numbers; kind says how to read them: fixed, from (starting price), upto (ceiling), plus (add-on). null means quoted on request.",
+  "meta": {
+    "title": "MMC Pricing Model",
+    "version": "4",
+    "effective": "1 October 2026",
+    "company": "Monday Marketing Company, Studio27 Creative Media Works LLP, WeWork Zenia, Hiranandani Business Park, Thane West",
+    "gstNote": "India fees are exclusive of GST, charged additionally at the applicable rate. US$ fees are quoted exclusive of any tax in the client's jurisdiction.",
+    "currencyNote": "India (Rs.) is for clients billed in India. Outside India (US$) is for clients billed outside India. The two are not conversions of each other, and are never blended on one invoice."
+  },
+  "stages": [
+    { "id": "diagnose", "n": "1", "name": "Diagnose", "purpose": "Audit the account and find the real problem before recommending spend.", "billing": "One-time" },
+    { "id": "fix", "n": "2", "name": "Fix", "purpose": "Resolve the structural or conversion problem the audit identified.", "billing": "One-time or project" },
+    { "id": "grow", "n": "3", "name": "Grow", "purpose": "Ongoing execution and scale once the foundation is fixed.", "billing": "Monthly retainer, 3-month minimum lock-in" }
+  ],
+  "principles": [
+    "Every fee is priced against a defined unit of work: a page, a post, a keyword, a channel, a round of revisions.",
+    "Where a deliverable count or cap is stated, that is the scope of the fee. Anything beyond it is a change order, priced at the Standard Rates, never absorbed silently and never renegotiated mid-project.",
+    "Sell in order: do not open a new engagement directly at Grow without a Diagnose step."
+  ],
+  "sections": [
+    {
+      "id": "audits", "stage": "diagnose", "title": "Audits", "blurb": "A current-state assessment, the gaps and errors, recommended fixes and a solution walkthrough with an implementation roadmap, delivered as a presentation within 5 business days of data access being granted.",
+      "cadence": "once",
+      "items": [
+        { "id": "audit-website", "name": "Website audit", "unit": "per audit", "inr": 25000, "usd": 400, "kind": "fixed", "qty": { "min": 0, "max": 4, "default": 0 }, "group": "audit" },
+        { "id": "audit-marketing", "name": "Marketing audit", "unit": "per audit", "inr": 25000, "usd": 400, "kind": "fixed", "qty": { "min": 0, "max": 4, "default": 0 }, "group": "audit" },
+        { "id": "audit-content", "name": "Content audit", "unit": "per audit", "inr": 25000, "usd": 400, "kind": "fixed", "qty": { "min": 0, "max": 4, "default": 0 }, "group": "audit" },
+        { "id": "audit-instagram", "name": "Instagram audit", "unit": "per audit", "inr": 25000, "usd": 400, "kind": "fixed", "qty": { "min": 0, "max": 4, "default": 0 }, "group": "audit" }
+      ],
+      "rules": [ "Combining two or more audits for the same client in one engagement is billed at 20% off the combined list price, in either currency.", "Execution begins only after the audit is delivered and approved." ],
+      "payment": "100% payable in advance.",
+      "excludes": []
+    },
+    {
+      "id": "website", "stage": "fix", "title": "Website redesign and redevelopment", "blurb": "One storefront per fee. Multi-store or multi-brand builds are quoted as separate projects.",
+      "cadence": "once",
+      "items": [
+        { "id": "web-template", "name": "Template-based build", "unit": "per store", "inr": 75000, "usd": 2500, "kind": "from", "detail": "Up to 8 page templates, licensed theme customised to brand, standard sections and layouts.", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "webtier" },
+        { "id": "web-custom", "name": "Custom-built theme", "unit": "per store", "inr": 150000, "usd": 8000, "kind": "upto", "detail": "Fully custom design (desktop and mobile) for one store, up to 12 unique page templates, up to 3 third-party app or tool integrations.", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "webtier" },
+        { "id": "web-highdesign", "name": "Fully custom, high-design store", "unit": "per store", "inr": 250000, "usd": 15000, "kind": "from", "detail": "Bespoke UI/UX, custom motion and interaction design, unlimited page templates, integrations scoped per statement of work.", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "webtier" }
+      ],
+      "includes": [ "2 rounds of design revisions per tier; additional rounds billed at the Standard Rate.", "Responsive QA across standard device sizes before handover.", "Page count is confirmed and logged against the tier's template cap at kickoff and tracked through delivery." ],
+      "excludes": [ "Copywriting, product photography and paid app or plugin licences, billed separately unless stated in the statement of work.", "Product upload and catalogue population, never included in any website tier.", "Theme cost. It is additional in every tier, whether bought from the Shopify Theme Store, ThemeForest or any other marketplace. If the client buys the theme through MMC, MMC passes on a 10% discount off the theme's list price." ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "catalog", "stage": "fix", "title": "Product upload and catalogue management", "blurb": "A standalone service, billed whichever website tier the client is on and whoever built the site originally. AI credits beyond about 300 per SKU are billed at actuals.",
+      "cadence": "once",
+      "items": [
+        { "id": "cat-upload", "name": "Product upload", "unit": "per product", "inr": 350, "usd": 12, "kind": "fixed", "qty": { "min": 0, "max": 2000, "step": 10, "default": 0 } },
+        { "id": "cat-update", "name": "Product update (image, description, SEO meta and other listed fields)", "unit": "per product", "inr": 250, "usd": 9, "kind": "fixed", "qty": { "min": 0, "max": 2000, "step": 10, "default": 0 } },
+        { "id": "cat-ai", "name": "AI-generated product catalogue visuals", "unit": "per SKU, up to about 300 AI credits", "inr": 2500, "usd": 75, "kind": "fixed", "qty": { "min": 0, "max": 500, "step": 5, "default": 0 } },
+        { "id": "cat-colour", "name": "Colour variation, add-on to AI catalogue", "unit": "per SKU", "inr": 1000, "usd": 30, "kind": "plus", "qty": { "min": 0, "max": 500, "step": 5, "default": 0 } }
+      ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "cro", "stage": "fix", "title": "Conversion rate optimisation", "blurb": "Copywriting for the page is included. A/B test includes one alternate variant, build and result readout.",
+      "cadence": "once",
+      "items": [
+        { "id": "cro-lp", "name": "Landing page (up to 6 sections)", "unit": "per page", "inr": 25000, "usd": 800, "kind": "fixed", "qty": { "min": 0, "max": 20, "default": 0 } },
+        { "id": "cro-plp", "name": "Product landing page (up to 6 sections)", "unit": "per page", "inr": 25000, "usd": 800, "kind": "fixed", "qty": { "min": 0, "max": 20, "default": 0 } },
+        { "id": "cro-ab", "name": "A/B testing add-on", "unit": "per test, per variant pair", "inr": 10000, "usd": 350, "kind": "plus", "qty": { "min": 0, "max": 20, "default": 0 } }
+      ],
+      "includes": [ "2 rounds of revisions per page; additional rounds billed at the Standard Rate." ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "analytics", "stage": "fix", "title": "Analytics and tracking setup", "blurb": "GA4 property and core event configuration, Meta Pixel and Conversions API installation, a documented UTM naming convention, and one walkthrough session with your team.",
+      "cadence": "once",
+      "items": [
+        { "id": "analytics-setup", "name": "GA4, Meta Pixel and tags, UTM structuring", "unit": "one-time setup", "inr": 15000, "usd": 500, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 } }
+      ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "branding", "stage": "fix", "title": "Branding", "blurb": "3 initial logo concepts and 2 rounds of revisions on the selected concept. Brand guidelines cover colour palette, typography, logo usage rules and core brand assets in a single reference document. Packaging includes 2 rounds of revisions per SKU.",
+      "cadence": "once",
+      "items": [
+        { "id": "brand-logo", "name": "Logo creation only", "unit": "per brand", "inr": 20000, "usd": 700, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "logo" },
+        { "id": "brand-logo-guide", "name": "Logo creation and brand guidelines", "unit": "per brand", "inr": 45000, "usd": 1500, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "logo" },
+        { "id": "brand-pack", "name": "Packaging design (add-on)", "unit": "per packaging", "inr": 15000, "usd": 500, "kind": "plus", "qty": { "min": 0, "max": 20, "default": 0 } }
+      ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "pr-content", "stage": "fix", "title": "PR and content writing", "blurb": "The PR fee covers strategy, a target-publication shortlist and the article write-up. Media spend and placement fees are billed separately at actuals. One round of revisions on written content; further rounds billed at the per-word rate for the revised portion.",
+      "cadence": "once",
+      "items": [
+        { "id": "pr-article", "name": "PR article (agency fee)", "unit": "per article, or 15% of PR spend, whichever is higher", "inr": 7500, "usd": 300, "kind": "fixed", "qty": { "min": 0, "max": 20, "default": 0 }, "pctNote": "15% of PR spend if higher" },
+        { "id": "content-std", "name": "Standard content (website, blog, social copy)", "unit": "per word, minimum per piece", "inr": 5, "usd": 0.15, "kind": "perword", "minPiece": { "inr": 2500, "usd": 75 }, "qty": { "min": 0, "max": 100000, "step": 500, "default": 0 }, "pieces": true },
+        { "id": "content-tech", "name": "Technical or research-led content, premium brand copy", "unit": "per word, minimum per piece", "inr": 10, "usd": 0.30, "kind": "perword", "minPiece": { "inr": 2500, "usd": 75 }, "qty": { "min": 0, "max": 100000, "step": 500, "default": 0 }, "pieces": true }
+      ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "video-edit", "stage": "fix", "title": "Video editing (reels and UGC)", "blurb": "Editor tier is assigned by job complexity, not client preference. A reel or short-form edit is about 6 hours; a UGC video edit is 10 to 20 hours. Hours convert to days at a 9-hour day. A video editing quote alone does not include the physical shoot.",
+      "cadence": "once",
+      "items": [
+        { "id": "edit-junior", "name": "Junior editor", "unit": "per day", "inr": 1500, "usd": 150, "kind": "fixed", "qty": { "min": 0, "max": 60, "default": 0 } },
+        { "id": "edit-mid", "name": "Mid-level editor", "unit": "per day", "inr": 3000, "usd": 300, "kind": "fixed", "qty": { "min": 0, "max": 60, "default": 0 } },
+        { "id": "edit-senior", "name": "Senior editor", "unit": "per day", "inr": 4500, "usd": 500, "kind": "from", "qty": { "min": 0, "max": 60, "default": 0 } }
+      ],
+      "notes": [ "Reel or short-form edit: up to 6 hours, about Rs.1,000 to Rs.3,000 depending on tier, or $100 to $330 international.", "UGC video edit: 10 to 20 hours, about Rs.1,700 to Rs.10,000 depending on tier and length, or $170 to $1,100 international." ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "videography", "stage": "fix", "title": "Videography (shoot production)", "blurb": "Each row is a separate line item, not a bundled package. A typical single-camera, single-light shoot with a junior cinematographer and one assistant runs Rs.16,200 per day before any surcharge. Shoot day is 8 hours; hours beyond 8 are billed at 1.5 times the hourly equivalent of the relevant day rate.",
+      "cadence": "once",
+      "items": [
+        { "id": "shoot-cine-junior", "name": "Junior cinematographer", "unit": "per day (8 hours)", "inr": 10000, "usd": 150, "kind": "fixed", "qty": { "min": 0, "max": 30, "default": 0 } },
+        { "id": "shoot-cine-mid", "name": "Mid-level cinematographer", "unit": "per day", "inr": 15000, "usd": 250, "kind": "fixed", "qty": { "min": 0, "max": 30, "default": 0 } },
+        { "id": "shoot-cine-senior", "name": "Senior cinematographer", "unit": "per day", "inr": 20000, "inrMax": 25000, "usd": 400, "usdMax": 500, "kind": "range", "qty": { "min": 0, "max": 30, "default": 0 } },
+        { "id": "shoot-camera", "name": "Camera equipment", "unit": "per day", "inr": 2500, "usd": 80, "kind": "from", "qty": { "min": 0, "max": 30, "default": 0 } },
+        { "id": "shoot-light", "name": "Lighting equipment", "unit": "per day", "inr": 2500, "usd": 80, "kind": "from", "qty": { "min": 0, "max": 30, "default": 0 } },
+        { "id": "shoot-assist", "name": "Camera assistant", "unit": "per day", "inr": 1200, "usd": 60, "kind": "fixed", "qty": { "min": 0, "max": 30, "default": 0 } }
+      ],
+      "notes": [ "Food and travel shoots carry an additional charge for styling, props and location logistics. This is quoted per shoot, not a flat rate." ],
+      "payment": "50% advance, 50% on delivery."
+    },
+    {
+      "id": "maintenance", "stage": "fix", "title": "Website maintenance and ecommerce growth support", "blurb": "Three defined plans, each with an explicit included list and an explicit excluded list. Work outside a plan is scoped and quoted separately. All three plans are billed in advance on a quarterly (3 months), half-yearly (6 months) or yearly (12 months) cycle, with no monthly option and no discount at any cycle, including yearly.",
+      "cadence": "monthly", "billing": "cycle",
+      "items": [
+        { "id": "mnt-basic", "name": "Basic website maintenance", "unit": "per month", "inr": 5000, "usd": 170, "kind": "fixed", "detail": "Technical stability and uptime.", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "mnt",
+          "included": [ "Website uptime monitoring", "Plugin and app updates", "App installation support", "Minor bug fixes", "Security monitoring", "Basic troubleshooting" ],
+          "notIncluded": [ "Product uploads", "Content edits", "Banner changes", "Landing page edits", "CRO improvements", "Design modifications", "Custom development", "Campaign updates", "Offer setup" ] },
+        { "id": "mnt-catalogue", "name": "Ecommerce catalogue management", "unit": "per month", "inr": 10000, "usd": 300, "kind": "fixed", "detail": "Product and catalogue operations.", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "mnt",
+          "included": [ "Product uploads (up to 25 a month)", "Product image uploads", "Pricing updates", "Inventory updates", "Basic description formatting", "Collection organisation" ],
+          "notIncluded": [ "Homepage structural edits", "Landing page creation", "CRO optimisation", "Offer banner design", "Smart cart configuration", "Checkout logic changes", "Custom feature development", "Advanced UI/UX changes" ] },
+        { "id": "mnt-growth", "name": "Ecommerce growth maintenance", "unit": "per month", "inr": 20000, "usd": 600, "kind": "fixed", "detail": "Active store growth and optimisation.", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "mnt",
+          "included": [ "Product uploads (up to 25 a month)", "Product modification and optimisation (up to 10 hours a month)", "Homepage updates within theme scope", "Offer banner updates", "Landing page edits within theme scope", "Collection restructuring", "Minor CRO improvements within the existing layout" ],
+          "notIncluded": [ "Full website redesign", "New page UI/UX wireframing", "Custom-coded feature development", "Advanced backend functionality", "Third-party custom integrations", "Ad campaign management", "Graphic creative production beyond minor updates" ] }
+      ],
+      "cycles": [ { "id": "q", "label": "Quarterly", "months": 3 }, { "id": "h", "label": "Half-yearly", "months": 6 }, { "id": "y", "label": "Yearly", "months": 12 } ],
+      "notes": [ "Volume beyond a plan's 25-products-a-month cap, AI-generated catalogue visuals and colour variation work are billed under Product Upload and Catalogue Management, never included in a maintenance plan." ],
+      "payment": "Billed in advance on a quarterly, half-yearly or yearly cycle. No discount at any cycle."
+    },
+    {
+      "id": "perf", "stage": "grow", "title": "Performance marketing", "blurb": "One ad account on one platform is one channel. A single Meta Ads account covering Facebook and Instagram is one channel; a Google Ads account covering Search, Shopping and Display is one channel. A second account on the same platform, or a second platform, is an additional channel. Weekly performance reporting is included.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "perf-channel", "name": "Per channel, up to the monthly spend threshold", "unit": "per channel per month", "inr": 30000, "usd": 500, "kind": "fixed", "qty": { "min": 0, "max": 10, "default": 0 }, "threshold": { "inr": 100000, "usd": 3000 } },
+        { "id": "perf-above", "name": "Spend above the threshold", "unit": "of the amount above the threshold, per channel", "pct": { "inr": 10, "usd": 12 }, "kind": "pctspend", "qty": { "min": 0, "max": 10000000, "step": 10000, "default": 0 }, "spendLabel": "Monthly ad spend on that channel" },
+        { "id": "perf-report", "name": "Advance reporting (full business overview, on request)", "unit": "per report", "inr": 25000, "usd": 750, "kind": "fixed", "qty": { "min": 0, "max": 12, "default": 0 }, "cadence": "once" }
+      ],
+      "excludes": [ "Ad creative production. Static and animated assets are billed under Social Media Marketing; AI video assets under the AI video line.", "Ad spend itself, always billed at actuals on the platform." ]
+    },
+    {
+      "id": "retention", "stage": "grow", "title": "Retention marketing (WhatsApp-based)", "blurb": "The monthly platform fee covers up to 3 always-on automated flows (typically welcome, abandoned cart, win-back) and their monthly optimisation. Each campaign fee covers creative messaging, offer ideation, audience segmentation and the send to the stated audience size. Advanced segmentation is included from the second 10,000-audience block onward. Meta and WhatsApp API charges and CRM or tool platform costs are excluded and billed at actuals.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "ret-platform", "name": "Platform management", "unit": "per month", "inr": 15000, "usd": 500, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "retplat" },
+        { "id": "ret-platform-hv", "name": "Platform management, high volume (above about 1,00,000 audience)", "unit": "per month", "inr": 25000, "usd": 800, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "retplat" },
+        { "id": "ret-campaign", "name": "Campaign, up to 10,000 audience", "unit": "per campaign", "inr": 10000, "usd": 350, "kind": "fixed", "qty": { "min": 0, "max": 30, "default": 0 }, "cadence": "once-per-campaign" },
+        { "id": "ret-extra-aud", "name": "Additional audience beyond 10,000", "unit": "per additional 10,000", "inr": 5000, "usd": 175, "kind": "plus", "qty": { "min": 0, "max": 100, "default": 0 }, "cadence": "once-per-campaign" },
+        { "id": "ret-email", "name": "Email add-on, stacked on the WhatsApp base (same structure, same price as the platform fee above)", "unit": "per month", "inr": 15000, "usd": 500, "kind": "plus", "qty": { "min": 0, "max": 1, "default": 0 } }
+      ]
+    },
+    {
+      "id": "creative-direction", "stage": "grow", "title": "Content strategy and creative direction", "blurb": "Monthly content pillars and theme-setting across every format, brand voice and visual consistency QA before content reaches you, briefing of the content execution team, and a monthly cross-format content performance review. This fee covers direction and quality control only; production is billed under Social Media Marketing, Video Editing, Videography or Content Writing.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "cd-oversight", "name": "Creative Director oversight", "unit": "per account per month", "inr": 15000, "usd": 500, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 } }
+      ]
+    },
+    {
+      "id": "social", "stage": "grow", "title": "Social media marketing", "blurb": "Per month, up to 2 handles of the same brand. The post counts are the full deliverable, not a floor: exactly 12 static or animated posts on the organic tier, exactly 20 posts including AI-generated video and image content on the AI tier. Content calendar planning and captions, 2 rounds of revisions per batch. Community management is a separate add-on. New account setup does not include a logo or brand guidelines.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "soc-organic", "name": "Organic, static and animated images only, no AI video (12 posts a month)", "unit": "per month", "inr": 50000, "usd": 700, "kind": "from", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "soctier" },
+        { "id": "soc-ai", "name": "Organic with AI content creation (20 posts a month)", "unit": "per month, plus AI credits at actuals", "inr": 75000, "usd": 1200, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "group": "soctier" },
+        { "id": "soc-ai-video", "name": "Standalone AI video creation", "unit": "per video, plus credits at actuals", "inr": 8000, "usd": 150, "kind": "fixed", "qty": { "min": 0, "max": 40, "default": 0 }, "cadence": "once" },
+        { "id": "soc-setup", "name": "New account setup", "unit": "per platform, one-time", "inr": 8000, "usd": 150, "kind": "fixed", "qty": { "min": 0, "max": 6, "default": 0 }, "cadence": "once" },
+        { "id": "soc-community", "name": "Community management, up to 2 platforms (comments and DM monitoring and response)", "unit": "per month", "inr": 15000, "usd": 300, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 } }
+      ]
+    },
+    {
+      "id": "seo", "stage": "grow", "title": "SEO", "blurb": "On-page optimisation and monthly technical health checks for the tracked keyword set, plus a monthly ranking report. Blog and content creation for target keywords is billed under Content Writing; link-building campaigns are quoted separately on request. Minimum engagement is 25 keywords.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "seo-dom", "name": "Domestic keyword", "unit": "per keyword per month", "inr": 2000, "usd": 30, "kind": "fixed", "qty": { "min": 0, "max": 200, "default": 0 } },
+        { "id": "seo-intl", "name": "International keyword", "unit": "per keyword per month", "inr": 5000, "usd": 75, "kind": "fixed", "qty": { "min": 0, "max": 200, "default": 0 } }
+      ],
+      "minTotalQty": { "ids": ["seo-dom", "seo-intl"], "min": 25, "message": "SEO has a minimum engagement of 25 keywords in total." }
+    },
+    {
+      "id": "orm", "stage": "grow", "title": "Online reputation management", "blurb": "Daily monitoring of the contracted channels, a response to reviews and mentions within 2 business days, and a monthly summary report. A channel is Google My Business or any platform carrying brand mentions or reviews. Paid rating-recovery campaigns or review-generation incentive programmes are quoted separately.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "orm-channel", "name": "Per channel", "unit": "per channel per month", "inr": 15000, "usd": 400, "kind": "fixed", "qty": { "min": 0, "max": 20, "default": 0 } }
+      ]
+    },
+    {
+      "id": "email", "stage": "grow", "title": "Email marketing", "blurb": "Up to 4 campaigns a month (weekly cadence), template design in month 1 then reused and adapted, and a monthly performance report. Email tool or platform cost is excluded and billed at actuals.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "email-base", "name": "Up to 1,00,000 emails", "unit": "per month", "inr": 25000, "usd": 600, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 } }
+      ],
+      "notes": [ "Volume above 1,00,000 emails is quoted on request." ]
+    },
+    {
+      "id": "marketplace", "stage": "grow", "title": "Marketplace management", "blurb": "Month 1 covers storefront setup and up to 10 SKU listings with A+ content. Ongoing covers catalogue upkeep and a monthly performance report.",
+      "cadence": "monthly",
+      "items": [
+        { "id": "mkt-setup", "name": "Month 1: account setup and A+ listing", "unit": "one-time", "inr": 25000, "usd": 750, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "cadence": "once" },
+        { "id": "mkt-ongoing", "name": "Ongoing", "unit": "per month, plus 3% of marketplace sales revenue", "inr": 15000, "usd": 500, "kind": "fixed", "qty": { "min": 0, "max": 1, "default": 0 }, "revShare": 3, "revLabel": "Monthly marketplace sales revenue" }
+      ]
+    },
+    {
+      "id": "influencer", "stage": "grow", "title": "Influencer marketing", "blurb": "Creator sourcing and shortlisting, negotiation, brief creation, content approval coordination and performance tracking. Products and shipping costs are managed and borne by the client in both services. Paid Campaigns and Gifting carry separate minimums that do not offset each other.",
+      "cadence": "once",
+      "items": [
+        { "id": "inf-paid", "name": "Paid campaign: agency fee", "unit": "15% of the influencer fee, minimum per creator", "pct": { "inr": 15, "usd": 15 }, "min": { "inr": 3000, "usd": 100 }, "kind": "pctfee", "qty": { "min": 0, "max": 100000000, "step": 5000, "default": 0 }, "spendLabel": "Total influencer fees for the campaign", "creators": true },
+        { "id": "inf-barter", "name": "Barter engagement", "unit": "per creator, minimum", "inr": 3000, "usd": 100, "kind": "from", "qty": { "min": 0, "max": 200, "default": 0 } },
+        { "id": "inf-gift", "name": "Gifting and PR programme", "unit": "per influencer, minimum 50 influencers", "inr": 3000, "usd": 100, "kind": "fixed", "qty": { "min": 0, "max": 500, "default": 0 }, "minQty": 50, "minProgramme": { "inr": 150000, "usd": 5000 } }
+      ],
+      "rules": [ "Minimum paid-campaign project size is Rs.75,000 / $2,500; MMC does not service below this.", "Gifting programme minimum is Rs.1,50,000 / $5,000 (50 influencers). Order creation on your Shopify store and delivery coordination are included." ],
+      "minProject": { "inr": 75000, "usd": 2500 }
+    }
+  ],
+  "standardRates": {
+    "blurb": "Any request outside the defined scope or deliverable cap of a contracted service, additional revision rounds, or ad hoc work with no matching line item is billed at these rates, not absorbed or negotiated mid-project. All additional work is pre-scoped and pre-approved before execution, never started and invoiced after the fact.",
+    "items": [
+      { "id": "std-design", "name": "Graphic designer", "unit": "per hour", "inr": 800, "usd": 35 },
+      { "id": "std-uiux", "name": "UI/UX designer", "unit": "per hour", "inr": 1200, "usd": 55 },
+      { "id": "std-dev", "name": "Developer", "unit": "per hour", "inr": 1500, "usd": 65 },
+      { "id": "std-senior", "name": "Senior or strategy", "unit": "per hour", "inr": 4000, "usd": 100 },
+      { "id": "std-day", "name": "Day rate (on-site or dedicated day)", "unit": "per day", "inr": 18000, "usd": 450 }
+    ]
+  },
+  "terms": {
+    "taxes": [
+      "India fees are exclusive of GST, charged additionally at the applicable rate. US$ fees are quoted exclusive of any tax in the client's jurisdiction.",
+      "Ad spend, platform and API charges, software and tool subscriptions, hosting and gateway costs are pass-through and billed at actuals unless explicitly stated as included."
+    ],
+    "payment": [
+      "Audits: 100% payable in advance.",
+      "One-time project work (website builds, branding, PR, analytics setup): 50% advance, 50% on delivery.",
+      "Recurring retainers (Grow stage): billed monthly in advance.",
+      "Website maintenance plans: billed in advance on a quarterly, half-yearly or yearly cycle, with no discount at any cycle.",
+      "Clients outside India are invoiced in US$ and pay by international wire or a supported payment processor (for example Wise, Payoneer or Stripe). Bank and processor charges on international transfers are borne by the client, not deducted from MMC's fee."
+    ],
+    "weekend": [
+      "Work done on a Saturday or Sunday is billed at double the man-hours logged for that work.",
+      "Weekend work happens only by the client's explicit request, or a deadline that cannot be met within standard business days. It is confirmed with the client, at the doubled figure, before the work starts, and never invoiced as a surprise afterward.",
+      "Work merely delivered or reviewed over a weekend without active production (for example a scheduled post going live on a Saturday) does not trigger the surcharge."
+    ],
+    "lockin": [
+      "All Grow-stage recurring services carry a minimum 3-month commitment from the engagement start date.",
+      "Where several Grow-stage services are contracted together, they lock as one combined engagement, not service by service.",
+      "If payments are not received during the lock-in period, services are suspended, and fees for the full committed period remain payable."
+    ],
+    "standard": [
+      "Reported figures (ROAS, reach, rankings, deliverable counts) are planning targets, not guarantees.",
+      "A documented, agency-caused failure to deliver the defined scope of a line item, not corrected within 7 business days of written notice, entitles the client to a service credit against that line item for the affected billing cycle only, capped at one month's fee for that service. This is the sole financial remedy and does not suspend the lock-in commitment.",
+      "All other performance concerns are reviewed through internal audit to establish cause before any commercial action is taken."
+    ],
+    "excludedBilledAtActuals": [
+      "Ad spend on any platform (Meta, Google, Snapchat and others), regardless of who manages the account.",
+      "Platform, API and gateway charges: WhatsApp Business API, email and SMS sending platforms, CRM and marketing-automation tool subscriptions.",
+      "Domain registration and renewal, website hosting and SSL certificates.",
+      "Theme, paid plugin, app or third-party software licences required for a build or an integration, including any Shopify, ThemeForest or other third-party theme purchase.",
+      "Stock photography, stock video, licensed music or paid font licences beyond what is in the client's brand kit.",
+      "Influencer and creator fees, PR media placement fees, and paid publication or press release distribution costs.",
+      "Product cost, packaging, and shipping or courier charges for influencer or PR gifting programmes.",
+      "Government, legal and compliance costs: business registration, trademark filing, GST and tax filings, legal review of contracts.",
+      "Photography or videography requiring a physical shoot (studio, models, location, equipment) unless separately quoted.",
+      "Translation, voiceover or localisation into a language beyond the one the statement of work specifies."
+    ],
+    "notCovered": [
+      "Any guarantee of results. ROAS, reach, rankings, follower growth and similar figures are planning targets, never commitments, and never a basis for a refund.",
+      "Crisis communication or reputation management arising from a client-caused event (product recall, legal dispute, public controversy). Quoted separately if requested.",
+      "Work outside the scope, deliverable count or revision cap stated for a service. This is a change order, priced at Standard Rates.",
+      "Delays caused by the client: late approvals, late content or asset delivery, delayed access or credentials, or a change in direction after work has started. Timelines restart from the date the client resolves the delay; the fee does not reduce.",
+      "Consequences of inaccurate data, assets or product information supplied by the client.",
+      "The impact of a third-party platform's policy, algorithm or pricing change (Meta, Google, Shopify, Amazon and others) on performance or functionality already delivered.",
+      "Work requested outside standard business hours as a rush job. Where MMC agrees, it is quoted separately and not covered by any existing retainer.",
+      "Any service, platform or deliverable not explicitly named on this rate card."
+    ],
+    "validity": "This rate card is effective 1 October 2026 and supersedes all prior versions. The version referenced in the signed proposal or statement of work governs that engagement."
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "file": "food-and-beverage.html",
+  "path": "/industries/d2c/food-and-beverage/",
+  "key": "d2cfnb",
+  "title": "Food and Beverage Marketing Agency India for D2C | MMC",
+  "description": "Marketing for D2C food and beverage brands in India. Taste-led creative, bundles, marketplace and quick commerce ads, and repeat-order flows built on margin.",
+  "ogTitle": "Food and beverage marketing for brands people reorder",
+  "ogDescription": "Marketing for d2c food and beverage brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: food and beverage.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "D2C",
+          "item": "https://www.mondaymarketing.company/industries/d2c/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Food and beverage",
+          "item": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/",
+      "name": "Food and Beverage Marketing Agency India for D2C | MMC",
+      "description": "Marketing for D2C food and beverage brands in India. Taste-led creative, bundles, marketplace and quick commerce ads, and repeat-order flows built on margin.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/#service",
+      "name": "Food and beverage",
+      "serviceType": "Food and beverage marketing",
+      "description": "Marketing for D2C food and beverage brands: taste-led creative, bundles, marketplace and quick commerce ads and reorder flows.",
+      "url": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/food-and-beverage/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is food and beverage marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Baskets are low, reorders drive the economics, buyers shop on quick commerce and marketplaces, and shelf life and delivery condition affect trust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with quick commerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We work on listings, availability and ads. See quick commerce."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you raise order value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With bundles, trial packs and shipping thresholds set against your cost sheet, so the lift does not cost margin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you make health claims?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only claims you can document and that labelling and advertising rules allow. We do not invent them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you set up subscriptions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where it suits the product, yes, along with reorder reminders. See retention marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee growth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "d2cfnb",
+    "wm": "FOOD & BEV",
+    "eyebrow": "● D2C food and beverage",
+    "h1": [
+      "Food and beverage marketing",
+      [
+        "for brands ",
+        "people reorder",
+        "."
+      ]
+    ],
+    "sub": "Food is a low-basket, repeat-order business. We plan creative, bundles, marketplaces and reminders so each customer is worth more than the shipping.",
+    "tiles": [
+      {
+        "img": "d2c/packing.jpg",
+        "pos": "50% 50%",
+        "label": "Packing",
+        "note": "Fresh and safe in transit"
+      },
+      {
+        "img": "qc/listing.jpg",
+        "pos": "50% 50%",
+        "label": "Listings",
+        "note": "Quick commerce and marketplaces"
+      },
+      {
+        "img": "d2c/range.jpg",
+        "pos": "50% 50%",
+        "label": "The range",
+        "note": "Bundles and trial packs"
+      },
+      {
+        "img": "d2c/retention.jpg",
+        "pos": "50% 50%",
+        "label": "Reorder",
+        "note": "Timed to when it runs out"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "D2C food and beverage marketing is the work of winning first orders for products with low basket values, then earning reorders quickly. It covers taste-led creative, bundles that lift order value, marketplace and quick commerce presence, and reminders timed to when a pack runs out.",
+      "hl": "low basket values",
+      "who": "Monday Marketing Company (MMC) markets D2C food and beverage brands in India across creative, own site, marketplaces, quick commerce and retention.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Taste on screen",
+          "text": "Creative that shows taste, texture and use occasions."
+        },
+        {
+          "icon": "grid",
+          "title": "Basket builders",
+          "text": "Bundles and trial packs that cover shipping and acquisition."
+        },
+        {
+          "icon": "link",
+          "title": "Many shelves",
+          "text": "Own site, marketplaces and quick commerce, planned together."
+        }
+      ],
+      "image": "d2c/packing.jpg",
+      "chip": "Low basket, high repeat, planned for both"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-food-buys",
+          "h": "How food and drink gets bought",
+          "paras": [
+            "Buyers try a food or drink on impulse or a recommendation, judge it on taste and reorder if it fits a habit. Many shop on quick commerce and marketplaces, where a listing and its availability matter as much as an ad.",
+            "Shelf life, packaging and delivery condition also affect trust and returns."
+          ],
+          "img": "qc/listing.jpg",
+          "cap": "Illustrative scene: a product listing on a quick commerce app."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "A low basket value has to cover product, packing, delivery and acquisition. Many food brands win a first order at a loss and never earn it back.",
+            "The fix is order value and reorder: bundles, subscriptions and reminders. We read it with the <a href=\"/tools/\">free tools</a> and the <a href=\"/guides/\">guides</a>."
+          ],
+          "callout": {
+            "title": "Rules apply to food.",
+            "text": "Labelling and health claims are regulated. We use only claims you can document."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where food and beverage marketing leaks",
+      "h2a": "Five places food and beverage",
+      "h2b": "brands lose money.",
+      "lede": "Each stage below is where a food brand loses margin or a reorder, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Show the taste",
+        "tag": "Creative and video",
+        "breaks": "Pack shots with no appetite.",
+        "why": "Food is bought with the eyes. A plain pack shot does not say how it tastes or when to eat it.",
+        "does": "We shoot and edit short video around taste, use and occasion. See UGC and video.",
+        "href": "/services/ugc-and-video/",
+        "img": "ugc/shoot.jpg"
+      },
+      {
+        "k": "Lift the basket",
+        "tag": "Bundles and offers",
+        "breaks": "Selling one low-price item at a time.",
+        "why": "A single low-price order rarely pays for acquisition and shipping.",
+        "does": "We build bundles, trial packs and thresholds that raise order value without eroding margin. See CRO.",
+        "href": "/services/cro/",
+        "img": "d2c/range.jpg"
+      },
+      {
+        "k": "Be on the shelves buyers use",
+        "tag": "Quick commerce and marketplaces",
+        "breaks": "Ignoring where buyers already shop.",
+        "why": "Many buyers open a quick commerce app or marketplace before a brand site.",
+        "does": "We run listings, availability and ads there. See quick commerce and Amazon Ads.",
+        "href": "/services/performance-marketing/quick-commerce/",
+        "img": "qc/darkstore.jpg"
+      },
+      {
+        "k": "Buy on contribution margin",
+        "tag": "Performance media",
+        "breaks": "Chasing ROAS on a thin margin.",
+        "why": "With low baskets, small errors in cost assumptions turn a profitable campaign into a loss.",
+        "does": "We set targets from full unit economics and run Meta and Google against them.",
+        "href": "/services/performance-marketing/meta-ads/",
+        "img": "meta/scale.jpg"
+      },
+      {
+        "k": "Earn the reorder",
+        "tag": "Retention",
+        "breaks": "Hoping customers come back.",
+        "why": "Food is a habit product. Timing the reminder to when a pack runs out captures reorders.",
+        "does": "We set reorder flows and subscriptions by pack size. See retention.",
+        "href": "/services/retention-marketing/",
+        "img": "d2c/retention.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "food marketing is working.",
+      "note": "The first-order ROAS alone is not on the list.",
+      "cards": [
+        {
+          "n": "Contribution margin per order",
+          "d": "What is left after product, packing, delivery and discounts."
+        },
+        {
+          "n": "Average order value",
+          "d": "Whether bundles cover shipping and acquisition."
+        },
+        {
+          "n": "Reorder rate",
+          "d": "Buyers who order again within their pack's use-up window."
+        },
+        {
+          "n": "Availability on shelves",
+          "d": "Whether the product is in stock where buyers search."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where food and beverage marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Quick commerce ads",
+          "d": "Listings and ads on quick commerce apps.",
+          "img": "qc/ads.jpg",
+          "href": "/services/performance-marketing/quick-commerce/",
+          "link": "See Quick commerce"
+        },
+        {
+          "n": "Amazon Ads",
+          "d": "Marketplace ads read against margin.",
+          "img": "amazon/ads.jpg",
+          "href": "/services/performance-marketing/amazon-ads/",
+          "link": "See Amazon Ads"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "Reorder flows timed to pack size.",
+          "img": "d2c/retention.jpg",
+          "href": "/services/retention-marketing/",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Fashion and apparel",
+          "d": "Marketing for brands with heavy browsing, returns and creative fatigue.",
+          "img": "d2c/range.jpg",
+          "href": "/industries/d2c/fashion-and-apparel/",
+          "link": "See Fashion and apparel marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Food and beverage marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is food and beverage marketing different?",
+        "a": "Baskets are low, reorders drive the economics, buyers shop on quick commerce and marketplaces, and shelf life and delivery condition affect trust."
+      },
+      {
+        "q": "Can you help with quick commerce?",
+        "a": "Yes. We work on listings, availability and ads. See <a href=\"/services/performance-marketing/quick-commerce/\">quick commerce</a>."
+      },
+      {
+        "q": "How do you raise order value?",
+        "a": "With bundles, trial packs and shipping thresholds set against your cost sheet, so the lift does not cost margin."
+      },
+      {
+        "q": "Can you make health claims?",
+        "a": "Only claims you can document and that labelling and advertising rules allow. We do not invent them."
+      },
+      {
+        "q": "Do you set up subscriptions?",
+        "a": "Where it suits the product, yes, along with reorder reminders. See <a href=\"/services/retention-marketing/\">retention marketing</a>."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee growth?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Make each food order",
+      "h2b": "worth more than shipping.",
+      "lede": "On a call, with a senior strategist. We rebuild your unit economics and show where basket and reorder can improve."
+    },
+    "process": {
+      "h2a": "How we start with a food brand,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Rebuild the economics",
+          "d": "We build the full cost per order, review listings and tracking and set margin-based targets.",
+          "out": "A clear view of margin."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Raise basket and reach",
+          "d": "Bundles, creative and shelf presence go live with a test plan.",
+          "out": "Offers and listings ready to test."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Earn the reorder",
+          "d": "Reorder flows and subscriptions start and media follows margin.",
+          "out": "A funnel that includes reorders."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Food and beverage marketing for brands that",
+      "h2b": "sell by habit.",
+      "good": {
+        "t": "You sell a food or drink in India online and want orders that repeat and pay for themselves.",
+        "why": "We plan around order value, shelves and reorder timing."
+      },
+      "not": {
+        "t": "You want one cheap-click campaign to carry the business.",
+        "why": "Low baskets need a funnel, not a single campaign."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "food and beverage brands.",
+      "lede": "Creative, bundles, shelves and reorder flows for D2C food.",
+      "items": [
+        {
+          "t": "Taste-led video",
+          "d": "Short video around taste, texture and occasion.",
+          "img": "ugc/shoot.jpg",
+          "alt": "Taste-led video: illustrative scene"
+        },
+        {
+          "t": "Bundles and offers",
+          "d": "Basket builders tested against your cost sheet.",
+          "img": "d2c/range.jpg",
+          "alt": "Bundles and offers: illustrative scene"
+        },
+        {
+          "t": "Quick commerce and marketplaces",
+          "d": "Listings, availability and ads where buyers shop.",
+          "img": "qc/darkstore.jpg",
+          "alt": "Quick commerce and marketplaces: illustrative scene"
+        },
+        {
+          "t": "Performance media",
+          "d": "Meta and Google planned on contribution margin.",
+          "img": "meta/scale.jpg",
+          "alt": "Performance media: illustrative scene"
+        },
+        {
+          "t": "Packing and pack design",
+          "d": "Packs that arrive well and look right on a shelf.",
+          "img": "d2c/packing.jpg",
+          "alt": "Packing and pack design: illustrative scene"
+        },
+        {
+          "t": "Reorder flows",
+          "d": "Reminders and subscriptions timed to pack size.",
+          "img": "d2c/retention.jpg",
+          "alt": "Reorder flows: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why food and beverage brands choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We count the whole cost of an order before we scale.",
+      "img": "d2c/packing.jpg",
+      "alt": "Why food and beverage brands choose MMC for marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Full unit economics",
+          "d": "Product, packing, delivery and discounts all counted."
+        },
+        {
+          "t": "Shelf-aware",
+          "d": "Own site, marketplaces and quick commerce planned together."
+        },
+        {
+          "t": "Reorder-led",
+          "d": "Flows built around when a pack runs out."
+        },
+        {
+          "t": "Honest claims",
+          "d": "Only what you can document and the rules allow."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a food and beverage engagement runs,",
+      "h2b": "step by step.",
+      "img": "d2c/range.jpg",
+      "alt": "How a food and beverage engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit economics and shelves",
+          "d": "Margin, listings and availability are reviewed."
+        },
+        {
+          "t": "Plan basket and creative",
+          "d": "Bundles, offers and creative are scoped."
+        },
+        {
+          "t": "Launch and test",
+          "d": "Campaigns and listings go live with a test plan."
+        },
+        {
+          "t": "Add reorder and scale",
+          "d": "Reorder flows start and spend follows margin."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

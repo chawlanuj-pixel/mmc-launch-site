@@ -1,0 +1,208 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "contact/growth.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: a projection on a laptop beside a coffee.",
+    "facts": [
+      {
+        "t": "Five models, one scope.",
+        "d": "Retainer, project, hours, team or a mix."
+      },
+      {
+        "t": "You set the client price.",
+        "d": "You pay for delivery and keep the margin."
+      },
+      {
+        "t": "Written down first.",
+        "d": "Scope, changes and what is billed on top."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies pick a model with MMC"
+  },
+  "work": {
+    "panel": "EngagementModels",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to help you choose a",
+    "h2b": "pricing model.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Use a retainer for steady monthly work.",
+        "d": "Repeating work gets a monthly scope, so your client pays a regular fee and you buy a regular delivery."
+      },
+      {
+        "n": "02",
+        "t": "Use a project for a defined build.",
+        "d": "A fixed scope with an end date suits a site or an app, and any change is quoted before it starts."
+      },
+      {
+        "n": "03",
+        "t": "Use a dedicated team for a steady queue.",
+        "d": "Named people work to your queue, and seats are added or paused as your workload changes."
+      },
+      {
+        "n": "04",
+        "t": "Compare the three before you quote.",
+        "d": "Best fit, scope and how changes work, side by side, so your quote matches how your client likes to buy."
+      }
+    ],
+    "illustrative": "Illustrative layout of three ways to buy white-label delivery. Not a client account, no real figures or prices."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Pricing and margin",
+    "pinsLabel": "Five places white-label pricing slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "bars",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Hourly"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Fixed fee"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Retainer"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Pass-through"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Mark-up"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Hourly",
+        "plan": 55,
+        "actual": 85,
+        "chip": "Open-ended",
+        "tone": "b"
+      },
+      {
+        "head": "Fixed fee",
+        "plan": 60,
+        "actual": 82,
+        "chip": "Scope creep",
+        "tone": "b"
+      },
+      {
+        "head": "Retainer",
+        "plan": 65,
+        "actual": 70,
+        "chip": "Vague list",
+        "tone": "w"
+      },
+      {
+        "head": "Costs",
+        "plan": 50,
+        "actual": 66,
+        "chip": "Forgotten",
+        "tone": "w"
+      },
+      {
+        "head": "Mark-up",
+        "plan": 70,
+        "actual": 50,
+        "chip": "Guessed",
+        "tone": "b"
+      }
+    ],
+    "base": "Pick the model, write the scope, price",
+    "artLabel": "Five columns of plan against actual bars showing where white-label pricing slips: hourly, fixed fee, retainer, pass-through costs and mark-up.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for pricing,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and model choice",
+        "d": "We sign the NDA, hear how your clients buy and propose a model for the first client.",
+        "get": "A written scope under one model.",
+        "img": "careers2/brief-review.jpg",
+        "alt": "Illustrative scene: two colleagues reviewing a proposal.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot under that model",
+        "d": "One client runs under the chosen model for a defined period, and we both note what to change.",
+        "get": "A pilot you can compare with your own costs.",
+        "img": "company/strategy.jpg",
+        "alt": "Illustrative scene: two colleagues talking through a scope.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "How you quote, what is billed on top and how changes are handled are written once.",
+        "get": "A quoting guide your sales team can follow.",
+        "img": "company/onepage.jpg",
+        "alt": "Illustrative scene: a quoting guide being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale and mix models",
+        "d": "More clients join, and some move to a hybrid, with the written scope kept up to date.",
+        "get": "A pricing structure that holds as you grow.",
+        "img": "careers2/desk-close.jpg",
+        "alt": "Illustrative scene: a laptop with a notebook open beside it.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "careers2/studio-wide.jpg",
+    "alt": "A studio team working around a shared table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label agency India",
+        "href": "/white-label/india/"
+      },
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "Contact MMC",
+        "href": "/contact/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

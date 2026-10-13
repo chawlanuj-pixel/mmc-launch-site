@@ -46,7 +46,7 @@ function stack() {
     const hs = cardsOf().map((c) => c.offsetHeight);
     list.style.setProperty("--stk-h", Math.max(0, ...hs) + "px");
   };
-  const minH = () => (window.innerWidth >= 760 ? 640 : 560);
+  const minH = () => (window.innerWidth >= 760 ? 640 : Infinity); // phones: plain stacked cards, nothing pinned
   const update = () => {
     raf = 0;
     const cards = cardsOf();

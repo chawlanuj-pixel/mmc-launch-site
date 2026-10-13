@@ -1,0 +1,260 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/strategy.jpg",
+    "pos": "50% 50%",
+    "alt": "A consultant talking with a client at a table, working through their questions.",
+    "facts": [
+      {
+        "t": "Answer first.",
+        "d": "A direct answer in the first lines, then the detail."
+      },
+      {
+        "t": "FAQ and schema.",
+        "d": "Questions, definitions and structured data that match the page."
+      },
+      {
+        "t": "Checked for accuracy.",
+        "d": "Every claim is reviewed so what gets quoted is true."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for AEO"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to make you",
+    "h2b": "the short answer.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Collect the questions buyers ask.",
+        "d": "Questions come from search, sales calls and support, then are grouped by what the buyer wants to do next."
+      },
+      {
+        "n": "02",
+        "t": "Add FAQs and matching schema.",
+        "d": "FAQs are written from real questions and marked up so machines can read them, with markup that matches the page."
+      },
+      {
+        "n": "03",
+        "t": "Open every section with the answer.",
+        "d": "A direct, self-contained answer in plain words gives snippets, People Also Ask boxes and voice replies something to lift."
+      },
+      {
+        "n": "04",
+        "t": "See how AI summaries use it.",
+        "d": "We watch whether summaries quote the page, and fix wording that gets cut or misread."
+      },
+      {
+        "n": "05",
+        "t": "Keep every answer true.",
+        "d": "Prices, eligibility and dates are rechecked on a schedule, because a quoted wrong answer is worse than none."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers.",
+    "serp": {
+      "tabs": [
+        "Search",
+        "Answers",
+        "Accuracy"
+      ],
+      "q": "what is the best running shoe for flat feet?",
+      "others": [
+        "guide.example",
+        "reviews.example",
+        "forum.example"
+      ],
+      "youTitle": "What is the best running shoe for flat feet?",
+      "snipLabel": "Direct answer",
+      "snip": "Choose a stable shoe with a firm midsole, a wide base and room in the toe box.",
+      "aiLabel": "Answer summary",
+      "ai": "Choose a stable shoe with firm midfoot support. Try pairs on late in the day, when feet are at their widest.",
+      "sources": [
+        "yourstore.example",
+        "guide.example"
+      ],
+      "chips": [
+        "FAQ markup valid",
+        "Answer first"
+      ],
+      "trackCap": "Answer accuracy",
+      "trackSub": "Is what gets quoted still true?",
+      "track": [
+        [
+          "what is the best shoe for flat feet",
+          "Correct"
+        ],
+        [
+          "do flat feet need arch support",
+          "Correct"
+        ],
+        [
+          "return window for worn shoes",
+          "Update"
+        ]
+      ],
+      "okState": [
+        "Correct"
+      ],
+      "foot": "Prices, eligibility and dates rechecked on a schedule."
+    }
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaSurfaceMap",
+    "variant": "aeo",
+    "barLogo": "",
+    "barTitle": "Answer slot map",
+    "pinsLabel": "Five ways pages miss the answer slot",
+    "base": "Featured snippets, People Also Ask and voice replies",
+    "artLabel": "Five cards showing where a page is passed over for the answer slot.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Questions"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Answer first"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "FAQs"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Markup"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Accuracy"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Questions",
+        "lines": [
+          "What buyers type",
+          "What the page answers"
+        ],
+        "chip": "Guessed",
+        "tone": "w"
+      },
+      {
+        "head": "Opening",
+        "lines": [
+          "Story comes first",
+          "Answer sits on line nine"
+        ],
+        "chip": "Nothing to lift",
+        "tone": "b"
+      },
+      {
+        "head": "FAQ",
+        "lines": [
+          "Generic questions",
+          "None of them asked"
+        ],
+        "chip": "Empty FAQ",
+        "tone": "w"
+      },
+      {
+        "head": "Markup",
+        "lines": [
+          "No schema",
+          "Or the wrong type"
+        ],
+        "chip": "Wrong markup",
+        "tone": "w"
+      },
+      {
+        "head": "Facts",
+        "lines": [
+          "An old price",
+          "A closed date"
+        ],
+        "chip": "Stale answer",
+        "tone": "b"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run AEO,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Question research",
+        "d": "We gather the questions from search, sales and support, and check which answer features already appear.",
+        "get": "A prioritised question list.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Rewrite and structure",
+        "d": "Priority pages get an answer-first opening, real FAQs and matching schema.",
+        "get": "Pages ready to be quoted.",
+        "img": "company/onepage.jpg",
+        "alt": "A person writing in a notebook at a sunlit desk beside a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Publish and check",
+        "d": "Pages go live and we recheck features, accuracy and enquiries.",
+        "get": "A repeat check you can read each month.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "AI SEO",
+        "href": "/services/seo/ai-seo/"
+      },
+      {
+        "n": "GEO",
+        "href": "/services/seo/geo/"
+      },
+      {
+        "n": "Content marketing",
+        "href": "/services/content-marketing/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

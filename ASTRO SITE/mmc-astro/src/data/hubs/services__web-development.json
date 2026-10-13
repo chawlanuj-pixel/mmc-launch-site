@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Website development is the work of planning, designing and building a site that explains what you do, loads quickly, can be found in search, and turns visitors into enquiries.",
+      "lead": "Website development is the work of planning, designing and building a site that explains what you do, loads quickly, can be found in search, and turns visitors into enquiries. MMC builds websites for B2B companies and educational institutes, and marketing sites for D2C brands, on a content system your team can edit.",
       "hl": "turns visitors into enquiries",
       "who": "Monday Marketing Company (MMC) builds websites for B2B companies and educational institutes, and marketing sites for D2C brands.",
       "points": [
@@ -294,6 +294,41 @@
           "img": "seo/aeo.jpg",
           "href": "seo.html",
           "link": "See SEO"
+        },
+        {
+          "n": "WordPress development",
+          "d": "Custom themes, WooCommerce, speed and migrations.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/wordpress/",
+          "link": "See WordPress development"
+        },
+        {
+          "n": "Website maintenance",
+          "d": "Updates, backups, security and a monthly report.",
+          "img": "web/speed.jpg",
+          "href": "/services/website-maintenance/",
+          "link": "See website maintenance"
+        },
+        {
+          "n": "White-label web development",
+          "d": "Builds delivered under your name.",
+          "img": "web/build.jpg",
+          "href": "/white-label/web-development/",
+          "link": "See white-label web development"
+        },
+        {
+          "n": "WooCommerce development",
+          "d": "Stores on WordPress: catalogue, checkout, shipping and speed.",
+          "img": "d2c/checkout.jpg",
+          "href": "/services/web-development/woocommerce/",
+          "link": "See WooCommerce development"
+        },
+        {
+          "n": "Conversion rate optimisation",
+          "d": "Find where shoppers leave and test the fix.",
+          "img": "cro/cart.jpg",
+          "href": "/services/cro/",
+          "link": "See Conversion rate optimisation"
         }
       ]
     },
@@ -377,6 +412,77 @@
         "t": "You want a site with no plan for traffic, or a rebuild every few months.",
         "why": "A site earns its keep when it is built for search, forms and follow-up, which needs a plan."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What website development",
+      "h2b": "covers.",
+      "lede": "Six parts of a site that loads fast, ranks and collects enquiries.",
+      "items": [
+        {
+          "t": "Plan for the buyer",
+          "d": "Page structure and content mapped to the questions your visitors ask.",
+          "img": "web/plan.jpg",
+          "alt": "Plan for the buyer: illustrative scene"
+        },
+        {
+          "t": "Clean build",
+          "d": "Maintainable code and a CMS your team can edit.",
+          "img": "web/build.jpg",
+          "alt": "Clean build: illustrative scene"
+        },
+        {
+          "t": "Speed",
+          "d": "Lean pages, optimised media and tested Core Web Vitals.",
+          "img": "web/speed.jpg",
+          "alt": "Speed: illustrative scene"
+        },
+        {
+          "t": "Built to be found",
+          "d": "Metadata, schema and structure set for search and AI answers.",
+          "img": "web/seo.jpg",
+          "alt": "Built to be found: illustrative scene"
+        },
+        {
+          "t": "Forms and CRM",
+          "d": "Enquiry forms connected to your CRM and analytics.",
+          "img": "web/crm.jpg",
+          "alt": "Forms and CRM: illustrative scene"
+        },
+        {
+          "t": "Launch and support",
+          "d": "Redirects, testing and a clear plan for what happens after go-live.",
+          "img": "web/seo.jpg",
+          "alt": "Launch and support: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build sites",
+      "h2b": "with MMC.",
+      "lede": "A website is a sales tool, and we build it to sell.",
+      "img": "web/speed.jpg",
+      "alt": "Why brands build sites with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Marketing-led builds",
+          "d": "We plan the site around how it will get traffic and turn it into enquiries."
+        },
+        {
+          "t": "SEO from day one",
+          "d": "Structure, schema and redirects are part of the build."
+        },
+        {
+          "t": "Fast by default",
+          "d": "Speed is tested before launch."
+        },
+        {
+          "t": "Suits every audience",
+          "d": "Brand sites for D2C, lead sites for B2B and admissions sites for education."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

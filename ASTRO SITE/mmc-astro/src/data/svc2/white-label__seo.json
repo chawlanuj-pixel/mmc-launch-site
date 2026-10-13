@@ -1,0 +1,173 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/performance.jpg",
+    "pos": "50% 50%",
+    "alt": "An analyst reviewing dashboards on two monitors.",
+    "facts": [
+      {
+        "t": "Audit to action.",
+        "d": "A written audit and a ranked plan you can present or sell on its own."
+      },
+      {
+        "t": "Hands-on delivery.",
+        "d": "Technical, on-page and content work done for you, reviewed before it reaches you."
+      },
+      {
+        "t": "Your report.",
+        "d": "A monthly report in your format, with a plain note for the client call."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label SEO"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "How one SEO client gets delivered",
+    "h2b": "under your name.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Take the client's access and brief once.",
+        "d": "Search Console, analytics and CMS access arrive through one checklist, so the audit starts on real data and not guesses."
+      },
+      {
+        "n": "02",
+        "t": "Write the audit in your template.",
+        "d": "Crawl, speed, structure and content gaps come with a ranked fix list you can present or sell on its own."
+      },
+      {
+        "n": "03",
+        "t": "Ship fixes and pages for your approval.",
+        "d": "Technical changes, on-page edits and content briefs come back in batches you approve before the client sees them."
+      },
+      {
+        "n": "04",
+        "t": "Rewrite priority pages to answer first.",
+        "d": "Key pages lead with the direct answer, with markup checked, so they read well to search and to AI tools."
+      },
+      {
+        "n": "05",
+        "t": "Report enquiries as well as rankings.",
+        "d": "Your monthly report covers work done, traffic and enquiries, with a plain note you can read out on the call."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers."
+  },
+  "leak": {
+    "visual": "SaRankMap",
+    "barLogo": "",
+    "barTitle": "Site and ranking map",
+    "pinsLabel": "Five places white-label SEO delivery goes wrong",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Access"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Map"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Pages"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Answers"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Report"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first SEO client",
+    "h2b": "gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA, access and scope",
+        "d": "We sign the NDA, collect Search Console, analytics and CMS access for the first client, and write down what SEO covers and what it does not.",
+        "get": "A written scope and an access checklist.",
+        "img": "contact/meeting.jpg",
+        "alt": "Three colleagues leaning over a printed plan on a table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot audit",
+        "d": "One client site gets a full audit in your template, and we walk you through it before the client sees it.",
+        "get": "An audit you can present or sell on its own.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A video call open on a laptop beside a data table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "SOPs for your account",
+        "d": "Briefs, approval steps, page naming and report layout are written down, so delivery does not depend on who is on shift.",
+        "get": "A one-page operating guide.",
+        "img": "company/onepage.jpg",
+        "alt": "A hand writing a plan in a notebook on a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the retainer",
+        "d": "Fixes, pages and monthly reports run on that routine, and more clients join on the same one.",
+        "get": "A repeatable SEO line for more clients.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "Colleagues around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label link building",
+        "href": "/white-label/link-building/"
+      },
+      {
+        "n": "White-label GEO and AEO",
+        "href": "/white-label/geo-aeo/"
+      },
+      {
+        "n": "White-label reporting",
+        "href": "/white-label/reporting/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

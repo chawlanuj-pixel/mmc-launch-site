@@ -82,18 +82,14 @@
   .hv .as .as__bottom { display: flex; flex-wrap: wrap; gap: 8px; }
   .hv .as .as__col h3 { min-height: 40px; padding: 0 16px; font-size: 14px; }
 
-  /* ---------- Who we work with ---------- */
-  .hv-who .hv-head { margin-bottom: 24px; }
-  .hv-who__grid { gap: 12px; }
-  .hv-who__card { min-height: 0; }
-  .hv-who__pic, .hv-who__card--d2c .hv-who__pic { width: 34%; }
-  .hv-who__body { padding: 14px 16px; gap: 6px; justify-content: center; }
-  .hv-who__hd { gap: 10px; }
-  .hv-who__ic { width: 32px; height: 32px; }
-  .hv-who__ic svg { width: 16px; height: 16px; }
-  .hv-who__body b { font-size: 20px; }
-  .hv-who__d { font-size: 15px; line-height: 1.45; }
-  .hv-who__go { display: inline-flex; padding-top: 2px; }
+  /* ---------- Who we work with / what we run for each (the merged band) ---------- */
+  .hv > section.hv2-out { padding-block: var(--mh-y); }
+  .hv2-out .hv-head { margin-bottom: 20px; }
+  .hv2-out__grid { gap: 14px; }
+  .hv2-out__fig { aspect-ratio: 16 / 9; }
+  .hv2-out__body { gap: 8px; padding: 18px; }
+  .hv2-out__body p { font-size: 15px; line-height: 1.5; }
+  .hv2-out__chips { display: none; }
 
   /* ---------- Services (design untouched: gaps and the art slot only) ---------- */
   .hv .dz__wrap { padding-inline: var(--hv-pad); }
@@ -103,8 +99,21 @@
   .hv .dz__grid { gap: 14px; }
   .hv .dz__card { padding: 20px; row-gap: 4px; }
   .hv .dz__title { font-size: 22px; }
-  .hv .dz__art { height: clamp(92px, 26vw, 108px); }
+  .hv .dz__art { height: clamp(140px, 44vw, 170px); }
   .hv .dz__copy { padding-top: 36px; }
+}
+@media (max-width: 639px) {
+  /* Compact cards: copy left, art right (was copy over art, ~400px a card). */
+  .hv .dz__card { grid-template-columns: minmax(0, 1fr) clamp(84px, 27vw, 112px); grid-template-areas: "copy art"; column-gap: 10px; align-items: center; padding: 16px 16px 16px 18px; }
+  .hv .dz__copy { padding-top: 28px; gap: 6px; }
+  .hv .dz__title { font-size: 20px; }
+  .hv .dz__desc { font-size: 15px; line-height: 1.45; }
+  .hv .dz__caps { font-size: 13px; }
+  .hv .dz__art { height: auto; padding-top: 24px; place-items: center; }
+  .hv .dz__art img { width: 100%; height: auto; max-width: 100%; max-height: 112px; }
+  .hv .dz__num { top: 16px; left: 18px; }
+}
+@media (max-width: 760px) {
 
   /* ---------- Selected work ---------- */
   .hv .wk__head { margin-bottom: 20px; gap: 0; }
@@ -125,7 +134,7 @@
   .hv-ins .hn-eyebrow { display: block; margin-bottom: 10px; }
   .hv-ins__side { margin-top: 12px; max-width: none; gap: 0; }
   .hv-ins__side p { display: block; font-size: 16px; }
-  .hv-ins__shot { height: clamp(130px, 38vw, 170px); }
+  .hv .hv-ins__shot { height: auto; aspect-ratio: 16 / 10; }
   .hv-ins__card { flex-basis: 80%; }
   .hv-ins__body { padding: 16px; gap: 8px; }
   .hv-ins__body h3 { font-size: 20px; }
@@ -135,7 +144,7 @@
   .hv-proc .hv-head .hn-eyebrow { display: block; }
   .hv-proc .hv-head__p .p-l { display: inline; }
   .hv-proc .hv-head__p .p-s { display: none; }
-  .hv .hv-proc__pic { height: clamp(120px, 36vw, 156px); }
+  .hv .hv-proc__pic { height: auto; aspect-ratio: 16 / 10; }
   .hv-proc__card { flex-basis: 80%; gap: 8px; }
   .hv-proc__card h3 { font-size: 22px; }
   .hv-proc__card p { font-size: 15px; }

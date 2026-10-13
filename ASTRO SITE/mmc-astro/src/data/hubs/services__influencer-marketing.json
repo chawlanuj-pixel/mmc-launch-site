@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Influencer marketing is the work of partnering with creators whose audience matches your buyers, so their content introduces and recommends your product.",
+      "lead": "Influencer marketing is the work of partnering with creators whose audience matches your buyers, so their content introduces and recommends your product. MMC plans it for D2C brands: shortlisting creators for audience fit, agreeing deliverables and usage rights, tracking results to sales, and reusing the best content as paid ads.",
       "hl": "whose audience matches your buyers",
       "who": "Monday Marketing Company (MMC) plans influencer and creator partnerships for D2C brands, and can reuse the best content as paid ads.",
       "points": [
@@ -372,6 +372,77 @@
         "t": "You want reach with no tracking, or one big name to fix everything.",
         "why": "Fit and tracking decide results, and a big name rarely substitutes for either."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What influencer work",
+      "h2b": "includes.",
+      "lede": "Six steps from choosing creators to reusing the content that performs.",
+      "items": [
+        {
+          "t": "Creator shortlist",
+          "d": "Creators chosen for audience fit and past content quality, not for follower size alone.",
+          "img": "inf/shortlist.jpg",
+          "alt": "Creator shortlist: illustrative scene"
+        },
+        {
+          "t": "Campaign brief",
+          "d": "One clear idea, the must-say points and room for the creator to sound like themselves.",
+          "img": "inf/brief.jpg",
+          "alt": "Campaign brief: illustrative scene"
+        },
+        {
+          "t": "Terms and usage rights",
+          "d": "Deliverables, timelines and content usage agreed in writing before work starts.",
+          "img": "inf/terms.jpg",
+          "alt": "Terms and usage rights: illustrative scene"
+        },
+        {
+          "t": "Tracking to sales",
+          "d": "Codes, links and platform data set up so posts can be tied to orders or enquiries.",
+          "img": "inf/tracking.jpg",
+          "alt": "Tracking to sales: illustrative scene"
+        },
+        {
+          "t": "Content reuse",
+          "d": "The best posts adapted into paid ads and site content, within the agreed rights.",
+          "img": "inf/reuse.jpg",
+          "alt": "Content reuse: illustrative scene"
+        },
+        {
+          "t": "Review and next round",
+          "d": "What worked and what did not, written up to shape the next campaign.",
+          "img": "services/creative.jpg",
+          "alt": "Review and next round: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands use MMC for",
+      "h2b": "influencer marketing.",
+      "lede": "We treat creators as a channel to measure, not a favour to hope for.",
+      "img": "inf/terms.jpg",
+      "alt": "Why brands use MMC for influencer marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Fit before reach",
+          "d": "Shortlists are built around who your buyers follow and trust."
+        },
+        {
+          "t": "Paid media in the loop",
+          "d": "Strong posts are turned into ads, which stretches every creator fee further."
+        },
+        {
+          "t": "Clear paperwork",
+          "d": "Rights, timelines and payments are agreed up front."
+        },
+        {
+          "t": "Measured against goals",
+          "d": "Each campaign has a stated goal and a way to check it."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

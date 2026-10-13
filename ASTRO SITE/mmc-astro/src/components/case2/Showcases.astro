@@ -1,0 +1,101 @@
+---
+// 4. What we built: a sequence of large visual showcases, each tied to one real deliverable. Layouts differ per brand (see data/case2/<id>.json).
+//   devices  web + phone crops side by side, scaled together
+//   stage    caption over one wide panel
+//   split    sticky caption beside one or two tall crops, image side alternates
+//   tiles    a row of small panels with their own labels (one crop becomes a split)
+//   ribbon   full-bleed strip of product photography from the same artwork
+import Pic from "./Pic.astro";
+import { cropOf, t } from "../../lib/case2";
+import type { CaseStudy } from "../../lib/work";
+interface Props { c: CaseStudy; d: any }
+const { c, d } = Astro.props as Props;
+let n = 0;
+const items = d.showcases.map((s: any, i: number) => {
+  const imgs = s.crops.map((k: string) => cropOf(c, d, k));
+  let layout = s.layout;
+  if (layout === "tiles" && imgs.length === 1) layout = "split";
+  if (layout === "stage" && imgs[0].w < 700) layout = "split";
+  if (layout !== "ribbon") n += 1;
+  return { s, imgs, layout, no: layout === "ribbon" ? 0 : n, flip: i % 2 === 0 ? "right" : "left" };
+});
+---
+<section class="c2-band c2-built" id="what-we-built" aria-labelledby="c2-built-h">
+  <div class="c2-wrap">
+    <header class="c2-built__head c2-rv">
+      <p class="c2-eyebrow">What we built</p>
+      <h2 class="c2-h2" id="c2-built-h">The work, <em>piece by piece.</em></h2>
+    </header>
+  </div>
+  {items.map(({ s, imgs, layout, no, flip }: any) => (
+    <article class={`c2-sc c2-sc--${layout}`} data-side={s.side || flip}>
+      {layout === "ribbon" ? (
+        <figure class="c2-ribbon c2-rv" style={`--c2-bg:${imgs[0].bg}`}>
+          <Pic img={imgs[0]} />
+          <figcaption>{s.kicker}: {t(s.title, c)}.</figcaption>
+        </figure>
+      ) : (
+        <div class="c2-wrap">
+          {layout === "devices" && (
+            <Fragment>
+              <header class="c2-sc__cap c2-sc__cap--row c2-rv">
+                <p class="c2-sc__k"><b>{String(no).padStart(2, "0")}</b>{s.kicker}</p>
+                <h3 class="c2-h3">{t(s.title, c)}</h3>
+                <p class="c2-sc__x">{t(s.text, c)}</p>
+              </header>
+              <div class="c2-panel c2-panel--devices c2-rv" style={`--c2-bg:${imgs[0].bg}; --ww:${imgs[0].w}; --mw:${imgs[1].w}; --cap:${Math.round((imgs[0].w + imgs[1].w) * 1.25)}px`}>
+                <div class="c2-devices">
+                  <figure class="c2-dev c2-dev--web"><Pic img={imgs[0]} cap={9} /></figure>
+                  <figure class="c2-dev c2-dev--mob"><Pic img={imgs[1]} cap={9} /></figure>
+                </div>
+              </div>
+            </Fragment>
+          )}
+          {layout === "stage" && (
+            <Fragment>
+              <header class="c2-sc__cap c2-sc__cap--row c2-rv">
+                <p class="c2-sc__k"><b>{String(no).padStart(2, "0")}</b>{s.kicker}</p>
+                <h3 class="c2-h3">{t(s.title, c)}</h3>
+                <p class="c2-sc__x">{t(s.text, c)}</p>
+              </header>
+              <div class="c2-panel c2-rv" style={`--c2-bg:${imgs[0].bg}`}>
+                <figure class="c2-fig"><Pic img={imgs[0]} /></figure>
+              </div>
+            </Fragment>
+          )}
+          {layout === "split" && (
+            <div class="c2-split">
+              <header class="c2-sc__cap c2-sc__cap--stick c2-rv">
+                <p class="c2-sc__k"><b>{String(no).padStart(2, "0")}</b>{s.kicker}</p>
+                <h3 class="c2-h3">{t(s.title, c)}</h3>
+                <p class="c2-sc__x">{t(s.text, c)}</p>
+              </header>
+              <div class="c2-split__figs">
+                {imgs.map((im: any) => (
+                  <div class="c2-panel c2-rv" style={`--c2-bg:${im.bg}`}><figure class="c2-fig"><Pic img={im} /></figure></div>
+                ))}
+              </div>
+            </div>
+          )}
+          {layout === "tiles" && (
+            <Fragment>
+              <header class="c2-sc__cap c2-sc__cap--row c2-rv">
+                <p class="c2-sc__k"><b>{String(no).padStart(2, "0")}</b>{s.kicker}</p>
+                <h3 class="c2-h3">{t(s.title, c)}</h3>
+                <p class="c2-sc__x">{t(s.text, c)}</p>
+              </header>
+              <div class="c2-tiles" style={`--cols:${imgs.length}`}>
+                {imgs.map((im: any, k: number) => (
+                  <figure class={`c2-tile c2-rv c2-d${k}`}>
+                    <div class="c2-panel" style={`--c2-bg:${im.bg}`}><Pic img={im} /></div>
+                    {s.captions?.[k] && <figcaption>{s.captions[k]}</figcaption>}
+                  </figure>
+                ))}
+              </div>
+            </Fragment>
+          )}
+        </div>
+      )}
+    </article>
+  ))}
+</section>

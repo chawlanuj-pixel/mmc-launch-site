@@ -1,0 +1,27 @@
+# Registration lines for the growth batch (lead-gen, retention, social, ugc, influencer, amazon, quick-commerce, ORM, branding, packaging).
+# Merge into src/components/svc2/panels/index.ts and src/components/svc2/visuals/index.ts.
+
+## panels/index.ts: imports
+import AmazonAds from "./AmazonAds.astro";
+import QuickCommerceAds from "./QuickCommerceAds.astro";
+import ReviewMonitor from "./ReviewMonitor.astro";
+import BrandSystem from "./BrandSystem.astro";
+import PackagingMock from "./PackagingMock.astro";
+## panels/index.ts: add to `panels`
+AmazonAds, QuickCommerceAds, ReviewMonitor, BrandSystem, PackagingMock
+## panels/index.ts: add to `panelSteps`
+AmazonAds: 5, QuickCommerceAds: 5, ReviewMonitor: 5, BrandSystem: 4, PackagingMock: 4,
+
+## visuals/index.ts: imports
+import LeadDropoff from "./LeadDropoff.astro";
+import RepeatCurve from "./RepeatCurve.astro";
+import FeedGrid from "./FeedGrid.astro";
+import VideoRetention from "./VideoRetention.astro";
+import CreatorFit from "./CreatorFit.astro";
+import AmazonLeak from "./AmazonLeak.astro";
+import TileLeak from "./TileLeak.astro";
+import ReviewLeak from "./ReviewLeak.astro";
+import BrandZones from "./BrandZones.astro";
+import ShelfLeak from "./ShelfLeak.astro";
+## visuals/index.ts: add to `visuals`
+LeadDropoff, RepeatCurve, FeedGrid, VideoRetention, CreatorFit, AmazonLeak, TileLeak, ReviewLeak, BrandZones, ShelfLeak

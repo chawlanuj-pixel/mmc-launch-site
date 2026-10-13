@@ -1,0 +1,119 @@
+/* Home V2c: the sections added for the V2 order (outcome strip, how-we-do-it accordion, FAQ, calculators band,
+   closing form). Prefix hv2-. Loaded after home-v2b.css and before mobile-home.css (which stays last).
+   These sections take the height their content needs; they are not forced to one screen like the older bands. */
+
+.hv > section.hv2-sec {
+  height: auto; min-height: 0; max-height: none; display: block;
+  padding-block: clamp(56px, 8vw, 112px); scroll-margin-top: 80px;
+}
+.hv2-sec .hv-head { margin-bottom: clamp(24px, 3.4vw, 44px); }
+.hv2-sec h3 { margin: 0; }
+
+/* ---------- Outcome strip ---------- */
+.hv2-out { background: var(--n-sun); color: var(--n-ink); }
+.hv2-out .hn-eyebrow, .hv2-out .hv-head h2, .hv2-out .hv-head em, .hv2-out .hv-head__p { color: var(--n-ink); }
+.hv2-out__grid { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); grid-template-columns: 1fr; }
+.hv2-out__card { display: flex; flex-direction: column; background: var(--n-paper); border: 1px solid var(--n-line); border-radius: var(--r-card); overflow: hidden; }
+.hv2-out__fig { position: relative; margin: 0; aspect-ratio: 3 / 2; background: var(--n-ink); }
+.hv2-out__fig > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hv2-out__fig figcaption { position: absolute; top: 12px; right: 12px; padding: 5px 10px; border-radius: var(--r-tag); background: rgba(255,255,255,.94); color: var(--n-ink); font: 700 12px/1.1 var(--font-body); letter-spacing: .04em; text-transform: uppercase; }
+.hv2-out__plat { position: absolute; left: 12px; bottom: 12px; right: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+.hv2-out__plat img { height: 22px; width: auto; max-width: 84px; padding: 5px 9px; box-sizing: content-box; background: #fff; border-radius: var(--r-tag); object-fit: contain; }
+.hv2-out__body { display: grid; gap: 12px; align-content: start; padding: var(--sp-3); flex: 1; }
+.hv2-out__body h3 { font: 800 var(--t-h3)/1.15 var(--font-display); letter-spacing: -.015em; color: var(--n-ink); }
+.hv2-out__body p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--n-fg-2); }
+.hv2-out__body .hv2-out__lens { font-weight: 700; color: var(--n-blue-d); }
+.hv2-out__chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.hv2-out__chips li { padding: 5px 10px; border-radius: var(--r-tag); background: #fff; border: 1px solid var(--n-line); font: 600 12px/1.2 var(--font-body); color: var(--n-fg-2); }
+.hv2-out__go { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; margin-top: auto; font: 700 14px var(--font-body); color: var(--n-blue-d); text-decoration: none; }
+.hv2-out__go svg { width: 18px; height: 18px; transition: transform .2s var(--ease); }
+.hv2-out__go:hover svg { transform: translateX(3px); }
+@media (min-width: 900px) { .hv2-out__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* ---------- How we do it: accordion + photo ---------- */
+.hv2-how { background: var(--n-paper); }
+.hv2-how__list { position: relative; display: grid; gap: 12px; align-content: start; }
+.hv2-how__item { background: #fff; border: 1px solid var(--n-line); border-radius: var(--r-card); overflow: hidden; }
+.hv2-how__item[open] { border-color: var(--n-blue); }
+.hv2-how__item summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 16px; min-height: 64px; padding: 14px 20px; -webkit-tap-highlight-color: transparent; }
+.hv2-how__item summary::-webkit-details-marker { display: none; }
+.hv2-how__item summary::marker { content: ""; }
+.hv2-how__item summary::after { content: ""; flex: none; margin-left: auto; width: 12px; height: 12px; border-right: 2.5px solid var(--n-blue); border-bottom: 2.5px solid var(--n-blue); transform: rotate(45deg) translateY(-3px); transition: transform .25s var(--ease); }
+.hv2-how__item[open] summary::after { transform: rotate(-135deg) translateY(-3px); }
+.hv2-how__n { flex: none; font: 800 14px var(--font-display); letter-spacing: .06em; color: var(--n-blue); }
+.hv2-how__item h3 { font: 800 clamp(18px, 2vw, 22px)/1.2 var(--font-display); letter-spacing: -.015em; color: var(--n-ink); }
+.hv2-how__panel { padding: 0 20px 20px; display: grid; gap: 12px; }
+.hv2-how__panel p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--n-fg-2); max-width: 56ch; }
+.hv2-how__go { display: inline-flex; align-items: center; min-height: 44px; font: 700 14px var(--font-body); color: var(--n-blue-d); text-decoration: none; }
+.hv2-how__fig { margin: 0; border-radius: var(--r-in); overflow: hidden; aspect-ratio: 3 / 2; }
+.hv2-how__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hv2-how__item summary:focus-visible { outline: var(--focus-w) solid var(--focus-color); outline-offset: calc(var(--focus-w) * -1); border-radius: var(--r-card); }
+@media (min-width: 900px) {
+  .hv2-how__list { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(24px, 4vw, 64px); min-height: clamp(380px, 34vw, 540px); }
+  .hv2-how__item { grid-column: 1; }
+  .hv2-how__fig { position: absolute; top: 0; right: 0; width: calc(50% - clamp(12px, 2vw, 32px)); height: 100%; aspect-ratio: auto; border-radius: var(--r-card); box-shadow: var(--sh-1); }
+}
+
+/* ---------- FAQ ---------- */
+.hv2-faq { background: #fff; }
+.hv2-faq__in { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; align-items: start; }
+.hv2-faq__side h2 { font: 800 var(--t-h2)/1.06 var(--font-display); letter-spacing: -.028em; color: var(--n-ink); margin: 0; }
+.hv2-faq__side h2 em { color: var(--n-blue); }
+.hv2-faq__fig { display: none; margin: var(--sp-3) 0 0; border-radius: var(--r-card); overflow: hidden; aspect-ratio: 3 / 2; }
+.hv2-faq__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hv2-faq__list { max-width: none; }
+.hv2-faq__list summary { min-height: 56px; }
+@media (min-width: 900px) {
+  .hv2-faq__in { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); column-gap: clamp(32px, 5vw, 80px); }
+  .hv2-faq__side { position: sticky; top: 120px; }
+  .hv2-faq__fig { display: block; }
+}
+
+/* ---------- Calculators band ---------- */
+.hv2-calc { background: var(--n-ink); color: #fff; }
+.hv2-calc__in { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; align-items: center; }
+.hv2-calc .hn-eyebrow { color: var(--n-sun); }
+.hv2-calc h2 { font: 800 var(--t-h2)/1.06 var(--font-display); letter-spacing: -.028em; color: #fff; margin: 0; }
+.hv2-calc h2 em { color: var(--n-sun); }
+.hv2-calc__copy p:not(.hn-eyebrow) { margin: var(--sp-2) 0 0; max-width: 48ch; font-size: var(--t-body); line-height: 1.55; color: rgba(255,255,255,.8); }
+.hv2-calc__fig { display: none; margin: var(--sp-3) 0 0; border-radius: var(--r-card); overflow: hidden; aspect-ratio: 3 / 2; max-width: 460px; }
+.hv2-calc__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hv2-calc .hv-num__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.hv2-calc .hv-num__d { display: block; }
+.hv2-calc .hv-num__card { grid-template-columns: 1fr; padding: var(--sp-3); min-height: 44px; }
+@media (min-width: 560px) { .hv2-calc__fig { display: block; } }
+@media (min-width: 1000px) { .hv2-calc__in { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); column-gap: clamp(32px, 5vw, 80px); } }
+
+/* ---------- Closing form ---------- */
+.hv2-close { background: var(--n-ink); color: #fff; border-top: 1px solid rgba(255,255,255,.12); }
+.hv2-close__in { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; align-items: start; }
+.hv2-close .hn-eyebrow { color: var(--n-sun); }
+.hv2-close h2 { font: 800 var(--t-h2)/1.06 var(--font-display); letter-spacing: -.028em; color: #fff; margin: 0; }
+.hv2-close h2 em { color: var(--n-sun); }
+.hv2-close__copy > p:not(.hn-eyebrow) { margin: var(--sp-2) 0 0; max-width: 52ch; font-size: var(--t-body); line-height: 1.55; color: rgba(255,255,255,.8); }
+.hv2-close__fig { display: none; margin: var(--sp-3) 0 0; border-radius: var(--r-card); overflow: hidden; aspect-ratio: 3 / 2; max-width: 520px; }
+.hv2-close__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hv2-close__alt { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-3); margin-top: var(--sp-3); }
+.hv2-close__wa { display: inline-flex; align-items: center; min-height: 44px; font: 700 15px var(--font-body); color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.hv2-close__wa:hover { color: var(--n-sun); }
+.hv2-form { display: grid; gap: 14px; padding: clamp(20px, 3vw, 32px); border-radius: var(--r-card); background: #fff; color: var(--n-ink); box-shadow: var(--sh-2); }
+.hv2-form h3 { font: 800 var(--t-h3)/1.15 var(--font-display); letter-spacing: -.015em; color: var(--n-ink); }
+.hv2-form label { display: grid; gap: 6px; font: 700 14px/1.3 var(--font-body); color: var(--n-ink); }
+.hv2-form input[type=text], .hv2-form input[type=email], .hv2-form input[type=tel] { box-sizing: border-box; width: 100%; min-height: 48px; padding: 10px 14px; border: 1.5px solid var(--n-line-2); border-radius: var(--r-in); background: var(--n-paper); font: 400 16px var(--font-body); color: var(--n-ink); }
+/* Form fields: the house field focus (as on /contact/ and the register form): blue border plus a soft ring. */
+.hv2-form input:focus-visible { outline: none; border-color: var(--mmc-blue); box-shadow: 0 0 0 4px rgba(var(--mmc-blue-rgb), .14); background: #fff; }
+.hv2-form .btn { justify-self: start; min-height: 48px; }
+.hv2-form__hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.hv2-form__status[data-err] { color: var(--mmc-error); font-size: 13px; }
+.hv2-form input:user-invalid { border-color: var(--mmc-error); }
+.hv2-form__status { margin: 0; min-height: 1.2em; font: 700 14px var(--font-body); color: var(--n-blue-d); }
+.hv2-form__fine { margin: 0; font-size: 12px; color: var(--n-fg-2); }
+@media (min-width: 560px) { .hv2-close__fig { display: block; } }
+@media (min-width: 1000px) { .hv2-close__in { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); column-gap: clamp(32px, 5vw, 80px); } }
+
+.hv2-close a:focus-visible, .hv2-close button:focus-visible, .hv2-calc a:focus-visible { outline: var(--focus-w) solid var(--focus-color-dark); outline-offset: var(--focus-offset); }
+/* ...except inside the white form card, where sun would be under 2:1 */
+.hv2-close .hv2-form :is(a, button):focus-visible { outline-color: var(--focus-color); }
+@media (prefers-reduced-motion: reduce) {
+  .hv2-how__item summary::after, .hv2-out__go svg { transition: none; }
+}

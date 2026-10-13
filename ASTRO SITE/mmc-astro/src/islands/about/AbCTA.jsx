@@ -47,7 +47,7 @@ function AbCTA({ onAudit }) {
             </button>
             <div className="ab-fcta__primary-meta">
               <span className="ab-fcta__primary-dot"></span>
-              <span><strong>Avg. response · 4 hours</strong> · Mon–Sat IST</span>
+              <span><strong>Avg. response · 4 hours</strong> · Mon to Sat, IST</span>
             </div>
           </div>
 

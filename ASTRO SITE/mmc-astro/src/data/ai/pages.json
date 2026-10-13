@@ -1,7 +1,7 @@
 {
  "index": {
   "title": "AI by MMC: AI Services for Growth Teams | MMC",
-  "description": "Six AI services from MMC: photoshoots, video, sales agents, UGC, landing pages and spokesperson videos, tied to performance marketing.",
+  "description": "Six AI services from MMC for D2C, B2B and education: photoshoots, video, sales agents, UGC, landing pages and spokesperson videos, built for performance ads.",
   "path": "/ai-by-mmc/",
   "jsonld": [
    {
@@ -10,7 +10,7 @@
     "@id": "https://www.mondaymarketing.company/ai-by-mmc/#webpage",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/",
     "name": "AI by MMC: AI Services for Growth Teams | MMC",
-    "description": "Six AI services from MMC: photoshoots, video, sales agents, UGC, landing pages and spokesperson videos, tied to performance marketing.",
+    "description": "Six AI services from MMC for D2C, B2B and education: photoshoots, video, sales agents, UGC, landing pages and spokesperson videos, built for performance ads.",
     "isPartOf": {
      "@id": "https://www.mondaymarketing.company/#website"
     },
@@ -102,7 +102,7 @@
  },
  "photoshoot": {
   "title": "AI Photoshoot for Brands | AI by MMC",
-  "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC.",
+  "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC, ready for ads and product pages.",
   "path": "/ai-by-mmc/photoshoot/",
   "jsonld": [
    {
@@ -111,7 +111,7 @@
     "@id": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/#webpage",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/",
     "name": "AI Photoshoot for Brands | AI by MMC",
-    "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC.",
+    "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC, ready for ads and product pages.",
     "isPartOf": {
      "@id": "https://www.mondaymarketing.company/#website"
     },
@@ -148,7 +148,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "AI Photoshoot",
-    "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC.",
+    "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC, ready for ads and product pages.",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/",
     "provider": {
      "@type": "Organization",
@@ -218,7 +218,7 @@
  },
  "video-generation": {
   "title": "AI Video Generation for Ads and Brand Films | AI by MMC",
-  "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands.",
+  "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands, ready to run as ads.",
   "path": "/ai-by-mmc/video-generation/",
   "jsonld": [
    {
@@ -227,7 +227,7 @@
     "@id": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/#webpage",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/",
     "name": "AI Video Generation for Ads and Brand Films | AI by MMC",
-    "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands.",
+    "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands, ready to run as ads.",
     "isPartOf": {
      "@id": "https://www.mondaymarketing.company/#website"
     },
@@ -264,7 +264,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "AI Video Generation",
-    "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands.",
+    "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands, ready to run as ads.",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/",
     "provider": {
      "@type": "Organization",
@@ -682,7 +682,7 @@
  },
  "spokesperson-video": {
   "title": "AI Spokesperson Video: A Presenter for You | AI by MMC",
-  "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC.",
+  "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC and ready to run as ads.",
   "path": "/ai-by-mmc/spokesperson-video/",
   "jsonld": [
    {
@@ -691,7 +691,7 @@
     "@id": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/#webpage",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/",
     "name": "AI Spokesperson Video: A Presenter for You | AI by MMC",
-    "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC.",
+    "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC and ready to run as ads.",
     "isPartOf": {
      "@id": "https://www.mondaymarketing.company/#website"
     },
@@ -728,7 +728,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "AI Spokesperson Video",
-    "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC.",
+    "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC and ready to run as ads.",
     "url": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/",
     "provider": {
      "@type": "Organization",

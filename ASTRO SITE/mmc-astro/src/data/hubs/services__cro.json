@@ -80,7 +80,7 @@
           "name": "What is conversion optimisation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Conversion rate optimisation (CRO) is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes to the pages, checkout and forms they use."
+            "text": "Conversion rate optimisation is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes to the pages, checkout and forms they use."
           }
         },
         {
@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Conversion rate optimisation is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes.",
+      "lead": "Conversion rate optimisation (CRO) is the work of getting more of your existing visitors to buy or enquire, by finding where they drop off and testing changes. MMC runs it on product pages, carts and checkout for D2C brands, and on landing pages and forms for B2B and education sites. A change stays only if it beats the current page.",
       "hl": "more of your existing visitors",
       "who": "Monday Marketing Company (MMC) runs CRO for D2C brands on product pages, carts and checkout, and for B2B and education sites on landing pages and forms.",
       "points": [
@@ -294,6 +294,13 @@
           "img": "ux/screens.jpg",
           "href": "ui-ux-design.html",
           "link": "See UI/UX design"
+        },
+        {
+          "n": "White-label CRO",
+          "d": "Conversion work behind your brand.",
+          "img": "cro/test.jpg",
+          "href": "/white-label/cro/",
+          "link": "See white-label CRO"
         }
       ]
     },
@@ -374,6 +381,102 @@
         "t": "You have very little traffic, or want a redesign dressed up as testing.",
         "why": "Tests need enough visitors to mean something, and a rebuild is a different job."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "CRO.",
+      "lede": "Six checks that find the revenue already leaking from the traffic you pay for.",
+      "items": [
+        {
+          "t": "Funnel and analytics review",
+          "d": "Where visitors drop off, found from your data before any design change is proposed.",
+          "img": "cro/leaks.jpg",
+          "alt": "Funnel and analytics review: illustrative scene"
+        },
+        {
+          "t": "Product page persuasion",
+          "d": "Images, proof, answers to objections and a clear offer on the page that decides the sale.",
+          "img": "cro/pdp.jpg",
+          "alt": "Product page persuasion: illustrative scene"
+        },
+        {
+          "t": "Cart and checkout",
+          "d": "Fewer steps, clear costs and payment options that remove reasons to abandon.",
+          "img": "cro/cart.jpg",
+          "alt": "Cart and checkout: illustrative scene"
+        },
+        {
+          "t": "Forms and lead capture",
+          "d": "Shorter forms and clearer promises for B2B and education enquiries.",
+          "img": "cro/forms.jpg",
+          "alt": "Forms and lead capture: illustrative scene"
+        },
+        {
+          "t": "Speed and mobile experience",
+          "d": "Pages that load and behave well on the phones most of your buyers use.",
+          "img": "cro/test.jpg",
+          "alt": "Speed and mobile experience: illustrative scene"
+        },
+        {
+          "t": "Structured testing",
+          "d": "Changes tested one at a time and kept only when the evidence supports them.",
+          "img": "services/conversion.jpg",
+          "alt": "Structured testing: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands work on CRO",
+      "h2b": "with MMC.",
+      "lede": "Better conversion lifts every channel at once.",
+      "img": "cro/cart.jpg",
+      "alt": "Why brands work on CRO with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Evidence before opinion",
+          "d": "We start from your analytics and session data, not from a redesign wish list."
+        },
+        {
+          "t": "Design and media in the same team",
+          "d": "The people who buy your traffic also fix the page it lands on."
+        },
+        {
+          "t": "Testing that teaches",
+          "d": "Each test is written down with its reason, so wins and losses both add knowledge."
+        },
+        {
+          "t": "Fits any audience",
+          "d": "Store pages for D2C, enquiry forms for B2B and admissions pages for education."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a CRO programme runs,",
+      "h2b": "step by step.",
+      "img": "cro/test.jpg",
+      "alt": "How a CRO programme runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Find the leaks",
+          "d": "Analytics, recordings and customer questions show where buyers or enquirers give up."
+        },
+        {
+          "t": "Prioritise",
+          "d": "Each idea is ranked by likely effect, effort and how sure we are, so the best ones go first."
+        },
+        {
+          "t": "Test and build",
+          "d": "Changes ship as controlled tests or clean releases, with a clear measure agreed in advance."
+        },
+        {
+          "t": "Keep what works",
+          "d": "Winners are rolled out, results are logged and the next round starts from what we learned."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

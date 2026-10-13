@@ -24,7 +24,7 @@ const brief = "window.mmcOpenBrief && window.mmcOpenBrief(event)";
         sub="We read your ad accounts against your break-even numbers and tell you where to start."
         primary={{ label: BOOK, href: "#book" }} secondary={{ label: SECONDARY.brief, onclick: brief }} rightClass="auh__r">
         <figure class="auh__fig">
-          <Img name={img("audit-call.jpg")} ratio="4 / 3" class="auh__img" eager />
+          <Img name={img("audit-call.jpg")} ratio="4 / 3" class="auh__img" eager alt="A founder reviewing an ad account table and a spend against revenue chart on a laptop, on a video call with a strategist." />
         </figure>
       </PageHero>
 
@@ -108,11 +108,11 @@ const brief = "window.mmcOpenBrief && window.mmcOpenBrief(event)";
             <span class="n-eyebrow">Common questions</span>
             <h2 class="n-h2">Before you <span class="n-serif">book.</span></h2>
           </div>
-          <div class="pm-faq n-rise">
+          <div class="mmc-faq n-rise">
             {D.AU_FAQ.map((f: any, k: number) => (
               <details open={k === 0}>
                 <summary>{f.q}</summary>
-                <div class="pm-faq__a"><p>{f.a}</p></div>
+                <div class="mmc-faq__a"><p>{f.a}</p></div>
               </details>
             ))}
           </div>

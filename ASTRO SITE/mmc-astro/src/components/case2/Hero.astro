@@ -1,0 +1,44 @@
+---
+// 1. Hero: brand, one-line scope, audience tag, service chips, then the real artwork rising out of a backdrop in its own colour.
+import Pic from "./Pic.astro";
+import { BOOK, SECONDARY, ARTWORK_LINE } from "../../lib/site";
+import { href } from "../../lib/links";
+import { cropOf, services } from "../../lib/case2";
+import type { CaseStudy } from "../../lib/work";
+interface Props { c: CaseStudy; d: any }
+const { c, d } = Astro.props as Props;
+const hero = cropOf(c, d, "hero");
+const sv = services(c);
+---
+<section class={"c2-hero c2-hero--" + d.heroTone} id="top" data-c2-hero>
+  <div class="c2-wrap">
+    <nav class="c2-crumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span aria-hidden="true">/</span><a href="/work/">Our work</a><span aria-hidden="true">/</span><span aria-current="page">{c.name}</span>
+    </nav>
+    <div class="c2-hero__grid">
+      <div class="c2-hero__copy">
+        <div class="c2-hero__top c2-in">
+          <span class="c2-hero__logo"><img src={`/assets/clients/${c.id}.png`} alt={`${c.name} logo`} height="40" loading="eager" decoding="async" /></span>
+          <span class="c2-pill c2-pill--aud">{c.label} case study</span>
+        </div>
+        <h1 class="c2-hero__h1 c2-in c2-d1">{c.name}</h1>
+        <p class="c2-hero__scope c2-in c2-d2">{c.scope}</p>
+        <ul class="c2-chips c2-in c2-d3" aria-label="Services on this project">
+          {sv.map((s) => <li>{s.href ? <a href={href(s.href)}>{s.label}</a> : <span>{s.label}</span>}</li>)}
+        </ul>
+      </div>
+      <div class="c2-hero__act c2-in c2-d3">
+        <button class="btn btn--primary glow-btn" type="button" onclick={`window.mmcBookCall('work-${c.id}-hero', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{BOOK}<span class="arrow"></span></span></button>
+        <a class="c2-textlink" href="#what-we-built">See what we built<svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px;transform:rotate(90deg)"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="c2-hero__stage" style={`--c2-bg:${hero.bg}`}>
+    <div class="c2-wrap c2-wrap--stage">
+      <figure class="c2-hero__fig c2-in c2-d2" data-c2-par>
+        <Pic img={hero} eager cap={1.25} />
+      </figure>
+    </div>
+    <p class="c2-hero__cap">{ARTWORK_LINE}</p>
+  </div>
+</section>

@@ -1,0 +1,520 @@
+{
+  "file": "skincare.html",
+  "path": "/industries/d2c/skincare/",
+  "key": "d2cskin",
+  "title": "Skincare Marketing Agency India for D2C Brands | MMC",
+  "description": "Marketing for D2C skincare brands in India. Ingredient-led content, creative, performance media and replenishment retention, planned around contribution margin.",
+  "ogTitle": "Skincare marketing that earns trust and repeat orders",
+  "ogDescription": "Marketing for d2c skincare brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: skincare.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/skincare/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "D2C",
+          "item": "https://www.mondaymarketing.company/industries/d2c/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Skincare",
+          "item": "https://www.mondaymarketing.company/industries/d2c/skincare/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/skincare/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/d2c/skincare/",
+      "name": "Skincare Marketing Agency India for D2C Brands | MMC",
+      "description": "Marketing for D2C skincare brands in India. Ingredient-led content, creative, performance media and replenishment retention, planned around contribution margin.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/skincare/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/skincare/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/skincare/#service",
+      "name": "Skincare",
+      "serviceType": "Skincare marketing",
+      "description": "Marketing for D2C skincare brands: content, creative, performance media, product pages and replenishment retention planned around contribution margin.",
+      "url": "https://www.mondaymarketing.company/industries/d2c/skincare/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/skincare/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is skincare marketing different from other D2C?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buyers research ingredients and concerns, trust is fragile, claims are restricted and the product runs out on a cycle. That makes content, proof and replenishment more important than in many categories."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you promise skin results in ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and we would not. Platforms restrict health and result claims, and honest creative holds up better. We write inside the rules and your regulatory position."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with creators and dermatologists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We brief and edit creator content. If you work with qualified professionals, we feature them accurately. We do not invent endorsements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you handle repeat purchase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We time reminders to the product's use-up window, build email and WhatsApp flows and track reorder rate as a core number. See retention marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you also work on marketplaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, where the brand sells there. See Amazon Ads and quick commerce."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does skincare marketing cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee growth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "d2cskin",
+    "wm": "SKINCARE",
+    "eyebrow": "● D2C skincare",
+    "h1": [
+      "Skincare marketing",
+      [
+        "that earns ",
+        "trust and repeat orders",
+        "."
+      ]
+    ],
+    "sub": "Skincare buyers research ingredients, read reviews and reorder on a cycle. We plan creative, paid media and retention around that path.",
+    "tiles": [
+      {
+        "img": "d2c/range.jpg",
+        "pos": "50% 50%",
+        "label": "The range",
+        "note": "Ingredients and concerns"
+      },
+      {
+        "img": "ugc/shoot.jpg",
+        "pos": "50% 50%",
+        "label": "Creator content",
+        "note": "Real use, on camera"
+      },
+      {
+        "img": "d2c/unboxing.jpg",
+        "pos": "50% 50%",
+        "label": "Unboxing",
+        "note": "First impression"
+      },
+      {
+        "img": "d2c/retention.jpg",
+        "pos": "50% 50%",
+        "label": "Replenishment",
+        "note": "Reorder reminders"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "D2C skincare marketing is the work of winning buyers who research ingredients and skin concerns, convincing them with honest proof, and bringing them back when a product runs out. It is judged on contribution margin and repeat purchase rather than on the first order alone.",
+      "hl": "ingredients and skin concerns",
+      "who": "Monday Marketing Company (MMC) markets D2C skincare brands in India across creative, performance media, search and retention.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Concern-led",
+          "text": "Content and ads start from the skin concern and the ingredient."
+        },
+        {
+          "icon": "grid",
+          "title": "Proof that holds",
+          "text": "Real reviews and routines, written inside platform policy."
+        },
+        {
+          "icon": "link",
+          "title": "Built to reorder",
+          "text": "Replenishment timing and flows that bring buyers back."
+        }
+      ],
+      "image": "d2c/range.jpg",
+      "chip": "Trust first, reorder second"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-skincare-buys",
+          "h": "How skincare buyers decide",
+          "paras": [
+            "A skincare buyer usually starts with a concern, reads about ingredients, checks reviews and compares a few brands before ordering. They are cautious about claims and sensitive to anything that feels exaggerated.",
+            "Ad platforms also limit how skin results and before-and-after imagery can be shown, so the creative has to earn trust without overpromising."
+          ],
+          "img": "ugc/shoot.jpg",
+          "cap": "Illustrative scene: a creator showing a skincare routine."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "Acquisition is expensive and the first order rarely pays back alone. The profit sits in the second and third order, so a brand that does not plan replenishment and retention keeps paying to find the same customers again.",
+            "We read this with the <a href=\"/tools/\">free tools</a> and the <a href=\"/guides/\">guides</a>, then plan the funnel from the numbers."
+          ],
+          "callout": {
+            "title": "Claims need care.",
+            "text": "We write inside advertising rules and your regulatory position. We do not promise skin results."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where skincare marketing leaks",
+      "h2a": "Five places skincare",
+      "h2b": "brands lose money.",
+      "lede": "Each stage below is where a skincare brand loses margin or trust, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Win the search for the concern",
+        "tag": "Search and content",
+        "breaks": "Only advertising to people who already know the brand.",
+        "why": "Buyers search the concern and ingredient first. If you are absent there, a competitor teaches them.",
+        "does": "We build ingredient and concern content and search campaigns that answer the question. See SEO.",
+        "href": "/services/seo/",
+        "img": "seo/intent.jpg"
+      },
+      {
+        "k": "Show the product honestly",
+        "tag": "Creative and creators",
+        "breaks": "Polished ads that feel unreal.",
+        "why": "Shoppers trust real routines and real voices more than studio gloss.",
+        "does": "We brief creators and edit video that shows use, texture and routine inside platform rules. See UGC and video.",
+        "href": "/services/ugc-and-video/",
+        "img": "ugc/shoot.jpg"
+      },
+      {
+        "k": "Buy on contribution margin",
+        "tag": "Performance media",
+        "breaks": "Scaling on ROAS alone.",
+        "why": "A good-looking ROAS can hide discounts, returns and shipping that leave little margin.",
+        "does": "We set targets from contribution margin and run Meta and Google against them.",
+        "href": "/services/performance-marketing/meta-ads/",
+        "img": "meta/scale.jpg"
+      },
+      {
+        "k": "Make the page do the convincing",
+        "tag": "Product pages and reviews",
+        "breaks": "Product pages with no proof or routine.",
+        "why": "The page is where doubt is settled: ingredients, how to use, who it suits and what others say.",
+        "does": "We improve product pages, review display and the path to checkout. See CRO.",
+        "href": "/services/cro/",
+        "img": "cro/pdp.jpg"
+      },
+      {
+        "k": "Bring buyers back",
+        "tag": "Retention",
+        "breaks": "Waiting for customers to return on their own.",
+        "why": "A skincare product has a use-up time. A well-timed reminder can capture the reorder.",
+        "does": "We build email and WhatsApp flows around replenishment and routine. See retention.",
+        "href": "/services/retention-marketing/",
+        "img": "d2c/retention.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "skincare marketing is working.",
+      "note": "The first-order ROAS alone is not on the list.",
+      "cards": [
+        {
+          "n": "Contribution margin per order",
+          "d": "What is left after product, shipping, returns and discounts."
+        },
+        {
+          "n": "Repeat purchase rate",
+          "d": "Buyers who order again within their use-up window."
+        },
+        {
+          "n": "Cost to acquire a customer",
+          "d": "Against what that customer is worth over time."
+        },
+        {
+          "n": "Review quality and volume",
+          "d": "What new buyers read before they order."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where skincare marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Meta Ads",
+          "d": "Creative and audience testing for D2C brands.",
+          "img": "meta/creative.jpg",
+          "href": "/services/performance-marketing/meta-ads/",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "UGC and video",
+          "d": "Creator-style video made for ads and product pages.",
+          "img": "ugc/brief.jpg",
+          "href": "/services/ugc-and-video/",
+          "link": "See UGC and video"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "Email and WhatsApp flows for repeat purchase.",
+          "img": "d2c/retention.jpg",
+          "href": "/services/retention-marketing/",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Baby and kids",
+          "d": "Marketing for brands where parents buy for safety and needs change with age.",
+          "img": "d2c/unboxing.jpg",
+          "href": "/industries/d2c/baby-and-kids/",
+          "link": "See Baby and kids marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Skincare marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is skincare marketing different from other D2C?",
+        "a": "Buyers research ingredients and concerns, trust is fragile, claims are restricted and the product runs out on a cycle. That makes content, proof and replenishment more important than in many categories."
+      },
+      {
+        "q": "Can you promise skin results in ads?",
+        "a": "No, and we would not. Platforms restrict health and result claims, and honest creative holds up better. We write inside the rules and your regulatory position."
+      },
+      {
+        "q": "Do you work with creators and dermatologists?",
+        "a": "We brief and edit creator content. If you work with qualified professionals, we feature them accurately. We do not invent endorsements."
+      },
+      {
+        "q": "How do you handle repeat purchase?",
+        "a": "We time reminders to the product's use-up window, build email and WhatsApp flows and track reorder rate as a core number. See <a href=\"/services/retention-marketing/\">retention marketing</a>."
+      },
+      {
+        "q": "Do you also work on marketplaces?",
+        "a": "Yes, where the brand sells there. See <a href=\"/services/performance-marketing/amazon-ads/\">Amazon Ads</a> and <a href=\"/services/performance-marketing/quick-commerce/\">quick commerce</a>."
+      },
+      {
+        "q": "What does skincare marketing cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee growth?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan skincare marketing",
+      "h2b": "around margin and reorder.",
+      "lede": "On a call, with a senior strategist. We read your unit economics and say where skincare spend is likely leaking."
+    },
+    "process": {
+      "h2a": "How we start with a skincare brand,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Read the economics",
+          "d": "We rebuild unit economics, review creative and tracking and set margin-based targets.",
+          "out": "A cost sheet and a plan."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build proof and tests",
+          "d": "Creator content, product page changes and a test plan go live.",
+          "out": "Creative and pages ready to test."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Add replenishment",
+          "d": "Reorder flows and reviews are set up and scaling follows the margin.",
+          "out": "A funnel that includes the second order."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Skincare marketing for brands that",
+      "h2b": "want repeat customers.",
+      "good": {
+        "t": "You sell skincare in India online, and you want growth that survives discounts and returns.",
+        "why": "We plan around contribution margin, replenishment and honest claims."
+      },
+      "not": {
+        "t": "You want guaranteed skin-result claims in ads.",
+        "why": "Platform rules and honest practice prevent it, and we would not run it."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "skincare brands.",
+      "lede": "Content, creative, media and retention for D2C skincare.",
+      "items": [
+        {
+          "t": "Ingredient and concern content",
+          "d": "Guides and pages that answer what buyers search.",
+          "img": "seo/pages.jpg",
+          "alt": "Ingredient and concern content: illustrative scene"
+        },
+        {
+          "t": "Creator and routine video",
+          "d": "Real use shown on camera, edited for ads and product pages.",
+          "img": "ugc/shoot.jpg",
+          "alt": "Creator and routine video: illustrative scene"
+        },
+        {
+          "t": "Performance media",
+          "d": "Meta and Google planned against contribution margin.",
+          "img": "meta/scale.jpg",
+          "alt": "Performance media: illustrative scene"
+        },
+        {
+          "t": "Product page and review work",
+          "d": "Proof, routine and reviews placed where doubt arises.",
+          "img": "cro/pdp.jpg",
+          "alt": "Product page and review work: illustrative scene"
+        },
+        {
+          "t": "Packaging and unboxing",
+          "d": "Pack and unboxing considered as a marketing moment.",
+          "img": "d2c/unboxing.jpg",
+          "alt": "Packaging and unboxing: illustrative scene"
+        },
+        {
+          "t": "Replenishment flows",
+          "d": "Email and WhatsApp timed to the use-up cycle.",
+          "img": "d2c/retention.jpg",
+          "alt": "Replenishment flows: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why skincare brands choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We start from the numbers and keep the claims honest.",
+      "img": "d2c/range.jpg",
+      "alt": "Why skincare brands choose MMC for marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Margin-first planning",
+          "d": "We target contribution margin, not ROAS alone."
+        },
+        {
+          "t": "Honest creative",
+          "d": "Real routines and voices, inside platform policy."
+        },
+        {
+          "t": "One team across the funnel",
+          "d": "Search, creative, media, pages and retention together."
+        },
+        {
+          "t": "Repeat-purchase focus",
+          "d": "The second order is planned from day one."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a skincare engagement runs,",
+      "h2b": "step by step.",
+      "img": "d2c/unboxing.jpg",
+      "alt": "How a skincare engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit economics and tracking",
+          "d": "Margin, returns, tracking and creative are reviewed."
+        },
+        {
+          "t": "Plan concerns and proof",
+          "d": "Concern content, creator briefs and page changes are scoped."
+        },
+        {
+          "t": "Launch and test",
+          "d": "Creative, pages and campaigns go live with a test plan."
+        },
+        {
+          "t": "Add retention and scale",
+          "d": "Replenishment flows start and spend follows margin."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

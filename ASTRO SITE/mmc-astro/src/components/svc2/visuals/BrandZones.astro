@@ -1,0 +1,30 @@
+---
+// VISUAL: BrandZones (kind "BrandZones"). Five zones of a brand: an unstated position, a name, a look that copies the category, an inconsistent voice and a lone logo file.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Styles scoped to this file (prefix bz).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+---
+<div class="bz__row" aria-hidden="true"></div>
+<div class="bz__art" role="img" aria-label="Five zones of a brand: position, name, look, voice and guidelines.">
+  <div class="bz__z"><i></i><i class="s"></i><i class="m"></i><small class="bz__cap">Position</small></div>
+  <div class="bz__z"><b class="bz__nm">Aa</b><i class="s"></i><small class="bz__cap">Name</small></div>
+  <div class="bz__z"><span class="bz__sw"><u style="background:#0F1E5E"></u><u style="background:#1D4ED8"></u><u style="background:#FFC528"></u></span><span class="bz__mk"></span><small class="bz__cap">Look</small></div>
+  <div class="bz__z"><span class="bz__q"><i></i></span><span class="bz__q bz__q--r"><i></i></span><span class="bz__q"><i class="s"></i></span><small class="bz__cap">Voice</small></div>
+  <div class="bz__z"><span class="bz__file">logo.png</span><small class="bz__cap">Logo file</small></div>
+</div>
+<style is:global>
+.bz__row { height: 78px; }
+.bz__art { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2%; height: clamp(190px, 26vw, 320px); }
+.bz__z { position: relative; display: grid; align-content: center; justify-items: center; gap: 9px; padding: 12px 12px 34px; border: 1px solid var(--s2-line); border-radius: 18px; background: #fff; min-width: 0; }
+.bz__z i { display: block; height: 8px; width: 80%; border-radius: 99px; background: #DADDE1; } .bz__z i.s { width: 45%; } .bz__z i.m { width: 62%; }
+.bz__nm { font: 800 clamp(22px, 4vw, 54px)/1 var(--font-display); color: var(--mmc-blue-900); letter-spacing: -.04em; }
+.bz__sw { display: flex; gap: 5px; } .bz__sw u { width: clamp(14px, 2.2vw, 30px); height: clamp(26px, 4vw, 54px); border-radius: 8px; }
+.bz__mk { width: clamp(24px, 3.4vw, 44px); aspect-ratio: 1; border-radius: 50%; border: 4px solid var(--mmc-blue-900); border-right-color: var(--mmc-yellow); }
+.bz__q { display: grid; width: 90%; padding: 7px 9px; border-radius: 12px 12px 12px 3px; background: var(--mmc-blue-100); } .bz__q--r { background: #FFF3D6; border-radius: 12px 12px 3px 12px; justify-self: end; }
+.bz__file { padding: 8px 12px; border: 2px dashed #8A91A6; border-radius: 10px; font: 800 clamp(10px, 1.2vw, 14px) var(--font-body); color: var(--s2-mute); }
+@media (max-width: 760px) { .bz__row { height: 58px; } .bz__art { height: 170px; } .bz__z { padding: 8px 6px; border-radius: 12px; } .bz__file { font-size: 9px; padding: 5px; } }
+.bz__cap { position: absolute; left: 4px; right: 4px; bottom: 10px; text-align: center; font: 800 clamp(9px, .95vw, 12px)/1.15 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--s2-mute); }
+@media (max-width: 900px) { .bz__cap { display: none; } }
+/* Readable floor on phones (small-defects pass): micro labels >= 10px, words that carry meaning >= 11px. */
+@media (max-width: 760px) { .bz__file { font-size: 10px; } }
+</style>

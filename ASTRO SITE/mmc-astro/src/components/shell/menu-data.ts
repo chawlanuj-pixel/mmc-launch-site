@@ -35,6 +35,11 @@ export const menuLinks: MenuLink[] = [
             { name: "Retention marketing",     url: "retention-marketing.html" },
             { name: "Online reputation management", url: "online-reputation-management.html" },
             { name: "SEO",                     url: "seo.html" },
+            { name: "AI SEO",                  url: "/services/seo/ai-seo/" },
+            { name: "AEO services",            url: "/services/seo/aeo/" },
+            { name: "GEO services",            url: "/services/seo/geo/" },
+            { name: "Google Business Profile", url: "/services/seo/google-business-profile/" },
+            { name: "Content marketing",       url: "/services/content-marketing/" },
             { name: "Conversion optimisation", url: "conversion-rate-optimisation.html" },
             { name: "Influencer marketing",    url: "influencer-marketing.html" },
           ]
@@ -45,6 +50,9 @@ export const menuLinks: MenuLink[] = [
           inner: [
             { name: "Shopify development",     url: "shopify-development.html" },
             { name: "Website development",     url: "web-development.html" },
+            { name: "WordPress development",   url: "/services/web-development/wordpress/" },
+            { name: "WooCommerce development",  url: "/services/web-development/woocommerce/" },
+            { name: "Website maintenance",     url: "/services/website-maintenance/" },
             { name: "Mobile app development",  url: "mobile-app-development.html" },
           ]
         },
@@ -75,17 +83,86 @@ export const menuLinks: MenuLink[] = [
       n: "03", label: "Industries", url: "industries.html",
       hint: "D2C · B2B · Education",
       sub: [
-        { name: "D2C brands",             desc: "Ads, store, creative, retention", url: "d2c.html" },
-        { name: "B2B companies",          desc: "Leads judged on fit",             url: "b2b.html" },
-        { name: "Educational institutes", desc: "Enquiries through to enrolment",  url: "education.html" },
+        { name: "D2C brands", desc: "Ads, store, creative, retention", url: "d2c.html", expandKey: "ind-d2c",
+          inner: [
+            { name: "All D2C",             url: "d2c.html" },
+            { name: "Skincare",            url: "/industries/d2c/skincare/" },
+            { name: "Baby and kids",       url: "/industries/d2c/baby-and-kids/" },
+            { name: "Food and beverage",   url: "/industries/d2c/food-and-beverage/" },
+            { name: "Fashion and apparel", url: "/industries/d2c/fashion-and-apparel/" },
+          ] },
+        { name: "B2B companies", desc: "Leads judged on fit", url: "b2b.html", expandKey: "ind-b2b",
+          inner: [
+            { name: "All B2B",             url: "b2b.html" },
+            { name: "Manufacturing",       url: "/industries/b2b/manufacturing/" },
+            { name: "SaaS and software",   url: "/industries/b2b/saas-and-software/" },
+          ] },
+        { name: "Educational institutes", desc: "Enquiries through to enrolment", url: "education.html", expandKey: "ind-edu",
+          inner: [
+            { name: "All education",       url: "education.html" },
+            { name: "Colleges",            url: "/industries/education/colleges/" },
+            { name: "Study abroad",        url: "/industries/education/study-abroad/" },
+          ] },
       ]
     },
     {
-      n: "04", label: "Our Work", url: "Our Work.html",
+      n: "04", label: "White label", url: "/white-label/",
+      hint: "For agencies · Delivered under your brand",
+      sub: [
+        {
+          name: "Marketing", desc: "SEO, ads, social and growth for your clients",
+          url: "/white-label/", expandKey: "wl-marketing",
+          inner: [
+            { name: "White-label overview",   url: "/white-label/" },
+            { name: "SEO",                    url: "/white-label/seo/" },
+            { name: "PPC",                    url: "/white-label/ppc/" },
+            { name: "Meta Ads",               url: "/white-label/meta-ads/" },
+            { name: "Social media",           url: "/white-label/social-media-management/" },
+            { name: "Content marketing",      url: "/white-label/content-marketing/" },
+            { name: "Email marketing",        url: "/white-label/email-marketing/" },
+            { name: "Link building",          url: "/white-label/link-building/" },
+            { name: "GEO and AEO",            url: "/white-label/geo-aeo/" },
+            { name: "Lead generation",        url: "/white-label/lead-generation/" },
+            { name: "CRO",                    url: "/white-label/cro/" },
+            { name: "Ecommerce",              url: "/white-label/ecommerce/" },
+            { name: "Creative and video",     url: "/white-label/creative-and-video/" },
+            { name: "Digital marketing",      url: "/white-label/digital-marketing/" },
+            { name: "Reputation management",  url: "/white-label/orm/" },
+          ]
+        },
+        {
+          name: "Build", desc: "Sites, stores and apps your agency can resell",
+          url: "/white-label/web-development/", expandKey: "wl-build",
+          inner: [
+            { name: "Web design",             url: "/white-label/web-design/" },
+            { name: "Web development",        url: "/white-label/web-development/" },
+            { name: "WordPress development",  url: "/white-label/wordpress-development/" },
+            { name: "Shopify development",    url: "/white-label/shopify-development/" },
+            { name: "Website maintenance",    url: "/white-label/website-maintenance/" },
+            { name: "App development",        url: "/white-label/app-development/" },
+            { name: "AI services",            url: "/white-label/ai-services/" },
+          ]
+        },
+        {
+          name: "Partnership", desc: "How working together runs",
+          url: "/white-label/outsourcing/", expandKey: "wl-model",
+          inner: [
+            { name: "Outsourcing",            url: "/white-label/outsourcing/" },
+            { name: "Reseller programme",     url: "/white-label/reseller-programme/" },
+            { name: "Pricing models",         url: "/white-label/pricing-models/" },
+            { name: "Reporting",              url: "/white-label/reporting/" },
+            { name: "White label from India", url: "/white-label/india/" },
+            { name: "Register as a partner",  url: "/white-label/register/" },
+          ]
+        },
+      ]
+    },
+    {
+      n: "05", label: "Our Work", url: "Our Work.html",
       hint: "Case studies · By kind of brand"
     },
     {
-      n: "05", label: "Resources", url: "resources.html",
+      n: "06", label: "Resources", url: "resources.html",
       hint: "D2C calculators · Glossary · Guides",
       sub: [
         {
@@ -109,11 +186,11 @@ export const menuLinks: MenuLink[] = [
       ]
     },
     {
-      n: "06", label: "About Us", url: "About.html",
+      n: "07", label: "About Us", url: "About.html",
       hint: "Systems · Principles · FAQ"
     },
     {
-      n: "07", label: "Careers", url: "Careers.html",
+      n: "08", label: "Careers", url: "Careers.html",
       hint: "6 open senior roles · Apply with one page",
       sub: [
         {
@@ -149,11 +226,11 @@ export const menuLinks: MenuLink[] = [
       ]
     },
     {
-      n: "08", label: "Guides", url: "guides.html",
+      n: "09", label: "Guides", url: "guides.html",
       hint: "The method behind the numbers"
     },
     {
-      n: "09", label: "Contact", url: "Contact.html",
+      n: "10", label: "Contact", url: "Contact.html",
       hint: `${BOOK} · Visit Thane`
     },
   ];

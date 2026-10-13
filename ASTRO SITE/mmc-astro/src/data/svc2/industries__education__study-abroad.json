@@ -1,0 +1,287 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "shared/education.jpg",
+    "pos": "50% 50%",
+    "alt": "A counsellor talking with a parent and a student over brochures at a table.",
+    "facts": [
+      {
+        "t": "Country and course.",
+        "d": "Search and ads by destination, course and intake."
+      },
+      {
+        "t": "Counselling funnels.",
+        "d": "Webinars and sessions that qualify before a counsellor calls."
+      },
+      {
+        "t": "Counsellor capacity.",
+        "d": "Routing and scoring so time goes to the right leads."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why study abroad consultancies choose MMC"
+  },
+  "work": {
+    "panel": "AbroadCounselling",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "study abroad consultancy.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Build a page for each country and course.",
+        "d": "Costs, intakes and process are explained where students search, before they compare consultants."
+      },
+      {
+        "n": "02",
+        "t": "Qualify at the first touch.",
+        "d": "Country, course, budget, test status and intake are asked up front, so counsellors see fit before they call."
+      },
+      {
+        "n": "03",
+        "t": "Promote webinars and track who attends.",
+        "d": "Registration, attendance and questions asked show who is serious, and they are recorded."
+      },
+      {
+        "n": "04",
+        "t": "Route leads to the right counsellor fast.",
+        "d": "Scoring and reply timing send strong-fit students to a counsellor with a message that offers a session."
+      },
+      {
+        "n": "05",
+        "t": "Nurture by intake, not by one call.",
+        "d": "Messages follow each student's intake across months, with booked counselling and applications tracked."
+      }
+    ],
+    "illustrative": "Illustrative layout of a study abroad counselling funnel. Not a client account, no real figures. WhatsApp and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "A student's path",
+    "pinsLabel": "Five places a study abroad consultancy loses a lead",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Destination"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Qualify"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Webinars"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Follow-up"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Claims"
+      }
+    ],
+    "base": "From a country search to a booked session",
+    "artLabel": "Five cards: a destination search with no page, a form that asks nothing useful, a funnel with no webinar, a lead called once and dropped, and ad claims that invite complaints.",
+    "accent": "#0B7285",
+    "cols": [
+      {
+        "head": "Search",
+        "k": "search",
+        "rows": [
+          {
+            "t": "masters abroad cost"
+          },
+          {
+            "t": "Consultancy ads by name",
+            "s": "dim"
+          },
+          {
+            "t": "No country page",
+            "s": "bad"
+          }
+        ],
+        "chip": "No destination page",
+        "tone": "b"
+      },
+      {
+        "head": "Form",
+        "k": "form",
+        "rows": [
+          {
+            "t": "Name"
+          },
+          {
+            "t": "Phone"
+          },
+          {
+            "t": "No country asked",
+            "s": "bad"
+          },
+          {
+            "t": "No test status",
+            "s": "bad"
+          }
+        ],
+        "chip": "Cannot qualify",
+        "tone": "b"
+      },
+      {
+        "head": "Events",
+        "k": "tiles",
+        "rows": [
+          {
+            "t": "Cold calls",
+            "s": "dim"
+          },
+          {
+            "t": "No webinar",
+            "s": "bad"
+          },
+          {
+            "t": "Fair leads: no follow-up",
+            "s": "warn"
+          },
+          {
+            "t": "Intent unseen",
+            "s": "bad"
+          }
+        ],
+        "chip": "No intent signal",
+        "tone": "w"
+      },
+      {
+        "head": "Nurture",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Lead received",
+            "s": "ok"
+          },
+          {
+            "t": "Called once",
+            "s": "warn"
+          },
+          {
+            "t": "No nurture",
+            "s": "bad"
+          },
+          {
+            "t": "Intake missed",
+            "s": "bad"
+          }
+        ],
+        "chip": "Called once, gone",
+        "tone": "w"
+      },
+      {
+        "head": "Claims",
+        "k": "page",
+        "rows": [
+          {
+            "t": "Ad: guaranteed visa",
+            "s": "bad"
+          },
+          {
+            "t": "Review: complaint",
+            "s": "warn"
+          },
+          {
+            "t": "Reply: none",
+            "s": "bad"
+          }
+        ],
+        "chip": "Claims invite trouble",
+        "tone": "b"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the education",
+    "h2b": "brands we market.",
+    "tiles": [],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a consultancy,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Audit leads and follow-up",
+        "d": "We review ads, forms, CRM and counsellor workflow, and agree a qualified-lead definition.",
+        "get": "A funnel map.",
+        "img": "edu/crm.jpg",
+        "alt": "Illustrative scene: a leads list in a CRM.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Build search and capture",
+        "d": "Country and course pages, qualifying forms and routing go live.",
+        "get": "A funnel that qualifies.",
+        "img": "edu/search.jpg",
+        "alt": "Illustrative scene: a phone search for colleges.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Run webinars and fairs",
+        "d": "Sessions are promoted and attendance is tracked.",
+        "get": "Intent you can see.",
+        "img": "b2b/seminar.jpg",
+        "alt": "Illustrative scene: a speaker presenting to a seated audience.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Nurture and track",
+        "d": "Nurture series start and counselling is tracked to enrolment.",
+        "get": "Reporting by source.",
+        "img": "edu/campus.jpg",
+        "alt": "Illustrative scene: students and parents walking into a college entrance on an open day.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/call.jpg",
+    "alt": "A support specialist with a headset, listening and taking notes beside a laptop.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Lead generation",
+        "href": "/services/lead-generation/"
+      },
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      },
+      {
+        "n": "Online reputation",
+        "href": "/services/online-reputation-management/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Social media creative is the work of planning and producing the posts, carousels and short videos that keep a brand visible and consistent where its audience spends time.",
+      "lead": "Social media creative is the work of planning and producing the posts, carousels and short videos that keep a brand visible and consistent where its audience spends time. MMC produces it for D2C, B2B and education brands, set around a few content pillars and one design style, on a rhythm your team can sustain.",
       "hl": "visible and consistent",
       "who": "Monday Marketing Company (MMC) produces social media creatives for D2C, B2B and education brands.",
       "points": [
@@ -294,6 +294,27 @@
           "img": "meta/creative.jpg",
           "href": "meta-ads.html",
           "link": "See Meta Ads"
+        },
+        {
+          "n": "Content marketing",
+          "d": "Strategy, writing and distribution built around buyer questions.",
+          "img": "sv/content.jpg",
+          "href": "/services/content-marketing/",
+          "link": "See Content marketing"
+        },
+        {
+          "n": "White-label social media",
+          "d": "Calendars and posts behind your brand.",
+          "img": "social/calendar.jpg",
+          "href": "/white-label/social-media-management/",
+          "link": "See white-label social media management"
+        },
+        {
+          "n": "White-label creative and video",
+          "d": "Design, video and UGC behind your brand.",
+          "img": "ugc/edit.jpg",
+          "href": "/white-label/creative-and-video/",
+          "link": "See white-label creative and video"
         }
       ]
     },
@@ -374,6 +395,77 @@
         "t": "You want posting only, with no performance goal.",
         "why": "Content with no job rarely pays back, so we tie it to a goal."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What social media",
+      "h2b": "covers.",
+      "lede": "Six parts of a feed that builds trust and sends people to act.",
+      "items": [
+        {
+          "t": "Content pillars",
+          "d": "A few themes that fit your brand and what your audience wants to see.",
+          "img": "social/plan.jpg",
+          "alt": "Content pillars: illustrative scene"
+        },
+        {
+          "t": "Feed design",
+          "d": "Templates and visuals that look like you at a glance.",
+          "img": "social/design.jpg",
+          "alt": "Feed design: illustrative scene"
+        },
+        {
+          "t": "Short video",
+          "d": "Reels and short clips planned, shot and edited for each platform.",
+          "img": "social/video.jpg",
+          "alt": "Short video: illustrative scene"
+        },
+        {
+          "t": "Content calendar",
+          "d": "A steady rhythm that your team can see and approve ahead of time.",
+          "img": "social/calendar.jpg",
+          "alt": "Content calendar: illustrative scene"
+        },
+        {
+          "t": "Community care",
+          "d": "Timely replies to comments and messages.",
+          "img": "social/insights.jpg",
+          "alt": "Community care: illustrative scene"
+        },
+        {
+          "t": "Insights and review",
+          "d": "What worked, what did not and what we will change next month.",
+          "img": "services/creative.jpg",
+          "alt": "Insights and review: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands work on social",
+      "h2b": "with MMC.",
+      "lede": "We connect organic content to what your paid and search teams learn.",
+      "img": "social/video.jpg",
+      "alt": "Why brands work on social with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "One idea, many formats",
+          "d": "A single brand idea carried through posts, reels and stories."
+        },
+        {
+          "t": "Paid and organic aligned",
+          "d": "Strong organic posts become ads, and ad insights shape what we post."
+        },
+        {
+          "t": "Approval you can keep up with",
+          "d": "A calendar that fits the way your team reviews work."
+        },
+        {
+          "t": "Fits each audience",
+          "d": "Brand community for D2C, thought leadership for B2B and campus life for education."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

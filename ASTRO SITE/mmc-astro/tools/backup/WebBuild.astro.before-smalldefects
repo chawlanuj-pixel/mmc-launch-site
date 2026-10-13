@@ -1,0 +1,92 @@
+---
+// PANEL: WebBuild (kind "WebBuild"). A site taken from sitemap to live. No platform mark. 4 steps.
+//   1 Plan: a sitemap (Home and four pages) with the buyer questions each page answers. Tab: Plan.
+//   2 Build: a grey wireframe beside the same page designed, with the reusable blocks named. Tab: Build.
+//   3 Check: speed, accessibility, titles and structured data as a checklist, plus a search-result snippet. Tab: Check.
+//   4 Launch: a form entry arriving in a CRM row with source and owner, and a Live chip. Tab: Launch.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix wb-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const pages = [["Services", "What do you do?"], ["About", "Can I trust you?"], ["Work", "Have you done this?"], ["Contact", "How do I enquire?"]];
+---
+<Frame title="Site build" label="Illustration of a website moving from sitemap and wireframe to launch. Not a client site." caption={W.illustrative} tabs={["Plan", "Build", "Check", "Launch"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Sitemap <span>Planned around the buyer's questions</span></p>
+    <div class="wb-tree">
+      <span class="wb-root s2p-chip s2p-chip--blue">Home</span>
+      <div class="wb-kids">
+        {pages.map(([p, q]) => <div class="s2p-card wb-kid"><b>{p}</b><small class="s2p-mute">{q}</small></div>)}
+      </div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Wireframe to design <span>Same structure, built from reusable blocks</span></p>
+    <div class="wb-pair">
+      <div class="s2p-card wb-pg">
+        <p class="s2p-lbl">Wireframe</p>
+        <i class="wb-bar"></i><i class="wb-hero"></i>
+        <div class="wb-cols"><i></i><i></i><i></i></div>
+      </div>
+      <span class="wb-arrow" aria-hidden="true">&rarr;</span>
+      <div class="s2p-card wb-pg wb-pg--on">
+        <p class="s2p-lbl">Designed page</p>
+        <i class="wb-bar wb-bar--on"></i><i class="wb-hero wb-hero--on"><em>Headline</em><b>Enquire</b></i>
+        <div class="wb-cols wb-cols--on"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div class="wb-blocks"><span class="s2p-chip">Hero</span><span class="s2p-chip">Cards</span><span class="s2p-chip">Form</span><span class="s2p-chip">FAQ</span></div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Built in, not added later <span>Checked before launch</span></p>
+    <ul class="wb-chk">
+      {["Loads quickly on a phone", "Usable by keyboard and screen reader", "Page titles and descriptions", "Structured data in place"].map((t) => <li class="s2p-card"><span>{t}</span><em class="s2p-chip s2p-chip--ok">Checked</em></li>)}
+    </ul>
+    <div class="s2p-card wb-snip"><small class="s2p-mute">yourbrand.com</small><b>Page title that answers the search</b><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i></div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Connected and live <span>Every enquiry can be followed</span></p>
+    <div class="wb-flow">
+      <div class="s2p-card wb-form"><p class="s2p-lbl">Contact form</p><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--m"></i><span class="wb-send">Send</span></div>
+      <span class="wb-arrow" aria-hidden="true">&rarr;</span>
+      <div class="s2p-card wb-crm"><p class="s2p-lbl">CRM</p><b>New enquiry</b><span class="wb-tags"><em class="s2p-chip s2p-chip--blue">Source: search</em><em class="s2p-chip">Owner: sales</em><em class="s2p-chip s2p-chip--ok">Tracking firing</em></span></div>
+    </div>
+    <p class="wb-live"><em class="s2p-chip s2p-chip--ok"><i class="s2p-dot"></i>Live</em></p>
+  </div>
+</Frame>
+<style is:global>
+.wb-tree { flex: 1; min-height: 0; display: grid; align-content: center; justify-items: center; gap: 1.4em; }
+.wb-root { font-size: 1.1em; padding: .5em 1.6em; }
+.wb-kids { position: relative; width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8em; padding-top: 1.2em; }
+.wb-kids::before { content: ""; position: absolute; top: 0; left: 12.5%; right: 12.5%; border-top: 2px solid #C9D3F5; }
+.wb-kid { position: relative; display: grid; gap: .4em; align-content: start; text-align: center; }
+.wb-kid::before { content: ""; position: absolute; top: -1.2em; left: 50%; height: 1.2em; border-left: 2px solid #C9D3F5; }
+.wb-kid b { font: 800 1.05em var(--font-display); }
+.wb-pair, .wb-flow { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr auto 1fr; gap: .8em; align-items: center; }
+.wb-arrow { font: 800 2em var(--font-body); color: var(--mmc-blue); }
+.wb-pg { display: grid; gap: .6em; padding: .8em; }
+.wb-bar { display: block; height: 1em; border-radius: .3em; background: #DADDE1; }
+.wb-bar--on { background: var(--mmc-blue-900); }
+.wb-hero { display: block; height: 6em; border-radius: .5em; background: #EEF0F2; border: 2px dashed #BCC0C4; }
+.wb-hero--on { display: flex; flex-direction: column; justify-content: center; gap: .5em; padding: 0 1em; border: 0; background: linear-gradient(135deg, var(--mmc-blue), var(--mmc-blue-900)); }
+.wb-hero em { font: 800 1.1em var(--font-display); font-style: normal; color: #fff; }
+.wb-hero b { align-self: flex-start; padding: .3em .9em; border-radius: 99px; background: var(--mmc-yellow); color: var(--mmc-blue-900); font: 800 .85em var(--font-body); }
+.wb-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5em; }
+.wb-cols i { display: block; height: 3em; border-radius: .4em; background: #EEF0F2; border: 2px dashed #BCC0C4; }
+.wb-cols--on i { border: 0; background: var(--mmc-blue-100); }
+.wb-blocks { display: flex; flex-wrap: wrap; gap: .5em; }
+.wb-chk { list-style: none; margin: 0; padding: 0; display: grid; gap: .55em; }
+.wb-chk li { display: flex; align-items: center; justify-content: space-between; gap: .8em; font-weight: 700; padding-block: .5em; }
+.wb-snip { display: grid; gap: .4em; }
+.wb-snip b { font: 800 1.05em var(--font-body); color: var(--mmc-blue); }
+.wb-form { display: grid; gap: .6em; }
+.wb-send { justify-self: start; padding: .4em 1.2em; border-radius: .5em; background: var(--mmc-blue-900); color: #fff; font: 800 .9em var(--font-body); }
+.wb-crm { display: grid; gap: .6em; }
+.wb-crm b { font: 800 1.1em var(--font-display); }
+.wb-tags { display: flex; flex-wrap: wrap; gap: .4em; }
+.wb-live { margin: 0; }
+@media (max-width: 560px) { .wb-kids { gap: .4em; } .wb-kid small { display: none; } .wb-pair, .wb-flow { gap: .4em; } }
+@media (max-width: 420px) { .s2-ui:has(.wb-bar) .s2-ui__tab:nth-child(n+4) { display: block; } .s2-ui:has(.wb-bar) .s2-ui__tab { padding: 6px 6px; } .s2-ui:has(.wb-bar) .s2-ui__bar b { display: none; } }
+@media (max-width: 900px) { .s2-ui:has(.wb-bar) .s2-st { padding: 10px 12px; gap: .6em; } }
+@media (max-width: 900px) { .wb-snip .s2p-line, .wb-chk li:nth-child(4) { display: none; } }
+</style>

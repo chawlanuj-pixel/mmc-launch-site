@@ -110,14 +110,23 @@
 }
 @media (max-width: 420px) {
   .lqb { padding: 22px 0 24px; }
-  .lqb__wrap { gap: 14px; }
+  .lqb__wrap { gap: 20px; }
   .lqb__head { gap: 0; }
-  .lqb__lede { font-size: 13.5px; line-height: 1.5; }
-  .lqb__card { padding: 12px 12px 10px; }
-  .lqb__step { padding-bottom: 9px; }
-  .lqb__d { font-size: 13px; }
-  .lqb__panel { padding: 12px 14px; }
-  .lqb__panel li { font-size: 13.5px; }
+  .lqb__eyebrow { font-size: 12px; }
+  .lqb__lede { font-size: 15px; line-height: 1.55; }
+  .lqb__card { padding: 20px 18px 16px; }
+  .lqb__step { padding-bottom: 14px; gap: 14px; }
+  .lqb__txt { gap: 3px; }
+  .lqb__txt b { font-size: 16px; }
+  .lqb__d { font-size: 14.5px; line-height: 1.45; }
+  .lqb__back { padding: 12px 14px; }
+  .lqb__pill { font-size: 14px; }
+  .lqb__pill i { font-size: 12px; }
+  .lqb__cmp { gap: 14px; }
+  .lqb__panel { padding: 18px 18px 20px; }
+  .lqb__panel ul { gap: 10px; }
+  .lqb__panel li { font-size: 15px; line-height: 1.5; padding-left: 18px; }
+  .lqb__note { font-size: 13px; }
 }
 @media (min-width: 640px) and (max-width: 899px) { .lqb__seg { max-width: 460px; } }
 /* Mobile and tablet: both panels share one grid cell so the section height never jumps when toggling */

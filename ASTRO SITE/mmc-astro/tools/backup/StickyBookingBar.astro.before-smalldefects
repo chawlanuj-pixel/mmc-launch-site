@@ -1,0 +1,41 @@
+---
+// The ONE sticky bar (phone only). Label = the single booking label. Appears once the hero has scrolled away and
+// hides while the cookie banner, the booking modal or the closing band is on screen.
+// mode "apply" (role pages) scrolls to the application form; mode "roles" (careers hub) jumps to the open roles.
+import "../../styles/prefooter.css";
+import { BOOK, SECONDARY } from "../../lib/site";
+interface Props { source: string; mode?: "book" | "apply" | "roles"; label?: string }
+const { source, mode = "book" } = Astro.props;
+const label = Astro.props.label || (mode === "apply" ? SECONDARY.apply : mode === "roles" ? SECONDARY.roles : BOOK);
+const target = mode === "apply" ? "#apply" : "#roles";
+---
+<div class="pm-sticky sbb" id="pg-sticky" aria-hidden="true" data-mode={mode}>
+  {mode === "book"
+    ? <button type="button" tabindex="-1" onclick={`window.mmcBookCall('${source}-sticky', event)`}>{label}</button>
+    : <a href={target} tabindex="-1">{label}</a>}
+</div>
+<script>
+  const box = document.getElementById("pg-sticky");
+  const ctl = box?.querySelector<HTMLElement>("button, a");
+  if (box && ctl) {
+    const tick = () => {
+      const hero = document.getElementById("top"), talk = document.getElementById("talk");
+      const dest = box.dataset.mode === "apply" ? document.getElementById("apply") : box.dataset.mode === "roles" ? document.getElementById("roles") : null;
+      const pastHero = hero ? hero.getBoundingClientRect().bottom < 0 : window.scrollY > window.innerHeight * 0.7;
+      const atEnd = talk ? talk.getBoundingClientRect().top < window.innerHeight * 0.9 : false;
+      const formNear = dest ? dest.getBoundingClientRect().top < window.innerHeight * 0.8 : false;
+      const blocked = !!document.querySelector(".cookie") || !!document.querySelector(".mmc-book.is-open, .audit.is-open");
+      /* hub pages stack cards on phones: stay out of their way */
+      const leaks = document.getElementById("leaks"), lr = leaks ? leaks.getBoundingClientRect() : null;
+      const overStack = window.innerWidth < 760 && !!lr && lr.top < window.innerHeight && lr.bottom > 0 && !!document.querySelector(".stk__card");
+      const on = pastHero && !atEnd && !formNear && !blocked && !overStack;
+      box.classList.toggle("is-on", on);
+      box.setAttribute("aria-hidden", String(!on));
+      ctl.tabIndex = on ? 0 : -1;
+    };
+    tick();
+    window.addEventListener("scroll", tick, { passive: true });
+    window.addEventListener("resize", tick);
+    setInterval(tick, 800);
+  }
+</script>

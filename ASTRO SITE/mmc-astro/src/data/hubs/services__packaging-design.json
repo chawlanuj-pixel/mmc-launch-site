@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Packaging design is the work of shaping and decorating the pack so that it is noticed, understood and chosen, on the shelf, on a phone screen and at the door.",
+      "lead": "Packaging design is the work of shaping and decorating the pack so that it is noticed, understood and chosen, on the shelf, on a phone screen and at the door. MMC designs packaging for D2C brands, from structure to graphics, and tests hierarchy at full size and thumbnail size before preparing print-ready files.",
       "hl": "noticed, understood and chosen",
       "who": "Monday Marketing Company (MMC) designs packaging for D2C brands, from structure to graphics.",
       "points": [
@@ -373,6 +373,77 @@
         "t": "You want only a quick label change, or have no plan for production.",
         "why": "A pack touches structure, cost and print, so it needs a plan."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What packaging design",
+      "h2b": "covers.",
+      "lede": "Six steps to a pack that wins attention on a shelf or in a feed.",
+      "items": [
+        {
+          "t": "Shelf and category study",
+          "d": "How competitors look and where your pack can stand apart.",
+          "img": "pack/shelf.jpg",
+          "alt": "Shelf and category study: illustrative scene"
+        },
+        {
+          "t": "Structure",
+          "d": "Box, pouch, label or sleeve formats chosen for protection, cost and unboxing.",
+          "img": "pack/structure.jpg",
+          "alt": "Structure: illustrative scene"
+        },
+        {
+          "t": "Visual hierarchy",
+          "d": "What the buyer reads first, second and third, designed deliberately.",
+          "img": "pack/hierarchy.jpg",
+          "alt": "Visual hierarchy: illustrative scene"
+        },
+        {
+          "t": "Thumbnail testing",
+          "d": "Designs checked at small marketplace and quick-commerce tile sizes.",
+          "img": "pack/tile.jpg",
+          "alt": "Thumbnail testing: illustrative scene"
+        },
+        {
+          "t": "Print readiness",
+          "d": "Artwork prepared with the right files, colours and checks for your printer.",
+          "img": "pack/print.jpg",
+          "alt": "Print readiness: illustrative scene"
+        },
+        {
+          "t": "Range systems",
+          "d": "A system that lets new variants join the range without a redesign.",
+          "img": "services/brand.jpg",
+          "alt": "Range systems: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands design packs",
+      "h2b": "with MMC.",
+      "lede": "Our packs are designed for the shelf and the screen at once.",
+      "img": "pack/hierarchy.jpg",
+      "alt": "Why brands design packs with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Built for online and offline",
+          "d": "A pack has to work as a tiny image on a phone and as an object in hand."
+        },
+        {
+          "t": "Brand strategy behind it",
+          "d": "Packaging follows positioning rather than trends."
+        },
+        {
+          "t": "Print know-how",
+          "d": "We prepare artwork so it prints as intended."
+        },
+        {
+          "t": "Works with your marketing",
+          "d": "Pack claims and visuals match what ads and listings say."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

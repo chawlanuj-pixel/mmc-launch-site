@@ -1,7 +1,10 @@
 ---
+// About, v3 (October 2026). Its own editorial hero (paper ground, oversized type, edge-to-edge studio photo), then
+// a short sequence: why we exist (a vendor diagram), the five systems (sticky photo), how the work runs (three
+// photo steps on ink), what we believe (photo quote + type list), audiences, the studio, FAQ, close.
+// Styles: src/styles/about3.css (prefix ab3-). Previous version: tools/backup/about-careers-20261012/about.astro.
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Shell from "../components/Shell.astro";
-import PageHero from "../components/pages/PageHero.astro";
 import AudienceCards from "../components/company/AudienceCards.astro";
 import { BOOK, SECONDARY } from "../lib/site";
 import PageFx from "../components/pages/PageFx.astro";
@@ -10,7 +13,8 @@ import PreFooterCta from "../components/shared/PreFooterCta.astro";
 import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
 import { fixDeep, href } from "../lib/links";
 import { rewriteJsonld } from "../lib/hub";
-import "../styles/about2.css";
+import Faq from "../components/hub/Faq.astro";
+import "../styles/about3.css";
 
 const SITE = "https://www.mondaymarketing.company";
 const title = "About Monday Marketing Company | Thane, India";
@@ -18,12 +22,23 @@ const description = "MMC is an India-based growth partner for D2C, B2B and educa
 
 const ARR = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>';
 
+const CRAFTS = ["Design", "Marketing", "Technology", "Content", "AI"];
+
+/* The five pieces most brands buy from five different vendors. Left: apart. Right: one team. */
+const VENDORS = ["Media buying", "Creative", "Website", "Retention", "Brand"];
+
 const SYSTEMS = [
-  { k: "Performance media", img: "company/performance.jpg", p: "Meta, Google, Amazon and quick commerce run as one account structure, budgeted against contribution margin rather than platform ROAS.", href: "performance-marketing.html", link: "Performance marketing" },
-  { k: "Creative and UGC", img: "sv/content.jpg", p: "Creator content, performance edits, statics and landing-page copy, written against a single brand thesis.", href: "ugc-and-video.html", link: "UGC and video" },
-  { k: "Retention and follow-up", img: "services/retention.jpg", p: "Email, WhatsApp and loyalty, built on the reason customers come back.", href: "retention-marketing.html", link: "Retention marketing" },
-  { k: "Conversion and technology", img: "sv/tech.jpg", p: "Shopify builds, checkout, site speed and conversion rate optimisation, so the media has somewhere good to land.", href: "conversion-rate-optimisation.html", link: "Conversion rate optimisation" },
-  { k: "Brand and packaging", img: "sv/brand.jpg", p: "Identity, packaging and design systems that everything else is built on.", href: "branding.html", link: "Branding" },
+  { k: "Performance media", img: "company/performance.jpg", alt: "A media buyer at two monitors reading campaign dashboards", p: "Meta, Google, Amazon and quick commerce run as one account structure, budgeted against contribution margin rather than platform ROAS.", href: "performance-marketing.html", link: "Performance marketing" },
+  { k: "Creative and UGC", img: "sv/content.jpg", alt: "A creator filming a product video in front of a ring light", p: "Creator content, performance edits, statics and landing-page copy, written against a single brand thesis.", href: "ugc-and-video.html", link: "UGC and video" },
+  { k: "Retention and follow-up", img: "services/retention.jpg", alt: "A shopper reading a brand's follow-up message on a phone", p: "Email, WhatsApp and loyalty, built on the reason customers come back.", href: "retention-marketing.html", link: "Retention marketing" },
+  { k: "Conversion and technology", img: "sv/tech.jpg", alt: "A storefront open on a laptop and a phone beside a code editor", p: "Shopify builds, checkout, site speed and conversion rate optimisation, so the media has somewhere good to land.", href: "conversion-rate-optimisation.html", link: "Conversion rate optimisation" },
+  { k: "Brand and packaging", img: "sv/brand.jpg", alt: "Packaging boxes, jars and logo sketches spread across a desk", p: "Identity, packaging and design systems that everything else is built on.", href: "branding.html", link: "Branding" },
+];
+
+const METHOD = [
+  { h: "A free audit, not a pitch.", d: "The first step is a call where a senior strategist reads your ad accounts against your break-even ROAS.", img: "about2/callscreen.jpg", alt: "A senior strategist walking a client through a growth chart on a video call" },
+  { h: "One senior team.", d: "Media, creative, retention and technology run under one strategist and one P&L. The person doing the work talks to you.", img: "company/session.jpg", alt: "A small team around one table, laptops and printed creative spread between them" },
+  { h: "Judged on contribution margin.", d: "Profit left after variable costs, not the platform dashboard.", img: "about2/desk-open.jpg", alt: "A desk with a laptop open to a campaign performance sheet, a notebook of next steps and a cup of chai" },
 ];
 
 const BELIEFS = [
@@ -58,124 +73,187 @@ const jsonld = rewriteJsonld([
 ---
 <BaseLayout title={title} description={description} path="/about/" ogTitle="About Monday Marketing Company" ogDescription="An India-based growth partner for D2C, B2B and education brands. Connected systems, one senior team." ogAlt="Monday Marketing Company: about the agency." jsonld={jsonld}>
   <Shell>
-    <main id="main" tabindex="-1" class="app-main ab-page">
+    <main id="main" tabindex="-1" class="app-main n-app ab3">
 
-      <PageHero wm="About" eyebrow="● About Monday Marketing Company"
-        lines={["A growth partner measured", 'the way <span class="em-serif">your business</span>', "is measured."]}
-        sub="Monday Marketing Company runs media, creative, retention, conversion and brand as connected systems, for D2C brands, B2B companies and educational institutes, under one senior team."
-        primary={{ label: BOOK, book: "about-hero" }} secondary={{ label: SECONDARY.work, href: "/work/" }} rightClass="abh__r">
-        <figure class="abh__fig">
-          <img src="/assets/about2/desk-open.jpg" alt="A desk with a laptop open to a campaign performance sheet, a notebook of next steps and a cup of chai" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async" />
-          <figcaption><strong>Where the plan starts</strong><span>Every account begins on a sheet like this, not a pitch deck.</span></figcaption>
-        </figure>
-        <ul slot="chips" class="pmh__chips abh__meta"><li>Est. 2019</li><li>Based in Thane, Maharashtra</li><li>Works with D2C · B2B · Education</li></ul>
-      </PageHero>
-
-      <section class="ab-open">
-        <div class="container ab-open__grid">
-          <div class="ab-open__head n-rise">
-            <span class="ab-open__eyebrow">Why we exist</span>
-            <h2>A coordination problem, not a marketing problem</h2>
+      <!-- 1. Hero: oversized type on paper, then the studio edge to edge -->
+      <section class="ab3-hero" id="top" aria-labelledby="ab3-h1">
+        <div class="n-wrap">
+          <nav class="ab3-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
+          <p class="ab3-hero__kicker">
+            <span class="ab3-hero__dot" aria-hidden="true"></span>About Monday Marketing Company
+          </p>
+          <h1 class="ab3-hero__h1" id="ab3-h1">
+            <span class="ab3-line">A growth partner measured</span>
+            <span class="ab3-line d2">the way <em>your business</em></span>
+            <span class="ab3-line d3">is measured.</span>
+          </h1>
+          <div class="ab3-hero__row">
+            <div class="ab3-hero__lead">
+              <p>Monday Marketing Company runs media, creative, retention, conversion and brand as connected systems, for D2C brands, B2B companies and educational institutes, under one senior team.</p>
+              <div class="ab3-hero__act">
+                <button type="button" class="btn btn--primary glow-btn" onclick="window.mmcBookCall('about-hero', event)"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{BOOK}<span class="arrow"></span></span></button>
+                <a class="btn btn--link" href="/work/">{SECONDARY.work}<span class="arrow"></span></a>
+              </div>
+            </div>
+            <ul class="ab3-crafts" aria-label="What we combine">
+              {CRAFTS.map((c, k) => <li>{c}{k < CRAFTS.length - 1 && <i aria-hidden="true">×</i>}</li>)}
+            </ul>
           </div>
-          <div class="ab-open__body n-rise d1">
-            <p><span class="ab-open__cap">M</span>ost growing brands do not lack marketing. They lack coordination: a media buyer who never speaks to the creative team, a website the performance numbers never reach, a retention email that goes out a week after the launch it should have supported.</p>
-            <p>MMC was built to close that gap. Founded in 2019 and based in Thane, Maharashtra, we run performance media, creative and UGC, retention and follow-up, conversion and technology, and brand and packaging as one connected system, under one senior team and one P&L, instead of five separate vendors.</p>
-            <p>The same team that reads your ad account also briefs your creative, rebuilds your landing page and writes your retention flow, so the work is planned together instead of stitched together after the fact.</p>
+        </div>
+        <figure class="ab3-hero__fig">
+          <img src="/assets/about2/huddle.jpg" alt="Two people at a whiteboard walking through a marketing funnel diagram together" width="1200" height="806" loading="eager" fetchpriority="high" decoding="async" />
+          <figcaption class="ab3-hero__facts">
+            <span><b>Est.</b> 2019</span>
+            <span><b>Based in</b> Thane, Maharashtra</span>
+            <span><b>Works with</b> D2C, B2B and education</span>
+            <small>Illustrative scene</small>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- 2. Why we exist: five vendors apart vs one team -->
+      <section class="n-band n-band--white ab3-why" id="why" aria-labelledby="ab3-why-h">
+        <div class="n-wrap ab3-why__grid">
+          <div class="ab3-why__copy n-rise">
+            <span class="n-eyebrow">Why we exist</span>
+            <h2 class="n-h2" id="ab3-why-h">A coordination problem, <span class="n-serif">not a marketing problem.</span></h2>
+            <p class="ab3-p">Most growing brands do not lack marketing. They lack coordination: a media buyer who never speaks to the creative team, a website the performance numbers never reach, a retention email that goes out a week after the launch it should have supported.</p>
+            <p class="ab3-p">MMC was built to close that gap. The same team that reads your ad account also briefs your creative, rebuilds your landing page and writes your retention flow, so the work is planned together instead of stitched together after the fact.</p>
+          </div>
+          <figure class="ab3-diagram n-rise d1" aria-labelledby="ab3-diagram-cap">
+            <div class="ab3-diagram__col ab3-diagram__col--apart">
+              <span class="ab3-diagram__label">Five vendors</span>
+              <ul>{VENDORS.map((v) => <li><span>{v}</span><i aria-hidden="true"></i></li>)}</ul>
+              <span class="ab3-diagram__foot">Five briefs, five reports, nobody owns the margin</span>
+            </div>
+            <div class="ab3-diagram__col ab3-diagram__col--one">
+              <span class="ab3-diagram__label">One MMC team</span>
+              <div class="ab3-diagram__hub">
+                <ul>{VENDORS.map((v) => <li><span>{v}</span></li>)}</ul>
+                <span class="ab3-diagram__core" aria-hidden="true"><b>One P&amp;L</b></span>
+              </div>
+              <span class="ab3-diagram__foot">One plan, one strategist, one number</span>
+            </div>
+            <figcaption id="ab3-diagram-cap" class="ab3-cap">The same five jobs, run apart and run together.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 3. The five systems: sticky photo, rows swap it -->
+      <section class="n-band n-band--paper ab3-sys" id="systems" aria-labelledby="ab3-sys-h">
+        <div class="n-wrap">
+          <div class="ab3-head n-rise">
+            <span class="n-eyebrow">How it works</span>
+            <h2 class="n-h2" id="ab3-sys-h">One senior team, <span class="n-serif">every system.</span></h2>
+            <p class="n-lede">Each system does one job. Because the same senior team runs every system, the media, the creative, the site and the follow-up are planned as one thing rather than reported on separately.</p>
+          </div>
+          <div class="ab3-sys__grid">
+            <div class="ab3-sys__stage" aria-hidden="true">
+              {SYSTEMS.map((s, k) => (
+                <img class={k === 0 ? "is-on" : ""} data-k={k} src={"/assets/" + s.img} alt="" width="1200" height="806" loading="lazy" decoding="async" />
+              ))}
+              <span class="ab3-sys__count"><b data-sys-n>01</b> / {String(SYSTEMS.length).padStart(2, "0")}</span>
+            </div>
+            <ol class="ab3-sys__list">
+              {SYSTEMS.map((s, k) => (
+                <li class={"ab3-sys__row" + (k === 0 ? " is-on" : "")} data-k={k}>
+                  <figure class="ab3-sys__pic"><img src={"/assets/" + s.img} alt={s.alt} width="1200" height="806" loading="lazy" decoding="async" /></figure>
+                  <span class="ab3-sys__n">{String(k + 1).padStart(2, "0")}</span>
+                  <div class="ab3-sys__body">
+                    <h3>{s.k}</h3>
+                    <p>{s.p}</p>
+                    <a class="ab3-go" href={href(s.href)}>{s.link}<Fragment set:html={ARR} /></a>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
 
-      <section class="ab-systems" id="systems">
-        <div class="container">
-          <div class="ab-systems__head n-rise">
-            <span class="ab-open__eyebrow">How it works</span>
-            <h2>One senior team, every system</h2>
-            <p>Each system does one job. Because the same senior team runs every system, the media, the creative, the site and the follow-up are planned as one thing rather than reported on separately.</p>
+      <!-- 4. How the work runs: three photo steps on ink -->
+      <section class="n-band n-band--ink ab3-method" id="practice" aria-labelledby="ab3-method-h">
+        <div class="n-wrap">
+          <div class="ab3-head ab3-head--split n-rise">
+            <div>
+              <span class="n-eyebrow">What it is like to work with us</span>
+              <h2 class="n-h2" id="ab3-method-h">Your numbers <span class="n-serif">on screen first.</span></h2>
+            </div>
+            <a class="ab3-go ab3-go--dark" href={href("audit.html")}>{SECONDARY.audit}<Fragment set:html={ARR} /></a>
           </div>
-          <ol class="ab-sys-list n-rise d1">
-            {SYSTEMS.map((s, k) => (
-              <li class="ab-sys-row">
-                <span class="ab-sys-row__n">{String(k + 1).padStart(2, "0")}</span>
-                <figure class="ab-sys-row__thumb"><img src={"/assets/" + s.img} alt="" width="200" height="150" loading="lazy" decoding="async" /></figure>
-                <div class="ab-sys-row__body">
-                  <h3>{s.k}</h3>
-                  <p>{s.p}</p>
-                </div>
-                <a class="ab-sys-row__link" href={href(s.href)}>{s.link}<Fragment set:html={ARR} /></a>
+          <ol class="ab3-method__list">
+            {METHOD.map((m, k) => (
+              <li class={"ab3-step n-rise d" + (k + 1)}>
+                <figure><img src={"/assets/" + m.img} alt={m.alt} width="1200" height="806" loading="lazy" decoding="async" /></figure>
+                <span class="ab3-step__n" aria-hidden="true">{String(k + 1).padStart(2, "0")}</span>
+                <h3>{m.h}</h3>
+                <p>{m.d}</p>
               </li>
             ))}
           </ol>
         </div>
       </section>
 
-      <figure class="ab-quote">
-        <img src="/assets/about2/huddle.jpg" alt="Two people at a whiteboard walking through a marketing funnel diagram together" width="1200" height="800" loading="lazy" decoding="async" />
-        <div class="ab-quote__wrap"><div class="container"><blockquote>Ideas matter more than designations.</blockquote></div></div>
-      </figure>
-
-      <section class="ab-beliefs" id="principles">
-        <div class="container">
-          <div class="ab-beliefs__head n-rise">
-            <span class="ab-open__eyebrow">What we believe</span>
-            <h2>Things we would put on the wall</h2>
-          </div>
-          <div class="ab-beliefs__list n-rise d1">
-            {BELIEFS.map((b, k) => (
-              <div class="ab-beliefs__item">
-                <b>{String(k + 1).padStart(2, "0")}</b>
-                <strong>{b[0]}</strong>
-                <span>{b[1]}</span>
-              </div>
-            ))}
-            <div class="ab-beliefs__item ab-beliefs__item--last">
-              <a href={href("services.html")}>See every service<Fragment set:html={ARR} /></a>
+      <!-- 5. What we believe: photo quote, then the list as type -->
+      <section class="ab3-beliefs" id="principles" aria-labelledby="ab3-bel-h">
+        <figure class="ab3-quote">
+          <img src="/assets/company/whiteboard.jpg" alt="Three people planning a campaign on a whiteboard" width="1200" height="806" loading="lazy" decoding="async" />
+          <div class="ab3-quote__wrap"><div class="n-wrap"><blockquote>Ideas matter more <em>than designations.</em></blockquote><small>Illustrative scene</small></div></div>
+        </figure>
+        <div class="n-band n-band--white ab3-beliefs__band">
+          <div class="n-wrap ab3-beliefs__grid">
+            <div class="ab3-beliefs__head n-rise">
+              <span class="n-eyebrow">What we believe</span>
+              <h2 class="n-h2" id="ab3-bel-h">Things we would put <span class="n-serif">on the wall.</span></h2>
+              <a class="ab3-go" href={href("services.html")}>See every service<Fragment set:html={ARR} /></a>
             </div>
+            <ol class="ab3-beliefs__list n-rise d1">
+              {BELIEFS.map((b, k) => (
+                <li><b aria-hidden="true">{String(k + 1).padStart(2, "0")}</b><strong>{b[0]}</strong><span>{b[1]}</span></li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
 
-      <section class="ab-aud" id="who">
-        <div class="container">
-          <div class="ab-aud__head n-rise">
-            <span class="ab-open__eyebrow">Who we work with</span>
-            <h2>Three kinds of brand, one way of working</h2>
-            <p>Lead generation for a college and performance media for a D2C brand look different day to day. The senior team, the audit-first start and the measure against contribution margin or cost per qualified lead stay the same.</p>
+      <!-- 6. Who we work with -->
+      <section class="n-band n-band--paper ab3-aud" id="who" aria-labelledby="ab3-aud-h">
+        <div class="n-wrap">
+          <div class="ab3-head n-rise">
+            <span class="n-eyebrow">Who we work with</span>
+            <h2 class="n-h2" id="ab3-aud-h">Three kinds of brand, <span class="n-serif">one way of working.</span></h2>
+            <p class="n-lede">Lead generation for a college and performance media for a D2C brand look different day to day. The senior team, the audit-first start and the measure against contribution margin or cost per qualified lead stay the same.</p>
           </div>
           <AudienceCards />
         </div>
       </section>
 
-      <section class="ab-practice" id="practice">
-        <div class="container ab-practice__grid">
-          <figure class="ab-practice__fig n-rise"><img src="/assets/about2/callscreen.jpg" alt="A senior strategist walking a client through a growth chart on a video call" width="1200" height="800" loading="lazy" decoding="async" /></figure>
-          <div class="ab-practice__body n-rise d1">
-            <span class="ab-open__eyebrow">What it is like to work with us</span>
-            <h2>Your numbers on screen first</h2>
-            <ul class="ab-practice__list">
-              <li><b>1</b><span><strong>A free audit, not a pitch.</strong> The first step is a call where a senior strategist reads your ad accounts against your break-even ROAS.</span></li>
-              <li><b>2</b><span><strong>One senior team.</strong> Media, creative, retention and technology run under one strategist and one P&L. The person doing the work talks to you.</span></li>
-              <li><b>3</b><span><strong>Judged on contribution margin.</strong> Profit left after variable costs, not the platform dashboard.</span></li>
-            </ul>
+      <!-- 7. The studio -->
+      <section class="n-band n-band--white ab3-studio" id="studio" aria-labelledby="ab3-studio-h">
+        <div class="n-wrap ab3-studio__grid">
+          <div class="ab3-studio__copy n-rise">
+            <span class="n-eyebrow">The studio</span>
+            <h2 class="n-h2" id="ab3-studio-h">Founded in 2019, <span class="n-serif">based in Thane.</span></h2>
+            <p class="ab3-p">The team works from Thane, Maharashtra, with roles in Mumbai and remote across India. Strategy, media, creative and technology sit at the same table, which is most of the point.</p>
+            <address class="ab3-studio__addr">
+              <span>Monday Marketing Company</span>
+              <span>WeWork Zenia, Hiranandani Business Park, Thane 400607</span>
+            </address>
+            <div class="ab3-studio__links">
+              <a class="ab3-go" href={href("Contact.html")}>Visit or write to us<Fragment set:html={ARR} /></a>
+              <a class="ab3-go" href="/careers/">Work with us<Fragment set:html={ARR} /></a>
+            </div>
+          </div>
+          <div class="ab3-studio__mosaic n-rise d1">
+            <figure class="ab3-studio__a"><img src="/assets/contact/office.jpg" alt="A glass office building among palm trees in a business park" width="1200" height="806" loading="lazy" decoding="async" /></figure>
+            <figure class="ab3-studio__b"><img src="/assets/contact/meeting.jpg" alt="Three people leaning over a printed plan on a studio table" width="1200" height="806" loading="lazy" decoding="async" /></figure>
+            <figure class="ab3-studio__c"><img src="/assets/careers2/desk-close.jpg" alt="A laptop with design work open on a desk beside a notebook and phone" width="1200" height="806" loading="lazy" decoding="async" /></figure>
+            <p class="ab3-cap">Illustrative scenes of the studio and the work.</p>
           </div>
         </div>
       </section>
 
-      <section class="ab-faq" id="faq">
-        <div class="container">
-          <div class="ab-faq__head n-rise">
-            <span class="ab-open__eyebrow">Common questions</span>
-            <h2>What people ask about MMC</h2>
-          </div>
-          <div class="ab-faq__list n-rise d1">
-            {FAQF.map((f, k) => (
-              <details open={k === 0}>
-                <summary>{f.q}</summary>
-                <div class="ab-faq__list__a" set:html={f.a} />
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faq title={["Questions about", "MMC."]} faq={FAQF} tone="paper" />
 
       <FreeToolsStrip slugs={["unit-economics", "breakeven-roas", "ltv-cac"]} bg="white" />
       <PreFooterCta source="about" h2a="See what a senior team" h2b="reads in your numbers."
@@ -185,4 +263,35 @@ const jsonld = rewriteJsonld([
     <StickyBookingBar source="about" />
   </Shell>
   <PageFx />
+  <script>
+    /* Systems: the row nearest the middle of the screen (or the one hovered / focused) lights its photo in the sticky frame. */
+    const list = document.querySelector<HTMLElement>(".ab3-sys__list");
+    const stage = document.querySelector<HTMLElement>(".ab3-sys__stage");
+    if (list && stage) {
+      const rows = Array.from(list.querySelectorAll<HTMLElement>(".ab3-sys__row"));
+      const imgs = Array.from(stage.querySelectorAll<HTMLElement>("img"));
+      const num = stage.querySelector<HTMLElement>("[data-sys-n]");
+      let cur = 0;
+      const set = (k: number) => {
+        if (k === cur) return;
+        cur = k;
+        rows.forEach((r, i) => r.classList.toggle("is-on", i === k));
+        imgs.forEach((im, i) => im.classList.toggle("is-on", i === k));
+        if (num) num.textContent = String(k + 1).padStart(2, "0");
+      };
+      rows.forEach((r, i) => {
+        r.addEventListener("pointerenter", () => set(i));
+        r.addEventListener("focusin", () => set(i));
+      });
+      const wide = window.matchMedia("(min-width: 961px)");
+      const onScroll = () => {
+        if (!wide.matches) return;
+        const mid = window.innerHeight * 0.5;
+        let best = cur, bestD = Infinity;
+        rows.forEach((r, i) => { const b = r.getBoundingClientRect(); const d = Math.abs(b.top + b.height / 2 - mid); if (d < bestD) { bestD = d; best = i; } });
+        set(best);
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
+  </script>
 </BaseLayout>

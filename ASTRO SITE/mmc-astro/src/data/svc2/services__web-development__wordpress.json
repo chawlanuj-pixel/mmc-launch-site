@@ -1,0 +1,174 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "web/build.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: a WordPress site being built.",
+    "facts": [
+      {
+        "t": "A theme built for you.",
+        "d": "Designed to your brand, not bought and patched."
+      },
+      {
+        "t": "Plugins kept few.",
+        "d": "Only the ones that earn their place stay."
+      },
+      {
+        "t": "Edited by your team.",
+        "d": "Block-based pages and an editing guide at handover."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for WordPress"
+  },
+  "work": {
+    "panel": "WpDashboard",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on your",
+    "h2b": "WordPress site.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Plan pages and templates.",
+        "d": "Pages, templates and editing needs are agreed in writing before any code."
+      },
+      {
+        "n": "02",
+        "t": "Build a custom theme, keep plugins few.",
+        "d": "Approved designs become a theme built for you, with only the plugins that earn their place."
+      },
+      {
+        "n": "03",
+        "t": "Tune speed and keep updates current.",
+        "d": "Images, caching and scripts are cleaned up, and core, theme and plugins start fully updated."
+      },
+      {
+        "n": "04",
+        "t": "Hand over with an editing guide.",
+        "d": "Your team edits pages itself, and we can stay on under website maintenance."
+      }
+    ],
+    "illustrative": "Illustrative layout of a WordPress-style admin. Not a client site, no real figures. WordPress is a trademark of the WordPress Foundation."
+  },
+  "leak": {
+    "visual": "MetaFunnel",
+    "barLogo": "",
+    "barTitle": "Build path",
+    "pinsLabel": "Four places a WordPress build goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 9.3,
+        "y": 0,
+        "label": "Plan"
+      },
+      {
+        "x": 29,
+        "y": 0,
+        "label": "Theme"
+      },
+      {
+        "x": 48.7,
+        "y": 0,
+        "label": "Speed"
+      },
+      {
+        "x": 68.3,
+        "y": 0,
+        "label": "Handover"
+      }
+    ],
+    "stageLabels": [
+      "Plan",
+      "Theme",
+      "Speed",
+      "Handover",
+      "Care"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run WordPress builds,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Plan the site",
+        "d": "We map pages, templates, editing needs and integrations, then agree the scope in writing.",
+        "get": "A written scope you have approved.",
+        "img": "web/plan.jpg",
+        "alt": "Illustrative scene: a WordPress site planned page by page.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Design and build",
+        "d": "Approved designs become a custom theme, with plugins kept to the few that earn their place.",
+        "get": "A theme your team can arrange without code.",
+        "img": "web/build.jpg",
+        "alt": "Illustrative scene: a custom theme being built.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Test and launch",
+        "d": "We test speed, forms, tracking and mobile before the switch, then migrate and redirect carefully.",
+        "get": "A live site that loads fast and tracks enquiries.",
+        "img": "web/speed.jpg",
+        "alt": "Illustrative scene: a site tested before launch.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Hand over and support",
+        "d": "Your team gets an editing guide, and we can stay on under website maintenance.",
+        "get": "A site your team can edit with confidence.",
+        "img": "web/crm.jpg",
+        "alt": "Illustrative scene: forms connected to a CRM.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Web development",
+        "href": "/services/web-development/"
+      },
+      {
+        "n": "Website maintenance",
+        "href": "/services/website-maintenance/"
+      },
+      {
+        "n": "Shopify development",
+        "href": "/services/shopify-development/"
+      },
+      {
+        "n": "WooCommerce development",
+        "href": "/services/web-development/woocommerce/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

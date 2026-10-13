@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Retention marketing is the work of keeping the customers and enquiries you already paid for, so they come back, buy again or complete a decision.",
+      "lead": "Retention marketing is the work of keeping the customers and enquiries you already paid for, so they come back, buy again or complete a decision. MMC builds WhatsApp, email and loyalty funnels for D2C brands, and nurture funnels for B2B and education leads, and measures repeat purchase or lead progress every week.",
       "hl": "come back, buy again",
       "who": "Monday Marketing Company (MMC) builds retention funnels over WhatsApp, email and loyalty for D2C brands, and nurture funnels for B2B and education leads.",
       "points": [
@@ -294,6 +294,13 @@
           "img": "ugc/shoot.jpg",
           "href": "ugc-and-video.html",
           "link": "See UGC and video"
+        },
+        {
+          "n": "White-label email and retention",
+          "d": "Flows and campaigns behind your brand.",
+          "img": "rt/journey.jpg",
+          "href": "/white-label/email-marketing/",
+          "link": "See white-label email and retention"
         }
       ]
     },
@@ -372,6 +379,77 @@
         "t": "You have no customer or lead base yet, or want mass blasts.",
         "why": "Retention needs data to work from, and we build timed, relevant flows rather than blasts."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What retention marketing",
+      "h2b": "covers.",
+      "lede": "Six flows that bring customers and enquirers back.",
+      "items": [
+        {
+          "t": "Customer data set-up",
+          "d": "Clean lists and segments so messages fit the person receiving them.",
+          "img": "rt/data.jpg",
+          "alt": "Customer data set-up: illustrative scene"
+        },
+        {
+          "t": "Welcome flows",
+          "d": "The first emails and messages a new customer or subscriber receives.",
+          "img": "rt/welcome.jpg",
+          "alt": "Welcome flows: illustrative scene"
+        },
+        {
+          "t": "Nurture flows",
+          "d": "Helpful follow-ups for people who browsed, enquired or abandoned a cart.",
+          "img": "rt/journey.jpg",
+          "alt": "Nurture flows: illustrative scene"
+        },
+        {
+          "t": "Replenishment and repeat",
+          "d": "Reminders timed to when a product runs out or a course renews.",
+          "img": "rt/replenish.jpg",
+          "alt": "Replenishment and repeat: illustrative scene"
+        },
+        {
+          "t": "Win-back",
+          "d": "Respectful outreach to customers who have gone quiet.",
+          "img": "rt/winback.jpg",
+          "alt": "Win-back: illustrative scene"
+        },
+        {
+          "t": "Reporting",
+          "d": "Repeat purchase and revenue per customer tracked on your own data.",
+          "img": "services/retention.jpg",
+          "alt": "Reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands invest in retention",
+      "h2b": "with MMC.",
+      "lede": "Winning back an existing customer usually costs less than finding a new one.",
+      "img": "rt/journey.jpg",
+      "alt": "Why brands invest in retention with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Email, WhatsApp and SMS together",
+          "d": "Channels are planned as one conversation, not three competing ones."
+        },
+        {
+          "t": "Segments that make sense",
+          "d": "Messages follow behaviour such as first order, second order and lapsed."
+        },
+        {
+          "t": "Consent respected",
+          "d": "Lists are built and used within the rules of each channel."
+        },
+        {
+          "t": "Works for every audience",
+          "d": "Repeat orders for D2C, renewals for B2B and re-enquiries for education."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Branding is the work of deciding who your brand is for and what it stands for, then giving it a name, a look and a voice that people recognise everywhere they meet it.",
+      "lead": "Branding is the work of deciding who your brand is for and what it stands for, then giving it a name, a look and a voice that people recognise everywhere they meet it. MMC does this for D2C, B2B and education brands: position first, then naming, identity and guidelines. It is judged on clarity and consistency.",
       "hl": "recognise everywhere they meet it",
       "who": "Monday Marketing Company (MMC) builds brand identity for D2C, B2B and education brands, from positioning to guidelines.",
       "points": [
@@ -373,6 +373,77 @@
         "t": "You are pre-revenue and want brand building on a very small monthly budget.",
         "why": "A real brand needs research and craft, and early on that money does more in testing the product."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What a brand project",
+      "h2b": "covers.",
+      "lede": "Six pieces that make a brand clear, distinct and easy to keep consistent.",
+      "items": [
+        {
+          "t": "Positioning",
+          "d": "Who the brand is for, what it stands for and how it differs from others on the shelf or in search.",
+          "img": "brand/position.jpg",
+          "alt": "Positioning: illustrative scene"
+        },
+        {
+          "t": "Naming",
+          "d": "Names tested for sound, meaning, spelling and availability.",
+          "img": "brand/naming.jpg",
+          "alt": "Naming: illustrative scene"
+        },
+        {
+          "t": "Logo and identity",
+          "d": "A mark, colour and type system that works from an app icon to a hoarding.",
+          "img": "brand/logo.jpg",
+          "alt": "Logo and identity: illustrative scene"
+        },
+        {
+          "t": "Brand voice",
+          "d": "How the brand writes and speaks, with examples for ads, emails and the website.",
+          "img": "brand/voice.jpg",
+          "alt": "Brand voice: illustrative scene"
+        },
+        {
+          "t": "Brand guidelines",
+          "d": "A short, usable guide so every team and vendor applies the brand the same way.",
+          "img": "brand/guidelines.jpg",
+          "alt": "Brand guidelines: illustrative scene"
+        },
+        {
+          "t": "Launch assets",
+          "d": "Social, packaging and web applications that put the new identity into use.",
+          "img": "services/brand.jpg",
+          "alt": "Launch assets: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build",
+      "h2b": "with MMC.",
+      "lede": "Our branding is made to perform in ads, on shelves and on screens.",
+      "img": "brand/logo.jpg",
+      "alt": "Why brands build with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Strategy first",
+          "d": "Positioning decisions come before any design, so the identity has a reason."
+        },
+        {
+          "t": "Designed to be used",
+          "d": "We test the identity in ads, packaging and web layouts before it is final."
+        },
+        {
+          "t": "Fits any audience",
+          "d": "D2C brands, B2B companies and educational institutes each need a different tone."
+        },
+        {
+          "t": "Handover that lasts",
+          "d": "Guidelines and files are organised so your team can keep going without us."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

@@ -1,0 +1,309 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "ugc/refresh.jpg",
+    "pos": "50% 50%",
+    "alt": "A person pinning weekly fashion creative to a wall of photo cards in rows.",
+    "facts": [
+      {
+        "t": "Creative that lasts.",
+        "d": "A steady test-and-refresh loop, not one big shoot."
+      },
+      {
+        "t": "Size and returns.",
+        "d": "Size help and honest imagery that reduce returns."
+      },
+      {
+        "t": "Catalogue-led ads.",
+        "d": "Product feeds and dynamic ads for large ranges."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why fashion brands choose MMC"
+  },
+  "work": {
+    "panel": "FashionReturns",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "fashion brand.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Refresh creative before the audience tires.",
+        "d": "New hooks, formats and creators enter on a fixed cycle, and tired ads are retired rather than pushed harder."
+      },
+      {
+        "n": "02",
+        "t": "Choose creators by fit on a real body.",
+        "d": "Style, size range and audience fit decide the shortlist, not follower count. Terms are written down first."
+      },
+      {
+        "n": "03",
+        "t": "Feed the whole range to dynamic ads.",
+        "d": "Catalogues and feeds are structured so ads show the right item, not only a handful of hero pieces."
+      },
+      {
+        "n": "04",
+        "t": "Fix size help where wrong-size orders start.",
+        "d": "Size guides, fit notes and honest imagery on the product page cut the orders that come back."
+      },
+      {
+        "n": "05",
+        "t": "Report margin after returns and discounts.",
+        "d": "Spend is judged on what is left once returns, discounts and shipping are counted, not on gross ROAS."
+      }
+    ],
+    "illustrative": "Illustrative layout of a fashion brand's creative, catalogue and margin views. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "A fashion order's path",
+    "pinsLabel": "Five places a fashion brand loses margin",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Creative"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Creators"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Range"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Returns"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Margin"
+      }
+    ],
+    "base": "Gross sales are not the number",
+    "artLabel": "Five cards: an ad that has tired, a creator who does not fit, a range with no ads, a size guide that is thin and a margin that returns eat away.",
+    "accent": "#C2185B",
+    "cols": [
+      {
+        "head": "Creative",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "Same ad, week one",
+            "s": "ok",
+            "w": 22
+          },
+          {
+            "t": "Same ad, week six",
+            "s": "warn",
+            "w": 70
+          },
+          {
+            "t": "Audience tired",
+            "s": "bad",
+            "w": 96
+          }
+        ],
+        "chip": "Creative tired",
+        "tone": "b"
+      },
+      {
+        "head": "Creators",
+        "k": "tiles",
+        "rows": [
+          {
+            "t": "Big following",
+            "s": "dim"
+          },
+          {
+            "t": "Wrong style",
+            "s": "bad"
+          },
+          {
+            "t": "Wrong size range",
+            "s": "bad"
+          },
+          {
+            "t": "Reach only",
+            "s": "warn"
+          }
+        ],
+        "chip": "Reach, no fit",
+        "tone": "w"
+      },
+      {
+        "head": "Range",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Five hero items: ads",
+            "s": "ok"
+          },
+          {
+            "t": "Rest of range: none",
+            "s": "bad"
+          },
+          {
+            "t": "Feed errors",
+            "s": "warn"
+          }
+        ],
+        "chip": "Range unsold",
+        "tone": "w"
+      },
+      {
+        "head": "Returns",
+        "k": "page",
+        "rows": [
+          {
+            "t": "Product photos"
+          },
+          {
+            "t": "Size guide: thin",
+            "s": "bad"
+          },
+          {
+            "t": "Fit note: none",
+            "s": "bad"
+          },
+          {
+            "t": "Wrong-size orders",
+            "s": "warn"
+          }
+        ],
+        "chip": "Returns leak",
+        "tone": "b"
+      },
+      {
+        "head": "Margin",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "Gross sales",
+            "s": "ok",
+            "w": 100
+          },
+          {
+            "t": "Returns",
+            "s": "warn",
+            "w": 34
+          },
+          {
+            "t": "Discounts",
+            "s": "warn",
+            "w": 20
+          },
+          {
+            "t": "Left",
+            "s": "bad",
+            "w": 10
+          }
+        ],
+        "chip": "Gross ROAS misleads",
+        "tone": "b"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the fashion and apparel",
+    "h2b": "brands we market.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: the ad and the product page tell one story."
+      },
+      {
+        "id": "vagakids",
+        "line": "Kids' charm clogs: storefront, creative and ads for one range."
+      },
+      {
+        "id": "oosh",
+        "line": "Body essentials: a storefront with Meta and Google Ads for one range."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a fashion brand,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Read margin after returns",
+        "d": "We rebuild economics with returns and discounts, review creative and feeds and set targets.",
+        "get": "A true view of margin.",
+        "img": "company/performance.jpg",
+        "alt": "Illustrative scene: an analyst reading two dashboards.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Test creative and creators",
+        "d": "A creative test plan and a creator shortlist go live.",
+        "get": "A refresh loop.",
+        "img": "ugc/test.jpg",
+        "alt": "Illustrative scene: ad creatives being compared on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Fix size help and pages",
+        "d": "Size guides, fit notes and product pages are rebuilt where returns start.",
+        "get": "Better pages, fewer wrong sizes.",
+        "img": "cro/pdp.jpg",
+        "alt": "Illustrative scene: a product page being read on a laptop and a phone.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Scale and retain",
+        "d": "Catalogue ads scale on margin and retention flows start.",
+        "get": "Growth that holds after returns.",
+        "img": "d2c/retention.jpg",
+        "alt": "Illustrative scene: a drop reminder on a phone.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Influencer marketing",
+        "href": "/services/influencer-marketing/"
+      },
+      {
+        "n": "Meta Ads",
+        "href": "/services/performance-marketing/meta-ads/"
+      },
+      {
+        "n": "CRO",
+        "href": "/services/cro/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

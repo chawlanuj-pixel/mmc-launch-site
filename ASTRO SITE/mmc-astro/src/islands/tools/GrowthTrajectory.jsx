@@ -14,7 +14,7 @@ const GT_FAQ = [
   { q: "How do you convert MoM growth to YoY growth?",
     a: "Compound the monthly rate over twelve months: YoY = (1 + MoM)^12 − 1. A steady 10% month-on-month compounds to roughly 214% year-on-year, which is why small monthly gains matter far more than they appear." },
   { q: "What is a good MoM growth rate for a D2C brand?",
-    a: "It depends entirely on the base. Early brands at a low run rate can post 15–20% MoM for a while; at scale, sustained 5–8% MoM is strong. Any MoM figure quoted without the starting revenue is close to meaningless." },
+    a: "It depends entirely on the base. Early brands at a low run rate can post 15 to 20% MoM for a while; at scale, sustained 5 to 8% MoM is strong. Any MoM figure quoted without the starting revenue is close to meaningless." },
   { q: "How many months does it take to double revenue?",
     a: "Divide the natural log of 2 by the natural log of one plus your monthly growth rate. At 10% MoM it takes about 7.3 months; at 5% MoM it takes roughly 14.2 months." },
 ];
@@ -103,7 +103,7 @@ function GrowthTrajectory() {
                            min={25000} max={20000000} step={25000} fmt={(v) => inrCompact(v)} />
                       <Ctl label="MoM growth (year 1)" info="mom" value={s.mom} onChange={(v) => set("mom", v)}
                            min={0} max={30} step={0.5} fmt={(v) => pct(v, 1)}
-                           hint="Sustained 5–8% is strong at scale; early brands can run higher." />
+                           hint="Sustained 5 to 8% is strong at scale; early brands can run higher." />
                       <Ctl label="Net margin" info="net-margin" value={s.margin} onChange={(v) => set("margin", v)}
                            min={-10} max={30} step={0.5} fmt={(v) => pct(v, 1)} />
                     </div>
@@ -151,7 +151,7 @@ function GrowthTrajectory() {
               <div className="tl-card">
                 <div className="tl-card__top">
                   <div><h2 className="tl-card__h">Year one, month by month</h2>
-                  <p className="tl-card__sub">Hover the line for the revenue in any month.</p></div>
+                  <p className="tl-card__sub">Tap, drag or hover along the line for the revenue in any month.</p></div>
                 </div>
                 <LineChart rows={months} series={[{ key: "rev", name: "Revenue", color: "var(--c1)" }]}
                            fmt={(v) => inr(Math.round(v))} fmtTick={(v) => inrCompact(v)} height={210} />

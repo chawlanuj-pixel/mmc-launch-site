@@ -1,0 +1,64 @@
+{
+ "id": "skyfling",
+ "about": "{name} is a B2B app and web development company.",
+ "description": "{name} case study: a website with a quote form, a build-day estimator and a work showcase, plus a LinkedIn ad and a Google search listing.",
+ "heroTone": "paper",
+ "kind": "B2B, app and web development company",
+ "channels": [
+  "LinkedIn ad",
+  "Google search listing"
+ ],
+ "brief": [
+  "{name} is an app and web development company. This page covers its website: a homepage with a quote form, a build-day estimator tool and a showcase of past builds.",
+  "The homepage puts the quote form beside the headline, and the estimator lets a visitor size a project before they talk to anyone. A LinkedIn ad and a Google search listing point at the same site."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Homepage",
+   "title": "Homepage with a lead form",
+   "text": "The headline, the proof points and the quote form sit on one screen, with the same structure on a phone.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Tools",
+   "title": "Build-day estimator and work showcase",
+   "text": "The estimator takes a project type and feature list. The work section groups past builds by kind.",
+   "crops": [
+    "estimator",
+    "work"
+   ],
+   "captions": [
+    "Build-day estimator",
+    "Work showcase"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "right",
+   "kicker": "Ads",
+   "title": "A LinkedIn ad and a Google search listing",
+   "text": "Both carry the same message as the homepage headline.",
+   "crops": [
+    "ads"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage with quote form, estimator and work showcase",
+  "reach": "LinkedIn ad and Google search listing",
+  "make": "Brand and message kept consistent across the pages and ads"
+ },
+ "action": "enquiry",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "estimator": "{name} build-day estimator, client-approved artwork",
+  "work": "{name} work showcase, client-approved artwork",
+  "ads": "{name} Meta and Google Ads, client-approved artwork"
+ }
+}

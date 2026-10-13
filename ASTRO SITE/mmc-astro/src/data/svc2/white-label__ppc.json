@@ -1,0 +1,173 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/google-amazon.jpg",
+    "pos": "50% 50%",
+    "alt": "An analyst at a desk with two ads dashboards open.",
+    "facts": [
+      {
+        "t": "In the client's account.",
+        "d": "We work inside the client's own Google Ads, so they keep ownership."
+      },
+      {
+        "t": "Search to Shopping.",
+        "d": "Search, Shopping, Performance Max and video managed to one plan."
+      },
+      {
+        "t": "Notes for your call.",
+        "d": "Weekly notes say what changed and why, ready for your own words."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label PPC"
+  },
+  "work": {
+    "panel": "GoogleAdsAccount",
+    "eyebrow": "The work, shown",
+    "h2a": "How a client's Google Ads account",
+    "h2b": "runs behind you.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Take over the account without a restart.",
+        "d": "We audit the client's own Google Ads account first and agree what stays, what pauses and what is rebuilt."
+      },
+      {
+        "n": "02",
+        "t": "Split brand and generic searches for your report.",
+        "d": "Search is structured by intent and negatives are kept current, so you can explain where spend went."
+      },
+      {
+        "n": "03",
+        "t": "Clean the product feed before spending on it.",
+        "d": "Titles, images and availability are fixed in the client's feed, so Shopping spends on products that can sell."
+      },
+      {
+        "n": "04",
+        "t": "Feed Performance Max the right inputs.",
+        "d": "Asset groups, audience signals and exclusions are set with notes you can pass on to the client."
+      },
+      {
+        "n": "05",
+        "t": "Move budget on margin, not reported conversions.",
+        "d": "Weekly notes say what changed and why. The account stays the client's, and the report stays yours."
+      }
+    ],
+    "illustrative": "Illustrative layout of a Google Ads account view. Not a client account, no real figures. Google Ads and its logo belong to Google."
+  },
+  "leak": {
+    "visual": "SaSearchTerms",
+    "barLogo": "/assets/platforms/google.svg",
+    "barTitle": "Search term report",
+    "pinsLabel": "Five places white-label PPC goes wrong",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Intent"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Feed"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Inputs"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Video"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Profit"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first Google Ads",
+    "h2b": "account gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and account access",
+        "d": "We sign the NDA, then the client invites us into their own Google Ads, Merchant Center and analytics with the access you grant.",
+        "get": "An access and tracking checklist.",
+        "img": "contact/meeting.jpg",
+        "alt": "Three colleagues leaning over a printed plan on a table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot account audit",
+        "d": "One account is audited and you get a short, ranked fix list before any budget moves.",
+        "get": "An audit you can take to the client.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Approval and report SOPs",
+        "d": "Who approves budget changes, how weekly notes read and which report template is used are written down.",
+        "get": "A weekly rhythm your team can rely on.",
+        "img": "company/onepage.jpg",
+        "alt": "A hand writing a plan in a notebook on a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale across accounts",
+        "d": "More accounts join on the same routine, with one strategist who knows how you report.",
+        "get": "PPC for more clients, same routine.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/whiteboard.jpg",
+    "alt": "Four colleagues around a whiteboard while one draws out a plan.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label Meta Ads",
+        "href": "/white-label/meta-ads/"
+      },
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "White-label CRO",
+        "href": "/white-label/cro/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

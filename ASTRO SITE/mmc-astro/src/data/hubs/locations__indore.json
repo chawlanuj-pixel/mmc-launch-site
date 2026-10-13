@@ -1,0 +1,525 @@
+{
+  "file": "locations-indore.html",
+  "path": "/locations/indore/",
+  "key": "loc-indore",
+  "title": "Digital Marketing Agency in Indore | MMC",
+  "description": "MMC works from Indore for colleges, food brands and manufacturers: campus and plant profiles, enquiry paths on WhatsApp and search that reaches beyond the city.",
+  "ogTitle": "Digital marketing in Indore",
+  "ogDescription": "Campus and plant profiles, enquiry paths and search for Indore businesses.",
+  "ogAlt": "Monday Marketing Company: digital marketing in Indore.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/locations/indore/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://www.mondaymarketing.company/locations/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Indore",
+          "item": "https://www.mondaymarketing.company/locations/indore/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/locations/indore/#webpage",
+      "url": "https://www.mondaymarketing.company/locations/indore/",
+      "name": "Digital Marketing Agency in Indore | MMC",
+      "description": "MMC works from Indore for colleges, food brands and manufacturers: campus and plant profiles, enquiry paths on WhatsApp and search that reaches beyond the city.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/locations/indore/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/locations/indore/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://www.mondaymarketing.company/locations/indore/#service",
+      "name": "Monday Marketing Company, Indore",
+      "alternateName": "MMC",
+      "url": "https://www.mondaymarketing.company/locations/indore/",
+      "image": "https://www.mondaymarketing.company/assets/og-card.jpg",
+      "logo": "https://www.mondaymarketing.company/assets/logo-primary.png",
+      "description": "Local search, enquiry paths and ads for businesses in Indore, delivered by a team that works from Indore.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Indore"
+      },
+      "parentOrganization": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/locations/indore/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does MMC work from Indore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Indore is one of the three cities we work from, with Thane and Mumbai. We serve brands across India from all three."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an Indore street address I can visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do not list a street address for Indore on this site. The only street address we publish is our Thane head office. To meet, book a call and we will agree where and when."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with an Indore business entirely online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most work runs on video calls, shared reports and WhatsApp for quick questions, so you do not need to travel. If you would like to meet, ask on the call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kinds of Indore businesses do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our audiences are D2C brands, B2B firms and education brands. In Indore that can mean food and beverage brands, manufacturers with plants and colleges or coaching centres with campuses. See industries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you reach buyers outside Indore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Indore businesses sell or enrol beyond the city. We plan local pages for Indore and wider search and ads for the other places your buyers come from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee a top local ranking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list."
+          }
+        }
+      ]
+    }
+  ],
+  "updated": "2026-10-11",
+  "hub": {
+    "key": "loc-indore",
+    "wm": "INDORE",
+    "eyebrow": "● Indore",
+    "h1": [
+      "Digital marketing",
+      [
+        "for Indore businesses ",
+        "that sell beyond the city",
+        "."
+      ]
+    ],
+    "sub": "Indore is one of the three cities we work from. Many businesses here sell or enrol well beyond the city, so we pair local profiles with enquiry paths and search that travel.",
+    "tiles": [
+      {
+        "img": "edu/search.jpg",
+        "pos": "50% 50%",
+        "label": "Campus",
+        "note": "Found for course searches"
+      },
+      {
+        "img": "d2c/packing.jpg",
+        "pos": "50% 50%",
+        "label": "Dispatch",
+        "note": "Orders that leave the city"
+      },
+      {
+        "img": "b2b/found.jpg",
+        "pos": "50% 50%",
+        "label": "Plants",
+        "note": "Found by buyers elsewhere"
+      },
+      {
+        "img": "social/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Content",
+        "note": "Planned in plain language"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "An Indore business often serves buyers far beyond its own streets: a college enrols students from other towns, a food brand ships out of the city, a manufacturer is found by buyers elsewhere. The work is a profile for each place, an enquiry path that answers quickly on WhatsApp or by call, and pages and search that reach outward.",
+      "hl": "a profile for each place, an enquiry path that answers quickly on WhatsApp or by call",
+      "who": "Monday Marketing Company (MMC) works from Indore, Thane and Mumbai and serves brands across India. We do not publish an Indore street address on this site. Our published address is the Thane head office, and meetings elsewhere are agreed on a call.",
+      "points": [
+        {
+          "icon": "users",
+          "title": "Enquiries answered fast",
+          "text": "A WhatsApp or call path so a lead is not left waiting."
+        },
+        {
+          "icon": "link",
+          "title": "Reach beyond the city",
+          "text": "Pages and search for buyers in other towns."
+        },
+        {
+          "icon": "target",
+          "title": "A profile for each place",
+          "text": "Campuses, branches and plants each verified."
+        }
+      ],
+      "image": "edu/enquiry.jpg",
+      "chip": "For businesses that sell beyond the city"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "indore-problem",
+          "h": "The problem an Indore business faces",
+          "paras": [
+            "Indore is a regional commercial hub, so a business here is rarely judged by its neighbours alone. A student in another town compares colleges online, a retailer elsewhere compares food brands and a buyer compares manufacturers before any visit.",
+            "The risk is a strong local name with a thin online presence. The profile is incomplete, enquiries come in by phone or WhatsApp with no one tracking them, and the site speaks only to the city."
+          ],
+          "img": "edu/crm.jpg",
+          "cap": "Illustrative scene: enquiries tracked in one place."
+        },
+        {
+          "id": "indore-ways",
+          "h": "How we work with an Indore business",
+          "paras": [
+            "Indore is one of the three cities we work from. The first step is usually to find out where your buyers actually are."
+          ],
+          "table": {
+            "caption": "Where Indore businesses find buyers",
+            "head": [
+              "",
+              "Inside Indore",
+              "Beyond Indore"
+            ],
+            "rows": [
+              [
+                "Who",
+                "Walk-ins, local students, nearby trade",
+                "Students in other towns, buyers who order from afar"
+              ],
+              [
+                "Main surface",
+                "Maps, local pack and profile",
+                "Search results, ads and WhatsApp"
+              ],
+              [
+                "What we build",
+                "Verified profiles and an Indore page",
+                "Pages and campaigns for the places that matter"
+              ],
+              [
+                "Reads",
+                "Calls and directions",
+                "Enquiries and where they came from"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Meeting in person.",
+            "text": "We do not publish an Indore street address here. <a href=\"/contact/\">Book a call</a> and we will agree where to meet. Our <a href=\"/locations/thane/\">Thane head office</a> has a published address."
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "Indore businesses.",
+      "lede": "From the profile to the answered enquiry.",
+      "items": [
+        {
+          "t": "Campus, branch and plant profiles",
+          "d": "Each place claimed, verified and completed, in plain words.",
+          "img": "orm/profile.jpg",
+          "alt": "Campus, branch and plant profiles: illustrative scene"
+        },
+        {
+          "t": "Enquiry path",
+          "d": "A WhatsApp or call path so every enquiry is answered and followed up.",
+          "img": "leadgen/attract.jpg",
+          "alt": "Enquiry path: illustrative scene"
+        },
+        {
+          "t": "Pages for Indore and beyond",
+          "d": "An Indore page, plus pages for the other places your buyers come from.",
+          "img": "web/seo.jpg",
+          "alt": "Pages for Indore and beyond: illustrative scene"
+        },
+        {
+          "t": "Search and ads",
+          "d": "Campaigns that reach buyers outside the city and tie to real enquiries.",
+          "img": "google/feed.jpg",
+          "alt": "Search and ads: illustrative scene"
+        },
+        {
+          "t": "Review handling",
+          "d": "Requests and replies for each place, with problems escalated.",
+          "img": "orm/reply.jpg",
+          "alt": "Review handling: illustrative scene"
+        },
+        {
+          "t": "Monthly report",
+          "d": "Calls, directions, enquiries and where they came from.",
+          "img": "orm/report.jpg",
+          "alt": "Monthly report: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why Indore businesses choose MMC",
+      "h2b": "for local marketing.",
+      "lede": "A local name travels further with the right paper trail.",
+      "img": "web/crm.jpg",
+      "alt": "Why Indore businesses choose MMC for local marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "A team that works from Indore",
+          "d": "Indore is one of the three cities we work from."
+        },
+        {
+          "t": "Enquiry-first",
+          "d": "We judge the work on real enquiries and what they are worth."
+        },
+        {
+          "t": "Plain language",
+          "d": "Pages and replies written the way your buyers talk."
+        },
+        {
+          "t": "Honest reporting",
+          "d": "We report what we can observe, and never promise a ranking."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How an Indore engagement runs,",
+      "h2b": "step by step.",
+      "img": "edu/followup.jpg",
+      "alt": "How an Indore engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Find where buyers are",
+          "d": "We read your enquiries and sales to see which towns and searches matter."
+        },
+        {
+          "t": "Fix the profiles",
+          "d": "Each campus, branch or plant gets a verified, complete profile."
+        },
+        {
+          "t": "Build the enquiry path",
+          "d": "A WhatsApp or call path answers quickly and is tracked."
+        },
+        {
+          "t": "Report and refine",
+          "d": "Enquiries and their source are reviewed with you each month."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Local marketing for businesses",
+      "h2b": "that reach beyond Indore.",
+      "good": {
+        "t": "You have a campus, branch or plant here and buyers in other towns too.",
+        "why": "This suits colleges and coaching centres, food and beverage brands and manufacturers."
+      },
+      "not": {
+        "t": "You are online only, with no place and no local buyers.",
+        "why": "National SEO and ads are the better use of effort. See <a href=\"/services/seo/\">SEO</a>."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where Indore fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "All locations",
+          "d": "Thane, Mumbai and Indore, and how we work from each.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See all locations"
+        },
+        {
+          "n": "Thane",
+          "d": "Our head office, with a published address.",
+          "img": "contact/meeting.jpg",
+          "href": "/locations/thane/",
+          "link": "See Thane"
+        },
+        {
+          "n": "Mumbai",
+          "d": "A crowded market with many outlets and neighbourhoods.",
+          "img": "sv/organic.jpg",
+          "href": "/locations/mumbai/",
+          "link": "See Mumbai"
+        },
+        {
+          "n": "Education marketing",
+          "d": "Enquiries and enrolments for colleges and study-abroad brands.",
+          "img": "edu/campus.jpg",
+          "href": "/industries/education/",
+          "link": "See education marketing"
+        },
+        {
+          "n": "Food and beverage",
+          "d": "Shelves, shops and repeat orders for food brands.",
+          "img": "d2c/unboxing.jpg",
+          "href": "/industries/d2c/food-and-beverage/",
+          "link": "See food and beverage marketing"
+        },
+        {
+          "n": "Manufacturing",
+          "d": "Found by buyers who search before they call.",
+          "img": "b2b/qualify.jpg",
+          "href": "/industries/b2b/manufacturing/",
+          "link": "See manufacturing marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "marketing in Indore."
+    ],
+    "faq": [
+      {
+        "q": "Does MMC work from Indore?",
+        "a": "Yes. Indore is one of the three cities we work from, with Thane and Mumbai. We serve brands across India from all three."
+      },
+      {
+        "q": "Is there an Indore street address I can visit?",
+        "a": "We do not list a street address for Indore on this site. The only street address we publish is our Thane head office. To meet, book a call and we will agree where and when."
+      },
+      {
+        "q": "Can you work with an Indore business entirely online?",
+        "a": "Yes. Most work runs on video calls, shared reports and WhatsApp for quick questions, so you do not need to travel. If you would like to meet, ask on the call."
+      },
+      {
+        "q": "What kinds of Indore businesses do you work with?",
+        "a": "Our audiences are D2C brands, B2B firms and education brands. In Indore that can mean food and beverage brands, manufacturers with plants and colleges or coaching centres with campuses. See <a href=\"/industries/\">industries</a>."
+      },
+      {
+        "q": "Can you reach buyers outside Indore?",
+        "a": "Many Indore businesses sell or enrol beyond the city. We plan local pages for Indore and wider search and ads for the other places your buyers come from."
+      },
+      {
+        "q": "Do you guarantee a top local ranking?",
+        "a": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list."
+      }
+    ],
+    "cta": {
+      "h2a": "Reach buyers beyond",
+      "h2b": "your own streets.",
+      "lede": "On a call, with a senior strategist. We read your enquiries and tell you where your buyers are."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client account.",
+      "style": "stack",
+      "eyebrow": "Where Indore enquiries are lost",
+      "h2a": "Five ways an Indore business",
+      "h2b": "loses buyers.",
+      "lede": "Each stage below is where a buyer is lost, and the work that brings them back."
+    },
+    "stages": [
+      {
+        "k": "Verify every campus, branch and plant",
+        "tag": "Places",
+        "breaks": "Places listed under old names, or not at all.",
+        "why": "A buyer cannot trust what they cannot confirm.",
+        "does": "We claim, verify and merge listings for each campus, branch or plant."
+      },
+      {
+        "k": "Write for how buyers search",
+        "tag": "Language",
+        "breaks": "Pages and categories in language buyers do not use.",
+        "why": "People search in English, Hindi or a mix, and plain words match them.",
+        "does": "We write categories, services and pages in the words your buyers use."
+      },
+      {
+        "k": "Show the real place",
+        "tag": "Photos",
+        "breaks": "Few photos and stale details.",
+        "why": "A buyer in another town relies on pictures to decide to visit or order.",
+        "does": "We keep photos current and add timings for admissions or festive seasons."
+      },
+      {
+        "k": "Answer enquiries quickly",
+        "tag": "Enquiries",
+        "breaks": "A WhatsApp or phone line no one tracks.",
+        "why": "A lead left waiting goes to the next option.",
+        "does": "We set up a WhatsApp or call path with a clear owner and follow-up, and count real enquiries."
+      },
+      {
+        "k": "Reach beyond the city",
+        "tag": "Reach",
+        "breaks": "A site that speaks only to Indore.",
+        "why": "Buyers in other towns never see you if the pages do not name them.",
+        "does": "We add pages and campaigns for the places that matter, and report where enquiries came from."
+      }
+    ],
+    "process": {
+      "note": "The days show the order of the work, not a promise of results. What your enquiries show decides how long each part takes.",
+      "h2a": "How we run local work in Indore,",
+      "h2b": "month to month.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Find where buyers are",
+          "d": "We read your enquiries, verify each place and complete the profile content.",
+          "out": "A clear view of where buyers come from."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Enquiry path and pages",
+          "d": "We set up a tracked WhatsApp or call path and build pages for Indore and the towns that matter.",
+          "out": "Enquiries answered and tracked."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Search, ads and report",
+          "d": "We add search and ads that reach beyond the city where they suit, and report enquiries by source.",
+          "out": "A monthly report by source."
+        }
+      ]
+    }
+  }
+}

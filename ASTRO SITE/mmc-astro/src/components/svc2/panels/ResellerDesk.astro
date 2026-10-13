@@ -1,0 +1,50 @@
+---
+// PANEL: ResellerDesk (kind "ResellerDesk"). A reseller partner's desk. No platform mark. 4 steps.
+//   1 Packages: three package cards with written scopes and a "Your name here" slot. Tab: Packages.
+//   2 Clients: a client list with client codes and an intake or onboarded chip. Tab: Clients.
+//   3 Delivery: per client, a four-dot delivery tracker read against the written scope. Tab: Delivery.
+//   4 Margin: your price against our delivery cost as two bars per package, the gap marked "Your margin" (no numbers). Tab: Margin.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix rsd-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const pk = ["Search package", "Paid media package", "Web package"];
+---
+<Frame title="Partner desk" label="Illustration of a reseller partner desk: packages, clients, delivery and margin. Not a client account." caption={W.illustrative} tabs={["Packages", "Clients", "Delivery", "Margin"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Packages <span>Written scope, your name on it</span></p>
+    <div class="rsd-pk">
+      {pk.map((n) => <div class="s2p-card"><span class="rsd-name">Your name here</span><b>{n}</b><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i><em class="s2p-chip s2p-chip--ok">Scope written</em></div>)}
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Clients <span>One intake, every time</span></p>
+    <ul class="rsd-list">
+      {[["Client 01", "Onboarded", "s2p-chip--ok"], ["Client 02", "Onboarded", "s2p-chip--ok"], ["Client 03", "Intake", "s2p-chip--warn"]].map(([c, s, k]) => <li class="s2p-card"><b>{c}</b><i class="s2p-line s2p-line--xs"></i><em class={"s2p-chip " + k}>{s}</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Delivery <span>Read against the written scope</span></p>
+    <ul class="rsd-list">
+      {[["Client 01", 4], ["Client 02", 3], ["Client 03", 1]].map(([c, n]) => <li class="s2p-card"><b>{c}</b><span class="rsd-dots" aria-hidden="true">{[1, 2, 3, 4].map((k) => <i class={k <= (n as number) ? "on" : ""}></i>)}</span><em class="s2p-chip">{(n as number) === 4 ? "Delivered" : "In delivery"}</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Margin <span>You set the client price</span></p>
+    <ul class="rsd-bars">
+      {[["Search package", 92, 62], ["Paid media package", 86, 56], ["Web package", 96, 70]].map(([n, a, b]) => <li><b>{n}</b><span class="rsd-bar"><i class="rsd-cost" style={`width:${b}%`}></i><i class="rsd-gap" style={`width:${(a as number) - (b as number)}%`}></i></span></li>)}
+    </ul>
+    <p class="rsd-key"><i class="rsd-cost"></i>Our delivery <i class="rsd-gap"></i>Your margin</p>
+  </div>
+</Frame>
+<style is:global>
+.rsd-pk { flex: 1; min-height: 0; max-height: 17em; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7em; align-content: center; } .rsd-pk .s2p-card { display: grid; gap: .7em; justify-items: start; align-content: space-between; min-height: 11em; } .rsd-pk b { font: 800 1em/1.2 var(--font-body); }
+.rsd-name { padding: .25em .6em; border: 1.5px dashed #8AA2E6; border-radius: .4em; color: var(--mmc-blue); font: 800 .68em var(--font-body); text-transform: uppercase; letter-spacing: .05em; }
+.rsd-list { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .7em; align-content: space-evenly; } .rsd-list li { display: flex; align-items: center; gap: .8em; padding-block: .75em; } .rsd-list b { font: 800 1em var(--font-body); min-width: 5.5em; } .rsd-list .s2p-line { flex: 1; } .rsd-list em { margin-left: auto; }
+.rsd-dots { display: flex; gap: .45em; flex: 1; } .rsd-dots i { width: 1.2em; height: 1.2em; border-radius: 50%; background: #E4E6EB; } .rsd-dots i.on { background: var(--mmc-blue); }
+.rsd-bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 1em; } .rsd-bars li { display: grid; gap: .4em; } .rsd-bars b { font: 800 .95em var(--font-body); }
+.rsd-bar { display: flex; height: 1.5em; border-radius: .4em; overflow: hidden; background: #F1F2F4; } .rsd-cost { background: var(--mmc-blue-900); } .rsd-gap { background: var(--mmc-yellow); }
+.rsd-key { margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: .5em .5em; font: 700 .85em var(--font-body); color: #65676B; } .rsd-key i { width: 1em; height: 1em; border-radius: .25em; display: inline-block; margin-left: .6em; } .rsd-key i:first-child { margin-left: 0; }
+@media (max-width: 560px) { .rsd-pk { gap: .35em; } .rsd-pk .s2p-line { display: none; } .rsd-pk .s2p-chip { white-space: normal; } .rsd-list .s2p-line { display: none; } }
+@media (max-width: 900px) { .s2-ui:has(.rsd-pk) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

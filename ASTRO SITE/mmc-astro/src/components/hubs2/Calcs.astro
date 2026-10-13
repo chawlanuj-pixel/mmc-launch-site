@@ -1,0 +1,31 @@
+---
+// The D2C calculators as large linked rows beside a literal photo (a cost sheet and a calculator).
+import Pic from "./Pic.astro";
+import { toolBySlug } from "../../lib/site";
+interface Props { slugs: string[]; eyebrow?: string; h2a: string; h2b: string; lede?: string; tone?: string; id?: string; img?: string; alt?: string; guide?: { label: string; href: string } }
+const { slugs, eyebrow = "Run the numbers", h2a, h2b, lede, tone = "paper", id = "numbers", img = "au/look-breakeven.jpg", alt = "A notebook with a per-order cost breakdown beside a calculator.", guide } = Astro.props;
+const tools = slugs.map(toolBySlug).filter(Boolean) as NonNullable<ReturnType<typeof toolBySlug>>[];
+---
+<section class={"n-band n-band--" + tone} id={id}>
+  <div class="n-wrap">
+    <div class="h2-calc">
+      <Pic src={img} alt={alt} class="h2-rv" />
+      <div class="h2-rv">
+        <header class="h2-head" style="margin-bottom:clamp(20px,2.4vw,32px)">
+          <span class="n-eyebrow">{eyebrow}</span>
+          <h2 class="n-h2">{h2a} <span class="n-serif">{h2b}</span></h2>
+          {lede && <p class="n-lede">{lede}</p>}
+        </header>
+        <ul class="h2-calc__list">
+          {tools.map((t) => (
+            <li><a href={t.href}><b>{t.long}</b><span>{t.blurb}</span><span class="h2-ring" aria-hidden="true"><i class="h2-arr"></i></span></a></li>
+          ))}
+        </ul>
+        <div class="h2-calc__more">
+          <a class="h2-go" href="/tools/">All D2C calculators<i></i></a>
+          {guide && <a class="h2-go" href={guide.href}>{guide.label}<i></i></a>}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

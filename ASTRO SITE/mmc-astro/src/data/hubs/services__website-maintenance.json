@@ -1,0 +1,549 @@
+{
+  "file": "website-maintenance.html",
+  "path": "/services/website-maintenance/",
+  "key": "sitemaint",
+  "title": "Website Maintenance Services India | MMC",
+  "description": "Monthly website maintenance for WordPress and other sites: updates, backups, security, uptime, speed, content edits and a monthly report. Talk to us.",
+  "ogTitle": "Website maintenance, handled monthly",
+  "ogDescription": "Updates, backups, security, uptime and a monthly report.",
+  "ogAlt": "Monday Marketing Company: website maintenance.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/website-maintenance/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Website maintenance",
+          "item": "https://www.mondaymarketing.company/services/website-maintenance/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/website-maintenance/#webpage",
+      "url": "https://www.mondaymarketing.company/services/website-maintenance/",
+      "name": "Website Maintenance Services India | MMC",
+      "description": "Monthly website maintenance for WordPress and other sites: updates, backups, security, uptime, speed, content edits and a monthly report. Talk to us.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/website-maintenance/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/website-maintenance/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/website-maintenance/#service",
+      "name": "Website maintenance",
+      "serviceType": "Website maintenance",
+      "description": "Monthly website maintenance: updates, backups, security, uptime monitoring, speed upkeep, content edits and reporting.",
+      "url": "https://www.mondaymarketing.company/services/website-maintenance/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/website-maintenance/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is website maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the routine work that keeps a site secure, fast and up to date: software updates, backups, security checks, uptime monitoring, speed upkeep and small content changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included in your website maintenance plans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Updates, backups, security scans, uptime monitoring, speed checks, broken link fixes, small content edits and a monthly report. The comparison table on this page shows what each level covers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you maintain sites you did not build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We audit the site first, fix urgent issues and then bring it onto the routine. We may suggest changes if the build makes upkeep risky."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you only maintain WordPress sites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress is the most common, and we also look after custom builds and other CMS sites. Tell us the platform and we will confirm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if my site is hacked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We restore from a clean backup, remove the malware, close the way in and report what happened. Cleanup is scoped on a call if the site is already infected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do content edits work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You send a request by email or a shared board, and we make the change within the agreed hours. Larger changes are quoted before we start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does website maintenance cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the platform, the size of the site and how much editing you need. Talk to us and we will recommend a level and write the scope down."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "sitemaint",
+    "wm": "Website maintenance",
+    "eyebrow": "● Website maintenance",
+    "h1": [
+      "Website maintenance",
+      [
+        "so the site ",
+        "never becomes",
+        "a risk."
+      ]
+    ],
+    "sub": "Updates, backups, security, uptime, speed, content edits and a monthly report, on a retainer that fits how often your site changes.",
+    "tiles": [
+      {
+        "img": "web/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Checked every month"
+      },
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Updates",
+        "note": "Tested before they go live"
+      },
+      {
+        "img": "web/seo.jpg",
+        "pos": "50% 50%",
+        "label": "Search health",
+        "note": "Broken links and errors fixed"
+      },
+      {
+        "img": "web/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Forms",
+        "note": "Tested so leads arrive"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Website maintenance is the routine care that keeps a site secure, fast and current: software updates, backups, security checks, uptime monitoring, speed upkeep and small content edits. A retainer makes these a monthly habit, so problems are fixed before visitors or search engines notice.",
+      "hl": "software updates, backups, security checks",
+      "who": "Monday Marketing Company (MMC) maintains WordPress and other sites for B2B, education and D2C brands, whether or not we built them.",
+      "points": [
+        {
+          "icon": "gauge",
+          "title": "Updates and backups",
+          "text": "Core, plugins and themes kept current, with restore points."
+        },
+        {
+          "icon": "layers",
+          "title": "Security and uptime",
+          "text": "Scans, hardening and monitoring with alerts."
+        },
+        {
+          "icon": "chart",
+          "title": "Monthly report",
+          "text": "A plain summary of what was done and what is next."
+        }
+      ],
+      "image": "web/speed.jpg",
+      "chip": "A site that is looked after every month"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "maintenance-scope",
+          "h": "What a maintenance retainer covers",
+          "paras": [
+            "Most site problems are not dramatic. An outdated plugin, a failed form, a slow page or an expired certificate quietly costs enquiries for weeks. A retainer puts someone on the checklist every month.",
+            "We work on WordPress most often, and also on custom and other CMS sites. If we built your site with our <a href=\"/services/web-development/wordpress/\">WordPress development</a> team, we already know how it is put together."
+          ],
+          "img": "web/plan.jpg",
+          "cap": "Illustrative scene: a monthly site checklist."
+        },
+        {
+          "id": "maintenance-tiers",
+          "h": "What each level of care covers",
+          "paras": [
+            "We describe three levels of care. The right one depends on how often your site changes and how much it earns. Talk to us and we will suggest a level and write down exactly what is included."
+          ],
+          "table": {
+            "caption": "What is covered at each level of website maintenance",
+            "head": [
+              "Task",
+              "Essential care",
+              "Standard care",
+              "Active care"
+            ],
+            "rows": [
+              [
+                "Core, plugin and theme updates",
+                "Yes",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Backups and restore",
+                "Yes",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Security scans and hardening",
+                "Yes",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Uptime monitoring and alerts",
+                "Yes",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Speed checks and fixes",
+                "Report only",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Broken links and search errors",
+                "Report only",
+                "Yes",
+                "Yes"
+              ],
+              [
+                "Small content and image edits",
+                "On request",
+                "Included in agreed hours",
+                "Included in agreed hours"
+              ],
+              [
+                "Form and checkout testing",
+                "On request",
+                "Monthly",
+                "Monthly"
+              ],
+              [
+                "Monthly report",
+                "Yes",
+                "Yes",
+                "Yes, with a call"
+              ],
+              [
+                "Pricing",
+                "Talk to us",
+                "Talk to us",
+                "Talk to us"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Not sure which level?",
+            "text": "Tell us how often you update the site and what it earns. We will recommend one on a call. Agencies can also use our <a href=\"/white-label/website-maintenance/\">white-label website maintenance</a>."
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What a retainer",
+      "h2b": "looks after.",
+      "lede": "Six jobs done every month, so you do not have to remember them.",
+      "items": [
+        {
+          "t": "Updates",
+          "d": "WordPress core, plugins and themes updated on a schedule, tested first on a staging copy where possible.",
+          "img": "web/build.jpg",
+          "alt": "Updates: illustrative scene"
+        },
+        {
+          "t": "Backups",
+          "d": "Regular off-site backups with a tested restore, so a bad update is reversible.",
+          "img": "web/plan.jpg",
+          "alt": "Backups: illustrative scene"
+        },
+        {
+          "t": "Security",
+          "d": "Malware scans, login protection, firewall rules and fixes for known vulnerabilities.",
+          "img": "web/crm.jpg",
+          "alt": "Security: illustrative scene"
+        },
+        {
+          "t": "Uptime and speed",
+          "d": "Monitoring with alerts, plus image, script and caching upkeep to keep pages quick.",
+          "img": "web/speed.jpg",
+          "alt": "Uptime and speed: illustrative scene"
+        },
+        {
+          "t": "Content edits",
+          "d": "Small text, image, banner and page changes done for you within the agreed hours.",
+          "img": "web/seo.jpg",
+          "alt": "Content edits: illustrative scene"
+        },
+        {
+          "t": "Monthly reporting",
+          "d": "What was updated, what was fixed, what to watch and what we suggest next.",
+          "img": "res/insights.jpg",
+          "alt": "Monthly reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for maintenance.",
+      "lede": "A site that is cared for keeps earning its place.",
+      "img": "web/speed.jpg",
+      "alt": "Why brands choose MMC for maintenance. Illustrative scene.",
+      "items": [
+        {
+          "t": "A named person",
+          "d": "Someone who knows your site, not a ticket queue."
+        },
+        {
+          "t": "Tested before live",
+          "d": "Updates are checked so they do not break layouts or forms."
+        },
+        {
+          "t": "Clear scope",
+          "d": "You see what is covered, and anything extra is quoted first."
+        },
+        {
+          "t": "Joined up with growth",
+          "d": "Maintenance sits next to <a href=\"/services/seo/\">SEO</a> and <a href=\"/services/cro/\">conversion work</a>, so fixes help results."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How maintenance starts and runs,",
+      "h2b": "step by step.",
+      "img": "web/plan.jpg",
+      "alt": "How maintenance starts and runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit the site",
+          "d": "We check versions, plugins, hosting, backups, security and speed, and list what needs fixing first."
+        },
+        {
+          "t": "Stabilise",
+          "d": "We fix the urgent items, set up backups and monitoring, and create a safe way to test updates."
+        },
+        {
+          "t": "Run the routine",
+          "d": "Updates, scans, checks and small edits happen on a schedule you can see."
+        },
+        {
+          "t": "Report and improve",
+          "d": "Each month you get a summary, and we suggest changes worth making next."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Maintenance for sites that",
+      "h2b": "earn or represent you.",
+      "good": {
+        "t": "Your site takes enquiries or orders, and nobody on your team has time for updates and security.",
+        "why": "It suits B2B firms, colleges and D2C brands on WordPress or similar."
+      },
+      "not": {
+        "t": "You plan to replace the site soon.",
+        "why": "In that case a rebuild may be the better spend, and we will say so."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where website maintenance fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Web development",
+          "d": "Websites built for search, speed and leads.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/",
+          "link": "See Web development"
+        },
+        {
+          "n": "WordPress development",
+          "d": "Custom themes, WooCommerce, speed and migrations.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/wordpress/",
+          "link": "See WordPress development"
+        },
+        {
+          "n": "White-label website maintenance",
+          "d": "Care plans for your client sites.",
+          "img": "web/speed.jpg",
+          "href": "/white-label/website-maintenance/",
+          "link": "See white-label website maintenance"
+        },
+        {
+          "n": "SEO",
+          "d": "Technical health, search intent and answer-engine visibility.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "Conversion optimisation",
+          "d": "Research, tests and fixes.",
+          "img": "cro/test.jpg",
+          "href": "/services/cro/",
+          "link": "See Conversion optimisation"
+        },
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "WooCommerce development",
+          "d": "Stores on WordPress: catalogue, checkout, shipping and speed.",
+          "img": "d2c/checkout.jpg",
+          "href": "/services/web-development/woocommerce/",
+          "link": "See WooCommerce development"
+        },
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing and checkout.",
+          "img": "shop/design.jpg",
+          "href": "/services/shopify-development/",
+          "link": "See Shopify development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "website maintenance."
+    ],
+    "faq": [
+      {
+        "q": "What is website maintenance?",
+        "a": "It is the routine work that keeps a site secure, fast and up to date: software updates, backups, security checks, uptime monitoring, speed upkeep and small content changes."
+      },
+      {
+        "q": "What is included in your website maintenance plans?",
+        "a": "Updates, backups, security scans, uptime monitoring, speed checks, broken link fixes, small content edits and a monthly report. The comparison table on this page shows what each level covers."
+      },
+      {
+        "q": "Do you maintain sites you did not build?",
+        "a": "Yes. We audit the site first, fix urgent issues and then bring it onto the routine. We may suggest changes if the build makes upkeep risky."
+      },
+      {
+        "q": "Do you only maintain WordPress sites?",
+        "a": "WordPress is the most common, and we also look after custom builds and other CMS sites. Tell us the platform and we will confirm."
+      },
+      {
+        "q": "What happens if my site is hacked?",
+        "a": "We restore from a clean backup, remove the malware, close the way in and report what happened. Cleanup is scoped on a call if the site is already infected."
+      },
+      {
+        "q": "How do content edits work?",
+        "a": "You send a request by email or a shared board, and we make the change within the agreed hours. Larger changes are quoted before we start."
+      },
+      {
+        "q": "What does website maintenance cost?",
+        "a": "It depends on the platform, the size of the site and how much editing you need. Talk to us and we will recommend a level and write the scope down."
+      }
+    ],
+    "cta": {
+      "h2a": "Put your site on",
+      "h2b": "a monthly routine.",
+      "lede": "On a call, with a senior strategist. We audit your site and recommend the level of care it needs."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client site.",
+      "style": "stack",
+      "eyebrow": "Where site care goes wrong",
+      "h2a": "Four ways site care",
+      "h2b": "goes wrong.",
+      "lede": "A site that is cared for keeps earning its place. Each stage below is where care slips, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Audit first",
+        "tag": "Site audit",
+        "breaks": "Updating a site nobody has audited.",
+        "why": "Old plugins, weak hosting and missing backups stay hidden until something breaks.",
+        "does": "We check versions, plugins, hosting, backups, security and speed, and list what needs fixing first."
+      },
+      {
+        "k": "Make updates safe",
+        "tag": "Backups and updates",
+        "breaks": "Updates run straight on the live site.",
+        "why": "One bad update can break a layout or a form.",
+        "does": "We set up backups and monitoring, and a safe copy to test updates before they go live."
+      },
+      {
+        "k": "Keep the routine",
+        "tag": "Security and uptime",
+        "breaks": "Maintenance done when someone remembers.",
+        "why": "Scans, checks and small edits slip when nobody owns them.",
+        "does": "Updates, scans, checks and small edits happen on a schedule you can see."
+      },
+      {
+        "k": "Report and improve",
+        "tag": "Monthly report",
+        "breaks": "No record of what was done.",
+        "why": "Without a summary you cannot tell what was fixed or what comes next.",
+        "does": "Each month you get a summary, and we suggest changes worth making next."
+      }
+    ],
+    "process": {
+      "note": "Timing depends on scope. We agree it with you before work starts."
+    }
+  },
+  "updated": "2026-10-09"
+}

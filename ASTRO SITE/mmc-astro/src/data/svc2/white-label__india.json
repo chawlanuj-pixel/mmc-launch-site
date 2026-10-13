@@ -1,0 +1,227 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "company/call.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: a team lead on a call with a headset.",
+    "facts": [
+      {
+        "t": "Your hours, our overlap.",
+        "d": "A shared window for check-ins, written into the scope."
+      },
+      {
+        "t": "Reports in your format.",
+        "d": "Delivered under your brand, in your currency."
+      },
+      {
+        "t": "NDA and data care.",
+        "d": "Client data is handled under written terms."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why overseas agencies partner with an India delivery team"
+  },
+  "work": {
+    "panel": "IndiaDesk",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do as your",
+    "h2b": "delivery team in India.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Agree an overlap window that suits you.",
+        "d": "Our day and yours share a window, written into the scope, so you always know when a question gets a live answer."
+      },
+      {
+        "n": "02",
+        "t": "Send an end-of-day note before you start.",
+        "d": "Done, blocked and next arrive before your morning, so you do not open a mystery."
+      },
+      {
+        "n": "03",
+        "t": "Hold the same check-in every day.",
+        "d": "A short call inside the overlap covers what moved, what is blocked and what you decide."
+      },
+      {
+        "n": "04",
+        "t": "Start your day with work already moved.",
+        "d": "Drafts are ready, the report is built and your questions are listed, so your team begins from decisions."
+      }
+    ],
+    "illustrative": "Illustrative layout of a handover view between an overseas agency and an India delivery team. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "India delivery hand-off",
+    "pinsLabel": "Five places working with an India partner slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "route",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Overlap"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Overnight"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Billing"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Data"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "People"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "clock",
+        "head": "Overlap",
+        "lines": [
+          "No shared hours",
+          "Questions wait a day"
+        ],
+        "chip": "Slow",
+        "tone": "b"
+      },
+      {
+        "glyph": "mail",
+        "head": "Overnight",
+        "lines": [
+          "Work stalls overnight",
+          "No note on return"
+        ],
+        "chip": "Lost",
+        "tone": "b"
+      },
+      {
+        "glyph": "coin",
+        "head": "Billing",
+        "lines": [
+          "Currency and invoice friction",
+          "Tax questions"
+        ],
+        "chip": "Friction",
+        "tone": "w"
+      },
+      {
+        "glyph": "eye",
+        "head": "Data",
+        "lines": [
+          "Access shared loosely",
+          "No written terms"
+        ],
+        "chip": "Loose",
+        "tone": "b"
+      },
+      {
+        "glyph": "users",
+        "head": "People",
+        "lines": [
+          "One person knows it all",
+          "Absence stalls work"
+        ],
+        "chip": "Fragile",
+        "tone": "w"
+      }
+    ],
+    "base": "Overlap, handover, check-in, morning",
+    "artLabel": "Five stations on a hand-off line showing where working with an India delivery partner slips: overlap hours, overnight work, billing, data and people.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you from overseas,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and overlap plan",
+        "d": "We sign the NDA, agree the overlap window, check-in and invoice currency, and write them into the scope.",
+        "get": "A written working agreement across time zones.",
+        "img": "about2/huddle.jpg",
+        "alt": "Illustrative scene: colleagues at a whiteboard in a kick-off.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot project",
+        "d": "One live project runs with the daily check-in and the end-of-day note.",
+        "get": "A pilot you can judge on communication and quality.",
+        "img": "company/technology.jpg",
+        "alt": "Illustrative scene: a developer at work on a project.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Handover note format, escalation path, file sharing and access rules are written once.",
+        "get": "A shared playbook for both teams.",
+        "img": "company/onepage.jpg",
+        "alt": "Illustrative scene: a playbook being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the team",
+        "d": "More roles and projects join the same rhythm, with the overlap and check-in unchanged.",
+        "get": "A delivery team that grows with your agency.",
+        "img": "careers2/team-screen.jpg",
+        "alt": "Illustrative scene: colleagues looking at a screen together.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "careers2/studio-wide.jpg",
+    "alt": "A studio team working around a shared table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "White-label link building",
+        "href": "/white-label/link-building/"
+      },
+      {
+        "n": "Contact MMC",
+        "href": "/contact/"
+      },
+      {
+        "n": "Locations",
+        "href": "/locations/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

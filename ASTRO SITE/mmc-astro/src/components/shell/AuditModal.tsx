@@ -25,7 +25,7 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
   const mountedRef = React.useRef(false);
 
   const [form, setForm] = React.useState({
-    name: "", email: "", brand: "", url: "", revenue: "", spend: "", timeline: "", consent: false, channel: "Meta + Google", challenge: ""
+    name: "", email: "", phone: "", brand: "", url: "", revenue: "", spend: "", timeline: "", consent: false, channel: "Meta + Google", challenge: ""
   });
   const [submitted, setSubmitted] = React.useState(false);
   const [sending, setSending] = React.useState(false);
@@ -106,14 +106,16 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
   const onSubmit = (e: any) => {
     e.preventDefault();
     if (sending) return;
+    const forms0 = (window as any).MMCForms;
+    if (!(forms0 && forms0.validPhone ? forms0.validPhone(form.phone) : /\d{8,}/.test(form.phone))) { setFormErr((forms0 && forms0.phoneMsg) || "Please enter a valid phone number."); return; }
     if (!form.revenue || !form.spend || !form.timeline) { setFormErr("Please choose your revenue band, monthly budget and start time so we can route this to the right person."); return; }
     setFormErr("");
     setSending(true);
-    const fail = () => { setSending(false); setFormErr("We couldn't send that just now. Please email sales-in@mondaymarketing.company and we'll pick it up."); };
+    const fail = () => { setSending(false); setFormErr("We couldn't send that just now. Please email anuj@mondaymarketing.company and we'll pick it up."); };
     const forms = (window as any).MMCForms;
     if (!forms) { fail(); return; }
     Promise.resolve(forms.submitLead(
-      { ...form, source: "Brief modal" },
+      { ...form, phone: forms.cleanPhone ? forms.cleanPhone(form.phone) : form.phone, source: "Brief modal" },
       { subject: "Brief, " + (form.brand || form.name || "New brand") }
     )).then((r: any) => { setSending(false); setSentVia(r && r.mode); setSubmitted(true); forms.goThanks && forms.goThanks("audit", r, form); }).catch(fail);
   };
@@ -195,6 +197,7 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
           <section className="audit__right">
             {!submitted ? (
               <form className="audit__form" onSubmit={onSubmit}>
+                <div className="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" name="_hp" tabIndex={-1} autoComplete="off" /></label></div>
                 <div className="audit__form-head am-stagger">
                   <div className="audit__form-eyebrow eyebrow">Send a brief</div>
                   <h3 className="audit__form-h">Tell us about the brand.</h3>
@@ -213,9 +216,15 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
                 </div>
 
                 <div className="audit__field-row am-stagger">
+                  <Field label="Phone or WhatsApp" required>
+                    <input type="tel" inputMode="tel" value={form.phone} onChange={update("phone")} required placeholder="+91 98765 43210" autoComplete="tel" maxLength={20} />
+                  </Field>
                   <Field label="Brand name" required>
                     <input type="text" value={form.brand} onChange={update("brand")} required placeholder="Your brand name" autoComplete="organization" />
                   </Field>
+                </div>
+
+                <div className="audit__field-row am-stagger" style={{ gridTemplateColumns: "minmax(0, 1fr)" }}>
                   <Field label="Website">
                     <input type="text" value={form.url} onChange={update("url")} placeholder="yourbrand.com" autoComplete="url" />
                   </Field>
@@ -324,7 +333,7 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
                   We'll read what you sent for <span className="em-serif" style={{color:"var(--mmc-blue)"}}>{form.brand || "your brand"}</span> and come back inside one working day with a slot and a short pre-read.
                 </p>
                 {sentVia === "mailto" && (
-                  <p className="audit__thanks-sub" role="status">Your email app should have opened with the details filled in. If it didn't, send them to <a href="mailto:sales-in@mondaymarketing.company">sales-in@mondaymarketing.company</a>.</p>
+                  <p className="audit__thanks-sub" role="status">Your email app should have opened with the details filled in. If it didn't, send them to <a href="mailto:anuj@mondaymarketing.company">anuj@mondaymarketing.company</a>.</p>
                 )}
                 <button className="btn btn--ghost" onClick={close}>
                   Back to the site

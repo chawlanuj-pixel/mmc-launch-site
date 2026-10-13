@@ -1,0 +1,35 @@
+---
+// Real <details> accordion beside a literal photo. Data key `accordion`; falls back to the page's `process` steps.
+import "../../styles/faq.css";
+import "../../styles/hub-v2.css";
+interface Item { t: string; d: string; out?: string }
+const { A, P, fallbackImg, fallbackAlt = "" } = Astro.props as { A?: any; P?: any; fallbackImg?: string; fallbackAlt?: string };
+let data: { eyebrow?: string; h2a: string; h2b?: string; img: string; alt?: string; items: Item[] } | null = null;
+if (A && A.items && A.items.length) data = A;
+else if (P && P.steps && P.steps.length && fallbackImg) data = { h2a: P.h2a, h2b: P.h2b, img: fallbackImg, alt: fallbackAlt, items: P.steps.map((s: any) => ({ t: (s.when ? s.when + ": " : "") + s.t, d: s.d, out: s.out })) };
+---
+{data ? (
+<section class="n-band pm-band n-band--paper" id="process" aria-labelledby="hv2h-acc-h">
+  <div class="n-wrap hv2h-acc">
+    <div class="hv2h-acc__main">
+      <div class="hv2h-head n-rise">
+        <span class="n-eyebrow">{data.eyebrow || "How it works"}</span>
+        <h2 class="n-h2" id="hv2h-acc-h">{data.h2a}{data.h2b ? " " : ""}{data.h2b && <span class="n-serif">{data.h2b}</span>}</h2>
+      </div>
+      <div class="mmc-faq hv2h-acc__list n-rise">
+        {data.items.map((it, k) => (
+          <details open={k === 0}>
+            <summary><span class="hv2h-acc__n" aria-hidden="true">{String(k + 1).padStart(2, "0")}</span><span class="hv2h-acc__q">{it.t}</span></summary>
+            <div class="mmc-faq__a"><p>{it.d}</p>{it.out ? <p><b>You get: </b>{it.out}</p> : null}</div>
+          </details>
+        ))}
+      </div>
+      {P && P.note ? <p class="hv2h-note">{P.note}</p> : null}
+    </div>
+    <figure class="hv2h-acc__fig n-rise">
+      <img src={"/assets/" + data.img} alt={data.alt || ""} width="800" height="1000" loading="lazy" decoding="async" />
+      <figcaption class="hv2h-why__cap">Illustrative</figcaption>
+    </figure>
+  </div>
+</section>
+) : null}

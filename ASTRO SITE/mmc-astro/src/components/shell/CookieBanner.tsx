@@ -54,9 +54,10 @@ export default function CookieBanner() {
                 A note about cookies
               </div>
               <p className="cookie__body">
-                We use cookies to measure how the site performs, improve our work, and
+                <span className="cookie__long">We use cookies to measure how the site performs, improve our work, and
                 show you relevant content. <a href="/privacy/">Read the privacy policy</a> or pick
-                what you'd like to allow.
+                what you'd like to allow.</span>
+                <span className="cookie__short">We use cookies to measure and improve the site. <a href="/privacy/">Privacy</a></span>
               </p>
             </div>
             <div className="cookie__r">

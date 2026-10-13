@@ -1,0 +1,560 @@
+{
+  "file": "geo.html",
+  "path": "/services/seo/geo/",
+  "key": "geo",
+  "title": "GEO Services India: Get Cited by ChatGPT and Gemini | MMC",
+  "description": "Generative engine optimisation for D2C, B2B and education brands in India. Be cited by ChatGPT, Perplexity, Gemini and Google AI Overviews, honestly.",
+  "ogTitle": "GEO: be the source AI cites",
+  "ogDescription": "Entities, sources and citations for generative AI.",
+  "ogAlt": "Monday Marketing Company: geo.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/seo/geo/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AI SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/ai-seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "GEO",
+          "item": "https://www.mondaymarketing.company/services/seo/geo/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/geo/#webpage",
+      "url": "https://www.mondaymarketing.company/services/seo/geo/",
+      "name": "GEO Services India: Get Cited by ChatGPT and Gemini | MMC",
+      "description": "Generative engine optimisation for D2C, B2B and education brands in India. Be cited by ChatGPT, Perplexity, Gemini and Google AI Overviews, honestly.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/seo/geo/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/seo/geo/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/seo/geo/#service",
+      "name": "GEO",
+      "serviceType": "Generative engine optimisation",
+      "description": "Generative engine optimisation for D2C, B2B and education brands: entity clarity, source quality and citations so generative AI tools describe and cite the brand accurately.",
+      "url": "https://www.mondaymarketing.company/services/seo/geo/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/geo/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generative engine optimisation is the work of making your brand a clear, consistent and citable source for generative AI tools such as ChatGPT, Perplexity, Gemini and Google AI Overviews, so they describe and cite you accurately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is GEO different from SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO aims to rank pages in search results. GEO aims to influence how generative tools describe and cite your brand, which depends more on entity clarity, source quality and third-party mentions than on a single page's ranking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is GEO different from AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO shapes pages into short answers for snippets and voice. GEO works on whether generative tools know who you are, trust your sources and cite you. We run both inside AI SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you get us into ChatGPT answers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody outside an AI or search company can promise a citation, a ranking or a position in an answer, and the systems change often. We commit to the work in the monthly scope and to reporting what we can observe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need an llms.txt file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a proposed convention, and tools differ in whether they read it. It is cheap to provide and harmless, so we usually add one alongside the work that matters more: clear pages, consistent facts and credible sources."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does GEO cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is GEO for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brands that buyers ask AI about. We do this for D2C, B2B and education brands and set it up differently for each: D2C on products and repeat purchase, B2B on specifications and enquiries, education on courses and admissions."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "geo",
+    "wm": "GEO",
+    "eyebrow": "● Generative engine optimisation",
+    "h1": [
+      "GEO",
+      [
+        "to be cited by ",
+        "ChatGPT and Gemini",
+        "."
+      ]
+    ],
+    "sub": "Generative tools build answers from sources they trust. We make your brand a clear, consistent, citable source.",
+    "tiles": [
+      {
+        "img": "seo/authority.jpg",
+        "pos": "50% 50%",
+        "label": "Sources",
+        "note": "Trusted and cited"
+      },
+      {
+        "img": "seo/aeo.jpg",
+        "pos": "50% 50%",
+        "label": "Answers",
+        "note": "Accurate about you"
+      },
+      {
+        "img": "orm/earn.jpg",
+        "pos": "50% 50%",
+        "label": "Mentions",
+        "note": "Earned, not bought"
+      },
+      {
+        "img": "seo/tech.jpg",
+        "pos": "50% 50%",
+        "label": "Access",
+        "note": "Crawlable by AI bots"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Generative engine optimisation (GEO) is the work of becoming a source that ChatGPT, Perplexity, Gemini and Google AI Overviews draw on and cite when they answer buyers. It rests on clear entity facts, quotable original content, trusted third-party mentions and pages that AI crawlers can read.",
+      "hl": "a source that generative tools draw on and cite",
+      "who": "Monday Marketing Company (MMC) does GEO for D2C, B2B and education brands, as one workstream inside our AI SEO programme.",
+      "points": [
+        {
+          "icon": "link",
+          "title": "Clear entity facts",
+          "text": "Who you are, what you offer and where, stated the same way everywhere."
+        },
+        {
+          "icon": "target",
+          "title": "Citable content",
+          "text": "Original, specific pages that give a tool something worth quoting."
+        },
+        {
+          "icon": "grid",
+          "title": "Trusted mentions",
+          "text": "Reviews, listings and publications that describe you consistently."
+        }
+      ],
+      "image": "seo/authority.jpg",
+      "chip": "Cited by the tools buyers ask"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-sources-work",
+          "h": "How generative tools choose what to cite",
+          "paras": [
+            "Generative tools combine what they learned in training with sources fetched at answer time. Which sources they favour is not published and differs by tool, so no one can honestly promise a result.",
+            "What does hold across them is simple: a brand that is easy to identify, described consistently by credible sources and backed by specific, useful pages is easier to cite correctly than one that is vague or contradictory."
+          ],
+          "img": "seo/authority.jpg",
+          "cap": "Illustrative scene: sources being reviewed for an answer."
+        },
+        {
+          "id": "geo-vs",
+          "h": "GEO compared with AEO and classic SEO",
+          "paras": [
+            "GEO sits inside <a href=\"/services/seo/ai-seo/\">AI SEO</a>. The foundation is <a href=\"/services/seo/\">SEO</a>, and the answer-box side is <a href=\"/services/seo/aeo/\">AEO</a>."
+          ],
+          "table": {
+            "caption": "GEO compared with SEO and AEO",
+            "head": [
+              "",
+              "Classic SEO",
+              "AEO",
+              "GEO"
+            ],
+            "rows": [
+              [
+                "Goal",
+                "Rank the page",
+                "Be the short answer",
+                "Be cited and described correctly"
+              ],
+              [
+                "Main lever",
+                "Pages and links",
+                "Answer-first copy and schema",
+                "Entities, sources and mentions"
+              ],
+              [
+                "Surfaces",
+                "Search results",
+                "Snippets, voice, answer boxes",
+                "ChatGPT, Perplexity, Gemini, AI Overviews"
+              ],
+              [
+                "Read next",
+                "<a href=\"/services/seo/\">SEO</a>",
+                "<a href=\"/services/seo/aeo/\">AEO</a>",
+                "This page"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Reputation counts here.",
+            "text": "Reviews and press shape how brands are described. See <a href=\"/services/online-reputation-management/\">online reputation management</a> and the <a href=\"/guides/\">guides</a>."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where citations are lost",
+      "h2a": "Five ways brands",
+      "h2b": "drop out of AI answers.",
+      "lede": "Each stage below is where a brand fails to be cited or is described wrongly, and the GEO work that corrects it."
+    },
+    "stages": [
+      {
+        "k": "Check what AI says about you",
+        "tag": "Brand and category audit",
+        "breaks": "Never asking the tools about your own brand.",
+        "why": "Assistants can omit you, confuse you with another firm or repeat outdated facts.",
+        "does": "We ask a fixed set of category and brand questions across the main tools and record what is said, cited and wrong.",
+        "href": "/services/seo/geo/",
+        "img": "seo/aeo.jpg"
+      },
+      {
+        "k": "Make the entity unmistakable",
+        "tag": "Entity clarity",
+        "breaks": "Different names, descriptions and facts in different places.",
+        "why": "Contradictions make it harder for a system to be sure which brand a fact belongs to.",
+        "does": "We align your name, offer, locations and key facts on your site, profiles and listings, and mark them up.",
+        "href": "/services/seo/geo/",
+        "img": "seo/tech.jpg"
+      },
+      {
+        "k": "Publish what is worth citing",
+        "tag": "Original, specific content",
+        "breaks": "Generic pages that say what every competitor says.",
+        "why": "A tool has little reason to cite a page that adds nothing new.",
+        "does": "We build pages with your own specifics: methods, comparisons, definitions, data you hold and are allowed to share.",
+        "href": "/services/seo/aeo/",
+        "img": "seo/pages.jpg"
+      },
+      {
+        "k": "Earn credible mentions",
+        "tag": "Third-party sources",
+        "breaks": "Relying only on your own website.",
+        "why": "Reviews, directories, publications and community sources help confirm who you are.",
+        "does": "We work on reviews, listings and relevant media so credible sources describe you consistently. No paid link schemes.",
+        "href": "/services/online-reputation-management/",
+        "img": "orm/earn.jpg"
+      },
+      {
+        "k": "Let AI crawlers in, on your terms",
+        "tag": "Access and policy",
+        "breaks": "Blocking or ignoring AI crawlers by accident.",
+        "why": "Robots rules and rendering can stop AI tools reading your pages, or allow more than you intended.",
+        "does": "We review crawler access, rendering and an llms.txt file, and set a policy you choose deliberately.",
+        "href": "/services/seo/",
+        "img": "seo/authority.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four things that show whether",
+      "h2b": "GEO is working.",
+      "note": "AI answers vary by question, time and user, so we track a set over time.",
+      "cards": [
+        {
+          "n": "Citations and mentions",
+          "d": "How often a fixed question set names or links to you."
+        },
+        {
+          "n": "Accuracy of the description",
+          "d": "Whether the tools state your offer and facts correctly."
+        },
+        {
+          "n": "Referral visits from AI tools",
+          "d": "Visits that arrive from assistants, where analytics can see them."
+        },
+        {
+          "n": "Enquiries or orders",
+          "d": "What search and AI together produce for the business."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where GEO fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "AI SEO",
+          "d": "The overall plan for being found and recommended across classic and AI search.",
+          "img": "seo/intent.jpg",
+          "href": "/services/seo/ai-seo/",
+          "link": "See AI SEO"
+        },
+        {
+          "n": "Answer-engine optimisation",
+          "d": "Short, structured answers for featured snippets, voice and AI answers.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/aeo/",
+          "link": "See AEO"
+        },
+        {
+          "n": "Online reputation management",
+          "d": "Reviews and mentions that shape how you are described.",
+          "img": "orm/profile.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
+        },
+        {
+          "n": "White-label GEO and AEO",
+          "d": "AI search work delivered behind your brand.",
+          "img": "seo/aeo.jpg",
+          "href": "/white-label/geo-aeo/",
+          "link": "See white-label GEO and AEO"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "GEO."
+    ],
+    "faq": [
+      {
+        "q": "What is GEO?",
+        "a": "Generative engine optimisation is the work of making your brand a clear, consistent and citable source for generative AI tools such as ChatGPT, Perplexity, Gemini and Google AI Overviews, so they describe and cite you accurately."
+      },
+      {
+        "q": "How is GEO different from SEO?",
+        "a": "SEO aims to rank pages in search results. GEO aims to influence how generative tools describe and cite your brand, which depends more on entity clarity, source quality and third-party mentions than on a single page's ranking."
+      },
+      {
+        "q": "How is GEO different from AEO?",
+        "a": "AEO shapes pages into short answers for snippets and voice. GEO works on whether generative tools know who you are, trust your sources and cite you. We run both inside AI SEO."
+      },
+      {
+        "q": "Can you get us into ChatGPT answers?",
+        "a": "No. Nobody outside an AI or search company can promise a citation, a ranking or a position in an answer, and the systems change often. We commit to the work in the monthly scope and to reporting what we can observe."
+      },
+      {
+        "q": "Do we need an llms.txt file?",
+        "a": "It is a proposed convention, and tools differ in whether they read it. It is cheap to provide and harmless, so we usually add one alongside the work that matters more: clear pages, consistent facts and credible sources."
+      },
+      {
+        "q": "What does GEO cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Who is GEO for?",
+        "a": "Brands that buyers ask AI about. We do this for D2C, B2B and education brands and set it up differently for each: D2C on products and repeat purchase, B2B on specifications and enquiries, education on courses and admissions."
+      }
+    ],
+    "cta": {
+      "h2a": "Ask the tools",
+      "h2b": "what they say about you.",
+      "lede": "On a call, with a senior strategist. We run your brand through the main AI tools and show what is missing or wrong."
+    },
+    "process": {
+      "h2a": "How we run GEO,",
+      "h2b": "month to month.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit what AI says",
+          "d": "We record category and brand answers across the main tools and review crawler access.",
+          "out": "A baseline of mentions and errors."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Fix the entity",
+          "d": "We align facts across your site, profiles and listings and mark them up.",
+          "out": "One consistent description of you."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Build citable content",
+          "d": "We publish specific pages and start the review and mention work, then recheck.",
+          "out": "Progress tracked over time."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "GEO for brands that want to be",
+      "h2b": "named and described right.",
+      "good": {
+        "t": "Buyers ask AI tools to recommend or compare, and you want an accurate answer about you.",
+        "why": "This suits D2C brands compared in recommendation lists, B2B suppliers shortlisted by research, and colleges and consultancies compared by families."
+      },
+      "not": {
+        "t": "You want a guaranteed mention, or to game the tools.",
+        "why": "No one controls AI answers. We improve how clear and credible you are, and report what changes."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "GEO.",
+      "lede": "From the first audit to citable pages, for D2C, B2B and education brands.",
+      "items": [
+        {
+          "t": "Brand and category audit",
+          "d": "A fixed question set checked across the main AI tools and recorded.",
+          "img": "seo/aeo.jpg",
+          "alt": "Brand and category audit: illustrative scene"
+        },
+        {
+          "t": "Entity alignment",
+          "d": "Name, offer, locations and facts made consistent across the web.",
+          "img": "seo/tech.jpg",
+          "alt": "Entity alignment: illustrative scene"
+        },
+        {
+          "t": "Citable content",
+          "d": "Original pages with your own specifics, written to be quoted.",
+          "img": "seo/pages.jpg",
+          "alt": "Citable content: illustrative scene"
+        },
+        {
+          "t": "Reviews and mentions",
+          "d": "Reviews, listings and relevant media that confirm who you are.",
+          "img": "orm/earn.jpg",
+          "alt": "Reviews and mentions: illustrative scene"
+        },
+        {
+          "t": "AI crawler policy",
+          "d": "Robots, rendering and llms.txt reviewed and set on purpose.",
+          "img": "seo/authority.jpg",
+          "alt": "AI crawler policy: illustrative scene"
+        },
+        {
+          "t": "Repeat tracking",
+          "d": "The same questions rechecked over time next to enquiries and orders.",
+          "img": "sv/organic.jpg",
+          "alt": "Repeat tracking: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for GEO.",
+      "lede": "The field is new, so we are plain about what we can and cannot control.",
+      "img": "seo/authority.jpg",
+      "alt": "Why brands choose MMC for GEO. Illustrative scene.",
+      "items": [
+        {
+          "t": "Honest about uncertainty",
+          "d": "No guaranteed citations, no secret tricks. We report what we observe."
+        },
+        {
+          "t": "Reputation and SEO together",
+          "d": "Entity, reviews and technical work are handled by one team."
+        },
+        {
+          "t": "Facts before copy",
+          "d": "We fix what is wrong or missing about you before writing more."
+        },
+        {
+          "t": "Measured over time",
+          "d": "A fixed question set, rechecked, instead of a one-off screenshot."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a GEO engagement runs,",
+      "h2b": "step by step.",
+      "img": "seo/authority.jpg",
+      "alt": "How a GEO engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit the tools",
+          "d": "Category and brand questions are asked across the main AI tools and recorded."
+        },
+        {
+          "t": "Fix the facts",
+          "d": "Entity details are aligned across your site, profiles and listings."
+        },
+        {
+          "t": "Publish and earn",
+          "d": "Citable pages go live and the review and mention work begins."
+        },
+        {
+          "t": "Recheck and extend",
+          "d": "The question set is rechecked and the plan updated each month."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

@@ -4,14 +4,18 @@ const map = routes as Record<string, string>;
 const SITE = "https://www.mondaymarketing.company";
 
 /** Rewrites old https://www.mondaymarketing.company/foo.html(#x) URLs (item, url, @id, breadcrumb) to the clean routes. */
-export function rewriteJsonld<T>(blocks: T): T {
+export function rewriteJsonld<T>(blocks: T, updated?: string): T {
   const s = JSON.stringify(blocks).replace(/https:\/\/www\.mondaymarketing\.company\/([^"#\\]+?\.html)(#[^"\\]*)?/g, (all, file, frag) => {
     const key = decodeURIComponent(file);
     const to = map[key];
     if (!to) { console.warn("[hub] jsonld url not in routes:", all); return all; }
     return SITE + to + (frag || "");
   });
-  return JSON.parse(s);
+  const out = JSON.parse(s);
+  if (updated && Array.isArray(out)) {
+    for (const b of out) if (b && (b["@type"] === "WebPage" || b["@type"] === "Service")) b.dateModified = updated;
+  }
+  return out;
 }
 
 // Names and the "has work art" list come from the one client book (src/data/work-clients.json).

@@ -1,0 +1,164 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/performance.jpg",
+    "pos": "50% 50%",
+    "alt": "An analyst reviewing campaign dashboards on two monitors.",
+    "facts": [
+      {
+        "t": "Thane.",
+        "d": "Head office, with a published address."
+      },
+      {
+        "t": "Mumbai and Indore.",
+        "d": "The other two cities we work from."
+      },
+      {
+        "t": "Anywhere in India.",
+        "d": "Most work runs on calls and reports."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC across cities"
+  },
+  "work": {
+    "panel": "LocalProfile",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do in",
+    "h2b": "every city.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Claim every place you run.",
+        "d": "Each outlet, campus or plant gets one verified listing, and duplicates are merged."
+      },
+      {
+        "n": "02",
+        "t": "Choose categories and services for the place.",
+        "d": "Plain words that match how buyers there search."
+      },
+      {
+        "n": "03",
+        "t": "Keep hours and photos current.",
+        "d": "Timings and photos stay right, with a simple routine for your team."
+      },
+      {
+        "n": "04",
+        "t": "Ask for reviews and reply to all.",
+        "d": "A respectful way to ask, and honest replies drafted in your voice."
+      },
+      {
+        "n": "05",
+        "t": "Write a page for the place and report.",
+        "d": "Each profile links to a matching page, and we report calls and directions."
+      }
+    ],
+    "illustrative": "Illustrative layout of a business profile and map results. Not a real business, no real figures. Google Business Profile and Google Maps belong to Google."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaLocalMap",
+    "barLogo": "",
+    "barTitle": "Local search view",
+    "pinsLabel": "Five places local visits go missing",
+    "pins": [
+      {
+        "x": 12,
+        "y": 0,
+        "label": "Places"
+      },
+      {
+        "x": 44,
+        "y": 0,
+        "label": "Listings"
+      },
+      {
+        "x": 60,
+        "y": 0,
+        "label": "Pages"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Reviews"
+      },
+      {
+        "x": 92,
+        "y": 0,
+        "label": "Meeting"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run local work,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Name the places",
+        "d": "We list where your buyers are and verify each place.",
+        "get": "A list of places that matter.",
+        "img": "company/onepage.jpg",
+        "alt": "A notebook open on a desk beside a laptop, a plan being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Pages and reviews",
+        "d": "We write a page for each place and set up the review routine.",
+        "get": "Profiles and pages that agree.",
+        "img": "seo/tech.jpg",
+        "alt": "Illustrative scene: pages checked for technical health.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Report and refine",
+        "d": "We report calls, directions and enquiries, and plan ads where they suit.",
+        "get": "A monthly local report.",
+        "img": "orm/report.jpg",
+        "alt": "Illustrative scene: a monthly local report.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Thane",
+        "href": "/locations/thane/"
+      },
+      {
+        "n": "Mumbai",
+        "href": "/locations/mumbai/"
+      },
+      {
+        "n": "Indore",
+        "href": "/locations/indore/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/technology.jpg",
+    "pos": "50% 50%",
+    "alt": "A developer working on code at a desk, with a store website on a second screen.",
+    "facts": [
+      {
+        "t": "Technical foundation.",
+        "d": "A site that loads fast and can be crawled and understood."
+      },
+      {
+        "t": "Content for intent.",
+        "d": "Pages built around what buyers actually search, in the order they search it."
+      },
+      {
+        "t": "Structured to be quoted.",
+        "d": "Clear definitions and structured data, so answers can be lifted accurately."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for SEO"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to",
+    "h2b": "get you found.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Fix what stops pages being found.",
+        "d": "Speed, crawling and page structure come first, because good content cannot rank on a site search engines struggle to read."
+      },
+      {
+        "n": "02",
+        "t": "Mark up pages so results show more.",
+        "d": "Structured data tells search what each page is, so your result can move up and carry more detail."
+      },
+      {
+        "n": "03",
+        "t": "Write the direct answer first.",
+        "d": "A short, plain answer opens each page, so search can lift it as a featured snippet."
+      },
+      {
+        "n": "04",
+        "t": "Get quoted in AI answers.",
+        "d": "Clear definitions, FAQs and steady facts give assistants something accurate to cite, with your page as the source."
+      },
+      {
+        "n": "05",
+        "t": "Track questions, not just rankings.",
+        "d": "A fixed list of buyer questions is checked month after month, with enquiries and orders reported beside it."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaRankMap",
+    "barLogo": "",
+    "barTitle": "Page and ranking map",
+    "pinsLabel": "Five places search visibility goes missing",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Foundation"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Searches"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Pages"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Answers"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reporting"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run SEO,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit and fix the foundation",
+        "d": "Crawl, speed, structure and indexing are checked and the technical blockers fixed first.",
+        "get": "A site search engines can read cleanly.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Map the buyer's questions",
+        "d": "We build the topic map around the searches your buyers, parents or students actually make, and the pages that answer them.",
+        "get": "A content plan tied to search intent.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Three colleagues around a whiteboard while one draws a flow diagram.",
+        "pos": "50% 40%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Publish, structure and report",
+        "d": "Pages go live with clear definitions and structured data so answer engines can quote them, and reporting follows qualified traffic.",
+        "get": "Progress read in enquiries and orders, not rankings alone.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "AI SEO",
+        "href": "/services/seo/ai-seo/"
+      },
+      {
+        "n": "AEO",
+        "href": "/services/seo/aeo/"
+      },
+      {
+        "n": "GEO",
+        "href": "/services/seo/geo/"
+      },
+      {
+        "n": "Google Business Profile",
+        "href": "/services/seo/google-business-profile/"
+      },
+      {
+        "n": "Locations",
+        "href": "/locations/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

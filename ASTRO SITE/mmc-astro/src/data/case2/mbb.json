@@ -1,0 +1,65 @@
+{
+ "id": "mbb",
+ "about": "{name} is a D2C brand that sells dessert-inspired body care.",
+ "description": "{name} case study: an ecommerce storefront for a body care range with matching social creative, a Meta carousel ad and a Google Shopping ad.",
+ "heroTone": "paper",
+ "kind": "D2C brand, body care",
+ "channels": [
+  "Meta carousel ad",
+  "Google Shopping"
+ ],
+ "brief": [
+  "{name} sells dessert-inspired body care. This page covers an ecommerce storefront for the range, paired with social creative and ads for the same products.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "split",
+   "side": "left",
+   "kicker": "Storefront",
+   "title": "Homepage on desktop and mobile",
+   "text": "A bright homepage with an offer bar, a hero built around the products, a story section and a phone version that carries the same layout.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Square tiles that use the product jars and the same pink and lilac palette as the site.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta carousel ad and a Google Shopping ad",
+   "text": "The carousel steps through products and offers. The Shopping ad lists products with price and sale tags.",
+   "crops": [
+    "meta",
+    "shopping"
+   ],
+   "captions": [
+    "Meta carousel ad",
+    "Google Shopping ad"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage on desktop and mobile",
+  "reach": "Meta carousel ad and Google Shopping ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "social": "{name} social media creative tiles, client-approved artwork",
+  "meta": "{name} Meta ad, client-approved artwork",
+  "shopping": "{name} Google Shopping ad, client-approved artwork"
+ }
+}

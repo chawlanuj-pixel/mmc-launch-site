@@ -51,24 +51,21 @@
 /* Phones: a compact card that fits the visible viewport, so nothing is trapped under the next card. */
 @media (max-width: 759px) {
   .stk__card { grid-template-columns: 1fr; min-height: 0; margin-bottom: 14px; border-radius: 20px; }
-  .stk__media { height: 92px; min-height: 0; }
-  .stk__num { width: 36px; height: 36px; font-size: 17px; left: 12px; top: 12px; box-shadow: 0 6px 16px -8px rgba(0, 0, 0, .5), 0 0 0 3px rgba(255, 255, 255, .35); }
-  .stk__body { gap: 9px; padding: 14px 16px 16px; align-content: start; }
-  .stk__kick { gap: 6px 12px; }
-  .stk__kick b, .stk__step { font-size: 11px; }
+  /* The image is the first thing on the card, so it gets a real photo proportion (it was a 92px strip). */
+  .stk__media { height: auto; aspect-ratio: 16 / 11; min-height: 0; }
+  .stk__num { width: 40px; height: 40px; font-size: 18px; left: 14px; top: 14px; box-shadow: 0 6px 16px -8px rgba(0, 0, 0, .5), 0 0 0 3px rgba(255, 255, 255, .35); }
+  .stk__body { gap: 14px; padding: 20px 20px 24px; align-content: start; }
+  .stk__kick { gap: 8px 14px; }
+  .stk__kick b, .stk__step { font-size: 12px; }
   .stk__seg i { width: 9px; }
-  .stk__leak { font-size: 21px; line-height: 1.12; }
-  .stk__why { font-size: 14px; line-height: 1.45; }
-  .stk__fix { padding: 10px 14px; gap: 5px; border-radius: 13px; }
-  .stk__label { font-size: 10px; }
-  .stk__fix p { font-size: 13.5px; line-height: 1.45; }
-  .stk__svc { justify-self: stretch; justify-content: space-between; padding: 10px 16px; font-size: 11px; }
+  .stk__leak { font-size: 24px; line-height: 1.14; }
+  .stk__why { font-size: 16px; line-height: 1.55; }
+  .stk__fix { padding: 16px 18px; gap: 8px; border-radius: 14px; }
+  .stk__label { font-size: 12px; }
+  .stk__fix p { font-size: 15.5px; line-height: 1.5; }
+  .stk__svc { justify-self: stretch; justify-content: space-between; padding: 14px 18px; font-size: 12px; min-height: 48px; }
 }
-@media (max-width: 759px) and (min-height: 560px) {
-  .stk__card { position: sticky; top: calc(var(--stk-nav, 80px) + var(--i) * 10px); will-change: transform; }
-  .stk__card { min-height: var(--stk-h, 0px); }
-  .stk__list::after { height: 12vh; }
-}
+/* Phones: cards are plain stacked blocks. Pinning cards taller than the screen trapped their buttons under the next card. */
 @media (prefers-reduced-motion: reduce) {
   .stk__card { position: relative; top: auto; transform: none !important; will-change: auto; }
   .stk__card::after { display: none; }

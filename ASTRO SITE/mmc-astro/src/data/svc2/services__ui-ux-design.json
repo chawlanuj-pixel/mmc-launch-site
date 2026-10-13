@@ -1,0 +1,193 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "ux/screens.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: app and website screens being designed.",
+    "facts": [
+      {
+        "t": "Start with users.",
+        "d": "Interviews and analytics show what people actually do."
+      },
+      {
+        "t": "Design the journey.",
+        "d": "Flows and screens are shaped around the task, not the org chart."
+      },
+      {
+        "t": "A system that scales.",
+        "d": "Reusable components keep new pages consistent."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands design with MMC"
+  },
+  "work": {
+    "panel": "DesignReview",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to design your",
+    "h2b": "product.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Listen to what users do.",
+        "d": "Interviews and analytics show where people stall, before any screen is drawn."
+      },
+      {
+        "n": "02",
+        "t": "Map the journey around the task.",
+        "d": "Flows follow what people came to do, not how your business is organised."
+      },
+      {
+        "n": "03",
+        "t": "Wireframe first, style second.",
+        "d": "Structure is agreed on grey screens, so polish never hides a weak flow."
+      },
+      {
+        "n": "04",
+        "t": "Test a clickable prototype.",
+        "d": "Real users try the prototype before development, when fixes cost least."
+      },
+      {
+        "n": "05",
+        "t": "Hand over a design system.",
+        "d": "Reusable components and rules keep new pages consistent and quick to build."
+      }
+    ],
+    "illustrative": "Illustrative layout of a design review. Not a client project, no real figures."
+  },
+  "leak": {
+    "visual": "MetaFunnel",
+    "barLogo": "",
+    "barTitle": "Design path",
+    "pinsLabel": "Five places a design goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 9.3,
+        "y": 0,
+        "label": "Research"
+      },
+      {
+        "x": 29,
+        "y": 0,
+        "label": "Journey"
+      },
+      {
+        "x": 48.7,
+        "y": 0,
+        "label": "Screens"
+      },
+      {
+        "x": 68.3,
+        "y": 0,
+        "label": "Testing"
+      },
+      {
+        "x": 87.9,
+        "y": 0,
+        "label": "System"
+      }
+    ],
+    "stageLabels": [
+      "Users",
+      "Journey",
+      "Screens",
+      "Testing",
+      "System"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the sites",
+    "h2b": "we have designed for.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: the ad and the product page tell one story."
+      },
+      {
+        "id": "bloom",
+        "line": "Edu tours: a site and creative built for students and parents."
+      },
+      {
+        "id": "mvj",
+        "line": "MVJ College of Engineering: a college site built for families deciding."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run UI and UX work,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Understand the users",
+        "d": "Research with the people who use or buy, and a read of your data.",
+        "get": "A clear picture of who does what and why.",
+        "img": "ux/research.jpg",
+        "alt": "Illustrative scene: user research notes.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Map and wireframe",
+        "d": "User flows and wireframes for the journeys that matter.",
+        "get": "An agreed structure before any polish.",
+        "img": "ux/flows.jpg",
+        "alt": "Illustrative scene: a user flow being mapped.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Design and test",
+        "d": "Screens are designed and prototypes tested with real users.",
+        "get": "Proof the design works before development.",
+        "img": "ux/test.jpg",
+        "alt": "Illustrative scene: a prototype being tested.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Build the system",
+        "d": "A design system of reusable components and rules.",
+        "get": "A kit your team can keep using.",
+        "img": "ux/system.jpg",
+        "alt": "Illustrative scene: a design system of components.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Web development",
+        "href": "/services/web-development/"
+      },
+      {
+        "n": "CRO",
+        "href": "/services/cro/"
+      },
+      {
+        "n": "Mobile app development",
+        "href": "/services/mobile-app-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

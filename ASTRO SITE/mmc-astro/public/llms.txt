@@ -80,41 +80,110 @@ had its mix recorded yet.
 - Club Mahindra
 ## Main pages
 
-- [Home](https://www.mondaymarketing.company/): the five systems and selected work
-- [Our Work](https://www.mondaymarketing.company/work/): the client book by industry
-- [About](https://www.mondaymarketing.company/about/)
-- [Careers](https://www.mondaymarketing.company/careers/)
-- [Contact](https://www.mondaymarketing.company/contact/)
-- [D2C brands](https://www.mondaymarketing.company/industries/d2c/): the D2C hub. Where D2C brands lose profit, the numbers to start with, and some of the D2C brands MMC works with
-- [B2B companies](https://www.mondaymarketing.company/industries/b2b/): marketing for B2B companies. Where B2B leads go missing, the numbers to start with, and some of the B2B brands MMC works with
-- [Colleges and education brands](https://www.mondaymarketing.company/industries/education/): marketing for colleges and education brands. Where admissions go missing, the numbers to start with, and some of the education brands MMC works with
-- [Lead generation](https://www.mondaymarketing.company/services/lead-generation/): lead generation for B2B, education and D2C, connected to a CRM and Meta CAPI so campaigns learn from qualified leads
-- [Retention marketing](https://www.mondaymarketing.company/services/retention-marketing/): Retention marketing funnels across WhatsApp, email and loyalty for D2C, B2B and education brands.
-- [Online reputation management](https://www.mondaymarketing.company/services/online-reputation-management/): Online reputation management: genuine reviews, replies and accurate profiles.
-- [SEO](https://www.mondaymarketing.company/services/seo/): SEO and answer-engine optimisation for D2C, B2B and education brands.
-- [Conversion rate optimisation](https://www.mondaymarketing.company/services/cro/): Conversion rate optimisation for D2C, B2B and education websites.
-- [Shopify development](https://www.mondaymarketing.company/services/shopify-development/): Shopify and ecommerce development for D2C brands.
-- [UGC and video production](https://www.mondaymarketing.company/services/ugc-and-video/): UGC, video and creator-style creative production for paid media.
-- [Meta Ads management](https://www.mondaymarketing.company/services/performance-marketing/meta-ads/): Meta ads (Instagram and Facebook) management for D2C, B2B and education brands.
-- [Google Ads management](https://www.mondaymarketing.company/services/performance-marketing/google-ads/): Google Ads management across search, shopping, Performance Max and video.
-- [Amazon Ads management](https://www.mondaymarketing.company/services/performance-marketing/amazon-ads/): Amazon ads and listing optimisation for D2C brands.
-- [Quick commerce ads](https://www.mondaymarketing.company/services/performance-marketing/quick-commerce/): Quick-commerce listings and ads for D2C brands.
-- [Branding](https://www.mondaymarketing.company/services/branding/): Brand strategy, naming, identity, voice and guidelines for D2C, B2B and education brands.
-- [Packaging design](https://www.mondaymarketing.company/services/packaging-design/): Packaging structure and graphic design for D2C brands.
-- [UI/UX design](https://www.mondaymarketing.company/services/ui-ux-design/): UI/UX design, prototyping and design systems for websites and apps.
-- [Website development](https://www.mondaymarketing.company/services/web-development/): Website design and development for B2B, education and D2C brands.
-- [Social media creatives](https://www.mondaymarketing.company/services/social-media/): Social media creative planning, design and short video for D2C, B2B and education brands.
-- [Influencer marketing](https://www.mondaymarketing.company/services/influencer-marketing/): Influencer and creator partnership planning for D2C brands.
-- [Mobile app development](https://www.mondaymarketing.company/services/mobile-app-development/): Mobile app design, development and measurement for brands with repeat use.
-- [Industries](https://www.mondaymarketing.company/industries/): Marketing services for D2C brands, B2B companies and educational institutes in India.
-- [Resources](https://www.mondaymarketing.company/resources/): Free marketing calculators, a glossary and insights for D2C brands.
-- [Contribution margin and break-even ROAS](https://www.mondaymarketing.company/guides/contribution-margin-roas/): What contribution margin is, how to work out your break-even ROAS from your own costs, and why platform ROAS alone can hide a loss.
-- [Why platform dashboards over-count](https://www.mondaymarketing.company/guides/attribution-overlap/): Why Meta, Google and your store report different sales, and how to read your real results with blended ROAS, surveys and simple tests.
-- [How D2C brands test creative](https://www.mondaymarketing.company/guides/creative-testing/): A simple, repeatable way to test hooks, angles and formats for paid social, read the results, and spot when creative is tiring.
-- [Guides](https://www.mondaymarketing.company/guides/): Practical marketing guides for D2C brands.
-- [Free paid-media audit](https://www.mondaymarketing.company/audit/): book a free call where a senior strategist reads your ad accounts against your break-even ROAS
-- [Services](https://www.mondaymarketing.company/services/): the five systems and every service, for D2C, B2B and education brands, with where to start
-- [Performance Marketing](https://www.mondaymarketing.company/services/performance-marketing/): paid media for D2C brands on Meta, Google, Amazon and quick commerce, judged on contribution margin
+- [Home](https://www.mondaymarketing.company/): Monday Marketing Company is an India-based growth partner for D2C, B2B and education brands. Paid media, creative, retention and websites, measured on profit.
+
+### Services, industries and audit
+
+- [Free Paid-Media Audit for Brands in India](https://www.mondaymarketing.company/audit/): Book a free 30-minute audit call. A senior strategist reads your ad accounts against your break-even numbers and tells you where to start the work.
+- [Marketing for D2C, B2B and Education Brands in India](https://www.mondaymarketing.company/industries/): MMC is a growth partner for D2C brands, B2B companies and educational institutes in India. Each engagement is shaped around how that business wins customers.
+- [B2B Lead Generation Agency India](https://www.mondaymarketing.company/industries/b2b/): B2B lead generation agency in India: websites, creative and paid media with CRM and Meta CAPI tracking, so leads are judged on quality, not volume.
+- [Manufacturing Marketing Agency India for B2B](https://www.mondaymarketing.company/industries/b2b/manufacturing/): Marketing for Indian manufacturers and industrial suppliers. Spec-led search, case studies, RFQ forms and CRM tracking that bring qualified enquiries.
+- [SaaS and Software Marketing Agency India | B2B](https://www.mondaymarketing.company/industries/b2b/saas-and-software/): Marketing for B2B SaaS and software companies in India. Comparison and intent search, demo and trial funnels, CRM signals and pipeline reporting.
+- [Marketing for D2C Brands in India](https://www.mondaymarketing.company/industries/d2c/): MMC runs ads, creative, conversion and retention for D2C brands in India, judged on profit per order, not platform ROAS. Book a free paid-media audit.
+- [Baby and Kids Brand Marketing Agency India](https://www.mondaymarketing.company/industries/d2c/baby-and-kids/): Marketing for D2C baby and kids brands in India. Parent-led creative, safety and trust content, gifting seasons and age-stage retention, built on margin.
+- [Fashion and Apparel Marketing Agency India | D2C](https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/): Marketing for D2C fashion and apparel brands in India. Creative testing, catalogue ads, size and returns work, and drops planned on contribution margin.
+- [Food and Beverage Marketing Agency India for D2C](https://www.mondaymarketing.company/industries/d2c/food-and-beverage/): Marketing for D2C food and beverage brands in India. Taste-led creative, bundles, marketplace and quick commerce ads, and repeat-order flows built on margin.
+- [Skincare Marketing Agency India for D2C Brands](https://www.mondaymarketing.company/industries/d2c/skincare/): Marketing for D2C skincare brands in India. Ingredient-led content, creative, performance media and replenishment retention, planned around contribution margin.
+- [Admission Marketing Agency for Colleges, India](https://www.mondaymarketing.company/industries/education/): Admission marketing agency for colleges and education brands in India. Lead generation, CRM and Meta CAPI tracking, follow-up funnels and reputation work.
+- [College Admission Marketing Agency India](https://www.mondaymarketing.company/industries/education/colleges/): Admission marketing for colleges and universities in India. Course search, campus visit funnels, CRM follow-up and reputation work planned around the intake.
+- [Study Abroad Consultancy Marketing Agency India](https://www.mondaymarketing.company/industries/education/study-abroad/): Marketing for study abroad consultancies in India. Country and course search, webinar and counselling funnels, CRM follow-up and honest claims.
+- [Marketing Services for D2C, B2B and Education Brands](https://www.mondaymarketing.company/services/): Paid media, SEO, conversion, brand, technology and content for D2C, B2B and education brands in India, run as connected systems by one team.
+- [D2C Branding Agency India: Brand Identity](https://www.mondaymarketing.company/services/branding/): Branding agency in India for D2C, B2B and education brands: positioning, naming, logo, voice and the guidelines that keep a brand consistent.
+- [Content Marketing Agency India for D2C and B2B](https://www.mondaymarketing.company/services/content-marketing/): Content marketing for D2C, B2B and education brands in India. Strategy, articles, guides, video and email built around buyer questions, measured on enquiries.
+- [CRO Agency India for Shopify and D2C Stores](https://www.mondaymarketing.company/services/cro/): CRO agency in India finding where visitors drop off and testing fixes on product pages, checkout and forms for Shopify, D2C, B2B and education sites.
+- [Influencer Marketing Agency for D2C Brands](https://www.mondaymarketing.company/services/influencer-marketing/): Influencer marketing agency for D2C brands in India. Creator shortlists, briefs, usage rights and results read against sales, not follower counts.
+- [Lead Generation Agency India with CRM and CAPI](https://www.mondaymarketing.company/services/lead-generation/): Lead generation agency in India connecting paid media to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. B2B, education, D2C.
+- [Mobile App Development Company India](https://www.mondaymarketing.company/services/mobile-app-development/): Mobile app development company in India building fast, measurable apps for brands whose customers come back on their phones, planned around real use.
+- [Review Management and Online Reputation](https://www.mondaymarketing.company/services/online-reputation-management/): Online reputation management in India: genuine reviews, honest replies and accurate profiles on Google and review sites for education, B2B and D2C.
+- [Packaging Design Agency India for D2C Brands](https://www.mondaymarketing.company/services/packaging-design/): Packaging design agency in India for D2C brands: structure and graphics built for the shelf, marketplaces and quick-commerce listings, concept to print.
+- [Performance Marketing for D2C Brands in India](https://www.mondaymarketing.company/services/performance-marketing/): MMC runs Meta, Google, Amazon and quick-commerce paid media for D2C brands in India, budgeted against contribution margin, not platform ROAS.
+- [Amazon Ads Agency in India for D2C Brands](https://www.mondaymarketing.company/services/performance-marketing/amazon-ads/): Amazon Ads agency for D2C brands in India. Sponsored ads and listings planned around stock and read against total sales, with ACoS and TACoS explained.
+- [Google Ads Agency in India for D2C and B2B](https://www.mondaymarketing.company/services/performance-marketing/google-ads/): Google Ads agency in India running search, Shopping, Performance Max and video for D2C, B2B and education, judged on contribution margin, not clicks.
+- [Meta Ads Agency India for D2C and B2B Brands](https://www.mondaymarketing.company/services/performance-marketing/meta-ads/): Meta Ads agency for D2C, B2B and education brands in India. One funnel, creative tested against one idea and Conversions API tracking, judged on profit.
+- [Quick Commerce Ads: Blinkit, Zepto, Instamart](https://www.mondaymarketing.company/services/performance-marketing/quick-commerce/): Quick commerce ads agency for Blinkit, Zepto and Instamart. Listings and ads planned around availability and read at blended level for D2C brands.
+- [Retention Marketing Agency India: WhatsApp, Email](https://www.mondaymarketing.company/services/retention-marketing/): Retention marketing agency in India building WhatsApp, email and loyalty funnels that bring D2C buyers back and nurture B2B and education enquiries.
+- [SEO Agency for Ecommerce India, AEO and GEO](https://www.mondaymarketing.company/services/seo/): SEO agency in India for ecommerce, B2B and education brands. Technical health, search-intent content and AEO and GEO so AI assistants can quote you.
+- [AEO Services India: Featured Snippets and Voice](https://www.mondaymarketing.company/services/seo/aeo/): Answer engine optimisation for D2C, B2B and education brands in India. Answer-first copy, FAQ schema and structure for snippets, voice and AI answers.
+- [AI SEO Services India: Be Found in AI Search](https://www.mondaymarketing.company/services/seo/ai-seo/): AI SEO for D2C, B2B and education brands in India. One plan for classic search and AI answers, with technical health, clear content and honest reporting.
+- [GEO Services India: Get Cited by ChatGPT and Gemini](https://www.mondaymarketing.company/services/seo/geo/): Generative engine optimisation for D2C, B2B and education brands in India. Be cited by ChatGPT, Perplexity, Gemini and Google AI Overviews, honestly.
+- [Google Business Profile Optimisation India](https://www.mondaymarketing.company/services/seo/google-business-profile/): Google Business Profile and local SEO for brands, colleges and offices in India. Set-up, categories, posts, reviews and local pages to win searches by place.
+- [Shopify Development Agency India for D2C](https://www.mondaymarketing.company/services/shopify-development/): Shopify development agency in India building and redesigning fast D2C stores, with checkout, UPI and COD set up and tracking connected from day one.
+- [Social Media Creatives Agency for D2C and B2B](https://www.mondaymarketing.company/services/social-media/): Social media creatives agency for D2C, B2B and education brands: content pillars, statics, carousels and short video for paid and organic social.
+- [UGC Ads Agency India: UGC Video Production](https://www.mondaymarketing.company/services/ugc-and-video/): UGC ads agency in India producing creator-style video for D2C brands, briefed against one brand thesis, made to run as ads and refreshed before they tire.
+- [UI UX Design Agency India for Websites, Apps](https://www.mondaymarketing.company/services/ui-ux-design/): UI UX design agency in India for websites and apps: research, flows, screens, testing and a design system that scales as your product grows.
+- [Website Development Company in India](https://www.mondaymarketing.company/services/web-development/): Website development company in India building fast, search-ready sites for B2B, education and D2C brands, with forms wired to your CRM and tracking.
+- [WooCommerce Development Company in India](https://www.mondaymarketing.company/services/web-development/woocommerce/): WooCommerce store development in India: catalogue, variations, checkout, payments, shipping, speed and handover, built on WordPress for brands that sell online.
+- [WordPress Development Services India](https://www.mondaymarketing.company/services/web-development/wordpress/): Custom WordPress themes, WooCommerce stores, speed work, migrations and plugin development for brands in India. Built to be edited by your team.
+- [Website Maintenance Services India](https://www.mondaymarketing.company/services/website-maintenance/): Monthly website maintenance for WordPress and other sites: updates, backups, security, uptime, speed, content edits and a monthly report. Talk to us.
+
+### White-label and other pages
+
+- [MMC Locations: Thane, Mumbai and Indore](https://www.mondaymarketing.company/locations/): Where Monday Marketing Company works: head office in Thane, plus Mumbai and Indore. See what a business in each city faces and how we work with you.
+- [Digital Marketing Agency in Indore](https://www.mondaymarketing.company/locations/indore/): MMC works from Indore for colleges, food brands and manufacturers: campus and plant profiles, enquiry paths on WhatsApp and search that reaches beyond the city.
+- [Digital Marketing Agency in Mumbai](https://www.mondaymarketing.company/locations/mumbai/): MMC works from Mumbai for brands with many outlets and neighbourhoods: verified profiles, local pages, review handling and ads judged on margin, not clicks.
+- [Digital Marketing Agency in Thane](https://www.mondaymarketing.company/locations/thane/): MMC began in Thane in 2019 and works from its head office at Hiranandani Business Park. Local search and ads for Thane businesses, on a call or in person.
+- [White-Label Digital Marketing Services for Agencies](https://www.mondaymarketing.company/white-label/): White-label digital marketing, SEO, PPC, web and creative for agencies. We work behind your brand under NDA, report your way and keep your client yours.
+- [White-Label AI Services for Agencies](https://www.mondaymarketing.company/white-label/ai-services/): White-label AI services for agencies: AI product photoshoots, UGC and spokesperson video, landing pages and sales agents from AI by MMC, under your brand.
+- [White-Label App Development for Agencies](https://www.mondaymarketing.company/white-label/app-development/): White-label mobile app development for agencies: iOS and Android apps built from your client's brief, with design, build, testing and release support.
+- [White-Label Content Marketing Services](https://www.mondaymarketing.company/white-label/content-marketing/): White-label content marketing for agencies: strategy, articles, guides, email copy and editorial calendars written to your client's voice and brand.
+- [White-Label Graphic Design, Video and UGC](https://www.mondaymarketing.company/white-label/creative-and-video/): White-label graphic design, video editing, UGC and ad creative for agencies: static, motion and creator content delivered to your brand guidelines.
+- [White-Label CRO Services for Agencies](https://www.mondaymarketing.company/white-label/cro/): White-label conversion rate optimisation for agencies: research, test plans, landing page fixes and reports so your clients get more from the traffic you drive.
+- [White-Label Digital Marketing Services](https://www.mondaymarketing.company/white-label/digital-marketing/): White-label digital marketing services for agencies: SEO, PPC, social, content, email and web delivered by one partner and presented under your brand.
+- [White-Label Ecommerce and Amazon Services](https://www.mondaymarketing.company/white-label/ecommerce/): White-label ecommerce services for agencies: Amazon listings and ads, quick commerce, marketplace management and store growth, delivered behind your brand.
+- [White-Label Email Marketing and CRM Services](https://www.mondaymarketing.company/white-label/email-marketing/): White-label email, CRM, SMS and WhatsApp retention marketing for agencies: flows, campaigns, segmentation and reporting delivered under your brand.
+- [White-Label GEO, AEO and AI SEO for Agencies](https://www.mondaymarketing.company/white-label/geo-aeo/): White-label GEO, AEO and AI SEO for agencies: help your clients get cited in ChatGPT, Gemini, Perplexity and AI Overviews. Delivered behind your brand.
+- [White-Label Agency India for Overseas Agencies](https://www.mondaymarketing.company/white-label/india/): White-label agency in India for UK, US, Australian and Middle East agencies: delivery partner for SEO, ads, web and creative, with NDA and overlap hours.
+- [White-Label Lead Generation Services](https://www.mondaymarketing.company/white-label/lead-generation/): White-label lead generation for agencies: funnels, landing pages, paid campaigns and follow-up that fill a client's pipeline, delivered under your brand.
+- [White-Label Link Building Services](https://www.mondaymarketing.company/white-label/link-building/): White-label link building and digital PR for agencies: outreach, guest posts and editorial placements, with reports you can send to your client as yours.
+- [White-Label Meta Ads and Social Advertising](https://www.mondaymarketing.company/white-label/meta-ads/): White-label Facebook and Instagram advertising for agencies: creative testing, audience structure, tracking and reporting delivered behind your brand.
+- [White-Label ORM and Reputation Services](https://www.mondaymarketing.company/white-label/orm/): White-label online reputation management for agencies: review generation, replies, profile cleanup and monitoring delivered under your brand.
+- [Agency Outsourcing and Dedicated Teams](https://www.mondaymarketing.company/white-label/outsourcing/): Outsource agency work to a dedicated MMC team: hire marketing, design and developer resources that work as part of your agency, under NDA and your brand.
+- [White-Label PPC and Google Ads Services](https://www.mondaymarketing.company/white-label/ppc/): White-label PPC and Google Ads management for agencies: search, Shopping, Performance Max and YouTube, run in your client's account and reported as yours.
+- [White-Label Pricing Models Explained](https://www.mondaymarketing.company/white-label/pricing-models/): How white-label pricing works with MMC: retainer, project, hourly block, dedicated team and hybrid models, and how to set your margin. Talk to us for scope.
+- [White-Label Agency Partner Registration India](https://www.mondaymarketing.company/white-label/register/): Register your agency as a white-label partner of MMC in India. Share contact and agency details in two short steps and we reach out to onboard you.
+- [White-Label Reporting and Analytics](https://www.mondaymarketing.company/white-label/reporting/): White-label reporting and analytics for agencies: dashboards, monthly client reports and tracking setup, built in your format with your branding.
+- [White-Label Reseller Programme](https://www.mondaymarketing.company/white-label/reseller-programme/): White-label reseller programme for agencies, consultancies and networks: resell MMC services under your brand with clear scopes, onboarding and support.
+- [White-Label SEO Services for Agencies](https://www.mondaymarketing.company/white-label/seo/): White-label SEO for agencies: audits, technical fixes, on-page, content and monthly reports under your brand. NDA signed, client stays yours.
+- [White-Label Shopify Development](https://www.mondaymarketing.company/white-label/shopify-development/): White-label Shopify development for agencies: store builds, theme customisation, apps, migrations and checkout work delivered under your brand.
+- [White-Label Social Media Management](https://www.mondaymarketing.company/white-label/social-media-management/): White-label social media management for agencies: content calendars, design, posting, community replies and monthly reports delivered under your brand.
+- [White-Label Web Design Services for Agencies](https://www.mondaymarketing.company/white-label/web-design/): White-label web design for agencies: UX, page layouts, brand-led designs and clear handover files, delivered under your name and ready for development.
+- [White-Label Web Development Services](https://www.mondaymarketing.company/white-label/web-development/): White-label web development for agencies: front-end and back-end builds from your designs, tested, documented and handed over under your brand.
+- [White-Label Website Maintenance Services](https://www.mondaymarketing.company/white-label/website-maintenance/): White-label website maintenance and WordPress support for agencies: updates, backups, security, uptime and content edits across your client sites.
+- [White-Label WordPress Development](https://www.mondaymarketing.company/white-label/wordpress-development/): White-label WordPress development for agencies: custom themes, WooCommerce, plugins, migrations and speed fixes built to your designs under your brand.
+
+### Guides, tools and resources
+
+- [D2C Marketing Glossary: 53 Terms in Plain English](https://www.mondaymarketing.company/glossary/): ROAS, CAC, LTV, AOV, RTO, CM1 to CM3, EBITDA: what each means, how it is calculated, why it hits your P&L. Jargon never explained with more jargon.
+- [Marketing Guides for D2C Brands in India](https://www.mondaymarketing.company/guides/): Practical guides from MMC on contribution margin and break-even ROAS, why ad dashboards over-count sales, and how to test ad creative without guessing.
+- [Why ad dashboards report more sales than you made](https://www.mondaymarketing.company/guides/attribution-overlap/): Meta, Google and your store each count their own conversions, so the totals never match. Here is why dashboards over-count and how to read results anyway.
+- [Contribution margin and the ROAS you need to break even](https://www.mondaymarketing.company/guides/contribution-margin-roas/): What one order leaves behind after product, shipping, fees and returns, and the ROAS a campaign must beat to break even. Includes a calculator for your costs.
+- [How D2C brands test ad creative without guessing](https://www.mondaymarketing.company/guides/creative-testing/): A repeatable way to test hooks and angles, read the results against your break-even ROAS and refresh creative before ads tire. Written for D2C brands.
+- [D2C Calculators, Glossary and Guides](https://www.mondaymarketing.company/resources/): Free D2C calculators, a plain-English marketing glossary and practical guides from MMC, so you can check your own numbers before you spend on marketing.
+- [D2C Calculators: ROAS, CAC, LTV and Unit Economics](https://www.mondaymarketing.company/tools/): Free calculators and a plain-English glossary for D2C marketing: break-even ROAS, funnel ROAS, unit economics, CAC runway, growth trajectory and LTV:CAC.
+
+### Work
+
+- [Our Work: Case Studies and Brands We Work With](https://www.mondaymarketing.company/work/): Case studies and a brand wall from Monday Marketing Company, grouped by D2C, B2B, education and other consumer brands, with the services recorded for each.
+
+### Company
+
+- [About Monday Marketing Company | Thane, India](https://www.mondaymarketing.company/about/): MMC is an India-based growth partner for D2C, B2B and education brands, founded in 2019 in Thane. One senior team, measured on contribution margin.
+- [Careers at MMC | Marketing Jobs in Thane and Mumbai](https://www.mondaymarketing.company/careers/): Open roles at MMC across performance, creative, strategy and technology for D2C, B2B and education brands. Apply with a single page, no resume required.
+- [Contact MMC: Book a Strategy Call or Send a Brief](https://www.mondaymarketing.company/contact/): Talk to Monday Marketing Company in Thane. Book a 30-minute strategy call, send a brief or write to us. We reply inside one working day, often in four hours.
+- [Privacy Policy: What Data We Collect and Your Rights](https://www.mondaymarketing.company/privacy/): We collect the minimum needed to run this site and our retainers, and we have never sold data. Access, correction and deletion honoured in 30 days.
+- [Terms & Conditions: Site Use, IP and Liability](https://www.mondaymarketing.company/terms/): The agreement between MMC and anyone using this site: what you accept on arrival, who owns the content, the limits of our liability and the governing law.
+
+Free tools listed above each have their own page under /tools/. The AI by MMC pages are listed below. Individual client pages are under /work/ and are listed in llms-full.txt.
 
 ## Services
 

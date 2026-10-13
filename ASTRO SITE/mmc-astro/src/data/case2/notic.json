@@ -1,0 +1,85 @@
+{
+ "id": "notic",
+ "about": "{name} is a D2C brand that sells car perfume.",
+ "description": "{name} case study: an ecommerce storefront for a car perfume collection, from homepage to collection page, with matching social ad creative from MMC.",
+ "heroTone": "ink",
+ "kind": "D2C brand, car perfume",
+ "channels": [
+  "Meta ad",
+  "Google search ad"
+ ],
+ "brief": [
+  "{name} sells car perfume. This page covers an ecommerce storefront, from the homepage through to the collection page, with matching social ad creative.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage on desktop and mobile",
+   "text": "A dark, single-image hero with one line and one button, and the collection laid out beneath it.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "right",
+   "kicker": "Mobile",
+   "title": "Mobile product page",
+   "text": "A scent selector, the price and a clear add to cart.",
+   "crops": [
+    "mobile"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social ad creative",
+   "text": "Two portrait ads in the same black and blue palette as the site.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google search ad",
+   "text": "The Meta ad shows the four scents in a row. The Google ad shows a product listing.",
+   "crops": [
+    "meta",
+    "google"
+   ],
+   "captions": [
+    "Meta ad",
+    "Google search ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "Product photography",
+   "text": "From the same artwork.",
+   "crops": [
+    "products"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage and collection page",
+  "reach": "Meta ad and Google search ad",
+  "make": "Social ad creative"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
+  "social": "{name} social media creative tiles, client-approved artwork",
+  "meta": "{name} Meta ad, client-approved artwork",
+  "google": "{name} Google ad, client-approved artwork",
+  "products": "{name} product photography, client-approved artwork"
+ }
+}

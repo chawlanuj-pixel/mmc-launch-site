@@ -1,0 +1,63 @@
+---
+// PANEL: MaintenanceBoard (kind "MaintenanceBoard"). A site-care board. No platform mark. 5 steps.
+//   1 Uptime: a row of day cells (all up, one flagged and fixed) and status cards for site, forms and checkout. Tab: Uptime.
+//   2 Backups: off-site restore points and a "test restore passed" chip. Tab: Backups.
+//   3 Updates: core, theme and plugins moving from tested on a copy to live. Tab: Updates.
+//   4 Security: malware scan, login protection, firewall rules and patched vulnerabilities. Tab: Security.
+//   5 Report: the monthly report with Done, Watch and Next. Tab: Report.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix mt-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const days = Array.from({ length: 28 }, (_, i) => i);
+---
+<Frame title="Site care board" label="Illustration of a website care board: uptime, backups, updates, security and a monthly report. Not a client site." caption={W.illustrative} tabs={["Uptime", "Backups", "Updates", "Security", "Report"]} tabFor={[0, 1, 2, 3, 4]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Uptime <span>Watched all month, alerts to a named person</span></p>
+    <div class="s2p-card mt-days" aria-hidden="true">{days.map((d) => <i class={d === 17 ? "is-flag" : ""}></i>)}</div>
+    <div class="mt-three">
+      {["Site", "Forms", "Checkout"].map((n) => <div class="s2p-card"><p class="s2p-lbl">{n}</p><em class="s2p-chip s2p-chip--ok"><i class="s2p-dot"></i>Up</em></div>)}
+    </div>
+    <small class="s2p-mute">One alert, fixed the same day.</small>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Backups <span>Off-site, and a restore that has been tried</span></p>
+    <ul class="mt-list">
+      {["Daily copy", "Weekly copy", "Before every update"].map((n) => <li class="s2p-card"><b>{n}</b><em class="s2p-chip">Off-site</em><em class="s2p-chip s2p-chip--ok">Saved</em></li>)}
+    </ul>
+    <div class="s2p-card mt-ok"><b>Test restore</b><em class="s2p-chip s2p-chip--ok">Passed</em></div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Updates <span>Tried on a copy first, then made live</span></p>
+    <ul class="mt-list">
+      {["Core", "Theme", "Plugins"].map((n) => <li class="s2p-card"><b>{n}</b><em class="s2p-chip s2p-chip--blue">Tested on a copy</em><span class="mt-arr" aria-hidden="true">&rarr;</span><em class="s2p-chip s2p-chip--ok">Live</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Security <span>Checked on a schedule</span></p>
+    <ul class="mt-list">
+      {[["Malware scan", "Clean"], ["Login protection", "On"], ["Firewall rules", "On"], ["Known vulnerabilities", "Patched"]].map(([n, s]) => <li class="s2p-card"><b>{n}</b><em class="s2p-chip s2p-chip--ok">{s}</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Monthly report <span>In plain words</span></p>
+    <div class="mt-rep">
+      {[["Done", "s2p-chip--ok", "Updates, scans and edits"], ["Watch", "s2p-chip--warn", "Slow page on mobile"], ["Next", "s2p-chip--blue", "Suggested fixes, quoted first"]].map(([h, c, t]) => <div class="s2p-card"><em class={"s2p-chip " + c}>{h}</em><b>{t}</b><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i></div>)}
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.mt-days { display: grid; grid-template-columns: repeat(14, 1fr); gap: .4em; padding: .8em; }
+.mt-days i { display: block; aspect-ratio: 1; border-radius: .3em; background: #1B7A3D; }
+.mt-days i.is-flag { background: #E8A100; }
+.mt-three, .mt-rep { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8em; }
+.mt-three .s2p-card, .mt-rep .s2p-card { display: grid; gap: .5em; align-content: start; justify-items: start; }
+.mt-rep b { font: 800 .98em/1.25 var(--font-body); }
+.mt-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.mt-list li { display: flex; align-items: center; gap: .6em; flex-wrap: wrap; padding-block: .6em; }
+.mt-list b { margin-right: auto; font: 800 .98em var(--font-body); }
+.mt-arr { color: var(--mmc-blue); font-weight: 800; }
+.mt-ok { display: flex; align-items: center; justify-content: space-between; border-color: #1B7A3D; }
+@media (max-width: 560px) { .mt-days { grid-template-columns: repeat(14, 1fr); gap: .25em; } .mt-three, .mt-rep { gap: .4em; } .mt-rep .s2p-line { display: none; } }
+@media (max-width: 420px) { .s2-ui:has(.mt-list) .s2-ui__tab:nth-child(n+4) { display: block; } .s2-ui:has(.mt-list) .s2-ui__tab { padding: 6px 6px; } .s2-ui:has(.mt-list) .s2-ui__bar b { display: none; } }
+</style>

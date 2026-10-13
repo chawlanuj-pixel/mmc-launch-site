@@ -144,3 +144,64 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ https://www.mondaymarketing.company/$1 [R=301,L]
 </IfModule>
+
+# --- Compression and caching (appended 11 Oct 2026; no redirect rule above is changed) ---
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/ld+json image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 0 seconds"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType image/avif "access plus 30 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+<IfModule mod_headers.c>
+# /_astro/ files are content-hashed, so they can be cached forever.
+<FilesMatch "^.+\.(woff2|woff|ttf)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/_astro/#">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</If>
+<If "%{REQUEST_URI} =~ m#^/assets/#">
+Header set Cache-Control "public, max-age=2592000"
+</If>
+</IfModule>
+
+# --- Private pricing pages: never indexed, never cached by search engines (appended; no rule above is changed) ---
+<IfModule mod_headers.c>
+<If "%{REQUEST_URI} =~ m#^/pricing-model/#">
+Header set X-Robots-Tag "noindex, nofollow, noarchive"
+</If>
+</IfModule>
+
+# --- Speed pass (appended 12 Oct 2026; no rule above is changed) ---
+# Notes for the host: KeepAlive, HTTP/2 and the TLS settings are server-level (hPanel / LiteSpeed or Apache config), not settable here.
+# Hostinger runs LiteSpeed on most plans, which also reads this file; mod_brotli below is skipped if it is not loaded.
+<IfModule mod_brotli.c>
+AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml text/javascript application/javascript application/json application/ld+json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/javascript application/xml application/manifest+json font/ttf
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresByType text/javascript "access plus 1 week"
+ExpiresByType image/x-icon "access plus 30 days"
+ExpiresByType image/gif "access plus 30 days"
+ExpiresByType font/woff "access plus 1 year"
+ExpiresByType font/ttf "access plus 1 year"
+ExpiresByType video/mp4 "access plus 30 days"
+</IfModule>
+<IfModule mod_headers.c>
+# HTML is always revalidated (the ETag below makes that a cheap 304). mod_deflate and mod_brotli add Vary: Accept-Encoding themselves.
+<If "%{REQUEST_URI} =~ m#(/|\.html)$#">
+Header set Cache-Control "no-cache"
+</If>
+</IfModule>
+FileETag MTime Size

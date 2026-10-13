@@ -43,11 +43,7 @@
     r.appendChild(a); r.appendChild(c); b.insertBefore(r, b.firstChild);
   });
 
-  /* FAQ accordion */
-  AIS.querySelectorAll(".faq__q").forEach(function (b) {
-    b.addEventListener("click", function () { var i = b.parentNode, o = i.classList.toggle("open"); b.setAttribute("aria-expanded", o); });
-  });
-  var firstFaq = AIS.querySelector(".faq__i .faq__q"); if (firstFaq) firstFaq.click();
+  /* FAQ: native <details> (mmc-faq in faq.css), no script needed */
 
   /* image slots: show the image when it exists; swap in video when data-video is set (video-later hook) */
   AIS.querySelectorAll(".slot").forEach(function (slot) {

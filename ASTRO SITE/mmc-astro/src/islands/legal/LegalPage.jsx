@@ -35,7 +35,7 @@ function LegalPage({ kind }) {
     },
     { h: "Cookie policy",
       body: [
-        "Strictly necessary: for session, security, and form submission. Cannot be disabled.",
+        "Strictly necessary: for session, security, and form submission. This includes Google reCAPTCHA, which protects our forms from spam and abuse and is loaded when you start filling in a form. Google's Privacy Policy and Terms apply to it. Cannot be disabled.",
         "Analytics: GA4, Hotjar, Microsoft Clarity. Helps us see what's working and what isn't.",
         "Marketing: Meta Pixel, LinkedIn Insight, Google Ads. So we can show you relevant content.",
         "You can change your preferences any time by clicking 'Cookies' in the footer.",

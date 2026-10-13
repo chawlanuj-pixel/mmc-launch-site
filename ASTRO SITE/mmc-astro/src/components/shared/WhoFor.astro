@@ -17,12 +17,12 @@ const S = { width: 16, height: 16, viewBox: "0 0 24 24", fill: "none", stroke: "
       <article class="svb-who__card svb-who__card--yes">
         <span class="svb-who__tag"><span class="svb-who__ic"><svg {...S} set:html={iconPaths("check")} /></span>Good fit</span>
         <h3 class="svb-who__t">{good.t}</h3>
-        <p class="svb-who__why">{good.why}</p>
+        <p class="svb-who__why" set:html={good.why} />
       </article>
       <article class="svb-who__card svb-who__card--no">
         <span class="svb-who__tag"><span class="svb-who__ic"><svg {...S} set:html={iconPaths("cross")} /></span>Not a fit</span>
         <h3 class="svb-who__t">{not.t}</h3>
-        <p class="svb-who__why">{not.why}</p>
+        <p class="svb-who__why" set:html={not.why} />
       </article>
     </div>
     {foot ? <p class="svb-who__foot n-rise d2">{foot}</p> : null}

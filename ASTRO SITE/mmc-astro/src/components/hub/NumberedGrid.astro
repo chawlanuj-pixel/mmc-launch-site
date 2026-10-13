@@ -1,0 +1,29 @@
+---
+// 01 to 06 numbered cards, each with a photo thumbnail. Data key `grid`; renders nothing without it.
+import "../../styles/hub-v2.css";
+interface Item { t: string; d: string; img: string; alt?: string }
+const G = Astro.props.G as { eyebrow?: string; h2a: string; h2b?: string; lede?: string; items: Item[] } | undefined;
+---
+{G && G.items && G.items.length ? (
+<section class="n-band pm-band n-band--paper" id="what-we-do" aria-labelledby="hv2h-grid-h">
+  <div class="n-wrap">
+    <div class="hv2h-head n-rise">
+      <span class="n-eyebrow">{G.eyebrow || "What we do"}</span>
+      <h2 class="n-h2" id="hv2h-grid-h">{G.h2a}{G.h2b ? " " : ""}{G.h2b && <span class="n-serif">{G.h2b}</span>}</h2>
+      {G.lede ? <p class="hv2h-lede">{G.lede}</p> : null}
+    </div>
+    <ol class="hv2h-grid">
+      {G.items.map((it, k) => (
+        <li class="hv2h-card n-rise">
+          <img class="hv2h-card__img" src={"/assets/" + it.img} alt={it.alt || it.t} width="480" height="320" loading="lazy" decoding="async" />
+          <div class="hv2h-card__body">
+            <span class="hv2h-card__n" aria-hidden="true">{String(k + 1).padStart(2, "0")}</span>
+            <h3 class="hv2h-card__t">{it.t}</h3>
+            <p class="hv2h-card__d">{it.d}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+) : null}

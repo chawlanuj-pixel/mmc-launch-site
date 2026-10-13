@@ -1,0 +1,74 @@
+{
+ "id": "vagakids",
+ "about": "{name} is a D2C brand that sells charm clogs for children.",
+ "description": "{name} case study: an ecommerce storefront for a charm clogs range, from homepage to product page, with matching social creative and ads.",
+ "heroTone": "paper",
+ "kind": "D2C brand, kids' charm clogs",
+ "channels": [
+  "Meta ad",
+  "Google Shopping ad"
+ ],
+ "brief": [
+  "{name} sells charm clogs for children. This page covers an ecommerce storefront, from the homepage through to a product detail page, with matching social creative and ads.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage on desktop and mobile",
+   "text": "A festive homepage with an offer code, shop-by-age, size and colour routes, and a phone version with the same header.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Two portrait tiles, one of children and one of the clogs with their charms.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google Shopping ad",
+   "text": "Product-card ads with the clog colours and prices.",
+   "crops": [
+    "meta",
+    "google"
+   ],
+   "captions": [
+    "Meta ad",
+    "Google Shopping ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "Product photography",
+   "text": "From the same artwork.",
+   "crops": [
+    "shoes"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage and mobile product detail page",
+  "reach": "Meta ad and Google Shopping ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "social": "{name} social media creative tiles, client-approved artwork",
+  "meta": "{name} Meta ad, client-approved artwork",
+  "google": "{name} Google ad, client-approved artwork",
+  "shoes": "{name} product photography of the clogs, client-approved artwork"
+ }
+}

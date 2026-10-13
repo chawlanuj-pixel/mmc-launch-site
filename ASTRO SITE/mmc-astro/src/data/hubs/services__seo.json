@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "SEO is the work of making your website easy for search engines and AI assistants to find, understand and recommend for the searches your buyers make.",
+      "lead": "SEO is the work of making your website easy for search engines and AI assistants to find, understand and recommend for the searches your buyers make. MMC does SEO for D2C, B2B and education brands, including the answer-engine work that decides whether AI assistants quote you, and reports on qualified traffic, enquiries and orders.",
       "hl": "find, understand and recommend",
       "who": "Monday Marketing Company (MMC) does SEO for D2C, B2B and education brands, including the answer-engine work that decides whether AI assistants quote you.",
       "points": [
@@ -294,6 +294,69 @@
           "img": "google/search.jpg",
           "href": "google-ads.html",
           "link": "See Google Ads"
+        },
+        {
+          "n": "AI SEO",
+          "d": "One plan for being found and recommended across classic and AI search.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/ai-seo/",
+          "link": "See AI SEO"
+        },
+        {
+          "n": "Answer-engine optimisation",
+          "d": "Short, structured answers for snippets, voice and AI summaries.",
+          "img": "seo/pages.jpg",
+          "href": "/services/seo/aeo/",
+          "link": "See AEO"
+        },
+        {
+          "n": "Generative-engine optimisation",
+          "d": "Being cited by ChatGPT, Perplexity, Gemini and Google AI Overviews.",
+          "img": "seo/authority.jpg",
+          "href": "/services/seo/geo/",
+          "link": "See GEO"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "Local answers for searches by place and for voice queries.",
+          "img": "orm/profile.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile"
+        },
+        {
+          "n": "Content marketing",
+          "d": "Strategy, writing and distribution built around buyer questions.",
+          "img": "sv/content.jpg",
+          "href": "/services/content-marketing/",
+          "link": "See Content marketing"
+        },
+        {
+          "n": "White-label SEO",
+          "d": "Audits, fixes and reports behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/seo/",
+          "link": "See white-label SEO"
+        },
+        {
+          "n": "White-label link building",
+          "d": "Outreach and placements behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/link-building/",
+          "link": "See white-label link building"
+        },
+        {
+          "n": "Locations",
+          "d": "Thane, Mumbai and Indore, and what a business in each city faces.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See locations"
+        },
+        {
+          "n": "Online reputation management",
+          "d": "Reviews and mentions that shape trust.",
+          "img": "orm/earn.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
         }
       ]
     },
@@ -372,6 +435,122 @@
         "t": "You need leads next week, or a guaranteed ranking.",
         "why": "Search takes time and nobody controls rankings, so urgent demand is better served by paid media while SEO builds."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "SEO.",
+      "lede": "From the technical base to being quoted by AI answers, for D2C, B2B and education sites.",
+      "items": [
+        {
+          "t": "Technical foundation",
+          "d": "Crawling, indexing, speed and site structure fixed so search engines can read the site properly.",
+          "img": "seo/tech.jpg",
+          "alt": "Technical foundation: illustrative scene"
+        },
+        {
+          "t": "Keyword and intent research",
+          "d": "The questions buyers ask, grouped by what they want to do next.",
+          "img": "seo/intent.jpg",
+          "alt": "Keyword and intent research: illustrative scene"
+        },
+        {
+          "t": "Page and content builds",
+          "d": "Category, product, service and guide pages written to rank and to convert.",
+          "img": "seo/pages.jpg",
+          "alt": "Page and content builds: illustrative scene"
+        },
+        {
+          "t": "AEO and GEO",
+          "d": "Answer-first copy, schema and clear entities so AI answers can quote you.",
+          "img": "seo/aeo.jpg",
+          "alt": "AEO and GEO: illustrative scene"
+        },
+        {
+          "t": "Authority and links",
+          "d": "Earned mentions and relevant links that build trust without shortcuts.",
+          "img": "seo/authority.jpg",
+          "alt": "Authority and links: illustrative scene"
+        },
+        {
+          "t": "Local and marketplace search",
+          "d": "Google Business Profile and listing work where buyers search by place or by marketplace.",
+          "img": "sv/organic.jpg",
+          "alt": "Local and marketplace search: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for SEO.",
+      "lede": "SEO compounds. We build it so the work still pays after the month ends.",
+      "img": "seo/pages.jpg",
+      "alt": "Why brands choose MMC for SEO. Illustrative scene.",
+      "items": [
+        {
+          "t": "Search and conversion together",
+          "d": "We write for ranking and for the sale, because traffic that does not convert is not growth."
+        },
+        {
+          "t": "Ready for AI search",
+          "d": "Pages are structured to be found in classic results and cited in AI answers."
+        },
+        {
+          "t": "Joined up with paid",
+          "d": "Search data feeds our ads, and ad data shows which pages deserve more SEO effort."
+        },
+        {
+          "t": "Reports without vanity",
+          "d": "We report on enquiries and orders from search, not only on rankings."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How an SEO engagement runs,",
+      "h2b": "step by step.",
+      "img": "seo/authority.jpg",
+      "alt": "How an SEO engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Audit and baseline",
+          "d": "Technical health, content gaps and current visibility are recorded so progress can be measured."
+        },
+        {
+          "t": "Plan the topics",
+          "d": "A priority map of pages to fix, merge or create, ordered by business value."
+        },
+        {
+          "t": "Build and publish",
+          "d": "Pages, schema and internal links go live in batches, with copy checked for accuracy."
+        },
+        {
+          "t": "Measure and extend",
+          "d": "Rankings, citations and search-led enquiries are reviewed monthly and the plan is updated."
+        }
+      ]
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "seo-and-ai-search",
+          "h": "SEO now includes AI search",
+          "paras": [
+            "Classic SEO still gives a site its base: pages that load, can be crawled and answer the search. On top of that, buyers now get answers from AI summaries and assistants, so the same pages also have to be easy to quote. We plan that as one programme under <a href=\"/services/seo/ai-seo/\">AI SEO</a>.",
+            "Two disciplines do most of that work. <a href=\"/services/seo/aeo/\">Answer-engine optimisation</a> shapes pages so a snippet, a voice reply or an AI summary can lift a clear answer. <a href=\"/services/seo/geo/\">Generative-engine optimisation</a> builds the consistent sources and mentions that tools such as ChatGPT, Perplexity and Gemini draw on."
+          ]
+        },
+        {
+          "id": "local-and-content",
+          "h": "Local searches and the content behind them",
+          "paras": [
+            "Searches by place start on the map, not on your site. A well-kept <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a> answers them with hours, services and reviews.",
+            "The pages that rank and get quoted are built from buyer questions. Our <a href=\"/services/content-marketing/\">content marketing</a> work plans and writes them, so search, answers and social share one research base."
+          ]
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

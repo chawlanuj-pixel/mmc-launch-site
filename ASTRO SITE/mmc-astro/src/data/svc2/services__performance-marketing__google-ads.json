@@ -1,0 +1,176 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/google-amazon.jpg",
+    "pos": "40% 50%",
+    "alt": "A strategist at a desk with ads dashboards open on two screens.",
+    "facts": [
+      {
+        "t": "Intent first.",
+        "d": "Search and shopping reach people who are ready to buy or enquire."
+      },
+      {
+        "t": "Feeds and assets.",
+        "d": "Product feeds, ad copy and landing pages written for the query."
+      },
+      {
+        "t": "Judged on profit.",
+        "d": "Not on the conversions Google reports."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for Google Ads"
+  },
+  "work": {
+    "panel": "GoogleAdsAccount",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do in your",
+    "h2b": "Google Ads account.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Split campaigns by search intent.",
+        "d": "Brand, generic and competitor searches get their own campaigns, so each is judged on its own result."
+      },
+      {
+        "n": "02",
+        "t": "Cut waste with negative keywords.",
+        "d": "Keywords are grouped by intent and match type, and searches that bring clicks but never a buyer are blocked."
+      },
+      {
+        "n": "03",
+        "t": "Fix the product feed.",
+        "d": "In Shopping the feed is the ad, so titles, attributes and prices are rewritten for how people search."
+      },
+      {
+        "n": "04",
+        "t": "Give Performance Max better inputs.",
+        "d": "Strong assets, clear audience signals and accurate conversion data go in, and we check where the spend lands."
+      },
+      {
+        "n": "05",
+        "t": "Move budget by margin.",
+        "d": "Spend shifts to the campaigns that clear break-even on contribution margin, or on cost per qualified lead."
+      }
+    ],
+    "illustrative": "Illustrative layout of a Google Ads account view. Not a client account, no real figures. Google Ads and its logo belong to Google."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaSearchTerms",
+    "barLogo": "/assets/platforms/google.svg",
+    "barTitle": "Search term report",
+    "pinsLabel": "Five places Google spend leaks",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Intent"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Feed"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Automation"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Video"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Profit"
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we run Google Ads for.",
+    "tiles": [
+      {
+        "id": "mbb",
+        "line": "Body care: Google Shopping ads and Meta carousel ads tied to one storefront."
+      },
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: paid ads and the product page planned as one story."
+      },
+      {
+        "id": "lepure",
+        "line": "A D2C brand: paid search, product pages and creative planned together."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run Google Ads,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit and split by intent",
+        "d": "We separate brand search, non-brand search and shopping so each can be judged fairly, and clean up tracking and the product feed.",
+        "get": "An account where every campaign has a clear job.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Fix the inputs",
+        "d": "Feeds, ad copy and landing pages are rewritten for the query, and automated campaigns get the assets and signals they need.",
+        "get": "Automation that works from good inputs, not guesses.",
+        "img": "about2/huddle.jpg",
+        "alt": "Two colleagues mapping a marketing funnel on a whiteboard.",
+        "pos": "50% 40%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Judge it on profit and scale",
+        "d": "Budget moves to what clears your break-even on contribution margin, or on the cost of a qualified lead for B2B and education.",
+        "get": "Spend that follows profit, not reported conversions.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "Meta Ads",
+        "href": "/services/performance-marketing/meta-ads/"
+      },
+      {
+        "n": "Conversion rate optimisation",
+        "href": "/services/cro/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

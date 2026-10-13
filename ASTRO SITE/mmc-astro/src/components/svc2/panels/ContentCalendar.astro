@@ -1,0 +1,58 @@
+---
+// PANEL: ContentCalendar (kind "ContentCalendar"). A four-week social calendar grid with post tiles (crops of existing photos), 4 steps.
+// Platform marks used: TikTok, YouTube, LinkedIn (public/assets/platforms). Instagram has no file there, so Reels and posts are labelled in text.
+//   1 Pillars: four content pillars as a colour legend and empty slots on the grid. Tab: Plan.
+//   2 Drafted: post tiles fill the slots, each with a format or platform tag. Tab: Calendar.
+//   3 Approvals: each tile shows Approved or In review. Tab: Approvals.
+//   4 Learn: the best formats are starred "Repeat this", the rest dim. Tab: Reports.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix cal-).
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const pillars = [["Educate", "#1D4ED8"], ["Show", "#FFC528"], ["Prove", "#1B7A3D"], ["Sell", "#0F1E5E"]];
+type Cell = [keyof typeof THUMBS, string, number, boolean?, boolean?] | null; // thumb, tag, pillar index, in review, best
+const cells: Cell[] = [
+  ["jar", "Reel", 1], null, ["shirt", "LinkedIn", 0, false, true], null, ["serum", "Post", 3, true], null, null,
+  null, ["candle", "TikTok", 1, true], null, ["unbox", "YouTube", 2], null, ["bar", "Reel", 0, false, true], null,
+  ["pack", "Post", 2], null, null, ["shirt", "Reel", 3, true], null, ["serum", "TikTok", 1], null,
+  null, ["unbox", "Post", 0], null, null, ["jar", "YouTube", 2, false, true], null, ["candle", "Reel", 3],
+];
+const marks: Record<string, string> = { TikTok: "tiktok", YouTube: "youtube", LinkedIn: "linkedin" };
+---
+<Frame title="Content calendar" label="Illustration of a four-week social content calendar. Not a client account." caption={W.illustrative} tabs={["Plan", "Calendar", "Approvals", "Reports"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4 cal">
+    <ul class="cal-key">{pillars.map(([n, c]) => <li><i style={`background:${c}`}></i>{n}</li>)}</ul>
+    <div class="cal-days" aria-hidden="true">{["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((d) => <span>{d}</span>)}</div>
+    <div class="cal-grid">
+      {cells.map((c, k) => c ? (
+        <div class={"cal-c cal-c--post" + (c[4] ? " is-best" : "")} style={`--p:${pillars[c[2]][1]}`}>
+          <span class="s2p-ph cal-th s2p-from-2" style={THUMBS[c[0]]} role="img" aria-label="Post image"></span>
+          <span class="cal-tag s2p-from-2">{marks[c[1]] ? <img src={`/assets/platforms/${marks[c[1]]}.svg`} alt="" width="12" height="12" /> : null}{c[1]}</span>
+          <em class={"cal-st s2p-at-3" + (c[3] ? " is-rev" : "")}>{c[3] ? "In review" : "Approved"}</em>
+          {c[4] ? <em class="cal-star s2p-at-4">Repeat this</em> : null}
+        </div>
+      ) : <div class="cal-c" aria-hidden="true"></div>)}
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.cal { gap: .6em; }
+.cal-key { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4em 1.1em; font: 800 .86em var(--font-body); color: #1C2B33; }
+.cal-key i { display: inline-block; width: .8em; height: .8em; border-radius: 50%; margin-right: .45em; }
+.cal-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: .4em; font: 800 .7em var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; text-align: center; }
+.cal-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: .4em; }
+.cal-c { position: relative; min-height: 0; border-radius: .6em; background: #F5F6F7; border: 1px dashed #DADDE1; overflow: hidden; }
+.cal-c--post { border: 0; border-bottom: .28em solid var(--p); background: #fff; box-shadow: 0 0 0 1px #DADDE1; }
+.cal-th { position: absolute; inset: 0; background-color: #E7F0FF; }
+.cal-tag { position: absolute; left: .3em; top: .3em; display: inline-flex; align-items: center; gap: .3em; padding: .15em .5em; border-radius: 99px; background: rgba(255, 255, 255, .95); font: 800 .62em/1.3 var(--font-body); color: #1C2B33; }
+.cal-st, .cal-star { position: absolute; left: .3em; right: .3em; bottom: .3em; padding: .2em 0; border-radius: .4em; text-align: center; font: 800 .6em/1.2 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; background: #E3F6E9; color: #1B7A3D; }
+.cal-st.is-rev { background: #FFF3D6; color: #8A5A00; }
+.cal-star { background: var(--s2-sun); color: var(--s2-ink); }
+.s2-work[data-step="4"] .cal-c--post:not(.is-best) { opacity: .4; }
+.cal-c--post.is-best { transition: box-shadow .3s; }
+.s2-work[data-step="4"] .cal-c--post.is-best { box-shadow: 0 0 0 2px var(--s2-sun); }
+.cal-c--post { transition: opacity .4s; }
+@media (prefers-reduced-motion: reduce) { .cal-c--post, .cal-c--post.is-best { transition: none; } }
+@media (max-width: 560px) { .cal-tag img { display: none; } .cal-days { font-size: .6em; } .cal-star, .cal-st { font-size: .52em; } }
+</style>

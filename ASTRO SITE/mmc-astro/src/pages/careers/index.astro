@@ -1,26 +1,32 @@
 ---
+// Careers, v3 (October 2026). Its own hero (ink panel beside an edge-to-edge studio photo, with team shortcuts),
+// then: how we work (photo rail), open roles (filterable by team), how hiring works (photo steps), fit (ink),
+// FAQ, close. Every role fact comes from roles.json via src/lib/roles. Styles: src/styles/careers3.css (cr3-).
+// Previous version: tools/backup/about-careers-20261012/careers-index.astro.
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Shell from "../../components/Shell.astro";
 import PageFx from "../../components/pages/PageFx.astro";
 import Img from "../../components/hub/Img.astro";
 import Arrow from "../../components/hub/Arrow.astro";
-import { fixDeep, href } from "../../lib/links";
-import { roles, stepsFor, processFaq, roleCount } from "../../lib/roles";
+import Faq from "../../components/hub/Faq.astro";
+import { fixDeep } from "../../lib/links";
+import { roles, stepsFor, processFaq, roleCount, MODE } from "../../lib/roles";
 import { SECONDARY } from "../../lib/site";
 import PreFooterCta from "../../components/shared/PreFooterCta.astro";
 import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
-import "../../styles/careers2.css";
+import "../../styles/careers3.css";
 
 const SITE = "https://www.mondaymarketing.company";
 const title = "Careers at MMC | Marketing Jobs in Thane and Mumbai";
-const description = "Open roles at Monday Marketing Company across performance, creative, strategy and technology. Apply with a single page, no resume required.";
+const description = "Open roles at MMC across performance, creative, strategy and technology for D2C, B2B and education brands. Apply with a single page, no resume required.";
 const TAG: Record<string, string> = { performance: "Performance", creative: "Creative", strategy: "Strategy", technology: "Technology" };
+const TEAMS = Object.keys(TAG).map((id) => ({ id, name: TAG[id], n: roles.filter((r) => r.discipline === id).length })).filter((t) => t.n > 0);
 
 const WHY = [
-  ["No account-manager layer.", "The person doing the work talks to the client. Strategists own the relationship.", "company/call.jpg"],
-  ["Own verticals, not tasks.", "We do not hand out projects, we hand out P&Ls. You carry the outcome, not just the task list.", "company/strategy.jpg"],
-  ["Write your own brief.", "Every senior here is expected to ship a brief unprompted in their first 90 days.", "company/onepage.jpg"],
-  ["Early enough to shape it.", "The person who joins next helps decide how this place works, not just what it ships.", "careers2/team-screen.jpg"],
+  ["No account-manager layer.", "The person doing the work talks to the client. Strategists own the relationship.", "contact/call.jpg", "A strategist on the phone with a client, laptop and notes open"],
+  ["Own verticals, not tasks.", "We do not hand out projects, we hand out P&Ls. You carry the outcome, not just the task list.", "company/strategy.jpg", "Two people at a round table working through a plan"],
+  ["Write your own brief.", "Every senior here is expected to ship a brief unprompted in their first 90 days.", "contact/brief.jpg", "Someone writing a brief on a laptop at a studio desk"],
+  ["Early enough to shape it.", "The person who joins next helps decide how this place works, not just what it ships.", "company/whiteboard.jpg", "Three people shaping a plan together at a whiteboard"],
 ];
 
 const STEPS = stepsFor("careersPage");
@@ -64,127 +70,121 @@ const jsonld = [
 ---
 <BaseLayout title={title} description={description} path="/careers/" ogTitle="People who write their own briefs" ogDescription="Open roles across performance, creative, strategy and technology. Apply with one page, no resume required." ogAlt="Careers at Monday Marketing Company." jsonld={jsonld}>
   <Shell footerCta={{ nav: true, label: "View open roles", href: "/careers/#roles" }}>
-    <main id="main" tabindex="-1" class="app-main n-app">
+    <main id="main" tabindex="-1" class="app-main n-app cr3">
 
-      <section class="cr-hero" id="top">
-        <div class="n-wrap cr-hero__top">
-          <p class="cr-hero__crumb" data-enter><span>● Careers at MMC</span> <span>Thane and Mumbai, with a few roles remote</span></p>
-          <div class="cr-hero__head">
-            <div>
-              <h1 class="cr-hero__h1"><span class="clip-reveal d1" data-enter><span>People who write</span></span> <span class="clip-reveal d2" data-enter><span><em>their own</em></span></span> <span class="clip-reveal d3" data-enter><span>briefs.</span></span></h1>
-              <p class="cr-hero__sub reveal d4" data-enter>We hire senior people and hand them ownership. Roles across performance, creative, strategy and technology. Apply with a single page, no resume required.</p>
-              <div class="cr-hero__actions reveal d5" data-enter>
-                <a class="btn btn--primary glow-btn" href="#roles"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">See open roles<span class="arrow"></span></span></a>
-                <button class="btn btn--link" type="button" onclick="window.mmcOpenBrief(event)">Or pitch us your own role<span class="arrow"></span></button>
-              </div>
+      <!-- 1. Hero: ink panel + studio photo, team shortcuts -->
+      <section class="cr3-hero" id="top" aria-labelledby="cr3-h1">
+        <div class="cr3-hero__panel">
+          <div class="cr3-hero__in">
+            <nav class="cr3-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Careers</span></nav>
+            <p class="cr3-hero__kicker"><span aria-hidden="true"></span>Careers at MMC · Thane and Mumbai, with a few roles remote</p>
+            <h1 class="cr3-hero__h1" id="cr3-h1">People who write <em>their own</em> briefs.</h1>
+            <p class="cr3-hero__sub">We hire senior people and hand them ownership. Roles across performance, creative, strategy and technology. Apply with a single page, no resume required.</p>
+            <div class="cr3-hero__act">
+              <a class="btn btn--primary glow-btn" href="#roles"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{SECONDARY.roles}<span class="arrow"></span></span></a>
+              <button class="btn btn--link cr3-hero__pitch" type="button" onclick="window.mmcOpenBrief(event)">Or pitch us your own role<span class="arrow"></span></button>
             </div>
-            <div class="cr-hero__stat reveal d5" data-enter>
-              <b>{String(roleCount).padStart(2, "0")}</b>
-              <span>Roles open right now, each with its own page</span>
+            <div class="cr3-hero__teams">
+              <p><b>{String(roleCount).padStart(2, "0")}</b> roles open now, by team</p>
+              <ul>
+                {TEAMS.map((t) => (
+                  <li><a href={"#roles"} data-team={t.id}><span>{t.name}</span><i>{t.n}</i></a></li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-        <figure class="cr-hero__photo">
-          <Img name="careers2/studio-wide.jpg" ratio="21 / 9" eager={true} />
-          <figcaption class="cr-hero__cap"><i aria-hidden="true"></i>The studio, mid-review. Illustrative scene.</figcaption>
+        <figure class="cr3-hero__fig">
+          <img src="/assets/careers2/studio-wide.jpg" alt="A team at a long studio table mid-review, laptops open and a whiteboard of plans behind them" width="1400" height="940" loading="eager" fetchpriority="high" decoding="async" />
+          <figcaption><i aria-hidden="true"></i>The studio, mid-review. Illustrative scene.</figcaption>
         </figure>
-        <div class="cr-ticker" aria-hidden="true">
-          <div class="cr-ticker__track">
-            <div class="cr-ticker__seg">
-              {roles.map((r) => (<span><i></i><b>{r.title}</b> {r.location}</span>))}
-            </div>
-            <div class="cr-ticker__seg">
-              {roles.map((r) => (<span><i></i><b>{r.title}</b> {r.location}</span>))}
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section class="n-band n-band--white" id="job">
-        <div class="n-wrap cr-brief">
-          <div class="n-rise">
-            <p class="cr-brief__q">MMC hires senior people across performance, creative, strategy and technology, and <mark>gives them ownership</mark> from day one.</p>
-            <p class="cr-brief__who">Apply with one page. No resume, no portal.</p>
-            <ul class="cr-brief__list">
-              <li><b>No account-manager layer</b><span>The person doing the work talks to the client.</span></li>
-              <li><b>You own an outcome</b><span>We hand out P&amp;Ls, not task lists.</span></li>
-              <li><b>One page to apply</b><span>What you would own and change in ninety days.</span></li>
-            </ul>
-          </div>
-          <figure class="cr-brief__fig n-rise d1">
-            <Img name="careers2/brief-review.jpg" ratio="4 / 5" />
-            <figcaption><i aria-hidden="true"></i>Two people, one page. Illustrative scene.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="n-band n-band--paper" id="why">
+      <!-- 2. How we work: four glimpses -->
+      <section class="n-band n-band--white cr3-why" id="why" aria-labelledby="cr3-why-h">
         <div class="n-wrap">
-          <div class="pm-head n-rise" style="margin-bottom:clamp(28px,3vw,44px)">
-            <span class="n-eyebrow">Why work here</span>
-            <h2 class="n-h2">Four things you would feel <span class="n-serif">in your first month.</span></h2>
+          <div class="cr3-head cr3-head--split n-rise">
+            <div>
+              <span class="n-eyebrow">How we work</span>
+              <h2 class="n-h2" id="cr3-why-h">Four things you would feel <span class="n-serif">in your first month.</span></h2>
+            </div>
+            <p class="n-lede">MMC hires senior people across performance, creative, strategy and technology, and gives them ownership from day one.</p>
           </div>
-          <ul class="cr-why n-rise d1">
+          <ol class="cr3-why__rail n-rise d1" tabindex="0" aria-label="How we work, four points">
             {WHY.map((b, k) => (
-              <li>
-                <figure class="cr-why__img"><Img name={b[2]} ratio="4 / 3" /></figure>
-                <div>
-                  <b class="cr-why__n">{String(k + 1).padStart(2, "0")}</b>
-                  <strong>{b[0]}</strong>
-                  <p>{b[1]}</p>
-                </div>
+              <li class="cr3-why__item">
+                <figure><Img name={b[2]} ratio="4 / 5" alt={b[3]} /></figure>
+                <span class="cr3-why__n" aria-hidden="true">{String(k + 1).padStart(2, "0")}</span>
+                <h3>{b[0]}</h3>
+                <p>{b[1]}</p>
+              </li>
+            ))}
+          </ol>
+          <p class="cr3-note">Illustrative scenes.</p>
+        </div>
+      </section>
+
+      <!-- 3. Open roles, filterable by team -->
+      <section class="n-band n-band--paper cr3-roles" id="roles" aria-labelledby="cr3-roles-h">
+        <div class="n-wrap">
+          <div class="cr3-head cr3-head--split n-rise">
+            <div>
+              <span class="n-eyebrow">Open roles</span>
+              <h2 class="n-h2" id="cr3-roles-h">Where we are <span class="n-serif">hiring.</span></h2>
+            </div>
+            <p class="n-lede">Each role has its own page with the details and an application form.</p>
+          </div>
+
+          <div class="cr3-filter" role="group" aria-label="Filter roles by team">
+            <button type="button" aria-pressed="true" data-filter="all">All teams <i>{roleCount}</i></button>
+            {TEAMS.map((t) => <button type="button" aria-pressed="false" data-filter={t.id}>{t.name} <i>{t.n}</i></button>)}
+          </div>
+          <p class="cr3-filter__status" aria-live="polite" id="cr3-status">Showing all {roleCount} roles</p>
+
+          <ul class="cr3-list">
+            {roles.map((r) => (
+              <li class="cr3-row" data-team={r.discipline}>
+                <a href={"/careers/" + r.slug + "/"}>
+                  <span class="cr3-row__pic"><Img name={r.img} ratio="3 / 2" /></span>
+                  <span class="cr3-row__main">
+                    <span class="cr3-row__tag">{TAG[r.discipline]}</span>
+                    <h3>{r.title}</h3>
+                    <span class="cr3-row__hint">{r.hint}</span>
+                  </span>
+                  <span class="cr3-row__facts">
+                    <span><b>Location</b>{r.location}{MODE[r.workMode] && !r.location.toLowerCase().includes(MODE[r.workMode].toLowerCase()) ? ", " + MODE[r.workMode].toLowerCase() : ""}</span>
+                    <span><b>Experience</b>{r.band}</span>
+                  </span>
+                  <span class="cr3-row__go"><span class="cr3-sr">View the role</span><Arrow /></span>
+                </a>
               </li>
             ))}
           </ul>
-        </div>
-      </section>
 
-      <section class="n-band n-band--white" id="roles">
-        <div class="n-wrap">
-          <div class="pm-head n-rise" style="margin-bottom:clamp(20px,2.4vw,32px)">
-            <span class="n-eyebrow">Open roles</span>
-            <h2 class="n-h2">Where we are <span class="n-serif">hiring.</span></h2>
-            <p class="n-lede">Each role has its own page with the details and an application form.</p>
-          </div>
-          <div class="cr-roles n-rise d1">
-            {roles.map((r, i) => (
-              <a class="cr-role" href={"/careers/" + r.slug + "/"}>
-                <span class="cr-role__n">{String(i + 1).padStart(2, "0")}</span>
-                <span class="cr-role__mid">
-                  <span class="cr-role__tag">{TAG[r.discipline]}</span>
-                  <h3>{r.title}</h3>
-                  <span class="cr-role__meta"><span>{r.location}</span><span>·</span><span>{r.type}</span><span>·</span><span>{r.band}</span></span>
-                  <p class="cr-role__hint">{r.hint}</p>
-                </span>
-                <span class="cr-role__end">
-                  <span class="cr-role__thumb"><Img name={r.img} ratio="3 / 2" /></span>
-                  <span class="cr-role__go">View the role<Arrow /></span>
-                </span>
-              </a>
-            ))}
-            <div class="cr-role--own">
-              <div>
-                <h3>Not listed? Write the role yourself.</h3>
-                <p>One page: what you would own, what you would change in the first ninety days, and what you need from us.</p>
-              </div>
-              <button type="button" onclick="window.mmcOpenBrief(event)">Pitch us your role</button>
+          <div class="cr3-own n-rise">
+            <figure><Img name="careers2/brief-review.jpg" ratio="3 / 2" alt="Two people reading a one-page brief together at a desk" /></figure>
+            <div>
+              <h3>Not listed? Write the role yourself.</h3>
+              <p>One page: what you would own, what you would change in the first ninety days, and what you need from us.</p>
+              <button type="button" class="btn btn--ghost cr3-own__btn" onclick="window.mmcOpenBrief(event)">Pitch us your role<span class="arrow"></span></button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="n-band n-band--paper" id="hiring">
+      <!-- 4. How hiring works -->
+      <section class="n-band n-band--white cr3-hire" id="hiring" aria-labelledby="cr3-hire-h">
         <div class="n-wrap">
-          <div class="pm-head n-rise" style="margin-bottom:clamp(28px,3vw,44px)">
+          <div class="cr3-head n-rise">
             <span class="n-eyebrow">How hiring works</span>
-            <h2 class="n-h2">Four steps. <span class="n-serif">No portal.</span></h2>
+            <h2 class="n-h2" id="cr3-hire-h">Four steps. <span class="n-serif">No portal.</span></h2>
             <p class="n-lede">You meet the people you would work with before anyone makes a decision.</p>
           </div>
-          <ol class="cr-steps n-rise d1">
+          <ol class="cr3-steps">
             {STEPS.map((s, k) => (
-              <li class="cr-step">
-                <span class="cr-step__dot" aria-hidden="true"></span>
-                <figure class="cr-step__img"><Img name={s.img || "company/onepage.jpg"} ratio="4 / 3" /></figure>
+              <li class={"cr3-step n-rise d" + (k + 1)}>
+                <span class="cr3-step__n" aria-hidden="true">{String(k + 1).padStart(2, "0")}</span>
+                <figure><Img name={s.img || "company/onepage.jpg"} ratio="4 / 3" /></figure>
                 <h3>Step {k + 1}. {s.h}</h3>
                 <p>{s.d}</p>
               </li>
@@ -193,41 +193,28 @@ const jsonld = [
         </div>
       </section>
 
-      <section class="n-band n-band--white" id="fit">
+      <!-- 5. Fit -->
+      <section class="n-band n-band--ink cr3-fit" id="fit" aria-labelledby="cr3-fit-h">
         <div class="n-wrap">
-          <div class="pm-head n-rise" style="margin-bottom:clamp(24px,2.8vw,36px)">
+          <div class="cr3-head n-rise">
             <span class="n-eyebrow">Before you apply</span>
-            <h2 class="n-h2">Small is the job, <span class="n-serif">not a phase.</span></h2>
+            <h2 class="n-h2" id="cr3-fit-h">Small is the job, <span class="n-serif">not a phase.</span></h2>
           </div>
-          <div class="cr-fit n-rise d1">
-            <div class="cr-fit__col cr-fit__col--no">
-              <span class="cr-fit__stamp">Will frustrate you</span>
-              <ul>{NOT_FOR.map((t) => <li><b>{t[0]}</b><span>{t[1]}</span></li>)}</ul>
-            </div>
-            <div class="cr-fit__col cr-fit__col--yes">
-              <span class="cr-fit__stamp">You would do well</span>
+          <div class="cr3-fit__grid n-rise d1">
+            <figure class="cr3-fit__fig"><Img name="company/session.jpg" ratio="4 / 5" alt="A small team round one table, laptops and printed creative between them" /><figcaption>Illustrative scene</figcaption></figure>
+            <div class="cr3-fit__col cr3-fit__col--yes">
+              <h3>You would do well</h3>
               <ul>{GOOD_FIT.map((t) => <li><b>{t[0]}</b><span>{t[1]}</span></li>)}</ul>
+            </div>
+            <div class="cr3-fit__col cr3-fit__col--no">
+              <h3>Will frustrate you</h3>
+              <ul>{NOT_FOR.map((t) => <li><b>{t[0]}</b><span>{t[1]}</span></li>)}</ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="n-band n-band--paper" id="faq">
-        <div class="n-wrap">
-          <div class="pm-head n-rise" style="margin-bottom:clamp(20px,2.4vw,32px)">
-            <span class="n-eyebrow">Common questions</span>
-            <h2 class="n-h2">Questions before <span class="n-serif">you apply.</span></h2>
-          </div>
-          <div class="cr-faq n-rise d1">
-            {FAQF.map((f: any, k: number) => (
-              <details open={k === 0}>
-                <summary>{f.q}</summary>
-                <div class="cr-faq__a"><p set:html={f.a} /></div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faq title={["Questions before", "you apply."]} faq={FAQF} tone="paper" />
 
       <PreFooterCta source="careers" eyebrow="How to apply" h2a="One page." h2b="That is the application."
         lede="Pick a role above and use its form, or write your own: what you would own, change in ninety days, and need from us."
@@ -237,4 +224,23 @@ const jsonld = [
     <StickyBookingBar source="careers" mode="roles" />
   </Shell>
   <PageFx />
+  <script>
+    /* Team filter. Without JS every role shows; with it, the buttons (and the hero team links) narrow the list. */
+    const btns = Array.from(document.querySelectorAll<HTMLButtonElement>(".cr3-filter [data-filter]"));
+    const rows = Array.from(document.querySelectorAll<HTMLElement>(".cr3-row"));
+    const status = document.getElementById("cr3-status");
+    const names: Record<string, string> = {};
+    btns.forEach((b) => { names[b.dataset.filter || ""] = (b.firstChild?.textContent || "").trim(); });
+    const apply = (team: string) => {
+      let n = 0;
+      rows.forEach((r) => { const on = team === "all" || r.dataset.team === team; r.hidden = !on; if (on) n++; });
+      btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === team)));
+      if (status) status.textContent = team === "all" ? `Showing all ${n} roles` : `Showing ${n} ${n === 1 ? "role" : "roles"} in ${names[team] || team}`;
+    };
+    btns.forEach((b) => b.addEventListener("click", () => apply(b.dataset.filter || "all")));
+    document.querySelectorAll<HTMLAnchorElement>(".cr3-hero__teams a[data-team]").forEach((a) =>
+      a.addEventListener("click", () => apply(a.dataset.team || "all")));
+    const q = new URLSearchParams(location.search).get("team");
+    if (q && btns.some((b) => b.dataset.filter === q)) apply(q);
+  </script>
 </BaseLayout>

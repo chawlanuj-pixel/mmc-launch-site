@@ -1,0 +1,42 @@
+---
+// An audience's journey as a route: one numbered stop per stage, each with a literal photo, where it leaks,
+// what we do and the service that does it. Optional "numbers we read" panel at the end.
+import Pic from "./Pic.astro";
+interface Stage { k: string; tag?: string; breaks: string; does: string; href?: string; img: string; alt?: string; go?: string }
+interface Read { n: string; d: string }
+interface Props { eyebrow: string; h2a: string; h2b: string; lede?: string; stages: Stage[]; reads?: { title: string; note?: string; cards: Read[] }; tone?: string; id?: string }
+const { eyebrow, h2a, h2b, lede, stages, reads, tone = "paper", id = "journey" } = Astro.props;
+---
+<section class={"n-band n-band--" + tone} id={id}>
+  <div class="n-wrap">
+    <header class="h2-head h2-head--split h2-rv">
+      <span class="n-eyebrow">{eyebrow}</span>
+      <h2 class="n-h2">{h2a} <span class="n-serif">{h2b}</span></h2>
+      {lede && <p class="n-lede">{lede}</p>}
+    </header>
+    <ol class="h2-jr">
+      {stages.map((s, k) => (
+        <li class="h2-rv">
+          <span class="h2-jr__n" aria-hidden="true"></span>
+          <Pic src={s.img} alt={s.alt || ""} />
+          <div class="h2-jr__b">
+            <div class="h2-jr__k"><h3>{s.k}</h3>{s.tag && <span class="h2-label">{s.tag}</span>}</div>
+            <div class="h2-jr__pair">
+              <p class="h2-jr__leak"><b>Where it leaks</b>{s.breaks}</p>
+              <p class="h2-jr__fix"><b>What we do</b>{s.does}</p>
+            </div>
+            {s.href && <a class="h2-go" href={s.href}>{s.go || ("See " + (s.tag || s.k))}<i></i></a>}
+          </div>
+        </li>
+      ))}
+    </ol>
+    <p class="h2-note">Illustrative scenes. Screens in them are recreations, not client accounts and not real figures.</p>
+    {reads && (
+      <div class="h2-reads h2-rv">
+        <p class="h2-label">{reads.title}</p>
+        <ul>{reads.cards.map((c) => <li><b>{c.n}</b><span>{c.d}</span></li>)}</ul>
+        {reads.note && <p class="h2-note">{reads.note}</p>}
+      </div>
+    )}
+  </div>
+</section>

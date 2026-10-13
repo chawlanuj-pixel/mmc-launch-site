@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "Shopify development is the work of designing, building and connecting an online store, so shoppers can find products, trust the brand and check out with little friction.",
+      "lead": "Shopify development is the work of designing, building and connecting an online store, so shoppers can find products, trust the brand and check out with little friction. MMC builds and redesigns Shopify stores for D2C brands in India, with phone-first design, a lean fast theme, tuned checkout and analytics, Meta and CRM connected and tested before launch.",
       "hl": "find products, trust the brand and check out",
       "who": "Monday Marketing Company (MMC) builds and redesigns Shopify stores for D2C brands in India.",
       "points": [
@@ -294,6 +294,27 @@
           "img": "d2c/packing.jpg",
           "href": "d2c.html",
           "link": "See D2C brands"
+        },
+        {
+          "n": "White-label Shopify development",
+          "d": "Stores built behind your brand.",
+          "img": "shop/design.jpg",
+          "href": "/white-label/shopify-development/",
+          "link": "See white-label Shopify development"
+        },
+        {
+          "n": "WooCommerce development",
+          "d": "Stores on WordPress: catalogue, checkout, shipping and speed.",
+          "img": "d2c/checkout.jpg",
+          "href": "/services/web-development/woocommerce/",
+          "link": "See WooCommerce development"
+        },
+        {
+          "n": "WordPress development",
+          "d": "Themes, plugins and editing for content-led sites.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/wordpress/",
+          "link": "See WordPress development"
         }
       ]
     },
@@ -379,6 +400,102 @@
         "t": "You want the cheapest template, or a store with no plan for traffic.",
         "why": "A store is only half the job, so we plan how it gets customers and keeps them."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we build on",
+      "h2b": "Shopify.",
+      "lede": "A store planned around the buyer, built for speed and wired to the tools you already use.",
+      "items": [
+        {
+          "t": "Structure and navigation",
+          "d": "Collections, filters and menus planned from how your customers actually shop.",
+          "img": "shop/plan.jpg",
+          "alt": "Structure and navigation: illustrative scene"
+        },
+        {
+          "t": "Theme design for trust",
+          "d": "Product pages, reviews and policies laid out so a first-time visitor feels safe to buy.",
+          "img": "shop/design.jpg",
+          "alt": "Theme design for trust: illustrative scene"
+        },
+        {
+          "t": "Speed and Core Web Vitals",
+          "d": "Lean code, compressed media and apps kept to what earns its weight.",
+          "img": "shop/speed.jpg",
+          "alt": "Speed and Core Web Vitals: illustrative scene"
+        },
+        {
+          "t": "Checkout and payments",
+          "d": "A short path to pay with the Indian payment methods and COD options your buyers expect.",
+          "img": "shop/checkout.jpg",
+          "alt": "Checkout and payments: illustrative scene"
+        },
+        {
+          "t": "App and tool integrations",
+          "d": "Email, WhatsApp, reviews, subscriptions and analytics connected and tested.",
+          "img": "shop/integrate.jpg",
+          "alt": "App and tool integrations: illustrative scene"
+        },
+        {
+          "t": "Migration and handover",
+          "d": "Products, customers and redirects moved safely, with training so your team can run the store.",
+          "img": "web/speed.jpg",
+          "alt": "Migration and handover: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build Shopify",
+      "h2b": "with MMC.",
+      "lede": "We build the store and run the marketing that sends it traffic.",
+      "img": "shop/speed.jpg",
+      "alt": "Why brands build Shopify with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Built by people who run the ads",
+          "d": "We see how a page converts paid traffic, so the build reflects what works."
+        },
+        {
+          "t": "Speed is part of the brief",
+          "d": "A fast store keeps more of the traffic you already pay for."
+        },
+        {
+          "t": "SEO built in",
+          "d": "Clean structure, schema and redirects are set at build time, not patched on later."
+        },
+        {
+          "t": "A store your team can own",
+          "d": "Plain admin set-up and handover, so changes do not need an agency ticket."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How we build your Shopify store,",
+      "h2b": "step by step.",
+      "img": "shop/integrate.jpg",
+      "alt": "How we build your Shopify store, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Plan the structure",
+          "d": "Catalogue, collections, key pages and the tools to connect are agreed before design begins."
+        },
+        {
+          "t": "Design and build",
+          "d": "Mobile-first templates for the home page, collections, product pages and cart, built on a clean theme."
+        },
+        {
+          "t": "Connect and test",
+          "d": "Payments, shipping, email, WhatsApp and analytics are connected and tested end to end."
+        },
+        {
+          "t": "Launch and hand over",
+          "d": "Redirects are checked, the store goes live and your team is trained to run it."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

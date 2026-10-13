@@ -1,0 +1,503 @@
+{
+  "file": "white-label-digital-marketing.html",
+  "path": "/white-label/digital-marketing/",
+  "key": "wl_digital_marketing",
+  "title": "White-Label Digital Marketing Services | MMC",
+  "description": "White-label digital marketing services for agencies: SEO, PPC, social, content, email and web delivered by one partner and presented under your brand.",
+  "ogTitle": "White-label digital marketing for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label digital marketing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/digital-marketing/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label digital marketing",
+          "item": "https://www.mondaymarketing.company/white-label/digital-marketing/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/digital-marketing/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/digital-marketing/",
+      "name": "White-Label Digital Marketing Services | MMC",
+      "description": "White-label digital marketing services for agencies: SEO, PPC, social, content, email and web delivered by one partner and presented under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/digital-marketing/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/digital-marketing/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/digital-marketing/#service",
+      "name": "White-label Digital Marketing",
+      "serviceType": "White-label digital marketing",
+      "description": "White-label digital marketing delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/digital-marketing/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/digital-marketing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I start with one channel and add more?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many agencies start with one service and add others as clients grow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who leads the account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A named strategist coordinates the channels and is your point of contact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you cover paid and organic together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. They are planned together so budgets and targets agree."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a minimum number of clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We agree terms on a call. There is no need to commit to volume before a first client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label digital marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us which channels your clients ask for. After the NDA we propose a mix and a first account to start with."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_digital_marketing",
+    "wm": "White-label Digital Marketing",
+    "eyebrow": "● White-label digital marketing",
+    "h1": [
+      "White-label digital marketing",
+      [
+        "from one partner, ",
+        "under your name",
+        "."
+      ]
+    ],
+    "sub": "SEO, ads, social, content, email and web from one delivery partner, so you sell a full-service agency without hiring one.",
+    "tiles": [
+      {
+        "img": "company/strategy.jpg",
+        "pos": "50% 50%",
+        "label": "Strategy",
+        "note": "One plan across channels"
+      },
+      {
+        "img": "disciplines/performance.webp",
+        "pos": "50% 50%",
+        "label": "Paid",
+        "note": "Search and social ads"
+      },
+      {
+        "img": "disciplines/organic.webp",
+        "pos": "50% 50%",
+        "label": "Organic",
+        "note": "SEO and content"
+      },
+      {
+        "img": "disciplines/retention.webp",
+        "pos": "50% 50%",
+        "label": "Retention",
+        "note": "Email and CRM"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label digital marketing means one partner delivers the full mix of channels while you sell and report them as your own. MMC covers search, paid media, social, content, email and web under a single scope, so agencies can offer full-service packages without hiring a specialist for each channel.",
+      "hl": "one partner delivers the full mix of channels",
+      "who": "Monday Marketing Company (MMC) delivers digital marketing for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "layers",
+          "title": "Full mix",
+          "text": "Search, paid, social, content, email, web."
+        },
+        {
+          "icon": "users",
+          "title": "One team",
+          "text": "One lead strategist, one scope."
+        },
+        {
+          "icon": "chart",
+          "title": "One report",
+          "text": "Combined and branded."
+        }
+      ],
+      "image": "company/strategy.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "dm-wl",
+          "h": "One partner or several specialists",
+          "paras": [
+            "Some agencies prefer a specialist per channel. Others want one partner who joins the dots. Both work; the right choice depends on how many clients you serve and how much coordination you want to manage.",
+            "If you only need a single channel, start with the specific page: <a href=\"/white-label/seo/\">SEO</a>, <a href=\"/white-label/ppc/\">PPC</a> or <a href=\"/white-label/social-media-management/\">social media</a>."
+          ],
+          "img": "company/strategy.jpg",
+          "cap": "Illustrative scene: a multi-channel plan for an agency client.",
+          "table": {
+            "caption": "One white-label partner or several",
+            "head": [
+              "",
+              "One partner",
+              "Several specialists"
+            ],
+            "rows": [
+              [
+                "Coordination",
+                "One lead handles it",
+                "You coordinate each"
+              ],
+              [
+                "Reporting",
+                "One combined report",
+                "Several formats to merge"
+              ],
+              [
+                "Depth",
+                "Broad, specialist-led",
+                "Deep in one channel"
+              ],
+              [
+                "Best for",
+                "Full-service packages",
+                "Single-channel niches"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label digital marketing.",
+      "lede": "Every channel, one plan.",
+      "items": [
+        {
+          "t": "Search and SEO",
+          "d": "Organic visibility and technical health.",
+          "img": "seo/authority.jpg",
+          "alt": "Search and SEO: illustrative scene"
+        },
+        {
+          "t": "Paid media",
+          "d": "Google and Meta campaigns.",
+          "img": "pm-v2/channel-google.jpg",
+          "alt": "Paid media: illustrative scene"
+        },
+        {
+          "t": "Social and content",
+          "d": "Calendars, posts and articles.",
+          "img": "social/calendar.jpg",
+          "alt": "Social and content: illustrative scene"
+        },
+        {
+          "t": "Email and retention",
+          "d": "Flows and campaigns.",
+          "img": "rt/journey.jpg",
+          "alt": "Email and retention: illustrative scene"
+        },
+        {
+          "t": "Web and CRO",
+          "d": "Builds and conversion work.",
+          "img": "web/build.jpg",
+          "alt": "Web and CRO: illustrative scene"
+        },
+        {
+          "t": "Combined reporting",
+          "d": "One report across channels.",
+          "img": "res/insights.jpg",
+          "alt": "Combined reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label digital marketing.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "company/strategy.jpg",
+      "alt": "Why agencies choose MMC for white-label digital marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Joined-up plan",
+          "d": "Channels work from one plan."
+        },
+        {
+          "t": "Performance background",
+          "d": "We began as a performance agency."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label digital marketing works,",
+      "h2b": "step by step.",
+      "img": "company/strategy.jpg",
+      "alt": "How white-label digital marketing works, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Pick the mix",
+          "d": "Choose the channels for the client."
+        },
+        {
+          "t": "Plan",
+          "d": "One plan covers them."
+        },
+        {
+          "t": "Deliver",
+          "d": "Teams run their channels."
+        },
+        {
+          "t": "Report",
+          "d": "One report goes to you."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label digital marketing for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells digital marketing but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label digital marketing fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "Agency outsourcing",
+          "d": "A dedicated team that works as yours.",
+          "img": "about2/huddle.jpg",
+          "href": "/white-label/outsourcing/",
+          "link": "See agency outsourcing"
+        },
+        {
+          "n": "White-label reseller programme",
+          "d": "Resell MMC services as yours.",
+          "img": "contact/meeting.jpg",
+          "href": "/white-label/reseller-programme/",
+          "link": "See the reseller programme"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        },
+        {
+          "n": "All services",
+          "d": "Everything MMC does directly.",
+          "img": "company/strategy.jpg",
+          "href": "/services/",
+          "link": "See All services"
+        },
+        {
+          "n": "White-label digital marketing",
+          "d": "The full mix behind your brand.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/digital-marketing/",
+          "link": "See white-label digital marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "digital marketing."
+    ],
+    "faq": [
+      {
+        "q": "Can I start with one channel and add more?",
+        "a": "Yes. Many agencies start with one service and add others as clients grow."
+      },
+      {
+        "q": "Who leads the account?",
+        "a": "A named strategist coordinates the channels and is your point of contact."
+      },
+      {
+        "q": "Can you cover paid and organic together?",
+        "a": "Yes. They are planned together so budgets and targets agree."
+      },
+      {
+        "q": "Is there a minimum number of clients?",
+        "a": "We agree terms on a call. There is no need to commit to volume before a first client."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label digital marketing?",
+        "a": "Tell us which channels your clients ask for. After the NDA we propose a mix and a first account to start with."
+      }
+    ],
+    "cta": {
+      "h2a": "Add digital marketing",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first digital marketing client and agree how we work behind you.",
+      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+    },
+    "stages": [
+      {
+        "k": "Agree who runs what",
+        "tag": "Channel coverage",
+        "breaks": "Buying each channel from a different vendor.",
+        "why": "Channels do not talk, the client gets six voices, and you coordinate all of them for free.",
+        "does": "One partner covers the channels in scope under a single plan, so the work fits together."
+      },
+      {
+        "k": "Name one account lead",
+        "tag": "Account lead",
+        "breaks": "Leaving no one in charge of the whole account.",
+        "why": "When something spans channels, nobody owns it, and the client asks you why.",
+        "does": "A named lead on our side runs the account day to day and speaks to you, never past you."
+      },
+      {
+        "k": "Combine the reporting",
+        "tag": "Reports",
+        "breaks": "Sending a separate report per channel.",
+        "why": "Your client reads five reports, finds two contradictions and loses trust in all of them.",
+        "does": "One combined report from your address, with one view of what worked and one list of next steps."
+      },
+      {
+        "k": "Hold the scope",
+        "tag": "Scope",
+        "breaks": "Letting scope creep across channels.",
+        "why": "A free social post here and an extra landing page there erase the margin on a retainer.",
+        "does": "Scope is written per channel, change requests are logged, and anything extra is quoted before work starts."
+      },
+      {
+        "k": "Protect your margin",
+        "tag": "Margin",
+        "breaks": "Spending your margin on coordination.",
+        "why": "Calls, chasing and rework are time you did not price, and they grow with every channel.",
+        "does": "A single process and a single point of contact reduce coordination, so the margin you priced stays yours."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label full-service",
+      "h2b": "goes wrong for agencies.",
+      "lede": "Full-service looks simple on a proposal and complicated on a calendar. These are the five places agency full-service delivery slips."
+    },
+    "process": {
+      "h2a": "How we onboard you for full-service,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and channel scope",
+          "d": "We sign the NDA, agree which channels you will sell first and write the scope per channel.",
+          "out": "A written scope you can share with your client."
+        },
+        {
+          "t": "Pilot with one client",
+          "d": "One client runs on one or two channels with a named lead and a first combined report.",
+          "out": "A pilot report to judge on."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Brief intake, approvals, reporting calendar and escalation are written once across channels.",
+          "out": "A full-service operating guide."
+        },
+        {
+          "t": "Add channels and clients",
+          "d": "More channels and clients join the same flow, one at a time, as you sell them.",
+          "out": "A full-service offer you can grow channel by channel."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

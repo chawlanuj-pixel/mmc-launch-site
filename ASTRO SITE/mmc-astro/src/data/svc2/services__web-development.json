@@ -1,0 +1,192 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "web/build.jpg",
+    "pos": "50% 50%",
+    "alt": "Illustrative scene: a website being built.",
+    "facts": [
+      {
+        "t": "Built for the buyer.",
+        "d": "Structure and content answer a buying committee or a family."
+      },
+      {
+        "t": "Fast and accessible.",
+        "d": "Quick to load on a phone and usable by everyone."
+      },
+      {
+        "t": "Connected to your CRM.",
+        "d": "Forms and events feed your lead follow-up."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands build their website with MMC"
+  },
+  "work": {
+    "panel": "WebBuild",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to build your",
+    "h2b": "website.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Plan the site around the buyer.",
+        "d": "Structure and messaging follow the questions buyers, parents or students ask before they call."
+      },
+      {
+        "n": "02",
+        "t": "Build from reusable blocks.",
+        "d": "Clean design and development on a content system your team can update without a developer."
+      },
+      {
+        "n": "03",
+        "t": "Build speed, access and search in.",
+        "d": "Speed, accessibility, titles and structured data are checked before launch, not added after."
+      },
+      {
+        "n": "04",
+        "t": "Connect forms to your CRM.",
+        "d": "Every enquiry arrives with its source, so it can be followed and campaigns can learn from it."
+      }
+    ],
+    "illustrative": "Illustrative layout of a site build, from sitemap to launch. Not a client site, no real figures."
+  },
+  "leak": {
+    "visual": "SiteMapLeak",
+    "barLogo": "",
+    "barTitle": "Site structure",
+    "pinsLabel": "Five places a website goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Structure"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Build"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Speed"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Search"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Forms"
+      }
+    ],
+    "stageLabels": [
+      "Sitemap",
+      "Blocks",
+      "Speed",
+      "Search",
+      "Forms"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the sites",
+    "h2b": "we have built.",
+    "tiles": [
+      {
+        "id": "nmc",
+        "line": "NM Consultings: a B2B site built to take enquiries."
+      },
+      {
+        "id": "mvj",
+        "line": "MVJ College of Engineering: a college site built for families deciding."
+      },
+      {
+        "id": "skyfling",
+        "line": "Skyfling Technologies: a B2B site connected to lead follow-up."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run web builds,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Plan for the buyer",
+        "d": "Structure and messaging are planned around who decides and what they need to see.",
+        "get": "A sitemap and message plan you have signed off.",
+        "img": "web/plan.jpg",
+        "alt": "Illustrative scene: a site being planned page by page.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Design and build",
+        "d": "Clean design and development on a content system your team can update.",
+        "get": "A site your team can run without a developer.",
+        "img": "web/build.jpg",
+        "alt": "Illustrative scene: a website being built.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Make it fast and findable",
+        "d": "Speed, accessibility and search foundations are built in, not added later.",
+        "get": "A site that loads quickly and can be found.",
+        "img": "web/speed.jpg",
+        "alt": "Illustrative scene: a website being tuned for speed.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Connect and launch",
+        "d": "Forms go to your CRM and tracking is checked before launch.",
+        "get": "Enquiries you can follow from first click.",
+        "img": "web/crm.jpg",
+        "alt": "Illustrative scene: forms connected to a CRM.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "UI/UX design",
+        "href": "/services/ui-ux-design/"
+      },
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      },
+      {
+        "n": "Website maintenance",
+        "href": "/services/website-maintenance/"
+      },
+      {
+        "n": "WooCommerce development",
+        "href": "/services/web-development/woocommerce/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

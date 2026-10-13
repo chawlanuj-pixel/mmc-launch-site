@@ -1,0 +1,5 @@
+{
+ "note": "Accepted style-lint findings in strict files. Regenerate with node tools/style-lint.mjs --update-baseline after a reviewed change.",
+ "updated": "2026-10-12",
+ "keys": []
+}

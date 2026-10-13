@@ -1,0 +1,66 @@
+---
+// 1. Answer spread: big photo left, definition and three one-line facts right. Breadcrumb is one small line (same BreadcrumbList
+// JSON-LD the page emits). The long copy (who, why, the six jobs) stays in the DOM inside a collapsed <details>.
+import { href } from "../../lib/links";
+import { BOOK } from "../../lib/site";
+interface Props { H: any; S: any; jsonld: any[]; updated: string; source: string }
+const { H, S, jsonld, updated, source } = Astro.props as Props;
+const A = H.answer, X = S.answer;
+const SITE = "https://www.mondaymarketing.company";
+const bl = (jsonld || []).find((b: any) => b && b["@type"] === "BreadcrumbList");
+const crumbs: { name: string; path: string }[] = (bl?.itemListElement || [])
+  .sort((a: any, b: any) => a.position - b.position)
+  .map((i: any) => ({ name: String(i.name), path: String(i.item || "").replace(SITE, "") || "/" }));
+const fmt = new Date(updated + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+let a = A.lead, b = "", c = "";
+if (A.hl && A.lead.indexOf(A.hl) > -1) { const i = A.lead.indexOf(A.hl); a = A.lead.slice(0, i); b = A.hl; c = A.lead.slice(i + A.hl.length); }
+---
+<section class="s2-band s2-band--paper s2-ans" id="answer" aria-labelledby="s2-ans-h">
+  <div class="s2-wrap">
+    <nav class="s2-crumb" aria-label="Breadcrumb">
+      <ol>
+        {crumbs.map((it, k) => (
+          <li>{k < crumbs.length - 1 ? <a href={href(it.path)}>{it.name}</a> : <span aria-current="page">{it.name}</span>}</li>
+        ))}
+      </ol>
+      <span class="s2-crumb__upd">Updated <time datetime={updated}>{fmt}</time></span>
+    </nav>
+    <div class="s2-ans__grid">
+      <figure class="s2-ans__fig">
+        <img src={"/assets/" + X.img} alt={X.alt} width="1200" height="806" loading="eager" decoding="async" style={`object-position:${X.pos}`} />
+        {A.chip ? <figcaption class="s2-ans__chip"><i aria-hidden="true"></i>{A.chip}</figcaption> : null}
+      </figure>
+      <div class="s2-ans__copy">
+        <p class="s2-eyebrow" id="s2-ans-h">{X.label}</p>
+        <p class="s2-ans__lead">{a}{b && <em>{b}</em>}{c}</p>
+        <ul class="s2-ans__facts">
+          {X.facts.map((f: any) => <li><b>{f.t}</b> <span set:html={f.d} /></li>)}
+        </ul>
+        <div class="s2-ans__act">
+          <button type="button" class="s2-btn" data-book={source + "-answer"}>{BOOK}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+        </div>
+      </div>
+    </div>
+    <details class="s2-more">
+      <summary><span>{X.guideLabel}</span><i aria-hidden="true"></i></summary>
+      <div class="s2-more__body">
+        {A.who ? <p class="s2-more__who">{A.who}</p> : null}
+        {H.article && H.article.blocks && H.article.blocks.length ? H.article.blocks.map((blk: any) => (
+          <section><h3>{blk.h}</h3>{(blk.paras || []).map((t: string) => <p set:html={t} />)}</section>
+        )) : null}
+        <div class="s2-more__cols">
+          <section>
+            <h3>{H.grid.h2a} {H.grid.h2b}</h3>
+            <p>{H.grid.lede}</p>
+            <ol>{H.grid.items.map((it: any) => <li><b>{it.t}.</b> <Fragment set:html={it.d} /></li>)}</ol>
+          </section>
+          <section>
+            <h3>{X.moreHeading}</h3>
+            <p>{H.why.lede}</p>
+            <ul>{H.why.items.map((it: any) => <li><b>{it.t}.</b> <Fragment set:html={it.d} /></li>)}</ul>
+          </section>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>

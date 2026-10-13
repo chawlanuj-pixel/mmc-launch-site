@@ -1,0 +1,520 @@
+{
+  "file": "saas-and-software.html",
+  "path": "/industries/b2b/saas-and-software/",
+  "key": "b2bsaas",
+  "title": "SaaS and Software Marketing Agency India | B2B | MMC",
+  "description": "Marketing for B2B SaaS and software companies in India. Comparison and intent search, demo and trial funnels, CRM signals and pipeline reporting.",
+  "ogTitle": "SaaS marketing that fills the pipeline, not the inbox",
+  "ogDescription": "Marketing for b2b saas and software brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: saas and software.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "B2B",
+          "item": "https://www.mondaymarketing.company/industries/b2b/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SaaS and software",
+          "item": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/",
+      "name": "SaaS and Software Marketing Agency India | B2B | MMC",
+      "description": "Marketing for B2B SaaS and software companies in India. Comparison and intent search, demo and trial funnels, CRM signals and pipeline reporting.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/#service",
+      "name": "SaaS and software",
+      "serviceType": "SaaS and software marketing",
+      "description": "Marketing for B2B SaaS and software companies: comparison and intent search, demo and trial funnels, CRM signals and pipeline reporting.",
+      "url": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/saas-and-software/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is SaaS marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buyers compare and trial, teams decide together, and quality shows up after the form. So search intent, funnel clarity and CRM signals matter more than volume."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work on comparison and alternative pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, written factually and fairly. See content marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you connect the CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We send stages such as qualified and won back to ad platforms through the Conversions API and offline conversion imports, so campaigns learn from the leads sales accepts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle product-led growth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We can market a free trial or freemium funnel and report on activation where you share the data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with pricing page and demo flow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through conversion work on the page and form. See CRO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee pipeline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "b2bsaas",
+    "wm": "SAAS",
+    "eyebrow": "● B2B SaaS and software",
+    "h1": [
+      "SaaS marketing",
+      [
+        "that fills ",
+        "the pipeline, not the inbox",
+        "."
+      ]
+    ],
+    "sub": "SaaS buyers compare, trial and loop in a team before they talk to sales. We plan search, funnels and CRM signals around qualified pipeline.",
+    "tiles": [
+      {
+        "img": "b2b/qualify.jpg",
+        "pos": "50% 50%",
+        "label": "Qualify",
+        "note": "Demo and trial leads"
+      },
+      {
+        "img": "google/search.jpg",
+        "pos": "50% 50%",
+        "label": "Intent",
+        "note": "Comparison searches"
+      },
+      {
+        "img": "cro/forms.jpg",
+        "pos": "50% 50%",
+        "label": "Demo form",
+        "note": "Short and clear"
+      },
+      {
+        "img": "b2b/followup.jpg",
+        "pos": "50% 50%",
+        "label": "Follow-up",
+        "note": "Sales and product signals"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "B2B SaaS and software marketing is the work of reaching buyers who compare tools, try them and involve a team before buying. It joins comparison and problem search, demo and trial funnels, accurate lead scoring from your CRM and reporting on qualified pipeline rather than sign-ups or form fills.",
+      "hl": "compare tools, try them and involve a team",
+      "who": "Monday Marketing Company (MMC) markets B2B SaaS and software companies in India, from search and content to paid media and CRM-connected reporting.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Intent search",
+          "text": "Pages for problems, comparisons and alternatives buyers search."
+        },
+        {
+          "icon": "grid",
+          "title": "Clear funnels",
+          "text": "Demo, trial and pricing paths that explain the next step."
+        },
+        {
+          "icon": "link",
+          "title": "CRM signals",
+          "text": "Qualified-lead stages sent back to ad platforms."
+        }
+      ],
+      "image": "b2b/qualify.jpg",
+      "chip": "Pipeline you can trace to a source"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-saas-buys",
+          "h": "How software gets bought",
+          "paras": [
+            "A software buyer usually starts with a problem, reads comparisons and reviews, looks at pricing and tries a demo or trial. A team often joins the decision, and security and integration questions come up late.",
+            "Marketing that only collects sign-ups misses what sales and product see after."
+          ],
+          "img": "cro/forms.jpg",
+          "cap": "Illustrative scene: a short demo request form."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "Many SaaS teams get leads that never activate or never answer, and optimise for cheap form fills. Platforms then learn to find more of the same.",
+            "Sending real qualification stages from your CRM back to the platforms, and judging by pipeline, changes what they optimise for. See <a href=\"/services/lead-generation/\">lead generation</a> and the <a href=\"/guides/\">guides</a>."
+          ],
+          "callout": {
+            "title": "Product signals count.",
+            "text": "Where you have trial or activation data, we use it to define a good lead."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where SaaS marketing leaks",
+      "h2a": "Five places SaaS",
+      "h2b": "pipeline leaks.",
+      "lede": "Each stage below is where SaaS pipeline is lost, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Own the comparison searches",
+        "tag": "Search and content",
+        "breaks": "Only targeting your brand name.",
+        "why": "Buyers search problems, comparisons and alternatives long before they know you.",
+        "does": "We build problem, use-case, comparison and integration pages. See SEO and content marketing.",
+        "href": "/services/seo/",
+        "img": "google/search.jpg"
+      },
+      {
+        "k": "Make the next step obvious",
+        "tag": "Pricing, demo and trial pages",
+        "breaks": "A site where it is unclear how to start.",
+        "why": "Confusing pricing or long forms lose interested buyers.",
+        "does": "We simplify demo and trial paths and form fields. See CRO.",
+        "href": "/services/cro/",
+        "img": "cro/forms.jpg"
+      },
+      {
+        "k": "Reach the right roles",
+        "tag": "Paid media",
+        "breaks": "Broad targeting for narrow buyers.",
+        "why": "SaaS buyers are specific roles in specific company types.",
+        "does": "We run Google Ads and Meta Ads aimed at roles and intent.",
+        "href": "/services/lead-generation/",
+        "img": "b2b/found.jpg"
+      },
+      {
+        "k": "Teach the platforms what good is",
+        "tag": "CRM and conversion signals",
+        "breaks": "Optimising for form fills.",
+        "why": "Platforms optimise for the event you give them.",
+        "does": "We send qualified, demo-held and won stages from your CRM through the Conversions API.",
+        "href": "/services/lead-generation/",
+        "img": "meta/capi.jpg"
+      },
+      {
+        "k": "Follow up fast",
+        "tag": "Sales handoff",
+        "breaks": "Slow or generic follow-up.",
+        "why": "Interest cools quickly, and a demo request needs a prompt, relevant reply.",
+        "does": "We set routing, reply timing and nurture steps with your sales team.",
+        "href": "/services/lead-generation/",
+        "img": "b2b/followup.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "SaaS marketing is working.",
+      "note": "Sign-ups alone are not on the list.",
+      "cards": [
+        {
+          "n": "Cost per qualified lead",
+          "d": "What it costs to get a lead sales accepts."
+        },
+        {
+          "n": "Demo or trial to qualified rate",
+          "d": "Share of requests that are real."
+        },
+        {
+          "n": "Pipeline by source",
+          "d": "Which channels produce opportunities."
+        },
+        {
+          "n": "Payback on acquisition cost",
+          "d": "How long acquisition cost takes to earn back."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where saas and software marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and CRM-connected follow-up.",
+          "img": "b2b/qualify.jpg",
+          "href": "/services/lead-generation/",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "SEO",
+          "d": "Search intent and comparison pages.",
+          "img": "seo/intent.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "Content marketing",
+          "d": "Guides, comparisons and proof.",
+          "img": "sv/content.jpg",
+          "href": "/services/content-marketing/",
+          "link": "See Content marketing"
+        },
+        {
+          "n": "Manufacturing",
+          "d": "Search, proof and quote funnels for manufacturers and suppliers.",
+          "img": "b2b/found.jpg",
+          "href": "/industries/b2b/manufacturing/",
+          "link": "See Manufacturing marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "SaaS and software marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is SaaS marketing different?",
+        "a": "Buyers compare and trial, teams decide together, and quality shows up after the form. So search intent, funnel clarity and CRM signals matter more than volume."
+      },
+      {
+        "q": "Do you work on comparison and alternative pages?",
+        "a": "Yes, written factually and fairly. See <a href=\"/services/content-marketing/\">content marketing</a>."
+      },
+      {
+        "q": "How do you connect the CRM?",
+        "a": "We send stages such as qualified and won back to ad platforms through the Conversions API and offline conversion imports, so campaigns learn from the leads sales accepts."
+      },
+      {
+        "q": "Do you handle product-led growth?",
+        "a": "We can market a free trial or freemium funnel and report on activation where you share the data."
+      },
+      {
+        "q": "Can you help with pricing page and demo flow?",
+        "a": "Yes, through conversion work on the page and form. See <a href=\"/services/cro/\">CRO</a>."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee pipeline?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Trace pipeline",
+      "h2b": "back to its source.",
+      "lede": "On a call, with a senior strategist. We look at your funnel and CRM stages and show where pipeline leaks."
+    },
+    "process": {
+      "h2a": "How we start with a SaaS company,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit funnel and CRM",
+          "d": "We review tracking, funnel stages and sales feedback and define what a qualified lead is.",
+          "out": "A shared lead definition."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build intent pages and paths",
+          "d": "Comparison pages, demo paths and forms go live.",
+          "out": "A funnel that explains itself."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Connect signals and scale",
+          "d": "CRM stages go to platforms and campaigns scale on pipeline.",
+          "out": "Reporting on opportunities."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "SaaS marketing for teams that",
+      "h2b": "measure pipeline.",
+      "good": {
+        "t": "You sell software to businesses in India or abroad and want qualified pipeline, not sign-ups.",
+        "why": "We plan around intent, funnel clarity and CRM signals."
+      },
+      "not": {
+        "t": "You want volume of sign-ups at any quality.",
+        "why": "Platforms optimise for what you tell them. We tell them quality."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "SaaS and software.",
+      "lede": "Search, funnels, signals and reporting for B2B SaaS.",
+      "items": [
+        {
+          "t": "Intent and comparison search",
+          "d": "Problem, use-case, alternative and integration pages.",
+          "img": "google/search.jpg",
+          "alt": "Intent and comparison search: illustrative scene"
+        },
+        {
+          "t": "Demo and trial funnels",
+          "d": "Short forms and clear paths to start.",
+          "img": "cro/forms.jpg",
+          "alt": "Demo and trial funnels: illustrative scene"
+        },
+        {
+          "t": "Paid media by role",
+          "d": "Search and social aimed at roles and intent.",
+          "img": "b2b/found.jpg",
+          "alt": "Paid media by role: illustrative scene"
+        },
+        {
+          "t": "CRM and CAPI signals",
+          "d": "Qualified stages sent back to the platforms.",
+          "img": "meta/capi.jpg",
+          "alt": "CRM and CAPI signals: illustrative scene"
+        },
+        {
+          "t": "Website and flows",
+          "d": "Product pages and flows that explain the product.",
+          "img": "ux/flows.jpg",
+          "alt": "Website and flows: illustrative scene"
+        },
+        {
+          "t": "Pipeline reporting",
+          "d": "Opportunities and payback read together.",
+          "img": "b2b/followup.jpg",
+          "alt": "Pipeline reporting: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why SaaS teams choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We judge on pipeline and tell the platforms the same.",
+      "img": "b2b/qualify.jpg",
+      "alt": "Why SaaS teams choose MMC for marketing. Illustrative scene.",
+      "items": [
+        {
+          "t": "Pipeline-first",
+          "d": "Cost per qualified lead and pipeline by source."
+        },
+        {
+          "t": "CRM-connected",
+          "d": "Your stages teach the platforms."
+        },
+        {
+          "t": "Intent-led content",
+          "d": "Pages for the searches that precede a demo."
+        },
+        {
+          "t": "Honest reporting",
+          "d": "No vanity sign-up counts."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a SaaS engagement runs,",
+      "h2b": "step by step.",
+      "img": "b2b/qualify.jpg",
+      "alt": "How a SaaS engagement runs, step by step. Illustrative scene.",
+      "items": [
+        {
+          "t": "Define a good lead",
+          "d": "Sales and marketing agree the qualified-lead definition."
+        },
+        {
+          "t": "Build intent and funnel",
+          "d": "Comparison pages, demo paths and forms go live."
+        },
+        {
+          "t": "Connect CRM signals",
+          "d": "Qualified stages are sent to the platforms."
+        },
+        {
+          "t": "Scale on pipeline",
+          "d": "Spend follows cost per qualified lead and payback."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

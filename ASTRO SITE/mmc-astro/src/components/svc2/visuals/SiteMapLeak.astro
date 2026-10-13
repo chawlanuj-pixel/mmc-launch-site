@@ -1,0 +1,57 @@
+---
+// VISUAL: SiteMapLeak (kind "SiteMapLeak"). Five wireframe cards on an ink board (sitemap, blocks, speed, search result, form to CRM) above
+// a base bar "one content system". Pins sit above at x = 10, 30, 50, 70, 90 (y = 0). Reads X.stageLabels (five strings). Prefix smk-.
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const labels: string[] = X.stageLabels ?? ["Sitemap", "Blocks", "Speed", "Search", "Forms"];
+---
+<div class="smk-row" aria-hidden="true"></div>
+<div class="smk" aria-hidden="true">
+  <div class="smk-cards">
+    {[0, 1, 2, 3, 4].map((k) => (
+      <div class="smk-col">
+        <i class="smk-leak"></i>
+        <div class="smk-card">
+          {k === 0 && <div class="smk-tree"><b></b><span><i></i><i></i><i></i></span></div>}
+          {k === 1 && <div class="smk-blocks"><i></i><i></i><i></i><i></i></div>}
+          {k === 2 && <div class="smk-spd"><span><i></i></span><small>Phone</small></div>}
+          {k === 3 && <div class="smk-srp"><small>yourbrand.com</small><b></b><i></i><i></i></div>}
+          {k === 4 && <div class="smk-frm"><span>Form</span><u>&rarr;</u><span class="smk-gap">CRM</span></div>}
+        </div>
+        <span class="smk-lbl">{labels[k]}</span>
+      </div>
+    ))}
+  </div>
+  <div class="smk-base">One content system your team can edit</div>
+</div>
+<style is:global>
+.smk-row { height: 78px; }
+.smk { padding: 18px 0 14px; border-radius: 14px; background: var(--mmc-blue-900); display: grid; gap: 14px; }
+.smk-cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+.smk-col { position: relative; padding-inline: 1%; display: grid; gap: 8px; min-width: 0; }
+.smk-leak { position: absolute; left: 50%; top: -96px; height: 96px; border-left: 2.4px dashed var(--mmc-yellow); z-index: 1; }
+.smk-leak::after { content: ""; position: absolute; left: -8px; bottom: -6px; width: 14px; height: 18px; background: var(--mmc-yellow); border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%; }
+.smk-card { aspect-ratio: 1 / 1.05; padding: 10%; display: grid; align-content: center; border-radius: 12px; background: #fff; }
+.smk-lbl { text-align: center; font: 800 clamp(10px, 1.3vw, 15px)/1.15 var(--font-display); color: #fff; }
+.smk-tree { display: grid; justify-items: center; gap: 12%; }
+.smk-tree b { width: 40%; height: 9px; border-radius: 4px; background: var(--mmc-blue); }
+.smk-tree span { display: flex; gap: 8%; width: 100%; }
+.smk-tree span i { flex: 1; height: 14px; border-radius: 4px; background: #BFD0FA; }
+.smk-blocks { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; }
+.smk-blocks i { display: block; aspect-ratio: 1.3; border-radius: 5px; background: var(--mmc-blue-100); border: 1.5px dashed var(--mmc-blue); }
+.smk-spd { display: grid; gap: 8px; }
+.smk-spd span { display: block; height: 12px; border-radius: 9px; background: #E4E6EB; overflow: hidden; }
+.smk-spd span i { display: block; width: 38%; height: 100%; background: var(--mmc-yellow); }
+.smk-spd small, .smk-srp small { font: 800 clamp(7px, .9vw, 11px) var(--font-body); color: #65676B; text-transform: uppercase; letter-spacing: .04em; }
+.smk-srp { display: grid; gap: 6px; }
+.smk-srp b { height: 8px; width: 80%; border-radius: 4px; background: var(--mmc-blue); }
+.smk-srp i { height: 5px; border-radius: 4px; background: #DADDE1; }
+.smk-frm { display: grid; gap: 6px; justify-items: center; font: 800 clamp(7px, .9vw, 11px) var(--font-body); color: var(--mmc-blue-900); }
+.smk-frm span { padding: 3px 8px; border-radius: 6px; background: var(--mmc-blue-100); }
+.smk-frm .smk-gap { background: #fff; border: 1.5px dashed #E8A100; }
+.smk-frm u { text-decoration: none; color: #E8A100; }
+.smk-base { margin-inline: 1%; padding: 9px; border-radius: 10px; background: rgba(255, 255, 255, .12); color: #fff; text-align: center; font: 800 clamp(9px, 1.2vw, 14px) var(--font-body); letter-spacing: .02em; }
+@media (max-width: 560px) { .smk-card { padding: 6%; } .smk-base { font-size: 9px; } }
+/* Readable floor on phones (small-defects pass): micro labels >= 10px, words that carry meaning >= 11px. */
+@media (max-width: 760px) { .smk-spd small, .smk-srp small, .smk-frm { font-size: 10px; letter-spacing: 0; } .smk-base { font-size: 11px; } }
+</style>

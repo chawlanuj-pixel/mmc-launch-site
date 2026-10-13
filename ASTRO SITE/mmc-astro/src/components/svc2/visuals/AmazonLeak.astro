@@ -1,0 +1,28 @@
+---
+// VISUAL: AmazonLeak (kind "AmazonLeak"). Five small Amazon-style zones: the listing, campaigns mixed together, stock, the brand store and ad sales against total sales.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Styles scoped to this file (prefix al).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+---
+<div class="al__row" aria-hidden="true"></div>
+<div class="al__art" role="img" aria-label="Five zones of an Amazon account: listing, campaigns, stock, brand store, and ad sales against total sales.">
+  <div class="al__z"><span class="al__img"></span><i></i><i class="s"></i><i class="s"></i><small class="al__cap">Listing</small></div>
+  <div class="al__z"><span class="al__mix"><u></u><u></u><u></u><u></u><u></u><u></u></span><i class="s"></i><small class="al__cap">Campaigns</small></div>
+  <div class="al__z"><span class="al__st"><u style="--h:80%"></u><u style="--h:46%"></u><u class="lo" style="--h:12%"></u></span><small class="al__cap">Stock cover</small></div>
+  <div class="al__z"><span class="al__ban"></span><span class="al__ban b2"></span><i class="s"></i><small class="al__cap">Brand store</small></div>
+  <div class="al__z"><span class="al__cmp"><u style="--h:90%"></u><u class="ad" style="--h:44%"></u></span><small class="al__cap">Ads vs total</small></div>
+</div>
+<style is:global>
+.al__row { height: 78px; }
+.al__art { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2%; height: clamp(190px, 26vw, 320px); }
+.al__z { position: relative; display: grid; align-content: center; gap: 10px; padding: 12px 12px 34px; border: 1px solid var(--s2-line); border-radius: 18px; background: #fff; min-width: 0; }
+.al__z i { display: block; height: 8px; border-radius: 99px; background: #DADDE1; } .al__z i.s { width: 55%; }
+.al__img { display: block; aspect-ratio: 1.4; border-radius: 10px; background: linear-gradient(135deg, #FFE2B3, #FF9900); }
+.al__mix { display: flex; flex-wrap: wrap; gap: 5px; } .al__mix u { width: 28%; aspect-ratio: 1; border-radius: 6px; background: #FF9900; opacity: .7; } .al__mix u:nth-child(2n) { background: var(--mmc-blue); } .al__mix u:nth-child(3n) { background: #8A91A6; }
+.al__st { display: flex; align-items: flex-end; gap: 8px; height: 60%; min-height: 70px; } .al__st u { flex: 1; height: var(--h); border-radius: 6px 6px 0 0; background: #1B7A3D; } .al__st u.lo { background: #B42318; }
+.al__ban { display: block; height: 26px; border-radius: 8px; background: #FFE2B3; } .al__ban.b2 { background: var(--mmc-blue-100); }
+.al__cmp { display: flex; align-items: flex-end; gap: 10px; height: 60%; min-height: 70px; } .al__cmp u { flex: 1; height: var(--h); border-radius: 6px 6px 0 0; background: var(--mmc-blue-900); } .al__cmp u.ad { background: #FF9900; }
+@media (max-width: 760px) { .al__row { height: 58px; } .al__art { height: 170px; } .al__z { padding: 8px 6px; border-radius: 12px; } }
+.al__cap { position: absolute; left: 4px; right: 4px; bottom: 10px; text-align: center; font: 800 clamp(9px, .95vw, 12px)/1.15 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--s2-mute); }
+@media (max-width: 900px) { .al__cap { display: none; } }
+</style>

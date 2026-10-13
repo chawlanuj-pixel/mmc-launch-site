@@ -1,0 +1,77 @@
+---
+// PANEL: AppFlow (kind "AppFlow"). Phone screens, build and release. No store marks. 4 steps.
+//   1 Decide: an app and a mobile website compared on repeat use and phone features, with an honest verdict slot. Tab: Decide.
+//   2 Journey: three phone screens (Home, Product, Reorder) joined by arrows, core path highlighted. Tab: Journey.
+//   3 Build: code, device tests and build as a pipeline, with the key events being tracked. Tab: Build.
+//   4 Release: a store listing sketch and a release train (Beta, Review, Live, Next release). Tab: Release.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix af-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="App build" label="Illustration of an app moving from decision to screens, build and release. Not a client app." caption={W.illustrative} tabs={["Decide", "Journey", "Build", "Release"]} tabFor={[0, 1, 2, 3]} accent="#0F766E" accentSoft="#DDF3F0">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">App or mobile website? <span>Decided on how customers behave</span></p>
+    <div class="af-vs">
+      <div class="s2p-card"><p class="s2p-lbl">Mobile website</p><ul><li>Reached from search and ads</li><li>No install needed</li><li>Often enough</li></ul></div>
+      <div class="s2p-card af-on"><p class="s2p-lbl">App</p><ul><li>Customers come back often</li><li>Uses phone features</li><li>Pays back only with repeat use</li></ul></div>
+    </div>
+    <div class="s2p-card af-verdict"><b>Our honest answer</b><em class="s2p-chip s2p-chip--sun">Yes, or not yet, with reasons</em></div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">The core journey <span>One task, made fast</span></p>
+    <div class="af-screens">
+      {["Home", "Product", "Reorder"].map((n, k) => (
+        <Fragment>
+          <div class={"af-ph" + (k === 2 ? " af-ph--goal" : "")}><b>{n}</b><i class="af-img"></i><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i><span class="af-btn">{k === 2 ? "Reorder" : "Next"}</span></div>
+          {k < 2 ? <span class="af-arrow" aria-hidden="true">&rarr;</span> : null}
+        </Fragment>
+      ))}
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Build and test <span>On the phones customers use</span></p>
+    <ol class="af-pipe">
+      {["Code", "Device tests", "Build"].map((n) => <li class="s2p-card"><b>{n}</b><em class="s2p-chip s2p-chip--ok">Done</em></li>)}
+    </ol>
+    <div class="s2p-card af-ev"><p class="s2p-lbl">Events tracked from release one</p><span class="af-evs"><em class="s2p-chip s2p-chip--blue">App open</em><em class="s2p-chip s2p-chip--blue">Add to cart</em><em class="s2p-chip s2p-chip--blue">Reorder</em><em class="s2p-chip s2p-chip--blue">Return visit</em></span></div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Release and improve <span>Launch is the first release</span></p>
+    <div class="af-rel">
+      <div class="s2p-card af-list"><span class="af-ico"></span><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i><span class="af-shots"><i></i><i></i><i></i></span></div>
+      <ol class="af-train">
+        {[["Beta", "s2p-chip--blue"], ["Store review", "s2p-chip--warn"], ["Live", "s2p-chip--ok"], ["Next release", ""]].map(([n, c]) => <li class="s2p-card"><em class={"s2p-chip " + c}>{n}</em></li>)}
+      </ol>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.af-vs { display: grid; grid-template-columns: 1fr 1fr; gap: .9em; }
+.af-vs ul { margin: .5em 0 0; padding-left: 1.1em; display: grid; gap: .4em; font-weight: 600; }
+.af-on { border-color: #0F766E; box-shadow: 0 0 0 2px #0F766E; }
+.af-verdict { display: flex; align-items: center; justify-content: space-between; gap: .8em; flex-wrap: wrap; }
+.af-screens { flex: 1; display: flex; align-items: center; justify-content: center; gap: .8em; }
+.af-ph { width: 9.5em; display: grid; gap: .5em; padding: .8em; border: 2px solid #CED0D4; border-radius: 1.4em; background: #fff; }
+.af-ph b { font: 800 1em var(--font-display); }
+.af-ph--goal { border-color: #0F766E; box-shadow: 0 0 0 2px #0F766E; }
+.af-img { display: block; height: 4em; border-radius: .5em; background: linear-gradient(135deg, #99DDD5, #0F766E); }
+.af-btn { padding: .35em; border-radius: .5em; background: var(--mmc-blue-900); color: #fff; text-align: center; font: 800 .85em var(--font-body); }
+.af-arrow { font: 800 1.8em var(--font-body); color: #0F766E; }
+.af-pipe { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8em; }
+.af-pipe li { display: grid; gap: .6em; justify-items: start; }
+.af-pipe b { font: 800 1.05em var(--font-display); }
+.af-evs { display: flex; flex-wrap: wrap; gap: .4em; margin-top: .5em; }
+.af-rel { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-items: center; }
+.af-list { display: grid; gap: .6em; }
+.af-ico { width: 3em; height: 3em; border-radius: .8em; background: linear-gradient(135deg, #99DDD5, #0F766E); }
+.af-shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: .4em; }
+.af-shots i { display: block; aspect-ratio: 9 / 16; border-radius: .4em; background: #DDF3F0; }
+.af-train { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.af-train li { padding-block: .6em; }
+@media (max-width: 560px) { .af-ph { width: 7.4em; padding: .5em; } .af-vs { gap: .5em; } .af-rel { gap: .5em; } }
+@media (max-width: 420px) { .s2-ui:has(.af-vs) .s2-ui__tab:nth-child(n+4) { display: block; } .s2-ui:has(.af-vs) .s2-ui__tab { padding: 6px 6px; } .s2-ui:has(.af-vs) .s2-ui__bar b { display: none; } }
+@media (max-width: 900px) { .s2-ui:has(.af-vs) .s2-st { padding: 10px 12px; gap: .6em; } }
+@media (max-width: 900px) { .af-vs li:nth-child(3) { display: none; } }
+@media (max-width: 900px) { .af-shots { display: none; } }
+</style>

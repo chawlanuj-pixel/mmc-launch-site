@@ -1,0 +1,90 @@
+---
+// PANEL: AmazonAds (kind "AmazonAds"). An Amazon Ads console-style view with the Amazon mark (public/assets/platforms/amazon.svg). 5 steps.
+//   1 Listing first: a listing quality checklist (title, bullets, images, rich content) beside a crop of the listing photo. Tab: Listing.
+//   2 Structure: four campaigns (Sponsored Products brand defence and discovery, Sponsored Brands, Sponsored Display) each with one job. Tab: Campaigns.
+//   3 Search terms: a term table with a bar for ACOS against a break-even line, and an action chip per term. Tab: Search terms.
+//   4 Stock: products with stock cover bars; ads run, shift or pause by cover. Tab: Inventory.
+//   5 Total sales: ad-attributed sales next to total sales, and ACOS against margin. Tab: Reports.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real products. Styles scoped to this file (prefix amz-).
+import Frame from "./Frame.astro";
+import { crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const photo = crop("/assets/amazon/store.jpg", 0.3, 0.42, 1.9, 1.1);
+const camps = [["Sponsored Products", "Brand terms", "Defend", 86], ["Sponsored Products", "Discovery", "Find new terms", 62], ["Sponsored Brands", "Range and store", "Build the brand", 44], ["Sponsored Display", "Product pages", "Retarget", 30]];
+const terms = [["Brand name", 28, "Keep", "ok"], ["Category phrase", 46, "Exact match", "blue"], ["Broad phrase", 92, "Negative", "bad"], ["Use-case phrase", 58, "Test", "warn"]];
+const prods = [["Product A", 82, "Ads on", "ok"], ["Product B", 44, "Shift budget", "warn"], ["Product C", 12, "Paused", "bad"]];
+---
+<Frame logo="/assets/platforms/amazon.svg" title="Ads console" label="Illustration of an Amazon Ads console: listing check, campaigns, search terms, stock and reports. Not a client account." caption={W.illustrative} tabs={["Listing", "Campaigns", "Terms", "Stock", "Reports"]} tabFor={[0, 1, 2, 3, 4]} accent="#C45500" accentSoft="#FFF1DB">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Listing first <span>Ads send shoppers here</span></p>
+    <div class="amz-pair">
+      <span class="s2p-ph amz-ph" style={photo} role="img" aria-label="A storefront page on a laptop"></span>
+      <ul class="s2p-card amz-chk">
+        {[["Title", "Rewritten", "ok"], ["Bullet points", "Rewritten", "ok"], ["Images", "In review", "warn"], ["Rich content", "To build", ""]].map(([n, s, c]) => <li><span>{n}</span><em class={"s2p-chip " + (c ? "s2p-chip--" + c : "")}>{s}</em></li>)}
+      </ul>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Campaigns <span>One job each, one budget each</span></p>
+    <ul class="amz-camps">
+      {camps.map(([t, n, job, w], k) => (
+        <li class="s2p-card"><div><b>{n}</b><small class="s2p-mute">{t}</small></div><span class="amz-bar"><i style={`--w:${w}%`}></i></span><em class={"s2p-chip " + (k === 0 ? "s2p-chip--blue" : "")}>{job}</em></li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Search terms <span>ACOS read against break-even</span></p>
+    <ul class="amz-terms">
+      {terms.map(([t, w, a, c]) => (
+        <li class="s2p-card"><b>{t}</b><span class="amz-bar amz-bar--acos"><i style={`--w:${w}%`}></i><u aria-hidden="true"></u></span><em class={"s2p-chip s2p-chip--" + c}>{a}</em></li>
+      ))}
+    </ul>
+    <small class="s2-st__foot">The vertical line is the ACOS your margin can carry.</small>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Stock cover <span>Spend follows what you can deliver</span></p>
+    <ul class="amz-terms">
+      {prods.map(([t, w, a, c]) => (
+        <li class="s2p-card"><b>{t}</b><span class="amz-bar amz-bar--stock"><i style={`--w:${w}%`}></i></span><em class={"s2p-chip s2p-chip--" + c}>{a}</em></li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Total sales <span>Not only the sales Amazon attributes to ads</span></p>
+    <div class="amz-cmp">
+      <div class="s2p-card"><p class="s2p-lbl">Sales</p>
+        <span class="amz-m"><small>Total</small><span class="amz-bar"><i style="--w:92%"></i></span></span>
+        <span class="amz-m"><small>Ad attributed</small><span class="amz-bar"><i class="is-ad" style="--w:48%"></i></span></span>
+      </div>
+      <div class="s2p-card amz-win"><p class="s2p-lbl">Margin check</p>
+        <span class="amz-m"><small>ACOS</small><span class="amz-bar amz-bar--acos"><i style="--w:40%"></i><u aria-hidden="true"></u></span></span>
+        <em class="s2p-chip s2p-chip--ok">Inside break-even</em>
+      </div>
+    </div>
+    <small class="s2-st__foot">Budget moves to what adds profit.</small>
+  </div>
+</Frame>
+<style is:global>
+.amz-pair { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-items: stretch; }
+.amz-ph { border-radius: .9em; min-height: 9em; border: 1px solid #DADDE1; }
+.amz-chk { list-style: none; margin: 0; display: grid; align-content: center; gap: .7em; }
+.amz-chk li { display: flex; align-items: center; justify-content: space-between; gap: .6em; font: 700 .95em var(--font-body); }
+.amz-camps, .amz-terms { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .6em; align-content: center; }
+.amz-camps li, .amz-terms li { display: grid; align-items: center; gap: .8em; padding: .6em .85em; }
+.amz-camps li { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) auto; }
+.amz-terms li { grid-template-columns: 8em minmax(0, 1fr) auto; }
+.amz-camps b, .amz-terms b { font: 800 .95em var(--font-display); color: #1C2B33; display: block; }
+.amz-bar { position: relative; display: block; height: .7em; border-radius: 99px; background: #E4E6EA; }
+.amz-bar i { position: absolute; inset: 0 auto 0 0; width: var(--w); border-radius: 99px; background: #FF9900; }
+.amz-bar i.is-ad { background: var(--mmc-blue); }
+.amz-bar--stock i { background: #1B7A3D; }
+.amz-bar--acos u { position: absolute; top: -.35em; bottom: -.35em; left: 62%; width: 2px; background: #1C2B33; }
+.amz-cmp { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-content: center; }
+.amz-cmp .s2p-card { display: grid; gap: .8em; padding: 1em; align-content: start; }
+.amz-win { border-color: #1B7A3D; box-shadow: 0 0 0 2px #1B7A3D; }
+.amz-m { display: grid; gap: .35em; } .amz-m small { font: 700 .8em var(--font-body); color: #65676B; }
+.amz-cmp em { justify-self: start; }
+@media (max-width: 560px) { .amz-pair { grid-template-columns: 1fr; } .amz-ph { min-height: 6em; } .amz-terms li { grid-template-columns: 5.6em minmax(0, 1fr) auto; } .amz-camps li { grid-template-columns: minmax(0, 1fr) auto; } .amz-camps .amz-bar { display: none; } .amz-camps small { display: none; } }
+@container (max-height: 195px) { .s2-st--3 .amz-terms li:nth-child(4), .amz-chk li:nth-child(4) { display: none; } .amz-terms li { padding: .45em .85em; } .amz-ph { min-height: 3.6em; } .amz-chk { gap: .45em; } }
+</style>

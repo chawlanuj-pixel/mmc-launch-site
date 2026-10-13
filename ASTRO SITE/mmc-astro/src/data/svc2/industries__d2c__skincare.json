@@ -1,0 +1,296 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "d2c/packing.jpg",
+    "pos": "50% 50%",
+    "alt": "Two people packing orders into branded boxes beside shelves of stock.",
+    "facts": [
+      {
+        "t": "Concern-led.",
+        "d": "Content and ads start from the skin concern and the ingredient."
+      },
+      {
+        "t": "Proof that holds.",
+        "d": "Real reviews and routines, written inside platform policy."
+      },
+      {
+        "t": "Built to reorder.",
+        "d": "Replenishment timing brings buyers back when a pack runs out."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why skincare brands choose MMC"
+  },
+  "work": {
+    "panel": "SkincarePdp",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "skincare brand.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Answer the skin concern before a rival does.",
+        "d": "Ingredient and concern guides sit where buyers search, so the first thing they read is yours."
+      },
+      {
+        "n": "02",
+        "t": "Film a real routine, inside platform rules.",
+        "d": "Creators show texture and use. We leave out cure claims and anything we cannot document."
+      },
+      {
+        "n": "03",
+        "t": "Set targets from what one order leaves.",
+        "d": "Product, shipping, returns and discounts come off first. Media is bought against contribution margin, not ROAS."
+      },
+      {
+        "n": "04",
+        "t": "Let the product page settle the doubt.",
+        "d": "Ingredients, how to use, who it suits and honest reviews sit where the buying decision is made."
+      },
+      {
+        "n": "05",
+        "t": "Remind buyers when the pack runs low.",
+        "d": "Email and WhatsApp reminders follow the pack's use-up time, so the second order does not go to a rival."
+      }
+    ],
+    "illustrative": "Illustrative layout of a skincare buying path. Not a client brand, no real figures. WhatsApp and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "A skincare buyer's path",
+    "pinsLabel": "Five places a skincare brand loses margin or trust",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Concern"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Video"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Margin"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Product page"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reorder"
+      }
+    ],
+    "base": "From first search to second order",
+    "artLabel": "Five cards: a concern search with no result, studio gloss, a margin that shrinks, a product page with no ingredients and a pack that runs out with no reminder.",
+    "accent": "#7C3AED",
+    "cols": [
+      {
+        "head": "Search",
+        "k": "search",
+        "rows": [
+          {
+            "t": "serum for dull skin"
+          },
+          {
+            "t": "A rival's guide answers",
+            "s": "dim"
+          },
+          {
+            "t": "Your brand: absent",
+            "s": "bad"
+          }
+        ],
+        "chip": "Not in the answer",
+        "tone": "b"
+      },
+      {
+        "head": "Video",
+        "k": "tiles",
+        "rows": [
+          {
+            "t": "Studio gloss",
+            "s": "warn"
+          },
+          {
+            "t": "Looks unreal",
+            "s": "dim"
+          },
+          {
+            "t": "No texture shown",
+            "s": "bad"
+          },
+          {
+            "t": "Cure claim",
+            "s": "bad"
+          }
+        ],
+        "chip": "Feels unreal",
+        "tone": "w"
+      },
+      {
+        "head": "Margin",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "Order value",
+            "s": "ok",
+            "w": 100
+          },
+          {
+            "t": "Discount",
+            "s": "warn",
+            "w": 30
+          },
+          {
+            "t": "Returns",
+            "s": "warn",
+            "w": 24
+          },
+          {
+            "t": "Left",
+            "s": "bad",
+            "w": 10
+          }
+        ],
+        "chip": "ROAS hides it",
+        "tone": "w"
+      },
+      {
+        "head": "Page",
+        "k": "page",
+        "rows": [
+          {
+            "t": "Product photo"
+          },
+          {
+            "t": "Ingredients: missing",
+            "s": "bad"
+          },
+          {
+            "t": "How to use: missing",
+            "s": "bad"
+          },
+          {
+            "t": "Reviews: thin",
+            "s": "warn"
+          }
+        ],
+        "chip": "Doubt stays",
+        "tone": "b"
+      },
+      {
+        "head": "Reorder",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Order placed",
+            "s": "ok"
+          },
+          {
+            "t": "Pack runs out",
+            "s": "warn"
+          },
+          {
+            "t": "No reminder sent",
+            "s": "bad"
+          },
+          {
+            "t": "Buys elsewhere",
+            "s": "bad"
+          }
+        ],
+        "chip": "Reorder lost",
+        "tone": "b"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we market.",
+    "tiles": [],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a skincare brand,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Read the economics",
+        "d": "We rebuild unit economics, review creative and tracking and set margin-based targets.",
+        "get": "A cost sheet and a plan.",
+        "img": "company/performance.jpg",
+        "alt": "Illustrative scene: an analyst reading two dashboards.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Build the proof",
+        "d": "Creator content and ingredient guides go into production, inside platform rules.",
+        "get": "Creative ready to test.",
+        "img": "ugc/edit.jpg",
+        "alt": "Illustrative scene: an editor cutting a short video on a monitor.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Fix the product page",
+        "d": "Ingredients, routine and reviews move to where the doubt is settled, and a test plan goes live.",
+        "get": "A product page that proves.",
+        "img": "cro/pdp.jpg",
+        "alt": "Illustrative scene: a product page being read on a laptop and a phone.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Add the reorder",
+        "d": "Replenishment reminders start and scaling follows margin.",
+        "get": "A funnel that includes the second order.",
+        "img": "d2c/checkout.jpg",
+        "alt": "Illustrative scene: an order checkout on a phone held over a desk.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "UGC and video",
+        "href": "/services/ugc-and-video/"
+      },
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      },
+      {
+        "n": "CRO",
+        "href": "/services/cro/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

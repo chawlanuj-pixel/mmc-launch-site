@@ -132,6 +132,12 @@
           background: var(--mmc-blue);
           color: #fff;
         }
+        /* Tap target (small-defects pass): a transparent layer brings the 41px pill's clickable height to 45px; the pill looks the same. */
+        .mmc-nav__audit { position: relative; }
+        .mmc-nav__audit::before { content: ""; position: absolute; inset: -2px -1px; border-radius: inherit; }
+        /* The logo link is 38px tall; same transparent layer, 3px above and below. */
+        .mmc-nav__mark { position: relative; }
+        .mmc-nav__mark::before { content: ""; position: absolute; inset: -3px 0; }
         .mmc-nav__audit-arrow {
           position: relative;
           display: inline-block;
@@ -169,13 +175,19 @@
           transition: background var(--dur-base) var(--ease-out),
                       color var(--dur-base) var(--ease-out);
         }
-        .mmc-menu-btn:hover { background: var(--mmc-blue-700); }
+        /* Tap target (small-defects pass): the pill draws 34px tall. A 5px transparent border (background kept to the padding box)
+           with a matching negative margin makes the clickable box 44px without changing how it looks or where it sits.
+           A pseudo-element cannot do it here: overflow: hidden clips it. */
+        .mmc-menu-btn { border: 5px solid transparent; margin: -5px; background-clip: padding-box; }
+        .mmc-menu-btn:hover { background-color: var(--mmc-blue-700); }
+        /* Home phones already draw the pill 44px tall (mobile-home.css), so the transparent border is not needed there. */
+        @media (max-width: 760px) { body:has(.hv) .mmc-menu-btn { border-width: 0; margin: 0; } }
         /* Open state, clearly visible on paper menu bg */
         .mmc-menu-btn.is-open {
-          background: var(--mmc-yellow);
+          background-color: var(--mmc-yellow);
           color: var(--mmc-blue-700);
         }
-        .mmc-menu-btn.is-open:hover { background: #F8A800; }
+        .mmc-menu-btn.is-open:hover { background-color: #F8A800; }
 
         .mmc-menu-btn__halo {
           position: absolute;
@@ -304,7 +316,7 @@
           z-index: 3;
           padding: clamp(90px, 9vh, 110px) clamp(28px, 5vw, 80px) 22px;
           display: grid;
-          grid-template-rows: auto auto 1fr auto;
+          grid-template-rows: auto auto minmax(0, 1fr) auto;
           gap: clamp(10px, 1.2vw, 18px);
           color: #FFFFFF;
         }
@@ -354,18 +366,18 @@
           grid-template-columns: 0.4fr 0.6fr;
           gap: clamp(28px, 4vw, 64px);
           padding-top: clamp(8px, 1.2vw, 16px);
-          min-height: 0;
+          min-height: 0; overflow: hidden;
         }
 
         /* Primary nav (left) */
-        .sunmenu__primary { min-width: 0; }
+        .sunmenu__primary { min-width: 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.4) transparent; }
         .sunmenu__primary ul { list-style: none; margin: 0; padding: 0; }
         .sunmenu__primary-row { border-bottom: 1px solid rgba(255,255,255,0.16); }
         .sunmenu__primary-row:last-child { border-bottom: 0; }
         .sunmenu__primary-row.is-active { background: rgba(255,255,255,0.08); }
         .sunmenu__primary-link {
           display: block;
-          padding: clamp(6px, min(1.4vw, 1.25vh), 16px) clamp(10px, 1.4vw, 18px) clamp(6px, min(1.4vw, 1.25vh), 16px) 0;
+          padding: clamp(4px, min(1.4vw, 0.95vh), 16px) clamp(10px, 1.4vw, 18px) clamp(4px, min(1.4vw, 0.95vh), 16px) 0;
           color: rgba(255,255,255,0.78);
           transition: padding var(--dur-base) var(--ease-out),
                       color var(--dur-base) var(--ease-out);
@@ -379,7 +391,7 @@
         .sm-link {
           display: inline-flex; align-items: baseline; gap: 16px;
           font-family: var(--font-display); font-weight: 700;
-          font-size: clamp(22px, min(3vw, 4.3vh), 44px);
+          font-size: clamp(20px, min(3vw, 3.3vh), 44px);
           letter-spacing: -0.025em; line-height: 1;
           color: inherit;
           width: 100%;
@@ -411,6 +423,7 @@
           border-left: 1px solid rgba(255,255,255,0.18);
           overflow-y: auto;
           overscroll-behavior: contain;
+          scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.4) transparent;
         }
         /* Waterfall reveal, each row of the right pane drops in top-to-bottom.
            Delays are set inline so they cascade on open and on every swap. */
@@ -618,6 +631,26 @@
         }
         .ix-arr { color: var(--mmc-yellow); font-size: 11px; opacity: 0.85; }
 
+        /* Current page: a small sun dot after the label of the current link (aria-current="page") and of the groups that hold it.
+           The menu ground is deep blue, so the cue uses the sun token rather than blue. */
+        .sunmenu__primary-row.is-current-group .sunmenu__primary-label::after,
+        .sunmenu__primary-link[aria-current="page"] .sunmenu__primary-label::after,
+        .sunmenu__sub-item.is-current-group > .sunmenu__sub-row .sunmenu__sub-name::after,
+        .sunmenu__inner a[aria-current="page"] .ix-name::after {
+          content: ""; display: inline-block; width: 6px; height: 6px; margin-left: 8px; border-radius: 50%;
+          background: var(--mmc-yellow); vertical-align: middle; transform: translateY(-1px);
+        }
+        .sunmenu__primary-row.is-current-group .sunmenu__primary-label::after,
+        .sunmenu__primary-link[aria-current="page"] .sunmenu__primary-label::after { width: 0.2em; height: 0.2em; margin-left: 0.28em; transform: translateY(-0.1em); }
+        .sunmenu__inner a[aria-current="page"] { color: var(--mmc-white); }
+        .sunmenu__inner a[aria-current="page"] .ix-name { text-decoration: underline; text-decoration-color: var(--mmc-yellow); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+        .sunmenu__sub-link[aria-current="page"] .sunmenu__sub-name, .sunmenu__sub-cta[aria-current="page"] span:first-child { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+        .sunmenu__sub-link[aria-current="page"] .sunmenu__sub-name { text-decoration-color: var(--mmc-yellow); }
+        /* Keyboard focus inside the desktop panes: the same sun ring the phone menu uses. */
+        .sunmenu__primary-link:focus-visible, .sunmenu__sub-link:focus-visible, .sunmenu__sub-expand:focus-visible,
+        .sunmenu__inner a:focus-visible, .sunmenu__sub-cta:focus-visible { outline: 2px solid var(--mmc-yellow); outline-offset: -2px; }
+        .sunmenu__primary-link:focus-visible { color: var(--mmc-white); }
+
         /* Footer */
         .sunmenu__foot {
           display: flex; align-items: center; justify-content: space-between;
@@ -647,10 +680,11 @@
         }
 
         @media (max-width: 980px) {
-          .sunmenu__panes { grid-template-columns: 1fr; gap: 22px; }
-          .sunmenu__sub { padding-left: 0; border-left: 0; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.22); }
-          .sunmenu__primary { max-height: 38vh; overflow-y: auto; }
-          .sm-link { font-size: clamp(22px, 4vw, 32px); }
+          /* Tablet (721-980px): keep the two panes side by side; both scroll inside their own column. */
+          .sunmenu__panes { grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr); gap: 22px; }
+          .sunmenu__sub { padding-left: 18px; }
+          .sunmenu__inner ul { grid-template-columns: 1fr; padding-left: 32px; }
+          .sm-link { font-size: clamp(20px, min(3.6vw, 3.3vh), 30px); gap: 12px; }
         }
         @media (max-width: 720px) {
           .sunmenu__content { padding: 90px 22px 18px; }
@@ -660,7 +694,7 @@
         }
         @media (max-height: 760px) {
           .sunmenu__content { padding-top: 80px; gap: 8px; }
-          .sm-link { font-size: clamp(22px, 2.8vw, 36px); }
+          .sm-link { font-size: clamp(20px, min(2.8vw, 3.3vh), 36px); }
           .sunmenu__multi { padding: 4px 0 10px; font-size: 18px; }
         }
       
@@ -1186,15 +1220,16 @@
           flex-direction: column;
           gap: 6px;
         }
+        /* Form label voice (site-wide decision, 2026-10-12): sentence case, 14px / 700, ink. */
         .audit__field-label {
           font-family: var(--font-body);
-          font-size: 10.5px;
+          font-size: 14px;
           font-weight: 700;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          color: var(--fg-3);
+          line-height: 1.3;
+          color: var(--mmc-text);
         }
-        .audit__field-label .req { color: var(--mmc-yellow); margin-left: 4px; }
+        /* Required marker: yellow on the paper panel was ~1.5:1; the error token reads on light grounds (as on the quote form). */
+        .audit__field-label .req { color: var(--mmc-error); margin-left: 4px; }
         .audit__field input,
         .audit__field textarea {
           font-family: var(--font-body);
@@ -1457,6 +1492,12 @@
           transition: background var(--dur-base) var(--ease-out);
         }
         .cookie__close:hover { background: rgba(var(--mmc-blue-rgb), 0.16); }
+        /* Tap targets (small-defects pass), nothing visible changes: the 32px close button and the 43px buttons get a
+           transparent layer; the toggles' hidden checkbox is widened below, after its own rule. */
+        .cookie__close { position: relative; }
+        .cookie__close::before { content: ""; position: absolute; inset: -6px; border-radius: 50%; }
+        .cookie__btn { position: relative; }
+        .cookie__btn::before { content: ""; position: absolute; inset: -1px 0; border-radius: inherit; }
 
         .cookie__list {
           list-style: none;
@@ -1514,6 +1555,8 @@
           cursor: pointer;
         }
         .cookie__toggle input { opacity: 0; position: absolute; inset: 0; cursor: pointer; }
+        /* tap target: the invisible checkbox covers a 44px square centred on the 42x22 track (small-defects pass) */
+        .cookie__toggle input { inset: auto; top: -11px; left: -1px; width: 44px; height: 44px; margin: 0; z-index: 1; }
         .cookie__toggle-track {
           position: absolute; inset: 0;
           background: rgba(var(--mmc-blue-rgb), 0.18);
@@ -1663,6 +1706,12 @@ main:focus { outline: none; }
   .mm-desc { font-family: var(--font-body); font-weight: 500; font-size: 12.5px; line-height: 1.3; color: rgba(255,255,255,0.75); }
   .mm-arr { flex: none; display: inline-flex; color: var(--mmc-yellow); padding-right: 2px; }
   .mm-row--two { min-height: 56px; }
+  /* Current page: sun dot after the label of the current link and of the rows (groups) that lead to it */
+  .mm-row[aria-current="page"] .mm-label::after, .mm-row.is-current-group .mm-label::after {
+    content: ""; display: inline-block; width: 6px; height: 6px; margin-left: 8px; border-radius: 50%; background: var(--mmc-yellow); vertical-align: middle; transform: translateY(-1px);
+  }
+  .mm-row[aria-current="page"] { color: var(--mmc-white); }
+  .mm-page[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; }
 
   .mm-bar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .mm-back, .mm-page {
@@ -1689,4 +1738,19 @@ main:focus { outline: none; }
 }
 @media (max-width: 720px) and (prefers-reduced-motion: reduce) {
   .mm-view { transition: none; }
+}
+
+/* Cookie notice on phones (<=600px): a compact bar. Short text on one line, the three choices as one row of small buttons. */
+.cookie__short { display: none; }
+@media (max-width: 600px) {
+  .cookie__long { display: none; }
+  .cookie__short { display: inline; }
+  .cookie { left: 6px; right: 6px; bottom: calc(6px + env(safe-area-inset-bottom, 0px)); }
+  .cookie__inner { flex-direction: column; flex-wrap: nowrap; align-items: stretch; padding: 8px 8px 8px 12px; gap: 6px; border-radius: 14px; }
+  .cookie__l { flex: 0 0 auto; min-width: 0; }
+  .cookie__body { font-size: 11.5px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cookie__r { display: flex; width: 100%; flex: 0 0 auto; gap: 6px; flex-wrap: nowrap; justify-content: stretch; }
+  .cookie .cookie__btn { flex: 1 1 0; min-width: 0; width: auto; min-height: 36px; padding: 6px 8px; font-size: 10.5px; letter-spacing: .04em; }
+  .cookie .cookie__btn--ghost { flex: 0 0 auto; padding-inline: 14px; }
+  .cookie__prefs { max-height: 62dvh; }
 }

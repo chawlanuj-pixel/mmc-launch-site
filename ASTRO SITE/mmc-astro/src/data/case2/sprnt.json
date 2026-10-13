@@ -1,0 +1,77 @@
+{
+ "id": "sprnt",
+ "about": "{name} is a D2C brand that sells activewear for children.",
+ "description": "{name} case study: a kids' activewear storefront from homepage to product page, with matching social creative, a Meta ad and a Google Shopping ad.",
+ "heroTone": "paper",
+ "kind": "D2C brand, kids' activewear",
+ "channels": [
+  "Meta ad",
+  "Google Shopping ad"
+ ],
+ "brief": [
+  "{name} makes activewear for children. This page covers an ecommerce storefront, from the homepage through to a product detail page, with matching social creative and ads.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage and category page",
+   "text": "A movement-led hero, a row of product categories and fabric messaging beneath it.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "right",
+   "kicker": "Mobile",
+   "title": "Mobile product detail page",
+   "text": "Colour and size pickers, a clear price block and a fixed add to cart on the phone.",
+   "crops": [
+    "mobile"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 3,
+   "kicker": "Creative and ads",
+   "title": "Social tiles, a Meta ad and a Google Shopping ad",
+   "text": "The same photography and purple palette carry from the tiles to the ads.",
+   "crops": [
+    "social",
+    "meta",
+    "shopping"
+   ],
+   "captions": [
+    "Social creative tiles",
+    "Meta ad",
+    "Google Shopping ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "Product photography",
+   "text": "From the same artwork.",
+   "crops": [
+    "products"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, category page and mobile product page",
+  "reach": "Meta ad and Google Shopping ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
+  "web": "{name} website on a desktop screen, client-approved artwork",
+  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
+  "social": "{name} social media creative tiles, client-approved artwork",
+  "meta": "{name} Meta ad, client-approved artwork",
+  "shopping": "{name} Google Shopping ad, client-approved artwork",
+  "products": "{name} product photography, client-approved artwork"
+ }
+}

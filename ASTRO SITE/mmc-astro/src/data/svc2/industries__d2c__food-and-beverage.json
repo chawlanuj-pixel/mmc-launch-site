@@ -1,0 +1,301 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "d2c/unboxing.jpg",
+    "pos": "50% 50%",
+    "alt": "A hand lifting a jar and a flower card out of tissue paper in a gift box.",
+    "facts": [
+      {
+        "t": "Taste on screen.",
+        "d": "Creative that shows taste, texture and use occasions."
+      },
+      {
+        "t": "Basket builders.",
+        "d": "Bundles and trial packs that cover shipping and acquisition."
+      },
+      {
+        "t": "Many shelves.",
+        "d": "Own site, marketplaces and quick commerce, planned together."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why food and beverage brands choose MMC"
+  },
+  "work": {
+    "panel": "FoodShelves",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "food brand.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Re-cut the tile so taste reads in a second.",
+        "d": "On a shelf or in an app a pack has a moment to earn a tap, so name, flavour and use come first."
+      },
+      {
+        "n": "02",
+        "t": "Build bundles that cover shipping.",
+        "d": "Trial packs, family packs and gift boxes lift order value, so one order can pay for acquisition and delivery."
+      },
+      {
+        "n": "03",
+        "t": "Be on every shelf buyers use.",
+        "d": "Listings, stock and ads are run on quick commerce, marketplaces and your own site as one plan."
+      },
+      {
+        "n": "04",
+        "t": "Buy on margin, not on ROAS.",
+        "d": "Packing, delivery and discounts come off first, because low baskets turn small errors into losses."
+      },
+      {
+        "n": "05",
+        "t": "Time the reminder to the pack.",
+        "d": "Reorder flows and subscriptions fire as a pack runs out, so a habit product keeps its habit."
+      }
+    ],
+    "illustrative": "Illustrative layout of a food brand's order path. Not a client account, no real figures. Blinkit, Zepto, Instamart, Swiggy, Amazon, WhatsApp and their logos belong to their owners."
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "A food order's path",
+    "pinsLabel": "Five places a food brand loses margin or a reorder",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Taste"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Basket"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Shelves"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Margin"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reorder"
+      }
+    ],
+    "base": "A low basket has to earn the second order",
+    "artLabel": "Five cards: a plain pack shot, a basket too small to pay for shipping, a product missing from the shelves, a margin that looks fine and does not hold, and a pack that runs out with no reminder.",
+    "accent": "#D97706",
+    "cols": [
+      {
+        "head": "Taste",
+        "k": "tiles",
+        "rows": [
+          {
+            "t": "Pack shot only",
+            "s": "dim"
+          },
+          {
+            "t": "No taste cue",
+            "s": "bad"
+          },
+          {
+            "t": "No occasion",
+            "s": "bad"
+          },
+          {
+            "t": "Plain tile",
+            "s": "warn"
+          }
+        ],
+        "chip": "No appetite",
+        "tone": "w"
+      },
+      {
+        "head": "Basket",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "One item order",
+            "s": "bad",
+            "w": 30
+          },
+          {
+            "t": "Shipping and ads",
+            "s": "warn",
+            "w": 72
+          },
+          {
+            "t": "Left",
+            "s": "bad",
+            "w": 8
+          }
+        ],
+        "chip": "Basket too small",
+        "tone": "b"
+      },
+      {
+        "head": "Shelves",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Quick commerce: not listed",
+            "s": "bad"
+          },
+          {
+            "t": "Marketplace: out of stock",
+            "s": "warn"
+          },
+          {
+            "t": "Own site: live",
+            "s": "ok"
+          }
+        ],
+        "chip": "Shelves missed",
+        "tone": "w"
+      },
+      {
+        "head": "Margin",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "Reported ROAS",
+            "s": "ok",
+            "w": 82
+          },
+          {
+            "t": "Cost per order",
+            "s": "warn",
+            "w": 92
+          },
+          {
+            "t": "Margin left",
+            "s": "bad",
+            "w": 8
+          }
+        ],
+        "chip": "Looks fine, loses",
+        "tone": "b"
+      },
+      {
+        "head": "Reorder",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Order placed",
+            "s": "ok"
+          },
+          {
+            "t": "Pack finished",
+            "s": "warn"
+          },
+          {
+            "t": "No reminder sent",
+            "s": "bad"
+          },
+          {
+            "t": "Habit goes elsewhere",
+            "s": "bad"
+          }
+        ],
+        "chip": "No reorder",
+        "tone": "b"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the food and gifting",
+    "h2b": "brands we market.",
+    "tiles": [
+      {
+        "id": "lepure",
+        "line": "Chocolate gifting: a store and ads built around a festive collection."
+      },
+      {
+        "id": "giraffe",
+        "line": "Snacks and festive gifting: storefront, creative and ads for a gifting push."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a food brand,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Rebuild the economics",
+        "d": "We build the full cost per order, review listings and tracking and set margin-based targets.",
+        "get": "A clear view of margin.",
+        "img": "company/performance.jpg",
+        "alt": "Illustrative scene: an analyst reading two dashboards.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Raise the basket",
+        "d": "Bundles, trial packs and thresholds go live with a test plan.",
+        "get": "Offers ready to test.",
+        "img": "d2c/checkout.jpg",
+        "alt": "Illustrative scene: an order checkout on a phone held over a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Take the shelf",
+        "d": "Listings, availability and ads go live on quick commerce and marketplaces.",
+        "get": "Presence where buyers shop.",
+        "img": "qc/availability.jpg",
+        "alt": "Illustrative scene: a stock-by-area dashboard on a tablet.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Earn the reorder",
+        "d": "Reorder flows and subscriptions start and media follows margin.",
+        "get": "A funnel that includes reorders.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Illustrative scene: three people planning flows at a whiteboard.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Quick commerce ads",
+        "href": "/services/performance-marketing/quick-commerce/"
+      },
+      {
+        "n": "Amazon Ads",
+        "href": "/services/performance-marketing/amazon-ads/"
+      },
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

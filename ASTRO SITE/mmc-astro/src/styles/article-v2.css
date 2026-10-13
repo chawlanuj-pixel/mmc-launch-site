@@ -67,7 +67,8 @@
 .ar-fig figcaption { font-size: 14px; line-height: 1.5; color: var(--n-fg-2); }
 .ar-tablewrap { border: 1px solid var(--n-line-2); border-radius: var(--r-in, 14px); overflow: hidden; background: #fff; }
 .ar-tablescroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.ar-table { width: 100%; border-collapse: collapse; font-size: 16px; min-width: 460px; font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) { .ar-table th, .ar-table td { padding: 12px 10px; font-size: 15px; } .ar-table thead th { font-size: 11px; letter-spacing: .04em; } }
+.ar-table { width: 100%; border-collapse: collapse; font-size: 16px; min-width: 0; font-variant-numeric: tabular-nums; }
 .ar-table th, .ar-table td { padding: 14px var(--sp-2); text-align: left; border-top: 1px solid var(--n-line); color: var(--n-fg-2); }
 .ar-table thead th { border-top: 0; background: var(--n-paper); font: 700 12px/1.2 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--n-blue-d); }
 .ar-table tbody th { font-weight: 800; color: var(--n-ink); }
@@ -99,3 +100,5 @@
 .ar-more .ix-eyebrow { margin-bottom: var(--sp-3); }
 .ix-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 620px) { .ix-grid--2 { grid-template-columns: 1fr; } }
+
+@media (max-width: 760px) { .ar-short { gap: 12px; padding: 22px 20px; } }

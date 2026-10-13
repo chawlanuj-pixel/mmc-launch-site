@@ -1,0 +1,52 @@
+---
+// PREVIEW ONLY: the redesigned service page (7 sections) built from the real Meta Ads hub JSON, for the owner to review at
+// /preview/service-meta-ads/. Additive: it replaces nothing. noindex, canonical = the real page, not in the sitemap, not linked.
+// Hero, Shell, nav, PreFooterCta and footer are the live components, unchanged.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import Hero from "../../components/hub/Hero.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import AnswerSpread from "../../components/svc2/AnswerSpread.astro";
+import PinnedWork from "../../components/svc2/PinnedWork.astro";
+import LeakDiagram from "../../components/svc2/LeakDiagram.astro";
+import Proof from "../../components/svc2/Proof.astro";
+import First90Days from "../../components/svc2/First90Days.astro";
+import FitAndQuestions from "../../components/svc2/FitAndQuestions.astro";
+import Close from "../../components/svc2/Close.astro";
+import hubData from "../../data/hubs/services__performance-marketing__meta-ads.json";
+import S from "../../data/svc2/services__performance-marketing__meta-ads.json";
+import "../../styles/hub-extra.css";
+import "../../styles/svc2.css";
+import { fixDeep } from "../../lib/links";
+import { rewriteJsonld } from "../../lib/hub";
+import { closingFor } from "../../lib/prefooter";
+import { proofRows } from "../../lib/proof";
+
+const d: any = hubData;
+const H = fixDeep(d.hub);
+const updated: string = d.updated || "2026-10-09";
+const jsonld = rewriteJsonld(d.jsonld, updated);
+const seg = d.path.replace(/^\/|\/$/g, "").split("/");
+const toolsKey = seg[seg.length - 1];
+const C = closingFor(H.key, H.cta);
+const hasProof = !!H.proof && proofRows(H.proof).length > 0;
+---
+<BaseLayout title={d.title} description={d.description} path={d.path} ogTitle={d.ogTitle} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld} noindex={true} preloadImage={H.tiles?.[0]?.img ? "/assets/" + H.tiles[0].img : undefined}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app s2">
+      <Hero H={H} proof={hasProof} />
+      <AnswerSpread H={H} S={S} jsonld={jsonld} updated={updated} source={H.key} />
+      <PinnedWork S={S} />
+      <LeakDiagram H={H} S={S} />
+      <Proof H={H} S={S} />
+      <First90Days H={H} S={S} />
+      <FitAndQuestions H={H} S={S} />
+      <Close H={H} S={S} source={H.key} toolsKey={toolsKey} />
+      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+    </main>
+    <StickyBookingBar source={H.key} />
+  </Shell>
+  <script>import "../../scripts/hub.ts";</script>
+  <script>import "../../scripts/svc2.ts";</script>
+</BaseLayout>

@@ -1,0 +1,82 @@
+---
+// PANEL: FoodShelves (kind "FoodShelves"). A food brand's order path as five screens: tile, bundle, shelves, margin, reorder. 5 steps.
+// Real marks only on step 3 (Blinkit, Zepto, Swiggy for Instamart, Amazon, from public/assets/platforms) and WhatsApp on step 5.
+//   1 Taste on the tile: four food tiles (photo crops), one re-cut with a taste cue chip. Tab: Tile.
+//   2 Bundle: trial pack, family pack and gift box cards and a "one more to ship free" progress bar. Tab: Bundles.
+//   3 Shelves: rows per shelf (quick commerce apps, a marketplace, own site) with live, low or out state. Tab: Shelves.
+//   4 Margin: reported ROAS against what is left after packing, delivery and discounts, as bars. Tab: Margin.
+//   5 Reorder: a pack-level gauge, a WhatsApp reminder and a subscription chip. Tab: Reorder.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real brand. Styles scoped to this file (prefix fsh-).
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const tiles = [[THUMBS.bar, "Snack bar", "Crunch"], [THUMBS.jar, "Spread jar", "Creamy"], [THUMBS.pack, "Packed order", "Fresh"], [THUMBS.unbox, "Gift box", "For gifting"]];
+const packs = [[THUMBS.bar, "Trial pack"], [THUMBS.jar, "Family pack"], [THUMBS.unbox, "Gift box"]];
+const shelves = [["/assets/platforms/blinkit.svg", "Blinkit", "Live", "ok"], ["/assets/platforms/zepto.svg", "Zepto", "Live", "ok"], ["/assets/platforms/swiggy.png", "Instamart", "Low", "warn"], ["/assets/platforms/amazon.svg", "Amazon", "Out", "bad"]];
+const money = [["Reported ROAS", 82, "g"], ["Packing and delivery", 30, "x"], ["Discounts", 22, "x"], ["Left", 11, "bad"]];
+---
+<Frame cls="fsh-ui" title="Food order path" label="Illustration of a food brand's order path: tile, bundles, shelves, margin and reorder. Not a client brand." caption={W.illustrative} tabs={["Tile", "Bundles", "Shelves", "Margin", "Reorder"]} tabFor={[0, 1, 2, 3, 4]} accent="#D97706" accentSoft="#FDF0DC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Taste on the tile <span>Bought with the eyes</span></p>
+    <ul class="fsh-tiles">
+      {tiles.map(([th, n, c], k) => <li class={"s2p-card" + (k === 1 ? " fsh-on" : "")}><span class="s2p-ph fsh-ph" style={th as string} role="img" aria-label="Product tile"></span><b>{n}</b>{k === 1 ? <em class="s2p-chip s2p-chip--sun">Taste cue: {c}</em> : <em class="s2p-chip">Plain</em>}</li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Bundles that pay their way <span>Basket, not just click</span></p>
+    <ul class="fsh-packs">
+      {packs.map(([th, n], k) => <li class={"s2p-card" + (k === 1 ? " fsh-on" : "")}><span class="s2p-ph fsh-ph" style={th as string} role="img" aria-label="Pack"></span><b>{n}</b></li>)}
+    </ul>
+    <div class="s2p-card fsh-bar"><small class="s2p-mute">One more item and delivery is free</small><span><i></i></span></div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Every shelf, one plan <span>Ads follow the stock</span></p>
+    <ul class="fsh-shelves">
+      {shelves.map(([lg, n, s, c]) => <li class="s2p-card"><img src={lg} alt="" width="22" height="22" /><b>{n}</b><em class={"s2p-chip s2p-chip--" + c}>{s}</em></li>)}
+      <li class="s2p-card"><i class="fsh-own" aria-hidden="true"></i><b>Own site</b><em class="s2p-chip s2p-chip--ok">Live</em></li>
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">What one order leaves <span>Small errors become losses</span></p>
+    <ul class="fsh-money">
+      {money.map(([n, w, t]) => <li><span>{n}</span><i class={"fsh-" + t} style={`--w:${w}%`}></i></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Reorder when the pack runs out <span>Habit products keep their habit</span></p>
+    <div class="fsh-gauge"><small class="s2p-mute">Pack level</small><span><i></i></span><em class="s2p-chip s2p-chip--warn">Reminder sent here</em></div>
+    <div class="fsh-wa"><img src="/assets/platforms/whatsapp.svg" alt="" width="20" height="20" /><span>Running low on your favourite? Reorder in one tap.</span><em>Reorder</em></div>
+    <p class="fsh-sub"><em class="s2p-chip s2p-chip--ok">Subscription on</em><em class="s2p-chip">Pause or skip any time</em></p>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .fsh-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.fsh-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7em; }
+.fsh-tiles li, .fsh-packs li { display: grid; gap: .4em; padding: .5em; justify-items: start; }
+.fsh-tiles b, .fsh-packs b { font: 800 .86em var(--font-body); }
+.fsh-ph { display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: .6em; }
+.fsh-on { border-color: #D97706; box-shadow: 0 0 0 2px #D97706; }
+.fsh-packs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7em; }
+.fsh-packs .fsh-ph { aspect-ratio: 4 / 3; }
+.fsh-bar { display: grid; gap: .5em; } .fsh-bar span { display: block; height: .7em; border-radius: 99px; background: #E4E6EB; overflow: hidden; } .fsh-bar i { display: block; height: 100%; width: 72%; border-radius: 99px; background: #D97706; }
+.fsh-shelves { list-style: none; margin: 0; padding: 0; display: grid; gap: .55em; }
+.fsh-shelves li { display: grid; grid-template-columns: 1.6em minmax(0, 1fr) auto; align-items: center; gap: .8em; padding: .5em .9em; }
+.fsh-shelves b { font: 800 .95em var(--font-body); } .fsh-shelves img { width: 1.5em; height: 1.5em; object-fit: contain; }
+.fsh-own { width: 1.2em; height: 1.2em; border-radius: .3em; background: #1C2B33; }
+.fsh-money { list-style: none; margin: 0; padding: 0; display: grid; gap: .8em; align-content: center; flex: 1; }
+.fsh-money li { display: grid; grid-template-columns: 9em minmax(0, 1fr); align-items: center; gap: .8em; font: 700 .92em var(--font-body); color: #1C2B33; }
+.fsh-money i { display: block; height: 1.05em; width: var(--w); border-radius: 99px; background: #CED0D4; }
+.fsh-money i.fsh-g { background: #D97706; } .fsh-money i.fsh-bad { background: #D93025; box-shadow: 0 0 0 3px #FDE8E8; }
+.fsh-money i.fsh-x { background: repeating-linear-gradient(135deg, rgba(255, 197, 40, .75) 0 6px, rgba(255, 197, 40, .35) 6px 12px); border: 1px dashed #B58900; }
+.fsh-gauge { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .8em; }
+.fsh-gauge span { display: block; height: .8em; border-radius: 99px; background: #E4E6EB; overflow: hidden; } .fsh-gauge i { display: block; width: 22%; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #E8A100, #D97706); }
+.fsh-wa { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .7em; padding: .8em 1em; border-radius: .3em 1em 1em 1em; background: #D9FDD3; font: 600 .95em/1.35 var(--font-body); color: #1C2B33; box-shadow: 0 .6em 1.2em -.7em rgba(0, 0, 0, .4); }
+.fsh-wa em { font: 800 .8em var(--font-body); font-style: normal; background: #fff; border-radius: 99px; padding: .4em .9em; }
+.fsh-sub { margin: 0; display: flex; flex-wrap: wrap; gap: .5em; }
+@media (max-width: 560px) {
+  .fsh-tiles { gap: .35em; } .fsh-tiles li, .fsh-packs li { padding: .3em; } .fsh-tiles b, .fsh-packs b { font-size: .7em; } .fsh-tiles .s2p-chip { display: none; }
+  .fsh-shelves { gap: .35em; } .fsh-shelves li { padding: .35em .6em; } .fsh-money { gap: .5em; } .fsh-money li { grid-template-columns: 6.4em minmax(0, 1fr); font-size: .85em; } .fsh-sub .s2p-chip:last-child { display: none; }
+}
+@container (max-height: 230px) { .fsh-bar { display: none; } .fsh-shelves li:nth-child(n+4) { display: none; } }
+</style>

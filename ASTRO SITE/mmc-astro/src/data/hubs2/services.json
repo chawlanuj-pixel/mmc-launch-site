@@ -1,0 +1,299 @@
+{
+  "_note": "The /services/ directory (src/pages/services/index.astro). Same five groups and order as the menu (src/components/shell/menu-data.ts). Each one-liner is tightened from the service's own hub copy (src/data/hubs/*.json `sub`, src/data/ai/pages.json). `legacy` keeps old anchors (/services/#organic and so on) landing on the right band.",
+  "kind": "directory",
+  "groups": [
+    {
+      "id": "design",
+      "n": "01",
+      "name": "Design",
+      "accent": "how you are seen.",
+      "legacy": [
+        "brand"
+      ],
+      "desc": "Identity, packaging and product design",
+      "line": "When the brand looks like everyone else's, or the site and pack are hard to use, design fixes how you are seen and understood.",
+      "img": "brand/logo.jpg",
+      "pos": "50% 50%",
+      "alt": "Logo sketches, colour swatches and a tablet showing a finished brand mark on a desk.",
+      "clusters": [
+        {
+          "items": [
+            {
+              "n": "Branding",
+              "d": "Positioning, naming, logo, voice and guidelines, so every touchpoint looks and sounds like one brand.",
+              "href": "/services/branding/"
+            },
+            {
+              "n": "Packaging design",
+              "d": "Structure and graphics for the shelf, the marketplace tile and the unboxing.",
+              "href": "/services/packaging-design/"
+            },
+            {
+              "n": "UI/UX design",
+              "d": "Research, flows and screens for websites and apps, tested with real users.",
+              "href": "/services/ui-ux-design/"
+            }
+          ]
+        }
+      ],
+      "idx": "pack/hierarchy.jpg",
+      "idxAlt": "Three product packs designed with a clear label hierarchy."
+    },
+    {
+      "id": "marketing",
+      "n": "02",
+      "name": "Marketing",
+      "accent": "how buyers reach you.",
+      "legacy": [
+        "revenue",
+        "organic"
+      ],
+      "desc": "Paid media, search, leads and retention",
+      "line": "When ad spend rises and profit does not, or nobody finds you when they search, marketing fixes how buyers reach you and why they come back.",
+      "img": "pm-v3/channel-meta.jpg",
+      "pos": "50% 40%",
+      "alt": "A woman on a sofa watching Reels on her phone.",
+      "clusters": [
+        {
+          "label": "Paid media",
+          "items": [
+            {
+              "n": "Performance marketing",
+              "d": "Meta, Google, Amazon and quick-commerce media run as one account, judged on contribution margin.",
+              "href": "/services/performance-marketing/"
+            },
+            {
+              "n": "Meta Ads",
+              "d": "Instagram and Facebook campaigns built as one funnel, with creative tested against one idea.",
+              "href": "/services/performance-marketing/meta-ads/"
+            },
+            {
+              "n": "Google Ads",
+              "d": "Search, shopping and video aimed at buying intent, with brand search kept apart.",
+              "href": "/services/performance-marketing/google-ads/"
+            },
+            {
+              "n": "Amazon Ads",
+              "d": "Sponsored ads, listings and brand content planned around your stock.",
+              "href": "/services/performance-marketing/amazon-ads/"
+            },
+            {
+              "n": "Quick commerce ads",
+              "d": "Listings, sponsored placements and availability planning on quick-commerce apps.",
+              "href": "/services/performance-marketing/quick-commerce/"
+            },
+            {
+              "n": "Lead generation",
+              "d": "Paid media, landing pages and follow-up connected to your CRM, judged on leads your team accepts.",
+              "href": "/services/lead-generation/"
+            }
+          ]
+        },
+        {
+          "label": "Search and AI search",
+          "items": [
+            {
+              "n": "SEO",
+              "d": "Technical health and content built around search intent, so search engines and AI assistants understand you.",
+              "href": "/services/seo/"
+            },
+            {
+              "n": "AI SEO",
+              "d": "One SEO programme for search results, AI Overviews and assistants.",
+              "href": "/services/seo/ai-seo/"
+            },
+            {
+              "n": "AEO services",
+              "d": "Pages written and structured so snippets, voice answers and AI summaries pick yours.",
+              "href": "/services/seo/aeo/"
+            },
+            {
+              "n": "GEO services",
+              "d": "Your brand made a clear, consistent source that generative tools can cite.",
+              "href": "/services/seo/geo/"
+            },
+            {
+              "n": "Google Business Profile",
+              "d": "A complete, current and trusted profile for near-me and city searches.",
+              "href": "/services/seo/google-business-profile/"
+            },
+            {
+              "n": "Content marketing",
+              "d": "Strategy, writing, video and distribution planned around your buyers' questions.",
+              "href": "/services/content-marketing/"
+            }
+          ]
+        },
+        {
+          "label": "Conversion, retention and reputation",
+          "items": [
+            {
+              "n": "Conversion optimisation",
+              "d": "Fixes tested on product pages, checkout and forms, so the traffic you pay for produces more orders and enquiries.",
+              "href": "/services/cro/"
+            },
+            {
+              "n": "Retention marketing",
+              "d": "WhatsApp, email and loyalty funnels that bring customers back and turn enquiries into customers.",
+              "href": "/services/retention-marketing/"
+            },
+            {
+              "n": "Online reputation management",
+              "d": "Genuine reviews, thoughtful replies and accurate profiles, so the picture a buyer finds is a fair one.",
+              "href": "/services/online-reputation-management/"
+            },
+            {
+              "n": "Influencer marketing",
+              "d": "Creators shortlisted for audience fit, briefed against one idea and read against sales.",
+              "href": "/services/influencer-marketing/"
+            }
+          ]
+        }
+      ],
+      "idx": "pm-v3/channel-quickcommerce.jpg",
+      "idxAlt": "A Blinkit delivery rider on a scooter."
+    },
+    {
+      "id": "technology",
+      "n": "03",
+      "name": "Technology",
+      "accent": "where the order happens.",
+      "legacy": [
+        "tech"
+      ],
+      "desc": "Storefronts, websites and apps",
+      "line": "When the store or website is slow or hard to use, technology fixes the place where the order or the enquiry actually happens.",
+      "img": "sv/tech.jpg",
+      "pos": "50% 50%",
+      "alt": "An online store open on a laptop and a phone, with code on a second screen.",
+      "clusters": [
+        {
+          "items": [
+            {
+              "n": "Shopify development",
+              "d": "Stores designed for how customers browse, fast on a phone and connected to your tracking.",
+              "href": "/services/shopify-development/"
+            },
+            {
+              "n": "Website development",
+              "d": "Fast, search-ready websites with forms connected to your CRM.",
+              "href": "/services/web-development/"
+            },
+            {
+              "n": "WordPress development",
+              "d": "Custom themes, speed fixes, migrations and plugins, so marketers publish without a developer.",
+              "href": "/services/web-development/wordpress/"
+            },
+            {
+              "n": "WooCommerce development",
+              "d": "Catalogue, checkout and upkeep built so shoppers buy quickly and your team can run the store.",
+              "href": "/services/web-development/woocommerce/"
+            },
+            {
+              "n": "Website maintenance",
+              "d": "Updates, backups, security, uptime and speed on a retainer that fits how often your site changes.",
+              "href": "/services/website-maintenance/"
+            },
+            {
+              "n": "Mobile app development",
+              "d": "Apps planned around a real repeat use, built to be fast and reliable.",
+              "href": "/services/mobile-app-development/"
+            }
+          ]
+        }
+      ],
+      "idx": "shop/design.jpg",
+      "idxAlt": "A Shopify store open on a laptop and a phone."
+    },
+    {
+      "id": "content",
+      "n": "04",
+      "name": "Content",
+      "accent": "made to run as ads.",
+      "legacy": [],
+      "desc": "Creative made to run as ads",
+      "line": "When you cannot produce enough creative, content keeps fresh ads and posts running before the old ones tire.",
+      "img": "ugc/shoot.jpg",
+      "pos": "50% 45%",
+      "alt": "A creator filming a product video on a phone mounted on a tripod.",
+      "clusters": [
+        {
+          "items": [
+            {
+              "n": "UGC and video",
+              "d": "Creator-style video briefed against one brand thesis, edited for the ad platforms and refreshed before it goes stale.",
+              "href": "/services/ugc-and-video/"
+            },
+            {
+              "n": "Social media creatives",
+              "d": "Content pillars, designed posts and short video that work alongside your paid media.",
+              "href": "/services/social-media/"
+            }
+          ]
+        }
+      ],
+      "idx": "sv/content.jpg",
+      "idxAlt": "A creator presenting a skincare product to camera."
+    },
+    {
+      "id": "ai",
+      "n": "05",
+      "name": "AI",
+      "accent": "built for ads.",
+      "legacy": [],
+      "desc": "AI by MMC, our AI production line",
+      "line": "When shoots, videos, pages and replies cannot keep up with the ads, AI by MMC produces them without a full production shoot.",
+      "img": "/ai-by-mmc/assets/img/hub-photoshoot.jpg",
+      "pos": "50% 50%",
+      "alt": "Four AI product photos of a serum bottle in different scenes.",
+      "clusters": [
+        {
+          "items": [
+            {
+              "n": "AI by MMC overview",
+              "d": "Our AI production line for ads, product pages and sales conversations.",
+              "href": "/ai-by-mmc/"
+            },
+            {
+              "n": "AI photoshoot",
+              "d": "One real product photo turned into every scene your campaigns need.",
+              "href": "/ai-by-mmc/photoshoot/"
+            },
+            {
+              "n": "AI video generation",
+              "d": "Ad films, product videos and explainers without a full production shoot.",
+              "href": "/ai-by-mmc/video-generation/"
+            },
+            {
+              "n": "AI UGC",
+              "d": "Creator-style UGC videos in the languages your customers use.",
+              "href": "/ai-by-mmc/ugc/"
+            },
+            {
+              "n": "AI spokesperson video",
+              "d": "A script turned into a presenter video in any language you need.",
+              "href": "/ai-by-mmc/spokesperson-video/"
+            },
+            {
+              "n": "AI sales agent",
+              "d": "Answers questions, qualifies enquiries and books calls on your website and WhatsApp.",
+              "href": "/ai-by-mmc/sales-agent/"
+            },
+            {
+              "n": "AI landing page builder",
+              "d": "Campaign landing pages generated, refined and launched quickly, with tracking included.",
+              "href": "/ai-by-mmc/landing-page-builder/"
+            }
+          ]
+        }
+      ],
+      "idx": "/ai-by-mmc/assets/img/hub-video-generation.jpg",
+      "idxAlt": "A film strip of AI-made product video frames."
+    }
+  ],
+  "work": [
+    "giraffe",
+    "mvj",
+    "nmc"
+  ]
+}

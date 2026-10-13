@@ -167,7 +167,7 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "UI/UX design is the work of understanding how people use a website or app, then designing the flows and screens that make it easy to get done what they came to do.",
+      "lead": "UI/UX design is the work of understanding how people use a website or app, then designing the flows and screens that make it easy to get done what they came to do. MMC designs websites and apps for D2C, B2B and education brands, tests clickable prototypes with real users and packages the result as a design system.",
       "hl": "easy to get done what they came to do",
       "who": "Monday Marketing Company (MMC) designs websites and apps for D2C, B2B and education brands, and builds the design system behind them.",
       "points": [
@@ -293,6 +293,13 @@
           "img": "app/journey.jpg",
           "href": "mobile-app-development.html",
           "link": "See Mobile app development"
+        },
+        {
+          "n": "White-label web design",
+          "d": "Designs delivered under your name.",
+          "img": "ux/screens.jpg",
+          "href": "/white-label/web-design/",
+          "link": "See white-label web design"
         }
       ]
     },
@@ -373,6 +380,77 @@
         "t": "You want decoration without research, or want us to skip user testing.",
         "why": "Design that is not tested with users is guesswork, and we will not sell it as research."
       }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What UI and UX design",
+      "h2b": "covers.",
+      "lede": "Six steps from understanding users to a design system your team can build from.",
+      "items": [
+        {
+          "t": "User research",
+          "d": "Interviews, data and support questions that show what users need.",
+          "img": "ux/research.jpg",
+          "alt": "User research: illustrative scene"
+        },
+        {
+          "t": "Journey mapping",
+          "d": "Flows that show how a visitor moves from first click to the goal.",
+          "img": "ux/flows.jpg",
+          "alt": "Journey mapping: illustrative scene"
+        },
+        {
+          "t": "Screen design",
+          "d": "Clear layouts for mobile and desktop, with real content in place.",
+          "img": "ux/screens.jpg",
+          "alt": "Screen design: illustrative scene"
+        },
+        {
+          "t": "Usability testing",
+          "d": "Prototypes tested with real people before anything is built.",
+          "img": "ux/test.jpg",
+          "alt": "Usability testing: illustrative scene"
+        },
+        {
+          "t": "Design system",
+          "d": "Components and rules that keep every new page consistent.",
+          "img": "ux/system.jpg",
+          "alt": "Design system: illustrative scene"
+        },
+        {
+          "t": "Handoff",
+          "d": "Specs and files organised so developers can build without guesswork.",
+          "img": "ux/system.jpg",
+          "alt": "Handoff: illustrative scene"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands design",
+      "h2b": "with MMC.",
+      "lede": "Good design makes the next marketing rupee work harder.",
+      "img": "ux/screens.jpg",
+      "alt": "Why brands design with MMC. Illustrative scene.",
+      "items": [
+        {
+          "t": "Research before pixels",
+          "d": "Decisions come from users and data, not taste."
+        },
+        {
+          "t": "Conversion-minded",
+          "d": "We design with the funnel and the analytics in view."
+        },
+        {
+          "t": "Built to be built",
+          "d": "Designs are reviewed with developers so they ship as drawn."
+        },
+        {
+          "t": "Fits any audience",
+          "d": "Shopping flows for D2C, enquiry flows for B2B and application flows for education."
+        }
+      ]
     }
-  }
+  },
+  "updated": "2026-10-09"
 }

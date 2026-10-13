@@ -1,0 +1,43 @@
+---
+// 5. How it works together: the deliverables as one path (make, reach, land, act), using only the services in this brand's tags.
+import { href } from "../../lib/links";
+import { servicePageFor } from "../../lib/links-map";
+import { tagsFor } from "../../lib/work";
+import type { CaseStudy } from "../../lib/work";
+interface Props { c: CaseStudy; d: any }
+const { c, d } = Astro.props as Props;
+const label = (k: string) => tagsFor(c.id)[c.services.indexOf(k)];
+const pick = (keys: string[]) => keys.filter((k) => c.services.includes(k)).map((k) => ({ label: label(k), href: servicePageFor(k, c.group) }));
+const act = String(d.action);
+const art = /^[aeiou]/i.test(act) ? "an" : "a";
+const steps = [
+  { n: "01", h: "Make", sub: "The creative", p: d.flow.make, tags: pick(["creative", "social"]) },
+  { n: "02", h: "Reach", sub: "Where it runs", p: d.flow.reach, tags: pick(["perf", "leadgen"]) },
+  { n: "03", h: "Land", sub: "Where it lands", p: d.flow.site, tags: pick(["web", "cro"]) },
+  { n: "04", h: "Act", sub: "What it is for", p: `The pages are organised around one action: ${art} ${act}.`, tags: [] },
+];
+const market = pick(["amazon", "quickcom"]);
+---
+<section class="c2-band c2-band--ink c2-flow" id="how-it-works" aria-labelledby="c2-flow-h">
+  <div class="c2-wrap">
+    <header class="c2-flow__head c2-rv">
+      <p class="c2-eyebrow c2-eyebrow--sun">How it works together</p>
+      <h2 class="c2-h2" id="c2-flow-h">One path, <em>four parts.</em></h2>
+      <p class="c2-flow__sub">The creative, the media and the site for {c.name} are shown here as one path, each part handing over to the next.</p>
+    </header>
+    <ol class="c2-flow__steps">
+      {steps.map((s, i) => (
+        <li class={`c2-step c2-rv c2-d${i}`}>
+          <span class="c2-step__n">{s.n}</span>
+          <h3>{s.h}</h3>
+          <p class="c2-step__sub">{s.sub}</p>
+          <p class="c2-step__p">{s.p}</p>
+          {s.tags.length > 0 && <ul class="c2-chips c2-chips--dark">{s.tags.map((x) => <li>{x.href ? <a href={href(x.href)}>{x.label}</a> : <span>{x.label}</span>}</li>)}</ul>}
+        </li>
+      ))}
+    </ol>
+    {market.length > 0 && (
+      <p class="c2-flow__market c2-rv">Also part of the engagement, and not shown in the artwork: {market.map((m, i) => <Fragment>{i > 0 && " and "}<a href={href(m.href!)}>{m.label}</a></Fragment>)}.</p>
+    )}
+  </div>
+</section>

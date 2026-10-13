@@ -1,0 +1,181 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__social-media.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "social/calendar.jpg",
+    "pos": "50% 50%",
+    "alt": "A phone showing a social feed beside a content calendar on a laptop.",
+    "facts": [
+      {
+        "t": "A few clear pillars.",
+        "d": "So the feed says something."
+      },
+      {
+        "t": "One visual style.",
+        "d": "Posts that look like yours."
+      },
+      {
+        "t": "Works with paid.",
+        "d": "Best posts become ads."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "ContentCalendar",
+    "eyebrow": "The work, shown",
+    "h2a": "How a month of posts",
+    "h2b": "gets planned and made.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Set content pillars tied to your audience.",
+        "d": "A few themes, each with a job, so the feed says one thing and not everything."
+      },
+      {
+        "n": "02",
+        "t": "Draft the month's posts, carousels and videos.",
+        "d": "Formats are planned together in one visual style, with short video where it fits."
+      },
+      {
+        "n": "03",
+        "t": "Approve every post before it goes out.",
+        "d": "You see each post on a calendar with a clear status, so nothing publishes by surprise."
+      },
+      {
+        "n": "04",
+        "t": "Repeat the formats that earn attention.",
+        "d": "We read saves, shares and clicks, star what works and turn the best posts into paid ads."
+      }
+    ],
+    "illustrative": "Illustrative layout of a social content calendar. Not a client account, no real figures. TikTok, YouTube, LinkedIn and their logos belong to their owners."
+  },
+  "leak": {
+    "visual": "FeedGrid",
+    "barLogo": "",
+    "barTitle": "Feed view",
+    "pinsLabel": "Five places a social feed goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Pillars"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Design"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Video"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Rhythm"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Learning"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we make social content for.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: posts and carousels in one recognisable style."
+      },
+      {
+        "id": "bloom",
+        "line": "Education tours: social creatives for a family audience."
+      },
+      {
+        "id": "mvj",
+        "line": "A college: social creatives alongside lead generation."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run social media,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Set pillars and style",
+        "d": "We choose a few themes tied to your audience and one consistent design style.",
+        "get": "A content plan and a look.",
+        "img": "social/plan.jpg",
+        "alt": "A social planner with scheduled posts on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Build the template kit",
+        "d": "Posts, carousels and cover frames are designed once, so every month stays on brand.",
+        "get": "Templates your team can reuse.",
+        "img": "social/design.jpg",
+        "alt": "A designer building post templates on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Produce on a rhythm",
+        "d": "Posts, carousels and short video go out on a schedule both teams can sustain.",
+        "get": "A steady, consistent feed.",
+        "img": "social/video.jpg",
+        "alt": "A creator filming a short video with a phone on a ring light.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Learn and reuse",
+        "d": "We read what earns attention and turn the best posts into paid creative.",
+        "get": "A feed that gets sharper each month.",
+        "img": "social/insights.jpg",
+        "alt": "A social insights dashboard on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "UGC and video",
+        "href": "/services/ugc-and-video/"
+      },
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "AI photoshoot by MMC",
+        "href": "/ai-by-mmc/photoshoot/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

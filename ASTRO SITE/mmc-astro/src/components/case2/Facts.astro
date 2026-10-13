@@ -1,0 +1,26 @@
+---
+// 2. Facts bar: only what the data holds. Client, kind of brand, services, where it shows up, deliverables. No metrics here.
+import { href } from "../../lib/links";
+import { services } from "../../lib/case2";
+import type { CaseStudy } from "../../lib/work";
+interface Props { c: CaseStudy; d: any }
+const { c, d } = Astro.props as Props;
+const sv = services(c);
+---
+<section class="c2-facts" aria-label="Project facts">
+  <div class="c2-wrap">
+    <dl class="c2-facts__grid c2-rv">
+      <div><dt>Client</dt><dd><strong>{c.name}</strong></dd></div>
+      <div><dt>Kind of brand</dt><dd>{d.kind}</dd></div>
+      <div><dt>What we did</dt><dd>
+        <ul>{sv.map((s) => <li>{s.href ? <a href={href(s.href)}>{s.label}</a> : s.label}</li>)}</ul>
+      </dd></div>
+      <div><dt>Where it shows up</dt><dd>
+        <ul>{d.channels.map((x: string) => <li>{x}</li>)}</ul>
+      </dd></div>
+      <div class="c2-facts__wide"><dt>What the artwork shows</dt><dd>
+        <ul>{c.shows.map((x: string) => <li>{x}</li>)}</ul>
+      </dd></div>
+    </dl>
+  </div>
+</section>

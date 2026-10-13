@@ -43,6 +43,60 @@ const orStandIn = (n: ArrayLike<Element>): any => (n.length ? Array.from(n) : [d
 
 const bookCall = (src: string) => { const w = window as any; if (w.mmcBookCall) w.mmcBookCall(src); };
 
+/* Current page. Menu urls are old-site names rewritten by href(), so compare clean paths (no query, trailing slash).
+   A url with a #hash points into a page section, so it never counts as the current page. */
+const cleanPath = (u: string) => { const p = (u || "").split("?")[0]; return p ? (p.endsWith("/") ? p : p + "/") : ""; };
+const pageMatch = (url: string, path: string) => { const h = href(url); return !!path && h.startsWith("/") && !h.includes("#") && cleanPath(h) === path; };
+type Cur = { primary: string; expandKey: string };
+/* The primary group (and the expandable category) holding the current page. An inner link wins over a primary link. */
+const findCurrent = (path: string): Cur => {
+  let hit: Cur = { primary: "", expandKey: "" };
+  if (!path) return hit;
+  for (const l of links) {
+    for (const s of l.sub || []) {
+      if (s.inner ? s.inner.some((it) => pageMatch(it.url, path)) : pageMatch(s.url, path)) return { primary: l.label, expandKey: s.inner ? s.expandKey || "" : "" };
+    }
+    if (!hit.primary && pageMatch(l.url, path)) hit = { primary: l.label, expandKey: "" };
+  }
+  return hit;
+};
+/* A sub row (category) holds the current page: one of its inner links, or its own url when it has no inner list. */
+const subHolds = (s: { url: string; inner?: { url: string }[] }, path: string) => (s.inner ? s.inner.some((it) => pageMatch(it.url, path)) : pageMatch(s.url, path));
+const here = (on: boolean) => (on ? ({ "aria-current": "page" } as const) : {});
+
+/* Desktop two-pane menu: Tab goes primary link, then that link's open pane, then the next primary link; Shift+Tab mirrors it.
+   Without this, focusing a primary link swaps the pane, so Tab only ever reached the last item's pane.
+   Returns true when it moved focus itself. Collapsed inner lists are inert, so they are skipped. */
+const paneTab = (e: KeyboardEvent, root: HTMLElement | null): boolean => {
+  if (e.key !== "Tab" || !root) return false;
+  const ae = document.activeElement as HTMLElement | null;
+  if (!ae || !root.contains(ae)) return false;
+  const paneLinks = () => {
+    const pane = root.querySelector<HTMLElement>(".sunmenu__sub:not([hidden])");
+    return pane ? Array.from(pane.querySelectorAll<HTMLElement>("a[href], button:not([disabled])")).filter((n) => !n.closest("[inert]") && n.offsetParent !== null) : [];
+  };
+  const prim = Array.from(root.querySelectorAll<HTMLElement>(".sunmenu__primary-link"));
+  const pi = prim.indexOf(ae);
+  const inPane = paneLinks();
+  if (pi >= 0) {
+    if (!e.shiftKey && inPane.length) { e.preventDefault(); inPane[0].focus(); return true; }
+    if (e.shiftKey && pi > 0) {
+      // Back to the previous primary link (its focus handler opens its pane), then onto that pane's last link.
+      e.preventDefault(); prim[pi - 1].focus();
+      setTimeout(() => { const l = paneLinks(); if (l.length) l[l.length - 1].focus(); }, 0);
+      return true;
+    }
+    return false;
+  }
+  const k = inPane.indexOf(ae);
+  if (k < 0) return false;
+  const row = root.querySelector<HTMLElement>(".sunmenu__primary-row.is-active .sunmenu__primary-link");
+  const ri = row ? prim.indexOf(row) : -1;
+  if (e.shiftKey && k === 0 && row) { e.preventDefault(); row.focus(); return true; }
+  if (!e.shiftKey && k === inPane.length - 1 && ri >= 0 && ri < prim.length - 1) { e.preventDefault(); prim[ri + 1].focus(); return true; }
+  return false;
+};
+
 /* ---------------- Phone menu (<= 720px) ----------------
    Three levels in one overlay: root list -> directory (a primary link's sub items) -> category (its inner links).
    Every view stays mounted so each list keeps its own scroll position; only the current view is visible and focusable.
@@ -60,7 +114,7 @@ const BACK = (
 type Pos = { level: 0 | 1 | 2; p: string; c: string };
 const pad2 = (i: number) => String(i + 1).padStart(2, "0");
 
-function PhoneMenu({ navigate, overlayRef }: { navigate: (e: React.MouseEvent, url: string) => void; overlayRef: React.RefObject<HTMLDivElement> }) {
+function PhoneMenu({ navigate, overlayRef, path, cur }: { navigate: (e: React.MouseEvent, url: string) => void; overlayRef: React.RefObject<HTMLDivElement>; path: string; cur: Cur }) {
   const [pos, setPos] = React.useState<Pos>({ level: 0, p: "", c: "" });
   const from = React.useRef<string>("");
   const dir = React.useRef<"fwd" | "back">("fwd");
@@ -105,12 +159,12 @@ function PhoneMenu({ navigate, overlayRef }: { navigate: (e: React.MouseEvent, u
           {links.map((l) => (
             <li key={l.label}>
               {l.sub ? (
-                <button type="button" className="mm-row" data-rowkey={"r:" + l.label} aria-label={l.label + ", open submenu"}
+                <button type="button" className={"mm-row" + (cur.primary === l.label ? " is-current-group" : "")} data-rowkey={"r:" + l.label} aria-label={l.label + ", open submenu"}
                         onClick={() => go({ level: 1, p: l.label, c: "" }, "r:" + l.label)}>
                   <span className="mm-n">{l.n}</span><span className="mm-label">{l.label}</span><span className="mm-arr">{ARROW}</span>
                 </button>
               ) : (
-                <a className="mm-row" href={href(l.url)} data-rowkey={"r:" + l.label} onClick={(e) => navigate(e, href(l.url))}>
+                <a className="mm-row" href={href(l.url)} data-rowkey={"r:" + l.label} {...here(pageMatch(l.url, path))} onClick={(e) => navigate(e, href(l.url))}>
                   <span className="mm-n">{l.n}</span><span className="mm-label">{l.label}</span><span className="mm-arr">{ARROW}</span>
                 </a>
               )}
@@ -126,7 +180,7 @@ function PhoneMenu({ navigate, overlayRef }: { navigate: (e: React.MouseEvent, u
           <div key={"d:" + l.label} className={"mm-view " + st} {...inert(st)}>
             <div className="mm-bar">
               <button type="button" className="mm-back" onClick={() => back({ level: 0, p: "", c: "" }, "r:" + l.label)}>{BACK}<span>Menu</span></button>
-              <a className="mm-page" href={href(l.url)} onClick={(e) => navigate(e, href(l.url))}>{l.label} page{ARROW}</a>
+              <a className="mm-page" href={href(l.url)} {...here(pageMatch(l.url, path))} onClick={(e) => navigate(e, href(l.url))}>{l.label} page{ARROW}</a>
             </div>
             <h2 className="mm-title">{l.label}</h2>
             <p className="mm-hint">{l.hint}</p>
@@ -134,14 +188,14 @@ function PhoneMenu({ navigate, overlayRef }: { navigate: (e: React.MouseEvent, u
               {l.sub!.map((s, i) => (
                 <li key={s.name}>
                   {s.inner ? (
-                    <button type="button" className="mm-row mm-row--two" data-rowkey={"d:" + l.label + ":" + s.expandKey} aria-label={s.name + ", open submenu"}
+                    <button type="button" className={"mm-row mm-row--two" + (subHolds(s, path) ? " is-current-group" : "")} data-rowkey={"d:" + l.label + ":" + s.expandKey} aria-label={s.name + ", open submenu"}
                             onClick={() => go({ level: 2, p: l.label, c: s.expandKey! }, "d:" + l.label + ":" + s.expandKey)}>
                       <span className="mm-n">{pad2(i)}</span>
                       <span className="mm-body"><span className="mm-label">{s.name}</span><span className="mm-desc">{s.desc}</span></span>
                       <span className="mm-arr">{ARROW}</span>
                     </button>
                   ) : (
-                    <a className="mm-row mm-row--two" href={href(s.url)} onClick={(e) => navigate(e, href(s.url))}>
+                    <a className="mm-row mm-row--two" href={href(s.url)} {...here(pageMatch(s.url, path))} onClick={(e) => navigate(e, href(s.url))}>
                       <span className="mm-n">{pad2(i)}</span>
                       <span className="mm-body"><span className="mm-label">{s.name}</span><span className="mm-desc">{s.desc}</span></span>
                       <span className="mm-arr">{ARROW}</span>
@@ -167,7 +221,7 @@ function PhoneMenu({ navigate, overlayRef }: { navigate: (e: React.MouseEvent, u
             <ul className="mm-list mm-scroll" aria-label={s.name}>
               {s.inner!.map((it, i) => (
                 <li key={it.name}>
-                  <a className="mm-row" href={href(it.url)} onClick={(e) => navigate(e, href(it.url))}>
+                  <a className="mm-row" href={href(it.url)} {...here(pageMatch(it.url, path))} onClick={(e) => navigate(e, href(it.url))}>
                     <span className="mm-n">{pad2(i)}</span><span className="mm-label">{it.name}</span><span className="mm-arr">{ARROW}</span>
                   </a>
                 </li>
@@ -192,6 +246,12 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
     return () => mq.removeEventListener("change", sync);
   }, []);
   const menuBtnRef = React.useRef<HTMLButtonElement>(null);
+  // Current page, read on the client (the island renders the same markup on the server, then marks the match).
+  const [path, setPath] = React.useState("");
+  React.useEffect(() => { setPath(cleanPath(window.location.pathname)); }, []);
+  const cur = React.useMemo(() => findCurrent(path), [path]);
+  const curRef = React.useRef(cur);
+  curRef.current = cur;
   const onClose = React.useCallback(() => setMenuOpen(false), []);
 
   /* ---------------- Nav ---------------- */
@@ -318,9 +378,9 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
       return;
     }
     if (open) {
-      // Preselect Services every time menu opens, and replay the waterfall
-      setActive("Services");
-      setServiceExpanded("");
+      // Preselect the group holding the current page (Services when none does), open its category, and replay the waterfall
+      setActive(curRef.current.primary || "Services");
+      setServiceExpanded(curRef.current.expandKey);
       setSubDelayBase(0.95);
       setOpenEpoch((e) => e + 1);
 
@@ -357,14 +417,18 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       else if (isPhone) phoneTrapTab(e, overlayRef.current, triggerRef && triggerRef.current);
-      else mmcTrapTab(e, overlayRef.current);
+      else if (!paneTab(e, overlayRef.current)) mmcTrapTab(e, overlayRef.current);
     };
     window.addEventListener("keydown", onKey);
-    // Move focus into the menu once the open animation has made it visible.
+    // Move focus into the menu once the open animation has made it visible: the current group's row when the page is in the menu, else the first row.
     const t = setTimeout(() => {
-      const first = overlayRef.current && (isPhone
-        ? overlayRef.current.querySelector<HTMLElement>(".mm-view.is-current .mm-row")
-        : overlayRef.current.querySelector<HTMLElement>(".sm-link")?.closest<HTMLElement>("a, button"));
+      const root = overlayRef.current;
+      const cg = curRef.current.primary;
+      const first = root && ((isPhone
+        ? root.querySelector<HTMLElement>(`.mm-view.is-current [data-rowkey="r:${cg}"]`)
+        : root.querySelector<HTMLElement>(".sunmenu__primary-row.is-current-group .sunmenu__primary-link")) || (isPhone
+        ? root.querySelector<HTMLElement>(".mm-view.is-current .mm-row")
+        : root.querySelector<HTMLElement>(".sm-link")?.closest<HTMLElement>("a, button")));
       if (first) first.focus({ preventScroll: true });
     }, 450);
     const trigger = triggerRef && triggerRef.current;
@@ -454,7 +518,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
               </div>
             </div>
             <nav className="sm-fade mm-nav" aria-label="Menu">
-              <PhoneMenu key={openEpoch} navigate={navigate} overlayRef={overlayRef} />
+              <PhoneMenu key={openEpoch} navigate={navigate} overlayRef={overlayRef} path={path} cur={cur} />
             </nav>
             <div className="sm-fade mm-cta">
               <button className="btn btn--solid-blue glow-btn"
@@ -497,11 +561,12 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
             <ul>
               {links.map((l) => (
                 <li key={l.label}
-                    className={"sunmenu__primary-row " + (active === l.label ? "is-active" : "")}>
+                    className={"sunmenu__primary-row " + (active === l.label ? "is-active" : "") + (cur.primary === l.label ? " is-current-group" : "")}>
                   <a href={href(l.url)}
                      className="sunmenu__primary-link"
+                     {...here(pageMatch(l.url, path))}
                      onMouseEnter={() => selectPrimary(l.label)}
-                     onFocus={() => selectPrimary(l.label)}
+                     onFocus={() => { if (active !== l.label) selectPrimary(l.label); }}
                      onClick={(e) => navigate(e, href(l.url))}>
                     <span className="sunmenu__link-clip">
                       <span className="sm-link">
@@ -537,11 +602,12 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
                   const isExpanded = !!s.expandKey && serviceExpanded === s.expandKey;
                   return (
                     <li key={s.name}
-                        className={"sm-wf sunmenu__sub-item " + (isExpanded ? "is-expanded" : "")}
+                        className={"sm-wf sunmenu__sub-item " + (isExpanded ? "is-expanded" : "") + (subHolds(s, path) ? " is-current-group" : "")}
                         style={{ animationDelay: (subDelayBase + 0.14 + i * 0.07) + "s" }}>
                       <div className="sunmenu__sub-row">
                         <a href={href(s.url)}
                            className="sunmenu__sub-link"
+                           {...here(!s.inner && pageMatch(s.url, path))}
                            onClick={(e) => {
                              if (s.inner) {
                                e.preventDefault();
@@ -573,12 +639,12 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
                         )}
                       </div>
                       {s.inner && (
-                        <div className="sunmenu__inner">
+                        <div className="sunmenu__inner" {...(isExpanded ? {} : ({ inert: "" } as any))}>
                           <div className="sunmenu__inner-inner">
                             <ul>
                               {s.inner.map((it, idx) => (
                                 <li key={it.name}>
-                                  <a href={href(it.url)} onClick={(e) => navigate(e, href(it.url))}>
+                                  <a href={href(it.url)} {...here(pageMatch(it.url, path))} onClick={(e) => navigate(e, href(it.url))}>
                                     <span className="ix-n">{String(idx + 1).padStart(2, "0")}</span>
                                     <span className="ix-name">{it.name}</span>
                                     <span className="ix-arr" aria-hidden="true">↗</span>
@@ -596,6 +662,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
             ) : (
               <a className="sm-wf sunmenu__sub-cta"
                  href={href(activeItem.url)}
+                 {...here(pageMatch(activeItem.url, path))}
                  style={{ animationDelay: (subDelayBase + 0.14) + "s" }}
                  onClick={(e) => navigate(e, href(activeItem.url))}>
                 <span>Go to {activeItem.label}</span>

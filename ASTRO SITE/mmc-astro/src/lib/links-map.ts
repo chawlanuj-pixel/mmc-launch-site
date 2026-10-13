@@ -29,6 +29,22 @@ export const GUIDES_FOR: Record<string, string[]> = {
   "industries-d2c": ["contribution-margin-roas", "attribution-overlap", "creative-testing"],
   "industries-b2b": ["attribution-overlap"],
   "industries-education": ["attribution-overlap"],
+  // New hubs (key and path-slug alias, as for TOOLS_FOR). Calculators are D2C only, so education verticals get a guide but no calculators.
+  "aiseo": ["attribution-overlap"], "ai-seo": ["attribution-overlap"], "aeo": ["attribution-overlap"], "geo": ["attribution-overlap"],
+  "contentmktg": ["creative-testing", "attribution-overlap"], "content-marketing": ["creative-testing", "attribution-overlap"],
+  "gbp": ["attribution-overlap"], "google-business-profile": ["attribution-overlap"],
+  "d2cskin": ["contribution-margin-roas", "creative-testing"], "d2cbaby": ["contribution-margin-roas", "creative-testing"],
+  "d2cfnb": ["contribution-margin-roas", "attribution-overlap"], "d2cfash": ["creative-testing", "contribution-margin-roas"],
+  "b2bmfg": ["attribution-overlap"], "b2bsaas": ["attribution-overlap"],
+  "educol": ["attribution-overlap"], "edusab": ["attribution-overlap"],
+  // White label and WordPress hubs.
+  "wordpress": ["attribution-overlap"], "website-maintenance": ["attribution-overlap"], "white-label": ["attribution-overlap"],
+  "ppc": ["contribution-margin-roas", "attribution-overlap"], "meta-ads": ["creative-testing", "attribution-overlap"],
+  "social-media-management": ["creative-testing"], "email-marketing": ["contribution-margin-roas"],
+  "ecommerce": ["contribution-margin-roas"], "creative-and-video": ["creative-testing"], "reporting": ["attribution-overlap"],
+  "geo-aeo": ["attribution-overlap"], "link-building": ["attribution-overlap"], "digital-marketing": ["attribution-overlap"],
+  // WooCommerce and locations hubs.
+  "woocommerce": ["contribution-margin-roas"], "locations": ["attribution-overlap"], "thane": ["attribution-overlap"], "mumbai": ["attribution-overlap"], "indore": ["attribution-overlap"],
 };
 export const guidesFor = (key: string) => (GUIDES_FOR[key] || []).map((s) => GUIDES.find((g) => g.slug === s)).filter(Boolean) as typeof GUIDES;
 

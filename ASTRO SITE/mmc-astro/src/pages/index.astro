@@ -1,16 +1,21 @@
 ---
 // Main homepage (was the V2b preview). The previous homepage is kept at /home-previous/ (noindex).
 // Keeps the client-approved hover-to-project islands (HomeCaps), the nav and the footer.
-// New sections: proof hero, "who we work with" band, stacking work cards, platform ribbon,
-// four-step process, closing line with the calculators. Styles: home-v2b.css (hv- prefix),
+// V2 order: hero, brands, services, who-we-work-with + what we run for each (one band: OutcomeStrip), platforms, how-we-do-it accordion, work, voices,
+// studio, calculators, guides, FAQ (+FAQPage JSON-LD), closing audit form. Styles: home-v2b.css (hv- prefix),
 // on top of home4.css (hn- prefix) for the parts it still reuses.
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Shell from "../components/Shell.astro";
-import HeroSystem from "../components/home/HeroSystem.astro";
+import HeroSystem from "../components/home/HeroClean.astro";
 import Disciplines from "../components/home/Disciplines.astro";
 import WorkRail from "../components/home/WorkRail.astro";
 import OnCamera from "../components/home/OnCamera.astro";
 import AboutStudio from "../components/home/AboutStudio.astro";
+import OutcomeStrip from "../components/home/OutcomeStrip.astro";
+import HowAccordion from "../components/home/HowAccordion.astro";
+import HomeFaq from "../components/home/HomeFaq.astro";
+import ClosingForm from "../components/home/ClosingForm.astro";
+import homeFaq from "../data/pages/home-faq.json";
 import { href } from "../lib/links";
 import { pageHead } from "../lib/pagehead";
 import { tileBrands, tagsFor, brandName } from "../lib/work";
@@ -18,20 +23,8 @@ import { GUIDES } from "../lib/guides";
 import "../styles/hub-extra.css";
 import "../styles/home4.css";
 import "../styles/home-v2b.css";
+import "../styles/home-v2c.css";
 import "../styles/mobile-home.css"; // phones only (<= 760px); keep this import last
-
-
-const ICONS: Record<string, string> = {
-  d2c: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg>`,
-  b2b: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></svg>`,
-  edu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.2 2.7 3 6 3s6-1.8 6-3v-4.5M22 9v6"/></svg>`,
-};
-const AUDIENCES = [
-  { id: "d2c", n: "D2C brands", d: "Ads, creative, conversion and retention for brands that sell direct to shoppers.", s: "Ads, creative and retention for brands that sell direct.", img: "d2c/unboxing.jpg", href: "d2c.html", go: "See D2C work" },
-  { id: "b2b", n: "B2B companies", d: "Website, creative and paid media for a purchase that takes longer and involves several people.", s: "Website, creative and paid media for longer buying cycles.", img: "b2b/call.jpg", href: "b2b.html", go: "See B2B work" },
-  { id: "edu", n: "Education", d: "Search, landing pages, CRM and follow-up for institutes that earn a family's trust over weeks.", s: "Search, landing pages and CRM for trust-led institutes.", img: "edu/students.jpg", href: "education.html", go: "See education work" },
-];
-
 
 
 /* Logo copies: /assets/clients/sm/<id>.png, cropped to the mark and resized to 480px wide at most. */
@@ -57,20 +50,12 @@ const STACK = [
   { label: "Measurement", items: [["ga4.svg", "GA4"], ["tableau.png", "Tableau"], ["adobe.svg", "Adobe"], ["mixpanel.svg", "Mixpanel"]] },
 ];
 
-/* Steps: same copy as the live process section. */
-const STEPS = [
-  { n: "01", t: "We dig", d: "A full read of the account, the funnel and the cost sheet before anyone touches a budget.", w: "Week 1", img: "/assets/rt/data.jpg" },
-  { n: "02", t: "We model", d: "Unit economics first: break-even ROAS, CAC ceiling, payback. The plan has to survive the maths.", w: "Week 1 to 2", img: "/assets/ux/test.jpg" },
-  { n: "03", t: "We ship", d: "Creative, media and site changes go live together, because they only work together.", w: "Week 2 to 4", img: "/assets/d2c/packing.jpg" },
-  { n: "04", t: "We compound", d: "Weekly optimisation against contribution, monthly against the P&L. We're measured on staying.", w: "Month 2 onward", img: "/assets/home2/hero-main.jpg" },
-];
-
 /* Calculator lines: the copy already used on the D2C page. No figures. */
 const NUMBERS = [
   { big: "CM3", t: "Unit economics", d: "What one order leaves behind.", href: "/tools/unit-economics/" },
   { big: "ROAS", t: "Break-even ROAS", d: "The ROAS you need to break even.", href: "/tools/breakeven-roas/" },
   { big: "CAC", t: "CAC runway", d: "How long a new brand burns cash.", href: "/tools/cac-runway/" },
-  { big: "LTV:CAC", t: "LTV:CAC", d: "What a customer is worth, and when you recover it.", href: "/tools/ltv-cac/" },
+  { big: "LTV:CAC", t: "Customer value", d: "What a customer is worth, and when you recover it.", href: "/tools/ltv-cac/" },
 ];
 /* Latest insights: real published guides, not invented blog posts or dates (same copy as home-v2). */
 const INSIGHT_ORDER = ["attribution-overlap", "contribution-margin-roas", "creative-testing"];
@@ -102,7 +87,12 @@ if (!jsonld.some((b) => b["@type"] === "ProfessionalService") && org) {
   });
 }
 
-
+if (!jsonld.some((b) => b["@type"] === "FAQPage")) {
+  jsonld.push({
+    "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/#faq",
+    mainEntity: homeFaq.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  });
+}
 ---
 <BaseLayout title={TITLE} description={DESC} path="/" ogTitle={head.ogTitle} ogDescription={OG_DESC} ogAlt={head.ogAlt} jsonld={jsonld}>
   <script is:inline src="/assets/mmc-popularity.js"></script>
@@ -162,6 +152,10 @@ if (!jsonld.some((b) => b["@type"] === "ProfessionalService") && org) {
         </div>
       </section>
 
+      <Disciplines />
+
+      <OutcomeStrip />
+
       <!-- TOOLS: one straight ribbon of the vendors' own marks, a slim band of its own right after the clients. -->
       <section class="hv-plat no-section-bg" id="tools" aria-label="Platforms we run">
         <div class="hv-plat__in">
@@ -208,35 +202,35 @@ if (!jsonld.some((b) => b["@type"] === "ProfessionalService") && org) {
         })();
       </script>
 
+      <HowAccordion />
+
+      <WorkRail />
+
+      <OnCamera />
+
       <AboutStudio />
 
-      <!-- WHO WE WORK WITH: one sun band, three doors. D2C is the widest, none is the only one. -->
-      <section class="hv-who no-section-bg" id="who">
-        <div class="hn-wrap">
-          <div class="hv-head">
-            <p class="hn-eyebrow">Who we work with</p>
-            <h2>Three kinds of business, <em>one way of working.</em></h2>
+      <!-- CALCULATORS BAND (lead capture 1): the four numbers we start with, each a free tool. -->
+      <section class="hv2-sec hv2-calc no-section-bg" id="numbers" aria-labelledby="hv2-calc-h">
+        <div class="hn-wrap hv2-calc__in">
+          <div class="hv2-calc__copy">
+            <p class="hn-eyebrow">The numbers we start with</p>
+            <h2 id="hv2-calc-h">Know these four before you <em>spend another rupee.</em></h2>
+            <p>Free calculators for the maths every plan has to survive. Put in your own figures and see where you stand.</p>
+            <figure class="hv2-calc__fig"><img src="/assets/d2c/range.jpg" alt="A founder's product range laid out beside a laptop for costing" loading="lazy" decoding="async" width="1024" height="688" /></figure>
           </div>
-          <div class="hv-who__grid">
-            {AUDIENCES.map((a) => (
-              <a class={"hv-who__card hv-who__card--" + a.id} href={href(a.href)}>
-                <span class="hv-who__pic"><img src={"/assets/" + a.img} alt="" loading="lazy" decoding="async" width="720" height="540" /></span>
-                <span class="hv-who__body">
-                  <span class="hv-who__hd"><span class="hv-who__ic" aria-hidden="true"><Fragment set:html={ICONS[a.id]} /></span><b>{a.n}</b></span>
-                  <span class="hv-who__d"><span class="p-l">{a.d}</span><span class="p-s">{a.s}</span></span>
-                  <span class="hv-who__go">{a.go}<Fragment set:html={arrow} /></span>
-                </span>
+          <div class="hv-num__grid">
+            {NUMBERS.map((n) => (
+              <a class="hv-num__card" href={n.href}>
+                <span class="hv-num__big">{n.big}</span>
+                <b>{n.t}</b>
+                <span class="hv-num__d">{n.d}</span>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      <Disciplines />
-
-      <WorkRail />
-
-      <OnCamera />
 
       <!-- LATEST INSIGHTS: three real guides, image-led, a compact band that never exceeds one screen. -->
       <section class="hv-ins no-section-bg" id="insights">
@@ -267,57 +261,9 @@ if (!jsonld.some((b) => b["@type"] === "ProfessionalService") && org) {
         </div>
       </section>
 
-      <!-- PROCESS: four steps, a picture each. -->
-      <section class="hv-proc no-section-bg" id="process">
-        <div class="hn-wrap">
-          <div class="hv-head">
-            <p class="hn-eyebrow">How it works</p>
-            <h2>Four weeks to a <em>working engine.</em></h2>
-            <p class="hv-head__p"><span class="p-l">No three-month discovery. The model is built in week one, because everything after it depends on knowing what an order is actually worth.</span><span class="p-s">No three-month discovery: the model is built in week one.</span></p>
-          </div>
-          <ol class="hv-proc__row">
-            {STEPS.map((s) => (
-              <li class="hv-proc__card">
-                <span class="hv-proc__pic"><img src={s.img} alt="" loading="lazy" decoding="async" width="640" height="420" /></span>
-                <span class="hv-proc__meta"><b>{s.n}</b><i>{s.w}</i></span>
-                <h3>{s.t}</h3>
-                <p>{s.d}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+      <HomeFaq />
 
-      <!-- CLOSING: one large line and the booking action. -->
-      <section class="hv-close no-section-bg" id="close">
-        <div class="hn-wrap hv-close__in">
-          <div>
-            <p class="hn-eyebrow" style="color:var(--n-sun)">Ready when you are</p>
-            <h2>Let's find out what a customer is <em>actually worth.</em></h2>
-            <p><span class="p-l">Thirty minutes with a senior strategist. No deck, no pitch, a direct read on the three things to fix first.</span><span class="p-s">Thirty minutes with a senior strategist. No deck, no pitch.</span></p>
-          </div>
-          <div class="hv-close__cta">
-            <button type="button" class="btn btn--primary glow-btn" data-book="home-final">
-              <span class="glow-btn__glow" aria-hidden="true"></span>
-              <span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span>
-            </button>
-            <a class="btn btn--link" href={href("tools.html")}>Run the numbers yourself<span class="arrow"></span></a>
-          </div>
-        </div>
-        <div class="hn-wrap hv-close__tools">
-          <p class="hn-eyebrow" style="color:var(--n-sun)">The numbers we start with</p>
-          <p class="hv-close__tl">Know these four before you <em>spend another rupee.</em></p>
-          <div class="hv-num__grid">
-            {NUMBERS.map((n) => (
-              <a class="hv-num__card" href={n.href}>
-                <span class="hv-num__big">{n.big}</span>
-                <b>{n.t}</b>
-                <span class="hv-num__d">{n.d}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ClosingForm />
 
     </main>
   </Shell>

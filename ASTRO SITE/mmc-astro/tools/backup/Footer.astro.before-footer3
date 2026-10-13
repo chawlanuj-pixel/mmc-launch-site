@@ -1,0 +1,144 @@
+---
+// Footer: static. Ported from Footer.jsx. Link lists are verbatim, urls run through href().
+import { href } from "../lib/links";
+import { TOOLS, TOOLS_LABEL, SECONDARY } from "../lib/site";
+interface Props { cta?: { label: string; href: string; nav?: boolean } }
+// Default footer button: "Book a call", opens the booking modal. Hiring pages pass { nav: true, label, href } for a plain link.
+const { cta } = Astro.props;
+const nav = !!(cta && cta.nav);
+const ctaLabel = nav ? cta!.label : "Book a call";
+const ctaHref = nav ? cta!.href : "https://calendly.com/mmc-agency-ww/audit-onboarding-calls";
+const cols = [
+  {
+    title: "Company",
+    items: [
+    { name: "About MMC", url: "About.html" },
+    { name: "Our Work", url: "Our Work.html" },
+    { name: "AI by MMC", url: "/ai-by-mmc/" },
+    { name: "Careers", url: "Careers.html" },
+    { name: "Contact", url: "Contact.html" }]
+  },
+  {
+    title: "Services",
+    wide: true,
+    items: [
+    { name: "All services", url: "services.html" },
+    { name: "Branding", url: "branding.html" },
+    { name: "Packaging design", url: "packaging-design.html" },
+    { name: "UI/UX design", url: "ui-ux-design.html" },
+    { name: "Performance marketing", url: "performance-marketing.html" },
+    { name: "Meta Ads", url: "meta-ads.html" },
+    { name: "Google Ads", url: "google-ads.html" },
+    { name: "Amazon Ads", url: "amazon-ads.html" },
+    { name: "Quick commerce ads", url: "quick-commerce-ads.html" },
+    { name: "Lead generation", url: "lead-generation.html" },
+    { name: "Retention marketing", url: "retention-marketing.html" },
+    { name: "Online reputation management", url: "online-reputation-management.html" },
+    { name: "SEO", url: "seo.html" },
+    { name: "Conversion optimisation", url: "conversion-rate-optimisation.html" },
+    { name: "Influencer marketing", url: "influencer-marketing.html" },
+    { name: "Shopify development", url: "shopify-development.html" },
+    { name: "Website development", url: "web-development.html" },
+    { name: "Mobile app development", url: "mobile-app-development.html" },
+    { name: "UGC and video", url: "ugc-and-video.html" },
+    { name: "Social media creatives", url: "social-media-creatives.html" }]
+  },
+  {
+    title: "Industries and resources",
+    items: [
+    { name: "Industries", url: "industries.html" },
+    { name: "D2C brands", url: "d2c.html" },
+    { name: "B2B companies", url: "b2b.html" },
+    { name: "Education", url: "education.html" },
+    { name: "Resources", url: "resources.html" },
+    { name: "Guides", url: "guides.html" }]
+  },
+  {
+    title: TOOLS_LABEL,
+    items: [
+    ...TOOLS.map((t) => ({ name: t.short, url: t.href })),
+    { name: "D2C marketing glossary", url: "d2c-marketing-glossary.html" }]
+  }];
+---
+<footer id="footer" class="ft ink-ground">
+  <div class="ft__container">
+    <div class="ft__top">
+      <a class="ft__brand" href="/" aria-label="Monday Marketing Company">
+        <img src="/assets/logo-white-yellow.png" alt="MMC · Monday Marketing Company" class="ft__brand-img" style="width:158px;height:127px" />
+        <div class="ft__brand-tag">Design × Marketing × Technology × Content × AI</div>
+      </a>
+      <div class="ft__cta-stack">
+        {nav
+          ? <a class="ft__cta" href={ctaHref}>{ctaLabel}<span class="arrow"></span></a>
+          : <a class="ft__cta" href={ctaHref} target="_blank" rel="noreferrer" data-ft-book>
+          {ctaLabel}
+          <span class="arrow"></span>
+        </a>}
+        <button type="button" class="ft__cta-alt" data-ft-brief>{SECONDARY.brief}</button>
+      </div>
+    </div>
+
+    <div class="ft__cols">
+      {cols.map((c) => (
+        <div class={"ft__col" + (c.wide ? " ft__col--wide" : "")}>
+          <div class="ft__col-label">{c.title}</div>
+          <ul>
+            {c.items.map((it) => <li><a href={href(it.url)}>{it.name}</a></li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="ft__base">
+      <div class="ft__base-l">
+        <a href="tel:+917666309102">+91 766 630 9102</a>
+        <span class="ft__dot"></span>
+        <a href={href("Contact.html")}>Thane · Mumbai · Indore</a>
+      </div>
+      <div class="ft__base-r">
+        <a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href={href("Privacy.html")}>Privacy</a>
+        <a href={href("Terms.html")}>Terms</a>
+        <a href="#" data-ft-cookies>Cookies</a>
+      </div>
+    </div>
+
+    <div class="ft__legal">
+      <span>© 2026 Monday Marketing Company</span>
+      <span class="em-serif ft__tagline">Quietly outperforming, since 2019.</span>
+    </div>
+  </div>
+</footer>
+
+<style is:global>
+  /* Company | Services (two sub-columns, wide enough that labels stay on one line) | Industries | Calculators */
+  .ft__cols:has(.ft__col--wide) { grid-template-columns: minmax(0, .7fr) minmax(0, 2.1fr) minmax(0, 1fr) minmax(0, 1.05fr); column-gap: clamp(24px, 3.4vw, 64px); }
+  .ft__col--wide ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(18px, 2.2vw, 36px); row-gap: 11px; }
+  .ft .ft__col ul { gap: 11px; }
+  .ft .ft__col a { font-size: 14px; line-height: 1.35; }
+  .ft .ft__col--wide a { white-space: nowrap; }
+  .ft .ft__brand-tag { max-width: none; white-space: nowrap; }
+  .ft { padding-bottom: 92px; }
+  @media (max-width: 1100px) {
+    .ft__cols:has(.ft__col--wide) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .ft__col--wide { grid-column: 1 / -1; order: 4; }
+    .ft .ft__col--wide a { white-space: normal; }
+    .ft .ft__brand-tag { white-space: normal; }
+  }
+  @media (max-width: 720px) { .ft__cols:has(.ft__col--wide) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 720px) { .ft .ft__dot { display: none; } }
+  @media (max-width: 1100px) { .ft .ft__cta-alt { min-height: 44px; display: inline-flex; align-items: center; } }
+  @media (max-width: 460px) { .ft__cols:has(.ft__col--wide) { grid-template-columns: 1fr; } .ft__col--wide ul { grid-template-columns: 1fr 1fr; } }
+</style>
+
+<script>
+  // Wire the footer buttons to the global helpers from public/assets/mmc-forms.js and the cookie banner.
+  const w = window as any;
+  document.querySelectorAll("[data-ft-book]").forEach((el) =>
+    el.addEventListener("click", (e) => { if (w.mmcBookCall) w.mmcBookCall("footer", e); }));
+  document.querySelectorAll("[data-ft-brief]").forEach((el) =>
+    el.addEventListener("click", (e) => { if (w.mmcOpenBrief) w.mmcOpenBrief(e); }));
+  document.querySelectorAll("[data-ft-cookies]").forEach((el) =>
+    el.addEventListener("click", (e) => { e.preventDefault(); if (w.__mmcOpenCookies) w.__mmcOpenCookies(); }));
+</script>

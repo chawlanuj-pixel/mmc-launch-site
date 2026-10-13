@@ -1,0 +1,124 @@
+---
+// PANEL: ShopifyAdmin (kind "ShopifyAdmin"). A store admin beside a mobile storefront, Shopify mark, 5 steps. Product photos are crops of
+// existing d2c photos. Payment names are plain text chips, not logos.
+//   1 Catalogue: products list in the admin (Active, stock chips) and the collection grid on the phone. Tab: Products.
+//   2 Product page: the product editor (media, size variants) and the matching mobile product page with an add-to-cart button. Tab: Products.
+//   3 Speed: unused apps switched off, images optimised; the phone page shows a load bar filling. Tab: Online Store.
+//   4 Checkout: payment methods in the admin (UPI, Cards, COD, Wallets) and the phone checkout payment step. Tab: Settings.
+//   5 Retention: a "Repeat buyers" segment and a live reorder reminder; the phone shows the reminder message. Tab: Customers.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix shop-).
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const tabs = ["Products", "Online Store", "Settings", "Customers"];
+const prods = [[THUMBS.shirt, "Active"], [THUMBS.serum, "Active"], [THUMBS.jar, "Active"], [THUMBS.candle, "Draft"]];
+---
+<Frame logo="/assets/platforms/shopify.svg" title="Shopify admin" label="Illustration of a Shopify store admin and a mobile storefront. Not a client store." caption={W.illustrative} tabs={tabs} tabFor={[0, 0, 1, 2, 3]} accent="#008060" accentSoft="#E3F1EC" barBg="#F1F2F3">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4 s2-st--5 shop">
+    <nav class="shop-nav" aria-hidden="true">
+      {[["Home", "0"], ["Orders", "0"], ["Products", "1 2"], ["Customers", "5"], ["Marketing", "0"], ["Online store", "3"], ["Settings", "4"]].map(([n, st]) => <span class="shop-nav__i" data-s={st}>{n}</span>)}
+    </nav>
+    <section class="shop-main">
+      <div class="s2p-only-1 shop-list" style="--show:grid">
+        <p class="s2p-lbl">Products</p>
+        {prods.map(([th, s]) => <div class="s2p-card shop-row"><span class="s2p-ph shop-th" style={th as string} role="img" aria-label="Product photo"></span><i class="s2p-line s2p-line--m"></i><em class={"s2p-chip " + (s === "Active" ? "s2p-chip--ok" : "")}>{s}</em></div>)}
+      </div>
+      <div class="s2p-only-2 shop-edit" style="--show:grid">
+        <p class="s2p-lbl">Add product</p>
+        <div class="s2p-card shop-fields"><i class="s2p-line s2p-line--m"></i><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i></div>
+        <div class="shop-media"><span class="s2p-ph" style={THUMBS.shirt}></span><span class="s2p-ph" style={THUMBS.pack}></span><span class="s2p-ph" style={THUMBS.unbox}></span></div>
+        <div class="shop-chips"><span class="s2p-chip s2p-chip--blue">S</span><span class="s2p-chip s2p-chip--blue">M</span><span class="s2p-chip s2p-chip--blue">L</span><span class="s2p-chip s2p-chip--blue">XL</span></div>
+      </div>
+      <div class="s2p-only-3 shop-apps" style="--show:grid">
+        <p class="s2p-lbl">Apps and theme</p>
+        {["Unused review widget", "Old popup app", "Duplicate tracking"].map((n) => <div class="s2p-card shop-app"><b>{n}</b><span class="shop-tg"></span><em class="s2p-chip">Removed</em></div>)}
+        <div class="s2p-card shop-app"><b>Images</b><span class="shop-tg is-on"></span><em class="s2p-chip s2p-chip--ok">Optimised</em></div>
+      </div>
+      <div class="s2p-only-4 shop-pay" style="--show:grid">
+        <p class="s2p-lbl">Payments</p>
+        {["UPI", "Cards", "Cash on delivery", "Wallets"].map((n) => <div class="s2p-card shop-app"><b>{n}</b><span class="shop-tg is-on"></span><em class="s2p-chip s2p-chip--ok">On</em></div>)}
+        <div class="s2p-card shop-app"><b>Address autofill</b><span class="shop-tg is-on"></span><em class="s2p-chip s2p-chip--ok">On</em></div>
+      </div>
+      <div class="s2p-only-5 shop-seg" style="--show:grid">
+        <p class="s2p-lbl">Customers</p>
+        <div class="s2p-card shop-app"><b>Repeat buyers</b><i class="s2p-line s2p-line--s"></i><em class="s2p-chip s2p-chip--blue">Segment</em></div>
+        <div class="s2p-card shop-app"><b>Due for a reorder</b><i class="s2p-line s2p-line--s"></i><em class="s2p-chip s2p-chip--blue">Segment</em></div>
+        <div class="s2p-card shop-app shop-flow"><b>Reorder reminder</b><i class="s2p-line s2p-line--xs"></i><em class="s2p-chip s2p-chip--ok">Live</em></div>
+      </div>
+    </section>
+    <div class="shop-phone" role="img" aria-label="Mobile storefront">
+      <div class="shop-phone__in">
+        <div class="s2p-only-1 shop-grid" style="--show:grid">
+          <b>Collection</b>
+          <span class="s2p-ph" style={THUMBS.shirt}></span><span class="s2p-ph" style={THUMBS.serum}></span><span class="s2p-ph" style={THUMBS.jar}></span><span class="s2p-ph" style={THUMBS.candle}></span>
+        </div>
+        <div class="s2p-only-2 s2p-only-3 shop-pdp" style="--show:grid">
+          <span class="s2p-ph shop-pdp__img" style={THUMBS.shirt}></span>
+          <i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i>
+          <div class="shop-chips"><span class="s2p-chip">S</span><span class="s2p-chip s2p-chip--blue">M</span><span class="s2p-chip">L</span></div>
+          <span class="shop-cta">Add to cart</span>
+          <span class="shop-load s2p-only-3" style="--show:block"><i></i></span>
+        </div>
+        <div class="s2p-only-4 shop-co" style="--show:grid">
+          <b>Pay</b>
+          <span class="shop-opt is-on">UPI</span><span class="shop-opt">Card</span><span class="shop-opt">Cash on delivery</span>
+          <span class="shop-cta">Pay now</span>
+        </div>
+        <div class="s2p-only-5 shop-msg" style="--show:grid">
+          <img src="/assets/platforms/whatsapp.svg" alt="" width="18" height="18" />
+          <span class="shop-bub">Running low? Reorder in one tap.</span>
+          <span class="shop-cta">Reorder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.shop { flex-direction: row; gap: 1em; padding: 0; background: #F6F6F7; }
+.shop-nav { flex: 0 0 17%; display: grid; align-content: center; gap: .2em; padding: 1em .7em; background: #EBEBEB; }
+.shop-nav__i { padding: .55em .7em; border-radius: .6em; font: 700 .86em var(--font-body); color: #4A4A4A; }
+.s2-work[data-step="1"] .shop-nav__i[data-s~="1"], .s2-work[data-step="2"] .shop-nav__i[data-s~="2"], .s2-work[data-step="3"] .shop-nav__i[data-s~="3"], .s2-work[data-step="4"] .shop-nav__i[data-s~="4"], .s2-work[data-step="5"] .shop-nav__i[data-s~="5"] { background: #fff; color: #1A1A1A; box-shadow: 0 0 0 1px #D2D5D8; }
+.shop-main { background: none; flex: 1; min-width: 0; padding: 1em 0; display: grid; align-content: center; }
+.shop-main > div { gap: .6em; align-content: start; }
+.shop-row { display: grid; grid-template-columns: 2.6em minmax(0, 1fr) auto; align-items: center; gap: .8em; padding: .45em .7em; }
+.shop-th { display: block; width: 2.6em; height: 2.6em; border-radius: .5em; }
+.shop-fields { display: grid; gap: .6em; }
+.shop-media { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6em; }
+.shop-media span { display: block; aspect-ratio: 4 / 3; border-radius: .6em; }
+.shop-chips { display: flex; gap: .5em; }
+.shop-app { display: grid; grid-template-columns: minmax(0, 1fr) 2.4em auto; align-items: center; gap: .8em; font-size: .95em; padding: .6em .9em; }
+.shop-seg .shop-app { grid-template-columns: minmax(0, 1fr) 24% auto; }
+.shop-app b { font: 800 1em var(--font-body); color: #1A1A1A; }
+.shop-tg { position: relative; width: 2.4em; height: 1.3em; border-radius: 99px; background: #BCC0C4; }
+.shop-tg::after { content: ""; position: absolute; top: .15em; left: .15em; width: 1em; height: 1em; border-radius: 50%; background: #fff; }
+.shop-tg.is-on { background: #008060; } .shop-tg.is-on::after { left: 1.25em; }
+.shop-flow { border-color: #008060; }
+.shop-phone { flex: 0 0 30%; align-self: center; margin-right: 1.1em; aspect-ratio: 9 / 17; max-height: 94%; border-radius: 1.7em; border: .35em solid #1C2B33; background: #fff; overflow: hidden; box-shadow: 0 1em 2em -1em rgba(0, 0, 0, .5); }
+.shop-phone__in { height: 100%; padding: .9em .7em; font-size: .86em; display: grid; align-content: center; }
+.shop-phone__in > div { gap: .5em; align-content: start; }
+.shop-grid { grid-template-columns: 1fr 1fr; } .shop-grid b { grid-column: 1 / -1; font: 800 1em var(--font-display); }
+.shop-grid span { display: block; aspect-ratio: 1 / 1; border-radius: .5em; }
+.shop-pdp__img { display: block; aspect-ratio: 1 / 1; border-radius: .6em; }
+.shop-cta { display: block; padding: .65em; border-radius: .6em; background: #1A1A1A; color: #fff; text-align: center; font: 800 .9em var(--font-body); }
+.shop-load { height: .35em; border-radius: 99px; background: #E3E3E3; overflow: hidden; }
+.shop-load i { display: block; height: 100%; width: 100%; background: #008060; transform-origin: left; animation: shopL 2.4s var(--s2-ease) infinite; }
+@keyframes shopL { 0% { transform: scaleX(.1); } 70%, 100% { transform: scaleX(1); } }
+.shop-co b, .shop-msg b { font: 800 1em var(--font-display); }
+.shop-opt { display: block; padding: .6em .7em; border: 1px solid #D2D5D8; border-radius: .6em; font: 700 .9em var(--font-body); }
+.shop-opt.is-on { border-color: #008060; background: #E3F1EC; }
+.shop-msg { justify-items: start; }
+.shop-bub { padding: .7em .8em; border-radius: .2em .9em .9em .9em; background: #E7FFDB; font: 600 .9em/1.35 var(--font-body); color: #1C2B33; }
+.shop-msg .shop-cta { justify-self: stretch; }
+@media (prefers-reduced-motion: reduce) { .shop-load i { animation: none; } }
+@media (max-width: 560px) {
+  .shop-nav { display: none; }
+  .shop-main { padding: .9em 0 .9em .9em; }
+  .shop-phone { flex-basis: 36%; margin-right: .7em; }
+  .shop-row .s2p-chip, .shop-app .s2p-chip { display: none; }
+  .shop-app, .shop-seg .shop-app { grid-template-columns: minmax(0, 1fr) 2.4em; }
+}
+@media (max-width: 420px) { .s2-ui:has(.shop-main) .s2-ui__tab:nth-child(n+4) { display: block; } .s2-ui:has(.shop-main) .s2-ui__tab { padding: 6px 6px; } .s2-ui:has(.shop-main) .s2-ui__bar b { display: none; } }
+@media (max-width: 900px) { .s2-ui:has(.shop-main) .s2-st { padding: 10px 12px; gap: .6em; } }
+@media (max-width: 900px) { .shop-list .shop-row:nth-child(5), .shop-pay .shop-app:nth-child(6) { display: none; } }
+</style>
