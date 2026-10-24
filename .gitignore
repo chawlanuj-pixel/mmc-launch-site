@@ -47,3 +47,5 @@ ASTRO SITE/mmc-astro/dist-check/
 ASTRO SITE/backups/
 ASTRO SITE/admin-ui-backup-*/
 ASTRO SITE/mmc-astro/tools/backup/
+# Written by tools/sync-roles-index.mjs on every build (data for the Command Center API, which lives in mmc-deploy)
+ASTRO SITE/mmc-astro/public/api/_data/
