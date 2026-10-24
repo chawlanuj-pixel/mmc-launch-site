@@ -254,8 +254,8 @@ function CtPage({ onAudit }) {
             <aside className="ct-form-sec__r">
               <div className="ct-side">
                 <div className="ct-side-block">
-                  <div className="ct-side-label">Studio · Headquarters</div>
-                  <div className="ct-side-h">Thane · Mumbai</div>
+                  <div className="ct-side-label">Studio</div>
+                  <div className="ct-side-h">Mumbai</div>
                   <p className="ct-side-body">
                     4th Floor, Office No. 105<br/>
                     WeWork, Zenia Building<br/>

@@ -3,7 +3,7 @@
   "path": "/white-label/content-marketing/",
   "key": "wl_content_marketing",
   "title": "White-Label Content Marketing Services | MMC",
-  "description": "White-label content marketing for agencies: strategy, articles, guides, email copy and editorial calendars written to your client's voice and brand.",
+  "description": "White-label content marketing for agencies: briefs, articles, guides and editorial calendars written to each client's voice and delivered under your brand.",
   "ogTitle": "White-label content marketing for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label content marketing.",
@@ -39,7 +39,7 @@
       "@id": "https://www.mondaymarketing.company/white-label/content-marketing/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/content-marketing/",
       "name": "White-Label Content Marketing Services | MMC",
-      "description": "White-label content marketing for agencies: strategy, articles, guides, email copy and editorial calendars written to your client's voice and brand.",
+      "description": "White-label content marketing for agencies: briefs, articles, guides and editorial calendars written to each client's voice and delivered under your brand.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "This pairs with <a href=\"/white-label/seo/\">white-label SEO</a> for ranking, and mirrors our own <a href=\"/services/content-marketing/\">content marketing service</a>."
           ],
           "img": "sv/content.jpg",
-          "cap": "Illustrative scene: an editorial calendar being planned.",
+          "cap": "An editorial calendar being planned.",
           "table": {
             "caption": "White-label content formats compared",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Editorial strategy",
           "d": "Topics, formats and a calendar tied to the client's goals.",
           "img": "sv/content.jpg",
-          "alt": "Editorial strategy: illustrative scene"
+          "alt": "Editorial strategy"
         },
         {
           "t": "Articles and guides",
           "d": "Researched, structured and edited long-form content.",
           "img": "seo/pages.jpg",
-          "alt": "Articles and guides: illustrative scene"
+          "alt": "Articles and guides"
         },
         {
           "t": "Case studies",
           "d": "Client stories built from facts the client supplies.",
           "img": "work/review.jpg",
-          "alt": "Case studies: illustrative scene"
+          "alt": "Case studies"
         },
         {
           "t": "Email and newsletters",
           "d": "Copy for campaigns and nurture sequences.",
           "img": "rt/welcome.jpg",
-          "alt": "Email and newsletters: illustrative scene"
+          "alt": "Email and newsletters"
         },
         {
           "t": "Content refreshes",
           "d": "Updates to older pages that have slipped.",
           "img": "seo/intent.jpg",
-          "alt": "Content refreshes: illustrative scene"
+          "alt": "Content refreshes"
         },
         {
           "t": "Briefs for writers",
           "d": "Briefs you can use with your own writers too.",
           "img": "guides/library.jpg",
-          "alt": "Briefs for writers: illustrative scene"
+          "alt": "Briefs for writers"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label content marketing.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "sv/content.jpg",
-      "alt": "Why agencies choose MMC for white-label content marketing. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label content marketing.",
       "items": [
         {
           "t": "Facts checked",
@@ -309,7 +309,7 @@
       "h2a": "How white-label content marketing works,",
       "h2b": "step by step.",
       "img": "sv/content.jpg",
-      "alt": "How white-label content marketing works, step by step. Illustrative scene.",
+      "alt": "How white-label content marketing works, step by step.",
       "items": [
         {
           "t": "Voice and goals",
@@ -424,7 +424,10 @@
       "h2a": "Add content marketing",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first content marketing client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

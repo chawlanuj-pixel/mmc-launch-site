@@ -214,7 +214,7 @@
             "Timing follows application intakes and test dates, and trust matters because the decision is large."
           ],
           "img": "edu/nurture.jpg",
-          "cap": "Illustrative scene: a nurture series for an applicant."
+          "cap": "A nurture series for an applicant."
         },
         {
           "id": "recurring-problem",
@@ -346,7 +346,7 @@
     },
     "faqTitle": [
       "Questions about",
-      "Study abroad marketing."
+      "study abroad marketing."
     ],
     "faq": [
       {
@@ -386,7 +386,7 @@
     "process": {
       "h2a": "How we start with a consultancy,",
       "h2b": "step by step.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -430,37 +430,37 @@
           "t": "Country and course search",
           "d": "Pages and campaigns by destination, course and intake.",
           "img": "edu/search.jpg",
-          "alt": "Country and course search: illustrative scene"
+          "alt": "Country and course search"
         },
         {
           "t": "Qualifying forms",
           "d": "Short forms that sort leads by fit.",
           "img": "edu/enquiry.jpg",
-          "alt": "Qualifying forms: illustrative scene"
+          "alt": "Qualifying forms"
         },
         {
           "t": "Webinar and fair promotion",
           "d": "Campaigns and follow-up for sessions.",
           "img": "edu/campus.jpg",
-          "alt": "Webinar and fair promotion: illustrative scene"
+          "alt": "Webinar and fair promotion"
         },
         {
           "t": "CRM and routing",
           "d": "Leads sent to the right counsellor at the right time.",
           "img": "edu/crm.jpg",
-          "alt": "CRM and routing: illustrative scene"
+          "alt": "CRM and routing"
         },
         {
           "t": "Nurture series",
           "d": "WhatsApp and email between enquiry and intake.",
           "img": "edu/nurture.jpg",
-          "alt": "Nurture series: illustrative scene"
+          "alt": "Nurture series"
         },
         {
           "t": "Reviews and trust",
           "d": "Honest reviews and profiles students read.",
           "img": "edu/orm.jpg",
-          "alt": "Reviews and trust: illustrative scene"
+          "alt": "Reviews and trust"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "h2b": "for marketing.",
       "lede": "We protect counsellor time and your name.",
       "img": "edu/students.jpg",
-      "alt": "Why study abroad consultancies choose MMC for marketing. Illustrative scene.",
+      "alt": "Why study abroad consultancies choose MMC for marketing.",
       "items": [
         {
           "t": "Qualified first",
@@ -495,7 +495,7 @@
       "h2a": "How a study abroad engagement runs,",
       "h2b": "step by step.",
       "img": "edu/nurture.jpg",
-      "alt": "How a study abroad engagement runs, step by step. Illustrative scene.",
+      "alt": "How a study abroad engagement runs, step by step.",
       "items": [
         {
           "t": "Audit the funnel",

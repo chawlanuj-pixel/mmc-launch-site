@@ -1,35 +1,58 @@
 {
  "id": "awwbaby",
- "about": "{name} is a D2C brand that sells kids' products.",
- "description": "{name} case study: an ecommerce storefront with category pages for activewear, feeding, toys, bath and accessories, plus social creative and ads.",
+ "about": "{name} is an online store for newborn, baby and kids' products: toys, games, clothes, footwear, diapers and strollers.",
+ "description": "{name} case study: a custom-built Shopify store for newborn, baby and kids' products, with category pages, product pages, a cart and GoKwik checkout.",
  "heroTone": "paper",
- "kind": "D2C brand, kids' products",
+ "kind": "Online store, newborn, baby and kids' products",
  "channels": [
+  "Shopify store",
+  "GoKwik checkout",
   "Meta ad",
   "Google search ad"
  ],
  "brief": [
-  "{name} sells kids' products. This page covers an ecommerce storefront spanning the homepage, category pages for activewear, feeding, toys, bath and accessories, and a product detail page.",
-  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+  "{name} sells newborn, baby and kids' products online, from toys and games to clothes, footwear, diapers and strollers. The vision was a premium kids' shop where international products for children are available in India, covering everything the store sells today.",
+  "The expectation was practical: a working website with categories, product pages and listings. We custom-built the store on Shopify, kept apps and tools to a minimum, used Shopify's native features wherever they existed, and connected GoKwik for checkout."
  ],
  "showcases": [
   {
-   "layout": "stage",
-   "kicker": "Storefront",
-   "title": "Homepage and category tiles",
-   "text": "A bright hero, five category tiles and a strip of reassurance points beneath the fold.",
+   "layout": "devices",
+   "kicker": "Homepage",
+   "title": "A homepage that opens on the range",
+   "text": "Shop by age, category and brand sit in the main menu, with round category tiles straight under the banner. On a phone the menu folds behind one button.",
    "crops": [
-    "web"
+    "home-web",
+    "home-mob"
    ]
   },
   {
-   "layout": "split",
-   "side": "left",
-   "kicker": "Mobile",
-   "title": "Mobile product detail page",
-   "text": "Large photography, size picker and a fixed add to cart.",
+   "layout": "devices",
+   "kicker": "Category pages",
+   "title": "Listings that work like a shop shelf",
+   "text": "Each collection opens with a short description, then filters for availability and price, a sort control and product cards with brand, price and add to cart. The Games collection is shown.",
    "crops": [
-    "mobile"
+    "category-web",
+    "category-mob"
+   ]
+  },
+  {
+   "layout": "devices",
+   "kicker": "Product page",
+   "title": "Delivery and payment answered before add to cart",
+   "text": "A gallery, the price inclusive of taxes, the free delivery threshold, UPI, card and cash on delivery, then add to cart and buy it now. Returns and support sit just below.",
+   "crops": [
+    "product-web",
+    "product-mob"
+   ]
+  },
+  {
+   "layout": "devices",
+   "kicker": "Cart and checkout",
+   "title": "A Shopify cart with GoKwik checkout",
+   "text": "The cart shows the offers on hand and one checkout button. Checkout opens GoKwik's flow, which starts with a mobile number.",
+   "crops": [
+    "cart-web",
+    "cart-mob"
    ]
   },
   {
@@ -37,7 +60,7 @@
    "cols": 1,
    "kicker": "Social",
    "title": "Social creative tiles",
-   "text": "Two portrait tiles that reuse the site's lilac palette.",
+   "text": "Two portrait tiles in the store's lilac palette, made as campaign artwork.",
    "crops": [
     "social"
    ]
@@ -47,7 +70,7 @@
    "cols": 2,
    "kicker": "Ads",
    "title": "A Meta ad and a Google search ad",
-   "text": "Product cards that mirror the category tiles on the site.",
+   "text": "Campaign artwork in the same palette as the store, so an ad and the page it points to read as one brand.",
    "crops": [
     "meta",
     "google"
@@ -56,30 +79,49 @@
     "Meta ad",
     "Google search ad"
    ]
-  },
-  {
-   "layout": "ribbon",
-   "kicker": "The range",
-   "title": "Product photography",
-   "text": "From the same artwork.",
-   "crops": [
-    "products"
-   ]
   }
  ],
  "flow": {
-  "site": "Homepage, category tiles and mobile product page",
+  "site": "Homepage, category listings, product pages and cart on Shopify, with checkout by GoKwik",
   "reach": "Meta ad and Google search ad",
-  "make": "Social creative tiles"
+  "make": "Social creative tiles and ad artwork"
  },
  "action": "order",
+ "shots": {
+  "home-web": { "w": 1280, "h": 850, "bg": "#E9E1F6" },
+  "home-mob": { "w": 406, "h": 850, "bg": "#E9E1F6" },
+  "category-web": { "w": 1280, "h": 850, "bg": "#E9E1F6" },
+  "category-mob": { "w": 406, "h": 850, "bg": "#E9E1F6" },
+  "product-web": { "w": 1280, "h": 830, "bg": "#E9E1F6" },
+  "product-mob": { "w": 407, "h": 830, "bg": "#E9E1F6" },
+  "cart-web": { "w": 1280, "h": 850, "bg": "#E9E1F6" },
+  "cart-mob": { "w": 417, "h": 850, "bg": "#E9E1F6" }
+ },
+ "results": {
+  "lead": "A fast store that turns visits into orders.",
+  "note": "PageSpeed scores are for the homepage.",
+  "items": [
+   { "value": "93", "label": "PageSpeed, mobile", "basis": "Google PageSpeed Insights" },
+   { "value": "98", "label": "PageSpeed, desktop", "basis": "Google PageSpeed Insights" },
+   { "value": "1.06%", "label": "Conversion rate", "basis": "Current store conversion rate" }
+  ]
+ },
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "google": "{name} Google ad, client-approved artwork",
-  "products": "{name} product photography, client-approved artwork"
+  "hero": "{name} live homepage in a desktop browser beside its product page on a phone, screenshots of awwbaby.co.in",
+  "home-web": "{name} homepage on desktop with Shop by age, category and brand in the menu, an activewear banner and round category tiles",
+  "home-mob": "{name} homepage on a phone with the menu button, logo, cart and a full-width banner",
+  "category-web": "{name} Games category page on desktop with filters, sort and product cards showing brand, price and add to cart",
+  "category-mob": "{name} Games category page on a phone with a filter button and a two-column product grid",
+  "product-web": "{name} product page on desktop for the Busy Game Travel Set, with gallery, price, delivery and payment notes, add to cart and buy it now",
+  "product-mob": "{name} product page on a phone with the product photo, thumbnails, name and price",
+  "cart-web": "{name} cart on desktop with one item, available offers, subtotal and a checkout button",
+  "cart-mob": "GoKwik checkout on a phone, opened from the {name} cart and asking for a mobile number",
+  "web": "{name} website on a desktop screen",
+  "mobile": "{name} mobile page on a phone screen",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad",
+  "products": "{name} product photography",
+  "card": "{name} logo with a girl drawing and a boy with a backpack, beside a Busy Games set and a pencil pack"
  }
 }

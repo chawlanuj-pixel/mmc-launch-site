@@ -118,7 +118,7 @@
           "name": "Who is quick commerce advertising for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Quick commerce is mainly a D2C channel, so this page leads with D2C brands that can supply dark stores. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+            "text": "Quick commerce is mainly a D2C channel, so it suits D2C brands that can supply dark stores. B2B companies and educational institutes are usually better served by lead generation, which we also run."
           }
         },
         {
@@ -326,7 +326,7 @@
       },
       {
         "q": "Who is quick commerce advertising for?",
-        "a": "Quick commerce is mainly a D2C channel, so this page leads with D2C brands that can supply dark stores. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+        "a": "Quick commerce is mainly a D2C channel, so it suits D2C brands that can supply dark stores. B2B companies and educational institutes are usually better served by lead generation, which we also run."
       },
       {
         "q": "What do you need from us?",
@@ -392,37 +392,37 @@
           "t": "Listing and tile",
           "d": "Images, titles and pack information tuned to win the tile on a small screen.",
           "img": "qc/listing.jpg",
-          "alt": "Listing and tile: illustrative scene"
+          "alt": "Listing and tile"
         },
         {
           "t": "Platform ads",
           "d": "Search and category ads on each platform, matched to the products that sell.",
           "img": "qc/ads.jpg",
-          "alt": "Platform ads: illustrative scene"
+          "alt": "Platform ads"
         },
         {
           "t": "Dark store visibility",
           "d": "Where your stock sits by city and dark store, and what that means for ads.",
           "img": "qc/darkstore.jpg",
-          "alt": "Dark store visibility: illustrative scene"
+          "alt": "Dark store visibility"
         },
         {
           "t": "Availability",
           "d": "Early warnings so ad spend does not run when shelves are empty.",
           "img": "qc/availability.jpg",
-          "alt": "Availability: illustrative scene"
+          "alt": "Availability"
         },
         {
           "t": "Pricing and offers",
           "d": "Offers and price points reviewed against margin and competitors.",
           "img": "qc/report.jpg",
-          "alt": "Pricing and offers: illustrative scene"
+          "alt": "Pricing and offers"
         },
         {
           "t": "Blended reporting",
           "d": "Quick-commerce results read next to your site and marketplace sales.",
           "img": "services/performance.jpg",
-          "alt": "Blended reporting: illustrative scene"
+          "alt": "Blended reporting"
         }
       ]
     },
@@ -432,7 +432,7 @@
       "h2b": "with MMC.",
       "lede": "Speed matters here, and so does knowing where your stock is.",
       "img": "qc/darkstore.jpg",
-      "alt": "Why brands grow on quick commerce with MMC. Illustrative scene.",
+      "alt": "Why brands grow on quick commerce with MMC.",
       "items": [
         {
           "t": "Platform specialists",

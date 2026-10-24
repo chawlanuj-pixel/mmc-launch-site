@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "sv/tech.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a store site on a laptop and phone beside code.",
+    "alt": "A store site on a laptop and phone beside code.",
     "facts": [
       {
         "t": "Custom, not page-builder sprawl.",
@@ -161,7 +161,7 @@
         "d": "We sign the NDA, take your designs or the site to rescue, and write the scope and plugin policy.",
         "get": "A written scope with the theme and plugin approach.",
         "img": "company/call.jpg",
-        "alt": "Illustrative scene: a scoping call with a delivery partner.",
+        "alt": "A scoping call with a delivery partner.",
         "pos": "50% 50%"
       },
       {
@@ -170,7 +170,7 @@
         "d": "One small build, migration or rescue job to show how we work with your client's content.",
         "get": "A staging link and a change list to judge on.",
         "img": "web/seo.jpg",
-        "alt": "Illustrative scene: a content page being built on a laptop.",
+        "alt": "A content page being built on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -179,7 +179,7 @@
         "d": "Plugin vetting, staging, update routine and editing guide format are written once.",
         "get": "A short WordPress runbook for your team.",
         "img": "res/insights.jpg",
-        "alt": "Illustrative scene: a blog template on a laptop.",
+        "alt": "A blog template on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -188,7 +188,7 @@
         "d": "More builds and rescues go through the same routine, with developers added as work grows.",
         "get": "A WordPress service you can promise.",
         "img": "shop/speed.jpg",
-        "alt": "Illustrative scene: a page speed report on a laptop.",
+        "alt": "A page speed report on a laptop.",
         "pos": "50% 50%"
       }
     ]

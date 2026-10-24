@@ -221,3 +221,48 @@ Behaviour, legibility and accessibility only; no visual redesign. Backups: `tool
 - **Contrast.** Pinned-scene steps that are not in view dim to `.68` (was `.38`, 2.4:1); Meta mock "After" pill text uses
   `--mmc-blue`. Lighthouse accessibility: no colour-contrast failures on the eight audited pages.
 - **Reduced motion** now also stops the active pinned-scene step's fade (`.s2-work[data-step] .s2-st`).
+
+## Footer (2026-10-13)
+
+The owner unlocked the footer for one change and chose "Option A, slim hubs". It is fixed again from here: judge pages against
+it, do not restyle it. Files: `src/components/Footer.astro` (markup, the three button wirings, the accordion script) and
+`src/styles/footer3.css` (prefix `ft3-`). Backups: `tools/backup/*.before-footer3`. The old `.ft` / `.ft__*` rules in `shell.css`
+and `mobile-home.css` no longer match anything and can be deleted in a clean-up pass.
+
+- **Ground and container.** `<footer id="footer" class="ft3 ink-ground">`: the site's ink recipe with the drifting glow. Content sits
+  on `--shell-max` / `--shell-pad` (16 to 24px gutter on phones). White text; links white at .8, muted text and hairlines white at
+  .64 and .16; accents `--mmc-yellow`; focus ring `--focus-color-dark` (sun) with the focus tokens.
+- **Top row.** Logo (120 x 100 box), the tagline line in Nunito 700 15px, "Quietly outperforming, since 2019." in Raleway italic
+  600 16px sun; on the right the sun pill (`BOOK`, ink text, opens the booking modal through `data-ft-book` and
+  `window.mmcBookCall`, Calendly href as the no-JS fallback) and "Get my free audit" as an underlined text link (`data-ft-brief`,
+  `window.mmcOpenBrief`, falls back to `/audit/` where the audit modal is not on the page). Hiring pages pass the `cta` prop
+  through `Shell footerCta` for a plain link instead of the booking button. Where the page has the pre-footer band (`.pfc`) the
+  sun pill is hidden (`prefooter.css`), so a page never shows two booking buttons in a row.
+- **Hub columns.** Five columns (three from 1100px down): Services, Industries, White label, Resources, Company. Each column
+  is a hub link in Raleway 800 17px with a sun arrow, then four or five key links in Nunito 600 15px. "Register as a partner"
+  is the one highlighted link (sun, 800).
+- **Contact and legal.** One contact line: phone (`tel:`), `sales-in@` (`mailto:`), "Thane West, Maharashtra" to `/locations/thane/`,
+  Instagram and LinkedIn (new tab, `rel="noreferrer"`). Legal row: copyright and the LLP line, then Privacy, Terms, Cookies
+  (`data-ft-cookies` reopens the cookie preferences) and Sitemap.
+- **Tap targets.** Every footer link and summary is at least 44px tall at every width, so list rows sit on a 44px pitch.
+- **Phones (720px and below).** Each column is a native `<details>` group. The markup ships with `open`, so crawlers and
+  visitors without JavaScript see every link; a small script closes the groups on phones and keeps them open above 720px,
+  following `matchMedia` changes. On desktop the `<summary>` is hidden and the hub link is the heading. On phones the summary
+  is a 60px uppercase row with a sun chevron (turns sun and flips when open); inside, the hub link reads "All services", "All white-label services",
+  "All industries" and so on (Company has none, its first link is About MMC), and the links sit in two columns. The CTAs
+  stack full width, contact details are always visible, social links become 48px round icon buttons, and the legal links wrap.
+- **Bottom room.** The footer keeps 92px of bottom padding so the AI button never covers the legal row; phones add the
+  `mbar.css` spacer under it, and on the homepage (no spacer) the footer carries `148px + safe area` itself (820px and below).
+
+### The sitemap page
+
+`/sitemap/` (`src/pages/sitemap.astro`, `src/styles/sitemap-page.css`, prefix `smp-`), linked from the footer's legal row and
+included in the XML sitemap. Built at build time from the data, so it never goes stale: hub paths and titles from
+`src/data/hubs/*.json`, AI pages from `src/data/ai/pages.json`, case studies from `CASES`, guides from `GUIDES`, calculators from
+`TOOLS`, roles from `src/data/roles.json`. Link text is the page title without its brand suffix. Groups: Services (Marketing,
+Search and AI visibility, Design and build, Content and AI; a new service hub is placed by its first path segment), Industries
+(the three audiences with their verticals), White label, Work, Resources (guides, calculators, glossary), Company (careers with
+the open roles, locations with the city pages, contact) and Legal and audit. Never lists noindex or private pages (preview,
+thank-you, admin, the private pricing pages). Layout: paper ground, one H1 with a short lede and jump links, then each group as
+a hairline-topped row, H2 on the left and the links flowing in three columns on the right (one column below 720px).
+BreadcrumbList and WebPage JSON-LD.

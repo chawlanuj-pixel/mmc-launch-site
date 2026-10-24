@@ -228,7 +228,7 @@
         "d": "We review site, enquiries and CRM, and list the specifications and proof you hold.",
         "get": "A map of search and proof.",
         "img": "b2b/call.jpg",
-        "alt": "Illustrative scene: a person on a video call with a client.",
+        "alt": "A person on a video call with a client.",
         "pos": "50% 50%"
       },
       {
@@ -237,7 +237,7 @@
         "d": "Product and capability pages and case studies go live.",
         "get": "A site that shows proof.",
         "img": "seo/pages.jpg",
-        "alt": "Illustrative scene: a product category page on a laptop.",
+        "alt": "A product category page on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -246,7 +246,7 @@
         "d": "An RFQ form and landing pages ask the right questions.",
         "get": "A form that qualifies.",
         "img": "cro/forms.jpg",
-        "alt": "Illustrative scene: an enquiry form on a laptop.",
+        "alt": "An enquiry form on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -255,7 +255,7 @@
         "d": "Search and paid campaigns start and enquiries are tracked to orders.",
         "get": "Reporting by qualified enquiry.",
         "img": "b2b/qualify.jpg",
-        "alt": "Illustrative scene: a lead pipeline on a monitor.",
+        "alt": "A lead pipeline on a monitor.",
         "pos": "50% 50%"
       }
     ]

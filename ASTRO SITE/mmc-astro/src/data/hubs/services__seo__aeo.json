@@ -220,7 +220,7 @@
             "This is not a trick. It is how a good support article reads, written so a person or a machine can find the answer without hunting."
           ],
           "img": "seo/pages.jpg",
-          "cap": "Illustrative scene: a page planned around buyer questions."
+          "cap": "A page planned around buyer questions."
         },
         {
           "id": "aeo-vs",
@@ -463,37 +463,37 @@
           "t": "Question research",
           "d": "Buyer questions from search, sales and support, grouped by intent.",
           "img": "seo/intent.jpg",
-          "alt": "Question research: illustrative scene"
+          "alt": "Question research"
         },
         {
           "t": "Answer-first rewrites",
           "d": "Direct answers at the top of key pages, in plain words.",
           "img": "seo/pages.jpg",
-          "alt": "Answer-first rewrites: illustrative scene"
+          "alt": "Answer-first rewrites"
         },
         {
           "t": "FAQ builds",
           "d": "Real questions with short answers that match the page.",
           "img": "seo/aeo.jpg",
-          "alt": "FAQ builds: illustrative scene"
+          "alt": "FAQ builds"
         },
         {
           "t": "Schema markup",
           "d": "FAQ, product, course, how-to and organisation markup that fits.",
           "img": "web/seo.jpg",
-          "alt": "Schema markup: illustrative scene"
+          "alt": "Schema markup"
         },
         {
           "t": "Voice and local answers",
           "d": "Short spoken-style answers, with local detail where it matters.",
           "img": "sv/organic.jpg",
-          "alt": "Voice and local answers: illustrative scene"
+          "alt": "Voice and local answers"
         },
         {
           "t": "Accuracy reviews",
           "d": "Claims checked before publishing and rechecked when facts change.",
           "img": "seo/authority.jpg",
-          "alt": "Accuracy reviews: illustrative scene"
+          "alt": "Accuracy reviews"
         }
       ]
     },
@@ -503,7 +503,7 @@
       "h2b": "for AEO.",
       "lede": "We write answers a person would trust, then structure them for machines.",
       "img": "seo/pages.jpg",
-      "alt": "Why brands choose MMC for AEO. Illustrative scene.",
+      "alt": "Why brands choose MMC for AEO.",
       "items": [
         {
           "t": "Answers that are true",
@@ -528,7 +528,7 @@
       "h2a": "How an AEO engagement runs,",
       "h2b": "step by step.",
       "img": "seo/aeo.jpg",
-      "alt": "How an AEO engagement runs, step by step. Illustrative scene.",
+      "alt": "How an AEO engagement runs, step by step.",
       "items": [
         {
           "t": "Collect the questions",

@@ -21,8 +21,8 @@ export function cropOf(c: CaseStudy, d: any, name: string): Img {
 /** The text of a data field with the brand name filled in. */
 export const t = (s: string, c: CaseStudy) => sub(s, c);
 
-/** Hero crop, used as the thumbnail in pagers and More work. */
-export const thumbOf = (c: CaseStudy) => { const d = CASE2[c.id]; return d ? cropOf(c, d, "hero") : null; };
+/** Thumbnail in pagers, More work and the /work/ cards: the 4:3 brand scene ("card", logo in frame) when the brand has one, else the hero crop. */
+export const thumbOf = (c: CaseStudy) => { const d = CASE2[c.id]; return d ? cropOf(c, d, (crops as any)[c.id]?.card ? "card" : "hero") : null; };
 
 /** Previous and next case study in the filter order, wrapping round. Only brands that use the new template. */
 export function pager(id: string) {
@@ -38,16 +38,20 @@ export function services(c: CaseStudy) {
 }
 
 const listOf = (xs: string[]) => (xs.length <= 1 ? xs.join("") : xs.slice(0, -1).join(", ") + " and " + xs[xs.length - 1]);
+/** Lower-case the first letter of a list item unless it starts with a proper noun (Meta, Google, LinkedIn, a page name). */
+const PROPER = /^(Meta|Google|LinkedIn|Instagram|Amazon|Shopify|Journeys|Safety|GoKwik)\b/;
+const item = (s: string) => (PROPER.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1));
+const labelOf = (s: string) => (/^[A-Z0-9]{2}/.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1));
 /** Answer-first FAQ, built only from facts on record (scope, shows, service tags, label). */
 export function faqFor(c: CaseStudy, d: any) {
   const sv = services(c);
   const ind = industryPageFor(c.group);
   const lc = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
   return [
-    { q: `What did MMC build for ${c.name}?`, a: `${c.scope} The artwork on this page shows ${listOf(c.shows)}.` },
+    { q: `What did MMC build for ${c.name}?`, a: `${c.scope} The work shown includes ${listOf(c.shows.map(item))}.` },
     { q: `Which MMC services were used for ${c.name}?`, a: `For ${c.name} we worked on ${joinList(sv.map((s) => s.label))}.`, links: sv.filter((s) => s.href).map((s) => ({ label: s.label, href: s.href! })) },
-    { q: `What kind of brand is ${c.name}?`, a: `${sub(d.about, c)} It sits in our ${c.label} work${ind ? `, which is covered under ${ind.label}` : ""}.`, links: ind ? [{ label: ind.label, href: ind.href }] : [] },
-    { q: `How do I start a similar project?`, a: `Book a strategy call from this page. On the call a senior strategist reads your brand against what a ${c.group === "edu" ? "enrolment" : c.group === "b2b" ? "lead" : "sale"} is worth to you, and we agree where to begin. The audit page explains the next step.`, links: [{ label: "How the audit works", href: "/audit/" }] },
+    { q: `What kind of brand is ${c.name}?`, a: `${sub(d.about, c)} It sits in our ${labelOf(c.label)} work${ind ? `, which is covered under ${ind.label}` : ""}.`, links: ind ? [{ label: ind.label, href: ind.href }] : [] },
+    { q: `How do I start a similar project?`, a: `Book a strategy call from this page. On the call a senior strategist reads your brand against what ${c.group === "edu" ? "an enrolment" : c.group === "b2b" ? "a lead" : "a sale"} is worth to you, and we agree where to begin. The audit page explains the next step.`, links: [{ label: "How the audit works", href: "/audit/" }] },
   ];
 }
 export { CASES };

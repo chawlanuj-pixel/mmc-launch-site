@@ -2,8 +2,8 @@
   "file": "white-label-ppc.html",
   "path": "/white-label/ppc/",
   "key": "wl_ppc",
-  "title": "White-Label PPC and Google Ads Services | MMC",
-  "description": "White-label PPC and Google Ads management for agencies: search, Shopping, Performance Max and YouTube, run in your client's account and reported as yours.",
+  "title": "White-Label PPC and Google Ads Management | MMC",
+  "description": "White-label PPC and Google Ads management for agencies: search, Shopping, Performance Max and YouTube run in your client's account and reported as yours.",
   "ogTitle": "White-label PPC for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label PPC.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/ppc/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/ppc/",
-      "name": "White-Label PPC and Google Ads Services | MMC",
-      "description": "White-label PPC and Google Ads management for agencies: search, Shopping, Performance Max and YouTube, run in your client's account and reported as yours.",
+      "name": "White-Label PPC and Google Ads Management | MMC",
+      "description": "White-label PPC and Google Ads management for agencies: search, Shopping, Performance Max and YouTube run in your client's account and reported as yours.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -77,6 +77,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "What is white-label PPC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is pay-per-click management, mostly Google Ads, done by MMC and sold by your agency as its own. We build and run the campaigns in your client's account; you keep the client and the report."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Do you run ads in my client's own account?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -89,6 +97,22 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The client pays the platform directly. Our fee is separate and agreed in the scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does white-label PPC management cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the accounts, campaigns and platforms in scope, so we price each scope in writing rather than publish one rate. The fee is separate from ad spend, invoiced in Indian rupees or US dollars, with a three-month minimum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a white-label PPC report include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spend, conversions, cost per result and what changed, with notes for your client call. It carries your branding and can be sent from your domain."
           }
         },
         {
@@ -131,7 +155,7 @@
     "wm": "White-label PPC",
     "eyebrow": "● White-label PPC",
     "h1": [
-      "White-label PPC",
+      "White-label PPC and Google Ads",
       [
         "your clients see ",
         "as your work",
@@ -200,7 +224,7 @@
             "We use the same method as our own <a href=\"/services/performance-marketing/google-ads/\">Google Ads service</a>: tracking first, then structure, then scale."
           ],
           "img": "google/search.jpg",
-          "cap": "Illustrative scene: a Google Ads account review for an agency client.",
+          "cap": "A Google Ads account review for an agency client.",
           "table": {
             "caption": "White-label PPC campaign types",
             "head": [
@@ -231,6 +255,38 @@
               ]
             ]
           }
+        },
+        {
+          "id": "account-ownership",
+          "h": "Account ownership and access",
+          "paras": [
+            "Your client owns the Google Ads account and the billing on it. Ad spend is charged by Google to the client's own payment method, not paid through MMC.",
+            "We get access in one of two ways: linked through your agency's manager account, or added as a user directly with the access level you choose. Either way, the campaigns, history, audiences and conversion settings stay in the client's account.",
+            "If the work ends, you remove our access. Nothing needs to be rebuilt or handed back, because nothing ever left the account."
+          ]
+        },
+        {
+          "id": "ppc-month",
+          "h": "How a month of PPC management runs",
+          "paras": [
+            "Each week we review search terms and add negatives, adjust bids and budgets against the targets in the scope, test ad copy and assets, and check the product feed for Shopping. You get a short note on what changed and why.",
+            "Each month we review structure, tracking and the plan for the next month with you, before anything reaches your client."
+          ]
+        },
+        {
+          "id": "ppc-reports",
+          "h": "Reporting under your brand",
+          "paras": [
+            "The monthly report covers spend, conversions, cost per result and what we changed, with notes you can put in your own words. It goes out in your format, from your domain, under your logo. See <a href=\"/white-label/reporting/\">white-label reporting</a>."
+          ]
+        },
+        {
+          "id": "ppc-cost",
+          "h": "What white-label PPC costs",
+          "paras": [
+            "We do not publish a rate card. The fee depends on the number of accounts and campaigns, the platforms involved, how complex the account is, whether tracking or a product feed needs fixing first and how often you want reporting.",
+            "The fee is separate from ad spend, invoiced in Indian rupees or US dollars, with a minimum commitment of three months. See <a href=\"/white-label/pricing-models/\">white-label pricing models</a> for how to set your margin."
+          ]
         }
       ]
     },
@@ -244,37 +300,37 @@
           "t": "Account audits",
           "d": "A review of structure, tracking and waste you can use to win or retain a client.",
           "img": "google/report.jpg",
-          "alt": "Account audits: illustrative scene"
+          "alt": "Account audits"
         },
         {
           "t": "Search campaigns",
           "d": "Keyword structure, ad copy, bids and search term control.",
           "img": "google/search.jpg",
-          "alt": "Search campaigns: illustrative scene"
+          "alt": "Search campaigns"
         },
         {
           "t": "Shopping and feeds",
           "d": "Product feed clean-up and campaign structure for ecommerce.",
           "img": "google/feed.jpg",
-          "alt": "Shopping and feeds: illustrative scene"
+          "alt": "Shopping and feeds"
         },
         {
           "t": "Performance Max",
           "d": "Asset groups, audience signals and exclusions managed carefully.",
           "img": "google/pmax.jpg",
-          "alt": "Performance Max: illustrative scene"
+          "alt": "Performance Max"
         },
         {
           "t": "YouTube and video ads",
           "d": "Video campaigns with creative guidance.",
           "img": "google/video.jpg",
-          "alt": "YouTube and video ads: illustrative scene"
+          "alt": "YouTube and video ads"
         },
         {
           "t": "Conversion tracking",
           "d": "GA4, tags and offline conversions set up correctly.",
           "img": "meta/capi.jpg",
-          "alt": "Conversion tracking: illustrative scene"
+          "alt": "Conversion tracking"
         }
       ]
     },
@@ -284,7 +340,7 @@
       "h2b": "for white-label PPC.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "google/search.jpg",
-      "alt": "Why agencies choose MMC for white-label PPC. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label PPC.",
       "items": [
         {
           "t": "Tracking before spend",
@@ -309,7 +365,7 @@
       "h2a": "How white-label PPC works,",
       "h2b": "step by step.",
       "img": "google/search.jpg",
-      "alt": "How white-label PPC works, step by step. Illustrative scene.",
+      "alt": "How white-label PPC works, step by step.",
       "items": [
         {
           "t": "Get access",
@@ -396,12 +452,24 @@
     ],
     "faq": [
       {
+        "q": "What is white-label PPC?",
+        "a": "It is pay-per-click management, mostly Google Ads, done by MMC and sold by your agency as its own. We build and run the campaigns in your client's account; you keep the client and the report."
+      },
+      {
         "q": "Do you run ads in my client's own account?",
         "a": "Yes. The client owns the account and we are added as managers, so there is no lock-in."
       },
       {
         "q": "Who pays for the ad spend?",
         "a": "The client pays the platform directly. Our fee is separate and agreed in the scope."
+      },
+      {
+        "q": "How much does white-label PPC management cost?",
+        "a": "It depends on the accounts, campaigns and platforms in scope, so we price each scope in writing rather than publish one rate. The fee is separate from ad spend, invoiced in Indian rupees or US dollars, with a three-month minimum."
+      },
+      {
+        "q": "What does a white-label PPC report include?",
+        "a": "Spend, conversions, cost per result and what changed, with notes for your client call. It carries your branding and can be sent from your domain."
       },
       {
         "q": "Do you also do Microsoft or Amazon Ads?",
@@ -424,7 +492,10 @@
       "h2a": "Add PPC",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first PPC client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

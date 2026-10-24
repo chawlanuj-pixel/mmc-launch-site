@@ -123,7 +123,7 @@
         "d": "We review ads, site, CRM and follow-up speed against your intake plan.",
         "get": "A funnel map.",
         "img": "edu/enquiry.jpg",
-        "alt": "Illustrative scene: a parent and a student researching on a laptop.",
+        "alt": "A parent and a student researching on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -132,7 +132,7 @@
         "d": "Course pages, enquiry forms and routing go live.",
         "get": "A site that answers and captures.",
         "img": "edu/site.jpg",
-        "alt": "Illustrative scene: a course page on a laptop.",
+        "alt": "A course page on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -141,7 +141,7 @@
         "d": "Reply timing, nurture series and open-day booking start.",
         "get": "Enquiries that reach a counsellor.",
         "img": "edu/nurture.jpg",
-        "alt": "Illustrative scene: a nurture sequence on a laptop.",
+        "alt": "A nurture sequence on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -150,7 +150,7 @@
         "d": "Search and paid campaigns start and enquiry to admission is tracked.",
         "get": "Reporting by admission source.",
         "img": "edu/enrol.jpg",
-        "alt": "Illustrative scene: a student celebrating a confirmed admission.",
+        "alt": "A student celebrating a confirmed admission.",
         "pos": "50% 50%"
       }
     ]

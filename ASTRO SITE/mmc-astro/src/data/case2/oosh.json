@@ -9,15 +9,15 @@
   "Google Ads"
  ],
  "brief": [
-  "{name} sells everyday body essentials. This page covers a Shopify storefront, from the homepage through to a product detail page on desktop and mobile, together with the Meta and Google Ads that point at it.",
+  "{name} sells everyday body essentials. We built a Shopify storefront, from the homepage through to a product detail page on desktop and mobile, together with the Meta and Google Ads that point at it.",
   "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
  ],
  "showcases": [
   {
    "layout": "stage",
    "kicker": "Storefront",
-   "title": "Homepage and product listing, with a mobile product page",
-   "text": "A calm, product-first homepage with the range listed beneath the hero, and a phone-sized product page with colour choice, add to bag and expandable details.",
+   "title": "Homepage on desktop and mobile",
+   "text": "A soft pink homepage with one headline and one button beside the product, a delivery and cash on delivery bar on top, a row of product promises beneath, and the same hero on a phone.",
    "crops": [
     "web"
    ]
@@ -35,8 +35,8 @@
   {
    "layout": "ribbon",
    "kicker": "The range",
-   "title": "The products behind the pages",
-   "text": "Product photography from the same artwork.",
+   "title": "the products behind the pages",
+   "text": "Product photography from the same project.",
    "crops": [
     "product"
    ]
@@ -49,9 +49,9 @@
  },
  "action": "order",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "ads": "{name} Meta and Google Ads, client-approved artwork",
-  "product": "{name} product photography, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a pink hero reading Finally, a No-Bra Day That Actually Feels Good, with an Explore Now button beside the product",
+  "ads": "{name} Meta and Google Ads",
+  "product": "{name} silicone covers on a stone plinth in warm sunlight, beside a cream and a pink {name} box"
  }
 }

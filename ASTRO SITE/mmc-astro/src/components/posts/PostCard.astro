@@ -1,0 +1,34 @@
+---
+// A Command Centre article as a cover card: the gd3-cover anatomy of src/components/guides3/Cover.astro (same picture, tag line,
+// title and foot) plus the description and the date, for /blog/, the CMS guides in /guides/ and "Keep reading".
+// Styles: guides3.css (gd3-cover) and posts.css (pst-). Copy comes from the post; nothing is retyped here.
+import "../../styles/posts.css";
+import { niceDate } from "../../lib/posts";
+interface Props {
+  href: string; img: string; kicker: string; tag?: string; title: string; desc?: string;
+  min?: number; date?: string; n?: string; go: string; headingLevel?: 2 | 3;
+}
+const { href, img, kicker, tag, title, desc, min, date, n, go, headingLevel = 3 } = Astro.props;
+const H = headingLevel === 2 ? "h2" : "h3";
+---
+<a class="gd3-cover gd3-cover--md gd3-rise pst-card" href={href}>
+  <span class="gd3-cover__pic">
+    <img src={"/assets/" + img} alt="" width="1200" height="806" loading="lazy" decoding="async" />
+    {n && <span class="gd3-cover__n" aria-hidden="true">{n}</span>}
+  </span>
+  <span class="gd3-cover__body">
+    <span class="gd3-cover__tag">{kicker}{tag && <i aria-hidden="true"></i>}{tag}</span>
+    <H class="gd3-cover__h">{title}</H>
+    {desc && <span class="pst-card__d">{desc}</span>}
+    <span class="gd3-cover__foot">
+      <span class="gd3-cover__min pst-card__meta">
+        {typeof min === "number" && <span>{min + " min read"}</span>}
+        {date && <i aria-hidden="true"></i>}
+        {date && <time datetime={date}>{niceDate(date)}</time>}
+      </span>
+      <span class="gd3-cover__go">{go}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+      </span>
+    </span>
+  </span>
+</a>

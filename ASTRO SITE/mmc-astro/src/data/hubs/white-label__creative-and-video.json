@@ -200,7 +200,7 @@
             "Direct versions of this work are on our <a href=\"/services/ugc-and-video/\">UGC and video</a> and <a href=\"/services/social-media/\">social creatives</a> pages. They feed <a href=\"/white-label/meta-ads/\">white-label Meta Ads</a> well."
           ],
           "img": "ugc/edit.jpg",
-          "cap": "Illustrative scene: a creative brief being reviewed.",
+          "cap": "A creative brief being reviewed.",
           "table": {
             "caption": "Creative formats and typical turnaround use",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Ad creative",
           "d": "Static and carousel ads built to platform specs.",
           "img": "social/design.jpg",
-          "alt": "Ad creative: illustrative scene"
+          "alt": "Ad creative"
         },
         {
           "t": "Video editing",
           "d": "Cuts, captions and formats from supplied footage.",
           "img": "ugc/edit.jpg",
-          "alt": "Video editing: illustrative scene"
+          "alt": "Video editing"
         },
         {
           "t": "UGC production",
           "d": "Creator-style videos from briefs and products.",
           "img": "ugc/shoot.jpg",
-          "alt": "UGC production: illustrative scene"
+          "alt": "UGC production"
         },
         {
           "t": "Creative refreshes",
           "d": "Variants to fight fatigue in running ads.",
           "img": "ugc/refresh.jpg",
-          "alt": "Creative refreshes: illustrative scene"
+          "alt": "Creative refreshes"
         },
         {
           "t": "Brand design support",
           "d": "Logos, collateral and templates on request.",
           "img": "brand/logo.jpg",
-          "alt": "Brand design support: illustrative scene"
+          "alt": "Brand design support"
         },
         {
           "t": "Creative testing support",
           "d": "Variants prepared for structured tests.",
           "img": "ugc/test.jpg",
-          "alt": "Creative testing support: illustrative scene"
+          "alt": "Creative testing support"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label creative, video and UGC.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "ugc/edit.jpg",
-      "alt": "Why agencies choose MMC for white-label creative, video and UGC. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label creative, video and UGC.",
       "items": [
         {
           "t": "To brand rules",
@@ -309,7 +309,7 @@
       "h2a": "How white-label creative, video and UGC works,",
       "h2b": "step by step.",
       "img": "ugc/edit.jpg",
-      "alt": "How white-label creative, video and UGC works, step by step. Illustrative scene.",
+      "alt": "How white-label creative, video and UGC works, step by step.",
       "items": [
         {
           "t": "Brief",
@@ -424,7 +424,10 @@
       "h2a": "Add creative, video and UGC",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first creative, video and UGC client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

@@ -214,7 +214,7 @@
             "Shelf life, packaging and delivery condition also affect trust and returns."
           ],
           "img": "qc/listing.jpg",
-          "cap": "Illustrative scene: a product listing on a quick commerce app."
+          "cap": "A product listing on a quick commerce app."
         },
         {
           "id": "recurring-problem",
@@ -346,7 +346,7 @@
     },
     "faqTitle": [
       "Questions about",
-      "Food and beverage marketing."
+      "food and beverage marketing."
     ],
     "faq": [
       {
@@ -386,7 +386,7 @@
     "process": {
       "h2a": "How we start with a food brand,",
       "h2b": "step by step.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -430,37 +430,37 @@
           "t": "Taste-led video",
           "d": "Short video around taste, texture and occasion.",
           "img": "ugc/shoot.jpg",
-          "alt": "Taste-led video: illustrative scene"
+          "alt": "Taste-led video"
         },
         {
           "t": "Bundles and offers",
           "d": "Basket builders tested against your cost sheet.",
           "img": "d2c/range.jpg",
-          "alt": "Bundles and offers: illustrative scene"
+          "alt": "Bundles and offers"
         },
         {
           "t": "Quick commerce and marketplaces",
           "d": "Listings, availability and ads where buyers shop.",
           "img": "qc/darkstore.jpg",
-          "alt": "Quick commerce and marketplaces: illustrative scene"
+          "alt": "Quick commerce and marketplaces"
         },
         {
           "t": "Performance media",
           "d": "Meta and Google planned on contribution margin.",
           "img": "meta/scale.jpg",
-          "alt": "Performance media: illustrative scene"
+          "alt": "Performance media"
         },
         {
           "t": "Packing and pack design",
           "d": "Packs that arrive well and look right on a shelf.",
           "img": "d2c/packing.jpg",
-          "alt": "Packing and pack design: illustrative scene"
+          "alt": "Packing and pack design"
         },
         {
           "t": "Reorder flows",
           "d": "Reminders and subscriptions timed to pack size.",
           "img": "d2c/retention.jpg",
-          "alt": "Reorder flows: illustrative scene"
+          "alt": "Reorder flows"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "h2b": "for marketing.",
       "lede": "We count the whole cost of an order before we scale.",
       "img": "d2c/packing.jpg",
-      "alt": "Why food and beverage brands choose MMC for marketing. Illustrative scene.",
+      "alt": "Why food and beverage brands choose MMC for marketing.",
       "items": [
         {
           "t": "Full unit economics",
@@ -495,7 +495,7 @@
       "h2a": "How a food and beverage engagement runs,",
       "h2b": "step by step.",
       "img": "d2c/range.jpg",
-      "alt": "How a food and beverage engagement runs, step by step. Illustrative scene.",
+      "alt": "How a food and beverage engagement runs, step by step.",
       "items": [
         {
           "t": "Audit economics and shelves",

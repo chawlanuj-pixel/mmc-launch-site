@@ -118,7 +118,7 @@
           "name": "Who is Amazon Ads for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Amazon is mainly a D2C and product channel, so this page leads with D2C brands. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders. For B2B and education, lead generation is usually the better fit."
+            "text": "Amazon is mainly a D2C and product channel, so this work is built for D2C brands that sell physical products. B2B companies with products on Amazon can use the same method, judged on margin and total sales. For B2B and education, lead generation is usually the better fit."
           }
         },
         {
@@ -333,7 +333,7 @@
       },
       {
         "q": "Who is Amazon Ads for?",
-        "a": "Amazon is mainly a D2C and product channel, so this page leads with D2C brands. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders. For B2B and education, <a href=\"lead-generation.html\">lead generation</a> is usually the better fit."
+        "a": "Amazon is mainly a D2C and product channel, so this work is built for D2C brands that sell physical products. B2B companies with products on Amazon can use the same method, judged on margin and total sales. For B2B and education, <a href=\"lead-generation.html\">lead generation</a> is usually the better fit."
       },
       {
         "q": "What do you need from us?",
@@ -399,37 +399,37 @@
           "t": "Listing improvements",
           "d": "Titles, images, bullets and A+ content fixed before ad spend is added.",
           "img": "amazon/listing.jpg",
-          "alt": "Listing improvements: illustrative scene"
+          "alt": "Listing improvements"
         },
         {
           "t": "Sponsored Products and Brands",
           "d": "Campaign structures built around keywords, products and clear goals.",
           "img": "amazon/ads.jpg",
-          "alt": "Sponsored Products and Brands: illustrative scene"
+          "alt": "Sponsored Products and Brands"
         },
         {
           "t": "Stock-aware advertising",
           "d": "Ads that follow inventory so spend does not chase products you cannot ship.",
           "img": "amazon/stock.jpg",
-          "alt": "Stock-aware advertising: illustrative scene"
+          "alt": "Stock-aware advertising"
         },
         {
           "t": "Brand Store and presence",
           "d": "Storefront and brand content that support the ads.",
           "img": "amazon/store.jpg",
-          "alt": "Brand Store and presence: illustrative scene"
+          "alt": "Brand Store and presence"
         },
         {
           "t": "Search term care",
           "d": "Regular pruning of waste and expansion of the terms that convert.",
           "img": "amazon/report.jpg",
-          "alt": "Search term care: illustrative scene"
+          "alt": "Search term care"
         },
         {
           "t": "Total-sales reporting",
           "d": "Ad spend read against all sales, not only ad-attributed orders.",
           "img": "services/performance.jpg",
-          "alt": "Total-sales reporting: illustrative scene"
+          "alt": "Total-sales reporting"
         }
       ]
     },
@@ -439,7 +439,7 @@
       "h2b": "with MMC.",
       "lede": "We read Amazon next to the rest of your business.",
       "img": "amazon/stock.jpg",
-      "alt": "Why brands run Amazon with MMC. Illustrative scene.",
+      "alt": "Why brands run Amazon with MMC.",
       "items": [
         {
           "t": "Listing first",

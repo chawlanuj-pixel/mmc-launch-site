@@ -67,7 +67,8 @@
   }
 
   function buildMailto(subject, data) {
-    var lines = Object.keys(data).filter(function (k) { return k !== "_rc" && k !== "_hp"; }).map(function (k) {
+    // Only what the visitor typed: internal keys (_k, _attr, _consent, _page...) and nested objects stay out of the email text.
+    var lines = Object.keys(data).filter(function (k) { var v = data[k]; return k.charAt(0) !== "_" && !(v && typeof v === "object" && !Array.isArray(v)); }).map(function (k) {
       var v = data[k];
       if (Array.isArray(v)) v = v.join(", ");
       return k + ": " + (v === undefined || v === null || v === "" ? "-" : v);
@@ -88,13 +89,38 @@
     return payload;
   }
 
+  // Attribution: remember where the visitor first arrived from this session (sessionStorage only, cleared when the tab closes; no cookie).
+  // Sent with every submission so the CRM can show source, campaign and landing page. Missing values stay missing.
+  var ATTR_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid", "msclkid", "gbraid", "wbraid"];
+  function captureAttribution() {
+    try {
+      if (sessionStorage.getItem("mmc_attr")) return;
+      var qs = new URLSearchParams(location.search), a = { ts: Date.now(), landing: location.pathname + location.search.slice(0, 200), referrer: (document.referrer || "").slice(0, 255) };
+      ATTR_KEYS.forEach(function (k) { var v = qs.get(k); if (v) a[k] = v.slice(0, 190); });
+      sessionStorage.setItem("mmc_attr", JSON.stringify(a));
+    } catch (e) {}
+  }
+  function cookie(n) { try { var m = document.cookie.match(new RegExp("(?:^|; )" + n + "=([^;]*)")); return m ? decodeURIComponent(m[1]).slice(0, 200) : ""; } catch (e) { return ""; } }
+  // Meta click id and browser id: only present if the visitor arrived from a Meta ad or a Meta pixel is on the page. Used to match the lead to the ad for the Conversions API.
+  function readAttribution() { try { var a = JSON.parse(sessionStorage.getItem("mmc_attr") || "null") || undefined; if (a) { var fc = cookie("_fbc"), fp = cookie("_fbp"); if (fc) a.fbc = fc; if (fp) a.fbp = fp; } return a; } catch (e) { return undefined; } }
+  captureAttribution();
+  function newKey() {
+    try { if (window.crypto && crypto.randomUUID) return crypto.randomUUID().replace(/-/g, ""); } catch (e) {}
+    return (Date.now().toString(36) + Math.random().toString(36).slice(2, 12) + Math.random().toString(36).slice(2, 12)).slice(0, 40);
+  }
+
   function submitLead(data, opts) {
     opts = opts || {};
     var subject = opts.subject || "New enquiry, mondaymarketing.company";
     var payload = Object.assign({}, data, {
       _page: (typeof location !== "undefined" ? location.pathname : ""),
-      _submittedAt: new Date().toISOString()
+      _submittedAt: new Date().toISOString(),
+      _k: newKey(),               // one key per submission: a network retry of the same submission can never create a second record
+      _attr: readAttribution()
     });
+    // Cookie choice at the moment of submission, so the CRM only shares this lead with ad platforms if marketing was allowed. The same key is the Meta event id, so the Pixel and the server event count once.
+    try { var ck = JSON.parse(localStorage.getItem("mmc-cookies-v1") || "null"); if (ck && typeof ck === "object") payload._consent = { marketing: !!ck.marketing, analytics: !!ck.analytics }; } catch (e) {}
+    try { sessionStorage.setItem("mmc_last_eid", payload._k); } catch (e) {}
     withHoneypot(payload);
 
     if (ENDPOINT) {
@@ -109,14 +135,15 @@
             if (!res.ok) {
               // The receiver refused (captcha, rate limit) or mail is down: open the pre-filled email so a real lead still reaches a human.
               try { window.location.href = buildMailto(subject, payload); } catch (e) {}
-              return { ok: true, mode: "mailto", status: res.status };
+              return { ok: true, mode: "mailto", status: res.status, saved: false };
             }
-            return { ok: true, mode: "endpoint", status: res.status };
+            return res.json().then(function (j) { return { ok: true, mode: "endpoint", status: res.status, saved: !!(j && j.saved), duplicate: !!(j && j.duplicate) }; },
+                                   function () { return { ok: true, mode: "endpoint", status: res.status, saved: false }; });
           })
           .catch(function (err) {
             // Network failed, fall back so the lead still reaches a human.
             try { window.location.href = buildMailto(subject, payload); } catch (e) {}
-            return { ok: true, mode: "mailto", error: String(err) };
+            return { ok: true, mode: "mailto", error: String(err), saved: false };
           });
       });
     }
@@ -179,6 +206,8 @@
         mode: (result && result.mode) || "",
         name: String(data.name || "").split(" ")[0],
         brand: data.brand || "",
+        eid: (function () { try { return sessionStorage.getItem("mmc_last_eid") || ""; } catch (e) { return ""; } })(),
+        dup: !!(result && result.duplicate),   // the server already had this lead (a resend): the thank-you page must not count a second Pixel Lead
         at: Date.now()
       }));
     } catch (e) {}
@@ -191,7 +220,9 @@
   function validPhone(v) { var d = cleanPhone(v).replace(/\D/g, ""); return d.length >= 8 && d.length <= 15; }
   var PHONE_MSG = "Please enter a phone or WhatsApp number we can reach you on, with country code if outside India.";
 
-  window.MMCForms = { submitLead: submitLead, buildMailto: buildMailto, goThanks: goThanks, cleanPhone: cleanPhone, validPhone: validPhone, phoneMsg: PHONE_MSG };
+  // Cookie choice as the forms send it (`_consent`), for senders that do not go through submitLead (careers, white-label).
+  function readConsent() { try { var ck = JSON.parse(localStorage.getItem("mmc-cookies-v1") || "null"); return ck && typeof ck === "object" ? { marketing: !!ck.marketing, analytics: !!ck.analytics } : undefined; } catch (e) { return undefined; } }
+  window.MMCForms = { submitLead: submitLead, buildMailto: buildMailto, goThanks: goThanks, cleanPhone: cleanPhone, validPhone: validPhone, phoneMsg: PHONE_MSG, attribution: readAttribution, consent: readConsent };
 })();
 
 /* ── Booking ──────────────────────────────────────────────────────────────

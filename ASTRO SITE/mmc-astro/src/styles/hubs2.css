@@ -369,35 +369,118 @@ a:hover .h2-ring { background: var(--mmc-blue); border-color: var(--mmc-blue); c
   .h2-ah__media { margin-inline: calc(var(--n-pad) * -1); height: auto; aspect-ratio: 16 / 10; border-radius: 0; }
 }
 
-/* ── Journey route (audience hubs) ────────────────────────── */
-.h2-jr { list-style: none; margin: 0; padding: 0; position: relative; counter-reset: jr; }
-.h2-jr::before { content: ""; position: absolute; left: 27px; top: 28px; bottom: 28px; width: 2px; background: linear-gradient(var(--mmc-blue-100), var(--mmc-blue-300)); }
-.h2-jr > li { counter-increment: jr; position: relative; display: grid; grid-template-columns: 56px minmax(0, 3.3fr) minmax(0, 6.7fr); gap: 18px clamp(22px, 3vw, 52px); align-items: center; padding: clamp(10px, 1.1vw, 16px) 0; }
-.h2-jr__n { position: relative; z-index: 1; align-self: start; margin-top: 8px; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--mmc-white); border: 2px solid var(--mmc-blue); font-family: var(--font-display); font-weight: 800; font-size: 18px; color: var(--mmc-blue); }
-.h2-jr__n::before { content: counter(jr, decimal-leading-zero); }
-.h2-jr > li:last-child .h2-jr__n { background: var(--mmc-blue); color: var(--mmc-white); }
-.h2-jr .h2-pic { aspect-ratio: 16 / 10; border-radius: var(--radius-card); }
-.h2-jr__k { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
-.h2-jr h3 { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: clamp(22px, 2.1vw, 32px); letter-spacing: -0.032em; line-height: 1.04; color: var(--n-fg); }
-.h2-jr__pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 26px; margin-top: 10px; }
-.h2-jr__pair p { margin: 0; font-family: var(--font-body); font-size: 15.5px; line-height: 1.55; color: var(--n-fg-2); }
-.h2-jr__pair p b { display: block; margin-bottom: 4px; font-weight: 800; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+/* ── Journey, one stage at a time (audience hubs; Journey.astro) ──
+   Without JS: every stage is a stacked card. With JS (.is-tabs): a numbered step row (role=tablist) above one card;
+   all cards share one grid cell, so the block keeps the tallest card's height and never jumps between stages. */
+.h2-jr { position: relative; }
+.h2-jr__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.h2-jr__stage {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 3.4vw, 48px);
+  padding: clamp(16px, 1.7vw, 24px); border-radius: var(--radius-card);
+  background: var(--mmc-white); border: 1px solid rgba(var(--mmc-ink-rgb), .12);
+}
+.h2-jr__pic { min-height: 320px; border-radius: var(--radius-in); }
+.h2-jr__pic img { position: absolute; inset: 0; }
+.h2-jr__b { display: flex; flex-direction: column; min-width: 0; padding: 8px 8px 0 0; }
+.h2-jr__kick { font-family: var(--font-body); font-weight: 800; font-size: 12px; line-height: 1.35; letter-spacing: .14em; text-transform: uppercase; color: var(--n-fg-3); }
+.h2-jr h3 { margin: 8px 0 0; font-family: var(--font-display); font-weight: 800; font-size: clamp(26px, 2.4vw, 34px); line-height: 1.1; letter-spacing: -0.02em; color: var(--n-fg); text-wrap: balance; }
+.h2-jr__pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 28px; margin-top: 22px; }
+.h2-jr__pair p { margin: 0; padding-top: 16px; border-top: 3px solid var(--mmc-blue); }
+.h2-jr__pair p b { display: block; margin-bottom: 8px; font-family: var(--font-body); font-weight: 800; font-size: 12px; line-height: 1.2; letter-spacing: .14em; text-transform: uppercase; }
+.h2-jr__pair .h2-jr__leak { border-top-color: var(--mmc-error); }
+.h2-jr__leak { font-family: var(--font-display); font-weight: 700; font-size: clamp(18px, 1.4vw, 20px); line-height: 1.4; color: var(--n-fg); }
 .h2-jr__leak b { color: var(--mmc-error); }
-.h2-jr__fix b { color: var(--mmc-success); }
-.h2-jr .h2-go { margin-top: 8px; }
+.h2-jr__fix { font-family: var(--font-body); font-size: clamp(16px, 1.2vw, 17px); line-height: 1.55; color: var(--n-fg-2); }
+.h2-jr__fix b { color: var(--mmc-blue); }
+.h2-jr__foot { margin-top: auto; padding-top: 20px; display: flex; align-items: center; min-height: 68px; }
+
+/* Step row: 44px numbered dots joined by a thin line; earlier stages pale blue, the active one filled ink. */
+.h2-jr__tabs { position: relative; display: flex; gap: 8px; margin-bottom: clamp(24px, 2.6vw, 36px); }
+.h2-jr__tab {
+  position: relative; flex: 1 1 0; min-width: 0; min-height: 44px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px;
+  padding: 0; border: 0; background: none; text-align: left; cursor: pointer; color: var(--n-fg-2);
+}
+.h2-jr__tab:not(:last-child)::after { content: ""; position: absolute; top: 21px; left: 52px; right: -2px; height: 2px; border-radius: 2px; background: var(--n-line-2); }
+.h2-jr__tab.is-done::after { background: var(--mmc-blue-300); }
+.h2-jr__dot {
+  flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  border: 2px solid var(--n-line-2); background: var(--mmc-white); color: var(--mmc-blue-900);
+  font-family: var(--font-display); font-weight: 800; font-size: 16px; line-height: 1; font-variant-numeric: lining-nums;
+  transition: background var(--dur-quick) var(--ease), border-color var(--dur-quick) var(--ease), color var(--dur-quick) var(--ease);
+}
+.h2-jr__nm { padding-right: 12px; font-family: var(--font-body); font-weight: 800; font-size: 14px; line-height: 1.25; }
+.h2-jr__tab:hover .h2-jr__dot { border-color: var(--mmc-blue); }
+.h2-jr__tab.is-done .h2-jr__dot { background: var(--mmc-blue-100); border-color: var(--mmc-blue); color: var(--mmc-blue); }
+.h2-jr__tab[aria-selected="true"] { color: var(--n-fg); }
+.h2-jr__tab[aria-selected="true"] .h2-jr__dot { background: var(--mmc-blue-900); border-color: var(--mmc-blue-900); color: var(--mmc-white); }
+.h2-page .h2-jr__tab:focus-visible { outline-offset: 4px; border-radius: var(--radius-md); }
+
+/* Back / Next: bottom-right of the card on desktop, a full-width row under it on phones. */
+.h2-jr__nav { display: flex; gap: 10px; }
+.h2-jr__btn {
+  min-height: 48px; padding: 0 24px; border-radius: var(--radius-pill); cursor: pointer;
+  border: 1px solid var(--n-line-2); background: var(--mmc-white); color: var(--mmc-blue-900);
+  font-family: var(--font-body); font-weight: 800; font-size: 14px; line-height: 1;
+  transition: background var(--dur-quick) var(--ease), border-color var(--dur-quick) var(--ease);
+}
+.h2-jr__btn:hover { border-color: var(--mmc-blue); }
+.h2-jr__btn--next { background: var(--mmc-blue-900); border-color: var(--mmc-blue-900); color: var(--mmc-white); }
+.h2-jr__btn--next:hover { background: var(--mmc-blue-700); border-color: var(--mmc-blue-700); }
+
+.h2-jr.is-tabs .h2-jr__list { gap: 0; }
+.h2-jr.is-tabs .h2-jr__stage { grid-area: 1 / 1; }
+.h2-jr.is-tabs .h2-jr__stage[hidden] { display: grid; visibility: hidden; }
+.h2-jr.is-tabs .h2-jr__stage:not([hidden]) { animation: h2-jr-in var(--dur-base) var(--ease-out); }
+@keyframes h2-jr-in { from { opacity: 0; } }
+.h2-jr.is-tabs .h2-jr__foot { padding-right: 250px; }
+.h2-jr.is-tabs .h2-jr__nav { position: absolute; right: calc(clamp(16px, 1.7vw, 24px) + 8px); bottom: clamp(16px, 1.7vw, 24px); }
+@media (prefers-reduced-motion: reduce) {
+  .h2-jr.is-tabs .h2-jr__stage:not([hidden]) { animation: none; }
+  .h2-jr__dot, .h2-jr__btn { transition: none; }
+}
+@media (max-width: 1000px) {
+  .h2-jr__pair { grid-template-columns: minmax(0, 1fr); }
+  .h2-jr.is-tabs .h2-jr__foot { padding-right: 0; }
+  .h2-jr.is-tabs .h2-jr__nav { position: static; justify-content: flex-end; margin-top: 16px; }
+}
+@media (max-width: 720px) {
+  .h2-jr__tabs {
+    overflow-x: auto; margin-inline: calc(var(--n-pad) * -1); padding: 4px var(--n-pad); margin-bottom: 18px;
+    scrollbar-width: none; overscroll-behavior-x: contain;
+  }
+  .h2-jr__tabs::-webkit-scrollbar { display: none; }
+  .h2-jr__tab {
+    flex: none; flex-direction: row; align-items: center; gap: 0; padding: 0 16px; white-space: nowrap;
+    border: 1px solid var(--n-line-2); border-radius: var(--radius-pill); background: var(--mmc-white); color: var(--mmc-blue-900);
+  }
+  .h2-jr__tab:not(:last-child)::after { content: none; }
+  .h2-jr__dot, .h2-jr__tab.is-done .h2-jr__dot, .h2-jr__tab[aria-selected="true"] .h2-jr__dot {
+    width: auto; height: auto; display: inline; border: 0; border-radius: 0; background: none; color: inherit;
+    font-family: var(--font-body); font-size: 14px;
+  }
+  .h2-jr__dot::after { content: "\00a0·\00a0"; }
+  .h2-jr__nm { padding: 0; }
+  .h2-jr__tab[aria-selected="true"] { background: var(--mmc-blue-900); border-color: var(--mmc-blue-900); color: var(--mmc-white); }
+  .h2-page .h2-jr__tab:focus-visible { outline-offset: 2px; border-radius: var(--radius-pill); }
+  .h2-jr__stage { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 0; overflow: hidden; }
+  .h2-jr__pic { min-height: 0; height: clamp(170px, 44vw, 280px); border-radius: 0; }
+  .h2-jr__b { padding: 20px 18px; }
+  .h2-jr__kick { font-size: 11px; }
+  .h2-jr h3 { margin-top: 6px; font-size: 26px; }
+  .h2-jr__pair { gap: 16px; margin-top: 16px; }
+  .h2-jr__pair p { padding-top: 12px; }
+  .h2-jr__pair p b { margin-bottom: 6px; font-size: 11px; }
+  .h2-jr__leak { font-size: 17px; }
+  .h2-jr__fix { font-size: 15px; }
+  .h2-jr__foot { padding-top: 8px; min-height: 52px; }
+  .h2-jr.is-tabs .h2-jr__nav { margin-top: 14px; }
+  .h2-jr__btn { flex: 1 1 0; padding: 0 16px; }
+}
 .h2-reads { margin-top: clamp(30px, 3.4vw, 48px); padding: clamp(18px, 2vw, 26px); border-radius: var(--radius-card); background: var(--mmc-white); border: 1px solid rgba(var(--mmc-ink-rgb), .12); }
 .h2-reads ul { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px 26px; }
 .h2-reads b { display: block; font-family: var(--font-display); font-weight: 800; font-size: 17px; letter-spacing: -0.015em; color: var(--n-fg); }
 .h2-reads span { display: block; margin-top: 4px; font-family: var(--font-body); font-size: 14.5px; line-height: 1.5; color: var(--n-fg-2); }
 @media (max-width: 1000px) { .h2-reads ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 900px) {
-  .h2-jr::before { left: 19px; }
-  .h2-jr > li { grid-template-columns: 40px minmax(0, 1fr); gap: 12px 16px; }
-  .h2-jr__n { width: 40px; height: 40px; font-size: 14px; margin-top: 0; }
-  .h2-jr .h2-pic { grid-column: 2; }
-  .h2-jr__b { grid-column: 2; }
-  .h2-jr__pair { grid-template-columns: 1fr; }
-}
 @media (max-width: 560px) { .h2-reads ul { grid-template-columns: 1fr; } }
 
 /* ── Lead-quality loop (B2B, education): ink band ─────────── */

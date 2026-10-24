@@ -112,7 +112,7 @@
           "name": "Who is social media creative for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Brands that want a consistent presence tied to results. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+            "text": "Brands that want a consistent presence tied to results. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on creative that feeds ads, B2B on credibility and thought leadership, education on campus life and admissions moments."
           }
         },
         {
@@ -341,7 +341,7 @@
       },
       {
         "q": "Who is social media creative for?",
-        "a": "Brands that want a consistent presence tied to results. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+        "a": "Brands that want a consistent presence tied to results. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on creative that feeds ads, B2B on credibility and thought leadership, education on campus life and admissions moments."
       },
       {
         "q": "What do you need from us?",
@@ -389,7 +389,7 @@
       "h2b": "want it to do a job.",
       "good": {
         "t": "You want a consistent, well-made presence that supports sales or enquiries.",
-        "why": "D2C brands get creative that feeds ads, and B2B and education brands get credibility families and buyers see."
+        "why": "D2C brands get creative that feeds ads, and B2B and education brands get credibility families and buyers see. See <a href=\"/industries/education/\">education marketing</a>."
       },
       "not": {
         "t": "You want posting only, with no performance goal.",
@@ -406,37 +406,37 @@
           "t": "Content pillars",
           "d": "A few themes that fit your brand and what your audience wants to see.",
           "img": "social/plan.jpg",
-          "alt": "Content pillars: illustrative scene"
+          "alt": "Content pillars"
         },
         {
           "t": "Feed design",
           "d": "Templates and visuals that look like you at a glance.",
           "img": "social/design.jpg",
-          "alt": "Feed design: illustrative scene"
+          "alt": "Feed design"
         },
         {
           "t": "Short video",
           "d": "Reels and short clips planned, shot and edited for each platform.",
           "img": "social/video.jpg",
-          "alt": "Short video: illustrative scene"
+          "alt": "Short video"
         },
         {
           "t": "Content calendar",
           "d": "A steady rhythm that your team can see and approve ahead of time.",
           "img": "social/calendar.jpg",
-          "alt": "Content calendar: illustrative scene"
+          "alt": "Content calendar"
         },
         {
           "t": "Community care",
           "d": "Timely replies to comments and messages.",
           "img": "social/insights.jpg",
-          "alt": "Community care: illustrative scene"
+          "alt": "Community care"
         },
         {
           "t": "Insights and review",
           "d": "What worked, what did not and what we will change next month.",
           "img": "services/creative.jpg",
-          "alt": "Insights and review: illustrative scene"
+          "alt": "Insights and review"
         }
       ]
     },
@@ -446,7 +446,7 @@
       "h2b": "with MMC.",
       "lede": "We connect organic content to what your paid and search teams learn.",
       "img": "social/video.jpg",
-      "alt": "Why brands work on social with MMC. Illustrative scene.",
+      "alt": "Why brands work on social with MMC.",
       "items": [
         {
           "t": "One idea, many formats",

@@ -2,16 +2,16 @@
 // /insights/, /guides/, the articles, the homepage insights band and (via `short`) the nav and footer lists.
 // Never retype a guide title anywhere else. Read time is computed from the real article text.
 export interface GuideMeta {
-  slug: string; n: string; tag: string; topic: "margin" | "creative";
+  slug: string; n: string; tag: string; topic: "margin" | "creative" | "admissions";
   title: string;                     // the one full title: H1-level wording, cards, page <title>
   short: string;                     // the one short title: nav, footer, homepage band, compact lists
   desc: string;                      // the one description, used on every card and as the meta description
   href: string; img: string;
-  tool: { label: string; href: string; blurb: string };
+  tool?: { label: string; href: string; blurb: string }; // optional: a guide with no matching calculator has none
   q: string;                         // the reader's question, for the "start here" cards
   stand: string;                     // standfirst under the H1
   after: string;                     // block id after which the inline tool box sits
-  tryIt: string;                     // inline tool box line
+  tryIt?: string;                    // inline tool box line (only with a tool)
   next: { h: string; lede: string; label: string; href: string; img: string }; // end-of-article panel
 }
 
@@ -43,6 +43,15 @@ export const GUIDES: GuideMeta[] = [
     stand: "The ad decides whether the right person stops scrolling. Here is a repeatable way to test hooks and angles, read the results and refresh before ads tire.",
     after: "read", tryIt: "Try it: work out the cost per purchase an ad needs to hit before you call it a winner.",
     next: { h: "Want the tests run for you?", lede: "We plan the tests, make the UGC-style video and static ads, and read the results against your break-even ROAS.", label: "See UGC and video", href: "/services/ugc-and-video/", img: "/assets/ugc/shoot.jpg" } },
+  { slug: "admission-marketing-plan", n: "04", tag: "Education", topic: "admissions",
+    title: "Admission Marketing Plan for Colleges in India",
+    short: "Admission marketing plan for colleges",
+    desc: "A practical plan for the whole admissions cycle: what to do before applications open, in peak enquiry weeks and after offers, with a month-by-month checklist.",
+    href: "/guides/admission-marketing-plan/", img: "/assets/edu/campus.jpg",
+    q: "When do I plan and spend across an admissions cycle?",
+    stand: "Admissions is a calendar, not a campaign. Here is what to prepare before applications open, what to run while they are open, and how to keep families after an offer.",
+    after: "calendar",
+    next: { h: "Want this plan read against your own calendar?", lede: "A senior strategist reads your funnel, your follow-up and your admission dates with you, and shows where enquiries are lost.", label: "See how the free audit works", href: "/audit/", img: "/assets/edu/enrol.jpg" } },
 ];
 
 /** The page <title> for a guide article. */

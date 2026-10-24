@@ -1,0 +1,12 @@
+---
+// /blog/<slug>/: Command Centre blog posts (Phase 4). Data: src/data/posts.generated.json via src/lib/posts.ts (env MMC_POSTS_FILE
+// overrides it for tests). Noindex posts are still built (robots noindex) but never listed. No posts: no pages.
+import PostPage from "../../components/posts/PostPage.astro";
+import { routablePosts, type Post } from "../../lib/posts";
+
+export function getStaticPaths() {
+  return routablePosts("blog").map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+const { post } = Astro.props as { post: Post };
+---
+<PostPage post={post} />

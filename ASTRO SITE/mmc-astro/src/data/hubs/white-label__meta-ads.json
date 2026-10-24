@@ -2,8 +2,8 @@
   "file": "white-label-meta-ads.html",
   "path": "/white-label/meta-ads/",
   "key": "wl_meta_ads",
-  "title": "White-Label Meta Ads and Social Advertising | MMC",
-  "description": "White-label Facebook and Instagram advertising for agencies: creative testing, audience structure, tracking and reporting delivered behind your brand.",
+  "title": "White-Label Facebook and Meta Ads for Agencies | MMC",
+  "description": "White-label Facebook and Instagram ads for agencies: creative testing, audience structure, tracking and reports delivered behind your brand under NDA.",
   "ogTitle": "White-label Meta Ads for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label Meta Ads.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/meta-ads/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/meta-ads/",
-      "name": "White-Label Meta Ads and Social Advertising | MMC",
-      "description": "White-label Facebook and Instagram advertising for agencies: creative testing, audience structure, tracking and reporting delivered behind your brand.",
+      "name": "White-Label Facebook and Meta Ads for Agencies | MMC",
+      "description": "White-label Facebook and Instagram ads for agencies: creative testing, audience structure, tracking and reports delivered behind your brand under NDA.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "The method is the same as our own <a href=\"/services/performance-marketing/meta-ads/\">Meta Ads service</a>. For creative production, pair it with <a href=\"/white-label/creative-and-video/\">white-label creative and video</a>."
           ],
           "img": "meta/structure.jpg",
-          "cap": "Illustrative scene: a Meta campaign structure planned for a client.",
+          "cap": "A Meta campaign structure planned for a client.",
           "table": {
             "caption": "Meta Ads goals and what we run",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Account audit",
           "d": "Structure, tracking and creative review to start a client off.",
           "img": "meta/structure.jpg",
-          "alt": "Account audit: illustrative scene"
+          "alt": "Account audit"
         },
         {
           "t": "Campaign build",
           "d": "Campaigns, ad sets and ads set up for the client's goal.",
           "img": "meta/scale.jpg",
-          "alt": "Campaign build: illustrative scene"
+          "alt": "Campaign build"
         },
         {
           "t": "Creative testing plan",
           "d": "A rotation of hooks, formats and offers to test.",
           "img": "meta/creative.jpg",
-          "alt": "Creative testing plan: illustrative scene"
+          "alt": "Creative testing plan"
         },
         {
           "t": "Audience and signal setup",
           "d": "Custom and lookalike audiences from first-party data.",
           "img": "meta/audience.jpg",
-          "alt": "Audience and signal setup: illustrative scene"
+          "alt": "Audience and signal setup"
         },
         {
           "t": "Pixel and CAPI",
           "d": "Browser and server tracking installed and checked.",
           "img": "meta/capi.jpg",
-          "alt": "Pixel and CAPI: illustrative scene"
+          "alt": "Pixel and CAPI"
         },
         {
           "t": "Weekly optimisation",
           "d": "Budget, creative and audience changes with notes for you.",
           "img": "res/insights.jpg",
-          "alt": "Weekly optimisation: illustrative scene"
+          "alt": "Weekly optimisation"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label Meta Ads.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "meta/creative.jpg",
-      "alt": "Why agencies choose MMC for white-label Meta Ads. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label Meta Ads.",
       "items": [
         {
           "t": "Creative-led",
@@ -309,7 +309,7 @@
       "h2a": "How white-label Meta Ads works,",
       "h2b": "step by step.",
       "img": "meta/creative.jpg",
-      "alt": "How white-label Meta Ads works, step by step. Illustrative scene.",
+      "alt": "How white-label Meta Ads works, step by step.",
       "items": [
         {
           "t": "Access and goals",
@@ -424,7 +424,10 @@
       "h2a": "Add Meta Ads",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first Meta Ads client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

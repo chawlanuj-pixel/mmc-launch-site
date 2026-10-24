@@ -50,9 +50,9 @@ const mins = readMinutes(H.article.blocks);
 const words = wordCount(H.article.blocks);
 for (const b of jsonld) if (b["@type"] === "Article") { b.wordCount = words; b.timeRequired = "PT" + mins + "M"; b.articleSection = g.tag; }
 
-// The tool is a quiet link only where it is topically right; creative testing has none.
-const toolFits = slug !== "creative-testing";
-const toolPic = g.tool.href.includes("funnel") ? "/assets/res/funnel.jpg" : "/assets/res/roas.jpg";
+// The tool is a quiet link only where it is topically right; creative testing and the admissions plan have none.
+const toolFits = !!g.tool && slug !== "creative-testing";
+const toolPic = g.tool?.href.includes("funnel") ? "/assets/res/funnel.jpg" : "/assets/res/roas.jpg";
 // No picture appears twice on a page: the calculator box and the next-step panel drop theirs when the body
 // (or the panel) already shows it, and keep their dark ground and text.
 const bodyImgs = new Set(H.article.blocks.map((b: any) => b.img && "/assets/" + b.img).filter(Boolean));
@@ -96,7 +96,7 @@ const faqTitle = [H.faqTitle[0].replace(/\bd2c\b/g, "D2C"), H.faqTitle[1].replac
               </ul>
               <div class="gd3-ahead__act">
                 <button type="button" class="btn btn--primary" onclick={`window.mmcBookCall && window.mmcBookCall('${H.key}-hero', event)`}>{BOOK}<span class="arrow"></span></button>
-                <a class="btn btn--link" href={toolFits ? g.tool.href : "#" + H.article.blocks[0].id}>{toolFits ? g.tool.label : "Read the guide"}<span class="arrow"></span></a>
+                <a class="btn btn--link" href={toolFits ? g.tool!.href : "#" + H.article.blocks[0].id}>{toolFits ? g.tool!.label : "Read the guide"}<span class="arrow"></span></a>
               </div>
             </div>
           </div>
@@ -109,10 +109,10 @@ const faqTitle = [H.faqTitle[0].replace(/\bd2c\b/g, "D2C"), H.faqTitle[1].replac
 
       <section class="gd3-band gd3-band--white gd3-read" id="article" aria-label="The guide">
         <div class="n-wrap gd3-read__grid">
-          <Toc blocks={H.article.blocks} tool={toolFits ? { label: g.tool.label, href: g.tool.href } : undefined} />
+          <Toc blocks={H.article.blocks} tool={toolFits ? { label: g.tool!.label, href: g.tool!.href } : undefined} />
           <article class="gd3-read__main">
             <GuideBody blocks={H.article.blocks} lead={H.answer.lead} label={H.answer.label} points={H.answer.points}
-              after={g.after} tool={toolFits ? { label: g.tool.label, href: g.tool.href, line: g.tryIt, img: toolImg } : undefined} skipImg={heroSrc} />
+              after={g.after} tool={toolFits ? { label: g.tool!.label, href: g.tool!.href, line: g.tryIt || "", img: toolImg } : undefined} skipImg={heroSrc} />
             <aside class={"gd3-next" + (nextImg ? "" : " gd3-next--text")} aria-labelledby="gd3-next-h">
               {nextImg && <span class="gd3-next__pic"><img src={nextImg} alt="" width="1200" height="806" loading="lazy" decoding="async" /></span>}
               <div class="gd3-next__txt">

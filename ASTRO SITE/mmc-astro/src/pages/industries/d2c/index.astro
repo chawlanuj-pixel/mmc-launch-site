@@ -68,7 +68,7 @@ const M: AudienceModel = {
   cta: { h2a: "Find where your D2C profit", h2b: "leaks.", lede: "On a call, with a senior strategist. We read your accounts against your break-even ROAS and plan the first 30 days." },
 };
 ---
-<BaseLayout {...head} jsonld={jsonld} preloadImage={X.hero.img}>
+<BaseLayout {...head} jsonld={jsonld} preloadImage={X.hero.img.startsWith("/") ? X.hero.img : "/assets/" + X.hero.img}>
   <Shell>
     <main id="main" tabindex="-1" class="app-main n-app h2-page">
       <AudienceHub M={M} />

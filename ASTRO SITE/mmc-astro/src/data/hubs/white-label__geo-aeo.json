@@ -96,7 +96,7 @@
           "name": "Can I sell this as a standalone service?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, or bundle it into SEO retainers. Many agencies start with an AI visibility check as an entry product."
+            "text": "Yes, or bundle it into SEO retainers. You can start with an AI visibility check as an entry product."
           }
         },
         {
@@ -200,7 +200,7 @@
             "Our direct versions are <a href=\"/services/seo/geo/\">GEO</a>, <a href=\"/services/seo/aeo/\">AEO</a> and <a href=\"/services/seo/ai-seo/\">AI SEO</a>; the white-label version follows the same method."
           ],
           "img": "seo/aeo.jpg",
-          "cap": "Illustrative scene: an AI answer check for a client.",
+          "cap": "An AI answer check for a client.",
           "table": {
             "caption": "GEO, AEO and AI SEO: what each is",
             "head": [
@@ -239,37 +239,37 @@
           "t": "AI visibility check",
           "d": "A review of where the client is mentioned in AI tools, for your report.",
           "img": "seo/aeo.jpg",
-          "alt": "AI visibility check: illustrative scene"
+          "alt": "AI visibility check"
         },
         {
           "t": "Answer-first rewrites",
           "d": "Key pages reopened with a direct answer, then detail.",
           "img": "seo/pages.jpg",
-          "alt": "Answer-first rewrites: illustrative scene"
+          "alt": "Answer-first rewrites"
         },
         {
           "t": "FAQ and schema",
           "d": "Real FAQs with matching structured data.",
           "img": "seo/tech.jpg",
-          "alt": "FAQ and schema: illustrative scene"
+          "alt": "FAQ and schema"
         },
         {
           "t": "Entity and brand clarity",
           "d": "Consistent facts about the client across the web.",
           "img": "seo/authority.jpg",
-          "alt": "Entity and brand clarity: illustrative scene"
+          "alt": "Entity and brand clarity"
         },
         {
           "t": "Citation building",
           "d": "Placement on sources AI tools commonly draw from.",
           "img": "seo/authority.jpg",
-          "alt": "Citation building: illustrative scene"
+          "alt": "Citation building"
         },
         {
           "t": "AI search reporting",
           "d": "Mentions and answer features tracked for your report.",
           "img": "res/insights.jpg",
-          "alt": "AI search reporting: illustrative scene"
+          "alt": "AI search reporting"
         }
       ]
     },
@@ -279,7 +279,7 @@
       "h2b": "for white-label GEO, AEO and AI SEO.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "seo/aeo.jpg",
-      "alt": "Why agencies choose MMC for white-label GEO, AEO and AI SEO. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label GEO, AEO and AI SEO.",
       "items": [
         {
           "t": "Honest about limits",
@@ -304,7 +304,7 @@
       "h2a": "How white-label GEO, AEO and AI SEO works,",
       "h2b": "step by step.",
       "img": "seo/aeo.jpg",
-      "alt": "How white-label GEO, AEO and AI SEO works, step by step. Illustrative scene.",
+      "alt": "How white-label GEO, AEO and AI SEO works, step by step.",
       "items": [
         {
           "t": "Check the baseline",
@@ -400,7 +400,7 @@
       },
       {
         "q": "Can I sell this as a standalone service?",
-        "a": "Yes, or bundle it into SEO retainers. Many agencies start with an AI visibility check as an entry product."
+        "a": "Yes, or bundle it into SEO retainers. You can start with an AI visibility check as an entry product."
       },
       {
         "q": "Which AI tools do you look at?",
@@ -419,7 +419,10 @@
       "h2a": "Add GEO, AEO and AI SEO",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first GEO, AEO and AI SEO client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

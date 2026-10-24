@@ -112,7 +112,7 @@
           "name": "Who is website development for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "B2B companies and educational institutes that need a credible site, and D2C brands that want a marketing site. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions. For online stores, see Shopify development."
+            "text": "B2B companies and educational institutes that need a credible site, and D2C brands that want a marketing site. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on marketing sites that match the store, B2B on sites that answer a buying committee, education on admissions sites for families. For online stores, see Shopify development."
           }
         },
         {
@@ -355,7 +355,7 @@
       },
       {
         "q": "Who is website development for?",
-        "a": "B2B companies and educational institutes that need a credible site, and D2C brands that want a marketing site. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions. For online stores, see <a href=\"shopify-development.html\">Shopify development</a>."
+        "a": "B2B companies and educational institutes that need a credible site, and D2C brands that want a marketing site. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on marketing sites that match the store, B2B on sites that answer a buying committee, education on admissions sites for families. For online stores, see <a href=\"shopify-development.html\">Shopify development</a>."
       },
       {
         "q": "What do you need from us?",
@@ -406,7 +406,7 @@
       "h2b": "to be believed.",
       "good": {
         "t": "Your site is outdated, slow or hard to trust, and buyers, parents or students check it before they call.",
-        "why": "B2B companies and colleges win or lose credibility on the site, and D2C brands get marketing sites that match their stores."
+        "why": "B2B companies and colleges win or lose credibility on the site (see <a href=\"/industries/education/colleges/\">college admission marketing</a>), and D2C brands get marketing sites that match their stores."
       },
       "not": {
         "t": "You want a site with no plan for traffic, or a rebuild every few months.",
@@ -423,37 +423,37 @@
           "t": "Plan for the buyer",
           "d": "Page structure and content mapped to the questions your visitors ask.",
           "img": "web/plan.jpg",
-          "alt": "Plan for the buyer: illustrative scene"
+          "alt": "Plan for the buyer"
         },
         {
           "t": "Clean build",
           "d": "Maintainable code and a CMS your team can edit.",
           "img": "web/build.jpg",
-          "alt": "Clean build: illustrative scene"
+          "alt": "Clean build"
         },
         {
           "t": "Speed",
           "d": "Lean pages, optimised media and tested Core Web Vitals.",
           "img": "web/speed.jpg",
-          "alt": "Speed: illustrative scene"
+          "alt": "Speed"
         },
         {
           "t": "Built to be found",
           "d": "Metadata, schema and structure set for search and AI answers.",
           "img": "web/seo.jpg",
-          "alt": "Built to be found: illustrative scene"
+          "alt": "Built to be found"
         },
         {
           "t": "Forms and CRM",
           "d": "Enquiry forms connected to your CRM and analytics.",
           "img": "web/crm.jpg",
-          "alt": "Forms and CRM: illustrative scene"
+          "alt": "Forms and CRM"
         },
         {
           "t": "Launch and support",
           "d": "Redirects, testing and a clear plan for what happens after go-live.",
           "img": "web/seo.jpg",
-          "alt": "Launch and support: illustrative scene"
+          "alt": "Launch and support"
         }
       ]
     },
@@ -463,7 +463,7 @@
       "h2b": "with MMC.",
       "lede": "A website is a sales tool, and we build it to sell.",
       "img": "web/speed.jpg",
-      "alt": "Why brands build sites with MMC. Illustrative scene.",
+      "alt": "Why brands build sites with MMC.",
       "items": [
         {
           "t": "Marketing-led builds",

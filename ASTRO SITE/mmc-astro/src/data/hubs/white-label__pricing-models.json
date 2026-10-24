@@ -2,8 +2,8 @@
   "file": "white-label-pricing-models.html",
   "path": "/white-label/pricing-models/",
   "key": "wl_pricing_models",
-  "title": "White-Label Pricing Models Explained | MMC",
-  "description": "How white-label pricing works with MMC: retainer, project, hourly block, dedicated team and hybrid models, and how to set your margin. Talk to us for scope.",
+  "title": "White-Label Pricing Models and SEO Pricing | MMC",
+  "description": "How white-label pricing works: retainer, project, hour-block and dedicated-team models, what drives SEO and PPC costs, and how agencies set their margin.",
   "ogTitle": "White-label pricing models for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label pricing models.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/pricing-models/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/pricing-models/",
-      "name": "White-Label Pricing Models Explained | MMC",
-      "description": "How white-label pricing works with MMC: retainer, project, hourly block, dedicated team and hybrid models, and how to set your margin. Talk to us for scope.",
+      "name": "White-Label Pricing Models and SEO Pricing | MMC",
+      "description": "How white-label pricing works: retainer, project, hour-block and dedicated-team models, what drives SEO and PPC costs, and how agencies set their margin.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -77,6 +77,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "How much does white-label SEO cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the site, the market, the content and links in scope and the reporting you need, so we price each scope in writing instead of publishing a rate card. The sections above list what moves the cost."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Do you publish prices?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -85,18 +93,42 @@
         },
         {
           "@type": "Question",
-          "name": "Can I change model later?",
+          "name": "What margin should an agency add?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Many agencies start with a project and move to a retainer."
+            "text": "That is your decision. Work back from the margin you need after delivery cost and your own time, not from a markup on cost: a 50 percent markup is a 33 percent margin."
           }
         },
         {
           "@type": "Question",
-          "name": "Are there minimum commitments?",
+          "name": "Retainer or project?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Terms vary by model and are stated in the scope."
+            "text": "A retainer suits ongoing work such as SEO, ads and social. A project suits work with an end, such as a build, an audit or a migration. You can start with a project and move to a retainer later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there set-up fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set-up work, such as an audit, a tracking fix or a migration, is scoped and priced in writing before it starts, so nothing is billed that you did not agree."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum commitment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three months. The scope, the model and anything billed on top are written down before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which currencies do you invoice in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indian rupees or US dollars. We agree which one when we write the scope."
           }
         },
         {
@@ -138,7 +170,7 @@
         "."
       ]
     ],
-    "sub": "Retainer, project, hour block, dedicated team and hybrid models, and how agencies mark up work for their clients.",
+    "sub": "Retainer, project, hour block, dedicated team and hybrid models, what drives the cost of white-label SEO and PPC, and how to work out your margin.",
     "tiles": [
       {
         "img": "contact/brief.jpg",
@@ -167,9 +199,9 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "White-label pricing is set by an agreed scope under one of a few models: a monthly retainer, a fixed project fee, a block of hours, a dedicated team or a hybrid. You pay MMC for delivery and charge your client what you choose. We agree the model on a call and write the scope down.",
-      "hl": "an agreed scope under one of a few models",
-      "who": "Monday Marketing Company (MMC) delivers pricing models for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "lead": "White-label work is priced by a written scope under one of five models: a monthly retainer, a fixed project fee, a block of hours, a dedicated team or a hybrid. MMC invoices your agency in Indian rupees or US dollars, with a three-month minimum, and you set your client's price. We do not publish prices, because scope drives cost.",
+      "hl": "priced by a written scope under one of five models",
+      "who": "Monday Marketing Company (MMC) agrees a pricing model with each partner agency and works behind your brand. You own the client relationship; we do the work.",
       "points": [
         {
           "icon": "coin",
@@ -196,7 +228,7 @@
           "id": "pricing-models",
           "h": "White-label pricing models compared",
           "paras": [
-            "No model is best. The right one depends on how predictable your demand is and how much flexibility you need. We do not publish prices, because the right scope varies; talk to us and we will write one down.",
+            "No model is best. The right one depends on how predictable your demand is and how much flexibility you need. We do not publish prices, because the same service can mean very different work. The sections below explain what drives the cost, so you can judge any quote, ours included.",
             "For context on teams, see <a href=\"/white-label/outsourcing/\">agency outsourcing</a>. For a packaged route see the <a href=\"/white-label/reseller-programme/\">reseller programme</a>."
           ],
           "table": {
@@ -242,11 +274,58 @@
           }
         },
         {
-          "id": "markup",
-          "h": "How agencies think about margin",
+          "id": "seo-cost-drivers",
+          "h": "What drives white-label SEO pricing",
           "paras": [
-            "Agencies usually price client work on value and keep a margin over the delivery cost. We do not tell you what to charge. We do help you understand effort, so your price matches the work involved.",
-            "If you want to test the economics of a client engagement, our free <a href=\"/tools/\">tools</a> and <a href=\"/guides/\">guides</a> explain the method."
+            "<b>Site size and technical state.</b> A large site, or one with indexing, speed or structure problems, needs more audit and fix time.",
+            "<b>Competition.</b> A crowded market needs more content and more authority work to move.",
+            "<b>Content volume.</b> The number of pages, briefs and articles in scope each month.",
+            "<b>Locations.</b> Local SEO effort grows with each Google Business Profile, citation set and location page.",
+            "<b>Link building.</b> Editorial outreach is slow, skilled work and is priced as its own line.",
+            "<b>Reporting.</b> A short monthly summary costs less to produce than a detailed report with commentary for each client."
+          ]
+        },
+        {
+          "id": "ppc-cost-drivers",
+          "h": "What drives white-label PPC pricing",
+          "paras": [
+            "<b>Accounts and campaigns.</b> More accounts, campaigns and markets mean more daily management.",
+            "<b>Platforms.</b> Google Ads alone is less work than Google Ads with Meta or LinkedIn alongside.",
+            "<b>Account condition.</b> Broken tracking, a messy product feed or an account that needs rebuilding adds set-up work before optimisation starts.",
+            "<b>Creative.</b> Ad copy is part of management; new images, video or UGC are scoped separately.",
+            "<b>Reporting cadence.</b> Weekly reporting takes more time than monthly.",
+            "Ad spend is never part of the fee. The client pays the platform directly."
+          ]
+        },
+        {
+          "id": "team-cost-drivers",
+          "h": "What drives the cost of a dedicated team",
+          "paras": [
+            "<b>Roles.</b> You can add an SEO specialist, a PPC or paid social specialist, a Shopify developer, a web developer, a designer, a content writer, a video editor, a project manager or account manager, and a reporting analyst.",
+            "<b>Seniority and hours.</b> Senior people cost more than junior ones, and a dedicated shift for a US team is planned separately from our standard day.",
+            "<b>Team size.</b> The number of people, and whether each works full time on your accounts. See <a href=\"/white-label/outsourcing/\">agency outsourcing</a>."
+          ]
+        },
+        {
+          "id": "markup",
+          "h": "Setting your margin",
+          "paras": [
+            "Your margin is what is left of the client price after the delivery cost and your own time. Work it out in this order.",
+            "<b>Delivery cost.</b> What MMC invoices your agency for the scope.",
+            "<b>Your own time.</b> Account management, client calls and reviewing reports, priced at your team's internal cost per hour.",
+            "<b>Client price.</b> What the client pays you each month or for the project.",
+            "<b>Margin</b> is the client price minus the delivery cost minus your own time. <b>Margin percentage</b> is the margin divided by the client price.",
+            "<b>Worked example, in illustrative units, not MMC prices.</b> Delivery cost 100, your own time 25, client price 175. The margin is 175 minus 100 minus 25, which is 50. The margin percentage is 50 divided by 175, about 29 percent.",
+            "<b>Markup is not margin.</b> Adding 50 percent to a cost of 100 gives a price of 150, but the margin on that price is 50 divided by 150, which is 33 percent, before your own time. Quote from the margin you need, not the markup you add.",
+            "We do not tell you what to charge. We help you understand the effort in each scope, so your price matches the work. If you would rather buy fixed packages at a wholesale rate, see the <a href=\"/white-label/reseller-programme/\">SEO reseller programme</a>."
+          ]
+        },
+        {
+          "id": "included",
+          "h": "What is and is not included",
+          "paras": [
+            "<b>Included in a scope:</b> the work it lists, quality checks before anything reaches you, and reporting in your format.",
+            "<b>Not included unless written in:</b> ad spend, which the client pays to the platform; paid tools and software licences, which are agreed per scope; and new work outside the scope, which is quoted before it starts."
           ]
         }
       ]
@@ -261,37 +340,37 @@
           "t": "Retainers",
           "d": "A monthly scope delivered each month.",
           "img": "res/roas.jpg",
-          "alt": "Retainers: illustrative scene"
+          "alt": "Retainers"
         },
         {
           "t": "Fixed-price projects",
           "d": "One scope, one price, one timeline.",
           "img": "company/onepage.jpg",
-          "alt": "Fixed-price projects: illustrative scene"
+          "alt": "Fixed-price projects"
         },
         {
           "t": "Hour blocks",
           "d": "Hours bought and drawn down.",
           "img": "about2/desk-open.jpg",
-          "alt": "Hour blocks: illustrative scene"
+          "alt": "Hour blocks"
         },
         {
           "t": "Dedicated teams",
           "d": "Named people on your accounts.",
           "img": "about2/huddle.jpg",
-          "alt": "Dedicated teams: illustrative scene"
+          "alt": "Dedicated teams"
         },
         {
           "t": "Hybrid models",
           "d": "A retainer plus a project or hours.",
           "img": "company/strategy.jpg",
-          "alt": "Hybrid models: illustrative scene"
+          "alt": "Hybrid models"
         },
         {
           "t": "Written scopes",
           "d": "Every model starts with a written scope.",
           "img": "contact/brief.jpg",
-          "alt": "Written scopes: illustrative scene"
+          "alt": "Written scopes"
         }
       ]
     },
@@ -301,7 +380,7 @@
       "h2b": "for white-label pricing models.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "contact/brief.jpg",
-      "alt": "Why agencies choose MMC for white-label pricing models. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label pricing models.",
       "items": [
         {
           "t": "Scope in writing",
@@ -326,7 +405,7 @@
       "h2a": "How white-label pricing models works,",
       "h2b": "step by step.",
       "img": "contact/brief.jpg",
-      "alt": "How white-label pricing models works, step by step. Illustrative scene.",
+      "alt": "How white-label pricing models works, step by step.",
       "items": [
         {
           "t": "Share your volume",
@@ -350,7 +429,7 @@
       "h2a": "White-label pricing models for agencies",
       "h2b": "that sell more than they can staff.",
       "good": {
-        "t": "You are an agency, studio or consultancy that sells pricing models but does not want to hire and manage the team for it.",
+        "t": "You are an agency, studio or consultancy that wants to resell delivery and needs a clear, repeatable way to price it to clients.",
         "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
       },
       "not": {
@@ -413,16 +492,32 @@
     ],
     "faq": [
       {
+        "q": "How much does white-label SEO cost?",
+        "a": "It depends on the site, the market, the content and links in scope and the reporting you need, so we price each scope in writing instead of publishing a rate card. The sections above list what moves the cost."
+      },
+      {
         "q": "Do you publish prices?",
         "a": "No. Prices depend on scope, so we agree them on a call and write them down."
       },
       {
-        "q": "Can I change model later?",
-        "a": "Yes. Many agencies start with a project and move to a retainer."
+        "q": "What margin should an agency add?",
+        "a": "That is your decision. Work back from the margin you need after delivery cost and your own time, not from a markup on cost: a 50 percent markup is a 33 percent margin."
       },
       {
-        "q": "Are there minimum commitments?",
-        "a": "Terms vary by model and are stated in the scope."
+        "q": "Retainer or project?",
+        "a": "A retainer suits ongoing work such as SEO, ads and social. A project suits work with an end, such as a build, an audit or a migration. You can start with a project and move to a retainer later."
+      },
+      {
+        "q": "Are there set-up fees?",
+        "a": "Set-up work, such as an audit, a tracking fix or a migration, is scoped and priced in writing before it starts, so nothing is billed that you did not agree."
+      },
+      {
+        "q": "What is the minimum commitment?",
+        "a": "Three months. The scope, the model and anything billed on top are written down before work starts."
+      },
+      {
+        "q": "Which currencies do you invoice in?",
+        "a": "Indian rupees or US dollars. We agree which one when we write the scope."
       },
       {
         "q": "Who pays for ad spend and tools?",
@@ -438,10 +533,13 @@
       }
     ],
     "cta": {
-      "h2a": "Add pricing models",
-      "h2b": "without adding headcount.",
-      "lede": "On a call, with a senior strategist. We scope your first pricing models client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "h2a": "Choose a pricing model",
+      "h2b": "that keeps your margin clear.",
+      "lede": "On a call, with a senior strategist. We look at how your clients buy, recommend a model and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

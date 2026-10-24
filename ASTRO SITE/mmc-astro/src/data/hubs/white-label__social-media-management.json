@@ -2,8 +2,8 @@
   "file": "white-label-social-media-management.html",
   "path": "/white-label/social-media-management/",
   "key": "wl_social_media_management",
-  "title": "White-Label Social Media Management | MMC",
-  "description": "White-label social media management for agencies: content calendars, design, posting, community replies and monthly reports delivered under your brand.",
+  "title": "Done-for-You White-Label Social Media Management | MMC",
+  "description": "Done-for-you white-label social media management for agencies: calendars, posts, community replies and reports, made by people and sent under your brand.",
   "ogTitle": "White-label social media management for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label social media management.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/social-media-management/",
-      "name": "White-Label Social Media Management | MMC",
-      "description": "White-label social media management for agencies: content calendars, design, posting, community replies and monthly reports delivered under your brand.",
+      "name": "Done-for-You White-Label Social Media Management | MMC",
+      "description": "Done-for-you white-label social media management for agencies: calendars, posts, community replies and reports, made by people and sent under your brand.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -133,8 +133,8 @@
     "h1": [
       "White-label social media",
       [
-        "management for ",
-        "agencies of every size",
+        "management, ",
+        "done for you",
         "."
       ]
     ],
@@ -200,7 +200,7 @@
             "Our direct work is described on the <a href=\"/services/social-media/\">social media service</a> page, and we can pair it with <a href=\"/white-label/creative-and-video/\">creative and video production</a>."
           ],
           "img": "social/calendar.jpg",
-          "cap": "Illustrative scene: a monthly social calendar for a client.",
+          "cap": "A monthly social calendar for a client.",
           "table": {
             "caption": "White-label social media package components",
             "head": [
@@ -249,37 +249,37 @@
           "t": "Content calendar",
           "d": "A month of posts planned by theme and channel.",
           "img": "social/calendar.jpg",
-          "alt": "Content calendar: illustrative scene"
+          "alt": "Content calendar"
         },
         {
           "t": "Post design",
           "d": "Static, carousel and story designs to the client's brand.",
           "img": "social/design.jpg",
-          "alt": "Post design: illustrative scene"
+          "alt": "Post design"
         },
         {
           "t": "Short video",
           "d": "Reels and shorts edited from client footage or stock.",
           "img": "social/video.jpg",
-          "alt": "Short video: illustrative scene"
+          "alt": "Short video"
         },
         {
           "t": "Scheduling and publishing",
           "d": "Posts scheduled in the approved tool and times.",
           "img": "social/plan.jpg",
-          "alt": "Scheduling and publishing: illustrative scene"
+          "alt": "Scheduling and publishing"
         },
         {
           "t": "Community management",
           "d": "Reply drafts or live replies within agreed rules.",
           "img": "orm/reply.jpg",
-          "alt": "Community management: illustrative scene"
+          "alt": "Community management"
         },
         {
           "t": "Reporting",
           "d": "Reach, engagement and learnings in your format.",
           "img": "social/insights.jpg",
-          "alt": "Reporting: illustrative scene"
+          "alt": "Reporting"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "h2b": "for white-label social media management.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "social/calendar.jpg",
-      "alt": "Why agencies choose MMC for white-label social media management. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label social media management.",
       "items": [
         {
           "t": "Approvals built in",
@@ -314,7 +314,7 @@
       "h2a": "How white-label social media management works,",
       "h2b": "step by step.",
       "img": "social/calendar.jpg",
-      "alt": "How white-label social media management works, step by step. Illustrative scene.",
+      "alt": "How white-label social media management works, step by step.",
       "items": [
         {
           "t": "Brand intake",
@@ -429,7 +429,10 @@
       "h2a": "Add social media management",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first social media management client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

@@ -380,7 +380,7 @@
       "h2b": "already being searched.",
       "good": {
         "t": "People already search for what you sell, and you want that demand captured at a profit.",
-        "why": "Search and shopping work best when buyers have intent, so they suit D2C brands, B2B companies with a clear problem to solve, and colleges and schools that families search for."
+        "why": "Search and shopping work best when buyers have intent, so they suit D2C brands, B2B companies with a clear problem to solve, and colleges and schools that families search for (see <a href=\"/industries/education/colleges/\">college admission marketing</a> and <a href=\"/industries/education/\">education marketing</a>)."
       },
       "not": {
         "t": "You want Google to create demand from nothing, or a guaranteed ranking.",
@@ -397,37 +397,37 @@
           "t": "Search by intent",
           "d": "Brand, category and competitor searches split so each gets its own bid, message and landing page.",
           "img": "google/search.jpg",
-          "alt": "Search by intent: illustrative scene"
+          "alt": "Search by intent"
         },
         {
           "t": "Shopping feed fixes",
           "d": "Titles, categories and attributes cleaned so the right products show for the right searches.",
           "img": "google/feed.jpg",
-          "alt": "Shopping feed fixes: illustrative scene"
+          "alt": "Shopping feed fixes"
         },
         {
           "t": "Performance Max inputs",
           "d": "Assets, audience signals and exclusions that give automation good material to learn from.",
           "img": "google/pmax.jpg",
-          "alt": "Performance Max inputs: illustrative scene"
+          "alt": "Performance Max inputs"
         },
         {
           "t": "YouTube and Demand Gen",
           "d": "Video and discovery formats that reach people who are still deciding.",
           "img": "google/video.jpg",
-          "alt": "YouTube and Demand Gen: illustrative scene"
+          "alt": "YouTube and Demand Gen"
         },
         {
           "t": "Lead campaigns",
           "d": "Search and call-led campaigns for B2B and education enquiries, tied to a qualified-lead definition.",
           "img": "google/report.jpg",
-          "alt": "Lead campaigns: illustrative scene"
+          "alt": "Lead campaigns"
         },
         {
           "t": "Profit reporting",
           "d": "Spend read against margin and total sales, not only the figure Google reports.",
           "img": "services/performance.jpg",
-          "alt": "Profit reporting: illustrative scene"
+          "alt": "Profit reporting"
         }
       ]
     },
@@ -437,7 +437,7 @@
       "h2b": "with MMC.",
       "lede": "Google rewards good inputs. We spend our time on the inputs.",
       "img": "google/pmax.jpg",
-      "alt": "Why brands run Google Ads with MMC. Illustrative scene.",
+      "alt": "Why brands run Google Ads with MMC.",
       "items": [
         {
           "t": "Intent first",
@@ -462,7 +462,7 @@
       "h2a": "How we run Google Ads,",
       "h2b": "step by step.",
       "img": "google/report.jpg",
-      "alt": "How we run Google Ads, step by step. Illustrative scene.",
+      "alt": "How we run Google Ads, step by step.",
       "items": [
         {
           "t": "Audit and clean the account",

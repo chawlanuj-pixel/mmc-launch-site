@@ -1,16 +1,45 @@
 ---
 // 6. Results. Renders figures ONLY when case-studies.json holds metrics with a label, a value AND a basis (ProofSlots enforces that).
 // Today none exist, so an honest block says where numbers come from. The quote block renders only for a real, approved quote.
+// Optional: data/case2/<id>.json "results" ({ lead, note, items: [{ value, label, basis }] }) prints owner-supplied figures in this band;
+// an item without a value, label AND basis is dropped, and a brand without "results" renders exactly as before.
 import ProofSlots from "../work/ProofSlots.astro";
 import TestimonialBlock from "../work/TestimonialBlock.astro";
 import { BOOK, SECONDARY } from "../../lib/site";
 import { href } from "../../lib/links";
+import { case2For, t } from "../../lib/case2";
 import type { CaseStudy } from "../../lib/work";
 interface Props { c: CaseStudy }
 const { c } = Astro.props as Props;
 const metrics = (c.metrics || []).filter((m) => m && m.label && m.value && m.basis);
+const R = case2For(c.id)?.results;
+const own = (R?.items || []).filter((m: any) => m && m.label && m.value && m.basis);
 ---
-{metrics.length > 0 ? <ProofSlots c={c} /> : (
+{metrics.length > 0 ? <ProofSlots c={c} /> : own.length > 0 ? (
+  <section class="c2-band c2-results" id="results" aria-labelledby="c2-res-h">
+    <div class="c2-wrap c2-results__grid">
+      <header class="c2-rv">
+        <p class="c2-eyebrow">Results</p>
+        <h2 class="c2-h2" id="c2-res-h">{R.h2a || "Measured on the"} <em>{R.h2b || "live store."}</em></h2>
+      </header>
+      <div class="c2-results__body c2-rv c2-d1">
+        <p class="c2-lead">{t(R.lead, c)}</p>
+        {R.note && <p>{t(R.note, c)}</p>}
+      </div>
+    </div>
+    <div class="c2-wrap">
+      <dl class="c2-stats c2-rv c2-d1">
+        {own.map((m: any) => (
+          <div class="c2-stat"><dt>{t(m.label, c)}</dt><dd class="c2-stat__v">{m.value}</dd><dd class="c2-stat__b">{t(m.basis, c)}</dd></div>
+        ))}
+      </dl>
+      <div class="c2-results__act c2-rv">
+        <button class="btn btn--primary glow-btn" type="button" onclick={`window.mmcBookCall('work-${c.id}-results', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{BOOK}<span class="arrow"></span></span></button>
+        <a class="c2-textlink" href={href("/audit/")}>{SECONDARY.audit}<span aria-hidden="true"> →</span></a>
+      </div>
+    </div>
+  </section>
+) : (
   <section class="c2-band c2-results" id="results" aria-labelledby="c2-res-h">
     <div class="c2-wrap c2-results__grid">
       <header class="c2-rv">
@@ -18,8 +47,8 @@ const metrics = (c.metrics || []).filter((m) => m && m.label && m.value && m.bas
         <h2 class="c2-h2" id="c2-res-h">Numbers we can share are <em>agreed with each client.</em></h2>
       </header>
       <div class="c2-results__body c2-rv c2-d1">
-        <p class="c2-lead">This page shows the work, not a scoreboard. When we hold figures for {c.name} that the client has approved, we share them on a walkthrough, with the basis they were measured on.</p>
-        <p>Anything printed inside the artwork, such as prices, ratings or counts, is part of the illustrative design and is not a result we report.</p>
+        <p class="c2-lead">Here you see what we built. Where {c.name} has agreed to share figures, we walk you through them on a call, with the basis they were measured on.</p>
+        <p>Prices, ratings or counts that appear inside the designs belong to the design itself. They are not results we report.</p>
         <div class="c2-results__act">
           <button class="btn btn--primary glow-btn" type="button" onclick={`window.mmcBookCall('work-${c.id}-results', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{BOOK}<span class="arrow"></span></span></button>
           <a class="c2-textlink" href={href("/audit/")}>{SECONDARY.audit}<span aria-hidden="true"> →</span></a>

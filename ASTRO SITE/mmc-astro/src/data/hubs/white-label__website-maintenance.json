@@ -3,7 +3,7 @@
   "path": "/white-label/website-maintenance/",
   "key": "wl_website_maintenance",
   "title": "White-Label Website Maintenance Services | MMC",
-  "description": "White-label website maintenance and WordPress support for agencies: updates, backups, security, uptime and content edits across your client sites.",
+  "description": "White-label website maintenance for agencies: updates, backups, uptime checks, security fixes and monthly care reports sent to clients under your brand.",
   "ogTitle": "White-label website maintenance for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label website maintenance.",
@@ -39,7 +39,7 @@
       "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/website-maintenance/",
       "name": "White-Label Website Maintenance Services | MMC",
-      "description": "White-label website maintenance and WordPress support for agencies: updates, backups, security, uptime and content edits across your client sites.",
+      "description": "White-label website maintenance for agencies: updates, backups, uptime checks, security fixes and monthly care reports sent to clients under your brand.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "See the direct version on the <a href=\"/services/website-maintenance/\">website maintenance</a> page. It pairs well with <a href=\"/white-label/wordpress-development/\">white-label WordPress development</a>."
           ],
           "img": "web/speed.jpg",
-          "cap": "Illustrative scene: a care plan checklist across client sites.",
+          "cap": "A care plan checklist across client sites.",
           "table": {
             "caption": "Care plan tasks, who does them",
             "head": [
@@ -254,37 +254,37 @@
           "t": "Client site onboarding",
           "d": "We audit each site before putting it on the routine.",
           "img": "web/plan.jpg",
-          "alt": "Client site onboarding: illustrative scene"
+          "alt": "Client site onboarding"
         },
         {
           "t": "Updates and backups",
           "d": "Scheduled, tested and recoverable.",
           "img": "web/build.jpg",
-          "alt": "Updates and backups: illustrative scene"
+          "alt": "Updates and backups"
         },
         {
           "t": "Security",
           "d": "Scans, hardening and fixes.",
           "img": "web/crm.jpg",
-          "alt": "Security: illustrative scene"
+          "alt": "Security"
         },
         {
           "t": "Uptime and speed",
           "d": "Monitoring with upkeep.",
           "img": "web/speed.jpg",
-          "alt": "Uptime and speed: illustrative scene"
+          "alt": "Uptime and speed"
         },
         {
           "t": "Content edits",
           "d": "Small changes within agreed hours.",
           "img": "web/seo.jpg",
-          "alt": "Content edits: illustrative scene"
+          "alt": "Content edits"
         },
         {
           "t": "Summary reports",
           "d": "A monthly note per site.",
           "img": "res/insights.jpg",
-          "alt": "Summary reports: illustrative scene"
+          "alt": "Summary reports"
         }
       ]
     },
@@ -294,7 +294,7 @@
       "h2b": "for white-label website maintenance.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "web/speed.jpg",
-      "alt": "Why agencies choose MMC for white-label website maintenance. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label website maintenance.",
       "items": [
         {
           "t": "Many sites, one routine",
@@ -319,7 +319,7 @@
       "h2a": "How white-label website maintenance works,",
       "h2b": "step by step.",
       "img": "web/speed.jpg",
-      "alt": "How white-label website maintenance works, step by step. Illustrative scene.",
+      "alt": "How white-label website maintenance works, step by step.",
       "items": [
         {
           "t": "List the sites",
@@ -434,7 +434,10 @@
       "h2a": "Add website maintenance",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first website maintenance client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

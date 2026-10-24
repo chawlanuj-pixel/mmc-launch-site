@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "web/build.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a WooCommerce store being built.",
+    "alt": "A WooCommerce store being built.",
     "facts": [
       {
         "t": "A catalogue that stays clean.",
@@ -118,7 +118,7 @@
         "d": "We map products, variations, shipping, payments and integrations, then agree the scope in writing.",
         "get": "A written scope you have approved.",
         "img": "web/plan.jpg",
-        "alt": "Illustrative scene: a store planned page by page.",
+        "alt": "A store planned page by page.",
         "pos": "50% 50%"
       },
       {
@@ -127,7 +127,7 @@
         "d": "Approved designs become a theme and a store set up for your catalogue.",
         "get": "A store ready to test.",
         "img": "web/seo.jpg",
-        "alt": "Illustrative scene: a store theme and its pages being built.",
+        "alt": "A store theme and its pages being built.",
         "pos": "50% 50%"
       },
       {
@@ -136,7 +136,7 @@
         "d": "We test checkout, speed, tracking and mobile before the switch, then migrate with redirects.",
         "get": "A live store that loads fast and tracks orders.",
         "img": "web/speed.jpg",
-        "alt": "Illustrative scene: a store tested for speed before launch.",
+        "alt": "A store tested for speed before launch.",
         "pos": "50% 50%"
       },
       {
@@ -145,7 +145,7 @@
         "d": "Your team gets a store guide, and we can stay on under website maintenance.",
         "get": "A store your team can run with confidence.",
         "img": "web/crm.jpg",
-        "alt": "Illustrative scene: orders and forms connected to a CRM.",
+        "alt": "Orders and forms connected to a CRM.",
         "pos": "50% 50%"
       }
     ]

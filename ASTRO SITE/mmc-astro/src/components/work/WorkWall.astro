@@ -13,8 +13,8 @@ const tabs = [{ k: "all", l: "All brands" }, ...GROUPS.map((g) => ({ k: g.key, l
   <div class="n-wrap">
     <div class="pm-head n-rise" style="margin-bottom:0">
       <span class="n-eyebrow">The full wall</span>
-      <h2 class="n-h2">Every brand on record, <span class="n-serif">by kind.</span></h2>
-      <p class="n-lede">Filter by the kind of brand. Hover over or tap a logo to see a project, where we have one to show; a linked logo opens its full case study. Under each brand: its kind, then the services recorded for it.</p>
+      <h2 class="n-h2">A few of the brands we work with, <span class="n-serif">by kind.</span></h2>
+      <p class="n-lede">Filter by the kind of brand. Hover over or tap a logo to see a project, where we have one to show; a linked logo opens its full case study. Under each brand: its kind, then the services we provide for it.</p>
     </div>
     <div class="wk__tabs" role="tablist" aria-label="Filter brands by kind" hidden>
       {tabs.map((t, i) => <button type="button" role="tab" class={"wk__tab" + (i === 0 ? " is-on" : "")} data-f={t.k} aria-selected={i === 0 ? "true" : "false"}>{t.l}</button>)}

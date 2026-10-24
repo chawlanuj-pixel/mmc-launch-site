@@ -382,7 +382,7 @@
       "h2b": "their margin.",
       "good": {
         "t": "You sell on Instagram and Facebook and want spend judged on profit.",
-        "why": "Our method starts from your margin, so it suits D2C founders and growth heads who feel ROAS has dropped or CAC keeps climbing, and B2B and education teams who judge leads on quality."
+        "why": "Our method starts from your margin, so it suits D2C founders and growth heads who feel ROAS has dropped or CAC keeps climbing, and B2B and education teams who judge leads on quality. For colleges, see <a href=\"/industries/education/colleges/\">college admission marketing</a>."
       },
       "not": {
         "t": "You want a guaranteed ROAS, or a new agency every few months.",
@@ -399,37 +399,37 @@
           "t": "Account structure",
           "d": "One funnel of prospecting, retargeting and conversion, with budgets large enough for Meta to learn.",
           "img": "meta/structure.jpg",
-          "alt": "Account structure: illustrative scene"
+          "alt": "Account structure"
         },
         {
           "t": "Creative testing",
           "d": "Ads briefed around a single idea and tested in rounds, so every result teaches the next brief.",
           "img": "meta/creative.jpg",
-          "alt": "Creative testing: illustrative scene"
+          "alt": "Creative testing"
         },
         {
           "t": "Audience and targeting",
           "d": "Broad and interest audiences, customer lists and lookalikes set up around who actually buys or enquires.",
           "img": "meta/audience.jpg",
-          "alt": "Audience and targeting: illustrative scene"
+          "alt": "Audience and targeting"
         },
         {
           "t": "Conversions API tracking",
           "d": "Purchases, or qualified leads from your CRM, sent back to Meta and checked against your own data.",
           "img": "meta/capi.jpg",
-          "alt": "Conversions API tracking: illustrative scene"
+          "alt": "Conversions API tracking"
         },
         {
           "t": "Lead and sales funnels",
           "d": "Instant forms, landing pages and WhatsApp follow-up for B2B and education leads; catalogue ads for D2C.",
           "img": "meta/scale.jpg",
-          "alt": "Lead and sales funnels: illustrative scene"
+          "alt": "Lead and sales funnels"
         },
         {
           "t": "Scale against profit",
           "d": "Budget moves only where contribution margin or cost per qualified lead still holds.",
           "img": "services/performance.jpg",
-          "alt": "Scale against profit: illustrative scene"
+          "alt": "Scale against profit"
         }
       ]
     },
@@ -439,7 +439,7 @@
       "h2b": "with MMC.",
       "lede": "We judge the account on what you keep, not on what the dashboard reports.",
       "img": "meta/audience.jpg",
-      "alt": "Why brands run Meta Ads with MMC. Illustrative scene.",
+      "alt": "Why brands run Meta Ads with MMC.",
       "items": [
         {
           "t": "Profit is the scoreboard",
@@ -464,7 +464,7 @@
       "h2a": "How we run Meta Ads,",
       "h2b": "step by step.",
       "img": "meta/scale.jpg",
-      "alt": "How we run Meta Ads, step by step. Illustrative scene.",
+      "alt": "How we run Meta Ads, step by step.",
       "items": [
         {
           "t": "Audit the account and set the floor",

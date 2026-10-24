@@ -1,5 +1,7 @@
 # Which folder is which
 
+> **Update, 15 Oct 2026.** Current work happens in `ASTRO SITE/mmc-astro/`. It holds everything that was in V2 plus the later work (copy decisions, locations, careers, pricing and more). `Astro V2/` is a stale snapshot and should not be edited. The notes below are from 13 Oct 2026 and are kept for history; where they disagree with this note, this note wins.
+
 Updated 13 Oct 2026. The owner has decided that `Astro V2/` is the launch site: it is what gets deployed to the main site, https://mondaymarketing.company.
 
 | Folder | What it is | Local address | Start it |

@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "ux/screens.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: app and website screens being designed.",
+    "alt": "App and website screens being designed.",
     "facts": [
       {
         "t": "Start with users.",
@@ -131,7 +131,7 @@
         "d": "Research with the people who use or buy, and a read of your data.",
         "get": "A clear picture of who does what and why.",
         "img": "ux/research.jpg",
-        "alt": "Illustrative scene: user research notes.",
+        "alt": "User research notes.",
         "pos": "50% 50%"
       },
       {
@@ -140,7 +140,7 @@
         "d": "User flows and wireframes for the journeys that matter.",
         "get": "An agreed structure before any polish.",
         "img": "ux/flows.jpg",
-        "alt": "Illustrative scene: a user flow being mapped.",
+        "alt": "A user flow being mapped.",
         "pos": "50% 50%"
       },
       {
@@ -149,7 +149,7 @@
         "d": "Screens are designed and prototypes tested with real users.",
         "get": "Proof the design works before development.",
         "img": "ux/test.jpg",
-        "alt": "Illustrative scene: a prototype being tested.",
+        "alt": "A prototype being tested.",
         "pos": "50% 50%"
       },
       {
@@ -158,7 +158,7 @@
         "d": "A design system of reusable components and rules.",
         "get": "A kit your team can keep using.",
         "img": "ux/system.jpg",
-        "alt": "Illustrative scene: a design system of components.",
+        "alt": "A design system of components.",
         "pos": "50% 50%"
       }
     ]

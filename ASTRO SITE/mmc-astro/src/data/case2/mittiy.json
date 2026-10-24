@@ -9,7 +9,7 @@
   "Google Shopping ad"
  ],
  "brief": [
-  "{name} sells car perfume. This page covers product and bundle-builder pages for the range, paired with social creative and ads for the same products.",
+  "{name} sells car perfume. We built product and bundle-builder pages for the range, paired with social creative and ads for the same products.",
   "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
  ],
  "showcases": [
@@ -17,7 +17,7 @@
    "layout": "stage",
    "kicker": "Storefront",
    "title": "Homepage and bundle builder, on desktop and mobile",
-   "text": "A warm, scent-led homepage with a best-seller mix pack, and a bundle builder that lets a shopper pick scents.",
+   "text": "A warm, scent-led homepage with a combo pack offer, and a build your bundle bar under the hero on desktop and on the phone.",
    "crops": [
     "web"
    ]
@@ -50,7 +50,7 @@
   {
    "layout": "ribbon",
    "kicker": "The range",
-   "title": "Product photography",
+   "title": "product photography from the same project",
    "text": "From the same artwork.",
    "crops": [
     "products"
@@ -64,11 +64,12 @@
  },
  "action": "order",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "google": "{name} Google ad, client-approved artwork",
-  "products": "{name} product photography, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Premium Combo Pack hero with car perfume boxes, a buy any five offer badge and a build your bundle bar",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad",
+  "products": "{name} car fresheners hanging from a rear-view mirror above a row of scent boxes on the dashboard, with a sea view through the windscreen",
+  "card": "{name} logo on a windscreen view at sunset, with a {name} car freshener hanging from the mirror"
  }
 }

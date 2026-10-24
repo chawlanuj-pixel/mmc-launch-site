@@ -2,8 +2,8 @@
   "file": "white-label-shopify-development.html",
   "path": "/white-label/shopify-development/",
   "key": "wl_shopify_development",
-  "title": "White-Label Shopify Development | MMC",
-  "description": "White-label Shopify development for agencies: store builds, theme customisation, apps, migrations and checkout work delivered under your brand.",
+  "title": "White-Label Shopify Development for Agencies | MMC",
+  "description": "White-label Shopify development for agencies: theme builds, migrations, apps and speed work delivered under your brand, with code you own at handover.",
   "ogTitle": "White-label Shopify development for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label Shopify development.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/shopify-development/",
-      "name": "White-Label Shopify Development | MMC",
-      "description": "White-label Shopify development for agencies: store builds, theme customisation, apps, migrations and checkout work delivered under your brand.",
+      "name": "White-Label Shopify Development for Agencies | MMC",
+      "description": "White-label Shopify development for agencies: theme builds, migrations, apps and speed work delivered under your brand, with code you own at handover.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -80,7 +80,7 @@
           "name": "Do you build Shopify Plus stores?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We can work on Plus where the client has it. Tell us the plan."
+            "text": "We do. Shopify Plus stores are built and maintained under your brand in the same way as standard Shopify stores. Tell us the plan your client is on and we scope the work."
           }
         },
         {
@@ -200,7 +200,7 @@
             "Our direct service is described on the <a href=\"/services/shopify-development/\">Shopify development</a> page. For marketplace work see <a href=\"/white-label/ecommerce/\">white-label ecommerce</a>."
           ],
           "img": "shop/design.jpg",
-          "cap": "Illustrative scene: a Shopify theme in review.",
+          "cap": "A Shopify theme in review.",
           "table": {
             "caption": "Shopify jobs and typical scope",
             "head": [
@@ -249,37 +249,37 @@
           "t": "Store build",
           "d": "Setup of products, collections and policies.",
           "img": "shop/plan.jpg",
-          "alt": "Store build: illustrative scene"
+          "alt": "Store build"
         },
         {
           "t": "Theme customisation",
           "d": "Sections and templates to the brand.",
           "img": "shop/design.jpg",
-          "alt": "Theme customisation: illustrative scene"
+          "alt": "Theme customisation"
         },
         {
           "t": "App integration",
           "d": "Reviews, subscriptions and loyalty tools.",
           "img": "shop/integrate.jpg",
-          "alt": "App integration: illustrative scene"
+          "alt": "App integration"
         },
         {
           "t": "Migrations",
           "d": "Move to Shopify with redirects.",
           "img": "web/plan.jpg",
-          "alt": "Migrations: illustrative scene"
+          "alt": "Migrations"
         },
         {
           "t": "Speed work",
           "d": "Trim apps and scripts.",
           "img": "shop/speed.jpg",
-          "alt": "Speed work: illustrative scene"
+          "alt": "Speed work"
         },
         {
           "t": "Checkout improvements",
           "d": "Remove friction at checkout.",
           "img": "shop/checkout.jpg",
-          "alt": "Checkout improvements: illustrative scene"
+          "alt": "Checkout improvements"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "h2b": "for white-label Shopify development.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "shop/design.jpg",
-      "alt": "Why agencies choose MMC for white-label Shopify development. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label Shopify development.",
       "items": [
         {
           "t": "D2C experience",
@@ -314,7 +314,7 @@
       "h2a": "How white-label Shopify development works,",
       "h2b": "step by step.",
       "img": "shop/design.jpg",
-      "alt": "How white-label Shopify development works, step by step. Illustrative scene.",
+      "alt": "How white-label Shopify development works, step by step.",
       "items": [
         {
           "t": "Brief",
@@ -402,7 +402,7 @@
     "faq": [
       {
         "q": "Do you build Shopify Plus stores?",
-        "a": "We can work on Plus where the client has it. Tell us the plan."
+        "a": "We do. Shopify Plus stores are built and maintained under your brand in the same way as standard Shopify stores. Tell us the plan your client is on and we scope the work."
       },
       {
         "q": "Can you use my designs?",
@@ -429,7 +429,10 @@
       "h2a": "Add Shopify development",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first Shopify development client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

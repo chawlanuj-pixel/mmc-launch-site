@@ -25,7 +25,7 @@ const path = "/careers/" + role.slug + "/";
 const TAG: Record<string, string> = { performance: "Performance", creative: "Creative", strategy: "Strategy", technology: "Technology" };
 const title = `${role.title}, ${role.location} | MMC Careers`;
 // Search description, kept to 155 characters or less: the full summary, else its first sentence, else cut at the last comma.
-const fit = (s: string) => { if (s.length >= 140) return s; for (const x of [" Apply to MMC with one page, no resume required.", " Apply to MMC with one page.", " Apply with one page."]) if ((s + x).length >= 140 && (s + x).length <= 160) return s + x; return s; };
+const fit = (s: string) => { if (s.length >= 140) return s; for (const x of [" Apply to MMC with your CV and a short note.", " Apply to MMC with your CV.", " Apply with your CV."]) if ((s + x).length >= 140 && (s + x).length <= 160) return s + x; return s; };
 const description = fit((() => {
   const t = String(role.summary || "").trim();
   if (t.length <= 155) return t;
@@ -112,8 +112,7 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
               </div>
             </div>
             <figure class="crp3-hero__fig">
-              <Img name={role.img} ratio="4 / 5" eager={true} alt={`Illustrative scene for the ${role.title} role`} />
-              <figcaption><i aria-hidden="true"></i>Illustrative scene</figcaption>
+              <Img name={role.img} ratio="4 / 5" eager={true} alt={`Scene for the ${role.title} role`} />
             </figure>
           </div>
           <dl class="crp3-facts">
@@ -155,7 +154,7 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
                   <figure><Img name="careers2/studio-wide.jpg" ratio="3 / 2" alt="A team at a long studio table, laptops open, a whiteboard of plans behind them" /></figure>
                   <figure><Img name="careers2/team-screen.jpg" ratio="3 / 2" alt="A small team gathered round a laptop reviewing creative" /></figure>
                 </div>
-                <p class="crp3-where__cap">Illustrative scenes. MMC is based in Thane, Maharashtra; this role is {remote ? "remote, within India" : "based in " + role.location}.</p>
+                <p class="crp3-where__cap">MMC works from Mumbai and Indore; this role is {remote ? "remote, within India" : "based in " + role.location}.</p>
                 <p class="crp3-where__links"><a href="/about/">About MMC<Arrow /></a><a href="/careers/#why">How we work<Arrow /></a></p>
               </section>
               <a class="crp-back" href="/careers/#roles">See all open roles<Arrow /></a>
@@ -196,12 +195,12 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
                       </span>
                     </div>
                   </label>
-                  <p class="crp-cv-error" id="crp-cv-error" hidden></p>
+                  <p class="crp-cv-error" id="crp-cv-error" role="alert" hidden></p>
                   <label>Or paste a link to your CV<input name="cvUrl" type="url" placeholder="https://drive.google.com/…" /><small>Use this if your CV is over 4MB, or you'd rather share a live link.</small></label>
                   <fieldset class="crp-radio">
                     <legend><span>How do you want to work?<i>*</i></span></legend>
                     <div class="crp-radio__opts">
-                      <label class="crp-radio__opt"><input type="radio" name="mode" value="Onsite" required /><span><b>Onsite</b><small>Five days at the Thane studio</small></span></label>
+                      <label class="crp-radio__opt"><input type="radio" name="mode" value="Onsite" required /><span><b>Onsite</b><small>Five days at the Mumbai studio</small></span></label>
                       <label class="crp-radio__opt"><input type="radio" name="mode" value="Hybrid" checked={role.workMode === "HYBRID"} /><span><b>Hybrid</b><small>3 in office, 2 from home</small></span></label>
                       <label class="crp-radio__opt"><input type="radio" name="mode" value="Remote" checked={role.workMode === "REMOTE"} /><span><b>Remote</b><small>Work from home, India</small></span></label>
                     </div>
@@ -242,7 +241,7 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
                   <ul class="crp-thanks__next">
                     <li><span>01</span>We read every application within one working day.</li>
                     <li><span>02</span>If we move forward, you'll hear from hr@mondaymarketing.company.</li>
-                    <li><span>03</span>The hiring process is described on the left.</li>
+                    <li><span>03</span>Then come the steps above: a screening call, a short case study, a final panel and references.</li>
                   </ul>
                   <a href="/careers/" class="btn btn--ghost">Back to careers<span class="arrow"></span></a>
                 </div>
@@ -264,7 +263,8 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
     .crp-consent a { color: #16329E; border-bottom: 1px solid currentColor; }
     .crp-apply-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, .09); color: var(--mmc-error); font: 600 13px/1.45 var(--font-body); }
     .crp-apply-err[hidden] { display: none; }
-    #crp-thanks:focus { outline: none; }
+    #crp-thanks:focus, #crp-form-2 h2:focus { outline: none; }
+    #crp-form-2, #crp-thanks, #crp-form-1 { scroll-margin-top: 120px; }
     #crp-submit[disabled] { opacity: .7; cursor: progress; }
   </style>
   <script>
@@ -276,10 +276,11 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
     const steps = document.getElementById("crp-progress");
     const cvInput = document.getElementById("crp-cv-input") as HTMLInputElement | null;
     const cvMsg = document.getElementById("crp-upload-msg");
+    const cvMsgOriginal = cvMsg ? cvMsg.innerHTML : "";
     const cvBox = document.getElementById("crp-upload-box");
     const cvError = document.getElementById("crp-cv-error");
     let basics: Record<string, string> = {};
-    let cvPayload: Record<string, unknown> = {};
+    let cvFile: File | null = null;
 
     const setStep = (n: number) => {
       steps?.querySelectorAll<HTMLElement>("[data-step]").forEach((el) => {
@@ -291,6 +292,7 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
       if (rule) rule.style.width = n > 1 ? "100%" : "0%";
     };
 
+    document.querySelector<HTMLInputElement>('input[name="cvUrl"]')?.addEventListener("input", () => { if (cvError) { cvError.hidden = true; cvError.textContent = ""; } });
     cvInput?.addEventListener("change", () => {
       const file = cvInput.files && cvInput.files[0];
       if (cvError) { cvError.hidden = true; cvError.textContent = ""; }
@@ -303,14 +305,6 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
         cvBox?.classList.add("is-filled");
         cvMsg.innerHTML = `<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M 3 8 L 7 12 L 13 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>${file.name}<em>change</em></span>`;
       }
-    });
-
-    const readCv = (file: File | null | undefined) => new Promise((resolve) => {
-      if (!file) return resolve({});
-      const r = new FileReader();
-      r.onload = () => resolve({ cvName: file.name, cvType: file.type || "application/octet-stream", cvSize: file.size, cvBase64: String(r.result).split(",").pop() });
-      r.onerror = () => resolve({ cvName: file.name, cvError: "could not read file" });
-      r.readAsDataURL(file);
     });
 
     f1?.addEventListener("submit", async (e) => {
@@ -329,13 +323,14 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
         if (cvError) { cvError.hidden = false; cvError.textContent = "Add a CV file or a link to one."; }
         return;
       }
-      cvPayload = await readCv(file);
+      cvFile = file || null;
       const { cv: _cv, ...rest } = d;
       basics = rest;
       f1.hidden = true;
       if (f2) f2.hidden = false;
       setStep(2);
       f2?.scrollIntoView({ block: "start", behavior: "smooth" });
+      const h2 = f2?.querySelector("h2") as HTMLElement | null; if (h2) { h2.setAttribute("tabindex", "-1"); h2.focus({ preventScroll: true }); }
     });
 
     backBtn?.addEventListener("click", () => {
@@ -360,13 +355,9 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
         if (label) label.textContent = on ? "Sending…" : orig;
       };
       setBusy(true);
-      const fail = () => { setBusy(false); showErr("We couldn't send that just now. Please email hr@mondaymarketing.company and we'll pick it up."); };
+      const fail = (m?: string) => { setBusy(false); showErr(m || "We couldn't send that just now. Please email hr@mondaymarketing.company and we'll pick it up."); };
       const w = window as any;
-      if (!w.MMCForms) { fail(); return; }
-      Promise.resolve(w.MMCForms.submitLead(
-        { role: f2.dataset.role, roleSlug: f2.dataset.slug, ...basics, ...cvPayload, ...screen, consent: true },
-        { subject: "Application, " + f2.dataset.role + " - " + (basics.name || "candidate") }
-      )).then(() => {
+      const done = () => {
         setBusy(false);
         f2.hidden = true;
         if (thanks) {
@@ -376,7 +367,43 @@ const hiringSteps = own && own.length ? own.map((d) => ({ d })) : stepsFor("role
           thanks.focus();
         }
         steps?.setAttribute("hidden", "");
-      }).catch(fail);
+      };
+      const data = { role: f2.dataset.role, roleSlug: f2.dataset.slug, ...basics, ...screen, consent: true, _page: location.pathname,
+        _k: (w.crypto && w.crypto.randomUUID ? w.crypto.randomUUID().replace(/-/g, "") : String(Date.now()) + Math.random().toString(36).slice(2, 12)) };
+      // Live site: the application, with the CV as a real file, goes to our own receiver and is saved before we say thanks.
+      // Anywhere else (local preview) there is no receiver, so the old email path is kept.
+      const applyUrl: string = w.MMC_APPLY_ENDPOINT || (/(^|\.)mondaymarketing\.company$/i.test(location.hostname) ? "/forms/apply.php" : "");   // MMC_APPLY_ENDPOINT lets QA point a preview at a test receiver
+      if (applyUrl) {
+        const send = async () => {
+          let tok = "";
+          try { tok = w.MMCCaptcha ? await w.MMCCaptcha.token("mmc_form") : ""; } catch {}
+          const fd = new FormData();
+          // First-touch attribution and the cookie choice, the same fields every lead form sends (helpers from public/assets/mmc-forms.js).
+          const mfa = w.MMCForms || {};
+          const _attr = mfa.attribution ? mfa.attribution() : undefined, _consent = mfa.consent ? mfa.consent() : undefined;
+          fd.append("data", JSON.stringify({ ...data, _attr, _consent, _rc: tok, _hp: (document.querySelector('input[name="_hp"]') as HTMLInputElement | null)?.value || "" }));
+          if (cvFile) fd.append("cv", cvFile, cvFile.name);
+          const r = await fetch(applyUrl, { method: "POST", body: fd });
+          const j = await r.json().catch(() => ({}));
+          if (r.ok && j.ok) { try { (window as any).dataLayer = (window as any).dataLayer || []; (window as any).dataLayer.push({ event: "job_application_submit", cta_source: "careers-apply" }); } catch {} done(); return; }
+          if (j && typeof j.error === "string" && j.error.indexOf("cv") === 0 && j.error !== "cv_url") {
+            // A problem with the file itself is fixed on step 1, where the file was chosen.
+            setBusy(false); showErr("");
+            if (f2) f2.hidden = true; if (f1) f1.hidden = false; setStep(1);
+            if (cvInput) cvInput.value = ""; cvFile = null;
+            cvBox?.classList.remove("is-filled"); if (cvMsg) cvMsg.innerHTML = cvMsgOriginal;
+            if (cvError) { cvError.hidden = false; cvError.textContent = j.message || "That file could not be used. Please choose another or paste a link."; }
+            (cvBox || f1)?.scrollIntoView({ block: "center", behavior: "smooth" });
+            cvInput?.focus({ preventScroll: true });
+            return;
+          }
+          fail(j && j.message ? j.message : undefined);
+        };
+        send().catch(() => fail());
+        return;
+      }
+      if (!w.MMCForms) { fail(); return; }
+      Promise.resolve(w.MMCForms.submitLead(data, { subject: "Application, " + f2.dataset.role + " - " + (basics.name || "candidate") })).then(done).catch(() => fail());
     });
   </script>
   <script>

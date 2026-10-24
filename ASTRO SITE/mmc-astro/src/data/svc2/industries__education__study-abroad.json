@@ -225,7 +225,7 @@
         "d": "We review ads, forms, CRM and counsellor workflow, and agree a qualified-lead definition.",
         "get": "A funnel map.",
         "img": "edu/crm.jpg",
-        "alt": "Illustrative scene: a leads list in a CRM.",
+        "alt": "A leads list in a CRM.",
         "pos": "50% 50%"
       },
       {
@@ -234,7 +234,7 @@
         "d": "Country and course pages, qualifying forms and routing go live.",
         "get": "A funnel that qualifies.",
         "img": "edu/search.jpg",
-        "alt": "Illustrative scene: a phone search for colleges.",
+        "alt": "A phone search for colleges.",
         "pos": "50% 50%"
       },
       {
@@ -243,7 +243,7 @@
         "d": "Sessions are promoted and attendance is tracked.",
         "get": "Intent you can see.",
         "img": "b2b/seminar.jpg",
-        "alt": "Illustrative scene: a speaker presenting to a seated audience.",
+        "alt": "A speaker presenting to a seated audience.",
         "pos": "50% 50%"
       },
       {
@@ -252,7 +252,7 @@
         "d": "Nurture series start and counselling is tracked to enrolment.",
         "get": "Reporting by source.",
         "img": "edu/campus.jpg",
-        "alt": "Illustrative scene: students and parents walking into a college entrance on an open day.",
+        "alt": "Students and parents walking into a college entrance on an open day.",
         "pos": "50% 50%"
       }
     ]

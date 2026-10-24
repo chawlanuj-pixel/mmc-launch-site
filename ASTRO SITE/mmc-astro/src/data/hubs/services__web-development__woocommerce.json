@@ -215,7 +215,7 @@
             "The result is a store that loads quickly on a phone, takes payments the way your buyers prefer, and does not break when an update arrives. For the wider site, theme and editing set-up see <a href=\"/services/web-development/wordpress/\">WordPress development</a>."
           ],
           "img": "cro/cart.jpg",
-          "cap": "Illustrative scene: a store planned product by product."
+          "cap": "A store planned product by product."
         },
         {
           "id": "woocommerce-vs",
@@ -270,37 +270,37 @@
           "t": "Catalogue and variations",
           "d": "Products, sizes, colours, categories and attributes planned so filters and stock stay clean.",
           "img": "shop/plan.jpg",
-          "alt": "Catalogue and variations: illustrative scene"
+          "alt": "Catalogue and variations"
         },
         {
           "t": "Checkout and payments",
           "d": "A short checkout with cards, UPI and cash on delivery, and the gateway you choose.",
           "img": "d2c/checkout.jpg",
-          "alt": "Checkout and payments: illustrative scene"
+          "alt": "Checkout and payments"
         },
         {
           "t": "Shipping and tax",
           "d": "Zones, rate rules and tax settings built from your courier terms.",
           "img": "cro/pdp.jpg",
-          "alt": "Shipping and tax: illustrative scene"
+          "alt": "Shipping and tax"
         },
         {
           "t": "Speed and plugins",
           "d": "Caching, image handling and script clean-up, with plugins kept few.",
           "img": "web/speed.jpg",
-          "alt": "Speed and plugins: illustrative scene"
+          "alt": "Speed and plugins"
         },
         {
           "t": "Migration",
           "d": "Products, customers and orders moved with redirects in place.",
           "img": "web/crm.jpg",
-          "alt": "Migration: illustrative scene"
+          "alt": "Migration"
         },
         {
           "t": "Orders and handover",
           "d": "Order statuses, emails and stock alerts, with training for your team.",
           "img": "d2c/packing.jpg",
-          "alt": "Orders and handover: illustrative scene"
+          "alt": "Orders and handover"
         }
       ]
     },
@@ -310,7 +310,7 @@
       "h2b": "for WooCommerce.",
       "lede": "A shop is a promise. It has to load, take payment and ship.",
       "img": "web/seo.jpg",
-      "alt": "Why brands choose MMC for WooCommerce. Illustrative scene.",
+      "alt": "Why brands choose MMC for WooCommerce.",
       "items": [
         {
           "t": "Honest platform advice",
@@ -335,7 +335,7 @@
       "h2a": "How a WooCommerce project runs,",
       "h2b": "step by step.",
       "img": "cro/cart.jpg",
-      "alt": "How a WooCommerce project runs, step by step. Illustrative scene.",
+      "alt": "How a WooCommerce project runs, step by step.",
       "items": [
         {
           "t": "Plan the catalogue",

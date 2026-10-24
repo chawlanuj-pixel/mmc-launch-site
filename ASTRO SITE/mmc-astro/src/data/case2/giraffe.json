@@ -9,15 +9,15 @@
   "Google ad"
  ],
  "brief": [
-  "{name} sells packaged snacks. This page covers storefront and campaign creative: the homepage, cart and category pages, plus social tiles and ads for a festive gifting push.",
+  "{name} sells packaged snacks. We built its storefront and campaign creative: the homepage, cart and category pages, plus social tiles and ads for a festive gifting push.",
   "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
  ],
  "showcases": [
   {
    "layout": "stage",
    "kicker": "Storefront",
-   "title": "Homepage and cart, on desktop and mobile",
-   "text": "A festive homepage hero with a gift hamper offer, a shop-by-category row, and phone screens for the cart and a product page.",
+   "title": "Festive homepage on desktop and mobile",
+   "text": "A Diwali homepage hero with three special hampers and one button, and a phone version that leads into shop by category.",
    "crops": [
     "web"
    ]
@@ -40,6 +40,15 @@
    "crops": [
     "ads"
    ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "the products behind the pages",
+   "text": "Product photography from the same project.",
+   "crops": [
+    "products"
+   ]
   }
  ],
  "flow": {
@@ -49,9 +58,11 @@
  },
  "action": "order",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "ads": "{name} Meta and Google Ads, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Make Diwali Extra Delicious hero with three Diwali special hampers and an orange button, and Shop By Categories on the phone",
+  "social": "{name} social media creative tiles",
+  "ads": "{name} Meta and Google Ads",
+  "products": "Three children laughing and eating {name} tomato crackers, ragi cookies and jowar mix at a table, with the packs in front of them",
+  "card": "{name} logo with two children eating {name} ragi cookies at a table"
  }
 }

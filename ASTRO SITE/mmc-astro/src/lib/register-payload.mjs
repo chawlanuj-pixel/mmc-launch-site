@@ -297,6 +297,11 @@ export function buildEmail2(step1, step2, meta) {
   };
 }
 
+/** The visitor's cookie choice as every site form sends it (`_consent`), from the stored "mmc-cookies-v1" value. No choice saved = undefined (the CRM then never shares the lead with ad platforms). */
+export function consentFromStored(raw) {
+  try { const c = JSON.parse(raw || "null"); return c && typeof c === "object" && !Array.isArray(c) ? { marketing: !!c.marketing, analytics: !!c.analytics } : undefined; } catch { return undefined; }
+}
+
 /** Mirrors the structured rendering in public/forms/send.php (keep the two in step). Returns { subject, body }. */
 export function renderBody(p) {
   const lines = [`Reference: ${str(p._ref)}`, ""];

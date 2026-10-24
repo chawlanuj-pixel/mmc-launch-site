@@ -1,144 +1,142 @@
 ---
-// Footer: static. Ported from Footer.jsx. Link lists are verbatim, urls run through href().
+// Footer, "Option A, slim hubs" (owner choice, 2026-10-13). Static; styles in src/styles/footer3.css (prefix ft3-).
+// Top row: logo, tagline, the two calls to action. Five hub columns, one contact line, the legal row ending in Sitemap.
+// Phones (<= 720px): each column is a native <details> group. The markup ships with `open` so crawlers and no-JS
+// visitors see every link; the script below closes the groups on phones and keeps them open on desktop.
+// Previous footer: tools/backup/Footer.astro.before-footer3.
+import "../styles/footer3.css";
 import { href } from "../lib/links";
-import { TOOLS, TOOLS_LABEL, SECONDARY } from "../lib/site";
+import { BOOK, PHONE_DISPLAY, PHONE_TEL } from "../lib/site";
 interface Props { cta?: { label: string; href: string; nav?: boolean } }
-// Default footer button: "Book a call", opens the booking modal. Hiring pages pass { nav: true, label, href } for a plain link.
+// Default primary: BOOK, opens the booking modal. Hiring pages pass { nav: true, label, href } for a plain link.
 const { cta } = Astro.props;
 const nav = !!(cta && cta.nav);
-const ctaLabel = nav ? cta!.label : "Book a call";
+const ctaLabel = nav ? cta!.label : BOOK;
 const ctaHref = nav ? cta!.href : "https://calendly.com/mmc-agency-ww/audit-onboarding-calls";
-const cols = [
-  {
-    title: "Company",
-    items: [
-    { name: "About MMC", url: "About.html" },
-    { name: "Our Work", url: "Our Work.html" },
+
+interface Item { name: string; url: string; hi?: boolean; desk?: boolean }
+// `all` is the phone label of the hub link ("All services"); null hides it on phones where the list already starts with it.
+interface Col { hub: string; url: string; all: string | null; items: Item[] }
+const cols: Col[] = [
+  { hub: "Services", url: "/services/", all: "All services", items: [
+    { name: "Performance marketing", url: "/services/performance-marketing/" },
+    { name: "SEO and AI search", url: "/services/seo/" },
+    { name: "Shopify and websites", url: "/services/shopify-development/" },
+    { name: "Branding and packaging", url: "/services/branding/" },
     { name: "AI by MMC", url: "/ai-by-mmc/" },
-    { name: "Careers", url: "Careers.html" },
-    { name: "Contact", url: "Contact.html" }]
-  },
-  {
-    title: "Services",
-    wide: true,
-    items: [
-    { name: "All services", url: "services.html" },
-    { name: "Branding", url: "branding.html" },
-    { name: "Packaging design", url: "packaging-design.html" },
-    { name: "UI/UX design", url: "ui-ux-design.html" },
-    { name: "Performance marketing", url: "performance-marketing.html" },
-    { name: "Meta Ads", url: "meta-ads.html" },
-    { name: "Google Ads", url: "google-ads.html" },
-    { name: "Amazon Ads", url: "amazon-ads.html" },
-    { name: "Quick commerce ads", url: "quick-commerce-ads.html" },
-    { name: "Lead generation", url: "lead-generation.html" },
-    { name: "Retention marketing", url: "retention-marketing.html" },
-    { name: "Online reputation management", url: "online-reputation-management.html" },
-    { name: "SEO", url: "seo.html" },
-    { name: "Conversion optimisation", url: "conversion-rate-optimisation.html" },
-    { name: "Influencer marketing", url: "influencer-marketing.html" },
-    { name: "Shopify development", url: "shopify-development.html" },
-    { name: "Website development", url: "web-development.html" },
-    { name: "Mobile app development", url: "mobile-app-development.html" },
-    { name: "UGC and video", url: "ugc-and-video.html" },
-    { name: "Social media creatives", url: "social-media-creatives.html" }]
-  },
-  {
-    title: "Industries and resources",
-    items: [
-    { name: "Industries", url: "industries.html" },
-    { name: "D2C brands", url: "d2c.html" },
-    { name: "B2B companies", url: "b2b.html" },
-    { name: "Education", url: "education.html" },
-    { name: "Resources", url: "resources.html" },
-    { name: "Guides", url: "guides.html" }]
-  },
-  {
-    title: TOOLS_LABEL,
-    items: [
-    ...TOOLS.map((t) => ({ name: t.short, url: t.href })),
-    { name: "D2C marketing glossary", url: "d2c-marketing-glossary.html" }]
-  }];
+  ] },
+  { hub: "Industries", url: "/industries/", all: "All industries", items: [
+    { name: "D2C brands", url: "/industries/d2c/" },
+    { name: "B2B companies", url: "/industries/b2b/" },
+    { name: "Education", url: "/industries/education/" },
+    { name: "All industries", url: "/industries/", desk: true },
+  ] },
+  { hub: "White label", url: "/white-label/", all: "All white-label services", items: [
+    { name: "White-label SEO", url: "/white-label/seo/" },
+    { name: "White-label web development", url: "/white-label/web-development/" },
+    { name: "Reseller programme", url: "/white-label/reseller-programme/" },
+    { name: "Register as a partner", url: "/white-label/register/", hi: true },
+  ] },
+  { hub: "Resources", url: "/resources/", all: "All resources", items: [
+    { name: "Our work", url: "/work/" },
+    { name: "Guides", url: "/guides/" },
+    { name: "Calculators", url: "/tools/" },
+    { name: "Glossary", url: "/glossary/" },
+  ] },
+  { hub: "Company", url: "/about/", all: null, items: [
+    { name: "About MMC", url: "/about/" },
+    { name: "Careers", url: "/careers/" },
+    { name: "Locations", url: "/locations/" },
+    { name: "Contact", url: "/contact/" },
+  ] },
+];
+const arrow = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
 ---
-<footer id="footer" class="ft ink-ground">
-  <div class="ft__container">
-    <div class="ft__top">
-      <a class="ft__brand" href="/" aria-label="Monday Marketing Company">
-        <img src="/assets/logo-white-yellow.png" alt="MMC · Monday Marketing Company" class="ft__brand-img" style="width:158px;height:127px" />
-        <div class="ft__brand-tag">Design × Marketing × Technology × Content × AI</div>
-      </a>
-      <div class="ft__cta-stack">
-        {nav
-          ? <a class="ft__cta" href={ctaHref}>{ctaLabel}<span class="arrow"></span></a>
-          : <a class="ft__cta" href={ctaHref} target="_blank" rel="noreferrer" data-ft-book>
-          {ctaLabel}
-          <span class="arrow"></span>
-        </a>}
-        <button type="button" class="ft__cta-alt" data-ft-brief>{SECONDARY.brief}</button>
-      </div>
-    </div>
-
-    <div class="ft__cols">
-      {cols.map((c) => (
-        <div class={"ft__col" + (c.wide ? " ft__col--wide" : "")}>
-          <div class="ft__col-label">{c.title}</div>
-          <ul>
-            {c.items.map((it) => <li><a href={href(it.url)}>{it.name}</a></li>)}
-          </ul>
+<footer id="footer" class="ft3 ink-ground">
+  <div class="ft3__in">
+    <div class="ft3__top">
+      <div class="ft3__brand">
+        <a class="ft3__logo" href="/" aria-label="Monday Marketing Company, home">
+          <img src="/assets/logo-white-yellow.png" alt="MMC, Monday Marketing Company" width="120" height="100" loading="lazy" decoding="async" />
+        </a>
+        <div class="ft3__brand-txt">
+          <p class="ft3__tag">Design × Marketing × Technology × Content × AI</p>
+          <p class="ft3__since">Quietly outperforming, since 2015.</p>
         </div>
+      </div>
+      <div class="ft3__acts">
+        {nav
+          ? <a class="ft3__book" href={ctaHref}>{ctaLabel}<Fragment set:html={arrow} /></a>
+          : <a class="ft3__book" href={ctaHref} target="_blank" rel="noreferrer" data-ft-book>{ctaLabel}<Fragment set:html={arrow} /></a>}
+        <a class="ft3__audit" href="/audit/" data-ft-brief>Get my free audit</a>
+      </div>
+    </div>
+
+    <nav class="ft3__cols" aria-label="Footer">
+      {cols.map((c) => (
+        <details class="ft3__grp" open data-ft3-grp>
+          <summary class="ft3__sum"><span>{c.hub}</span><svg class="ft3__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <a class={"ft3__hub" + (c.all ? "" : " ft3__hub--desk")} href={href(c.url)}>
+            <span class="ft3__hub-d">{c.hub}</span>{c.all && <span class="ft3__hub-m">{c.all}</span>}<Fragment set:html={arrow} />
+          </a>
+          <ul class="ft3__list">
+            {c.items.map((it) => (
+              <li class={it.desk ? "ft3__desk" : undefined}><a class={it.hi ? "ft3__hi" : undefined} href={href(it.url)}>{it.name}</a></li>
+            ))}
+          </ul>
+        </details>
       ))}
+    </nav>
+
+    <div class="ft3__contact">
+      <div class="ft3__reach">
+        <a class="ft3__strong" href={"tel:" + PHONE_TEL}>{PHONE_DISPLAY}</a>
+        <a class="ft3__strong ft3__mail" href="mailto:sales-in@mondaymarketing.company">sales-in@mondaymarketing.company</a>
+        <a class="ft3__place" href="/locations/mumbai/">Mumbai, Maharashtra</a>
+      </div>
+      <div class="ft3__social">
+        <a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.8v.1M11.5 16v-3.2a2.3 2.3 0 0 1 4.6 0V16M11.5 10.5V16"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
     </div>
 
-    <div class="ft__base">
-      <div class="ft__base-l">
-        <a href="tel:+917666309102">+91 766 630 9102</a>
-        <span class="ft__dot"></span>
-        <a href={href("Contact.html")}>Thane · Mumbai · Indore</a>
-      </div>
-      <div class="ft__base-r">
-        <a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href={href("Privacy.html")}>Privacy</a>
-        <a href={href("Terms.html")}>Terms</a>
+    <div class="ft3__legal">
+      <p class="ft3__copy">© 2026 Monday Marketing Company<span class="ft3__sep" aria-hidden="true">·</span><span class="ft3__llp">Operated by Studio27 Creative Media Works LLP</span></p>
+      <div class="ft3__legal-links">
+        <a href={href("/privacy/")}>Privacy</a>
+        <a href={href("/terms/")}>Terms</a>
         <a href="#" data-ft-cookies>Cookies</a>
+        <a href="/sitemap/">Sitemap</a>
       </div>
-    </div>
-
-    <div class="ft__legal">
-      <span>© 2026 Monday Marketing Company</span>
-      <span class="em-serif ft__tagline">Quietly outperforming, since 2019.</span>
     </div>
   </div>
 </footer>
-
-<style is:global>
-  /* Company | Services (two sub-columns, wide enough that labels stay on one line) | Industries | Calculators */
-  .ft__cols:has(.ft__col--wide) { grid-template-columns: minmax(0, .7fr) minmax(0, 2.1fr) minmax(0, 1fr) minmax(0, 1.05fr); column-gap: clamp(24px, 3.4vw, 64px); }
-  .ft__col--wide ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(18px, 2.2vw, 36px); row-gap: 11px; }
-  .ft .ft__col ul { gap: 11px; }
-  .ft .ft__col a { font-size: 14px; line-height: 1.35; }
-  .ft .ft__col--wide a { white-space: nowrap; }
-  .ft .ft__brand-tag { max-width: none; white-space: nowrap; }
-  .ft { padding-bottom: 92px; }
-  @media (max-width: 1100px) {
-    .ft__cols:has(.ft__col--wide) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .ft__col--wide { grid-column: 1 / -1; order: 4; }
-    .ft .ft__col--wide a { white-space: normal; }
-    .ft .ft__brand-tag { white-space: normal; }
-  }
-  @media (max-width: 720px) { .ft__cols:has(.ft__col--wide) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 720px) { .ft .ft__dot { display: none; } }
-  @media (max-width: 1100px) { .ft .ft__cta-alt { min-height: 44px; display: inline-flex; align-items: center; } }
-  @media (max-width: 460px) { .ft__cols:has(.ft__col--wide) { grid-template-columns: 1fr; } .ft__col--wide ul { grid-template-columns: 1fr 1fr; } }
-</style>
 
 <script>
   // Wire the footer buttons to the global helpers from public/assets/mmc-forms.js and the cookie banner.
   const w = window as any;
   document.querySelectorAll("[data-ft-book]").forEach((el) =>
     el.addEventListener("click", (e) => { if (w.mmcBookCall) w.mmcBookCall("footer", e); }));
+  // The audit modal is left out of one private pricing page (PricingShell audit=false); there the link opens /audit/ instead.
+  const hasAudit = () => !!document.querySelector('astro-island[component-url*="AuditModal"], .audit');
   document.querySelectorAll("[data-ft-brief]").forEach((el) =>
-    el.addEventListener("click", (e) => { if (w.mmcOpenBrief) w.mmcOpenBrief(e); }));
+    el.addEventListener("click", (e) => { if (w.mmcOpenBrief && hasAudit()) w.mmcOpenBrief(e); }));
+  // Phone link clicks: the same contact-click event the mobile bar sends (contact_method tells phone from WhatsApp). No personal data.
+  document.querySelectorAll<HTMLAnchorElement>('footer a[href^="tel:"]').forEach((el) =>
+    el.addEventListener("click", () => { try { (w.dataLayer = w.dataLayer || []).push({ event: "whatsapp_click", cta_source: "footer-phone", contact_method: "phone" }); } catch (e) {} }));
   document.querySelectorAll("[data-ft-cookies]").forEach((el) =>
     el.addEventListener("click", (e) => { e.preventDefault(); if (w.__mmcOpenCookies) w.__mmcOpenCookies(); }));
+
+  // Phone accordions: closed on phones, always open on desktop (where the summary is hidden). Follows resizes and rotation.
+  const groups = document.querySelectorAll<HTMLDetailsElement>("[data-ft3-grp]");
+  const mq = window.matchMedia("(max-width: 720px)");
+  const sync = () => groups.forEach((d) => { d.open = !mq.matches; });
+  sync();
+  mq.addEventListener("change", sync);
 </script>

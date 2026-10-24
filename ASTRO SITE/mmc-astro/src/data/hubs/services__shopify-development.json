@@ -112,7 +112,7 @@
           "name": "Who is Shopify development for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Shopify is mainly for D2C brands that sell online, so this page leads with D2C. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders. For marketing sites, see website development."
+            "text": "Shopify is mainly for D2C brands that sell online, so most of this work is for D2C. B2B and education brands that sell online use the same method, judged on orders and enquiries. For marketing sites, see website development."
           }
         },
         {
@@ -341,7 +341,7 @@
       },
       {
         "q": "Who is Shopify development for?",
-        "a": "Shopify is mainly for D2C brands that sell online, so this page leads with D2C. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders. For marketing sites, see <a href=\"web-development.html\">website development</a>."
+        "a": "Shopify is mainly for D2C brands that sell online, so most of this work is for D2C. B2B and education brands that sell online use the same method, judged on orders and enquiries. For marketing sites, see <a href=\"web-development.html\">website development</a>."
       },
       {
         "q": "What do you need from us?",
@@ -411,37 +411,37 @@
           "t": "Structure and navigation",
           "d": "Collections, filters and menus planned from how your customers actually shop.",
           "img": "shop/plan.jpg",
-          "alt": "Structure and navigation: illustrative scene"
+          "alt": "Structure and navigation"
         },
         {
           "t": "Theme design for trust",
           "d": "Product pages, reviews and policies laid out so a first-time visitor feels safe to buy.",
           "img": "shop/design.jpg",
-          "alt": "Theme design for trust: illustrative scene"
+          "alt": "Theme design for trust"
         },
         {
           "t": "Speed and Core Web Vitals",
           "d": "Lean code, compressed media and apps kept to what earns its weight.",
           "img": "shop/speed.jpg",
-          "alt": "Speed and Core Web Vitals: illustrative scene"
+          "alt": "Speed and Core Web Vitals"
         },
         {
           "t": "Checkout and payments",
           "d": "A short path to pay with the Indian payment methods and COD options your buyers expect.",
           "img": "shop/checkout.jpg",
-          "alt": "Checkout and payments: illustrative scene"
+          "alt": "Checkout and payments"
         },
         {
           "t": "App and tool integrations",
           "d": "Email, WhatsApp, reviews, subscriptions and analytics connected and tested.",
           "img": "shop/integrate.jpg",
-          "alt": "App and tool integrations: illustrative scene"
+          "alt": "App and tool integrations"
         },
         {
           "t": "Migration and handover",
           "d": "Products, customers and redirects moved safely, with training so your team can run the store.",
           "img": "web/speed.jpg",
-          "alt": "Migration and handover: illustrative scene"
+          "alt": "Migration and handover"
         }
       ]
     },
@@ -451,7 +451,7 @@
       "h2b": "with MMC.",
       "lede": "We build the store and run the marketing that sends it traffic.",
       "img": "shop/speed.jpg",
-      "alt": "Why brands build Shopify with MMC. Illustrative scene.",
+      "alt": "Why brands build Shopify with MMC.",
       "items": [
         {
           "t": "Built by people who run the ads",
@@ -476,7 +476,7 @@
       "h2a": "How we build your Shopify store,",
       "h2b": "step by step.",
       "img": "shop/integrate.jpg",
-      "alt": "How we build your Shopify store, step by step. Illustrative scene.",
+      "alt": "How we build your Shopify store, step by step.",
       "items": [
         {
           "t": "Plan the structure",

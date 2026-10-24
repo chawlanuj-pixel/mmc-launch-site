@@ -383,37 +383,37 @@
           "t": "Creator shortlist",
           "d": "Creators chosen for audience fit and past content quality, not for follower size alone.",
           "img": "inf/shortlist.jpg",
-          "alt": "Creator shortlist: illustrative scene"
+          "alt": "Creator shortlist"
         },
         {
           "t": "Campaign brief",
           "d": "One clear idea, the must-say points and room for the creator to sound like themselves.",
           "img": "inf/brief.jpg",
-          "alt": "Campaign brief: illustrative scene"
+          "alt": "Campaign brief"
         },
         {
           "t": "Terms and usage rights",
           "d": "Deliverables, timelines and content usage agreed in writing before work starts.",
           "img": "inf/terms.jpg",
-          "alt": "Terms and usage rights: illustrative scene"
+          "alt": "Terms and usage rights"
         },
         {
           "t": "Tracking to sales",
           "d": "Codes, links and platform data set up so posts can be tied to orders or enquiries.",
           "img": "inf/tracking.jpg",
-          "alt": "Tracking to sales: illustrative scene"
+          "alt": "Tracking to sales"
         },
         {
           "t": "Content reuse",
           "d": "The best posts adapted into paid ads and site content, within the agreed rights.",
           "img": "inf/reuse.jpg",
-          "alt": "Content reuse: illustrative scene"
+          "alt": "Content reuse"
         },
         {
           "t": "Review and next round",
           "d": "What worked and what did not, written up to shape the next campaign.",
           "img": "services/creative.jpg",
-          "alt": "Review and next round: illustrative scene"
+          "alt": "Review and next round"
         }
       ]
     },
@@ -423,7 +423,7 @@
       "h2b": "influencer marketing.",
       "lede": "We treat creators as a channel to measure, not a favour to hope for.",
       "img": "inf/terms.jpg",
-      "alt": "Why brands use MMC for influencer marketing. Illustrative scene.",
+      "alt": "Why brands use MMC for influencer marketing.",
       "items": [
         {
           "t": "Fit before reach",

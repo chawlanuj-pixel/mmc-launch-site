@@ -2,8 +2,8 @@
   "file": "white-label-web-development.html",
   "path": "/white-label/web-development/",
   "key": "wl_web_development",
-  "title": "White-Label Web Development Services | MMC",
-  "description": "White-label web development for agencies: front-end and back-end builds from your designs, tested, documented and handed over under your brand.",
+  "title": "White-Label Web Development for Agencies | MMC",
+  "description": "White-label web development for agencies: WordPress, Shopify and custom builds delivered under your brand, with code handover and documented QA.",
   "ogTitle": "White-label web development for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label web development.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/web-development/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/web-development/",
-      "name": "White-Label Web Development Services | MMC",
-      "description": "White-label web development for agencies: front-end and back-end builds from your designs, tested, documented and handed over under your brand.",
+      "name": "White-Label Web Development for Agencies | MMC",
+      "description": "White-label web development for agencies: WordPress, Shopify and custom builds delivered under your brand, with code handover and documented QA.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "For platform detail see <a href=\"/white-label/wordpress-development/\">WordPress</a> and <a href=\"/white-label/shopify-development/\">Shopify</a>; our own work is on the <a href=\"/services/web-development/\">web development</a> page."
           ],
           "img": "web/build.jpg",
-          "cap": "Illustrative scene: a build spec being reviewed.",
+          "cap": "A build spec being reviewed.",
           "table": {
             "caption": "Web development builds by platform",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Front-end build",
           "d": "Responsive templates from design files.",
           "img": "web/build.jpg",
-          "alt": "Front-end build: illustrative scene"
+          "alt": "Front-end build"
         },
         {
           "t": "Back-end features",
           "d": "Custom forms, logic and admin tools.",
           "img": "web/crm.jpg",
-          "alt": "Back-end features: illustrative scene"
+          "alt": "Back-end features"
         },
         {
           "t": "Integrations",
           "d": "CRM, payment and marketing tools connected.",
           "img": "shop/integrate.jpg",
-          "alt": "Integrations: illustrative scene"
+          "alt": "Integrations"
         },
         {
           "t": "Speed work",
           "d": "Lean code and image handling.",
           "img": "web/speed.jpg",
-          "alt": "Speed work: illustrative scene"
+          "alt": "Speed work"
         },
         {
           "t": "QA and testing",
           "d": "Cross-device and form testing before handover.",
           "img": "web/plan.jpg",
-          "alt": "QA and testing: illustrative scene"
+          "alt": "QA and testing"
         },
         {
           "t": "Documentation",
           "d": "Notes your team can use after launch.",
           "img": "web/seo.jpg",
-          "alt": "Documentation: illustrative scene"
+          "alt": "Documentation"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label web development.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "web/build.jpg",
-      "alt": "Why agencies choose MMC for white-label web development. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label web development.",
       "items": [
         {
           "t": "Spec before code",
@@ -309,7 +309,7 @@
       "h2a": "How white-label web development works,",
       "h2b": "step by step.",
       "img": "web/build.jpg",
-      "alt": "How white-label web development works, step by step. Illustrative scene.",
+      "alt": "How white-label web development works, step by step.",
       "items": [
         {
           "t": "Spec",
@@ -424,7 +424,10 @@
       "h2a": "Add web development",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first web development client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

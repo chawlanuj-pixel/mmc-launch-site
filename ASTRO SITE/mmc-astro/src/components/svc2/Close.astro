@@ -4,8 +4,9 @@
 import { BOOK, SECONDARY, TOOLS_FOR, toolBySlug } from "../../lib/site";
 import { guidesFor } from "../../lib/links-map";
 import { href } from "../../lib/links";
-interface Props { H: any; S: any; source: string; toolsKey: string }
-const { H, S, source, toolsKey } = Astro.props as Props;
+// `groups` (white-label hub only): the hub's children in TABLE-C groups, shown in the chips band instead of the single "Related" row.
+interface Props { H: any; S: any; source: string; toolsKey: string; groups?: Array<{ label: string; links: Array<{ n: string; href: string }> }> }
+const { H, S, source, toolsKey, groups = [] } = Astro.props as Props;
 const C = S.close;
 const IMG: Record<string, string> = {
   "unit-economics": "/assets/res/unit.jpg", "breakeven-roas": "/assets/res/roas.jpg", "ltv-cac": "/assets/res/ltv.jpg",
@@ -59,7 +60,19 @@ const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   </div>
 </section>
 )}
-{cards.length === 0 && C.chips?.length > 0 && (
+{cards.length === 0 && groups.length > 0 && (
+<section class="s2-band s2-band--paper s2-wlg" id="services" aria-label="White-label services">
+  <div class="s2-wrap">
+    {groups.map((g) => (
+      <nav class="s2-chips" aria-label={g.label}>
+        <span>{g.label}</span>
+        <div class="s2-wlg__links">{g.links.map((c) => <a href={href(c.href)}>{c.n}{<Fragment set:html={arrow} />}</a>)}</div>
+      </nav>
+    ))}
+  </div>
+</section>
+)}
+{cards.length === 0 && groups.length === 0 && C.chips?.length > 0 && (
 <section class="s2-band s2-band--paper" aria-label={C.chipsLabel}>
   <div class="s2-wrap">
     <nav class="s2-chips" aria-label={C.chipsLabel}>
@@ -69,3 +82,22 @@ const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   </div>
 </section>
 )}
+<style is:global>
+  /* White-label hub groups: an index, one row per group with a hairline between rows. The label keeps its own column from 721px up,
+     so a group that wraps lines its second row up under its first chip, not under the label. Phones stack the label above a plain
+     list: full-width rows with the arrow on the right, so long names wrap cleanly and 26 links do not become a wall of pills. */
+  .s2-wlg .s2-chips { display: grid; grid-template-columns: clamp(140px, 22%, 220px) minmax(0, 1fr); align-items: start; gap: 10px 24px; margin: 0; padding: 20px 0; border-top: 1px solid var(--s2-line); }
+  .s2-wlg .s2-chips:last-child { border-bottom: 1px solid var(--s2-line); }
+  .s2-wlg .s2-chips > span { margin: 0; padding-top: 13px; line-height: 1.4; }
+  .s2-wlg__links { display: flex; flex-wrap: wrap; gap: 10px; min-width: 0; }
+  .s2-wlg .s2-wlg__links a { max-width: 100%; }
+  @media (max-width: 720px) {
+    .s2-wlg .s2-chips { grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 18px 0 8px; }
+    .s2-wlg .s2-chips > span { padding-top: 0; }
+    .s2-wlg__links { flex-direction: column; gap: 0; }
+    .s2-wlg .s2-wlg__links a { width: 100%; justify-content: space-between; gap: 16px; padding: 11px 0; border: 0; border-radius: 0; background: none; line-height: 1.35; }
+    .s2-wlg .s2-wlg__links a + a { border-top: 1px solid var(--s2-line); }
+    .s2-wlg .s2-wlg__links a svg { flex: none; color: var(--s2-blue); }
+    .s2-wlg .s2-wlg__links a:hover { background: none; color: var(--s2-blue-d); }
+  }
+</style>

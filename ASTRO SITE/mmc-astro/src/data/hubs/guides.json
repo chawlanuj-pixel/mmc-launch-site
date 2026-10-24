@@ -2,10 +2,10 @@
   "file": "guides.html",
   "path": "/guides/",
   "key": "guides",
-  "title": "Marketing Guides for D2C Brands in India | MMC",
-  "description": "Practical guides from MMC on contribution margin and break-even ROAS, why ad dashboards over-count sales, and how to test ad creative without guessing.",
-  "ogTitle": "Practical marketing guides for D2C brands",
-  "ogDescription": "Three guides on the decisions that decide profit.",
+  "title": "Marketing Guides for D2C and Education in India | MMC",
+  "description": "Practical guides from MMC on break-even ROAS, why ad dashboards over-count sales, how to test ad creative and how to plan admission marketing for colleges.",
+  "ogTitle": "Practical marketing guides for D2C and education",
+  "ogDescription": "Four guides on the decisions that decide profit and admissions.",
   "ogAlt": "Monday Marketing Company: guides.",
   "jsonld": [
     {
@@ -38,8 +38,8 @@
       "@type": "CollectionPage",
       "@id": "https://www.mondaymarketing.company/guides.html#webpage",
       "url": "https://www.mondaymarketing.company/guides.html",
-      "name": "Marketing Guides for D2C Brands in India | MMC",
-      "description": "Practical guides from MMC on contribution margin and break-even ROAS, why ad dashboards over-count sales, and how to test ad creative without guessing.",
+      "name": "Marketing Guides for D2C and Education in India | MMC",
+      "description": "Practical guides from MMC on break-even ROAS, why ad dashboards over-count sales, how to test ad creative and how to plan admission marketing for colleges.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -69,7 +69,7 @@
           "name": "Who are the guides for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Founders and marketers at D2C brands, and anyone who wants the method behind a marketing decision."
+            "text": "Founders and marketers at D2C brands, admissions and marketing teams at colleges, and anyone who wants the method behind a marketing decision."
           }
         },
         {
@@ -104,7 +104,7 @@
       ],
       ""
     ],
-    "sub": "Plain-English guides on the numbers and habits behind profitable marketing, each with a free tool to check your own figures.",
+    "sub": "Plain-English guides on the numbers and habits behind profitable marketing and admissions, each linked to a free tool or a service.",
     "tiles": [
       {
         "img": "guides/cost.jpg",
@@ -133,9 +133,9 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "A marketing guide is a plain explanation of one decision, with the method and a worked example, so you can apply it to your own numbers. MMC writes guides on the decisions that decide whether marketing makes money, for D2C founders and marketers, each linked to a free calculator or service. They use made-up examples and promise no results.",
+      "lead": "A marketing guide is a plain explanation of one decision, with the method and a worked example, so you can apply it to your own numbers. MMC writes guides on the decisions that decide whether marketing makes money or fills a college intake, for D2C founders, marketers and admissions teams, each linked to a free calculator or service. They use made-up examples and promise no results.",
       "hl": "with the method and a worked example",
-      "who": "Monday Marketing Company (MMC) writes guides on the decisions that decide whether marketing makes money, each linked to a free calculator or service.",
+      "who": "Monday Marketing Company (MMC) writes guides on the decisions that decide whether marketing makes money or fills an intake, each linked to a free calculator or service.",
       "points": [
         {
           "icon": "coin",
@@ -149,17 +149,17 @@
         },
         {
           "icon": "users",
-          "title": "Written for founders",
+          "title": "Written for practitioners",
           "text": "Plain English, no jargon left unexplained."
         }
       ],
       "image": "guides/library.jpg",
-      "chip": "Three guides to start"
+      "chip": "Four guides to start"
     },
     "leaks": {
       "style": "stack",
-      "eyebrow": "The three guides",
-      "h2a": "Three decisions that go better",
+      "eyebrow": "The guides",
+      "h2a": "Decisions that go better",
       "h2b": "with a method.",
       "lede": "Each guide starts from a mistake we see often. Pick the one closest to yours.",
       "doesLabel": "What the guide shows"
@@ -191,6 +191,15 @@
         "does": "The guide shows how to test hooks, angles and formats, read the results and refresh before ads tire.",
         "href": "guide-creative-testing.html",
         "img": "guides/cards.jpg"
+      },
+      {
+        "k": "Plan the whole intake",
+        "tag": "Admission marketing plan for colleges",
+        "breaks": "Spending evenly across an admissions cycle.",
+        "why": "Families decide in stages, so the weeks before applications, the peak enquiry weeks and the period after offers each need different work.",
+        "does": "The guide shows how to plan an intake from the first search to the first day of class, with the four numbers to track and a month-by-month checklist.",
+        "href": "guide-admission-marketing-plan.html",
+        "img": "edu/campus.jpg"
       }
     ],
     "beyond": {
@@ -232,7 +241,7 @@
       },
       {
         "q": "Who are the guides for?",
-        "a": "Founders and marketers at D2C brands, and anyone who wants the method behind a marketing decision."
+        "a": "Founders and marketers at D2C brands, admissions and marketing teams at colleges, and anyone who wants the method behind a marketing decision."
       },
       {
         "q": "Do the guides promise results?",

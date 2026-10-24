@@ -15,10 +15,12 @@ import { fixDeep, href } from "../lib/links";
 import { rewriteJsonld } from "../lib/hub";
 import Faq from "../components/hub/Faq.astro";
 import "../styles/about3.css";
+import { AGENCY_LINE, agencyTwin } from "../lib/whitelabel";
+const agency = agencyTwin("/about/")!;
 
 const SITE = "https://www.mondaymarketing.company";
-const title = "About Monday Marketing Company | Thane, India";
-const description = "MMC is an India-based growth partner for D2C, B2B and education brands, founded in 2019 in Thane. One senior team, measured on contribution margin.";
+const title = "About Monday Marketing Company | Mumbai, India";
+const description = "MMC is an India-based growth partner for D2C, B2B and education brands, in content and media since 2015. One senior team, measured on contribution margin.";
 
 const ARR = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>';
 
@@ -50,11 +52,11 @@ const BELIEFS = [
 ];
 
 const FAQ = [
-  { q: "What is Monday Marketing Company?", a: "Monday Marketing Company (MMC) is an India-based growth partner for D2C, B2B and education brands, founded in 2019 and based in Thane, Maharashtra. It is led by D2C performance marketing." },
+  { q: "What is Monday Marketing Company?", a: "Monday Marketing Company (MMC) is an India-based growth partner for D2C, B2B and education brands, in content and media since 2015, a full-service growth agency since 2020, and based in Mumbai and Indore. It is led by D2C performance marketing." },
   { q: "What are the connected systems?", a: "Performance media, creative and UGC, retention and follow-up, conversion and technology, and brand and packaging. They are run by one senior team under one strategist and one P&amp;L, rather than by five separate vendors." },
   { q: "Who does MMC work with?", a: "D2C brands, B2B companies and educational institutes. D2C is where we go deepest, but the work is not D2C only. Tell us what you run and we will say which approach fits." },
   { q: "What does measured on contribution margin mean?", a: "Contribution margin is the profit left after variable costs. We budget and judge media against it, not against platform ROAS alone, because a platform can report a healthy ROAS on an order that loses money. <a href=\"guide-contribution-margin-roas.html\">Read the guide</a>." },
-  { q: "Where is MMC based?", a: "Thane, Maharashtra, India. You can reach us through the <a href=\"Contact.html\">contact page</a>." },
+  { q: "Where is MMC based?", a: "Mumbai and Indore, India. You can reach us through the <a href=\"Contact.html\">contact page</a>." },
   { q: "How do we start?", a: "With a free paid-media audit: a call where a senior strategist reads your ad accounts against your break-even ROAS. <a href=\"audit.html\">See how it works</a>." },
   { q: "Does MMC publish pricing or client results?", a: "No. Cost depends on scope and, for media, on ad spend, so we quote after the audit call. We list the services we run for each brand but do not publish per-client results." },
 ];
@@ -103,10 +105,9 @@ const jsonld = rewriteJsonld([
         <figure class="ab3-hero__fig">
           <img src="/assets/about2/huddle.jpg" alt="Two people at a whiteboard walking through a marketing funnel diagram together" width="1200" height="806" loading="eager" fetchpriority="high" decoding="async" />
           <figcaption class="ab3-hero__facts">
-            <span><b>Est.</b> 2019</span>
-            <span><b>Based in</b> Thane, Maharashtra</span>
+            <span><b>Since</b> 2015</span>
+            <span><b>Based in</b> Mumbai and Indore</span>
             <span><b>Works with</b> D2C, B2B and education</span>
-            <small>Illustrative scene</small>
           </figcaption>
         </figure>
       </section>
@@ -198,7 +199,7 @@ const jsonld = rewriteJsonld([
       <section class="ab3-beliefs" id="principles" aria-labelledby="ab3-bel-h">
         <figure class="ab3-quote">
           <img src="/assets/company/whiteboard.jpg" alt="Three people planning a campaign on a whiteboard" width="1200" height="806" loading="lazy" decoding="async" />
-          <div class="ab3-quote__wrap"><div class="n-wrap"><blockquote>Ideas matter more <em>than designations.</em></blockquote><small>Illustrative scene</small></div></div>
+          <div class="ab3-quote__wrap"><div class="n-wrap"><blockquote>Ideas matter more <em>than designations.</em></blockquote></div></div>
         </figure>
         <div class="n-band n-band--white ab3-beliefs__band">
           <div class="n-wrap ab3-beliefs__grid">
@@ -223,6 +224,7 @@ const jsonld = rewriteJsonld([
             <span class="n-eyebrow">Who we work with</span>
             <h2 class="n-h2" id="ab3-aud-h">Three kinds of brand, <span class="n-serif">one way of working.</span></h2>
             <p class="n-lede">Lead generation for a college and performance media for a D2C brand look different day to day. The senior team, the audit-first start and the measure against contribution margin or cost per qualified lead stay the same.</p>
+            <p class="ab3-p ab3-p--agency">{AGENCY_LINE.lead} {AGENCY_LINE.see} <a class="ab3-go" href={agency.href}>{agency.anchor}<Fragment set:html={ARR} /></a></p>
           </div>
           <AudienceCards />
         </div>
@@ -233,8 +235,8 @@ const jsonld = rewriteJsonld([
         <div class="n-wrap ab3-studio__grid">
           <div class="ab3-studio__copy n-rise">
             <span class="n-eyebrow">The studio</span>
-            <h2 class="n-h2" id="ab3-studio-h">Founded in 2019, <span class="n-serif">based in Thane.</span></h2>
-            <p class="ab3-p">The team works from Thane, Maharashtra, with roles in Mumbai and remote across India. Strategy, media, creative and technology sit at the same table, which is most of the point.</p>
+            <h2 class="n-h2" id="ab3-studio-h">Media first, <span class="n-serif">based in Mumbai and Indore.</span></h2>
+            <p class="ab3-p">The team works from Mumbai and Indore, with some roles remote across India. Strategy, media, creative and technology sit at the same table, which is most of the point.</p>
             <address class="ab3-studio__addr">
               <span>Monday Marketing Company</span>
               <span>WeWork Zenia, Hiranandani Business Park, Thane 400607</span>
@@ -248,7 +250,6 @@ const jsonld = rewriteJsonld([
             <figure class="ab3-studio__a"><img src="/assets/contact/office.jpg" alt="A glass office building among palm trees in a business park" width="1200" height="806" loading="lazy" decoding="async" /></figure>
             <figure class="ab3-studio__b"><img src="/assets/contact/meeting.jpg" alt="Three people leaning over a printed plan on a studio table" width="1200" height="806" loading="lazy" decoding="async" /></figure>
             <figure class="ab3-studio__c"><img src="/assets/careers2/desk-close.jpg" alt="A laptop with design work open on a desk beside a notebook and phone" width="1200" height="806" loading="lazy" decoding="async" /></figure>
-            <p class="ab3-cap">Illustrative scenes of the studio and the work.</p>
           </div>
         </div>
       </section>
@@ -294,4 +295,10 @@ const jsonld = rewriteJsonld([
       window.addEventListener("scroll", onScroll, { passive: true });
     }
   </script>
+  <style is:global>
+    /* "Are you an agency?" line: the link flows inside the sentence at the sentence's size, so a phone wraps the words instead of
+       dropping the whole link under "See". Vertical padding keeps a tall hit area without changing the line height. */
+    .ab3-p--agency .ab3-go { display: inline; min-height: 0; padding-block: 12px; font-size: inherit; font-weight: 700; }
+    .ab3-p--agency .ab3-go svg { display: inline-block; vertical-align: -1px; margin-left: 6px; }
+  </style>
 </BaseLayout>

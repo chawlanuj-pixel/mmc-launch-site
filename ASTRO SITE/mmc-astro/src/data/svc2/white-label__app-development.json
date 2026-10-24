@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "app/decide.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: two people comparing an app and a website on paper.",
+    "alt": "Two people comparing an app and a website on paper.",
     "facts": [
       {
         "t": "You lead, we build.",
@@ -161,7 +161,7 @@
         "d": "We sign the NDA, take your client's brief and write a scope with the app-or-site decision stated.",
         "get": "A written scope and a platform recommendation.",
         "img": "contact/brief.jpg",
-        "alt": "Illustrative scene: a brief being read at a desk.",
+        "alt": "A brief being read at a desk.",
         "pos": "50% 50%"
       },
       {
@@ -170,7 +170,7 @@
         "d": "One core journey as a clickable prototype, tested on phones.",
         "get": "A prototype your client can tap through.",
         "img": "ux/test.jpg",
-        "alt": "Illustrative scene: a prototype being tested on a phone.",
+        "alt": "A prototype being tested on a phone.",
         "pos": "50% 50%"
       },
       {
@@ -179,7 +179,7 @@
         "d": "Design handoff, build cadence, device testing and release steps are written once.",
         "get": "A short app delivery runbook.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a runbook being written.",
+        "alt": "A runbook being written.",
         "pos": "50% 50%"
       },
       {
@@ -188,7 +188,7 @@
         "d": "More briefs use the same flow, and we add engineers when two projects overlap.",
         "get": "An app service you can sell more than once.",
         "img": "careers2/team-screen.jpg",
-        "alt": "Illustrative scene: colleagues looking at a screen together.",
+        "alt": "Colleagues looking at a screen together.",
         "pos": "50% 50%"
       }
     ]

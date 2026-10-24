@@ -127,6 +127,12 @@
    "pages": "/white-label/register/",
    "match": "\"White-label services for agencies\"",
    "reason": "Hub card title linking to the white label hub (matches the hub H1 wording)."
-  }
+  },
+    {
+      "rule": "heading-case",
+      "pages": "*",
+      "match": "Admission Marketing Plan for Colleges in India",
+      "reason": "Guide card heading shows the guide's full title, which is the exact Title Case keyword title requested for search (page title, schema and card stay identical)."
+    }
  ]
 }

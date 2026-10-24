@@ -537,7 +537,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
         <div className="sunmenu__head">
           <div className="sm-fade sunmenu__eyebrow">The Index</div>
           <div className="sm-fade sunmenu__head-meta">
-            <span>Est. 2019 · Thane, Mumbai, Indore</span>
+            <span>Since 2015 · Mumbai, Indore</span>
           </div>
         </div>
 
@@ -677,7 +677,7 @@ export default function NavMenu({ source = "site" }: { source?: string }) {
         <div className="sunmenu__foot">
           <div className="sm-fade sunmenu__foot-cols">
             <span><span className="t-muted">Working with</span>&nbsp; D2C, B2B and education brands</span>
-            <span><span className="t-muted">In market since</span>&nbsp; 2019</span>
+            <span><span className="t-muted">In market since</span>&nbsp; 2015</span>
           </div>
           <div className="sm-fade sunmenu__cta-wrap">
             <button className="btn btn--solid-blue glow-btn"

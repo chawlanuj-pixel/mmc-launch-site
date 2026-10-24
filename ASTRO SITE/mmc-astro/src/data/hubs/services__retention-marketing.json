@@ -373,7 +373,7 @@
       "h2b": "customers worth keeping.",
       "good": {
         "t": "You already have customers or leads, and repeat purchase or follow-up is weaker than it should be.",
-        "why": "Keeping a customer you paid for is cheaper than finding a new one, which helps D2C repeat rate and keeps B2B and education enquiries from going cold."
+        "why": "Keeping a customer you paid for is cheaper than finding a new one, which helps D2C repeat rate and keeps B2B and education enquiries from going cold. For admissions, see <a href=\"/industries/education/\">education marketing</a>."
       },
       "not": {
         "t": "You have no customer or lead base yet, or want mass blasts.",
@@ -390,37 +390,37 @@
           "t": "Customer data set-up",
           "d": "Clean lists and segments so messages fit the person receiving them.",
           "img": "rt/data.jpg",
-          "alt": "Customer data set-up: illustrative scene"
+          "alt": "Customer data set-up"
         },
         {
           "t": "Welcome flows",
           "d": "The first emails and messages a new customer or subscriber receives.",
           "img": "rt/welcome.jpg",
-          "alt": "Welcome flows: illustrative scene"
+          "alt": "Welcome flows"
         },
         {
           "t": "Nurture flows",
           "d": "Helpful follow-ups for people who browsed, enquired or abandoned a cart.",
           "img": "rt/journey.jpg",
-          "alt": "Nurture flows: illustrative scene"
+          "alt": "Nurture flows"
         },
         {
           "t": "Replenishment and repeat",
           "d": "Reminders timed to when a product runs out or a course renews.",
           "img": "rt/replenish.jpg",
-          "alt": "Replenishment and repeat: illustrative scene"
+          "alt": "Replenishment and repeat"
         },
         {
           "t": "Win-back",
           "d": "Respectful outreach to customers who have gone quiet.",
           "img": "rt/winback.jpg",
-          "alt": "Win-back: illustrative scene"
+          "alt": "Win-back"
         },
         {
           "t": "Reporting",
           "d": "Repeat purchase and revenue per customer tracked on your own data.",
           "img": "services/retention.jpg",
-          "alt": "Reporting: illustrative scene"
+          "alt": "Reporting"
         }
       ]
     },
@@ -430,7 +430,7 @@
       "h2b": "with MMC.",
       "lede": "Winning back an existing customer usually costs less than finding a new one.",
       "img": "rt/journey.jpg",
-      "alt": "Why brands invest in retention with MMC. Illustrative scene.",
+      "alt": "Why brands invest in retention with MMC.",
       "items": [
         {
           "t": "Email, WhatsApp and SMS together",

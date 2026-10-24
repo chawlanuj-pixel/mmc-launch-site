@@ -16,8 +16,8 @@ import { fixHtml } from "../../lib/links";
 
 const SITE = "https://www.mondaymarketing.company";
 const path = "/white-label/register/";
-const title = "White-Label Agency Partner Registration India | MMC";
-const description = "Register your agency as a white-label partner of MMC in India. Share contact and agency details in two short steps and we reach out to onboard you.";
+const title = "Register as a White-Label Partner Agency | MMC";
+const description = "Register your agency as a white-label partner of Monday Marketing Company. Two short steps: your contact and agency details, then we arrange an NDA call.";
 
 const tiles = [
   { img: "company/whiteboard.jpg", label: "Scope", note: "Agreed together" },
@@ -38,10 +38,11 @@ const next = [
 ];
 const faq = [
   { q: "What is the white-label agency partner registration?", a: "It is a short two-step form that tells MMC who you are, what your agency sells and which services you want delivered behind your brand. It is a registration form, not a contract." },
-  { q: "Who can register as a white-label partner?", a: "Digital agencies, web studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff. Agencies outside India can register too: see how <a href=\"/white-label/india/\">white label from India</a> works." },
+  { q: "Who can register as a white-label partner?", a: "Digital agencies, web studios, creative studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff. We work with agencies in the US, UK, Canada, Australia, the UAE, Singapore, India and the rest of Europe; see how <a href=\"/white-label/india/\">delivery from India</a> works for agencies abroad." },
   { q: "Which services can I list?", a: "Any service MMC delivers behind agency brands, including <a href=\"/white-label/seo/\">white-label SEO</a>, <a href=\"/white-label/ppc/\">white-label PPC</a>, <a href=\"/white-label/meta-ads/\">white-label Meta Ads</a>, <a href=\"/white-label/web-development/\">white-label web development</a> and <a href=\"/white-label/creative-and-video/\">white-label creative and video</a>. The <a href=\"/white-label/\">white-label services overview</a> lists them all." },
   { q: "Will MMC contact my clients?", a: "No. We do not approach your clients, and we sign an NDA covering client information. Reports can carry your name; see <a href=\"/white-label/reporting/\">white-label reporting</a>." },
   { q: "What happens after I register?", a: "MMC reviews your details and reaches out on the call window and time zone you chose. The usual path is an NDA, an agreed scope, reporting in your format and a first client together." },
+  { q: "Which currencies and minimum term apply?", a: "We invoice in Indian rupees or US dollars, and the minimum commitment is three months. Scope and pricing are agreed on the call and written down before work starts." },
 ].map((f) => ({ q: f.q, a: fixHtml(f.a) }));
 
 const plain = (s: string) => s.replace(/<[^>]+>/g, "");
@@ -96,7 +97,7 @@ const jsonld = [
           <div class="wlr-layout">
             <aside class="wlr-aside" aria-labelledby="wlr-next-h">
               <figure class="wlr-aside__pic">
-                <Img name="company/strategy.jpg" ratio="3 / 2" alt="A strategist walking a team through a plan at a whiteboard. Illustrative scene." />
+                <Img name="company/strategy.jpg" ratio="3 / 2" alt="A strategist walking a team through a plan at a whiteboard." />
               </figure>
               <h3 id="wlr-next-h">What happens next</h3>
               <ol class="wlr-next">

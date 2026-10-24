@@ -10,7 +10,7 @@
   "Social ad creative"
  ],
  "brief": [
-  "{name} offers outstation, one-way, airport and local rides. This page covers its website, built around a fare and booking search, and a matching mobile booking flow.",
+  "{name} offers outstation, one-way, airport and local rides. We built its website around a fare and booking search, with a matching mobile booking flow.",
   "The booking search is the first thing on the page, because it is the one thing a visitor comes to do. The ads and posters use the same mascot and colours."
  ],
  "showcases": [
@@ -66,11 +66,11 @@
  },
  "action": "booking",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
-  "posters": "{name} social ad posters, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "google": "{name} Google ad, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} website on a desktop screen",
+  "mobile": "{name} mobile page on a phone screen",
+  "posters": "{name} social ad posters",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad"
  }
 }

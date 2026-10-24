@@ -9,15 +9,15 @@
   "Google search listing"
  ],
  "brief": [
-  "{name} is an autonomous engineering college. This page covers a website built around admissions: a homepage with programme listings and an apply-now enquiry form, on desktop and mobile.",
+  "{name} is an autonomous engineering college. We built a website around admissions: a homepage with programme listings and an apply-now enquiry form, on desktop and mobile.",
   "Admissions is the action, so the apply-now form sits directly under the hero on desktop and inside the first screen on a phone, with the programmes beneath. Admissions social creative, a Meta lead ad and a Google search listing sit alongside it."
  ],
  "showcases": [
   {
    "layout": "stage",
-   "kicker": "Admissions homepage",
-   "title": "Admissions homepage and mobile view",
-   "text": "An admissions banner, a graduate hero and the apply-now form, with the programme list beneath.",
+   "kicker": "Homepage",
+   "title": "College homepage on desktop and mobile",
+   "text": "A student-led hero with the reasons to choose the college, why MVJCE, the environment and placements, set out as steps, and the same page on a phone with a campus video.",
    "crops": [
     "web"
    ]
@@ -66,12 +66,13 @@
  },
  "action": "application enquiry",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
-  "form": "{name} enquiry form, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "seo": "{name} Google search listing, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a student reading in a library beside a rising arrow marking Why MVJCE, Engaging Environment and Placements",
+  "mobile": "{name} mobile page on a phone screen",
+  "form": "{name} enquiry form",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "seo": "{name} Google search listing",
+  "card": "{name} logo above two graduates in gowns and caps outside the campus"
  }
 }

@@ -1,0 +1,11 @@
+{
+ "_readme": "Copy for /blog/ (src/pages/blog/[...blog].astro). The page is only built when at least one indexable blog post exists. Owner to review this wording before the first post ships. description must stay 140 to 160 characters, title 60 at most.",
+ "title": "Blog | Monday Marketing Company",
+ "description": "Short posts from Monday Marketing Company on paid media, creative, measurement and websites for D2C brands, B2B companies and educational institutes.",
+ "ogAlt": "The Monday Marketing Company blog",
+ "h1": ["The MMC", "blog."],
+ "lede": "Short posts from the team on paid media, creative, measurement and websites, for D2C brands, B2B companies and educational institutes.",
+ "featTag": "Latest",
+ "more": { "eyebrow": "All posts", "h2a": "More from", "h2b": "the blog." },
+ "guides": { "eyebrow": "Guides", "h2a": "The longer reads,", "h2b": "method first.", "lede": "Step-by-step guides on margin, measurement, creative and admissions." }
+}

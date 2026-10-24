@@ -1,0 +1,102 @@
+---
+// /blog/: the Command Centre blog index (Phase 4), in the /guides/ index look (guides3.css, gd3-): masthead, the newest post as a
+// featured spread, the other posts as covers (picture, tag, title, description, read time, date), then the repo guides.
+// A rest route on purpose: getStaticPaths returns nothing when there is no indexable blog post, so no empty /blog/ page is
+// ever built (and it never appears in the sitemap or llms files). Copy: src/data/pages/blog-index.json. Not in the main nav.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import Cover from "../../components/guides3/Cover.astro";
+import Fx from "../../components/guides3/Fx.astro";
+import PostCard from "../../components/posts/PostCard.astro";
+import "../../styles/guides3.css";
+import "../../styles/posts.css";
+import copy from "../../data/pages/blog-index.json";
+import { GUIDES, readTimes } from "../../lib/guides";
+import { closingFor } from "../../lib/prefooter";
+import { postsBySection, blogIndexJsonld, niceDate } from "../../lib/posts";
+
+export function getStaticPaths() {
+  return postsBySection("blog").length ? [{ params: { blog: undefined } }] : [];
+}
+
+const posts = postsBySection("blog");
+const feat = posts[0];
+const rest = posts.slice(1);
+const C: any = copy;
+const jsonld = blogIndexJsonld(posts, C.title, C.description);
+const close = closingFor("resources", { h2a: "", h2b: "", lede: "" });
+const mins = readTimes();
+---
+<BaseLayout title={C.title} description={C.description} path="/blog/" ogAlt={C.ogAlt} jsonld={jsonld} image={"/assets/" + feat.hero.img} preloadImage={"/assets/" + feat.hero.img}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app gd3">
+      <Fx />
+
+      <section class="gd3-mast" id="top">
+        <div class="n-wrap">
+          <nav class="gd3-crumbs" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><span aria-current="page">Blog</span></li>
+            </ol>
+          </nav>
+          <p class="gd3-kicker">Blog</p>
+          <h1 class="gd3-h1">{C.h1[0]} <em>{C.h1[1]}</em></h1>
+          <div class="gd3-mast__row">
+            <p class="gd3-lede">{C.lede}</p>
+          </div>
+
+          <article class="gd3-feat" aria-labelledby="gd3-feat-h">
+            <a class="gd3-feat__pic" href={feat.path} tabindex="-1" aria-hidden="true">
+              <img src={"/assets/" + feat.hero.img} alt="" width="1200" height="806" loading="eager" decoding="async" fetchpriority="high" />
+              <span class="gd3-feat__tag">{C.featTag}</span>
+            </a>
+            <div class="gd3-feat__txt">
+              <p class="gd3-feat__k">{feat.tag || "Blog"}</p>
+              <h2 class="gd3-feat__h" id="gd3-feat-h">{feat.title}</h2>
+              <p class="gd3-feat__p">{feat.desc}</p>
+              <p class="gd3-feat__meta">{feat.mins + " min read"}<i aria-hidden="true"></i><time datetime={feat.publishedAt}>{niceDate(feat.publishedAt)}</time><i aria-hidden="true"></i>{"By " + (feat.author ? feat.author.name : "Monday Marketing Company")}</p>
+              <a class="gd3-cover__go pst-feat__go" href={feat.path}>Read the post
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {rest.length > 0 && (
+        <section class="gd3-band gd3-band--white" id="library" aria-labelledby="pst-more-h">
+          <div class="n-wrap">
+            <div class="gd3-head gd3-rise">
+              <span class="n-eyebrow">{C.more.eyebrow}</span>
+              <h2 class="n-h2" id="pst-more-h">{C.more.h2a} <span class="n-serif">{C.more.h2b}</span></h2>
+            </div>
+            <div class="gd3-shelf">
+              {rest.map((p) => <PostCard href={p.path} img={p.hero.img} kicker="Blog" tag={p.tag} title={p.title} desc={p.desc} min={p.mins} date={p.publishedAt} go="Read the post" />)}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section class={"gd3-band " + (rest.length > 0 ? "gd3-band--paper" : "gd3-band--white")} id="guides" aria-labelledby="pst-guides-h">
+        <div class="n-wrap">
+          <div class="gd3-head gd3-rise">
+            <span class="n-eyebrow">{C.guides.eyebrow}</span>
+            <h2 class="n-h2" id="pst-guides-h">{C.guides.h2a} <span class="n-serif">{C.guides.h2b}</span></h2>
+            <p class="n-lede">{C.guides.lede}</p>
+          </div>
+          <div class="gd3-shelf">
+            {GUIDES.slice(0, 3).map((g) => <Cover n={g.n} tag={g.tag} title={g.title} href={g.href} img={g.img} q={g.q} min={mins[g.slug]} />)}
+          </div>
+        </div>
+      </section>
+
+      <PreFooterCta source="blog" h2a={close.h2a} h2b={close.h2b} lede={close.lede} eyebrow={close.eyebrow} secondary={close.secondary} />
+    </main>
+    <StickyBookingBar source="blog" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

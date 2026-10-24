@@ -2,8 +2,8 @@
   "file": "white-label-link-building.html",
   "path": "/white-label/link-building/",
   "key": "wl_link_building",
-  "title": "White-Label Link Building Services | MMC",
-  "description": "White-label link building and digital PR for agencies: outreach, guest posts and editorial placements, with reports you can send to your client as yours.",
+  "title": "White-Label Link Building Services for Agencies | MMC",
+  "description": "White-label link building for agencies: editorial outreach, digital PR and placement reports under your brand, with no paid link networks or PBNs.",
   "ogTitle": "White-label link building for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label link building.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/link-building/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/link-building/",
-      "name": "White-Label Link Building Services | MMC",
-      "description": "White-label link building and digital PR for agencies: outreach, guest posts and editorial placements, with reports you can send to your client as yours.",
+      "name": "White-Label Link Building Services for Agencies | MMC",
+      "description": "White-label link building for agencies: editorial outreach, digital PR and placement reports under your brand, with no paid link networks or PBNs.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "Link building works best alongside <a href=\"/white-label/seo/\">white-label SEO</a>, because links to weak pages rarely help. If your client has not had an audit, start there."
           ],
           "img": "seo/authority.jpg",
-          "cap": "Illustrative scene: outreach targets being reviewed.",
+          "cap": "Outreach targets being reviewed.",
           "table": {
             "caption": "Link building methods compared",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Target research",
           "d": "Sites scored for relevance and audience before any pitch goes out.",
           "img": "seo/intent.jpg",
-          "alt": "Target research: illustrative scene"
+          "alt": "Target research"
         },
         {
           "t": "Digital PR",
           "d": "Angles built from client data, news and expertise, pitched to editors.",
           "img": "seo/authority.jpg",
-          "alt": "Digital PR: illustrative scene"
+          "alt": "Digital PR"
         },
         {
           "t": "Guest content",
           "d": "Articles written to the host site's standards, with a natural link.",
           "img": "seo/pages.jpg",
-          "alt": "Guest content: illustrative scene"
+          "alt": "Guest content"
         },
         {
           "t": "Resource page outreach",
           "d": "Requests to be listed where users already look for resources.",
           "img": "seo/aeo.jpg",
-          "alt": "Resource page outreach: illustrative scene"
+          "alt": "Resource page outreach"
         },
         {
           "t": "Link audits",
           "d": "Review of existing links and flags for risky ones.",
           "img": "seo/tech.jpg",
-          "alt": "Link audits: illustrative scene"
+          "alt": "Link audits"
         },
         {
           "t": "Placement log",
           "d": "A record of each link, date, page and anchor for your report.",
           "img": "res/insights.jpg",
-          "alt": "Placement log: illustrative scene"
+          "alt": "Placement log"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label link building.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "seo/authority.jpg",
-      "alt": "Why agencies choose MMC for white-label link building. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label link building.",
       "items": [
         {
           "t": "Relevance over volume",
@@ -309,7 +309,7 @@
       "h2a": "How white-label link building works,",
       "h2b": "step by step.",
       "img": "seo/authority.jpg",
-      "alt": "How white-label link building works, step by step. Illustrative scene.",
+      "alt": "How white-label link building works, step by step.",
       "items": [
         {
           "t": "Share the goal",
@@ -424,7 +424,10 @@
       "h2a": "Add link building",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first link building client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

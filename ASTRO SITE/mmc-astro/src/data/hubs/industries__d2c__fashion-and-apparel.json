@@ -214,7 +214,7 @@
             "Because looks go in and out of fashion fast, creative also tires quickly and needs a steady refresh."
           ],
           "img": "inf/shortlist.jpg",
-          "cap": "Illustrative scene: shortlisting creators for a fashion drop."
+          "cap": "Shortlisting creators for a fashion drop."
         },
         {
           "id": "recurring-problem",
@@ -346,7 +346,7 @@
     },
     "faqTitle": [
       "Questions about",
-      "Fashion and apparel marketing."
+      "fashion and apparel marketing."
     ],
     "faq": [
       {
@@ -386,7 +386,7 @@
     "process": {
       "h2a": "How we start with a fashion brand,",
       "h2b": "step by step.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -430,37 +430,37 @@
           "t": "Creative testing",
           "d": "New hooks, formats and creators on a schedule.",
           "img": "meta/creative.jpg",
-          "alt": "Creative testing: illustrative scene"
+          "alt": "Creative testing"
         },
         {
           "t": "Creator shortlists",
           "d": "Fit, audience and terms agreed before posting.",
           "img": "inf/shortlist.jpg",
-          "alt": "Creator shortlists: illustrative scene"
+          "alt": "Creator shortlists"
         },
         {
           "t": "Catalogue and dynamic ads",
           "d": "Feeds and structure for large ranges.",
           "img": "google/feed.jpg",
-          "alt": "Catalogue and dynamic ads: illustrative scene"
+          "alt": "Catalogue and dynamic ads"
         },
         {
           "t": "Size help and product pages",
           "d": "Size guides, fit notes and imagery that lower returns.",
           "img": "cro/pdp.jpg",
-          "alt": "Size help and product pages: illustrative scene"
+          "alt": "Size help and product pages"
         },
         {
           "t": "Checkout and COD handling",
           "d": "A smoother checkout and sensible cash on delivery rules.",
           "img": "d2c/checkout.jpg",
-          "alt": "Checkout and COD handling: illustrative scene"
+          "alt": "Checkout and COD handling"
         },
         {
           "t": "Drop and repeat flows",
           "d": "Email and WhatsApp for launches and returning buyers.",
           "img": "d2c/retention.jpg",
-          "alt": "Drop and repeat flows: illustrative scene"
+          "alt": "Drop and repeat flows"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "h2b": "for marketing.",
       "lede": "We count returns before we call a campaign good.",
       "img": "d2c/range.jpg",
-      "alt": "Why fashion brands choose MMC for marketing. Illustrative scene.",
+      "alt": "Why fashion brands choose MMC for marketing.",
       "items": [
         {
           "t": "Margin after returns",
@@ -495,7 +495,7 @@
       "h2a": "How a fashion engagement runs,",
       "h2b": "step by step.",
       "img": "meta/creative.jpg",
-      "alt": "How a fashion engagement runs, step by step. Illustrative scene.",
+      "alt": "How a fashion engagement runs, step by step.",
       "items": [
         {
           "t": "Audit margin and feeds",

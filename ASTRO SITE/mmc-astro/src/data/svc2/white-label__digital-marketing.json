@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "about2/huddle.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a team sketching a marketing funnel on a whiteboard.",
+    "alt": "A team sketching a marketing funnel on a whiteboard.",
     "facts": [
       {
         "t": "One partner, many channels.",
@@ -146,7 +146,7 @@
         "d": "We sign the NDA, agree which channels you will sell first and write the scope per channel.",
         "get": "A written scope you can share with your client.",
         "img": "contact/call.jpg",
-        "alt": "Illustrative scene: a scoping call with an agency lead.",
+        "alt": "A scoping call with an agency lead.",
         "pos": "50% 50%"
       },
       {
@@ -155,7 +155,7 @@
         "d": "One client runs on one or two channels with a named lead and a first combined report.",
         "get": "A pilot report to judge on.",
         "img": "social/plan.jpg",
-        "alt": "Illustrative scene: a content planner on a laptop.",
+        "alt": "A content planner on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -164,7 +164,7 @@
         "d": "Brief intake, approvals, reporting calendar and escalation are written once across channels.",
         "get": "A full-service operating guide.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: an operating guide on a notepad.",
+        "alt": "An operating guide on a notepad.",
         "pos": "50% 50%"
       },
       {
@@ -173,7 +173,7 @@
         "d": "More channels and clients join the same flow, one at a time, as you sell them.",
         "get": "A full-service offer you can grow channel by channel.",
         "img": "google/report.jpg",
-        "alt": "Illustrative scene: a search ads report on a laptop.",
+        "alt": "A search ads report on a laptop.",
         "pos": "50% 50%"
       }
     ]

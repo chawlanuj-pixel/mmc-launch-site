@@ -7,12 +7,12 @@
     "alt": "An analyst reviewing campaign dashboards on two monitors.",
     "facts": [
       {
-        "t": "Thane.",
-        "d": "Head office, with a published address."
+        "t": "Mumbai and Indore.",
+        "d": "The two cities we work from."
       },
       {
-        "t": "Mumbai and Indore.",
-        "d": "The other two cities we work from."
+        "t": "Thane.",
+        "d": "A service area, served by our Mumbai team."
       },
       {
         "t": "Anywhere in India.",
@@ -120,7 +120,7 @@
         "d": "We write a page for each place and set up the review routine.",
         "get": "Profiles and pages that agree.",
         "img": "seo/tech.jpg",
-        "alt": "Illustrative scene: pages checked for technical health.",
+        "alt": "Pages checked for technical health.",
         "pos": "50% 50%"
       },
       {
@@ -129,7 +129,7 @@
         "d": "We report calls, directions and enquiries, and plan ads where they suit.",
         "get": "A monthly local report.",
         "img": "orm/report.jpg",
-        "alt": "Illustrative scene: a monthly local report.",
+        "alt": "A monthly local report.",
         "pos": "50% 50%"
       }
     ]

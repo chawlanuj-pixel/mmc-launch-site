@@ -239,7 +239,7 @@
         "d": "We build the full cost per order, review listings and tracking and set margin-based targets.",
         "get": "A clear view of margin.",
         "img": "company/performance.jpg",
-        "alt": "Illustrative scene: an analyst reading two dashboards.",
+        "alt": "An analyst reading two dashboards.",
         "pos": "50% 50%"
       },
       {
@@ -248,7 +248,7 @@
         "d": "Bundles, trial packs and thresholds go live with a test plan.",
         "get": "Offers ready to test.",
         "img": "d2c/checkout.jpg",
-        "alt": "Illustrative scene: an order checkout on a phone held over a desk.",
+        "alt": "An order checkout on a phone held over a desk.",
         "pos": "50% 50%"
       },
       {
@@ -257,7 +257,7 @@
         "d": "Listings, availability and ads go live on quick commerce and marketplaces.",
         "get": "Presence where buyers shop.",
         "img": "qc/availability.jpg",
-        "alt": "Illustrative scene: a stock-by-area dashboard on a tablet.",
+        "alt": "A stock-by-area dashboard on a tablet.",
         "pos": "50% 50%"
       },
       {
@@ -266,7 +266,7 @@
         "d": "Reorder flows and subscriptions start and media follows margin.",
         "get": "A funnel that includes reorders.",
         "img": "company/whiteboard.jpg",
-        "alt": "Illustrative scene: three people planning flows at a whiteboard.",
+        "alt": "Three people planning flows at a whiteboard.",
         "pos": "50% 50%"
       }
     ]

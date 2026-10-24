@@ -81,4 +81,4 @@ export const COMPANY = "Monday Marketing Company";
 export const COMPANY_SHORT = "MMC";
 
 /** Authenticity line for client artwork, reused everywhere. */
-export const ARTWORK_LINE = "Client-approved artwork presenting the work we built. Illustrative presentation, not a live screenshot and not a result.";
+export const ARTWORK_LINE = "Work we built, shown as presentation artwork. Not a live screenshot and not a performance result.";

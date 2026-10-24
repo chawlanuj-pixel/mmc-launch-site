@@ -200,7 +200,7 @@
             "Our direct page is <a href=\"/services/online-reputation-management/\">online reputation management</a>. It pairs with <a href=\"/white-label/seo/\">white-label SEO</a> for search results and <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a> work."
           ],
           "img": "orm/reply.jpg",
-          "cap": "Illustrative scene: review replies being drafted.",
+          "cap": "Review replies being drafted.",
           "table": {
             "caption": "Reputation tasks and what we can influence",
             "head": [
@@ -249,37 +249,37 @@
           "t": "Review request flows",
           "d": "Ways to ask customers after a good experience.",
           "img": "orm/earn.jpg",
-          "alt": "Review request flows: illustrative scene"
+          "alt": "Review request flows"
         },
         {
           "t": "Reply management",
           "d": "Drafts for every review, good and bad.",
           "img": "orm/reply.jpg",
-          "alt": "Reply management: illustrative scene"
+          "alt": "Reply management"
         },
         {
           "t": "Profile clean-up",
           "d": "Correct names, hours, links and categories.",
           "img": "orm/profile.jpg",
-          "alt": "Profile clean-up: illustrative scene"
+          "alt": "Profile clean-up"
         },
         {
           "t": "Monitoring",
           "d": "Alerts for new reviews and mentions.",
           "img": "orm/audit.jpg",
-          "alt": "Monitoring: illustrative scene"
+          "alt": "Monitoring"
         },
         {
           "t": "Search result review",
           "d": "What appears when people search the brand.",
           "img": "seo/authority.jpg",
-          "alt": "Search result review: illustrative scene"
+          "alt": "Search result review"
         },
         {
           "t": "Monthly reputation report",
           "d": "Ratings and themes in your format.",
           "img": "orm/report.jpg",
-          "alt": "Monthly reputation report: illustrative scene"
+          "alt": "Monthly reputation report"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "h2b": "for white-label ORM and reputation management.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "orm/reply.jpg",
-      "alt": "Why agencies choose MMC for white-label ORM and reputation management. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label ORM and reputation management.",
       "items": [
         {
           "t": "Honest reviews only",
@@ -314,7 +314,7 @@
       "h2a": "How white-label ORM and reputation management works,",
       "h2b": "step by step.",
       "img": "orm/reply.jpg",
-      "alt": "How white-label ORM and reputation management works, step by step. Illustrative scene.",
+      "alt": "How white-label ORM and reputation management works, step by step.",
       "items": [
         {
           "t": "Audit",
@@ -429,7 +429,10 @@
       "h2a": "Add ORM and reputation management",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first ORM and reputation management client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

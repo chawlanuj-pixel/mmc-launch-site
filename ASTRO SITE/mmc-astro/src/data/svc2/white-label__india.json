@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "company/call.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a team lead on a call with a headset.",
+    "alt": "A team lead on a call with a headset.",
     "facts": [
       {
         "t": "Your hours, our overlap.",
@@ -12,7 +12,7 @@
       },
       {
         "t": "Reports in your format.",
-        "d": "Delivered under your brand, in your currency."
+        "d": "Delivered under your brand, invoiced in Indian rupees or US dollars."
       },
       {
         "t": "NDA and data care.",
@@ -161,7 +161,7 @@
         "d": "We sign the NDA, agree the overlap window, check-in and invoice currency, and write them into the scope.",
         "get": "A written working agreement across time zones.",
         "img": "about2/huddle.jpg",
-        "alt": "Illustrative scene: colleagues at a whiteboard in a kick-off.",
+        "alt": "Colleagues at a whiteboard in a kick-off.",
         "pos": "50% 50%"
       },
       {
@@ -170,7 +170,7 @@
         "d": "One live project runs with the daily check-in and the end-of-day note.",
         "get": "A pilot you can judge on communication and quality.",
         "img": "company/technology.jpg",
-        "alt": "Illustrative scene: a developer at work on a project.",
+        "alt": "A developer at work on a project.",
         "pos": "50% 50%"
       },
       {
@@ -179,7 +179,7 @@
         "d": "Handover note format, escalation path, file sharing and access rules are written once.",
         "get": "A shared playbook for both teams.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a playbook being written.",
+        "alt": "A playbook being written.",
         "pos": "50% 50%"
       },
       {
@@ -188,7 +188,7 @@
         "d": "More roles and projects join the same rhythm, with the overlap and check-in unchanged.",
         "get": "A delivery team that grows with your agency.",
         "img": "careers2/team-screen.jpg",
-        "alt": "Illustrative scene: colleagues looking at a screen together.",
+        "alt": "Colleagues looking at a screen together.",
         "pos": "50% 50%"
       }
     ]

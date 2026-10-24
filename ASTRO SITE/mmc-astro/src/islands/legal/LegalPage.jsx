@@ -60,14 +60,13 @@ function LegalPage({ kind }) {
     },
     { h: "Data storage & transfer",
       body: [
-        "Primary storage in India: AWS Asia Pacific (Mumbai) for application data and forms.",
         "Analytics processed by Google in the United States under standard contractual clauses.",
-        "Application files (CVs) stored in encrypted S3, accessible only to the people hiring for that role.",
+        "Form submissions and application files are shared only with the people who need them, for example the hiring team for the role you applied to.",
       ]
     },
     { h: "Changes to this policy",
       body: [
-        "We'll post any material change here with a new 'Last updated' date. For substantial changes, we'll notify subscribers via the Monday Letter.",
+        "We'll post any material change here with a new 'Last updated' date. For substantial changes, we will let you know by email where we hold your address.",
       ]
     },
     { h: "Contact",
@@ -85,7 +84,7 @@ function LegalPage({ kind }) {
     },
     { h: "About this site",
       body: [
-        "Monday Marketing Company ('MMC') is a private limited company registered in Maharashtra, India. The mondaymarketing.company site is a marketing publication for our studio's services.",
+        "Monday Marketing Company ('MMC') is operated by Studio27 Creative Media Works LLP, a limited liability partnership registered in Maharashtra, India. The mondaymarketing.company site is a marketing publication for our studio's services.",
         "The site is not a contract for services. Engagement with MMC for any service requires a separate written agreement.",
       ]
     },

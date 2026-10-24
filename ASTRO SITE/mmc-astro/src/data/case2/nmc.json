@@ -9,7 +9,7 @@
   "Google search listing"
  ],
  "brief": [
-  "{name} is an HR and recruitment consultancy. This page covers its website, with separate paths for employers (a role-brief form) and candidates (an open-roles search).",
+  "{name} is an HR and recruitment consultancy. We built its website, with separate paths for employers (a role-brief form) and candidates (an open-roles search).",
   "Two audiences arrive at the same homepage, so it splits them at the top: one card for people who need to hire, one for people looking for work. A LinkedIn ad and a Google search listing carry the same split."
  ],
  "showcases": [
@@ -55,7 +55,7 @@
   {
    "layout": "ribbon",
    "kicker": "Brand",
-   "title": "The brand on stationery",
+   "title": "the same identity carried onto stationery",
    "text": "From the same artwork.",
    "crops": [
     "stationery"
@@ -69,12 +69,13 @@
  },
  "action": "enquiry",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "employers": "{name} employer role-brief form, client-approved artwork",
-  "roles": "{name} open roles search page, client-approved artwork",
-  "linkedin": "{name} LinkedIn ad, client-approved artwork",
-  "google": "{name} Google ad, client-approved artwork",
-  "stationery": "{name} brand stationery, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: Finding People. Building Futures. with two paths, I need to hire and I'm looking for work",
+  "employers": "{name} employer role-brief form",
+  "roles": "{name} open roles search page",
+  "linkedin": "{name} LinkedIn ad",
+  "google": "{name} Google ad",
+  "stationery": "{name} brand stationery",
+  "card": "{name} logo above a recruiter talking with two candidates at a table in a bright office"
  }
 }

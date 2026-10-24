@@ -200,7 +200,7 @@
             "See our direct <a href=\"/services/lead-generation/\">lead generation service</a> for the method, and <a href=\"/white-label/ppc/\">white-label PPC</a> for the traffic side."
           ],
           "img": "b2b/capture.jpg",
-          "cap": "Illustrative scene: a lead form and CRM mapping.",
+          "cap": "A lead form and CRM mapping.",
           "table": {
             "caption": "Lead generation parts and owner",
             "head": [
@@ -249,37 +249,37 @@
           "t": "Offer and funnel design",
           "d": "The reason to enquire, and the path to it.",
           "img": "leadgen/attract.jpg",
-          "alt": "Offer and funnel design: illustrative scene"
+          "alt": "Offer and funnel design"
         },
         {
           "t": "Landing pages",
           "d": "Pages built to turn a click into an enquiry.",
           "img": "b2b/capture.jpg",
-          "alt": "Landing pages: illustrative scene"
+          "alt": "Landing pages"
         },
         {
           "t": "Paid lead campaigns",
           "d": "Search and social campaigns for enquiries.",
           "img": "google/search.jpg",
-          "alt": "Paid lead campaigns: illustrative scene"
+          "alt": "Paid lead campaigns"
         },
         {
           "t": "CRM and tracking",
           "d": "Leads recorded with their source.",
           "img": "leadgen/capi.jpg",
-          "alt": "CRM and tracking: illustrative scene"
+          "alt": "CRM and tracking"
         },
         {
           "t": "Follow-up sequences",
           "d": "Messages that reply to enquiries quickly.",
           "img": "b2b/followup.jpg",
-          "alt": "Follow-up sequences: illustrative scene"
+          "alt": "Follow-up sequences"
         },
         {
           "t": "Lead quality reporting",
           "d": "Quality and cost, not volume alone.",
           "img": "res/funnel.jpg",
-          "alt": "Lead quality reporting: illustrative scene"
+          "alt": "Lead quality reporting"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "h2b": "for white-label lead generation.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "leadgen/attract.jpg",
-      "alt": "Why agencies choose MMC for white-label lead generation. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label lead generation.",
       "items": [
         {
           "t": "Quality first",
@@ -314,7 +314,7 @@
       "h2a": "How white-label lead generation works,",
       "h2b": "step by step.",
       "img": "leadgen/attract.jpg",
-      "alt": "How white-label lead generation works, step by step. Illustrative scene.",
+      "alt": "How white-label lead generation works, step by step.",
       "items": [
         {
           "t": "Define a lead",
@@ -429,7 +429,10 @@
       "h2a": "Add lead generation",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first lead generation client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

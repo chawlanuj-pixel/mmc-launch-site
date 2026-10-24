@@ -214,7 +214,7 @@
             "Ad platforms also limit how skin results and before-and-after imagery can be shown, so the creative has to earn trust without overpromising."
           ],
           "img": "ugc/shoot.jpg",
-          "cap": "Illustrative scene: a creator showing a skincare routine."
+          "cap": "A creator showing a skincare routine."
         },
         {
           "id": "recurring-problem",
@@ -346,7 +346,7 @@
     },
     "faqTitle": [
       "Questions about",
-      "Skincare marketing."
+      "skincare marketing."
     ],
     "faq": [
       {
@@ -386,7 +386,7 @@
     "process": {
       "h2a": "How we start with a skincare brand,",
       "h2b": "step by step.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -430,37 +430,37 @@
           "t": "Ingredient and concern content",
           "d": "Guides and pages that answer what buyers search.",
           "img": "seo/pages.jpg",
-          "alt": "Ingredient and concern content: illustrative scene"
+          "alt": "Ingredient and concern content"
         },
         {
           "t": "Creator and routine video",
           "d": "Real use shown on camera, edited for ads and product pages.",
           "img": "ugc/shoot.jpg",
-          "alt": "Creator and routine video: illustrative scene"
+          "alt": "Creator and routine video"
         },
         {
           "t": "Performance media",
           "d": "Meta and Google planned against contribution margin.",
           "img": "meta/scale.jpg",
-          "alt": "Performance media: illustrative scene"
+          "alt": "Performance media"
         },
         {
           "t": "Product page and review work",
           "d": "Proof, routine and reviews placed where doubt arises.",
           "img": "cro/pdp.jpg",
-          "alt": "Product page and review work: illustrative scene"
+          "alt": "Product page and review work"
         },
         {
           "t": "Packaging and unboxing",
           "d": "Pack and unboxing considered as a marketing moment.",
           "img": "d2c/unboxing.jpg",
-          "alt": "Packaging and unboxing: illustrative scene"
+          "alt": "Packaging and unboxing"
         },
         {
           "t": "Replenishment flows",
           "d": "Email and WhatsApp timed to the use-up cycle.",
           "img": "d2c/retention.jpg",
-          "alt": "Replenishment flows: illustrative scene"
+          "alt": "Replenishment flows"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "h2b": "for marketing.",
       "lede": "We start from the numbers and keep the claims honest.",
       "img": "d2c/range.jpg",
-      "alt": "Why skincare brands choose MMC for marketing. Illustrative scene.",
+      "alt": "Why skincare brands choose MMC for marketing.",
       "items": [
         {
           "t": "Margin-first planning",
@@ -495,7 +495,7 @@
       "h2a": "How a skincare engagement runs,",
       "h2b": "step by step.",
       "img": "d2c/unboxing.jpg",
-      "alt": "How a skincare engagement runs, step by step. Illustrative scene.",
+      "alt": "How a skincare engagement runs, step by step.",
       "items": [
         {
           "t": "Audit economics and tracking",

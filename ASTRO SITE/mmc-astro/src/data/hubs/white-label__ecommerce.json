@@ -200,7 +200,7 @@
             "Our direct services are <a href=\"/services/performance-marketing/amazon-ads/\">Amazon Ads</a> and <a href=\"/services/performance-marketing/quick-commerce/\">quick commerce ads</a>. For the client's own store see <a href=\"/white-label/shopify-development/\">white-label Shopify development</a>."
           ],
           "img": "amazon/listing.jpg",
-          "cap": "Illustrative scene: a marketplace listing review.",
+          "cap": "A marketplace listing review.",
           "table": {
             "caption": "Marketplace channels and focus",
             "head": [
@@ -239,37 +239,37 @@
           "t": "Listing optimisation",
           "d": "Titles, bullets, images and A+ content improved.",
           "img": "amazon/listing.jpg",
-          "alt": "Listing optimisation: illustrative scene"
+          "alt": "Listing optimisation"
         },
         {
           "t": "Amazon advertising",
           "d": "Sponsored product and brand campaigns.",
           "img": "amazon/ads.jpg",
-          "alt": "Amazon advertising: illustrative scene"
+          "alt": "Amazon advertising"
         },
         {
           "t": "Quick commerce ads",
           "d": "Campaigns for quick commerce platforms.",
           "img": "qc/ads.jpg",
-          "alt": "Quick commerce ads: illustrative scene"
+          "alt": "Quick commerce ads"
         },
         {
           "t": "Availability monitoring",
           "d": "Stock and availability checks that affect ad spend.",
           "img": "qc/availability.jpg",
-          "alt": "Availability monitoring: illustrative scene"
+          "alt": "Availability monitoring"
         },
         {
           "t": "Catalogue upkeep",
           "d": "Bulk updates and new product uploads.",
           "img": "amazon/store.jpg",
-          "alt": "Catalogue upkeep: illustrative scene"
+          "alt": "Catalogue upkeep"
         },
         {
           "t": "Marketplace reporting",
           "d": "Sales, ad spend and returns in one view.",
           "img": "amazon/report.jpg",
-          "alt": "Marketplace reporting: illustrative scene"
+          "alt": "Marketplace reporting"
         }
       ]
     },
@@ -279,7 +279,7 @@
       "h2b": "for white-label ecommerce and Amazon.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "amazon/ads.jpg",
-      "alt": "Why agencies choose MMC for white-label ecommerce and Amazon. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label ecommerce and Amazon.",
       "items": [
         {
           "t": "Channel by channel",
@@ -304,7 +304,7 @@
       "h2a": "How white-label ecommerce and Amazon works,",
       "h2b": "step by step.",
       "img": "amazon/ads.jpg",
-      "alt": "How white-label ecommerce and Amazon works, step by step. Illustrative scene.",
+      "alt": "How white-label ecommerce and Amazon works, step by step.",
       "items": [
         {
           "t": "Account access",
@@ -419,7 +419,10 @@
       "h2a": "Add ecommerce and Amazon",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first ecommerce and Amazon client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

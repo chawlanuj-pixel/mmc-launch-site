@@ -15,7 +15,7 @@ const CLIPS: Clip[] = [
   { id: "giraffe-1", brand: "The Growing Giraffe", label: "Video 1" },
   { id: "giraffe-2", brand: "The Growing Giraffe", label: "Video 2" },
   // Brand/speaker not confirmed by the owner: neutral caption only.
-  { id: "curly-1", brand: "", label: "Video 3" },
+  { id: "curly-1", brand: "", label: "Brand video" },
 ];
 const videos = (Astro.props.videos ?? CLIPS).map((v) => ({
   ...v,

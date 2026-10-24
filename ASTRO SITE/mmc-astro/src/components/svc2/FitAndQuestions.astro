@@ -1,8 +1,11 @@
 ---
 // 6. Fit and questions: 5/7 split. Left: good fit / not a fit as two big statements. Right: the six FAQ questions as <details>, first
 // open. The FAQPage JSON-LD is emitted by the page from the same hub data, so it is identical to the live page.
-interface Props { H: any; S: any }
-const { H, S } = Astro.props as Props;
+// `agency` (direct service pages with a white-label twin, src/lib/whitelabel.ts): one "Are you an agency?" line under "Not a fit".
+import { AGENCY_LINE } from "../../lib/whitelabel";
+interface Props { H: any; S: any; agency?: { href: string; anchor: string } }
+const { H, S, agency } = Astro.props as Props;
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
 const F = S.fit, W = H.who;
 ---
 <section class="s2-band s2-band--white s2-fit" id="faq" aria-labelledby="s2-fit-h">
@@ -18,6 +21,7 @@ const F = S.fit, W = H.who;
         <p class="s2-say__lbl"><span class="s2-say__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" /></svg></span>{F.notLabel}</p>
         <p class="s2-say__t">{W.not.t}</p>
         <p class="s2-say__w" set:html={W.not.why} />
+        {agency && <p class="s2-say__w s2-say__agency">{AGENCY_LINE.lead} {AGENCY_LINE.see} <a class="s2-link" href={agency.href}>{agency.anchor}<Fragment set:html={arrow} /></a></p>}
       </div>
     </div>
     <div class="s2-fit__r">
@@ -34,3 +38,9 @@ const F = S.fit, W = H.who;
     </div>
   </div>
 </section>
+<style is:global>
+  /* "Are you an agency?" line: the link flows inside the sentence (inline, not an inline-flex block), so a narrow column wraps the
+     words instead of dropping the whole link under "See". Vertical padding keeps a tall hit area without changing the line height. */
+  .s2-say__agency .s2-link { display: inline; min-height: 0; padding-block: 12px; font-size: inherit; }
+  .s2-say__agency .s2-link svg { display: inline-block; vertical-align: -3px; margin-left: 6px; }
+</style>

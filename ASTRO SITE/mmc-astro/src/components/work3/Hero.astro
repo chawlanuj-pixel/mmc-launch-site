@@ -4,8 +4,10 @@
 // cards below), one per kind of brand, each opening its case study. Styles: work3.css (wk3-).
 import { caseById } from "../../lib/work";
 import { SECONDARY } from "../../lib/site";
-const PICK: [string, number, number][] = [["vagakids", 1020, 883], ["mvj", 1042, 940], ["nmc", 998, 690]];
-const REEL = PICK.map(([id, w, h]) => ({ c: caseById(id)!, w, h })).filter((x) => x.c);
+import crops from "../../data/case2/_crops.json";
+// Each web.jpg is a whole desktop-plus-phone mockup, so it is shown complete (contain) on its own edge colour rather than cropped by the cell.
+const PICK = ["vagakids", "mvj", "nmc"];
+const REEL = PICK.map((id) => ({ c: caseById(id)!, ...(crops as any)[id].web as { w: number; h: number; bg: string } })).filter((x) => x.c);
 ---
 <section class="wk3-hero" id="top">
   <div class="n-wrap">
@@ -27,9 +29,9 @@ const REEL = PICK.map(([id, w, h]) => ({ c: caseById(id)!, w, h })).filter((x) =
     </div>
   </div>
   <div class="wk3-reel" aria-label="A few of the case studies">
-    {REEL.map(({ c, w, h }, i) => (
+    {REEL.map(({ c, w, h, bg }, i) => (
       <a class={"wk3-reel__item" + (i === 0 ? " wk3-reel__item--big" : "")} href={`/work/${c.id}/`}>
-        <img src={`/assets/case2/${c.id}/web.jpg`} alt={`${c.name}: the website we built, on desktop and phone`} width={w} height={h} loading="eager" decoding="async" fetchpriority={i === 0 ? "high" : undefined} />
+        <img src={`/assets/case2/${c.id}/web.jpg`} alt={`${c.name}: the website we built, on desktop and phone`} width={w} height={h} style={`object-fit:contain;background:${bg}`} loading="eager" decoding="async" fetchpriority={i === 0 ? "high" : undefined} />
         <span class="wk3-reel__cap"><b>{c.name}</b><span>{c.label}</span></span>
       </a>
     ))}

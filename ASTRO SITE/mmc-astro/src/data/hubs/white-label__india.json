@@ -2,8 +2,8 @@
   "file": "white-label-india.html",
   "path": "/white-label/india/",
   "key": "wl_india",
-  "title": "White-Label Agency India for Overseas Agencies | MMC",
-  "description": "White-label agency in India for UK, US, Australian and Middle East agencies: delivery partner for SEO, ads, web and creative, with NDA and overlap hours.",
+  "title": "White-Label Marketing Agency in India for Agencies | MMC",
+  "description": "A white-label marketing agency in India for agencies in the UK, US, Canada, Australia and the Gulf: SEO, ads, web and creative under your brand and NDA.",
   "ogTitle": "White-label agency India partner for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label agency India partner.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/india/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/india/",
-      "name": "White-Label Agency India for Overseas Agencies | MMC",
-      "description": "White-label agency in India for UK, US, Australian and Middle East agencies: delivery partner for SEO, ads, web and creative, with NDA and overlap hours.",
+      "name": "White-Label Marketing Agency in India for Agencies | MMC",
+      "description": "A white-label marketing agency in India for agencies in the UK, US, Canada, Australia and the Gulf: SEO, ads, web and creative under your brand and NDA.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -77,18 +77,26 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do you work with agencies in the UK, US and Australia?",
+          "name": "Do you work with agencies in the UK, US, Canada and Australia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We agree overlap hours and communication rhythm for your time zone."
+            "text": "We do, and with agencies in the UAE, Singapore, India and the rest of Europe. We agree overlap hours and a daily update rhythm for your time zone."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you invoice in my currency?",
+          "name": "Which hours overlap with my time zone?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We agree invoicing terms on a call."
+            "text": "Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US and Canadian agencies get partial overlap in the evening, India time, or a dedicated shift. Everyone gets written updates at fixed times each day, and exact hours are agreed per team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which currencies can you invoice in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indian rupees or US dollars. We agree which one when we write the scope."
           }
         },
         {
@@ -101,10 +109,18 @@
         },
         {
           "@type": "Question",
-          "name": "Do you only work from one office?",
+          "name": "Where is the team based?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We work from Thane, Mumbai and Indore."
+            "text": "In India. We work from Mumbai and Indore and serve agencies abroad remotely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum commitment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three months. Scope, deadlines and overlap hours are written down before work starts."
           }
         },
         {
@@ -117,7 +133,7 @@
         },
         {
           "@type": "Question",
-          "name": "How do we get started with white-label agency India partner?",
+          "name": "How do we get started with a white-label partner in India?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tell us your time zone and the services you need. After the NDA we agree overlap hours and a pilot client."
@@ -128,23 +144,23 @@
   ],
   "hub": {
     "key": "wl_india",
-    "wm": "White-label Agency India Partner",
-    "eyebrow": "● White-label agency India partner",
+    "wm": "White-label Agency in India",
+    "eyebrow": "● White-label agency in India",
     "h1": [
-      "White-label agency India",
+      "A white-label agency",
       [
-        "for overseas agencies ",
-        "that need a delivery partner",
+        "in India for ",
+        "overseas agencies",
         "."
       ]
     ],
-    "sub": "A delivery partner in India for agencies in the UK, US, Australia and the Middle East, working to your hours and your brand.",
+    "sub": "A delivery partner in India for agencies in the US, UK, Canada, Australia, the UAE, Singapore and Europe, working under your brand and NDA.",
     "tiles": [
       {
         "img": "contact/office.jpg",
         "pos": "50% 50%",
-        "label": "Offices",
-        "note": "Thane, Mumbai, Indore"
+        "label": "Cities",
+        "note": "Mumbai, Indore"
       },
       {
         "img": "about2/callscreen.jpg",
@@ -167,14 +183,14 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "A white-label agency in India works as the delivery arm for agencies overseas: it runs SEO, paid media, web and creative for your clients while you hold the relationship. MMC does this for agencies abroad with an NDA, overlap hours and reports in your format.",
-      "hl": "the delivery arm for agencies overseas",
-      "who": "Monday Marketing Company (MMC) delivers agency India partner for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "lead": "A white-label agency in India runs delivery for agencies abroad: SEO, paid media, web and creative for your clients, while you keep the relationship. MMC works this way for agencies in the US, UK, Canada, Australia, the UAE, Singapore and Europe, with hours agreed per team, an NDA and reports in your format.",
+      "hl": "runs delivery for agencies abroad",
+      "who": "Monday Marketing Company (MMC) is an India-based team, working from Mumbai and Indore, that delivers for agencies abroad behind their brand. You own the client relationship; we do the work.",
       "points": [
         {
           "icon": "users",
           "title": "Overlap hours",
-          "text": "Agreed working hours with your time zone."
+          "text": "Agreed per team and written into the scope."
         },
         {
           "icon": "layers",
@@ -196,11 +212,11 @@
           "id": "india-how",
           "h": "How working with an India partner works",
           "paras": [
-            "Many overseas agencies partner with delivery teams in India. The practicalities are simple: agree overlap hours, share tools, keep communication in writing and review work on a fixed rhythm.",
-            "We work from Thane, Mumbai and Indore. See the full <a href=\"/white-label/\">white-label range</a> and the <a href=\"/white-label/outsourcing/\">dedicated team model</a>."
+            "Working with a delivery partner in India comes down to a few practical things: agree overlap hours, share tools, keep communication in writing and review work on a fixed rhythm. Each of these is written into the scope before work starts.",
+            "We work from Mumbai and Indore. See the full <a href=\"/white-label/\">white-label range</a> and the <a href=\"/white-label/outsourcing/\">dedicated team model</a>."
           ],
           "img": "contact/office.jpg",
-          "cap": "Illustrative scene: an overseas agency planning delivery with its partner.",
+          "cap": "An overseas agency planning delivery with its partner.",
           "table": {
             "caption": "Working with an Indian delivery partner: what to agree",
             "head": [
@@ -221,7 +237,7 @@
               ],
               [
                 "Currency and invoicing",
-                "Invoice currency and terms",
+                "Invoices in Indian rupees or US dollars",
                 "Clean billing"
               ],
               [
@@ -236,6 +252,82 @@
               ]
             ]
           }
+        },
+        {
+          "id": "why-and-when-not",
+          "h": "Why agencies use an India-based partner, and when not to",
+          "paras": [
+            "Agencies abroad use an India-based partner for practical reasons: several disciplines from one team, work that moves while their own office is closed, and room to add services without hiring for each.",
+            "It is the wrong choice in some cases, and we would rather say so first. If your client needs someone in the room every week, if the work must be written by native speakers of the client's language, or if your contracts require client data to stay in one country, a local partner or a hire may suit you better. The same applies if your team cannot spare the time to write clear briefs and review work on a fixed rhythm."
+          ]
+        },
+        {
+          "id": "overlap-hours",
+          "h": "Overlap hours by region",
+          "paras": [
+            "<b>United States and Canada.</b> Partial overlap in the evening, India time, or a dedicated shift for a team that needs more of your day.",
+            "<b>United Kingdom.</b> Full overlap with your working day.",
+            "<b>Australia.</b> Full overlap.",
+            "<b>UAE.</b> Full overlap.",
+            "<b>Singapore.</b> Full overlap.",
+            "<b>Every region, including the rest of Europe.</b> Written updates at fixed times each day, so work moves even when nobody is on a call.",
+            "Exact hours are agreed per team and written into the scope."
+          ],
+          "table": {
+            "caption": "Overlap with MMC's working day by region",
+            "head": [
+              "Region",
+              "Overlap",
+              "How it works"
+            ],
+            "rows": [
+              [
+                "United States and Canada",
+                "Partial",
+                "Evening overlap, India time, or a dedicated shift for a team"
+              ],
+              [
+                "United Kingdom",
+                "Full",
+                "Working days overlap"
+              ],
+              [
+                "Australia",
+                "Full",
+                "Working days overlap"
+              ],
+              [
+                "UAE",
+                "Full",
+                "Working days overlap"
+              ],
+              [
+                "Singapore",
+                "Full",
+                "Working days overlap"
+              ],
+              [
+                "All regions",
+                "Written updates",
+                "Fixed daily update times, agreed per team"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "contracts-currency",
+          "h": "Contracts, NDA, data and currency",
+          "paras": [
+            "We sign an NDA before we see client details, and we do not contact your clients. Client accounts stay in your client's name; we work through access you grant and can remove.",
+            "We invoice your agency in Indian rupees or US dollars. The minimum commitment is three months. Scope, deadlines and overlap hours are written down before work starts."
+          ]
+        },
+        {
+          "id": "services-from-india",
+          "h": "Services delivered from India",
+          "paras": [
+            "Every white-label service is delivered from India: <a href=\"/white-label/seo/\">SEO</a>, <a href=\"/white-label/link-building/\">link building</a>, <a href=\"/white-label/ppc/\">Google Ads and PPC</a>, <a href=\"/white-label/meta-ads/\">paid social</a>, <a href=\"/white-label/web-development/\">web development</a>, <a href=\"/white-label/shopify-development/\">Shopify</a>, <a href=\"/white-label/wordpress-development/\">WordPress</a>, <a href=\"/white-label/content-marketing/\">content</a>, <a href=\"/white-label/creative-and-video/\">creative and video</a>, <a href=\"/white-label/email-marketing/\">email and retention</a> and <a href=\"/white-label/reporting/\">reporting</a>. For a team that works only on your accounts, see <a href=\"/white-label/outsourcing/\">agency outsourcing</a>."
+          ]
         }
       ]
     },
@@ -249,37 +341,37 @@
           "t": "SEO and content",
           "d": "Search work for overseas markets.",
           "img": "seo/authority.jpg",
-          "alt": "SEO and content: illustrative scene"
+          "alt": "SEO and content"
         },
         {
           "t": "Paid media",
           "d": "Google and Meta campaigns for your clients.",
           "img": "pm-v2/channel-google.jpg",
-          "alt": "Paid media: illustrative scene"
+          "alt": "Paid media"
         },
         {
           "t": "Web and app development",
           "d": "Builds from your designs.",
           "img": "web/build.jpg",
-          "alt": "Web and app development: illustrative scene"
+          "alt": "Web and app development"
         },
         {
           "t": "Creative and video",
           "d": "Design and editing queue.",
           "img": "ugc/edit.jpg",
-          "alt": "Creative and video: illustrative scene"
+          "alt": "Creative and video"
         },
         {
           "t": "Reporting",
           "d": "Reports in your format.",
           "img": "res/insights.jpg",
-          "alt": "Reporting: illustrative scene"
+          "alt": "Reporting"
         },
         {
           "t": "Dedicated team",
           "d": "People on your accounts.",
           "img": "about2/huddle.jpg",
-          "alt": "Dedicated team: illustrative scene"
+          "alt": "Dedicated team"
         }
       ]
     },
@@ -289,7 +381,7 @@
       "h2b": "for white-label agency India partner.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "contact/office.jpg",
-      "alt": "Why agencies choose MMC for white-label agency India partner. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label agency India partner.",
       "items": [
         {
           "t": "Overlap hours",
@@ -314,7 +406,7 @@
       "h2a": "How white-label agency India partner works,",
       "h2b": "step by step.",
       "img": "contact/office.jpg",
-      "alt": "How white-label agency India partner works, step by step. Illustrative scene.",
+      "alt": "How white-label agency India partner works, step by step.",
       "items": [
         {
           "t": "Agree basics",
@@ -338,7 +430,7 @@
       "h2a": "White-label agency India partner for agencies",
       "h2b": "that sell more than they can staff.",
       "good": {
-        "t": "You are an agency, studio or consultancy that sells agency India partner but does not want to hire and manage the team for it.",
+        "t": "You are an agency outside India that sells digital services but does not want to hire and manage a delivery team for them.",
         "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
       },
       "not": {
@@ -410,40 +502,51 @@
       ]
     },
     "faqTitle": [
-      "Questions about white-label",
+      "Questions about a white-label",
       "agency India partner."
     ],
     "faq": [
       {
-        "q": "Do you work with agencies in the UK, US and Australia?",
-        "a": "Yes. We agree overlap hours and communication rhythm for your time zone."
+        "q": "Do you work with agencies in the UK, US, Canada and Australia?",
+        "a": "We do, and with agencies in the UAE, Singapore, India and the rest of Europe. We agree overlap hours and a daily update rhythm for your time zone."
       },
       {
-        "q": "Can you invoice in my currency?",
-        "a": "We agree invoicing terms on a call."
+        "q": "Which hours overlap with my time zone?",
+        "a": "Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US and Canadian agencies get partial overlap in the evening, India time, or a dedicated shift. Everyone gets written updates at fixed times each day, and exact hours are agreed per team."
+      },
+      {
+        "q": "Which currencies can you invoice in?",
+        "a": "Indian rupees or US dollars. We agree which one when we write the scope."
       },
       {
         "q": "How do I know my client data is protected?",
         "a": "We sign an NDA and agree who holds access to client accounts. Security terms are set in the agreement."
       },
       {
-        "q": "Do you only work from one office?",
-        "a": "We work from Thane, Mumbai and Indore."
+        "q": "Where is the team based?",
+        "a": "In India. We work from Mumbai and Indore and serve agencies abroad remotely."
+      },
+      {
+        "q": "What is the minimum commitment?",
+        "a": "Three months. Scope, deadlines and overlap hours are written down before work starts."
       },
       {
         "q": "Will my client know MMC is involved?",
         "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
       },
       {
-        "q": "How do we get started with white-label agency India partner?",
+        "q": "How do we get started with a white-label partner in India?",
         "a": "Tell us your time zone and the services you need. After the NDA we agree overlap hours and a pilot client."
       }
     ],
     "cta": {
-      "h2a": "Add agency India partner",
+      "h2a": "Add an India delivery team",
       "h2b": "without adding headcount.",
-      "lede": "On a call, with a senior strategist. We scope your first agency India partner client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "lede": "On a call, with a senior strategist. We scope a first project together and agree overlap hours and how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

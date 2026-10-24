@@ -1,8 +1,8 @@
 {
  "title": "Careers at MMC: Senior Bands, Zero Account Managers",
- "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. Hiring across every discipline. Apply with a single page, no resume required.",
+ "description": "We hire senior, pay top of market and hand you a P&L, not a task list. Hiring in every discipline. Apply with your CV and a short note about the role.",
  "ogTitle": "People who write their own briefs",
- "ogDescription": "Senior pay, senior expectations, no account-manager layer. Apply with one page, no resume required.",
+ "ogDescription": "Senior pay, senior expectations, no account-manager layer. Apply with your CV and a short note.",
  "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
  "robots": null,
  "jsonld": [
@@ -31,7 +31,7 @@
    "@id": "https://www.mondaymarketing.company/Careers.html#webpage",
    "url": "https://www.mondaymarketing.company/Careers.html",
    "name": "Careers at MMC: Senior Bands, Zero Account Managers",
-   "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. Hiring across every discipline. Apply with a single page, no resume required.",
+   "description": "We hire senior, pay top of market and hand you a P&L, not a task list. Hiring in every discipline. Apply with your CV and a short note about the role.",
    "isPartOf": {
     "@id": "https://www.mondaymarketing.company/#website"
    },

@@ -2,8 +2,8 @@
   "file": "white-label-outsourcing.html",
   "path": "/white-label/outsourcing/",
   "key": "wl_outsourcing",
-  "title": "Agency Outsourcing and Dedicated Teams | MMC",
-  "description": "Outsource agency work to a dedicated MMC team: hire marketing, design and developer resources that work as part of your agency, under NDA and your brand.",
+  "title": "Agency Outsourcing and Dedicated Delivery Teams | MMC",
+  "description": "Outsource agency delivery to a dedicated MMC team of strategists, designers and developers who work in your tools, under your brand and an NDA, from India.",
   "ogTitle": "White-label agency outsourcing for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label agency outsourcing.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/outsourcing/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/outsourcing/",
-      "name": "Agency Outsourcing and Dedicated Teams | MMC",
-      "description": "Outsource agency work to a dedicated MMC team: hire marketing, design and developer resources that work as part of your agency, under NDA and your brand.",
+      "name": "Agency Outsourcing and Dedicated Delivery Teams | MMC",
+      "description": "Outsource agency delivery to a dedicated MMC team of strategists, designers and developers who work in your tools, under your brand and an NDA, from India.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -96,7 +96,23 @@
           "name": "Which time zones do you cover?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We agree overlap hours with you during onboarding."
+            "text": "Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US and Canadian agencies get partial overlap in the evening, India time, or a dedicated shift for the team. Written updates go out at fixed times each day, and exact hours are agreed per team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which roles can I add to a dedicated team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO specialist, PPC or paid social specialist, Shopify developer, web developer, designer, content writer, video editor, project manager or account manager, and reporting analyst."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum term?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three months. Invoices are in Indian rupees or US dollars, and the roles and scope are written down before work starts."
           }
         },
         {
@@ -169,7 +185,7 @@
       "label": "In short",
       "lead": "Agency outsourcing means handing delivery work to a partner so your team can focus on clients and sales. With MMC you can hire a dedicated team, or draw hours as needed, of strategists, designers, developers and writers who work inside your processes, under your brand and an NDA.",
       "hl": "handing delivery work to a partner",
-      "who": "Monday Marketing Company (MMC) delivers agency outsourcing for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "who": "Monday Marketing Company (MMC) provides outsourced delivery teams for agencies and works behind your brand. You own the client relationship; we do the work.",
       "points": [
         {
           "icon": "users",
@@ -200,7 +216,7 @@
             "If you only want to resell a defined service, see the <a href=\"/white-label/reseller-programme/\">reseller programme</a>. Costs are discussed on the <a href=\"/white-label/pricing-models/\">pricing models</a> page."
           ],
           "img": "about2/huddle.jpg",
-          "cap": "Illustrative scene: a dedicated team working with an agency.",
+          "cap": "A dedicated team working with an agency.",
           "table": {
             "caption": "Outsourcing models compared",
             "head": [
@@ -231,6 +247,20 @@
               ]
             ]
           }
+        },
+        {
+          "id": "roles",
+          "h": "Roles you can add",
+          "paras": [
+            "An SEO specialist, a PPC or paid social specialist, a Shopify developer, a web developer, a designer, a content writer, a video editor, a project manager or account manager, and a reporting analyst. Start with one role and add others as your workload grows."
+          ]
+        },
+        {
+          "id": "overlap",
+          "h": "Overlap hours by region",
+          "paras": [
+            "Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US and Canadian agencies get partial overlap in the evening, India time, or a dedicated shift for the team. Every region gets written updates at fixed times each day. Exact hours are agreed per team; see <a href=\"/white-label/india/\">white-label delivery from India</a>."
+          ]
         }
       ]
     },
@@ -244,37 +274,37 @@
           "t": "Dedicated strategists",
           "d": "Senior people who plan and run accounts.",
           "img": "company/strategy.jpg",
-          "alt": "Dedicated strategists: illustrative scene"
+          "alt": "Dedicated strategists"
         },
         {
           "t": "Dedicated designers",
           "d": "Design resource for your creative queue.",
           "img": "social/design.jpg",
-          "alt": "Dedicated designers: illustrative scene"
+          "alt": "Dedicated designers"
         },
         {
           "t": "Dedicated developers",
           "d": "Developers for web and app builds.",
           "img": "web/build.jpg",
-          "alt": "Dedicated developers: illustrative scene"
+          "alt": "Dedicated developers"
         },
         {
           "t": "Content and editorial",
           "d": "Writers and editors for your clients.",
           "img": "sv/content.jpg",
-          "alt": "Content and editorial: illustrative scene"
+          "alt": "Content and editorial"
         },
         {
           "t": "Ad managers",
           "d": "Specialists for Google, Meta and marketplaces.",
           "img": "pm-v2/channel-meta.jpg",
-          "alt": "Ad managers: illustrative scene"
+          "alt": "Ad managers"
         },
         {
           "t": "Project coordination",
           "d": "A coordinator to keep work moving.",
           "img": "about2/callscreen.jpg",
-          "alt": "Project coordination: illustrative scene"
+          "alt": "Project coordination"
         }
       ]
     },
@@ -284,7 +314,7 @@
       "h2b": "for white-label agency outsourcing.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "about2/huddle.jpg",
-      "alt": "Why agencies choose MMC for white-label agency outsourcing. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label agency outsourcing.",
       "items": [
         {
           "t": "Works in your tools",
@@ -309,7 +339,7 @@
       "h2a": "How white-label agency outsourcing works,",
       "h2b": "step by step.",
       "img": "about2/huddle.jpg",
-      "alt": "How white-label agency outsourcing works, step by step. Illustrative scene.",
+      "alt": "How white-label agency outsourcing works, step by step.",
       "items": [
         {
           "t": "Define the roles",
@@ -333,7 +363,7 @@
       "h2a": "White-label agency outsourcing for agencies",
       "h2b": "that sell more than they can staff.",
       "good": {
-        "t": "You are an agency, studio or consultancy that sells agency outsourcing but does not want to hire and manage the team for it.",
+        "t": "You are an agency, studio or consultancy with more delivery work than your team can handle, and you do not want to hire for every peak.",
         "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
       },
       "not": {
@@ -405,7 +435,15 @@
       },
       {
         "q": "Which time zones do you cover?",
-        "a": "We agree overlap hours with you during onboarding."
+        "a": "Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US and Canadian agencies get partial overlap in the evening, India time, or a dedicated shift for the team. Written updates go out at fixed times each day, and exact hours are agreed per team."
+      },
+      {
+        "q": "Which roles can I add to a dedicated team?",
+        "a": "SEO specialist, PPC or paid social specialist, Shopify developer, web developer, designer, content writer, video editor, project manager or account manager, and reporting analyst."
+      },
+      {
+        "q": "What is the minimum term?",
+        "a": "Three months. Invoices are in Indian rupees or US dollars, and the roles and scope are written down before work starts."
       },
       {
         "q": "What tools can the team use?",
@@ -421,10 +459,13 @@
       }
     ],
     "cta": {
-      "h2a": "Add agency outsourcing",
+      "h2a": "Add a delivery team",
       "h2b": "without adding headcount.",
-      "lede": "On a call, with a senior strategist. We scope your first agency outsourcing client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "lede": "On a call, with a senior strategist. We scope the roles your first outsourced team needs and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

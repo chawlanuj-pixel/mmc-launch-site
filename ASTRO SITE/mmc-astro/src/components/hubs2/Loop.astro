@@ -8,8 +8,8 @@ const { L, id = "quality" } = Astro.props;
   <div class="n-wrap">
     <div class="h2-loop">
       <div class="h2-loop__media h2-rv">
-        <Pic src={L.img} alt={L.imgCaption ? L.imgCaption + ": illustrative scene." : ""} />
-        {L.imgCaption && <p class="h2-note">{L.imgCaption}. Illustrative scene, not a client account.</p>}
+        <Pic src={L.img} alt={L.imgCaption || ""} />
+        {L.imgCaption && <p class="h2-note">{L.imgCaption}</p>}
       </div>
       <div class="h2-rv">
         <header class="h2-head" style="margin-bottom:clamp(20px,2.4vw,32px)">

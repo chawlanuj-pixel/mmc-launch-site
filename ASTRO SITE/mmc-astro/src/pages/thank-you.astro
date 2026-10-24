@@ -69,6 +69,8 @@ const tools = TOOLS.slice(0, 3);
     @media (prefers-reduced-motion: reduce) { .ty-card { transition: none; } }
   </style>
   <script is:inline>
+    /* Phone link clicks: the same contact-click event the mobile bar sends (contact_method tells phone from WhatsApp). No personal data. */
+    document.querySelectorAll('.ty-actions a[href^="tel:"]').forEach(function (a) { a.addEventListener("click", function () { try { (window.dataLayer = window.dataLayer || []).push({ event: "whatsapp_click", cta_source: "thank-you-phone", contact_method: "phone" }); } catch (e) {} }); });
     /* Personalise from what the form saved, then fire the conversion once per submission. */
     (function () {
       var d = null;
@@ -80,10 +82,12 @@ const tools = TOOLS.slice(0, 3);
       if (d.brand) $("ty-lead").textContent = "A senior strategist will read your details for " + d.brand + " and reply within one working day with a slot and a short pre-read.";
       if (d.mode === "mailto") $("ty-mailto").hidden = false;
       try {
-        if (!sessionStorage.getItem("mmc_thanks_fired")) {
+        // lead_thank_you is the conversion signal. Not fired when saving failed and the email fallback opened (mode "mailto"): that lead is not stored.
+        if (!sessionStorage.getItem("mmc_thanks_fired") && d.mode !== "mailto") {
           window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({ event: "lead_thank_you", lead_kind: d.kind || "brief" });
-          if (window.fbq) window.fbq("track", "Lead");
+          window.dataLayer.push({ event: "lead_thank_you", lead_kind: d.kind || "brief", lead_repeat: !!d.dup });
+          // eventID = the form submission key the CRM sends to Meta, so Meta counts it once. A resend the server already had (dup) fires no second Lead.
+          if (window.fbq && !d.dup) { if (d.eid) window.fbq("track", "Lead", {}, { eventID: d.eid }); else window.fbq("track", "Lead"); }
           sessionStorage.setItem("mmc_thanks_fired", "1");
         }
       } catch (e) {}

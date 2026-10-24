@@ -429,7 +429,7 @@
       "h2b": "in it for the long run.",
       "good": {
         "t": "You want buyers to find you without paying for every click, and can wait for it to compound.",
-        "why": "SEO suits D2C brands with a catalogue, B2B companies whose buyers research alone, and colleges whose families search for courses."
+        "why": "SEO suits D2C brands with a catalogue, B2B companies whose buyers research alone, and colleges whose families search for courses (see <a href=\"/industries/education/colleges/\">college admission marketing</a> and <a href=\"/industries/education/\">education marketing</a>)."
       },
       "not": {
         "t": "You need leads next week, or a guaranteed ranking.",
@@ -446,37 +446,37 @@
           "t": "Technical foundation",
           "d": "Crawling, indexing, speed and site structure fixed so search engines can read the site properly.",
           "img": "seo/tech.jpg",
-          "alt": "Technical foundation: illustrative scene"
+          "alt": "Technical foundation"
         },
         {
           "t": "Keyword and intent research",
           "d": "The questions buyers ask, grouped by what they want to do next.",
           "img": "seo/intent.jpg",
-          "alt": "Keyword and intent research: illustrative scene"
+          "alt": "Keyword and intent research"
         },
         {
           "t": "Page and content builds",
           "d": "Category, product, service and guide pages written to rank and to convert.",
           "img": "seo/pages.jpg",
-          "alt": "Page and content builds: illustrative scene"
+          "alt": "Page and content builds"
         },
         {
           "t": "AEO and GEO",
           "d": "Answer-first copy, schema and clear entities so AI answers can quote you.",
           "img": "seo/aeo.jpg",
-          "alt": "AEO and GEO: illustrative scene"
+          "alt": "AEO and GEO"
         },
         {
           "t": "Authority and links",
           "d": "Earned mentions and relevant links that build trust without shortcuts.",
           "img": "seo/authority.jpg",
-          "alt": "Authority and links: illustrative scene"
+          "alt": "Authority and links"
         },
         {
           "t": "Local and marketplace search",
           "d": "Google Business Profile and listing work where buyers search by place or by marketplace.",
           "img": "sv/organic.jpg",
-          "alt": "Local and marketplace search: illustrative scene"
+          "alt": "Local and marketplace search"
         }
       ]
     },
@@ -486,7 +486,7 @@
       "h2b": "for SEO.",
       "lede": "SEO compounds. We build it so the work still pays after the month ends.",
       "img": "seo/pages.jpg",
-      "alt": "Why brands choose MMC for SEO. Illustrative scene.",
+      "alt": "Why brands choose MMC for SEO.",
       "items": [
         {
           "t": "Search and conversion together",
@@ -511,7 +511,7 @@
       "h2a": "How an SEO engagement runs,",
       "h2b": "step by step.",
       "img": "seo/authority.jpg",
-      "alt": "How an SEO engagement runs, step by step. Illustrative scene.",
+      "alt": "How an SEO engagement runs, step by step.",
       "items": [
         {
           "t": "Audit and baseline",

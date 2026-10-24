@@ -112,7 +112,7 @@
           "name": "Who is UI/UX design for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Teams building or fixing a website or app. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+            "text": "Teams building or fixing a website or app. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on shopping and checkout flows, B2B on enquiry and demo flows, education on course, fee and application journeys."
           }
         },
         {
@@ -326,7 +326,7 @@
       },
       {
         "q": "Who is UI/UX design for?",
-        "a": "Teams building or fixing a website or app. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+        "a": "Teams building or fixing a website or app. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on shopping and checkout flows, B2B on enquiry and demo flows, education on course, fee and application journeys."
       },
       {
         "q": "What do you need from us?",
@@ -391,37 +391,37 @@
           "t": "User research",
           "d": "Interviews, data and support questions that show what users need.",
           "img": "ux/research.jpg",
-          "alt": "User research: illustrative scene"
+          "alt": "User research"
         },
         {
           "t": "Journey mapping",
           "d": "Flows that show how a visitor moves from first click to the goal.",
           "img": "ux/flows.jpg",
-          "alt": "Journey mapping: illustrative scene"
+          "alt": "Journey mapping"
         },
         {
           "t": "Screen design",
           "d": "Clear layouts for mobile and desktop, with real content in place.",
           "img": "ux/screens.jpg",
-          "alt": "Screen design: illustrative scene"
+          "alt": "Screen design"
         },
         {
           "t": "Usability testing",
           "d": "Prototypes tested with real people before anything is built.",
           "img": "ux/test.jpg",
-          "alt": "Usability testing: illustrative scene"
+          "alt": "Usability testing"
         },
         {
           "t": "Design system",
           "d": "Components and rules that keep every new page consistent.",
           "img": "ux/system.jpg",
-          "alt": "Design system: illustrative scene"
+          "alt": "Design system"
         },
         {
           "t": "Handoff",
           "d": "Specs and files organised so developers can build without guesswork.",
           "img": "ux/system.jpg",
-          "alt": "Handoff: illustrative scene"
+          "alt": "Handoff"
         }
       ]
     },
@@ -431,7 +431,7 @@
       "h2b": "with MMC.",
       "lede": "Good design makes the next marketing rupee work harder.",
       "img": "ux/screens.jpg",
-      "alt": "Why brands design with MMC. Illustrative scene.",
+      "alt": "Why brands design with MMC.",
       "items": [
         {
           "t": "Research before pixels",

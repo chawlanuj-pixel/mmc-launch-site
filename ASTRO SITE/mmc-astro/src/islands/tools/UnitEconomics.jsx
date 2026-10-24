@@ -231,7 +231,7 @@ function UnitEconomics() {
                          fmtV={(v) => pct(v, 1)} labels={["Loss", "Healthy 15%"]} />
                   <p className="tl-big__s">
                     {m.cm3 > 0
-                      ? <>That's <b>{pct(mgn(m.cm3), 1)}</b> of net revenue after product, delivery, returns and buying the customer. You need <b>{num(Math.ceil(beUnits))}</b> orders a month to cover overhead, you're modelling <b>{num(U)}</b>.</>
+                      ? <>That's <b>{pct(mgn(m.cm3), 1)}</b> of net revenue after product, delivery, returns and buying the customer. You need <b>{num(Math.ceil(beUnits))}</b> orders a month to cover overhead; you're modelling <b>{num(U)}</b>.</>
                       : <>Every order costs you <b>{inr(Math.round(Math.abs(m.cm3)))}</b> before overhead. Volume multiplies that, so the fix is upstream, the wins below show which lever is worth most.</>}
                   </p>
                 </BigAnswer>

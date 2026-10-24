@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "shop/design.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a Shopify store being designed.",
+    "alt": "A Shopify store being designed.",
     "facts": [
       {
         "t": "Built for browsing.",
@@ -131,7 +131,7 @@
         "d": "Structure, catalogue and the shopper's path are planned before design starts.",
         "get": "A written plan of the store and what it must connect to.",
         "img": "shop/plan.jpg",
-        "alt": "Illustrative scene: a store being planned page by page.",
+        "alt": "A store being planned page by page.",
         "pos": "50% 50%"
       },
       {
@@ -140,7 +140,7 @@
         "d": "Screens are designed for a phone first and reviewed with you.",
         "get": "Approved designs for the pages that sell.",
         "img": "shop/design.jpg",
-        "alt": "Illustrative scene: a store product page being designed.",
+        "alt": "A store product page being designed.",
         "pos": "50% 50%"
       },
       {
@@ -149,7 +149,7 @@
         "d": "A lean theme with few apps, checkout and payments tuned.",
         "get": "A store that is fast and measurable.",
         "img": "shop/speed.jpg",
-        "alt": "Illustrative scene: a store being tuned for speed.",
+        "alt": "A store being tuned for speed.",
         "pos": "50% 50%"
       },
       {
@@ -158,7 +158,7 @@
         "d": "We test before launch, then watch the first orders and fix what the data shows.",
         "get": "A live store with tracking you can trust.",
         "img": "shop/integrate.jpg",
-        "alt": "Illustrative scene: a store connected to its tools.",
+        "alt": "A store connected to its tools.",
         "pos": "50% 50%"
       }
     ]

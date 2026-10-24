@@ -2,8 +2,8 @@
   "file": "white-label-reporting.html",
   "path": "/white-label/reporting/",
   "key": "wl_reporting",
-  "title": "White-Label Reporting and Analytics | MMC",
-  "description": "White-label reporting and analytics for agencies: dashboards, monthly client reports and tracking setup, built in your format with your branding.",
+  "title": "White-Label Reporting for Agency Clients | MMC",
+  "description": "White-label reporting for agencies: monthly SEO, PPC and social reports prepared by MMC, sent from your domain under your logo, in the format clients expect.",
   "ogTitle": "White-label reporting and analytics for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label reporting and analytics.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/reporting/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/reporting/",
-      "name": "White-Label Reporting and Analytics | MMC",
-      "description": "White-label reporting and analytics for agencies: dashboards, monthly client reports and tracking setup, built in your format with your branding.",
+      "name": "White-Label Reporting for Agency Clients | MMC",
+      "description": "White-label reporting for agencies: monthly SEO, PPC and social reports prepared by MMC, sent from your domain under your logo, in the format clients expect.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -133,8 +133,8 @@
     "h1": [
       "White-label reporting",
       [
-        "and analytics ",
-        "your clients can read",
+        "your clients ",
+        "can read",
         "."
       ]
     ],
@@ -200,7 +200,7 @@
             "Reporting supports every other white-label service, so you can add it to <a href=\"/white-label/ppc/\">PPC</a>, <a href=\"/white-label/seo/\">SEO</a> or <a href=\"/white-label/social-media-management/\">social</a> accounts. Our free tools are on the <a href=\"/tools/\">tools page</a>."
           ],
           "img": "res/insights.jpg",
-          "cap": "Illustrative scene: a monthly report being drafted.",
+          "cap": "A monthly report being drafted.",
           "table": {
             "caption": "Reporting layers and what each answers",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Tracking audit",
           "d": "GA4, tags and events checked against what should fire.",
           "img": "guides/ga4.jpg",
-          "alt": "Tracking audit: illustrative scene"
+          "alt": "Tracking audit"
         },
         {
           "t": "Dashboards",
           "d": "Live views built in the tool you prefer.",
           "img": "res/insights.jpg",
-          "alt": "Dashboards: illustrative scene"
+          "alt": "Dashboards"
         },
         {
           "t": "Monthly reports",
           "d": "Branded reports written with commentary.",
           "img": "res/funnel.jpg",
-          "alt": "Monthly reports: illustrative scene"
+          "alt": "Monthly reports"
         },
         {
           "t": "Attribution notes",
           "d": "Plain-language notes on what channels did.",
           "img": "guides/overlap.jpg",
-          "alt": "Attribution notes: illustrative scene"
+          "alt": "Attribution notes"
         },
         {
           "t": "Margin-aware reporting",
           "d": "Return shown against the client's costs.",
           "img": "res/roas.jpg",
-          "alt": "Margin-aware reporting: illustrative scene"
+          "alt": "Margin-aware reporting"
         },
         {
           "t": "Review talking points",
           "d": "Notes so your client call is decision-led.",
           "img": "res/unit.jpg",
-          "alt": "Review talking points: illustrative scene"
+          "alt": "Review talking points"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label reporting and analytics.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "res/insights.jpg",
-      "alt": "Why agencies choose MMC for white-label reporting and analytics. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label reporting and analytics.",
       "items": [
         {
           "t": "Commentary included",
@@ -309,7 +309,7 @@
       "h2a": "How white-label reporting and analytics works,",
       "h2b": "step by step.",
       "img": "res/insights.jpg",
-      "alt": "How white-label reporting and analytics works, step by step. Illustrative scene.",
+      "alt": "How white-label reporting and analytics works, step by step.",
       "items": [
         {
           "t": "Share the template",
@@ -424,7 +424,10 @@
       "h2a": "Add reporting and analytics",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first reporting and analytics client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

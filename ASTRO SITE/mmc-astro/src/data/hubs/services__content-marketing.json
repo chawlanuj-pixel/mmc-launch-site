@@ -104,7 +104,7 @@
           "name": "Will content marketing bring leads quickly?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Usually not. Content compounds over months. If you need leads this month, paid media can run alongside while content builds. No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+            "text": "Usually not. Content compounds over months. If you need leads this month, paid media can run alongside while content builds. Nobody can honestly guarantee a ranking or a timeline, so we commit to the work in the monthly scope and report what we can observe."
           }
         },
         {
@@ -208,7 +208,7 @@
             "So we start with the question and the reader, then pick the format. The same research feeds <a href=\"/services/seo/\">SEO</a>, <a href=\"/services/seo/aeo/\">AEO</a> and <a href=\"/services/social-media/\">social media</a>."
           ],
           "img": "sv/content.jpg",
-          "cap": "Illustrative scene: a content plan being built from buyer questions."
+          "cap": "A content plan being built from buyer questions."
         },
         {
           "id": "formats",
@@ -391,7 +391,7 @@
       },
       {
         "q": "Will content marketing bring leads quickly?",
-        "a": "Usually not. Content compounds over months. If you need leads this month, paid media can run alongside while content builds. No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+        "a": "Usually not. Content compounds over months. If you need leads this month, paid media can run alongside while content builds. Nobody can honestly guarantee a ranking or a timeline, so we commit to the work in the monthly scope and report what we can observe."
       },
       {
         "q": "What does content marketing cost?",
@@ -441,7 +441,7 @@
       "h2b": "can wait for it to compound.",
       "good": {
         "t": "You want buyers to find and trust you without paying for every visit, and you have knowledge worth sharing.",
-        "why": "This suits D2C brands with product education to give, B2B suppliers with expertise, and colleges and consultancies whose families research."
+        "why": "This suits D2C brands with product education to give, B2B suppliers with expertise, and colleges and consultancies whose families research (see <a href=\"/industries/education/colleges/\">college admission marketing</a>)."
       },
       "not": {
         "t": "You need leads next week.",
@@ -458,37 +458,37 @@
           "t": "Content strategy",
           "d": "Audiences, questions, topics and a plan that links to the business.",
           "img": "sv/content.jpg",
-          "alt": "Content strategy: illustrative scene"
+          "alt": "Content strategy"
         },
         {
           "t": "Articles and guides",
           "d": "Specific, accurate pieces written to be found and trusted.",
           "img": "guides/library.jpg",
-          "alt": "Articles and guides: illustrative scene"
+          "alt": "Articles and guides"
         },
         {
           "t": "Calendars and workflow",
           "d": "A schedule with owners and formats that the team can keep.",
           "img": "social/calendar.jpg",
-          "alt": "Calendars and workflow: illustrative scene"
+          "alt": "Calendars and workflow"
         },
         {
           "t": "Video and short clips",
           "d": "Product, expert and customer clips from the same topics.",
           "img": "social/video.jpg",
-          "alt": "Video and short clips: illustrative scene"
+          "alt": "Video and short clips"
         },
         {
           "t": "Email and nurture",
           "d": "Series that keep buyers, parents and leads engaged.",
           "img": "services/retention.jpg",
-          "alt": "Email and nurture: illustrative scene"
+          "alt": "Email and nurture"
         },
         {
           "t": "Reporting",
           "d": "Traffic, enquiries and orders read together each month.",
           "img": "social/insights.jpg",
-          "alt": "Reporting: illustrative scene"
+          "alt": "Reporting"
         }
       ]
     },
@@ -498,7 +498,7 @@
       "h2b": "for content.",
       "lede": "Content works when it is useful and tied to a number.",
       "img": "sv/content.jpg",
-      "alt": "Why brands choose MMC for content. Illustrative scene.",
+      "alt": "Why brands choose MMC for content.",
       "items": [
         {
           "t": "Tied to enquiries and orders",
@@ -523,7 +523,7 @@
       "h2a": "How a content engagement runs,",
       "h2b": "step by step.",
       "img": "social/plan.jpg",
-      "alt": "How a content engagement runs, step by step. Illustrative scene.",
+      "alt": "How a content engagement runs, step by step.",
       "items": [
         {
           "t": "Research the questions",

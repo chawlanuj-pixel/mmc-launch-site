@@ -1,14 +1,14 @@
 {
  "id": "sprouts",
  "about": "{name} is a B2B company that plans educational trips for schools.",
- "description": "{name} case study: a school travel website with Journeys and Safety pages and a school enquiry form, shown as client-approved artwork from MMC.",
+ "description": "{name} case study: a school travel website with Journeys and Safety pages and a school enquiry form, designed and built by the MMC team.",
  "heroTone": "ink",
  "kind": "B2B, educational school travel",
  "channels": [
   "School enquiry form"
  ],
  "brief": [
-  "{name} plans trips for schools. This page covers its website: a homepage, a Journeys page, a Safety page for parents and staff, and a school enquiry form.",
+  "{name} plans trips for schools. We built its website: a homepage, a Journeys page, a Safety page for parents and staff, and a school enquiry form.",
   "The site is organised into Journeys, Safety and a school enquiry form, and the enquiry form is the one action it points to."
  ],
  "showcases": [
@@ -53,10 +53,10 @@
  },
  "action": "enquiry",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "journeys": "{name} Journeys page, client-approved artwork",
-  "safety": "{name} Safety page, client-approved artwork",
-  "form": "{name} enquiry form, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} website on a desktop screen",
+  "journeys": "{name} Journeys page",
+  "safety": "{name} Safety page",
+  "form": "{name} enquiry form"
  }
 }

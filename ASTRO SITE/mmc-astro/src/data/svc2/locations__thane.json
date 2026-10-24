@@ -120,7 +120,7 @@
         "d": "We set up the review routine and build a Thane page that matches the profile.",
         "get": "A profile and page that agree.",
         "img": "seo/pages.jpg",
-        "alt": "Illustrative scene: a local page matching the profile.",
+        "alt": "A local page matching the profile.",
         "pos": "50% 50%"
       },
       {
@@ -129,7 +129,7 @@
         "d": "We add ads aimed at your areas if they suit, and report on calls, directions and enquiries.",
         "get": "A monthly local report.",
         "img": "orm/report.jpg",
-        "alt": "Illustrative scene: a monthly local report.",
+        "alt": "A monthly local report.",
         "pos": "50% 50%"
       }
     ]
@@ -141,7 +141,7 @@
   },
   "close": {
     "img": "about2/close.jpg",
-    "alt": "Illustrative scene: a notebook and a laptop on a desk at the end of the day.",
+    "alt": "A notebook and a laptop on a desk at the end of the day.",
     "toolsLabel": "Run the numbers, read the method",
     "toolsH1": "Tools and guides",
     "toolsH2": "behind the numbers.",

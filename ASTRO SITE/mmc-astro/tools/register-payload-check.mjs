@@ -2,7 +2,7 @@
 // Verifies the reference format, both payloads (required fields, no empty labels, subjects), validation and the rendered preview body.
 import {
   makeReference, REF_RE, EMPTY_STEP1, EMPTY_STEP2, validateStep1, validateStep2, contactSignature,
-  buildEmail1, buildEmail2, renderBody, normaliseUrl, fullPhone, utmFromSearch, SERVICES, OWNER_EMAIL,
+  buildEmail1, buildEmail2, renderBody, normaliseUrl, fullPhone, utmFromSearch, SERVICES, OWNER_EMAIL, consentFromStored,
 } from "../src/lib/register-payload.mjs";
 
 let checks = 0; const fails = [];
@@ -74,6 +74,9 @@ for (const needle of [s1.name, s1.role, s1.email, "+91 9876543210", "Brightly Di
   ok(b2.includes(needle), "email 2 contains: " + needle);
 ok(b2.includes("Email 1 was sent") && b2q.includes("did not go through earlier"), "email 2 reports email 1 status");
 ok(OWNER_EMAIL === "anuj@mondaymarketing.company", "owner address");
+for (const p of [e1, e2]) ok(!("_consent" in p), "payload builders stay pure: the cookie choice is added by the sender");
+ok(JSON.stringify(consentFromStored('{"necessary":true,"analytics":true,"marketing":false}')) === '{"marketing":false,"analytics":true}', "consent: stored choice becomes _consent");
+ok(consentFromStored(null) === undefined && consentFromStored("not json") === undefined && consentFromStored("[1]") === undefined, "consent: no saved choice sends no _consent");
 
 if (fails.length) { console.error(`FAIL: ${fails.length} of ${checks} checks`); fails.forEach((f) => console.error(" - " + f)); process.exit(1); }
 console.log(`OK: ${checks} checks passed`);

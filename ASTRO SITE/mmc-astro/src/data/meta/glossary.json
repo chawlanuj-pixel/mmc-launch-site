@@ -65,7 +65,7 @@
      "@type": "DefinedTerm",
      "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#contribution-margin",
      "name": "Contribution Margin",
-     "description": "What's left from an order after every variable cost: product, shipping, payment fees, returns - but before marketing and salaries. It's the money actually available to buy the next customer.",
+     "description": "What's left from an order after every variable cost: product, shipping, payment fees and returns, but before marketing and salaries. It's the money actually available to buy the next customer.",
      "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
     },
     {
@@ -422,7 +422,7 @@
      "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#pat",
      "name": "Profit After Tax",
      "alternateName": "PAT",
-     "description": "What the business actually keeps once everything: costs, depreciation and tax - is paid. Also called net profit.",
+     "description": "What the business actually keeps once everything is paid: costs, depreciation and tax. Also called net profit.",
      "termCode": "PAT",
      "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
     },
@@ -431,7 +431,7 @@
      "@id": "https://www.mondaymarketing.company/d2c-marketing-glossary.html#da",
      "name": "Depreciation & Amortisation",
      "alternateName": "D&A",
-     "description": "The spread-out cost of assets you already paid for: moulds, machinery, tooling, software - charged a bit each month.",
+     "description": "The spread-out cost of assets you already paid for: moulds, machinery, tooling and software, charged a bit each month.",
      "termCode": "D&A",
      "inDefinedTermSet": "https://www.mondaymarketing.company/d2c-marketing-glossary.html"
     },

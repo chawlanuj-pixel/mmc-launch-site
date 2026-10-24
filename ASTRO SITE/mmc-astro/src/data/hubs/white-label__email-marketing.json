@@ -200,7 +200,7 @@
             "Our own approach is on the <a href=\"/services/retention-marketing/\">retention marketing</a> page. Retention data also feeds <a href=\"/white-label/cro/\">white-label CRO</a>."
           ],
           "img": "rt/journey.jpg",
-          "cap": "Illustrative scene: a customer lifecycle map for a client.",
+          "cap": "A customer lifecycle map for a client.",
           "table": {
             "caption": "Retention channels compared",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Welcome and onboarding flows",
           "d": "The first messages new subscribers and customers get.",
           "img": "rt/welcome.jpg",
-          "alt": "Welcome and onboarding flows: illustrative scene"
+          "alt": "Welcome and onboarding flows"
         },
         {
           "t": "Abandoned cart and browse",
           "d": "Timed reminders with the right message order.",
           "img": "d2c/checkout.jpg",
-          "alt": "Abandoned cart and browse: illustrative scene"
+          "alt": "Abandoned cart and browse"
         },
         {
           "t": "Post-purchase and replenish",
           "d": "Messages around delivery, reviews and reorder.",
           "img": "rt/replenish.jpg",
-          "alt": "Post-purchase and replenish: illustrative scene"
+          "alt": "Post-purchase and replenish"
         },
         {
           "t": "Win-back",
           "d": "Sequences for customers who have gone quiet.",
           "img": "rt/winback.jpg",
-          "alt": "Win-back: illustrative scene"
+          "alt": "Win-back"
         },
         {
           "t": "Segmentation",
           "d": "Lists built from purchase and browsing behaviour.",
           "img": "rt/data.jpg",
-          "alt": "Segmentation: illustrative scene"
+          "alt": "Segmentation"
         },
         {
           "t": "WhatsApp and SMS",
           "d": "Opt-in flows within channel rules.",
           "img": "rt/journey.jpg",
-          "alt": "WhatsApp and SMS: illustrative scene"
+          "alt": "WhatsApp and SMS"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label email and retention marketing.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "rt/journey.jpg",
-      "alt": "Why agencies choose MMC for white-label email and retention marketing. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label email and retention marketing.",
       "items": [
         {
           "t": "Inside your client's tools",
@@ -309,7 +309,7 @@
       "h2a": "How white-label email and retention marketing works,",
       "h2b": "step by step.",
       "img": "rt/journey.jpg",
-      "alt": "How white-label email and retention marketing works, step by step. Illustrative scene.",
+      "alt": "How white-label email and retention marketing works, step by step.",
       "items": [
         {
           "t": "Tool access",
@@ -424,7 +424,10 @@
       "h2a": "Add email and retention marketing",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first email and retention marketing client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

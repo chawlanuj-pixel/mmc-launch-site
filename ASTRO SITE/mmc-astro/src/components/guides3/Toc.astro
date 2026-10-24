@@ -1,21 +1,23 @@
 ---
 // Contents for a guide. Desktop (1000px and up): a sticky column with a reading-progress rule and a scroll-spy.
 // Tablet and phone: a compact, collapsed disclosure above the text. Works without JavaScript (plain anchor links).
-interface Props { blocks: { id: string; h: string }[]; tool?: { label: string; href: string } }
-const { blocks, tool } = Astro.props;
+// Optional (CMS articles, Phase 4): `label` for the summary, `faq` false when the page has no FAQ, `all` for the library link.
+// The defaults are the guide values, so the repo guides render exactly as before.
+interface Props { blocks: { id: string; h: string }[]; tool?: { label: string; href: string }; label?: string; faq?: boolean; all?: { label: string; href: string } }
+const { blocks, tool, label = "In this guide", faq = true, all = { label: "All guides", href: "/guides/" } } = Astro.props;
 const pad = (i: number) => String(i + 1).padStart(2, "0");
 ---
 <div class="gd3-toc" data-gd3-toc>
   <details class="gd3-toc__box" open>
-    <summary><span>In this guide</span><small>{blocks.length + " sections"}</small></summary>
+    <summary><span>{label}</span><small>{blocks.length + " sections"}</small></summary>
     <span class="gd3-toc__bar" aria-hidden="true"><i data-gd3-progress></i></span>
     <ol>
       {blocks.map((b, i) => <li><a href={"#" + b.id}><span aria-hidden="true">{pad(i)}</span>{b.h}</a></li>)}
     </ol>
     <div class="gd3-toc__extra">
-      <a href="#faq">Jump to the questions</a>
+      {faq && <a href="#faq">Jump to the questions</a>}
       {tool && <a href={tool.href}>{tool.label}</a>}
-      <a href="/guides/">All guides</a>
+      <a href={all.href}>{all.label}</a>
     </div>
   </details>
 </div>

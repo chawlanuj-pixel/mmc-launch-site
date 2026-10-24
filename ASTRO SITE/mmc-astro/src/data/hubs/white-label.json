@@ -2,8 +2,8 @@
   "file": "white-label.html",
   "path": "/white-label/",
   "key": "wl",
-  "title": "White-Label Digital Marketing Services for Agencies | MMC",
-  "description": "White-label digital marketing, SEO, PPC, web and creative for agencies. We work behind your brand under NDA, report your way and keep your client yours.",
+  "title": "White-Label Digital Marketing Agency and Services | MMC",
+  "description": "White-label digital marketing for agencies: SEO, PPC, paid social, web and content delivered under your brand by an India-based team that signs an NDA.",
   "ogTitle": "White-label services for agencies",
   "ogDescription": "SEO, ads, web and creative behind your brand.",
   "ogAlt": "Monday Marketing Company: white-label services.",
@@ -32,8 +32,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/",
-      "name": "White-Label Digital Marketing Services for Agencies | MMC",
-      "description": "White-label digital marketing, SEO, PPC, web and creative for agencies. We work behind your brand under NDA, report your way and keep your client yours.",
+      "name": "White-Label Digital Marketing Agency and Services | MMC",
+      "description": "White-label digital marketing for agencies: SEO, PPC, paid social, web and content delivered under your brand by an India-based team that signs an NDA.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -71,10 +71,18 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is white-label digital marketing?",
+          "name": "What is a white-label digital marketing agency?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It is when one company delivers marketing work and another sells it under its own brand. The agency owns the client; the white-label partner works behind it."
+            "text": "It is a company that delivers marketing work which another agency sells under its own brand. The agency owns the client and the pricing; the white-label partner does the work behind it, under an NDA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is digital marketing fulfilment, and how is MMC different from a fulfilment platform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fulfilment means a partner delivers the work an agency has sold. A platform sells packages from a menu with little contact. MMC gives you a named strategist and specialists, a written scope per client, a pilot client before you scale, and an NDA before we see client details."
           }
         },
         {
@@ -83,6 +91,38 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We sign an NDA, agree scope, set up reporting in your format, run a first client together and scale from there. You stay the only point of contact for your client unless you ask otherwise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the pilot work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We start with one of your clients under a written scope, with check-in points and reporting in your format. You judge us on that work before adding more clients or services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which services can you white label?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO, local SEO for US and UK businesses, link building, GEO and AEO, Google Ads and PPC, paid social on Meta and LinkedIn, Shopify and Shopify Plus, WordPress and WooCommerce, custom web development, mobile apps, social media management, creative and design, video and UGC, email and retention, content writing and reporting dashboards. Each has its own page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with agencies in the US, UK, Canada and Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do, and with agencies in the UAE, Singapore, India and the rest of Europe. UK, Australian, UAE and Singapore agencies get full overlap with our working day; US agencies get overlap in the evening, India time, or a dedicated shift. Exact hours are agreed per team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
           }
         },
         {
@@ -103,10 +143,18 @@
         },
         {
           "@type": "Question",
-          "name": "Which services can you white label?",
+          "name": "How is pricing set?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Search, link building, GEO and AEO, ads, social, content, email and retention, CRO, lead generation, ecommerce, creative, web, apps, AI, reporting and ORM. The table on this page links to each."
+            "text": "By scope, under one model: a retainer, a project, a dedicated team, an hour block or the reseller programme. We do not publish prices; we agree the model on a call and write the scope down. The minimum commitment is three months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which currencies do you invoice in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indian rupees or US dollars. We agree which one when we write the scope."
           }
         },
         {
@@ -115,22 +163,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Digital agencies, web studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is pricing set up?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Through a retainer, a project, a dedicated team, an hourly block or a reseller arrangement. We agree the model on a call and write the scope down. See the pricing models page."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with agencies outside India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many overseas agencies work with Indian delivery partners. We explain how time zones, communication and reporting work on our India partner page."
           }
         }
       ]
@@ -141,14 +173,14 @@
     "wm": "White-label services",
     "eyebrow": "● White-label services for agencies",
     "h1": [
-      "White-label",
+      "The white-label digital",
       [
-        "services that let you ",
-        "say yes to every client",
+        "marketing agency ",
+        "behind your agency",
         "."
       ]
     ],
-    "sub": "SEO, ads, social, content, web, apps and AI, delivered behind your brand under NDA. You keep the client. We do the work.",
+    "sub": "SEO, PPC, paid social, web, content and creative, delivered behind your brand by an India-based team under NDA. You keep the client. We do the work.",
     "tiles": [
       {
         "img": "company/whiteboard.jpg",
@@ -177,9 +209,9 @@
     ],
     "answer": {
       "label": "In short",
-      "lead": "White label means we deliver the work and you sell it as your own. Your agency owns the client, the pricing and the relationship; MMC works behind you under an NDA, and reports can carry your brand. It lets you offer more services without hiring a team for each.",
-      "hl": "we deliver the work and you sell it as your own",
-      "who": "Monday Marketing Company (MMC) is a performance and growth agency in India, and white label is how we work with other agencies, studios, consultancies and freelancers.",
+      "lead": "A white-label digital marketing agency does the work that other agencies sell under their own brand. Monday Marketing Company (MMC) delivers SEO, paid media, web and content for agencies from India. We sign an NDA, work to a written scope and report in your format, while you keep the client, the pricing and the relationship.",
+      "hl": "does the work that other agencies sell under their own brand",
+      "who": "MMC is an India-based performance and growth agency. White label is how we work with digital agencies, web studios, creative studios and consultancies in the US, UK, Canada, Australia, the UAE, Singapore, India and the rest of Europe.",
       "points": [
         {
           "icon": "users",
@@ -204,13 +236,63 @@
       "blocks": [
         {
           "id": "what-white-label-means",
-          "h": "What white label means for an agency",
+          "h": "What white-label digital marketing means",
           "paras": [
             "In a white-label arrangement one company does the work and another sells it under its own name. For an agency, that means a partner who can run SEO, ads, web builds or creative for your client while you stay the face of the account.",
             "It is different from referral work, where a partner takes the client, and from hiring freelancers, where you manage every task. A white-label partner owns delivery quality and timelines against a scope you agree, and you own the relationship."
           ],
           "img": "company/strategy.jpg",
-          "cap": "Illustrative scene: an agency scoping work with its delivery partner."
+          "cap": "An agency scoping work with its delivery partner."
+        },
+        {
+          "id": "fulfilment",
+          "h": "Digital marketing fulfilment: a team, not a platform",
+          "paras": [
+            "Agency fulfilment means a partner delivers the work your agency has sold. Some providers run it as a platform: you pick a package from a menu, upload a brief and receive the output, often without knowing who did it. MMC works differently in four ways.",
+            "<b>People you can name.</b> A senior strategist scopes your account and stays on it, and you know which specialists do the work. Questions go to a person, not a ticket queue.",
+            "<b>A written scope.</b> Before work starts we write down what each client gets, what is out of scope and how changes are handled, so you can quote and invoice against it.",
+            "<b>A pilot client first.</b> We start with one of your clients, with check-in points and reporting in your format, so you judge us on real work before adding more accounts.",
+            "<b>An NDA before client details.</b> We sign it before we see anything about your clients, and we do not contact them unless you ask us to."
+          ]
+        },
+        {
+          "id": "who-does-what",
+          "h": "What you keep and what we do",
+          "paras": [
+            "<b>You keep</b> the client relationship, the pricing, the invoice, the strategy conversation and the final say on anything the client sees.",
+            "<b>We do</b> the audits, builds, campaigns, content and creative in the scope, the quality checks before work reaches you, and the report in your format, with notes for your client call.",
+            "<b>We agree together</b> the scope per client, the deadlines (your client date and an earlier internal one), who approves what, and whether anyone from our side joins a client call as part of your team."
+          ],
+          "table": {
+            "caption": "White label with MMC: who does what",
+            "head": [
+              "Area",
+              "Your agency",
+              "MMC"
+            ],
+            "rows": [
+              [
+                "Client relationship",
+                "Owns it and runs every client conversation",
+                "Stays behind you and never contacts the client"
+              ],
+              [
+                "Pricing and invoice",
+                "Sets the client price and invoices the client",
+                "Invoices your agency for the agreed scope"
+              ],
+              [
+                "Delivery",
+                "Approves work before the client sees it",
+                "Does the work and checks it before it reaches you"
+              ],
+              [
+                "Reporting",
+                "Sends the report under your brand",
+                "Prepares it in your format with notes for the call"
+              ]
+            ]
+          }
         },
         {
           "id": "how-the-model-works",
@@ -223,6 +305,18 @@
             "title": "Confidentiality is the starting point.",
             "text": "We sign an NDA before we see client details and we do not contact your clients. Read how it works in the FAQs below, and see <a href=\"/white-label/reporting/\">white-label reporting</a> for the reporting side."
           }
+        },
+        {
+          "id": "service-groups",
+          "h": "Services we fulfil for agencies, by group",
+          "paras": [
+            "<b>Search.</b> <a href=\"/white-label/seo/\">White-label SEO</a> covers audits, technical fixes, on-page work, content briefs and local SEO for US and UK businesses. <a href=\"/white-label/link-building/\">Link building</a> and <a href=\"/white-label/geo-aeo/\">GEO and AEO</a> add authority and visibility in AI answers.",
+            "<b>Paid media.</b> <a href=\"/white-label/ppc/\">White-label PPC and Google Ads</a> and <a href=\"/white-label/meta-ads/\">paid social on Meta</a> and LinkedIn, run in your client's own ad accounts so the client keeps ownership.",
+            "<b>Web and tech.</b> <a href=\"/white-label/shopify-development/\">Shopify and Shopify Plus</a>, <a href=\"/white-label/wordpress-development/\">WordPress and WooCommerce</a>, <a href=\"/white-label/web-development/\">custom web development</a>, <a href=\"/white-label/app-development/\">mobile apps</a> and <a href=\"/white-label/website-maintenance/\">website maintenance</a>, built to your designs or to <a href=\"/white-label/web-design/\">designs we make for you</a>.",
+            "<b>Content and creative.</b> <a href=\"/white-label/content-marketing/\">Content writing</a>, <a href=\"/white-label/social-media-management/\">social media management</a>, and <a href=\"/white-label/creative-and-video/\">graphic design, video and UGC</a>, made to each client's brand and voice.",
+            "<b>Retention and growth.</b> <a href=\"/white-label/email-marketing/\">Email and retention</a> flows and campaigns, with <a href=\"/white-label/cro/\">CRO</a>, <a href=\"/white-label/lead-generation/\">lead generation</a>, <a href=\"/white-label/ecommerce/\">ecommerce and Amazon</a> and <a href=\"/white-label/orm/\">reputation management</a> scoped per client.",
+            "<b>AI and reporting.</b> <a href=\"/white-label/ai-services/\">AI services</a> from AI by MMC, plus <a href=\"/white-label/reporting/\">reporting dashboards</a> and monthly reports sent under your logo."
+          ]
         },
         {
           "id": "white-label-services",
@@ -372,10 +466,50 @@
           }
         },
         {
-          "id": "engagement-models",
-          "h": "Engagement models and who they suit",
+          "id": "one-partner-or-several",
+          "h": "One partner or several specialists",
           "paras": [
-            "Pick the model that matches how you sell. Detail on each is on the <a href=\"/white-label/pricing-models/\">white-label pricing models page</a> and the <a href=\"/white-label/reseller-programme/\">reseller programme page</a>."
+            "One partner can cover search, paid media, social, content, email and web under a single scope, so your agency can offer full-service packages without hiring a specialist for each channel. A named strategist coordinates the channels, paid and organic are planned together so budgets and targets agree, and you receive one combined report.",
+            "Some agencies prefer a specialist per channel. Others want one partner who joins the dots. Both work; the right choice depends on how many clients you serve and how much coordination you want to manage.",
+            "If you only need a single channel, start with its own page: <a href=\"/white-label/seo/\">white-label SEO</a>, <a href=\"/white-label/ppc/\">white-label PPC</a> or <a href=\"/white-label/social-media-management/\">white-label social media management</a>. You can start with one channel and add more as clients ask."
+          ],
+          "table": {
+            "caption": "One white-label partner or several",
+            "head": [
+              "",
+              "One partner",
+              "Several specialists"
+            ],
+            "rows": [
+              [
+                "Coordination",
+                "One lead handles it",
+                "You coordinate each"
+              ],
+              [
+                "Reporting",
+                "One combined report",
+                "Several formats to merge"
+              ],
+              [
+                "Depth",
+                "Broad, specialist-led",
+                "Deep in one channel"
+              ],
+              [
+                "Best for",
+                "Full-service packages",
+                "Single-channel niches"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "engagement-models",
+          "h": "Ways to work with us",
+          "paras": [
+            "Pick the model that matches how you sell. A <a href=\"/white-label/outsourcing/\">dedicated team</a> suits steady volume, the <a href=\"/white-label/reseller-programme/\">SEO reseller programme</a> suits repeatable packages bought at a wholesale rate, and the <a href=\"/white-label/pricing-models/\">pricing models page</a> explains what drives cost and how to set your margin.",
+            "Every model starts with a written scope. We invoice in Indian rupees or US dollars, and the minimum commitment is three months."
           ],
           "table": {
             "caption": "White-label engagement models compared",
@@ -414,11 +548,23 @@
           }
         },
         {
-          "id": "who-white-label-is-for",
-          "h": "Who white label is for",
+          "id": "delivery-from-india",
+          "h": "Delivery from India for agencies abroad",
           "paras": [
-            "Digital agencies use it to add disciplines. Web studios use it to add search, ads or maintenance after a build. Consultancies use it to deliver the work they recommend. Freelancers use it to take on bigger clients. In-house marketing teams use it to cover peaks without hiring.",
-            "Overseas agencies often start with our <a href=\"/white-label/india/\">India delivery partner page</a>. If you are not sure which fits, a call settles it quickly."
+            "Our team works from Mumbai and Indore and serves agencies in the US, UK, Canada, Australia, the UAE, Singapore, India and the rest of Europe remotely.",
+            "Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US agencies get partial overlap in the evening, India time, or a dedicated shift for a team that needs more. Every region also gets written updates at fixed times each day. Exact hours are agreed per team and written into the scope.",
+            "See how contracts, data and invoicing work on the page about our <a href=\"/white-label/india/\">white-label agency in India</a>."
+          ]
+        },
+        {
+          "id": "who-white-label-is-for",
+          "h": "Who it suits",
+          "paras": [
+            "<b>Digital agencies</b> use it to add disciplines their clients ask for without hiring a specialist for each.",
+            "<b>Web studios</b> use it to add SEO, ads or maintenance after a build, so the client relationship continues past launch.",
+            "<b>Creative studios</b> use it to offer performance work alongside the creative they already make.",
+            "<b>Consultancies</b> use it to deliver the work they recommend. Freelancers use it to take on bigger clients, and in-house teams use it to cover peaks.",
+            "If you are not sure which fits, a call settles it quickly."
           ]
         }
       ]
@@ -433,37 +579,37 @@
           "t": "Search and AI visibility",
           "d": "SEO, link building, GEO and AEO, delivered and reported behind your name.",
           "img": "seo/authority.jpg",
-          "alt": "Search and AI visibility: illustrative scene"
+          "alt": "Search and AI visibility"
         },
         {
           "t": "Paid media",
           "d": "Google, Meta and marketplace advertising managed in your client's accounts.",
           "img": "pm-v2/channel-google.jpg",
-          "alt": "Paid media: illustrative scene"
+          "alt": "Paid media"
         },
         {
           "t": "Social, content and creative",
           "d": "Social calendars, articles, design, video and creator content.",
           "img": "social/calendar.jpg",
-          "alt": "Social, content and creative: illustrative scene"
+          "alt": "Social, content and creative"
         },
         {
           "t": "Web and apps",
           "d": "Design, WordPress, Shopify, custom builds, maintenance and mobile apps.",
           "img": "web/build.jpg",
-          "alt": "Web and apps: illustrative scene"
+          "alt": "Web and apps"
         },
         {
           "t": "Retention, CRO and leads",
           "d": "Email and WhatsApp flows, conversion work and lead generation funnels.",
           "img": "rt/journey.jpg",
-          "alt": "Retention, CRO and leads: illustrative scene"
+          "alt": "Retention, CRO and leads"
         },
         {
           "t": "AI, reporting and reputation",
           "d": "AI services, dashboards, monthly reports and review management.",
           "img": "orm/report.jpg",
-          "alt": "AI, reporting and reputation: illustrative scene"
+          "alt": "AI, reporting and reputation"
         }
       ]
     },
@@ -473,7 +619,7 @@
       "h2b": "as a white-label partner.",
       "lede": "A partner that behaves like part of your team.",
       "img": "about2/huddle.jpg",
-      "alt": "Why agencies choose MMC as a white-label partner. Illustrative scene.",
+      "alt": "Why agencies choose MMC as a white-label partner.",
       "items": [
         {
           "t": "Performance roots",
@@ -498,7 +644,7 @@
       "h2a": "How a white-label engagement runs,",
       "h2b": "step by step.",
       "img": "company/session.jpg",
-      "alt": "How a white-label engagement runs, step by step. Illustrative scene.",
+      "alt": "How a white-label engagement runs, step by step.",
       "items": [
         {
           "t": "Sign the NDA and scope",
@@ -585,12 +731,32 @@
     ],
     "faq": [
       {
-        "q": "What is white-label digital marketing?",
-        "a": "It is when one company delivers marketing work and another sells it under its own brand. The agency owns the client; the white-label partner works behind it."
+        "q": "What is a white-label digital marketing agency?",
+        "a": "It is a company that delivers marketing work which another agency sells under its own brand. The agency owns the client and the pricing; the white-label partner does the work behind it, under an NDA."
+      },
+      {
+        "q": "What is digital marketing fulfilment, and how is MMC different from a fulfilment platform?",
+        "a": "Fulfilment means a partner delivers the work an agency has sold. A platform sells packages from a menu with little contact. MMC gives you a named strategist and specialists, a written scope per client, a pilot client before you scale, and an NDA before we see client details."
       },
       {
         "q": "How does white-label work with MMC?",
         "a": "We sign an NDA, agree scope, set up reporting in your format, run a first client together and scale from there. You stay the only point of contact for your client unless you ask otherwise."
+      },
+      {
+        "q": "How does the pilot work?",
+        "a": "We start with one of your clients under a written scope, with check-in points and reporting in your format. You judge us on that work before adding more clients or services."
+      },
+      {
+        "q": "Which services can you white label?",
+        "a": "SEO, local SEO for US and UK businesses, link building, GEO and AEO, Google Ads and PPC, paid social on Meta and LinkedIn, Shopify and Shopify Plus, WordPress and WooCommerce, custom web development, mobile apps, social media management, creative and design, video and UGC, email and retention, content writing and reporting dashboards. Each has its own page."
+      },
+      {
+        "q": "Do you work with agencies in the US, UK, Canada and Australia?",
+        "a": "We do, and with agencies in the UAE, Singapore, India and the rest of Europe. UK, Australian, UAE and Singapore agencies get full overlap with our working day; US agencies get overlap in the evening, India time, or a dedicated shift. Exact hours are agreed per team."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
       },
       {
         "q": "Will you contact my clients?",
@@ -601,27 +767,26 @@
         "a": "Yes. We can supply reports in your format and name, or send numbers for your own template. What the client sees is your decision."
       },
       {
-        "q": "Which services can you white label?",
-        "a": "Search, link building, GEO and AEO, ads, social, content, email and retention, CRO, lead generation, ecommerce, creative, web, apps, AI, reporting and ORM. The table on this page links to each."
+        "q": "How is pricing set?",
+        "a": "By scope, under one model: a retainer, a project, a dedicated team, an hour block or the reseller programme. We do not publish prices; we agree the model on a call and write the scope down. The minimum commitment is three months."
+      },
+      {
+        "q": "Which currencies do you invoice in?",
+        "a": "Indian rupees or US dollars. We agree which one when we write the scope."
       },
       {
         "q": "Who is white label for?",
         "a": "Digital agencies, web studios, consultancies, freelancers and in-house teams that sell or need more services than they can staff."
-      },
-      {
-        "q": "How is pricing set up?",
-        "a": "Through a retainer, a project, a dedicated team, an hourly block or a reseller arrangement. We agree the model on a call and write the scope down. See the pricing models page."
-      },
-      {
-        "q": "Do you work with agencies outside India?",
-        "a": "Yes. Many overseas agencies work with Indian delivery partners. We explain how time zones, communication and reporting work on our India partner page."
       }
     ],
     "cta": {
       "h2a": "Add services",
       "h2b": "without adding payroll.",
       "lede": "On a call, with a senior strategist. We scope what you sell and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

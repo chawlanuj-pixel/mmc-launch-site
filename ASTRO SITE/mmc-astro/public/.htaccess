@@ -134,6 +134,10 @@ RewriteRule ^ai\-ugc\.html$ https://www.mondaymarketing.company/ai-by-mmc/ugc/ [
 RewriteRule ^ai\-landing\-page\-builder\.html$ https://www.mondaymarketing.company/ai-by-mmc/landing-page-builder/ [R=301,L]
 RewriteRule ^ai\-spokesperson\-video\.html$ https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/ [R=301,L]
 
+# Command Centre redirects: tools/apply-redirects.mjs replaces everything between these two markers. Empty = no CMS redirects.
+# BEGIN MMC-CMS-REDIRECTS
+# END MMC-CMS-REDIRECTS
+
 # Add the missing trailing slash on real folders, straight to the final https + www address (one hop)
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_URI} !/$

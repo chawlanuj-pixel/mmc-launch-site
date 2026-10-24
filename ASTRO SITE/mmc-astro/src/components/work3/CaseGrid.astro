@@ -9,7 +9,9 @@ import { CASES, GROUPS, tagsFor } from "../../lib/work";
 import { ARTWORK_LINE } from "../../lib/site";
 
 const PUB = join(process.cwd(), "public");
-const pic = (id: string, fallback: string) => existsSync(join(PUB, "assets", "case2", id, "hero.jpg")) ? `/assets/case2/${id}/hero.jpg` : `/assets/${fallback}`;
+// The 4:3 brand scene (case2/<id>/card.jpg, logo in frame) when the brand has one, else the case-study hero crop.
+const pic = (id: string, fallback: string) => ["card", "hero"].map((n) => `/assets/case2/${id}/${n}.jpg`).find((p) => existsSync(join(PUB, p))) ?? `/assets/${fallback}`;
+const dims = (src: string) => src.endsWith("/card.jpg") ? [1448, 1086] : [1400, 600];
 const present = new Set(CASES.map((c) => c.group));
 const TABS = [{ k: "all", l: "All case studies" }, ...GROUPS.filter((g) => present.has(g.key)).map((g) => ({ k: g.key, l: g.label }))];
 ---
@@ -31,11 +33,13 @@ const TABS = [{ k: "all", l: "All case studies" }, ...GROUPS.filter((g) => prese
       <ul class="wk3-grid" role="list">
         {CASES.map((c) => {
           const tags = tagsFor(c.id, true);
+          const src = pic(c.id, c.image);
+          const [w, h] = dims(src);
           return (
             <li class="wk3-case" data-g={c.group}>
               <a class="wk3-case__a" href={`/work/${c.id}/`}>
                 <span class="wk3-case__pic">
-                  <img src={pic(c.id, c.image)} alt="" width="1400" height="600" loading="lazy" decoding="async" />
+                  <img src={src} alt="" width={w} height={h} loading="lazy" decoding="async" />
                   <span class="wk3-case__logo"><img src={`/assets/clients/${c.id}.png`} alt="" loading="lazy" decoding="async" /></span>
                 </span>
                 <span class="wk3-case__body">

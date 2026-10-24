@@ -9,7 +9,7 @@
   "Google Shopping ad"
  ],
  "brief": [
-  "{name} sells charm clogs for children. This page covers an ecommerce storefront, from the homepage through to a product detail page, with matching social creative and ads.",
+  "{name} sells charm clogs for children. We built an ecommerce storefront, from the homepage through to a product detail page, with matching social creative and ads.",
   "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
  ],
  "showcases": [
@@ -17,7 +17,7 @@
    "layout": "stage",
    "kicker": "Storefront",
    "title": "Homepage on desktop and mobile",
-   "text": "A festive homepage with an offer code, shop-by-age, size and colour routes, and a phone version with the same header.",
+   "text": "A new-customer homepage with a 10% offer code, cash on delivery and easy exchange in the top bar, and a phone version that adds shop by age and size routes.",
    "crops": [
     "web"
    ]
@@ -50,8 +50,8 @@
   {
    "layout": "ribbon",
    "kicker": "The range",
-   "title": "Product photography",
-   "text": "From the same artwork.",
+   "title": "product photography from the same project",
+   "text": "Product photography from the same project.",
    "crops": [
     "shoes"
    ]
@@ -64,11 +64,12 @@
  },
  "action": "order",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "google": "{name} Google ad, client-approved artwork",
-  "shoes": "{name} product photography of the clogs, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a New Here? Get 10% Off hero with the VAGA10 code and three children, and clogs on the phone",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad",
+  "shoes": "Children's feet in {name} clogs with charms, in blue, pink, aqua and green, on a pastel step",
+  "card": "{name} logo between two children wearing {name} clogs with charms"
  }
 }

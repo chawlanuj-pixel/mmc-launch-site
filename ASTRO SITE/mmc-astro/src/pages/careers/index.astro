@@ -17,8 +17,8 @@ import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
 import "../../styles/careers3.css";
 
 const SITE = "https://www.mondaymarketing.company";
-const title = "Careers at MMC | Marketing Jobs in Thane and Mumbai";
-const description = "Open roles at MMC across performance, creative, strategy and technology for D2C, B2B and education brands. Apply with a single page, no resume required.";
+const title = "Careers at MMC | Marketing Jobs in Mumbai and Indore";
+const description = "Open roles at MMC across performance, creative, strategy and technology for D2C, B2B and education brands. Apply with your CV and a short note.";
 const TAG: Record<string, string> = { performance: "Performance", creative: "Creative", strategy: "Strategy", technology: "Technology" };
 const TEAMS = Object.keys(TAG).map((id) => ({ id, name: TAG[id], n: roles.filter((r) => r.discipline === id).length })).filter((t) => t.n > 0);
 
@@ -45,11 +45,11 @@ const GOOD_FIT = [
 ];
 
 const FAQ = [
-  { q: "Do I need a resume?", a: "No. Apply with a single page: what you would own, what you would change in the first ninety days, and what you need from us. If you have a CV, you can add a link." },
+  { q: "Do I need a resume?", a: "Yes. Apply with your CV (a file or a link) and a short note: what you would own, what you would change in the first ninety days, and what you need from us. Without a CV we cannot process the application." },
   { q: "What is the hiring process?", a: processFaq() },
   { q: "Is the work test paid?", a: "Yes. We pay for the piece of work either way." },
-  { q: "Where will I work?", a: "MMC is based in Thane, Maharashtra. Each role page states its location and whether it is onsite, hybrid or remote." },
-  { q: "What if my role is not listed?", a: "Write the role yourself. Send one page saying what you would own and what you would change in ninety days, using the button on this page." },
+  { q: "Where will I work?", a: "MMC works from Mumbai and Indore. Each role page states its location and whether it is onsite, hybrid or remote." },
+  { q: "What if my role is not listed?", a: "Write the role yourself. Send your CV and a short note saying what you would own and what you would change in ninety days, using the button on this page." },
   { q: "Which kinds of brands would I work on?", a: "D2C brands, B2B companies and educational institutes. D2C is where we go deepest. See <a href=\"Our Work.html\">a few of the brands we work with</a>." },
 ];
 const FAQF = fixDeep(FAQ);
@@ -68,7 +68,7 @@ const jsonld = [
     acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") } })) },
 ];
 ---
-<BaseLayout title={title} description={description} path="/careers/" ogTitle="People who write their own briefs" ogDescription="Open roles across performance, creative, strategy and technology. Apply with one page, no resume required." ogAlt="Careers at Monday Marketing Company." jsonld={jsonld}>
+<BaseLayout title={title} description={description} path="/careers/" ogTitle="People who write their own briefs" ogDescription="Open roles across performance, creative, strategy and technology. Apply with your CV and a short note." ogAlt="Careers at Monday Marketing Company." jsonld={jsonld}>
   <Shell footerCta={{ nav: true, label: "View open roles", href: "/careers/#roles" }}>
     <main id="main" tabindex="-1" class="app-main n-app cr3">
 
@@ -77,9 +77,9 @@ const jsonld = [
         <div class="cr3-hero__panel">
           <div class="cr3-hero__in">
             <nav class="cr3-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Careers</span></nav>
-            <p class="cr3-hero__kicker"><span aria-hidden="true"></span>Careers at MMC · Thane and Mumbai, with a few roles remote</p>
+            <p class="cr3-hero__kicker"><span aria-hidden="true"></span>Careers at MMC · Mumbai and Indore, with a few roles remote</p>
             <h1 class="cr3-hero__h1" id="cr3-h1">People who write <em>their own</em> briefs.</h1>
-            <p class="cr3-hero__sub">We hire senior people and hand them ownership. Roles across performance, creative, strategy and technology. Apply with a single page, no resume required.</p>
+            <p class="cr3-hero__sub">We hire senior people and hand them ownership. Roles across performance, creative, strategy and technology. Apply with your CV and a short note.</p>
             <div class="cr3-hero__act">
               <a class="btn btn--primary glow-btn" href="#roles"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{SECONDARY.roles}<span class="arrow"></span></span></a>
               <button class="btn btn--link cr3-hero__pitch" type="button" onclick="window.mmcOpenBrief(event)">Or pitch us your own role<span class="arrow"></span></button>
@@ -96,7 +96,7 @@ const jsonld = [
         </div>
         <figure class="cr3-hero__fig">
           <img src="/assets/careers2/studio-wide.jpg" alt="A team at a long studio table mid-review, laptops open and a whiteboard of plans behind them" width="1400" height="940" loading="eager" fetchpriority="high" decoding="async" />
-          <figcaption><i aria-hidden="true"></i>The studio, mid-review. Illustrative scene.</figcaption>
+          <figcaption><i aria-hidden="true"></i>The studio, mid-review.</figcaption>
         </figure>
       </section>
 
@@ -120,7 +120,6 @@ const jsonld = [
               </li>
             ))}
           </ol>
-          <p class="cr3-note">Illustrative scenes.</p>
         </div>
       </section>
 
@@ -165,7 +164,7 @@ const jsonld = [
             <figure><Img name="careers2/brief-review.jpg" ratio="3 / 2" alt="Two people reading a one-page brief together at a desk" /></figure>
             <div>
               <h3>Not listed? Write the role yourself.</h3>
-              <p>One page: what you would own, what you would change in the first ninety days, and what you need from us.</p>
+              <p>Send your CV and a short note: what you would own, what you would change in the first ninety days, and what you need from us.</p>
               <button type="button" class="btn btn--ghost cr3-own__btn" onclick="window.mmcOpenBrief(event)">Pitch us your role<span class="arrow"></span></button>
             </div>
           </div>
@@ -201,7 +200,7 @@ const jsonld = [
             <h2 class="n-h2" id="cr3-fit-h">Small is the job, <span class="n-serif">not a phase.</span></h2>
           </div>
           <div class="cr3-fit__grid n-rise d1">
-            <figure class="cr3-fit__fig"><Img name="company/session.jpg" ratio="4 / 5" alt="A small team round one table, laptops and printed creative between them" /><figcaption>Illustrative scene</figcaption></figure>
+            <figure class="cr3-fit__fig"><Img name="company/session.jpg" ratio="4 / 5" alt="A small team round one table, laptops and printed creative between them" /></figure>
             <div class="cr3-fit__col cr3-fit__col--yes">
               <h3>You would do well</h3>
               <ul>{GOOD_FIT.map((t) => <li><b>{t[0]}</b><span>{t[1]}</span></li>)}</ul>
@@ -216,8 +215,8 @@ const jsonld = [
 
       <Faq title={["Questions before", "you apply."]} faq={FAQF} tone="paper" />
 
-      <PreFooterCta source="careers" eyebrow="How to apply" h2a="One page." h2b="That is the application."
-        lede="Pick a role above and use its form, or write your own: what you would own, change in ninety days, and need from us."
+      <PreFooterCta source="careers" eyebrow="How to apply" h2a="Your CV and one page." h2b="That is the application."
+        lede="Pick a role above and use its form, or write your own. Bring your CV and a short note: what you would own, change in ninety days, and need from us."
         primary={{ label: "Pitch us your role", brief: true }} secondary={{ label: SECONDARY.roles, href: "#roles" }} />
 
     </main>

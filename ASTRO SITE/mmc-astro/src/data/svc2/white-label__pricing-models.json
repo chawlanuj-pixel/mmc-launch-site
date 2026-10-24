@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "contact/growth.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a projection on a laptop beside a coffee.",
+    "alt": "A projection on a laptop beside a coffee.",
     "facts": [
       {
         "t": "Five models, one scope.",
@@ -146,7 +146,7 @@
         "d": "We sign the NDA, hear how your clients buy and propose a model for the first client.",
         "get": "A written scope under one model.",
         "img": "careers2/brief-review.jpg",
-        "alt": "Illustrative scene: two colleagues reviewing a proposal.",
+        "alt": "Two colleagues reviewing a proposal.",
         "pos": "50% 50%"
       },
       {
@@ -155,7 +155,7 @@
         "d": "One client runs under the chosen model for a defined period, and we both note what to change.",
         "get": "A pilot you can compare with your own costs.",
         "img": "company/strategy.jpg",
-        "alt": "Illustrative scene: two colleagues talking through a scope.",
+        "alt": "Two colleagues talking through a scope.",
         "pos": "50% 50%"
       },
       {
@@ -164,7 +164,7 @@
         "d": "How you quote, what is billed on top and how changes are handled are written once.",
         "get": "A quoting guide your sales team can follow.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a quoting guide being written.",
+        "alt": "A quoting guide being written.",
         "pos": "50% 50%"
       },
       {
@@ -173,7 +173,7 @@
         "d": "More clients join, and some move to a hybrid, with the written scope kept up to date.",
         "get": "A pricing structure that holds as you grow.",
         "img": "careers2/desk-close.jpg",
-        "alt": "Illustrative scene: a laptop with a notebook open beside it.",
+        "alt": "A laptop with a notebook open beside it.",
         "pos": "50% 50%"
       }
     ]

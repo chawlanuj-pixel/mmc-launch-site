@@ -253,28 +253,14 @@
   .hv-client:hover .hv-client__go svg { transform: none; }
 }
 
-/* ---------- Tools band: the platform ribbon, a slim band of its own, moving the other way, slower ---------- */
+/* ---------- Tools band: section ground, head and h2. The category columns are in home-v2c.css (.hv2-stack). ---------- */
 .hv-plat { background: #fff; border-block: 1px solid var(--n-line); overflow: hidden; }
 .hv-plat__in { width: 100%; }
 .hv-plat__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--sp-1) var(--sp-4); margin-bottom: var(--sp-4); }
 .hv-plat h2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.028em; line-height: 1.06; font-size: var(--t-h2); margin: 0; color: var(--n-ink); }
 .hv-plat h2 em { color: var(--n-blue); }
 .hv-plat__head p { margin: 0; font-size: 16px; line-height: 1.45; color: var(--n-fg-2); }
-.hv-plat__ribbon { border-block: 1px solid var(--n-line); background: var(--n-paper); }
-.hv-plat__track { display: flex; width: max-content; animation: hvRibbon 80s linear infinite reverse; will-change: transform; }
-.hv-plat__ribbon:hover .hv-plat__track { animation-play-state: paused; }
-.hv-plat__chip { display: inline-flex; align-items: center; gap: 12px; padding: var(--sp-3) clamp(24px, 3vw, 44px); border-right: 1px solid var(--n-line); }
-.hv-plat__chip img { width: 32px; height: 32px; object-fit: contain; }
-.hv-plat__chip b { font: 800 clamp(16px, 1.5vw, 20px) var(--font-display); letter-spacing: -.01em; color: var(--n-ink); white-space: nowrap; }
-@keyframes hvRibbon { to { transform: translateX(-50%); } }
 @media (max-width: 760px) { .hv-plat__head p { display: none; } .hv > section.hv-plat { padding-top: var(--sp-5); } }
-@media (prefers-reduced-motion: reduce) {
-  /* still one straight line, stopped; scrollable by hand. The second copy only exists for the loop. */
-  .hv-plat__ribbon { overflow-x: auto; scrollbar-width: none; }
-  .hv-plat__ribbon::-webkit-scrollbar { display: none; }
-  .hv-plat__track { animation: none; will-change: auto; }
-  .hv-plat__chip:nth-child(n+12) { display: none; }
-}
 
 /* ---------- About the studio (its own component): same shell as the others ---------- */
 .hv .as { padding-block: calc(var(--hv-nav) + var(--hv-top)) calc(var(--hv-bot) + var(--sp-1)); }
@@ -530,7 +516,6 @@
   .hv > section.hv-plat, .hv > section.hv-ins { padding-block: 20px max(20px, var(--hv-bot)); }
   .hv-plat__head p { display: none; }
   .hv-plat__head { margin-bottom: 8px; }
-  .hv-plat__chip { padding-block: 10px; }
   .hv-ins__top { margin-bottom: 12px; }
 }
 
@@ -640,46 +625,4 @@
 }
 @media (prefers-reduced-motion: reduce) { .hv-who__grid { transition: none; } }
 
-/* ---- The stack: labelled marquees of logo tiles. Airy on purpose: one row per category on desktop, tabs on phones. ---- */
-.hv-stack { display: grid; gap: clamp(20px, 3vh, 34px); }
-.hv-stack__tabs { display: none; }
-.hv-stack__row { display: grid; gap: 12px; }
-.hv-stack__label { margin: 0; font: 800 12px/1 var(--font-display); letter-spacing: .14em; text-transform: uppercase; color: var(--n-blue); }
-.hv-stack__ribbon { overflow: hidden; margin-inline: calc(var(--hn-gut, 0px) * -1);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
-.hv-stack__track { display: flex; gap: 14px; width: max-content; margin: 0; padding: 4px 7px; list-style: none; animation: hvRibbon var(--hv-dur, 40s) linear infinite; will-change: transform; }
-.hv-stack__row.is-rev .hv-stack__track { animation-direction: reverse; }
-.hv-stack__ribbon:hover .hv-stack__track { animation-play-state: paused; }
-.hv-stack__chip { display: grid; place-items: center; width: 168px; height: 72px; background: #fff; border: 1px solid var(--n-line); border-radius: 14px; }
-.hv-stack__chip img { max-height: 30px; max-width: 120px; width: auto; height: auto; object-fit: contain; }
-.hv-stack__chip.is-word img { max-height: 26px; max-width: 128px; }
-.hv-stack__chip b { display: none; }
-.hv-stack__chip:not(.is-word) { grid-auto-flow: column; gap: 10px; justify-content: center; }
-.hv-stack__chip:not(.is-word) b { display: block; font: 700 14px var(--font-body); color: var(--n-ink); white-space: nowrap; }
-@media (max-width: 900px) {
-  .hv-stack { gap: 0; }
-  .hv-stack__tabs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 18px; scrollbar-width: none; }
-  .hv-stack__tabs::-webkit-scrollbar { display: none; }
-  .hv-stack__tab { flex: none; appearance: none; border: 1px solid var(--n-line); background: #fff; color: var(--n-ink); font: 700 13px var(--font-body); padding: 9px 16px; border-radius: 999px; cursor: pointer; }
-  .hv-stack__tab[aria-selected="true"] { background: var(--n-ink); border-color: var(--n-ink); color: #fff; }
-  .hv-stack__row { display: none; }
-  .hv-stack__row.is-on { display: grid; }
-  .hv-stack__label { display: none; }
-  .hv-stack__chip { width: 148px; height: 68px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hv-stack__ribbon { overflow-x: auto; scrollbar-width: none; }
-  .hv-stack__ribbon::-webkit-scrollbar { display: none; }
-  .hv-stack__track { animation: none; will-change: auto; }
-}
-.hv-stack__chip img { height: 28px; width: auto; max-width: 112px; max-height: none; }
-.hv-stack__chip.is-word img { height: 24px; max-width: 124px; max-height: none; }
-.hv-stack__chip { height: 64px; }
-.hv-stack { gap: clamp(16px, 2.4vh, 26px); }
-@media (max-width: 900px) { .hv-stack { gap: 0; } .hv-stack__chip { height: 64px; } }
-/* review fixes: 44px tab targets, room for the focus ring inside the scrolling strip, tighter desktop rows so the section fits one screen */
-@media (max-width: 900px) {
-  .hv-stack__tabs { padding: 5px 5px 18px; margin-inline: -5px; }
-  .hv-stack__tab { min-height: 44px; padding: 0 18px; }
-}
-@media (min-width: 901px) { .hv-stack { gap: clamp(12px, 1.8vh, 20px); } .hv-stack__row { gap: 10px; } }
+/* The stack's category columns live in home-v2c.css (.hv2-stack). */

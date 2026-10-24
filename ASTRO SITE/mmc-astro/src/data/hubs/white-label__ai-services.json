@@ -200,7 +200,7 @@
             "See the direct tools on <a href=\"/ai-by-mmc/\">AI by MMC</a>. For search visibility in AI tools, see <a href=\"/white-label/geo-aeo/\">white-label GEO and AEO</a>."
           ],
           "img": "ugc/shoot.jpg",
-          "cap": "Illustrative scene: AI creative being reviewed before delivery.",
+          "cap": "AI creative being reviewed before delivery.",
           "table": {
             "caption": "AI by MMC services and where they fit",
             "head": [
@@ -249,37 +249,37 @@
           "t": "AI product photoshoots",
           "d": "Product images in new scenes for catalogues and ads.",
           "img": "seo/aeo.jpg",
-          "alt": "AI product photoshoots: illustrative scene"
+          "alt": "AI product photoshoots"
         },
         {
           "t": "AI UGC videos",
           "d": "Creator-style videos for paid social tests.",
           "img": "ugc/shoot.jpg",
-          "alt": "AI UGC videos: illustrative scene"
+          "alt": "AI UGC videos"
         },
         {
           "t": "Spokesperson video",
           "d": "A presenter-style video from a script.",
           "img": "ugc/edit.jpg",
-          "alt": "Spokesperson video: illustrative scene"
+          "alt": "Spokesperson video"
         },
         {
           "t": "Video generation",
           "d": "Short clips for ads and social.",
           "img": "social/video.jpg",
-          "alt": "Video generation: illustrative scene"
+          "alt": "Video generation"
         },
         {
           "t": "Landing page builder",
           "d": "Pages built fast from a brief.",
           "img": "web/build.jpg",
-          "alt": "Landing page builder: illustrative scene"
+          "alt": "Landing page builder"
         },
         {
           "t": "Sales agent",
           "d": "An agent that answers and qualifies enquiries.",
           "img": "b2b/followup.jpg",
-          "alt": "Sales agent: illustrative scene"
+          "alt": "Sales agent"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "h2b": "for white-label AI services.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "ugc/shoot.jpg",
-      "alt": "Why agencies choose MMC for white-label AI services. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label AI services.",
       "items": [
         {
           "t": "Human-checked",
@@ -314,7 +314,7 @@
       "h2a": "How white-label AI services works,",
       "h2b": "step by step.",
       "img": "ugc/shoot.jpg",
-      "alt": "How white-label AI services works, step by step. Illustrative scene.",
+      "alt": "How white-label AI services works, step by step.",
       "items": [
         {
           "t": "Pick the use",
@@ -429,7 +429,10 @@
       "h2a": "Add AI services",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first AI services client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

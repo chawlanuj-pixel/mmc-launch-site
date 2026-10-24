@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node tools/sync-roles-index.mjs && astro build",
     "preview": "astro preview",
     "check:consistency": "node tools/consistency-check.mjs dist-check",
-    "check:build": "astro build --outDir dist-check && node tools/v2-check.mjs dist-check && node tools/consistency-check.mjs dist-check && node tools/pricing-leak-check.mjs dist-check && node tools/register-payload-check.mjs",
+    "check:build": "node tools/sync-roles-index.mjs && astro build --outDir dist-check && node tools/v2-check.mjs dist-check && node tools/consistency-check.mjs dist-check && node tools/pricing-leak-check.mjs dist-check && node tools/register-payload-check.mjs",
     "optimise": "node tools/optimise-build.mjs dist",
     "serve:dist": "node tools/serve-dist.mjs dist 4399"
   },

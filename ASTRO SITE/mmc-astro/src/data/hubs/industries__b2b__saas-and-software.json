@@ -214,7 +214,7 @@
             "Marketing that only collects sign-ups misses what sales and product see after."
           ],
           "img": "cro/forms.jpg",
-          "cap": "Illustrative scene: a short demo request form."
+          "cap": "A short demo request form."
         },
         {
           "id": "recurring-problem",
@@ -386,7 +386,7 @@
     "process": {
       "h2a": "How we start with a SaaS company,",
       "h2b": "step by step.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -430,37 +430,37 @@
           "t": "Intent and comparison search",
           "d": "Problem, use-case, alternative and integration pages.",
           "img": "google/search.jpg",
-          "alt": "Intent and comparison search: illustrative scene"
+          "alt": "Intent and comparison search"
         },
         {
           "t": "Demo and trial funnels",
           "d": "Short forms and clear paths to start.",
           "img": "cro/forms.jpg",
-          "alt": "Demo and trial funnels: illustrative scene"
+          "alt": "Demo and trial funnels"
         },
         {
           "t": "Paid media by role",
           "d": "Search and social aimed at roles and intent.",
           "img": "b2b/found.jpg",
-          "alt": "Paid media by role: illustrative scene"
+          "alt": "Paid media by role"
         },
         {
           "t": "CRM and CAPI signals",
           "d": "Qualified stages sent back to the platforms.",
           "img": "meta/capi.jpg",
-          "alt": "CRM and CAPI signals: illustrative scene"
+          "alt": "CRM and CAPI signals"
         },
         {
           "t": "Website and flows",
           "d": "Product pages and flows that explain the product.",
           "img": "ux/flows.jpg",
-          "alt": "Website and flows: illustrative scene"
+          "alt": "Website and flows"
         },
         {
           "t": "Pipeline reporting",
           "d": "Opportunities and payback read together.",
           "img": "b2b/followup.jpg",
-          "alt": "Pipeline reporting: illustrative scene"
+          "alt": "Pipeline reporting"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "h2b": "for marketing.",
       "lede": "We judge on pipeline and tell the platforms the same.",
       "img": "b2b/qualify.jpg",
-      "alt": "Why SaaS teams choose MMC for marketing. Illustrative scene.",
+      "alt": "Why SaaS teams choose MMC for marketing.",
       "items": [
         {
           "t": "Pipeline-first",
@@ -495,7 +495,7 @@
       "h2a": "How a SaaS engagement runs,",
       "h2b": "step by step.",
       "img": "b2b/qualify.jpg",
-      "alt": "How a SaaS engagement runs, step by step. Illustrative scene.",
+      "alt": "How a SaaS engagement runs, step by step.",
       "items": [
         {
           "t": "Define a good lead",

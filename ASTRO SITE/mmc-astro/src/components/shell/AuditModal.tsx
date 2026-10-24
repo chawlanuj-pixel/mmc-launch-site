@@ -160,10 +160,10 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
                 Free 30-minute audit
               </div>
               <h2 className="audit__left-h am-stagger">
-                A 30-minute look at where your <span className="em-serif" style={{color:"var(--mmc-yellow)"}}>momentum</span> is leaking.
+                A 30-minute look at where your <span className="em-serif" style={{color:"var(--mmc-yellow)"}}>margin</span> is leaking.
               </h2>
               <p className="audit__left-sub am-stagger">
-                Performance, retention, creative, and architecture, diagnosed by a senior strategist.
+                Paid media, retention, creative and your site, reviewed by a senior strategist.
                 No deck. No pitch. A direct read on what to fix first.
               </p>
 
@@ -172,21 +172,21 @@ export default function AuditModal({ open = false, onClose }: { open?: boolean; 
                   <span className="num">01</span>
                   <span className="t">
                     <b>Funnel diagnostic</b>
-                    A line-by-line read of your Meta, Google, Amazon, and email ROAS, by cohort.
+                    A line-by-line read of what Meta, Google, Amazon and email return, by cohort.
                   </span>
                 </li>
                 <li className="am-stagger">
                   <span className="num">02</span>
                   <span className="t">
-                    <b>Retention forensic</b>
-                    Where customers are dropping, why, and the three highest-ROI levers to pull.
+                    <b>Retention check</b>
+                    Where customers drop off, why, and the three changes most likely to pay back first.
                   </span>
                 </li>
                 <li className="am-stagger">
                   <span className="num">03</span>
                   <span className="t">
-                    <b>Creative + brand read</b>
-                    What your top-performing creative says about your brand memory.
+                    <b>Creative and brand read</b>
+                    Which ads carry the account, and what they say about how buyers see your brand.
                   </span>
                 </li>
               </ul>

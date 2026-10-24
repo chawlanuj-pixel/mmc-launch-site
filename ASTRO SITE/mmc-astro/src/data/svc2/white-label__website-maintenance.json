@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "contact/growth.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a metrics dashboard on a laptop.",
+    "alt": "A metrics dashboard on a laptop.",
     "facts": [
       {
         "t": "A care plan you sell and bill.",
@@ -151,7 +151,7 @@
         "d": "We sign the NDA and audit a first batch of your client sites, covering updates, backups, security and speed.",
         "get": "An audit per site and one agreed baseline.",
         "img": "about2/callscreen.jpg",
-        "alt": "Illustrative scene: a video call about a site audit.",
+        "alt": "A video call about a site audit.",
         "pos": "50% 50%"
       },
       {
@@ -160,7 +160,7 @@
         "d": "A few sites go on the routine first, with updates, backups and a first report.",
         "get": "A first monthly report you can judge us on.",
         "img": "about2/desk-open.jpg",
-        "alt": "Illustrative scene: a table of client sites on a laptop.",
+        "alt": "A table of client sites on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -169,7 +169,7 @@
         "d": "Request route, update windows, escalation and report format are written down for every site.",
         "get": "A one-page care policy for your clients.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a care policy being written.",
+        "alt": "A care policy being written.",
         "pos": "50% 50%"
       },
       {
@@ -178,7 +178,7 @@
         "d": "The remaining client sites move onto the routine in batches, with a named contact on our side.",
         "get": "Every client site on one routine.",
         "img": "careers2/desk-close.jpg",
-        "alt": "Illustrative scene: a laptop with a notebook open beside it.",
+        "alt": "A laptop with a notebook open beside it.",
         "pos": "50% 50%"
       }
     ]

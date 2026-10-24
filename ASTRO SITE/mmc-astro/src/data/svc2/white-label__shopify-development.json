@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "shop/plan.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a store layout sketched on paper.",
+    "alt": "A store layout sketched on paper.",
     "facts": [
       {
         "t": "Built for your D2C clients.",
@@ -166,7 +166,7 @@
         "d": "We sign the NDA, take your designs and the client's catalogue, and write the build scope.",
         "get": "A written store scope and migration plan.",
         "img": "contact/call.jpg",
-        "alt": "Illustrative scene: a scoping call for a store build.",
+        "alt": "A scoping call for a store build.",
         "pos": "50% 50%"
       },
       {
@@ -175,7 +175,7 @@
         "d": "One collection, one product template or one checkout fix, built to your standards.",
         "get": "A preview store link to judge on.",
         "img": "sv/tech.jpg",
-        "alt": "Illustrative scene: a store page on a laptop and phone beside code.",
+        "alt": "A store page on a laptop and phone beside code.",
         "pos": "50% 50%"
       },
       {
@@ -184,7 +184,7 @@
         "d": "Theme conventions, app policy, QA checklist and handover notes are written once.",
         "get": "A store build runbook for your team.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a store build runbook being written.",
+        "alt": "A store build runbook being written.",
         "pos": "50% 50%"
       },
       {
@@ -193,7 +193,7 @@
         "d": "More stores and fixes run through the same flow, with capacity added as your client list grows.",
         "get": "A Shopify service you can sell to every D2C client.",
         "img": "sv/revenue.jpg",
-        "alt": "Illustrative scene: a phone showing a product ad.",
+        "alt": "A phone showing a product ad.",
         "pos": "50% 50%"
       }
     ]

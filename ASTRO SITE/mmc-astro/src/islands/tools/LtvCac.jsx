@@ -196,7 +196,7 @@ function LtvCac() {
         <div className="tl-wrap">
           <div className="tl-below__grid">
             <ToolLede>
-              LTV here is built on <strong>contribution</strong>, not revenue, lifetime revenue
+              LTV here is built on <strong>contribution</strong>, not revenue. Lifetime revenue
               flatters the number badly because it ignores COGS, shipping and fees.{" "}
               <strong>3:1</strong> is the usual benchmark. Below 2:1 growth burns cash; far above
               4:1 often means you're underspending and leaving growth on the table.

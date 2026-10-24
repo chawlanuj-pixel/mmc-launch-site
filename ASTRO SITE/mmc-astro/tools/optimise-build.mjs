@@ -14,7 +14,7 @@
 //      Originals are untouched. Footer images without a loading attribute, and loading="eager" images
 //      after the hero section that are not fetchpriority=high, become loading="lazy".
 // Idempotent: a page already processed carries <meta name="mmc-optimised"> and is skipped.
-import { readdirSync, readFileSync, writeFileSync, statSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync, statSync, rmSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
@@ -118,7 +118,7 @@ export async function optimise(distDir, { quiet = false } = {}) {
 export function mmcOptimise() {
   return {
     name: "mmc-optimise-build",
-    hooks: { "astro:build:done": async ({ dir }) => { if (process.env.MMC_NO_OPTIMISE) return; await optimise(fileURLToPath(dir)); } },
+    hooks: { "astro:build:done": async ({ dir }) => { rmSync(join(fileURLToPath(dir), "forms/config.php"), { force: true }); /* the real secrets file never belongs in a build output */ if (process.env.MMC_NO_OPTIMISE) return; await optimise(fileURLToPath(dir)); } },
   };
 }
 

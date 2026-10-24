@@ -9,7 +9,7 @@
   "Google search ad"
  ],
  "brief": [
-  "{name} sells car perfume. This page covers an ecommerce storefront, from the homepage through to the collection page, with matching social ad creative.",
+  "{name} sells car perfume. We built an ecommerce storefront, from the homepage through to the collection page, with matching social ad creative.",
   "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
  ],
  "showcases": [
@@ -17,7 +17,7 @@
    "layout": "stage",
    "kicker": "Storefront",
    "title": "Homepage on desktop and mobile",
-   "text": "A dark, single-image hero with one line and one button, and the collection laid out beneath it.",
+   "text": "A dark, full-width hero that puts the car perfume beside the drive it is made for, one headline, and the same image recut for a phone.",
    "crops": [
     "web"
    ]
@@ -60,7 +60,7 @@
   {
    "layout": "ribbon",
    "kicker": "The range",
-   "title": "Product photography",
+   "title": "product photography from the same project",
    "text": "From the same artwork.",
    "crops": [
     "products"
@@ -74,12 +74,13 @@
  },
  "action": "order",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "mobile": "{name} mobile page on a phone screen, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "google": "{name} Google ad, client-approved artwork",
-  "products": "{name} product photography, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Your Car, Your Signature Scent hero with the Aqua car perfume, a man and a sports car on an open road",
+  "mobile": "{name} mobile page on a phone screen",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad",
+  "products": "Five {name} car perfumes, Lemon Grass, Sandalwood, Musk After Smoke, Aqua and Lavender, lined up with their boxes on a car bonnet at sunset",
+  "card": "{name} logo on a windscreen view, with a {name} car perfume hanging from the mirror and a Musk After Smoke box on the dashboard"
  }
 }

@@ -1,0 +1,35 @@
+/* =====================================================================================================
+   posts.css: the few additions the Command Centre articles (Phase 4) need on top of guides3.css. Prefix pst-.
+   Tokens only (DESIGN-CONSISTENCY.md): no new colours, fonts, radii or easing. Loaded only by the CMS article pages,
+   the /blog/ index and the post cards, so the repo guides are unaffected.
+   ===================================================================================================== */
+
+/* Reading layout without the contents column (articles with fewer than four sections): the text keeps its 68ch measure. */
+.gd3-read__grid.pst-solo { grid-template-columns: minmax(0, 1fr); }
+/* With no contents column the reading column (940px max, as on the guides) sits centred, not hugging the left edge with an empty right half. */
+.gd3-read__grid.pst-solo > .gd3-read__main { justify-self: center; width: 100%; }
+
+/* Card description and meta line (same type as .gd3-cover__learn span and .gd3-feat__meta). */
+.pst-card__d { margin-top: 12px; font: 400 16px/1.55 var(--font-body); color: var(--n-fg-2); }
+.pst-card__meta { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; line-height: 1.3; }
+.pst-card__meta i, .pst-meta-dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; }
+
+/* /blog/ featured post: the read link sits where the guides index has its buttons. */
+.pst-feat__go { margin-top: 22px; }
+
+/* Long article titles (over 60 characters; the editor allows 110). At the guide size (up to 96px, 17ch) a 110-character title
+   ran to seven lines and pushed the date, author and buttons below the first screen. Same face and weight, smaller and wider. */
+.gd3-h1--article.pst-h1--long { max-width: 24ch; font-size: clamp(36px, 4.4vw, 64px); line-height: 1.02; }
+@media (max-width: 720px) { .gd3-h1--article.pst-h1--long { font-size: clamp(30px, 8vw, 38px); line-height: 1.06; } }
+
+/* Section text the editor can write: sub-headings, numbered lists, quotes, and the call-to-action button after a section. */
+.gd3-sec > .pst-h3, .gd3-sec > .pst-quote, .gd3-sec > .pst-ol, .gd3-sec > .pst-cta { max-width: var(--gd3-measure); }
+.pst-h3 { margin: 28px 0 10px; font: 800 clamp(20px, 1.8vw, 26px)/1.2 var(--font-display); letter-spacing: -0.02em; color: var(--n-fg); }
+.pst-quote { margin: 22px 0; padding: 4px 0 4px 20px; border-left: 4px solid var(--n-sun); font: 400 19px/1.6 var(--font-body); color: var(--n-fg-2); }
+.pst-ol { counter-reset: pst-ol; }
+.pst-ol li { counter-increment: pst-ol; }
+.pst-ol li::before { content: counter(pst-ol); top: .1em; left: 0; width: 22px; height: 22px; display: grid; place-items: center; font: 800 12px/1 var(--font-display); color: var(--n-fg); box-shadow: none; }
+.pst-cta { margin: 26px 0 8px; }
+/* .gd3-sec a underlines and blues in-text links; the site's own buttons keep their look. */
+.gd3-sec .pst-cta a.btn { text-decoration: none; }
+.gd3-sec .pst-cta a.btn--primary { color: var(--mmc-blue-700); }

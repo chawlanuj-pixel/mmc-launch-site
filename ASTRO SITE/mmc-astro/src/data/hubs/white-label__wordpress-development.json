@@ -2,8 +2,8 @@
   "file": "white-label-wordpress-development.html",
   "path": "/white-label/wordpress-development/",
   "key": "wl_wordpress_development",
-  "title": "White-Label WordPress Development | MMC",
-  "description": "White-label WordPress development for agencies: custom themes, WooCommerce, plugins, migrations and speed fixes built to your designs under your brand.",
+  "title": "White-Label WordPress Development for Agencies | MMC",
+  "description": "White-label WordPress development for agencies: custom themes, WooCommerce and plugin work built to your designs and delivered under your brand.",
   "ogTitle": "White-label WordPress development for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label WordPress development.",
@@ -38,8 +38,8 @@
       "@type": "WebPage",
       "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/wordpress-development/",
-      "name": "White-Label WordPress Development | MMC",
-      "description": "White-label WordPress development for agencies: custom themes, WooCommerce, plugins, migrations and speed fixes built to your designs under your brand.",
+      "name": "White-Label WordPress Development for Agencies | MMC",
+      "description": "White-label WordPress development for agencies: custom themes, WooCommerce and plugin work built to your designs and delivered under your brand.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "Our own offer is on the <a href=\"/services/web-development/wordpress/\">WordPress development</a> page. Keep builds healthy with <a href=\"/white-label/website-maintenance/\">white-label website maintenance</a>."
           ],
           "img": "web/build.jpg",
-          "cap": "Illustrative scene: a WordPress build reviewed with an agency.",
+          "cap": "A WordPress build reviewed with an agency.",
           "table": {
             "caption": "White-label WordPress jobs by size",
             "head": [
@@ -249,37 +249,37 @@
           "t": "Custom themes",
           "d": "Built from design files with blocks the client can use.",
           "img": "web/build.jpg",
-          "alt": "Custom themes: illustrative scene"
+          "alt": "Custom themes"
         },
         {
           "t": "WooCommerce",
           "d": "Product, cart and checkout set up for India.",
           "img": "shop/checkout.jpg",
-          "alt": "WooCommerce: illustrative scene"
+          "alt": "WooCommerce"
         },
         {
           "t": "Plugin development",
           "d": "Custom plugins and integrations.",
           "img": "shop/integrate.jpg",
-          "alt": "Plugin development: illustrative scene"
+          "alt": "Plugin development"
         },
         {
           "t": "Migrations",
           "d": "Move to WordPress or between hosts.",
           "img": "web/plan.jpg",
-          "alt": "Migrations: illustrative scene"
+          "alt": "Migrations"
         },
         {
           "t": "Speed optimisation",
           "d": "Caching, images and script clean-up.",
           "img": "web/speed.jpg",
-          "alt": "Speed optimisation: illustrative scene"
+          "alt": "Speed optimisation"
         },
         {
           "t": "Rescue and fixes",
           "d": "Repairs on sites built by others.",
           "img": "web/crm.jpg",
-          "alt": "Rescue and fixes: illustrative scene"
+          "alt": "Rescue and fixes"
         }
       ]
     },
@@ -289,7 +289,7 @@
       "h2b": "for white-label WordPress development.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "web/build.jpg",
-      "alt": "Why agencies choose MMC for white-label WordPress development. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label WordPress development.",
       "items": [
         {
           "t": "Editable by clients",
@@ -314,7 +314,7 @@
       "h2a": "How white-label WordPress development works,",
       "h2b": "step by step.",
       "img": "web/build.jpg",
-      "alt": "How white-label WordPress development works, step by step. Illustrative scene.",
+      "alt": "How white-label WordPress development works, step by step.",
       "items": [
         {
           "t": "Share designs",
@@ -443,7 +443,10 @@
       "h2a": "Add WordPress development",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first WordPress development client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

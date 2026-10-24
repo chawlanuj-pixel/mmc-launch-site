@@ -112,7 +112,7 @@
           "name": "Who is mobile app development for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Brands whose customers will use an app repeatedly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+            "text": "Brands whose customers will use an app repeatedly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on reorders and loyalty, B2B on tools teams use every day, education on portals for students and parents."
           }
         },
         {
@@ -326,7 +326,7 @@
       },
       {
         "q": "Who is mobile app development for?",
-        "a": "Brands whose customers will use an app repeatedly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+        "a": "Brands whose customers will use an app repeatedly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on reorders and loyalty, B2B on tools teams use every day, education on portals for students and parents."
       },
       {
         "q": "What do you need from us?",
@@ -388,40 +388,40 @@
       "lede": "Six stages from deciding if you need an app to improving it after launch.",
       "items": [
         {
-          "t": "Do you need an app?",
+          "t": "App or website",
           "d": "An honest look at whether an app, a fast mobile site or a web app serves your buyers better.",
           "img": "app/decide.jpg",
-          "alt": "Do you need an app?: illustrative scene"
+          "alt": "App or website"
         },
         {
           "t": "Core journey design",
           "d": "The few screens that matter most, mapped and prototyped before any build.",
           "img": "app/journey.jpg",
-          "alt": "Core journey design: illustrative scene"
+          "alt": "Core journey design"
         },
         {
           "t": "Build",
           "d": "Reliable code for the platforms you choose, with regular working builds to review.",
           "img": "app/build.jpg",
-          "alt": "Build: illustrative scene"
+          "alt": "Build"
         },
         {
           "t": "Analytics from day one",
           "d": "Events and funnels set up so you learn from the first real users.",
           "img": "app/data.jpg",
-          "alt": "Analytics from day one: illustrative scene"
+          "alt": "Analytics from day one"
         },
         {
           "t": "Store launch",
           "d": "Listings, review requirements and release steps handled for you.",
           "img": "app/launch.jpg",
-          "alt": "Store launch: illustrative scene"
+          "alt": "Store launch"
         },
         {
           "t": "Improvement cycles",
           "d": "Updates planned from user data and support feedback.",
           "img": "ux/flows.jpg",
-          "alt": "Improvement cycles: illustrative scene"
+          "alt": "Improvement cycles"
         }
       ]
     },
@@ -431,7 +431,7 @@
       "h2b": "with MMC.",
       "lede": "We build apps that connect to your marketing, not apps that sit apart from it.",
       "img": "app/build.jpg",
-      "alt": "Why brands build apps with MMC. Illustrative scene.",
+      "alt": "Why brands build apps with MMC.",
       "items": [
         {
           "t": "We say when you do not need one",

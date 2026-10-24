@@ -200,7 +200,7 @@
             "See our direct work on the <a href=\"/services/mobile-app-development/\">mobile app development</a> page. Design can come from <a href=\"/white-label/web-design/\">white-label design</a>."
           ],
           "img": "app/journey.jpg",
-          "cap": "Illustrative scene: app journeys mapped for a client.",
+          "cap": "App journeys mapped for a client.",
           "table": {
             "caption": "App build options compared",
             "head": [
@@ -239,37 +239,37 @@
           "t": "Discovery",
           "d": "Users, goals and scope for the first release.",
           "img": "app/decide.jpg",
-          "alt": "Discovery: illustrative scene"
+          "alt": "Discovery"
         },
         {
           "t": "UX and UI",
           "d": "Journeys and screens.",
           "img": "ux/screens.jpg",
-          "alt": "UX and UI: illustrative scene"
+          "alt": "UX and UI"
         },
         {
           "t": "Development",
           "d": "iOS and Android builds.",
           "img": "app/build.jpg",
-          "alt": "Development: illustrative scene"
+          "alt": "Development"
         },
         {
           "t": "Integrations",
           "d": "APIs, payments and analytics.",
           "img": "app/data.jpg",
-          "alt": "Integrations: illustrative scene"
+          "alt": "Integrations"
         },
         {
           "t": "Testing",
           "d": "Device and flow testing.",
           "img": "ux/test.jpg",
-          "alt": "Testing: illustrative scene"
+          "alt": "Testing"
         },
         {
           "t": "Release support",
           "d": "Store listing and submission help.",
           "img": "app/launch.jpg",
-          "alt": "Release support: illustrative scene"
+          "alt": "Release support"
         }
       ]
     },
@@ -279,7 +279,7 @@
       "h2b": "for white-label app development.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "app/build.jpg",
-      "alt": "Why agencies choose MMC for white-label app development. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label app development.",
       "items": [
         {
           "t": "Scope kept honest",
@@ -304,7 +304,7 @@
       "h2a": "How white-label app development works,",
       "h2b": "step by step.",
       "img": "app/build.jpg",
-      "alt": "How white-label app development works, step by step. Illustrative scene.",
+      "alt": "How white-label app development works, step by step.",
       "items": [
         {
           "t": "Shape the brief",
@@ -419,7 +419,10 @@
       "h2a": "Add app development",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first app development client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

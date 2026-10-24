@@ -102,7 +102,7 @@
           "name": "Can you manage several locations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Stores, campuses and offices each get their own verified profile with consistent details. Our own offices are in Thane, Mumbai and Indore, so multi-city handling is familiar."
+            "text": "Yes. Stores, campuses and offices each get their own verified profile with consistent details. We work from Mumbai and Indore, so handling several cities is familiar."
           }
         },
         {
@@ -183,7 +183,7 @@
       "label": "In short",
       "lead": "A Google Business Profile is the free listing that appears in Google Search and Maps for a business with a place, such as a store, college campus or office. Optimising it means correct details, the right categories, current photos, regular posts and handled reviews, so people searching by location choose you.",
       "hl": "correct details, the right categories, current photos and handled reviews",
-      "who": "Monday Marketing Company (MMC) runs local search for D2C brands with stores, B2B firms with offices and plants, and colleges with campuses. Our own offices are in Thane, Mumbai and Indore.",
+      "who": "Monday Marketing Company (MMC) runs local search for D2C brands with stores, B2B firms with offices and plants, and colleges with campuses. We work from Mumbai and Indore.",
       "points": [
         {
           "icon": "target",
@@ -214,7 +214,7 @@
             "Voice searches such as asking for the nearest branch also draw on this data, which ties the work to <a href=\"/services/seo/aeo/\">AEO</a>."
           ],
           "img": "orm/profile.jpg",
-          "cap": "Illustrative scene: a business profile shown in local search."
+          "cap": "A business profile shown in local search."
         },
         {
           "id": "local-vs",
@@ -388,7 +388,7 @@
       },
       {
         "q": "Can you manage several locations?",
-        "a": "Yes. Stores, campuses and offices each get their own verified profile with consistent details. Our own offices are in Thane, Mumbai and Indore, so multi-city handling is familiar."
+        "a": "Yes. Stores, campuses and offices each get their own verified profile with consistent details. We work from Mumbai and Indore, so handling several cities is familiar."
       },
       {
         "q": "Do you buy or fake reviews?",
@@ -442,7 +442,7 @@
       "h2b": "people visit.",
       "good": {
         "t": "Customers, students or visitors find you by searching a place, a branch or near me.",
-        "why": "This suits D2C brands with stores, B2B firms with plants and offices, and colleges with campuses."
+        "why": "This suits D2C brands with stores, B2B firms with plants and offices, and colleges with campuses (see <a href=\"/industries/education/\">education marketing</a>)."
       },
       "not": {
         "t": "You are online only with no location or service area.",
@@ -459,37 +459,37 @@
           "t": "Listing set-up",
           "d": "Claiming, verifying and merging duplicate listings.",
           "img": "orm/audit.jpg",
-          "alt": "Listing set-up: illustrative scene"
+          "alt": "Listing set-up"
         },
         {
           "t": "Profile content",
           "d": "Categories, services, description, attributes and photos.",
           "img": "orm/profile.jpg",
-          "alt": "Profile content: illustrative scene"
+          "alt": "Profile content"
         },
         {
           "t": "Posts and updates",
           "d": "Regular posts, offers, events and timing changes.",
           "img": "sv/organic.jpg",
-          "alt": "Posts and updates: illustrative scene"
+          "alt": "Posts and updates"
         },
         {
           "t": "Review handling",
           "d": "Review requests and replies, with problems escalated.",
           "img": "orm/reply.jpg",
-          "alt": "Review handling: illustrative scene"
+          "alt": "Review handling"
         },
         {
           "t": "Local pages",
           "d": "Branch or city pages that match the profile.",
           "img": "web/seo.jpg",
-          "alt": "Local pages: illustrative scene"
+          "alt": "Local pages"
         },
         {
           "t": "Local reporting",
           "d": "Calls, directions and enquiries read each month.",
           "img": "orm/report.jpg",
-          "alt": "Local reporting: illustrative scene"
+          "alt": "Local reporting"
         }
       ]
     },
@@ -499,7 +499,7 @@
       "h2b": "for local search.",
       "lede": "We run profiles the way a careful owner would, and report honestly.",
       "img": "orm/profile.jpg",
-      "alt": "Why brands choose MMC for local search. Illustrative scene.",
+      "alt": "Why brands choose MMC for local search.",
       "items": [
         {
           "t": "Rules-first",
@@ -511,7 +511,7 @@
         },
         {
           "t": "Multi-city experience",
-          "d": "Our own offices are in Thane, Mumbai and Indore."
+          "d": "We work from Mumbai and Indore."
         },
         {
           "t": "Honest reviews",
@@ -524,7 +524,7 @@
       "h2a": "How a local search engagement runs,",
       "h2b": "step by step.",
       "img": "orm/reply.jpg",
-      "alt": "How a local search engagement runs, step by step. Illustrative scene.",
+      "alt": "How a local search engagement runs, step by step.",
       "items": [
         {
           "t": "Audit the listings",

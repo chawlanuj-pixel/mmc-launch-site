@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "careers2/studio-wide.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a team working together around a long table.",
+    "alt": "A team working together around a long table.",
     "facts": [
       {
         "t": "A pod that works as yours.",
@@ -146,7 +146,7 @@
         "d": "We sign the NDA, learn your processes and agree which roles you need and what each owns.",
         "get": "A written pod scope with roles and rhythm.",
         "img": "contact/call.jpg",
-        "alt": "Illustrative scene: a scoping call between an agency and its delivery partner.",
+        "alt": "A scoping call between an agency and its delivery partner.",
         "pos": "50% 50%"
       },
       {
@@ -155,7 +155,7 @@
         "d": "A small pod takes a defined slice of your work for a trial period, in your tools.",
         "get": "A pilot you can judge on speed, quality and communication.",
         "img": "company/whiteboard.jpg",
-        "alt": "Illustrative scene: colleagues planning at a whiteboard.",
+        "alt": "Colleagues planning at a whiteboard.",
         "pos": "50% 50%"
       },
       {
@@ -164,7 +164,7 @@
         "d": "Briefing, approvals, escalation and handover are written down so the pod and your team work from one page.",
         "get": "A shared operating guide for both teams.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: an operating guide on a notepad.",
+        "alt": "An operating guide on a notepad.",
         "pos": "50% 50%"
       },
       {
@@ -173,7 +173,7 @@
         "d": "Seats are added as clients are won, and the same rhythm holds as the pod grows.",
         "get": "A team that grows with your pipeline.",
         "img": "contact/meeting.jpg",
-        "alt": "Illustrative scene: colleagues sketching around a table.",
+        "alt": "Colleagues sketching around a table.",
         "pos": "50% 50%"
       }
     ]

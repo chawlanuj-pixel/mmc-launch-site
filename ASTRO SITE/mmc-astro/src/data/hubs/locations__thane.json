@@ -3,9 +3,9 @@
   "path": "/locations/thane/",
   "key": "loc-thane",
   "title": "Digital Marketing Agency in Thane | MMC",
-  "description": "MMC began in Thane in 2019 and works from its head office at Hiranandani Business Park. Local search and ads for Thane businesses, on a call or in person.",
+  "description": "MMC serves brands in Thane from its Mumbai team. Local search, ads and review handling for Thane businesses, on a call or in person, across a table.",
   "ogTitle": "Digital marketing in Thane",
-  "ogDescription": "Our head office is in Thane. Local search, ads and stores for Thane businesses.",
+  "ogDescription": "Local search, ads and stores for Thane businesses, served by our Mumbai team.",
   "ogAlt": "Monday Marketing Company: digital marketing in Thane.",
   "jsonld": [
     {
@@ -39,7 +39,7 @@
       "@id": "https://www.mondaymarketing.company/locations/thane/#webpage",
       "url": "https://www.mondaymarketing.company/locations/thane/",
       "name": "Digital Marketing Agency in Thane | MMC",
-      "description": "MMC began in Thane in 2019 and works from its head office at Hiranandani Business Park. Local search and ads for Thane businesses, on a call or in person.",
+      "description": "MMC serves brands in Thane from its Mumbai team. Local search, ads and review handling for Thane businesses, on a call or in person, across a table.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -119,10 +119,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Where is the MMC head office in Thane?",
+          "name": "Does MMC have an office in Thane?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our head office is at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. MMC was founded in Thane in 2019."
+            "text": "We serve Thane from our Mumbai team and work from Mumbai and Indore. Our postal address is 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra."
           }
         },
         {
@@ -185,11 +185,11 @@
       "Digital marketing",
       [
         "in Thane, ",
-        "where MMC began",
+        "from our Mumbai team",
         "."
       ]
     ],
-    "sub": "Our head office is in Hiranandani Business Park, Thane. If your customers are in Thane or the wider Mumbai region, we run your local search, ads and enquiry follow-up with you, on a call or across a table.",
+    "sub": "We serve Thane from our Mumbai team. If your customers are in Thane or the wider Mumbai region, we run your local search, ads and enquiry follow-up with you, on a call or across a table.",
     "tiles": [
       {
         "img": "contact/meeting.jpg",
@@ -220,7 +220,7 @@
       "label": "In short",
       "lead": "A business in Thane competes twice: with the shop down the road, and with every Mumbai brand that appears for the same search. Winning means a complete Google Business Profile, a page that says Thane clearly, honest handling of reviews and ads aimed at the areas your buyers come from.",
       "hl": "a complete Google Business Profile, a page that says Thane clearly",
-      "who": "Monday Marketing Company (MMC) is based in Thane. Our head office is at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. We also work from Mumbai and Indore, and serve brands across India.",
+      "who": "Monday Marketing Company (MMC) serves brands in Thane from its Mumbai team. Our postal address is 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. We work from Mumbai and Indore, and serve brands across India.",
       "points": [
         {
           "icon": "target",
@@ -230,7 +230,7 @@
         {
           "icon": "users",
           "title": "Met in person or on a call",
-          "text": "Our head office is here, and most work runs on video."
+          "text": "Our Mumbai team is close by, and most work runs on video."
         },
         {
           "icon": "link",
@@ -239,7 +239,7 @@
         }
       ],
       "image": "company/strategy.jpg",
-      "chip": "A local base for Thane businesses"
+      "chip": "A Mumbai team close to Thane"
     },
     "article": {
       "blocks": [
@@ -251,26 +251,26 @@
             "Old hours, a missing category or reviews left unanswered hand the visit to someone else. The fix is plain work, done carefully, which we describe on <a href=\"/services/seo/google-business-profile/\">Google Business Profile optimisation</a>."
           ],
           "img": "orm/audit.jpg",
-          "cap": "Illustrative scene: a Thane listing checked for gaps."
+          "cap": "A Thane listing checked for gaps."
         },
         {
           "id": "thane-ways",
-          "h": "Two ways to work with us from Thane",
+          "h": "Two ways to work with us in Thane",
           "paras": [
             "Pick what suits your team. Both give you the same senior people and the same monthly scope."
           ],
           "table": {
-            "caption": "Working with MMC from Thane",
+            "caption": "Working with MMC in Thane",
             "head": [
               "",
               "On a call",
-              "At our head office"
+              "In person"
             ],
             "rows": [
               [
                 "Best for",
                 "Reviews, reports and quick questions",
-                "A first meeting or a planning session across a table"
+                "A first meeting or a planning session across a table, agreed on a call"
               ],
               [
                 "When",
@@ -280,7 +280,7 @@
               [
                 "Where",
                 "Video call, with a shared screen",
-                "Hiranandani Business Park, Thane 400607"
+                "Agreed when you book"
               ],
               [
                 "How to start",
@@ -291,7 +291,7 @@
           },
           "callout": {
             "title": "Other cities.",
-            "text": "We also work from <a href=\"/locations/mumbai/\">Mumbai</a> and <a href=\"/locations/indore/\">Indore</a>. See <a href=\"/locations/\">all locations</a>."
+            "text": "Our team works from <a href=\"/locations/mumbai/\">Mumbai</a> and <a href=\"/locations/indore/\">Indore</a>. See <a href=\"/locations/\">all locations</a>."
           }
         }
       ]
@@ -306,37 +306,37 @@
           "t": "Thane Business Profile",
           "d": "Claiming, verifying and completing each profile for the places customers visit.",
           "img": "orm/audit.jpg",
-          "alt": "Thane Business Profile: illustrative scene"
+          "alt": "Thane Business Profile"
         },
         {
           "t": "Thane pages on your site",
           "d": "A page for each outlet or service area, with the same details as the profile.",
           "img": "web/seo.jpg",
-          "alt": "Thane pages on your site: illustrative scene"
+          "alt": "Thane pages on your site"
         },
         {
           "t": "Reviews and replies",
           "d": "A respectful way to ask, and honest replies in your voice.",
           "img": "orm/reply.jpg",
-          "alt": "Reviews and replies: illustrative scene"
+          "alt": "Reviews and replies"
         },
         {
           "t": "Local ads",
           "d": "Search and Meta Ads aimed at the areas your buyers come from.",
           "img": "google/search.jpg",
-          "alt": "Local ads: illustrative scene"
+          "alt": "Local ads"
         },
         {
           "t": "Enquiry follow-up",
           "d": "A WhatsApp or call path so a Thane enquiry gets an answer quickly.",
           "img": "leadgen/capi.jpg",
-          "alt": "Enquiry follow-up: illustrative scene"
+          "alt": "Enquiry follow-up"
         },
         {
           "t": "Monthly local report",
           "d": "Calls, direction requests and enquiries read each month.",
           "img": "orm/report.jpg",
-          "alt": "Monthly local report: illustrative scene"
+          "alt": "Monthly local report"
         }
       ]
     },
@@ -344,13 +344,13 @@
       "eyebrow": "Why MMC",
       "h2a": "Why Thane brands choose MMC",
       "h2b": "for local marketing.",
-      "lede": "We are based here, and we report like a careful owner would.",
+      "lede": "We report like a careful owner would.",
       "img": "orm/profile.jpg",
-      "alt": "Why Thane brands choose MMC for local marketing. Illustrative scene.",
+      "alt": "Why Thane brands choose MMC for local marketing.",
       "items": [
         {
-          "t": "Based in Thane",
-          "d": "Our head office is here, so a first meeting does not need a flight."
+          "t": "Close by",
+          "d": "Our Mumbai team is a short trip away, so a first meeting does not need a flight."
         },
         {
           "t": "Senior people",
@@ -371,7 +371,7 @@
       "h2a": "How a Thane engagement runs,",
       "h2b": "step by step.",
       "img": "orm/reply.jpg",
-      "alt": "How a Thane engagement runs, step by step. Illustrative scene.",
+      "alt": "How a Thane engagement runs, step by step.",
       "items": [
         {
           "t": "Audit the places",
@@ -458,8 +458,8 @@
     ],
     "faq": [
       {
-        "q": "Where is the MMC head office in Thane?",
-        "a": "Our head office is at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. MMC was founded in Thane in 2019."
+        "q": "Does MMC have an office in Thane?",
+        "a": "We serve Thane from our Mumbai team and work from Mumbai and Indore. Our postal address is 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra."
       },
       {
         "q": "When can we reach you?",
@@ -488,7 +488,7 @@
     ],
     "cta": {
       "h2a": "Talk to a team",
-      "h2b": "based in Thane.",
+      "h2b": "serving Thane.",
       "lede": "On a call, with a senior strategist. We check your listings and pages for gaps and tell you what to fix first."
     },
     "leaks": {

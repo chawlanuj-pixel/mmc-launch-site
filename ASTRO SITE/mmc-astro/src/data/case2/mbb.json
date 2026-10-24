@@ -9,16 +9,15 @@
   "Google Shopping"
  ],
  "brief": [
-  "{name} sells dessert-inspired body care. This page covers an ecommerce storefront for the range, paired with social creative and ads for the same products.",
+  "{name} sells dessert-inspired body care. We built an ecommerce storefront for the range, paired with social creative and ads for the same products.",
   "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
  ],
  "showcases": [
   {
-   "layout": "split",
-   "side": "left",
+   "layout": "stage",
    "kicker": "Storefront",
    "title": "Homepage on desktop and mobile",
-   "text": "A bright homepage with an offer bar, a hero built around the products, a story section and a phone version that carries the same layout.",
+   "text": "A bright homepage with an offer bar, a hero built around the products, a 2 Freebies offer, a strip of product promises and a phone version that carries the same look.",
    "crops": [
     "web"
    ]
@@ -56,10 +55,11 @@
  },
  "action": "order",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "social": "{name} social media creative tiles, client-approved artwork",
-  "meta": "{name} Meta ad, client-approved artwork",
-  "shopping": "{name} Google Shopping ad, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Dessert for Your Skin hero with two women and the body butter range, an offer bar and a Start Your Body Care button",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "shopping": "{name} Google Shopping ad",
+  "card": "{name} logo beside a body butter jar, a body oil bottle and raspberries, with a woman resting her chin on her hand"
  }
 }

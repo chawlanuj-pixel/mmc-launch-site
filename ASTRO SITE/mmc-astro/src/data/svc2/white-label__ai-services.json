@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "ugc/edit.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a video editor working on a cut at a desk.",
+    "alt": "A video editor working on a cut at a desk.",
     "facts": [
       {
         "t": "A product line you do not build.",
@@ -161,7 +161,7 @@
         "d": "We sign the NDA, take a client brief and agree which AI services you plan to sell first.",
         "get": "A written scope with disclosure and rights terms.",
         "img": "about2/callscreen.jpg",
-        "alt": "Illustrative scene: a video call about a new product line.",
+        "alt": "A video call about a new product line.",
         "pos": "50% 50%"
       },
       {
@@ -170,7 +170,7 @@
         "d": "One small deliverable, such as a set of product images or one short video, made from your brief.",
         "get": "A pilot you can show a client as a sample.",
         "img": "ugc/test.jpg",
-        "alt": "Illustrative scene: video ad variations compared on a laptop.",
+        "alt": "Video ad variations compared on a laptop.",
         "pos": "50% 50%"
       },
       {
@@ -179,7 +179,7 @@
         "d": "Brief template, review checklist, file naming and disclosure wording are written once.",
         "get": "A one-page AI delivery policy.",
         "img": "ugc/brief.jpg",
-        "alt": "Illustrative scene: brand boards being sorted on a table.",
+        "alt": "Brand boards being sorted on a table.",
         "pos": "50% 50%"
       },
       {
@@ -188,7 +188,7 @@
         "d": "More clients and formats use the same brief and checks, with the line growing as you sell it.",
         "get": "An AI line your sales team can quote.",
         "img": "ugc/refresh.jpg",
-        "alt": "Illustrative scene: a wall of creative variations.",
+        "alt": "A wall of creative variations.",
         "pos": "50% 50%"
       }
     ]

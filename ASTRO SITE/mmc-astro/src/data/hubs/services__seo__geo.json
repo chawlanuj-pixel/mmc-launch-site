@@ -220,7 +220,7 @@
             "What does hold across them is simple: a brand that is easy to identify, described consistently by credible sources and backed by specific, useful pages is easier to cite correctly than one that is vague or contradictory."
           ],
           "img": "seo/authority.jpg",
-          "cap": "Illustrative scene: sources being reviewed for an answer."
+          "cap": "Sources being reviewed for an answer."
         },
         {
           "id": "geo-vs",
@@ -470,37 +470,37 @@
           "t": "Brand and category audit",
           "d": "A fixed question set checked across the main AI tools and recorded.",
           "img": "seo/aeo.jpg",
-          "alt": "Brand and category audit: illustrative scene"
+          "alt": "Brand and category audit"
         },
         {
           "t": "Entity alignment",
           "d": "Name, offer, locations and facts made consistent across the web.",
           "img": "seo/tech.jpg",
-          "alt": "Entity alignment: illustrative scene"
+          "alt": "Entity alignment"
         },
         {
           "t": "Citable content",
           "d": "Original pages with your own specifics, written to be quoted.",
           "img": "seo/pages.jpg",
-          "alt": "Citable content: illustrative scene"
+          "alt": "Citable content"
         },
         {
           "t": "Reviews and mentions",
           "d": "Reviews, listings and relevant media that confirm who you are.",
           "img": "orm/earn.jpg",
-          "alt": "Reviews and mentions: illustrative scene"
+          "alt": "Reviews and mentions"
         },
         {
           "t": "AI crawler policy",
           "d": "Robots, rendering and llms.txt reviewed and set on purpose.",
           "img": "seo/authority.jpg",
-          "alt": "AI crawler policy: illustrative scene"
+          "alt": "AI crawler policy"
         },
         {
           "t": "Repeat tracking",
           "d": "The same questions rechecked over time next to enquiries and orders.",
           "img": "sv/organic.jpg",
-          "alt": "Repeat tracking: illustrative scene"
+          "alt": "Repeat tracking"
         }
       ]
     },
@@ -510,7 +510,7 @@
       "h2b": "for GEO.",
       "lede": "The field is new, so we are plain about what we can and cannot control.",
       "img": "seo/authority.jpg",
-      "alt": "Why brands choose MMC for GEO. Illustrative scene.",
+      "alt": "Why brands choose MMC for GEO.",
       "items": [
         {
           "t": "Honest about uncertainty",
@@ -535,7 +535,7 @@
       "h2a": "How a GEO engagement runs,",
       "h2b": "step by step.",
       "img": "seo/authority.jpg",
-      "alt": "How a GEO engagement runs, step by step. Illustrative scene.",
+      "alt": "How a GEO engagement runs, step by step.",
       "items": [
         {
           "t": "Audit the tools",

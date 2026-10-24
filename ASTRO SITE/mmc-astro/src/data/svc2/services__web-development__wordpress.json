@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "web/build.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a WordPress site being built.",
+    "alt": "A WordPress site being built.",
     "facts": [
       {
         "t": "A theme built for you.",
@@ -108,7 +108,7 @@
         "d": "We map pages, templates, editing needs and integrations, then agree the scope in writing.",
         "get": "A written scope you have approved.",
         "img": "web/plan.jpg",
-        "alt": "Illustrative scene: a WordPress site planned page by page.",
+        "alt": "A WordPress site planned page by page.",
         "pos": "50% 50%"
       },
       {
@@ -117,7 +117,7 @@
         "d": "Approved designs become a custom theme, with plugins kept to the few that earn their place.",
         "get": "A theme your team can arrange without code.",
         "img": "web/build.jpg",
-        "alt": "Illustrative scene: a custom theme being built.",
+        "alt": "A custom theme being built.",
         "pos": "50% 50%"
       },
       {
@@ -126,7 +126,7 @@
         "d": "We test speed, forms, tracking and mobile before the switch, then migrate and redirect carefully.",
         "get": "A live site that loads fast and tracks enquiries.",
         "img": "web/speed.jpg",
-        "alt": "Illustrative scene: a site tested before launch.",
+        "alt": "A site tested before launch.",
         "pos": "50% 50%"
       },
       {
@@ -135,7 +135,7 @@
         "d": "Your team gets an editing guide, and we can stay on under website maintenance.",
         "get": "A site your team can edit with confidence.",
         "img": "web/crm.jpg",
-        "alt": "Illustrative scene: forms connected to a CRM.",
+        "alt": "Forms connected to a CRM.",
         "pos": "50% 50%"
       }
     ]

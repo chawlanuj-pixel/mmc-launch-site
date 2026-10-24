@@ -82,7 +82,7 @@
           "name": "Does MMC work from Mumbai?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Mumbai is one of the three cities we work from, with Thane and Indore. Our team also hires for Mumbai roles, which you can see on the careers page."
+            "text": "Yes. Mumbai is one of the two cities we work from, with Indore. Our team also hires for Mumbai roles, which you can see on the careers page."
           }
         },
         {
@@ -90,7 +90,7 @@
           "name": "Is there a Mumbai street address I can visit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We do not list a street address for Mumbai on this site. The only street address we publish is our Thane head office. To meet, book a call and we will agree where and when."
+            "text": "We do not list a street address for Mumbai on this site. The only street address we publish is our postal address, 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. To meet, book a call and we will agree where and when."
           }
         },
         {
@@ -149,7 +149,7 @@
         "."
       ]
     ],
-    "sub": "Mumbai is one of the three cities we work from. For brands with many outlets and neighbourhoods, we make every listing agree, and judge the ads on margin rather than clicks.",
+    "sub": "Mumbai is one of the two cities we work from. For brands with many outlets and neighbourhoods, we make every listing agree, and judge the ads on margin rather than clicks.",
     "tiles": [
       {
         "img": "sv/organic.jpg",
@@ -180,7 +180,7 @@
       "label": "In short",
       "lead": "In Mumbai, buyers can choose between many outlets of every kind within a short distance. A brand wins when each outlet has a verified, complete profile, each neighbourhood has a page that reads as its own, and the ads are judged on margin rather than clicks.",
       "hl": "a verified, complete profile, each neighbourhood has a page that reads as its own",
-      "who": "Monday Marketing Company (MMC) works from Mumbai, Thane and Indore and serves brands across India. We do not publish a Mumbai street address on this site. Our published address is the Thane head office, and meetings elsewhere are agreed on a call.",
+      "who": "Monday Marketing Company (MMC) works from Mumbai and Indore and serves brands across India. We do not publish a Mumbai street address on this site. Our published postal address is in Thane, and meetings are agreed on a call.",
       "points": [
         {
           "icon": "grid",
@@ -211,13 +211,13 @@
             "Brands with several outlets add a second problem: listings drift apart. One has old hours, another a different phone number, a third a duplicate. The work is to make them agree and keep them that way."
           ],
           "img": "company/whiteboard.jpg",
-          "cap": "Illustrative scene: colleagues planning on a whiteboard."
+          "cap": "Colleagues planning on a whiteboard."
         },
         {
           "id": "mumbai-ways",
           "h": "How we work with a Mumbai brand",
           "paras": [
-            "Mumbai is one of the three cities we work from, so a call or a meeting is easy to arrange. Most of the work runs on shared sheets and monthly reports."
+            "Mumbai is one of the two cities we work from, so a call or a meeting is easy to arrange. Most of the work runs on shared sheets and monthly reports."
           ],
           "table": {
             "caption": "How the work splits for a Mumbai brand",
@@ -251,8 +251,15 @@
           },
           "callout": {
             "title": "Meeting in person.",
-            "text": "We do not publish a Mumbai street address here. <a href=\"/contact/\">Book a call</a> and we will agree where to meet. Our <a href=\"/locations/thane/\">Thane head office</a> has a published address."
+            "text": "We do not publish a Mumbai street address here. <a href=\"/contact/\">Book a call</a> and we will agree where to meet. Our postal address is in <a href=\"/locations/thane/\">Thane</a>."
           }
+        },
+        {
+          "id": "mumbai-education",
+          "h": "Education brands in Mumbai",
+          "paras": [
+            "Families in Mumbai compare colleges and institutes across the city and beyond, usually on a phone and long before a campus visit. For an educational institute, local work means an accurate Google Business Profile for the campus, genuine reviews that get replies, and course pages that answer fee and eligibility questions. The same groundwork supports <a href=\"/industries/education/\">education marketing</a>: ads and follow-up judged on enquiries that become visits and admissions. For a single college, see <a href=\"/industries/education/colleges/\">college admission marketing</a>."
+          ]
         }
       ]
     },
@@ -266,37 +273,37 @@
           "t": "Outlet sheet",
           "d": "One record of every name, address, hour and category, so listings agree.",
           "img": "orm/audit.jpg",
-          "alt": "Outlet sheet: illustrative scene"
+          "alt": "Outlet sheet"
         },
         {
           "t": "Verified profiles",
           "d": "Each outlet claimed, verified and completed, with duplicates merged.",
           "img": "orm/profile.jpg",
-          "alt": "Verified profiles: illustrative scene"
+          "alt": "Verified profiles"
         },
         {
           "t": "Neighbourhood pages",
           "d": "Pages written for each area, not a template with the name swapped.",
           "img": "seo/pages.jpg",
-          "alt": "Neighbourhood pages: illustrative scene"
+          "alt": "Neighbourhood pages"
         },
         {
           "t": "Review handling",
           "d": "Requests and replies for each outlet, with problems escalated.",
           "img": "orm/reply.jpg",
-          "alt": "Review handling: illustrative scene"
+          "alt": "Review handling"
         },
         {
           "t": "Margin-led ads",
           "d": "Meta and Google campaigns planned around contribution margin.",
           "img": "google/pmax.jpg",
-          "alt": "Margin-led ads: illustrative scene"
+          "alt": "Margin-led ads"
         },
         {
           "t": "Side-by-side reporting",
           "d": "Calls, directions and enquiries by outlet, each month.",
           "img": "google/report.jpg",
-          "alt": "Side-by-side reporting: illustrative scene"
+          "alt": "Side-by-side reporting"
         }
       ]
     },
@@ -306,11 +313,11 @@
       "h2b": "for local marketing.",
       "lede": "A crowded market punishes loose ends.",
       "img": "orm/earn.jpg",
-      "alt": "Why Mumbai brands choose MMC for local marketing. Illustrative scene.",
+      "alt": "Why Mumbai brands choose MMC for local marketing.",
       "items": [
         {
           "t": "A team that works from Mumbai",
-          "d": "Mumbai is one of the three cities we work from."
+          "d": "Meetings in the city are easy to arrange on a call."
         },
         {
           "t": "Built for many outlets",
@@ -331,7 +338,7 @@
       "h2a": "How a Mumbai engagement runs,",
       "h2b": "step by step.",
       "img": "company/whiteboard.jpg",
-      "alt": "How a Mumbai engagement runs, step by step. Illustrative scene.",
+      "alt": "How a Mumbai engagement runs, step by step.",
       "items": [
         {
           "t": "List the outlets",
@@ -377,7 +384,7 @@
         },
         {
           "n": "Thane",
-          "d": "Our head office, with a published address.",
+          "d": "A service area, served by our Mumbai team.",
           "img": "contact/meeting.jpg",
           "href": "/locations/thane/",
           "link": "See Thane"
@@ -419,11 +426,11 @@
     "faq": [
       {
         "q": "Does MMC work from Mumbai?",
-        "a": "Yes. Mumbai is one of the three cities we work from, with Thane and Indore. Our team also hires for Mumbai roles, which you can see on the <a href=\"/careers/\">careers page</a>."
+        "a": "Yes. Mumbai is one of the two cities we work from, with Indore. Our team also hires for Mumbai roles, which you can see on the <a href=\"/careers/\">careers page</a>."
       },
       {
         "q": "Is there a Mumbai street address I can visit?",
-        "a": "We do not list a street address for Mumbai on this site. The only street address we publish is our Thane head office. To meet, book a call and we will agree where and when."
+        "a": "We do not list a street address for Mumbai on this site. The only street address we publish is our postal address, 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. To meet, book a call and we will agree where and when."
       },
       {
         "q": "How do you handle a brand with many outlets across Mumbai?",

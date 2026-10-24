@@ -19,6 +19,7 @@ import { fixDeep, href } from "../../lib/links";
 import raw from "../../data/pages/services.json";
 import X from "../../data/hubs2/services.json";
 import "../../styles/hubs2.css";
+import { AGENCY_LINE, agencyTwin } from "../../lib/whitelabel";
 
 const D = fixDeep(raw);
 const head = pageHead("services", "/services/");
@@ -41,6 +42,10 @@ const jsonld = (head.jsonld as any[]).map((b) => {
   return b;
 });
 const problems = D.SV_START.map(([p, to, name]: string[]) => [p, href(to), name]) as [string, string, string][];
+// "Are you an agency?" row (src/lib/whitelabel.ts): the white-label twin of this page, last in the existing problem list.
+const agency = agencyTwin("/services/")!;
+// Same shape as the other rows: the question on the left, the service name (capitalised anchor) on the right.
+problems.push([AGENCY_LINE.lead, agency.href, agency.anchor.charAt(0).toUpperCase() + agency.anchor.slice(1)]);
 ---
 <BaseLayout {...head} jsonld={jsonld} preloadImage={"/assets/" + X.groups[0].idx}>
   <Shell>

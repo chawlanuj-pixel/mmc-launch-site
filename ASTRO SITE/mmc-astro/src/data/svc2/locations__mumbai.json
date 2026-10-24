@@ -111,7 +111,7 @@
         "d": "We record every outlet, claim or merge listings and complete the profiles.",
         "get": "One record that every listing matches.",
         "img": "company/whiteboard.jpg",
-        "alt": "Illustrative scene: colleagues planning on a whiteboard.",
+        "alt": "Colleagues planning on a whiteboard.",
         "pos": "50% 50%"
       },
       {
@@ -120,7 +120,7 @@
         "d": "We set up the review routine and write pages for the neighbourhoods that matter most.",
         "get": "Profiles and pages that agree.",
         "img": "seo/intent.jpg",
-        "alt": "Illustrative scene: pages planned around search intent.",
+        "alt": "Pages planned around search intent.",
         "pos": "50% 50%"
       },
       {
@@ -129,7 +129,7 @@
         "d": "We plan ads around margin where they suit, and report outlet by outlet.",
         "get": "A monthly report by outlet.",
         "img": "google/report.jpg",
-        "alt": "Illustrative scene: a monthly performance report.",
+        "alt": "A monthly performance report.",
         "pos": "50% 50%"
       }
     ]

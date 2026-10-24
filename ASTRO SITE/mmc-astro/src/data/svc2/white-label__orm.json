@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "orm/audit.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a business profile with ratings on a laptop.",
+    "alt": "A business profile with ratings on a laptop.",
     "facts": [
       {
         "t": "Review work in your name.",
@@ -166,7 +166,7 @@
         "d": "We sign the NDA, audit a client's search result, profiles and reviews, and write the scope.",
         "get": "An audit and a scope for the first client.",
         "img": "company/call.jpg",
-        "alt": "Illustrative scene: a call about a reputation audit.",
+        "alt": "A call about a reputation audit.",
         "pos": "50% 50%"
       },
       {
@@ -175,7 +175,7 @@
         "d": "Requests, replies and profile fixes run for a month, with a first report.",
         "get": "A pilot report to judge us on.",
         "img": "about2/desk-open.jpg",
-        "alt": "Illustrative scene: a laptop with a table of client results.",
+        "alt": "A laptop with a table of client results.",
         "pos": "50% 50%"
       },
       {
@@ -184,7 +184,7 @@
         "d": "Request wording, reply tone, approval route and escalation rules are written once.",
         "get": "A reputation playbook in your name.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a reputation playbook being written.",
+        "alt": "A reputation playbook being written.",
         "pos": "50% 50%"
       },
       {
@@ -193,7 +193,7 @@
         "d": "More clients join the same routine, with monitoring and a single report format.",
         "get": "A reputation service you can sell to any local client.",
         "img": "contact/growth.jpg",
-        "alt": "Illustrative scene: a performance view on a laptop.",
+        "alt": "A performance view on a laptop.",
         "pos": "50% 50%"
       }
     ]

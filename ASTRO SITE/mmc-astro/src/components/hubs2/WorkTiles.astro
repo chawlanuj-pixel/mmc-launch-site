@@ -22,7 +22,7 @@ const kind: Record<string, string> = { d2c: "D2C", b2b: "B2B", edu: "Education",
         <li class="h2-rv">
           <a class="h2-tile" href={b.href!}>
             <figure class="h2-pic">
-              <img src={`/assets/clients/${b.id}-work.jpg`} alt={`${b.name}: artwork of the work we built`} width="1280" height="720" loading="lazy" decoding="async" />
+              <img src={`/assets/clients/${b.id}-work.jpg`} alt={`${b.name}: a selection of the work we built`} width="1280" height="720" loading="lazy" decoding="async" />
               <span class="h2-tile__logo"><img src={`/assets/clients/${b.id}.png`} alt="" width="112" height="56" loading="lazy" /></span>
             </figure>
             <div class="h2-tile__meta"><h3>{b.name}</h3><span class="h2-tile__kind">{kind[b.group] || ""}</span></div>

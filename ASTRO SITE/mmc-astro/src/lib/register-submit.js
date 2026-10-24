@@ -4,6 +4,8 @@
 // Live site (hostname ends with mondaymarketing.company): POST JSON to /forms/send.php with fetch. No navigation, no mailto.
 // Anywhere else (localhost, previews): nothing is sent. The payload is logged to the console and the page shows what would be sent.
 
+import { consentFromStored } from "./register-payload.mjs";
+
 export const ENDPOINT = "/forms/send.php";
 const TIMEOUT_MS = 20000;
 
@@ -23,6 +25,7 @@ export async function sendRegistration(payload, label) {
     return { ok: true, mode: "preview" };
   }
   let body = payload;
+  try { const ck = consentFromStored(window.localStorage.getItem("mmc-cookies-v1")); if (ck) body = { ...body, _consent: ck }; } catch {}   // same cookie-choice field as the other forms
   try { const tok = window.MMCCaptcha ? await window.MMCCaptcha.token("mmc_register") : ""; if (tok) body = { ...payload, _rc: tok }; } catch {}
   const ctl = typeof AbortController !== "undefined" ? new AbortController() : null;
   const timer = ctl ? setTimeout(() => ctl.abort(), TIMEOUT_MS) : null;

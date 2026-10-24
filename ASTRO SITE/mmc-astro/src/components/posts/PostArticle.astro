@@ -1,0 +1,125 @@
+---
+// One Command Centre article (Phase 4), in the guide article look (guides3.css, gd3-): editorial header (crumbs, kicker, title,
+// standfirst, read time, date, author) over the header photo, then the reading layout (contents when there are 4 or more
+// sections, "In short" first, the sections), "Keep reading", the FAQ (only when the post has one) and the closing band.
+// Used by /blog/<slug>/ and /guides/<slug>/ for CMS posts; the repo guides keep src/pages/guides/[slug].astro unchanged.
+// All copy comes from the post (src/lib/posts.ts, already validated and sanitised); nothing is retyped here.
+import Shell from "../Shell.astro";
+import PageFx from "../pages/PageFx.astro";
+import StickyBookingBar from "../shared/StickyBookingBar.astro";
+import Faq from "../hub/Faq.astro";
+import PreFooterCta from "../shared/PreFooterCta.astro";
+import Cover from "../guides3/Cover.astro";
+import Fx from "../guides3/Fx.astro";
+import Toc from "../guides3/Toc.astro";
+import PostBody from "./PostBody.astro";
+import PostCard from "./PostCard.astro";
+import "../../styles/guides3.css";
+import "../../styles/posts.css";
+import { BOOK } from "../../lib/site";
+import { GUIDES, readTimes } from "../../lib/guides";
+import { type Post, postsBySection, relatedPosts, postClosing, postCrumbs, guideNumbers, niceDate, blogHasIndex } from "../../lib/posts";
+
+interface Props { post: Post }
+const { post: p } = Astro.props;
+const isGuide = p.section === "guides";
+const key = (isGuide ? "guide-" : "blog-") + p.slug;
+const nums = guideNumbers(GUIDES.length);
+const kicker = isGuide ? (nums[p.slug] ? "Guide " + nums[p.slug] : "Guide") : "Blog";
+const crumbs = postCrumbs(p);
+const C = postClosing(p);
+const readLabel = isGuide ? "Read the guide" : "Read the post";
+
+// Header photo: the post's hero. A section that uses the same picture keeps its text and its caption moves under the header
+// photo, so the picture shows once (as on the repo guides).
+const heroBlock = p.blocks.find((b) => b.img === p.hero.img);
+const heroCap = heroBlock?.cap || "";
+
+// Keep reading: the post's own related posts; else newer posts of the same section; else the repo guides. Noindex posts never show.
+type Card = { kind: "post"; post: Post } | { kind: "guide"; g: (typeof GUIDES)[number]; min: number };
+let cards: Card[] = relatedPosts(p).map((post) => ({ kind: "post", post }));
+if (!cards.length) cards = postsBySection(p.section).filter((x) => x.slug !== p.slug).slice(0, 2).map((post) => ({ kind: "post", post }));
+// The shelf is two across: an odd count left a lone card with an empty half beside it, so top up to an even number
+// (newer posts of the same section first, then the repo guides), never past four.
+if (cards.length % 2 === 1 && cards.length < 4) {
+  const have = new Set(cards.map((c) => (c.kind === "post" ? c.post.path : c.g.href)));
+  const more = postsBySection(p.section).filter((x) => x.slug !== p.slug && !have.has(x.path));
+  if (more.length) cards.push({ kind: "post", post: more[0] });
+  else { const mins = readTimes(); const g = GUIDES.find((x) => !have.has(x.href) && x.slug !== p.slug); if (g) cards.push({ kind: "guide", g, min: mins[g.slug] }); }
+}
+if (!cards.length) { const mins = readTimes(); cards = GUIDES.slice(0, 2).map((g) => ({ kind: "guide", g, min: mins[g.slug] })); }
+
+const tocOn = p.blocks.length >= 4;
+const faqTitle = ["Questions about", isGuide ? "this guide." : "this post."];
+---
+<Shell>
+  <main id="main" tabindex="-1" class="app-main n-app gd3 gd3--article">
+    <Fx />
+
+    <header class="gd3-ahead" id="top">
+      <div class="n-wrap">
+        <nav class="gd3-crumbs" aria-label="Breadcrumb">
+          <ol>
+            {crumbs.map(([name, href], i) => i < crumbs.length - 1
+              ? <li><a href={href}>{name}</a></li>
+              : <li><span aria-current="page">{name}</span></li>)}
+          </ol>
+        </nav>
+        <p class="gd3-kicker"><span>{kicker}</span>{p.tag}</p>
+        <h1 class={"gd3-h1 gd3-h1--article" + (p.title.length > 60 ? " pst-h1--long" : "")}>{p.title}</h1>
+        <div class="gd3-ahead__row">
+          {p.standfirst ? <p class="gd3-lede">{p.standfirst}</p> : <span></span>}
+          <div class="gd3-ahead__side">
+            <ul class="gd3-meta">
+              <li>{p.mins + " min read"}</li>
+              <li><time datetime={p.publishedAt}>{niceDate(p.publishedAt)}</time></li>
+              {p.updatedAt !== p.publishedAt && <li>Updated <time datetime={p.updatedAt}>{niceDate(p.updatedAt)}</time></li>}
+              <li>{"By " + (p.author ? p.author.name : "Monday Marketing Company")}</li>
+            </ul>
+            <div class="gd3-ahead__act">
+              <button type="button" class="btn btn--primary" onclick={`window.mmcBookCall && window.mmcBookCall('${key}-hero', event)`}>{BOOK}<span class="arrow"></span></button>
+              <a class="btn btn--link" href={"#" + p.blocks[0].id}>{readLabel}<span class="arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="gd3-ahead__fig">
+        <div class="n-wrap"><img src={"/assets/" + p.hero.img} alt={p.hero.alt} width="1200" height="806" loading="eager" decoding="async" fetchpriority="high" /></div>
+        {heroCap && <figcaption class="n-wrap">{heroCap}</figcaption>}
+      </figure>
+    </header>
+
+    <section class="gd3-band gd3-band--white gd3-read" id="article" aria-label={isGuide ? "The guide" : "The post"}>
+      <div class={"n-wrap gd3-read__grid" + (tocOn ? "" : " pst-solo")}>
+        {tocOn && <Toc blocks={p.blocks} label={isGuide ? "In this guide" : "In this post"} faq={p.faq.length > 0}
+          all={isGuide || !blogHasIndex() ? { label: "All guides", href: "/guides/" } : { label: "All posts", href: "/blog/" }} />}
+        <article class="gd3-read__main">
+          <PostBody blocks={p.blocks} lead={p.lead} points={p.points} skipImg={p.hero.img} source={key} />
+        </article>
+      </div>
+    </section>
+
+    {cards.length > 0 && (
+      <section class="gd3-band gd3-band--paper" id="related" aria-labelledby="gd3-rel-h">
+        <div class="n-wrap">
+          <div class="gd3-head gd3-rise">
+            <span class="n-eyebrow">Read next</span>
+            <h2 class="n-h2" id="gd3-rel-h">Keep <span class="n-serif">reading.</span></h2>
+          </div>
+          <div class="gd3-shelf gd3-shelf--2">
+            {cards.map((c) => c.kind === "guide"
+              ? <Cover n={c.g.n} tag={c.g.tag} title={c.g.title} href={c.g.href} img={c.g.img} q={c.g.q} min={c.min} />
+              : <PostCard href={c.post.path} img={c.post.hero.img} kicker={c.post.section === "guides" ? (nums[c.post.slug] ? "Guide " + nums[c.post.slug] : "Guide") : "Blog"}
+                  n={c.post.section === "guides" ? nums[c.post.slug] : undefined} tag={c.post.tag} title={c.post.title} desc={c.post.desc}
+                  min={c.post.mins} date={c.post.publishedAt} go={c.post.section === "guides" ? "Read the guide" : "Read the post"} />)}
+          </div>
+        </div>
+      </section>
+    )}
+
+    {p.faq.length > 0 && <Faq title={faqTitle} faq={p.faq} tone="white" />}
+    <PreFooterCta source={key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+  </main>
+  <StickyBookingBar source={key} />
+</Shell>
+<PageFx />

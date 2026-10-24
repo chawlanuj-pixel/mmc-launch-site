@@ -208,7 +208,7 @@
             "We work on WordPress most often, and also on custom and other CMS sites. If we built your site with our <a href=\"/services/web-development/wordpress/\">WordPress development</a> team, we already know how it is put together."
           ],
           "img": "web/plan.jpg",
-          "cap": "Illustrative scene: a monthly site checklist."
+          "cap": "A monthly site checklist."
         },
         {
           "id": "maintenance-tiers",
@@ -304,37 +304,37 @@
           "t": "Updates",
           "d": "WordPress core, plugins and themes updated on a schedule, tested first on a staging copy where possible.",
           "img": "web/build.jpg",
-          "alt": "Updates: illustrative scene"
+          "alt": "Updates"
         },
         {
           "t": "Backups",
           "d": "Regular off-site backups with a tested restore, so a bad update is reversible.",
           "img": "web/plan.jpg",
-          "alt": "Backups: illustrative scene"
+          "alt": "Backups"
         },
         {
           "t": "Security",
           "d": "Malware scans, login protection, firewall rules and fixes for known vulnerabilities.",
           "img": "web/crm.jpg",
-          "alt": "Security: illustrative scene"
+          "alt": "Security"
         },
         {
           "t": "Uptime and speed",
           "d": "Monitoring with alerts, plus image, script and caching upkeep to keep pages quick.",
           "img": "web/speed.jpg",
-          "alt": "Uptime and speed: illustrative scene"
+          "alt": "Uptime and speed"
         },
         {
           "t": "Content edits",
           "d": "Small text, image, banner and page changes done for you within the agreed hours.",
           "img": "web/seo.jpg",
-          "alt": "Content edits: illustrative scene"
+          "alt": "Content edits"
         },
         {
           "t": "Monthly reporting",
           "d": "What was updated, what was fixed, what to watch and what we suggest next.",
           "img": "res/insights.jpg",
-          "alt": "Monthly reporting: illustrative scene"
+          "alt": "Monthly reporting"
         }
       ]
     },
@@ -344,7 +344,7 @@
       "h2b": "for maintenance.",
       "lede": "A site that is cared for keeps earning its place.",
       "img": "web/speed.jpg",
-      "alt": "Why brands choose MMC for maintenance. Illustrative scene.",
+      "alt": "Why brands choose MMC for maintenance.",
       "items": [
         {
           "t": "A named person",
@@ -369,7 +369,7 @@
       "h2a": "How maintenance starts and runs,",
       "h2b": "step by step.",
       "img": "web/plan.jpg",
-      "alt": "How maintenance starts and runs, step by step. Illustrative scene.",
+      "alt": "How maintenance starts and runs, step by step.",
       "items": [
         {
           "t": "Audit the site",

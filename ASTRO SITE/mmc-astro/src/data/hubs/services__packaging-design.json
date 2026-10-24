@@ -112,7 +112,7 @@
           "name": "Who is packaging design for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "D2C brands with physical products, mostly. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+            "text": "D2C brands with physical products, mostly. B2B companies that sell packaged products use the same process, from the shelf study to print-ready files."
           }
         },
         {
@@ -319,7 +319,7 @@
       },
       {
         "q": "Who is packaging design for?",
-        "a": "D2C brands with physical products, mostly. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+        "a": "D2C brands with physical products, mostly. B2B companies that sell packaged products use the same process, from the shelf study to print-ready files."
       },
       {
         "q": "What do you need from us?",
@@ -384,37 +384,37 @@
           "t": "Shelf and category study",
           "d": "How competitors look and where your pack can stand apart.",
           "img": "pack/shelf.jpg",
-          "alt": "Shelf and category study: illustrative scene"
+          "alt": "Shelf and category study"
         },
         {
           "t": "Structure",
           "d": "Box, pouch, label or sleeve formats chosen for protection, cost and unboxing.",
           "img": "pack/structure.jpg",
-          "alt": "Structure: illustrative scene"
+          "alt": "Structure"
         },
         {
           "t": "Visual hierarchy",
           "d": "What the buyer reads first, second and third, designed deliberately.",
           "img": "pack/hierarchy.jpg",
-          "alt": "Visual hierarchy: illustrative scene"
+          "alt": "Visual hierarchy"
         },
         {
           "t": "Thumbnail testing",
           "d": "Designs checked at small marketplace and quick-commerce tile sizes.",
           "img": "pack/tile.jpg",
-          "alt": "Thumbnail testing: illustrative scene"
+          "alt": "Thumbnail testing"
         },
         {
           "t": "Print readiness",
           "d": "Artwork prepared with the right files, colours and checks for your printer.",
           "img": "pack/print.jpg",
-          "alt": "Print readiness: illustrative scene"
+          "alt": "Print readiness"
         },
         {
           "t": "Range systems",
           "d": "A system that lets new variants join the range without a redesign.",
           "img": "services/brand.jpg",
-          "alt": "Range systems: illustrative scene"
+          "alt": "Range systems"
         }
       ]
     },
@@ -424,7 +424,7 @@
       "h2b": "with MMC.",
       "lede": "Our packs are designed for the shelf and the screen at once.",
       "img": "pack/hierarchy.jpg",
-      "alt": "Why brands design packs with MMC. Illustrative scene.",
+      "alt": "Why brands design packs with MMC.",
       "items": [
         {
           "t": "Built for online and offline",

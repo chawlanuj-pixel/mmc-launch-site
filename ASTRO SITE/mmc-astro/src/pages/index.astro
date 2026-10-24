@@ -41,13 +41,16 @@ const VIDEOS = [
 
 
 /* Platform marks: the vendors' own artwork, stored in /assets/platforms/ */
-/* The stack, in five rows. [file, name, wordmark?]: wordmark logos already carry their name, so no caption. */
-const STACK = [
-  { label: "Media", items: [["meta.svg", "Meta"], ["google.svg", "Google Ads"], ["amazon-wordmark.svg", "Amazon", true], ["youtube.svg", "YouTube"], ["tiktok.svg", "TikTok"], ["linkedin.svg", "LinkedIn"]] },
-  { label: "Quick commerce", items: [["blinkit.svg", "Blinkit"], ["zepto.svg", "Zepto", true], ["swiggy.png", "Instamart"]] },
-  { label: "Commerce and checkout", items: [["shopify.svg", "Shopify"], ["gokwik.png", "GoKwik"], ["shopflo.png", "Shopflo"], ["razorpay.svg", "Razorpay"]] },
-  { label: "Retention and CRM", items: [["klaviyo.png", "Klaviyo", true], ["moengage.png", "MoEngage"], ["whatsapp.svg", "WhatsApp"]] },
-  { label: "Measurement", items: [["ga4.svg", "GA4"], ["tableau.png", "Tableau"], ["adobe.svg", "Adobe"], ["mixpanel.svg", "Mixpanel"]] },
+/* The stack, in five category columns (owner-approved option B). [file, name, width, height, wordmark?]:
+   width/height are the drawn size (26px marks, 22px wordmarks) so the band never shifts while the logos load.
+   Wordmark logos already carry their name, so they show alone with the name as alt. Each logo appears once. */
+type StackItem = [string, string, number, number, boolean?];
+const STACK: { label: string; items: StackItem[] }[] = [
+  { label: "Media", items: [["meta.svg", "Meta", 26, 26], ["google.svg", "Google Ads", 26, 26], ["amazon-wordmark.svg", "Amazon", 66, 22, true], ["youtube.svg", "YouTube", 26, 26], ["tiktok.svg", "TikTok", 26, 26], ["linkedin.svg", "LinkedIn", 26, 26]] },
+  { label: "Quick commerce", items: [["blinkit.svg", "Blinkit", 26, 26], ["zepto.svg", "Zepto", 66, 22, true], ["swiggy.png", "Instamart", 30, 22]] },
+  { label: "Commerce and checkout", items: [["shopify.svg", "Shopify", 26, 26], ["gokwik.png", "GoKwik", 26, 26], ["shopflo.png", "Shopflo", 26, 26], ["razorpay.svg", "Razorpay", 26, 26]] },
+  { label: "Retention and CRM", items: [["klaviyo.png", "Klaviyo", 68, 22, true], ["moengage.png", "MoEngage", 26, 26], ["whatsapp.svg", "WhatsApp", 26, 26]] },
+  { label: "Measurement", items: [["ga4.svg", "GA4", 23, 26], ["tableau.png", "Tableau", 26, 26], ["adobe.svg", "Adobe", 26, 26], ["mixpanel.svg", "Mixpanel", 26, 26]] },
 ];
 
 /* Calculator lines: the copy already used on the D2C page. No figures. */
@@ -90,7 +93,7 @@ if (!jsonld.some((b) => b["@type"] === "ProfessionalService") && org) {
 if (!jsonld.some((b) => b["@type"] === "FAQPage")) {
   jsonld.push({
     "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/#faq",
-    mainEntity: homeFaq.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    mainEntity: homeFaq.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") } })),
   });
 }
 ---
@@ -156,49 +159,84 @@ if (!jsonld.some((b) => b["@type"] === "FAQPage")) {
 
       <OutcomeStrip />
 
-      <!-- TOOLS: one straight ribbon of the vendors' own marks, a slim band of its own right after the clients. -->
+      <!-- TOOLS: the stack as five calm category columns (ruled label, plain logo rows). No marquee, no repeats.
+           Phones (<= 720px, with JS): the script below adds pill tabs and shows one category at a time as a row of logo cards.
+           Without JS every category stays a plain list, so crawlers and no-JS visitors see every logo. -->
       <section class="hv-plat no-section-bg" id="tools" aria-label="Platforms we run">
         <div class="hv-plat__in">
-          <div class="hn-wrap hv-plat__head">
+          <div class="hn-wrap hv-plat__head hv2-stack__head">
             <h2>We don't just advise on the stack. <em>We run it.</em></h2>
             <p>Media, quick commerce, checkout, retention and measurement, set up and run by one team.</p>
           </div>
-          <div class="hn-wrap hv-stack" data-stack>
-            <div class="hv-stack__tabs" role="tablist" aria-label="Stack categories">
-              {STACK.map((r, i) => <button type="button" role="tab" class="hv-stack__tab" aria-selected={i === 0 ? "true" : "false"} data-stack-tab={i}>{r.label}</button>)}
-            </div>
-            {STACK.map((r, i) => {
-              const reps = Math.ceil(12 / r.items.length);
-              const seq = Array.from({ length: reps }, () => r.items).flat();
-              return (
-                <div class={"hv-stack__row" + (i % 2 ? " is-rev" : "") + (i === 0 ? " is-on" : "")} data-stack-row={i}>
-                  <p class="hv-stack__label">{r.label}</p>
-                  <div class="hv-stack__ribbon">
-                    <ul class="hv-stack__track" style={`--hv-dur:${Math.round(seq.length * 5)}s`}>
-                      {[0, 1].map((c) => seq.map(([f, n, w]) => (
-                        <li class={"hv-stack__chip" + (w ? " is-word" : "")} aria-hidden={c ? "true" : undefined}>
-                          <img src={"/assets/platforms/" + f} alt={c ? "" : n} height="30" loading="lazy" decoding="async" />
-                          {!w && <b>{n}</b>}
-                        </li>
-                      )))}
-                    </ul>
-                  </div>
+          <div class="hn-wrap">
+            <div class="hv2-stack" data-hv2-stack>
+              {STACK.map((r, i) => (
+                <div class="hv2-stack__col" role="group" aria-labelledby={`hv2-stack-h${i}`} id={`hv2-stack-p${i}`}>
+                  <h3 class="hv2-stack__lab" id={`hv2-stack-h${i}`}>{r.label}</h3>
+                  <ul class="hv2-stack__list">
+                    {r.items.map(([f, n, w, h, word]) => (
+                      <li class={"hv2-stack__it" + (word ? " is-word" : "")}>
+                        <img src={"/assets/platforms/" + f} alt={word ? n : ""} width={w} height={h} loading="lazy" decoding="async" />
+                        {!word && <span>{n}</span>}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <script is:inline>
+        /* Stack tabs, phones only (<= 720px). Builds a pill tablist from the five column labels and shows one category at a time
+           (the CSS turns its list into a swipeable row of cards). Above 720px the tabs are removed from view and every column shows.
+           Roving tabindex; Left/Right/Home/End move between pills. Follows resizes and rotation. */
         (function () {
-          var root = document.querySelector("[data-stack]"); if (!root) return;
-          var tabs = root.querySelectorAll("[data-stack-tab]"), rows = root.querySelectorAll("[data-stack-row]");
-          tabs.forEach(function (t) { t.addEventListener("click", function () {
-            var n = t.getAttribute("data-stack-tab");
-            tabs.forEach(function (x) { x.setAttribute("aria-selected", x === t ? "true" : "false"); });
-            rows.forEach(function (r) { r.classList.toggle("is-on", r.getAttribute("data-stack-row") === n); });
-          }); });
+          var root = document.querySelector("[data-hv2-stack]"); if (!root) return;
+          var cols = [].slice.call(root.querySelectorAll(".hv2-stack__col")); if (!cols.length) return;
+          var mq = window.matchMedia("(max-width: 720px)"), sel = 0;
+          var bar = document.createElement("div");
+          bar.className = "hv2-stack__tabs"; bar.setAttribute("role", "tablist"); bar.setAttribute("aria-label", "Stack categories");
+          var tabs = cols.map(function (c, i) {
+            var b = document.createElement("button");
+            b.type = "button"; b.className = "hv2-stack__tab"; b.id = "hv2-stack-t" + i;
+            b.setAttribute("role", "tab"); b.setAttribute("aria-controls", c.id);
+            b.textContent = c.querySelector(".hv2-stack__lab").textContent;
+            b.addEventListener("click", function () { pick(i); });
+            bar.appendChild(b); return b;
+          });
+          root.parentNode.insertBefore(bar, root);
+          bar.addEventListener("keydown", function (e) {
+            var n = { ArrowRight: sel + 1, ArrowLeft: sel - 1, Home: 0, End: tabs.length - 1 }[e.key];
+            if (n === undefined) return;
+            e.preventDefault(); pick((n + tabs.length) % tabs.length); tabs[sel].focus();
+          });
+          function pick(i) {
+            sel = i;
+            tabs.forEach(function (t, k) { t.setAttribute("aria-selected", k === i ? "true" : "false"); t.tabIndex = k === i ? 0 : -1; });
+            cols.forEach(function (c, k) { c.classList.toggle("is-on", k === i); });
+            var t = tabs[i]; /* keep the chosen pill in view without moving the page */
+            var x = t.getBoundingClientRect().left - bar.getBoundingClientRect().left + bar.scrollLeft;
+            if (x < bar.scrollLeft + 8 || x + t.offsetWidth > bar.scrollLeft + bar.clientWidth - 8) bar.scrollLeft = x - 8;
+            var l = cols[i].querySelector(".hv2-stack__list"); if (l) { l.scrollLeft = 0; edge(l); }
+          }
+          /* the right-edge fade only while there is more to swipe to */
+          function edge(l) { l.classList.toggle("is-end", l.scrollLeft + l.clientWidth >= l.scrollWidth - 4); }
+          cols.forEach(function (c) {
+            var l = c.querySelector(".hv2-stack__list");
+            if (l) l.addEventListener("scroll", function () { edge(l); }, { passive: true });
+          });
+          function sync() {
+            root.classList.toggle("is-tabs", mq.matches);
+            cols.forEach(function (c, i) {
+              if (mq.matches) { c.setAttribute("role", "tabpanel"); c.setAttribute("aria-labelledby", tabs[i].id); }
+              else { c.setAttribute("role", "group"); c.setAttribute("aria-labelledby", "hv2-stack-h" + i); }
+            });
+            pick(sel);
+          }
+          sync();
+          mq.addEventListener("change", sync);
         })();
       </script>
 

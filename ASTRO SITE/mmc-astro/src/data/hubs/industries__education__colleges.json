@@ -214,14 +214,14 @@
             "Intake windows, exam results and counselling dates shape when they search."
           ],
           "img": "edu/students.jpg",
-          "cap": "Illustrative scene: students and parents on a campus visit."
+          "cap": "Students and parents on a campus visit."
         },
         {
           "id": "recurring-problem",
           "h": "The problem that keeps coming back",
           "paras": [
             "Many colleges generate enquiries but follow up slowly, rely on one season of heavy spend and cannot say which channel produced admissions.",
-            "The fix is to answer fee and eligibility questions on the site, follow up quickly, invite enquiries to a visit and track each step. See the <a href=\"/industries/education/\">education marketing</a> overview and the <a href=\"/guides/\">guides</a>."
+            "The fix is to answer fee and eligibility questions on the site, follow up quickly, invite enquiries to a visit and track each step. See the <a href=\"/industries/education/\">education marketing</a> overview and our <a href=\"/guides/admission-marketing-plan/\">admission marketing plan for colleges</a>."
           ],
           "callout": {
             "title": "No admission promises.",
@@ -346,7 +346,7 @@
     },
     "faqTitle": [
       "Questions about",
-      "Colleges marketing."
+      "college marketing."
     ],
     "faq": [
       {
@@ -386,7 +386,7 @@
     "process": {
       "h2a": "How we start with a college,",
       "h2b": "step by step.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -430,37 +430,37 @@
           "t": "Course and city search",
           "d": "Pages and ads for the courses families search.",
           "img": "edu/search.jpg",
-          "alt": "Course and city search: illustrative scene"
+          "alt": "Course and city search"
         },
         {
           "t": "Course pages",
           "d": "Eligibility, fees process, outcomes and next steps.",
           "img": "edu/site.jpg",
-          "alt": "Course pages: illustrative scene"
+          "alt": "Course pages"
         },
         {
           "t": "Enquiry capture",
           "d": "Short forms and landing pages on mobile.",
           "img": "edu/enquiry.jpg",
-          "alt": "Enquiry capture: illustrative scene"
+          "alt": "Enquiry capture"
         },
         {
           "t": "CRM and follow-up",
           "d": "Routing, reply timing and nurture series.",
           "img": "edu/crm.jpg",
-          "alt": "CRM and follow-up: illustrative scene"
+          "alt": "CRM and follow-up"
         },
         {
           "t": "Campus visit funnels",
           "d": "Open days and visits that turn enquiries into applicants.",
           "img": "edu/campus.jpg",
-          "alt": "Campus visit funnels: illustrative scene"
+          "alt": "Campus visit funnels"
         },
         {
           "t": "Reputation",
           "d": "Reviews and profiles families read.",
           "img": "edu/orm.jpg",
-          "alt": "Reputation: illustrative scene"
+          "alt": "Reputation"
         }
       ]
     },
@@ -470,7 +470,7 @@
       "h2b": "for admission marketing.",
       "lede": "We follow the family from search to admission.",
       "img": "edu/students.jpg",
-      "alt": "Why colleges choose MMC for admission marketing. Illustrative scene.",
+      "alt": "Why colleges choose MMC for admission marketing.",
       "items": [
         {
           "t": "Intake-aware",
@@ -495,7 +495,7 @@
       "h2a": "How a college engagement runs,",
       "h2b": "step by step.",
       "img": "edu/enquiry.jpg",
-      "alt": "How a college engagement runs, step by step. Illustrative scene.",
+      "alt": "How a college engagement runs, step by step.",
       "items": [
         {
           "t": "Audit the funnel",

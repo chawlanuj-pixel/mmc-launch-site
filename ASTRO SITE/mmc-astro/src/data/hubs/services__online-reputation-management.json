@@ -112,7 +112,7 @@
           "name": "Who is online reputation management for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Education brands, B2B companies and D2C brands whose buyers check reviews first. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+            "text": "Education brands, B2B companies and D2C brands whose buyers check reviews first. The work is set up differently for each: D2C on product and delivery reviews, B2B on the profiles and results buyers check, education on the reviews families read before they enquire."
           }
         },
         {
@@ -341,7 +341,7 @@
       },
       {
         "q": "Who is online reputation management for?",
-        "a": "Education brands, B2B companies and D2C brands whose buyers check reviews first. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+        "a": "Education brands, B2B companies and D2C brands whose buyers check reviews first. The work is set up differently for each: D2C on product and delivery reviews, B2B on the profiles and results buyers check, education on the reviews families read before they enquire."
       },
       {
         "q": "What do you need from us?",
@@ -387,7 +387,7 @@
       "h2b": "trust decides.",
       "good": {
         "t": "Buyers, parents or students check your reviews before they contact you.",
-        "why": "Colleges and schools lose enquiries to doubtful ratings, and B2B and D2C brands gain from a picture that matches reality."
+        "why": "Colleges and schools lose enquiries to doubtful ratings, and B2B and D2C brands gain from a picture that matches reality. For colleges, see <a href=\"/industries/education/colleges/\">college admission marketing</a> and <a href=\"/industries/education/\">education marketing</a>."
       },
       "not": {
         "t": "You want bad reviews removed or good ones bought.",
@@ -404,37 +404,37 @@
           "t": "Reputation audit",
           "d": "A look at reviews, search results and listings the way a new customer or family sees them.",
           "img": "orm/audit.jpg",
-          "alt": "Reputation audit: illustrative scene"
+          "alt": "Reputation audit"
         },
         {
           "t": "Earning real reviews",
           "d": "Simple, honest ways to ask happy customers, parents and clients to share their experience.",
           "img": "orm/earn.jpg",
-          "alt": "Earning real reviews: illustrative scene"
+          "alt": "Earning real reviews"
         },
         {
           "t": "Review replies",
           "d": "Timely, polite and specific replies to positive and negative reviews alike.",
           "img": "orm/reply.jpg",
-          "alt": "Review replies: illustrative scene"
+          "alt": "Review replies"
         },
         {
           "t": "Profile accuracy",
           "d": "Business profiles and listings kept correct, complete and consistent.",
           "img": "orm/profile.jpg",
-          "alt": "Profile accuracy: illustrative scene"
+          "alt": "Profile accuracy"
         },
         {
           "t": "Search results care",
           "d": "Helpful content that deserves to appear when your name is searched.",
           "img": "orm/report.jpg",
-          "alt": "Search results care: illustrative scene"
+          "alt": "Search results care"
         },
         {
           "t": "Monitoring and reports",
           "d": "Regular reports on new reviews, themes and issues that need action.",
           "img": "edu/orm.jpg",
-          "alt": "Monitoring and reports: illustrative scene"
+          "alt": "Monitoring and reports"
         }
       ]
     },
@@ -444,7 +444,7 @@
       "h2b": "with MMC.",
       "lede": "Trust decides many purchases and admissions before anyone speaks to you.",
       "img": "orm/reply.jpg",
-      "alt": "Why brands manage reputation with MMC. Illustrative scene.",
+      "alt": "Why brands manage reputation with MMC.",
       "items": [
         {
           "t": "Honest methods only",

@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "web/speed.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a website being checked and tuned.",
+    "alt": "A website being checked and tuned.",
     "facts": [
       {
         "t": "Updates and backups.",
@@ -113,7 +113,7 @@
         "d": "We check versions, plugins, hosting, backups, security and speed, and list what needs fixing first.",
         "get": "A ranked list of what to fix first.",
         "img": "web/plan.jpg",
-        "alt": "Illustrative scene: a site audited against a checklist.",
+        "alt": "A site audited against a checklist.",
         "pos": "50% 50%"
       },
       {
@@ -122,7 +122,7 @@
         "d": "We fix the urgent items, set up backups and monitoring, and create a safe way to test updates.",
         "get": "Backups, monitoring and a safe place to test.",
         "img": "web/build.jpg",
-        "alt": "Illustrative scene: a site being stabilised.",
+        "alt": "A site being stabilised.",
         "pos": "50% 50%"
       },
       {
@@ -131,7 +131,7 @@
         "d": "Updates, scans, checks and small edits happen on a schedule you can see.",
         "get": "A routine you do not have to remember.",
         "img": "web/speed.jpg",
-        "alt": "Illustrative scene: a monthly site routine.",
+        "alt": "A monthly site routine.",
         "pos": "50% 50%"
       },
       {
@@ -140,7 +140,7 @@
         "d": "Each month you get a summary, and we suggest changes worth making next.",
         "get": "A plain report and a short list of next steps.",
         "img": "res/insights.jpg",
-        "alt": "Illustrative scene: a monthly report being read.",
+        "alt": "A monthly report being read.",
         "pos": "50% 50%"
       }
     ]

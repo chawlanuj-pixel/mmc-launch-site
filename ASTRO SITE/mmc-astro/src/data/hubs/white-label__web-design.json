@@ -3,7 +3,7 @@
   "path": "/white-label/web-design/",
   "key": "wl_web_design",
   "title": "White-Label Web Design Services for Agencies | MMC",
-  "description": "White-label web design for agencies: UX, page layouts, brand-led designs and clear handover files, delivered under your name and ready for development.",
+  "description": "White-label web design for agencies: wireframes, UI design and design systems in Figma, handed to your developers or ours, under your brand and NDA.",
   "ogTitle": "White-label web design for agencies",
   "ogDescription": "Delivered behind your brand, reported your way.",
   "ogAlt": "Monday Marketing Company: white-label web design.",
@@ -39,7 +39,7 @@
       "@id": "https://www.mondaymarketing.company/white-label/web-design/#webpage",
       "url": "https://www.mondaymarketing.company/white-label/web-design/",
       "name": "White-Label Web Design Services for Agencies | MMC",
-      "description": "White-label web design for agencies: UX, page layouts, brand-led designs and clear handover files, delivered under your name and ready for development.",
+      "description": "White-label web design for agencies: wireframes, UI design and design systems in Figma, handed to your developers or ours, under your brand and NDA.",
       "isPartOf": {
         "@id": "https://www.mondaymarketing.company/#website"
       },
@@ -200,7 +200,7 @@
             "Our direct approach is on the <a href=\"/services/ui-ux-design/\">UI/UX design</a> page, and build can follow through <a href=\"/white-label/web-development/\">white-label web development</a>."
           ],
           "img": "ux/screens.jpg",
-          "cap": "Illustrative scene: page designs for a client site.",
+          "cap": "Page designs for a client site.",
           "table": {
             "caption": "Web design deliverables by stage",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Discovery and sitemap",
           "d": "Pages and structure agreed first.",
           "img": "ux/research.jpg",
-          "alt": "Discovery and sitemap: illustrative scene"
+          "alt": "Discovery and sitemap"
         },
         {
           "t": "Wireframes",
           "d": "Layouts without distraction.",
           "img": "ux/flows.jpg",
-          "alt": "Wireframes: illustrative scene"
+          "alt": "Wireframes"
         },
         {
           "t": "Visual design",
           "d": "Mobile and desktop designs to the brand.",
           "img": "ux/screens.jpg",
-          "alt": "Visual design: illustrative scene"
+          "alt": "Visual design"
         },
         {
           "t": "Design systems",
           "d": "Reusable styles and components.",
           "img": "ux/system.jpg",
-          "alt": "Design systems: illustrative scene"
+          "alt": "Design systems"
         },
         {
           "t": "Prototype and test",
           "d": "Clickable prototypes for review.",
           "img": "ux/test.jpg",
-          "alt": "Prototype and test: illustrative scene"
+          "alt": "Prototype and test"
         },
         {
           "t": "Developer handover",
           "d": "Files and notes ready for build.",
           "img": "web/build.jpg",
-          "alt": "Developer handover: illustrative scene"
+          "alt": "Developer handover"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label web design.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "ux/screens.jpg",
-      "alt": "Why agencies choose MMC for white-label web design. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label web design.",
       "items": [
         {
           "t": "Design for build",
@@ -309,7 +309,7 @@
       "h2a": "How white-label web design works,",
       "h2b": "step by step.",
       "img": "ux/screens.jpg",
-      "alt": "How white-label web design works, step by step. Illustrative scene.",
+      "alt": "How white-label web design works, step by step.",
       "items": [
         {
           "t": "Brief",
@@ -424,7 +424,10 @@
       "h2a": "Add web design",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first web design client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

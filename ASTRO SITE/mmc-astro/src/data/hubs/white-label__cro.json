@@ -200,7 +200,7 @@
             "The approach mirrors our own <a href=\"/services/cro/\">CRO service</a>. The research feeds <a href=\"/white-label/ppc/\">white-label PPC</a> and <a href=\"/white-label/web-design/\">white-label web design</a> too."
           ],
           "img": "cro/leaks.jpg",
-          "cap": "Illustrative scene: a funnel drop-off review.",
+          "cap": "A funnel drop-off review.",
           "table": {
             "caption": "CRO activities and when each fits",
             "head": [
@@ -244,37 +244,37 @@
           "t": "Funnel and analytics audit",
           "d": "Finding where the money leaks, for you to present.",
           "img": "cro/leaks.jpg",
-          "alt": "Funnel and analytics audit: illustrative scene"
+          "alt": "Funnel and analytics audit"
         },
         {
           "t": "Landing page review",
           "d": "A page-by-page review with fixes ranked.",
           "img": "cro/pdp.jpg",
-          "alt": "Landing page review: illustrative scene"
+          "alt": "Landing page review"
         },
         {
           "t": "Form and checkout fixes",
           "d": "Fewer fields, clearer steps and fewer errors.",
           "img": "cro/forms.jpg",
-          "alt": "Form and checkout fixes: illustrative scene"
+          "alt": "Form and checkout fixes"
         },
         {
           "t": "A/B test design",
           "d": "Hypotheses, variants and a result read-out.",
           "img": "cro/test.jpg",
-          "alt": "A/B test design: illustrative scene"
+          "alt": "A/B test design"
         },
         {
           "t": "Cart and checkout work",
           "d": "Fixes for abandonment points.",
           "img": "cro/cart.jpg",
-          "alt": "Cart and checkout work: illustrative scene"
+          "alt": "Cart and checkout work"
         },
         {
           "t": "CRO reporting",
           "d": "Wins, losses and learnings in your format.",
           "img": "res/funnel.jpg",
-          "alt": "CRO reporting: illustrative scene"
+          "alt": "CRO reporting"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "h2b": "for white-label CRO.",
       "lede": "A delivery partner that behaves like part of your team.",
       "img": "cro/test.jpg",
-      "alt": "Why agencies choose MMC for white-label CRO. Illustrative scene.",
+      "alt": "Why agencies choose MMC for white-label CRO.",
       "items": [
         {
           "t": "Test properly",
@@ -309,7 +309,7 @@
       "h2a": "How white-label CRO works,",
       "h2b": "step by step.",
       "img": "cro/test.jpg",
-      "alt": "How white-label CRO works, step by step. Illustrative scene.",
+      "alt": "How white-label CRO works, step by step.",
       "items": [
         {
           "t": "Access and goals",
@@ -424,7 +424,10 @@
       "h2a": "Add CRO",
       "h2b": "without adding headcount.",
       "lede": "On a call, with a senior strategist. We scope your first CRO client and agree how we work behind you.",
-      "secondary": { "label": "Register your agency", "href": "/white-label/register/" }
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
     },
     "stages": [
       {

@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "company/technology.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a developer building a storefront on a desk.",
+    "alt": "A developer building a storefront on a desk.",
     "facts": [
       {
         "t": "Built from your designs.",
@@ -161,7 +161,7 @@
         "d": "We sign the NDA, review your designs and write the build scope, platform and handover list.",
         "get": "A written build scope you can share.",
         "img": "contact/call.jpg",
-        "alt": "Illustrative scene: a scoping call between an agency lead and a delivery partner.",
+        "alt": "A scoping call between an agency lead and a delivery partner.",
         "pos": "50% 50%"
       },
       {
@@ -170,7 +170,7 @@
         "d": "One small site or a single template, built on staging to your standards.",
         "get": "A staging link and notes to judge the way we work.",
         "img": "app/build.jpg",
-        "alt": "Illustrative scene: a developer building at a desk with a phone prototype.",
+        "alt": "A developer building at a desk with a phone prototype.",
         "pos": "50% 50%"
       },
       {
@@ -179,7 +179,7 @@
         "d": "Design handoff format, staging, QA checklist and release steps are written down once.",
         "get": "A short build runbook for your team.",
         "img": "company/onepage.jpg",
-        "alt": "Illustrative scene: a runbook being written on a notepad.",
+        "alt": "A runbook being written on a notepad.",
         "pos": "50% 50%"
       },
       {
@@ -188,7 +188,7 @@
         "d": "More sites go through the same flow, with developers added as your pipeline fills.",
         "get": "A build capacity you can promise clients.",
         "img": "shop/speed.jpg",
-        "alt": "Illustrative scene: a page speed report on a laptop.",
+        "alt": "A page speed report on a laptop.",
         "pos": "50% 50%"
       }
     ]

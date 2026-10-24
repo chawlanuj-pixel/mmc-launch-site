@@ -13,7 +13,8 @@ interface Props {
   source: string;
   h2a: string; h2b: string; lede: string;
   eyebrow?: string;
-  /** Defaults to the single booking label that opens the booking modal. `brief` opens the brief form instead (careers only). */
+  /** Defaults to the single booking label that opens the booking modal. `brief` opens the brief form instead (careers only).
+   *  `href` makes it a link with the same button look (white-label close, for example "Register your agency"); it pushes cta_click. */
   primary?: Link;
   /** One text link. Pass null for none. Defaults to "How the audit works". */
   secondary?: Link | null;
@@ -32,7 +33,9 @@ const p = primary || { label: BOOK };
       <p class="pfc__p">{lede}</p>
     </div>
     <div class="pfc__act">
-      {p.brief
+      {p.href
+        ? <a class="btn btn--primary glow-btn" href={href(p.href)} onclick={`try{(window.dataLayer=window.dataLayer||[]).push({event:'cta_click',cta_source:'${source}-final'})}catch(e){}`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{p.label}<span class="arrow"></span></span></a>
+        : p.brief
         ? <button type="button" class="btn btn--primary glow-btn" onclick="window.mmcOpenBrief(event)"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{p.label}<span class="arrow"></span></span></button>
         : <button type="button" class="btn btn--primary glow-btn" onclick={`window.mmcBookCall('${source}-final', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{p.label}<span class="arrow"></span></span></button>}
       {secondary

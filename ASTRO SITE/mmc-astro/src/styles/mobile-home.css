@@ -63,10 +63,9 @@
   .hv-client__tags span { font-size: 13px; }
   .hv-client__tags span:nth-child(n+2) { display: none; }
 
-  /* ---------- Tools ribbon ---------- */
+  /* ---------- Tools (stack columns) ---------- */
   .hv .hv-plat__head { display: block; margin-bottom: 20px; }
   .hv .hv-plat__head p { display: block; margin-top: 10px; font-size: 16px; line-height: 1.5; }
-  .hv .hv-plat__chip { padding-block: 14px; padding-inline: 20px; gap: 10px; }
 
   /* ---------- About the studio ---------- */
   .hv .as { min-height: 0; padding-block: var(--mh-y); display: block; }

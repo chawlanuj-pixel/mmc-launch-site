@@ -1,0 +1,14 @@
+---
+// The whole page for one Command Centre article: head (title, description, canonical, Open Graph and Twitter, robots noindex,
+// article dates, JSON-LD from src/lib/posts.ts postJsonld) around PostArticle. Used by /blog/<slug>/ and /guides/<slug>/ (CMS).
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostArticle from "./PostArticle.astro";
+import { type Post, postTitleTag, postDescription, postOgImage, postJsonld } from "../../lib/posts";
+interface Props { post: Post }
+const { post: p } = Astro.props;
+---
+<BaseLayout title={postTitleTag(p)} description={postDescription(p)} path={p.path} canonical={p.canonical !== p.url ? p.canonical : undefined}
+  ogTitle={p.title} ogAlt={p.hero.alt} jsonld={postJsonld(p)} noindex={p.seo.noindex} ogType="article"
+  publishedTime={p.publishedAt} modifiedTime={p.updatedAt} image={postOgImage(p)} preloadImage={"/assets/" + p.hero.img}>
+  <PostArticle post={p} />
+</BaseLayout>

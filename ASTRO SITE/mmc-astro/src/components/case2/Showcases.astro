@@ -10,9 +10,11 @@ import { cropOf, t } from "../../lib/case2";
 import type { CaseStudy } from "../../lib/work";
 interface Props { c: CaseStudy; d: any }
 const { c, d } = Astro.props as Props;
+// Optional: d.shots holds website screenshots that are not cut from the artwork sheet ({ name: { w, h, bg } }, file at /assets/case2/<id>/<name>.jpg).
+const pic = (k: string) => d.shots?.[k] ? { src: `/assets/case2/${c.id}/${k}.jpg`, w: d.shots[k].w, h: d.shots[k].h, bg: d.shots[k].bg, alt: t(d.alts?.[k] ?? `{name} website`, c), name: k } : cropOf(c, d, k);
 let n = 0;
 const items = d.showcases.map((s: any, i: number) => {
-  const imgs = s.crops.map((k: string) => cropOf(c, d, k));
+  const imgs = s.crops.map(pic);
   let layout = s.layout;
   if (layout === "tiles" && imgs.length === 1) layout = "split";
   if (layout === "stage" && imgs[0].w < 700) layout = "split";

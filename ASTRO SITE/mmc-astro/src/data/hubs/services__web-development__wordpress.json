@@ -214,7 +214,7 @@
             "For stores we build on WooCommerce when the catalogue and checkout are simple enough to live on WordPress, and recommend <a href=\"/services/shopify-development/\">Shopify</a> when they are not. You get a straight recommendation, not whichever platform we prefer."
           ],
           "img": "web/plan.jpg",
-          "cap": "Illustrative scene: a WordPress build planned page by page."
+          "cap": "A WordPress build planned page by page."
         },
         {
           "id": "wordpress-vs",
@@ -274,37 +274,37 @@
           "t": "Custom theme development",
           "d": "A theme built from your design, with reusable blocks your team can arrange.",
           "img": "web/build.jpg",
-          "alt": "Custom theme development: illustrative scene"
+          "alt": "Custom theme development"
         },
         {
           "t": "WooCommerce stores",
           "d": "Product pages, cart, checkout, payments and shipping set up for India.",
           "img": "shop/checkout.jpg",
-          "alt": "WooCommerce stores: illustrative scene"
+          "alt": "WooCommerce stores"
         },
         {
           "t": "Speed optimisation",
           "d": "Image handling, caching, script clean-up and hosting advice for faster pages.",
           "img": "web/speed.jpg",
-          "alt": "Speed optimisation: illustrative scene"
+          "alt": "Speed optimisation"
         },
         {
           "t": "Migrations",
           "d": "Move a site from another platform, host or builder without losing pages or rankings.",
           "img": "web/plan.jpg",
-          "alt": "Migrations: illustrative scene"
+          "alt": "Migrations"
         },
         {
           "t": "Plugin development",
           "d": "Custom plugins and integrations when an off-the-shelf one is not enough.",
           "img": "shop/integrate.jpg",
-          "alt": "Plugin development: illustrative scene"
+          "alt": "Plugin development"
         },
         {
           "t": "Forms, CRM and tracking",
           "d": "Lead forms wired into your CRM, with analytics and ad tracking installed correctly.",
           "img": "web/crm.jpg",
-          "alt": "Forms, CRM and tracking: illustrative scene"
+          "alt": "Forms, CRM and tracking"
         }
       ]
     },
@@ -314,7 +314,7 @@
       "h2b": "for WordPress.",
       "lede": " A WordPress site is only as good as the hands that keep it.",
       "img": "web/seo.jpg",
-      "alt": "Why brands choose MMC for WordPress. Illustrative scene.",
+      "alt": "Why brands choose MMC for WordPress.",
       "items": [
         {
           "t": "Built to be edited",
@@ -339,7 +339,7 @@
       "h2a": "How a WordPress project runs,",
       "h2b": "step by step.",
       "img": "web/build.jpg",
-      "alt": "How a WordPress project runs, step by step. Illustrative scene.",
+      "alt": "How a WordPress project runs, step by step.",
       "items": [
         {
           "t": "Plan the site",

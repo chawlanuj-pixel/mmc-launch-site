@@ -169,7 +169,7 @@
       "label": "In short",
       "lead": "Lead generation is the work of bringing in enquiries from people who are likely to buy, then passing sales or admissions the ones worth a conversation. MMC runs it for B2B companies, educational institutes and D2C brands with considered purchases, and judges it on the cost of a qualified lead, not on the number of form fills.",
       "hl": "likely to buy",
-      "who": "Monday Marketing Company (MMC) runs it for B2B companies, educational institutes and D2C brands with considered purchases.",
+      "who": "Monday Marketing Company (MMC) runs lead generation for B2B companies, educational institutes and D2C brands with considered purchases.",
       "points": [
         {
           "icon": "link",
@@ -415,7 +415,7 @@
       "h2b": "own the follow-up.",
       "good": {
         "t": "You sell to businesses or families, and sales or admissions will work every lead.",
-        "why": "B2B companies get pipeline, and colleges and schools get enquiries that reach a visit or an admission, because we judge leads on quality, not form fills."
+        "why": "B2B companies get pipeline, and colleges and schools get enquiries that reach a visit or an admission (see our <a href=\"/industries/education/\">education marketing</a> and <a href=\"/industries/education/colleges/\">college admission marketing</a> pages), because we judge leads on quality, not form fills."
       },
       "not": {
         "t": "You want guaranteed leads, meetings or admissions, or no follow-up on your side.",
@@ -432,37 +432,37 @@
           "t": "Define a qualified lead",
           "d": "Sales and marketing agree what a good lead is, so every campaign aims at the same target.",
           "img": "b2b/call.jpg",
-          "alt": "Define a qualified lead: illustrative scene"
+          "alt": "Define a qualified lead"
         },
         {
           "t": "Attract the right people",
           "d": "Search, Meta and LinkedIn campaigns aimed at the buyers or families you actually want.",
           "img": "au/look-structure.jpg",
-          "alt": "Attract the right people: illustrative scene"
+          "alt": "Attract the right people"
         },
         {
           "t": "Landing pages and forms",
           "d": "Clear offers and short forms that make it easy to enquire.",
           "img": "b2b/explain.jpg",
-          "alt": "Landing pages and forms: illustrative scene"
+          "alt": "Landing pages and forms"
         },
         {
           "t": "CRM and CAPI set-up",
           "d": "Lead outcomes flow back to your ad platforms so they learn what a good lead looks like.",
           "img": "leadgen/capi.jpg",
-          "alt": "CRM and CAPI set-up: illustrative scene"
+          "alt": "CRM and CAPI set-up"
         },
         {
           "t": "Follow-up and nurture",
           "d": "WhatsApp, email and call routines that reply fast and stay in touch with those not ready.",
           "img": "b2b/followup.jpg",
-          "alt": "Follow-up and nurture: illustrative scene"
+          "alt": "Follow-up and nurture"
         },
         {
           "t": "Reporting to revenue",
           "d": "Spend read against qualified leads, meetings and closed business, not form fills.",
           "img": "shared/b2b.jpg",
-          "alt": "Reporting to revenue: illustrative scene"
+          "alt": "Reporting to revenue"
         }
       ]
     },
@@ -472,7 +472,7 @@
       "h2b": "with MMC.",
       "lede": "We aim at the leads your sales team wants to call back.",
       "img": "b2b/explain.jpg",
-      "alt": "Why brands generate leads with MMC. Illustrative scene.",
+      "alt": "Why brands generate leads with MMC.",
       "items": [
         {
           "t": "Quality over volume",
@@ -497,7 +497,7 @@
       "h2a": "How lead generation runs,",
       "h2b": "step by step.",
       "img": "b2b/followup.jpg",
-      "alt": "How lead generation runs, step by step. Illustrative scene.",
+      "alt": "How lead generation runs, step by step.",
       "items": [
         {
           "t": "Agree what qualifies",

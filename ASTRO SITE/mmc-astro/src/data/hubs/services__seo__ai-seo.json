@@ -214,7 +214,7 @@
             "That makes two things matter more than before: whether your pages are the clear, accurate source an answer can draw from, and whether trusted places beyond your own site describe you the same way. Neither replaces the SEO basics. Both sit on top of them."
           ],
           "img": "seo/aeo.jpg",
-          "cap": "Illustrative scene: a buyer asking an assistant about a purchase."
+          "cap": "A buyer asking an assistant about a purchase."
         },
         {
           "id": "which-page",
@@ -464,37 +464,37 @@
           "t": "AI visibility audit",
           "d": "The buyer questions that matter, checked across search and assistants and recorded.",
           "img": "seo/intent.jpg",
-          "alt": "AI visibility audit: illustrative scene"
+          "alt": "AI visibility audit"
         },
         {
           "t": "Technical foundation",
           "d": "Crawling, indexing, speed and AI crawler access reviewed and fixed.",
           "img": "seo/tech.jpg",
-          "alt": "Technical foundation: illustrative scene"
+          "alt": "Technical foundation"
         },
         {
           "t": "Answer-first content",
           "d": "Pages that open with a direct answer, then give detail and proof.",
           "img": "seo/pages.jpg",
-          "alt": "Answer-first content: illustrative scene"
+          "alt": "Answer-first content"
         },
         {
           "t": "Structured data",
           "d": "Schema for organisation, product, course, FAQ and article where it fits.",
           "img": "web/seo.jpg",
-          "alt": "Structured data: illustrative scene"
+          "alt": "Structured data"
         },
         {
           "t": "Entity and mention work",
           "d": "Consistent facts across your site, profiles and trusted third-party sources.",
           "img": "seo/authority.jpg",
-          "alt": "Entity and mention work: illustrative scene"
+          "alt": "Entity and mention work"
         },
         {
           "t": "Tracking and reporting",
           "d": "A fixed question set checked over time, next to organic enquiries and orders.",
           "img": "sv/organic.jpg",
-          "alt": "Tracking and reporting: illustrative scene"
+          "alt": "Tracking and reporting"
         }
       ]
     },
@@ -504,7 +504,7 @@
       "h2b": "for AI SEO.",
       "lede": "The ground is moving, so we keep the plan simple and the reporting honest.",
       "img": "seo/aeo.jpg",
-      "alt": "Why brands choose MMC for AI SEO. Illustrative scene.",
+      "alt": "Why brands choose MMC for AI SEO.",
       "items": [
         {
           "t": "Built on real SEO",
@@ -529,7 +529,7 @@
       "h2a": "How an AI SEO engagement runs,",
       "h2b": "step by step.",
       "img": "seo/authority.jpg",
-      "alt": "How an AI SEO engagement runs, step by step. Illustrative scene.",
+      "alt": "How an AI SEO engagement runs, step by step.",
       "items": [
         {
           "t": "Audit and baseline",

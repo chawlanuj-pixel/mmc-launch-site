@@ -348,7 +348,7 @@
     "process": {
       "h2a": "How we run conversion work,",
       "h2b": "test by test.",
-      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
       "steps": [
         {
           "when": "Days 1 to 30",
@@ -375,7 +375,7 @@
       "h2b": "traffic worth converting.",
       "good": {
         "t": "You already get steady traffic or enquiries but too few turn into orders.",
-        "why": "D2C stores with a website that gets traffic but does not convert, and B2B and education sites losing enquiries at the form, benefit most."
+        "why": "D2C stores with a website that gets traffic but does not convert, and B2B and education sites losing enquiries at the form, benefit most. For colleges, see <a href=\"/industries/education/colleges/\">college admission marketing</a>."
       },
       "not": {
         "t": "You have very little traffic, or want a redesign dressed up as testing.",
@@ -392,37 +392,37 @@
           "t": "Funnel and analytics review",
           "d": "Where visitors drop off, found from your data before any design change is proposed.",
           "img": "cro/leaks.jpg",
-          "alt": "Funnel and analytics review: illustrative scene"
+          "alt": "Funnel and analytics review"
         },
         {
           "t": "Product page persuasion",
           "d": "Images, proof, answers to objections and a clear offer on the page that decides the sale.",
           "img": "cro/pdp.jpg",
-          "alt": "Product page persuasion: illustrative scene"
+          "alt": "Product page persuasion"
         },
         {
           "t": "Cart and checkout",
           "d": "Fewer steps, clear costs and payment options that remove reasons to abandon.",
           "img": "cro/cart.jpg",
-          "alt": "Cart and checkout: illustrative scene"
+          "alt": "Cart and checkout"
         },
         {
           "t": "Forms and lead capture",
           "d": "Shorter forms and clearer promises for B2B and education enquiries.",
           "img": "cro/forms.jpg",
-          "alt": "Forms and lead capture: illustrative scene"
+          "alt": "Forms and lead capture"
         },
         {
           "t": "Speed and mobile experience",
           "d": "Pages that load and behave well on the phones most of your buyers use.",
           "img": "cro/test.jpg",
-          "alt": "Speed and mobile experience: illustrative scene"
+          "alt": "Speed and mobile experience"
         },
         {
           "t": "Structured testing",
           "d": "Changes tested one at a time and kept only when the evidence supports them.",
           "img": "services/conversion.jpg",
-          "alt": "Structured testing: illustrative scene"
+          "alt": "Structured testing"
         }
       ]
     },
@@ -432,7 +432,7 @@
       "h2b": "with MMC.",
       "lede": "Better conversion lifts every channel at once.",
       "img": "cro/cart.jpg",
-      "alt": "Why brands work on CRO with MMC. Illustrative scene.",
+      "alt": "Why brands work on CRO with MMC.",
       "items": [
         {
           "t": "Evidence before opinion",
@@ -457,7 +457,7 @@
       "h2a": "How a CRO programme runs,",
       "h2b": "step by step.",
       "img": "cro/test.jpg",
-      "alt": "How a CRO programme runs, step by step. Illustrative scene.",
+      "alt": "How a CRO programme runs, step by step.",
       "items": [
         {
           "t": "Find the leaks",

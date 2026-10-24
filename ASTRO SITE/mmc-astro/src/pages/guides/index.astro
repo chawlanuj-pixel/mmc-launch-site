@@ -17,6 +17,7 @@ import { rewriteJsonld } from "../../lib/hub";
 import { GUIDES, readTimes } from "../../lib/guides";
 import { TOOLS } from "../../lib/site";
 import { closingFor } from "../../lib/prefooter";
+import { postsBySection, guideNumbers } from "../../lib/posts";
 import "../../styles/guides3.css";
 
 const SITE = "https://www.mondaymarketing.company";
@@ -36,9 +37,14 @@ const feat = lib[0];
 // cover below is not repeated on this page.
 const featImg = "/assets/guides/review.jpg";
 
+// Command Centre guides (Phase 4): listed after the repo guides, newest first, indexable only; numbered on from the repo guides.
+// With no CMS guides both lists below are unchanged.
+const cms = postsBySection("guides");
+const cmsN = guideNumbers(GUIDES.length);
 const jsonld = rewriteJsonld((d as any).jsonld, updated).map((b: any) => b["@type"] === "CollectionPage" ? {
   ...b,
-  hasPart: GUIDES.map((g) => ({ "@type": "Article", headline: g.title, description: g.desc, url: SITE + g.href })),
+  hasPart: [...GUIDES.map((g) => ({ "@type": "Article", headline: g.title, description: g.desc, url: SITE + g.href })),
+    ...cms.map((p) => ({ "@type": "Article", headline: p.title, description: p.desc, url: p.url }))],
 } : b);
 const crumbs = (jsonld.find((b: any) => b["@type"] === "BreadcrumbList") as any)?.itemListElement || [];
 
@@ -89,7 +95,7 @@ const h1 = H.h1;
               <p class="gd3-feat__meta">{feat.min + " min read"}<i aria-hidden="true"></i>By Monday Marketing Company</p>
               <div class="gd3-feat__act">
                 <a class="btn btn--primary" href={feat.href}>Read the guide<span class="arrow"></span></a>
-                <a class="btn btn--link" href={feat.tool.href}>{feat.tool.label}<span class="arrow"></span></a>
+                <a class="btn btn--link" href={feat.tool!.href}>{feat.tool!.label}<span class="arrow"></span></a>
               </div>
             </div>
           </article>
@@ -120,6 +126,7 @@ const h1 = H.h1;
           </div>
           <div class="gd3-shelf">
             {lib.map((g) => <Cover n={g.n} tag={g.tag} title={g.title} href={g.href} img={g.img} learn={g.learn} q={g.q} min={g.min} />)}
+            {cms.map((p) => <Cover n={cmsN[p.slug]} tag={p.tag} title={p.title} href={p.path} img={"/assets/" + p.hero.img} learn={p.desc} min={p.mins} />)}
           </div>
         </div>
       </section>

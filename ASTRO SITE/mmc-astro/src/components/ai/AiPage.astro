@@ -6,6 +6,7 @@ import Shell from "../Shell.astro";
 import "../../styles/ai-by-mmc.css";
 import pages from "../../data/ai/pages.json";
 import { fixDeep } from "../../lib/links";
+import { AGENCY_LINE, agencyTwin } from "../../lib/whitelabel";
 
 interface Props { pageKey: string }
 const { pageKey } = Astro.props;
@@ -15,10 +16,14 @@ const body = files[`./content/${pageKey}.html`];
 // The related strip sits just before the closing "talk" band.
 const talk = body.indexOf('id="talk"');
 const at = talk > 0 ? body.lastIndexOf("<section", talk) : -1;
+// "Are you an agency?" link to the white-label twin (src/lib/whitelabel.ts), as one more chip in the existing related row.
+const twin = agencyTwin(P.path);
+const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const agencyChip: [string, string][] = twin ? [[esc(`${AGENCY_LINE.lead} ${AGENCY_LINE.see} ${twin.anchor}`), twin.href]] : [];
 const related =
   '<section class="no-section-bg band band--white xlinks" aria-labelledby="xlinks-h"><div class="wrap"><div class="head"><span class="eyebrow">Related on the main site</span>' +
   '<h2 id="xlinks-h">Part of the wider <span class="serif">MMC offer.</span></h2></div>' +
-  '<div class="related">' + P.related.map((r: [string, string]) => `<a href="${r[1]}">${r[0]}</a>`).join("") + "</div></div></section>\n";
+  '<div class="related">' + [...P.related, ...agencyChip].map((r: [string, string]) => `<a href="${r[1]}">${r[0]}</a>`).join("") + "</div></div></section>\n";
 const html = at > 0 ? body.slice(0, at) + related + body.slice(at) : body + related;
 const slug = pageKey === "index" ? "ai-by-mmc" : "ai-" + pageKey;
 ---

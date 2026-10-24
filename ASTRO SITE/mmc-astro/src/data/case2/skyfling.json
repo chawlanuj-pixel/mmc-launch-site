@@ -9,15 +9,15 @@
   "Google search listing"
  ],
  "brief": [
-  "{name} is an app and web development company. This page covers its website: a homepage with a quote form, a build-day estimator tool and a showcase of past builds.",
+  "{name} is an app and web development company. We built its website: a homepage with a quote form, a build-day estimator tool and a showcase of past builds.",
   "The homepage puts the quote form beside the headline, and the estimator lets a visitor size a project before they talk to anyone. A LinkedIn ad and a Google search listing point at the same site."
  ],
  "showcases": [
   {
    "layout": "stage",
    "kicker": "Homepage",
-   "title": "Homepage with a lead form",
-   "text": "The headline, the proof points and the quote form sit on one screen, with the same structure on a phone.",
+   "title": "Homepage that leads to a quote",
+   "text": "The headline, the proof points and the free quote button sit on one screen, with the same structure on a phone.",
    "crops": [
     "web"
    ]
@@ -55,10 +55,11 @@
  },
  "action": "enquiry",
  "alts": {
-  "hero": "{name} website, ads and social creative shown together, client-approved artwork",
-  "web": "{name} website on a desktop screen, client-approved artwork",
-  "estimator": "{name} build-day estimator, client-approved artwork",
-  "work": "{name} work showcase, client-approved artwork",
-  "ads": "{name} Meta and Google Ads, client-approved artwork"
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: Launch your app or website in under 30 days, with three proof points and a Get my free quote button",
+  "estimator": "{name} build-day estimator",
+  "work": "{name} work showcase",
+  "ads": "{name} Meta and Google Ads",
+  "card": "{name} logo above a tablet, a laptop and a phone showing app dashboards"
  }
 }

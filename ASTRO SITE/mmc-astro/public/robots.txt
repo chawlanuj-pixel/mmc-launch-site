@@ -12,6 +12,8 @@ User-agent: Claude-SearchBot
 User-agent: Claude-User
 Allow: /
 Disallow: /admin/
+Disallow: /assessment/
+Disallow: /candidate/
 Disallow: /forms/
 
 # Training crawlers: allowed by default for brand visibility.

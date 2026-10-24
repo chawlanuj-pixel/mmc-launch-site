@@ -42,6 +42,7 @@ import { proofRows } from "../lib/proof";
 import AudienceHub from "../components/hubs2/AudienceHub.astro";
 import IndustriesHub from "../components/hubs2/IndustriesHub.astro";
 import { audienceFromHub } from "../components/hubs2/model";
+import { isWhiteLabel, WL_TOOLS_KEY, whiteLabelJsonld, whiteLabelGroups, agencyTwin } from "../lib/whitelabel";
 
 export async function getStaticPaths() {
   const mods = import.meta.glob("../data/hubs/*.json", { eager: true, import: "default" }) as Record<string, any>;
@@ -58,13 +59,23 @@ const updated: string = d.updated || "2026-10-09";
 if (H.key === "guides" && Array.isArray(H.stages)) {
   H.stages = H.stages.map((st: any) => { const g = GUIDES.find((x) => String(st.href).includes(x.slug)); return g ? { ...st, tag: g.short, href: g.href, img: st.img } : st; });
 }
-const jsonld = rewriteJsonld(d.jsonld, updated);
+// White-label pages (src/lib/whitelabel.ts): agency areaServed and audience on Service nodes, no D2C tools or guides, agency close.
+const WL = isWhiteLabel(d.path);
+const jsonld = WL ? whiteLabelJsonld(rewriteJsonld(d.jsonld, updated)) : rewriteJsonld(d.jsonld, updated);
 const seg = d.path.replace(/^\/|\/$/g, "").split("/");
-const toolsKey = seg[0] === "industries" ? "industries-" + seg[1] : seg[seg.length - 1];
-const C = closingFor(H.key, H.cta);
+const toolsKey = WL ? WL_TOOLS_KEY : seg[0] === "industries" ? "industries-" + seg[1] : seg[seg.length - 1];
 // Redesigned 7-section layout (src/components/svc2). A page uses it when src/data/svc2/<hub path with __>.json exists; otherwise the classic template renders.
 const svc2 = import.meta.glob("../data/svc2/*.json", { eager: true, import: "default" }) as Record<string, any>;
 const S2 = Object.entries(svc2).find(([k]) => k.endsWith("/" + seg.join("__") + ".json"))?.[1];
+// Closing band. White-label pages: optional svc2 `close.final` { eyebrow?, h2a, h2b, lede, button?: { label, href }, link?: { label, href } }
+// for an agency close the copywriter writes; until it is filled in, the page's own hub `cta` (already agency-facing) is used, as before.
+const F = WL && S2?.close?.final && S2.close.final.h2a && S2.close.final.h2b && S2.close.final.lede ? S2.close.final : undefined;
+const C = F ? { ...closingFor(H.key, { h2a: F.h2a, h2b: F.h2b, lede: F.lede }), ...(F.eyebrow ? { eyebrow: F.eyebrow } : {}), ...(F.link !== undefined ? { secondary: F.link } : {}) } : closingFor(H.key, H.cta);
+// A custom button must be a link (label + href); the booking button keeps the one site-wide booking label.
+const primary = F?.button?.label && F?.button?.href ? { label: F.button.label, href: F.button.href } : undefined;
+// White-label hub: its children in TABLE-C groups (body links). Direct service pages: the "Are you an agency?" twin link.
+const wlGroups = WL && d.path === "/white-label/" ? whiteLabelGroups() : [];
+const twin = agencyTwin(d.path);
 // Hub-page family (src/components/hubs2, hubs2.css). A page uses it when src/data/hubs2/<hub path with __>.json exists;
 // remove that file and the classic template below renders again. Title, meta, JSON-LD, FAQ and CTA still come from the hub JSON.
 const hubs2 = import.meta.glob("../data/hubs2/*.json", { eager: true, import: "default" }) as Record<string, any>;
@@ -89,8 +100,8 @@ const guideCards = (H.key === "guides" || H.key === "resources" || H.key === "in
           <LeakDiagram H={H} S={S2} />
           <Proof H={H} S={S2} />
           <First90Days H={H} S={S2} />
-          <FitAndQuestions H={H} S={S2} />
-          <Close H={H} S={S2} source={H.key} toolsKey={toolsKey} />
+          <FitAndQuestions H={H} S={S2} agency={twin} />
+          <Close H={H} S={S2} source={H.key} toolsKey={toolsKey} groups={wlGroups} />
         </Fragment>
       ) : (
         <Fragment>
@@ -103,7 +114,7 @@ const guideCards = (H.key === "guides" || H.key === "resources" || H.key === "in
         <WhyUs W={H.why} />
         {H.loop ? <LoopB H={H} /> : null}
         <Numbers N={H.numbers} />
-        <ProcessAccordion A={H.accordion} P={H.process} fallbackImg={H.why?.img || H.answer?.image} fallbackAlt={H.process ? H.process.h2a + " " + H.process.h2b + " Illustrative scene." : ""} />
+        <ProcessAccordion A={H.accordion} P={H.process} fallbackImg={H.why?.img || H.answer?.image} fallbackAlt={H.process ? H.process.h2a + " " + H.process.h2b : ""} />
         {H.who ? <WhoFor {...H.who} tone="paper" /> : null}
         {hasProof ? <BrandTiles {...H.proof} tone="white" /> : null}
         <TestimonialSlider />
@@ -115,7 +126,7 @@ const guideCards = (H.key === "guides" || H.key === "resources" || H.key === "in
         <LinkStrip id="read-the-method" eyebrow="Read the method" h1="Guides behind" h2="the numbers." cards={guideCards} bg={hasTools ? "paper" : "white"} all={{ href: "/guides/", label: "All guides" }} />
         </Fragment>
       )}
-      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} primary={primary} />
       </Fragment>
       )}
     </main>

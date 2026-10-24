@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "careers2/brief-review.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: two colleagues reviewing a printed brief.",
+    "alt": "Two colleagues reviewing a printed brief.",
     "facts": [
       {
         "t": "Defined services, your name.",
@@ -15,8 +15,8 @@
         "d": "You know what the client gets, line by line."
       },
       {
-        "t": "You set the price.",
-        "d": "Your client price is yours. We deliver to the scope."
+        "t": "Wholesale rate, your price.",
+        "d": "You buy each package wholesale and bill your client at the price you set."
       }
     ],
     "guideLabel": "Read the full guide",
@@ -46,7 +46,7 @@
       {
         "n": "04",
         "t": "Set your price and see your margin.",
-        "d": "You choose the client price. The gap between that and our delivery is yours, and you can see it per package."
+        "d": "You choose the client price. The gap between that and our wholesale rate is yours, and you can see it per package."
       }
     ],
     "illustrative": "Illustrative layout of a reseller partner desk: packages, clients, delivery and margin. Not a client account, no real figures."
@@ -161,7 +161,7 @@
         "d": "We sign the NDA and agree which packages you will resell first, with the service names you want to use.",
         "get": "A short list of packages with written scopes.",
         "img": "contact/call.jpg",
-        "alt": "Illustrative scene: a partner call about packages.",
+        "alt": "A partner call about packages.",
         "pos": "50% 50%"
       },
       {
@@ -170,7 +170,7 @@
         "d": "Your first client runs on one package, through the intake and the delivery tracker.",
         "get": "A pilot delivery to judge us on.",
         "img": "company/strategy.jpg",
-        "alt": "Illustrative scene: a partner meeting about a first client.",
+        "alt": "A partner meeting about a first client.",
         "pos": "50% 50%"
       },
       {
@@ -179,7 +179,7 @@
         "d": "Intake form, naming, reporting and escalation are written so every client follows the same path.",
         "get": "A reseller handbook for your sales team.",
         "img": "company/creative.jpg",
-        "alt": "Illustrative scene: sales material being laid out beside printed work.",
+        "alt": "Sales material being laid out beside printed work.",
         "pos": "50% 50%"
       },
       {
@@ -188,7 +188,7 @@
         "d": "More clients and packages join, with your sales material and our scopes kept in step.",
         "get": "A partner programme you can run repeatedly.",
         "img": "contact/growth.jpg",
-        "alt": "Illustrative scene: a growth projection on a laptop.",
+        "alt": "A growth projection on a laptop.",
         "pos": "50% 50%"
       }
     ]

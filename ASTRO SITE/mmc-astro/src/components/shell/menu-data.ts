@@ -191,7 +191,7 @@ export const menuLinks: MenuLink[] = [
     },
     {
       n: "08", label: "Careers", url: "Careers.html",
-      hint: "6 open senior roles · Apply with one page",
+      hint: "6 open senior roles · Apply with your CV",
       sub: [
         {
           name: "Performance", desc: "Run media at scale",
@@ -231,6 +231,6 @@ export const menuLinks: MenuLink[] = [
     },
     {
       n: "10", label: "Contact", url: "Contact.html",
-      hint: `${BOOK} · Visit Thane`
+      hint: `${BOOK} · Visit Mumbai`
     },
   ];

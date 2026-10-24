@@ -82,7 +82,7 @@
           "name": "Does MMC work from Indore?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Indore is one of the three cities we work from, with Thane and Mumbai. We serve brands across India from all three."
+            "text": "Yes. Indore is one of the two cities we work from, with Mumbai. We serve brands across India from both."
           }
         },
         {
@@ -90,7 +90,7 @@
           "name": "Is there an Indore street address I can visit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We do not list a street address for Indore on this site. The only street address we publish is our Thane head office. To meet, book a call and we will agree where and when."
+            "text": "We do not list a street address for Indore on this site. The only street address we publish is our postal address, 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. To meet, book a call and we will agree where and when."
           }
         },
         {
@@ -149,7 +149,7 @@
         "."
       ]
     ],
-    "sub": "Indore is one of the three cities we work from. Many businesses here sell or enrol well beyond the city, so we pair local profiles with enquiry paths and search that travel.",
+    "sub": "Indore is one of the two cities we work from. Many businesses here sell or enrol well beyond the city, so we pair local profiles with enquiry paths and search that travel.",
     "tiles": [
       {
         "img": "edu/search.jpg",
@@ -180,7 +180,7 @@
       "label": "In short",
       "lead": "An Indore business often serves buyers far beyond its own streets: a college enrols students from other towns, a food brand ships out of the city, a manufacturer is found by buyers elsewhere. The work is a profile for each place, an enquiry path that answers quickly on WhatsApp or by call, and pages and search that reach outward.",
       "hl": "a profile for each place, an enquiry path that answers quickly on WhatsApp or by call",
-      "who": "Monday Marketing Company (MMC) works from Indore, Thane and Mumbai and serves brands across India. We do not publish an Indore street address on this site. Our published address is the Thane head office, and meetings elsewhere are agreed on a call.",
+      "who": "Monday Marketing Company (MMC) works from Indore and Mumbai and serves brands across India. We do not publish an Indore street address on this site. Our published postal address is in Thane, and meetings are agreed on a call.",
       "points": [
         {
           "icon": "users",
@@ -211,13 +211,13 @@
             "The risk is a strong local name with a thin online presence. The profile is incomplete, enquiries come in by phone or WhatsApp with no one tracking them, and the site speaks only to the city."
           ],
           "img": "edu/crm.jpg",
-          "cap": "Illustrative scene: enquiries tracked in one place."
+          "cap": "Enquiries tracked in one place."
         },
         {
           "id": "indore-ways",
           "h": "How we work with an Indore business",
           "paras": [
-            "Indore is one of the three cities we work from. The first step is usually to find out where your buyers actually are."
+            "We work with Indore businesses on calls and shared reports. The first step is usually to find out where your buyers actually are."
           ],
           "table": {
             "caption": "Where Indore businesses find buyers",
@@ -251,7 +251,7 @@
           },
           "callout": {
             "title": "Meeting in person.",
-            "text": "We do not publish an Indore street address here. <a href=\"/contact/\">Book a call</a> and we will agree where to meet. Our <a href=\"/locations/thane/\">Thane head office</a> has a published address."
+            "text": "We do not publish an Indore street address here. <a href=\"/contact/\">Book a call</a> and we will agree where to meet. Our postal address is in <a href=\"/locations/thane/\">Thane</a>."
           }
         }
       ]
@@ -266,37 +266,37 @@
           "t": "Campus, branch and plant profiles",
           "d": "Each place claimed, verified and completed, in plain words.",
           "img": "orm/profile.jpg",
-          "alt": "Campus, branch and plant profiles: illustrative scene"
+          "alt": "Campus, branch and plant profiles"
         },
         {
           "t": "Enquiry path",
           "d": "A WhatsApp or call path so every enquiry is answered and followed up.",
           "img": "leadgen/attract.jpg",
-          "alt": "Enquiry path: illustrative scene"
+          "alt": "Enquiry path"
         },
         {
           "t": "Pages for Indore and beyond",
           "d": "An Indore page, plus pages for the other places your buyers come from.",
           "img": "web/seo.jpg",
-          "alt": "Pages for Indore and beyond: illustrative scene"
+          "alt": "Pages for Indore and beyond"
         },
         {
           "t": "Search and ads",
           "d": "Campaigns that reach buyers outside the city and tie to real enquiries.",
           "img": "google/feed.jpg",
-          "alt": "Search and ads: illustrative scene"
+          "alt": "Search and ads"
         },
         {
           "t": "Review handling",
           "d": "Requests and replies for each place, with problems escalated.",
           "img": "orm/reply.jpg",
-          "alt": "Review handling: illustrative scene"
+          "alt": "Review handling"
         },
         {
           "t": "Monthly report",
           "d": "Calls, directions, enquiries and where they came from.",
           "img": "orm/report.jpg",
-          "alt": "Monthly report: illustrative scene"
+          "alt": "Monthly report"
         }
       ]
     },
@@ -306,11 +306,11 @@
       "h2b": "for local marketing.",
       "lede": "A local name travels further with the right paper trail.",
       "img": "web/crm.jpg",
-      "alt": "Why Indore businesses choose MMC for local marketing. Illustrative scene.",
+      "alt": "Why Indore businesses choose MMC for local marketing.",
       "items": [
         {
           "t": "A team that works from Indore",
-          "d": "Indore is one of the three cities we work from."
+          "d": "Meetings in the city are arranged on a call, and most work runs remotely."
         },
         {
           "t": "Enquiry-first",
@@ -331,7 +331,7 @@
       "h2a": "How an Indore engagement runs,",
       "h2b": "step by step.",
       "img": "edu/followup.jpg",
-      "alt": "How an Indore engagement runs, step by step. Illustrative scene.",
+      "alt": "How an Indore engagement runs, step by step.",
       "items": [
         {
           "t": "Find where buyers are",
@@ -356,7 +356,7 @@
       "h2b": "that reach beyond Indore.",
       "good": {
         "t": "You have a campus, branch or plant here and buyers in other towns too.",
-        "why": "This suits colleges and coaching centres, food and beverage brands and manufacturers."
+        "why": "This suits colleges and coaching centres (see <a href=\"/industries/education/colleges/\">college admission marketing</a>), food and beverage brands and manufacturers."
       },
       "not": {
         "t": "You are online only, with no place and no local buyers.",
@@ -377,7 +377,7 @@
         },
         {
           "n": "Thane",
-          "d": "Our head office, with a published address.",
+          "d": "A service area, served by our Mumbai team.",
           "img": "contact/meeting.jpg",
           "href": "/locations/thane/",
           "link": "See Thane"
@@ -419,11 +419,11 @@
     "faq": [
       {
         "q": "Does MMC work from Indore?",
-        "a": "Yes. Indore is one of the three cities we work from, with Thane and Mumbai. We serve brands across India from all three."
+        "a": "Yes. Indore is one of the two cities we work from, with Mumbai. We serve brands across India from both."
       },
       {
         "q": "Is there an Indore street address I can visit?",
-        "a": "We do not list a street address for Indore on this site. The only street address we publish is our Thane head office. To meet, book a call and we will agree where and when."
+        "a": "We do not list a street address for Indore on this site. The only street address we publish is our postal address, 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. To meet, book a call and we will agree where and when."
       },
       {
         "q": "Can you work with an Indore business entirely online?",

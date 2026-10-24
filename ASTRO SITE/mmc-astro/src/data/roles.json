@@ -5,12 +5,12 @@
     "rolePagesUse": "stages",
     "variants": {
       "conversation": {
-        "faq": "Four steps: one page, a conversation with whoever runs the discipline, one paid piece of real work scoped to a day, and a meeting with the rest of the team before anyone decides.",
+        "faq": "Four steps: your CV and a short note, a conversation with whoever runs the discipline, one paid piece of real work scoped to a day, and a meeting with the rest of the team before anyone decides.",
         "steps": [
           {
             "img": "company/onepage.jpg",
-            "h": "One page",
-            "d": "What you would own, what you would change in ninety days, and what you need from us. No resume, no portal."
+            "h": "Your CV and a note",
+            "d": "Apply with your CV (file or link) plus a short note: what you would own, what you would change in the first ninety days, and what you need from us."
           },
           {
             "img": "company/call.jpg",

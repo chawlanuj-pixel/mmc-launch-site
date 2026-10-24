@@ -19,7 +19,7 @@ const pageMap = new Map();
 
 for (const f of files) {
   const path = pathOf(f);
-  if (path.startsWith("/admin/")) continue;
+  if (path.startsWith("/admin/") || path.startsWith("/assessment/") || path.startsWith("/candidate/")) continue;   // private tool pages, not marketing pages
   const h = readFileSync(f, "utf8");
   const noindex = /<meta name="robots" content="[^"]*noindex/.test(h);
   // Private pricing pages are intentionally noindex (and absent from the sitemap): require the full directive, skip the hreflang rule below.
@@ -38,7 +38,11 @@ for (const f of files) {
     if (!canon.endsWith("/")) fail(path, "canonical has no trailing slash");
   }
   pageMap.set(SITE + path, { noindex, canon });
-  if (!noindex && !/hreflang="en-IN" href="[^"]+"/.test(h)) fail(path, "missing hreflang en-IN");
+  // /white-label/* uses plain "en" (owner decision 22 Oct 2026, BaseLayout); everything else stays en-IN. html lang must agree with hreflang.
+  const wantLang = /^\/white-label(\/|$)/.test(path) ? "en" : "en-IN";
+  if (!noindex && !new RegExp(`hreflang="${wantLang}" href="[^"]+"`).test(h)) fail(path, `missing hreflang ${wantLang}`);
+  if (!noindex && !new RegExp(`<html lang="${wantLang}"[\\s>]`).test(h)) fail(path, `html lang is not ${wantLang}`);
+  if (wantLang === "en" && /og:locale" content="en_IN"|hreflang="en-IN"/.test(h)) fail(path, "white-label page still carries an India locale tag");
   [...h.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].forEach((m, i) => {
     try { JSON.parse(m[1]); } catch (e) { fail(path, `JSON-LD block ${i} does not parse`); }
   });

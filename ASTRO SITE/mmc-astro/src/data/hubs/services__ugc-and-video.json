@@ -112,7 +112,7 @@
           "name": "Who is UGC and video production for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "D2C brands that run paid ads, mostly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+            "text": "D2C brands that run paid ads, mostly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on hooks and product demos for ads, B2B on explainers that build trust, education on student and campus stories."
           }
         },
         {
@@ -326,7 +326,7 @@
       },
       {
         "q": "Who is UGC and video production for?",
-        "a": "D2C brands that run paid ads, mostly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+        "a": "D2C brands that run paid ads, mostly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on hooks and product demos for ads, B2B on explainers that build trust, education on student and campus stories."
       },
       {
         "q": "What do you need from us?",
@@ -391,37 +391,37 @@
           "t": "One-idea brief",
           "d": "A short brief built on one message, so every video points the same way.",
           "img": "ugc/brief.jpg",
-          "alt": "One-idea brief: illustrative scene"
+          "alt": "One-idea brief"
         },
         {
           "t": "Real creators",
           "d": "People who look and speak like your buyers, not stock actors.",
           "img": "ugc/shoot.jpg",
-          "alt": "Real creators: illustrative scene"
+          "alt": "Real creators"
         },
         {
           "t": "Platform edits",
           "d": "Cuts, captions and hooks edited for the platform and placement.",
           "img": "ugc/edit.jpg",
-          "alt": "Platform edits: illustrative scene"
+          "alt": "Platform edits"
         },
         {
           "t": "Hook and format tests",
           "d": "Variations tested to learn which opening and format hold attention.",
           "img": "ugc/test.jpg",
-          "alt": "Hook and format tests: illustrative scene"
+          "alt": "Hook and format tests"
         },
         {
           "t": "Product and explainer video",
           "d": "Clear demos and explainers that answer buying questions.",
           "img": "ugc/refresh.jpg",
-          "alt": "Product and explainer video: illustrative scene"
+          "alt": "Product and explainer video"
         },
         {
           "t": "Refresh plan",
           "d": "New versions scheduled before an ad wears out.",
           "img": "services/creative.jpg",
-          "alt": "Refresh plan: illustrative scene"
+          "alt": "Refresh plan"
         }
       ]
     },
@@ -431,7 +431,7 @@
       "h2b": "with MMC.",
       "lede": "We make video that the media team can test and learn from.",
       "img": "ugc/edit.jpg",
-      "alt": "Why brands make video with MMC. Illustrative scene.",
+      "alt": "Why brands make video with MMC.",
       "items": [
         {
           "t": "Made for the ad account",

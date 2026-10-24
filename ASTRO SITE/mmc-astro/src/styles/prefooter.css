@@ -76,3 +76,5 @@
 /* The band above is the one booking action on a page. Where a page has it, the footer keeps only "Send a brief"
    (pages without a band, such as contact, role and legal pages, keep the footer's own Book button). */
 body:has(.pfc) .ft__cta { display: none; }
+/* Same rule for the slim-hubs footer (footer3.css, 2026-10-13): it keeps "Get my free audit". */
+body:has(.pfc) .ft3__book { display: none; }

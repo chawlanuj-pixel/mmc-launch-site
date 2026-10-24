@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "cro/pdp.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a product page under review.",
+    "alt": "A product page under review.",
     "facts": [
       {
         "t": "Find the leaks.",
@@ -119,7 +119,7 @@
         "d": "Funnel data, session behaviour and form analytics show where visitors leave and what each leak costs.",
         "get": "A ranked list of leaks by cost and ease of fix.",
         "img": "cro/leaks.jpg",
-        "alt": "Illustrative scene: funnel drop-off being reviewed.",
+        "alt": "Funnel drop-off being reviewed.",
         "pos": "50% 50%"
       },
       {
@@ -128,7 +128,7 @@
         "d": "Product pages, cart, checkout or lead forms change one test at a time.",
         "get": "One clear change, with a reason behind it.",
         "img": "cro/pdp.jpg",
-        "alt": "Illustrative scene: a product page being reworked.",
+        "alt": "A product page being reworked.",
         "pos": "50% 50%"
       },
       {
@@ -137,7 +137,7 @@
         "d": "Tests run long enough to be trustworthy, against the current page.",
         "get": "Changes proven against the current page.",
         "img": "cro/test.jpg",
-        "alt": "Illustrative scene: an A/B test being read.",
+        "alt": "An A/B test being read.",
         "pos": "50% 50%"
       },
       {
@@ -146,7 +146,7 @@
         "d": "Only winners stay, and results feed the next round and your ads.",
         "get": "A higher share of visitors who buy or enquire.",
         "img": "cro/forms.jpg",
-        "alt": "Illustrative scene: a short lead form on a phone.",
+        "alt": "A short lead form on a phone.",
         "pos": "50% 50%"
       }
     ]

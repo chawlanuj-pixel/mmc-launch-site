@@ -78,12 +78,12 @@
       "id": "sprnt",
       "image": "work2/sprnt-case.jpg",
       "ratio": "3 / 2",
-      "scope": "An ecommerce storefront for {name} kids' activewear, from the homepage through to a product detail page, with matching social creative and ads.",
+      "scope": "Launching {name}, a kids' activewear label from the founders of Aww Baby, inside the Aww Baby store: brand marketing, store pages, social, ads and AI-assisted shoots.",
       "shows": [
-        "Homepage and category page",
-        "Mobile product detail page",
-        "Social creative tiles",
-        "Meta ad and Google Shopping ad"
+        "Brand page and fabric story",
+        "Collection and product pages",
+        "Cart with a first-order offer",
+        "Social tiles, Meta ad and Google Shopping ad"
       ],
       "timeframe": null,
       "basis": null,
@@ -186,12 +186,12 @@
       "id": "awwbaby",
       "image": "work2/awwbaby-case.jpg",
       "ratio": "16 / 9",
-      "scope": "An ecommerce storefront for {name} spanning the homepage, category pages for activewear, feeding, toys, bath and accessories, and a product detail page.",
+      "scope": "A custom-built Shopify store for {name}: homepage, category listings, product pages and a cart with GoKwik checkout.",
       "shows": [
-        "Homepage and category tiles",
-        "Mobile product detail page",
-        "Social creative tiles",
-        "Meta ad and Google search ad"
+        "Homepage and category listings",
+        "Product page",
+        "Cart and GoKwik checkout",
+        "Social tiles, Meta ad and Google search ad"
       ],
       "timeframe": null,
       "basis": null,

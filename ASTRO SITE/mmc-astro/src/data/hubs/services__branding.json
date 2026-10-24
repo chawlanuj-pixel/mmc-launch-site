@@ -112,7 +112,7 @@
           "name": "Who is branding for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Founders and teams who want a brand that is clear and consistent. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+            "text": "Founders and teams who want a brand that is clear and consistent. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on standing out on shelf and screen, B2B on looking as credible as the business is, education on a calm, trusted face for families."
           }
         },
         {
@@ -319,7 +319,7 @@
       },
       {
         "q": "Who is branding for?",
-        "a": "Founders and teams who want a brand that is clear and consistent. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+        "a": "Founders and teams who want a brand that is clear and consistent. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on standing out on shelf and screen, B2B on looking as credible as the business is, education on a calm, trusted face for families."
       },
       {
         "q": "What do you need from us?",
@@ -384,37 +384,37 @@
           "t": "Positioning",
           "d": "Who the brand is for, what it stands for and how it differs from others on the shelf or in search.",
           "img": "brand/position.jpg",
-          "alt": "Positioning: illustrative scene"
+          "alt": "Positioning"
         },
         {
           "t": "Naming",
           "d": "Names tested for sound, meaning, spelling and availability.",
           "img": "brand/naming.jpg",
-          "alt": "Naming: illustrative scene"
+          "alt": "Naming"
         },
         {
           "t": "Logo and identity",
           "d": "A mark, colour and type system that works from an app icon to a hoarding.",
           "img": "brand/logo.jpg",
-          "alt": "Logo and identity: illustrative scene"
+          "alt": "Logo and identity"
         },
         {
           "t": "Brand voice",
           "d": "How the brand writes and speaks, with examples for ads, emails and the website.",
           "img": "brand/voice.jpg",
-          "alt": "Brand voice: illustrative scene"
+          "alt": "Brand voice"
         },
         {
           "t": "Brand guidelines",
           "d": "A short, usable guide so every team and vendor applies the brand the same way.",
           "img": "brand/guidelines.jpg",
-          "alt": "Brand guidelines: illustrative scene"
+          "alt": "Brand guidelines"
         },
         {
           "t": "Launch assets",
           "d": "Social, packaging and web applications that put the new identity into use.",
           "img": "services/brand.jpg",
-          "alt": "Launch assets: illustrative scene"
+          "alt": "Launch assets"
         }
       ]
     },
@@ -424,7 +424,7 @@
       "h2b": "with MMC.",
       "lede": "Our branding is made to perform in ads, on shelves and on screens.",
       "img": "brand/logo.jpg",
-      "alt": "Why brands build with MMC. Illustrative scene.",
+      "alt": "Why brands build with MMC.",
       "items": [
         {
           "t": "Strategy first",

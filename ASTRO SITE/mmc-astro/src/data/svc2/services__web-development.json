@@ -4,7 +4,7 @@
     "label": "In short",
     "img": "web/build.jpg",
     "pos": "50% 50%",
-    "alt": "Illustrative scene: a website being built.",
+    "alt": "A website being built.",
     "facts": [
       {
         "t": "Built for the buyer.",
@@ -126,7 +126,7 @@
         "d": "Structure and messaging are planned around who decides and what they need to see.",
         "get": "A sitemap and message plan you have signed off.",
         "img": "web/plan.jpg",
-        "alt": "Illustrative scene: a site being planned page by page.",
+        "alt": "A site being planned page by page.",
         "pos": "50% 50%"
       },
       {
@@ -135,7 +135,7 @@
         "d": "Clean design and development on a content system your team can update.",
         "get": "A site your team can run without a developer.",
         "img": "web/build.jpg",
-        "alt": "Illustrative scene: a website being built.",
+        "alt": "A website being built.",
         "pos": "50% 50%"
       },
       {
@@ -144,7 +144,7 @@
         "d": "Speed, accessibility and search foundations are built in, not added later.",
         "get": "A site that loads quickly and can be found.",
         "img": "web/speed.jpg",
-        "alt": "Illustrative scene: a website being tuned for speed.",
+        "alt": "A website being tuned for speed.",
         "pos": "50% 50%"
       },
       {
@@ -153,7 +153,7 @@
         "d": "Forms go to your CRM and tracking is checked before launch.",
         "get": "Enquiries you can follow from first click.",
         "img": "web/crm.jpg",
-        "alt": "Illustrative scene: forms connected to a CRM.",
+        "alt": "Forms connected to a CRM.",
         "pos": "50% 50%"
       }
     ]
