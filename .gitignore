@@ -24,9 +24,26 @@ node_modules/
 .env.*
 .review-tmp/
 
-# Server-only form secrets (reCAPTCHA secret key). Keep out of git.
+# Server-only form secrets (reCAPTCHA secret key). Keep out of git: EVERY copy, in public/, dist/, dist-check/, backups and any unpacked package.
 ASTRO SITE/mmc-astro/public/forms/config.php
+**/forms/config.php
+# The real private config of the Command Centre and any file called config.php next to a secrets file
+mmc-private/
+**/mmc-private/
+# Upload packages and database dumps: built with tools/make-upload-zip.sh, which checks them for secrets; never commit them
+*.zip
+*.sql
+*.sqlite
+error_log
 
 # Local safety backups and the stale V2 snapshot (the live project is ASTRO SITE/mmc-astro)
 ASTRO SITE/mmc-astro-backup-*/
 Astro V2/
+
+# Build output: rebuilt from source on every build (the deploy pipeline builds it in CI)
+ASTRO SITE/mmc-astro/dist/
+ASTRO SITE/mmc-astro/dist-check/
+# Local snapshot folders (backup-before-major-changes rule); they stay on disk, never in git
+ASTRO SITE/backups/
+ASTRO SITE/admin-ui-backup-*/
+ASTRO SITE/mmc-astro/tools/backup/
