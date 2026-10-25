@@ -1,0 +1,53 @@
+{
+ "title": "About MMC: Built for How Modern Brands Actually Grow",
+ "description": "Most teams still sell campaigns while buying behaviour has moved on. We built a growth company around connected systems and one senior team.",
+ "ogTitle": "Built for the way modern brands actually grow",
+ "ogDescription": "Not another agency. A growth company shaped around how digital behaviour actually works today.",
+ "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+ "robots": null,
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/About.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "About",
+     "item": "https://www.mondaymarketing.company/About.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/About.html#webpage",
+   "url": "https://www.mondaymarketing.company/About.html",
+   "name": "About MMC: Built for How Modern Brands Actually Grow",
+   "description": "Most teams still sell campaigns while buying behaviour has moved on. We built a growth company around connected systems and one senior team.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/About.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ]
+}

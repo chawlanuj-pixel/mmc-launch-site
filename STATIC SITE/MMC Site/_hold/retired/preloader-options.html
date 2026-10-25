@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MMC Preloader Options</title>
+<style>
+:root{--blue:#1D4ED8;--ink:#0F1E5E;--yellow:#FFC528;--bg:#F1F5FE;--card:#fff;--line:#DCE4F7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito","Helvetica Neue",Arial,sans-serif}
+header{padding:40px 5vw 8px}
+h1{margin:0 0 6px;font:800 clamp(28px,4vw,44px)/1.05 "Raleway","Helvetica Neue",sans-serif;letter-spacing:-.02em}
+header p{margin:0;max-width:62ch;color:#2E3849}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:18px 5vw}
+.seg{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}
+.seg button{border:0;background:transparent;padding:9px 18px;border-radius:999px;font:700 14px inherit;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--blue);color:#fff}
+.hint{font-size:13px;color:#5B6B85}
+.sec{margin:26px 5vw 0;font:800 24px "Raleway",sans-serif;letter-spacing:-.01em}
+.sec span{background:var(--yellow);border-radius:999px;font:800 11px inherit;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;vertical-align:middle;margin-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:22px;padding:6px 5vw 60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:14px;box-shadow:0 10px 30px rgba(15,30,94,.06)}
+.card h2{margin:0;font:800 20px "Raleway",sans-serif}
+.tag{display:inline-block;background:var(--yellow);color:var(--ink);font:800 11px inherit;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:4px 10px;margin-right:8px}
+.card p{margin:0;font-size:14px;color:#2E3849;min-height:3.9em}
+.stage{border:1px solid #C9D5F2;position:relative;background:#040816;border-radius:14px;overflow:hidden;display:grid;place-items:center;width:100%;aspect-ratio:16/10}
+.stage.phone{aspect-ratio:9/16;max-width:300px;margin:0 auto}
+.stage iframe{position:absolute;left:0;top:0;border:0;transform-origin:0 0;background:#F1F5FE}
+.stage .idle{position:absolute;inset:0;display:grid;place-items:center;color:#8FA2CE;font-size:14px;pointer-events:none}
+.row{display:flex;gap:10px}
+.play{flex:1;background:var(--blue);color:#fff;border:0;border-radius:999px;padding:13px 18px;font:800 15px inherit;cursor:pointer}
+.play:hover{background:#1a44bd}
+.open{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:13px 18px;font:700 14px inherit;text-decoration:none;display:grid;place-items:center}
+</style></head>
+<body>
+<header>
+  <h1>MMC preloader options</h1>
+  <p>Twelve pure-vector animations (SVG + code, no video): five on white, seven on navy. The performance-maths family is Compound, Funnel, Dial and Reach. Every one from Option 2 on ends in the same smooth lift into the page. Press Play on a card. Use the switch for phone or desktop framing.</p>
+</header>
+<div class="bar">
+  <div class="seg" role="group" aria-label="Device"><button id="bDesk" aria-pressed="true">Desktop</button><button id="bPhone" aria-pressed="false">Phone</button></div>
+  <span class="hint">“Open full” runs it at your real window size (add the phone via Chrome DevTools if you like).</span>
+</div>
+<h2 class="sec">White backgrounds <span>new</span></h2>
+<div class="grid" id="gridW"></div>
+<h2 class="sec">Navy backgrounds</h2>
+<div class="grid" id="grid"></div>
+<script>
+var OPTS=[
+ {n:'Option 1',name:'Blueprint',tag:'Reference',dir:'v1-blueprint',blurb:'Grid, compass, pen-traced M. The first direction. Reads technical, ending is rough. Kept for the record.'},
+ {n:'Option 2',name:'Slam',tag:'Bold',dir:'v2-slam',blurb:'Blue blocks, the exact pieces of the M, slam together. The sun pops, the rays fire, the words punch in. Loud and rhythmic.'},
+ {n:'Option 3',name:'Dawn',tag:'Elegant',dir:'v3-dawn',blurb:'A lone sun rises over a hairline, releases one gold ring, and the ring paints the M in. Calm and premium.'},
+ {n:'Option 4',name:'Compound',tag:'Performance maths',dir:'v4-compound',blurb:'Bars compound to 10x under a trend line, then surge into the M’s skyline. The sun rises on top. Reads as results climbing.'},
+ {n:'Option 5',name:'Funnel',tag:'Performance maths',dir:'v5-funnel',blurb:'A leaky conversion funnel drops from 100% to 10%. Then it seals, fuses into the M, and the tag counts back up to 100%. Crisp and rhythmic.'},
+ {n:'Option 6',name:'Dial',tag:'Performance maths',dir:'v6-dial',blurb:'Five ROAS-gauge arcs sweep from 1.0x to 5.0x, surge outward and fuse into the M. A comet circles the arch and lights the rays. Flowing and curved.'},
+ {n:'Option 7',name:'Reach',tag:'Performance maths',dir:'v7-reach',blurb:'Audience dots stream in, land on a grid and form a halftone M while reach counts to 1.0M. Then it swells solid and the sun rises. Precise and cumulative.'}
+];
+var WOPTS=[
+ {n:'White 4',name:'Compound',tag:'Performance maths',dir:'w4-compound',blurb:'Your favourite on white. Bars compound to 10x under an amber trend line, surge into the M and the sun rises in a white arch, exactly like the real logo.'},
+ {n:'White 2',name:'Slam',tag:'Bold',dir:'w2-slam',blurb:'Blue blocks slam onto white with flat ink shadows that close as they land. The sun pops, rays fire, the words punch in.'},
+ {n:'White 3',name:'Dawn',tag:'Elegant',dir:'w3-dawn',blurb:'A bright sky: a lone sun rises over an ink hairline, an amber ring paints the M in. Calm and premium.'},
+ {n:'White 5',name:'Funnel',tag:'Performance maths',dir:'w5-funnel',blurb:'A leaky funnel with amber-outlined audience dots drops 100% to 10%, then seals into the M.'},
+ {n:'White 7',name:'Reach',tag:'Performance maths',dir:'w7-reach',blurb:'Audience dots land on a grid, form a crisp blue halftone M on white while reach counts to 1.0M.'}
+];
+var mode='desk',grid=document.getElementById('grid'),gridW=document.getElementById('gridW');
+function fit(stage){var f=stage.querySelector('iframe');if(!f)return;var w=mode==='phone'?390:1440,h=mode==='phone'?844:900;
+ f.style.width=w+'px';f.style.height=h+'px';f.style.transform='scale('+(stage.clientWidth/w)+')'}
+function card(o,host){
+ var c=document.createElement('div');c.className='card';
+ c.innerHTML='<div><span class="tag">'+o.tag+'</span><h2 style="display:inline">'+o.n+' · '+o.name+'</h2></div><p>'+o.blurb+'</p>'+
+ '<div class="stage"><div class="idle">Press Play</div></div>'+
+ '<div class="row"><button class="play">▶ Play</button><a class="open" target="_blank" rel="noopener" href="preloader-versions/'+o.dir+'/index.html?preloader=force">Open full</a></div>';
+ var st=c.querySelector('.stage');
+ c.querySelector('.play').onclick=function(){
+  var old=st.querySelector('iframe');if(old)old.remove();
+  var f=document.createElement('iframe');f.title=o.name;f.setAttribute('scrolling','no');
+  f.src='preloader-versions/'+o.dir+'/index.html?preloader=force&_='+Date.now();
+  st.appendChild(f);st.querySelector('.idle').style.display='none';fit(st)};
+ (host||grid).appendChild(c);return st}
+var stages=WOPTS.map(function(o){return card(o,gridW)}).concat(OPTS.map(function(o){return card(o,grid)}));
+function setMode(m){mode=m;
+ document.getElementById('bDesk').setAttribute('aria-pressed',m==='desk');
+ document.getElementById('bPhone').setAttribute('aria-pressed',m==='phone');
+ stages.forEach(function(s){s.classList.toggle('phone',m==='phone');fit(s)})}
+document.getElementById('bDesk').onclick=function(){setMode('desk')};
+document.getElementById('bPhone').onclick=function(){setMode('phone')};
+addEventListener('resize',function(){stages.forEach(fit)});
+</script>
+</body></html>

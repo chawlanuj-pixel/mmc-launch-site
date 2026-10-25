@@ -1,0 +1,62 @@
+---
+// "Our expertise": six disciplines as cards with static 3D artwork. Pure HTML + CSS; one tiny script handles the
+// once-only entrance. Visible order = DOM order (row by row): 01 | 04, 02 | 05, 03 | 06. Numbers stay with the service.
+import { href } from "../../lib/links";
+import "../../styles/disciplines.css";
+
+const SERVICES = [
+  { n: "01", k: "performance", t: "Performance Media", d: "Turn attention into qualified demand.", caps: ["Meta", "Google", "Amazon", "Lead generation"], h: "performance-marketing.html", s: 1.04 },
+  { n: "04", k: "conversion", t: "Conversion Technology", d: "Build digital experiences that convert.", caps: ["Website Development", "App Development", "CRO", "Automations"], h: "conversion-rate-optimisation.html", s: 1.02 },
+  { n: "02", k: "content", t: "Content Marketing", d: "Content that earns attention and drives action.", caps: ["Performance creatives", "Social media", "UGC", "Emailers"], h: "ugc-and-video.html", s: 1.04 },
+  { n: "05", k: "brand", t: "Brand & Packaging", d: "Make your brand unmistakable.", caps: ["Logo Design", "Packaging", "UI/UX", "Design & Communication"], h: "branding.html", s: 1.06 },
+  { n: "03", k: "retention", t: "Retention & Follow-up", d: "Give customers a reason to come back.", caps: ["Email", "WhatsApp", "Loyalty", "Follow-up"], h: "retention-marketing.html", s: 1.04 },
+  { n: "06", k: "organic", t: "Organic Traffic", d: "Get discovered in search and AI answers.", caps: ["SEO", "AEO", "GEO"], h: "seo.html", s: 1.04 },
+];
+const arrow = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>`;
+---
+<section class="dz no-section-bg" id="services" aria-labelledby="dz-h">
+  <div class="dz__wrap">
+    <header class="dz__head" data-dz-reveal>
+      <p class="dz__eyebrow">Our expertise</p>
+      <h2 id="dz-h">Every discipline.<br /><em>One growth partner.</em></h2>
+      <p class="dz__sub">Creative, media and technology. Working together.</p>
+    </header>
+    <ul class="dz__grid">
+      {SERVICES.map((s, i) => (
+        <li class="dz__item" data-dz-reveal style={`--i:${i}`}>
+          <a class="dz__card" href={href(s.h)} aria-label={`${s.t}: ${s.d}`} style={`--s:${s.s}`}>
+            <span class="dz__num" aria-hidden="true">{s.n}</span>
+            <span class="dz__arrow" aria-hidden="true"><Fragment set:html={arrow} /></span>
+            <span class="dz__copy">
+              <b class="dz__title">{s.t}</b>
+              <span class="dz__desc">{s.d}</span>
+              <span class="dz__caps">{s.caps.map((c) => <span>{c}</span>)}</span>
+            </span>
+            <span class="dz__art" aria-hidden="true">
+              <picture>
+                <source type="image/webp" srcset={`/assets/disciplines/${s.k}.webp`} />
+                <img src={`/assets/disciplines/${s.k}.png`} alt="" width="720" height="720" loading="lazy" decoding="async" />
+              </picture>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+<script is:inline>
+  (function () {
+    var sec = document.getElementById("services");
+    if (!sec || !("IntersectionObserver" in window)) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var items = sec.querySelectorAll("[data-dz-reveal]");
+    if (!items.length) return;
+    sec.classList.add("dz--pre");
+    var done = function () { sec.classList.remove("dz--pre"); sec.classList.add("dz--in"); };
+    var io = new IntersectionObserver(function (es) {
+      if (es.some(function (e) { return e.isIntersecting; })) { io.disconnect(); done(); }
+    }, { threshold: 0.12 });
+    io.observe(sec);
+    setTimeout(done, 4000); /* never leave content hidden */
+  })();
+</script>

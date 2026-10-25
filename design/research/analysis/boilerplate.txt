@@ -1,0 +1,96 @@
+
+## education (10 pages)
+slug                                                           lines grpDup% siteDup% uniqueWords
+industries_education                                               2      0%       0%          92
+industries_education_edtech                                      101     16%      18%        1554
+industries_education_edtech_social_media                          76     21%      21%        1130
+industries_education_higher_education                             62     32%      32%        1277
+industries_education_higher_education_education_marketing_roi     58     33%      34%        1207
+industries_education_higher_education_social_media               100     21%      21%        2601
+industries_education_higher_education_statistics                 104     19%      19%        1271
+industries_education_online_education                             65     20%      20%        1126
+industries_education_private_schools                              78     21%      23%        1564
+industries_education_technical_schools                            60     27%      27%        1489
+
+## locations (10 pages)
+slug                                                           lines grpDup% siteDup% uniqueWords
+locations                                                          6      0%       0%          44
+locations_dallas_tx_ppc                                           49     18%      18%         745
+locations_denver_co_ppc                                           55     18%      18%        1020
+locations_ft_myers_fl                                             50     18%      22%         832
+locations_harrisburg_pa                                           52     15%      19%         834
+locations_jacksonville_fl_ppc                                     53     15%      19%         959
+locations_lancaster_pa                                            56     18%      21%         915
+locations_norfolk_va                                              48     15%      15%         791
+locations_tampa_fl                                                56     16%      20%         840
+locations_york_pa                                                 49     18%      20%         804
+
+## industry_x_service (23 pages)
+slug                                                           lines grpDup% siteDup% uniqueWords
+industries_education_edtech_social_media                          76     18%      21%        1130
+industries_education_higher_education_social_media               100     15%      21%        2601
+industries_finance_accountants_ppc                                76     20%      21%        1256
+industries_finance_banks_ppc                                      55     29%      33%        1098
+industries_food_beverage_restaurants_web_design                  104     10%      26%        2481
+industries_franchises_co_ops_social_media                         85     28%      33%        1410
+industries_franchises_social_media                               174     14%      14%        3220
+industries_heavy_equipment_forklift_dealers_ppc                   72     32%      35%        1194
+industries_heavy_equipment_heavy_equipment_ppc                   163     14%      17%        2157
+industries_home_services_garage_doors_ppc                        111     14%      28%        1188
+industries_home_services_landscaping_ppc                          34     41%      41%         439
+industries_home_services_window_door_companies_ppc                50     14%      14%         680
+industries_insurance_health_insurance_ppc                         93      9%      24%        2041
+industries_legal_law_firms_video_marketing                        72     14%      35%        1313
+industries_local_consumer_services_assisted_and_senior_living_    82     18%      20%        1347
+industries_local_consumer_services_florist_social_media           86     23%      27%        1331
+industries_local_consumer_services_water_treatment_social_medi   102     21%      22%        2022
+industries_professional_services_architecture_social_media        86     12%      28%        1035
+industries_real_estate_property_management_ppc                    97     24%      30%        1735
+industries_real_estate_property_management_social_media           78     33%      33%        1296
+industries_recreation_entertainment_campgrounds_rv_parks_ppc      87     11%      24%        1541
+industries_retail_ecommerce_ecommerce_web_design                 183      1%      13%        3505
+industries_tourism_hospitality_hospitality_social_media           73     21%      44%        1259
+
+## group_hubs (27 pages)
+slug                                                           lines grpDup% siteDup% uniqueWords
+industries_automotive_transportation                               2      0%       0%          66
+industries_dealers_distributors                                   47     26%      53%         388
+industries_education                                               2      0%       0%          92
+industries_education_edtech                                      101      4%      18%        1554
+industries_finance                                                 2      0%       0%          62
+industries_finance_accountants                                    69     10%      28%        1449
+industries_food_beverage                                           2      0%       0%         150
+industries_franchises                                             15      0%       0%         295
+industries_general                                                 2      0%       0%         109
+industries_general_agriculture                                    98      6%      20%        1658
+industries_healthcare                                             78      4%       4%        1072
+industries_healthcare_dentist                                     88     23%      32%        1300
+industries_healthcare_dermatology                                 39     56%      56%         342
+industries_heavy_equipment                                         2      0%       0%         102
+industries_home_services                                          34      6%      29%         449
+industries_industrial                                             74     77%      77%         360
+industries_insurance                                               2      0%       0%          76
+industries_insurance_insurance                                    48     23%      44%         577
+industries_legal                                                   2      0%       0%          69
+industries_manufacturing                                          72     79%      79%         348
+industries_professional_services                                 115      0%       7%        1509
+industries_real_estate                                             2      0%       0%          96
+industries_recreation_entertainment                                2      0%       0%          97
+industries_retail_ecommerce                                        2      0%       0%         105
+industries_tech                                                    2      0%       0%          77
+industries_tech_software                                          52      6%      27%        1224
+industries_tourism_hospitality                                     2      0%       0%         149
+
+## 5-word shingle Jaccard (whole rendered text incl. nav/footer)
+locations_lancaster_pa vs locations_york_pa: 0.09
+locations_tampa_fl vs locations_ft_myers_fl: 0.07
+locations_dallas_tx_ppc vs locations_denver_co_ppc: 0.10
+locations_lancaster_pa vs locations_dallas_tx_ppc: 0.06
+industries_education_private_schools vs industries_education_technical_schools: 0.11
+industries_education_online_education vs industries_education_higher_education: 0.13
+industries_home_services_landscaping_ppc vs industries_home_services_window_door_companies_ppc: 0.10
+industries_real_estate_property_management_ppc vs industries_finance_accountants_ppc: 0.03
+industries_healthcare_dentist vs industries_healthcare_dermatology: 0.28
+industries_insurance_insurance vs industries_tourism_hospitality_hotels: 0.14
+industries_heavy_equipment_heavy_equipment_ppc vs industries_heavy_equipment_forklift_dealers_ppc: 0.11
+industries_industrial_fire_protection vs industries_industrial_oil_gas: 0.08

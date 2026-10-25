@@ -1,0 +1,64 @@
+---
+// Shared window chrome for every panel: platform bar (real mark, title, optional tabs), a body that holds the step layers, and the
+// single illustrative note. Panels put their step layers (.s2-st .s2-st--1 ... --5) in the default slot.
+// tabs + tabFor (optional): tabFor[stepIndex] is the tab highlighted on that step. Without tabFor only data-tab is rendered.
+interface Props { logo?: string; title: string; label: string; caption: string; tabs?: string[]; tabFor?: number[]; accent?: string; accentSoft?: string; barBg?: string; cls?: string }
+const { logo, title, label, caption, tabs = [], tabFor, accent, accentSoft, barBg, cls } = Astro.props as Props;
+const style = [accent && `--ui-accent:${accent}`, accentSoft && `--ui-accent-soft:${accentSoft}`, barBg && `--ui-bar:${barBg}`].filter(Boolean).join(";");
+---
+<figure class={"s2-ui" + (cls ? " " + cls : "")} aria-label={label} style={style || undefined}>
+  <div class="s2-ui__bar">
+    {logo && <img src={logo} alt="" width="26" height="26" />}
+    <b>{title}</b>
+    {tabs.length > 0 && (
+      <nav class="s2-ui__tabs" aria-hidden="true">
+        {tabs.map((t, k) => <span class="s2-ui__tab" data-tab={k} data-steps={tabFor ? tabFor.map((v, i) => (v === k ? i + 1 : 0)).filter(Boolean).join(" ") : undefined}>{t}</span>)}
+      </nav>
+    )}
+  </div>
+  <div class="s2-ui__body"><slot /></div>
+  <figcaption class="s2-ui__foot">{caption}</figcaption>
+</figure>
+<style is:global>
+/* shared primitives for new panels (prefix s2p-) */
+.s2p-line { display: block; height: .5em; border-radius: 99px; background: #DADDE1; }
+.s2p-line--s { width: 62%; } .s2p-line--xs { width: 38%; } .s2p-line--m { width: 80%; }
+.s2p-chip { display: inline-flex; align-items: center; gap: .4em; padding: .28em .75em; border-radius: 99px; background: #EEF0F2; color: #65676B; font: 800 .72em/1.2 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
+.s2p-chip--ok { background: #E3F6E9; color: #1B7A3D; } .s2p-chip--warn { background: #FFF3D6; color: #8A5A00; } .s2p-chip--bad { background: #FDE8E8; color: #B42318; } .s2p-chip--blue { background: var(--ui-accent-soft, #E7F0FF); color: var(--ui-accent, #0866FF); } .s2p-chip--sun { background: var(--s2-sun); color: var(--s2-ink); }
+.s2p-card { border: 1px solid #DADDE1; border-radius: .9em; background: #fff; padding: .7em .9em; min-width: 0; }
+.s2p-ph { background-repeat: no-repeat; background-color: #E7F0FF; background-size: cover; }
+.s2p-lbl { margin: 0; font: 800 .8em/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; }
+.s2p-mute { color: #65676B; font-weight: 600; } small.s2p-mute { font-size: .82em; line-height: 1.35; }
+.s2p-dot { display: inline-block; width: .7em; height: .7em; border-radius: 50%; background: #1B7A3D; flex: none; } .s2p-dot--amber { background: #E8A100; } .s2p-dot--grey { background: #BCC0C4; }
+.s2p-at, [class*="s2p-at-"], [class*="s2p-from-"] { transition: opacity .45s var(--s2-ease), transform .45s var(--s2-ease), filter .45s var(--s2-ease), box-shadow .3s, border-color .3s; }
+.s2p-at-1 { opacity: 0; transform: translateY(.4em); pointer-events: none; }
+.s2-work[data-step="1"] .s2p-at-1 { opacity: 1; transform: none; pointer-events: auto; }
+.s2p-at-2 { opacity: 0; transform: translateY(.4em); pointer-events: none; }
+.s2-work[data-step="2"] .s2p-at-2 { opacity: 1; transform: none; pointer-events: auto; }
+.s2p-at-3 { opacity: 0; transform: translateY(.4em); pointer-events: none; }
+.s2-work[data-step="3"] .s2p-at-3 { opacity: 1; transform: none; pointer-events: auto; }
+.s2p-at-4 { opacity: 0; transform: translateY(.4em); pointer-events: none; }
+.s2-work[data-step="4"] .s2p-at-4 { opacity: 1; transform: none; pointer-events: auto; }
+.s2p-at-5 { opacity: 0; transform: translateY(.4em); pointer-events: none; }
+.s2-work[data-step="5"] .s2p-at-5 { opacity: 1; transform: none; pointer-events: auto; }
+.s2p-from-2 { opacity: .22; filter: grayscale(1); }
+.s2-work:is([data-step="2"],[data-step="3"],[data-step="4"],[data-step="5"]) .s2p-from-2 { opacity: 1; filter: none; }
+.s2p-from-3 { opacity: .22; filter: grayscale(1); }
+.s2-work:is([data-step="3"],[data-step="4"],[data-step="5"]) .s2p-from-3 { opacity: 1; filter: none; }
+.s2p-from-4 { opacity: .22; filter: grayscale(1); }
+.s2-work:is([data-step="4"],[data-step="5"]) .s2p-from-4 { opacity: 1; filter: none; }
+.s2p-from-5 { opacity: .22; filter: grayscale(1); }
+.s2-work:is([data-step="5"]) .s2p-from-5 { opacity: 1; filter: none; }
+.s2-work[data-step="1"] .s2p-hl-1 { border-color: var(--ui-accent, #0866FF); box-shadow: 0 0 0 2px var(--ui-accent, #0866FF), 0 .7em 1.5em -.7em rgba(15, 30, 94, .45); }
+.s2-work[data-step="2"] .s2p-hl-2 { border-color: var(--ui-accent, #0866FF); box-shadow: 0 0 0 2px var(--ui-accent, #0866FF), 0 .7em 1.5em -.7em rgba(15, 30, 94, .45); }
+.s2-work[data-step="3"] .s2p-hl-3 { border-color: var(--ui-accent, #0866FF); box-shadow: 0 0 0 2px var(--ui-accent, #0866FF), 0 .7em 1.5em -.7em rgba(15, 30, 94, .45); }
+.s2-work[data-step="4"] .s2p-hl-4 { border-color: var(--ui-accent, #0866FF); box-shadow: 0 0 0 2px var(--ui-accent, #0866FF), 0 .7em 1.5em -.7em rgba(15, 30, 94, .45); }
+.s2-work[data-step="5"] .s2p-hl-5 { border-color: var(--ui-accent, #0866FF); box-shadow: 0 0 0 2px var(--ui-accent, #0866FF), 0 .7em 1.5em -.7em rgba(15, 30, 94, .45); }
+.s2p-only-1, .s2p-only-2, .s2p-only-3, .s2p-only-4, .s2p-only-5 { display: none; }
+.s2-work[data-step="1"] .s2p-only-1 { display: var(--show, block); }
+.s2-work[data-step="2"] .s2p-only-2 { display: var(--show, block); }
+.s2-work[data-step="3"] .s2p-only-3 { display: var(--show, block); }
+.s2-work[data-step="4"] .s2p-only-4 { display: var(--show, block); }
+.s2-work[data-step="5"] .s2p-only-5 { display: var(--show, block); }
+@media (prefers-reduced-motion: reduce) { [class*="s2p-at-"], [class*="s2p-from-"] { transition: none; transform: none; } }
+</style>

@@ -1,0 +1,128 @@
+---
+// PANEL: GoogleAdsAccount (kind "GoogleAdsAccount"). Google Ads-style account view, Google Ads mark, 5 steps.
+//   1 Campaign list: Search, Shopping and Performance Max with status and budget bars (Performance Max shows "Learning"). Tab: Campaigns.
+//   2 Search: brand and non-brand keyword groups with match types, plus a negative keyword list that has just been added. Tab: Keywords.
+//   3 Shopping: product tiles from the feed; one is disapproved, then fixed. Feed health row. Tab: Shopping.
+//   4 Performance Max: asset group (text, images, video) and audience signal chips; status moves Learning -> Enabled. Tab: Performance Max.
+//   5 Budget moves: the campaign list again, budget follows margin (Shopping up, Performance Max capped, one product group paused). Tab: Reports.
+// Needs S.work.illustrative. Illustrative layout only: no figures. Styles scoped to this file (prefix gads-).
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const tabs = ["Campaigns", "Keywords", "Shopping", "Performance Max", "Reports"];
+const camps = [["Search", "Search"], ["Shopping", "Shopping"], ["Performance Max", "Performance Max"]];
+const w1 = [64, 44, 36], w5 = [62, 70, 26];
+const stat1 = ["Enabled", "Enabled", "Learning"], stat5 = ["Enabled", "Budget up", "Capped"];
+---
+<Frame logo="/assets/platforms/google.svg" title="Google Ads" label="Illustration of a Google Ads account view. Not a client result." caption={W.illustrative} tabs={tabs} tabFor={[0, 1, 2, 3, 4]} accent="#1A73E8" accentSoft="#E8F0FE" cls="gads">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Campaigns <span>Three campaign types, one account goal</span></p>
+    <ul class="gads-list">
+      {camps.map(([n, t], k) => (
+        <li class="s2p-card"><span class="s2p-chip s2p-chip--blue">{t}</span><b>{n}</b><span class="gads-st"><i class={"s2p-dot" + (k === 2 ? " s2p-dot--amber" : "")}></i>{stat1[k]}</span><span class="gads-bar"><i style={`--w:${w1[k]}%`}></i></span></li>
+      ))}
+    </ul>
+    <small class="s2-st__foot">Each campaign type gets a job. Brand search is kept apart from the rest.</small>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Search <span>Brand and non-brand kept apart</span></p>
+    <div class="gads-two">
+      <div class="s2p-card">
+        <p class="s2p-lbl">Non-brand ad group</p>
+        <ul class="gads-kw">
+          <li><span class="s2p-chip">Phrase</span><i class="s2p-line s2p-line--m"></i></li>
+          <li><span class="s2p-chip">Exact</span><i class="s2p-line"></i></li>
+          <li><span class="s2p-chip">Phrase</span><i class="s2p-line s2p-line--s"></i></li>
+        </ul>
+        <p class="s2p-lbl gads-gap">Brand ad group</p>
+        <ul class="gads-kw"><li><span class="s2p-chip">Exact</span><i class="s2p-line s2p-line--m"></i></li></ul>
+      </div>
+      <div class="s2p-card gads-neg">
+        <p class="s2p-lbl">Negative keywords</p>
+        <div class="gads-chips"><span class="s2p-chip s2p-chip--bad">free</span><span class="s2p-chip s2p-chip--bad">jobs</span><span class="s2p-chip s2p-chip--bad">diy</span><span class="s2p-chip s2p-chip--bad">cheap</span></div>
+        <small class="s2p-mute">Added from the search terms report, so spend stays on buyers.</small>
+      </div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Shopping <span>Products from your feed</span></p>
+    <ul class="gads-prod">
+      {[[THUMBS.shirt, "Eligible"], [THUMBS.serum, "Eligible"], [THUMBS.jar, "Fixed"], [THUMBS.candle, "Eligible"]].map(([th, s], k) => (
+        <li class={"s2p-card" + (k === 2 ? " gads-fix" : "")}><span class="s2p-ph gads-prod__img" style={th as string} role="img" aria-label="Product image"></span><i class="s2p-line"></i><i class="s2p-line s2p-line--xs"></i>
+          {k === 2 ? <small class="gads-was">Was: price mismatch</small> : null}
+          <em class="s2p-chip s2p-chip--ok">{k === 2 ? "Fixed in feed" : s}</em>
+        </li>
+      ))}
+    </ul>
+    <div class="s2p-card gads-feed"><span class="s2p-dot"></span><b>Feed health</b><span class="s2p-mute">Prices and stock match the store</span></div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Performance Max <span>Assets and signals</span><em class="s2p-chip s2p-chip--ok gads-pm">Enabled</em></p>
+    <div class="gads-two">
+      <div class="s2p-card">
+        <p class="s2p-lbl">Asset group</p>
+        <div class="gads-assets">
+          <span class="s2p-ph gads-a" style={THUMBS.shirt} role="img" aria-label="Image asset"></span>
+          <span class="s2p-ph gads-a" style={THUMBS.unbox} role="img" aria-label="Image asset"></span>
+          <span class="s2p-ph gads-a" style={THUMBS.phoneAd} role="img" aria-label="Video asset"></span>
+        </div>
+        <i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i>
+      </div>
+      <div class="s2p-card">
+        <p class="s2p-lbl">Audience signals</p>
+        <div class="gads-chips"><span class="s2p-chip s2p-chip--blue">Past buyers</span><span class="s2p-chip s2p-chip--blue">Site visitors</span><span class="s2p-chip s2p-chip--blue">Search themes</span></div>
+        <small class="s2p-mute">Signals guide Google. Results decide.</small>
+      </div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Budget follows margin <span>Reports</span></p>
+    <ul class="gads-list">
+      {camps.map(([n, t], k) => (
+        <li class="s2p-card"><span class="s2p-chip s2p-chip--blue">{t}</span><b>{n}</b><span class="gads-st"><i class={"s2p-dot" + (k === 2 ? " s2p-dot--amber" : "")}></i>{stat5[k]}</span><span class="gads-bar"><i style={`--w:${w5[k]}%`}></i></span></li>
+      ))}
+      <li class="s2p-card gads-paused"><span class="s2p-chip">Shopping</span><b>Low-margin product group</b><span class="gads-st"><i class="s2p-dot s2p-dot--grey"></i>Paused</span></li>
+    </ul>
+  </div>
+</Frame>
+<style is:global>
+.gads-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .7em; align-content: center; flex: 1; min-height: 0; }
+.gads-list li { display: grid; grid-template-columns: 8.6em minmax(0, 1fr) 7em 28%; align-items: center; gap: .9em; font-size: 1em; }
+.gads-list li b { font: 800 1em var(--font-display); color: #1C2B33; }
+.gads-st { display: inline-flex; align-items: center; gap: .5em; font: 700 .9em var(--font-body); color: #1C2B33; }
+.gads-bar { height: .6em; border-radius: 99px; background: #EEF0F2; overflow: hidden; }
+.gads-bar i { display: block; height: 100%; width: var(--w); border-radius: 99px; background: #1A73E8; }
+.gads-paused { opacity: .6; }
+.gads-paused .gads-st { grid-column: 3; }
+.gads-two { flex: 1; min-height: 0; display: grid; grid-template-columns: 1.25fr 1fr; gap: .9em; align-content: center; }
+.gads-two .s2p-card { display: grid; gap: .6em; align-content: start; }
+.gads-kw { list-style: none; margin: 0; padding: 0; display: grid; gap: .5em; }
+.gads-kw li { display: grid; grid-template-columns: 5.2em minmax(0, 1fr); align-items: center; gap: .7em; }
+.gads-gap { margin-top: .4em; }
+.gads-chips { display: flex; flex-wrap: wrap; gap: .5em; }
+.gads-prod { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8em; align-content: center; }
+.gads-prod li { display: grid; gap: .45em; padding: .55em; position: relative; }
+.gads-prod__img { display: block; aspect-ratio: 1 / 1; border-radius: .6em; }
+.gads-was { font: 700 .76em var(--font-body); color: #B42318; text-decoration: line-through; }
+.gads-feed { display: flex; align-items: center; gap: .7em; font-size: .95em; }
+.gads-pm { margin-left: auto; }
+.gads-assets { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5em; }
+.gads-a { display: block; aspect-ratio: 1 / 1; border-radius: .5em; }
+@media (max-width: 560px) {
+  .gads-list li { grid-template-columns: minmax(0, 1fr) auto; gap: .4em .7em; padding: .5em .7em; }
+  .gads-list li .s2p-chip { display: none; }
+  .gads-bar { grid-column: 1 / -1; }
+  .gads-prod { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .4em; } .gads-prod .s2p-chip, .gads-was, .gads-feed { display: none; } .gads-prod li { padding: .3em; }
+  .gads-prod .s2p-line { display: none; }
+  .gads-two { grid-template-columns: 1fr; gap: .5em; }
+  .gads.s2-ui .s2-st { font-size: 9.5px; padding: 8px 12px; gap: .6em; }
+  .gads.s2-ui .s2-st__cap > span { display: none; }
+  .gads-two .s2p-card { padding: .5em .7em; gap: .35em; }
+  .gads-two .s2p-card > small, .gads-gap { display: none; }
+  .gads-kw { gap: .3em; }
+  .gads-assets { grid-template-columns: repeat(3, 3.6em); gap: .4em; }
+  .gads-list { gap: .4em; align-content: start; }
+  .gads-list li { padding: .35em .7em; }
+}
+</style>

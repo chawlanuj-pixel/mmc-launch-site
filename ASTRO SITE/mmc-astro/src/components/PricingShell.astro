@@ -1,0 +1,25 @@
+---
+// Shell for the private pricing pages: the same nav, footer, mobile bar, cookie banner and AI button as the standard Shell,
+// with one difference. The brand-audit modal carries rupee ranges in its markup, so it is left out where `audit` is false
+// (the international page), to keep that page free of rupee text. Everything else is imported from the standard Shell parts.
+import "../styles/shell.css";
+import "../styles/ai-fab.css";
+import "../styles/mbar.css";
+import NavMenu from "./shell/NavMenu.tsx";
+import AuditModal from "./shell/AuditModal.tsx";
+import CookieBanner from "./shell/CookieBanner.tsx";
+import AiFab from "./shell/AiFab.tsx";
+import Footer from "./Footer.astro";
+import MobileBar from "./shell/MobileBar.astro";
+
+interface Props { source?: string; audit?: boolean }
+const { source = "pricing", audit = true } = Astro.props;
+---
+<a class="skip-link" href="#main">Skip to content</a>
+<NavMenu client:idle source={source} />
+<slot />
+<Footer />
+<MobileBar />
+{audit && <AuditModal client:idle />}
+<CookieBanner client:idle />
+<AiFab client:idle />

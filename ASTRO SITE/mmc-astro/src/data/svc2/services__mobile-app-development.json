@@ -1,0 +1,175 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "app/journey.jpg",
+    "pos": "50% 50%",
+    "alt": "App screens in a core journey.",
+    "facts": [
+      {
+        "t": "Only if it earns it.",
+        "d": "We first ask whether an app is the right answer."
+      },
+      {
+        "t": "One core journey.",
+        "d": "The main task, made fast and clear."
+      },
+      {
+        "t": "Measured from day one.",
+        "d": "Events and retention tracked, so the app can improve."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands build apps with MMC"
+  },
+  "work": {
+    "panel": "AppFlow",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to build your",
+    "h2b": "app.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Decide whether you need an app.",
+        "d": "We compare an app with a mobile site against customer habits, and say so if it is not yet worth it."
+      },
+      {
+        "n": "02",
+        "t": "Design the one journey they return for.",
+        "d": "The first release stays focused on a single core task, made fast and clear."
+      },
+      {
+        "n": "03",
+        "t": "Build, test on real phones, and measure.",
+        "d": "Testing runs on the phones your customers use, with key events tracked from the first release."
+      },
+      {
+        "n": "04",
+        "t": "Launch, then release and improve.",
+        "d": "Store listing and regular releases, guided by active use and retention."
+      }
+    ],
+    "illustrative": "Illustrative layout of app screens, build and release. Not a client app, no real figures."
+  },
+  "leak": {
+    "visual": "MetaFunnel",
+    "barLogo": "",
+    "barTitle": "App path",
+    "pinsLabel": "Five places an app goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 9.3,
+        "y": 0,
+        "label": "Decision"
+      },
+      {
+        "x": 29,
+        "y": 0,
+        "label": "Journey"
+      },
+      {
+        "x": 48.7,
+        "y": 0,
+        "label": "Build"
+      },
+      {
+        "x": 68.3,
+        "y": 0,
+        "label": "Data"
+      },
+      {
+        "x": 87.9,
+        "y": 0,
+        "label": "Release"
+      }
+    ],
+    "stageLabels": [
+      "Decision",
+      "Journey",
+      "Build",
+      "Data",
+      "Release"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run mobile app builds,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Decide if you need one",
+        "d": "We compare an app with a mobile website against your customers' habits and tell you honestly.",
+        "get": "A clear yes or no, with reasons.",
+        "img": "app/decide.jpg",
+        "alt": "An app and a website being compared.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Design the core journey",
+        "d": "The one task customers return for is designed and tested first.",
+        "get": "A tested prototype of the main journey.",
+        "img": "app/journey.jpg",
+        "alt": "App screens in a core journey.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Build and instrument",
+        "d": "Development with key events measured from the first release.",
+        "get": "A fast, stable app with usable data.",
+        "img": "app/build.jpg",
+        "alt": "An app being built and tested.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Launch and improve",
+        "d": "Store launch, then releases guided by active use and retention.",
+        "get": "An app that gets better with use.",
+        "img": "app/launch.jpg",
+        "alt": "An app being prepared for release.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "UI/UX design",
+        "href": "/services/ui-ux-design/"
+      },
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      },
+      {
+        "n": "Web development",
+        "href": "/services/web-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

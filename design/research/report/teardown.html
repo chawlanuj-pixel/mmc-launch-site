@@ -1,0 +1,778 @@
+<title>WebFX &amp; Mediagarh Teardown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap">
+<style>
+:root {
+  --ground: #FBFAF6;
+  --surface: #FFFFFF;
+  --ink: #0E1626;
+  --body: #2E3849;
+  --meta: #5A6578;
+  --line: rgba(20, 47, 91, 0.12);
+  --line-strong: rgba(20, 47, 91, 0.24);
+  --blue: #1D4ED8;
+  --blue-soft: #E3EAFC;
+  --yellow: #FFC528;
+  --yellow-ink: #7A5200;
+  --yellow-soft: #FFF1CC;
+  --good: #0F766E;
+  --warn: #B42318;
+  --shot-edge: rgba(20, 47, 91, 0.16);
+  --font-display: "Raleway", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Nunito", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0B1433;
+    --surface: #111C45;
+    --ink: #EEF2FB;
+    --body: #C9D2E6;
+    --meta: #96A3BF;
+    --line: rgba(227, 234, 252, 0.12);
+    --line-strong: rgba(227, 234, 252, 0.26);
+    --blue: #8FA8F0;
+    --blue-soft: rgba(110, 143, 230, 0.16);
+    --yellow: #FFC528;
+    --yellow-ink: #FFD66B;
+    --yellow-soft: rgba(255, 197, 40, 0.09);
+    --good: #6ED3C6;
+    --warn: #FF9A8C;
+    --shot-edge: rgba(227, 234, 252, 0.2);
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0B1433;
+  --surface: #111C45;
+  --ink: #EEF2FB;
+  --body: #C9D2E6;
+  --meta: #96A3BF;
+  --line: rgba(227, 234, 252, 0.12);
+  --line-strong: rgba(227, 234, 252, 0.26);
+  --blue: #8FA8F0;
+  --blue-soft: rgba(110, 143, 230, 0.16);
+  --yellow: #FFC528;
+  --yellow-ink: #FFD66B;
+  --yellow-soft: rgba(255, 197, 40, 0.09);
+  --good: #6ED3C6;
+  --warn: #FF9A8C;
+  --shot-edge: rgba(227, 234, 252, 0.2);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--ground);
+  color: var(--body);
+  font-family: var(--font-body);
+  font-size: 16.5px;
+  line-height: 1.62;
+  padding-inline: clamp(16px, 4vw, 48px);
+  padding-block: 0 96px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--blue); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; border-radius: 2px; }
+strong { color: var(--ink); font-weight: 700; }
+em.s { font-family: var(--font-serif); font-style: italic; font-weight: 600; color: var(--blue); }
+
+.frame { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 56px; }
+@media (max-width: 1024px) { .frame { grid-template-columns: minmax(0, 1fr); gap: 0; } }
+
+nav.toc { position: sticky; top: 0; align-self: start; padding-top: 48px; max-height: 100vh; overflow-y: auto; }
+nav.toc p { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--meta); margin: 0 0 12px; }
+nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+nav.toc a { display: block; padding: 5px 0 5px 12px; border-left: 2px solid var(--line); color: var(--body); text-decoration: none; font-size: 14px; line-height: 1.35; }
+nav.toc a:hover { border-left-color: var(--blue); color: var(--ink); }
+nav.toc .grp { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--meta); padding: 12px 0 4px 14px; }
+@media (max-width: 1024px) {
+  nav.toc { position: static; max-height: none; padding-top: 32px; }
+  nav.toc ol { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0 20px; }
+  nav.toc .grp { display: none; }
+}
+
+main { min-width: 0; }
+
+header.mast { padding-top: 48px; padding-bottom: 36px; border-bottom: 1px solid var(--line-strong); }
+.eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--meta); margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--yellow); display: inline-block; }
+.eyebrow .item + .item::before { content: "\00B7"; margin-right: 14px; color: var(--meta); }
+h1 { font-family: var(--font-display); font-weight: 800; color: var(--ink); font-size: clamp(34px, 5vw, 58px); line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 22px; text-wrap: balance; max-width: 19ch; }
+h1 em.s { font-size: 1.08em; }
+.lede { font-size: clamp(17px, 1.6vw, 19.5px); max-width: 64ch; margin: 0 0 28px; }
+.scope { display: flex; flex-wrap: wrap; gap: 10px 32px; margin: 0; padding: 0; list-style: none; }
+.scope li { font-size: 14px; color: var(--meta); margin: 0; }
+.scope b { font-family: var(--font-mono); font-size: 15px; color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; margin-right: 6px; }
+
+section { padding-top: 64px; scroll-margin-top: 12px; }
+.lens { font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--yellow-ink); margin: 0 0 10px; }
+h2 { font-family: var(--font-display); font-weight: 800; color: var(--ink); font-size: clamp(26px, 3.2vw, 36px); line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 14px; text-wrap: balance; max-width: 30ch; }
+h3 { font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: 20px; line-height: 1.25; letter-spacing: -0.01em; margin: 40px 0 10px; text-wrap: balance; }
+h3 .who { font-family: var(--font-body); font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--meta); display: block; margin-bottom: 4px; }
+h4 { font-family: var(--font-body); font-weight: 800; color: var(--ink); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin: 26px 0 8px; }
+.sec-lede { max-width: 66ch; margin: 0 0 8px; font-size: 17.5px; }
+p { margin: 0 0 14px; max-width: 70ch; }
+ul, ol { max-width: 70ch; padding-left: 22px; margin: 0 0 16px; }
+li { margin-bottom: 7px; }
+li::marker { color: var(--meta); }
+
+.verdicts { list-style: none; padding: 0; margin: 24px 0 0; max-width: none; border-top: 1px solid var(--line); }
+.verdicts li { display: grid; grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); gap: 8px 28px; padding: 18px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.verdicts b { font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: 17px; line-height: 1.3; }
+.verdicts span { max-width: 62ch; }
+@media (max-width: 640px) { .verdicts li { grid-template-columns: minmax(0, 1fr); } }
+
+.table-wrap { overflow-x: auto; margin: 22px 0 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; line-height: 1.45; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+tr:last-child td, tr:last-child th { border-bottom: 0; }
+thead th { font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--meta); background: var(--ground); }
+tbody th { font-weight: 800; color: var(--ink); font-size: 13.5px; }
+tr.band th { background: var(--ground); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--yellow-ink); padding-block: 8px; }
+table.compare { min-width: 920px; }
+table.compare td.move, table.compare th.move { background: var(--yellow-soft); border-left: 2px solid var(--yellow); }
+table.compare th.move { color: var(--yellow-ink); }
+table.metrics { min-width: 820px; }
+td.num, .metrics td { font-variant-numeric: tabular-nums; }
+.metrics td.num { font-family: var(--font-mono); font-size: 13.5px; color: var(--ink); white-space: nowrap; }
+.metrics small { display: block; font-family: var(--font-body); font-size: 12px; color: var(--meta); white-space: normal; margin-top: 2px; }
+
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 28px 0 6px; }
+.shots.mobile { grid-template-columns: repeat(3, minmax(0, 240px)); justify-content: start; gap: 28px; }
+@media (max-width: 760px) { .shots, .shots.mobile { grid-template-columns: minmax(0, 1fr); } .shots.mobile figure { max-width: 300px; } }
+figure { margin: 0; }
+figure img { width: 100%; max-width: 100%; height: auto; display: block; border: 1px solid var(--shot-edge); border-radius: 4px; }
+figcaption { font-size: 13.5px; color: var(--meta); margin-top: 8px; line-height: 1.45; }
+figcaption b { color: var(--ink); }
+
+.quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px 22px; margin: 16px 0 10px; }
+blockquote { margin: 0; padding: 2px 0 2px 16px; border-left: 3px solid var(--line-strong); }
+blockquote p { font-family: var(--font-serif); font-style: italic; font-size: 20px; line-height: 1.3; color: var(--ink); margin: 0 0 4px; }
+blockquote cite { font-style: normal; font-size: 13px; color: var(--meta); }
+
+.split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; margin-top: 8px; }
+@media (max-width: 760px) { .split { grid-template-columns: minmax(0, 1fr); } }
+.split ul { max-width: none; }
+.split h4.take { color: var(--good); }
+.split h4.skip { color: var(--warn); }
+
+.move-box { background: var(--yellow-soft); border-left: 3px solid var(--yellow); border-radius: 0 6px 6px 0; padding: 18px 22px 6px; margin: 28px 0 8px; max-width: 78ch; }
+.move-box h4 { margin-top: 0; color: var(--yellow-ink); }
+.move-box p, .move-box ul { max-width: none; }
+
+ol.steps { counter-reset: s; list-style: none; padding: 0; max-width: 78ch; margin: 18px 0; border-top: 1px solid var(--line); }
+ol.steps > li { counter-increment: s; display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: 0 12px; padding: 11px 0; border-bottom: 1px solid var(--line); margin: 0; }
+ol.steps > li::before { content: counter(s, decimal-leading-zero); font-family: var(--font-mono); font-size: 13px; color: var(--meta); padding-top: 3px; }
+ol.steps b { color: var(--ink); }
+
+.positioning { font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: clamp(22px, 2.6vw, 29px); line-height: 1.25; letter-spacing: -0.015em; max-width: 34ch; margin: 18px 0 22px; text-wrap: balance; }
+.positioning em.s { font-size: 1.1em; }
+
+.roadmap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 22px 0 8px; }
+@media (max-width: 860px) { .roadmap { grid-template-columns: minmax(0, 1fr); } }
+.roadmap div { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px 6px; }
+.roadmap h4 { margin: 0 0 2px; }
+.roadmap .when { font-size: 13px; color: var(--meta); margin: 0 0 10px; }
+.roadmap ul { padding-left: 18px; }
+.roadmap li { font-size: 15px; }
+
+.note { font-size: 14px; color: var(--meta); max-width: 72ch; }
+.kbd { font-family: var(--font-mono); font-size: 0.88em; background: var(--line); padding: 1px 5px; border-radius: 3px; color: var(--ink); overflow-wrap: anywhere; }
+
+.decisions { list-style: none; padding: 0; margin: 20px 0 0; max-width: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.decisions li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; margin: 0; }
+.decisions b { display: block; font-family: var(--font-display); font-size: 16.5px; color: var(--ink); margin-bottom: 4px; line-height: 1.3; }
+
+footer.method { margin-top: 64px; padding-top: 28px; border-top: 1px solid var(--line-strong); }
+</style>
+
+<div class="frame">
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#short">The short version</a></li>
+      <li><a href="#side">Side by side</a></li>
+      <li class="grp" aria-hidden="true">The four lenses</li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#development">Development</a></li>
+      <li><a href="#seo">SEO</a></li>
+      <li class="grp" aria-hidden="true">What MMC does</li>
+      <li><a href="#market">Education market signals</a></li>
+      <li><a href="#build">How MMC builds past both</a></li>
+      <li><a href="#education">Education landing page</a></li>
+      <li><a href="#programme">Content programme</a></li>
+      <li><a href="#mmc">MMC today</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#method">How this was done</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <header class="mast">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span class="item">Competitive teardown</span><span class="item">Collected 15 Sep 2026</span><span class="item">For the MMC team</span></p>
+      <h1>What to take from WebFX and Mediagarh, and where MMC <em class="s">leapfrogs</em> them.</h1>
+      <p class="lede">WebFX shows how a content and SEO machine is built at scale. Mediagarh shows how an Indian agency owns a vertical. Neither has built for how India actually buys. This page breaks both down across content, design, development and SEO, and turns each finding into a move for MMC&rsquo;s new site.</p>
+      <ul class="scope">
+        <li><b>642</b>pages read</li>
+        <li><b>460</b>WebFX</li>
+        <li><b>164</b>Mediagarh</li>
+        <li><b>18</b>MMC</li>
+        <li><b>54</b>speed and stack tests</li>
+      </ul>
+    </header>
+
+    <section id="short">
+      <h2>The short <em class="s">version</em></h2>
+      <ul class="verdicts">
+        <li><b>Architecture is WebFX&rsquo;s moat</b><span>133 service pages, 41 pricing pages, 400+ industry URLs, discipline hubs, glossaries, statistics pages and tools, all funnelling into one proposal form on every page. MMC should build the folder structure on day one, even if many folders start with a single page.</span></li>
+        <li><b>One template, executed everywhere</b><span>52 of WebFX&rsquo;s 70 search and paid service pages share one section order. That is how they publish at volume. MMC should copy the discipline of a single strong template, and write unique copy for each service so pages don&rsquo;t read as clones.</span></li>
+        <li><b>Mediagarh owns a vertical</b><span>Every title ends &ldquo;for educational institutions&rdquo;, the vocabulary is admissions and enrolments, testimonials come from chairmen and trustees, and admission season drives urgency. That playbook is exactly what MMC&rsquo;s education landing page should run, with more depth.</span></li>
+        <li><b>The India layer is empty</b><span>Across 460 WebFX pages, &#8377;, COD, RTO, UPI, GST and &ldquo;contribution margin&rdquo; never appear. Mediagarh has no Indian admissions calendar, no tools and no CRM-to-ads loop. Pages built around Indian D2C economics and Indian admissions operations have no real competition.</span></li>
+        <li><b>Conversion is a system, not a button</b><span>WebFX runs a one-field website capture on every page and scores calculator use as leads in the background. Mediagarh&rsquo;s paid landing page uses a three-field form and a sticky enquiry tab. MMC should combine an audit, calendar booking, WhatsApp and calculators that hand off to a person.</span></li>
+        <li><b>Speed and stack are a real edge</b><span>WebFX carries 31 third-party services and 1.7 MB of JavaScript yet shows its main content in about 1.5 s. Mediagarh&rsquo;s server is fast, but service pages take over 4 s to show their headline. MMC&rsquo;s build compiles React in the visitor&rsquo;s browser and its homepage weighs 13.7 MB. Fixing that makes MMC the fastest of the three.</span></li>
+      </ul>
+    </section>
+
+    <section id="side">
+      <h2>Side by <em class="s">side</em></h2>
+      <p class="sec-lede">The four lenses, with what each site does today and the move MMC should make.</p>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead><tr><th scope="col"></th><th scope="col">WebFX</th><th scope="col">Mediagarh</th><th scope="col">MMC today</th><th scope="col" class="move">MMC move</th></tr></thead>
+          <tbody>
+            <tr class="band"><th colspan="5" scope="colgroup">Content</th></tr>
+            <tr><th scope="row">Promise</th><td>&ldquo;Digital Marketing That Drives Revenue&reg;&rdquo;; &ldquo;Your Revenue Growth Partner in the AI Era&rdquo;</td><td>&ldquo;For education institutes who dream big&hellip; we deliver the sky.&rdquo;</td><td>&ldquo;Performance marketing that survives the P&amp;L.&rdquo;</td><td class="move">Keep the promise; carry it into every service, industry and tool page</td></tr>
+            <tr><th scope="row">Voice</th><td>Headline formulas (&ldquo;Move From X to Y&rdquo;), big numbers, possessive CTAs</td><td>ALL-CAPS slogans, superlatives, admissions vocabulary</td><td>Short contrarian lines, D2C founder language</td><td class="move">Plain, senior and specific, in each buyer&rsquo;s own metric</td></tr>
+            <tr><th scope="row">Page types</th><td>Services, sub-services, pricing guides, industries, locations, case studies, hubs, glossaries, stats, tools, blog</td><td>Home, 20+ service pages, 36 case studies, 68 articles, paid landing page</td><td>Home, one service page, Our Work, tools, glossary, Insights teasers</td><td class="move">Services hub, service pages, pricing, industries, work, tools, guides</td></tr>
+            <tr class="band"><th colspan="5" scope="colgroup">Design</th></tr>
+            <tr><th scope="row">Visual system</th><td>Inter 800 to 900, one action blue, highlighted keyword in every H1, staff photos, dashboards</td><td>Starry-night hero, steel blue, heavy capitals, logo walls, four visual styles</td><td>Royal blue and sun yellow, Raleway with a Cormorant italic accent, crafted motion</td><td class="move">One system, applied to many more page types; real client work in place of stock</td></tr>
+            <tr><th scope="row">Mobile</th><td>Clean single column; hero form pushed below long intro copy</td><td>Sticky enquiry tab overlaps text; 13.7 px body text</td><td>Cookie banner covers about 40% of the first screen</td><td class="move">Short cookie bar, WhatsApp and call bar, form in the first two screens</td></tr>
+            <tr class="band"><th colspan="5" scope="colgroup">Development</th></tr>
+            <tr><th scope="row">Stack</th><td>WordPress, jQuery, Yoast, Gravity Forms on Kinsta behind Cloudflare (HTTP/3)</td><td>WordPress 6.7 with Elementor, Rank Math and WPForms on Hostinger&rsquo;s CDN</td><td>Static HTML, React and Babel from a public CDN compiling JSX in the browser, Python pre-render</td><td class="move">Pre-compiled static build, served from an edge CDN, one content data file</td></tr>
+            <tr><th scope="row">Speed</th><td>Main content in ~1.5 s; 179 requests, 2.7 MB</td><td>~0.6 s on simple pages, 4.2 to 4.9 s on service pages; 115 requests</td><td>Homepage 13.7 MB of mostly PNG and JPG</td><td class="move">Sub-second main content, under 1 MB above the fold, WebP or AVIF images</td></tr>
+            <tr><th scope="row">Martech</th><td>31 third-party services: ad tags, Clearbit, MadKudu, Segment, VWO, Nutshell CRM</td><td>GTM, GA4, Google and Meta ads, Clarity, Contentsquare, Smartlook</td><td>GTM, GA4, Meta Pixel, Calendly, Airtable</td><td class="move">Lean core plus lead scoring on tools and CRM stages sent back to ad platforms</td></tr>
+            <tr class="band"><th colspan="5" scope="colgroup">SEO</th></tr>
+            <tr><th scope="row">Architecture</th><td>One URL per buyer intent in discipline folders; pricing URLs mirror service URLs</td><td>&ldquo;[Service] agency for educational institutions&rdquo; URLs, one city variant</td><td>Filenames with spaces, one unlinked service page, no Services menu</td><td class="move">Clean folders with redirects; hubs linking to every child page</td></tr>
+            <tr><th scope="row">Structured data and AI search</th><td>FAQ markup on 44 pages, Dataset on pricing pages, llms.txt, answer-first blocks, GEO guides</td><td>Rank Math schema, including an FAQ entry answering &ldquo;best education marketing agency in India&rdquo;</td><td>Pre-rendered HTML and an llms.txt, ahead of both</td><td class="move">Service, FAQPage and Breadcrumb markup generated from the same data as the page</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="shots">
+        <figure>
+          <img src="img/webfx-home.jpg" alt="WebFX homepage hero: headline Your Revenue Growth Partner in the AI Era, a revenue tally in the top bar, and a single website field with a Get My Free Proposal button." width="960" height="600" loading="lazy">
+          <figcaption><b>WebFX.</b> Revenue tally in the top bar of every page, one blue, one field, one ask.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/mediagarh-lp.jpg" alt="Mediagarh paid landing page: Partner with the Leading Digital Marketing Experts for Schools and Colleges, an illustrated campus and a name, phone and email appointment form." width="960" height="600" loading="lazy">
+          <figcaption><b>Mediagarh.</b> The paid landing page: no navigation, illustrated campus, a three-field form.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/mmc-home.jpg" alt="MMC homepage hero: Performance marketing that survives the P&amp;L, on deep royal blue with a yellow Book a strategy call button." width="960" height="600" loading="lazy">
+          <figcaption><b>MMC.</b> The sharpest promise and the most crafted look of the three.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="content">
+      <p class="lens">Lens 1</p>
+      <h2><em class="s">Content</em>: what they say and how they say it</h2>
+
+      <h3><span class="who">WebFX</span>A revenue story, told on thousands of pages</h3>
+      <ul>
+        <li><strong>The pitch:</strong> US full-service retainers plus a proprietary platform (RevenueCloudFX, about 15 modules) and the Nutshell CRM they own. Around 100 services sit in the menu, from SEO to Walmart ads and AI agents.</li>
+        <li><strong>The enemy:</strong> &ldquo;agencies that report clicks&rdquo;. A guide titled &ldquo;My marketing agency isn&rsquo;t driving results&rdquo; catches buyers who are unhappy elsewhere.</li>
+        <li><strong>Headline formulas:</strong> &ldquo;Move From X to Y&rdquo;, &ldquo;Turn Your X Into a Y&rdquo;, a big number as the H1, a year stamp (&ldquo;Start Ranking in 2026&rdquo;). Nearly every call to action is a possessive &ldquo;Get My Free Proposal&rdquo;.</li>
+        <li><strong>Definition-first openers</strong> on newer pages give search engines and chat assistants a sentence to quote.</li>
+      </ul>
+      <div class="quotes">
+        <blockquote><p>&ldquo;Stop measuring PPC success based solely on clicks.&rdquo;</p><cite>PPC services</cite></blockquote>
+        <blockquote><p>&ldquo;Stop settling for likes without leads.&rdquo;</p><cite>Social media services</cite></blockquote>
+        <blockquote><p>&ldquo;My Marketing Agency Isn&rsquo;t Driving Results. What Should I Do?&rdquo;</p><cite>Our approach</cite></blockquote>
+      </div>
+
+      <h4>The service page, in order</h4>
+      <ol class="steps">
+        <li><span>Stats carousel and outcome H1 (&ldquo;X Services That [outcome]&rdquo;), with a single &ldquo;Enter your website&rdquo; field</span></li>
+        <li><span>&ldquo;What do our X services include?&rdquo; in tabs</span></li>
+        <li><span>Platform pitch (RevenueCloudFX)</span></li>
+        <li><span>Pricing preview: &ldquo;Pricing custom to you. Starting at $X&rdquo;</span></li>
+        <li><span>Client stories and testimonials</span></li>
+        <li><span>Comparison grid: WebFX vs in-house vs a typical agency</span></li>
+        <li><span>FAQs, a full plans table with deliverables, reviews, six related-service links</span></li>
+      </ol>
+      <p>Median length is about 1,870 words. FAQs lean towards definitions and cost: of 446 questions on the search and paid pages, 98 are &ldquo;What is X?&rdquo; and 54 are about price, while only 6 cover account ownership, contracts or minimums. That leaves the serious buyer&rsquo;s questions for MMC to own.</p>
+
+      <h4>Pricing as content</h4>
+      <p>41 pricing pages answer &ldquo;how much does X cost&rdquo; searches (&ldquo;How Much Does X Cost in 2026? [Data]&rdquo;), open with a price range and key takeaways, then place WebFX&rsquo;s own plans beside the market range.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Discipline</th><th scope="col">How WebFX presents its price</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">PPC</th><td>From $750 a month, tiers by ad spend, &ldquo;$975 or 15% of spend, whichever is higher&rdquo;, first-month set-up fee, 20+ add-ons</td></tr>
+            <tr><th scope="row">Paid social</th><td>15% of ad spend with a floor; the percentage falls as spend grows</td></tr>
+            <tr><th scope="row">SEO</th><td>&ldquo;Starting at $3,000&rdquo;, two onboarding months, 6-month commitment</td></tr>
+            <tr><th scope="row">Social management</th><td>Three plans by posts and images per month, plus set-up fees</td></tr>
+            <tr><th scope="row">Web design</th><td>From $8,000, with an eight-question cost calculator</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>Case studies and content engine</h4>
+      <ul>
+        <li><strong>Case study format:</strong> header facts (industry, company size, services), headline, three stat tiles, a quote, before and after bullets, a three-step approach, the named team with hours dedicated, then a budget form. About 820 words, filterable by industry and service.</li>
+        <li><strong>Blog:</strong> visible dates, named authors on newer posts, a &ldquo;Summarize in ChatGPT&rdquo; button, key-takeaway boxes, and a budget calculator and case cards in the sidebar.</li>
+        <li><strong>Tools:</strong> calculators with no signup; name and email are asked only in exchange for a PDF, report or guide.</li>
+        <li><strong>Education pages</strong> are written for US colleges and online schools, organised by channel (SEO, PPC, email, social).</li>
+      </ul>
+
+      <h3><span class="who">Mediagarh</span>Category language, from headline to case study</h3>
+      <ul>
+        <li><strong>The pitch:</strong> full-stack marketing for education only, from a Jodhpur team of 44 plus two founders. SEO, Google and Meta ads, web, video, creative, print, PR and lead automation.</li>
+        <li><strong>Who it speaks to:</strong> owners, chairmen, trustees and directors of schools, universities, B-schools, coaching and skilling institutes.</li>
+        <li><strong>Vocabulary:</strong> admissions, enrolments, seats, admission season, counsellors, parents. Service titles follow &ldquo;Best [Service] Agency for Educational Institutions&rdquo;.</li>
+        <li><strong>Service pages</strong> run: video hero, trust chips, sub-service cards, count-up stats, video testimonials, city links, then a free consultation booking. They are short, with no FAQ or pricing.</li>
+      </ul>
+      <div class="quotes">
+        <blockquote><p>&ldquo;Closed 240+ Admissions Worth &#8377;24 Lakhs Each&rdquo;</p><cite>Case study headline</cite></blockquote>
+        <blockquote><p>&ldquo;Cheap lead &ne; better lead.&rdquo;</p><cite>2026 article</cite></blockquote>
+        <blockquote><p>&ldquo;Your website should function more like a 24/7 admissions counsellor.&rdquo;</p><cite>2026 article</cite></blockquote>
+      </div>
+      <ul>
+        <li><strong>Case study format:</strong> tenure tag (&ldquo;3 Years &amp; Counting&rdquo;), a number-led headline in admissions and rupees, challenge, solution, three or four result tiles, service breakdown cards, a named testimonial, then featured work. About 580 words, one for nearly every client segment.</li>
+        <li><strong>Articles:</strong> 68 pieces, now three a month. The 2026 posts follow a pattern worth copying: a scenario hook, a list of mistakes, a table or framework, a checklist, then the pitch. Topics: lead quality, counsellor follow-up, CRMs (Meritto, LeadSquared, Wati), Google vs Meta, website enquiry leaks, Gen-Z and AI search.</li>
+        <li><strong>Paid landing page</strong> (&ldquo;Increase your admission&rdquo;): logo only, three-field form twice, click-to-call, four stat tiles and four video testimonials.</li>
+      </ul>
+
+      <div class="split">
+        <div>
+          <h4 class="take">Take</h4>
+          <ul>
+            <li>WebFX&rsquo;s one-sentence definitions and &ldquo;what&rsquo;s included&rdquo; tabs</li>
+            <li>Pricing guide pages that answer cost searches</li>
+            <li>Case study header facts and named team</li>
+            <li>Mediagarh&rsquo;s admissions vocabulary and season urgency</li>
+            <li>Chairman-level testimonials, on video where possible</li>
+            <li>Problem-first article titles in the buyer&rsquo;s own words</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="skip">Skip</h4>
+          <ul>
+            <li>Copy that swaps the service name into the same paragraphs</li>
+            <li>The same testimonials on unrelated services</li>
+            <li>Superlatives and &ldquo;AI-powered&rdquo; as decoration</li>
+            <li>Service pages with no FAQ, process or pricing</li>
+            <li>US-only examples, platforms and currencies</li>
+            <li>A dozen CTAs on one page</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="design">
+      <p class="lens">Lens 2</p>
+      <h2><em class="s">Design</em>: the visual systems</h2>
+
+      <h3><span class="who">WebFX</span>Disciplined, dense, SaaS-poster</h3>
+      <ul>
+        <li><strong>Type:</strong> Inter for everything, headlines at weight 800 to 900 with tight tracking, one word per headline recoloured blue.</li>
+        <li><strong>Colour:</strong> white and pale blue-grey grounds, action blue #207DE9 on every primary button, near-black headings, grey body copy.</li>
+        <li><strong>Imagery:</strong> real staff photography, cut-out headshots in coloured circles, dashboard mock-ups with floating stat bubbles, a circular &ldquo;Revenue Engine&rdquo; diagram, partner badge carousels.</li>
+        <li><strong>Rhythm:</strong> hero, stat strip, alternating two-column blocks, card carousels, CTA band, repeated. Pages run about 10,500 px on desktop and 15,800 px on mobile.</li>
+        <li><strong>Navigation:</strong> five mega-menus with about 100 links, plus a business-challenge column (&ldquo;My website doesn&rsquo;t convert&rdquo;). Industries and locations sit in the footer.</li>
+        <li><strong>Components:</strong> carousels everywhere, tabbed &ldquo;what&rsquo;s included&rdquo;, three-column comparison tables, plans tables, sticky header, &ldquo;To top&rdquo; tab.</li>
+      </ul>
+
+      <h3><span class="who">Mediagarh</span>Cinematic hero, four styles underneath</h3>
+      <ul>
+        <li><strong>Hero:</strong> a full-bleed night sky with a lone figure on a dune, white ALL-CAPS Satoshi. Memorable, but it says nothing about campuses or students.</li>
+        <li><strong>Below it:</strong> white pages, two-tone headings in charcoal and steel blue (#3889C9), a dense five-column logo wall of about 45 education brands, count-up stat bands.</li>
+        <li><strong>Four visual styles:</strong> the cinematic homepage, a flat corporate paid landing page with a line-art campus, dark neon case pages, and tabloid-style social creatives.</li>
+        <li><strong>Type:</strong> nine font families load (Poppins, Averta, Montserrat, Roboto, Satoshi, Lato, Questrial, Albert Sans, Rubik). Mobile body text is 13.7 px.</li>
+        <li><strong>Video:</strong> looping background video in service heroes, nine testimonial videos per service page.</li>
+      </ul>
+
+      <h3>On a phone</h3>
+      <div class="shots mobile">
+        <figure>
+          <img src="img/webfx-ppc-mobile.jpg" alt="WebFX PPC services page on a phone: large two-colour headline, long intro paragraph, and a floating To top tab over the text." width="520" height="1125" loading="lazy">
+          <figcaption><b>WebFX.</b> Big headline, long intro; the website field sits below the first screen.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/mediagarh-lp-mobile.jpg" alt="Mediagarh paid landing page on a phone: a vertical Enquire Now With Expert tab overlapping the paragraph and Call Us button, with the form band starting below an illustration." width="520" height="1125" loading="lazy">
+          <figcaption><b>Mediagarh.</b> The sticky enquiry tab overlaps the copy and the call button.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/mmc-meta-mobile.jpg" alt="MMC Meta Ads page on a phone: headline Meta Ads that compound, not just convert, with the cookie banner covering the lower 40 percent of the screen." width="520" height="1125" loading="lazy">
+          <figcaption><b>MMC.</b> The strongest headline, half hidden by the cookie banner.</figcaption>
+        </figure>
+      </div>
+
+      <div class="move-box">
+        <h4>Design moves for MMC</h4>
+        <ul>
+          <li>Keep MMC&rsquo;s system (royal blue, sun yellow, Raleway, the Cormorant italic accent). It already looks more considered than either rival; extend it to service, industry, pricing and tool templates.</li>
+          <li>Replace stock-style art with real work: ad creatives, landing pages, dashboards in rupees, before and after screens.</li>
+          <li>Give the education page campus and people photography, not a night sky, so it doesn&rsquo;t echo Mediagarh.</li>
+          <li>Borrow WebFX&rsquo;s component set (tabs for inclusions, plans tables, comparison tables) but keep pages shorter and calmer.</li>
+          <li>On mobile: a slim cookie bar, a bottom WhatsApp and call bar, and the form within the first two screens.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="development">
+      <p class="lens">Lens 3</p>
+      <h2><em class="s">Development</em>: stack, speed and tooling</h2>
+      <p class="sec-lede">Measured on 11 key pages per competitor and 5 MMC pages, at desktop (1440 px) and mobile (390 px), with the browser cache off. Figures are medians from this machine; MMC&rsquo;s were taken on the local build, so its timings are not comparable, but its page weight and stack are.</p>
+      <div class="table-wrap">
+        <table class="metrics">
+          <thead><tr><th scope="col"></th><th scope="col">WebFX desktop</th><th scope="col">WebFX mobile</th><th scope="col">Mediagarh desktop</th><th scope="col">Mediagarh mobile</th><th scope="col">MMC local build</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Main content visible (LCP)</th><td class="num">1.51 s</td><td class="num">1.38 s</td><td class="num">0.56 s<small>4.2 to 4.9 s on service and about pages</small></td><td class="num">0.90 s<small>3.8 to 4.3 s on service pages</small></td><td class="num">n/a<small>local server</small></td></tr>
+            <tr><th scope="row">Server response (TTFB)</th><td class="num">1.19 s</td><td class="num">1.12 s</td><td class="num">56 ms</td><td class="num">77 ms</td><td class="num">n/a</td></tr>
+            <tr><th scope="row">Layout shift (CLS)</th><td class="num">0.003</td><td class="num">0</td><td class="num">0.001<small>0.16 on one page</small></td><td class="num">0</td><td class="num">0.02<small>0.56 on one page</small></td></tr>
+            <tr><th scope="row">Requests</th><td class="num">179</td><td class="num">154</td><td class="num">115</td><td class="num">109</td><td class="num">45</td></tr>
+            <tr><th scope="row">Page weight</th><td class="num">2.7 MB</td><td class="num">2.3 MB</td><td class="num">2.4 MB</td><td class="num">2.2 MB</td><td class="num">2.2 MB<small>homepage 13.7 MB</small></td></tr>
+            <tr><th scope="row">JavaScript</th><td class="num">82 files, 1.7 MB<small>plus 940 KB inline</small></td><td class="num">83 files, 1.7 MB</td><td class="num">26 files, 1.7 MB</td><td class="num">24 files, 1.6 MB</td><td class="num">10 files, 1.3 MB<small>React and Babel from unpkg</small></td></tr>
+            <tr><th scope="row">CSS</th><td class="num">3 files<small>745 KB inline</small></td><td class="num">same</td><td class="num">33 files<small>Elementor per-widget CSS</small></td><td class="num">30 files</td><td class="num">3 files</td></tr>
+            <tr><th scope="row">Fonts</th><td class="num">Inter + icon fonts<small>79 KB</small></td><td class="num">same</td><td class="num">9 families<small>237 KB</small></td><td class="num">same</td><td class="num">3 families<small>428 KB</small></td></tr>
+            <tr><th scope="row">Images</th><td>94% lazy-loaded; mostly PNG and SVG, little WebP</td><td>same</td><td>None lazy-loaded; WebP and PNG mix</td><td>same</td><td>94% lazy-loaded; PNG and JPG, no WebP; no width or height set</td></tr>
+            <tr><th scope="row">Third-party hosts</th><td class="num">31</td><td class="num">32</td><td class="num">18</td><td class="num">18</td><td class="num">8</td></tr>
+            <tr><th scope="row">Accessibility basics</th><td>&lt;main&gt; on 1 of 11 pages, no skip link</td><td>same</td><td>&lt;main&gt; on 8 of 11, skip link present</td><td>body text 13.7 px</td><td>&lt;main&gt; on every page, no skip link, 17 px body</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Stack and tooling</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col"></th><th scope="col">Build and hosting</th><th scope="col">Marketing and sales tooling</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">WebFX</th><td>WordPress with Yoast, jQuery 3.7, Gravity Forms and Wistia video; hosted on Kinsta behind Cloudflare with HTTP/3, Brotli and a seven-day edge cache</td><td>Google Tag Manager, Google Ads, Meta, LinkedIn, Bing and The Trade Desk tags; Clearbit (identifies visiting companies), MadKudu (lead scoring), Segment, VWO (A/B testing), Microsoft Clarity, their own MarketingCloudFX and LeadManagerFX, Nutshell CRM, Chili Piper booking, SpeedCurve (real-user speed monitoring), Sentry (error tracking), ClickCease (click-fraud blocking)</td></tr>
+            <tr><th scope="row">Mediagarh</th><td>WordPress 6.7 with Elementor, Rank Math, WPForms, Swiper and Font Awesome, a caching plugin, served over HTTP/2 through Hostinger&rsquo;s CDN</td><td>Google Tag Manager, GA4, Google Ads, Meta Pixel, Microsoft Clarity, Contentsquare and Smartlook (session analytics), an OpenAI measurement script, off-site Calendly booking, a WhatsApp link</td></tr>
+            <tr><th scope="row">MMC</th><td>Static HTML pages, React 18 and Babel loaded from unpkg that compile JSX in the visitor&rsquo;s browser, GSAP, Python pre-render for crawlers, Airtable-backed admin</td><td>Google Tag Manager, GA4, Meta Pixel, Calendly; forms post to a webhook that is not yet configured</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h4>What stands out</h4>
+      <ul>
+        <li><strong>WebFX treats the site as a sales system.</strong> Visitor identification, lead scoring, A/B testing and speed monitoring run on every page. Their slower server response is offset by caching and lazy loading.</li>
+        <li><strong>Mediagarh shows the Elementor trade-off.</strong> The server is quick, but headlines inside animated or video heroes appear after 4 seconds, no images are lazy-loaded, and nine font families load.</li>
+        <li><strong>MMC&rsquo;s build is the lightest in requests but the heaviest in images,</strong> and compiling JSX in the browser adds a large script download and processing on every visit.</li>
+      </ul>
+
+      <div class="move-box">
+        <h4>Development moves for MMC</h4>
+        <ul>
+          <li>Pre-compile the JSX at build time and self-host React; drop in-browser Babel.</li>
+          <li>Convert images to WebP or AVIF with responsive sizes and explicit width and height; target under 1 MB before the fold.</li>
+          <li>Fix the pre-render so animated counters bake their final value, and fix the one page with a large layout shift.</li>
+          <li>Serve from an edge CDN with long cache headers and HTTP/3, as WebFX does.</li>
+          <li>Generate pages, llms.txt, sitemaps and structured data from one content data file.</li>
+          <li>Add the pieces WebFX proves out, lean: tool usage as lead events, CRM stages sent back to Google and Meta, simple A/B testing and real-user speed monitoring.</li>
+          <li>Add a skip link and keep body text at 16 px or above on mobile.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="seo">
+      <p class="lens">Lens 4</p>
+      <h2><em class="s">SEO</em>: architecture, templates and AI search</h2>
+
+      <h3><span class="who">WebFX</span>Built to be found at every stage</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Layer</th><th scope="col">What exists</th><th scope="col">Job</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Discipline hubs</th><td><span class="kbd">/ppc/</span>, <span class="kbd">/seo/</span> and 12 more learning libraries</td><td>Rank for broad topics, route to learn pages and services</td></tr>
+            <tr><th scope="row">Services</th><td><span class="kbd">/ppc/services/ecommerce/</span>: 133 pages cut by platform, tactic, company size and business model</td><td>One URL per buyer intent</td></tr>
+            <tr><th scope="row">Pricing</th><td><span class="kbd">/ppc/pricing/</span>: 41 pages mirroring the service folders</td><td>Capture cost searches, anchor their own plans</td></tr>
+            <tr><th scope="row">Industries</th><td>400+ URLs in 22 groups, down to industry-by-service pages</td><td>Long-tail vertical searches</td></tr>
+            <tr><th scope="row">Locations</th><td>About 34 city pages, 22 city-by-service pages</td><td>Local searches near their offices</td></tr>
+            <tr><th scope="row">Learn, stats, glossary</th><td>&ldquo;Best agencies&rdquo; lists, statistics pages with the year in the title, A to Z glossaries</td><td>Citation magnets and comparison searches</td></tr>
+            <tr><th scope="row">Tools</th><td>ROAS calculator, SEO checker, budget calculator and more</td><td>Links, repeat visits, lead signals</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Mechanics:</strong> canonical tags on 459 of 460 pages, breadcrumbs matching folders, FAQ markup on 44 pages, Dataset markup on 20 pricing pages, alt text on about 97% of images.</li>
+        <li><strong>Internal links run through the frame:</strong> 57 service links in the menu and a proposal form on every page do most of the routing; in-body links from blog posts to services are around 5%.</li>
+        <li><strong>AI search:</strong> an llms.txt with 27 links, generative engine optimisation guides, answer-first blocks, and a &ldquo;Summarize in ChatGPT&rdquo; button on posts.</li>
+        <li><strong>Templates at scale:</strong> service pages share about 28% boilerplate; 25 pages mark services up as Product with review stars.</li>
+      </ul>
+
+      <h3><span class="who">Mediagarh</span>One keyword pattern, repeated</h3>
+      <ul>
+        <li><strong>Targeting:</strong> &ldquo;[service] agency for educational institutions&rdquo; in URLs, titles and H1s, and blog posts placed on money-keyword URLs such as <span class="kbd">/best-education-marketing-company-in-india/</span>.</li>
+        <li><strong>City pages:</strong> one live Dubai variant; Bangalore and Gurugram links on service pages lead nowhere.</li>
+        <li><strong>AI-search play:</strong> FAQ structured data that answers &ldquo;Which is the best education marketing agency in India?&rdquo; with Mediagarh&rsquo;s name.</li>
+        <li><strong>Hygiene:</strong> 24 of 164 sitemap URLs return &ldquo;Page not found&rdquo;, 12+ duplicate page pairs, 53 of 140 live pages without a meta description, and several posts chasing the same keyword.</li>
+        <li><strong>Cadence:</strong> about three education articles a month in 2026, no visible dates or bylines.</li>
+      </ul>
+
+      <div class="move-box">
+        <h4>SEO moves for MMC</h4>
+        <ul>
+          <li>Clean folders with 301 redirects: <span class="kbd">/services/</span>, <span class="kbd">/pricing/</span>, <span class="kbd">/industries/education/</span>, <span class="kbd">/work/</span>, <span class="kbd">/tools/</span>, <span class="kbd">/guides/</span>, <span class="kbd">/glossary/{term}/</span>, <span class="kbd">/insights/</span>, <span class="kbd">/about/team/</span>.</li>
+          <li>Hubs for D2C and education that link to every child page in the body, not only the menu.</li>
+          <li>Pricing and cost-guide URLs that mirror service URLs, India-first.</li>
+          <li>Service, FAQPage, Breadcrumb and Article markup generated from the same data as the visible page.</li>
+          <li>Named authors and reviewers, visible dates, answer boxes, and an expanded llms.txt with an llms-full.txt.</li>
+          <li>Build checks that fail on placeholders, broken links, missing meta descriptions and duplicate titles.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="market">
+      <h2>Education market <em class="s">signals</em></h2>
+      <p class="sec-lede">What Mediagarh&rsquo;s 68 articles and 36 case studies reveal about how Indian institutes buy marketing: the raw material for MMC&rsquo;s education page and content.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Theme</th><th scope="col">What the market talks about</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Buyers</th><td>K-12 owners and principals, where parents decide; college chairmen and marketing directors; coaching owners; high-fee vocational schools. Many hire mid-season, under pressure, and value budget transparency.</td></tr>
+            <tr><th scope="row">The pain has moved</th><td>From getting leads to converting them: lead quality, speed to lead, one-call follow-ups, spreadsheet tracking, rising cost per lead, marketing and admissions teams working apart.</td></tr>
+            <tr><th scope="row">Channels</th><td>Google for intent, Meta for discovery and retargeting, WhatsApp as the default follow-up, local search and reviews, events, and AI search. CRMs named: Meritto, LeadSquared, Wati.</td></tr>
+            <tr><th scope="row">What buyers respond to</th><td>Admissions per cycle, rupees, ROAS, chairman-level testimonials, tenure tags, and a case for their own segment.</td></tr>
+            <tr><th scope="row">Fee range</th><td>Institutions in the case studies charge from about &#8377;25k to &#8377;50 lakh per student, so economics differ sharply by segment.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h4>Not covered by either competitor</h4>
+      <ul>
+        <li>An Indian admissions calendar by segment and exam cycle</li>
+        <li>Compliance content: DPDP consent, telecalling rules, ASCI advertising rules</li>
+        <li>Education portals (Shiksha, CollegeDekho), regional languages, tier-2 and tier-3 cities</li>
+        <li>Cost per admission, and closing the loop from CRM stages back to ad platforms</li>
+        <li>Selling <em>to</em> schools as a B2B segment, where Bloom Edutours and Sprouts Edu Tours sit</li>
+      </ul>
+    </section>
+
+    <section id="build">
+      <h2>How MMC builds past <em class="s">both</em></h2>
+
+      <h3>Positioning</h3>
+      <p class="positioning">The senior studio that judges every rupee of media on what reaches the <em class="s">P&amp;L</em>, built for how India buys.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Pillar</th><th scope="col">Buyer question it answers</th><th scope="col">Where WebFX stops</th><th scope="col">Where Mediagarh stops</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Profit is the KPI</th><td>&ldquo;Will this make us money, not just leads?&rdquo;</td><td>Revenue and pipeline</td><td>Admissions and engagement</td></tr>
+            <tr><th scope="row">Senior hands on every account</th><td>&ldquo;Who actually does the work?&rdquo;</td><td>Scale: hundreds of staff</td><td>A large team grid</td></tr>
+            <tr><th scope="row">Tools that do the maths</th><td>&ldquo;Can I sanity-check this myself?&rdquo;</td><td>US calculators</td><td>No tools</td></tr>
+            <tr><th scope="row">Compounding, not campaigns</th><td>&ldquo;Will this still work in year two?&rdquo;</td><td>Platform lock-in</td><td>Season-to-season pushes</td></tr>
+            <tr><th scope="row">Built for how India buys</th><td>&ldquo;Do you understand my market?&rdquo;</td><td>No &#8377;, COD, RTO, UPI or GST</td><td>No calendar, compliance or CRM loop</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Voice</h3>
+      <div class="split">
+        <div>
+          <h4 class="take">Do</h4>
+          <ul>
+            <li>Lead with the buyer&rsquo;s metric: contribution margin, CAC payback, cost per admission</li>
+            <li>Open pages with a one-sentence definition</li>
+            <li>Name who MMC is not for</li>
+            <li>Indian English, rupees, Indian platforms and constraints</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="skip">Don&rsquo;t</h4>
+          <ul>
+            <li>Superlatives, &ldquo;AI-powered&rdquo; badges, ALL-CAPS slogans</li>
+            <li>Service-name swaps in otherwise identical copy</li>
+            <li>Verbal tics (&ldquo;actually&rdquo;)</li>
+            <li>Em dashes, per house style</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Conversion system</h3>
+      <ul>
+        <li><strong>Two actions, named the same everywhere:</strong> book an account review, or send a brief.</li>
+        <li><strong>A website field on every page</strong> that opens the existing audit modal, as WebFX does.</li>
+        <li><strong>A short qualifier with &#8377; spend bands,</strong> then calendar booking embedded on the page (Mediagarh sends people off-site).</li>
+        <li><strong>WhatsApp as a primary channel,</strong> with a bottom call and WhatsApp bar on mobile.</li>
+        <li><strong>Calculators that hand off:</strong> email yourself the result or talk it through with a strategist; each use recorded as a lead event.</li>
+        <li><strong>A paid landing page template</strong> modelled on Mediagarh&rsquo;s: no navigation, a short form, click-to-call, testimonials.</li>
+      </ul>
+
+      <h3>Pricing</h3>
+      <p>Publish starting prices for productised services (Meta Ads now, Google Ads next) with spend bands and terms beside the price: &ldquo;+ GST&rdquo;, &ldquo;you pay Meta directly&rdquo;, contract length and exit terms. For other services, explain how engagements are scoped. Write India cost guides (agency fees, Meta ads management, Shopify builds, UGC video, education lead generation) on URLs that mirror the service pages. Feed the price table, FAQs and llms.txt from one data file.</p>
+
+      <h3>Service page template</h3>
+      <ol class="steps">
+        <li><span><b>Hero</b> with a one-sentence definition and a website field that opens the audit</span></li>
+        <li><span><b>Headline figures strip</b>, identical sitewide</span></li>
+        <li><span><b>Who it&rsquo;s for, and who it isn&rsquo;t</b></span></li>
+        <li><span><b>Problems</b> in the buyer&rsquo;s own metric</span></li>
+        <li><span><b>What&rsquo;s included</b>, in tabs with countable deliverables</span></li>
+        <li><span><b>How we work</b>, including the first 30 days</span></li>
+        <li><span><b>A quote from the MMC person</b> who runs the service</span></li>
+        <li><span><b>Work from this service</b>: creatives, pages, dashboards, client cards</span></li>
+        <li><span><b>How we price</b>, with terms</span></li>
+        <li><span><b>Comparison</b> with in-house and other agency models</span></li>
+        <li><span><b>FAQs</b> that lead with ownership, minimums, exit and reporting</span></li>
+        <li><span><b>Related services and the matching calculator</b></span></li>
+        <li><span><b>Closing call to action</b></span></li>
+      </ol>
+      <p class="note">Aim for 5 to 6 CTA placements and 1,200 to 1,800 words of copy unique to the service. Specific outlines already drafted: Creative &amp; UGC (a named testing loop, UGC usage rights and ASCI disclosure, &ldquo;send us your last 20 ads&rdquo;), Retention (COD confirmation and RTO flows, email vs WhatsApp), Conversion &amp; Technology (Shopify, COD, pincode and UPI checkout, ownership and handover).</p>
+
+      <h3>Site architecture</h3>
+      <p>Industry pages in this order: D2C categories, education, then B2B services. No industry-by-service pages at launch; segments sit as pre-rendered tabs inside each industry page. City pages only for Bengaluru and Mumbai, each with a real address and a named person.</p>
+    </section>
+
+    <section id="education">
+      <h2>The education landing <em class="s">page</em></h2>
+      <p class="sec-lede">Mediagarh&rsquo;s category playbook, WebFX&rsquo;s page structure, and the India operating detail neither has.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Segments</th><th scope="col">Buyer roles and what each needs to hear</th></tr></thead>
+          <tbody>
+            <tr><td>K-12 schools &middot; Higher education &middot; Coaching and test prep &middot; Skilling and vocational &middot; Study abroad &middot; Edtech &middot; <strong>Selling to schools (B2B)</strong></td><td><strong>Chairman or trustee:</strong> seats filled and fee revenue &middot; <strong>Principal or director:</strong> reputation and student fit &middot; <strong>Admissions head:</strong> lead quality and follow-up load &middot; <strong>Marketing head:</strong> cost per admission and reporting</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h4>Section order</h4>
+      <ol class="steps">
+        <li><span><b>Hero with a segment picker</b>, the category keyword and an outcome, over real campus imagery</span></li>
+        <li><span><b>Education client logos</b> and a tenure line</span></li>
+        <li><span><b>Where admissions leak</b>: six cards from ad to WhatsApp to CRM to counsellor to fee paid</span></li>
+        <li><span><b>Segment tabs</b>, pre-rendered so crawlers read every one</span></li>
+        <li><span><b>Indian admissions calendar</b> as an interactive planner</span></li>
+        <li><span><b>How the funnel is run and reported</b>: enquiry, visit, application, admission</span></li>
+        <li><span><b>Workstreams</b> linked to the service pages</span></li>
+        <li><span><b>Selling to schools</b>, the B2B section only MMC can write</span></li>
+        <li><span><b>Work</b>: Bloom Edutours, Sprouts Edu Tours and MVJ College of Engineering, with creatives, pages and scope</span></li>
+        <li><span><b>Named testimonials</b>, on video where possible</span></li>
+        <li><span><b>Cost-per-admission calculator</b> with a counsellor-capacity check</span></li>
+        <li><span><b>Compliance</b>: DPDP consent, telecalling, ASCI rules</span></li>
+        <li><span><b>How an engagement runs</b>, with terms</span></li>
+        <li><span><b>FAQs</b></span></li>
+        <li><span><b>Role-aware two-step form</b> mapped to the Airtable Leads fields, a pre-filled WhatsApp message and on-page calendar booking</span></li>
+      </ol>
+      <h4>Questions the FAQ should answer</h4>
+      <ul>
+        <li>How early before admission season should we start?</li>
+        <li>How do you count an admission, and how is it reported?</li>
+        <li>What happens if enquiries come in but admissions don&rsquo;t?</li>
+        <li>Do you work inside our CRM (Meritto, LeadSquared)?</li>
+        <li>Who owns the ad accounts, data and creative?</li>
+        <li>Can you run campaigns in regional languages?</li>
+        <li>How do you handle DPDP consent and ASCI rules?</li>
+        <li>What will our chairman see each month?</li>
+        <li>What does an engagement include, and what are the exit terms?</li>
+        <li>Do you work with schools, colleges and coaching institutes alike?</li>
+      </ul>
+    </section>
+
+    <section id="programme">
+      <h2>Content <em class="s">programme</em></h2>
+      <p class="sec-lede">Three waves, split between D2C and education, each piece aimed at a search or question neither competitor answers for India.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Wave</th><th scope="col">D2C and general</th><th scope="col">Education</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Launch</th><td>Break-even ROAS for India &middot; Contribution margin guide &middot; India D2C benchmarks &middot; Meta ads cost in India &middot; 25 glossary term pages</td><td>Cost-per-admission calculator &middot; Funnel leak finder &middot; Seats-to-budget planner &middot; Admissions funnel guide &middot; Education glossary &middot; Agency buyer&rsquo;s guide with an RFP template &middot; Follow-up SOP with call and WhatsApp scripts</td></tr>
+            <tr><th scope="row">Next 90 days</th><td>Google Ads cost &middot; Agency pricing models &middot; RTO and COD &middot; Blended ROAS vs MER &middot; Quick-commerce benchmarks &middot; Shopify cost &middot; Marketplace fee tables</td><td>Indian admissions calendar by segment &middot; Website audit tool &middot; Lead quality and offline conversions guide &middot; Compliant admissions marketing checklist &middot; CRM chooser</td></tr>
+            <tr><th scope="row">Authority</th><td>AI search for India &middot; Lead engines when the sale happens offline &middot; Founder insights</td><td>India education benchmarks report &middot; Parent and student decision survey &middot; Which colleges AI assistants recommend &middot; Deep-dive case studies</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Article template:</strong> answer box, named author and reviewer, visible date, sources cited, tables or frameworks, visible FAQs, a relevant calculator, and markup matching the page. Mediagarh&rsquo;s 2026 structure (scenario, mistakes, framework, checklist) is a good skeleton.</p>
+    </section>
+
+    <section id="mmc">
+      <h2>MMC <em class="s">today</em></h2>
+      <div class="split">
+        <div>
+          <h4 class="take">Strengths to build on</h4>
+          <ul>
+            <li>The sharpest positioning of the three, held on Home, Our Work, the Meta page and the tools</li>
+            <li>Six calculators and a glossary: over half the site&rsquo;s words and its most India-specific asset</li>
+            <li>A distinctive, crafted visual system with only three font families</li>
+            <li>Pre-rendered HTML and an llms.txt, ahead of both competitors for AI crawlers</li>
+            <li>&lt;main&gt; landmarks on every page and 17 px body text</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="skip">Gaps to close</h4>
+          <ul>
+            <li><strong>Content:</strong> copy speaks only to D2C founders; Our Work is 379 words; Insights teasers link nowhere; calculators capture no leads</li>
+            <li><strong>Design:</strong> cookie banner covers much of the mobile screen; no team or real work imagery on service pages</li>
+            <li><strong>Development:</strong> JSX compiled in the browser; 13.7 MB homepage; animated counters bake as zero in the pre-rendered homepage; one page with a large layout shift; misrouted buttons</li>
+            <li><strong>SEO:</strong> filenames with spaces; one service page with no links to it and no Services menu; brand name missing from page titles; homepage canonical points to <span class="kbd">/index.html</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <h2><em class="s">Roadmap</em></h2>
+      <div class="roadmap">
+        <div>
+          <h4>Now</h4>
+          <p class="when">Weeks 1 to 2</p>
+          <ul>
+            <li>Clean URLs and redirects</li>
+            <li>Pre-compiled build, optimised images</li>
+            <li>Counter bake fix and layout-shift fix</li>
+            <li>Services menu and hub</li>
+            <li>Meta Ads page rebuilt on the new template</li>
+            <li>One content data file for pages, llms.txt and markup</li>
+            <li>Audit, calendar and WhatsApp conversion system</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Next</h4>
+          <p class="when">Weeks 3 to 8</p>
+          <ul>
+            <li>4 to 5 core service pages</li>
+            <li>Education landing page and cost-per-admission calculator</li>
+            <li>Pricing page and first India cost guides</li>
+            <li>Case study template and first work pages</li>
+            <li>Team page with named operators</li>
+            <li>Launch-wave glossary and guides</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Later</h4>
+          <p class="when">This quarter</p>
+          <ul>
+            <li>D2C category and B2B industry pages</li>
+            <li>Benchmarks and statistics pages</li>
+            <li>Admissions calendar tool</li>
+            <li>Lead scoring, A/B testing and real-user speed monitoring</li>
+            <li>Bengaluru and Mumbai pages</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Choices for you before the build</h3>
+      <ul class="decisions">
+        <li><b>Services that get a page</b>Which services MMC sells today, and in what order they launch.</li>
+        <li><b>Published pricing</b>Starting prices for Meta Ads and Google Ads, or scoping notes only.</li>
+        <li><b>Education focus</b>Which segments the landing page leads with.</li>
+        <li><b>Team page</b>Which people are named and quoted on service pages.</li>
+        <li><b>WhatsApp</b>The number that becomes the primary contact channel.</li>
+      </ul>
+    </section>
+
+    <footer class="method" id="method">
+      <h2>How this was <em class="s">done</em></h2>
+      <p>Pages were collected on 15 September 2026 through a real browser, capturing titles, headings, calls to action, forms, structured data, links and full body text.</p>
+      <ul>
+        <li><strong>Mediagarh:</strong> all 164 URLs in its sitemap.</li>
+        <li><strong>WebFX:</strong> pages found by following links from its sales pages. All service, pricing, company and portfolio pages, the discipline hubs, every education page, and samples of industry, city, blog, tool, guide, statistics and glossary pages: 460 in all.</li>
+        <li><strong>MMC:</strong> the 18 live pages from the local build.</li>
+        <li><strong>Speed and stack:</strong> 11 key pages per competitor and 5 MMC pages, each at desktop and mobile size with the cache off, recording load timings, requests, weight, scripts, fonts, images, third-party services and headers.</li>
+      </ul>
+      <p>Eleven content analyses covered MMC, Mediagarh&rsquo;s business, case studies and articles, and WebFX&rsquo;s services, pricing, brand, case studies, industries and content. Figures describe what the sites showed that day; competitor pages change often.</p>
+    </footer>
+  </main>
+</div>

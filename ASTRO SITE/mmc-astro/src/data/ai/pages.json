@@ -1,0 +1,799 @@
+{
+ "index": {
+  "title": "AI by MMC: AI Services for Growth Teams | MMC",
+  "description": "Six AI services from MMC for D2C, B2B and education: photoshoots, video, sales agents, UGC, landing pages and spokesperson videos, built for performance ads.",
+  "path": "/ai-by-mmc/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/",
+    "name": "AI by MMC: AI Services for Growth Teams | MMC",
+    "description": "Six AI services from MMC for D2C, B2B and education: photoshoots, video, sales agents, UGC, landing pages and spokesperson videos, built for performance ads.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What is AI by MMC?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It is MMC's set of AI-powered services: AI photoshoot, AI video generation, AI sales agent, AI UGC, AI landing page builder and AI spokesperson video. Each is run by our team and connected to performance marketing."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Who is it for?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "D2C brands, B2B companies and colleges and education brands."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do we need to use all six?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. Start with the one that removes your biggest bottleneck. Many teams begin with images or landing pages."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How is this different from an AI tool?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A tool gives you software. We give you finished work, reviewed by people, and we measure it in your ad account."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What does it cost?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It depends on scope, so we quote after a short call."
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "Services",
+    "/services/"
+   ],
+   [
+    "Our work",
+    "/work/"
+   ],
+   [
+    "About MMC",
+    "/about/"
+   ]
+  ],
+  "crumb": "AI by MMC"
+ },
+ "photoshoot": {
+  "title": "AI Photoshoot for Brands | AI by MMC",
+  "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC, ready for ads and product pages.",
+  "path": "/ai-by-mmc/photoshoot/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/",
+    "name": "AI Photoshoot for Brands | AI by MMC",
+    "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC, ready for ads and product pages.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Photoshoot",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Photoshoot",
+    "description": "Turn one real product photo into every scene your campaigns need. AI photoshoots for D2C, B2B and education brands from MMC, ready for ads and product pages.",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/photoshoot/",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://www.mondaymarketing.company/#organization",
+     "name": "Monday Marketing Company",
+     "url": "https://www.mondaymarketing.company/"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What do you need from us to start?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "One clear, high-resolution photo of the product, person or place, plus a list of the scenes you want."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Will the product still look like our product?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "We start from your real photo and check every scene against it. Anything that drifts from the real product is corrected or dropped before you see it."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can we use the images in paid ads?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We format the files for ad platforms, marketplaces and your website. Check each platform's current rules on AI-generated imagery, and we will flag anything relevant."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How long does it take?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It depends on the number of scenes and the rounds of changes. We confirm the timing when we scope the work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you also run the ads?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "We can. AI by MMC sits next to our performance marketing, so images can go straight into testing and reporting."
+      }
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "Social media creatives",
+    "/services/social-media/"
+   ],
+   [
+    "Branding",
+    "/services/branding/"
+   ]
+  ],
+  "crumb": "AI Photoshoot"
+ },
+ "video-generation": {
+  "title": "AI Video Generation for Ads and Brand Films | AI by MMC",
+  "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands, ready to run as ads.",
+  "path": "/ai-by-mmc/video-generation/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/",
+    "name": "AI Video Generation for Ads and Brand Films | AI by MMC",
+    "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands, ready to run as ads.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Video Generation",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Video Generation",
+    "description": "Ad films, product videos and explainers made with AI, without a full production shoot. Built by MMC for D2C, B2B and education brands, ready to run as ads.",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/video-generation/",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://www.mondaymarketing.company/#organization",
+     "name": "Monday Marketing Company",
+     "url": "https://www.mondaymarketing.company/"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What kinds of video can AI make for us?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Product films, ad hooks, explainers, mascot animations and stylised brand stories. Live footage of real people is a different job and we will tell you when a real shoot is the better fit."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you use our real product?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We build from your product images and check every shot against them."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can videos be made in different languages?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Voice-over and captions can be produced in the languages your audience uses. We confirm the language list when we scope the work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Who owns the video?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Ownership and usage terms are agreed in the project scope."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you run the ads too?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Video sits inside our performance loop, so hooks are tested and reported on."
+      }
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "UGC and video",
+    "/services/ugc-and-video/"
+   ],
+   [
+    "Social media creatives",
+    "/services/social-media/"
+   ]
+  ],
+  "crumb": "AI Video Generation"
+ },
+ "sales-agent": {
+  "title": "AI Sales Agent for WhatsApp and Chat Leads | AI by MMC",
+  "description": "An AI sales agent that answers questions, qualifies enquiries and books calls on your website and WhatsApp. Built by MMC for D2C, B2B and education.",
+  "path": "/ai-by-mmc/sales-agent/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/sales-agent/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/sales-agent/",
+    "name": "AI Sales Agent for WhatsApp and Chat Leads | AI by MMC",
+    "description": "An AI sales agent that answers questions, qualifies enquiries and books calls on your website and WhatsApp. Built by MMC for D2C, B2B and education.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Sales Agent",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/sales-agent/"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Sales Agent",
+    "description": "An AI sales agent that answers questions, qualifies enquiries and books calls on your website and WhatsApp. Built by MMC for D2C, B2B and education.",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/sales-agent/",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://www.mondaymarketing.company/#organization",
+     "name": "Monday Marketing Company",
+     "url": "https://www.mondaymarketing.company/"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What can the agent do?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Answer questions from the material you approve, ask qualifying questions, share links and book calls. It hands over to a person when a conversation needs one."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Where does it run?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "On your website and on WhatsApp. Other channels can be scoped."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Will it make things up?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It answers from the content you approve. Where it does not know, it says so and hands over."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Does it connect to our CRM?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We connect it to the tools you already use and confirm the list when we scope the work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Who sets it up?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "MMC does, and we keep improving it from the conversations it has."
+      }
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "Lead generation",
+    "/services/lead-generation/"
+   ],
+   [
+    "Conversion rate optimisation",
+    "/services/cro/"
+   ]
+  ],
+  "crumb": "AI Sales Agent"
+ },
+ "ugc": {
+  "title": "AI UGC Videos for Ads and Social | AI by MMC",
+  "description": "Creator-style UGC videos made with AI, in the languages your customers use. Testable, on-brand clips built by MMC for D2C, B2B and education brands.",
+  "path": "/ai-by-mmc/ugc/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/ugc/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/ugc/",
+    "name": "AI UGC Videos for Ads and Social | AI by MMC",
+    "description": "Creator-style UGC videos made with AI, in the languages your customers use. Testable, on-brand clips built by MMC for D2C, B2B and education brands.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI UGC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/ugc/"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI UGC",
+    "description": "Creator-style UGC videos made with AI, in the languages your customers use. Testable, on-brand clips built by MMC for D2C, B2B and education brands.",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/ugc/",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://www.mondaymarketing.company/#organization",
+     "name": "Monday Marketing Company",
+     "url": "https://www.mondaymarketing.company/"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Is this real people or AI?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The presenters and voices are AI-generated. We label content as the platforms and the law require and we will advise on disclosure."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can we use our own spokesperson?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "That is a separate service, AI Spokesperson Video, and it is built from a real person's approved footage."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which languages?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Hinglish, English and a range of regional languages. We confirm your list when we scope the work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can we run these as paid ads?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We build them for ad accounts and check each platform's current rules."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What do you need from us?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The product or course, a few claims you can stand behind, and access to the ad account if you want us to launch."
+      }
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "UGC and video",
+    "/services/ugc-and-video/"
+   ],
+   [
+    "Influencer marketing",
+    "/services/influencer-marketing/"
+   ]
+  ],
+  "crumb": "AI UGC"
+ },
+ "landing-page-builder": {
+  "title": "AI Landing Page Builder for Campaigns | AI by MMC",
+  "description": "Campaign landing pages generated, refined and launched quickly with AI. Built by MMC for D2C, B2B and education brands, with conversion tracking included.",
+  "path": "/ai-by-mmc/landing-page-builder/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/landing-page-builder/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/landing-page-builder/",
+    "name": "AI Landing Page Builder for Campaigns | AI by MMC",
+    "description": "Campaign landing pages generated, refined and launched quickly with AI. Built by MMC for D2C, B2B and education brands, with conversion tracking included.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Landing Page Builder",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/landing-page-builder/"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Landing Page Builder",
+    "description": "Campaign landing pages generated, refined and launched quickly with AI. Built by MMC for D2C, B2B and education brands, with conversion tracking included.",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/landing-page-builder/",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://www.mondaymarketing.company/#organization",
+     "name": "Monday Marketing Company",
+     "url": "https://www.mondaymarketing.company/"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Do you build on our website or separately?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Either. We scope it with your team and your tools."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you match our brand?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Pages follow your brand rules and we review every page before it goes live."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do you handle forms and CRM?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Forms connect to your CRM and to conversion tracking, so leads can be judged by quality."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How fast can pages be made?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Much faster than a manual design queue. We confirm timing when we scope the work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you test versions?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Variants are set up as tests and reported on."
+      }
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "Web development",
+    "/services/web-development/"
+   ],
+   [
+    "Conversion rate optimisation",
+    "/services/cro/"
+   ]
+  ],
+  "crumb": "AI Landing Page Builder"
+ },
+ "spokesperson-video": {
+  "title": "AI Spokesperson Video: A Presenter for You | AI by MMC",
+  "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC and ready to run as ads.",
+  "path": "/ai-by-mmc/spokesperson-video/",
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/#webpage",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/",
+    "name": "AI Spokesperson Video: A Presenter for You | AI by MMC",
+    "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC and ready to run as ads.",
+    "isPartOf": {
+     "@id": "https://www.mondaymarketing.company/#website"
+    },
+    "publisher": {
+     "@id": "https://www.mondaymarketing.company/#organization"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.mondaymarketing.company/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI by MMC",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Spokesperson Video",
+      "item": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Spokesperson Video",
+    "description": "Turn a script into a presenter video in any language you need. AI spokesperson videos for D2C, B2B and education brands, made by MMC and ready to run as ads.",
+    "url": "https://www.mondaymarketing.company/ai-by-mmc/spokesperson-video/",
+    "provider": {
+     "@type": "Organization",
+     "@id": "https://www.mondaymarketing.company/#organization",
+     "name": "Monday Marketing Company",
+     "url": "https://www.mondaymarketing.company/"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Is the presenter a real person?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The presenters are AI-generated. If you want a specific real person, that needs their written approval and their footage."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which languages are available?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A range of Indian and international languages. We confirm your list when we scope the work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do you handle lip movement and voice?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Voice and lip movement are generated together and reviewed by an editor before delivery."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can we change the script later?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Update the script and we regenerate the affected parts."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can videos be used in ads and on the site?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We deliver the formats each channel needs."
+      }
+     }
+    ]
+   }
+  ],
+  "related": [
+   [
+    "UGC and video",
+    "/services/ugc-and-video/"
+   ],
+   [
+    "Social media creatives",
+    "/services/social-media/"
+   ]
+  ],
+  "crumb": "AI Spokesperson Video"
+ }
+}

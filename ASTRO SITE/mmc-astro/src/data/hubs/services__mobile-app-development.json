@@ -1,0 +1,456 @@
+{
+  "file": "mobile-app-development.html",
+  "path": "/services/mobile-app-development/",
+  "key": "appdev",
+  "title": "Mobile App Development Company India | MMC",
+  "description": "Mobile app development company in India building fast, measurable apps for brands whose customers come back on their phones, planned around real use.",
+  "ogTitle": "Mobile app development for customers who come back",
+  "ogDescription": "Planned around real use, built to be fast and measurable.",
+  "ogAlt": "Monday Marketing Company: mobile app development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/mobile-app-development.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mobile app development",
+          "item": "https://www.mondaymarketing.company/mobile-app-development.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/mobile-app-development.html#webpage",
+      "url": "https://www.mondaymarketing.company/mobile-app-development.html",
+      "name": "Mobile App Development Company India | MMC",
+      "description": "Mobile app development company in India building fast, measurable apps for brands whose customers come back on their phones, planned around real use.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/mobile-app-development.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/mobile-app-development.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/mobile-app-development.html#service",
+      "name": "Mobile app development",
+      "serviceType": "Mobile app development",
+      "description": "Mobile app design, development and measurement for brands with repeat use.",
+      "url": "https://www.mondaymarketing.company/mobile-app-development.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/mobile-app-development.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is mobile app development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mobile app development is the work of designing and building an app that gives customers a reason to return on their phones, and measuring whether it does."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does mobile app development work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We first check that an app beats a mobile website for your customers, then design the core journey, build for speed and reliability, instrument key events and improve it after launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does mobile app development cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee installs or usage. We commit to an honest view of whether you need an app, a tested design, a stable build and measurement from day one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is mobile app development for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brands whose customers will use an app repeatedly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on reorders and loyalty, B2B on tools teams use every day, education on portals for students and parents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A clear description of the repeat use, your brand assets, your existing systems and data, and a decision-maker for each stage."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "appdev",
+    "wm": "Apps",
+    "eyebrow": "● Mobile app development company",
+    "h1": [
+      "Mobile app development",
+      [
+        "that ",
+        "customers return to",
+        "."
+      ]
+    ],
+    "sub": "Apps planned around a real repeat use, built to be fast and reliable, and connected to the data you need to improve them.",
+    "tiles": [
+      {
+        "img": "app/decide.jpg",
+        "pos": "50% 50%",
+        "label": "Decide",
+        "note": "App or website?"
+      },
+      {
+        "img": "app/journey.jpg",
+        "pos": "50% 50%",
+        "label": "Journey",
+        "note": "The core flow"
+      },
+      {
+        "img": "app/build.jpg",
+        "pos": "50% 50%",
+        "label": "Build",
+        "note": "Fast and reliable"
+      },
+      {
+        "img": "app/data.jpg",
+        "pos": "50% 50%",
+        "label": "Measure",
+        "note": "Retention and events"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Mobile app development is the work of designing and building an app that gives customers a reason to return on their phones, and measuring whether it does. MMC builds apps for brands whose customers use them repeatedly, after first checking that an app beats a mobile website. The core journey is built for speed and measured after launch.",
+      "hl": "a reason to return",
+      "who": "Monday Marketing Company (MMC) builds mobile apps for brands whose customers use them repeatedly.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Only if it earns it",
+          "text": "We first ask whether an app is the right answer."
+        },
+        {
+          "icon": "window",
+          "title": "One core journey",
+          "text": "The main task made fast and clear."
+        },
+        {
+          "icon": "gauge",
+          "title": "Measured from day one",
+          "text": "Events and retention tracked, so the app can improve."
+        }
+      ],
+      "image": "app/journey.jpg",
+      "chip": "Decide, design, build, measure"
+    },
+    "leaks": {
+      "style": "stack",
+      "eyebrow": "Where apps go wrong",
+      "h2a": "Five ways an app",
+      "h2b": "goes wrong.",
+      "lede": "An app is a long commitment. Each stage below is where apps go wrong, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Decide if you need one",
+        "tag": "App or website",
+        "breaks": "Building an app because competitors have one.",
+        "why": "An app has real costs, and it only pays if customers use it repeatedly. A fast website is often enough.",
+        "does": "We compare an app with a mobile website against your customers' habits, and tell you if an app is not worth it yet.",
+        "href": "web-development.html",
+        "img": "app/decide.jpg"
+      },
+      {
+        "k": "Design the core journey",
+        "tag": "UX and flows",
+        "breaks": "Packing in every feature at launch.",
+        "why": "Apps that try to do everything do the main thing poorly, and users leave.",
+        "does": "We design the one journey customers return for, and keep the first release focused.",
+        "href": "ui-ux-design.html",
+        "img": "app/journey.jpg"
+      },
+      {
+        "k": "Build it fast and reliable",
+        "tag": "Development",
+        "breaks": "Shipping a slow or unstable first version.",
+        "why": "A poor first experience is hard to recover from, since many users do not return.",
+        "does": "We build for speed and stability, with testing on the phones your customers actually use.",
+        "href": "services.html#tech",
+        "img": "app/build.jpg"
+      },
+      {
+        "k": "Measure from day one",
+        "tag": "Analytics and retention",
+        "breaks": "Launching with no tracking.",
+        "why": "Without events and retention data you cannot tell what to fix.",
+        "does": "We instrument key events and retention from the first release, and connect them to your marketing data.",
+        "href": "retention-marketing.html",
+        "img": "app/data.jpg"
+      },
+      {
+        "k": "Launch and improve",
+        "tag": "Store launch and releases",
+        "breaks": "Treating launch as the finish line.",
+        "why": "Store presence and regular releases decide whether an app is found and keeps improving.",
+        "does": "We prepare the store listing, plan releases and use what we learn to improve the app.",
+        "href": "services.html#tech",
+        "img": "app/launch.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "an app is working.",
+      "note": "Set before the build, checked after.",
+      "cards": [
+        {
+          "n": "Installs to active users",
+          "d": "How many installs turn into regular use."
+        },
+        {
+          "n": "Day 1 and day 30 retention",
+          "d": "How many users are still there after a day and a month."
+        },
+        {
+          "n": "Core task completion",
+          "d": "Whether people finish the main journey."
+        },
+        {
+          "n": "Crash-free sessions",
+          "d": "How reliably the app runs."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where mobile app development fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "UI/UX design",
+          "d": "Research, flows, screens and a design system.",
+          "img": "ux/screens.jpg",
+          "href": "ui-ux-design.html",
+          "link": "See UI/UX design"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "WhatsApp, email and loyalty funnels that bring buyers back.",
+          "img": "rt/journey.jpg",
+          "href": "retention-marketing.html",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready websites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "web-development.html",
+          "link": "See Website development"
+        },
+        {
+          "n": "White-label app development",
+          "d": "Apps built behind your brand.",
+          "img": "app/build.jpg",
+          "href": "/white-label/app-development/",
+          "link": "See white-label app development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "mobile app development."
+    ],
+    "faq": [
+      {
+        "q": "What is mobile app development?",
+        "a": "Mobile app development is the work of designing and building an app that gives customers a reason to return on their phones, and measuring whether it does."
+      },
+      {
+        "q": "How does mobile app development work with MMC?",
+        "a": "We first check that an app beats a mobile website for your customers, then design the core journey, build for speed and reliability, instrument key events and improve it after launch."
+      },
+      {
+        "q": "What does mobile app development cost?",
+        "a": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee installs or usage. We commit to an honest view of whether you need an app, a tested design, a stable build and measurement from day one."
+      },
+      {
+        "q": "Who is mobile app development for?",
+        "a": "Brands whose customers will use an app repeatedly. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on reorders and loyalty, B2B on tools teams use every day, education on portals for students and parents."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "A clear description of the repeat use, your brand assets, your existing systems and data, and a decision-maker for each stage."
+      }
+    ],
+    "cta": {
+      "h2a": "Find out if an app",
+      "h2b": "is worth it.",
+      "lede": "On a call, with a senior strategist. We look at how your customers use their phones today."
+    },
+    "proof": {
+      "codes": [],
+      "does": "build apps for"
+    },
+    "process": {
+      "h2a": "How we build your app,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "Decide if you need one",
+          "d": "We compare an app with a mobile website against your customers' habits and tell you honestly if it is not yet worth it.",
+          "out": "A clear yes or no, with reasons."
+        },
+        {
+          "t": "Design the core journey",
+          "d": "The one task customers return for is designed and tested first.",
+          "out": "A tested prototype of the main journey."
+        },
+        {
+          "t": "Build and instrument",
+          "d": "Development with key events measured from the first release.",
+          "out": "A fast, stable app with usable data."
+        },
+        {
+          "t": "Launch and improve",
+          "d": "Store launch, then releases guided by active use and retention.",
+          "out": "An app that gets better with use."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Apps for brands whose customers",
+      "h2b": "return on their phones.",
+      "good": {
+        "t": "Customers would use it repeatedly, such as to reorder, track or learn.",
+        "why": "Repeat use is what justifies an app, which suits D2C brands with frequent reorders and education brands with ongoing learners."
+      },
+      "not": {
+        "t": "You want an app for its own sake, or have no plan for getting installs.",
+        "why": "An app nobody opens twice does not pay back, and we will say so before you spend."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What app development",
+      "h2b": "covers.",
+      "lede": "Six stages from deciding if you need an app to improving it after launch.",
+      "items": [
+        {
+          "t": "App or website",
+          "d": "An honest look at whether an app, a fast mobile site or a web app serves your buyers better.",
+          "img": "app/decide.jpg",
+          "alt": "App or website"
+        },
+        {
+          "t": "Core journey design",
+          "d": "The few screens that matter most, mapped and prototyped before any build.",
+          "img": "app/journey.jpg",
+          "alt": "Core journey design"
+        },
+        {
+          "t": "Build",
+          "d": "Reliable code for the platforms you choose, with regular working builds to review.",
+          "img": "app/build.jpg",
+          "alt": "Build"
+        },
+        {
+          "t": "Analytics from day one",
+          "d": "Events and funnels set up so you learn from the first real users.",
+          "img": "app/data.jpg",
+          "alt": "Analytics from day one"
+        },
+        {
+          "t": "Store launch",
+          "d": "Listings, review requirements and release steps handled for you.",
+          "img": "app/launch.jpg",
+          "alt": "Store launch"
+        },
+        {
+          "t": "Improvement cycles",
+          "d": "Updates planned from user data and support feedback.",
+          "img": "ux/flows.jpg",
+          "alt": "Improvement cycles"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build apps",
+      "h2b": "with MMC.",
+      "lede": "We build apps that connect to your marketing, not apps that sit apart from it.",
+      "img": "app/build.jpg",
+      "alt": "Why brands build apps with MMC.",
+      "items": [
+        {
+          "t": "We say when you do not need one",
+          "d": "If a better mobile site is the right answer, we will say so."
+        },
+        {
+          "t": "Marketing-aware builds",
+          "d": "Attribution, deep links and CRM events are planned into the app."
+        },
+        {
+          "t": "Design and engineering together",
+          "d": "One team keeps the design intent through to the shipped product."
+        },
+        {
+          "t": "Useful for any audience",
+          "d": "Customer apps for D2C, tools for B2B teams and portals for education."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

@@ -1,0 +1,59 @@
+---
+// PANEL: PackagingMock (kind "PackagingMock"). From the shelf to a flat dieline to a shelf mockup, in CSS and SVG plus crops of existing photos. 4 steps.
+//   1 Understand the shelf: a crop of the shelf photo beside a row of grey competitor boxes with a gap. Tab: Shelf.
+//   2 Design the structure: a flat carton dieline in SVG with cut and fold lines. Tab: Structure.
+//   3 Set the hierarchy and test small: a box front with brand, product, variant and claim numbered, plus the same box at tile size. Tab: Hierarchy.
+//   4 Print and shelf: the dieline coloured with the design, bleed and label area marked, and the finished box over the shelf photo. Tab: Print.
+// Needs S.work.illustrative. Illustrative layout, placeholder shapes only. Styles scoped to this file (prefix pk-).
+import Frame from "./Frame.astro";
+import { crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const shelf = crop("/assets/pack/shelf.jpg", 0.3, 0.42, 1.3, 1.6);
+const dieline = "M70 4h60v40H70z M70 44h60v70H70z M70 114h60v60H70z M70 174h60v36H70z M10 44h60v70H10z M130 44h60v70h-60z";
+---
+<Frame title="Pack studio" label="Illustration of a packaging flow from shelf study to dieline to shelf illustration. Simple shapes, not a real brand." caption={W.illustrative} tabs={["Shelf", "Structure", "Hierarchy", "Print"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Understand the shelf <span>Designed to be seen among real competitors</span></p>
+    <div class="pk-pair">
+      <span class="s2p-ph pk-ph" style={shelf} role="img" aria-label="A shopper picking a pack from a shelf"></span>
+      <div class="s2p-card pk-shelf"><p class="s2p-lbl">Category shelf</p><span class="pk-row"><i></i><i></i><i class="pk-gap">Your pack</i><i></i><i></i></span></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Design the structure <span>Flat first, then folded</span></p>
+    <div class="s2p-card pk-die">
+      <svg viewBox="0 0 200 214" aria-hidden="true"><path class="pk-cut" d={dieline} /><path class="pk-fold" d="M70 44h60M70 114h60M70 174h60M70 44v130M130 44v130" /></svg>
+      <span class="pk-key"><em class="s2p-chip">Cut</em><em class="s2p-chip s2p-chip--blue">Fold</em></span>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Set the hierarchy <span>Then test it at tile size</span></p>
+    <div class="pk-pair">
+      <div class="s2p-card pk-front"><span class="pk-box"><b>1</b><b>2</b><b>3</b><b>4</b></span><small class="s2p-mute">1 Brand · 2 Product · 3 Variant · 4 Claim</small></div>
+      <div class="s2p-card pk-tile"><p class="s2p-lbl">Tile size</p><span class="pk-box pk-box--s"><b>1</b><b>2</b></span><em class="s2p-chip s2p-chip--ok">Still reads</em></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Print and shelf <span>Checked with the printer, seen on the shelf</span></p>
+    <div class="pk-pair">
+      <div class="s2p-card pk-die pk-die--c"><svg viewBox="0 0 200 214" aria-hidden="true"><path class="pk-fill" d="M70 44h60v70H70z" /><path class="pk-fill pk-fill--b" d="M70 114h60v60H70z" /><path class="pk-fill pk-fill--s" d="M10 44h60v70H10z M130 44h60v70h-60z" /><path class="pk-cut" d={dieline} /></svg><em class="s2p-chip s2p-chip--ok">Print ready</em></div>
+      <div class="pk-mock"><span class="s2p-ph pk-ph pk-ph--full" style={shelf} role="img" aria-label="A shelf"></span><span class="pk-box pk-box--m"><b>1</b><b>2</b></span></div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.pk-pair { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-items: stretch; }
+.pk-ph { border-radius: .9em; min-height: 8em; border: 1px solid #DADDE1; } .pk-ph--full { position: absolute; inset: 0; border: 0; }
+.pk-shelf { display: grid; gap: .8em; align-content: center; padding: .9em; } .pk-row { display: flex; align-items: flex-end; gap: .4em; border-bottom: 3px solid #CED0D4; padding-bottom: .3em; }
+.pk-row i { flex: 1; height: 5em; border-radius: .3em; background: #DADDE1; font: 800 .7em/1.1 var(--font-body); font-style: normal; display: grid; place-items: center; text-align: center; color: #1C2B33; } .pk-row .pk-gap { background: var(--mmc-yellow); outline: 2px dashed var(--mmc-blue-900); outline-offset: 2px; }
+.pk-die { flex: 1; min-height: 0; display: grid; justify-items: center; align-content: center; gap: .6em; padding: .7em; } .pk-die svg { height: 13em; max-height: 100%; width: auto; }
+.pk-cut { fill: var(--mmc-paper); stroke: #1C2B33; stroke-width: 2; } .pk-fold { fill: none; stroke: var(--mmc-blue); stroke-width: 2; stroke-dasharray: 6 5; }
+.pk-fill { fill: var(--mmc-blue-900); } .pk-fill--b { fill: var(--mmc-yellow); } .pk-fill--s { fill: var(--mmc-blue); } .pk-die--c .pk-cut { fill: none; }
+.pk-key { display: flex; gap: .4em; }
+.pk-front, .pk-tile { display: grid; gap: .6em; justify-items: center; align-content: center; padding: .8em; } .pk-front small { text-align: center; }
+.pk-box { position: relative; display: grid; align-content: space-between; justify-items: start; gap: .4em; width: 7em; height: 9em; padding: .6em; border-radius: .4em; background: var(--mmc-blue-900); } .pk-box b { display: grid; place-items: center; width: 1.7em; height: 1.7em; border-radius: 50%; background: var(--mmc-yellow); color: var(--mmc-blue-900); font: 800 .8em var(--font-body); }
+.pk-box--s { width: 2.8em; height: 3.6em; padding: .2em; } .pk-box--s b { width: 1.1em; height: 1.1em; font-size: .6em; } .pk-box--s b:nth-child(n+3) { display: none; }
+.pk-mock { position: relative; border-radius: .9em; overflow: hidden; border: 1px solid #DADDE1; min-height: 8em; display: grid; place-items: center; } .pk-box--m { position: relative; width: 4.4em; height: 6em; box-shadow: 0 .6em 1.2em -.4em rgba(0,0,0,.55); } .pk-box--m b:nth-child(n+3) { display: none; }
+@media (max-width: 560px) { .pk-ph, .pk-mock { min-height: 5.5em; } .pk-die svg { height: 8em; } .pk-shelf { padding: .6em; } .pk-row i { height: 3.6em; } .pk-front small { display: none; } .pk-box { width: 5em; height: 6.4em; } }
+</style>

@@ -1,0 +1,29 @@
+---
+// Audience hub hero: big type on paper, the audience's literal photo bleeding to the right edge, and the journey in one line.
+import Crumb from "./Crumb.astro";
+interface Props { jsonld: any[]; eyebrow: string; h1: [string, string, string, string]; sub: string; img: string; alt: string; pos?: string; cap?: { label: string; note: string }; route: string[]; source: string; next?: { label: string; href: string } }
+const { jsonld, eyebrow, h1, sub, img, alt, pos, cap, route, source, next = { label: "See the journey", href: "#journey" } } = Astro.props;
+---
+<section class="h2-ah no-section-bg" id="top">
+  <div class="n-wrap">
+    <div class="h2-ah__grid">
+      <div class="h2-ah__copy">
+        <div>
+          <Crumb jsonld={jsonld} />
+          <span class="n-eyebrow">{eyebrow}</span>
+        </div>
+        <h1 class="h2-h1">{h1[0]} {h1[1]}<em>{h1[2]}</em>{h1[3]}</h1>
+        <p class="h2-sub">{sub}</p>
+        <div class="h2-acts">
+          <button type="button" class="btn btn--primary glow-btn" onclick={`window.mmcBookCall('${source}-hero', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span></button>
+          <a class="btn btn--link" href={next.href}>{next.label}<span class="arrow"></span></a>
+        </div>
+        <ol class="h2-route" aria-label="The journey on this page">{route.map((r) => <li>{r}</li>)}</ol>
+      </div>
+      <div class="h2-ah__media">
+        <img src={img.startsWith("/") ? img : "/assets/" + img} alt={alt} width="1024" height="688" loading="eager" fetchpriority="high" decoding="async" style={pos ? `object-position:${pos}` : undefined} />
+        {cap && <p class="h2-ah__cap"><b>{cap.label}</b><span>{cap.note}</span></p>}
+      </div>
+    </div>
+  </div>
+</section>

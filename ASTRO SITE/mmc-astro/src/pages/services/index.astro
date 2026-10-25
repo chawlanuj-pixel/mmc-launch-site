@@ -1,0 +1,78 @@
+---
+// /services/: the service directory on the hubs2 pattern (src/components/hubs2). Organised by the menu's five groups
+// (Design, Marketing, Technology, Content, AI) so any service is two clicks away. Previous version:
+// tools/backup/services-index.astro.before-hubs2. Head: heads.json (services); directory data: src/data/hubs2/services.json.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import Faq from "../../components/hub/Faq.astro";
+import DirHero from "../../components/hubs2/DirHero.astro";
+import Lede from "../../components/hubs2/Lede.astro";
+import Group from "../../components/hubs2/Group.astro";
+import StartPath from "../../components/hubs2/StartPath.astro";
+import WorkTiles from "../../components/hubs2/WorkTiles.astro";
+import Fx from "../../components/hubs2/Fx.astro";
+import { pageHead } from "../../lib/pagehead";
+import { fixDeep, href } from "../../lib/links";
+import raw from "../../data/pages/services.json";
+import X from "../../data/hubs2/services.json";
+import "../../styles/hubs2.css";
+import { AGENCY_LINE, agencyTwin } from "../../lib/whitelabel";
+
+const D = fixDeep(raw);
+const head = pageHead("services", "/services/");
+const SITE = "https://www.mondaymarketing.company";
+
+// Visible FAQ and FAQPage JSON-LD come from one list, answer first.
+const FAQ = [
+  { q: "What marketing services does MMC offer?", a: "Services in five groups: Design (branding, packaging, UI/UX), Marketing (paid media, SEO and AI search, lead generation, conversion, retention, reputation and influencers), Technology (Shopify, websites, WordPress, WooCommerce, maintenance and apps), Content (UGC, video and social creatives) and AI (AI by MMC). One senior team runs them together." },
+  { q: "Do I have to buy every service?", a: "No. You can start with one. The audit call shows where your biggest leak is, and we begin there." },
+  { q: "Which service should I start with?", a: `If ad spend is your biggest cost, start with <a href="/services/performance-marketing/">performance marketing</a>. If traffic is fine but few visitors buy, start with <a href="/services/cro/">conversion</a>. If nobody finds you in search, start with <a href="/services/seo/">SEO</a>. The <a href="/audit/">audit call</a> settles it.` },
+  { q: "What does it cost?", a: "It depends on scope and, for media, on ad spend, so we quote after the audit call. We do not publish a price list." },
+  { q: "Which kinds of brands do you work with?", a: `D2C brands, B2B companies and educational institutes, plus consumer-facing businesses such as real estate, hospitality and mobility. D2C brands buy on orders and repeat purchases. B2B and education brands buy on qualified leads and enrolments. The work is set up differently for each: see the <a href="/industries/d2c/">D2C</a>, <a href="/industries/b2b/">B2B</a> and <a href="/industries/education/">education</a> pages.` },
+];
+const strip = (s: string) => s.replace(/<[^>]+>/g, "");
+// ItemList: every service on the page, in directory order, with its URL.
+const all = X.groups.flatMap((g: any) => g.clusters.flatMap((c: any) => c.items));
+const jsonld = (head.jsonld as any[]).map((b) => {
+  if (b && b["@type"] === "FAQPage") return { ...b, mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: strip(f.a) } })) };
+  if (b && b["@type"] === "ItemList") return { ...b, itemListElement: all.map((it: any, k: number) => ({ "@type": "ListItem", position: k + 1, name: it.n, url: SITE + it.href })) };
+  return b;
+});
+const problems = D.SV_START.map(([p, to, name]: string[]) => [p, href(to), name]) as [string, string, string][];
+// "Are you an agency?" row (src/lib/whitelabel.ts): the white-label twin of this page, last in the existing problem list.
+const agency = agencyTwin("/services/")!;
+// Same shape as the other rows: the question on the left, the service name (capitalised anchor) on the right.
+problems.push([AGENCY_LINE.lead, agency.href, agency.anchor.charAt(0).toUpperCase() + agency.anchor.slice(1)]);
+---
+<BaseLayout {...head} jsonld={jsonld} preloadImage={"/assets/" + X.groups[0].idx}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app h2-page">
+      <DirHero jsonld={jsonld} groups={X.groups} />
+
+      <Lede tone="white"
+        lead="Monday Marketing Company (MMC) is an India-based growth partner for D2C, B2B and education brands. Its services sit in five connected groups: design, marketing, technology, content and AI. One senior team runs them together, so the work in one is judged by what it does for the others, and results by contribution margin."
+        hl="five connected groups"
+        img="/assets/home2/hero-main.jpg" alt="A strategist walking a small senior team through a plan at a whiteboard."
+        doors={[
+          { label: "For D2C brands", href: "/industries/d2c/", img: "d2c/packing.jpg" },
+          { label: "For B2B companies", href: "/industries/b2b/", img: "shared/b2b.jpg" },
+          { label: "For educational institutes", href: "/industries/education/", img: "shared/education.jpg" },
+        ]} />
+
+      {X.groups.map((g: any, k: number) => <Group g={g} flip={k % 2 === 1} tone={k % 2 ? "white" : "paper"} />)}
+
+      <StartPath problems={problems} />
+
+      <WorkTiles ids={X.work} h2a="Work across" h2b="design, marketing and technology." tone="white" />
+
+      <Faq tone="paper" title={["Questions about", "our services."]} faq={FAQ} />
+      <PreFooterCta source="services" h2a="Tell us the problem." h2b="We will name the service." lede="On a call, with a senior strategist. We say where to start, what the first 30 days look like and who works on your account." />
+    </main>
+    <StickyBookingBar source="services" />
+  </Shell>
+  <PageFx />
+  <Fx />
+</BaseLayout>

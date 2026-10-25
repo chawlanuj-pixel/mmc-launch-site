@@ -1,0 +1,7 @@
+/* ---- Integration additions (Astro): breadcrumb, related strip, anchor offset under the floating site nav ---- */
+.ai-scope [id]{scroll-margin-top:96px}
+.ai-scope .ai-crumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font:700 13px/1.2 var(--font-body);color:inherit;opacity:.78;margin:0 0 14px}
+.ai-scope .ai-crumb a{text-decoration:none;color:inherit;display:inline-flex;align-items:center;min-height:32px}
+.ai-scope .ai-crumb a:hover{text-decoration:underline}
+.ai-scope .hero__center .ai-crumb{justify-content:center}
+.ai-scope .xlinks .related a{min-height:44px;display:inline-flex;align-items:center}

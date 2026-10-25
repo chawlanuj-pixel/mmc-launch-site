@@ -1,0 +1,79 @@
+/* hub/hb-stack.css: stacking cards for "Where admissions / leads go missing".
+   Each .stk__card is sticky, so the next card slides over it. hub/hb-sections.jsx sinks (scales and dims)
+   the covered cards. Sticky only where there is room (>=760px wide and >=640px tall); otherwise a plain stack. */
+.stk__list { list-style: none; margin: 0; padding: 0 0 clamp(24px, 5vh, 56px); display: block; }
+/* A spacer inside the list gives the finished pile a moment to hold. Every card keeps the same bottom margin,
+   so when the list ends the whole pile releases together instead of earlier cards hanging out below the last. */
+.stk__list::after { content: ""; display: block; height: 0; }
+.stk__card {
+  --dim: 0;
+  position: relative; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  min-height: 520px; margin: 0 0 24px; list-style: none;
+  border-radius: 28px; overflow: hidden; background: #fff;
+  border: 1px solid rgba(11, 16, 32, .08);
+  box-shadow: 0 -18px 44px -30px rgba(11, 16, 32, .45), 0 30px 60px -38px rgba(11, 16, 32, .55);
+  transform-origin: 50% 0;
+}
+/* Depth: a soft veil that deepens as more cards land on top. */
+.stk__card::after { content: ""; position: absolute; inset: 0; z-index: 3; background: #0B1020; opacity: var(--dim); pointer-events: none; }
+.stk__media { position: relative; margin: 0; min-height: 100%; }
+.stk__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; aspect-ratio: auto !important; }
+.stk__num { position: absolute; left: 20px; top: 20px; z-index: 2; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--n-sun); color: #0B1020; font: 800 24px/1 var(--font-display); letter-spacing: -0.03em; box-shadow: 0 10px 24px -10px rgba(0, 0, 0, .5), 0 0 0 5px rgba(255, 255, 255, .35); }
+.stk__body { display: grid; gap: 16px; align-content: center; padding: clamp(28px, 3.6vw, 56px); }
+.stk__kick { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.stk__kick b { font: 800 12px/1 var(--font-body); letter-spacing: .16em; text-transform: uppercase; color: var(--n-blue); }
+.stk__step { display: inline-flex; align-items: center; gap: 10px; font: 700 12px/1 var(--font-body); color: var(--n-fg-2); }
+.stk__seg { display: inline-flex; gap: 3px; }
+.stk__seg i { width: 12px; height: 4px; border-radius: 2px; background: rgba(11, 16, 32, .14); }
+.stk__seg i.is-on { background: var(--n-blue); }
+.stk__leak { margin: 0; font: 800 clamp(26px, 2.9vw, 40px)/1.08 var(--font-display); letter-spacing: -0.032em; color: var(--n-fg); text-wrap: balance; }
+.stk__why { margin: 0; font: 400 clamp(15.5px, 1.2vw, 17px)/1.6 var(--font-body); color: var(--n-fg-2); max-width: 58ch; }
+.stk__fix { display: grid; gap: 7px; padding: 16px 20px; border-radius: 16px; background: #EFF4FF; box-shadow: inset 4px 0 0 var(--n-blue); }
+.stk__label { font: 800 11px/1 var(--font-body); letter-spacing: .16em; text-transform: uppercase; color: var(--n-blue); }
+.stk__fix p { margin: 0; font: 600 clamp(15px, 1.15vw, 16.5px)/1.55 var(--font-body); color: var(--n-fg); }
+.stk__svc { justify-self: start; display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; border-radius: 999px; background: var(--n-blue); color: #fff; text-decoration: none; font: 700 12px/1.2 var(--font-body); letter-spacing: .1em; text-transform: uppercase; transition: background .2s ease, transform .2s ease; }
+.stk__svc:hover { background: var(--n-blue-d, #16329E); color: #fff; }
+.stk__svc:focus-visible { outline: 3px solid var(--n-sun); outline-offset: 3px; box-shadow: 0 0 0 6px var(--n-blue); }
+
+@media (min-width: 760px) and (min-height: 640px) {
+  .stk__card { position: sticky; top: calc(92px + var(--i) * 14px); will-change: transform; }
+  .stk__card { min-height: max(520px, var(--stk-h, 0px)); }
+  /* Let the finished pile hold for a beat before the section releases. */
+  .stk__list::after { height: 14vh; }
+}
+@media (max-width: 1099px) and (min-width: 760px) {
+  .stk__card { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); min-height: 500px; }
+  .stk__body { gap: 14px; }
+}
+@media (max-width: 1099px) and (min-width: 760px) and (min-height: 640px) {
+  .stk__card { min-height: max(500px, var(--stk-h, 0px)); }
+}
+/* Phones: a compact card that fits the visible viewport, so nothing is trapped under the next card. */
+@media (max-width: 759px) {
+  .stk__card { grid-template-columns: 1fr; min-height: 0; margin-bottom: 14px; border-radius: 20px; }
+  .stk__media { height: 92px; min-height: 0; }
+  .stk__num { width: 36px; height: 36px; font-size: 17px; left: 12px; top: 12px; box-shadow: 0 6px 16px -8px rgba(0, 0, 0, .5), 0 0 0 3px rgba(255, 255, 255, .35); }
+  .stk__body { gap: 9px; padding: 14px 16px 16px; align-content: start; }
+  .stk__kick { gap: 6px 12px; }
+  .stk__kick b, .stk__step { font-size: 11px; }
+  .stk__seg i { width: 9px; }
+  .stk__leak { font-size: 21px; line-height: 1.12; }
+  .stk__why { font-size: 14px; line-height: 1.45; }
+  .stk__fix { padding: 10px 14px; gap: 5px; border-radius: 13px; }
+  .stk__label { font-size: 10px; }
+  .stk__fix p { font-size: 13.5px; line-height: 1.45; }
+  .stk__svc { justify-self: stretch; justify-content: space-between; padding: 10px 16px; font-size: 11px; }
+}
+@media (max-width: 759px) and (min-height: 560px) {
+  .stk__card { position: sticky; top: calc(var(--stk-nav, 80px) + var(--i) * 10px); will-change: transform; }
+  .stk__card { min-height: var(--stk-h, 0px); }
+  .stk__list::after { height: 12vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stk__card { position: relative; top: auto; transform: none !important; will-change: auto; }
+  .stk__card::after { display: none; }
+  .stk__list::after { height: 0; }
+}
+
+/* Small print under a stack: for example "screens are illustrative". */
+.stk__note { margin: 6px 4px 0; max-width: 70ch; font: 500 12.5px/1.5 var(--font-body); color: var(--n-fg-3, #5f677d); }

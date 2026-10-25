@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import PageFx from "../components/pages/PageFx.astro";
+import Img from "../components/hub/Img.astro";
+import PreFooterCta from "../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
+import { TOOL_CLOSINGS } from "../lib/prefooter";
+import "../styles/tools.css";
+import { metaHead } from "../lib/metaHead";
+import { BOOK, SECONDARY } from "../lib/site";
+import { Glossary } from "../islands/tools/Glossary.jsx";
+import { MMC_GLOSSARY } from "../islands/tools/glossaryData.js";
+import resources from "../data/hubs/resources.json";
+
+// Same hero pattern as /resources/: eyebrow, three-line H1, one sentence, one primary and one secondary, picture tiles.
+const tiles = resources.hub.tiles;
+const n = MMC_GLOSSARY.length;
+---
+<BaseLayout {...metaHead("glossary", "/glossary/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main">
+      <section class="page-hero pm-hero gl-pmhero" id="top" data-wm="Glossary">
+        <span class="page-hero__wm" aria-hidden="true">Glossary</span>
+        <div class="container pm-hero__inner">
+          <div class="pmh__grid">
+            <div class="pmh__l">
+              <nav class="gl-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/resources/">Resources</a><span aria-hidden="true">/</span><span aria-current="page">Glossary</span></nav>
+              <div class="eyebrow" data-enter><span>● Glossary</span></div>
+              <h1 class="pmh__h">
+                <span class="clip-reveal d1" data-enter><span>Every term we use,</span></span>
+                <span class="clip-reveal d2" data-enter><span><span class="em-serif">in plain</span></span></span>
+                <span class="clip-reveal d3" data-enter><span>English.</span></span>
+              </h1>
+              <p class="reveal d4 pmh__sub" data-enter>{n} terms from D2C and performance marketing: what each one means, how it is calculated, and why it matters to your P&amp;L.</p>
+              <div class="reveal d5 pmh__actions" data-enter>
+                <button class="btn btn--primary glow-btn" type="button" data-book="glossary-hero"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">{BOOK}<span class="arrow"></span></span></button>
+                <a class="btn btn--link" href="/tools/">{SECONDARY.numbers}<span class="arrow"></span></a>
+              </div>
+            </div>
+            <div class="pmh__r" data-enter>
+              <div class="pmh__mosaic">
+                {tiles.map((t, k) => (
+                  <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+                    <Img name={t.img} ratio="1 / 1.05" class="pmh__img" pos={t.pos} eager={k < 2} />
+                    <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Glossary client:load />
+      <PreFooterCta source="glossary" eyebrow="Next step" {...TOOL_CLOSINGS.glossary} />
+    </main>
+    <StickyBookingBar source="glossary" />
+  </Shell>
+  <PageFx />
+  <style is:global>
+    [data-enter] { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .eyebrow[data-enter], .reveal[data-enter], .pmh__r[data-enter] { animation: heroIn .7s cubic-bezier(.2,.7,.2,1) both; }
+    .clip-reveal[data-enter] > span { transform: none !important; transition: none !important; animation: heroClip .8s cubic-bezier(.2,.7,.2,1) both; }
+    .clip-reveal.d2[data-enter] > span { animation-delay: .15s; } .clip-reveal.d3[data-enter] > span { animation-delay: .25s; }
+    @keyframes heroIn { from { opacity: .01; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes heroClip { from { transform: translateY(105%); } to { transform: none; } }
+    @media (prefers-reduced-motion: reduce) { [data-enter], .clip-reveal[data-enter] > span { animation: none !important; } }
+    .gl-crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 18px; font: 700 13px/1.2 var(--font-body); letter-spacing: .04em; color: rgba(255,255,255,.7); }
+    .gl-crumb a { color: rgba(255,255,255,.86); text-decoration: none; min-height: 24px; display: inline-flex; align-items: center; }
+    .gl-crumb a:hover { color: #fff; text-decoration: underline; }
+    .gl-crumb [aria-current] { color: #fff; }
+  </style>
+  <script>import "../scripts/hub.ts";</script>
+</BaseLayout>

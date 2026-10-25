@@ -1,0 +1,159 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "social/design.jpg",
+    "pos": "50% 50%",
+    "alt": "A person laying out content ideas on a laptop beside printed layouts.",
+    "facts": [
+      {
+        "t": "Topic first.",
+        "d": "Every piece has a buyer question, a stage and a next step."
+      },
+      {
+        "t": "Many formats.",
+        "d": "Articles, guides, video, email and social cut from the same idea."
+      },
+      {
+        "t": "Linked to the funnel.",
+        "d": "Content points to products, courses or enquiry forms."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for content marketing"
+  },
+  "work": {
+    "panel": "ContentCalendar",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do in your",
+    "h2b": "content calendar.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Set pillars from buyer questions.",
+        "d": "Topics come from what buyers, parents or students ask, and each pillar has a stage and a next step."
+      },
+      {
+        "n": "02",
+        "t": "Plan and draft the calendar.",
+        "d": "Posts, articles and clips are slotted by topic with owners, formats and dates, then drafted from your product knowledge."
+      },
+      {
+        "n": "03",
+        "t": "Check accuracy before it goes live.",
+        "d": "Every piece is edited for accuracy and approved by you, so nothing publishes unseen."
+      },
+      {
+        "n": "04",
+        "t": "Learn what earns, then repeat.",
+        "d": "We read which pieces brought qualified visits and enquiries, and make more like them."
+      }
+    ],
+    "illustrative": "Illustrative layout of a content calendar. Not a client account, no real figures. TikTok, YouTube, LinkedIn and their logos belong to their owners."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaContentPath",
+    "barLogo": "",
+    "barTitle": "Content path",
+    "pinsLabel": "Five ways content fails to earn",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Audience"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Calendar"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Substance"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Format"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reach"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run content marketing,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Research and plan",
+        "d": "We collect buyer questions, review existing content and agree topics, formats and a calendar.",
+        "get": "A content plan tied to buyer questions.",
+        "img": "company/onepage.jpg",
+        "alt": "A person writing in a notebook at a sunlit desk beside a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Produce and publish",
+        "d": "First pieces are written, edited for accuracy and published, with distribution set up.",
+        "get": "Content live and being shared.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Review and extend",
+        "d": "We read what earned visits and enquiries and update the plan.",
+        "get": "A plan that follows what works.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      },
+      {
+        "n": "Social media",
+        "href": "/services/social-media/"
+      },
+      {
+        "n": "UGC and video",
+        "href": "/services/ugc-and-video/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

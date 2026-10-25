@@ -1,0 +1,6 @@
+---
+// Retired: the lead-quality block is hub/LoopB.astro on every page. This stub renders it from the same data.
+import LoopB from "./LoopB.astro";
+const { H } = Astro.props;
+---
+{H && H.loop ? <LoopB H={H} /> : null}

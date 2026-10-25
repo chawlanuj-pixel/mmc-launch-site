@@ -1,0 +1,70 @@
+---
+// VISUAL: AgencyLeak (kind "AgencyLeak"). Data-driven five-card board for white-label pages: where agency delivery goes wrong.
+// Each card is a small drawing plus two short phrases and a chip. Reads:
+//   X.cols[5]  { head, kind, lines: [text, text], chip, tone: "w" | "b" | "ok" }   head 1 to 2 words, chip 2 to 3 words
+//   kind       one of: brief, clock, check, report, margin, rounds, brand, formats, handover (picks the small drawing)
+//   X.base     label of the bar under the cards;  X.artLabel  aria label of the picture
+// Pins in a row above (y = 0, x = 10, 30, 50, 70, 90). No figures, no brands, no padlocks. Styles scoped (prefix agl-).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X } = Astro.props as Props;
+const cols = (X.cols ?? []) as { head: string; kind: string; lines: string[]; chip: string; tone?: string }[];
+---
+<div class="agl-row" aria-hidden="true"></div>
+<div class="agl-art" role="img" aria-label={X.artLabel ?? "Five cards, each showing one place agency delivery goes wrong."}>
+  {cols.map((c) => (
+    <div class="agl-c">
+      <b class="agl-h"><i aria-hidden="true"></i>{c.head}</b>
+      <div class={"agl-g agl-g--" + c.kind}>
+        {c.kind === "brief" && <span class="agl-doc"><u></u><u></u><u class="agl-gap"></u></span>}
+        {c.kind === "clock" && <span class="agl-cal"><i></i><i></i><i></i><i></i><i></i><i class="agl-due"></i></span>}
+        {c.kind === "check" && <span class="agl-chk"><u class="ok"></u><u class="ok"></u><u class="no"></u></span>}
+        {c.kind === "report" && <span class="agl-rep"><s><i style="height:40%"></i><i style="height:66%"></i><i style="height:52%"></i><i style="height:80%"></i></s><u></u></span>}
+        {c.kind === "margin" && <span class="agl-mg"><i class="agl-mg1"></i><i class="agl-mg2"></i><i class="agl-mg3"></i></span>}
+        {c.kind === "rounds" && <span class="agl-rd"><i></i><i></i><i></i></span>}
+        {c.kind === "brand" && <span class="agl-br"><i></i><i></i><i class="agl-off"></i></span>}
+        {c.kind === "formats" && <span class="agl-fm"><i class="agl-tall"></i><i class="agl-sq"></i><i class="agl-wide"></i></span>}
+        {c.kind === "handover" && <span class="agl-ho"><i></i><i></i><i></i></span>}
+      </div>
+      <div class="agl-b">{c.lines.map((l, k) => <span class={"agl-l" + (k > 0 ? " agl-l--2" : "")}>{l}</span>)}</div>
+      <em class={"agl-chip agl-chip--" + (c.tone ?? "w")}>{c.chip}</em>
+    </div>
+  ))}
+</div>
+<div class="agl-base" aria-hidden="true"><span>{X.base}</span></div>
+<style is:global>
+.agl-row { height: 78px; }
+.agl-art { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(6px, 1.2vw, 14px); }
+.agl-c { position: relative; display: flex; flex-direction: column; gap: 9px; min-width: 0; padding: clamp(8px, 1.1vw, 14px); border: 1px solid #DADDE1; border-radius: 14px; background: #fff; }
+.agl-c::after { content: ""; position: absolute; left: 50%; bottom: -18px; width: 0; height: 18px; border-left: 2px dashed #9DB8F7; }
+.agl-h { display: flex; align-items: center; gap: 7px; font: 800 clamp(10px, .95vw, 12.5px)/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; }
+.agl-h i { flex: none; width: 10px; height: 10px; background: var(--mmc-blue); border-radius: 3px; }
+.agl-g { display: grid; place-items: center; height: 62px; border-radius: 10px; background: #F1F5FF; overflow: hidden; }
+.agl-b { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 6px; min-height: 56px; }
+.agl-l { padding: 6px 8px; border-radius: 9px; background: #F1F5FF; font: 700 clamp(10.5px, .9vw, 12px)/1.3 var(--font-body); color: var(--mmc-blue-900); overflow-wrap: anywhere; }
+.agl-l--2 { background: transparent; border: 1px dashed #8A93A6; color: #65676B; font-weight: 600; }
+.agl-chip { align-self: flex-start; padding: 4px 9px; border-radius: 99px; font: 800 10px/1.25 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; }
+.agl-chip--w { background: #FFF3D6; color: #8A5A00; } .agl-chip--b { background: #FDE8E8; color: #B42318; } .agl-chip--ok { background: #E3F6E9; color: #1B7A3D; }
+.agl-base { margin-top: 18px; height: 40px; border-radius: 12px; background: var(--mmc-blue-900); display: grid; place-items: center; padding-inline: 12px; }
+.agl-base span { font: 800 12px var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: #fff; text-align: center; }
+/* small drawings */
+.agl-doc { width: 46px; padding: 8px 7px; border-radius: 6px; background: #fff; border: 1px solid #C9D6F7; display: grid; gap: 5px; }
+.agl-doc u { display: block; height: 4px; border-radius: 9px; background: #9DB8F7; } .agl-doc u:nth-child(2) { width: 70%; } .agl-doc .agl-gap { height: 6px; background: none; border: 1.5px dashed #B42318; }
+.agl-cal { display: grid; grid-template-columns: repeat(3, 14px); gap: 4px; } .agl-cal i { display: block; width: 14px; height: 14px; border-radius: 4px; background: #fff; border: 1px solid #C9D6F7; } .agl-cal .agl-due { background: var(--mmc-yellow); border-color: var(--mmc-yellow); }
+.agl-chk { display: grid; gap: 5px; } .agl-chk u { display: block; position: relative; width: 52px; height: 11px; padding-left: 15px; text-decoration: none; }
+.agl-chk u::before { content: ""; position: absolute; left: 0; top: 0; width: 11px; height: 11px; border-radius: 3px; border: 1.5px solid #1B7A3D; background: #E3F6E9; } .agl-chk u.no::before { border-color: #B42318; background: #FDE8E8; }
+.agl-chk u::after { content: ""; position: absolute; left: 15px; right: 0; top: 4px; height: 3px; border-radius: 9px; background: #9DB8F7; }
+.agl-rep { display: grid; gap: 5px; justify-items: start; } .agl-rep s { display: flex; align-items: flex-end; gap: 4px; height: 30px; text-decoration: none; } .agl-rep s i { display: block; width: 9px; border-radius: 2px 2px 0 0; background: var(--mmc-blue); }
+.agl-rep u { display: block; width: 46px; height: 7px; border-radius: 4px; border: 1.5px dashed #8A93A6; }
+.agl-mg { display: flex; width: 70px; height: 18px; border-radius: 5px; overflow: hidden; border: 1px solid #C9D6F7; background: #fff; }
+.agl-mg i { display: block; height: 100%; } .agl-mg1 { width: 52%; background: var(--mmc-blue); } .agl-mg2 { width: 30%; background: repeating-linear-gradient(135deg, #F2B8B5 0 3px, #fff 3px 6px); } .agl-mg3 { width: 18%; background: var(--mmc-yellow); }
+.agl-rd { display: block; position: relative; width: 52px; height: 42px; } .agl-rd i { position: absolute; width: 34px; height: 24px; border-radius: 5px; background: #fff; border: 1px solid #9DB8F7; } .agl-rd i:nth-child(1) { left: 0; top: 0; } .agl-rd i:nth-child(2) { left: 9px; top: 8px; } .agl-rd i:nth-child(3) { left: 18px; top: 16px; background: #E7F0FF; }
+.agl-br { display: flex; gap: 6px; } .agl-br i { display: block; width: 18px; height: 18px; border-radius: 50%; background: var(--mmc-blue); } .agl-br i:nth-child(2) { background: var(--mmc-yellow); } .agl-br .agl-off { background: none; border: 2px dashed #B42318; }
+.agl-fm { display: flex; align-items: flex-end; gap: 6px; } .agl-fm i { display: block; border-radius: 4px; background: #9DB8F7; } .agl-tall { width: 14px; height: 30px; } .agl-sq { width: 22px; height: 22px; } .agl-wide { width: 34px; height: 16px; background: none !important; border: 2px dashed #B42318; }
+.agl-ho { display: block; position: relative; width: 50px; height: 38px; } .agl-ho i { position: absolute; width: 30px; height: 22px; border-radius: 5px; background: #fff; border: 1px solid #9DB8F7; } .agl-ho i:nth-child(1) { left: 0; top: 10px; transform: rotate(-9deg); } .agl-ho i:nth-child(2) { left: 18px; top: 2px; transform: rotate(7deg); } .agl-ho i:nth-child(3) { left: 10px; top: 14px; transform: rotate(-2deg); background: #E7F0FF; }
+@media (max-width: 760px) { .agl-row { height: 58px; } .agl-h { display: none; } .agl-g { height: 50px; } .agl-b { min-height: 56px; } .agl-l { font-size: 9px; padding: 5px 6px; } .agl-chip { font-size: 8.5px; padding: 3px 6px; } .agl-c { padding: 6px; gap: 6px; } .agl-base { height: 32px; } .agl-base span { font-size: 10px; } .agl-g > span { transform: scale(.8); } }
+@media (max-width: 440px) { .agl-art { gap: 4px; } .agl-c { padding: 5px 4px; } .agl-b { display: none; } .agl-chip { font-size: 7.5px; letter-spacing: 0; padding: 3px 5px; overflow-wrap: anywhere; } .agl-g > span { transform: scale(.66); } }
+/* Readable floor on phones (small-defects pass, same pattern as SaSurfaceMap): micro labels >= 10px, the chip that names the leak >= 11px. */
+@media (max-width: 760px) { .agl-l { font-size: 11px; } .agl-chip { font-size: 11px; letter-spacing: 0; text-transform: none; } .agl-base span { font-size: 11px; } }
+@media (max-width: 440px) { .agl-c { padding: 5px 3px; } .agl-l { font-size: 10px; line-height: 1.2; padding-inline: 1px; hyphens: auto; overflow-wrap: break-word; letter-spacing: 0; text-transform: none; } .agl-chip { align-self: stretch; text-align: center; font-size: 11px; line-height: 1.2; padding: 3px 1px; hyphens: auto; overflow-wrap: break-word; } }
+@media (max-width: 440px) { .agl-base { height: auto; min-height: 32px; padding-block: 6px; } .agl-base span { letter-spacing: .04em; line-height: 1.25; } }
+</style>

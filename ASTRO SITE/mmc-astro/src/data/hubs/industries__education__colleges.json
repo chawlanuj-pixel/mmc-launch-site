@@ -1,0 +1,520 @@
+{
+  "file": "colleges.html",
+  "path": "/industries/education/colleges/",
+  "key": "educol",
+  "title": "College Admission Marketing Agency India | MMC",
+  "description": "Admission marketing for colleges and universities in India. Course search, campus visit funnels, CRM follow-up and reputation work planned around the intake.",
+  "ogTitle": "College marketing that fills the intake",
+  "ogDescription": "Marketing for colleges brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: colleges.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/education/colleges/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Education",
+          "item": "https://www.mondaymarketing.company/industries/education/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Colleges",
+          "item": "https://www.mondaymarketing.company/industries/education/colleges/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/education/colleges/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/education/colleges/",
+      "name": "College Admission Marketing Agency India | MMC",
+      "description": "Admission marketing for colleges and universities in India. Course search, campus visit funnels, CRM follow-up and reputation work planned around the intake.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/education/colleges/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/education/colleges/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/education/colleges/#service",
+      "name": "Colleges",
+      "serviceType": "Colleges marketing",
+      "description": "Admission marketing for colleges and universities in India: course search, campus visit funnels, CRM follow-up and reputation work.",
+      "url": "https://www.mondaymarketing.company/industries/education/colleges/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/education/colleges/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is college marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The decision is long, parents and students both take part, intakes are seasonal and the goal is an admission, not an order. Follow-up speed and tracking matter as much as ads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you promise admissions or rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We do not promise admissions, placements or rankings. We commit to the work, honest tracking and reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with our CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We connect forms and ads to your CRM and report from enquiry to admission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you plan around intakes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We map search and campaign timing to exam results, counselling dates and your intake calendar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you also help our local visibility?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. See Google Business Profile for campuses and offices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee enrolments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "educol",
+    "wm": "COLLEGES",
+    "eyebrow": "● Colleges",
+    "h1": [
+      "College marketing",
+      [
+        "that fills ",
+        "the intake",
+        "."
+      ]
+    ],
+    "sub": "Families compare colleges for weeks before they enquire. We plan search, paid media and follow-up around the enquiry, the campus visit and the admission.",
+    "tiles": [
+      {
+        "img": "edu/campus.jpg",
+        "pos": "50% 50%",
+        "label": "Campus",
+        "note": "Seen before it is visited"
+      },
+      {
+        "img": "edu/search.jpg",
+        "pos": "50% 50%",
+        "label": "Course search",
+        "note": "Found by course and city"
+      },
+      {
+        "img": "edu/crm.jpg",
+        "pos": "50% 50%",
+        "label": "The CRM",
+        "note": "Every enquiry followed"
+      },
+      {
+        "img": "edu/followup.jpg",
+        "pos": "50% 50%",
+        "label": "Follow-up",
+        "note": "Calls and counselling"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "College admission marketing is the work of getting students and parents to find your courses, enquire, visit and enrol within the intake window. It combines course and city search, campaigns around exam and result dates, a website that answers fee and eligibility questions, and fast, tracked follow-up from enquiry to admission.",
+      "hl": "find your courses, enquire, visit and enrol",
+      "who": "Monday Marketing Company (MMC) markets colleges and universities in India, connecting ads and the website to a CRM so admissions teams can follow every enquiry.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Course and city search",
+          "text": "Pages and ads for the courses families search."
+        },
+        {
+          "icon": "grid",
+          "title": "Visit funnels",
+          "text": "Open days and campus visits that turn enquiries into applicants."
+        },
+        {
+          "icon": "link",
+          "title": "Tracked to admission",
+          "text": "Enquiry, visit and admission recorded in a CRM."
+        }
+      ],
+      "image": "edu/campus.jpg",
+      "chip": "From enquiry to admission, tracked"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-colleges-choose",
+          "h": "How families choose a college",
+          "paras": [
+            "A student and parents compare courses, fees, placements and campus life across several colleges, often over weeks. They read reviews, ask friends and check the website before they enquire.",
+            "Intake windows, exam results and counselling dates shape when they search."
+          ],
+          "img": "edu/students.jpg",
+          "cap": "Students and parents on a campus visit."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "Many colleges generate enquiries but follow up slowly, rely on one season of heavy spend and cannot say which channel produced admissions.",
+            "The fix is to answer fee and eligibility questions on the site, follow up quickly, invite enquiries to a visit and track each step. See the <a href=\"/industries/education/\">education marketing</a> overview and our <a href=\"/guides/admission-marketing-plan/\">admission marketing plan for colleges</a>."
+          ],
+          "callout": {
+            "title": "No admission promises.",
+            "text": "We never promise admissions, placements or rankings in ads."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where college marketing leaks",
+      "h2a": "Five places college",
+      "h2b": "enquiries are lost.",
+      "lede": "Each stage below is where an applicant is lost between search and admission, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Be found by course and city",
+        "tag": "Search and ads",
+        "breaks": "Waiting for the prospectus to be found.",
+        "why": "Families search the course and city. If you are not there, they compare other colleges.",
+        "does": "We run course and city search and campaigns around intakes. See SEO and Google Ads.",
+        "href": "/services/performance-marketing/google-ads/",
+        "img": "edu/search.jpg"
+      },
+      {
+        "k": "Answer fees and eligibility",
+        "tag": "Website",
+        "breaks": "A site that hides fees and eligibility.",
+        "why": "Families leave when basics are unclear.",
+        "does": "We build course pages with eligibility, fees process, outcomes you can document and a clear next step. See website development.",
+        "href": "/services/web-development/",
+        "img": "edu/site.jpg"
+      },
+      {
+        "k": "Capture the enquiry cleanly",
+        "tag": "Forms and landing pages",
+        "breaks": "Long forms and unclear next steps.",
+        "why": "A student or parent enquires on a phone, often in a hurry.",
+        "does": "We build short enquiry forms and landing pages and send leads to your CRM. See lead generation.",
+        "href": "/services/lead-generation/",
+        "img": "edu/enquiry.jpg"
+      },
+      {
+        "k": "Follow up quickly",
+        "tag": "CRM and counselling",
+        "breaks": "Calling days later.",
+        "why": "Speed and relevance decide who a family speaks to.",
+        "does": "We set routing, reply timing and nurture series by course.",
+        "href": "/services/lead-generation/",
+        "img": "edu/followup.jpg"
+      },
+      {
+        "k": "Be trusted online",
+        "tag": "Reviews and reputation",
+        "breaks": "Weak or unmanaged reviews.",
+        "why": "Families read reviews and ask other families.",
+        "does": "We manage profiles and reviews honestly. See reputation management.",
+        "href": "/services/online-reputation-management/",
+        "img": "edu/orm.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "college marketing is working.",
+      "note": "Clicks alone are not on the list.",
+      "cards": [
+        {
+          "n": "Cost per qualified enquiry",
+          "d": "What it costs to reach a real prospective student."
+        },
+        {
+          "n": "Enquiry to visit rate",
+          "d": "Share of enquiries that visit or attend a session."
+        },
+        {
+          "n": "Visit to admission rate",
+          "d": "Share of visits that become applications and admissions."
+        },
+        {
+          "n": "Source of admissions",
+          "d": "Which channels produced enrolled students."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where colleges marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Education marketing",
+          "d": "The overview for colleges and institutes.",
+          "img": "shared/education.jpg",
+          "href": "/industries/education/",
+          "link": "See Education marketing"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and CRM follow-up.",
+          "img": "b2b/qualify.jpg",
+          "href": "/services/lead-generation/",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Online reputation",
+          "d": "Reviews and profiles families read.",
+          "img": "orm/profile.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
+        },
+        {
+          "n": "Study abroad",
+          "d": "Search, ads and follow-up for students planning countries and intakes.",
+          "img": "edu/students.jpg",
+          "href": "/industries/education/study-abroad/",
+          "link": "See Study abroad marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "college marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is college marketing different?",
+        "a": "The decision is long, parents and students both take part, intakes are seasonal and the goal is an admission, not an order. Follow-up speed and tracking matter as much as ads."
+      },
+      {
+        "q": "Do you promise admissions or rankings?",
+        "a": "No. We do not promise admissions, placements or rankings. We commit to the work, honest tracking and reporting."
+      },
+      {
+        "q": "Can you work with our CRM?",
+        "a": "Yes. We connect forms and ads to your CRM and report from enquiry to admission."
+      },
+      {
+        "q": "How do you plan around intakes?",
+        "a": "We map search and campaign timing to exam results, counselling dates and your intake calendar."
+      },
+      {
+        "q": "Can you also help our local visibility?",
+        "a": "Yes. See <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a> for campuses and offices."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee enrolments?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Follow every enquiry",
+      "h2b": "to an admission.",
+      "lede": "On a call, with a senior strategist. We review your enquiry funnel and show where families drop off."
+    },
+    "process": {
+      "h2a": "How we start with a college,",
+      "h2b": "step by step.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit enquiries and follow-up",
+          "d": "We review ads, site, CRM and follow-up speed against your intake plan.",
+          "out": "A funnel map."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build pages and capture",
+          "d": "Course pages, enquiry forms and routing go live.",
+          "out": "A site that answers and captures."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Run campaigns and track",
+          "d": "Search and paid campaigns start and enquiry to admission is tracked.",
+          "out": "Reporting by admission source."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "College marketing for institutions that",
+      "h2b": "plan by intake.",
+      "good": {
+        "t": "You run a college or university in India and want enquiries that become admissions.",
+        "why": "We plan around the intake, follow-up speed and honest claims."
+      },
+      "not": {
+        "t": "You want guaranteed admissions.",
+        "why": "Admissions depend on many factors. We commit to method and tracking."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "colleges.",
+      "lede": "Search, site, capture and follow-up for admission marketing.",
+      "items": [
+        {
+          "t": "Course and city search",
+          "d": "Pages and ads for the courses families search.",
+          "img": "edu/search.jpg",
+          "alt": "Course and city search"
+        },
+        {
+          "t": "Course pages",
+          "d": "Eligibility, fees process, outcomes and next steps.",
+          "img": "edu/site.jpg",
+          "alt": "Course pages"
+        },
+        {
+          "t": "Enquiry capture",
+          "d": "Short forms and landing pages on mobile.",
+          "img": "edu/enquiry.jpg",
+          "alt": "Enquiry capture"
+        },
+        {
+          "t": "CRM and follow-up",
+          "d": "Routing, reply timing and nurture series.",
+          "img": "edu/crm.jpg",
+          "alt": "CRM and follow-up"
+        },
+        {
+          "t": "Campus visit funnels",
+          "d": "Open days and visits that turn enquiries into applicants.",
+          "img": "edu/campus.jpg",
+          "alt": "Campus visit funnels"
+        },
+        {
+          "t": "Reputation",
+          "d": "Reviews and profiles families read.",
+          "img": "edu/orm.jpg",
+          "alt": "Reputation"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why colleges choose MMC",
+      "h2b": "for admission marketing.",
+      "lede": "We follow the family from search to admission.",
+      "img": "edu/students.jpg",
+      "alt": "Why colleges choose MMC for admission marketing.",
+      "items": [
+        {
+          "t": "Intake-aware",
+          "d": "Plans follow your calendar and exam dates."
+        },
+        {
+          "t": "Tracked to admission",
+          "d": "Enquiry, visit and admission recorded in a CRM."
+        },
+        {
+          "t": "Honest claims",
+          "d": "No promised placements or rankings."
+        },
+        {
+          "t": "One team",
+          "d": "Search, site, ads and follow-up together."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a college engagement runs,",
+      "h2b": "step by step.",
+      "img": "edu/enquiry.jpg",
+      "alt": "How a college engagement runs, step by step.",
+      "items": [
+        {
+          "t": "Audit the funnel",
+          "d": "Ads, site, CRM and follow-up are reviewed."
+        },
+        {
+          "t": "Plan around the intake",
+          "d": "Courses, dates and budgets are mapped."
+        },
+        {
+          "t": "Build and launch",
+          "d": "Pages, forms and campaigns go live."
+        },
+        {
+          "t": "Track to admission",
+          "d": "Enquiry, visit and admission are reported each month."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

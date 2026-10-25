@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/strategy.jpg",
+    "pos": "50% 50%",
+    "alt": "A consultant talking with a client at a table, notebook open.",
+    "facts": [
+      {
+        "t": "A complete profile.",
+        "d": "Details, categories and photos for Thane searches."
+      },
+      {
+        "t": "Reviews handled.",
+        "d": "Real requests and honest replies."
+      },
+      {
+        "t": "A page for Thane.",
+        "d": "Matches your profile and gives a next step."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why Thane brands choose MMC for local marketing"
+  },
+  "work": {
+    "panel": "LocalProfile",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for your",
+    "h2b": "Thane profile.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Claim each place you run in Thane.",
+        "d": "Every outlet gets one verified listing, and old or duplicate ones are merged."
+      },
+      {
+        "n": "02",
+        "t": "Pick categories Thane buyers search.",
+        "d": "A primary category and plain-words services set you apart from Mumbai-wide results."
+      },
+      {
+        "n": "03",
+        "t": "Keep hours and photos right for walk-ins.",
+        "d": "Timings and photos stay current, with a simple routine for your team."
+      },
+      {
+        "n": "04",
+        "t": "Ask for reviews and reply to all.",
+        "d": "A respectful way to ask, and honest replies drafted in your voice."
+      },
+      {
+        "n": "05",
+        "t": "Add a Thane page and read the report.",
+        "d": "The profile links to a matching page, and we report calls and directions."
+      }
+    ],
+    "illustrative": "Illustrative layout of a business profile and map results. Not a real business, no real figures. Google Business Profile and Google Maps belong to Google."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaLocalMap",
+    "barLogo": "",
+    "barTitle": "Local search view",
+    "pinsLabel": "Five places Thane visits go missing",
+    "pins": [
+      {
+        "x": 12,
+        "y": 0,
+        "label": "Listings"
+      },
+      {
+        "x": 44,
+        "y": 0,
+        "label": "Categories"
+      },
+      {
+        "x": 60,
+        "y": 0,
+        "label": "Hours"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Reviews"
+      },
+      {
+        "x": 92,
+        "y": 0,
+        "label": "Thane page"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run local work in Thane,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit Thane listings",
+        "d": "We check each listing, merge duplicates and complete the profile content.",
+        "get": "Accurate profiles for each place.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Reviews and the Thane page",
+        "d": "We set up the review routine and build a Thane page that matches the profile.",
+        "get": "A profile and page that agree.",
+        "img": "seo/pages.jpg",
+        "alt": "A local page matching the profile.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Local ads and report",
+        "d": "We add ads aimed at your areas if they suit, and report on calls, directions and enquiries.",
+        "get": "A monthly local report.",
+        "img": "orm/report.jpg",
+        "alt": "A monthly local report.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "about2/close.jpg",
+    "alt": "A notebook and a laptop on a desk at the end of the day.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "All locations",
+        "href": "/locations/"
+      },
+      {
+        "n": "Mumbai",
+        "href": "/locations/mumbai/"
+      },
+      {
+        "n": "Indore",
+        "href": "/locations/indore/"
+      },
+      {
+        "n": "Google Business Profile",
+        "href": "/services/seo/google-business-profile/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

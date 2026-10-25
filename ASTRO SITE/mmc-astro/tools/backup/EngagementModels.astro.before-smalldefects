@@ -1,0 +1,38 @@
+---
+// PANEL: EngagementModels (kind "EngagementModels"). Three ways an agency can buy delivery, shown as cards with no prices. No platform mark. 4 steps.
+//   1 Retainer: the retainer card is highlighted (monthly scope, repeating work). Tab: Retainer.
+//   2 Project: the project card is highlighted (fixed scope, an end date). Tab: Project.
+//   3 Dedicated team: the dedicated-team card is highlighted (named people, your queue). Tab: Team.
+//   4 Compare: three rows (best for, scope, changes) across the three models. Tab: Compare.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix emd-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const cards = [["Retainer", "Ongoing", ["Monthly scope", "Repeating work", "Changes at renewal"]], ["Project", "One-off", ["Written scope", "One end date", "Changes quoted first"]], ["Dedicated team", "Embedded", ["Named people", "Your queue", "Seats flex"]]];
+const rows = [["Best for", "Steady monthly work", "A defined build", "A growing book"], ["Scope", "Agreed each month", "Written once", "Set by your queue"], ["Changes", "Move at renewal", "Quoted first", "Add or pause seats"]];
+---
+<Frame title="Engagement models" label="Illustration of three ways to buy white-label delivery: retainer, project and dedicated team. No prices." caption={W.illustrative} tabs={["Retainer", "Project", "Team", "Compare"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3">
+    <p class="s2-st__cap">Pick the model <span>To fit how your client buys</span></p>
+    <div class="emd-cards">
+      {cards.map(([n, c, ls], k) => <div class={"s2p-card emd-c emd-c" + (k + 1) + " s2p-hl-" + (k + 1)}><em class="s2p-chip s2p-chip--blue">{c}</em><b>{n}</b><ul>{(ls as string[]).map((l) => <li>{l}</li>)}</ul></div>)}
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Side by side <span>No prices, only how each works</span></p>
+    <div class="emd-tbl" role="presentation">
+      <span></span>{cards.map(([n]) => <b>{n}</b>)}
+      {rows.map(([h, a, b, c]) => <Fragment><p class="s2p-lbl">{h}</p><span class="s2p-card">{a}</span><span class="s2p-card">{b}</span><span class="s2p-card">{c}</span></Fragment>)}
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.emd-cards { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8em; align-items: stretch; }
+.emd-c { display: grid; gap: .6em; align-content: start; justify-items: start; opacity: .45; } .emd-c b { font: 800 1.1em/1.15 var(--font-display); color: #1C2B33; } .emd-c ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .6em; } .emd-c li { font: 700 .9em/1.25 var(--font-body); color: #50575E; padding-left: 1.2em; position: relative; } .emd-c li::before { content: ""; position: absolute; left: 0; top: .35em; width: .6em; height: .6em; border-radius: 50%; background: var(--mmc-blue); }
+.s2-work[data-step="1"] .emd-c1, .s2-work[data-step="2"] .emd-c2, .s2-work[data-step="3"] .emd-c3 { opacity: 1; transform: translateY(-.3em); }
+.emd-c { transition: opacity .4s var(--s2-ease), transform .4s var(--s2-ease), box-shadow .3s; }
+.emd-tbl { flex: 1; min-height: 0; display: grid; grid-template-columns: 4.4em repeat(3, minmax(0, 1fr)); grid-template-rows: auto repeat(3, minmax(0, 1fr)); max-height: 22em; gap: .5em; align-items: stretch; } .emd-tbl > b { font: 800 .85em/1.2 var(--font-body); color: #1C2B33; align-self: end; } .emd-tbl .s2p-card { display: flex; align-items: center; font: 700 .85em/1.25 var(--font-body); padding: .55em .6em; } .emd-tbl .s2p-lbl { align-self: center; font-size: .72em; }
+@media (prefers-reduced-motion: reduce) { .emd-c { transition: none; } .s2-work .emd-c { transform: none !important; } }
+@media (max-width: 560px) { .emd-cards { gap: .35em; } .emd-c li { font-size: .72em; padding-left: .9em; } .emd-c li:nth-child(3) { display: none; } .emd-c ul { gap: .4em; } .emd-c .s2p-chip { white-space: normal; font-size: .62em; } .emd-tbl { grid-template-columns: 3.4em repeat(3, minmax(0, 1fr)); gap: .3em; } .emd-tbl .s2p-card { padding: .4em .35em; font-size: .72em; } }
+@media (max-width: 900px) { .s2-ui:has(.emd-cards) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

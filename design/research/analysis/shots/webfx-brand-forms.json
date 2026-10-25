@@ -1,0 +1,1622 @@
+{
+ "https://www.webfx.com/free-quote/": {
+  "url": "https://www.webfx.com/free-quote/",
+  "title": "Hear from an expert! Free Quote from WebFX",
+  "forms": [
+   {
+    "id": "gform_35",
+    "cls": "personalizationfx fx-form fx-gravity-form fx-gravity-form-35 fx-gf-free-quote-form",
+    "text": "Request a FREE Proposal Now! First and Last Name Work Email Address Website Company Phone Number Project Budget Select project budget $1,500-5,000/month $5,000-10,000/month $10,000-25,000/month $25,000-50,000/month $50,000+/month Unknown Comments or Questions reCaptcha",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_36",
+      "ph": "",
+      "req": null,
+      "label": "Company"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_16",
+      "ph": "",
+      "req": "true",
+      "label": "First and Last Name"
+     },
+     {
+      "tag": "INPUT",
+      "type": "email",
+      "name": "input_5",
+      "ph": "",
+      "req": "true",
+      "label": "Work Email Address"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_18",
+      "ph": "",
+      "req": "true",
+      "label": "Website"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_6",
+      "ph": "",
+      "req": "true",
+      "label": "Company"
+     },
+     {
+      "tag": "INPUT",
+      "type": "tel",
+      "name": "input_3",
+      "ph": "(000) 000-0000",
+      "req": "true",
+      "label": "Phone Number"
+     },
+     {
+      "tag": "SELECT",
+      "type": "select-one",
+      "name": "input_26",
+      "req": "true",
+      "label": "Project Budget",
+      "opts": [
+       "Select project budget",
+       "$1,500-5,000/month",
+       "$5,000-10,000/month",
+       "$10,000-25,000/month",
+       "$25,000-50,000/month",
+       "$50,000+/month",
+       "Unknown"
+      ]
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "input_7",
+      "ph": "Looking to get more leads? Frustrated with your current results? Planning something new? Tell us what\u2019s going on.",
+      "req": null,
+      "label": "Comments or Questions"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_8",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_9",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_10",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_11",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_12",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_13",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_14",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_15",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_20",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_21",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_22",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_23",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_24",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "g-recaptcha-response",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "gform_42",
+    "cls": "gform-step-1 personalizationfx fx-form fx-gravity-form fx-gravity-form-42 fx-gf-multistep-free-quote-form ignore-default-styles",
+    "text": "1122 URLThis field is for validation purposes and should be left unchanged.Let\u2019s build your custom revenue planWhat's Your Biggest Marketing Challenge? I\u2019m not showing up onlineI want more traffic and leadsI want a new websiteMy cost per lead is too highI\u2019m not sure what\u2019s workingOtherWhat Service(s) Are You Most Interested In?* Organic channels(SEO, Content, GenAI) Paid channels(PPC, Social Media Ads) Web Design Other or not sure yet What Industry Are You In?Select your industry (optional)Banking & FinanceReal Estate & ConstructionEcommerceEducation & TrainingEnergy, Environmental, & UtilitiesMedical / HealthcareHome & Facility ServicesHeavy EquipmentHospitality & LeisureIndustrial & ManufacturingNonProfit & GovernmentProfessional ServicesPhysical Retail StoreSoftware & TechnologyTransportation & Logistics Let's grow your revenue in 2026Email* Name*Website*Company*Phone Number*Project Budget*Select project budget$1,500-5,000/month$5,000-10,000/month$10,000-25,000/month$25,000-50,000/month$50,000+/monthUnknownComments or QuestionsThis field is hidden when viewing the formajs_anonymous_idThis field is hidden when viewing the formcf_countryThis field is hidden when viewing the formmcfxlpThis field is hidden when viewing the formmcfxsourceThis field is hidden when viewing the formmcfxreferrerThis field is hidden when viewing the formmcfxmediumThis field is hidden when viewing the formmcfxtermThis field is hidden when viewing the formqlflagThis field is hidden when viewing the formipaddressThis field is hidden when viewing the formcityThis field is hidden when viewing the formpostalcodeThis field is hidden when viewing the formregionThis field is hidden when viewing the formtimezoneCAPTCHA",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_37",
+      "ph": "",
+      "req": null,
+      "label": "URL"
+     },
+     {
+      "tag": "INPUT",
+      "type": "radio",
+      "name": "input_27",
+      "ph": "",
+      "req": "true",
+      "label": "I\u2019m not showing up online",
+      "val": "not-showing-up-online"
+     },
+     {
+      "tag": "INPUT",
+      "type": "radio",
+      "name": "input_27",
+      "ph": "",
+      "req": "true",
+      "label": "I want more traffic and leads",
+      "val": "more-traffic-and-leads"
+     },
+     {
+      "tag": "INPUT",
+      "type": "radio",
+      "name": "input_27",
+      "ph": "",
+      "req": "true",
+      "label": "I want a new website",
+      "val": "new-website"
+     },
+     {
+      "tag": "INPUT",
+      "type": "radio",
+      "name": "input_27",
+      "ph": "",
+      "req": "true",
+      "label": "My cost per lead is too high",
+      "val": "cost-per-lead-too-high"
+     },
+     {
+      "tag": "INPUT",
+      "type": "radio",
+      "name": "input_27",
+      "ph": "",
+      "req": "true",
+      "label": "I\u2019m not sure what\u2019s working",
+      "val": "not-sure"
+     },
+     {
+      "tag": "INPUT",
+      "type": "radio",
+      "name": "input_27",
+      "ph": "",
+      "req": "true",
+      "label": "Other",
+      "val": "other"
+     },
+     {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "name": "input_28.1",
+      "ph": "",
+      "req": null,
+      "label": "Organic channels(SEO, Content, GenAI)",
+      "val": "organic-channels"
+     },
+     {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "name": "input_28.2",
+      "ph": "",
+      "req": null,
+      "label": "Paid channels(PPC, Social Media Ads)",
+      "val": "paid-channels"
+     },
+     {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "name": "input_28.3",
+      "ph": "",
+      "req": null,
+      "label": "Web Design",
+      "val": "web-design"
+     },
+     {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "name": "input_28.4",
+      "ph": "",
+      "req": null,
+      "label": "Other or not sure yet",
+      "val": "other-or-not-sure"
+     },
+     {
+      "tag": "SELECT",
+      "type": "select-one",
+      "name": "input_29",
+      "req": null,
+      "label": "What Industry Are You In?",
+      "opts": [
+       "Select your industry (optional)",
+       "Banking & Finance",
+       "Real Estate & Construction",
+       "Ecommerce",
+       "Education & Training",
+       "Energy, Environmental, & Utilities",
+       "Medical / Healthcare",
+       "Home & Facility Services",
+       "Heavy Equipment",
+       "Hospitality & Leisure",
+       "Industrial & Manufacturing",
+       "NonProfit & Government",
+       "Professional Services",
+       "Physical Retail Store",
+       "Software & Technology",
+       "Transportation & Logistics"
+      ]
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "fx-custom-gform-skip-button",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "email",
+      "name": "input_5",
+      "ph": "johndoe@email.com",
+      "req": "true",
+      "label": "Email*"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_16",
+      "ph": "John Doe",
+      "req": "true",
+      "label": "Name*"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_18",
+      "ph": "www.example.com",
+      "req": "true",
+      "label": "Website*"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_6",
+      "ph": "Example",
+      "req": "true",
+      "label": "Company*"
+     },
+     {
+      "tag": "INPUT",
+      "type": "tel",
+      "name": "input_3",
+      "ph": "(000) 000-0000",
+      "req": "true",
+      "label": "Phone Number*"
+     },
+     {
+      "tag": "SELECT",
+      "type": "select-one",
+      "name": "input_26",
+      "req": "true",
+      "label": "Project Budget*",
+      "opts": [
+       "Select project budget",
+       "$1,500-5,000/month",
+       "$5,000-10,000/month",
+       "$10,000-25,000/month",
+       "$25,000-50,000/month",
+       "$50,000+/month",
+       "Unknown"
+      ]
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "input_7",
+      "ph": "",
+      "req": null,
+      "label": "Comments or Questions"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_8",
+      "ph": "",
+      "req": null,
+      "label": "ajs_anonymous_id"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_9",
+      "ph": "",
+      "req": null,
+      "label": "cf_country"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_10",
+      "ph": "",
+      "req": null,
+      "label": "mcfxlp"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_11",
+      "ph": "",
+      "req": null,
+      "label": "mcfxsource"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_12",
+      "ph": "",
+      "req": null,
+      "label": "mcfxreferrer"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_13",
+      "ph": "",
+      "req": null,
+      "label": "mcfxmedium"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_14",
+      "ph": "",
+      "req": null,
+      "label": "mcfxterm"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_15",
+      "ph": "",
+      "req": null,
+      "label": "qlflag"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_20",
+      "ph": "",
+      "req": null,
+      "label": "ipaddress"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_21",
+      "ph": "",
+      "req": null,
+      "label": "city"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_22",
+      "ph": "",
+      "req": null,
+      "label": "postalcode"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_23",
+      "ph": "",
+      "req": null,
+      "label": "region"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_24",
+      "ph": "",
+      "req": null,
+      "label": "timezone"
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "g-recaptcha-response",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "gform_8",
+    "cls": "personalizationfx fx-form fx-gravity-form fx-gravity-form-8 fx-gf-free-quote-form",
+    "text": "Request a FREE Proposal Now! First and Last Name Work Email Address Website Company Phone Number Project Budget Select project budget $1,500-5,000/month $5,000-10,000/month $10,000-25,000/month $25,000-50,000/month $50,000+/month Unknown Comments or Questions CAPTCHA",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_28",
+      "ph": "",
+      "req": null,
+      "label": "Name"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_16",
+      "ph": "",
+      "req": "true",
+      "label": "First and Last Name"
+     },
+     {
+      "tag": "INPUT",
+      "type": "email",
+      "name": "input_5",
+      "ph": "",
+      "req": "true",
+      "label": "Work Email Address"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_18",
+      "ph": "",
+      "req": "true",
+      "label": "Website"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_6",
+      "ph": "",
+      "req": "true",
+      "label": "Company"
+     },
+     {
+      "tag": "INPUT",
+      "type": "tel",
+      "name": "input_3",
+      "ph": "(000) 000-0000",
+      "req": "true",
+      "label": "Phone Number"
+     },
+     {
+      "tag": "SELECT",
+      "type": "select-one",
+      "name": "input_26",
+      "req": "true",
+      "label": "Project Budget",
+      "opts": [
+       "Select project budget",
+       "$1,500-5,000/month",
+       "$5,000-10,000/month",
+       "$10,000-25,000/month",
+       "$25,000-50,000/month",
+       "$50,000+/month",
+       "Unknown"
+      ]
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "input_7",
+      "ph": "Looking to get more leads? Frustrated with your current results? Planning something new? Tell us what\u2019s going on.",
+      "req": null,
+      "label": "Comments or Questions"
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "g-recaptcha-response",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_8",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_9",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_10",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_11",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_12",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_13",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_14",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_15",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_20",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_21",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_22",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_23",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_24",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "",
+    "cls": "fx-footer-quote-form form-quote-proposal",
+    "text": "Discover how we can help your business grow Send Me a Proposal!",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   }
+  ],
+  "fixed": [
+   {
+    "tag": "DIV",
+    "id": "fxheader",
+    "cls": "",
+    "pos": "sticky",
+    "text": "Digital Marketing That Drives Revenue\u00ae AI Search & SEO Revenue Marketing & CRO UX & AI Services Revenue Platform About Get a Proposal",
+    "h": 80,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "grecaptcha-badge",
+    "pos": "fixed",
+    "text": "",
+    "h": 60,
+    "w": 256
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "grecaptcha-badge",
+    "pos": "fixed",
+    "text": "",
+    "h": 60,
+    "w": 256
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 900,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 156,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 900,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 156,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 900,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 156,
+    "w": 1440
+   }
+  ],
+  "hosts": [
+   "scripts.clarity.ms",
+   "www.clarity.ms",
+   "bat.bing.com",
+   "connect.facebook.net",
+   "snap.licdn.com",
+   "cdn.madkudu.com",
+   "cdn.segment.com",
+   "www.google-analytics.com",
+   "x.clearbitjs.com",
+   "reveal.clearbit.com",
+   "www.webfx.com",
+   "agent.marketingcloudfx.com",
+   "www.googletagmanager.com",
+   "www.gstatic.com",
+   "www.google.com",
+   "www.clickcease.com",
+   "googleads.g.doubleclick.net",
+   "d1b3llzbo1rqxo.cloudfront.net",
+   "cdn.leadmanagerfx.com",
+   "static.cloudflareinsights.com",
+   "tag.clearbitscripts.com",
+   "cdn.speedcurve.com",
+   "webfx.chilipiper.com",
+   "loader.nutshell.com",
+   "js.adsrvr.org"
+  ],
+  "iframes": [
+   "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&co=aHR0cHM6Ly93d3cud2ViZnguY29tOjQ0Mw..&hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&theme=light&size=invisible&badge=bottomright&anchor-ms=20000&execute-ms=30000&cb=fkad9tsos75",
+   "about:blank",
+   "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&co=aHR0cHM6Ly93d3cud2ViZnguY29tOjQ0Mw..&hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&theme=light&size=invisible&badge=bottomright&anchor-ms=20000&execute-ms=30000&cb=ipxw4ad9inxe",
+   "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&co=aHR0cHM6Ly93d3cud2ViZnguY29tOjQ0Mw..&hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&theme=light&size=invisible&badge=bottomright&anchor-ms=20000&execute-ms=30000&cb=a1ltv3789gru",
+   "",
+   "about:blank",
+   "https://www.google.com/recaptcha/api2/bframe?hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&bft=0dAFcWeA5llA2WrPjUW8Wh-QC5YQTYe89IXjep1Et2L5WV09fw9W6doQqU9l2SbxoNmWRtE8aP2TWG-jtM-TyEKP8pBbqlbN2i_w",
+   "https://www.google.com/recaptcha/api2/bframe?hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&bft=0dAFcWeA75zzDDD_uKS567Y34jjVirJiTx5AJc0S-q9Jso6XRI0WL3DNuyqxiI5_DwD1sgnumHzORqTBUUmtzWEv9IZK_mdq31NA",
+   "https://www.google.com/recaptcha/api2/bframe?hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&bft=0dAFcWeA60QzFDwomQb0PAabbaDx7l-GL79wNZPFpbnkEKwVMVNOqUpesXuBhoHmEfatkClP1jo3THMNcBgwaHZw3QUHQYUPIDng",
+   "https://insight.adsrvr.org/track/cei?advertiser_id=7zpdoi7&cookie_sync=1&upv=3.0.0&upid=lqahejs&ref=https%3A%2F%2Fwww.webfx.com%2Ffree-quote%2F"
+  ],
+  "tel": [
+   "tel:+18888742601"
+  ]
+ },
+ "https://www.webfx.com/free-quote-bv2/": {
+  "url": "https://www.webfx.com/free-quote-bv2/",
+  "title": "Hear from an expert! Free Quote from WebFX - VB2 - WebFX",
+  "forms": [
+   {
+    "id": "gform_26",
+    "cls": "personalizationfx fx-form fx-gravity-form fx-gravity-form-26 fx-multisteps-gf-form fx-gf-free-quote-form",
+    "text": "1 2 3 4 Let's Get Started! What is your full name?",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_48",
+      "ph": "",
+      "req": null,
+      "label": "X/Twitter"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_1",
+      "ph": "Full Name",
+      "req": "true",
+      "label": "Name(Required)"
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_10",
+      "ph": "Company",
+      "req": "true",
+      "label": "Company(Required)"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_43",
+      "ph": "Website",
+      "req": "true",
+      "label": "Website(Required)"
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "email",
+      "name": "input_16",
+      "ph": "Email",
+      "req": "true",
+      "label": "Email(Required)"
+     },
+     {
+      "tag": "INPUT",
+      "type": "tel",
+      "name": "input_18",
+      "ph": "Phone",
+      "req": "true",
+      "label": "Phone(Required)"
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "button",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "input_44",
+      "ph": "",
+      "req": null,
+      "label": "Comments or Questions"
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "g-recaptcha-response",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_30",
+      "ph": "",
+      "req": null,
+      "label": "ajs_anonymous_id"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_31",
+      "ph": "",
+      "req": null,
+      "label": "cf_country"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_32",
+      "ph": "",
+      "req": null,
+      "label": "mcfxlp"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_33",
+      "ph": "",
+      "req": null,
+      "label": "mcfxsource"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_34",
+      "ph": "",
+      "req": null,
+      "label": "mcfxreferrer"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_35",
+      "ph": "",
+      "req": null,
+      "label": "mcfxmedium"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_36",
+      "ph": "",
+      "req": null,
+      "label": "mcfxterm"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_37",
+      "ph": "",
+      "req": null,
+      "label": "qlflag"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_38",
+      "ph": "",
+      "req": null,
+      "label": "ipaddress"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_39",
+      "ph": "",
+      "req": null,
+      "label": "city"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_40",
+      "ph": "",
+      "req": null,
+      "label": "postalcode"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_41",
+      "ph": "",
+      "req": null,
+      "label": "region"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_42",
+      "ph": "",
+      "req": null,
+      "label": "timezone"
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "gform_8",
+    "cls": "personalizationfx fx-form fx-gravity-form fx-gravity-form-8 fx-gf-free-quote-form",
+    "text": "Request a FREE Proposal Now! First and Last Name Work Email Address Website Company Phone Number Project Budget Select project budget $1,500-5,000/month $5,000-10,000/month $10,000-25,000/month $25,000-50,000/month $50,000+/month Unknown Comments or Questions CAPTCHA",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_28",
+      "ph": "",
+      "req": null,
+      "label": "Phone"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_16",
+      "ph": "",
+      "req": "true",
+      "label": "First and Last Name"
+     },
+     {
+      "tag": "INPUT",
+      "type": "email",
+      "name": "input_5",
+      "ph": "",
+      "req": "true",
+      "label": "Work Email Address"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_18",
+      "ph": "",
+      "req": "true",
+      "label": "Website"
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_6",
+      "ph": "",
+      "req": "true",
+      "label": "Company"
+     },
+     {
+      "tag": "INPUT",
+      "type": "tel",
+      "name": "input_3",
+      "ph": "(000) 000-0000",
+      "req": "true",
+      "label": "Phone Number"
+     },
+     {
+      "tag": "SELECT",
+      "type": "select-one",
+      "name": "input_26",
+      "req": "true",
+      "label": "Project Budget",
+      "opts": [
+       "Select project budget",
+       "$1,500-5,000/month",
+       "$5,000-10,000/month",
+       "$10,000-25,000/month",
+       "$25,000-50,000/month",
+       "$50,000+/month",
+       "Unknown"
+      ]
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "input_7",
+      "ph": "Looking to get more leads? Frustrated with your current results? Planning something new? Tell us what\u2019s going on.",
+      "req": null,
+      "label": "Comments or Questions"
+     },
+     {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "name": "g-recaptcha-response",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_8",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_9",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_10",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_11",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_12",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_13",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_14",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_15",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_20",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_21",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_22",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_23",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "input_24",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     },
+     {
+      "tag": "INPUT",
+      "type": "submit",
+      "name": "",
+      "ph": "",
+      "req": null,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "",
+    "cls": "fx-footer-quote-form form-quote-proposal",
+    "text": "Discover how we can help your business grow Send Me a Proposal!",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   }
+  ],
+  "fixed": [
+   {
+    "tag": "DIV",
+    "id": "fxheader",
+    "cls": "",
+    "pos": "sticky",
+    "text": "Digital Marketing That Drives Revenue\u00ae AI Search & SEO Revenue Marketing & CRO UX & AI Services Revenue Platform About Get a Proposal",
+    "h": 80,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "grecaptcha-badge",
+    "pos": "fixed",
+    "text": "",
+    "h": 60,
+    "w": 256
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 900,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 156,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 900,
+    "w": 1440
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "",
+    "pos": "fixed",
+    "text": "",
+    "h": 156,
+    "w": 1440
+   }
+  ],
+  "hosts": [
+   "bat.bing.com",
+   "connect.facebook.net",
+   "snap.licdn.com",
+   "scripts.clarity.ms",
+   "www.clarity.ms",
+   "cdn.madkudu.com",
+   "cdn.segment.com",
+   "www.google-analytics.com",
+   "x.clearbitjs.com",
+   "reveal.clearbit.com",
+   "agent.marketingcloudfx.com",
+   "www.googletagmanager.com",
+   "www.webfx.com",
+   "www.gstatic.com",
+   "www.google.com",
+   "www.clickcease.com",
+   "googleads.g.doubleclick.net",
+   "d1b3llzbo1rqxo.cloudfront.net",
+   "cdn.leadmanagerfx.com",
+   "static.cloudflareinsights.com",
+   "tag.clearbitscripts.com",
+   "cdn.speedcurve.com",
+   "webfx.chilipiper.com",
+   "loader.nutshell.com",
+   "js.adsrvr.org"
+  ],
+  "iframes": [
+   "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&co=aHR0cHM6Ly93d3cud2ViZnguY29tOjQ0Mw..&hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&theme=light&size=invisible&badge=bottomright&anchor-ms=20000&execute-ms=30000&cb=w8aaquum7w2u",
+   "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&co=aHR0cHM6Ly93d3cud2ViZnguY29tOjQ0Mw..&hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&theme=light&size=invisible&badge=bottomright&anchor-ms=20000&execute-ms=30000&cb=9tbhg0qtwaqt",
+   "",
+   "https://www.google.com/recaptcha/api2/bframe?hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&bft=0dAFcWeA4mX--CejDIaRNwmwO4cJnaO9PVwIJZpP3ucB8yAOnm5eyCK4KKosm0H6gzORVXaxnYGptu2cMfgkBgGlUhcYnLv-qQNw",
+   "https://www.google.com/recaptcha/api2/bframe?hl=en&v=BnqMGSY_YP4cCmbNINHpJPkd&k=6Le3p9okAAAAAMjdcEeJL0wpt7dghoLp_IQ06Wio&bft=0dAFcWeA535pS46-25AlNN0eycO9gGQt94dFLsqbpC4wcfiOGs1vhFA_IQOWE0QEXN6Z-7TyaPcQWMuhIuuzlhGZaIOoVjyTz8mQ",
+   "https://insight.adsrvr.org/track/cei?advertiser_id=7zpdoi7&cookie_sync=1&upv=3.0.0&upid=lqahejs&ref=https%3A%2F%2Fwww.webfx.com%2Ffree-quote-bv2%2F"
+  ],
+  "tel": [
+   "tel:+18888742601"
+  ]
+ },
+ "https://www.webfx.com/": {
+  "url": "https://www.webfx.com/",
+  "title": "WebFX | The Digital Marketing Agency That Drives Revenue",
+  "forms": [
+   {
+    "id": "",
+    "cls": "form-quote-proposal",
+    "text": "Get My Free Proposal",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "",
+    "cls": "revenue-engine-cta__form",
+    "text": "Get My Free Proposal",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "",
+    "cls": "",
+    "text": "Get My Custom Strategy Proposal",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "",
+    "cls": "gradient-closer-cta__form",
+    "text": "Get My Free Proposal",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   },
+   {
+    "id": "",
+    "cls": "fx-footer-quote-form form-quote-proposal",
+    "text": "Discover how we can help your business grow Send Me a Proposal!",
+    "fields": [
+     {
+      "tag": "INPUT",
+      "type": "text",
+      "name": "website",
+      "ph": "Enter your website",
+      "req": true,
+      "label": ""
+     }
+    ]
+   }
+  ],
+  "fixed": [
+   {
+    "tag": "DIV",
+    "id": "fxheader",
+    "cls": "",
+    "pos": "sticky",
+    "text": "Digital Marketing That Drives Revenue\u00ae AI Search & SEO Revenue Marketing & CRO UX & AI Services Revenue Platform About Get a Proposal",
+    "h": 80,
+    "w": 1440
+   }
+  ],
+  "hosts": [
+   "cdn.madkudu.com",
+   "cdn.segment.com",
+   "bat.bing.com",
+   "connect.facebook.net",
+   "snap.licdn.com",
+   "www.google-analytics.com",
+   "agent.marketingcloudfx.com",
+   "www.googletagmanager.com",
+   "x.clearbitjs.com",
+   "reveal.clearbit.com",
+   "www.webfx.com",
+   "www.clickcease.com",
+   "googleads.g.doubleclick.net",
+   "d1b3llzbo1rqxo.cloudfront.net",
+   "tag.clearbitscripts.com",
+   "cdn.speedcurve.com",
+   "cdn.leadmanagerfx.com",
+   "assets.calendly.com",
+   "static.cloudflareinsights.com",
+   "loader.nutshell.com",
+   "js.adsrvr.org"
+  ],
+  "iframes": [
+   "https://insight.adsrvr.org/track/cei?advertiser_id=7zpdoi7&cookie_sync=1&upv=3.0.0&upid=lqahejs&ref=https%3A%2F%2Fwww.webfx.com%2F"
+  ],
+  "tel": [
+   "tel:+18888742601"
+  ]
+ }
+}

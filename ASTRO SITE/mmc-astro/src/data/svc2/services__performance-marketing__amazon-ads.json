@@ -1,0 +1,186 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__performance-marketing__amazon-ads.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "amazon/stock.jpg",
+    "pos": "50% 50%",
+    "alt": "A tablet showing an inventory dashboard in a stockroom.",
+    "facts": [
+      {
+        "t": "Listing first.",
+        "d": "Ads need a listing that converts."
+      },
+      {
+        "t": "Spend follows stock.",
+        "d": "Planned around what you can ship."
+      },
+      {
+        "t": "Read against total sales.",
+        "d": "Not only ad-attributed sales."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "AmazonAds",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do in your",
+    "h2b": "Amazon account.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Fix the listing before you spend on it.",
+        "d": "Titles, bullets, images and rich content come first, because ads only pay back when the listing converts."
+      },
+      {
+        "n": "02",
+        "t": "Split campaigns by job and budget.",
+        "d": "Brand defence, discovery, Sponsored Brands and Display each get their own budget and a clear job."
+      },
+      {
+        "n": "03",
+        "t": "Cut search terms that cost more than margin.",
+        "d": "Each term is read against break-even ACOS, then kept, moved to exact match or made a negative."
+      },
+      {
+        "n": "04",
+        "t": "Pause ads when stock runs low.",
+        "d": "Spend follows stock cover, so you never pay for clicks on a product you cannot ship."
+      },
+      {
+        "n": "05",
+        "t": "Judge ads against total sales and margin.",
+        "d": "Ad sales sit next to total sales, and ACOS next to break-even, so budget follows profit."
+      }
+    ],
+    "illustrative": "Illustrative layout of an Amazon Ads console view. Not a client account, no real figures. Amazon and its logo belong to Amazon."
+  },
+  "leak": {
+    "visual": "AmazonLeak",
+    "barLogo": "/assets/platforms/amazon.svg",
+    "barTitle": "Account view",
+    "pinsLabel": "Five places Amazon spend leaks",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Listing"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Structure"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Stock"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Brand store"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Total sales"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we run performance marketing for.",
+    "tiles": [
+      {
+        "id": "giraffe",
+        "line": "Kids' products: Amazon listings and ads planned together."
+      },
+      {
+        "id": "mbb",
+        "line": "Body care: performance marketing and a product page that match the ad."
+      },
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: ads, creative and a store that tell one story."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run Amazon Ads,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Fix the listing and read the account",
+        "d": "Titles, images and content are reviewed first, and stock cover is checked before ad spend changes.",
+        "get": "A listing worth sending traffic to.",
+        "img": "amazon/listing.jpg",
+        "alt": "A product listing page on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Structure the sponsored ads",
+        "d": "Sponsored Products, Brands and Display are set up with clear jobs and separate budgets.",
+        "get": "Campaigns where each one has a job.",
+        "img": "amazon/store.jpg",
+        "alt": "A brand storefront page on an Amazon-style site on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Clean the search terms",
+        "d": "Terms are read against margin, with negatives added and winners moved to exact match.",
+        "get": "Spend that stops chasing terms that lose money.",
+        "img": "amazon/ads.jpg",
+        "alt": "A sponsored products table in an advertising console.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Read it against total sales",
+        "d": "We compare ad sales with total sales and margin, then move budget to what adds profit.",
+        "get": "A truer picture of what the spend adds.",
+        "img": "amazon/report.jpg",
+        "alt": "A seller performance report beside a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Quick-commerce ads",
+        "href": "/services/performance-marketing/quick-commerce/"
+      },
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "AI photoshoot by MMC",
+        "href": "/ai-by-mmc/photoshoot/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

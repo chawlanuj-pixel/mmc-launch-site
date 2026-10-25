@@ -1,0 +1,14 @@
+# Registry lines for the search/AI batch. Merge into the shared index files.
+
+## src/components/svc2/panels/index.ts
+import LocalProfile from "./LocalProfile.astro";
+# add to `panels`:        LocalProfile
+# add to `panelSteps`:    LocalProfile: 5
+
+## src/components/svc2/visuals/index.ts
+import SaSearchTerms from "./SaSearchTerms.astro";
+import SaRankMap from "./SaRankMap.astro";
+import SaSurfaceMap from "./SaSurfaceMap.astro";
+import SaContentPath from "./SaContentPath.astro";
+import SaLocalMap from "./SaLocalMap.astro";
+# add to `visuals`:       SaSearchTerms, SaRankMap, SaSurfaceMap, SaContentPath, SaLocalMap

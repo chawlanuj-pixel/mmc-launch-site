@@ -1,0 +1,227 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "sv/tech.jpg",
+    "pos": "50% 50%",
+    "alt": "A store site on a laptop and phone beside code.",
+    "facts": [
+      {
+        "t": "Custom, not page-builder sprawl.",
+        "d": "Themes built to your design, with extra plugins kept out."
+      },
+      {
+        "t": "WooCommerce and migrations covered.",
+        "d": "Stores, moves and rescues of sites you did not build."
+      },
+      {
+        "t": "Clients can edit afterwards.",
+        "d": "A short editing guide so they stop calling you."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their WordPress work to MMC"
+  },
+  "work": {
+    "panel": "WpDashboard",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on a",
+    "h2b": "WordPress build.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Plan the templates your client needs.",
+        "d": "Home, service, landing and blog templates are listed from your designs, so nothing is built twice or forgotten."
+      },
+      {
+        "n": "02",
+        "t": "Build a custom theme with few plugins.",
+        "d": "Your design becomes a clean theme, and plugins you do not need stay out, so updates stay safe."
+      },
+      {
+        "n": "03",
+        "t": "Keep it fast and up to date.",
+        "d": "Core, theme and plugins are current and tested before handover, and speed work is done on your client's content."
+      },
+      {
+        "n": "04",
+        "t": "Hand over an editor your client can use.",
+        "d": "Blocks your client can arrange, plus an editing guide that carries your agency's name."
+      }
+    ],
+    "illustrative": "Illustrative layout of a WordPress-style admin. Not a client site, no real figures. WordPress belongs to its owners."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "WordPress delivery",
+    "pinsLabel": "Five places white-label WordPress work slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "board",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Plugins"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Theme"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Moves"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Speed"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Handover"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "layers",
+        "head": "Plugins",
+        "lines": [
+          "Twenty plugins for one job",
+          "Updates break the site"
+        ],
+        "chip": "Sprawl",
+        "tone": "b"
+      },
+      {
+        "glyph": "code",
+        "head": "Theme",
+        "lines": [
+          "Edits to someone else's theme",
+          "No update path"
+        ],
+        "chip": "Forked",
+        "tone": "w"
+      },
+      {
+        "glyph": "globe",
+        "head": "Moves",
+        "lines": [
+          "Migration with no rollback",
+          "Links and forms lost"
+        ],
+        "chip": "Risky",
+        "tone": "b"
+      },
+      {
+        "glyph": "clock",
+        "head": "Speed",
+        "lines": [
+          "Slow pages blamed on host",
+          "Images untouched"
+        ],
+        "chip": "Slow",
+        "tone": "w"
+      },
+      {
+        "glyph": "users",
+        "head": "Handover",
+        "lines": [
+          "Client cannot edit",
+          "Calls you for everything"
+        ],
+        "chip": "Calls",
+        "tone": "w"
+      }
+    ],
+    "base": "One theme, few plugins, clean handover",
+    "artLabel": "Five cards showing where white-label WordPress work slips: plugins, theme, migrations, speed and handover.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for WordPress,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and WordPress scope",
+        "d": "We sign the NDA, take your designs or the site to rescue, and write the scope and plugin policy.",
+        "get": "A written scope with the theme and plugin approach.",
+        "img": "company/call.jpg",
+        "alt": "A scoping call with a delivery partner.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot site or fix",
+        "d": "One small build, migration or rescue job to show how we work with your client's content.",
+        "get": "A staging link and a change list to judge on.",
+        "img": "web/seo.jpg",
+        "alt": "A content page being built on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Plugin vetting, staging, update routine and editing guide format are written once.",
+        "get": "A short WordPress runbook for your team.",
+        "img": "res/insights.jpg",
+        "alt": "A blog template on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the queue",
+        "d": "More builds and rescues go through the same routine, with developers added as work grows.",
+        "get": "A WordPress service you can promise.",
+        "img": "shop/speed.jpg",
+        "alt": "A page speed report on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/whiteboard.jpg",
+    "alt": "Three people planning on a whiteboard.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label website maintenance",
+        "href": "/white-label/website-maintenance/"
+      },
+      {
+        "n": "White-label Shopify development",
+        "href": "/white-label/shopify-development/"
+      },
+      {
+        "n": "WordPress development",
+        "href": "/services/web-development/wordpress/"
+      },
+      {
+        "n": "WooCommerce development",
+        "href": "/services/web-development/woocommerce/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

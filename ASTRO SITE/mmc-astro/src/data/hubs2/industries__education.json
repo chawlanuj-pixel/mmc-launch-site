@@ -1,0 +1,143 @@
+{
+  "_note": "hubs2 layer for /industries/education/. Copy, FAQ, CTA, title, meta and JSON-LD stay in src/data/hubs/industries__education.json. This file only adds the hubs2 visuals, links and curation; delete it to fall back to the classic template.",
+  "kind": "audience",
+  "hero": {
+    "img": "edu/campus.jpg",
+    "pos": "50% 45%",
+    "alt": "Students and parents arriving at a college open day.",
+    "cap": {
+      "label": "Open day",
+      "note": "The visit that usually comes before an enrolment"
+    },
+    "route": [
+      "Search",
+      "Course page",
+      "Enquiry",
+      "CRM",
+      "Follow-up",
+      "Enrolment"
+    ]
+  },
+  "lede": {
+    "img": "edu/students.jpg",
+    "alt": "Students working together around laptops in a college library."
+  },
+  "journey": {
+    "eyebrow": "The admissions journey",
+    "h2a": "From a parent's search to",
+    "h2b": "an enrolment.",
+    "stages": [
+      {
+        "href": "/services/seo/",
+        "go": "See SEO",
+        "alt": "A parent searching for colleges on a phone."
+      },
+      {
+        "href": "/services/web-development/",
+        "go": "See Website development",
+        "alt": "A course page with fees and eligibility open on a laptop."
+      },
+      {
+        "href": "/services/cro/",
+        "go": "See Conversion optimisation",
+        "alt": "A mother and daughter filling an enquiry form on a laptop."
+      },
+      {
+        "href": "/services/lead-generation/",
+        "go": "See Lead generation",
+        "alt": "Enquiry stages in a CRM on a laptop screen."
+      },
+      {
+        "href": "/services/retention-marketing/",
+        "go": "See Retention marketing",
+        "alt": "A follow-up sequence for enquiries on a laptop."
+      },
+      {
+        "href": "/services/online-reputation-management/",
+        "go": "See Online reputation management",
+        "alt": "College reviews and ratings on a phone."
+      },
+      {
+        "href": "/audit/",
+        "go": "How the audit works",
+        "alt": "A student celebrating a confirmed admission at a laptop."
+      }
+    ]
+  },
+  "loop": true,
+  "work": {
+    "ids": [
+      "mvj",
+      "sprouts"
+    ],
+    "h2a": "Education work,",
+    "h2b": "built around admissions.",
+    "lede": "Websites, enquiry forms and creative for institutes and education brands."
+  },
+  "sectors": {
+    "eyebrow": "Go deeper",
+    "h2a": "Education sectors",
+    "h2b": "we plan for.",
+    "groups": [
+      {
+        "label": "Education sectors",
+        "note": "Each has its own calendar and its own families.",
+        "items": [
+          {
+            "n": "Colleges",
+            "d": "Search, paid media and follow-up for families comparing colleges.",
+            "img": "/ai-by-mmc/assets/img/video-use-edu.jpg",
+            "href": "/industries/education/colleges/",
+            "alt": "A college campus with an open day banner, seen from above."
+          },
+          {
+            "n": "Study abroad",
+            "d": "Search, ads and follow-up for students planning countries and intakes.",
+            "img": "/ai-by-mmc/assets/img/photoshoot-use-edu.jpg",
+            "href": "/industries/education/study-abroad/",
+            "alt": "Students walking across a university campus."
+          }
+        ],
+        "services": [
+          {
+            "n": "Online reputation management",
+            "href": "/services/online-reputation-management/"
+          },
+          {
+            "n": "Lead generation",
+            "href": "/services/lead-generation/"
+          },
+          {
+            "n": "Retention marketing",
+            "href": "/services/retention-marketing/"
+          },
+          {
+            "n": "Google Business Profile",
+            "href": "/services/seo/google-business-profile/"
+          }
+        ]
+      },
+      {
+        "label": "Other audiences",
+        "note": "Set up differently for each.",
+        "items": [
+          {
+            "n": "D2C brands",
+            "d": "Ads, creative, conversion and retention for brands that sell direct to shoppers.",
+            "img": "d2c/packing.jpg",
+            "href": "/industries/d2c/",
+            "alt": "A team packing D2C orders at a workbench."
+          },
+          {
+            "n": "B2B companies",
+            "d": "Websites, creative and lead generation for companies that win business from other businesses.",
+            "img": "shared/b2b.jpg",
+            "href": "/industries/b2b/",
+            "alt": "A B2B team reviewing a proposal around a laptop."
+          }
+        ]
+      }
+    ]
+  },
+  "loopImg": "leadgen/capi.jpg"
+}

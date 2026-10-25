@@ -1,0 +1,36 @@
+<!-- Consent-gated tracking (India DPDP Act 2023). Nothing below loads until the visitor allows it in the cookie banner.
+     Choice is stored in localStorage "mmc-cookies-v1" as { necessary, analytics, marketing }.
+     analytics or marketing => Google Tag Manager (GTM-KC22WQZ7) loads with Consent Mode v2 set to match.
+     marketing              => Meta Pixel (24125282267174885) loads.
+     The banner calls window.mmcApplyConsent(prefs) when a choice is saved. -->
+<script>
+(function (w, d) {
+  w.dataLayer = w.dataLayer || [];
+  function gtag() { w.dataLayer.push(arguments); }
+  gtag("consent", "default", { ad_storage: "denied", analytics_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", wait_for_update: 500 });
+  var gtmLoaded = false, pixelLoaded = false;
+  function loadGTM() {
+    if (gtmLoaded) return; gtmLoaded = true;
+    w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName("script")[0], j = d.createElement("script");
+    j.async = true; j.src = "https://www.googletagmanager.com/gtm.js?id=GTM-KC22WQZ7";
+    f.parentNode.insertBefore(j, f);
+  }
+  function loadPixel() {
+    if (pixelLoaded) return; pixelLoaded = true;
+    !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(w, d, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    w.fbq("init", "24125282267174885"); w.fbq("track", "PageView");
+  }
+  w.mmcApplyConsent = function (p) {
+    if (!p) return;
+    var a = p.analytics ? "granted" : "denied", m = p.marketing ? "granted" : "denied";
+    if (p.analytics || p.marketing) {
+      gtag("consent", "update", { analytics_storage: a, ad_storage: m, ad_user_data: m, ad_personalization: m });
+      loadGTM();
+    }
+    if (p.marketing) loadPixel();
+  };
+  try { w.mmcApplyConsent(JSON.parse(localStorage.getItem("mmc-cookies-v1") || "null")); } catch (e) {}
+})(window, document);
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">

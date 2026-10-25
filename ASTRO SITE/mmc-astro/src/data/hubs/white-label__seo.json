@@ -1,0 +1,624 @@
+{
+  "file": "white-label-seo.html",
+  "path": "/white-label/seo/",
+  "key": "wl_seo",
+  "title": "White-Label SEO Services for Agencies | MMC",
+  "description": "White-label SEO for agencies: audits, technical fixes, on-page work, content and monthly reports under your brand, delivered by an India-based team under NDA.",
+  "ogTitle": "White-label SEO for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label SEO.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/seo/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label SEO",
+          "item": "https://www.mondaymarketing.company/white-label/seo/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/seo/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/seo/",
+      "name": "White-Label SEO Services for Agencies | MMC",
+      "description": "White-label SEO for agencies: audits, technical fixes, on-page work, content and monthly reports under your brand, delivered by an India-based team under NDA.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/seo/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/seo/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/seo/#service",
+      "name": "White-label SEO",
+      "serviceType": "White-label SEO",
+      "description": "White-label SEO delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/seo/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/seo/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is white-label SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is SEO work done by a provider and sold by your agency under its own brand. MMC does the audit, fixes, content and reporting; you keep the client, the pricing and the relationship."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does white-label SEO include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Audit, technical fixes, on-page work, keyword mapping, content briefs, local SEO and reporting. We scope exactly which pieces your client needs and write it down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does white-label SEO cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the site, the market and the work in scope, so we price each scope in writing rather than publish a rate card. Invoices are in Indian rupees or US dollars, and the minimum commitment is three months. Our pricing models page explains the cost drivers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with UK, US, Canadian and Australian agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do, along with agencies in the UAE, Singapore, India and the rest of Europe. UK and Australian agencies get full overlap with our working day; US and Canadian agencies get overlap in the evening, India time, or a dedicated shift. Exact hours are agreed per team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle local SEO and Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do, for businesses in the US and the UK: Google Business Profile management, citations, review flows and location pages, reported under your brand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I sell your SEO audit as my own product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The audit can carry your branding and be sold on its own or used as the start of a retainer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do link building too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, as a separate service. See our white-label link building page for how outreach and placements are handled."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you promise rankings for my client?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and you should not either. Rankings depend on many factors. We commit to the work in the scope and report what moves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We start with the client's site, analytics and search console access, sign the NDA and run an audit. You then get a plan to present."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_seo",
+    "wm": "White-label SEO",
+    "eyebrow": "● White-label SEO",
+    "h1": [
+      "White-label SEO",
+      [
+        "services your clients ",
+        "credit to you",
+        "."
+      ]
+    ],
+    "sub": "Audits, technical fixes, on-page work, content and reporting for your SEO clients, delivered behind your agency under NDA.",
+    "tiles": [
+      {
+        "img": "seo/tech.jpg",
+        "pos": "50% 50%",
+        "label": "Technical",
+        "note": "Crawl, speed, structure"
+      },
+      {
+        "img": "seo/pages.jpg",
+        "pos": "50% 50%",
+        "label": "On-page",
+        "note": "Titles, headings, schema"
+      },
+      {
+        "img": "seo/intent.jpg",
+        "pos": "50% 50%",
+        "label": "Keywords",
+        "note": "Mapped to intent"
+      },
+      {
+        "img": "seo/authority.jpg",
+        "pos": "50% 50%",
+        "label": "Authority",
+        "note": "Earned mentions and links"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label SEO means an SEO provider does the work for your client while your agency sells and reports it as its own. MMC handles the audit, technical fixes, on-page work, content, local SEO and the monthly report, under NDA. You keep the client relationship and the pricing; our SEO team does the hands-on work.",
+      "hl": "an SEO provider does the work for your client",
+      "who": "Monday Marketing Company (MMC) delivers SEO for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Audit to action",
+          "text": "A written audit, then a prioritised plan."
+        },
+        {
+          "icon": "grid",
+          "title": "Hands-on delivery",
+          "text": "Technical, on-page and content work done for you."
+        },
+        {
+          "icon": "chart",
+          "title": "Your report",
+          "text": "Monthly reporting in your format."
+        }
+      ],
+      "image": "seo/authority.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "seo-split",
+          "h": "What we do and what you keep in white-label SEO",
+          "paras": [
+            "The split is simple. You own the client, the strategy conversation and the invoice. We own the audit, the fixes and the monthly work, and we send you what you need to present it.",
+            "Our own <a href=\"/services/seo/\">SEO service</a> runs the same method, so your clients get what our direct clients get."
+          ],
+          "img": "seo/tech.jpg",
+          "cap": "An SEO audit being prepared for an agency client.",
+          "table": {
+            "caption": "White-label SEO: who does what",
+            "head": [
+              "Stage",
+              "MMC does",
+              "You do"
+            ],
+            "rows": [
+              [
+                "Audit",
+                "Crawl, technical and content audit written up",
+                "Present findings to the client"
+              ],
+              [
+                "Plan",
+                "Priority list with effort and impact",
+                "Agree scope and expectations"
+              ],
+              [
+                "Delivery",
+                "Fixes, on-page work, content briefs and edits",
+                "Approve and handle client comms"
+              ],
+              [
+                "Reporting",
+                "Monthly report in your format",
+                "Send and discuss with the client"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "seo-providers",
+          "h": "White-label SEO for agencies: outsourced, under your name",
+          "paras": [
+            "Agencies search for this under several names: white-label SEO, outsourced SEO, SEO fulfilment or private-label SEO. They describe the same arrangement. A white-label SEO provider does the hands-on work, and your agency sells it, presents it and invoices for it as its own.",
+            "If you would rather sell fixed SEO packages at a wholesale rate, see the <a href=\"/white-label/reseller-programme/\">SEO reseller programme</a>. This page covers delivery: what we do each month and how it reaches your client under your brand."
+          ]
+        },
+        {
+          "id": "seo-month",
+          "h": "A white-label SEO month, step by step",
+          "paras": [
+            "<b>Audit.</b> Work starts with a crawl, technical and content audit written up in your template, with a ranked fix list you can present or sell on its own.",
+            "<b>Technical fixes.</b> Indexing, speed, site structure, internal links and schema, shipped in batches you approve, or handed to the client's developers as clear tickets.",
+            "<b>On-page and content.</b> Titles, headings and page copy aligned to search intent, plus content briefs and edits for the pages that matter most to the client.",
+            "<b>Links.</b> Editorial outreach and digital PR, run as a separate service with no paid link networks. See <a href=\"/white-label/link-building/\">white-label link building</a>."
+          ]
+        },
+        {
+          "id": "local-seo",
+          "h": "Local SEO for US and UK businesses",
+          "paras": [
+            "We run local SEO for your clients' businesses in the US and the UK, including those with several locations.",
+            "<b>Google Business Profile.</b> Categories, services, products, photos and posts kept accurate for each location, through access the client grants.",
+            "<b>Citations and reviews.</b> Business name, address and phone kept consistent across the main directories and data sources in each country, and a review request flow your client can run, with replies drafted for your approval.",
+            "<b>Location pages.</b> One useful page per location, with local detail rather than a copied template, linked into the site's structure.",
+            "As with the rest of SEO, nobody can promise map positions. We report the work done and what changed."
+          ]
+        },
+        {
+          "id": "seo-reports",
+          "h": "Reports under your brand",
+          "paras": [
+            "Each month you get a report in your format: work done, rankings, organic traffic and enquiries, with a short note you can read out on the client call. It can go out from your domain under your logo. See <a href=\"/white-label/reporting/\">white-label reporting</a>."
+          ]
+        },
+        {
+          "id": "seo-cost",
+          "h": "What white-label SEO costs and why",
+          "paras": [
+            "We do not publish prices, because the same label covers very different work. The cost moves with the size and technical state of the site, how competitive the client's market is, how much content is in scope each month, the number of locations for local SEO, whether link building is included and how detailed the reporting needs to be.",
+            "Every scope is written down and invoiced in Indian rupees or US dollars, with a minimum commitment of three months. The <a href=\"/white-label/pricing-models/\">pricing models page</a> explains how to set your margin on top."
+          ]
+        },
+        {
+          "id": "seo-from-india",
+          "h": "Delivered from India, run to your hours",
+          "paras": [
+            "Our SEO team works from India. Agencies in the UK, Australia, the UAE and Singapore get full overlap with our working day. US agencies get partial overlap in the evening, India time, or a dedicated shift for a team that needs more. Written updates arrive at fixed times each day wherever you are, and exact hours are agreed per team.",
+            "More on how this works: <a href=\"/white-label/india/\">white-label delivery from India</a>."
+          ]
+        },
+        {
+          "id": "choose-provider",
+          "h": "How to choose a white-label SEO provider",
+          "paras": [
+            "Before you sign with any provider, including us, check these.",
+            "<b>An NDA and a no-contact rule</b> in writing, before you share client details.",
+            "<b>Account ownership.</b> Search Console, analytics and the CMS stay in your client's name; the provider gets access, not ownership.",
+            "<b>A written scope</b> that says what is done each month and what is not.",
+            "<b>A pilot</b> on one client before you commit more.",
+            "<b>Link methods</b> stated plainly, with no paid link networks or private blog networks.",
+            "<b>Sample work.</b> Ask to see an audit and a report. We can show an anonymised sample audit on the call.",
+            "<b>No promised rankings.</b> A provider that promises positions is guessing."
+          ]
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label SEO.",
+      "lede": "From the first audit to the monthly report.",
+      "items": [
+        {
+          "t": "White-label SEO audits",
+          "d": "A full site audit you can sell as a paid product or use to win the pitch.",
+          "img": "seo/tech.jpg",
+          "alt": "White-label SEO audits"
+        },
+        {
+          "t": "Technical SEO",
+          "d": "Crawl, indexing, speed, structure and schema fixes handled by our team.",
+          "img": "seo/tech.jpg",
+          "alt": "Technical SEO"
+        },
+        {
+          "t": "On-page optimisation",
+          "d": "Titles, headings, internal links and page copy aligned to search intent.",
+          "img": "seo/pages.jpg",
+          "alt": "On-page optimisation"
+        },
+        {
+          "t": "Keyword research and mapping",
+          "d": "Keywords grouped by intent and mapped to pages for each client.",
+          "img": "seo/intent.jpg",
+          "alt": "Keyword research and mapping"
+        },
+        {
+          "t": "Local SEO",
+          "d": "Google Business Profile, citations, reviews and location pages for US and UK businesses.",
+          "img": "seo/authority.jpg",
+          "alt": "Local SEO"
+        },
+        {
+          "t": "Monthly SEO reports",
+          "d": "Rankings, traffic and work done, in your format.",
+          "img": "res/insights.jpg",
+          "alt": "Monthly SEO reports"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label SEO.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "seo/authority.jpg",
+      "alt": "Why agencies choose MMC for white-label SEO.",
+      "items": [
+        {
+          "t": "Same method as our own clients",
+          "d": "The work follows the process we use on our own <a href=\"/services/seo/\">SEO accounts</a>."
+        },
+        {
+          "t": "Written plans",
+          "d": "Every client gets a written plan, so you can show your own client what is happening."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label SEO works,",
+      "h2b": "step by step.",
+      "img": "seo/authority.jpg",
+      "alt": "How white-label SEO works, step by step.",
+      "items": [
+        {
+          "t": "Onboard the client",
+          "d": "We take access to the site, analytics and search console through you, under NDA."
+        },
+        {
+          "t": "Audit and plan",
+          "d": "We audit the site and give you a plan you can present."
+        },
+        {
+          "t": "Deliver monthly",
+          "d": "Fixes and content work go in on a schedule you approve."
+        },
+        {
+          "t": "Report",
+          "d": "You get the monthly report in your format, with notes for your client call."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label SEO for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells SEO but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label SEO fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label link building",
+          "d": "Outreach and placements behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/link-building/",
+          "link": "See white-label link building"
+        },
+        {
+          "n": "White-label GEO and AEO",
+          "d": "AI search work delivered behind your brand.",
+          "img": "seo/aeo.jpg",
+          "href": "/white-label/geo-aeo/",
+          "link": "See white-label GEO and AEO"
+        },
+        {
+          "n": "White-label PPC",
+          "d": "Google Ads managed behind your brand.",
+          "img": "google/search.jpg",
+          "href": "/white-label/ppc/",
+          "link": "See white-label PPC"
+        },
+        {
+          "n": "SEO",
+          "d": "Technical health, search intent and answer-engine visibility.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/",
+          "link": "See SEO"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "SEO."
+    ],
+    "faq": [
+      {
+        "q": "What is white-label SEO?",
+        "a": "It is SEO work done by a provider and sold by your agency under its own brand. MMC does the audit, fixes, content and reporting; you keep the client, the pricing and the relationship."
+      },
+      {
+        "q": "What does white-label SEO include?",
+        "a": "Audit, technical fixes, on-page work, keyword mapping, content briefs, local SEO and reporting. We scope exactly which pieces your client needs and write it down."
+      },
+      {
+        "q": "How much does white-label SEO cost?",
+        "a": "It depends on the site, the market and the work in scope, so we price each scope in writing rather than publish a rate card. Invoices are in Indian rupees or US dollars, and the minimum commitment is three months. Our <a href=\"/white-label/pricing-models/\">pricing models page</a> explains the cost drivers."
+      },
+      {
+        "q": "Do you work with UK, US, Canadian and Australian agencies?",
+        "a": "We do, along with agencies in the UAE, Singapore, India and the rest of Europe. UK and Australian agencies get full overlap with our working day; US and Canadian agencies get overlap in the evening, India time, or a dedicated shift. Exact hours are agreed per team."
+      },
+      {
+        "q": "Do you handle local SEO and Google Business Profile?",
+        "a": "We do, for businesses in the US and the UK: Google Business Profile management, citations, review flows and location pages, reported under your brand."
+      },
+      {
+        "q": "Can I sell your SEO audit as my own product?",
+        "a": "Yes. The audit can carry your branding and be sold on its own or used as the start of a retainer."
+      },
+      {
+        "q": "Do you do link building too?",
+        "a": "Yes, as a separate service. See our white-label link building page for how outreach and placements are handled."
+      },
+      {
+        "q": "Can you promise rankings for my client?",
+        "a": "No, and you should not either. Rankings depend on many factors. We commit to the work in the scope and report what moves."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label SEO?",
+        "a": "We start with the client's site, analytics and search console access, sign the NDA and run an audit. You then get a plan to present."
+      }
+    ],
+    "cta": {
+      "h2a": "Add SEO",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first SEO client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Access",
+        "tag": "Handover",
+        "breaks": "Access arrives late, so the audit starts blind.",
+        "why": "Without Search Console and CMS access, findings are guesses and the fix list slips past the client call.",
+        "does": "One access checklist goes out at the start, and we log what is missing so the audit scope stays honest."
+      },
+      {
+        "k": "Map",
+        "tag": "Keyword map",
+        "breaks": "Keywords are mapped to pages nobody agreed.",
+        "why": "If you and the client have not signed off the map, every later page is open to argument.",
+        "does": "We group searches by intent, map each to a page and send the map for your approval before any writing."
+      },
+      {
+        "k": "Pages",
+        "tag": "Quality",
+        "breaks": "Thin pages ship to hit the deadline.",
+        "why": "A rushed page with nothing new on it will not rank, and the client blames the agency.",
+        "does": "Briefs say what each page must add, and a second editor checks it against the brief before it reaches you."
+      },
+      {
+        "k": "Answers",
+        "tag": "On-page",
+        "breaks": "Pages bury the answer the buyer came for.",
+        "why": "Search results and AI answers favour pages that reply first and explain after.",
+        "does": "Priority pages are reopened with a direct answer, then detail, FAQs and matching structured data."
+      },
+      {
+        "k": "Report",
+        "tag": "Reporting",
+        "breaks": "Reports show visits, not enquiries.",
+        "why": "A traffic chart does not tell the client whether SEO paid for itself.",
+        "does": "Your report pairs rankings and traffic with enquiries from the client's own analytics, plus a plain next-steps note."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label SEO",
+      "h2b": "delivery slips.",
+      "lede": "An SEO retainer is long, so small slips compound. Each stage below is where delivery slips, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first SEO client",
+      "h2b": "gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. The first site we audit decides how long each stage takes.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA, access and scope",
+          "d": "We sign the NDA, collect Search Console, analytics and CMS access for the first client, and write down what SEO covers and what it does not.",
+          "out": "A written scope and an access checklist."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot audit",
+          "d": "One client site gets a full audit in your template, and we walk you through it before the client sees it.",
+          "out": "An audit you can present or sell on its own."
+        },
+        {
+          "when": "Stage 3",
+          "t": "SOPs for your account",
+          "d": "Briefs, approval steps, page naming and report layout are written down, so delivery does not depend on who is on shift.",
+          "out": "A one-page operating guide."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale the retainer",
+          "d": "Fixes, pages and monthly reports run on that routine, and more clients join on the same one.",
+          "out": "A repeatable SEO line for more clients."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

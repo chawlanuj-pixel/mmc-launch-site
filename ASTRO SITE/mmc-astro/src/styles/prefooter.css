@@ -1,0 +1,80 @@
+/* Canonical pre-footer band (PreFooterCta) and the one sticky booking bar (StickyBookingBar).
+   Self-contained: no dependency on page-family CSS, no reveal classes, so it renders the same on hubs,
+   editorial pages, tool islands and hand-built pages. Tokens match the homepage: ink #0F1E5E, sun #FFC528. */
+.pfc {
+  --pfc-ink: #0F1E5E; --pfc-sun: #FFC528; --pfc-blue: #1D4ED8;
+  position: relative; isolation: isolate; overflow: hidden;
+  background: radial-gradient(60% 120% at 88% 0%, rgba(29, 78, 216, .5), rgba(29, 78, 216, 0) 62%), var(--pfc-ink); color: #fff;
+  min-height: 380px; display: flex; align-items: center;
+  padding: clamp(56px, 7vw, 96px) 0;
+  font-family: var(--font-body, Nunito, system-ui, sans-serif);
+}
+/* styles.css lays a translucent cream ::before on every <section>; this band paints its own ground instead. */
+.pfc::before { content: none !important; }
+.pfc--compact { min-height: 0; padding: clamp(40px, 5vw, 64px) 0; }
+.pfc__in {
+  width: min(1180px, 100% - 2 * clamp(16px, 4vw, 40px)); margin-inline: auto;
+  display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr);
+  gap: clamp(24px, 4vw, 64px); align-items: end;
+}
+.pfc__eyebrow {
+  margin: 0 0 14px; font: 700 12px/1.2 var(--font-body, Nunito, sans-serif);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--pfc-sun);
+}
+.pfc__h {
+  margin: 0; font: 300 clamp(30px, 4vw, 52px)/1.1 var(--font-display, Raleway, sans-serif);
+  letter-spacing: -.028em; color: #fff; text-wrap: balance;
+}
+.pfc__h b { display: block; font-weight: 800; }
+.pfc__h em { display: block; font-style: italic; font-weight: 600; color: var(--pfc-sun); }
+.pfc__p {
+  margin: 18px 0 0; max-width: 54ch; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.6;
+  color: rgba(255, 255, 255, .86);
+}
+.pfc__act { display: grid; gap: 8px; justify-items: start; }
+.pfc .btn { text-decoration: none; }
+.pfc .btn--primary { background: var(--pfc-sun); color: #0F1E5E; }
+.pfc .btn--link {
+  color: #fff; background: none; border: 0; padding: 8px 0; min-height: 44px;
+  display: inline-flex; align-items: center; cursor: pointer; text-transform: uppercase;
+}
+.pfc .btn--link:hover { color: var(--pfc-sun); }
+.pfc *:focus-visible { outline: 2px solid var(--pfc-sun); outline-offset: 3px; }
+.pfc--compact .pfc__in { align-items: center; }
+@media (max-width: 900px) {
+  .pfc__in { grid-template-columns: 1fr; align-items: start; }
+}
+@media (max-width: 760px) {
+  /* leave room above the footer for the fixed sticky bar and the AI button */
+  .pfc { padding-bottom: 64px; }
+  .pfc__act { width: 100%; }
+  .pfc__act .btn--primary { width: 100%; justify-content: center; }
+}
+@media print { .pfc { display: none !important; } }
+
+/* One sticky booking bar (phone only). Same pill as the hero button. */
+.pm-sticky.sbb { display: none; }
+@media (max-width: 760px) {
+  .pm-sticky.sbb {
+    display: block; position: fixed; z-index: 70; left: 16px; right: 84px; bottom: calc(14px + env(safe-area-inset-bottom));
+    transform: translateY(140%); transition: transform 300ms ease;
+  }
+  .pm-sticky.sbb.is-on { transform: none; }
+  .pm-sticky.sbb a, .pm-sticky.sbb button {
+    display: flex; align-items: center; justify-content: center; text-decoration: none;
+    width: 100%; min-height: 48px; border: 0; border-radius: 999px; cursor: pointer;
+    background: #FFC528; color: #0F1E5E;
+    font-family: var(--font-body, Nunito, sans-serif); font-size: 12.5px; font-weight: 800;
+    letter-spacing: .06em; text-transform: uppercase; white-space: nowrap;
+    box-shadow: 0 10px 28px rgba(11, 16, 32, .28);
+  }
+  .pm-sticky.sbb a:focus-visible, .pm-sticky.sbb button:focus-visible { outline: 2px solid #0F1E5E; outline-offset: 3px; }
+}
+@media (prefers-reduced-motion: reduce) { .pm-sticky.sbb { transition: none; } }
+@media print { .pm-sticky.sbb { display: none !important; } }
+
+/* The band above is the one booking action on a page. Where a page has it, the footer keeps only "Send a brief"
+   (pages without a band, such as contact, role and legal pages, keep the footer's own Book button). */
+body:has(.pfc) .ft__cta { display: none; }
+/* Same rule for the slim-hubs footer (footer3.css, 2026-10-13): it keeps "Get my free audit". */
+body:has(.pfc) .ft3__book { display: none; }

@@ -1,0 +1,535 @@
+{
+  "file": "woocommerce-development.html",
+  "path": "/services/web-development/woocommerce/",
+  "key": "woocommerce",
+  "title": "WooCommerce Development Company in India | MMC",
+  "description": "WooCommerce store development in India: catalogue, variations, checkout, payments, shipping, speed and handover, built on WordPress for brands that sell online.",
+  "ogTitle": "WooCommerce stores built to sell",
+  "ogDescription": "Catalogue, checkout, shipping and a store your team can run.",
+  "ogAlt": "Monday Marketing Company: WooCommerce development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/web-development/woocommerce/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Web development",
+          "item": "https://www.mondaymarketing.company/services/web-development/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "WooCommerce development",
+          "item": "https://www.mondaymarketing.company/services/web-development/woocommerce/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/web-development/woocommerce/#webpage",
+      "url": "https://www.mondaymarketing.company/services/web-development/woocommerce/",
+      "name": "WooCommerce Development Company in India | MMC",
+      "description": "WooCommerce store development in India: catalogue, variations, checkout, payments, shipping, speed and handover, built on WordPress for brands that sell online.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/web-development/woocommerce/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/web-development/woocommerce/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/web-development/woocommerce/#service",
+      "name": "WooCommerce development",
+      "serviceType": "WooCommerce store development",
+      "description": "WooCommerce store development for brands in India: catalogue and variations, checkout and payments, shipping and tax, speed and plugin care, and a clean handover.",
+      "url": "https://www.mondaymarketing.company/services/web-development/woocommerce/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/web-development/woocommerce/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a free plugin that turns a WordPress site into an online store, with product pages, a cart, checkout, payments and shipping. You own the store and the data, and you choose the hosting and the extensions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I choose WooCommerce or Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WooCommerce suits a store that is part of a content-led WordPress site, or one that needs custom logic. Shopify suits a catalogue-led D2C store that wants less upkeep. We give a straight view on the first call. See Shopify development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you move our store to WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, from another platform or from an older WooCommerce build. We map products, customers and orders first, move them in a test copy, then switch over with redirects so search visibility is protected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with Indian payments and shipping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We connect the gateway you choose, such as Razorpay, plus UPI, cards and cash on delivery where it makes sense, and set shipping zones from your courier terms. Tax settings follow your accountant's advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who looks after updates and security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A WooCommerce store needs regular updates, backups and monitoring. We set them up at launch, and our website maintenance retainer can run them after."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this page different from your WordPress page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The WordPress page covers content sites and themes. This page is about the store itself: catalogue, checkout, shipping, tax, orders and the speed of a shop that takes payments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A scope agreed after a call and written down, so you can see what is included. We do not publish a price list, because the catalogue, integrations and migration drive the work."
+          }
+        }
+      ]
+    }
+  ],
+  "updated": "2026-10-11",
+  "hub": {
+    "key": "woocommerce",
+    "wm": "WOO",
+    "eyebrow": "● Web development",
+    "h1": [
+      "WooCommerce",
+      [
+        "stores that ",
+        "run on WordPress",
+        "."
+      ]
+    ],
+    "sub": "A store on WooCommerce is only as good as its catalogue, checkout and upkeep. We build it so shoppers can buy quickly and your team can run it without a developer.",
+    "tiles": [
+      {
+        "img": "shop/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Catalogue",
+        "note": "Products and variations"
+      },
+      {
+        "img": "d2c/checkout.jpg",
+        "pos": "50% 50%",
+        "label": "Checkout",
+        "note": "Short and clear"
+      },
+      {
+        "img": "shop/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Few plugins, fast pages"
+      },
+      {
+        "img": "d2c/packing.jpg",
+        "pos": "50% 50%",
+        "label": "Orders",
+        "note": "Run by your team"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "WooCommerce development is the work of building an online store on WordPress: the catalogue and variations, the cart and checkout, payments, shipping and tax, and the speed and plugin setup behind them. Done well, shoppers buy in a few taps and your team manages orders and stock alone.",
+      "hl": "the catalogue and variations, the cart and checkout, payments, shipping and tax",
+      "who": "Monday Marketing Company (MMC) builds WooCommerce stores for D2C and B2B brands that want an owned store on WordPress, and recommends Shopify when that fits better. The store hands over with a clear guide for your team.",
+      "points": [
+        {
+          "icon": "bag",
+          "title": "Catalogue and variations",
+          "text": "Sizes, colours and categories planned before any code."
+        },
+        {
+          "icon": "coin",
+          "title": "Checkout and payments",
+          "text": "A short checkout with the payment methods your buyers use."
+        },
+        {
+          "icon": "gauge",
+          "title": "Speed and upkeep",
+          "text": "Few plugins, caching and a clean update routine."
+        }
+      ],
+      "image": "web/build.jpg",
+      "chip": "A store your team can run"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "woocommerce-scope",
+          "h": "What a WooCommerce project covers",
+          "paras": [
+            "A WooCommerce store is a WordPress site with a shop bolted on, so two things have to work together: the content side and the store side. We plan the catalogue, the checkout, the shipping and tax rules and the plugin list before we write code.",
+            "The result is a store that loads quickly on a phone, takes payments the way your buyers prefer, and does not break when an update arrives. For the wider site, theme and editing set-up see <a href=\"/services/web-development/wordpress/\">WordPress development</a>."
+          ],
+          "img": "cro/cart.jpg",
+          "cap": "A store planned product by product."
+        },
+        {
+          "id": "woocommerce-vs",
+          "h": "WooCommerce compared with Shopify",
+          "paras": [
+            "Both can run a good store. The right one depends on how your team works. This is how we frame the choice."
+          ],
+          "table": {
+            "caption": "WooCommerce compared with Shopify",
+            "head": [
+              "",
+              "WooCommerce",
+              "Shopify"
+            ],
+            "rows": [
+              [
+                "Best for",
+                "Stores inside a content-led WordPress site, or with custom logic",
+                "Catalogue-led D2C stores that want less upkeep"
+              ],
+              [
+                "Ownership",
+                "You host it and own the data",
+                "The platform hosts it for a fee"
+              ],
+              [
+                "Upkeep",
+                "Updates, backups and security are yours",
+                "Handled by the platform"
+              ],
+              [
+                "Read next",
+                "This page",
+                "<a href=\"/services/shopify-development/\">Shopify development</a>"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Pick the platform for the job.",
+            "text": "We build on both. If WooCommerce is the wrong fit, we say so before you spend. See <a href=\"/services/web-development/\">web development</a> for the full range."
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we build in",
+      "h2b": "WooCommerce.",
+      "lede": "From catalogue to checkout, for stores that sell online.",
+      "items": [
+        {
+          "t": "Catalogue and variations",
+          "d": "Products, sizes, colours, categories and attributes planned so filters and stock stay clean.",
+          "img": "shop/plan.jpg",
+          "alt": "Catalogue and variations"
+        },
+        {
+          "t": "Checkout and payments",
+          "d": "A short checkout with cards, UPI and cash on delivery, and the gateway you choose.",
+          "img": "d2c/checkout.jpg",
+          "alt": "Checkout and payments"
+        },
+        {
+          "t": "Shipping and tax",
+          "d": "Zones, rate rules and tax settings built from your courier terms.",
+          "img": "cro/pdp.jpg",
+          "alt": "Shipping and tax"
+        },
+        {
+          "t": "Speed and plugins",
+          "d": "Caching, image handling and script clean-up, with plugins kept few.",
+          "img": "web/speed.jpg",
+          "alt": "Speed and plugins"
+        },
+        {
+          "t": "Migration",
+          "d": "Products, customers and orders moved with redirects in place.",
+          "img": "web/crm.jpg",
+          "alt": "Migration"
+        },
+        {
+          "t": "Orders and handover",
+          "d": "Order statuses, emails and stock alerts, with training for your team.",
+          "img": "d2c/packing.jpg",
+          "alt": "Orders and handover"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for WooCommerce.",
+      "lede": "A shop is a promise. It has to load, take payment and ship.",
+      "img": "web/seo.jpg",
+      "alt": "Why brands choose MMC for WooCommerce.",
+      "items": [
+        {
+          "t": "Honest platform advice",
+          "d": "If Shopify fits better, we say so before you spend."
+        },
+        {
+          "t": "Built to be run",
+          "d": "Order, stock and refund screens your team can use on day one."
+        },
+        {
+          "t": "Search-ready",
+          "d": "Clean headings, fast pages and product schema from the start. We also run <a href=\"/services/seo/\">SEO</a>."
+        },
+        {
+          "t": "One accountable team",
+          "d": "Design, build and ongoing care sit under one roof."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a WooCommerce project runs,",
+      "h2b": "step by step.",
+      "img": "cro/cart.jpg",
+      "alt": "How a WooCommerce project runs, step by step.",
+      "items": [
+        {
+          "t": "Plan the catalogue",
+          "d": "Products, variations, categories and integrations are agreed in writing."
+        },
+        {
+          "t": "Design and build",
+          "d": "Approved designs become a theme, with plugins kept to the few that earn their place."
+        },
+        {
+          "t": "Test and launch",
+          "d": "We test checkout, payments, shipping, speed and tracking before the switch."
+        },
+        {
+          "t": "Hand over and support",
+          "d": "Your team gets a store guide, and we can stay on under website maintenance."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "WooCommerce for brands that",
+      "h2b": "own their store.",
+      "good": {
+        "t": "You want an owned store inside a WordPress site, with full control of data and extensions.",
+        "why": "WooCommerce suits content-led brands, B2B sellers and D2C stores that need custom logic."
+      },
+      "not": {
+        "t": "You want the least upkeep and a catalogue-led D2C store.",
+        "why": "Shopify usually fits better, and we will say so on the first call."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where WooCommerce fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "WordPress development",
+          "d": "Themes, plugins and editing for the site around your store.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/wordpress/",
+          "link": "See WordPress development"
+        },
+        {
+          "n": "Web development",
+          "d": "Websites built for search, speed and leads.",
+          "img": "web/plan.jpg",
+          "href": "/services/web-development/",
+          "link": "See Web development"
+        },
+        {
+          "n": "Shopify development",
+          "d": "The alternative: stores built for browsing and checkout.",
+          "img": "shop/design.jpg",
+          "href": "/services/shopify-development/",
+          "link": "See Shopify development"
+        },
+        {
+          "n": "Website maintenance",
+          "d": "Updates, backups, security and a monthly report.",
+          "img": "web/speed.jpg",
+          "href": "/services/website-maintenance/",
+          "link": "See website maintenance"
+        },
+        {
+          "n": "Conversion rate optimisation",
+          "d": "Find where shoppers leave and test the fix.",
+          "img": "cro/cart.jpg",
+          "href": "/services/cro/",
+          "link": "See Conversion rate optimisation"
+        },
+        {
+          "n": "White-label WordPress",
+          "d": "WordPress and WooCommerce builds behind your brand.",
+          "img": "web/seo.jpg",
+          "href": "/white-label/wordpress-development/",
+          "link": "See white-label WordPress development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "WooCommerce development."
+    ],
+    "faq": [
+      {
+        "q": "What is WooCommerce?",
+        "a": "It is a free plugin that turns a WordPress site into an online store, with product pages, a cart, checkout, payments and shipping. You own the store and the data, and you choose the hosting and the extensions."
+      },
+      {
+        "q": "Should I choose WooCommerce or Shopify?",
+        "a": "WooCommerce suits a store that is part of a content-led WordPress site, or one that needs custom logic. Shopify suits a catalogue-led D2C store that wants less upkeep. We give a straight view on the first call. See <a href=\"/services/shopify-development/\">Shopify development</a>."
+      },
+      {
+        "q": "Can you move our store to WooCommerce?",
+        "a": "Yes, from another platform or from an older WooCommerce build. We map products, customers and orders first, move them in a test copy, then switch over with redirects so search visibility is protected."
+      },
+      {
+        "q": "Does it work with Indian payments and shipping?",
+        "a": "Yes. We connect the gateway you choose, such as Razorpay, plus UPI, cards and cash on delivery where it makes sense, and set shipping zones from your courier terms. Tax settings follow your accountant's advice."
+      },
+      {
+        "q": "Who looks after updates and security?",
+        "a": "A WooCommerce store needs regular updates, backups and monitoring. We set them up at launch, and our <a href=\"/services/website-maintenance/\">website maintenance</a> retainer can run them after."
+      },
+      {
+        "q": "How is this page different from your WordPress page?",
+        "a": "The <a href=\"/services/web-development/wordpress/\">WordPress page</a> covers content sites and themes. This page is about the store itself: catalogue, checkout, shipping, tax, orders and the speed of a shop that takes payments."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A scope agreed after a call and written down, so you can see what is included. We do not publish a price list, because the catalogue, integrations and migration drive the work."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan your WooCommerce store",
+      "h2b": "with people who run one.",
+      "lede": "On a call, with a senior strategist. We review your catalogue or brief and say which platform fits."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client account.",
+      "style": "stack",
+      "eyebrow": "Where WooCommerce stores go wrong",
+      "h2a": "Five ways a WooCommerce store",
+      "h2b": "loses the sale.",
+      "lede": "A store only earns when shoppers can find, choose and pay. Each stage below is where builds go wrong, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Plan the catalogue",
+        "tag": "Catalogue",
+        "breaks": "Variants and categories added as the range grows.",
+        "why": "Messy attributes make filters, feeds and stock counts unreliable.",
+        "does": "We map products, variations and attributes first, so filters and stock work from day one."
+      },
+      {
+        "k": "Build clear product pages",
+        "tag": "Product page",
+        "breaks": "Pages that bury size, price or delivery details.",
+        "why": "A shopper who cannot choose a size or see delivery leaves.",
+        "does": "We design product pages with clear variation pickers, photos and delivery information."
+      },
+      {
+        "k": "Keep plugins few",
+        "tag": "Speed and plugins",
+        "breaks": "A plugin pile-up that slows the shop.",
+        "why": "Every plugin adds weight, update work and risk.",
+        "does": "We keep plugins few, add caching, clean up scripts and test on a phone."
+      },
+      {
+        "k": "Shorten checkout",
+        "tag": "Checkout, shipping and tax",
+        "breaks": "Long forms, missing payment methods, wrong rates.",
+        "why": "Every extra field is a reason to leave, and wrong rates eat margin.",
+        "does": "We set up a short checkout, the payments your buyers use and rates built from your courier terms."
+      },
+      {
+        "k": "Track and hand over",
+        "tag": "Tracking and orders",
+        "breaks": "A shop only the developer can run, with orders you cannot read.",
+        "why": "If staff cannot manage orders and stock, the shop stalls.",
+        "does": "We set up tracking, order statuses and stock alerts, train your team and can stay on under maintenance."
+      }
+    ],
+    "process": {
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "h2a": "How we run WooCommerce builds,",
+      "h2b": "step by step.",
+      "steps": [
+        {
+          "when": "Step 1",
+          "t": "Plan the store",
+          "d": "We map products, variations, shipping, payments and integrations, then agree the scope in writing.",
+          "out": "A written scope you have approved."
+        },
+        {
+          "when": "Step 2",
+          "t": "Design and build",
+          "d": "Approved designs become a theme and a store set up for your catalogue.",
+          "out": "A store ready to test."
+        },
+        {
+          "when": "Step 3",
+          "t": "Test and launch",
+          "d": "We test checkout, speed, tracking and mobile before the switch, then migrate with redirects.",
+          "out": "A live store that loads fast and tracks orders."
+        },
+        {
+          "when": "Step 4",
+          "t": "Hand over and support",
+          "d": "Your team gets a store guide, and we can stay on under website maintenance.",
+          "out": "A store your team can run with confidence."
+        }
+      ]
+    }
+  }
+}

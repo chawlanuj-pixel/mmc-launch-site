@@ -1,0 +1,101 @@
+---
+// PANEL: FashionReturns (kind "FashionReturns"). A fashion brand's loop from creative to margin after returns. No platform mark. 5 steps.
+//   1 Creative refresh: four ad tiles, two marked tired (fatigue bar full), a new hook added and marked fresh. Tab: Creative.
+//   2 Creator fit: three creator cards (photo crops) with a fit meter, one selected. Tab: Creators.
+//   3 Catalogue ads: a product set feed of tiles, one real photo crop, the rest placeholders, with "Item set" chips. Tab: Catalogue.
+//   4 Size help: a product page with a size guide (no figures) and a fit note. Tab: Size help.
+//   5 Margin after returns: bars from gross sales down to what is left once returns, discounts and shipping are counted. Tab: Margin.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real brand. Styles scoped to this file (prefix fr-).
+import Frame from "./Frame.astro";
+import { THUMBS, crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const ads = [[THUMBS.shirt, "Hook A", 100, "Tired", "bad"], [THUMBS.phoneAd, "Hook B", 82, "Tired", "bad"], [crop("/assets/d2c/range.jpg", 0.45, 0.2, 3.4), "Hook C", 38, "Holding", "warn"], [crop("/assets/d2c/range.jpg", 0.4, 0.33, 3.4), "New hook", 6, "Fresh", "ok"]];
+const people = [
+  [crop("/assets/ugc/brief.jpg", 0.75, 0.38, 2.6, 1.2), "Creator A", 82, "Fits the range", "ok"],
+  [crop("/assets/ugc/shoot.jpg", 0.6, 0.38, 2.4, 1.2), "Creator B", 46, "Partial fit", "warn"],
+  [crop("/assets/ugc/brief.jpg", 0.3, 0.3, 2.6, 1.2), "Creator C", 24, "Reach only", "bad"],
+];
+const sizes = ["S", "M", "L", "XL"];
+const waterfall = [["Gross sales", 100, "g"], ["Returns", 28, "x"], ["Discounts", 16, "x"], ["Shipping", 10, "x"], ["Left", 46, "win"]];
+---
+<Frame cls="fr-ui" title="Fashion margin loop" label="Illustration of a fashion brand's creative, creators, catalogue, size help and margin after returns. Not a client brand." caption={W.illustrative} tabs={["Creative", "Creators", "Catalogue", "Size help", "Margin"]} tabFor={[0, 1, 2, 3, 4]} accent="#C2185B" accentSoft="#FCE4EF">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Refresh before it tires <span>New hooks every cycle</span></p>
+    <ul class="fr-ads">
+      {ads.map(([th, n, f, t, c]) => (
+        <li class={"s2p-card" + (c === "ok" ? " fr-on" : "")}><span class="s2p-ph fr-ph" style={th as string} role="img" aria-label="Ad creative"></span><b>{n}</b><span class="fr-fat"><i style={`width:${f}%`}></i></span><em class={"s2p-chip s2p-chip--" + c}>{t}</em></li>
+      ))}
+    </ul>
+    <small class="s2-st__foot">The bar is how worn out an ad is. A tired ad is replaced, not pushed harder.</small>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Creators who fit the range <span>Style on a real body beats reach</span></p>
+    <ul class="fr-cr">
+      {people.map(([th, n, w, t, c], k) => (
+        <li class={"s2p-card" + (k === 0 ? " fr-on" : "")}><span class="s2p-ph fr-cph" style={th as string} role="img" aria-label="Creator photo"></span><b>{n}</b><small class="s2p-mute">Audience and style fit</small><span class="fr-fat fr-fat--ok"><i style={`width:${w}%`}></i></span><em class={"s2p-chip s2p-chip--" + c}>{t}</em></li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">The whole range, one feed <span>Ads pick the item</span></p>
+    <p class="fr-sets"><em class="s2p-chip s2p-chip--blue">Tops</em><em class="s2p-chip">Bottoms</em><em class="s2p-chip">New in</em><em class="s2p-chip s2p-chip--ok">In stock</em></p>
+    <ul class="fr-feed">
+      <li class="s2p-card fr-on"><span class="s2p-ph fr-fph" style={THUMBS.shirt} role="img" aria-label="Product"></span><i class="s2p-line s2p-line--m"></i></li>
+      {[crop("/assets/d2c/range.jpg", 0.4, 0.2, 5, 1.3), crop("/assets/d2c/range.jpg", 0.5, 0.33, 5, 1.3), crop("/assets/d2c/range.jpg", 0.3, 0.3, 5, 1.3)].map((th) => <li class="s2p-card"><span class="s2p-ph fr-fph" style={th} role="img" aria-label="Product detail"></span><i class="s2p-line s2p-line--m"></i></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Size help where doubt sits <span>Fewer wrong-size orders</span></p>
+    <div class="fr-size">
+      <div class="s2p-card fr-chart">
+        <p class="s2p-lbl">Size guide</p>
+        <div class="fr-grid"><span></span><b>Chest</b><b>Length</b>{sizes.map((s) => <><b>{s}</b><i class="s2p-line"></i><i class="s2p-line"></i></>)}</div>
+      </div>
+      <div class="s2p-card fr-fit"><p class="s2p-lbl">Fit note</p><span class="s2p-chip s2p-chip--blue">Relaxed fit</span><small class="s2p-mute">Model wears M</small><span class="fr-photo s2p-ph" style={crop("/assets/d2c/range.jpg", 0.45, 0.27, 3, 2)}></span></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Margin after returns <span>Gross sales are not the number</span></p>
+    <ul class="fr-wf">
+      {waterfall.map(([n, w, t]) => <li><span>{n}</span><i class={"fr-" + t} style={`--w:${w}%`}></i></li>)}
+    </ul>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .fr-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.fr-ads { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6em; }
+.fr-ads li { display: grid; gap: .4em; padding: .45em; justify-items: start; }
+.fr-ads b, .fr-cr b { font: 800 .84em var(--font-body); }
+.fr-ph { display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: .5em; }
+.fr-on { border-color: #C2185B; box-shadow: 0 0 0 2px #C2185B; }
+.fr-fat { display: block; width: 100%; height: .5em; border-radius: 99px; background: #E4E6EB; overflow: hidden; }
+.fr-fat i { display: block; height: 100%; border-radius: 99px; background: #D93025; }
+.fr-fat--ok i { background: #1B7A3D; }
+.fr-cr { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7em; }
+.fr-cr li { display: grid; gap: .4em; padding: .5em; justify-items: start; }
+.fr-cph { display: block; width: 100%; aspect-ratio: 5 / 3; border-radius: .5em; }
+.fr-sets { margin: 0; display: flex; flex-wrap: wrap; gap: .5em; }
+.fr-feed { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6em; }
+.fr-feed li { display: grid; gap: .4em; padding: .4em; }
+.fr-fph { display: block; aspect-ratio: 1 / 1; border-radius: .5em; }
+.fr-fph--n { background: linear-gradient(135deg, #F3E1EA, #FAF3F6); }
+.fr-size { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: .8em; align-content: center; }
+.fr-chart, .fr-fit { display: grid; gap: .5em; align-content: start; }
+.fr-grid { display: grid; grid-template-columns: 2em 1fr 1fr; gap: .45em .8em; align-items: center; } .fr-grid b { font: 800 .8em var(--font-body); color: #65676B; }
+.fr-photo { display: block; aspect-ratio: 3 / 2; border-radius: .6em; }
+.fr-fit .s2p-chip { justify-self: start; }
+.fr-wf { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; align-content: center; flex: 1; }
+.fr-wf li { display: grid; grid-template-columns: 6.5em minmax(0, 1fr); align-items: center; gap: .8em; font: 700 .92em var(--font-body); }
+.fr-wf i { display: block; height: 1.05em; width: var(--w); border-radius: 99px; background: #CED0D4; }
+.fr-wf i.fr-g { background: #C2185B; } .fr-wf i.fr-win { background: #1B7A3D; box-shadow: 0 0 0 3px #E3F6E9; }
+.fr-wf i.fr-x { background: repeating-linear-gradient(135deg, rgba(255, 197, 40, .75) 0 6px, rgba(255, 197, 40, .35) 6px 12px); border: 1px dashed #B58900; }
+@media (max-width: 560px) {
+  .fr-ads .s2p-chip, .fr-cr small, .fr-cr .s2p-chip, .fr-feed li:nth-child(n+4), .fr-sets .s2p-chip:nth-child(n+3) { display: none; }
+  .fr-feed { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .fr-ads { gap: .35em; } .fr-ads li { padding: .3em; } .fr-ads b { font-size: .7em; }
+  .fr-cr { gap: .4em; } .fr-cr li { padding: .3em; } .fr-size { grid-template-columns: 1fr; } .fr-fit { display: none; } .fr-grid { gap: .3em .6em; }
+  .fr-wf { gap: .4em; } .fr-wf li { grid-template-columns: 5.4em minmax(0, 1fr); font-size: .85em; }
+}
+@container (max-height: 230px) { .fr-sets, .fr-feed li:nth-child(n+4) { display: none; } .fr-fph { aspect-ratio: 2 / 1; } .fr-grid .s2p-line:nth-of-type(n+7) { display: none; } }
+</style>

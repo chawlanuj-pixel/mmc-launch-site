@@ -1,0 +1,68 @@
+---
+// The one "brands we work with" section on service and industry pages: small logo tiles, half the size of the home tiles.
+// Brands, labels and links all come from data/work-clients.json via src/lib/work.ts and src/lib/proof.ts (never typed by hand).
+// A tile links to /work/<id>/ only when that case study exists. With no showable brand NOTHING renders (no empty box);
+// the hub template asks proofRows() first so the hero's "See the work" button falls back to /work/ instead of #proof.
+import "../../styles/brand-tiles.css";
+import fs from "node:fs";
+import path from "node:path";
+import { brand } from "../../lib/work";
+import { proofRows } from "../../lib/proof";
+
+interface Props {
+  /** work-clients service codes; a brand is shown when it has any of them (ignored when `ids` is given) */
+  codes?: string[];
+  /** explicit brand ids, in order */
+  ids?: string[];
+  /** restrict to brand types, e.g. ["D2C"] */
+  types?: string[];
+  /** spread the pick across D2C and non-D2C instead of file order */
+  mix?: boolean;
+  max?: number;
+  /** "white" or "paper" band */
+  tone?: "white" | "paper";
+  /** accepted so a hub's `proof` object can be spread in; not used */
+  does?: string;
+}
+const { codes = [], ids, types, mix = false, max = 8, tone = "paper" } = Astro.props as Props;
+
+const rows = proofRows({ codes, ids, types, mix, max });
+const logoDir = path.join(process.cwd(), "public/assets/clients");
+const logo = (id: string) => (fs.existsSync(path.join(logoDir, "sm", id + ".png")) ? `/assets/clients/sm/${id}.png` : `/assets/clients/${id}.png`);
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+---
+{rows.length > 0 && (
+<section class={"bt bt--" + tone} id="proof" aria-labelledby="proof-h">
+  <div class="bt__wrap">
+    <div class="bt__head">
+      <div>
+        <p class="bt__eyebrow">Selected work</p>
+        <h2 class="bt__h" id="proof-h">Brands <span class="bt__serif">we work with.</span></h2>
+      </div>
+      <a class="bt__all" href="/work/">See all our work<Fragment set:html={arrow} /></a>
+    </div>
+    <ul class="bt__grid">
+      {rows.map((r) => {
+        const b = brand(r.id)!;
+        const img = <img src={logo(r.id)} alt={b.name} loading="lazy" decoding="async" />;
+        return (
+          <li>
+            {b.href ? (
+              <a class="bt__tile bt__tile--link" href={b.href} aria-label={`${b.name}: see the case study`}>
+                <span class="bt__logo">{img}</span>
+                <span class="bt__type">{b.label}</span>
+                <span class="bt__go" aria-hidden="true"><Fragment set:html={arrow} /></span>
+              </a>
+            ) : (
+              <div class="bt__tile">
+                <span class="bt__logo">{img}</span>
+                <span class="bt__type">{b.label}</span>
+              </div>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</section>
+)}

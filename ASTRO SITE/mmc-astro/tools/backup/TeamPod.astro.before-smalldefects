@@ -1,0 +1,51 @@
+---
+// PANEL: TeamPod (kind "TeamPod"). A dedicated pod working inside an agency's process. No platform mark, no people photos. 4 steps.
+//   1 Team: four role cards (strategist, specialist, developer, coordinator) with a "Works under your brand" chip. Tab: Team.
+//   2 Rhythm: a Monday to Friday strip with stand-up, your review and the weekly report. Tab: Rhythm.
+//   3 Board: three columns (Brief, In progress, Your review) with task cards, in your tool. Tab: Board.
+//   4 Flex: pod seats, some filled, one to add and one to pause. Tab: Flex.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix tpd-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const roles = [["Strategist", "Plans the account"], ["Specialist", "Runs the channel"], ["Developer", "Builds and fixes"], ["Coordinator", "Keeps it moving"]];
+---
+<Frame title="Dedicated pod" label="Illustration of a dedicated delivery pod: roles, weekly rhythm, shared board and flexing seats. Not a client account." caption={W.illustrative} tabs={["Team", "Rhythm", "Board", "Flex"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Your pod <span>Named people, one queue</span></p>
+    <ul class="tpd-roles">
+      {roles.map(([r, d]) => <li class="s2p-card"><i class="tpd-av" aria-hidden="true"></i><span><b>{r}</b><small class="s2p-mute">{d}</small></span></li>)}
+    </ul>
+    <em class="s2p-chip s2p-chip--blue tpd-chip">Works under your brand</em>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Rhythm <span>Same week, every week</span></p>
+    <div class="tpd-week">
+      {[["Mon", "Stand-up"], ["Tue", "Stand-up"], ["Wed", "Your review"], ["Thu", "Stand-up"], ["Fri", "Weekly report"]].map(([d, t]) => <div class={"s2p-card" + (t !== "Stand-up" ? " tpd-key" : "")}><p class="s2p-lbl">{d}</p><b>{t}</b></div>)}
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Board <span>In your tool, in your words</span></p>
+    <div class="tpd-board">
+      {[["Brief", ["Client request", "New landing page"]], ["In progress", ["Monthly content", "Ad refresh"]], ["Your review", ["Report draft"]]].map(([h, cs]) => <div class="tpd-col"><p class="s2p-lbl">{h}</p>{(cs as string[]).map((c) => <div class="s2p-card"><b>{c}</b><i class="s2p-line s2p-line--s"></i></div>)}</div>)}
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Flex <span>Add or pause a seat as work changes</span></p>
+    <div class="tpd-seats">
+      {["Strategist", "Specialist", "Developer"].map((r) => <div class="s2p-card"><i class="tpd-av" aria-hidden="true"></i><b>{r}</b><em class="s2p-chip s2p-chip--ok">Active</em></div>)}
+      <div class="s2p-card tpd-add"><b>Add a role</b><em class="s2p-chip s2p-chip--blue">New seat</em></div>
+      <div class="s2p-card tpd-pause"><b>Writer</b><em class="s2p-chip">Paused</em></div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.tpd-roles { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; align-content: space-evenly; display: grid; grid-template-columns: 1fr 1fr; gap: .7em; } .tpd-roles li { display: flex; align-items: center; gap: .7em; } .tpd-roles span { display: grid; min-width: 0; } .tpd-roles b, .tpd-seats b { font: 800 .98em var(--font-body); }
+.tpd-av { flex: none; width: 2.4em; height: 2.4em; border-radius: 50%; background: linear-gradient(135deg, #CFE0FF, #8AA9F0); }
+.tpd-chip { align-self: flex-start; }
+.tpd-week { flex: 1; min-height: 0; max-height: 15em; align-content: center; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5em; } .tpd-week .s2p-card { display: grid; gap: .5em; align-content: start; padding: .6em .5em; min-height: 8em; } .tpd-week b { font: 800 .85em/1.2 var(--font-body); } .tpd-key { border-color: var(--mmc-blue); background: #F1F5FF; }
+.tpd-board { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6em; } .tpd-col { display: grid; gap: .5em; align-content: start; padding: .5em; border-radius: .8em; background: #F5F6F7; } .tpd-col .s2p-card { display: grid; gap: .4em; padding: .5em .6em; } .tpd-col b { font: 800 .85em/1.2 var(--font-body); }
+.tpd-seats { flex: 1; min-height: 0; align-content: space-evenly; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .7em; } .tpd-seats .s2p-card { display: grid; gap: .5em; justify-items: start; align-content: start; } .tpd-add { border: 1.5px dashed var(--mmc-blue); } .tpd-pause { opacity: .55; }
+@media (max-width: 560px) { .tpd-roles { gap: .4em; } .tpd-roles small { display: none; } .tpd-week { gap: .3em; } .tpd-week .s2p-card { padding: .4em .3em; } .tpd-seats { grid-template-columns: 1fr 1fr; gap: .4em; } .tpd-seats .tpd-pause { display: none; } .tpd-board { gap: .3em; } }
+@media (max-width: 900px) { .s2-ui:has(.tpd-roles) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

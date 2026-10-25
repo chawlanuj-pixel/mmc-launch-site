@@ -1,0 +1,27 @@
+---
+// VISUAL: ReviewLeak (kind "ReviewLeak"). Five zones of a reputation view: an unknown search result, a lone rating, an unanswered review, a stale profile and a late alert.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Styles scoped to this file (prefix rl).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+---
+<div class="rl__row" aria-hidden="true"></div>
+<div class="rl__art" role="img" aria-label="Five zones of a reputation view: search result, rating, unanswered review, out-of-date profile, and a trend line.">
+  <div class="rl__z"><i></i><i class="s"></i><i class="m"></i><i class="s"></i><small class="rl__cap">Search result</small></div>
+  <div class="rl__z"><span class="rl__st" aria-hidden="true">★★★★☆</span><i class="s"></i><small class="rl__cap">Rating</small></div>
+  <div class="rl__z"><span class="rl__rev"><i></i><i class="s"></i></span><span class="rl__q">No reply yet</span><small class="rl__cap">Unanswered</small></div>
+  <div class="rl__z"><span class="rl__old"><i></i><i class="s"></i></span><span class="rl__q rl__q--w">Out of date</span><small class="rl__cap">Stale profile</small></div>
+  <div class="rl__z"><svg viewBox="0 0 100 50" aria-hidden="true"><path d="M4 38 C24 34 40 28 58 22 S86 12 96 10" /></svg><small class="rl__cap">Rating trend</small></div>
+</div>
+<style is:global>
+.rl__row { height: 78px; }
+.rl__art { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2%; height: clamp(190px, 26vw, 320px); }
+.rl__z { position: relative; display: grid; align-content: center; justify-items: start; gap: 9px; padding: 12px 12px 34px; border: 1px solid var(--s2-line); border-radius: 18px; background: #fff; min-width: 0; }
+.rl__z i { display: block; height: 8px; width: 90%; border-radius: 99px; background: #DADDE1; } .rl__z i.s { width: 50%; } .rl__z i.m { width: 70%; }
+.rl__st { font: 400 clamp(14px, 2vw, 26px)/1 var(--font-body); letter-spacing: .06em; color: #E8A100; }
+.rl__rev, .rl__old { display: grid; gap: 8px; width: 100%; padding: 8px; border-radius: 10px; background: #F5F6F7; }
+.rl__q { padding: 3px 9px; border-radius: 99px; background: #FDE8E8; color: #B42318; font: 800 clamp(9px, 1vw, 12px) var(--font-body); } .rl__q--w { background: #FFF3D6; color: #8A5A00; }
+.rl__z svg { width: 100%; fill: none; stroke: #B45309; stroke-width: 4; stroke-linecap: round; }
+@media (max-width: 760px) { .rl__row { height: 58px; } .rl__art { height: 170px; } .rl__z { padding: 8px 6px; border-radius: 12px; } .rl__q { display: none; } }
+.rl__cap { position: absolute; left: 4px; right: 4px; bottom: 10px; text-align: center; font: 800 clamp(9px, .95vw, 12px)/1.15 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--s2-mute); }
+@media (max-width: 900px) { .rl__cap { display: none; } }
+</style>

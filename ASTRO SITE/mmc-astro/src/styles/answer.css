@@ -1,0 +1,98 @@
+/* assets/answer.css: the shared "In short" block. Component: assets/answer.jsx (MmcAnswer).
+   One bold thing: the photo sits in a sunrise arch with a yellow sun and rings behind it (the MMC logo arc).
+   Everything else is quiet: a white card, a pale blue wash, three plain tiles. */
+.ans { padding: clamp(40px, 5vw, 80px) 0; }
+.ans__card {
+  --ans-gap: clamp(20px, 2.6vw, 40px);
+  position: relative; overflow: hidden; isolation: isolate;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  grid-template-areas: "main fig" "pts fig";
+  column-gap: clamp(28px, 4.4vw, 72px); row-gap: clamp(22px, 2.4vw, 34px);
+  padding: clamp(28px, 4.2vw, 64px);
+  background: linear-gradient(160deg, #EEF3FF 0%, #F8FAFF 46%, #FFFFFF 100%);
+  border: 1px solid var(--n-line); border-radius: clamp(22px, 2.4vw, 32px);
+  box-shadow: 0 1px 2px rgba(11, 16, 32, .04), 0 24px 60px -30px rgba(22, 50, 158, .28);
+}
+.ans__main { grid-area: main; align-self: start; min-width: 0; }
+.ans__label {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 clamp(14px, 1.6vw, 22px);
+  padding: 7px 14px 7px 11px; border-radius: 999px; background: var(--n-sun); color: var(--n-fg);
+  font-family: var(--font-body); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; line-height: 1;
+}
+.ans__sun-ic { flex: none; }
+.ans__lead {
+  margin: 0; max-width: 24em; text-wrap: balance;
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(22px, 2.55vw, 36px);
+  line-height: 1.24; letter-spacing: -.02em; color: var(--n-fg);
+}
+.ans__hl { font-style: italic; font-weight: 700; color: var(--n-blue); }
+.ans__who {
+  margin: clamp(12px, 1.4vw, 20px) 0 0; max-width: 40em;
+  font-family: var(--font-body); font-size: clamp(15px, 1.25vw, 18px); line-height: 1.6; color: var(--n-fg-2);
+}
+/* Photo in a sunrise arch */
+.ans__fig { grid-area: fig; position: relative; margin: 0; align-self: stretch; display: flex; padding-top: clamp(44px, 5vw, 76px); min-height: 0; }
+.ans__sun {
+  position: absolute; z-index: -1; top: 0; left: 50%; width: clamp(96px, 10vw, 150px); aspect-ratio: 1; border-radius: 50%;
+  transform: translateX(-50%); background: var(--n-sun);
+  box-shadow: 0 0 0 clamp(10px, 1.1vw, 16px) rgba(255, 197, 40, .30), 0 0 0 clamp(22px, 2.4vw, 34px) rgba(255, 197, 40, .15);
+}
+.ans__arch {
+  position: relative; display: block; width: 100%; flex: 1; min-height: 260px; overflow: hidden;
+  border-radius: 999px 999px clamp(18px, 2vw, 26px) clamp(18px, 2vw, 26px);
+  background: #DCE5FA; box-shadow: 0 18px 40px -22px rgba(11, 16, 32, .5);
+}
+.ans__arch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block; }
+.ans__chip {
+  position: absolute; left: clamp(-10px, -.6vw, 0px); bottom: clamp(16px, 2vw, 28px); max-width: 78%;
+  display: inline-flex; align-items: center; gap: 9px; padding: 10px 16px 10px 13px; border-radius: 999px;
+  background: #fff; color: var(--n-fg); box-shadow: 0 10px 26px -10px rgba(11, 16, 32, .45);
+  font-family: var(--font-body); font-size: 13.5px; font-weight: 800; line-height: 1.25;
+}
+.ans__chip i { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--n-sun); box-shadow: 0 0 0 4px rgba(255, 197, 40, .3); }
+
+/* Point tiles */
+.ans__pts { grid-area: pts; list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); align-self: end; }
+.ans__card--2 .ans__pts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ans__card--4 .ans__pts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ans__pt {
+  display: grid; grid-template-columns: 44px 1fr; column-gap: 12px; align-content: start; align-items: center;
+  padding: 16px 16px 18px; background: #fff; border: 1px solid var(--n-line); border-radius: 20px;
+  box-shadow: 0 10px 26px -20px rgba(11, 16, 32, .35);
+}
+.ans__ic { grid-row: 1; width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: #E4ECFF; color: var(--n-blue-d); }
+.ans__pt-t { grid-column: 2; grid-row: 1; font-family: var(--font-display); font-weight: 800; font-size: 16px; line-height: 1.2; letter-spacing: -.01em; color: var(--n-fg); }
+.ans__pt-x { grid-column: 1 / -1; margin-top: 12px; font-family: var(--font-body); font-size: 14.5px; line-height: 1.55; color: var(--n-fg-2); }
+
+/* Tablet: photo drops under the text as a wide arch */
+@media (max-width: 960px) {
+  .ans__card { grid-template-columns: minmax(0, 1fr); grid-template-areas: "main" "pts" "fig"; }
+  .ans__fig { padding-top: 0; }
+  .ans__sun { display: none; }
+  .ans__arch { flex: none; aspect-ratio: 16 / 9; min-height: 0; border-radius: 22px; }
+  .ans__arch img { object-position: 50% 40%; }
+  .ans__chip { left: 14px; bottom: 14px; }
+  .ans__lead { max-width: 30em; }
+}
+/* Phone: slim photo strip on top, tiles scroll-snap */
+@media (max-width: 640px) {
+  .ans { padding: 28px 0; }
+  .ans__card { grid-template-areas: "fig" "main" "pts"; row-gap: 22px; padding: 16px 16px 22px; border-radius: 22px; }
+  /* A photo, not a strip: it was an 88px-tall band that hid the subject. */
+  .ans__arch { aspect-ratio: 4 / 3; height: auto; border-radius: 18px; }
+  .ans__arch img { object-position: 50% 32%; }
+  .ans__chip { display: none; }
+  .ans__label { font-size: 12px; padding: 7px 13px 7px 10px; margin-bottom: 12px; }
+  .ans__lead { font-size: 21px; line-height: 1.28; }
+  .ans__who { font-size: 16px; line-height: 1.55; margin-top: 12px; }
+  .ans__pts, .ans__card--2 .ans__pts, .ans__card--4 .ans__pts {
+    display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin-inline: -16px; padding: 4px 16px 6px; scroll-padding-inline: 16px; -webkit-overflow-scrolling: touch;
+  }
+  .ans__pts::-webkit-scrollbar { display: none; }
+  .ans__pt { flex: 0 0 82%; scroll-snap-align: start; padding: 16px 16px 18px; border-radius: 18px; }
+  .ans__card--2 .ans__pt { flex-basis: 88%; }
+  .ans__pt-x { margin-top: 10px; font-size: 15px; line-height: 1.55; }
+}
+
+/* The closing band is the shared PreFooterCta (styles/prefooter.css). */

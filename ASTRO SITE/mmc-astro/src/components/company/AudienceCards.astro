@@ -1,0 +1,87 @@
+---
+// ONE audience-card component for About and Contact: the homepage "Who we work with" photo card
+// (image, icon chip, name, one line, link). Same copy as the homepage, same three links, same order.
+// Names come from site.ts so D2C always leads and nothing is D2C-only.
+import { AUDIENCES } from "../../lib/site";
+import { href } from "../../lib/links";
+
+const ICONS: Record<string, string> = {
+  d2c: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg>`,
+  b2b: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></svg>`,
+  edu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.2 2.7 3 6 3s6-1.8 6-3v-4.5M22 9v6"/></svg>`,
+};
+const ARR = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>`;
+const CARDS = [
+  { id: "d2c", n: AUDIENCES[0], d: "Ads, creative, conversion and retention for brands that sell direct to shoppers.", s: "Ads, creative and retention for brands that sell direct.", img: "d2c/unboxing.jpg", href: "d2c.html", go: "See D2C marketing" },
+  { id: "b2b", n: AUDIENCES[1], d: "Website, creative and paid media for a purchase that takes longer and involves several people.", s: "Website, creative and paid media for longer buying cycles.", img: "b2b/call.jpg", href: "b2b.html", go: "See B2B marketing" },
+  { id: "edu", n: AUDIENCES[2], d: "Search, landing pages, CRM and follow-up for institutes that earn a family's trust over weeks.", s: "Search, landing pages and CRM for trust-led institutes.", img: "edu/students.jpg", href: "education.html", go: "See education marketing" },
+];
+---
+<div class="aud-cards n-rise d1">
+  {CARDS.map((a) => (
+    <a class={"aud-card aud-card--" + a.id} href={href(a.href)}>
+      <span class="aud-card__pic"><img src={"/assets/" + a.img} alt="" loading="lazy" decoding="async" width="720" height="540" /></span>
+      <span class="aud-card__body">
+        <span class="aud-card__hd"><span class="aud-card__ic" aria-hidden="true"><Fragment set:html={ICONS[a.id]} /></span><b>{a.n}</b></span>
+        <span class="aud-card__d"><span class="p-l">{a.d}</span><span class="p-s">{a.s}</span></span>
+        <span class="aud-card__go">{a.go}<Fragment set:html={ARR} /></span>
+      </span>
+    </a>
+  ))}
+</div>
+<style is:global>
+  .aud-cards { --ac-ink: #0F1E5E; --ac-blue: #1D4ED8; --ac-blue-d: #16329E; --ac-fg2: #47506A; --ac-ease: cubic-bezier(.22,.61,.36,1);
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 24px; align-items: stretch; }
+  .aud-card { position: relative; display: flex; flex-direction: column; background: #fff; border: 2px solid rgba(15,30,94,.08); border-radius: 22px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .28s var(--ac-ease), box-shadow .28s var(--ac-ease), border-color .28s var(--ac-ease); }
+  .aud-card__pic { height: clamp(150px, 20vw, 280px); overflow: hidden; display: block; flex: none; }
+  .aud-card__pic img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s var(--ac-ease); }
+  .aud-card__body { display: flex; flex-direction: column; gap: 8px; padding: 24px; flex: 1; }
+  .aud-card__hd { display: flex; align-items: center; gap: 12px; }
+  .aud-card__ic { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #FFF1C2; color: var(--ac-ink); transition: transform .35s var(--ac-ease), background .25s var(--ac-ease), color .25s var(--ac-ease); }
+  .aud-card__ic svg { width: 22px; height: 22px; }
+  .aud-card__body b { font: 800 clamp(20px, 1.9vw, 24px)/1.15 var(--font-display, "Raleway", sans-serif); letter-spacing: -.015em; color: var(--ac-ink); }
+  .aud-card__d { font-size: 15px; line-height: 1.5; color: var(--ac-fg2); }
+  .aud-card__d .p-s { display: none; }
+  .aud-card__go { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; padding-top: 4px; min-height: 44px; font: 700 14px var(--font-body, "Nunito", sans-serif); color: var(--ac-blue-d); }
+  .aud-card__go svg { width: 14px; height: 14px; transition: transform .25s var(--ac-ease); }
+  .aud-card:focus-visible { transform: translateY(-5px); box-shadow: 0 22px 34px -18px rgba(15,30,94,.5); border-color: var(--ac-blue); outline: 3px solid var(--ac-ink); outline-offset: 3px; }
+  .aud-card:focus-visible .aud-card__pic img { transform: scale(1.04); }
+  .aud-card:focus-visible .aud-card__ic { transform: rotate(-8deg) scale(1.06); background: var(--ac-ink); color: #FFC528; }
+  .aud-card:focus-visible .aud-card__go svg { transform: translateX(4px); }
+  @media (hover: hover) {
+    .aud-card:hover { transform: translateY(-5px); box-shadow: 0 22px 34px -18px rgba(15,30,94,.5); border-color: var(--ac-blue); }
+    .aud-card:hover .aud-card__pic img { transform: scale(1.04); }
+    .aud-card:hover .aud-card__ic { transform: rotate(-8deg) scale(1.06); background: var(--ac-ink); color: #FFC528; }
+    .aud-card:hover .aud-card__go svg { transform: translateX(4px); }
+  }
+  @media (hover: hover) and (min-width: 901px) {
+    .aud-cards { transition: grid-template-columns .55s var(--ac-ease); }
+    .aud-cards:has(.aud-card--d2c:is(:hover, :focus-visible)) { grid-template-columns: 1.9fr .9fr .9fr; }
+    .aud-cards:has(.aud-card--b2b:is(:hover, :focus-visible)) { grid-template-columns: .9fr 1.9fr .9fr; }
+    .aud-cards:has(.aud-card--edu:is(:hover, :focus-visible)) { grid-template-columns: .9fr .9fr 1.9fr; }
+  }
+  @media (max-width: 900px) {
+    .aud-cards { grid-template-columns: 1fr; gap: 12px; }
+    .aud-card { flex-direction: row; align-items: stretch; min-height: 120px; }
+    .aud-card__pic { width: 34%; height: auto; position: relative; }
+    .aud-card__pic img { position: absolute; inset: 0; }
+    .aud-card__body { padding: 14px 16px; gap: 6px; justify-content: center; }
+    .aud-card__ic { width: 32px; height: 32px; } .aud-card__ic svg { width: 16px; height: 16px; }
+    .aud-card__d .p-l { display: none; } .aud-card__d .p-s { display: inline; }
+    .aud-card__go { margin-top: 0; padding-top: 0; }
+  }
+  /* Phones: photo on top at 16:10 (it was a 34%-wide sliver), copy below with room to breathe. */
+  @media (max-width: 560px) {
+    .aud-cards { gap: 16px; }
+    .aud-card { flex-direction: column; min-height: 0; }
+    .aud-card__pic { width: 100%; height: auto; aspect-ratio: 16 / 10; }
+    .aud-card__body { padding: 18px 20px 20px; gap: 10px; justify-content: flex-start; }
+    .aud-card__hd { gap: 12px; }
+    .aud-card__ic { width: 36px; height: 36px; } .aud-card__ic svg { width: 18px; height: 18px; }
+    .aud-card__d { font-size: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .aud-cards, .aud-card, .aud-card__pic img, .aud-card__ic, .aud-card__go svg { transition: none !important; }
+    .aud-card:hover, .aud-card:focus-visible, .aud-card:hover .aud-card__pic img, .aud-card:hover .aud-card__ic, .aud-card:hover .aud-card__go svg { transform: none !important; }
+  }
+</style>

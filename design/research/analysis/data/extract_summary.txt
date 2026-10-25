@@ -1,0 +1,49 @@
+pages matched to index cards: 53 | unmatched pages: ['portfolio_case_studies_hayward_turnstiles', 'portfolio_case_studies_ryan_amato_painting']
+cards used twice: [] | cards with no page: []
+case studies: 55 | index cards: 53
+words: min 590 median 819 max 1288
+body words (hero->team): min 443 median 608 max 974
+metrics per study: min 1 median 3 max 6 total 180
+framing: Counter({'percent_change': 167, 'absolute_count': 8, 'multiplier': 5})
+metric category (all unique metrics): [('traffic_sessions_users', 51), ('leads_calls_forms', 46), ('ai_visibility_traffic', 20), ('visibility_rankings_clicks_engagement', 15), ('conversions_transactions', 12), ('revenue_sales', 12), ('cost_per_lead_or_conversion', 9), ('other', 8), ('conversion_rate', 7), ('roi', 4), ('other_non_marketing', 2), ('roas', 1)]
+pages containing category: [('traffic_sessions_users', 37), ('leads_calls_forms', 30), ('visibility_rankings_clicks_engagement', 14), ('revenue_sales', 11), ('conversions_transactions', 10), ('cost_per_lead_or_conversion', 9), ('other', 7), ('conversion_rate', 7), ('ai_visibility_traffic', 6), ('roi', 4), ('other_non_marketing', 2), ('roas', 1)]
+card headline category: [('leads_calls_forms', 17), ('traffic_sessions_users', 10), ('revenue_sales', 7), ('ai_visibility_traffic', 6), ('visibility_rankings_clicks_engagement', 4), ('conversions_transactions', 3), ('cost_per_lead_or_conversion', 2), ('other', 2), ('roi', 2), ('conversion_rate', 2), ('other_non_marketing', 1)]
+metrics with time qualifier in label: 58 / 180
+studies with zero time-qualified metrics: 27
+studies with ANY timeframe word in prose: 22
+studies with baseline (from X to Y etc): 1 ['Record Head']
+studies with absolute numbers in prose: 6
+studies mentioning spend/budget: 15
+studies with method/attribution words: 14
+quotes per study: Counter({4: 16, 3: 13, 2: 9, 5: 8, 1: 7, 0: 2}) | studies w/ named role: 2 [('IGX Solutions', ['person/role: Marketing Manager']), ('Thompson Tractor', ['person/role: Marketing Manager'])]
+attributions: [('unattributed', 85), ('company name only', 79), ('person/role: Marketing Manager', 2)]
+before/after: 53 | results heading: Counter({'#SeeingTheFX Results': 47, 'Results': 6, '': 2})
+tenure values: Counter({'Client since YYYY': 28, 'Client Since YYYY': 10, '3.6 Years': 1, '3.8 Years': 1, '4.5 Years': 1, '9.9 Years': 1, '14.1 Years': 1, '2.5 Years': 1, '8.9 Years': 1, '3.2 Years': 1, '1 Year': 1, '4.6 Years': 1, '6.6 Years': 1, '6.2 Years': 1, '': 1, '8 Months': 1, '1.2 Years': 1, '(no tenure; meeting cadence: Monthly)': 1, '4 Years': 1})
+videos on case pages: Counter({0: 48, 3: 6, 1: 1}) | video schema: 5
+company size: Counter({'11 – 50': 21, '51 – 200': 15, '1 – 10': 6, '201 – 500': 5, '1K – 5K': 3, 'N/A': 2, '': 2, '501 – 1K': 1})
+type: Counter({'B2B': 19, 'B2C/local': 9, 'B2C': 6, 'B2B/local': 5, 'Split': 4, 'B2B/ecommerce': 2, 'Split/local': 2, 'Split/ecommerce': 2, 'B2C/ecommerce': 2, 'B2C/ecommerce/local': 2, '': 1, 'local': 1})
+industry: [('Manufacturing, Industrial, & Commercial Products', 10), ('Home & Facility Services', 8), ('Ecommerce', 7), ('Leisure, Entertainment, Restaurants/Food Services, Sports, Events, Travel, & Hospitality', 5), ('Heavy Equipment', 4), ('Retail Brick & Mortar', 4), ('Transportation, Towing, Supply Chain, & Logistics', 3), ('SaaS & Software', 2), ('', 2), ('Services – Professional, Business, Personal, & Commercial', 2), ('Healthcare, Medical, & Rehabilitation', 2), ('Education, Media, Training, & Information Services', 2), ('Real Estate, Building-Construction, & Property Management Services', 2), ('Manufacturing, Industrial, & Commercial Products, Ecommerce', 1), ('Banking, Lending, Insurance, & Mortgage Services & Products', 1)]
+services: [('SEO', 53), ('PPC', 28), ('Local SEO', 13), ('Web Design', 13), ('Social Media', 13), ('Generative Engine Optimization (GEO)', 7), ('Content Marketing', 6), ('CRO', 4), ('Email Marketing', 3), ('Web Development', 2), ('', 2), ('Website Maintenance', 1), ('YouTube Advertising', 1), ('Review Management', 1), ('Amazon', 1)]
+published years: Counter({'2025': 53, '2026': 2}) | modified: [('2026-06', 42), ('2026-07', 11), ('2026-09', 1), ('2026-08', 1)]
+approach h3 counts: Counter({3: 49, 2: 5, 0: 1})
+team size: Counter({4: 16, 6: 10, 3: 9, 8: 5, 7: 4, 2: 4, 5: 4, 12: 2, 0: 1})
+hours: [('', 'How Ryan Amato Painting Booked More Jobs With WebFX'), ('1,090+', 'Record Head'), ('1,150+', 'Great Northern Corporation'), ('1,300+', 'PowerGistics'), ('1,465+', 'Mount Wachusett Community College'), ('1,500+', 'Enabling Devices')]
+
+MISMATCHES card headline vs page headline / hub:
+  industry differs: 10X Engineered Materials Manufacturing, Industrial, & Commercial Products, Ecommerce | Manufacturing, Industrial, & Commercial Products
+  name not in title: CH Reed | How C.H. Reed Boosted Sales-Ready Leads with WebFX
+  name not in title: Coqui el Original | How a Fine Jewelry Company Increased SEO Revenue With WebFX
+  name not in title: Enduric Plumbing Services, Inc. | Helping Leads & Revenue Flow In For a Plumbing Business
+  name not in title: Golden Meadows Retrievers | Retrieving More Puppy Adoptions with WebFX
+  card!=first-headline: Hayward Turnstiles Case Study: A Manufacturer’s Success Story | card:  | page: ['2,319% ROI FROM PPC']
+  name not in title: Kent County Tourism Corporation | Driving More Tourists to Delaware Attractions with WebFX
+  name not in title: Kampgrounds of America, Inc. | How KOA Transformed Organic Search into a Revenue Engine with Help from WebFX
+  name not in title: Merrimack Valley Psychological Associates | How Mental Health Practice Doubled Revenue with WebFX
+  LEAK: Mount Wachusett Community College ['campground/camping wording']
+  name not in title: Mount Wachusett Community College | Community College Boosts Enrollment with Help from WebFX
+
+no-metric-in-results or single-type: [('Area Flooring & Tile Inc.', 2), ('Asbury Electric', 1), ('CH Reed', 2), ('Cleveland Brothers Equipment Company', 2), ('Diamond Event & Tent', 2), ('Enduric Plumbing Services, Inc.', 2), ('Healthcare Administrative Partners', 2), ('Hurst Pediatric Dentistry', 2), ('HydroWorx', 2), ('Merrimack Valley Psychological Associates', 2), ('Net Friends', 2), ('PowerGistics', 2), ('Property Management, Inc. (PMI)', 1), ('Reynolds Restoration Services', 2), ('S. Clyde Weaver', 2), ('SelectROW', 2), ('Sharretts Plating Co., Inc.', 2), ('Soundproof Cow', 2), ('Stockwell International', 2)]
+
+largest % claims: [(3872.0, '3872%', 'INCREASE IN SESSIONS FROM SEO', 'Hurst Pediatric Dentistry'), (2319.0, '2,319%', 'ROI FROM PPC', 'Hayward Turnstiles Case Study: A Manufacturer’s Success Story'), (2118.0, '2118%', 'YOY INCREASE IN REVENUE FROM AMAZON ADS', 'York Saw & Knife Co., Inc.'), (1164.0, '1,164%', 'INCREASE IN TRAFFIC FROM AI SOURCES', 'RC Mowers'), (948.0, '948%', 'INCREASE IN WEB VISITS FROM EMAIL', 'All Pro Trailer Superstore'), (885.0, '885%', 'INCREASE IN SEO TRAFFIC', 'Stockwell International'), (670.0, '670%', 'INCREASE IN CONVERSIONS FROM PAID ADS', 'Maryland Sunrooms'), (630.0, '630%', 'INCREASE IN E-NEWSLETTER SIGN-UPS VIA SOCIAL ADVERTISING', 'Kent County Tourism Corporation'), (626.0, '626%', 'YOY INCREASE IN AMAZON SALES', 'York Saw & Knife Co., Inc.'), (600.0, '600%', 'INCREASE IN LEADS FROM EMAIL MARKETING', 'All Pro Trailer Superstore')]
+
+decreases: [('30%', 'DECREASE IN PPC COST PER LEAD', 'ALL-TEST Pro'), ('70%', 'DECREASE IN ORGANIC COST PER LEAD (CPL)', 'Boss Mechanical Inc.'), ('21%', 'DECREASE IN BOUNCE RATE', 'Calhoun Super Structure'), ('30%', 'DECREASE IN COST PER LEAD', 'CEMB USA'), ('90%', 'DECREASE IN PPC COST PER LEAD', 'Centrak'), ('82%', 'IMPROVEMENT IN COST PER LEAD WITH CONVERSIONS API', 'Kent County Tourism Corporation'), ('321%', 'DECREASE IN COST-PER-LEAD (CPL)', 'Maryland Sunrooms'), ('11%', 'DECREASE IN BOUNCE RATE', 'Ocean City NJ'), ('23%', 'YOY COST PER LEAD DECREASE', 'PaulB Hardware'), ('94%', 'DECREASE IN COST PER LEAD', 'The Roof Detective'), ('20%', 'YOY DECREASE IN COST PER CONVERSION', 'York Saw & Knife Co., Inc.')]

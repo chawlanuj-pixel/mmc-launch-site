@@ -1,0 +1,7 @@
+/* ---- Isolation: undo main-site element and class defaults (p, headings, .btn, .serif, .eyebrow) so these pages render as designed ---- */
+.ai-scope p{margin:1em 0;font:inherit;color:inherit;line-height:inherit}
+.ai-scope h1,.ai-scope h2,.ai-scope h3,.ai-scope h4{color:inherit;text-wrap:initial}
+.ai-scope .serif{color:inherit;letter-spacing:inherit;font-family:inherit}
+.ai-scope .btn{letter-spacing:normal;text-transform:none;white-space:normal;text-wrap:initial;position:static}
+.ai-scope button{font-family:inherit}
+.ai-scope .btn--ghost{border:0}

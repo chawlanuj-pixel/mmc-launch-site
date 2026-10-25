@@ -1,0 +1,120 @@
+---
+// PANEL: BriefBoard (kind "BriefBoard"). A UGC / creative brief and creator cards using existing photos. No platform mark. 4 steps.
+//   1 Brief: one page with Hook, Angle, Must show, Must say and Avoid (illustrative wording, no real brand). Tab: Brief.
+//   2 Creators: three creator cards (photo crops from public/assets/ugc), each with fit tags. One is selected. Tab: Creators.
+//   3 Delivery: per creator, raw clips received and edited cuts in progress. Tab: Delivery.
+//   4 Test: four cuts side by side (product photo crops), one marked as the winner and carried into the next brief. Tab: Results.
+// Variant: W.variant === "influencer" swaps the content (same 4 steps, same look): 1 the brief with room for the creator's voice; 2 a shortlist with an
+// audience-fit meter; 3 terms agreed in writing (deliverables, dates, usage rights, disclosure); 4 each creator read against orders, best content reused.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix bb-).
+import Frame from "./Frame.astro";
+import { THUMBS, crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const people = [
+  [crop("/assets/ugc/shoot.jpg", 0.6, 0.38, 2.4, 1.2), "Creator A", ["Skincare", "Home"]],
+  [crop("/assets/ugc/brief.jpg", 0.3, 0.3, 2.6, 1.2), "Creator B", ["Parents", "Food"]],
+  [crop("/assets/ugc/brief.jpg", 0.75, 0.38, 2.6, 1.2), "Creator C", ["Fashion", "Fitness"]],
+];
+const inf = W.variant === "influencer";
+const fitPeople = [
+  [crop("/assets/inf/shortlist.jpg", 0.30, 0.27, 7, 1.2), "Creator A", 86, "Strong match", "ok"],
+  [crop("/assets/inf/shortlist.jpg", 0.44, 0.27, 7, 1.2), "Creator B", 54, "Partial match", "warn"],
+  [crop("/assets/inf/shortlist.jpg", 0.58, 0.27, 7, 1.2), "Creator C", 28, "Weak match", "bad"],
+];
+const terms = [["Deliverables", "Agreed"], ["Post dates", "Agreed"], ["Rights to run as ads", "Agreed"], ["Paid partnership label", "On every post"]];
+const track = [["Creator A", 78, "Link and code", "Reuse as ad"], ["Creator B", 46, "Link and code", ""], ["Creator C", 22, "Link only", ""]];
+---
+{inf ? (
+<Frame title="Creator campaign" label="Illustration of an influencer campaign board: brief, shortlist, terms and tracking. Not a client account." caption={W.illustrative} tabs={["Brief", "Shortlist", "Terms", "Tracking"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">The brief <span>One idea, room for their voice</span></p>
+    <dl class="s2p-card bb-brief">
+      {[["Idea", "One idea, in one line"], ["Format", "Posts and stories, on set dates"], ["Their voice", "Written in the creator's own words"], ["Must mention", "The product, once, plainly"], ["Disclose", "Paid partnership label on every post"]].map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+    </dl>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Shortlist <span>Checked on who follows them</span></p>
+    <ul class="bb-cr">
+      {fitPeople.map(([th, n, w, t, c], k) => (
+        <li class={"s2p-card" + (k === 0 ? " bb-cr--on" : "")}><span class="s2p-ph bb-ph" style={th as string} role="img" aria-label="Creator photo"></span><b>{n}</b><small class="s2p-mute">Audience fit</small><span class="bb-fit"><i style={`width:${w}%`}></i></span><em class={"s2p-chip s2p-chip--" + c}>{t}</em></li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Terms <span>In writing before anything is made</span></p>
+    <ul class="bb-terms">
+      {terms.map(([k, v], i) => <li class={"s2p-card" + (i === 2 ? " bb-win" : "")}><b>{k}</b><em class={"s2p-chip " + (i === 2 ? "s2p-chip--sun" : "s2p-chip--ok")}>{v}</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Tracking <span>Each creator read against orders</span></p>
+    <ul class="bb-trk">
+      {track.map(([n, w, how, tag], k) => (
+        <li class={"s2p-card" + (k === 0 ? " bb-win" : "")}><b>{n}</b><span class="bb-fit"><i style={`width:${w}%`}></i></span><small class="s2p-mute">{how}</small>{tag ? <em class="s2p-chip s2p-chip--sun">{tag}</em> : <span></span>}</li>
+      ))}
+    </ul>
+  </div>
+</Frame>
+) : (
+<Frame title="Creative brief" label="Illustration of a UGC creative brief with creator cards. Not a client account." caption={W.illustrative} tabs={["Brief", "Creators", "Delivery", "Results"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">The brief <span>One page, one idea</span></p>
+    <dl class="s2p-card bb-brief">
+      {[["Hook", "Show the problem in the first second"], ["Angle", "A real person, in a real home"], ["Must show", "The product in use, close up"], ["Must say", "One plain benefit"], ["Avoid", "Claims we cannot back up"]].map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+    </dl>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Creators <span>Matched to the product and the buyer</span></p>
+    <ul class="bb-cr">
+      {people.map(([th, n, tags], k) => (
+        <li class={"s2p-card" + (k === 0 ? " bb-cr--on" : "")}><span class="s2p-ph bb-ph" style={th as string} role="img" aria-label="Creator photo"></span><b>{n}</b><span class="bb-tags">{(tags as string[]).map((t) => <em class="s2p-chip">{t}</em>)}</span>{k === 0 ? <em class="s2p-chip s2p-chip--sun">Selected</em> : null}</li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Delivery <span>Raw clips in, edited cuts out</span></p>
+    <ul class="bb-dl">
+      {people.map(([th, n], k) => (
+        <li class="s2p-card"><span class="s2p-ph bb-ph bb-ph--s" style={th as string} role="img" aria-label="Creator photo"></span><b>{n}</b><span class="s2p-chip s2p-chip--ok">Raw clips in</span><span class={"s2p-chip " + (k === 2 ? "" : "s2p-chip--ok")}>{k === 2 ? "Editing" : "Cuts ready"}</span></li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Test the cuts <span>The winner shapes the next brief</span></p>
+    <ul class="bb-cuts">
+      {[["Cut 1", THUMBS.unbox], ["Cut 2", THUMBS.serum], ["Cut 3", THUMBS.pack], ["Cut 4", THUMBS.jar]].map(([n, th], k) => (
+        <li class={"s2p-card" + (k === 2 ? " bb-win" : "")}><span class="s2p-ph bb-cut" style={th as string} role="img" aria-label="Cut thumbnail"></span><b>{n}</b><em class={"s2p-chip " + (k === 2 ? "s2p-chip--sun" : "")}>{k === 2 ? "Winner" : "Retired"}</em></li>
+      ))}
+    </ul>
+  </div>
+</Frame>
+)}
+<style is:global>
+.bb-brief { margin: 0; flex: 1; min-height: 0; display: grid; align-content: center; gap: .7em; padding: 1em 1.2em; }
+.bb-brief div { display: grid; grid-template-columns: 6.4em minmax(0, 1fr); gap: .8em; align-items: baseline; padding-bottom: .6em; border-bottom: 1px solid #EEF0F2; }
+.bb-brief div:last-child { border: 0; padding: 0; }
+.bb-brief dt { font: 800 .76em var(--font-body); text-transform: uppercase; letter-spacing: .07em; color: var(--mmc-blue); }
+.bb-brief dd { margin: 0; font: 700 1em/1.3 var(--font-body); color: #1C2B33; }
+.bb-cr, .bb-cuts { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .8em; align-content: center; }
+.bb-cr { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.bb-cuts { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.bb-cr li, .bb-cuts li { display: grid; gap: .5em; padding: .55em; justify-items: start; }
+.bb-cr b, .bb-cuts b, .bb-dl b { font: 800 .95em var(--font-display); color: #1C2B33; }
+.bb-ph { display: block; width: 100%; aspect-ratio: 5 / 4; border-radius: .6em; }
+.bb-ph--s { width: 3.4em; aspect-ratio: 1; flex: none; }
+.bb-tags { display: flex; flex-wrap: wrap; gap: .3em; }
+.bb-cr--on, .bb-win { border-color: var(--s2-sun); box-shadow: 0 0 0 2px var(--s2-sun); }
+.bb-fit { display: block; width: 100%; height: .6em; border-radius: 99px; background: #E4E6EA; } .bb-fit i { display: block; height: 100%; border-radius: 99px; background: var(--mmc-blue); }
+.bb-cr small { font: 700 .76em var(--font-body); }
+.bb-terms, .bb-trk { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .6em; align-content: center; }
+.bb-terms li { display: flex; align-items: center; justify-content: space-between; gap: .8em; padding: .65em .9em; }
+.bb-terms b, .bb-trk b { font: 800 .95em var(--font-display); color: #1C2B33; }
+.bb-trk li { display: grid; grid-template-columns: 5.4em minmax(0, 1fr) auto auto; align-items: center; gap: .8em; padding: .65em .9em; }
+.bb-dl { list-style: none; margin: 0; padding: 0; flex: 1; display: grid; gap: .7em; align-content: center; }
+.bb-dl li { display: flex; align-items: center; gap: .8em; padding: .6em .8em; }
+.bb-dl b { margin-right: auto; }
+.bb-cut { display: block; width: 100%; aspect-ratio: 4 / 5; border-radius: .6em; }
+@media (max-width: 560px) { .bb-trk li { grid-template-columns: 4.6em minmax(0, 1fr) auto; } .bb-trk small { display: none; } .bb-cr small { display: none; } .bb-brief div { grid-template-columns: 5em 1fr; } .bb-ph { aspect-ratio: 1; } .bb-tags { display: none; } .bb-dl .s2p-chip:nth-of-type(1) { display: none; } }
+@container (max-height: 195px) { .bb-brief { gap: .45em; padding: .7em 1em; } .bb-brief div { padding-bottom: .35em; } .bb-brief div:nth-child(n+5) { display: none; } .bb-brief div:nth-child(4) { border: 0; padding: 0; } }
+</style>

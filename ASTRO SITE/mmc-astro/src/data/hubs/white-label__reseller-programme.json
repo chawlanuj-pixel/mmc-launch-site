@@ -1,0 +1,635 @@
+{
+  "file": "white-label-reseller-programme.html",
+  "path": "/white-label/reseller-programme/",
+  "key": "wl_reseller_programme",
+  "title": "SEO Reseller Programme for Agencies | MMC",
+  "description": "Resell SEO, PPC and web services under your own brand. MMC's reseller programme gives agencies written scopes, partner pricing and reports in your name.",
+  "ogTitle": "White-label reseller programme for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label reseller programme.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/reseller-programme/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label reseller programme",
+          "item": "https://www.mondaymarketing.company/white-label/reseller-programme/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/reseller-programme/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/reseller-programme/",
+      "name": "SEO Reseller Programme for Agencies | MMC",
+      "description": "Resell SEO, PPC and web services under your own brand. MMC's reseller programme gives agencies written scopes, partner pricing and reports in your name.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/reseller-programme/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/reseller-programme/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/reseller-programme/#service",
+      "name": "White-label Reseller Programme",
+      "serviceType": "White-label reseller programme",
+      "description": "White-label reseller programme delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/reseller-programme/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/reseller-programme/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an SEO reseller programme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It lets an agency sell SEO and other marketing services under its own brand while a partner delivers them. With MMC you buy each package at a wholesale rate, bill your own client and keep the difference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is reselling different from referral or white-label delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you resell, you bill the client and keep the relationship. In a referral the provider bills the client directly and the relationship moves to them. White-label delivery also keeps the client with you, but the scope is shaped per client rather than packaged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do margins work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MMC bills your agency the wholesale rate. You bill your client the price you set. Your margin is the difference, less the time your own team spends on the account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a joining fee or a minimum commitment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The minimum commitment is three months. Any other terms are agreed on the call and written down before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I rename the services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can present them under your own names and brand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I resell to clients abroad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can. We deliver for agencies in the US, UK, Canada, Australia, the UAE, Singapore, India and the rest of Europe. See how hours and invoicing work on the page about our white-label agency in India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which currencies do you invoice in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indian rupees or US dollars. We agree which one when we write the scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide sales support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide a one-page summary of each package that you can adapt, answers to common client questions and a named contact for scope questions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with the white-label reseller programme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tell us the market you sell to and which services interest you. After the NDA we agree packages and onboarding."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_reseller_programme",
+    "wm": "SEO Reseller Programme",
+    "eyebrow": "● SEO reseller programme",
+    "h1": [
+      "An SEO and marketing",
+      [
+        "reseller programme ",
+        "for agencies",
+        "."
+      ]
+    ],
+    "sub": "Resell SEO, PPC, web and content under your own brand. You buy at a wholesale rate, bill your own client and keep the margin.",
+    "tiles": [
+      {
+        "img": "contact/meeting.jpg",
+        "pos": "50% 50%",
+        "label": "Partner",
+        "note": "Named contact"
+      },
+      {
+        "img": "about2/desk-open.jpg",
+        "pos": "50% 50%",
+        "label": "Packages",
+        "note": "Written scopes"
+      },
+      {
+        "img": "company/onepage.jpg",
+        "pos": "50% 50%",
+        "label": "Materials",
+        "note": "One-pagers to share"
+      },
+      {
+        "img": "res/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Reports",
+        "note": "Your brand"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "An SEO reseller programme lets an agency sell SEO and other marketing services under its own brand while a partner delivers them. With MMC, you buy each service at a wholesale rate, bill your own client at the price you set and keep the difference. We deliver to a written scope, under NDA, with reports in your name.",
+      "hl": "you buy each service at a wholesale rate",
+      "who": "Monday Marketing Company (MMC) runs this reseller programme for agencies, consultancies and networks. You own the client relationship and the invoice; we do the work.",
+      "points": [
+        {
+          "icon": "coin",
+          "title": "Your pricing",
+          "text": "You buy wholesale and set the client price."
+        },
+        {
+          "icon": "grid",
+          "title": "Defined scopes",
+          "text": "Packages with written deliverables."
+        },
+        {
+          "icon": "users",
+          "title": "Partner support",
+          "text": "Onboarding and a named contact."
+        }
+      ],
+      "image": "contact/meeting.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "res-prog",
+          "h": "How the reseller programme works",
+          "paras": [
+            "You choose services from the <a href=\"/white-label/\">white-label range</a>, we agree a written scope for each package, and you sell them to your clients under your own service names. MMC invoices your agency at a wholesale rate; you invoice your client at the price you set. We deliver and report to you, never to your client.",
+            "The difference from general outsourcing is repeatability: defined packages rather than bespoke teams. For a flexible team, see <a href=\"/white-label/outsourcing/\">agency outsourcing</a>."
+          ],
+          "table": {
+            "caption": "Reseller programme versus outsourcing",
+            "head": [
+              "",
+              "Reseller programme",
+              "Agency outsourcing"
+            ],
+            "rows": [
+              [
+                "Scope",
+                "Defined packages",
+                "Flexible, shaped to you"
+              ],
+              [
+                "Best for",
+                "Repeatable sales",
+                "Variable volume"
+              ],
+              [
+                "Setup",
+                "Choose packages and onboard",
+                "Define roles and tools"
+              ],
+              [
+                "Read next",
+                "This page",
+                "<a href=\"/white-label/outsourcing/\">Agency outsourcing</a>"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "resell-refer-deliver",
+          "h": "Reselling, referral and white-label delivery compared",
+          "paras": [
+            "Agencies use three arrangements to sell work they do not deliver themselves. The difference is who bills the client, who owns the relationship and how you earn.",
+            "<b>Reselling, which is this programme.</b> You buy a defined package at a wholesale rate and bill your own client at your price. The client stays yours and sees your brand. You earn the difference between the two.",
+            "<b>Referral.</b> You introduce the client to a provider, who contracts and bills them directly. The client relationship moves to the provider, and any referral fee is whatever the two of you agree. The client knows who does the work.",
+            "<b>White-label delivery.</b> As with reselling, you bill the client and keep the relationship, but the scope is shaped per client or run by a <a href=\"/white-label/outsourcing/\">dedicated team</a>, and priced to that scope. It suits bespoke or high-volume work; reselling suits repeatable packages."
+          ],
+          "table": {
+            "caption": "Reselling, referral and white-label delivery compared",
+            "head": [
+              "",
+              "Reselling",
+              "Referral",
+              "White-label delivery"
+            ],
+            "rows": [
+              [
+                "Who bills the client",
+                "Your agency",
+                "The provider",
+                "Your agency"
+              ],
+              [
+                "Who owns the client",
+                "Your agency",
+                "The provider",
+                "Your agency"
+              ],
+              [
+                "Brand the client sees",
+                "Yours",
+                "The provider's",
+                "Yours"
+              ],
+              [
+                "How you earn",
+                "Your price minus the wholesale rate",
+                "A referral fee, if one is agreed",
+                "Your price minus the delivery cost"
+              ],
+              [
+                "Scope",
+                "Defined packages",
+                "Set by the provider",
+                "Shaped per client or team"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "what-you-can-resell",
+          "h": "What you can resell",
+          "paras": [
+            "Packages can be built from any service we deliver white label: <a href=\"/white-label/seo/\">SEO</a>, including local SEO for US and UK businesses, <a href=\"/white-label/link-building/\">link building</a>, <a href=\"/white-label/ppc/\">Google Ads and PPC</a>, <a href=\"/white-label/meta-ads/\">paid social</a>, <a href=\"/white-label/web-development/\">web development</a>, <a href=\"/white-label/shopify-development/\">Shopify</a>, <a href=\"/white-label/wordpress-development/\">WordPress</a>, <a href=\"/white-label/content-marketing/\">content writing</a>, <a href=\"/white-label/social-media-management/\">social media management</a> and <a href=\"/white-label/reporting/\">reporting</a>.",
+            "Each package lists what the client gets each month, what is out of scope and how changes are priced, so your sales team can quote it without checking with us first."
+          ]
+        },
+        {
+          "id": "billing-and-margin",
+          "h": "Who bills whom and how margin works",
+          "paras": [
+            "MMC invoices your agency at the wholesale rate for each package, in Indian rupees or US dollars. You invoice your client on your own paper, at your own price. MMC never invoices or contacts your client.",
+            "Your margin is your client price minus the wholesale rate and the time your own team spends managing the account. The <a href=\"/white-label/pricing-models/\">pricing models page</a> shows how to work it out. Ad spend is paid by the client to the ad platform and is not part of a package.",
+            "The minimum commitment is three months."
+          ]
+        },
+        {
+          "id": "sales-support",
+          "h": "Sales support you get",
+          "paras": [
+            "One-page summaries of each package that you can adapt and put your name on, answers to the questions clients usually ask, and a named contact for scope questions before you quote. On the call we can walk you through an anonymised sample audit."
+          ]
+        },
+        {
+          "id": "joining",
+          "h": "Joining: steps and what we need from you",
+          "paras": [
+            "<a href=\"/white-label/register/\">Register your agency</a>, then we hold a call to agree which packages you will resell first. We sign an NDA, write the scopes and run your first client as a pilot.",
+            "From you we need the markets you sell to, the services your clients ask for, the service names and branding you want on reports, and one contact on your side."
+          ]
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What the reseller programme",
+      "h2b": "includes.",
+      "lede": "Packages, material, delivery and a contact.",
+      "items": [
+        {
+          "t": "Choose packages",
+          "d": "Pick from defined service packages.",
+          "img": "about2/desk-open.jpg",
+          "alt": "Choose packages"
+        },
+        {
+          "t": "Sales material",
+          "d": "One-page summaries you can adapt.",
+          "img": "company/onepage.jpg",
+          "alt": "Sales material"
+        },
+        {
+          "t": "Onboarding",
+          "d": "A structured start for each client.",
+          "img": "contact/brief.jpg",
+          "alt": "Onboarding"
+        },
+        {
+          "t": "Delivery to scope",
+          "d": "Work delivered against the written scope.",
+          "img": "company/session.jpg",
+          "alt": "Delivery to scope"
+        },
+        {
+          "t": "Reporting",
+          "d": "Reports under your brand.",
+          "img": "res/insights.jpg",
+          "alt": "Reporting"
+        },
+        {
+          "t": "Partner contact",
+          "d": "A named contact for questions.",
+          "img": "contact/call.jpg",
+          "alt": "Partner contact"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label reseller programme.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "contact/meeting.jpg",
+      "alt": "Why agencies choose MMC for white-label reseller programme.",
+      "items": [
+        {
+          "t": "Defined packages",
+          "d": "Clients know what they are buying."
+        },
+        {
+          "t": "Your margin",
+          "d": "You set client pricing."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label reseller programme works,",
+      "h2b": "step by step.",
+      "img": "contact/meeting.jpg",
+      "alt": "How white-label reseller programme works, step by step.",
+      "items": [
+        {
+          "t": "Apply",
+          "d": "Tell us your market and services."
+        },
+        {
+          "t": "Choose packages",
+          "d": "We agree which you will sell."
+        },
+        {
+          "t": "Onboard",
+          "d": "We train you on the scope."
+        },
+        {
+          "t": "Sell and deliver",
+          "d": "You sell; we deliver."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label reseller programme for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, consultancy or network that wants defined MMC services to resell under your own brand, without building the team.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label reseller programme fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        },
+        {
+          "n": "White-label agency India",
+          "d": "An India delivery partner for your agency.",
+          "img": "contact/office.jpg",
+          "href": "/white-label/india/",
+          "link": "See the India partner page"
+        },
+        {
+          "n": "White-label SEO",
+          "d": "Audits, fixes and reports behind your brand.",
+          "img": "seo/authority.jpg",
+          "href": "/white-label/seo/",
+          "link": "See white-label SEO"
+        },
+        {
+          "n": "All services",
+          "d": "Everything MMC does directly.",
+          "img": "company/strategy.jpg",
+          "href": "/services/",
+          "link": "See All services"
+        },
+        {
+          "n": "Agency outsourcing",
+          "d": "A dedicated team that works as yours.",
+          "img": "about2/huddle.jpg",
+          "href": "/white-label/outsourcing/",
+          "link": "See agency outsourcing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about the white-label",
+      "reseller programme."
+    ],
+    "faq": [
+      {
+        "q": "What is an SEO reseller programme?",
+        "a": "It lets an agency sell SEO and other marketing services under its own brand while a partner delivers them. With MMC you buy each package at a wholesale rate, bill your own client and keep the difference."
+      },
+      {
+        "q": "How is reselling different from referral or white-label delivery?",
+        "a": "When you resell, you bill the client and keep the relationship. In a referral the provider bills the client directly and the relationship moves to them. White-label delivery also keeps the client with you, but the scope is shaped per client rather than packaged."
+      },
+      {
+        "q": "How do margins work?",
+        "a": "MMC bills your agency the wholesale rate. You bill your client the price you set. Your margin is the difference, less the time your own team spends on the account."
+      },
+      {
+        "q": "Is there a joining fee or a minimum commitment?",
+        "a": "The minimum commitment is three months. Any other terms are agreed on the call and written down before work starts."
+      },
+      {
+        "q": "Can I rename the services?",
+        "a": "Yes, you can present them under your own names and brand."
+      },
+      {
+        "q": "Can I resell to clients abroad?",
+        "a": "You can. We deliver for agencies in the US, UK, Canada, Australia, the UAE, Singapore, India and the rest of Europe. See how hours and invoicing work on the page about our <a href=\"/white-label/india/\">white-label agency in India</a>."
+      },
+      {
+        "q": "Which currencies do you invoice in?",
+        "a": "Indian rupees or US dollars. We agree which one when we write the scope."
+      },
+      {
+        "q": "Do you provide sales support?",
+        "a": "We provide a one-page summary of each package that you can adapt, answers to common client questions and a named contact for scope questions."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with the white-label reseller programme?",
+        "a": "Tell us the market you sell to and which services interest you. After the NDA we agree packages and onboarding."
+      }
+    ],
+    "cta": {
+      "h2a": "Join the reseller programme",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We agree the packages you will resell first and how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Sell defined packages",
+        "tag": "Offer",
+        "breaks": "Selling a vague promise.",
+        "why": "If you cannot describe the package in a line, your sales team cannot sell it twice the same way.",
+        "does": "We provide defined packages with a written scope and sales material, which you can rename and position."
+      },
+      {
+        "k": "Reuse the scope",
+        "tag": "Scopes",
+        "breaks": "Writing a custom scope for every client.",
+        "why": "Every bespoke scope is a new risk and a new delay before the work can start.",
+        "does": "Packages carry a written scope you can reuse. Changes are quoted separately, so the base stays clean."
+      },
+      {
+        "k": "Onboard the same way each time",
+        "tag": "Onboarding",
+        "breaks": "Setting up each client differently.",
+        "why": "Missing logins and unclear goals slow every project, and you end up chasing information.",
+        "does": "One intake and one client code per client, with a checklist for what we need from you."
+      },
+      {
+        "k": "Show delivery progress",
+        "tag": "Delivery view",
+        "breaks": "Leaving you blind to progress.",
+        "why": "A client asks for an update and you have to ask us before you can answer.",
+        "does": "A delivery tracker against the written scope, with a named contact on our side."
+      },
+      {
+        "k": "See margin per package",
+        "tag": "Margin",
+        "breaks": "Guessing your margin.",
+        "why": "A package that sold well can still lose money if the cost of delivery was not clear when you priced it.",
+        "does": "You set the client price, you know our delivery cost under the agreement, and your margin is visible per package."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways reseller programmes",
+      "h2b": "go wrong for agencies.",
+      "lede": "Reselling works when what you sell is simple to explain and the same every time. These are the five places partner programmes slip."
+    },
+    "process": {
+      "h2a": "How we onboard you as a reseller,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and package choice",
+          "d": "We sign the NDA and agree which packages you will resell first, with the service names you want to use.",
+          "out": "A short list of packages with written scopes."
+        },
+        {
+          "t": "Pilot client",
+          "d": "Your first client runs on one package, through the intake and the delivery tracker.",
+          "out": "A pilot delivery to judge us on."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Intake form, naming, reporting and escalation are written so every client follows the same path.",
+          "out": "A reseller handbook for your sales team."
+        },
+        {
+          "t": "Scale the programme",
+          "d": "More clients and packages join, with your sales material and our scopes kept in step.",
+          "out": "A partner programme you can run repeatedly."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

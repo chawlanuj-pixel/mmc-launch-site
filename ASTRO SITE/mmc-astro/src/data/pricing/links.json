@@ -1,0 +1,18 @@
+{
+  "_note": "Private share tokens. Page addresses are /pricing-model/<token>/. Never link these from the site, menu, sitemap or llms files. To rotate a link, change the token and rebuild. The four pages never reference each other.",
+  "tokens": {
+    "india": "in-f886f1d7",
+    "international": "intl-fc91ae42",
+    "whitelabelIndia": "wl-157bdd6e",
+    "whitelabelInternational": "wli-da35b0f6"
+  },
+  "countries": [
+    "United States",
+    "United Kingdom",
+    "United Arab Emirates",
+    "Canada",
+    "Australia",
+    "Singapore"
+  ],
+  "_countries_note": "Markets shown on the US$ pages. Placeholder list, confirm with the owner; the repo itself only states India as area served"
+}

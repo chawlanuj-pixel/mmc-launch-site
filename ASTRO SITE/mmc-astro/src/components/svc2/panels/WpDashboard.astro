@@ -1,0 +1,65 @@
+---
+// PANEL: WpDashboard (kind "WpDashboard"). A WordPress-style admin (generic layout, no logo). 4 steps.
+//   1 Plan: the Pages screen with the templates the site needs (Home, Service, Landing, Blog). Nav: Pages.
+//   2 Theme and plugins: a custom theme card and a short plugin list; extras shown as removed. Nav: Plugins.
+//   3 Speed and updates: core, theme and plugin updates up to date, and a speed bar. Nav: Updates.
+//   4 Hand over: a block editor sketch and an editing guide card. Nav: Pages.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix wp-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="WordPress-style admin" label="Illustration of a WordPress-style admin with pages, plugins and updates. Not a client site." caption={W.illustrative} tabs={["Pages", "Plugins", "Updates"]} tabFor={[0, 1, 2, 0]} accent="#2271B1" accentSoft="#E3EFF8" barBg="#F0F0F1">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4 wp">
+    <nav class="wp-nav" aria-hidden="true">
+      {[["Dashboard", ""], ["Posts", ""], ["Pages", "1 4"], ["Plugins", "2"], ["Appearance", ""], ["Updates", "3"], ["Settings", ""]].map(([n, st]) => <span class="wp-nav__i" data-s={st}>{n}</span>)}
+    </nav>
+    <section class="wp-main">
+      <div class="s2p-only-1 wp-pages" style="--show:grid">
+        <p class="s2p-lbl">Pages and templates</p>
+        {[["Home", "Home template"], ["Services", "Service template"], ["Campaign", "Landing template"], ["Journal", "Blog template"]].map(([n, t]) => <div class="s2p-card wp-row"><b>{n}</b><em class="s2p-chip s2p-chip--blue">{t}</em></div>)}
+      </div>
+      <div class="s2p-only-2 wp-plug" style="--show:grid">
+        <p class="s2p-lbl">Theme and plugins</p>
+        <div class="s2p-card wp-row wp-theme"><b>Custom theme, built to your design</b><em class="s2p-chip s2p-chip--ok">Active</em></div>
+        {["Forms", "SEO", "Caching"].map((n) => <div class="s2p-card wp-row"><b>{n}</b><em class="s2p-chip s2p-chip--ok">Active</em></div>)}
+        {["Unused slider", "Duplicate analytics"].map((n) => <div class="s2p-card wp-row wp-off"><b>{n}</b><em class="s2p-chip">Removed</em></div>)}
+      </div>
+      <div class="s2p-only-3 wp-upd" style="--show:grid">
+        <p class="s2p-lbl">Updates and speed</p>
+        {["WordPress core", "Theme", "Plugins"].map((n) => <div class="s2p-card wp-row"><b>{n}</b><em class="s2p-chip s2p-chip--ok">Up to date</em></div>)}
+        <div class="s2p-card wp-speed"><b>Page speed</b><span class="wp-meter"><i></i></span><small class="s2p-mute">Images, caching and scripts cleaned up</small></div>
+      </div>
+      <div class="s2p-only-4 wp-edit" style="--show:grid">
+        <p class="s2p-lbl">Edit page</p>
+        <div class="s2p-card wp-blocks"><span class="wp-blk wp-blk--h">Heading block</span><span class="wp-blk">Text block</span><span class="wp-blk wp-blk--i">Image block</span><span class="wp-blk wp-blk--add">+ Add block</span></div>
+        <div class="s2p-card wp-row"><b>Editing guide</b><em class="s2p-chip s2p-chip--sun">Handed over</em></div>
+      </div>
+    </section>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.wp { flex-direction: row; gap: 1em; }
+.wp-nav { flex: none; width: 24%; display: grid; align-content: start; gap: .2em; padding: .6em; border-radius: .8em; background: #1D2327; }
+.wp-nav__i { padding: .55em .7em; border-radius: .4em; font: 700 .9em var(--font-body); color: #C3C4C7; }
+.s2-work[data-step="1"] .wp-nav__i[data-s~="1"], .s2-work[data-step="2"] .wp-nav__i[data-s~="2"], .s2-work[data-step="3"] .wp-nav__i[data-s~="3"], .s2-work[data-step="4"] .wp-nav__i[data-s~="4"] { background: #2271B1; color: #fff; }
+.wp-main { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; }
+.wp-pages, .wp-plug, .wp-upd, .wp-edit { gap: .6em; }
+.wp-row { display: flex; align-items: center; justify-content: space-between; gap: .6em; padding-block: .55em; }
+.wp-row b { font: 800 .95em var(--font-body); min-width: 0; }
+.wp-theme { border-color: #2271B1; }
+.wp-off { opacity: .6; }
+.wp-speed { display: grid; gap: .5em; }
+.wp-meter { display: block; height: .9em; border-radius: 99px; background: #E4E6EB; overflow: hidden; }
+.wp-meter i { display: block; height: 100%; width: 0; border-radius: 99px; background: #1B7A3D; transition: width .9s var(--s2-ease); }
+.s2-work[data-step="3"] .wp-meter i { width: 86%; }
+.wp-blocks { display: grid; gap: .5em; }
+.wp-blk { padding: .6em .8em; border: 1px dashed #BCC0C4; border-radius: .4em; font: 700 .9em var(--font-body); color: #50575E; }
+.wp-blk--h { font-size: 1.15em; font-weight: 800; color: #1D2327; }
+.wp-blk--i { background: #E3EFF8; border-style: solid; border-color: #B8D4EA; }
+.wp-blk--add { border-color: #2271B1; color: #2271B1; }
+@media (prefers-reduced-motion: reduce) { .wp-meter i { transition: none; } }
+@media (max-width: 560px) { .wp-nav { width: 28%; padding: .3em; } .wp-nav__i { padding: .5em .4em; font-size: .78em; } }
+@media (max-width: 900px) { .s2-ui:has(.wp-row) .s2-st { padding: 10px 12px; gap: .6em; } }
+@media (max-width: 900px) { .wp-plug .wp-row:nth-child(7), .wp-plug .wp-row:nth-child(3), .wp-speed small, .wp-blk:nth-child(2) { display: none; } }
+</style>

@@ -1,0 +1,553 @@
+{
+  "file": "aeo.html",
+  "path": "/services/seo/aeo/",
+  "key": "aeo",
+  "title": "AEO Services India: Featured Snippets and Voice | MMC",
+  "description": "Answer engine optimisation for D2C, B2B and education brands in India. Answer-first copy, FAQ schema and structure for snippets, voice and AI answers.",
+  "ogTitle": "AEO: become the answer buyers read",
+  "ogDescription": "Answer-first copy, FAQ schema and structure.",
+  "ogAlt": "Monday Marketing Company: aeo.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/services/seo/aeo/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "AI SEO",
+          "item": "https://www.mondaymarketing.company/services/seo/ai-seo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "AEO",
+          "item": "https://www.mondaymarketing.company/services/seo/aeo/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/aeo/#webpage",
+      "url": "https://www.mondaymarketing.company/services/seo/aeo/",
+      "name": "AEO Services India: Featured Snippets and Voice | MMC",
+      "description": "Answer engine optimisation for D2C, B2B and education brands in India. Answer-first copy, FAQ schema and structure for snippets, voice and AI answers.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/services/seo/aeo/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/services/seo/aeo/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/services/seo/aeo/#service",
+      "name": "AEO",
+      "serviceType": "Answer engine optimisation",
+      "description": "Answer engine optimisation for D2C, B2B and education brands: answer-first copy, FAQ and structured data for featured snippets, voice answers and AI answers.",
+      "url": "https://www.mondaymarketing.company/services/seo/aeo/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/services/seo/aeo/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer engine optimisation is the practice of structuring pages so search features and assistants can lift a clear, correct answer from them, such as featured snippets, voice replies and AI summaries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is AEO different from SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO makes a page findable and rankable. AEO shapes the content on the page so it can be used as the answer: a direct answer first, real FAQs and matching structured data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is AEO different from GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO targets answer features in search and voice. GEO targets being cited inside generative AI tools such as ChatGPT, Perplexity and Gemini. They share content but the surfaces and signals differ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does FAQ schema still help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It helps machines understand the questions and answers on a page, but search engines decide how and whether to show it, and that can change. We use it where it matches real content, and do not rely on it alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee a featured snippet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Search engines choose what to show, and the choice varies by query and over time. We commit to the work in the scope and report which answer features your pages appear in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does AEO cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is AEO for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brands with questions to answer. We do this for D2C, B2B and education brands and set it up differently for each: D2C on products and repeat purchase, B2B on specifications and enquiries, education on courses and admissions."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "aeo",
+    "wm": "AEO",
+    "eyebrow": "● Answer engine optimisation",
+    "h1": [
+      "AEO",
+      [
+        "that makes you ",
+        "the short answer",
+        "."
+      ]
+    ],
+    "sub": "Featured snippets, voice answers and AI summaries pick one clear answer. We write and structure your pages so yours is the one they pick.",
+    "tiles": [
+      {
+        "img": "seo/aeo.jpg",
+        "pos": "50% 50%",
+        "label": "The answer",
+        "note": "Stated up front"
+      },
+      {
+        "img": "seo/pages.jpg",
+        "pos": "50% 50%",
+        "label": "Pages",
+        "note": "Built for questions"
+      },
+      {
+        "img": "seo/intent.jpg",
+        "pos": "50% 50%",
+        "label": "Questions",
+        "note": "Grouped by intent"
+      },
+      {
+        "img": "web/seo.jpg",
+        "pos": "50% 50%",
+        "label": "Structure",
+        "note": "Schema that fits"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Answer engine optimisation (AEO) is the work of shaping pages so that search features and assistants can lift a clear, correct answer from them: featured snippets, People Also Ask boxes, voice replies and AI summaries. It means putting the answer first, in plain words, with structure that machines can read.",
+      "hl": "put the answer first",
+      "who": "Monday Marketing Company (MMC) does AEO for D2C, B2B and education brands, as one workstream inside our AI SEO programme.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Answer first",
+          "text": "A direct answer in the first lines, then the detail."
+        },
+        {
+          "icon": "grid",
+          "title": "FAQ and schema",
+          "text": "Questions, definitions and structured data that match the page."
+        },
+        {
+          "icon": "link",
+          "title": "Checked for accuracy",
+          "text": "Every claim is reviewed so what gets quoted is true."
+        }
+      ],
+      "image": "seo/aeo.jpg",
+      "chip": "Short, structured, accurate answers"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "what-aeo-is",
+          "h": "What AEO looks like on a page",
+          "paras": [
+            "A page built for answers states the question, answers it in a sentence or two, and then earns the longer read. A product page answers what it is, who it suits and what it costs to use. A course page answers eligibility, duration and the next step. A service page answers what you do and for whom.",
+            "This is not a trick. It is how a good support article reads, written so a person or a machine can find the answer without hunting."
+          ],
+          "img": "seo/pages.jpg",
+          "cap": "A page planned around buyer questions."
+        },
+        {
+          "id": "aeo-vs",
+          "h": "AEO compared with classic SEO and GEO",
+          "paras": [
+            "AEO sits inside <a href=\"/services/seo/ai-seo/\">AI SEO</a>. It shares its foundation with <a href=\"/services/seo/\">SEO</a> and its goal of being quoted with <a href=\"/services/seo/geo/\">GEO</a>, but the work is different."
+          ],
+          "table": {
+            "caption": "AEO compared with SEO and GEO",
+            "head": [
+              "",
+              "Classic SEO",
+              "AEO",
+              "GEO"
+            ],
+            "rows": [
+              [
+                "Goal",
+                "Rank the page",
+                "Be the short answer",
+                "Be cited by generative AI"
+              ],
+              [
+                "Format",
+                "Whole page and site",
+                "Answer block, FAQ, schema",
+                "Sources, entities, mentions"
+              ],
+              [
+                "Surfaces",
+                "Search results",
+                "Snippets, voice, answer boxes",
+                "ChatGPT, Perplexity, Gemini, AI Overviews"
+              ],
+              [
+                "Read next",
+                "<a href=\"/services/seo/\">SEO</a>",
+                "This page",
+                "<a href=\"/services/seo/geo/\">GEO</a>"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Voice and local questions.",
+            "text": "Spoken questions are often local. See <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a> for the local side, and the <a href=\"/guides/\">guides</a> for how we read results."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where answers are lost",
+      "h2a": "Five ways pages",
+      "h2b": "miss the answer slot.",
+      "lede": "Each stage below is where a page that should be quoted is passed over, and the AEO work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Find the questions",
+        "tag": "Question research",
+        "breaks": "Guessing what buyers ask.",
+        "why": "Answer features are triggered by specific questions. If you write for the wrong ones, no feature fits your page.",
+        "does": "We collect the questions from search, sales calls and support, then group them by what the buyer wants to do next.",
+        "href": "/services/seo/aeo/",
+        "img": "seo/intent.jpg"
+      },
+      {
+        "k": "Put the answer first",
+        "tag": "Answer-first copy",
+        "breaks": "Burying the answer under a story.",
+        "why": "A snippet or spoken reply needs a self-contained answer it can lift without rewriting.",
+        "does": "We open each section with a direct answer in plain words, then add detail, examples and the next step.",
+        "href": "/services/seo/aeo/",
+        "img": "seo/pages.jpg"
+      },
+      {
+        "k": "Add FAQs that earn their place",
+        "tag": "FAQ content and schema",
+        "breaks": "Generic FAQs that no one asked.",
+        "why": "FAQ markup only helps when the questions are real and the answers match the page.",
+        "does": "We write FAQs from real buyer questions and mark them up so machines can read them.",
+        "href": "/services/seo/aeo/",
+        "img": "seo/aeo.jpg"
+      },
+      {
+        "k": "Structure the page for machines",
+        "tag": "Structured data",
+        "breaks": "Pages with no markup or the wrong markup.",
+        "why": "Schema tells a crawler what a page is: a product, a course, a how-to, an organisation.",
+        "does": "We add and validate structured data that fits the page type, and keep it in step with the visible content.",
+        "href": "/services/seo/",
+        "img": "web/seo.jpg"
+      },
+      {
+        "k": "Check, correct and keep it true",
+        "tag": "Accuracy review",
+        "breaks": "Publishing answers that go stale.",
+        "why": "A quoted wrong answer is worse than no answer, so pricing, eligibility and dates must stay current.",
+        "does": "We review claims before publishing and schedule rechecks for anything that changes.",
+        "href": "/audit/",
+        "img": "seo/authority.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four things that show whether",
+      "h2b": "AEO is working.",
+      "note": "Appearing in an answer box is a means. Enquiries and orders are the end.",
+      "cards": [
+        {
+          "n": "Answer features won",
+          "d": "Snippets and answer boxes your pages appear in, tracked over time."
+        },
+        {
+          "n": "Question coverage",
+          "d": "How many of your buyers' priority questions have a clear answer page."
+        },
+        {
+          "n": "Accuracy of quoted answers",
+          "d": "Whether what is quoted matches your current facts."
+        },
+        {
+          "n": "Enquiries or orders from search",
+          "d": "What search actually produces for the business."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where AEO fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "AI SEO",
+          "d": "The overall plan for being found and recommended across classic and AI search.",
+          "img": "seo/intent.jpg",
+          "href": "/services/seo/ai-seo/",
+          "link": "See AI SEO"
+        },
+        {
+          "n": "Generative-engine optimisation",
+          "d": "Being cited by ChatGPT, Perplexity, Gemini and Google AI Overviews.",
+          "img": "seo/authority.jpg",
+          "href": "/services/seo/geo/",
+          "link": "See GEO"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "Local answers for searches by place and for voice queries.",
+          "img": "orm/profile.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "AEO."
+    ],
+    "faq": [
+      {
+        "q": "What is AEO?",
+        "a": "Answer engine optimisation is the practice of structuring pages so search features and assistants can lift a clear, correct answer from them, such as featured snippets, voice replies and AI summaries."
+      },
+      {
+        "q": "How is AEO different from SEO?",
+        "a": "SEO makes a page findable and rankable. AEO shapes the content on the page so it can be used as the answer: a direct answer first, real FAQs and matching structured data."
+      },
+      {
+        "q": "How is AEO different from GEO?",
+        "a": "AEO targets answer features in search and voice. GEO targets being cited inside generative AI tools such as ChatGPT, Perplexity and Gemini. They share content but the surfaces and signals differ."
+      },
+      {
+        "q": "Does FAQ schema still help?",
+        "a": "It helps machines understand the questions and answers on a page, but search engines decide how and whether to show it, and that can change. We use it where it matches real content, and do not rely on it alone."
+      },
+      {
+        "q": "Can you guarantee a featured snippet?",
+        "a": "No. Search engines choose what to show, and the choice varies by query and over time. We commit to the work in the scope and report which answer features your pages appear in."
+      },
+      {
+        "q": "What does AEO cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Who is AEO for?",
+        "a": "Brands with questions to answer. We do this for D2C, B2B and education brands and set it up differently for each: D2C on products and repeat purchase, B2B on specifications and enquiries, education on courses and admissions."
+      }
+    ],
+    "cta": {
+      "h2a": "Find the questions",
+      "h2b": "your pages should answer.",
+      "lede": "On a call, with a senior strategist. We list the questions your buyers ask and show which of your pages could answer them."
+    },
+    "process": {
+      "h2a": "How we run AEO,",
+      "h2b": "month to month.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Question research",
+          "d": "We gather the questions from search, sales and support, and check which answer features already appear.",
+          "out": "A prioritised question list."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Rewrite and structure",
+          "d": "Priority pages get an answer-first opening, real FAQs and matching schema.",
+          "out": "Pages ready to be quoted."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Publish and check",
+          "d": "Pages go live and we recheck features, accuracy and enquiries.",
+          "out": "A repeat check you can read each month."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "AEO for brands whose buyers",
+      "h2b": "ask before they buy.",
+      "good": {
+        "t": "Your buyers type or speak questions, and your best answers are buried on the page.",
+        "why": "This suits D2C brands with ingredient, sizing or usage questions, B2B firms with specification questions, and colleges with eligibility and fee questions."
+      },
+      "not": {
+        "t": "You want a guaranteed snippet or a quick fix.",
+        "why": "Answer features are chosen by the platform. The work improves your chance and the page, but does not control the outcome."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do in",
+      "h2b": "AEO.",
+      "lede": "From question research to schema, for D2C, B2B and education sites.",
+      "items": [
+        {
+          "t": "Question research",
+          "d": "Buyer questions from search, sales and support, grouped by intent.",
+          "img": "seo/intent.jpg",
+          "alt": "Question research"
+        },
+        {
+          "t": "Answer-first rewrites",
+          "d": "Direct answers at the top of key pages, in plain words.",
+          "img": "seo/pages.jpg",
+          "alt": "Answer-first rewrites"
+        },
+        {
+          "t": "FAQ builds",
+          "d": "Real questions with short answers that match the page.",
+          "img": "seo/aeo.jpg",
+          "alt": "FAQ builds"
+        },
+        {
+          "t": "Schema markup",
+          "d": "FAQ, product, course, how-to and organisation markup that fits.",
+          "img": "web/seo.jpg",
+          "alt": "Schema markup"
+        },
+        {
+          "t": "Voice and local answers",
+          "d": "Short spoken-style answers, with local detail where it matters.",
+          "img": "sv/organic.jpg",
+          "alt": "Voice and local answers"
+        },
+        {
+          "t": "Accuracy reviews",
+          "d": "Claims checked before publishing and rechecked when facts change.",
+          "img": "seo/authority.jpg",
+          "alt": "Accuracy reviews"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands choose MMC",
+      "h2b": "for AEO.",
+      "lede": "We write answers a person would trust, then structure them for machines.",
+      "img": "seo/pages.jpg",
+      "alt": "Why brands choose MMC for AEO.",
+      "items": [
+        {
+          "t": "Answers that are true",
+          "d": "Every claim is checked, so what gets quoted is accurate."
+        },
+        {
+          "t": "Written for people first",
+          "d": "Plain language that reads well, with structure added on top."
+        },
+        {
+          "t": "Part of one plan",
+          "d": "AEO sits inside AI SEO, so it shares the foundation and the reporting."
+        },
+        {
+          "t": "No schema tricks",
+          "d": "Markup matches visible content. We do not mark up what is not on the page."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How an AEO engagement runs,",
+      "h2b": "step by step.",
+      "img": "seo/aeo.jpg",
+      "alt": "How an AEO engagement runs, step by step.",
+      "items": [
+        {
+          "t": "Collect the questions",
+          "d": "Search, sales and support questions are grouped by buyer intent."
+        },
+        {
+          "t": "Choose the pages",
+          "d": "Pages with the best chance to answer well are ranked by business value."
+        },
+        {
+          "t": "Write and mark up",
+          "d": "Answer-first copy, FAQs and schema are written and validated."
+        },
+        {
+          "t": "Recheck and update",
+          "d": "Answer features, accuracy and enquiries are reviewed each month."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

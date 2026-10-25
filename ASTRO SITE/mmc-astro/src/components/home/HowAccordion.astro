@@ -1,0 +1,46 @@
+---
+// How we do it: four client goals as a native <details> accordion with a literal photo for the open goal.
+// Works without JS (every answer is in the HTML and crawlable); a tiny script keeps one open at a time in older browsers.
+// Wording comes from the four-step process (we dig, we model, we ship, we compound) and the service pages.
+import { href } from "../../lib/links";
+const GOALS = [
+  { k: "find", t: "Find new customers", img: "/assets/meta/audience.jpg", alt: "Audience and targeting setup on an ad platform", link: "performance-marketing.html", go: "Performance media",
+    d: "We build the model first: contribution margin, break-even ROAS and CAC ceiling. Then paid media on Meta, Google, Amazon and quick commerce, or lead generation for B2B and education, is planned to stay inside it." },
+  { k: "see", t: "Build visibility", img: "/assets/seo/intent.jpg", alt: "Search intent research on a desk", link: "seo.html", go: "Organic traffic",
+    d: "Search, AI answers and social make you easy to find before anyone clicks an ad. SEO, AEO and GEO work sits next to content and creative, so what ranks is also what converts." },
+  { k: "convert", t: "Convert and retain", img: "/assets/ux/test.jpg", alt: "A shopper flow being tested on a phone", link: "conversion-rate-optimisation.html", go: "Conversion technology",
+    d: "Site changes, checkout and CRO ship alongside the ads, because traffic is wasted on a page that leaks. Email and WhatsApp follow-up then bring buyers, parents and leads back." },
+  { k: "protect", t: "Protect reputation and margin", img: "/assets/orm/report.jpg", alt: "A reputation and review report on screen", link: "online-reputation-management.html", go: "Online reputation",
+    d: "Reviews and replies are managed so trust is not lost after the click. Weekly optimisation runs against contribution and monthly against the P&L, so spend that stops paying is cut." },
+];
+---
+<section class="hv2-sec hv2-how no-section-bg" id="how" aria-labelledby="hv2-how-h">
+  <div class="hn-wrap">
+    <div class="hv-head">
+      <p class="hn-eyebrow">How we do it</p>
+      <h2 id="hv2-how-h">Four weeks to a working engine, <em>built around what you need.</em></h2>
+      <p class="hv-head__p">Pick the goal. Each one starts with a read of the account in week one and ships in weeks two to four.</p>
+    </div>
+    <div class="hv2-how__list" data-how>
+      {GOALS.map((g, i) => (
+        <details class="hv2-how__item" name="hv2-how" open={i === 0}>
+          <summary><span class="hv2-how__n" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span><h3>{g.t}</h3></summary>
+          <div class="hv2-how__panel">
+            <p>{g.d}</p>
+            <a class="hv2-how__go" href={href(g.link)}>{g.go}<span aria-hidden="true"> &rarr;</span></a>
+            <figure class="hv2-how__fig"><img src={g.img} alt={g.alt} loading="lazy" decoding="async" width="1024" height="688" /></figure>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+  <script is:inline>
+    (function () {
+      var root = document.querySelector("[data-how]"); if (!root) return;
+      var items = [].slice.call(root.querySelectorAll("details"));
+      items.forEach(function (d) { d.addEventListener("toggle", function () {
+        if (d.open) items.forEach(function (o) { if (o !== d) o.open = false; });
+      }); });
+    })();
+  </script>
+</section>

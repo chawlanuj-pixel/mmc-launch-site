@@ -1,0 +1,255 @@
+import React, { useEffect, useRef, useState } from "react";
+import { fmtMoney } from "../../lib/pricing-calc.mjs";
+
+/* The live summary (sticky sidebar on desktop, collapsible bottom sheet on phones), the request-a-quote dialog
+   and the print-only quote document. */
+
+const EXCL = {
+  website: "Theme cost",
+  perf: "Ad spend",
+  retention: "Meta and WhatsApp API charges and CRM or tool platform costs",
+  email: "Email tool or platform cost",
+  influencer: "Influencer fees, products and shipping",
+  "pr-content": "Media spend and placement fees",
+  catalog: "AI credits beyond about 300 per SKU",
+  social: "AI credits at actuals",
+  videography: "Physical shoot extras quoted per shoot",
+};
+
+export function excludedFor(res) {
+  return Object.keys(EXCL).filter((k) => res.touched[k]).map((k) => EXCL[k]);
+}
+
+export function Summary({ data, res, cur, open, onToggle, onRemove, onReset, onCopy, onPrint, onRequest, copied }) {
+  const c = data.cfg[cur];
+  const m = (v) => fmtMoney(v, c);
+  const t = res.total;
+  const excl = excludedFor(res);
+  const empty = res.lines.length === 0;
+  return (
+    <aside className={"pc-sum" + (open ? " is-open" : "")} aria-label="Your estimate">
+      <button type="button" className="pc-sum__bar" aria-expanded={open} aria-controls="pc-sum-body" onClick={onToggle}>
+        <span className="pc-sum__bar-main">
+          <span className="pc-sum__bar-l">Estimate</span>
+          <span className="pc-sum__bar-v">
+            {empty ? <span>Nothing selected yet</span> : (
+              <>
+                {t.oneTime > 0 && <span>{m(t.oneTime)} one-time</span>}
+                {(t.monthly > 0 || t.mntMonthly > 0) && <span>{m(t.monthly > 0 ? t.monthly : t.mntMonthly)} a month</span>}
+                {t.oneTime <= 0 && t.monthly <= 0 && t.mntMonthly <= 0 && <span>{m(0)}</span>}
+              </>
+            )}
+          </span>
+        </span>
+        <span className="pc-sum__chev" aria-hidden="true">{open ? "Close" : "Details"}</span>
+      </button>
+      <div className="pc-sum__body" id="pc-sum-body">
+        <h2 className="pc-sum__h">Your estimate</h2>
+        <div className="pc-sum__totals" aria-live="polite" aria-atomic="true">
+          <div className="pc-tot">
+            <span className="pc-tot__l">One-time total</span>
+            <span className="pc-tot__v">{m(t.oneTime)}</span>
+          </div>
+          <div className="pc-tot">
+            <span className="pc-tot__l">Monthly retainer</span>
+            <span className="pc-tot__v">{m(t.monthly)}</span>
+          </div>
+          {t.monthly > 0 && (
+            <div className="pc-tot pc-tot--sub">
+              <span className="pc-tot__l">3-month minimum commitment (combined lock-in)</span>
+              <span className="pc-tot__v">{m(t.commit)}</span>
+            </div>
+          )}
+          {t.mntMonthly > 0 && (
+            <div className="pc-tot">
+              <span className="pc-tot__l">{"Website maintenance, " + t.cycle.label.toLowerCase() + " in advance"}</span>
+              <span className="pc-tot__v">{m(t.mntCycleTotal)}</span>
+            </div>
+          )}
+          <div className="pc-tot pc-tot--first">
+            <span className="pc-tot__l">First invoice (estimate)</span>
+            <span className="pc-tot__v">{m(t.first.total)}</span>
+          </div>
+        </div>
+        {!empty && (
+          <details className="pc-first">
+            <summary>How the first invoice is made up</summary>
+            <ul>
+              {t.first.audits > 0 && <li><span>Audits, 100% in advance</span><b>{m(t.first.audits)}</b></li>}
+              {t.first.projects > 0 && <li><span>Project work, 50% in advance</span><b>{m(t.first.projects)}</b></li>}
+              {t.first.retainer > 0 && <li><span>First month of retainers, in advance</span><b>{m(t.first.retainer)}</b></li>}
+              {t.first.maintenance > 0 && <li><span>Maintenance, billed by cycle in advance</span><b>{m(t.first.maintenance)}</b></li>}
+              {t.projectsAfter > 0 && <li className="pc-first__later"><span>Project balance, on delivery</span><b>{m(t.projectsAfter)}</b></li>}
+            </ul>
+          </details>
+        )}
+        <p className="pc-sum__legal">Indicative estimate. The signed proposal or statement of work governs. {data.taxShort}</p>
+
+        {empty ? (
+          <p className="pc-sum__empty">Pick a starting point above, or add lines from the rate card. Your selection appears here.</p>
+        ) : (
+          <ul className="pc-lines" aria-label="Selected lines">
+            {res.lines.map((l) => (
+              <li key={l.id} className="pc-line">
+                <div className="pc-line__t">
+                  <span className="pc-line__n">{l.name}</span>
+                  {l.qtyText && <span className="pc-line__q">{l.qtyText}</span>}
+                </div>
+                <span className="pc-line__a">
+                  {m(l.amount)}
+                  {l.rec === "monthly" || l.rec === "cycle" ? <small> a month</small> : null}
+                </span>
+                {l.id !== "audit-bundle" && (
+                  <button type="button" className="pc-line__x" aria-label={"Remove " + l.name} onClick={() => onRemove(l.id)}>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+        {res.warnings.length > 0 && (
+          <div className="pc-sum__warn" role="status">
+            <strong>Check before you send</strong>
+            <ul>{res.warnings.map((w) => <li key={w.id + w.text}>{w.text}</li>)}</ul>
+          </div>
+        )}
+        {excl.length > 0 && (
+          <p className="pc-sum__excl"><strong>Not in this estimate, billed at actuals:</strong> {excl.join("; ")}.</p>
+        )}
+        <p className="pc-sum__excl">Weekend work is billed at double the man-hours logged, confirmed before it starts. See the terms below.</p>
+
+        <div className="pc-actions">
+          <button type="button" className="pc-btn pc-btn--primary" onClick={onRequest} disabled={empty}>Request this quote</button>
+          <button type="button" className="pc-btn" onClick={onCopy}>{copied ? "Link copied" : "Copy share link"}</button>
+          <button type="button" className="pc-btn" onClick={onPrint} disabled={empty}>Print / save as PDF</button>
+          <button type="button" className="pc-btn pc-btn--ghost pc-btn--wide" onClick={onReset} disabled={empty}>Reset the estimate</button>
+        </div>
+        <p className="pc-sr" role="status" aria-live="polite">{copied ? "Share link copied to the clipboard." : ""}</p>
+      </div>
+    </aside>
+  );
+}
+
+export function QuoteDialog({ data, cur, res, open, onClose, onSent, getLink, getText }) {
+  const ref = useRef(null);
+  const [f, setF] = useState({ name: "", email: "", brand: "", notes: "", _hp: "" });
+  const [err, setErr] = useState({});
+  const [busy, setBusy] = useState(false);
+  const [fail, setFail] = useState("");
+  useEffect(() => {
+    const d = ref.current;
+    if (!d) return;
+    if (open && !d.open) { try { d.showModal(); } catch (e) { d.setAttribute("open", ""); } }
+    if (!open && d.open) d.close();
+  }, [open]);
+  const up = (k) => (e) => setF({ ...f, [k]: e.target.value });
+  const submit = (e) => {
+    e.preventDefault();
+    const er = {};
+    if (!f.name.trim()) er.name = "Please enter your name.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.trim())) er.email = "Please enter a valid work email.";
+    if (!f.brand.trim()) er.brand = "Please enter your brand or company.";
+    if (res.lines.length === 0) er.lines = "Add at least one line to the estimate first.";
+    setErr(er);
+    if (Object.keys(er).length) {
+      const first = ref.current.querySelector("[aria-invalid='true']");
+      if (first) first.focus();
+      return;
+    }
+    const data0 = {
+      name: f.name.trim(), email: f.email.trim(), brand: f.brand.trim(), notes: f.notes.trim(),
+      source: "pricing-" + data.audience,
+      audience: data.audience,
+      currency: data.cfg[cur].name,
+      quote: getText(),
+      link: getLink(),
+      _hp: f._hp,
+    };
+    if (f._hp) { onSent(data0, { ok: true, mode: "endpoint" }, true); return; }
+    const forms = window.MMCForms;
+    if (!forms) { setFail("The form service did not load. Please refresh and try again."); return; }
+    setBusy(true);
+    setFail("");
+    Promise.resolve(forms.submitLead(data0, { subject: "Pricing quote request, " + data0.brand + " (" + data.audienceLabel + ")" }))
+      .then((r) => onSent(data0, r, false))
+      .catch(() => { setBusy(false); setFail("Something went wrong. Please try again."); });
+  };
+  const m = (v) => fmtMoney(v, data.cfg[cur]);
+  return (
+    <dialog ref={ref} className="pc-dialog" aria-labelledby="pc-dlg-h" onClose={onClose} onClick={(e) => { if (e.target === ref.current) onClose(); }}>
+      <form className="pc-form" onSubmit={submit} noValidate>
+        <div className="pc-form__head">
+          <h2 id="pc-dlg-h">Request this quote</h2>
+          <button type="button" className="pc-form__x" aria-label="Close" onClick={onClose}><span aria-hidden="true">&times;</span></button>
+        </div>
+        <p className="pc-form__sub">We receive your estimate ({res.lines.length} {res.lines.length === 1 ? "line" : "lines"}, {m(res.total.oneTime)} one-time, {m(res.total.monthly)} a month) with your details and reply with a proposal.</p>
+        <label className="pc-field">
+          <span>Your name <i>*</i></span>
+          <input name="name" autoComplete="name" value={f.name} onChange={up("name")} aria-invalid={!!err.name} aria-describedby={err.name ? "pc-e-name" : undefined} />
+          {err.name && <em id="pc-e-name" className="pc-err" role="alert">{err.name}</em>}
+        </label>
+        <label className="pc-field">
+          <span>Work email <i>*</i></span>
+          <input name="email" type="email" autoComplete="email" value={f.email} onChange={up("email")} aria-invalid={!!err.email} aria-describedby={err.email ? "pc-e-email" : undefined} />
+          {err.email && <em id="pc-e-email" className="pc-err" role="alert">{err.email}</em>}
+        </label>
+        <label className="pc-field">
+          <span>Brand or company <i>*</i></span>
+          <input name="brand" autoComplete="organization" value={f.brand} onChange={up("brand")} aria-invalid={!!err.brand} aria-describedby={err.brand ? "pc-e-brand" : undefined} />
+          {err.brand && <em id="pc-e-brand" className="pc-err" role="alert">{err.brand}</em>}
+        </label>
+        <label className="pc-field">
+          <span>Notes</span>
+          <textarea name="notes" rows="3" value={f.notes} onChange={up("notes")} />
+        </label>
+        <input className="pc-hp" type="text" name="_hp" tabIndex={-1} autoComplete="off" aria-hidden="true" value={f._hp} onChange={up("_hp")} />
+        {err.lines && <p className="pc-err" role="alert">{err.lines}</p>}
+        {fail && <p className="pc-err" role="alert">{fail}</p>}
+        <div className="pc-form__foot">
+          <button type="submit" className="pc-btn pc-btn--primary" disabled={busy}>{busy ? "Sending..." : "Send the quote request"}</button>
+          <button type="button" className="pc-btn pc-btn--ghost" onClick={onClose}>Cancel</button>
+        </div>
+      </form>
+    </dialog>
+  );
+}
+
+export function PrintDoc({ data, res, cur, link }) {
+  const c = data.cfg[cur];
+  const m = (v) => fmtMoney(v, c);
+  const t = res.total;
+  const date = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+  return (
+    <section className="pc-printdoc" aria-hidden="true">
+      <h2>{data.title}: estimate</h2>
+      <p className="pc-printdoc__meta">{data.audienceLabel} &middot; {c.name} &middot; Version {data.version}, effective {data.effective} &middot; Prepared {date}</p>
+      <p className="pc-printdoc__meta">{data.taxShort} Indicative estimate. The signed proposal or statement of work governs.</p>
+      <table>
+        <thead><tr><th>Line</th><th>Basis</th><th className="r">Amount</th></tr></thead>
+        <tbody>
+          {res.lines.map((l) => (
+            <tr key={l.id}>
+              <td>{l.name}</td>
+              <td>{l.qtyText}{l.rec === "monthly" || l.rec === "cycle" ? (l.qtyText ? ", " : "") + "per month" : ""}</td>
+              <td className="r">{m(l.amount)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <table className="pc-printdoc__tot">
+        <tbody>
+          <tr><td>One-time total</td><td className="r">{m(t.oneTime)}</td></tr>
+          <tr><td>Monthly retainer</td><td className="r">{m(t.monthly)}</td></tr>
+          {t.monthly > 0 && <tr><td>3-month minimum commitment (combined lock-in)</td><td className="r">{m(t.commit)}</td></tr>}
+          {t.mntMonthly > 0 && <tr><td>{"Website maintenance, " + t.cycle.label.toLowerCase() + " in advance"}</td><td className="r">{m(t.mntCycleTotal)}</td></tr>}
+          <tr className="b"><td>First invoice (estimate)</td><td className="r">{m(t.first.total)}</td></tr>
+        </tbody>
+      </table>
+      {res.warnings.length > 0 && <ul className="pc-printdoc__warn">{res.warnings.map((w) => <li key={w.id + w.text}>{w.text}</li>)}</ul>}
+      {excludedFor(res).length > 0 && <p className="pc-printdoc__meta">Not in this estimate, billed at actuals: {excludedFor(res).join("; ")}.</p>}
+      {link && <p className="pc-printdoc__meta">Share link: {link}</p>}
+      <p className="pc-printdoc__meta">{data.company}</p>
+    </section>
+  );
+}

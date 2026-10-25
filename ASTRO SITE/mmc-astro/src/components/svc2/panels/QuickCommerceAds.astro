@@ -1,0 +1,93 @@
+---
+// PANEL: QuickCommerceAds (kind "QuickCommerceAds"). A quick-commerce app style category listing with sponsored slots. Marks: Blinkit, Zepto and Swiggy
+// (used for Instamart) from public/assets/platforms, shown as an app switcher. 5 steps.
+//   1 Win the tile: a category grid of product tiles at phone size; one tile is re-cut so name and claim read at a glance. Tab: Listing.
+//   2 Sponsored placement: a search results list with a sponsored slot at the top, tied to a search term and a category. Tab: Ads.
+//   3 Stock by area: area rows with Available, Low and Out chips and ads on, trimmed or off. Tab: Stock.
+//   4 Keep the shelf stocked: replenishment signals shared with the supply team before visibility lapses. Tab: Supply.
+//   5 Blended read: app view next to total sales and margin, budget follows what adds profit. Tab: Reports.
+// Needs S.work.illustrative (it should say the layouts are illustrative and the marks belong to their owners). No figures. Prefix qca-.
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const marks = [["/assets/platforms/blinkit.svg", "Blinkit"], ["/assets/platforms/zepto.svg", "Zepto"], ["/assets/platforms/swiggy.png", "Instamart"]];
+const tiles = [["Snack bar", THUMBS.bar], ["Serum", THUMBS.serum], ["Jar", THUMBS.jar], ["Candle", THUMBS.candle], ["Shirt", THUMBS.shirt], ["Gift box", THUMBS.unbox]];
+const areas = [["Area 1", "Available", "ok", "Ads on"], ["Area 2", "Low", "warn", "Ads trimmed"], ["Area 3", "Out", "bad", "Ads off"]];
+---
+<Frame title="Category listing" label="Illustration of a quick-commerce app listing with sponsored slots, stock by area and a blended report. Not a client account." caption={W.illustrative} tabs={["Listing", "Ads", "Stock", "Supply", "Reports"]} tabFor={[0, 1, 2, 3, 4]} accent="#6D28D9" accentSoft="#EFE7FD">
+  <div class="qca-apps" aria-hidden="true">{marks.map(([s, n], k) => <span class={k === 0 ? "is-on" : ""}><img src={s} alt="" width="22" height="22" />{n}</span>)}</div>
+  <div class="s2-st s2-st--1 qca-st">
+    <p class="s2-st__cap">Win the tile <span>One or two seconds to earn a tap</span></p>
+    <ul class="qca-grid">
+      {tiles.map(([n, th], k) => (
+        <li class={"s2p-card" + (k === 1 ? " qca-on" : "")}><span class="s2p-ph qca-ph" style={th as string} role="img" aria-label="Product tile"></span><b>{n}</b>{k === 1 ? <em class="s2p-chip s2p-chip--sun">Re-cut</em> : null}</li>
+      ))}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--2 qca-st">
+    <p class="s2-st__cap">Sponsored placement <span>Bought by search term and category</span></p>
+    <div class="s2p-card qca-search"><span class="s2p-line s2p-line--s"></span><small class="s2p-mute">Search term</small></div>
+    <ul class="qca-list">
+      <li class="s2p-card qca-on"><span class="s2p-ph qca-th" style={THUMBS.serum} role="img" aria-label="Product"></span><div><b>Your product</b><i class="s2p-line s2p-line--s"></i></div><em class="s2p-chip s2p-chip--sun">Ad</em></li>
+      <li class="s2p-card"><span class="s2p-ph qca-th" style={THUMBS.jar} role="img" aria-label="Product"></span><div><b>Result 2</b><i class="s2p-line s2p-line--s"></i></div></li>
+      <li class="s2p-card"><span class="s2p-ph qca-th" style={THUMBS.candle} role="img" aria-label="Product"></span><div><b>Result 3</b><i class="s2p-line s2p-line--s"></i></div></li>
+    </ul>
+  </div>
+  <div class="s2-st s2-st--3 qca-st">
+    <p class="s2-st__cap">Stock by area <span>Ads run where the product is on the shelf</span></p>
+    <ul class="qca-areas">
+      {areas.map(([n, s, c, a]) => <li class="s2p-card"><b>{n}</b><em class={"s2p-chip s2p-chip--" + c}>{s}</em><span class="s2p-mute">{a}</span></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4 qca-st">
+    <p class="s2-st__cap">Keep the shelf stocked <span>Signals shared before visibility lapses</span></p>
+    <div class="qca-flow">
+      <span class="s2p-card"><b>Stock signal</b><small class="s2p-mute">Low in an area</small></span>
+      <svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+      <span class="s2p-card qca-on"><b>Supply team</b><small class="s2p-mute">Replenishment planned</small></span>
+      <svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10h50M44 3l8 7-8 7" /></svg>
+      <span class="s2p-card"><b>Ads back on</b><small class="s2p-mute">Shelf restocked</small></span>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5 qca-st">
+    <p class="s2-st__cap">Blended read <span>The channel judged on what it adds</span></p>
+    <div class="qca-cmp">
+      <div class="s2p-card"><p class="s2p-lbl">App report</p><span class="qca-m"><small>Attributed</small><i style="--w:38%"></i></span><em class="s2p-chip s2p-chip--warn">Thin data</em></div>
+      <div class="s2p-card qca-win"><p class="s2p-lbl">Total sales and margin</p><span class="qca-m"><small>Business level</small><i class="is-t" style="--w:70%"></i></span><em class="s2p-chip s2p-chip--ok">Read this</em></div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.qca-apps { position: absolute; z-index: 1; top: .6em; right: .8em; display: flex; gap: .4em; pointer-events: none; }
+.qca-apps span { display: inline-flex; align-items: center; gap: .35em; padding: .25em .6em .25em .3em; border: 1px solid #DADDE1; border-radius: 99px; background: #fff; font: 800 .74em var(--font-body); color: #65676B; }
+.qca-apps span.is-on { border-color: #6D28D9; color: #1C2B33; }
+.qca-apps img { width: 1.5em; height: 1.5em; object-fit: contain; }
+.s2-st.qca-st { padding-top: clamp(40px, 7cqw, 48px); }
+.qca-grid { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: .6em; }
+.qca-grid li { position: relative; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: .35em; padding: .45em; min-height: 0; justify-items: start; }
+.qca-grid .s2p-chip { position: absolute; top: .8em; left: .8em; }
+.qca-grid b, .qca-list b, .qca-areas b, .qca-flow b { font: 800 .9em var(--font-display); color: #1C2B33; }
+.qca-ph { display: block; width: 100%; height: 100%; min-height: 0; border-radius: .6em; }
+.qca-on { border-color: #6D28D9 !important; box-shadow: 0 0 0 2px #6D28D9; }
+.qca-search { display: grid; gap: .35em; padding: .6em .9em; }
+.qca-list { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .5em; align-content: center; }
+.qca-list li { display: grid; grid-template-columns: 3.4em minmax(0, 1fr) auto; gap: .8em; align-items: center; padding: .5em .7em; }
+.qca-list div { display: grid; gap: .35em; }
+.qca-th { display: block; height: 3.2em; border-radius: .6em; }
+.qca-areas { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .6em; align-content: center; }
+.qca-areas .s2p-chip { justify-self: start; }
+.qca-areas li { display: grid; grid-template-columns: 5em auto minmax(0, 1fr); gap: .8em; align-items: center; padding: .7em .9em; }
+.qca-flow { flex: 1; display: flex; align-items: center; justify-content: space-between; gap: .5em; }
+.qca-flow .s2p-card { display: grid; gap: .3em; text-align: center; padding: .8em .7em; }
+.qca-flow svg { flex: 1; min-width: 1.4em; max-width: 4em; fill: none; stroke: #6D28D9; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 5 6; animation: s2dash 1.2s linear infinite; }
+.qca-cmp { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-content: center; }
+.qca-cmp .s2p-card { display: grid; gap: .8em; padding: 1em; align-content: start; }
+.qca-cmp em { justify-self: start; }
+.qca-win { border-color: #1B7A3D; box-shadow: 0 0 0 2px #1B7A3D; }
+.qca-m { display: grid; gap: .35em; } .qca-m small { font: 700 .8em var(--font-body); color: #65676B; }
+.qca-m i { display: block; height: .7em; width: var(--w); border-radius: 99px; background: #CED0D4; } .qca-m i.is-t { background: #6D28D9; }
+@media (prefers-reduced-motion: reduce) { .qca-flow svg { animation: none; } }
+@container (max-height: 195px) { .qca-list li:nth-child(n+2), .qca-cmp .s2p-chip { display: none; } .qca-search { padding: .4em .9em; } .qca-areas li { padding: .45em .7em; } }
+@media (max-width: 560px) { .qca-apps span { font-size: 0; gap: 0; padding: .3em; } .qca-apps img { width: 18px; height: 18px; } .qca-cmp .s2p-card { padding: .6em .8em; gap: .4em; } .qca-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .qca-grid li:nth-child(n+5) { display: none; } .qca-list li:nth-child(3) { display: none; } .qca-areas li { grid-template-columns: 3.4em auto minmax(0, 1fr); gap: .5em; padding: .6em .7em; } .qca-flow small { display: none; } .qca-cmp { grid-template-columns: 1fr; } }
+</style>

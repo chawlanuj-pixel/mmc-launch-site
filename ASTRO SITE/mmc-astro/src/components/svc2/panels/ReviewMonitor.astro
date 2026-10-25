@@ -1,0 +1,79 @@
+---
+// PANEL: ReviewMonitor (kind "ReviewMonitor"). A reviews inbox with rating trend and reply drafts. No platform mark (neutral). 5 steps.
+//   1 See what they see: a search-result style card with a rating, a profile summary and two review snippets. Tab: Audit.
+//   2 Ask for reviews: a WhatsApp-style request sent to a genuine customer after the order or visit (WhatsApp mark). Tab: Requests.
+//   3 Reply: an inbox row with a review, a drafted reply in the brand voice and an Approve action. Tab: Inbox.
+//   4 Keep the facts right: a profile checklist (hours, phone, photos, answers) with Updated chips. Tab: Profile.
+//   5 Watch and report: a rating trend line, response time and review themes. Tab: Reports.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real reviews. Styles scoped to this file (prefix rvm-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const stars = (n: number) => "★★★★★".slice(0, n) + "☆☆☆☆☆".slice(0, 5 - n);
+---
+<Frame title="Reviews monitor" label="Illustration of a reviews inbox with reply drafts and a rating trend. Not a client account." caption={W.illustrative} tabs={["Audit", "Requests", "Inbox", "Profile", "Reports"]} tabFor={[0, 1, 2, 3, 4]} accent="#B45309" accentSoft="#FFF3D6">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">What people see <span>Your name, searched</span></p>
+    <div class="s2p-card rvm-res">
+      <b>Your business</b><span class="rvm-stars" aria-hidden="true">{stars(4)}</span>
+      <i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i>
+      <p class="rvm-snip">"Helpful team, slow to reply."</p><p class="rvm-snip rvm-snip--old">"Phone number no longer works."</p>
+      <em class="s2p-chip s2p-chip--warn">Two things to fix</em>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Ask for reviews <span>Real customers, at the right moment</span></p>
+    <div class="rvm-chat">
+      <div class="rvm-chat__hd"><img src="/assets/platforms/whatsapp.svg" alt="" width="20" height="20" /><b>WhatsApp</b></div>
+      <p class="rvm-b">Thanks for choosing us. Would you share how it went? It takes a minute.</p>
+      <p class="rvm-b rvm-b--in">Happy to.</p>
+      <em class="s2p-chip s2p-chip--ok">Sent after delivery</em>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Reply to every review <span>Drafted in your voice, approved by you</span></p>
+    <div class="rvm-inbox">
+      <div class="s2p-card"><span class="rvm-stars rvm-stars--low" aria-hidden="true">{stars(2)}</span><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i><em class="s2p-chip s2p-chip--bad">Needs a reply</em></div>
+      <div class="s2p-card rvm-draft"><p class="s2p-lbl">Draft reply</p><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i><em class="s2p-chip s2p-chip--sun">Approve</em></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Keep the facts right <span>One truth across every listing</span></p>
+    <ul class="rvm-chk">
+      {[["Opening hours", "Updated"], ["Phone number", "Updated"], ["Photos", "Updated"], ["Common questions", "Answered"]].map(([n, s]) => <li class="s2p-card"><span>{n}</span><em class="s2p-chip s2p-chip--ok">{s}</em></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Watch and report <span>Rating, speed and themes</span></p>
+    <div class="rvm-rep">
+      <div class="s2p-card"><p class="s2p-lbl">Rating trend</p>
+        <svg viewBox="0 0 200 70" class="rvm-line" aria-hidden="true"><path d="M4 56 C34 52 52 46 80 40 S132 24 196 12" /><circle cx="196" cy="12" r="5" /></svg>
+      </div>
+      <div class="s2p-card"><p class="s2p-lbl">Themes</p>
+        <span class="rvm-th"><em class="s2p-chip s2p-chip--ok">Friendly team</em><em class="s2p-chip s2p-chip--warn">Slow replies</em><em class="s2p-chip">Pricing</em></span>
+      </div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.rvm-stars { font: 400 1.15em/1 var(--font-body); letter-spacing: .08em; color: #E8A100; } .rvm-stars--low { color: #B42318; }
+.rvm-res { flex: 1; min-height: 0; display: grid; align-content: center; gap: .6em; padding: 1em 1.2em; justify-items: start; }
+.rvm-res b { font: 800 1.1em var(--font-display); color: #1C2B33; }
+.rvm-snip { margin: 0; font: 600 .95em/1.35 var(--font-body); color: #1C2B33; } .rvm-snip--old { color: #65676B; }
+.rvm-chat { flex: 1; display: flex; flex-direction: column; gap: .5em; padding: .8em; border-radius: .9em; background: #EFEAE2; justify-content: center; }
+.rvm-chat__hd { display: flex; align-items: center; gap: .5em; font: 800 .95em var(--font-body); color: #1C2B33; }
+.rvm-b { margin: 0; max-width: 84%; padding: .55em .8em; border-radius: .8em; border-top-right-radius: .2em; background: #D9FDD3; align-self: flex-end; font: 600 .9em/1.3 var(--font-body); color: #1C2B33; }
+.rvm-b--in { background: #fff; border-radius: .8em; border-top-left-radius: .2em; align-self: flex-start; }
+.rvm-chat .s2p-chip { align-self: flex-start; }
+.rvm-inbox { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-content: center; }
+.rvm-inbox .s2p-card { display: grid; gap: .5em; align-content: start; justify-items: start; padding: .9em; }
+.rvm-draft { border-color: #B45309 !important; box-shadow: 0 0 0 2px #B45309; }
+.rvm-chk { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .55em; align-content: center; }
+.rvm-chk li { display: flex; align-items: center; justify-content: space-between; padding: .6em .9em; font: 700 .95em var(--font-body); }
+.rvm-rep { flex: 1; min-height: 0; display: grid; grid-template-columns: 1.3fr 1fr; gap: .9em; align-content: center; }
+.rvm-rep .s2p-card { display: grid; gap: .6em; padding: .9em; align-content: start; }
+.rvm-line { width: 100%; height: auto; fill: none; stroke: #B45309; stroke-width: 3; stroke-linecap: round; } .rvm-line circle { fill: #B45309; stroke: none; }
+.rvm-th { display: flex; flex-wrap: wrap; gap: .4em; }
+@media (max-width: 560px) { .rvm-inbox, .rvm-rep { grid-template-columns: 1fr; } .rvm-rep .s2p-card { padding: .6em .8em; gap: .4em; } .rvm-line { max-height: 3.4em; } .rvm-snip--old, .rvm-chk li:nth-child(4) { display: none; } }
+@container (max-height: 195px) { .rvm-draft i:nth-of-type(n+2) { display: none; } .rvm-inbox .s2p-card { padding: .5em .7em; gap: .3em; } .rvm-res { padding: .6em 1em; gap: .4em; } }
+</style>

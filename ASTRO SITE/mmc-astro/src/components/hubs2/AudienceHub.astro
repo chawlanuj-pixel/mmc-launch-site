@@ -1,0 +1,28 @@
+---
+// The audience hub (D2C, B2B, education): hero, in short, the journey, calculators or the lead-quality loop,
+// real work, sector pages with related services, FAQ, closing band. Fed by a model from ./model.ts.
+import "../../styles/hubs2.css";
+import AudHero from "./AudHero.astro";
+import Lede from "./Lede.astro";
+import Journey from "./Journey.astro";
+import Calcs from "./Calcs.astro";
+import Loop from "./Loop.astro";
+import WorkTiles from "./WorkTiles.astro";
+import Verticals from "./Verticals.astro";
+import Fx from "./Fx.astro";
+import Faq from "../hub/Faq.astro";
+import PreFooterCta from "../shared/PreFooterCta.astro";
+import type { AudienceModel } from "./model";
+interface Props { M: AudienceModel }
+const { M } = Astro.props;
+---
+<AudHero jsonld={M.jsonld} source={M.source} {...M.hero} />
+<Lede {...M.lede} tone="white" />
+<Journey {...M.journey} tone="paper" />
+{M.calcs && <Calcs {...M.calcs} tone="white" />}
+{M.loop && <Loop L={M.loop} />}
+<WorkTiles {...M.work} tone={M.calcs ? "paper" : "white"} />
+<Verticals {...M.sectors} tone={M.calcs ? "white" : "paper"} />
+<Faq tone={M.calcs ? "paper" : "white"} title={M.faq.title} faq={M.faq.items} />
+<PreFooterCta source={M.source} {...M.cta} />
+<Fx />

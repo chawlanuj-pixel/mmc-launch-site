@@ -1,0 +1,54 @@
+---
+// One /services/ group band: a large literal photo (sticky on desktop), the group, one plain sentence on the problem it
+// solves, and every service in it as a large linked row with a one-line "what it fixes".
+import Pic from "./Pic.astro";
+interface Item { n: string; d: string; href: string }
+interface Props { g: { id: string; n: string; name: string; desc: string; accent: string; line: string; img: string; pos?: string; alt: string; legacy?: string[]; clusters: { label?: string; items: Item[] }[] }; flip?: boolean; tone?: string }
+const { g, flip = false, tone = "white" } = Astro.props;
+const wide = g.clusters.length > 1;
+---
+<section class={"n-band h2-grp-band n-band--" + tone} id={g.id} aria-labelledby={g.id + "-h"}>
+  {(g.legacy || []).map((a) => <span id={a} class="h2-anchor" aria-hidden="true"></span>)}
+  <div class="n-wrap">
+    <div class={"h2-grp" + (flip ? " is-flip" : "") + (wide ? " h2-grp--wide" : "")}>
+      <div class="h2-grp__media h2-rv">
+        <Pic src={g.img} alt={g.alt} pos={g.pos}><span class="h2-grp__num" aria-hidden="true">{g.n}</span></Pic>
+      </div>
+      <div class="h2-grp__body">
+        <div class="h2-rv">
+          <span class="n-eyebrow">{g.desc}</span>
+          <h2 class="n-h2" id={g.id + "-h"}>{g.name}, <span class="n-serif">{g.accent}</span></h2>
+          <p class="h2-grp__line">{g.line}</p>
+        </div>
+        {!wide && (
+        <div class={g.clusters[0].items.length > 4 ? "h2-two" : undefined}>
+        {g.clusters.map((c) => (
+          <div class="h2-cluster h2-rv">
+            {c.label && <p class="h2-label">{c.label}</p>}
+            <ul class="h2-rows">
+              {c.items.map((it) => (
+                <li><a class="h2-row" href={it.href}><span class="h2-row__n">{it.n}</span><span class="h2-row__d">{it.d}</span><span class="h2-ring" aria-hidden="true"><i class="h2-arr"></i></span></a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        </div>
+        )}
+      </div>
+      {wide && (
+        <div class={wide ? "h2-clusters" : undefined}>
+        {g.clusters.map((c) => (
+          <div class="h2-cluster h2-rv">
+            {c.label && <p class="h2-label">{c.label}</p>}
+            <ul class="h2-rows">
+              {c.items.map((it) => (
+                <li><a class="h2-row" href={it.href}><span class="h2-row__n">{it.n}</span><span class="h2-row__d">{it.d}</span><span class="h2-ring" aria-hidden="true"><i class="h2-arr"></i></span></a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        </div>
+      )}
+    </div>
+  </div>
+</section>

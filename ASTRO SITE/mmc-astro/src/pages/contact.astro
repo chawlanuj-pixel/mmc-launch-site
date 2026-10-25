@@ -1,0 +1,313 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import Img from "../components/hub/Img.astro";
+import Answer from "../components/hub/Answer.astro";
+import Faq from "../components/hub/Faq.astro";
+import "../styles/hub-extra.css";
+import "../styles/contact-new.css";
+import { href, fixHtml } from "../lib/links";
+import { BOOK } from "../lib/site";
+import AudienceCards from "../components/company/AudienceCards.astro";
+import { PHONE_DISPLAY, PHONE_TEL } from "../lib/site";
+
+const SITE = "https://www.mondaymarketing.company";
+const title = "Contact MMC: Book a Strategy Call or Send a Brief";
+const description = "Talk to Monday Marketing Company in Mumbai. Book a 30-minute strategy call, send a brief or write to us. We reply inside one working day, often in four hours.";
+
+const tiles = [
+  { img: "contact/call.jpg", pos: "50% 50%", label: BOOK, note: "30 minutes, no pitch" },
+  { img: "contact/brief.jpg", pos: "50% 50%", label: "Send a brief", note: "Tell us about the brand" },
+  { img: "contact/meeting.jpg", pos: "50% 50%", label: "Meet the team", note: "Strategists, not sales scripts" },
+  { img: "contact/office.jpg", pos: "50% 50%", label: "Visit us", note: "Hiranandani Business Park, Thane" },
+];
+
+const answer = {
+  label: "In short",
+  lead: "The quickest way to reach Monday Marketing Company (MMC) is to book a 30-minute strategy call with a senior strategist, who gives a direct read on the first three things to fix. You can also send a short brief by form or email. MMC works with D2C brands, B2B companies and educational institutes from Mumbai and Indore.",
+  hl: "book a 30-minute strategy call",
+  who: "MMC works with D2C brands, B2B companies and educational institutes from Mumbai and Indore.",
+  points: [
+    { icon: "target", title: BOOK, text: "Thirty minutes with a senior strategist and a direct read on the first three things to fix." },
+    { icon: "window", title: "Send a brief", text: "Fill the form below or email sales-in@mondaymarketing.company." },
+    { icon: "users", title: "Pick your route", text: "D2C, B2B or education, each has its own starting point." },
+  ],
+  image: "contact/call.jpg",
+  chip: "A conversation first",
+};
+
+const faq = [
+  { q: "What happens on the strategy call?", a: "It is thirty minutes with a senior strategist. You get a direct read on the three things to fix first. There is no pitch." },
+  { q: "Do I have to book a call to get in touch?", a: `No. You can send the brief form on this page, email <a href="mailto:sales-in@mondaymarketing.company">sales-in@mondaymarketing.company</a>, or phone us on ${PHONE_DISPLAY}.` },
+  { q: "Who does MMC work with?", a: "D2C brands, B2B companies and educational institutes. Each has its own page: <a href=\"d2c.html\">D2C</a>, <a href=\"b2b.html\">B2B</a> and <a href=\"education.html\">education</a>." },
+  { q: "Where is MMC based?", a: "MMC works from Mumbai and Indore. Our office is at 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra." },
+  { q: "What should I put in the brief?", a: "The name of the brand or institute, what you sell or offer, which channels you use now, and the one thing you would fix tomorrow. A rough picture is enough." },
+  { q: "I want to work at MMC. Who do I write to?", a: "See the <a href=\"Careers.html\">open roles</a> or write to <a href=\"mailto:hr@mondaymarketing.company\">hr@mondaymarketing.company</a>." },
+].map((f) => ({ q: f.q, a: fixHtml(f.a) }));
+
+const plain = (s: string) => s.replace(/<[^>]+>/g, "");
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + "/contact/#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "Contact", item: SITE + "/contact/" } ] },
+  { "@context": "https://schema.org", "@type": "ContactPage", "@id": SITE + "/contact/#webpage", url: SITE + "/contact/", name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + "/contact/#breadcrumb" }, publisher: { "@id": SITE + "/#organization" }, inLanguage: "en",
+    mainEntity: { "@id": SITE + "/#localbusiness" } },
+  { "@context": "https://schema.org", "@type": "ProfessionalService", "@id": SITE + "/#localbusiness", name: "Monday Marketing Company", alternateName: "MMC",
+    url: SITE + "/", logo: SITE + "/assets/logo-primary.png", image: SITE + "/assets/og-card.jpg",
+    telephone: PHONE_TEL, email: "sales-in@mondaymarketing.company",
+    address: { "@type": "PostalAddress", streetAddress: "4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park", addressLocality: "Thane", addressRegion: "Maharashtra", postalCode: "400607", addressCountry: "IN" },
+    areaServed: { "@type": "Country", name: "India" },
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "10:00", closes: "19:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "10:00", closes: "14:00" } ],
+    contactPoint: [{ "@type": "ContactPoint", contactType: "sales", email: "sales-in@mondaymarketing.company", telephone: PHONE_TEL, availableLanguage: "en", areaServed: "IN" }],
+    sameAs: ["https://www.instagram.com/monday.marketing.co/", "https://in.linkedin.com/company/monday-marketing-company"] },
+  { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/contact/#faq", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: plain(f.a) } })) },
+];
+const I = { width: 22, height: 22, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", "stroke-width": 1.8, "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true", focusable: "false" };
+const revenue = ["Pre-launch / 0–10L", "₹10L – ₹1Cr", "₹1Cr – ₹10Cr", "₹10Cr – ₹50Cr", "₹50Cr+"];
+const MAILBOXES = [
+  { addr: "sales-in@mondaymarketing.company", use: "New projects, briefs and questions about working with us." },
+  { addr: "hr@mondaymarketing.company", use: "Careers and job applications. See the open roles first." },
+  { addr: "privacy@mondaymarketing.company", use: "Requests about your personal data." },
+  { addr: "legal@mondaymarketing.company", use: "Terms, contracts and legal notices." },
+];
+const spendBands = ["Under ₹2L", "₹2L – ₹5L", "₹5L – ₹15L", "₹15L+"];
+const timelines = ["This month", "In 1–3 months", "Just exploring"];
+const systems = ["Performance", "SEO + Content", "Brand & Design", "Tech / Site", "Creative / UGC", "Retention / CRM"];
+---
+<BaseLayout title={title} description={description} path="/contact/" ogTitle="Talk to Monday Marketing Company" ogDescription="Book a strategy call, send a brief or write to us." ogAlt="Monday Marketing Company: contact." jsonld={jsonld}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app">
+      <section class="page-hero pm-hero" id="top" data-wm="Contact">
+        <span class="page-hero__wm" aria-hidden="true">Contact</span>
+        <div class="container pm-hero__inner">
+          <div class="pmh__grid">
+            <div class="pmh__l">
+              <div class="eyebrow" data-enter><span>● Contact</span></div>
+              <h1 class="pmh__h">
+                <span class="clip-reveal d1" data-enter><span>Let's talk about</span></span>
+                <span class="clip-reveal d2" data-enter><span>your <span class="em-serif">growth</span>,</span></span>
+                <span class="clip-reveal d3" data-enter><span>in plain words.</span></span>
+              </h1>
+              <p class="reveal d4 pmh__sub" data-enter>Book a 30-minute strategy call, send us a brief, or write to us. We work with D2C brands, B2B companies and educational institutes.</p>
+              <div class="reveal d5 pmh__actions" data-enter>
+                <button class="btn btn--primary glow-btn" type="button" data-book="contact-hero"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span></button>
+                <a class="btn btn--link" href="#brief">Send a brief<span class="arrow"></span></a>
+              </div>
+            </div>
+            <div class="pmh__r" data-enter>
+              <div class="pmh__mosaic">
+                {tiles.map((t, k) => (
+                  <figure class={"pmh__tile pmh__tile--" + (k + 1)}>
+                    <Img name={t.img} ratio="1 / 1.05" class="pmh__img" pos={t.pos} eager={k < 2} />
+                    <figcaption><b>{t.label}</b><span>{t.note}</span></figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Answer {...answer} />
+
+      <section class="n-band n-band--white pm-band" id="ways">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">Ways to reach us</span><h2 class="n-h2">Pick the one that <span class="n-serif">suits you.</span></h2></div>
+          <div class="cx-ways n-rise d1">
+            <a class="cx-way" href={"tel:" + PHONE_TEL}><span class="cx-way__ic"><svg {...I}><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z" /></svg></span><span class="cx-way__k">Phone</span><span class="cx-way__v">{PHONE_DISPLAY}</span><p class="cx-way__n">Call the studio during working hours.</p></a>
+            <a class="cx-way" href="mailto:sales-in@mondaymarketing.company"><span class="cx-way__ic"><svg {...I}><rect x="3" y="5" width="18" height="14" rx="3" /><path d="M3.5 7l8.5 6 8.500-6" /></svg></span><span class="cx-way__k">Email</span><span class="cx-way__v">sales-in<wbr />@mondaymarketing.company</span><p class="cx-way__n">Send a brief, a question or a document.</p></a>
+            <a class="cx-way" href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer"><span class="cx-way__ic"><svg {...I}><rect x="3.500" y="3.500" width="17" height="17" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17" cy="7" r="0.8" /></svg></span><span class="cx-way__k">Instagram</span><span class="cx-way__v">@monday.marketing.co</span><p class="cx-way__n">See how we think and what we make.</p></a>
+            <a class="cx-way" href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer"><span class="cx-way__ic"><svg {...I}><rect x="3.500" y="3.500" width="17" height="17" rx="3" /><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2.500 2.500 0 0 1 5 0v3" /></svg></span><span class="cx-way__k">LinkedIn</span><span class="cx-way__v">Monday Marketing Company</span><p class="cx-way__n">Follow the company page.</p></a>
+          </div>
+          <div class="cx-boxes n-rise d2">
+            <h3 class="cx-boxes__h">Which inbox</h3>
+            <ul class="cx-boxes__list">
+              {MAILBOXES.map((m) => (
+                <li><a href={"mailto:" + m.addr}>{m.addr}</a><span>{m.use}</span></li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="brief">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">Start here</span><h2 class="n-h2">Book it, or <span class="n-serif">write it.</span></h2></div>
+          <div class="cx-two">
+            <div class="cx-book n-rise">
+              <figure class="cx-book__fig"><img src="/assets/contact/call.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /></figure>
+              <div class="cx-book__body">
+                <h3 class="cx-book__h">Book a <em>strategy call.</em></h3>
+                <p class="cx-book__p">Thirty minutes with a senior strategist. A direct read on the three things to fix first. No pitch.</p>
+                <ul class="cx-book__pts">
+                  {["Pick a time that suits you", "Opens the calendar right here", "Nothing to prepare"].map((t) => <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.500l4.500 4.500L19 7.500" /></svg>{t}</li>)}
+                </ul>
+                <div><button type="button" class="cx-btn" data-book="contact-panel">{BOOK}<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></button></div>
+              </div>
+            </div>
+
+            <div class="n-rise d1">
+              <form class="cx-form" id="cx-form">
+                <div class="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" name="_hp" tabindex="-1" autocomplete="off" /></label></div>
+                <h3>Or tell us about <em>the brand.</em></h3>
+                <p class="cx-form__sub">A rough picture is enough. We read it before we reply.</p>
+                <div class="cx-row">
+                  <label class="cx-f"><span>Your name <i>*</i></span><input type="text" name="name" required autocomplete="name" placeholder="Aanya Sharma" /></label>
+                  <label class="cx-f"><span>Work email <i>*</i></span><input type="email" name="email" required autocomplete="email" placeholder="you@yourbrand.com" /></label>
+                </div>
+                <div class="cx-row">
+                  <label class="cx-f"><span>Phone or WhatsApp <i>*</i></span><input type="tel" name="phone" required inputmode="tel" autocomplete="tel" maxlength="20" placeholder="+91 98765 43210" /></label>
+                  <label class="cx-f"><span>Brand or institute name <i>*</i></span><input type="text" name="brand" required autocomplete="organization" placeholder="Your brand or institute" /></label>
+                </div>
+                <fieldset class="cx-f"><legend>Annual revenue, last 12 months <i>*</i></legend>
+                  <div class="cx-chips" data-single="revenue">{revenue.map((b) => <button type="button" class="cx-chip" aria-pressed="false" data-v={b}>{b}</button>)}</div>
+                </fieldset>
+                <p class="cx-note" id="cx-prelaunch" role="status" hidden>Pre-launch brands: we work with operating businesses at ₹50L+ a year. The <a href="/tools/">free calculators</a> and <a href="/guides/">guides</a> are built for where you are. You can still send this.</p>
+                <fieldset class="cx-f"><legend>Monthly marketing budget, ads included <i>*</i></legend>
+                  <div class="cx-chips" data-single="spend">{spendBands.map((b) => <button type="button" class="cx-chip" aria-pressed="false" data-v={b}>{b}</button>)}</div>
+                </fieldset>
+                <fieldset class="cx-f"><legend>When do you want to start? <i>*</i></legend>
+                  <div class="cx-chips" data-single="timeline">{timelines.map((b) => <button type="button" class="cx-chip" aria-pressed="false" data-v={b}>{b}</button>)}</div>
+                </fieldset>
+                <fieldset class="cx-f"><legend>Systems you are interested in</legend>
+                  <div class="cx-chips" data-multi="systems">{systems.map((s) => <button type="button" class="cx-chip" aria-pressed="false" data-v={s}>{s}</button>)}</div>
+                </fieldset>
+                <label class="cx-f"><span>What would you fix tomorrow?</span><textarea name="message" rows="4" placeholder="Retention is flat past D30 and our Meta ROAS keeps slipping…"></textarea></label>
+                <label class="cx-consent"><input type="checkbox" name="consent" required /><span>I agree to MMC using these details to reply to this enquiry, as described in the <a href="/privacy/" target="_blank" rel="noreferrer">privacy policy</a>.</span></label>
+                <p class="cx-err" id="cx-err" role="alert" hidden></p>
+                <div class="cx-form__foot">
+                  <button type="submit" class="cx-btn" id="cx-submit">Send the brief<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg></button>
+                  <span class="cx-fine">No pitch decks. No spam.</span>
+                </div>
+              </form>
+              <div class="cx-thanks" id="cx-thanks" hidden role="status" tabindex="-1">
+                <svg width="72" height="72" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" fill="none" stroke="#FFC528" stroke-width="3" /><path d="M26 41L36 51L56 31" fill="none" stroke="#16329E" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                <h3>Thanks, <span id="cx-name">friend</span>.</h3>
+                <p>We will read your brief for <b id="cx-brand">your brand</b> and come back to you with a slot.</p>
+                <p id="cx-mailto" hidden>Your email app should have opened with the details filled in. If it didn't, send them to <a href="mailto:anuj@mondaymarketing.company">anuj@mondaymarketing.company</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="n-band n-band--white pm-band" id="next">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">What happens next</span><h2 class="n-h2">Three steps, <span class="n-serif">no surprises.</span></h2></div>
+          <ol class="cx-steps n-rise d1">
+            <li class="cx-step"><figure class="cx-step__fig"><img src="/assets/contact/brief.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="cx-step__n">1</span></figure><h3>You get in touch</h3><p>Book a slot on the calendar or send the brief. Either one is enough to start.</p></li>
+            <li class="cx-step"><figure class="cx-step__fig"><img src="/assets/contact/call.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="cx-step__n">2</span></figure><h3>We talk it through</h3><p>A senior strategist goes through your channels, your numbers and where the growth is stuck.</p></li>
+            <li class="cx-step"><figure class="cx-step__fig"><img src="/assets/contact/meeting.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="cx-step__n">3</span></figure><h3>You leave with a next step</h3><p>A direct read on the three things to fix first. If we are a fit, we say how we would work together.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="n-band n-band--paper pm-band" id="who">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">Who to talk to</span><h2 class="n-h2">Start with the page that <span class="n-serif">fits you.</span></h2></div>
+          <AudienceCards />
+        </div>
+      </section>
+
+      <section class="n-band n-band--white pm-band" id="find">
+        <div class="n-wrap">
+          <div class="pm-head n-rise"><span class="n-eyebrow">Find us</span><h2 class="n-h2">The studio is in <span class="n-serif">Mumbai.</span></h2></div>
+          <div class="cx-find n-rise d1">
+            <div class="cx-map" role="img" aria-label="Stylised map showing the MMC office in Hiranandani Business Park">
+              <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="600" height="420" fill="#EAF0FB" />
+                <path d="M-20 300 C120 250 220 330 330 290 S520 230 640 270 L640 440 L-20 440Z" fill="#CFE0F7" />
+                <rect x="60" y="40" width="120" height="70" rx="14" fill="#DDE9D5" /><rect x="430" y="60" width="110" height="90" rx="14" fill="#DDE9D5" />
+                <g stroke="#fff" stroke-linecap="round" fill="none"><path d="M-10 120 L610 170" stroke-width="18" /><path d="M200 -10 L260 430" stroke-width="16" /><path d="M-10 230 L610 210" stroke-width="10" /><path d="M420 -10 L380 430" stroke-width="10" /><path d="M20 20 L580 60" stroke-width="7" /></g>
+                <g fill="#fff" opacity=".8"><rect x="290" y="70" width="60" height="40" rx="6" /><rect x="290" y="240" width="70" height="40" rx="6" /><rect x="90" y="140" width="60" height="50" rx="6" /><rect x="460" y="230" width="70" height="46" rx="6" /></g>
+                <g transform="translate(330 165)"><circle r="34" fill="#FFC528" opacity=".28" /><circle r="20" fill="#FFC528" opacity=".45" /><path d="M0 -26 C-14 -26 -22 -16 -22 -6 C-22 10 0 28 0 28 C0 28 22 10 22 -6 C22 -16 14 -26 0 -26Z" fill="#16329E" /><circle cy="-7" r="7" fill="#fff" /></g>
+              </svg>
+              <span class="cx-map__note">Stylised map, not to scale</span>
+              <div class="cx-map__card"><img src="/assets/contact/office.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" /><div><b>Hiranandani Business Park</b><span>Thane 400607, Maharashtra.</span></div></div>
+            </div>
+            <div class="cx-addr">
+              <address>4th Floor, Office No. 105<br />WeWork, Zenia Building<br />Hiranandani Business Park<br />Thane 400607, Maharashtra, India</address>
+              <p class="cx-hours"><b>Working hours, IST</b>Monday to Friday, 10:00 to 19:00<br />Saturday, 10:00 to 14:00</p>
+              <div class="cx-social"><a href={"tel:" + PHONE_TEL}>{PHONE_DISPLAY}</a><a href="mailto:sales-in@mondaymarketing.company">Email us</a><a href="https://www.instagram.com/monday.marketing.co/" target="_blank" rel="noreferrer">Instagram</a><a href="https://in.linkedin.com/company/monday-marketing-company" target="_blank" rel="noreferrer">LinkedIn</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Faq title={["What people ask before", "getting in touch."]} faq={faq} />
+
+      <p class="cx-prefer">Prefer to write? <a href="#brief">Send a brief</a> or email <a href="mailto:sales-in@mondaymarketing.company">sales-in@mondaymarketing.company</a>.</p>
+    </main>
+  </Shell>
+  <style is:global>
+    .cx-note { margin: 0 0 14px; padding: 10px 14px; border-radius: 10px; background: rgba(22, 50, 158, .08); font: 600 14px/1.5 var(--font-body); }
+    .cx-note a, .cx-consent a { color: #16329E; border-bottom: 1px solid currentColor; }
+    .cx-consent { display: flex; gap: 10px; align-items: flex-start; margin: 4px 0 14px; font: 500 14px/1.45 var(--font-body); cursor: pointer; }
+    .cx-consent input { width: 20px; height: 20px; margin-top: 1px; flex: none; accent-color: #16329E; }
+    .cx-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, .09); color: var(--mmc-error); font: 600 13px/1.45 var(--font-body); }
+    .cx-note[hidden], .cx-err[hidden], #cx-mailto[hidden] { display: none; }
+    #cx-thanks:focus { outline: none; }
+    #cx-submit[disabled] { opacity: .7; cursor: progress; }
+    [data-enter] { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .eyebrow[data-enter], .reveal[data-enter], .pmh__r[data-enter] { animation: heroIn .7s cubic-bezier(.2,.7,.2,1) both; }
+    .clip-reveal[data-enter] > span { transform: none !important; transition: none !important; animation: heroClip .8s cubic-bezier(.2,.7,.2,1) both; }
+    .clip-reveal.d2[data-enter] > span { animation-delay: .15s; } .clip-reveal.d3[data-enter] > span { animation-delay: .25s; }
+    @keyframes heroIn { from { opacity: .01; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes heroClip { from { transform: translateY(105%); } to { transform: none; } }
+    @media (prefers-reduced-motion: reduce) { [data-enter], .clip-reveal[data-enter] > span { animation: none !important; } }
+  </style>
+  <script>import "../scripts/hub.ts";</script>
+  <script>
+    /* Brief form: same submit logic as the previous page (window.MMCForms.submitLead with source "Contact page"). */
+    const form = document.getElementById("cx-form") as HTMLFormElement | null;
+    if (form) {
+      type St = { revenue: string; spend: string; timeline: string; systems: string[] };
+      const state: St = { revenue: "", spend: "", timeline: "", systems: [] };
+      const errEl = document.getElementById("cx-err") as HTMLElement;
+      const noteEl = document.getElementById("cx-prelaunch") as HTMLElement;
+      const submitBtn = document.getElementById("cx-submit") as HTMLButtonElement;
+      const FAIL = "We couldn't send that just now. Please email anuj@mondaymarketing.company and we'll pick it up.";
+      const showErr = (m: string) => { errEl.textContent = m; errEl.hidden = !m; };
+      (["revenue", "spend", "timeline"] as const).forEach((key) => {
+        form.querySelectorAll<HTMLElement>(`[data-single="${key}"] .cx-chip`).forEach((b) => b.addEventListener("click", () => {
+          showErr("");
+          const on = state[key] === b.dataset.v; state[key] = on ? "" : (b.dataset.v || "");
+          form.querySelectorAll(`[data-single="${key}"] .cx-chip`).forEach((x) => { const a = (x as HTMLElement).dataset.v === state[key]; x.classList.toggle("is-on", a); x.setAttribute("aria-pressed", String(a)); });
+          if (key === "revenue") {
+            const first = form.querySelector<HTMLElement>('[data-single="revenue"] .cx-chip');
+            noteEl.hidden = !(first && state.revenue === first.dataset.v);
+          }
+        }));
+      });
+      form.querySelectorAll<HTMLElement>("[data-multi] .cx-chip").forEach((b) => b.addEventListener("click", () => {
+        const v = b.dataset.v || ""; const i = state.systems.indexOf(v);
+        if (i > -1) state.systems.splice(i, 1); else state.systems.push(v);
+        b.classList.toggle("is-on", i < 0); b.setAttribute("aria-pressed", String(i < 0));
+      }));
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (submitBtn.disabled) return;
+        const fd = new FormData(form);
+        const w0 = window as any;
+        const phoneRaw = String(fd.get("phone") || "");
+        if (!(w0.MMCForms && w0.MMCForms.validPhone ? w0.MMCForms.validPhone(phoneRaw) : /\d{8,}/.test(phoneRaw))) { showErr((w0.MMCForms && w0.MMCForms.phoneMsg) || "Please enter a valid phone number."); return; }
+        const data = { name: String(fd.get("name") || ""), email: String(fd.get("email") || ""), phone: w0.MMCForms && w0.MMCForms.cleanPhone ? w0.MMCForms.cleanPhone(phoneRaw) : phoneRaw.trim(), brand: String(fd.get("brand") || ""), revenue: state.revenue, spend: state.spend, timeline: state.timeline, consent: fd.get("consent") === "on", systems: state.systems.slice(), message: String(fd.get("message") || "") };
+        if (!data.revenue || !data.spend || !data.timeline) { showErr("Please choose your revenue band, monthly budget and start time so we can route this to the right person."); return; }
+        showErr("");
+        const label = submitBtn.firstChild as Text;
+        const orig = label.textContent;
+        const setBusy = (b: boolean) => { submitBtn.disabled = b; submitBtn.setAttribute("aria-busy", String(b)); label.textContent = b ? "Sending…" : orig; };
+        setBusy(true);
+        const fail = () => { setBusy(false); showErr(FAIL); };
+        const w = window as any;
+        if (!w.MMCForms) { fail(); return; }
+        Promise.resolve(w.MMCForms.submitLead({ ...data, source: "Contact page" }, { subject: "New brief, " + (data.brand || data.name || "Contact form") })).then((r: any) => {
+          w.MMCForms.goThanks("brief", r, data);
+        }).catch(fail);
+      });
+    }
+  </script>
+</BaseLayout>

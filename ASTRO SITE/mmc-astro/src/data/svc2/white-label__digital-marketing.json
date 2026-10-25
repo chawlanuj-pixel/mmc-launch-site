@@ -1,0 +1,208 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "about2/huddle.jpg",
+    "pos": "50% 50%",
+    "alt": "A team sketching a marketing funnel on a whiteboard.",
+    "facts": [
+      {
+        "t": "One partner, many channels.",
+        "d": "Search, paid, social, content, email and web under one scope."
+      },
+      {
+        "t": "Start with one, add more.",
+        "d": "Add channels as your clients and your sales grow."
+      },
+      {
+        "t": "One report, your name.",
+        "d": "Combined reporting across channels."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies run full-service through one partner"
+  },
+  "work": {
+    "panel": "AgencyDashboard",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to run a client's",
+    "h2b": "full-service marketing.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Show your client one clean dashboard.",
+        "d": "Results across channels in one place, under your logo, so your client sees one agency, not six vendors."
+      },
+      {
+        "n": "02",
+        "t": "Keep a private view for your team.",
+        "d": "Notes, task lists and your margin sit on the agency side, away from the client's view."
+      },
+      {
+        "n": "03",
+        "t": "Split client view from agency view.",
+        "d": "Access is set per person, so your client sees results and your team sees the working."
+      },
+      {
+        "n": "04",
+        "t": "Deliver one monthly report under your name.",
+        "d": "Channels are combined into one report sent from your address, with a single set of next steps."
+      }
+    ],
+    "illustrative": "Illustrative layout of a white-label client dashboard. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Full-service delivery",
+    "pinsLabel": "Five places white-label full-service delivery slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "bars",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Channels"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Lead"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Reports"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Scope"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Margin"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Channels",
+        "plan": 55,
+        "actual": 82,
+        "chip": "Six vendors",
+        "tone": "b"
+      },
+      {
+        "head": "Lead",
+        "plan": 50,
+        "actual": 74,
+        "chip": "No owner",
+        "tone": "w"
+      },
+      {
+        "head": "Reports",
+        "plan": 60,
+        "actual": 62,
+        "chip": "Siloed",
+        "tone": "w"
+      },
+      {
+        "head": "Scope",
+        "plan": 45,
+        "actual": 90,
+        "chip": "Creeping",
+        "tone": "b"
+      },
+      {
+        "head": "Margin",
+        "plan": 65,
+        "actual": 48,
+        "chip": "Squeezed",
+        "tone": "b"
+      }
+    ],
+    "base": "One scope, one lead, one report",
+    "artLabel": "Five columns of plan against actual bars showing where white-label full-service delivery slips: channels, account lead, reports, scope and margin.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for full-service,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and channel scope",
+        "d": "We sign the NDA, agree which channels you will sell first and write the scope per channel.",
+        "get": "A written scope you can share with your client.",
+        "img": "contact/call.jpg",
+        "alt": "A scoping call with an agency lead.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot with one client",
+        "d": "One client runs on one or two channels with a named lead and a first combined report.",
+        "get": "A pilot report to judge on.",
+        "img": "social/plan.jpg",
+        "alt": "A content planner on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Brief intake, approvals, reporting calendar and escalation are written once across channels.",
+        "get": "A full-service operating guide.",
+        "img": "company/onepage.jpg",
+        "alt": "An operating guide on a notepad.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Add channels and clients",
+        "d": "More channels and clients join the same flow, one at a time, as you sell them.",
+        "get": "A full-service offer you can grow channel by channel.",
+        "img": "google/report.jpg",
+        "alt": "A search ads report on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "careers2/studio-wide.jpg",
+    "alt": "A studio team working around a shared table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Agency outsourcing",
+        "href": "/white-label/outsourcing/"
+      },
+      {
+        "n": "White-label reseller programme",
+        "href": "/white-label/reseller-programme/"
+      },
+      {
+        "n": "All services",
+        "href": "/services/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

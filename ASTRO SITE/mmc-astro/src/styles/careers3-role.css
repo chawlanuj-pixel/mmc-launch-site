@@ -1,0 +1,99 @@
+/* Careers role pages, v3 (October 2026). Prefix crp3-. Loaded after careers-role.css, which still owns the
+   application form (crp-form, crp-progress, crp-upload, crp-radio, crp-thanks) unchanged.
+   Hero: paper, big title beside a portrait photo, then a facts strip. Body: scannable sections + the form card.
+   A dock (desktop and tablet) keeps "Apply" one click away once the form has scrolled off. Tokens only. */
+
+.crp3-hero { padding: clamp(100px, 10vw, 140px) 0 clamp(36px, 4vw, 56px); background: var(--n-paper); }
+.crp3-hero__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(28px, 5vw, 96px); align-items: center; }
+.crp3-crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 0 10px; margin: 0 0 clamp(16px, 2vw, 28px); font: 400 14px/1.3 var(--font-body); color: var(--n-fg-3); }
+.crp3-crumb a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; color: var(--mmc-blue-700); font-weight: 700; text-decoration: none; }
+.crp3-crumb a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.crp3-crumb [aria-current] { color: var(--n-fg); font-weight: 700; }
+.crp3-hero__team { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 16px; font: 800 12px/1 var(--font-body); letter-spacing: .16em; text-transform: uppercase; color: var(--mmc-blue-700); }
+.crp3-hero__team i { width: 18px; height: 9px; border-radius: 18px 18px 0 0; background: var(--n-sun); }
+.crp3-hero__h1 { margin: 0; font: 800 clamp(40px, 6vw, 100px)/.98 var(--font-display); letter-spacing: -.045em; color: var(--n-fg); text-wrap: balance; }
+.crp3-hero__sub { margin: clamp(16px, 1.8vw, 24px) 0 0; max-width: 46ch; font: 400 clamp(17px, 1.5vw, 21px)/1.5 var(--font-body); color: var(--n-fg-2); }
+.crp3-hero__act { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; margin-top: clamp(22px, 2.6vw, 34px); }
+.crp3-link.btn--link { min-height: 44px; color: var(--mmc-blue-700); }
+.crp3-hero__fig { position: relative; margin: 0; border-radius: var(--radius-media); overflow: hidden; background: var(--mmc-blue-50); box-shadow: 0 30px 60px -40px rgba(var(--mmc-ink-rgb), .6); }
+.crp3-hero__fig img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1 !important; object-fit: cover; }
+.crp3-hero__fig figcaption { position: absolute; left: 14px; bottom: 14px; display: inline-flex; align-items: center; gap: 8px; padding: 8px 13px 8px 10px; border-radius: var(--radius-pill); background: rgba(255, 255, 255, .94); color: var(--n-fg); font: 700 12px/1 var(--font-body); }
+.crp3-hero__fig figcaption i { width: 14px; height: 7px; border-radius: 14px 14px 0 0; background: var(--n-sun); }
+
+.crp3-facts { margin: clamp(30px, 3.6vw, 52px) 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border-top: 1px solid var(--n-line-2); border-bottom: 1px solid var(--n-line-2); }
+.crp3-facts div { padding: 18px 18px 18px 0; display: flex; flex-direction: column; gap: 6px; }
+.crp3-facts div + div { padding-left: 18px; border-left: 1px solid var(--n-line); }
+.crp3-facts dt { font: 800 11px/1 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--n-fg-3); }
+.crp3-facts dd { margin: 0; font: 800 16px/1.3 var(--font-display); letter-spacing: -.01em; color: var(--n-fg); }
+
+/* ---------- body ---------- */
+.crp3-band { padding-top: clamp(48px, 6vw, 88px); }
+.crp3-desc { min-width: 0; }
+.crp3-sec { padding: 0 0 clamp(30px, 3.4vw, 46px); margin: 0 0 clamp(30px, 3.4vw, 46px); border-bottom: 1px solid var(--n-line); }
+.crp3-sec__h { display: flex; align-items: baseline; gap: 14px; margin: 0 0 18px; font: 800 clamp(24px, 2.4vw, 34px)/1.1 var(--font-display); letter-spacing: -.03em; color: var(--n-fg); }
+.crp3-sec__h[data-n]::before { content: attr(data-n); font: 600 italic 18px/1 var(--font-serif); color: var(--n-blue); }
+.crp3-sec--lead .crp3-sec__h { font: 800 12px/1 var(--font-body); letter-spacing: .16em; text-transform: uppercase; color: var(--n-fg-3); margin-bottom: 14px; }
+.crp3-sec--lead p { margin: 0; max-width: 34ch; font: 700 clamp(21px, 2.1vw, 30px)/1.35 var(--font-display); letter-spacing: -.02em; color: var(--n-fg); }
+.crp3-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.crp3-list li { position: relative; padding: 16px 16px 16px 46px; border-radius: var(--radius-in); background: var(--n-white); border: 1px solid var(--n-line); font: 600 15.5px/1.5 var(--font-body); color: var(--n-fg); }
+.crp3-list li::before { content: ""; position: absolute; left: 16px; top: 20px; width: 16px; height: 8px; border-radius: 16px 16px 0 0; background: var(--n-sun); }
+.crp3-list--tick li::before { width: 14px; height: 8px; top: 21px; border-radius: 0; background: none; border-left: 2px solid var(--n-blue); border-bottom: 2px solid var(--n-blue); transform: rotate(-45deg); }
+.crp3-bonus { margin-top: 22px; padding: 18px 20px; border-radius: var(--radius-in); background: var(--mmc-yellow-50); border: 1px solid var(--mmc-yellow-100); }
+.crp3-bonus h3 { margin: 0 0 10px; font: 800 12px/1 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--mmc-blue-700); }
+.crp3-bonus ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.crp3-bonus li { padding: 8px 14px; border-radius: var(--radius-pill); background: var(--n-white); border: 1px solid var(--n-line-2); font: 700 14px/1.3 var(--font-body); color: var(--n-fg); }
+.crp3-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; position: relative; }
+.crp3-steps li { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 16px; padding: 0 0 22px; }
+.crp3-steps li::before { content: ""; position: absolute; left: 21px; top: 40px; bottom: 4px; width: 1.5px; background: var(--n-line-2); }
+.crp3-steps li:last-child { padding-bottom: 0; }
+.crp3-steps li:last-child::before { display: none; }
+.crp3-steps b { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--n-white); border: 1.5px solid rgba(var(--mmc-blue-rgb), .3); font: 800 13px/1 var(--font-body); color: var(--mmc-blue-700); }
+.crp3-steps span { padding-top: 10px; font: 600 16px/1.5 var(--font-body); color: var(--n-fg); }
+.crp3-steps strong { font-weight: 800; }
+.crp3-where { border-bottom: 0; }
+.crp3-where__pics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.crp3-where__pics figure { margin: 0; border-radius: var(--radius-in); overflow: hidden; background: var(--mmc-blue-50); }
+.crp3-where__pics img { display: block; width: 100%; height: auto; }
+.crp3-where__cap { margin: 14px 0 0; font: 400 14.5px/1.6 var(--font-body); color: var(--n-fg-2); }
+.crp3-where__links { display: flex; flex-wrap: wrap; gap: 0 28px; margin: 6px 0 0; }
+.crp3-where__links a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font: 800 14.5px/1.2 var(--font-body); color: var(--mmc-blue-700); text-decoration: none; }
+.crp3-where__links a:hover { color: var(--mmc-blue); }
+.crp3-where__links svg { width: 14px; height: 14px; }
+.crp3-desc .crp-back { margin-left: 0; min-height: 44px; }
+
+/* The form card is not sticky: it is taller than most viewports, so sticking it would hide the submit button. */
+.crp3-band .crp-apply { position: static; }
+.crp-form input:not([type="radio"]):not([type="checkbox"]):focus, .crp-form textarea:focus { outline: none; border-color: var(--mmc-blue); box-shadow: 0 0 0 4px rgba(var(--mmc-blue-rgb), .14); }
+.crp3-hero a:focus-visible, .crp3-desc a:focus-visible, .crp3-dock a:focus-visible { outline: var(--focus-w) solid var(--focus-color); outline-offset: var(--focus-offset); border-radius: 6px; }
+
+/* ---------- dock ---------- */
+.crp3-dock { position: fixed; z-index: 60; right: 24px; bottom: 24px; display: flex; align-items: center; gap: 16px; padding: 8px 8px 8px 20px; border-radius: var(--radius-pill); background: var(--mmc-blue-900); color: var(--n-white); box-shadow: 0 18px 40px -16px rgba(var(--mmc-ink-rgb), .7); transform: translateY(160%); opacity: 0; transition: transform var(--dur-base) var(--ease), opacity var(--dur-base) var(--ease); pointer-events: none; }
+.crp3-dock.is-on { transform: none; opacity: 1; pointer-events: auto; }
+.crp3-dock__t { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.crp3-dock__t b { font: 800 14.5px/1.2 var(--font-display); white-space: nowrap; }
+.crp3-dock__t span { font: 600 12.5px/1.2 var(--font-body); color: var(--n-on-dark-2); white-space: nowrap; }
+.crp3-dock__btn { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding: 0 22px; border-radius: var(--radius-pill); background: var(--n-sun); color: var(--mmc-blue-700); font: 700 13px/1 var(--font-body); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+.crp3-dock__arr { position: relative; width: 16px; height: 1.5px; background: currentColor; }
+.crp3-dock__arr::after { content: ""; position: absolute; right: -1px; top: -4px; width: 8px; height: 8px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); }
+.crp3-dock a:focus-visible { outline-color: var(--focus-color-dark); }
+@media (max-width: 760px) { .crp3-dock { display: none; } }
+@media (prefers-reduced-motion: reduce) { .crp3-dock { transition: none; } }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1180px) { .crp3-list { grid-template-columns: 1fr; } }
+@media (max-width: 860px) {
+  .crp3-hero__grid { grid-template-columns: 1fr; align-items: start; }
+  .crp3-hero__fig { max-width: 520px; }
+  .crp3-hero__fig img { aspect-ratio: 16 / 10 !important; object-fit: cover; }
+}
+@media (max-width: 720px) {
+  .crp3-hero__act .btn--primary { width: 100%; justify-content: center; }
+  .crp3-facts { grid-template-columns: 1fr 1fr; }
+  .crp3-facts div, .crp3-facts div + div { padding: 14px 12px 14px 0; border-left: 0; border-top: 1px solid var(--n-line); }
+  .crp3-facts div:nth-child(-n+2) { border-top: 0; }
+  .crp3-facts div:nth-child(even) { padding-left: 12px; border-left: 1px solid var(--n-line); }
+  .crp3-where__pics { grid-template-columns: 1fr 1fr; gap: 8px; }
+}
+
+/* The file input is transparent over its box, so show its keyboard focus on the box. */
+.crp-upload__box:has(input:focus-visible) { border-color: var(--mmc-blue); box-shadow: 0 0 0 4px rgba(var(--mmc-blue-rgb), .14); }

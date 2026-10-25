@@ -1,0 +1,228 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "shop/plan.jpg",
+    "pos": "50% 50%",
+    "alt": "A store layout sketched on paper.",
+    "facts": [
+      {
+        "t": "Built for your D2C clients.",
+        "d": "Stores, themes and checkout work behind your brand."
+      },
+      {
+        "t": "Migrations handled.",
+        "d": "Moves from other platforms with products and redirects intact."
+      },
+      {
+        "t": "Notes for their team.",
+        "d": "Handover your client's staff can follow without you."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why D2C agencies hand their Shopify work to MMC"
+  },
+  "work": {
+    "panel": "ShopifyAdmin",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on a",
+    "h2b": "Shopify build.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Set up the catalogue to your design.",
+        "d": "Products, collections and variants are structured so the store matches your designs and your client can add more."
+      },
+      {
+        "n": "02",
+        "t": "Build the product page on a phone first.",
+        "d": "The theme is customised around the mobile product page, where most D2C visits happen."
+      },
+      {
+        "n": "03",
+        "t": "Cut apps and speed up the store.",
+        "d": "Apps you do not need come out and images are tuned, so your client's store is not slowed by add-ons."
+      },
+      {
+        "n": "04",
+        "t": "Set up checkout and payment options.",
+        "d": "UPI, cards, wallets and cash on delivery are configured with your client's gateway, and tested before launch."
+      },
+      {
+        "n": "05",
+        "t": "Hand over retention-ready segments.",
+        "d": "Repeat-buyer segments and reminders are set up, with notes your client's team can run."
+      }
+    ],
+    "illustrative": "Illustrative layout of a Shopify-style admin and a mobile storefront. Not a client store, no real figures. Shopify and its logo belong to Shopify Inc."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Store build delivery",
+    "pinsLabel": "Five places white-label Shopify work slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "board",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Catalogue"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Theme"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Apps"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Checkout"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Handover"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "layers",
+        "head": "Catalogue",
+        "lines": [
+          "Variants a mess",
+          "Collections unclear"
+        ],
+        "chip": "Messy",
+        "tone": "w"
+      },
+      {
+        "glyph": "phone",
+        "head": "Theme",
+        "lines": [
+          "Edits piled on edits",
+          "Mobile is an afterthought"
+        ],
+        "chip": "Patched",
+        "tone": "w"
+      },
+      {
+        "glyph": "code",
+        "head": "Apps",
+        "lines": [
+          "An app for every gap",
+          "Store slows down"
+        ],
+        "chip": "Heavy",
+        "tone": "b"
+      },
+      {
+        "glyph": "coin",
+        "head": "Checkout",
+        "lines": [
+          "Payment options missing",
+          "Drop-off at pay"
+        ],
+        "chip": "Leaking",
+        "tone": "b"
+      },
+      {
+        "glyph": "users",
+        "head": "Handover",
+        "lines": [
+          "No notes for the client",
+          "Calls you for edits"
+        ],
+        "chip": "Calls",
+        "tone": "w"
+      }
+    ],
+    "base": "One store system, handed over clean",
+    "artLabel": "Five cards showing where white-label Shopify work slips: catalogue, theme, apps, checkout and handover.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for Shopify,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and store scope",
+        "d": "We sign the NDA, take your designs and the client's catalogue, and write the build scope.",
+        "get": "A written store scope and migration plan.",
+        "img": "contact/call.jpg",
+        "alt": "A scoping call for a store build.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot store section",
+        "d": "One collection, one product template or one checkout fix, built to your standards.",
+        "get": "A preview store link to judge on.",
+        "img": "sv/tech.jpg",
+        "alt": "A store page on a laptop and phone beside code.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Theme conventions, app policy, QA checklist and handover notes are written once.",
+        "get": "A store build runbook for your team.",
+        "img": "company/onepage.jpg",
+        "alt": "A store build runbook being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale across D2C clients",
+        "d": "More stores and fixes run through the same flow, with capacity added as your client list grows.",
+        "get": "A Shopify service you can sell to every D2C client.",
+        "img": "sv/revenue.jpg",
+        "alt": "A phone showing a product ad.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "contact/meeting.jpg",
+    "alt": "Three colleagues around a table with sketches.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label app development",
+        "href": "/white-label/app-development/"
+      },
+      {
+        "n": "White-label AI services",
+        "href": "/white-label/ai-services/"
+      },
+      {
+        "n": "Shopify development",
+        "href": "/services/shopify-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

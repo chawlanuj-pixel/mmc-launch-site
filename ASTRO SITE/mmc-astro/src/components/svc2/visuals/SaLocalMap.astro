@@ -1,0 +1,51 @@
+---
+// VISUAL: SaLocalMap (kind "SaLocalMap"). A map pack beside a Google Business Profile card. Five leaks: duplicate listings on the map,
+// generic categories, stale hours and photos, unanswered review, website that ignores the place. Pins in a row above (y = 0) at
+// x = 12, 44, 60, 76, 92 with a dashed leader down to each target. No figures, no real business. Styles scoped (prefix slm-).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const targets = [34, 22, 52, 70, 92]; // percent of the art height where each leader ends
+---
+<div class="slm-row" aria-hidden="true"></div>
+<div class="slm-art" role="img" aria-label="A map with local results beside a business profile card, showing five places local visits are lost.">
+  <div class="slm-map">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 C 25 60, 40 80, 100 55 M30 0 C 35 30, 55 40, 50 100 M0 25 L100 40 M78 0 C 70 40, 90 60, 82 100" /></svg>
+    <span class="slm-mk" style="left:26%;top:30%"></span>
+    <span class="slm-mk slm-mk--dup" style="left:34%;top:38%"></span>
+    <span class="slm-mk slm-mk--dim" style="left:60%;top:62%"></span>
+    <span class="slm-mk slm-mk--dim" style="left:72%;top:24%"></span>
+    <small class="slm-tag">Duplicate listing</small>
+  </div>
+  <div class="slm-card">
+    <div class="slm-top"><b class="slm-name"><u></u></b><span class="slm-cat">Category</span><span class="slm-cat slm-cat--e">Add more</span></div>
+    <div class="slm-mid"><span class="slm-hrs">Hours: out of date</span><span class="slm-ph"><i></i><i></i><i></i></span></div>
+    <div class="slm-rev"><span class="slm-st" aria-hidden="true">★★★★☆</span><u></u><em>No reply yet</em></div>
+    <div class="slm-web"><span class="slm-btn">Website</span><small>Does not mention this place</small></div>
+  </div>
+  <div class="slm-leads" aria-hidden="true">
+    {pins.map((p, k) => <i style={`left:${p.x}%;height:${targets[k] ?? 50}%`}></i>)}
+  </div>
+</div>
+<style is:global>
+.slm-row { height: 78px; }
+.slm-art { position: relative; display: grid; grid-template-columns: 34% 1fr; gap: 3%; aspect-ratio: 2.3 / 1; }
+.slm-map { position: relative; overflow: hidden; border-radius: 14px; background: #E7EEF9; border: 1px solid #DADDE1; }
+.slm-map svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: #fff; stroke-width: 6; vector-effect: non-scaling-stroke; }
+.slm-mk { position: absolute; width: 20px; height: 20px; margin: -20px 0 0 -10px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--mmc-blue); box-shadow: 0 0 0 3px #fff; }
+.slm-mk--dup { background: #B42318; } .slm-mk--dim { background: #9DB8F7; }
+.slm-tag { position: absolute; left: 8%; bottom: 8%; padding: 3px 8px; border-radius: 99px; background: #FDE8E8; color: #B42318; font: 800 10px var(--font-body); text-transform: uppercase; letter-spacing: .04em; }
+.slm-card { display: grid; grid-template-rows: auto 1fr 1fr auto; gap: 8px; padding: clamp(10px, 1.4vw, 18px); border-radius: 14px; border: 1px solid #DADDE1; background: #fff; min-width: 0; }
+.slm-top, .slm-mid, .slm-rev, .slm-web { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.slm-name { flex: 1 0 100%; } .slm-name u { display: block; width: 46%; height: 11px; border-radius: 9px; background: var(--mmc-blue-900); }
+.slm-cat { padding: 4px 10px; border-radius: 99px; background: #DCE6FB; font: 700 11px var(--font-body); color: var(--mmc-blue-900); } .slm-cat--e { background: transparent; border: 1px dashed #8A93A6; color: #65676B; }
+.slm-hrs { padding: 4px 10px; border-radius: 8px; background: #FFF3D6; color: #8A5A00; font: 800 10.5px var(--font-body); }
+.slm-ph { display: flex; gap: 6px; margin-left: auto; } .slm-ph i { width: 34px; height: 26px; border-radius: 6px; background: #CBD3E4; } .slm-ph i:nth-child(2) { background: #DADDE1; }
+.slm-st { color: #E8A100; letter-spacing: 1px; font-size: 13px; } .slm-rev u { flex: 1; min-width: 40px; height: 6px; border-radius: 9px; background: #CBD3E4; }
+.slm-rev em { padding: 4px 9px; border-radius: 99px; background: #FDE8E8; color: #B42318; font: 800 10px var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; }
+.slm-btn { padding: 7px 14px; border-radius: 99px; background: var(--mmc-blue); color: #fff; font: 800 11px var(--font-body); } .slm-web small { font: 600 11px var(--font-body); color: #65676B; }
+.slm-leads i { position: absolute; top: 0; width: 0; border-left: 2px dashed var(--mmc-yellow); z-index: 1; transform: translateX(-1px); }
+.slm-leads i::after { content: ""; position: absolute; left: -6px; bottom: -4px; width: 10px; height: 10px; border-radius: 50%; background: var(--mmc-yellow); }
+@media (max-width: 760px) { .slm-row { height: 58px; } .slm-art { aspect-ratio: 1.15 / 1; grid-template-columns: 1fr; grid-template-rows: 34% 1fr; gap: 3%; } .slm-card { gap: 4px; padding: 8px; } .slm-cat, .slm-hrs, .slm-web small { font-size: 9px; } .slm-ph i { width: 22px; height: 18px; } .slm-tag { font-size: 8.5px; } .slm-leads { display: none; } }
+/* Readable floor on phones (small-defects pass): micro labels >= 10px, words that carry meaning >= 11px. */
+@media (max-width: 760px) { .slm-cat, .slm-hrs, .slm-web small { font-size: 11px; } .slm-tag { font-size: 10px; } .slm-rev em { font-size: 11px; } }
+</style>

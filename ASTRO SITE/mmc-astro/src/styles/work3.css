@@ -1,0 +1,138 @@
+/* =====================================================================================================
+   work3.css: the /work/ portfolio landing (prefix wk3-). Its own hero shape (big type over an edge-to-edge
+   reel of real client artwork), large case-study previews with no-JS filter chips, and photo-led kinds.
+   The approved brand wall keeps its own styles (work-pages.css, case-study.css). Tokens only.
+   ===================================================================================================== */
+
+.wk3 { --wk3-top: clamp(112px, 11vw, 152px); --wk3-line: rgba(var(--mmc-ink-rgb), .12); }
+.wk3 .btn--link { min-height: 44px; }
+.wk3 a:focus-visible, .wk3 button:focus-visible, .wk3 [tabindex="0"]:focus-visible { outline: var(--focus-w) solid var(--focus-color); outline-offset: var(--focus-offset); }
+
+.wk3-band { position: relative; padding: var(--band-y) 0; }
+.wk3-band--white { background: var(--n-white); }
+.wk3-head { max-width: var(--measure-wide); margin-bottom: clamp(28px, 3.4vw, 48px); }
+.wk3-head .n-lede { margin-top: 14px; }
+
+/* ---------- hero ---------- */
+.wk3-hero { background: var(--n-paper); padding: var(--wk3-top) 0 clamp(40px, 5vw, 72px); overflow: hidden; }
+.wk3-crumbs ol { display: flex; flex-wrap: wrap; align-items: center; list-style: none; margin: 0 0 clamp(18px, 2.4vw, 32px); padding: 0; font: 400 14px/1.3 var(--font-body); color: var(--n-fg-3); }
+.wk3-crumbs li { display: inline-flex; align-items: center; }
+.wk3-crumbs li + li::before { content: "/"; margin: 0 10px; }
+.wk3-crumbs a { display: inline-flex; align-items: center; min-height: 44px; color: var(--mmc-blue-700); font-weight: 700; text-decoration: none; }
+.wk3-crumbs a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.wk3-crumbs [aria-current] { color: var(--n-fg); font-weight: 700; }
+.wk3-kicker { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; font: 800 12px/1 var(--font-body); letter-spacing: .2em; text-transform: uppercase; color: var(--n-fg-3); }
+.wk3-kicker::before { content: ""; width: 26px; height: 1.5px; background: currentColor; }
+.wk3-hero__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(22px, 2.6vw, 36px); }
+.wk3-hero__side { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px clamp(28px, 5vw, 96px); align-items: end; }
+.wk3-h1 { margin: 0; font: 800 clamp(48px, 7.6vw, 124px)/.94 var(--font-display); letter-spacing: -0.048em; color: var(--n-fg); text-wrap: balance; }
+.wk3-h1 em { font-style: italic; font-weight: 600; letter-spacing: -0.01em; color: var(--mmc-blue); }
+.wk3-lede { margin: 0; max-width: 54ch; font: 500 clamp(17px, 1.45vw, 21px)/1.55 var(--font-body); color: var(--n-fg-2); }
+.wk3-hero__act { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; }
+
+/* the reel: edge to edge, one big piece and two stacked */
+.wk3-reel { display: grid; grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(10px, 1.2vw, 18px); margin-top: clamp(40px, 5vw, 72px); padding-inline: clamp(10px, 1.2vw, 18px); height: clamp(360px, 40vw, 640px); }
+.wk3-reel__item { position: relative; display: block; overflow: hidden; border-radius: var(--radius-media); background: var(--n-ink); }
+.wk3-reel__item--big { grid-row: 1 / span 2; }
+.wk3-reel__item img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; transition: transform 1.2s var(--ease-out); }
+.wk3-reel__cap { position: absolute; left: clamp(12px, 1.6vw, 22px); bottom: clamp(12px, 1.6vw, 22px); z-index: 1; display: grid; gap: 5px; padding: 12px 16px; border-radius: var(--radius-in); background: var(--n-white); color: var(--n-fg); box-shadow: 0 14px 30px -18px rgba(10, 21, 70, .55); }
+.wk3-reel__cap b { font: 800 clamp(17px, 1.6vw, 24px)/1.1 var(--font-display); letter-spacing: -0.02em; }
+.wk3-reel__cap span { font: 800 11px/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--mmc-blue-700); }
+.wk3-reel__item:hover img { transform: scale(1.035); }
+.wk3-reel__item:focus-visible { outline-color: var(--focus-color); }
+
+/* ---------- case studies ---------- */
+.wk3-cases__head { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 72px); align-items: end; margin-bottom: clamp(22px, 2.6vw, 34px); }
+.wk3-note { margin: 0; max-width: 52ch; font: 400 15px/1.55 var(--font-body); color: var(--n-fg-3); }
+.wk3-flt { position: relative; }
+.wk3-anchor { position: absolute; top: -110px; left: 0; width: 1px; height: 1px; pointer-events: none; }
+.wk3-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: clamp(26px, 3vw, 40px); }
+.wk3-chip { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: var(--radius-pill); border: 1.5px solid var(--n-line-2); background: var(--n-white); color: var(--n-fg); font: 800 14px/1 var(--font-body); text-decoration: none; transition: background var(--dur-quick) var(--ease), color var(--dur-quick) var(--ease), border-color var(--dur-quick) var(--ease); }
+.wk3-chip:hover { border-color: var(--mmc-blue); }
+.wk3-chip.is-on { background: var(--mmc-blue-700); border-color: var(--mmc-blue-700); color: var(--n-white); }
+.wk3-flt__empty { margin: 0 0 18px; font: 600 15px/1.5 var(--font-body); color: var(--n-fg); }
+
+/* No-JS filter: the chip links point at #f-<kind>; :target picks the group. Off once the script runs (.is-js). */
+.wk3-flt:not(.is-js):has(#f-d2c:target) .wk3-case:not([data-g="d2c"]),
+.wk3-flt:not(.is-js):has(#f-b2b:target) .wk3-case:not([data-g="b2b"]),
+.wk3-flt:not(.is-js):has(#f-edu:target) .wk3-case:not([data-g="edu"]),
+.wk3-flt:not(.is-js):has(#f-consumer:target) .wk3-case:not([data-g="consumer"]) { display: none; }
+.wk3-flt:not(.is-js):has(.wk3-anchor:target) .wk3-chip.is-on { background: var(--n-white); border-color: var(--n-line-2); color: var(--n-fg); }
+.wk3-flt:not(.is-js):has(#f-d2c:target) [data-cf="d2c"],
+.wk3-flt:not(.is-js):has(#f-b2b:target) [data-cf="b2b"],
+.wk3-flt:not(.is-js):has(#f-edu:target) [data-cf="edu"],
+.wk3-flt:not(.is-js):has(#f-consumer:target) [data-cf="consumer"] { background: var(--mmc-blue-700); border-color: var(--mmc-blue-700); color: var(--n-white); }
+
+.wk3-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(36px, 4vw, 64px) clamp(20px, 2.6vw, 40px); }
+.wk3-case[hidden] { display: none; }
+.wk3-case__a { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; border-radius: var(--radius-card); }
+.wk3-case__pic { position: relative; display: block; aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--radius-card); background: var(--mmc-surface); }
+.wk3-case__pic > img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; transition: transform 1s var(--ease-out); }
+.wk3-case__logo { position: absolute; left: 14px; top: 14px; display: grid; place-items: center; width: 64px; height: 64px; padding: 8px; border-radius: var(--radius-in); background: var(--n-white); box-shadow: 0 8px 22px -12px rgba(15, 30, 94, .45); }
+.wk3-case__logo img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.wk3-case__body { display: flex; flex-direction: column; flex: 1; padding: 20px 4px 0; }
+.wk3-case__top { display: grid; gap: 8px; }
+.wk3-case__kind { font: 800 12px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--mmc-blue-700); }
+.wk3-case__name { margin: 0; font: 800 clamp(22px, 1.8vw, 28px)/1.1 var(--font-display); letter-spacing: -0.03em; color: var(--n-fg); }
+.wk3-case__scope { margin-top: 10px; max-width: 60ch; font: 400 16px/1.55 var(--font-body); color: var(--n-fg-2); }
+.wk3-case__svc { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.wk3-case__svc span { display: inline-flex; align-items: center; padding: 6px 11px; border-radius: var(--radius-pill); background: var(--mmc-blue-50); color: var(--mmc-blue-700); font: 700 13px/1.2 var(--font-body); }
+.wk3-case__go { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: auto; padding-top: 10px; font: 800 15px/1 var(--font-body); color: var(--mmc-blue-700); }
+.wk3-case__go svg { transition: transform var(--dur-quick) var(--ease); }
+.wk3-case__a:hover .wk3-case__pic > img { transform: scale(1.04); }
+.wk3-case__a:hover .wk3-case__name { color: var(--mmc-blue-700); }
+.wk3-case__a:hover .wk3-case__go svg { transform: translateX(4px); }
+
+/* the approved wall: its case links get a 44px target on this page (proof-chips.css only does it under 760px) */
+.wk3 .bm__go { display: inline-flex; align-items: center; min-height: 44px; padding-block: 0; }
+
+/* ---------- kinds ---------- */
+.wk3-kinds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 36px); }
+.wk3-kind { display: flex; flex-direction: column; }
+.wk3-kind__pic { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-card); }
+.wk3-kind__pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wk3-kind__k { position: absolute; left: 14px; top: 14px; padding: 8px 12px; border-radius: var(--radius-pill); background: var(--n-white); color: var(--mmc-blue-700); font: 800 12px/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; }
+.wk3-kind h3 { margin: 18px 0 0; font: 800 clamp(19px, 1.6vw, 23px)/1.18 var(--font-display); letter-spacing: -0.02em; color: var(--n-fg); text-wrap: balance; }
+.wk3-kind p { margin: 10px 0 0; font: 400 15.5px/1.6 var(--font-body); color: var(--n-fg-2); }
+.wk3-kind__more { list-style: none; margin: 12px 0 0; padding: 12px 0 0; border-top: 1px solid var(--wk3-line); display: grid; gap: 8px; font: 400 14.5px/1.5 var(--font-body); color: var(--n-fg-2); }
+.wk3-kind__more b { color: var(--n-fg); font-weight: 800; }
+.wk3-kind > a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: auto; padding-top: 10px; font: 800 15px/1.2 var(--font-body); color: var(--mmc-blue-700); text-decoration: none; }
+.wk3-kind > a span { transition: transform var(--dur-quick) var(--ease); }
+.wk3-kind > a:hover span { transform: translateX(4px); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1199px) {
+  .wk3-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1100px) {
+  .wk3-kinds { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wk3-kind__pic { aspect-ratio: 3 / 2; }
+}
+@media (max-width: 900px) {
+  .wk3-hero__side, .wk3-cases__head { grid-template-columns: minmax(0, 1fr); }
+  .wk3-reel { height: auto; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto auto; }
+  .wk3-reel__item--big { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 16 / 9; }
+  .wk3-reel__item:not(.wk3-reel__item--big) { aspect-ratio: 4 / 3; }
+}
+@media (max-width: 720px) {
+  .wk3 { --wk3-top: 104px; }
+  .wk3-h1 { font-size: clamp(44px, 13vw, 60px); line-height: .96; letter-spacing: -0.045em; }
+  .wk3-hero__act .btn--primary { width: 100%; justify-content: center; }
+  .wk3-reel { gap: 8px; padding-inline: 8px; }
+  .wk3-reel__item { border-radius: var(--radius-card); }
+  .wk3-reel__item--big { aspect-ratio: 4 / 3; }
+  .wk3-reel__item:not(.wk3-reel__item--big) { aspect-ratio: 1 / 1; }
+  .wk3-reel__cap { left: 8px; bottom: 8px; padding: 8px 10px; }
+  .wk3-reel__cap b { font-size: 15px; }
+  .wk3-chips { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(var(--shell-pad) * -1); padding-inline: var(--shell-pad); scrollbar-width: none; }
+  .wk3-chips::-webkit-scrollbar { display: none; }
+  .wk3-chip { flex: none; }
+  .wk3-grid { grid-template-columns: minmax(0, 1fr); }
+  .wk3-case__logo { width: 52px; height: 52px; }
+  .wk3-kinds { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .wk3-kind__pic { aspect-ratio: 16 / 10; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wk3-reel__item img, .wk3-case__pic > img, .wk3-case__go svg, .wk3-chip { transition: none; }
+  .wk3-reel__item:hover img, .wk3-case__a:hover .wk3-case__pic > img { transform: none; }
+}

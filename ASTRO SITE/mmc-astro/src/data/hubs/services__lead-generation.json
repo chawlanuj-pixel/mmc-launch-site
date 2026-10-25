@@ -1,0 +1,522 @@
+{
+  "file": "lead-generation.html",
+  "path": "/services/lead-generation/",
+  "key": "leadgen",
+  "title": "Lead Generation Agency India with CRM and CAPI | MMC",
+  "description": "Lead generation agency in India connecting paid media to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. B2B, education, D2C.",
+  "ogTitle": "Lead generation that brings in qualified leads",
+  "ogDescription": "Paid media, landing pages and follow-up funnels connected to your CRM and Meta's Conversions API.",
+  "ogAlt": "Monday Marketing Company: lead generation connected to your CRM and Meta CAPI.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/lead-generation.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lead generation",
+          "item": "https://www.mondaymarketing.company/lead-generation.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/lead-generation.html#webpage",
+      "url": "https://www.mondaymarketing.company/lead-generation.html",
+      "name": "Lead Generation Agency India with CRM and CAPI | MMC",
+      "description": "Lead generation agency in India connecting paid media to your CRM and Meta CAPI, so you pay for qualified leads, not form fills. B2B, education, D2C.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/lead-generation.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/lead-generation.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/lead-generation.html#service",
+      "name": "Lead generation",
+      "serviceType": "Lead generation",
+      "description": "Paid media, landing pages and follow-up funnels connected to a CRM and Meta's Conversions API, for B2B companies, educational institutes and D2C brands.",
+      "url": "https://www.mondaymarketing.company/lead-generation.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/lead-generation.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is lead generation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lead generation is the work of bringing in enquiries from people likely to buy, then passing sales or admissions the ones worth a conversation. The measure that matters is the cost of a qualified lead, not the number of form fills."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does lead generation work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We agree what a qualified lead is with your team, build landing pages and short forms, connect your CRM and Meta CAPI so the platform learns from accepted leads, and optimise every week. Follow-up sequences keep leads warm until they are ready."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does lead generation cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scoped after a call. Your ad spend is paid to the platforms and sits outside our fee. Our fee covers the strategy, the landing pages, the CRM and CAPI tracking and the weekly optimisation, and we quote it once we know your funnel and your CRM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee leads, meetings or admissions, because buyers and families decide and your follow-up matters as much as the ad. We commit to a clear definition of a qualified lead, accurate tracking, weekly optimisation and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is lead generation for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "B2B companies, educational institutes and D2C brands with considered purchases. Not only D2C: B2B is judged on cost per qualified lead, SQL rate and pipeline, and education on enquiries, visits and admissions. See the B2B, education and D2C pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your ad accounts and CRM, a written view from sales or admissions of what a good lead is, and someone who will follow up quickly. If you have no CRM yet, we help you choose one."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "leadgen",
+    "wm": "Leads",
+    "eyebrow": "● Lead generation agency",
+    "h1": [
+      "Lead generation",
+      [
+        "that ",
+        "brings in qualified leads",
+        "."
+      ]
+    ],
+    "sub": "Paid media, landing pages and follow-up funnels connected to your CRM and Meta's Conversions API, so campaigns are judged on leads your team accepts.",
+    "tiles": [
+      {
+        "img": "leadgen/attract.jpg",
+        "pos": "50% 50%",
+        "label": "Get found",
+        "note": "Search and paid media"
+      },
+      {
+        "img": "b2b/capture.jpg",
+        "pos": "50% 50%",
+        "label": "Capture",
+        "note": "Landing pages and forms"
+      },
+      {
+        "img": "edu/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Qualify",
+        "note": "CRM and Meta CAPI"
+      },
+      {
+        "img": "edu/nurture.jpg",
+        "pos": "50% 50%",
+        "label": "Follow up",
+        "note": "Retention funnels"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Lead generation is the work of bringing in enquiries from people who are likely to buy, then passing sales or admissions the ones worth a conversation. MMC runs it for B2B companies, educational institutes and D2C brands with considered purchases, and judges it on the cost of a qualified lead, not on the number of form fills.",
+      "hl": "likely to buy",
+      "who": "Monday Marketing Company (MMC) runs lead generation for B2B companies, educational institutes and D2C brands with considered purchases.",
+      "points": [
+        {
+          "icon": "link",
+          "title": "Connect every lead",
+          "text": "Every lead goes to a CRM, and its stage is sent back to Meta through the Conversions API (CAPI)."
+        },
+        {
+          "icon": "target",
+          "title": "Learn from qualified leads",
+          "text": "Campaigns learn from the qualified leads, not only from form fills."
+        },
+        {
+          "icon": "gauge",
+          "title": "Judge by quality",
+          "text": "The work is judged by the cost of a qualified lead."
+        }
+      ],
+      "image": "shared/b2b.jpg",
+      "chip": "Judged by cost of a qualified lead"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where lead generation goes wrong",
+      "h2a": "Five ways lead generation",
+      "h2b": "goes wrong.",
+      "lede": "Most lead generation is measured on volume. Each stage below is where quality is lost, and the part of our service that protects it."
+    },
+    "stages": [
+      {
+        "k": "Define a qualified lead",
+        "tag": "Lead generation strategy",
+        "breaks": "Marketing counts every form fill as a lead.",
+        "why": "If marketing and sales never agree what a good lead is, campaigns get judged on volume, sales complains about quality, and nobody can tell which is right.",
+        "does": "We start by agreeing with your sales or admissions team what a qualified lead is, and the stages a lead passes through. That definition drives targeting, tracking and reporting.",
+        "href": "audit.html",
+        "img": "b2b/call.jpg"
+      },
+      {
+        "k": "Attract the right people",
+        "tag": "Search and paid media",
+        "breaks": "Broad targeting, so the ads reach anyone who might click.",
+        "why": "Cheap clicks from the wrong audience become expensive leads that never buy or enrol. Intent matters more than reach.",
+        "does": "We aim search and paid social at the queries and audiences that signal a real need, and build the SEO that keeps you found between campaigns.",
+        "href": "services.html#organic",
+        "img": "au/look-structure.jpg"
+      },
+      {
+        "k": "Capture without friction",
+        "tag": "Landing pages and conversion",
+        "breaks": "A long form on a slow page, with no clear next step.",
+        "why": "Many enquiries start on a phone. Every extra field and every second of load time loses a lead who was already interested.",
+        "does": "We build fast, mobile-first landing pages and short forms with one clear next step, such as a call, a demo or a WhatsApp message, and test them.",
+        "href": "services.html#organic",
+        "img": "b2b/explain.jpg"
+      },
+      {
+        "k": "Qualify with CRM and Meta CAPI",
+        "tag": "CRM and Conversions API",
+        "breaks": "Optimising campaigns on form fills.",
+        "why": "Ad platforms learn from what you tell them. Told only that a form was filled, Meta finds whoever fills forms cheapest, and lead quality can fall as volume rises.",
+        "does": "We connect your leads to a CRM and send the stages that matter (qualified, meeting booked, applied, won, enrolled) back to Meta through the Conversions API (CAPI), so campaigns learn what a good lead looks like.",
+        "href": "#quality",
+        "img": "leadgen/capi.jpg"
+      },
+      {
+        "k": "Follow up and nurture",
+        "tag": "Retention marketing",
+        "breaks": "Leads wait days for a reply, then go cold.",
+        "why": "Many leads are not ready at first contact. The business that replies quickly and keeps sensible contact is the one remembered when the decision is made.",
+        "does": "We build retention funnels of WhatsApp, email and call reminders, triggered from the CRM, that keep each lead warm until they are ready and win back the quiet ones.",
+        "href": "services.html#revenue",
+        "img": "b2b/followup.jpg"
+      }
+    ],
+    "loop": {
+      "variant": "b",
+      "img": "au/look-tracking.jpg",
+      "imgCaption": "Leads in the CRM, stages into Meta",
+      "eyebrow": "Lead quality",
+      "h2a": "How CRM and Meta CAPI make leads",
+      "h2b": "better.",
+      "lede": "A form fill tells Meta that someone showed interest, not that they were a good lead. Your CRM knows what happened next. The Conversions API (CAPI) carries that back to Meta.",
+      "steps": [
+        {
+          "k": "The lead arrives",
+          "d": "An ad brings a form fill, a call or a WhatsApp message.",
+          "chip": "A lead"
+        },
+        {
+          "k": "Your CRM records what happens",
+          "d": "Your team marks it qualified, meeting booked, applied, won or enrolled.",
+          "chip": "Qualified · Meeting · Won"
+        },
+        {
+          "k": "CAPI sends the stage to Meta",
+          "d": "The stage goes back to Meta as a server-side event, not a browser guess.",
+          "chip": "Server-side event"
+        },
+        {
+          "k": "Meta learns your best leads",
+          "d": "The platform can move away from cheap form fills and find more people like the ones your team accepted.",
+          "chip": "Better targeting"
+        }
+      ],
+      "returnLabel": "The next ads find more leads like the good ones",
+      "without": {
+        "t": "Optimised for form fills",
+        "d": "The platform sees only that a form was submitted. It finds whoever fills forms cheapest, and your team spends the week on leads that never fit."
+      },
+      "with": {
+        "t": "Optimised for qualified leads",
+        "d": "The platform sees which leads your team accepted and which became customers. Spend can move toward that kind of buyer, and the cost of a qualified lead becomes the number to watch."
+      }
+    },
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "lead generation is working.",
+      "note": "Read against your own sales data.",
+      "cards": [
+        {
+          "n": "Cost per qualified lead",
+          "d": "What you pay for a lead your team accepts, not for any form fill."
+        },
+        {
+          "n": "Lead-to-customer rate",
+          "d": "The share of qualified leads that become customers or enrolments."
+        },
+        {
+          "n": "CAC runway",
+          "d": "How long spend runs before new customers pay it back."
+        },
+        {
+          "n": "LTV:CAC",
+          "d": "What a customer is worth and how fast you recover the cost of winning one."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where lead generation fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Retention marketing",
+          "d": "WhatsApp, email and loyalty funnels that bring buyers back.",
+          "img": "rt/journey.jpg",
+          "href": "retention-marketing.html",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready websites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "web-development.html",
+          "link": "See Website development"
+        },
+        {
+          "n": "B2B companies",
+          "d": "Websites, creative and lead generation for companies that win business from other businesses.",
+          "img": "shared/b2b.jpg",
+          "href": "b2b.html",
+          "link": "See B2B companies"
+        },
+        {
+          "n": "White-label lead generation",
+          "d": "Funnels behind your brand.",
+          "img": "leadgen/attract.jpg",
+          "href": "/white-label/lead-generation/",
+          "link": "See white-label lead generation"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "lead generation."
+    ],
+    "faq": [
+      {
+        "q": "What is lead generation?",
+        "a": "Lead generation is the work of bringing in enquiries from people likely to buy, then passing sales or admissions the ones worth a conversation. The measure that matters is the cost of a qualified lead, not the number of form fills."
+      },
+      {
+        "q": "How does lead generation work with MMC?",
+        "a": "We agree what a qualified lead is with your team, build landing pages and short forms, connect your CRM and Meta CAPI so the platform learns from accepted leads, and optimise every week. Follow-up sequences keep leads warm until they are ready."
+      },
+      {
+        "q": "What does lead generation cost?",
+        "a": "Scoped after a call. Your ad spend is paid to the platforms and sits outside our fee. Our fee covers the strategy, the landing pages, the CRM and CAPI tracking and the weekly optimisation, and we quote it once we know your funnel and your CRM."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee leads, meetings or admissions, because buyers and families decide and your follow-up matters as much as the ad. We commit to a clear definition of a qualified lead, accurate tracking, weekly optimisation and honest reporting."
+      },
+      {
+        "q": "Who is lead generation for?",
+        "a": "B2B companies, educational institutes and D2C brands with considered purchases. Not only D2C: B2B is judged on cost per qualified lead, SQL rate and pipeline, and education on enquiries, visits and admissions. See the <a href=\"b2b.html\">B2B</a>, <a href=\"education.html\">education</a> and <a href=\"d2c.html\">D2C</a> pages."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your ad accounts and CRM, a written view from sales or admissions of what a good lead is, and someone who will follow up quickly. If you have no CRM yet, we help you choose one."
+      }
+    ],
+    "cta": {
+      "h2a": "Find what a qualified lead",
+      "h2b": "really costs you.",
+      "lede": "On a call, with a senior strategist. We read your campaigns against what a customer is worth to you."
+    },
+    "proof": {
+      "codes": [
+        "leadgen"
+      ],
+      "does": "run lead generation for"
+    },
+    "process": {
+      "h2a": "How we run lead generation,",
+      "h2b": "week to week.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Define a qualified lead",
+          "d": "We agree with sales or admissions what a good lead looks like, then audit your forms, pages and CRM stages.",
+          "out": "One definition of a qualified lead, in writing."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Connect the CRM and CAPI",
+          "d": "Lead stages go back to Meta, and follow-up sequences are set up so no lead goes cold.",
+          "out": "Ad platforms that learn from the leads you accept."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Optimise on lead quality",
+          "d": "Budget moves to the campaigns that produce qualified leads, reviewed with your team every week.",
+          "out": "A cost per qualified lead you can track."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Lead generation for teams that",
+      "h2b": "own the follow-up.",
+      "good": {
+        "t": "You sell to businesses or families, and sales or admissions will work every lead.",
+        "why": "B2B companies get pipeline, and colleges and schools get enquiries that reach a visit or an admission (see our <a href=\"/industries/education/\">education marketing</a> and <a href=\"/industries/education/colleges/\">college admission marketing</a> pages), because we judge leads on quality, not form fills."
+      },
+      "not": {
+        "t": "You want guaranteed leads, meetings or admissions, or no follow-up on your side.",
+        "why": "Buyers and families decide, and slow follow-up wastes the best ad, so we only work where the team will pick up the phone."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "lead generation.",
+      "lede": "Six parts of a pipeline that brings in qualified enquiries for B2B, education and D2C brands.",
+      "items": [
+        {
+          "t": "Define a qualified lead",
+          "d": "Sales and marketing agree what a good lead is, so every campaign aims at the same target.",
+          "img": "b2b/call.jpg",
+          "alt": "Define a qualified lead"
+        },
+        {
+          "t": "Attract the right people",
+          "d": "Search, Meta and LinkedIn campaigns aimed at the buyers or families you actually want.",
+          "img": "au/look-structure.jpg",
+          "alt": "Attract the right people"
+        },
+        {
+          "t": "Landing pages and forms",
+          "d": "Clear offers and short forms that make it easy to enquire.",
+          "img": "b2b/explain.jpg",
+          "alt": "Landing pages and forms"
+        },
+        {
+          "t": "CRM and CAPI set-up",
+          "d": "Lead outcomes flow back to your ad platforms so they learn what a good lead looks like.",
+          "img": "leadgen/capi.jpg",
+          "alt": "CRM and CAPI set-up"
+        },
+        {
+          "t": "Follow-up and nurture",
+          "d": "WhatsApp, email and call routines that reply fast and stay in touch with those not ready.",
+          "img": "b2b/followup.jpg",
+          "alt": "Follow-up and nurture"
+        },
+        {
+          "t": "Reporting to revenue",
+          "d": "Spend read against qualified leads, meetings and closed business, not form fills.",
+          "img": "shared/b2b.jpg",
+          "alt": "Reporting to revenue"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands generate leads",
+      "h2b": "with MMC.",
+      "lede": "We aim at the leads your sales team wants to call back.",
+      "img": "b2b/explain.jpg",
+      "alt": "Why brands generate leads with MMC.",
+      "items": [
+        {
+          "t": "Quality over volume",
+          "d": "Campaigns are tuned to qualified leads, which keeps your team away from dead enquiries."
+        },
+        {
+          "t": "The whole path is covered",
+          "d": "Ads, pages, CRM and follow-up are built together, so no stage is left to chance."
+        },
+        {
+          "t": "Built for long sales cycles",
+          "d": "B2B decisions and admissions seasons need nurture, and we plan for it."
+        },
+        {
+          "t": "Clear reporting",
+          "d": "You see which source, message and page produced each qualified lead."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How lead generation runs,",
+      "h2b": "step by step.",
+      "img": "b2b/followup.jpg",
+      "alt": "How lead generation runs, step by step.",
+      "items": [
+        {
+          "t": "Agree what qualifies",
+          "d": "We write down the lead definition with your sales team and set up tracking for it."
+        },
+        {
+          "t": "Launch the capture path",
+          "d": "Campaigns, landing pages and forms go live with a fast reply routine behind them."
+        },
+        {
+          "t": "Connect the CRM",
+          "d": "Lead stages are sent back to the ad platforms so optimisation follows quality."
+        },
+        {
+          "t": "Review and improve weekly",
+          "d": "Sources, messages and follow-up speed are reviewed weekly against qualified leads."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

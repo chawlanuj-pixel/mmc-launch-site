@@ -1,0 +1,840 @@
+########## blog_web_design_wordpress_statistics
+URL https://www.webfx.com/blog/web-design/wordpress-statistics/
+TITLE 25+ WordPress Statistics for 2026 and Beyond
+DESC WordPress is the leading choice for website creation and management. Learn more about WP with our list of 25+ WordPress statistics of 2026!
+WORDS 1105 IMG {'images': 59, 'imagesNoAlt': 2, 'videos': 0}
+CTA [['Get a Proposal', 2], ['Try Our Free Web Design Cost Calculator', 2], ['888-874-2601', 2], ['Client Login', 1], ['Add WebFX as a preferred source on Google', 1], ['View Web Design Calculator', 1], ['See the Strategy', 1], ['Send Me a Proposal!', 1], ['Menu', 1]]
+FORMS [['Enter your website']]
+SCHEMA ['Article/BlogPosting', 'WebPage', 'ReadAction', 'ImageObject', 'BreadcrumbList', 'ListItem', 'WebSite', 'SearchAction', 'EntryPoint', 'PropertyValueSpecification', 'Organization', 'QuantitativeValue', 'Person']
+OUTLINE H1 25+ WordPress Statistics for 2026: Learn the Ins and Outs of WordPress | H4 Table of Contents | H2 WordPress Usage Statistics | H2 WordPress plugin statistics | H2 WordPress theme statistics | H2 WordPress security statistics | H2 Inspired by these impressive WordPress statistics? | H3 Make estimating web design costs easy | H4 Table of Contents | H4 Share this article | H4 Web Design Calculator | H4 Proven Marketing Strategies | H3 Make estimating web design costs easy | H3 What to read next | H4 Discover how we can help your business grow
+TEXT:
+WEB DESIGN
+25+ WordPress Statistics for 2026: Learn the Ins and Outs of WordPress
+Published: Mar 20, 2025
+4 min. read
+Abby Fields
+Sr. SEO Consultant
+WordPress is one of the most popular content management systems (CMS) and website creation platforms. If you want to learn more about this impressive CMS and website builder, we’ve got the ultimate list of WordPress statistics of 2026 just for you!
+We’re breaking down our list of 25+ impressive WordPress statistics into the following categories:
+WordPress usage statistics
+WordPress plugin statistics
+WordPress theme statistics
+WordPress security statistics
+Bonus: Don’t miss out on top-tier digital marketing and web design advice trusted by over 200,000 other marketers by signing up for our newsletter, Revenue Weekly! Our subscribers get revenue-driving marketing tips sent straight to their inbox for free!
+* Last updated March 20, 2025
+WordPress Usage Statistics
+First on our list of WordPress statistics is usage behavior. So, if you’re curious about how many people use this platform, these statistics can help you get started.
+Check out the WordPress usage statistics below:
+Over 513 million global websites use WordPress. (Source)
+Users search for the keyword “WordPress” on Google 2.9 million times per month. (Source)
+WordPress is the fastest-growing CMS, with users creating more than 500 websites daily. (Source)
+WordPress users publish 27 new posts around the world every second. (Source)
+62% of all websites that use a CMS use WordPress. (Source)
+Over 409 million people view more than 20 billion pages each month. (Source)
+WordPress is used by 43% of all websites on the Internet. (Source)
+WordPress powers 36% of the top one million websites in the world. (Source)
+WordPress usage has increased by 26% per year since 2013. (Source)
+WordPress plugin statistics
+WordPress comes equipped with a range of plugins that can help you better manage your website, from increasing your search result rankings to improving site security.
+Check out some WordPress plugin statistics below:
+WordPress offers over 60,000 free plugins in the official WordPress plugin directory. (Source)
+The Yoast SEO plugin has been downloaded more than 552 million times. (Source)
+The Akismet plugin has over 7 million active installations. (Source)
+The Wordfence Security plugin has more than 121 million downloads. (Source)
+The Jetpack plugin has more than 120 million downloads. (Source)
+WooCommerce powers 22% of the top 1 million ecommerce sites in the world. (Source)
+Elementor powers 26.9% of the top 1 million ecommerce sites in the world. (Source)
+WordPress theme statistics
+Next on our list of statistics on WordPress is theme stats. WordPress comes equipped with various themes to help you style and organize your website in a way that reflects your brand and helps your audience easily find your products or services.
+View our favorite WordPress theme statistics below:
+The Astra theme has more than seven million downloads. (Source)
+The Hello Elementor, Divi, and Astra themes are the three most popular WordPress themes used by the top one million websites in the world. (Source)
+There are around 30,000 themes in the WordPress theme repository. That includes 12,00 paid and 13,000 free options, at least! (Source)
+The WordPress theme repository has more than 10,000 free WordPress themes available. (Source)
+$77.57 is the average price of a premium WordPress theme (Source)
+WordPress security statistics
+Wondering if your company’s data and website visitor information will be safe and secure with WordPress? This list of WordPress stats will give more insight into website security:
+The Wordfence Security plugin blocked 18.5 billion password attack requests. (Source)
+The Wordfence plugin blocked 4.3 billion attempts to exploit WordPress vulnerabilities from over 9.7 million unique IP addresses. (Source)
+52% of WordPress vulnerabilities relate to outdated WordPress plugins. (Source)
+41% of WordPress attacks are caused by a vulnerability on the WordPress hosting platform. (Source)
+Cross-site scripting (XSS) causes 39% of WordPress vulnerabilities. (Source)
+About 13,000 WordPress sites are hacked every day. (Source)
+Inspired by these impressive WordPress statistics?
+Are you ready to build a website that drives impressive results for your business after reading those impressive stats about WordPress? Team up with WebFX, one of the best WordPress web design agencies!
+Our team has over 30 years of web designing experience under their belts and has launched over 1,058 websites in that time.
+Plus, our web designers have taken home more than 220+ Horizon design awards for expertly crafted websites.
+Contact us online or chat with one of our friendly team members by calling 888-874-2601 to learn how our WordPress web design services can help you craft the revenue-driving website of your dreams!
+Abby is a Sr. SEO Consultant at WebFX, where she implements, optimizes, and tracks SEO and digital marketing strategies that are powered by data for WebFX. With certifications in SEO, Local SEO, and Google Analytics, Abby has implemented hundreds of optimizations and led strategies and initiatives that have helped WebFX improve online visibility, traffic, and leads. Before her time as a Digital Marketing Analyst, Abby was an innovative content writer who created content for WebFX clients in various industries and for WebFX’s own blog and website. When she’s not implementing strategies and optimizations that drive leads and revenue, you’ll find her walking her dog, travelling around Europe, or watching her favorite reality TV show. View full profile 
+Make estimating web design costs easy
+Website design costs can be tricky to nail down. Get an instant estimate for a custom web design with our free website design cost calculator!
+Try Our Free Web Design Cost Calculator
+WordPress Usage Statistics
+WordPress plugin statistics
+WordPress theme statistics
+WordPress security statistics
+Inspired by these impressive WordPress statistics?
+Web Design Calculator
+Use our free tool to get a free, instant quote in under 60 seconds.
+View Web Design Calculator
+
+########## content_marketing_learn_content_marketing_roi
+URL https://www.webfx.com/content-marketing/learn/content-marketing-roi/
+TITLE Content Marketing ROI: What It Is + How To Measure
+DESC Your content marketing ROI explains how much you earn back after investing in content marketing strategies. Learn how to calculate yours here!
+WORDS 1755 IMG {'images': 56, 'imagesNoAlt': 2, 'videos': 1}
+CTA [['Get a Proposal', 3], ['888-874-2601', 2], ['Client Login', 1], ['View Our Content Services', 1], ['See Our Approach', 1], ['Learn More About Our Proprietary Software', 1], ['Solve Calculation', 1], ['Get professional help', 1], ['Discover Our Tech', 1], ['Send Me a Proposal!', 1], ['Menu', 1]]
+FORMS [['Total revenue generated from marketing', 'Total marketing expenses'], ['Enter your website'], ['Enter your website']]
+SCHEMA ['Article', 'WebPage', 'ReadAction', 'BreadcrumbList', 'ListItem', 'WebSite', 'SearchAction', 'EntryPoint', 'PropertyValueSpecification', 'Organization', 'ImageObject', 'QuantitativeValue', 'Person']
+OUTLINE H1 What is the ROI of Content Marketing? | H4 Table of Contents | H2 Our digital marketing campaigns impact the metrics that improve your bottom line. | H3 $10 billion | H3 24 million | H3 7.14 million | H2 What is content marketing ROI? | H2 Why should I calculate the ROI of content marketing? | H2 How to measure content marketing ROI | H3 Consumption metrics | H3 Sales | H3 Lead quality | H3 Social media metrics | H3 SEO metrics | H2 Meet RevenueCloudFX: | H2 How to calculate the ROI of content marketing | H3 ROI Calculator | H2 What kind of ROI should you anticipate? | H2 Measuring the metrics that affect your bottom line. | H2 Track your content marketing ROI with WebFX | H4 Table of Contents | H4 Related Resources | H4 Content Marketing for Your Industry | H4 Earn a 20% greater ROI with WebFX | H4 Discover how we can help your business grow
+TEXT:
+HOME CONTENT MARKETING LEARN
+What is the ROI of Content Marketing?
+Return on investment (ROI) is the benefit you get from any marketing campaign investment. Measuring ROI involves establishing the type of leads, conversions, or sales you make based on your effort, time, and expense. 
+View Our Content Services
+In every marketing campaign, a strong ROI is key. Otherwise, you may be wasting your time and money. For content marketing, you want to ensure that the time you put into your content is earning you money.
+We will examine content marketing ROI through the following sections: 
+What is content marketing ROI?
+Why should I calculate the ROI of content marketing? 
+How to measure content marketing ROI
+How to calculate the ROI of content marketing
+What kind of ROI should you anticipate?
+Keep reading to learn more! Or, call 888-874-2601 if you want to speak to a strategist about how WebFX can help you track your content marketing ROI!
+Our digital marketing campaigns impact the metrics that improve your bottom line.
+See Our Approach
+WebFX has driven the following results for clients:
+$10 billion
+in client revenue
+24 million
+leads for our clients
+7.14 million
+client phone calls
+What is content marketing ROI?
+Content marketing ROI represents the amount you earn compared to your spending on content marketing. This number is a percentage to reflect how much you earn back on your content. 
+Content can cover almost anything you post online. A few examples of content types include:
+Blog posts
+Articles
+Email marketing
+Social media content
+Infographics
+Videos
+Slideshows and presentations
+Why should I calculate the ROI of content marketing? 
+Understanding your content marketing ROI can help your business in the following ways:
+Improve search engine optimization (SEO): SEO aims to get your website noticed by search engines, so they bump it to the top of the search engine results pages. Understanding your investment in content marketing can help you see what pages work for SEO. 
+Convince decision-makers: Whether you have an in-house marketing team or work with an agency, showing those outside the industry how marketing helps companies can be challenging. ROI gives you data to encourage more investment in strategies that drive growth.
+Allocate spending: As a business, your goal is to invest in tactics that drive revenue for your company. If you want to make a difference, you must have data supporting your investments. 
+How to measure content marketing ROI
+Now that you know more about content marketing ROI, let’s move on to how you can measure it.
+One thing you must understand about content marketing is that the ROI will not be immediate. It will take months for the results of your content marketing strategy to become apparent — and they may not even be visible at that point.
+Your marketing takes time to make waves. Google may take months to respond to your changes, and visitors may overlook your content marketing until you have built up a large stock of articles or other pieces. 
+Be patient when weighing the return on investment for your content marketing. That said, there are several ways to measure the ROI for content marketing. They are:
+Consumption metrics
+Sales
+Lead quality
+Social media metrics
+SEO metrics
+Let’s examine each of these in-depth to help you find your content marketing ROI.
+Consumption metrics
+How many people saw your content marketing campaigns? That’s the first question you should ask for each piece you produce and distribute. You can find out the answer through sites like Google Analytics, which automatically gathers information and creates reports based on specific criteria.
+Key performance indicators (KPIs) for content marketing consumption include:
+Unique visits
+Bounce rate, or the percentage of people who leave your site after looking at one page
+Time spent on site
+Downloads of your email-gated content or ebooks
+Sales
+This metric is the number of sales your company has made since introducing the content marketing campaign. You will want to look at your conversion rates, or the number of people who close on a sale after carefully considering it.
+In GA4, go to Reports > Monetization > Overview for a breakdown of total purchases, types of purchase, and total number of sales:
+For example, if someone puts an item from your site in their shopping cart and buys it, that’s a conversion. But if you’re a B2B business, you might consider completing a contact or lead form conversion instead.
+Lead quality
+A lead is someone who has expressed interest in your business. The more likely they are to convert, the higher quality of a lead they are. 
+Creating content helps you generate leads more likely to purchase from you. As users read your content, they will learn more about your business — those less likely to buy won’t stick around. 
+To see the number of leads you have, you must create an event in GA4 to track your lead tracking and purchases. Go to Admin > Events to create goals for each of your on-site conversions:
+Name your event and add a “Parameter,” “Operator,” and “Value.” Then, once you add the event, you can mark it as a conversion.
+Content marketing campaigns can help funnel potential customers to lead generators, which ask for people’s contact information. You can follow up on this information later and push a possible sale. You should track both your total number of leads and those generated directly by content marketing pieces.
+Social media metrics
+Social media involves its own set of metrics for your content. For example, shares, clicks, likes, and comments can all be trackable metrics that point to your company’s ROI. 
+You can see social engagement and traffic acquisition in GA4:
+Sharing on social media is relatively easy to track, but putting a dollar value on it can be hard, making ROI from sharing a bit subjective. Still, social media is an important part of content marketing because it exposes your company to a new audience.
+SEO metrics
+You can also use SEO metrics to see how well your content is doing. Some factors to look for include: 
+How high your content ranks in search results
+If you appear in featured snippets for question searches
+Your domain authority increases
+You get more inbound links
+Understanding your SEO success can help you see how content brings in more traffic, sales, and revenue to your business. 
+Meet RevenueCloudFX:
+One platform tracking countless metrics and driving stellar results.
+Learn More About Our Proprietary Software
+How to calculate the ROI of content marketing
+Once you have gathered all the metrics you will use to measure ROI, it’s time to calculate. You also need to know how much you have spent on your content marketing campaign, including creating and promoting the content.
+ROI Calculator
+Find your marketing ROI by completing the following:
+Revenue
+Marketing Costs
+ROI (%): 0%
+Solve Calculation
+Get professional help
+The content marketing ROI formula is: 
+Content marketing ROI = ((Return – Investment)/ Investment) x 100
+So, let’s say that you spend $200 to create a piece of content and generate $1000 from it:
+$1000 (Return) – $200 (Investment) = $800
+$800 / $200 = 4
+4 x 100% = 400% (ROI)
+Your ROI would be 400%!
+While a percentage value for ROI is indispensable, that’s not the full story. You can calculate ROI by asking yourself the following questions:
+How much has your lead generation increased since starting your content marketing campaign?
+How much has traffic to your website gone up?
+How many shares did you get this month compared to last?
+How many links have your content acquired?
+How many keywords are you now ranking for, thanks to the presence of your content?
+What kind of ROI should you anticipate?
+What percentage return on investment you are looking for may vary depending on your company and your history. 
+If you have done offline marketing before that resulted in minimal gains, you may be thrilled with a 15 percent ROI. But if you have done multiple content marketing campaigns and seen good results, you may be disappointed if your sales go up “only” 33 percent.
+The key to getting a good ROI for content marketing is adjusting your campaign and goals as you go along. Don’t expect the same results for every content marketing initiative. Be patient and flexible, and monitor your analytics closely to see what works best for your company.
+Finally, remember that content marketing isn’t always linked to immediate actions. Because content marketing aims to increase your company’s overall exposure and trustworthiness, you may find it incredibly difficult to say that your content production has resulted in a ROI. However, the content may lead to other actions that do have a ROI, so it still plays a very important part.
+Measuring the metrics that affect your bottom line.
+Are you interested in custom reporting that is specific to your unique business needs? Powered by RevenueCloudFX, WebFX creates custom reports based on the metrics that matter most to your company.
+Leads
+Transactions
+Calls
+Revenue
+Discover Our Tech
+Track your content marketing ROI with WebFX
+If you want an easier way to track your content marketing ROI, look no further than one of the best content marketing companies, WebFX. With our house software — RevenueCloudFX — you can automate the process and spend more time on your business. 
+RevenueCloudFX makes it possible to track content marketing’s ROI automatically — down to the page URL. You can see which pages earn the most revenue for your company and which could use a refresh. 
+Ready to learn more? Contact us online and see how we can optimize your content marketing today!
+What is content marketing ROI?
+Why should I calculate the ROI of content marketing? 
+How to measure content marketing ROI
+How to calculate the ROI of content marketing
+What kind of ROI should you anticipate?
+Track your content marketing ROI with WebFX
+Content Marketing Effectiveness
+Content Marketing KPIs: 7 KPIS for Content Marketing
+Does Content Marketing Generate High ROI
+Does Content Marketing Increase Sales
+Measure Content Marketing: Content Marketing Metrics to Watch
+Content Marketing for Your Industry
+3 Reasons Your Law Firm Needs Video Marketing
+4 Major Benefits of Content Marketing for Contractors
+6 Captivating Healthcare Marketing Examples
+Content Marketing for Plumbers: Everything You Should Know
+Healthcare Content Marketing: Tips, Benefits, & FAQs
+Industrial
+Real Estate
+Seasonal Search Shifts in Home Services Demand: What Spikes when (and How to Stay Booked Year-Round)
+
+########## content_marketing_learn_top_video_marketing_companies
+URL https://www.webfx.com/content-marketing/learn/top-video-marketing-companies/
+TITLE Best Video Marketing Companies in 2026
+DESC Compare the best video marketing companies for video production, animation, branded content, social media videos, and more.
+WORDS 1060 IMG {'images': 66, 'imagesNoAlt': 2, 'videos': 3}
+CTA [['Get a Proposal', 2], ['888-874-2601', 2], ['Client Login', 1], ['View The List', 1], ['Send Me a Proposal', 1], ['Send Me a Proposal!', 1], ['Menu', 1]]
+FORMS [['Enter your website', 'submit'], ['Enter your website']]
+SCHEMA ['Article', 'WebPage', 'ReadAction', 'BreadcrumbList', 'ListItem', 'WebSite', 'SearchAction', 'EntryPoint', 'PropertyValueSpecification', 'Organization', 'ImageObject', 'QuantitativeValue', 'Person', 'VideoObject', 'ItemList']
+OUTLINE H1 Discover the Best Video Marketing Companies | H4 Table of Contents | H2 Top Video Marketing Companies | H3 WebFX | H4 Why We Picked Them | H3 Signature Video Group | H4 Why We Picked Them | H3 Remes Video Group | H4 Why We Picked Them | H3 Casual | H4 Why We Picked Them | H3 Pigeon Studio | H4 Why We Picked Them | H3 The Jasper Picture Company | H4 Why We Picked Them | H3 Epipheo | H4 Why We Picked Them | H3 VeracityColab | H4 Why We Picked Them | H3 Vidico | H4 Why We Picked Them | H2 Our methodology | H2 Learn more about the best video marketing companies | H4 What is a video marketing company? | H4 What does video marketing entail? | H4 What does a video marketing agency do? | H4 How do I choose a video marketing agency? | H4 Table of Contents | H3 Join the 1,500+ businesses driving results with WebFX. | H4 Related Resources | H4 Content Marketing for Your Industry | H2 Work with a leading creative video agency | H3 10X Engineered Materials | H4 Services | H4 Technologies | H3 Hurst Pediatric Dentistry | H4 Services | H4 Technologies | H3 Golden Meadows Retrievers | H4 Services | H4 Technologies | H4 Discover how we can help your business grow
+TEXT:
+HOME CONTENT MARKETING LEARN
+Discover the Best Video Marketing Companies
+Video marketing can impact all your digital efforts, from search engine optimization (SEO) to your website traffic. However, many companies don’t have the in-house tools to record, edit, and produce professional videos on their own. That’s where creative video agencies can help. We’ve compiled a list of the best video marketing companies to help you find the ideal match. Read on for a breakdown below!
+View The List
+Top Video Marketing Companies
+In 2026, there are numerous video marketing agencies out there. How can you choose the best one on the market? Below you’ll find an overview of each video marketing agency, from the U.S. to India:
+Agency Location Number of employees Pricing
+WebFX Harrisburg, PA 750+ $300 minimum
+Signature Video Group Toronto, Canada 2–9 $10,000 minimum
+Remes Video Group Mexico City, Mexico 2–9 $5000 minimum
+Casual London, England 50–249 $10,000 minimum, $150–$199 per hour
+Pigeon Studio Kraków, Poland 10–49 $10,000 minimum, $50–$99 per hour
+The Jasper Picture Company Burwood, Australia 2–9 $10,000 minimum, $100–$149 per hour
+Epipheo Cincinatti, OH 10–49 $10,000 minimum
+VeracityColab Covina, CA 2–9 $10,000 minimum
+Vidico Fitzroy, Australia 10–49 $5000 minimum
+See our methodology to understand our Agency Score
+WebFX
+4.9
+Location
+Harrisburg, PA
+Number of employees
+250–999
+$300 minimum
+Video Marketing Company Score
+85/100
+Reviews
+on Clutch
+Why We Picked Them
+Signature Video Group
+Location
+Toronto, Canada
+Number of employees
+2–9
+$10,000 minimum
+Video Marketing Company Score
+74/100
+Reviews
+on Clutch
+Why We Picked Them
+Remes Video Group
+Location
+Mexico City, Mexico
+Number of employees
+2–9
+$5000 minimum
+Video Marketing Company Score
+72/100
+Reviews
+on Clutch
+Why We Picked Them
+Casual
+Location
+London, England
+Number of employees
+50–249
+$10,000 minimum, $150–$199 per hour
+Video Marketing Company Score
+86/100
+Reviews
+on Clutch
+Why We Picked Them
+Pigeon Studio
+Location
+Kraków, Poland
+Number of employees
+10–49
+$10,000 minimum, $50–$99 per hour
+Video Marketing Company Score
+78/100
+Reviews
+on Clutch
+Why We Picked Them
+The Jasper Picture Company
+Location
+Burwood, Australia
+Number of employees
+2–9
+$10,000 minimum, $100–$149 per hour
+Video Marketing Company Score
+74/100
+Reviews
+on Clutch
+Why We Picked Them
+Epipheo
+4.9
+Location
+Cincinnati, OH
+Number of employees
+10–49
+$10,000 minimum
+Video Marketing Company Score
+76/100
+Reviews
+on Clutch
+Why We Picked Them
+VeracityColab
+4.9
+Location
+Covina, CA
+Number of employees
+2–9
+$10,000 minimum
+Video Marketing Company Score
+81/100
+Reviews
+on Clutch
+Why We Picked Them
+Vidico
+4.9
+Location
+Fitzroy, Australia
+Number of employees
+10–49
+$5000 minimum
+Video Marketing Company Score
+85/100
+Reviews
+on Clutch
+Why We Picked Them
+Our methodology
+At WebFX, our team surfaced reputable video marketing agencies using the following methodology:
+FACTOR CONSIDERATIONS POINT VALUE
+Client experience 
+Average rating
+Review volume
+Review sentiment
+Review recency
+ 0-6
+Team 
+Experience ratio
+Average tenure
+Average years of experience
+Areas of focus
+ 0-6
+Retention 
+Average client retention rate
+Average employee retention rate
+ 0-6
+Agency size 
+Team-to-client ratio
+Team mix (delivery vs. operational)
+Industries served
+Business size served
+ 0-6
+Client results 
+Case studies
+Success metrics
+Recency
+Awards received
+Awarding organization
+ 0-6
+Performance tracking 
+Time-to-value
+Attribution capabilities and methodology
+Data activation (such as CRM data)
+Integrations (if providing software)
+ 0-6
+Pricing and deliverables 
+Accessibility of deliverables and pricing
+Contract length
+Deliverables
+Pricing model
+ 0-6
+Asset ownership 
+Data ownership
+Website ownership
+Ad account ownership
+ 0-6
+Location 
+Agency headquarters
+Team distribution
+Coverage across time zones
+ 0-6
+Operations 
+Project management
+Onboarding process
+Communication frequency
+Years in business
+ 0-6
+Primary service area Evaluate based on one of the following:
+Video Strategy (Audience research, campaign strategy, creative concepts, distribution planning)
+Video Production (Scripting, storyboarding, filming, editing, animation)
+Video SEO (Keyword optimization, titles and descriptions, YouTube optimization, video schema)
+Video Advertising (YouTube Ads, social video ads, targeting, campaign optimization)
+Distribution (YouTube, social media, website, paid channels, platform expertise)
+Performance (Video engagement, view-through rates, conversions, attribution, ROI measurement)
+Creative Capabilities (Production quality, storytelling, portfolio diversity, branding consistency)
+ 0-40
+Learn more about the best video marketing companies
+What is a video marketing company?
+What does video marketing entail?
+What does a video marketing agency do?
+How do I choose a video marketing agency?
+Top Video Marketing Companies
+WebFX
+Signature Video Group
+Remes Video Group
+Casual
+Pigeon Studio
+The Jasper Picture Company
+Epipheo
+VeracityColab
+Vidico
+Our methodology
+Learn more about the best video marketing companies
+Join the 1,500+ businesses driving results with WebFX.
+7 Questions to Consider when You Hire a Content Marketing Agency
+An SMB’s Guide to Digital Marketing Agency Pricing Models
+Best Lead Generation Companies [2026 Rankings]
+Best Plumbing Marketing Agencies in 2026
+Challenges of Moving Marketing In-House in 2026
+Channel Partner Marketing Pricing: How Much Does Channel Partner Marketing Cost?
+Content Marketing Pricing
+Conversion Rate Optimization Pricing
+Corporate Reputation Management Pricing for 2026
+How to Choose the Best HVAC Marketing Agency to Earn More Jobs
+Content Marketing for Your Industry
+3 Content Marketing Ideas for Fashion Brands
+3 Reasons Your Law Firm Needs Video Marketing
+4 Major Benefits of Content Marketing for Contractors
+6 Captivating Healthcare Marketing Examples
+Content Marketing for Plumbers: Everything You Should Know
+Healthcare Content Marketing: Tips, Benefits, & FAQs
+Industrial
+Real Estate
+Seasonal Search Shifts in Home Services Demand: What Spikes when (and How to Stay Booked Year-Round)
+Work with a leading creative video agency
+When you are ready to begin your video marketing campaign, you want a video marketing agency with experience. WebFX is here to ensure that every step runs as smoothly as possible.
+With 25+ years of experience and 3,212,407 hours of expertise, we know how to streamline your video marketing campaign while giving you professional-quality videos.
+Ready to get started? Request a free quote to see the impact of our video marketing services!
+37%
+INCREASE IN TOTAL AI ANSWERS APPEARANCES
+10X Engineered Materials
+Manufacturing, Industrial, & Commercial Products, Ecommerce | 11 – 50 | B2B
+SEO, Generative Engine Optimization (GEO)
+Technologies
+RevenueCloudFX, Nutshell CRM, OmniSEO®
+Read Case Study
+540%
+INCREASE IN LEADS FROM ORGANIC SEARCH
+Hurst Pediatric Dentistry
+Healthcare, Medical, & Rehabilitation | 1 – 10 | B2C
+SEO, Local SEO
+Technologies
+Read Case Study
+105%
+INCREASE IN ORGANIC FORM SUBMISSIONS YOY
+Golden Meadows Retrievers
+Retail Brick & Mortar | N/A | B2C
+SEO, Local SEO, Web Design
+Technologies
+Read Case Study
+Send Me a Proposal
+
+########## digital_advertising_glossary
+URL https://www.webfx.com/digital-advertising/glossary/
+TITLE Digital Advertising Glossary: Terms to Know in 2026 | WebFX
+DESC Looking for a digital advertising glossary? Learn everything with these digital advertising terms and vocabulary!
+WORDS 3221 IMG {'images': 47, 'imagesNoAlt': 2, 'videos': 1}
+CTA [['Get a Proposal', 3], ['888-874-2601', 2], ['Client Login', 1], ['Browse All Of Our Digital Advertising Resources', 1], ['Send Me a Proposal!', 1], ['Menu', 1]]
+FORMS [['Enter your website'], ['Enter your website']]
+SCHEMA ['Article', 'WebPage', 'ReadAction', 'BreadcrumbList', 'ListItem', 'WebSite', 'SearchAction', 'EntryPoint', 'PropertyValueSpecification', 'Organization', 'ImageObject', 'QuantitativeValue', 'Person']
+OUTLINE H1 Digital Advertising Glossary: 59 Digital Advertising Terms to know in 2026 | H4 Table of Contents | H3 Digital advertising terms and glossary | H2 A | H4 Advertising | H4 Ad budget | H2 B | H4 B2C digital advertising | H4 Behavioral targeting | H2 C | H4 Contextual targeting | H4 CRM retargeting | H4 CTV advertising | H2 D | H4 Demand-side platforms | H4 Dynamic creative optimization | H2 E | H2 F | H2 G | H4 Geotargeting | H2 H | H2 I | H2 K | H2 L | H2 M | H2 N | H2 O | H4 OTT advertising (Over-the-top advertising) | H2 P | H4 People-based marketing | H2 R | H2 S | H4 SEM Campaign | H2 T | H2 U | H2 Y | H4 YouTube advertising | H2 Z | H4 Zip code targeting | H3 Grow your digital advertising know-how | H4 Table of Contents | H4 Related Resources | H4 Digital Advertising for Your Industry | H4 Earn a 20% greater ROI with WebFX | H4 Discover how we can help your business grow
+TEXT:
+HOME DIGITAL ADVERTISING
+Digital Advertising Glossary: 59 Digital Advertising Terms to know in 2026
+Audience targeting. Click-through rate. Call to action. If you’re new to the world of digital advertising, you may hear terms like these and wonder what they mean. With so much jargon in the world of digital advertising terminology, it can be hard to keep up.
+To help you understand digital advertising, we’ve created this digital advertising glossary to serve as a pocket guide for knowing digital advertising lingo. We’ve included all the most commonly used and important terms for online advertisers to know!
+Knowing and understanding what these terms mean can significantly benefit your work and help you better understand what is happening in the digital marketing world around you. Check out our full digital advertising terminology below!
+P.S. Need help getting your digital advertising strategy off the ground? WebFX has a team of Google Ads Certified experts that can help. Contact us online or call us today at 888-874-2601 to speak with a strategist about our digital advertising services!
+Digital advertising terms and glossary
+First on our list of digital advertising terms, let’s look at all the advertising terms
+A
+A/B test
+The method of building two different ad versions, running both of them, and then comparing the results to see which version performed better. The objective of these tests is to determine which variables positively affect user response and utilize those in our ads down the road.
+Above the fold
+Term used to describe the area of an online page visible to users before they have scrolled down on a page. The size of “the fold” is not static and can vary depending on the device or resolution.
+Advertising
+Advertising is a paid promotional tactic that aims to sell a product or service to a target audience.
+Ad budget
+An ad budget is the amount of money a company plans to spend on advertising over a specific period. It’s a crucial factor in digital marketing campaigns as it determines the resources available to reach new leads and drive conversions.
+Ad tech
+Advertising technology, also known as ad tech, is any technology that gives ad makers the resources to control their ads and ad placement. A few examples of ad tech include Adroll and Tapad.
+Algorithm
+A set of rules to follow while completing calculations or other operations that are built by humans but run by computers. An example is Google’s search engine ranking algorithm. In terms of advertising, Google uses an algorithm to determine the relevance of an ad, which impacts where it displays.
+Alternative text
+Descriptive text added to pictures to make the page more accessible for readers and help search engine crawlers understand the context of images.
+Artificial Intelligence (AI)
+AI is the development of technology that can perform tasks related to human intelligence. This artificial technology can handle tasks such as visual perception, speech recognition and decision-making.
+Audience
+Your audience is the people you are trying to reach with your ads. You can define your audience based on demographics, socioeconomic status, and more characteristics.
+Audience targeting
+The act of separating your consumer base into groups based on similarities in the users so you can customize ads for these specific groups.
+B
+B2B digital advertising
+Business-to-business (B2B) digital advertising refers to any paid means of promoting a B2B company through online channels. Includes any paid online promotions for a business, including paid search advertising, display advertising, paid social advertising, Gmail advertising, and YouTube advertising.
+B2C digital advertising
+B2C digital advertising is the process of promoting your B2C company, products, and services to consumers on several online channels with digital technology.
+Banner ad
+A display ad that appears as a clickable banner on a website. These banner ads typically contain both text and images and link to the advertiser’s page.
+Behavioral retargeting
+Behavioral retargeting refers to a strategy in which you target a segment of people that have previously visited your website, didn’t convert, but show a strong interest in your products or services.
+Behavioral targeting
+Behavioral targeting is a type of advertising that gathers data about a person’s online browsing history from many sources to advertise stronger ads to them. It’s especially popular with big-box realtors when trying to lure consumers away from competitors.
+Blacklist
+A list of users, advertisers, or publishers you excluded or want to exclude from seeing one of your ad campaigns.
+Bounce rate
+The number of times a user left your page without interacting with it divided by the total number of visitor sessions. A high bounce rate often points to a lack of quality information on the page, but it could also mean a user found exactly what they wanted to find and left.
+Brand awareness
+The extent to which a consumer can identify a specific product, service or business without any research needed. Brand awareness is one of the primary objectives of digital marketing, as it’s fundamental to earning sales down the line.
+C
+Call to action (CTA)
+A clickable button or text phrase found in an ad that encourages the audience to take a specific action. Some examples are “Click Here” or “Request A Quote.” These buttons help guide users to the next step and move them down the sales funnel.
+Campaign
+A marketing effort typically built to accomplish a particular goal or promote a specific product or service. Businesses want to construct campaigns that tie into the company’s main goals, like driving revenue, conversions, engagement, or traffic.
+Channel
+An outlet used to distribute ads to an audience. Examples of distribution channels in marketing can range from radio to pay-per-click advertising to social media advertising.
+Click-through rate
+Click-through rate (CTR) is the number of times a user clicks on an ad or search result divided by the total number of people that viewed the ad or search result.
+Conversion
+A specific action an advertiser wants a user to take after coming across their ad. When a user completes that action, advertisers mark it as a conversion for their site. Conversions can be anything from making a purchase to creating an account.
+Conversion rate
+Conversion rate is a metric calculated by dividing the number of total conversions by the total number of visitors to a website.
+Cookie
+Information that is placed and kept on a user’s browser. Once the user accesses the site, cookies work to track the user’s preferences and behaviors and use them for targeting purposes later.
+Competitor geofencing advertising
+Geofencing allows you to target people within a virtual fence to receive advertisements. Competitor geofencing places that virtual fence around your competitor’s locations so that people will receive ads for your business when they are within a competitor geofencing zone.
+Contextual targeting
+Contextual targeting, also known as contextual advertising, describes a targeted and automated form of digital advertising. Advanced ad platforms, like Google Ads, select and serve contextual ads based on the user’s identity and the surrounding content on the page.
+Copy
+Text within an ad meant to provide information to users and encourage them to convert.
+Cost per Acquisition (CPA)
+The cost of acquiring a single customer. This metric is calculated by dividing the total spend on a campaign by the number of customers acquired.
+Cost per Click (CPC)
+A metric that gives you, on average, how much advertisers pay for each click they get on an ad. You can calculate this metric by dividing the total spend by the number of clicks.
+Cost per Lead (CPL)
+How much an advertiser pays for each conversion or lead generated by their campaign. You can calculate CPL by dividing the total spend by the number of leads or conversions generated.
+Cost per Thousand (CPM)
+How much it costs an advertiser to have 1000 impressions or views for their ad. CPM is typically measured for campaigns where brand awareness is the goal.
+Cost per View (CPV)
+The price an advertiser pays each time a user plays a video ad for at least 30 seconds. It’s calculated by dividing the total spend by the total number of video plays.
+CRM retargeting
+CRM retargeting is the process of using first-party data from your CRM platform to re-engage prospects and keep them interacting with your business. CRM pipeline retargeting enables you to use the data you collect to deliver personalized marketing materials that will get people to learn more about your products or services.
+CTV advertising
+CTV advertising is video advertising for TVs that have the ability to connect to the Internet. These are usually called smart TVs. You can use it to promote your brand on popular streaming platforms and services and use audience targeting features to ensure that your advertisements reach the consumers who are most likely to make a purchase.
+D
+Demand-side platforms
+Demand-side platforms, or DSPs, are programmatic tools or software that advertisers and ad agencies use to purchase ad space. With DSPs, you can buy a variety of advertisements, including search, social, and video ads, to promote your products and services.
+Digital advertising
+Digital advertising is an advertising strategy designed to promote businesses, products, and services through online channels. Digital advertising gives advertisers the ability to drive revenue by focusing on moving users through the buying funnel and making data-driven decisions.
+Display advertising
+Ads containing text, image or video that advertisers place on websites, apps and social media. Display ads take users to the advertiser’s web page once someone clicks on the ad.
+Domain
+The name of a website that appears in the search bar when you click on a website. Some examples include Target.com or Walmart.com.
+Domain authority
+A metric used to track the quality of a website. Domain authority also describes how much influence a domain has.
+Dynamic ads
+A type of ad personalized based on the person who sees it. These ads are used to improve ad performance because they’re tailored to the viewer.
+Dynamic creative optimization
+Dynamic creative optimization (DCO) builds real-time advertising campaigns, via programmatic means, that fit an audience’s needs. This approach uses dynamic creative and dynamic creative optimization technologies to collect and send data to various creatives to build relevant inputs that successfully target consumers.
+E
+Email advertising
+Ads appear in users’ inboxes when viewing on desktop. These ads typically appear to look like another email in their inbox, but are tagged with an “ad” label.
+Ecommerce Digital Advertising
+Ecommerce digital advertising is a strategy that focuses on promoting your website and products through digital channels. These channels allow you to track data and make decisions based on that information.
+F
+Frequency
+The number of times a specific customer views the same ad within a set time. Ad frequency is calculated by looking at the number of views the ad received in a particular device’s browser.
+Frequency capping
+The act of limiting the number of times a user views the same ad within a specific time period.
+G
+Geographic targeting
+Choosing an audience for a campaign based on geographic variables like cities, states, and zip codes.
+Geofencing
+Geofencing is the use of GPS technology to create a virtual fence around a specific geographic
+region, enabling your software to send ads to users once they enter the designated geofence area. Targeted users will be eligible to receive ads up to 30 days after entering the geofence region.
+Geotargeting
+Geotargeting focuses on delivering content to specific locations. These locations are based on countries, cities, zip codes, and more.
+H
+Headings
+The title that appears at the top of your landing page once someone clicks on your ad. Your heading tells users what to expect on the landing page.
+I
+Impression
+The total number of times an ad is shown to users. Impressions are counted regardless of whether people click on it.
+Internal Links
+Internal links go from one page on a website to another page on the same website. These links help guide people to relevant pages.
+K
+Key performance indicator (KPI)
+The metric or metrics you want to use to measure the success of a campaign. You choose KPIs based on the ultimate goals of the campaign.
+Keyword
+A word or phrase relevant to a topic that advertisers choose to target to reach people who are likely to search those terms. If a user searches a keyword, ads targeting those keywords will appear in search results.
+Keyword research
+The process of using data to determine what keywords users search when trying to find your business. Keyword research helps you identify the right terms to target your ads and reach the right people.
+L
+Landing page
+Pages explicitly built for advertisers to take users to once they click on a paid search or display ad. To get the best results from an advertising campaign, a custom landing page works best for keeping leads focused.
+Lead
+Someone who expresses an explicit interest in the products or services you offer. Leads are often people who give you their contact information through a form submission on your website.
+M
+Mobile ads
+Ads that advertisers design to appear only on mobile devices.
+N
+Native ads (Native advertising)
+Native ads appear on websites where the ad content and the content surrounding it are similar. The goal is for ads to blend into the content and have users clicking on the ads without even realizing they’re ads.
+O
+Online advertising
+Online advertising is the practice of promoting a business and its products or services via online ads. Online ads can appear on search engines, social media networks, email newsletters, video streaming sites, and more.
+OTT advertising (Over-the-top advertising)
+OTT advertising is a form of online advertising that takes place on video streaming services and devices, like YouTube, Hulu, or Amazon Fire TV stick. With OTT advertising, you can promote your products and services to your target audience who watches content over the Internet instead of satellite or cable TV.
+P
+Paid search
+The practice of placing ads directly on search engine result pages (SERPs). Paid search ads can appear at the top and bottom of the SERPs and help drive qualified traffic for your business.
+Pay-per-click (PPC) advertising
+A payment method for advertising where advertisers pay each time someone clicks on their ad. PPC ads enable you to control your budget so you only pay when interested leads click on your ads. Our agency offers tailored PPC services that optimize your ad performance, helping you maximize your return on investment by targeting the most relevant audience.
+People-based marketing
+Also known as person-based marketing, people-based marketing means targeting audiences with relevant messaging wherever they are by collecting customer data from online and offline sources.
+Premium ad inventory
+Ads in which the data suggests they work well and are thus deemed high quality. Premium ad inventory will be a higher price than other inventory.
+Programmatic Advertising
+Programmatic advertising is the process of automating online ad management through artificial intelligence (AI) to automate and expedite the ad buying and selling process.
+Programmatic marketing
+Programmatic marketing is an advanced marketing strategy that uses automated, real-time bidding to purchase ad inventory and allows you to advertise to specific users in a specific context resulting in hyper-targeted and effective ads.
+Publisher
+Any website that puts out content. They often get paid for the traffic they bring in by selling ads on their site.
+R
+Reach
+Percentage of the advertiser’s intended audience exposed to at least one of the advertiser’s display ads.
+Retargeting
+The practice of targeting users who visited your website and left without buying via display ads on other websites. The display ad usually shows the last item browsed or an item recently put in the cart for checkout.
+Return on Advertising Spend (ROAS)
+How much revenue you make for each dollar spent on ads. ROAS can help you see if your ads drive revenue for your business.
+Return on investment (ROI)
+Typically calculated as total revenue divided by total costs. ROI is critical to watch to ensure that your ads are effective and drive results for your business.
+S
+Search engine crawler
+A program used by search engines to gather and interpret data from pages on a website before the search engine indexes the site.
+Search engine optimization (SEO)
+The practice of altering web pages to maximize the number of visitors to that page by ranking higher on SERPs. SEO and PPC are often used together to help businesses increase presence in search results.
+SEM Campaign
+A SEM campaign is a paid advertising strategy you can use to market your business in search engine results. Companies can advertise in search results to increase website traffic, drive leads, or generate sales. SEM is synonymous with the more common term, pay-per-click (PPC) advertising.
+Social advertising
+Running paid ads on social media platforms like Instagram, LinkedIn and Facebook. Social media advertising enables you to put ads in users’ feeds and help them discover your company.
+Static ad
+Static ads are ads that contain permanent content that’s only assembled once. These ads can appear in multiple formats, including images, videos, and animations.
+T
+Title tags
+The sizeable blue anchor text that appears on search engine results pages that provide details of what to expect on the page. Title tags impact whether people click on your ads.
+U
+Unique visitor
+The number of individual users that have been to a site. If the same user visits a site three times, it is only counted as one unique visitor.
+User experience (UX)
+UX is the practice of understanding user needs and creating online experiences that provide a good experience for users. With UX, you focus on delivering an experience that keeps users happy and engaged.
+User intent
+What an online user wants to find by entering their search query.
+Y
+YouTube advertising
+YouTube advertising means paying to promote your business on YouTube. You create and pay for your YouTube ads through the Google Ads platform. YouTube advertising includes more than just video ads, as you’ll read in this blog post. 
+Z
+Zip code targeting
+Zip code targeting is a part of geotargeting. Zip code targeting focuses solely on specific zip codes near your business.
+Grow your digital advertising know-how
+Now that you know all these digital marketing terminology, you have a better understanding of the world of digital advertising. If you’re still feeling overwhelmed with trying to set up your advertising campaigns, WebFX can help.
+WebFX is a full-service digital marketing agency with over a decade of experience in the digital landscape. We pride ourselves on being a Google Premier Partner and an Inc. 5000 company that is constantly working to improve our processes and results.
+For more content like this on the world of digital advertising, subscribe to our newsletter today!
+If you’re ready to start driving more revenue for your business through digital advertising, contact us online or call us today at 888-874-2601 to speak with a strategist about our digital advertising services!
+A
+B
+C
+D
+E
+F
+G
+H
+I
+K
+L
+M
+N
+O
+P
+R
+S
+T
+U
+Y
+Z
+What is ROAS? Return on Ad Spend Definition, Formula, and Everything You Need to Know
+Digital Advertising for Your Industry
+What Are Co-op Advertising Dollars, and How Can They Help You?
+Browse All Of Our Digital Advertising Resources
+
+########## digital_marketing_learn_customer_acquisition_cost_per_channel
+URL https://www.webfx.com/digital-marketing/learn/customer-acquisition-cost-per-channel/
+TITLE Customer Acquisition Cost Per Channel
+DESC Want to reduce customer acquisition costs? Find out how to break it down by popular marketing channels to get the most out of your budget.
+WORDS 2296 IMG {'images': 75, 'imagesNoAlt': 2, 'videos': 0}
+CTA [['Get a Proposal', 3], ['888-874-2601', 2], ['Client Login', 1], ['View Our Digital Services', 1], ['Previous', 1], ['Next', 1], ['Contact Us', 1], ['Send Me a Proposal!', 1], ['Menu', 1]]
+FORMS [['Enter your website'], ['Enter your website']]
+SCHEMA ['Article', 'WebPage', 'ReadAction', 'BreadcrumbList', 'ListItem', 'WebSite', 'SearchAction', 'EntryPoint', 'PropertyValueSpecification', 'Organization', 'ImageObject', 'QuantitativeValue']
+OUTLINE H1 Customer Acquisition Cost Per Channel | H4 Table of Contents | H2 Acquisition cost per channel | H4 Television | H4 Radio | H4 Magazines | H4 Newspapers | H4 Direct Mail | H4 Telemarketing | H4 Search engine optimization (SEO) | H4 Pay per click advertising (PPC) | H4 Email marketing | H4 Content marketing | H3 We’re masters of our craft. | H2 Tips for reducing CAC | H4 Improve conversion rates | H4 Marketing automation | H4 Focus on innovation | H2 Want to learn more? | H4 Table of Contents | H4 Related Resources | H4 Digital Marketing for Your Industry | H4 Earn a 20% greater ROI with WebFX | H4 Discover how we can help your business grow
+TEXT:
+HOME DIGITAL MARKETING LEARN
+Customer Acquisition Cost Per Channel
+If you work in marketing, you’re probably familiar with customer acquisition cost (CAC). And if you’re trying to determine which channels are the most effective for your company, it’s a great metric to use to determine how you can earn the most customers at the lowest price.
+View Our Digital Services
+On this page, we’ll break down customer acquisition cost by both traditional and online channels and take a look at which channels provide the greatest return on investment (ROI) for your company.
+Call 888-874-2601 to speak with a strategist about digital marketing plans from WebFX, or keep reading to learn more about which channels provide the best customer acquisition costs for marketers today.
+Acquisition cost per channel
+Let’s take a look at CAC broken down by popular marketing channels.
+Television
+Like all advertising channels, television advertising has its pros and cons. While you have the potential to gain exposure and reach a wide audience via TV ads, it’s expensive and easy to waste money on unqualified customers.
+With television advertising, you will likely spend between $63,000 to $8 million on setup costs and around $342,000 per 30 second advertisement. In addition, if you choose to continue TV advertising, you will likely be charged an agency hourly rate.
+Though TV ads can be very effective, it’s important to consider whether they are worth the investment for your company. After all, you can produce a YouTube video and post it to your social media channels for a considerably reduced price, and online advertising is projected to surpass TV advertising.
+When calculating CAC for TV advertising, you will need to take into account the immediate impact of each TV slot, as well as delayed site visits and conversions, and increased conversions due to familiarity with your brand.
+Due to the lack of analytics data, it’s difficult to determine how many customers you acquire per TV advertisement, making it challenging to quantify CAC for television ads.
+Radio
+The cost of radio advertising varies based on the station and spots you choose.
+While some radio stations will offer to produce your ads for free, setup costs typically range from $300 to $1000. In addition, it costs about $3 to $500 per 60 second radio advertisement plus the cost of additional spots to continue advertising on the radio.
+Much like TV advertising, though, it’s difficult to determine exactly how many new customers you earned due to these ads, since there’s no way to track who visited your store or site as a result of hearing one on the radio. As a result, it’s nearly impossible to calculate CAC.
+Magazines
+Advertising in national magazines can increase brand awareness and help your business reach a wide audience.
+However, like TV and radio advertising, you can waste money trying to reach people who aren’t interested in purchasing your products and services.
+Magazine ads typically cost anywhere from $500 to $397,800 for setup costs and about $250,000 per advertisement. If you plan to continue advertising in magazines, you will likely also pay an agency hourly rate in addition to the cost of media. This means that you can easily spend your whole budget advertising in one magazine.
+People may read your advertisements in a magazine, you’ll never know which ones become customers as a result. Therefore, it can be difficult to determine CAC for magazine advertising due to the lack of analytics data associated with traditional advertising methods.
+Newspapers
+Local newspaper ads have the potential to be one of the most affordable forms of advertising in terms of upfront cost. But these newspapers don’t receive as much attention as TV, radio, or even magazine advertisements.
+For national newspaper advertising, setup costs typically range from $11 to $1.4 million, and about $113,000 per ad. You may also have to pay for additional design in the future.
+Much like other traditional advertising channels, it’s also difficult to track conversions from newspaper ads, making it a challenge to calculate CAC for newspaper advertising.
+Direct Mail
+Direct mail marketing can be cheaper than other traditional marketing methods since sending ads via mail is less expensive than paying a publication for ad space, but you have to take into account the cost of publishing and postage.
+You can expect to pay around $52 per direct mail order in addition to setup costs of $50 to $7200.
+While direct mail allows you to specifically target potential customers, many of them ignore direct mail pieces, so your ad could end up in the trash. There’s also no way to determine exactly how many customers you acquire through direct mail advertising.
+Though direct mail is often cheaper than other traditional advertising methods, it is still more cost-effective to establish relationships with customers via email and other online channels.
+Telemarketing
+Did you know that the Federal Trade Commission receives 18,000 complaints each year about telemarketers?
+Let’s face it, nobody likes telemarketing, and you will likely only annoy potential customers with this advertising technique.
+While telemarketing allows you to directly reach potential clients, you can rack up hefty advertising fees depending on the number of outbound calls your company makes.
+For telemarketing, you can expect to pay $7-$70 per hour or $35-60 per lead in addition to $100 to $5200 to get started. And it costs about $20-$60 each hour to continue with telemarketing.
+Then, you can calculate CAC by dividing the total amount of money spent on telemarketing by the total number of telemarketing conversions in a specified time period. This means that unlike most traditional advertising channels, it is possible to calculate your CAC with telemarketing.
+Search engine optimization (SEO)
+Search engine optimization (SEO) is the process of improving your website so that it ranks higher in search engine results pages for keywords and phrases related to your business.
+With SEO, you have the potential to bring a steady stream of qualified traffic to your site. Plus, your efforts build upon themselves, meaning that instead of using ads that stop reaching customers as soon as you stop paying for print space or airtime, you’re investing your budget in a strategy that will continue to improve over time.
+A well-planned SEO strategy will help your site achieve higher rankings in search engine results for the keywords and phrases your potential customers are searching. This means that instead of targeting a huge demographic that may not be interested in your services, you’re making your business as visible as possible to the people who actually want to find it.
+You can expect to pay about $4,000 to $10,000 for SEO setup costs and about $1,000 each month if you are working with an Internet marketing firm.
+To calculate customer acquisition cost for SEO, you will need to add together all of your SEO costs including total man hours and other monetary investments. Then, you can divide that number by the total number of SEO conversions, which you can track via analytics software.
+For example, if you spent $10,000 on SEO in one year and acquired 10,000 new customers through organic traffic, your CAC would be $1.
+In addition to being an affordable advertising option, SEO allows you to reach your best prospects where they’re already searching online.
+Pay per click advertising (PPC)
+Pay per click advertising (PPC) allows you to select which keywords and phrases you want to trigger your advertisements. Then, if your bids are among the highest, your ads will display above organic search results for targeted keywords and phrases.
+One of the best parts of PPC is that you don’t have to wait for results. As soon as you launch a campaign, your ads can start driving relevant, targeted traffic to your website. If you’re looking to quickly boost revenue and sales for your company, PPC is a great option.
+PPC is also cost-effective. After you cover the initial setup cost of $4,000-$10,000 to launch your PPC campaigns, you only pay a few cents each time people click on your advertisements. WebFX offers three different PPC packages, so you can select the plan that best reflects your budget and PPC goals.
+In addition, PPC increases conversion rates and helps you generate more revenue because it targets people who are searching for the products and services your company provides.
+With PPC advertising, you can use analytics software to track the number of people who convert after clicking your PPC ads. This means that you can easily determine CAC by dividing total PPC spend by the total number of new customers acquired through PPC advertising.
+And if you use major platforms like Google AdWords, these calculations are automatic – meaning all you have to do to see your CAC is check the analytics section of your account.
+Email marketing
+The costs of email marketing are fairly similar to the costs of implementing SEO or PPC campaigns. You can expect to pay anywhere from $4,000-$10,000 initially, a few cents to $3 for each qualified visitor, and around $500 per month to your Internet marketing firm.
+In the U.S., 72% of adults prefer communicating with businesses via email, and unlike telemarketing, email marketing allows potential customers to interact with your content in a way that doesn’t interrupt their daily routine.
+Email marketing has the potential to be one of the most cost-effective marketing channels, and it generally produces high quality leads because the people on your mailing list have chosen to be there by signing up for a newsletter.
+With email automation, you can also follow up with your visitors based on their behavior on your website and provide targeted content designed to move them through the purchase funnel.
+You can easily track people who convert after clicking on your email advertisements, using software like EmailMarketingFX. Then, you can simply divide that number by your total email marketing expenses in a given time period to arrive at CAC for email marketing.
+Content marketing
+Content marketing costs anywhere from $6,000-$12,000 initially. However, if you choose evergreen topics, your content can continue to yield results years after it is published, and you won’t have to pay a cent to continue bringing in new customers.
+Because content marketing has no continuing costs, your CAC for each piece will continue to decrease as more and more customers convert from it.
+In addition, content marketing adds value to the buying cycle by educating consumers about products and services that they might be interested in purchasing.
+For example, if you’re an interior designer, you might consider publishing an infographic with tips for redesigning a basement. Then, if someone comes across your infographic online, they will be more likely to check out your website to learn more about the services you provide. They may even recommend your business to friends and family members in need of interior design services.
+Using tools like Google Analytics, you can see the last channel a customer visited before completing a sale with your online business. This will help you determine the role your content played in attracting and converting new customers. For example, someone might visit a blog post and then follow your CTA to a product page where they complete a transaction.
+To determine CAC, you can total your content marketing costs for a specified period and divide that number by the total number of new leads earned during that time frame.
+We’re masters of our craft.
+WebFX is a marketing and design industry leader.
+META, AMAZON, AND GOOGLE PARTNER
+9,000+
+BOOKS READ
+4,000+
+BLOG POSTS WRITTEN
+200+
+INDUSTRIES WORKED IN
+300+
+GOOGLE CERTIFIED TEAM MEMBERS
+100+
+CMS EXPERTS
+Contact Us 
+Tips for reducing CAC
+Now that you understand how to calculate CAC for popular marketing channels, let’s take a look at how you can reduce CAC to maximize your profits.
+Improve conversion rates
+Conversion rate optimization (CRO) allows you to maximize conversions with the same amount of traffic, and you want to convert the most visitors as possible into paying customers. In other words, high conversion rates equate to lower CAC.
+One of the most popular CRO methods, A/B testing, allows you to text various elements on your website and online content to determine which version produces the most conversions.
+You can also experiment with various site layouts, calls to action (CTAs), and design elements to improve conversion rates and lower the costs associated with acquiring new customers.
+Marketing automation
+Marketing automation software can help your business streamline the lead generation process and reduce customer acquisition costs.
+For example, you can buy three days’ worth of marketing automation software for the cost of 5 minutes of human work.
+This will save your business both time and money and help you attract more leads at a lower cost.
+Focus on innovation
+The Internet marketing world is constantly evolving, and your business should focus on finding innovative ways to reach new customers. When you work with a trusted Internet marketing firm, like WebFX, this is easy.
+We’ll help you identify and implement new solutions that can help you cut customer acquisition costs and get the most out of your marketing dollars. In addition, we’ll help you test new ideas and analyze data to help you make the most informed decisions.
+Want to learn more?
+Interested in learning more about how Internet marketing can help you acquire more customers at lower costs?
+WebFX is a leader in the Internet marketing field, and we’ll work with your business to design a custom plan that helps you attract and convert more customers.
+Contact us today to learn more and get a free quote.
+Acquisition cost per channel
+Tips for reducing CAC
+Want to learn more?
+Digital Marketing for Your Industry

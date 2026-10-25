@@ -1,0 +1,26 @@
+{
+  "name": "mmc-astro",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node tools/sync-roles-index.mjs && astro build",
+    "preview": "astro preview",
+    "check:consistency": "node tools/consistency-check.mjs dist-check",
+    "check:build": "node tools/sync-roles-index.mjs && astro build --outDir dist-check && node tools/v2-check.mjs dist-check && node tools/consistency-check.mjs dist-check && node tools/pricing-leak-check.mjs dist-check && node tools/register-payload-check.mjs",
+    "optimise": "node tools/optimise-build.mjs dist",
+    "serve:dist": "node tools/serve-dist.mjs dist 4399"
+  },
+  "dependencies": {
+    "@astrojs/react": "^7.0.0",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.5",
+    "gsap": "^3.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "beasties": "^0.5.4"
+  }
+}

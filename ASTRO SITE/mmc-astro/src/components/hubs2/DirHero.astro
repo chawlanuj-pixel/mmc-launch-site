@@ -1,0 +1,36 @@
+---
+// /services/ hero: editorial type, then the five groups of the menu as a full-width index strip of literal photos.
+import Crumb from "./Crumb.astro";
+interface G { id: string; n: string; name: string; desc: string; idx: string; idxAlt: string }
+interface Props { jsonld: any[]; groups: G[] }
+const { jsonld, groups } = Astro.props;
+const url = (s: string) => (s.startsWith("/") ? s : "/assets/" + s);
+---
+<section class="h2-dir no-section-bg" id="top">
+  <div class="n-wrap">
+    <div class="h2-dir__top">
+      <div>
+        <Crumb jsonld={jsonld} />
+        <span class="n-eyebrow">Services</span>
+        <h1 class="h2-h1" style="margin-top:20px">Marketing services that start from <em>your biggest leak</em>.</h1>
+      </div>
+      <div class="h2-dir__side">
+        <p class="h2-sub">Design, marketing, technology, content and AI for D2C, B2B and education brands, run by one senior team.</p>
+        <div class="h2-acts">
+          <button type="button" class="btn btn--primary glow-btn" onclick="window.mmcBookCall('services-hero', event)"><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span></button>
+          <a class="btn btn--link" href="#start">Not sure where to start?<span class="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+    <ul class="h2-index" data-qa-clip aria-label="Service groups">
+      {groups.map((g, k) => (
+        <li>
+          <a href={"#" + g.id}>
+            <img src={url(g.idx)} alt={g.idxAlt} width="1024" height="688" loading={k < 3 ? "eager" : "lazy"} fetchpriority={k === 0 ? "high" : undefined} decoding="async" />
+            <span class="h2-index__c"><i>{g.n}</i><b>{g.name}</b><span>{g.desc}</span></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,506 @@
+{
+  "file": "white-label-web-design.html",
+  "path": "/white-label/web-design/",
+  "key": "wl_web_design",
+  "title": "White-Label Web Design Services for Agencies | MMC",
+  "description": "White-label web design for agencies: wireframes, UI design and design systems in Figma, handed to your developers or ours, under your brand and NDA.",
+  "ogTitle": "White-label web design for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label web design.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/web-design/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label web design",
+          "item": "https://www.mondaymarketing.company/white-label/web-design/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/web-design/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/web-design/",
+      "name": "White-Label Web Design Services for Agencies | MMC",
+      "description": "White-label web design for agencies: wireframes, UI design and design systems in Figma, handed to your developers or ours, under your brand and NDA.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/web-design/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/web-design/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/web-design/#service",
+      "name": "White-label Web Design",
+      "serviceType": "White-label web design",
+      "description": "White-label web design delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/web-design/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/web-design/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I have to use your developers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can build in-house, with another partner or with our white-label web development team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many revision rounds are included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The scope states the rounds. Extra rounds are quoted before we start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you design for WordPress or Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We design with the target platform's limits in mind."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the designs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ownership terms are written into the agreement before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label web design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send the brief and brand files. After the NDA we propose a design scope and timeline you can share with your client."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_web_design",
+    "wm": "White-label Web Design",
+    "eyebrow": "● White-label web design",
+    "h1": [
+      "White-label web design",
+      [
+        "your clients ",
+        "approve first time",
+        "."
+      ]
+    ],
+    "sub": "UX, layouts and brand-led page designs delivered under your name, ready for your developers or ours.",
+    "tiles": [
+      {
+        "img": "ux/screens.jpg",
+        "pos": "50% 50%",
+        "label": "Screens",
+        "note": "Designed to the brand"
+      },
+      {
+        "img": "ux/flows.jpg",
+        "pos": "50% 50%",
+        "label": "Flows",
+        "note": "User journeys mapped"
+      },
+      {
+        "img": "ux/system.jpg",
+        "pos": "50% 50%",
+        "label": "System",
+        "note": "Reusable components"
+      },
+      {
+        "img": "ux/research.jpg",
+        "pos": "50% 50%",
+        "label": "Research",
+        "note": "Based on real users"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label web design is the design stage of a website, produced by MMC for your agency to present as its own: structure, wireframes, page layouts and a design system, all to your client's brand. You choose whether your developers build it or hand it to our development team.",
+      "hl": "structure, wireframes, page layouts and a design system",
+      "who": "Monday Marketing Company (MMC) delivers web design for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Wireframes",
+          "text": "Structure agreed before visuals."
+        },
+        {
+          "icon": "layers",
+          "title": "Visual design",
+          "text": "Layouts true to the brand."
+        },
+        {
+          "icon": "grid",
+          "title": "Design system",
+          "text": "Components that scale."
+        }
+      ],
+      "image": "ux/screens.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "wd-wl",
+          "h": "From brief to handover files",
+          "paras": [
+            "Design goes wrong when it is disconnected from build. We design with development in mind: components that can be built, states that are specified and files that are named clearly.",
+            "Our direct approach is on the <a href=\"/services/ui-ux-design/\">UI/UX design</a> page, and build can follow through <a href=\"/white-label/web-development/\">white-label web development</a>."
+          ],
+          "img": "ux/screens.jpg",
+          "cap": "Page designs for a client site.",
+          "table": {
+            "caption": "Web design deliverables by stage",
+            "head": [
+              "Stage",
+              "Deliverable",
+              "Used by"
+            ],
+            "rows": [
+              [
+                "Structure",
+                "Sitemap and wireframes",
+                "Agency and client"
+              ],
+              [
+                "Visual design",
+                "Page layouts for desktop and mobile",
+                "Agency and client"
+              ],
+              [
+                "System",
+                "Components and style guide",
+                "Developers"
+              ],
+              [
+                "Handover",
+                "Named files with notes",
+                "Developers"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label web design.",
+      "lede": "From structure to handover.",
+      "items": [
+        {
+          "t": "Discovery and sitemap",
+          "d": "Pages and structure agreed first.",
+          "img": "ux/research.jpg",
+          "alt": "Discovery and sitemap"
+        },
+        {
+          "t": "Wireframes",
+          "d": "Layouts without distraction.",
+          "img": "ux/flows.jpg",
+          "alt": "Wireframes"
+        },
+        {
+          "t": "Visual design",
+          "d": "Mobile and desktop designs to the brand.",
+          "img": "ux/screens.jpg",
+          "alt": "Visual design"
+        },
+        {
+          "t": "Design systems",
+          "d": "Reusable styles and components.",
+          "img": "ux/system.jpg",
+          "alt": "Design systems"
+        },
+        {
+          "t": "Prototype and test",
+          "d": "Clickable prototypes for review.",
+          "img": "ux/test.jpg",
+          "alt": "Prototype and test"
+        },
+        {
+          "t": "Developer handover",
+          "d": "Files and notes ready for build.",
+          "img": "web/build.jpg",
+          "alt": "Developer handover"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label web design.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "ux/screens.jpg",
+      "alt": "Why agencies choose MMC for white-label web design.",
+      "items": [
+        {
+          "t": "Design for build",
+          "d": "We think about what developers will need."
+        },
+        {
+          "t": "Brand first",
+          "d": "We follow the client's identity."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label web design works,",
+      "h2b": "step by step.",
+      "img": "ux/screens.jpg",
+      "alt": "How white-label web design works, step by step.",
+      "items": [
+        {
+          "t": "Brief",
+          "d": "You share brand and goals."
+        },
+        {
+          "t": "Structure",
+          "d": "Sitemap and wireframes first."
+        },
+        {
+          "t": "Design",
+          "d": "Visuals for key pages."
+        },
+        {
+          "t": "Handover",
+          "d": "Files go to your developers."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label web design for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells web design but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label web design fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label web development",
+          "d": "Builds delivered under your name.",
+          "img": "web/build.jpg",
+          "href": "/white-label/web-development/",
+          "link": "See white-label web development"
+        },
+        {
+          "n": "White-label WordPress",
+          "d": "WordPress builds behind your brand.",
+          "img": "web/build.jpg",
+          "href": "/white-label/wordpress-development/",
+          "link": "See white-label WordPress development"
+        },
+        {
+          "n": "White-label website maintenance",
+          "d": "Care plans for your client sites.",
+          "img": "web/speed.jpg",
+          "href": "/white-label/website-maintenance/",
+          "link": "See white-label website maintenance"
+        },
+        {
+          "n": "UI/UX design",
+          "d": "Research, flows and screens.",
+          "img": "ux/screens.jpg",
+          "href": "/services/ui-ux-design/",
+          "link": "See UI/UX design"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "web design."
+    ],
+    "faq": [
+      {
+        "q": "Do I have to use your developers?",
+        "a": "No. You can build in-house, with another partner or with our white-label web development team."
+      },
+      {
+        "q": "How many revision rounds are included?",
+        "a": "The scope states the rounds. Extra rounds are quoted before we start."
+      },
+      {
+        "q": "Do you design for WordPress or Shopify?",
+        "a": "Yes. We design with the target platform's limits in mind."
+      },
+      {
+        "q": "Who owns the designs?",
+        "a": "Ownership terms are written into the agreement before work starts."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label web design?",
+        "a": "Send the brief and brand files. After the NDA we propose a design scope and timeline you can share with your client."
+      }
+    ],
+    "cta": {
+      "h2a": "Add web design",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first web design client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Intake the brief",
+        "tag": "Brief intake",
+        "breaks": "Starting design from a one-line brief.",
+        "why": "Your designer guesses the brand and the goal, and your client corrects both after the first presentation.",
+        "does": "We take a structured brief with brand files, goals and references from you, and write down what is in scope before the first layout."
+      },
+      {
+        "k": "Cap the rounds",
+        "tag": "Revision rounds",
+        "breaks": "Revision rounds that nobody wrote down.",
+        "why": "Every extra round is unbilled work, and open-ended feedback is how a fixed fee turns into a loss.",
+        "does": "The scope states the rounds. Extra rounds are quoted before we start them, so you can bill your client for them."
+      },
+      {
+        "k": "Design for the platform",
+        "tag": "Platform limits",
+        "breaks": "Designing past what the platform can build.",
+        "why": "A beautiful layout that the CMS cannot do becomes a rebuild, and the delay lands on you.",
+        "does": "We design with WordPress, Shopify or custom limits in mind, and flag anything costly before your client falls for it."
+      },
+      {
+        "k": "Hand over clean files",
+        "tag": "Developer handover",
+        "breaks": "Files that developers cannot use.",
+        "why": "Unnamed layers and missing states send your developers back with questions, and the build date slips.",
+        "does": "Components, states and notes are named clearly, in the format you or your build partner prefer."
+      },
+      {
+        "k": "Keep feedback in one place",
+        "tag": "Client feedback",
+        "breaks": "Feedback spread across emails and chats.",
+        "why": "Versions get mixed up and the last comment wins, not the right one.",
+        "does": "One feedback route, one version in play, and a short change list we send you after each round to forward on."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label web design",
+      "h2b": "goes wrong for agencies.",
+      "lede": "Design is where scope quietly grows and margin quietly leaks. Each point below is where agencies lose time between a client's brief and a build-ready file."
+    },
+    "process": {
+      "h2a": "How we onboard you for web design,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and brief intake",
+          "d": "We sign the NDA, take your brief and brand files, and write the design scope with revision rounds stated.",
+          "out": "A written scope you can share with your client."
+        },
+        {
+          "t": "Pilot design",
+          "d": "One small project first, such as a landing page or a few key screens, designed to your client's brand.",
+          "out": "A pilot you can judge on layout, speed and communication."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Briefing form, file naming, feedback route and review rounds are written down so every project runs the same way.",
+          "out": "A one-page working agreement for your studio."
+        },
+        {
+          "t": "Scale across clients",
+          "d": "More briefs go through the same intake, and we add designers to your queue as your workload grows.",
+          "out": "A design service you can sell again and again."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

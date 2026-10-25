@@ -1,0 +1,81 @@
+---
+// /industries/: three big doors (D2C, B2B, education), in short, the sector pages, how we start, real work, FAQ, close.
+import "../../styles/hubs2.css";
+import Crumb from "./Crumb.astro";
+import Lede from "./Lede.astro";
+import Verticals from "./Verticals.astro";
+import WorkTiles from "./WorkTiles.astro";
+import Pic from "./Pic.astro";
+import Fx from "./Fx.astro";
+import Faq from "../hub/Faq.astro";
+import PreFooterCta from "../shared/PreFooterCta.astro";
+import { closingFor } from "../../lib/prefooter";
+interface Props { H: any; X: any; jsonld: any[] }
+const { H, X, jsonld } = Astro.props;
+const C = closingFor(H.key, H.cta);
+const h1 = H.h1;
+const P = H.process;
+---
+<section class="h2-doors no-section-bg" id="top">
+  <div class="n-wrap">
+    <div class="h2-doors__top">
+      <div>
+        <Crumb jsonld={jsonld} />
+        <span class="n-eyebrow">{String(H.eyebrow).replace(/^●\s*/, "")}</span>
+        <h1 class="h2-h1" style="margin-top:20px">{h1[0]} {h1[1][0]}<em>{h1[1][1]}</em>{h1[1][2]}</h1>
+      </div>
+      <div class="h2-doors__side">
+        <p class="h2-sub">{H.sub}</p>
+        <div class="h2-acts">
+          <button type="button" class="btn btn--primary glow-btn" onclick={`window.mmcBookCall('${H.key}-hero', event)`}><span class="glow-btn__glow" aria-hidden="true"></span><span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span></button>
+          <a class="btn btn--link" href="#sectors">Pick your sector<span class="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+    <ul class="h2-doors__row">
+      {X.doors.map((d: any, k: number) => (
+        <li>
+          <a class="h2-door" href={d.href}>
+            <img src={d.img} alt={d.alt} width="1024" height="688" loading={k < 3 ? "eager" : "lazy"} fetchpriority={k === 0 ? "high" : undefined} decoding="async" style={`object-position:${d.pos}`} />
+            <span class="h2-door__k">{d.k}</span>
+            <h2>{d.n}</h2>
+            <p>{d.line}</p>
+            <span class="h2-door__foot"><span>{d.foot}</span><span class="h2-ring" aria-hidden="true"><i class="h2-arr"></i></span></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<Lede lead={H.answer.lead} hl={H.answer.hl} img={X.lede.img} alt={X.lede.alt} tone="white" />
+
+<Verticals {...X.sectors} tone="paper" />
+
+{P && (
+  <section class="n-band n-band--white" id="how">
+    <div class="n-wrap">
+      <header class="h2-head h2-rv">
+        <span class="n-eyebrow">How we start</span>
+        <h2 class="n-h2">{P.h2a} <span class="n-serif">{P.h2b}</span></h2>
+      </header>
+      <ol class="h2-steps">
+        {P.steps.map((s: any, k: number) => (
+          <li class="h2-rv">
+            <Pic src={X.steps[k].img} alt={X.steps[k].alt} />
+            <span class="h2-steps__when">{s.when}</span>
+            <h3>{s.t}</h3>
+            <p>{s.d}</p>
+            <p class="h2-steps__out">{s.out}</p>
+          </li>
+        ))}
+      </ol>
+      {P.note && <p class="h2-note">{P.note}</p>}
+    </div>
+  </section>
+)}
+
+<WorkTiles {...X.work} tone="paper" />
+<Faq tone="white" title={H.faqTitle} faq={H.faq} />
+<PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+<Fx />

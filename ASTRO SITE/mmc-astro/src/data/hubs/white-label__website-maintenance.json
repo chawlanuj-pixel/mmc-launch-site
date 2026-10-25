@@ -1,0 +1,516 @@
+{
+  "file": "white-label-website-maintenance.html",
+  "path": "/white-label/website-maintenance/",
+  "key": "wl_website_maintenance",
+  "title": "White-Label Website Maintenance Services | MMC",
+  "description": "White-label website maintenance for agencies: updates, backups, uptime checks, security fixes and monthly care reports sent to clients under your brand.",
+  "ogTitle": "White-label website maintenance for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label website maintenance.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label website maintenance",
+          "item": "https://www.mondaymarketing.company/white-label/website-maintenance/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/website-maintenance/",
+      "name": "White-Label Website Maintenance Services | MMC",
+      "description": "White-label website maintenance for agencies: updates, backups, uptime checks, security fixes and monthly care reports sent to clients under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#service",
+      "name": "White-label Website Maintenance",
+      "serviceType": "White-label website maintenance",
+      "description": "White-label website maintenance delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/website-maintenance/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/website-maintenance/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you maintain sites you did not build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, after an audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I resell this with my own pricing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our fee is separate and your client price is your decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do clients send requests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Through you, in a shared board or email, whichever you prefer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a site is hacked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We restore from backup, clean up and report. We scope cleanup on a call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label website maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send a list of client sites and platforms. After the NDA we audit a few and propose a care plan structure."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_website_maintenance",
+    "wm": "White-label Website Maintenance",
+    "eyebrow": "● White-label website maintenance",
+    "h1": [
+      "White-label website",
+      [
+        "maintenance for ",
+        "agencies with",
+        " many client sites."
+      ]
+    ],
+    "sub": "Updates, backups, security, uptime and small edits across your client sites, billed to you and reported under your brand.",
+    "tiles": [
+      {
+        "img": "web/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Checked monthly"
+      },
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Updates",
+        "note": "Tested first"
+      },
+      {
+        "img": "web/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Forms",
+        "note": "Tested"
+      },
+      {
+        "img": "web/seo.jpg",
+        "pos": "50% 50%",
+        "label": "Search",
+        "note": "Errors fixed"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label website maintenance means MMC looks after your clients' sites while you sell and bill the care plan. We handle updates, backups, security checks, uptime monitoring, speed upkeep and small edits across WordPress and other sites, and send a monthly summary you can pass on.",
+      "hl": "updates, backups, security checks, uptime monitoring",
+      "who": "Monday Marketing Company (MMC) delivers website maintenance for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "gauge",
+          "title": "Updates",
+          "text": "Core, plugins and themes."
+        },
+        {
+          "icon": "layers",
+          "title": "Security",
+          "text": "Scans and hardening."
+        },
+        {
+          "icon": "chart",
+          "title": "Summary",
+          "text": "Monthly, in your format."
+        }
+      ],
+      "image": "web/speed.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "wm-wl",
+          "h": "Why agencies add a care plan",
+          "paras": [
+            "A care plan turns a one-off site build into steady revenue, and keeps the sites you built from breaking. We run the routine; you keep the client and the invoice.",
+            "See the direct version on the <a href=\"/services/website-maintenance/\">website maintenance</a> page. It pairs well with <a href=\"/white-label/wordpress-development/\">white-label WordPress development</a>."
+          ],
+          "img": "web/speed.jpg",
+          "cap": "A care plan checklist across client sites.",
+          "table": {
+            "caption": "Care plan tasks, who does them",
+            "head": [
+              "Task",
+              "Frequency",
+              "MMC does"
+            ],
+            "rows": [
+              [
+                "Updates",
+                "Scheduled",
+                "Test and apply"
+              ],
+              [
+                "Backups",
+                "Scheduled",
+                "Run and verify restore"
+              ],
+              [
+                "Security scans",
+                "Scheduled",
+                "Scan, fix, report"
+              ],
+              [
+                "Uptime monitoring",
+                "Continuous",
+                "Alert and respond"
+              ],
+              [
+                "Content edits",
+                "On request",
+                "Within agreed hours"
+              ],
+              [
+                "Summary",
+                "Monthly",
+                "Written for your client"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label maintenance.",
+      "lede": "A routine across all your client sites.",
+      "items": [
+        {
+          "t": "Client site onboarding",
+          "d": "We audit each site before putting it on the routine.",
+          "img": "web/plan.jpg",
+          "alt": "Client site onboarding"
+        },
+        {
+          "t": "Updates and backups",
+          "d": "Scheduled, tested and recoverable.",
+          "img": "web/build.jpg",
+          "alt": "Updates and backups"
+        },
+        {
+          "t": "Security",
+          "d": "Scans, hardening and fixes.",
+          "img": "web/crm.jpg",
+          "alt": "Security"
+        },
+        {
+          "t": "Uptime and speed",
+          "d": "Monitoring with upkeep.",
+          "img": "web/speed.jpg",
+          "alt": "Uptime and speed"
+        },
+        {
+          "t": "Content edits",
+          "d": "Small changes within agreed hours.",
+          "img": "web/seo.jpg",
+          "alt": "Content edits"
+        },
+        {
+          "t": "Summary reports",
+          "d": "A monthly note per site.",
+          "img": "res/insights.jpg",
+          "alt": "Summary reports"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label website maintenance.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "web/speed.jpg",
+      "alt": "Why agencies choose MMC for white-label website maintenance.",
+      "items": [
+        {
+          "t": "Many sites, one routine",
+          "d": "We handle sites in batches."
+        },
+        {
+          "t": "Edit requests simple",
+          "d": "You send; we do."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label website maintenance works,",
+      "h2b": "step by step.",
+      "img": "web/speed.jpg",
+      "alt": "How white-label website maintenance works, step by step.",
+      "items": [
+        {
+          "t": "List the sites",
+          "d": "You share the sites and platforms."
+        },
+        {
+          "t": "Audit",
+          "d": "We audit and fix urgent issues."
+        },
+        {
+          "t": "Routine",
+          "d": "Maintenance runs on schedule."
+        },
+        {
+          "t": "Summary",
+          "d": "You get a monthly note."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label website maintenance for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells website maintenance but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label website maintenance fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label Shopify development",
+          "d": "Stores built behind your brand.",
+          "img": "shop/design.jpg",
+          "href": "/white-label/shopify-development/",
+          "link": "See white-label Shopify development"
+        },
+        {
+          "n": "White-label app development",
+          "d": "Apps built behind your brand.",
+          "img": "app/build.jpg",
+          "href": "/white-label/app-development/",
+          "link": "See white-label app development"
+        },
+        {
+          "n": "White-label AI services",
+          "d": "AI by MMC behind your brand.",
+          "img": "ugc/shoot.jpg",
+          "href": "/white-label/ai-services/",
+          "link": "See white-label AI services"
+        },
+        {
+          "n": "Website maintenance",
+          "d": "Updates, backups, security and a monthly report.",
+          "img": "web/speed.jpg",
+          "href": "/services/website-maintenance/",
+          "link": "See website maintenance"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "website maintenance."
+    ],
+    "faq": [
+      {
+        "q": "Do you maintain sites you did not build?",
+        "a": "Yes, after an audit."
+      },
+      {
+        "q": "Can I resell this with my own pricing?",
+        "a": "Yes. Our fee is separate and your client price is your decision."
+      },
+      {
+        "q": "How do clients send requests?",
+        "a": "Through you, in a shared board or email, whichever you prefer."
+      },
+      {
+        "q": "What if a site is hacked?",
+        "a": "We restore from backup, clean up and report. We scope cleanup on a call."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label website maintenance?",
+        "a": "Send a list of client sites and platforms. After the NDA we audit a few and propose a care plan structure."
+      }
+    ],
+    "cta": {
+      "h2a": "Add website maintenance",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first website maintenance client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Audit before you promise",
+        "tag": "Site onboarding",
+        "breaks": "Taking on a site without an audit.",
+        "why": "Old plugins, no backups and unknown logins surface on the first bad day, after you promised care.",
+        "does": "We audit every site first, list what is outdated and unprotected, and agree a baseline with you before care starts."
+      },
+      {
+        "k": "Test updates on a copy",
+        "tag": "Updates",
+        "breaks": "Updating live sites and hoping.",
+        "why": "One bad plugin update takes a client offline and the call comes to you.",
+        "does": "Updates run on a copy first. Anything that breaks is held back and reported to you before it touches the live site."
+      },
+      {
+        "k": "Prove the restore",
+        "tag": "Backups",
+        "breaks": "Having backups that nobody has tried to restore.",
+        "why": "A backup you have never restored is a hope, not a plan.",
+        "does": "Off-site copies, a restore test on a schedule, and a record of the result you can show your client."
+      },
+      {
+        "k": "Log every request",
+        "tag": "Small requests",
+        "breaks": "Letting small requests sit in an inbox.",
+        "why": "Edits that are forgotten or done for free eat the margin on the plan.",
+        "does": "Requests go in one queue, are logged against the plan and are quoted when they fall outside it."
+      },
+      {
+        "k": "Report on value, not tasks",
+        "tag": "Monthly report",
+        "breaks": "Sending a task list instead of a report.",
+        "why": "A list of updates proves effort, not value, and clients cancel plans that look like nothing.",
+        "does": "A short report with Done, Watch and Next, plus the one suggested change, in your branding."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label site care",
+      "h2b": "goes wrong for agencies.",
+      "lede": "A care plan earns on routine and loses on surprises. These are the five places agency care plans lose time and trust."
+    },
+    "process": {
+      "h2a": "How we onboard you for site care,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and site audit",
+          "d": "We sign the NDA and audit a first batch of your client sites, covering updates, backups, security and speed.",
+          "out": "An audit per site and one agreed baseline."
+        },
+        {
+          "t": "Pilot with a few sites",
+          "d": "A few sites go on the routine first, with updates, backups and a first report.",
+          "out": "A first monthly report you can judge us on."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Request route, update windows, escalation and report format are written down for every site.",
+          "out": "A one-page care policy for your clients."
+        },
+        {
+          "t": "Add the rest of your sites",
+          "d": "The remaining client sites move onto the routine in batches, with a named contact on our side.",
+          "out": "Every client site on one routine."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

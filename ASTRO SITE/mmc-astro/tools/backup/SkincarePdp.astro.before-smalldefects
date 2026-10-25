@@ -1,0 +1,113 @@
+---
+// PANEL: SkincarePdp (kind "SkincarePdp"). The skincare buying path as five screens, no platform mark except the WhatsApp mark on the last. 5 steps.
+//   1 Concern search: a search for a skin concern; the brand's ingredient guide sits in the results. Tab: Search.
+//   2 Honest video: a three-frame routine film (texture, how to use, daily) with a "no cure claims" note. Tab: Video.
+//   3 Margin: one order's money as bars (order value, product, shipping, returns, discounts) and what is left. Tab: Margin.
+//   4 Product page: a phone product page with ingredients, how to use, who it suits and reviews, beside the proof blocks. Tab: Product page.
+//   5 Reorder: a shelf timeline (ships, in use, running low) and the WhatsApp reminder at the right moment. Tab: Reminders.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real brand. Styles scoped to this file (prefix skp-).
+import Frame from "./Frame.astro";
+import { THUMBS, crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const frames = [[THUMBS.unbox, "Texture"], [THUMBS.serum, "How to use"], [THUMBS.jar, "In the routine"]];
+const money = [["Order value", 100, ""], ["Product", 34, "x"], ["Shipping", 14, "x"], ["Returns", 9, "x"], ["Discount", 16, "x"], ["Left", 27, "win"]];
+const ingredients = [["Hydrating ingredient", "What it does, in a line"], ["Brightening ingredient", "Who it suits"], ["Soothing base", "Patch test note"]];
+---
+<Frame cls="skp-ui" title="Skincare buying path" label="Illustration of a skincare buying path: search, video, margin, product page and reorder reminder. Not a client brand." caption={W.illustrative} tabs={["Search", "Video", "Margin", "Product page", "Reminders"]} tabFor={[0, 1, 2, 3, 4]} accent="#7C3AED" accentSoft="#F0E8FD">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Search the concern <span>Buyers read before they buy</span></p>
+    <div class="skp-q"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="M13 13l5 5" /></svg><span>serum for dull skin</span></div>
+    <ul class="skp-res">
+      <li class="s2p-card skp-me"><small class="skp-url">yourbrand.example <span>› guides</span></small><b>What to look for in a serum for dull skin</b><i class="s2p-line s2p-line--m"></i><span class="skp-tags"><em class="s2p-chip s2p-chip--ok">Ingredients explained</em><em class="s2p-chip s2p-chip--ok">Who it suits</em></span></li>
+      <li class="skp-r"><small class="skp-url">shop.example</small><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i></li>
+      <li class="skp-r"><small class="skp-url">forum.example</small><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i></li>
+    </ul>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">A routine on camera <span>Real use, real texture, no cure claims</span></p>
+    <ul class="skp-film">
+      {frames.map(([th, n], k) => <li class="s2p-card"><span class="s2p-ph skp-ph" style={th as string} role="img" aria-label="Frame from a routine film"></span><b>{n}</b><i class="skp-play" aria-hidden="true"></i></li>)}
+    </ul>
+    <p class="skp-note"><em class="s2p-chip s2p-chip--ok">Shows use</em><em class="s2p-chip s2p-chip--ok">Inside platform rules</em><em class="s2p-chip s2p-chip--bad">No cure claims</em></p>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">One order, after everything <span>Targets come from what is left</span></p>
+    <ul class="skp-money">
+      {money.map(([n, w, t]) => <li><span>{n}</span><i class={t as string ? "skp-" + t : ""} style={`--w:${w}%`}></i></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">The page settles the doubt <span>Ingredients, routine and reviews</span></p>
+    <div class="skp-pdp">
+      <div class="skp-phone" role="img" aria-label="Phone product page">
+        <span class="s2p-ph skp-pimg" style={crop("/assets/d2c/range.jpg", 0.655, 0.58, 3.8, 1.7)}></span>
+        <i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i>
+        <span class="skp-stars" aria-hidden="true">★★★★★</span>
+        <span class="skp-cta">Add to cart</span>
+      </div>
+      <div class="skp-proof">
+        {ingredients.map(([a, b], k) => <div class={"s2p-card skp-ing s2p-hl-4" + (k > 0 ? "" : "")}><b>{a}</b><small class="s2p-mute">{b}</small></div>)}
+        <div class="s2p-card skp-routine"><b>Routine</b><span class="s2p-chip s2p-chip--blue">Morning</span><span class="s2p-chip s2p-chip--blue">Night</span><span class="s2p-chip">Patch test first</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Reorder before it runs out <span>Timed to the pack, not the calendar</span></p>
+    <ol class="skp-tl">
+      <li><i></i><b>Ships</b></li><li><i></i><b>In use</b></li><li class="is-on"><i></i><b>Running low</b></li>
+    </ol>
+    <div class="skp-gauge"><small class="s2p-mute">Pack level</small><span><i></i></span><em class="s2p-chip s2p-chip--warn">Reminder sent here</em></div>
+    <div class="skp-wa"><img src="/assets/platforms/whatsapp.svg" alt="" width="20" height="20" /><span>Your serum may be running low. Reorder in one tap.</span><em>Reorder</em></div>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .skp-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.skp-q { display: flex; align-items: center; gap: .7em; padding: .6em 1em; border: 1px solid #DADDE1; border-radius: 99px; box-shadow: 0 .2em .6em -.3em rgba(0, 0, 0, .25); font: 600 1.02em var(--font-body); color: #1C2B33; flex: none; }
+.skp-q svg { width: 1.2em; height: 1.2em; fill: none; stroke: #65676B; stroke-width: 2; stroke-linecap: round; flex: none; }
+.skp-res { list-style: none; margin: 0; padding: 0; display: grid; gap: .7em; }
+.skp-me { display: grid; gap: .4em; border-color: #7C3AED; box-shadow: 0 0 0 2px #7C3AED; }
+.skp-me b { font: 800 1.08em/1.2 var(--font-body); color: #5B21B6; }
+.skp-tags { display: flex; flex-wrap: wrap; gap: .5em; }
+.skp-r { display: grid; gap: .3em; padding: .4em .8em; opacity: .75; }
+.skp-url { font: 600 .82em var(--font-body); color: #1C2B33; } .skp-url span { color: #65676B; }
+.skp-film { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7em; }
+.skp-film li { position: relative; display: grid; gap: .5em; padding: .5em; }
+.skp-film b { font: 800 .86em var(--font-body); }
+.skp-ph { display: block; aspect-ratio: 3 / 4; border-radius: .6em; background-size: cover; }
+.skp-play { position: absolute; top: calc(50% - 1.4em); left: calc(50% - .9em); width: 1.8em; height: 1.8em; border-radius: 50%; background: rgba(255, 255, 255, .9); }
+.skp-play::after { content: ""; position: absolute; left: .7em; top: .5em; border-style: solid; border-width: .4em 0 .4em .7em; border-color: transparent transparent transparent #1C2B33; }
+.skp-note { margin: 0; display: flex; flex-wrap: wrap; gap: .5em; }
+.skp-money { list-style: none; margin: 0; padding: 0; display: grid; gap: .55em; align-content: center; flex: 1; }
+.skp-money li { display: grid; grid-template-columns: 7em minmax(0, 1fr); align-items: center; gap: .8em; font: 700 .92em var(--font-body); color: #1C2B33; }
+.skp-money i { display: block; height: 1.05em; width: var(--w); border-radius: 99px; background: #CED0D4; }
+.skp-money i:first-child, .skp-money li:first-child i { background: #7C3AED; }
+.skp-money i.skp-x { background: repeating-linear-gradient(135deg, rgba(255, 197, 40, .75) 0 6px, rgba(255, 197, 40, .35) 6px 12px); border: 1px dashed #B58900; }
+.skp-money i.skp-win { background: #1B7A3D; box-shadow: 0 0 0 3px #E3F6E9; }
+.skp-pdp { flex: 1; min-height: 0; display: grid; grid-template-columns: 38% minmax(0, 1fr); gap: 1em; align-items: center; }
+.skp-phone { display: grid; gap: .45em; align-content: start; padding: .7em; border: .3em solid #1C2B33; border-radius: 1.4em; background: #fff; max-height: 100%; overflow: hidden; }
+.skp-pimg { display: block; aspect-ratio: 1.7 / 1; border-radius: .6em; }
+.skp-stars { color: #E8A100; letter-spacing: .1em; font-size: .9em; }
+.skp-cta { display: block; padding: .5em; border-radius: .6em; background: #1C2B33; color: #fff; text-align: center; font: 800 .86em var(--font-body); }
+.skp-proof { display: grid; gap: .5em; align-content: center; }
+.skp-ing { display: grid; gap: .1em; padding: .45em .8em; border-color: #7C3AED; }
+.skp-ing b { font: 800 .92em var(--font-body); }
+.skp-routine { display: flex; flex-wrap: wrap; align-items: center; gap: .4em; padding: .45em .8em; } .skp-routine b { font: 800 .92em var(--font-body); margin-right: .3em; }
+.skp-tl { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; position: relative; gap: .5em; }
+.skp-tl::before { content: ""; position: absolute; left: 6%; right: 6%; top: .55em; border-top: 2px dashed #B9A2EA; }
+.skp-tl li { position: relative; flex: 1; display: grid; justify-items: center; gap: .5em; font: 800 .9em var(--font-body); color: #65676B; }
+.skp-tl i { width: 1.1em; height: 1.1em; border-radius: 50%; background: #fff; border: 3px solid #B9A2EA; }
+.skp-tl li.is-on { color: #5B21B6; } .skp-tl li.is-on i { background: #7C3AED; border-color: #7C3AED; box-shadow: 0 0 0 .35em #F0E8FD; }
+.skp-gauge { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .8em; }
+.skp-gauge span { display: block; height: .8em; border-radius: 99px; background: #E4E6EB; overflow: hidden; } .skp-gauge i { display: block; width: 24%; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #E8A100, #7C3AED); }
+.skp-wa { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .7em; padding: .8em 1em; border-radius: .3em 1em 1em 1em; background: #D9FDD3; font: 600 .95em/1.35 var(--font-body); color: #1C2B33; box-shadow: 0 .6em 1.2em -.7em rgba(0, 0, 0, .4); }
+.skp-wa em { font: 800 .8em var(--font-body); font-style: normal; background: #fff; border-radius: 99px; padding: .4em .9em; }
+@media (max-width: 560px) {
+  .skp-res .skp-r:last-child, .skp-me .s2p-line, .skp-money li:nth-child(4) { display: none; }
+  .skp-film li { padding: .3em; } .skp-film b { font-size: .75em; } .skp-note .s2p-chip:nth-child(2) { display: none; }
+  .skp-money { gap: .35em; } .skp-money li { grid-template-columns: 5.4em minmax(0, 1fr); font-size: .85em; }
+  .skp-ing small, .skp-routine .s2p-chip:last-child { display: none; } .skp-pdp { grid-template-columns: 36% minmax(0, 1fr); gap: .6em; }
+  .skp-phone .s2p-line--xs { display: none; }
+}
+@container (max-height: 230px) { .skp-note, .skp-ing:nth-child(3), .skp-res .skp-r:nth-child(2) { display: none; } .skp-pimg { aspect-ratio: 2.4 / 1; } .skp-ph { aspect-ratio: 1 / 1; } }
+</style>

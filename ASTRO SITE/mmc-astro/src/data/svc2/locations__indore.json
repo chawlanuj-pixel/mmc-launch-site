@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "edu/enquiry.jpg",
+    "pos": "50% 50%",
+    "alt": "A mother and daughter looking at a laptop together.",
+    "facts": [
+      {
+        "t": "A profile for each place.",
+        "d": "Campuses, branches and plants verified."
+      },
+      {
+        "t": "Enquiries answered.",
+        "d": "A tracked WhatsApp or call path."
+      },
+      {
+        "t": "Reach beyond the city.",
+        "d": "Pages and search for other towns."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why Indore businesses choose MMC for local marketing"
+  },
+  "work": {
+    "panel": "LocalProfile",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for your",
+    "h2b": "Indore profile.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Verify each campus, branch and plant.",
+        "d": "Every place gets one verified listing, and old or duplicate ones are merged."
+      },
+      {
+        "n": "02",
+        "t": "Write categories and services in buyers' words.",
+        "d": "Plain words in the language your buyers search, set against local competitors."
+      },
+      {
+        "n": "03",
+        "t": "Set photos and timings for busy seasons.",
+        "d": "Photos stay current, with timings set for admission or festive seasons."
+      },
+      {
+        "n": "04",
+        "t": "Ask for reviews and answer enquiries fast.",
+        "d": "Honest replies, and a WhatsApp or call path so no lead waits."
+      },
+      {
+        "n": "05",
+        "t": "Add an Indore page and pages beyond.",
+        "d": "The profile links to a matching page, and the report shows where enquiries came from."
+      }
+    ],
+    "illustrative": "Illustrative layout of a business profile and map results. Not a real business, no real figures. Google Business Profile and Google Maps belong to Google."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaLocalMap",
+    "barLogo": "",
+    "barTitle": "Local search view",
+    "pinsLabel": "Five places Indore buyers go missing",
+    "pins": [
+      {
+        "x": 12,
+        "y": 0,
+        "label": "Places"
+      },
+      {
+        "x": 44,
+        "y": 0,
+        "label": "Language"
+      },
+      {
+        "x": 60,
+        "y": 0,
+        "label": "Photos"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Enquiries"
+      },
+      {
+        "x": 92,
+        "y": 0,
+        "label": "Reach"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run local work in Indore,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Find where buyers are",
+        "d": "We read your enquiries, verify each place and complete the profile content.",
+        "get": "A clear view of where buyers come from.",
+        "img": "leadgen/attract.jpg",
+        "alt": "A phone showing a social ad beside a laptop with search ads.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Enquiry path and pages",
+        "d": "We set up a tracked WhatsApp or call path and build pages for Indore and the towns that matter.",
+        "get": "Enquiries answered and tracked.",
+        "img": "edu/followup.jpg",
+        "alt": "A woman on a call, taking notes beside a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Search, ads and report",
+        "d": "We add search and ads that reach beyond the city where they suit, and report enquiries by source.",
+        "get": "A monthly report by source.",
+        "img": "company/call.jpg",
+        "alt": "A strategist in a headset on a call, taking notes beside a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "about2/callscreen.jpg",
+    "alt": "A strategist on a video call, reviewing an account on a laptop.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "All locations",
+        "href": "/locations/"
+      },
+      {
+        "n": "Thane",
+        "href": "/locations/thane/"
+      },
+      {
+        "n": "Mumbai",
+        "href": "/locations/mumbai/"
+      },
+      {
+        "n": "Google Business Profile",
+        "href": "/services/seo/google-business-profile/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

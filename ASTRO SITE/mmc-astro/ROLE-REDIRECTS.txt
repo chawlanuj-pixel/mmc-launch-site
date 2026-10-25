@@ -1,0 +1,14 @@
+# Old Job Detail.html?role=<slug> addresses to the new static role pages (Netlify query-redirect format).
+# Place these ABOVE the existing '/Job%20Detail.html /careers/role/ 301' lines in public/_redirects.
+# The old ItemList also listed two roles that were never in the detail page; they go to the careers index.
+/Job%20Detail.html role=senior-meta-buyer /careers/senior-meta-buyer/ 301!
+/Job%20Detail.html role=google-amazon-specialist /careers/google-amazon-specialist/ 301!
+/Job%20Detail.html role=senior-art-director /careers/senior-art-director/ 301!
+/Job%20Detail.html role=performance-copywriter /careers/performance-copywriter/ 301!
+/Job%20Detail.html role=growth-strategist /careers/growth-strategist/ 301!
+/Job%20Detail.html role=shopify-engineer /careers/shopify-engineer/ 301!
+/Job%20Detail.html role=ai-workflow-engineer /careers/ 301!
+/Job%20Detail.html role=account-director /careers/ 301!
+# Bare address and any unknown role: send to the careers index (replaces the two /careers/role/ lines).
+/Job%20Detail.html /careers/ 301
+/Job Detail.html /careers/ 301

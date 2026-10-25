@@ -1,0 +1,223 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "ugc/edit.jpg",
+    "pos": "50% 50%",
+    "alt": "A video editor working on a cut at a desk.",
+    "facts": [
+      {
+        "t": "A product line you do not build.",
+        "d": "We run AI by MMC, you sell the output."
+      },
+      {
+        "t": "People check every piece.",
+        "d": "Review happens before anything leaves us."
+      },
+      {
+        "t": "Briefed like any other job.",
+        "d": "You send the brief, we deliver in your format."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies resell AI work through MMC"
+  },
+  "work": {
+    "panel": "AiStudio",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to deliver",
+    "h2b": "AI work for you.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Save your client's brand rules once.",
+        "d": "Voice, do, do not and product images are captured from the brief, so each new piece starts from the same rules."
+      },
+      {
+        "n": "02",
+        "t": "Generate several drafts from one brief.",
+        "d": "Four takes come from the same rules, so your client chooses between options instead of waiting for a redo."
+      },
+      {
+        "n": "03",
+        "t": "Have a person check every draft.",
+        "d": "Labels, hands, claims and brand fit are reviewed by a person and fixed before the piece goes anywhere near your client."
+      },
+      {
+        "n": "04",
+        "t": "Hand over files and a usage note.",
+        "d": "Final files arrive in your folder structure with a plain note of what is AI-made, so you can disclose it as your client needs."
+      }
+    ],
+    "illustrative": "Illustrative layout of an AI production desk: brief, drafts, review and handover. Not a client project, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "AI production desk",
+    "pinsLabel": "Five places white-label AI work slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "board",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Brand"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Checks"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Rights"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Sameness"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Packaging"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "star",
+        "head": "Brand",
+        "lines": [
+          "Output ignores rules",
+          "Looks off-brand"
+        ],
+        "chip": "Off-brand",
+        "tone": "b"
+      },
+      {
+        "glyph": "eye",
+        "head": "Checks",
+        "lines": [
+          "Nobody reads the output",
+          "Errors reach the client"
+        ],
+        "chip": "Unchecked",
+        "tone": "b"
+      },
+      {
+        "glyph": "doc",
+        "head": "Rights",
+        "lines": [
+          "Ownership unclear",
+          "No usage note"
+        ],
+        "chip": "Unclear",
+        "tone": "w"
+      },
+      {
+        "glyph": "layers",
+        "head": "Sameness",
+        "lines": [
+          "Every client looks alike",
+          "Stock AI feel"
+        ],
+        "chip": "Generic",
+        "tone": "w"
+      },
+      {
+        "glyph": "coin",
+        "head": "Packaging",
+        "lines": [
+          "Hard to price",
+          "Hard to explain"
+        ],
+        "chip": "Unsold",
+        "tone": "w"
+      }
+    ],
+    "base": "Brand rules in, checked work out",
+    "artLabel": "Five cards showing where white-label AI work slips: brand rules, human checks, rights, sameness and packaging.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for AI services,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and AI scope",
+        "d": "We sign the NDA, take a client brief and agree which AI services you plan to sell first.",
+        "get": "A written scope with disclosure and rights terms.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A video call about a new product line.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot set",
+        "d": "One small deliverable, such as a set of product images or one short video, made from your brief.",
+        "get": "A pilot you can show a client as a sample.",
+        "img": "ugc/test.jpg",
+        "alt": "Video ad variations compared on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Brief template, review checklist, file naming and disclosure wording are written once.",
+        "get": "A one-page AI delivery policy.",
+        "img": "ugc/brief.jpg",
+        "alt": "Brand boards being sorted on a table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the product line",
+        "d": "More clients and formats use the same brief and checks, with the line growing as you sell it.",
+        "get": "An AI line your sales team can quote.",
+        "img": "ugc/refresh.jpg",
+        "alt": "A wall of creative variations.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "careers2/studio-wide.jpg",
+    "alt": "A studio team working around a shared table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label reporting",
+        "href": "/white-label/reporting/"
+      },
+      {
+        "n": "White-label ORM",
+        "href": "/white-label/orm/"
+      },
+      {
+        "n": "AI by MMC",
+        "href": "/ai-by-mmc/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

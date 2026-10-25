@@ -1,0 +1,208 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "careers2/studio-wide.jpg",
+    "pos": "50% 50%",
+    "alt": "A team working together around a long table.",
+    "facts": [
+      {
+        "t": "A pod that works as yours.",
+        "d": "Named strategists, designers and developers inside your process."
+      },
+      {
+        "t": "Draw hours or hire a team.",
+        "d": "Pick the model that fits the work you have."
+      },
+      {
+        "t": "Under your brand and an NDA.",
+        "d": "Your clients do not hear from us unless you ask."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies outsource delivery to MMC"
+  },
+  "work": {
+    "panel": "TeamPod",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do when we become",
+    "h2b": "your delivery pod.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Assign a named pod to your queue.",
+        "d": "A strategist, a specialist, a developer and a coordinator are assigned to you, so you know who is on your work."
+      },
+      {
+        "n": "02",
+        "t": "Run the same week, every week.",
+        "d": "Stand-ups, a mid-week review with you and a Friday report give your team a rhythm to plan around."
+      },
+      {
+        "n": "03",
+        "t": "Work on your board, in your tool.",
+        "d": "Tasks move from brief to review inside the tracker your team already uses, so nothing lives in a side channel."
+      },
+      {
+        "n": "04",
+        "t": "Add or pause a seat as work changes.",
+        "d": "A new role joins when a project lands, and a seat pauses when work slows, so you carry no idle bench."
+      }
+    ],
+    "illustrative": "Illustrative layout of a dedicated delivery pod: roles, weekly rhythm, board and seats. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Outsourced team delivery",
+    "pinsLabel": "Five places outsourced agency teams slip",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "bars",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Bench"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Churn"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Hand-offs"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Tools"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Quality"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Bench",
+        "plan": 40,
+        "actual": 72,
+        "chip": "Idle cost",
+        "tone": "b"
+      },
+      {
+        "head": "Churn",
+        "plan": 70,
+        "actual": 48,
+        "chip": "Leavers",
+        "tone": "b"
+      },
+      {
+        "head": "Hand-offs",
+        "plan": 50,
+        "actual": 80,
+        "chip": "Via chat",
+        "tone": "w"
+      },
+      {
+        "head": "Tools",
+        "plan": 55,
+        "actual": 75,
+        "chip": "Side tools",
+        "tone": "w"
+      },
+      {
+        "head": "Quality",
+        "plan": 80,
+        "actual": 62,
+        "chip": "Drifting",
+        "tone": "b"
+      }
+    ],
+    "base": "Same pod, same rhythm, your tools",
+    "artLabel": "Five columns of plan against actual bars showing where outsourced agency teams slip: bench cost, churn, hand-offs, tools and quality.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard your outsourced team,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and team scope",
+        "d": "We sign the NDA, learn your processes and agree which roles you need and what each owns.",
+        "get": "A written pod scope with roles and rhythm.",
+        "img": "contact/call.jpg",
+        "alt": "A scoping call between an agency and its delivery partner.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot pod",
+        "d": "A small pod takes a defined slice of your work for a trial period, in your tools.",
+        "get": "A pilot you can judge on speed, quality and communication.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Colleagues planning at a whiteboard.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Briefing, approvals, escalation and handover are written down so the pod and your team work from one page.",
+        "get": "A shared operating guide for both teams.",
+        "img": "company/onepage.jpg",
+        "alt": "An operating guide on a notepad.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the pod",
+        "d": "Seats are added as clients are won, and the same rhythm holds as the pod grows.",
+        "get": "A team that grows with your pipeline.",
+        "img": "contact/meeting.jpg",
+        "alt": "Colleagues sketching around a table.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/strategy.jpg",
+    "alt": "Two colleagues in a planning conversation.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label reseller programme",
+        "href": "/white-label/reseller-programme/"
+      },
+      {
+        "n": "White-label pricing models",
+        "href": "/white-label/pricing-models/"
+      },
+      {
+        "n": "All services",
+        "href": "/services/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "file": "white-label-wordpress-development.html",
+  "path": "/white-label/wordpress-development/",
+  "key": "wl_wordpress_development",
+  "title": "White-Label WordPress Development for Agencies | MMC",
+  "description": "White-label WordPress development for agencies: custom themes, WooCommerce and plugin work built to your designs and delivered under your brand.",
+  "ogTitle": "White-label WordPress development for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label WordPress development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label WordPress development",
+          "item": "https://www.mondaymarketing.company/white-label/wordpress-development/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/wordpress-development/",
+      "name": "White-Label WordPress Development for Agencies | MMC",
+      "description": "White-label WordPress development for agencies: custom themes, WooCommerce and plugin work built to your designs and delivered under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#service",
+      "name": "White-label WordPress Development",
+      "serviceType": "White-label WordPress development",
+      "description": "White-label WordPress development delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/wordpress-development/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/wordpress-development/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you use page builders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use the block editor and, where it suits, a builder. We confirm on the spec."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you take over a site built by someone else?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We audit it first and tell you what needs fixing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically no; we advise and set up on the host you choose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you build WooCommerce stores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. For big catalogues we may suggest Shopify instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label WordPress development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send the design files for one client. After the NDA we return a spec, timeline and staging plan."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_wordpress_development",
+    "wm": "White-label WordPress Development",
+    "eyebrow": "● White-label WordPress development",
+    "h1": [
+      "White-label WordPress",
+      [
+        "development for ",
+        "agencies",
+        " that sell sites."
+      ]
+    ],
+    "sub": "Custom themes, WooCommerce, plugins, migrations and speed work, built to your designs and delivered under your brand.",
+    "tiles": [
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Themes",
+        "note": "Built to design"
+      },
+      {
+        "img": "shop/checkout.jpg",
+        "pos": "50% 50%",
+        "label": "WooCommerce",
+        "note": "Cart and checkout"
+      },
+      {
+        "img": "web/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Caching and clean-up"
+      },
+      {
+        "img": "web/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Migrations",
+        "note": "Moved safely"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label WordPress development means MMC builds WordPress sites for your agency's clients while you present the work as yours. We produce custom themes, WooCommerce stores, plugins, migrations and speed fixes from your designs, with the client able to edit pages themselves after handover.",
+      "hl": "custom themes, WooCommerce stores, plugins, migrations",
+      "who": "Monday Marketing Company (MMC) delivers WordPress development for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Custom themes",
+          "text": "Editable blocks for the client."
+        },
+        {
+          "icon": "bag",
+          "title": "WooCommerce",
+          "text": "Stores on WordPress."
+        },
+        {
+          "icon": "gauge",
+          "title": "Speed and security",
+          "text": "Hardened and lean."
+        }
+      ],
+      "image": "web/build.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "wpwl",
+          "h": "Typical white-label WordPress jobs",
+          "paras": [
+            "WordPress jobs come in different sizes. Some agencies hand us a full theme; others need a plugin fix or a migration.",
+            "Our own offer is on the <a href=\"/services/web-development/wordpress/\">WordPress development</a> page. Keep builds healthy with <a href=\"/white-label/website-maintenance/\">white-label website maintenance</a>."
+          ],
+          "img": "web/build.jpg",
+          "cap": "A WordPress build reviewed with an agency.",
+          "table": {
+            "caption": "White-label WordPress jobs by size",
+            "head": [
+              "Job",
+              "Typical scope",
+              "Handover"
+            ],
+            "rows": [
+              [
+                "Theme build",
+                "Templates from design, editable blocks",
+                "Theme, notes and training"
+              ],
+              [
+                "WooCommerce",
+                "Catalogue, checkout, payments",
+                "Store and admin guide"
+              ],
+              [
+                "Plugin work",
+                "Custom plugin or fix",
+                "Code and notes"
+              ],
+              [
+                "Migration",
+                "Move host or platform",
+                "Redirect map and checks"
+              ],
+              [
+                "Speed fix",
+                "Audit and fixes",
+                "Before and after notes"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label WordPress.",
+      "lede": "Themes, stores, plugins and migrations.",
+      "items": [
+        {
+          "t": "Custom themes",
+          "d": "Built from design files with blocks the client can use.",
+          "img": "web/build.jpg",
+          "alt": "Custom themes"
+        },
+        {
+          "t": "WooCommerce",
+          "d": "Product, cart and checkout set up for India.",
+          "img": "shop/checkout.jpg",
+          "alt": "WooCommerce"
+        },
+        {
+          "t": "Plugin development",
+          "d": "Custom plugins and integrations.",
+          "img": "shop/integrate.jpg",
+          "alt": "Plugin development"
+        },
+        {
+          "t": "Migrations",
+          "d": "Move to WordPress or between hosts.",
+          "img": "web/plan.jpg",
+          "alt": "Migrations"
+        },
+        {
+          "t": "Speed optimisation",
+          "d": "Caching, images and script clean-up.",
+          "img": "web/speed.jpg",
+          "alt": "Speed optimisation"
+        },
+        {
+          "t": "Rescue and fixes",
+          "d": "Repairs on sites built by others.",
+          "img": "web/crm.jpg",
+          "alt": "Rescue and fixes"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label WordPress development.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "web/build.jpg",
+      "alt": "Why agencies choose MMC for white-label WordPress development.",
+      "items": [
+        {
+          "t": "Editable by clients",
+          "d": "We build so your client can edit without calling you."
+        },
+        {
+          "t": "Clean code",
+          "d": "Lean themes and few plugins."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label WordPress development works,",
+      "h2b": "step by step.",
+      "img": "web/build.jpg",
+      "alt": "How white-label WordPress development works, step by step.",
+      "items": [
+        {
+          "t": "Share designs",
+          "d": "You send design files."
+        },
+        {
+          "t": "Build",
+          "d": "We build the theme and features."
+        },
+        {
+          "t": "Review",
+          "d": "You test on staging."
+        },
+        {
+          "t": "Launch",
+          "d": "We migrate and hand over."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label WordPress development for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells WordPress development but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label WordPress development fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label website maintenance",
+          "d": "Care plans for your client sites.",
+          "img": "web/speed.jpg",
+          "href": "/white-label/website-maintenance/",
+          "link": "See white-label website maintenance"
+        },
+        {
+          "n": "White-label Shopify development",
+          "d": "Stores built behind your brand.",
+          "img": "shop/design.jpg",
+          "href": "/white-label/shopify-development/",
+          "link": "See white-label Shopify development"
+        },
+        {
+          "n": "White-label app development",
+          "d": "Apps built behind your brand.",
+          "img": "app/build.jpg",
+          "href": "/white-label/app-development/",
+          "link": "See white-label app development"
+        },
+        {
+          "n": "WordPress development",
+          "d": "Custom themes, WooCommerce, speed and migrations.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/wordpress/",
+          "link": "See WordPress development"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        },
+        {
+          "n": "WooCommerce development",
+          "d": "Stores on WordPress: catalogue, checkout, shipping and speed.",
+          "img": "d2c/checkout.jpg",
+          "href": "/services/web-development/woocommerce/",
+          "link": "See WooCommerce development"
+        },
+        {
+          "n": "White-label web development",
+          "d": "Websites built behind your brand.",
+          "img": "web/plan.jpg",
+          "href": "/white-label/web-development/",
+          "link": "See white-label web development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "WordPress development."
+    ],
+    "faq": [
+      {
+        "q": "Do you use page builders?",
+        "a": "We use the block editor and, where it suits, a builder. We confirm on the spec."
+      },
+      {
+        "q": "Can you take over a site built by someone else?",
+        "a": "Yes. We audit it first and tell you what needs fixing."
+      },
+      {
+        "q": "Do you provide hosting?",
+        "a": "Typically no; we advise and set up on the host you choose."
+      },
+      {
+        "q": "Can you build WooCommerce stores?",
+        "a": "Yes. For big catalogues we may suggest Shopify instead."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label WordPress development?",
+        "a": "Send the design files for one client. After the NDA we return a spec, timeline and staging plan."
+      }
+    ],
+    "cta": {
+      "h2a": "Add WordPress development",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first WordPress development client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Keep the plugin list short",
+        "tag": "Plugin sprawl",
+        "breaks": "Solving every feature with another plugin.",
+        "why": "Each plugin is another update, another conflict and another way for the site to break.",
+        "does": "We build what we can in the theme, keep a short vetted plugin list and remove what is unused."
+      },
+      {
+        "k": "Build a theme that updates safely",
+        "tag": "Theme build",
+        "breaks": "Customising someone else's theme in place.",
+        "why": "The next theme update erases the changes, and your client blames you.",
+        "does": "We build a custom theme or a child theme, so the site can be updated without losing work."
+      },
+      {
+        "k": "Plan the move with a way back",
+        "tag": "Migrations",
+        "breaks": "Moving a live site with no rollback.",
+        "why": "Lost forms, broken links and missing redirects show up after your client has noticed them.",
+        "does": "Backups, a staging copy, a redirect map and a way back before anything goes live."
+      },
+      {
+        "k": "Fix speed at the source",
+        "tag": "Speed work",
+        "breaks": "Blaming the host for every slow page.",
+        "why": "Heavy images, scripts and plugins are usually the cause, and a new host does not fix them.",
+        "does": "We trim images, scripts and plugins, set up caching and test on a phone before handover."
+      },
+      {
+        "k": "Teach the client to edit",
+        "tag": "Handover",
+        "breaks": "Handing over a site only a developer can change.",
+        "why": "Every text edit becomes a ticket to you, which erodes the care plan you sell.",
+        "does": "Editable blocks and a short guide, in your branding, so routine edits stay with your client."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label WordPress work",
+      "h2b": "goes wrong for agencies.",
+      "lede": "WordPress is forgiving until it is not. These are the five spots where agency WordPress work turns into support calls and rework."
+    },
+    "process": {
+      "h2a": "How we onboard you for WordPress,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and WordPress scope",
+          "d": "We sign the NDA, take your designs or the site to rescue, and write the scope and plugin policy.",
+          "out": "A written scope with the theme and plugin approach."
+        },
+        {
+          "t": "Pilot site or fix",
+          "d": "One small build, migration or rescue job to show how we work with your client's content.",
+          "out": "A staging link and a change list to judge on."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Plugin vetting, staging, update routine and editing guide format are written once.",
+          "out": "A short WordPress runbook for your team."
+        },
+        {
+          "t": "Scale the queue",
+          "d": "More builds and rescues go through the same routine, with developers added as work grows.",
+          "out": "A WordPress service you can promise."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

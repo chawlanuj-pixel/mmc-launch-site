@@ -1,0 +1,19 @@
+---
+// 3. The brief: what the work covers, written only from the scope text and the service tags.
+import { t } from "../../lib/case2";
+import type { CaseStudy } from "../../lib/work";
+interface Props { c: CaseStudy; d: any }
+const { c, d } = Astro.props as Props;
+---
+<section class="c2-band c2-brief" id="the-brief" aria-labelledby="c2-brief-h">
+  <div class="c2-wrap c2-brief__grid">
+    <header class="c2-rv">
+      <p class="c2-eyebrow">The brief</p>
+      <h2 class="c2-h2" id="c2-brief-h">What this work <em>covers.</em></h2>
+    </header>
+    <div class="c2-brief__body">
+      <p class="c2-lead c2-rv">{t(d.brief[0], c)}</p>
+      <p class="c2-rv c2-d1">{t(d.brief[1], c)}</p>
+    </div>
+  </div>
+</section>

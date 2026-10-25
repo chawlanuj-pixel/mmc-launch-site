@@ -1,0 +1,554 @@
+---
+// Paid-search landing page: "performance marketing agency in <city>". One template, eight cities (src/data/lp/cities.json).
+// Built for one job: a visitor from a Google ad gives a name, a WhatsApp number and a spend band. No site navigation, no footer maze.
+// noindex and out of the sitemap. Every claim here is already approved on the site: no figures, no client counts, no outcomes.
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import CookieBanner from "../../../components/shell/CookieBanner.tsx";
+import LpForm from "../../../components/lp/LpForm.astro";
+import { CASES, GROUP_LABEL, tagsFor, whatWeDid } from "../../../lib/work";
+import { ARTWORK_LINE, PHONE_DISPLAY, PHONE_TEL, WHATSAPP } from "../../../lib/site";
+import data from "../../../data/lp/cities.json";
+import "../../../styles/shell.css";
+import "../../../styles/contact-new.css";
+import "../../../styles/lp.css";
+
+export function getStaticPaths() {
+  return (data as any).cities.map((c: any) => ({ params: { city: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: any };
+const city: string = c.name;
+const path = `/lp/performance-marketing-agency/${c.slug}/`;
+const title = `Performance Marketing Agency in ${city} | Free Ad Audit`;
+const description = `Meta, Google, Amazon and quick commerce ads judged on profit, not ROAS. Get a free audit of your ${city} ad accounts from a senior strategist.`;
+
+const logos = [["giraffe", "The Growing Giraffe"], ["oosh", "OOsh"], ["sprnt", "Sprnt"], ["awwbaby", "AwwBaby"], ["lepure", "Lepure"], ["notic", "Notic"], ["mittiy", "Mittiy Made"], ["vagakids", "Vaga Kids"]];
+// The work showcase: every case study, the paid-media-heaviest first, then the rest in CASES (filter) order.
+const lead = ["giraffe", "sprnt", "awwbaby"];
+const work = [...lead.map((id) => CASES.find((x) => x.id === id)!).filter(Boolean), ...CASES.filter((x) => !lead.includes(x.id))];
+const peek = work.slice(0, 3);
+// Filter chips: All plus the brand groups the page promises (D2C, B2B, Education). "Other consumer" shows under All.
+const kinds = ["d2c", "b2b", "edu"].filter((k) => work.some((x) => x.group === k)).map((k) => ({ k, l: GROUP_LABEL[k] }));
+// Card widths, so every row is full: the first card is the feature, then halves (two to a row) absorb what three-up leaves over.
+// The page script reruns the same rule when a filter changes.
+const span = (i: number, total: number) => {
+  if (i === 0) return "feat";
+  const n = total - 1;
+  if (n === 1) return "feat";
+  const halves = n % 3 === 1 ? 4 : n % 3 === 2 ? 2 : 0;
+  return i - 1 < halves ? "half" : "third";
+};
+
+const looks = [
+  { img: "au/look-tracking.jpg", alt: "A Meta Ads Manager dashboard beside a Shopify orders list on two monitors, a hand pointing at the orders.", h: "Tracking", d: "Does Meta, Google and your store agree on what was bought? Broken tracking makes every other number a guess." },
+  { img: "au/look-structure.jpg", alt: "A Google Ads campaigns tree showing search, Performance Max and display campaigns on a laptop.", h: "Account structure", d: "Where budget is split across campaigns that compete with each other, and where one clean funnel would do." },
+  { img: "au/look-creative.jpg", alt: "Printed ad variations of one product, three phone video ads and colour swatches laid out on a desk.", h: "Creative", d: "Which ideas are tired, which are untested, and what a weekly testing habit would look like." },
+  { img: "au/look-breakeven.jpg", alt: "A handwritten per-order cost breakdown in rupees beside a calculator.", h: "Break-even ROAS", d: "The return your ads must earn on your real margins before an order pays for itself." },
+];
+// Literal, branded scenes (the same set as /services/performance-marketing/). The Amazon square mark is only the smile, so the wordmark is used.
+const channels = [
+  { img: "pm-v3/channel-meta.jpg", logo: "meta.svg", h: "Meta Ads", d: "Account structure, creative testing and Conversions API tracking, scaled against margin.", alt: "A woman on a sofa watching Reels on her phone." },
+  { img: "pm-v3/channel-google.jpg", logo: "google.svg", h: "Google Ads", d: "Search, Performance Max, Shopping and video, with the product feed and tracking fixed first.", alt: "A shopper comparing products in Google search results on a laptop." },
+  { img: "pm-v3/channel-amazon.jpg", logo: "amazon-wordmark.svg", word: true, h: "Amazon Ads", d: "Sponsored ads tied to your listing, your stock and your margin, not only to ACOS.", alt: "Two Amazon delivery boxes stacked on a table." },
+  { img: "pm-v3/channel-quickcommerce.jpg", logo: "blinkit.svg", h: "Quick commerce ads", d: "Blinkit, Zepto and Instamart ads tied to availability and dark-store stock.", alt: "A Blinkit delivery rider on a scooter in a city street." },
+];
+const steps = [
+  ["Audit", "We read your accounts, tracking and unit economics, and work out your break-even ROAS."],
+  ["Structure", "Campaigns and budgets are set against that number, with tracking fixed first."],
+  ["Test creative", "Creative runs as a testing programme: one idea, several versions, a clear winner."],
+  ["Review weekly", "A senior strategist reviews with you every week and reports on contribution margin."],
+];
+const wont = [
+  "Promise a ROAS. Nobody can honestly guarantee one, and a ROAS target alone can hide a loss.",
+  "Report only what the platform reports. We judge results on contribution margin.",
+  "Hand your account to a junior after the pitch. A senior strategist runs the weekly review.",
+  "Hide the thinking. You see the structure, the tests and the reasons, not only a report.",
+];
+const will = [
+  "Fix tracking first, so the numbers you steer by are the numbers that are true.",
+  "Set budgets against your break-even ROAS, not against a round number.",
+  "Run Meta, Google, Amazon and quick commerce as one account.",
+  "Review every week and tell you plainly what to stop, keep and scale.",
+];
+// Photos are the approved audience doors from /industries/ (src/data/hubs2/industries.json).
+const who = [
+  { img: "/assets/d2c/packing.jpg", alt: "A D2C team packing customer orders at a workbench.", h: "D2C brands", d: "Judged on contribution margin and repeat purchase. For founders and growth heads whose ROAS has dropped, whose CAC keeps rising or whose creative has tired." },
+  { img: "/ai-by-mmc/assets/img/hub-aud-b2b.jpg", alt: "A B2B team in a meeting room watching a pipeline presentation.", h: "B2B companies", d: "Judged on the cost of a qualified lead, not on form fills. Search, LinkedIn and Meta tied to your CRM." },
+  { img: "/ai-by-mmc/assets/img/hub-aud-edu.jpg", alt: "An admissions counsellor talking with a student and her parent.", h: "Educational institutes", d: "Judged on enquiries, visits and admissions across the whole season, not on clicks." },
+];
+const faq = [
+  { q: `Do you work with ${city} brands?`, a: `${c.local} The work, the weekly review and the reporting are the same wherever you are.` },
+  { q: "What does performance marketing cost?", a: "Your ad spend is paid to the platforms and sits outside our fee. We quote our fee after a call, once we have seen your accounts and agreed what we will run. The right scope depends on your spend, your margins and how many channels you want run." },
+  { q: "Do you guarantee results?", a: "No. We commit to plans that survive the maths, accurate tracking, weekly optimisation and honest reporting, with results judged on contribution margin, not on what a platform reports." },
+  { q: "What happens in the free audit?", a: "A senior strategist reads your ad accounts against your unit economics and tells you where to start. You keep the findings whether or not we work together." },
+  { q: "What do you need from us?", a: "Access to your ad accounts, your store or CRM data, your product margins or the value of a qualified lead, and a named person who can approve creative." },
+  { q: "Who is it not for?", a: "Pre-launch brands. We work with operating businesses at ₹50L+ a year. The free calculators and guides are built for where you are before that." },
+];
+const jsonld = [{
+  "@context": "https://schema.org", "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+}];
+const platforms = [
+  { name: "Meta", file: "meta.svg" }, { name: "Google", file: "google.svg" }, { name: "Shopify", file: "shopify.svg" },
+  { name: "GoKwik", file: "gokwik.png" }, { name: "WhatsApp Business API", file: "whatsapp.svg" },
+];
+const results = [
+  { img: "shopify-oct-dec-a", w: 1149, h: 563, big: "₹1.49Cr", bigL: "gross sales", up: "+117%", sub: "8,963 orders, +42%", per: "October to December", alt: "Shopify analytics dashboard for October to December: gross sales of ₹1.49 crore, up 117%, and 8,963 orders, up 42%." },
+  { img: "shopify-nov-jan", w: 1149, h: 561, big: "₹1.53Cr", bigL: "gross sales", up: "+52%", sub: "2,460 orders, +46%", per: "November to January", alt: "Shopify analytics dashboard for November to January: gross sales of ₹1.53 crore, up 52%, and 2,460 orders, up 46%." },
+  { img: "shopify-aug", w: 1117, h: 442, big: "₹1.09Cr", bigL: "gross sales", up: "+30%", sub: "1,388 orders, +16%", per: "August", alt: "Shopify analytics dashboard for August: gross sales of ₹1.09 crore, up 30%, and 1,388 orders, up 16%." },
+  { img: "shopify-oct-dec-b", w: 1140, h: 510, big: "₹27.6L", bigL: "gross sales", up: "+24%", sub: "1,592 orders, +25%", per: "October to December", alt: "Shopify analytics dashboard for October to December: gross sales of ₹27.6 lakh, up 24%, and 1,592 orders, up 25%." },
+];
+const arrow = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6" /></svg>`;
+// Opens in a new tab: the arrow points out of the page.
+const outArrow = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7M9 7h8v8" /></svg>`;
+const downArrow = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6" /></svg>`;
+---
+<BaseLayout title={title} description={description} path={path} noindex={true} jsonld={jsonld} preloadImage="/assets/logo-wy-tight.png">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="lp-top">
+    <div class="lp-wrap lp-top__in">
+      <span class="lp-top__logo"><img src="/assets/logo-wy-tight.png" alt="Monday Marketing Company" width="172" height="60" /></span>
+      <nav class="lp-top__act" aria-label="Contact">
+        <a class="lp-top__link lp-wa" href={WHATSAPP} target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="lp-top__link lp-top__tel" href={"tel:" + PHONE_TEL}>{PHONE_DISPLAY}</a>
+        <a class="lp-btn lp-btn--sm lp-btn--ghost" href="#audit" data-lp-go>Get my free audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="lp">
+    <section class="lp-hero no-section-bg" id="audit">
+      <div class="lp-wrap lp-hero__in">
+        <div class="lp-hero__copy">
+          <p class="lp-eyebrow"><span>Performance marketing · <span class="lp-nw">{city}</span></span></p>
+          <h1>Performance marketing agency in {city} <em>that answers for profit.</em></h1>
+          <p class="lp-lede">We run Meta Ads, Google Ads, Amazon Ads and quick commerce as one account, and judge it on contribution margin, not on the ROAS a platform reports.</p>
+          <ul class="lp-ticks">
+            <li>A senior strategist reads your ad accounts against your break-even numbers.</li>
+            <li>One team across Meta, Google, Amazon and quick commerce.</li>
+            <li>Weekly review, honest reporting, and no ROAS promises.</li>
+          </ul>
+        </div>
+        <div class="lp-hero__form"><LpForm where="hero" city={city} tone="light" /><p class="lp-local">{c.local}</p></div>
+        {/* After the form in the source, so Tab order matches the phone layout; on desktop it sits under the ticks (lp.css). */}
+        <a class="lp-peek" href="#work">
+          <span class="lp-peek__pics" aria-hidden="true">{peek.map((w) => <img src={`/assets/${w.image}`} alt="" width="1600" height="1066" decoding="async" fetchpriority="low" />)}</span>
+          <span class="lp-peek__t"><b>Recent work</b><span class="lp-peek__n">{peek.map((w) => w.name).join(", ")}</span><span class="lp-peek__go">See the work<Fragment set:html={downArrow} /></span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="lp-logos no-section-bg" aria-labelledby="lp-logos-h">
+      <div class="lp-wrap">
+        <p class="lp-logos__t" id="lp-logos-h">A few of the brands we have worked with</p>
+        <ul class="lp-logos__row">
+          {logos.map(([id, n]) => <li><img src={`/assets/clients/${id}.png`} alt={n} loading="lazy" decoding="async" width="1200" height="651" /></li>)}
+        </ul>
+      </div>
+    </section>
+    <section class="lp-plat no-section-bg" aria-labelledby="lp-plat-h">
+      <div class="lp-wrap">
+        <p class="lp-logos__t" id="lp-plat-h">Platforms we run and integrate with</p>
+        <ul class="lp-plat__row">
+          {platforms.map((x) => <li><img src={`/assets/platforms/${x.file}`} alt="" width="32" height="32" loading="lazy" decoding="async" /><span>{x.name}</span></li>)}
+        </ul>
+        <p class="lp-note lp-note--c">Logos belong to their owners. Listed as platforms we work with, not as an endorsement.</p>
+      </div>
+    </section>
+
+
+        <section class="lp-band lp-band--white no-section-bg lp-res" id="results" aria-labelledby="lp-res-h">
+      <div class="lp-wrap">
+        <header class="lp-head">
+          <p class="lp-eyebrow">Results from client stores</p>
+          <h2 id="lp-res-h">Straight from the Shopify dashboard, <em>not a pitch deck.</em></h2>
+        </header>
+        <ul class="lp-res__grid">
+          {results.map((r) => (
+            <li class="lp-res__card">
+              <img src={`/assets/lp/${r.img}.jpg`} alt={r.alt} width={r.w} height={r.h} loading="lazy" decoding="async" />
+              <div class="lp-res__b">
+                <p class="lp-res__n"><b>{r.big}</b> {r.bigL} <em>{r.up}</em></p>
+                <p class="lp-res__s">{r.sub} · {r.per}</p>
+                <a class="lp-res__go" href="#audit" data-lp-go>Get a plan like this</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p class="lp-note">Store-wide Shopify analytics for D2C clients, for the period shown. Changes are against the previous period. Shopify and its logo belong to Shopify Inc.</p>
+      </div>
+    </section>
+
+    <section class="lp-band lp-band--white lp-wk no-section-bg" id="work" aria-labelledby="lp-work-h">
+      <div class="lp-wrap">
+        <header class="lp-wk__head">
+          <div>
+            <p class="lp-eyebrow">Our work</p>
+            <h2 id="lp-work-h">Work we have built for D2C, B2B and <em>education brands.</em></h2>
+            <p class="lp-body">Storefronts, ads and creative, shown as the brands see them. Open any one for the full case study.</p>
+          </div>
+        </header>
+        <div class="lp-wk__flt" role="group" aria-label="Show work for" data-wk-flt hidden>
+          <button type="button" class="lp-wk__chip" data-k="all" aria-pressed="true">All</button>
+          {kinds.map((x) => <button type="button" class="lp-wk__chip" data-k={x.k} aria-pressed="false">{x.l}</button>)}
+        </div>
+        <p class="lp-sr" aria-live="polite" data-wk-say></p>
+        <ul class="lp-wk__grid" id="lp-wk-grid" data-wk-grid aria-label="Work we have built">
+          {work.map((w, i) => (
+            <li class="lp-wk__card" data-g={w.group} data-w={span(i, work.length)}>
+              <div class="lp-wk__pic">
+                <img src={`/assets/${w.image}`} alt={w.scope} width="1600" height="1066" loading="lazy" decoding="async" style={`--r: ${w.ratio}`} />
+                <span class="lp-wk__kind">{w.label}</span>
+              </div>
+              <div class="lp-wk__b">
+                <div class="lp-wk__id">
+                  <p class="lp-wk__tags">{tagsFor(w.id, true).join(" · ")}</p>
+                  <h3><a class="lp-wk__a" href={w.href ?? "/work/"} target="_blank" rel="noopener">{w.name}<span class="lp-sr">: see the work (opens in a new tab)</span></a></h3>
+                </div>
+                <div class="lp-wk__txt">
+                  <p class="lp-wk__scope">{w.scope}</p>
+                  <p class="lp-wk__did">{whatWeDid(w)}</p>
+                </div>
+                <span class="lp-wk__go" aria-hidden="true">See the work<Fragment set:html={outArrow} /></span>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div class="lp-wk__foot">
+          <button type="button" class="lp-wk__more" data-wk-more aria-expanded="false" aria-controls="lp-wk-grid" hidden>Show the rest of the work<Fragment set:html={downArrow} /></button>
+          <a class="lp-wk__all" href="/work/" target="_blank" rel="noopener">See more of our work<span class="lp-sr"> (opens in a new tab)</span><Fragment set:html={outArrow} /></a>
+        </div>
+        <p class="lp-note">{ARTWORK_LINE}</p>
+      </div>
+    </section>
+
+        <section class="lp-band no-section-bg lp-live" aria-labelledby="lp-live-h">
+      <div class="lp-wrap lp-live__in">
+        <div class="lp-live__copy">
+          <p class="lp-eyebrow">What a healthy account feels like</p>
+          <h2 id="lp-live-h">Orders that <em>pay for the ads.</em></h2>
+          <p class="lp-body">The goal is simple: ad spend that comes back as orders, at a cost your margins can carry. That is what we set up, track and review every week.</p>
+          <button type="button" class="lp-sound" data-lp-sound aria-pressed="false">Sound off. Tap to hear the alert</button>
+        </div>
+        <div class="lp-live__wrap">
+          <div class="lp-live__phone" data-lp-orders aria-hidden="true">
+            <span class="lp-live__btn lp-live__btn--l1"></span><span class="lp-live__btn lp-live__btn--l2"></span><span class="lp-live__btn lp-live__btn--l3"></span><span class="lp-live__btn lp-live__btn--r"></span>
+            <div class="lp-live__screen">
+              <div class="lp-live__island"></div>
+              <div class="lp-live__status"><b data-lp-time>9:41</b>
+                <span class="lp-live__ind">
+                  <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+                  <svg width="17" height="12" viewBox="0 0 17 12"><path d="M8.5 2.3c2.3 0 4.4.9 6 2.4l1-1.1A10.4 10.4 0 0 0 8.5.8 10.4 10.4 0 0 0 1.5 3.6l1 1.1a8.9 8.9 0 0 1 6-2.4Zm0 3.7c1.3 0 2.5.5 3.4 1.3l1-1.1a7.1 7.1 0 0 0-4.4-1.7c-1.7 0-3.2.6-4.4 1.7l1 1.1c.9-.8 2.1-1.3 3.4-1.3Zm0 3.6c.6 0 1.1.2 1.5.6L8.5 12 7 10.2c.4-.4.9-.6 1.5-.6Z"/></svg>
+                  <span class="lp-live__batt"></span>
+                </span>
+              </div>
+              <svg class="lp-live__lock" width="14" height="18" viewBox="0 0 14 18"><path d="M7 0a4.5 4.5 0 0 0-4.5 4.5V7H1.8A1.8 1.8 0 0 0 0 8.8v7.4C0 17.2.8 18 1.8 18h10.4c1 0 1.8-.8 1.8-1.8V8.8A1.8 1.8 0 0 0 12.2 7h-.7V4.5A4.5 4.5 0 0 0 7 0Zm0 1.8c1.5 0 2.7 1.2 2.7 2.7V7H4.3V4.5C4.3 3 5.5 1.8 7 1.8Z"/></svg>
+              <p class="lp-live__date" data-lp-date>Monday, 19 October</p>
+              <p class="lp-live__clock" data-lp-clock>9:41</p>
+              <ul class="lp-live__stack"></ul>
+              <div class="lp-live__bottom"><i><svg width="20" height="20" viewBox="0 0 20 20"><path d="M6 0h8v2.5l-1.5 2.2V8H7.5V4.7L6 2.5V0Zm1.5 9.5h5L11.8 20H8.2L7.5 9.5Z"/></svg></i><i><svg width="22" height="20" viewBox="0 0 22 20"><path d="M7.7 0 6.2 2H3.5A3.5 3.5 0 0 0 0 5.5v11C0 18.4 1.6 20 3.5 20h15c1.9 0 3.5-1.6 3.5-3.5v-11C22 3.6 20.4 2 18.5 2h-2.7L14.3 0H7.7ZM11 5.5a5.2 5.2 0 1 1 0 10.4 5.2 5.2 0 0 1 0-10.4Zm0 1.8a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Z"/></svg></i></div>
+              <div class="lp-live__bar"></div>
+            </div>
+          </div>
+          <p class="lp-live__cap"><b>Want your store to sound like this? Ka-ching.</b> <span>Sample alerts.</span></p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="lp-band lp-band--white no-section-bg" aria-labelledby="lp-look-h">
+      <div class="lp-wrap">
+        <header class="lp-head">
+          <p class="lp-eyebrow">What the free audit covers</p>
+          <h2 id="lp-look-h">Four things, <em>in your numbers.</em></h2>
+        </header>
+        <ul class="lp-looks" aria-label="What the free audit covers">
+          {looks.map((x) => (
+            <li class="lp-look">
+              <img src={`/assets/${x.img}`} alt={x.alt} width="1024" height="688" loading="lazy" decoding="async" />
+              <h3>{x.h}</h3><p>{x.d}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="lp-cta-row"><a class="lp-btn" href="#audit" data-lp-go>Get my free audit<Fragment set:html={arrow} /></a></p>
+      </div>
+    </section>
+
+    <section class="lp-band no-section-bg" aria-labelledby="lp-ch-h">
+      <div class="lp-wrap">
+        <header class="lp-head">
+          <p class="lp-eyebrow">What we run</p>
+          <h2 id="lp-ch-h">One team, <em>four paid channels.</em></h2>
+        </header>
+        <ul class="lp-ch" aria-label="Paid channels">
+          {channels.map((x) => (
+            <li class="lp-ch__card">
+              <img class="lp-ch__pic" src={`/assets/${x.img}`} alt={x.alt} width="1024" height="688" loading="lazy" decoding="async" />
+              <div class="lp-ch__b"><img class={"lp-ch__logo" + (x.word ? " lp-ch__logo--word" : "")} src={`/assets/platforms/${x.logo}`} alt="" width={x.word ? 84 : 28} height="28" /><h3>{x.h}</h3><p>{x.d}</p></div>
+            </li>
+          ))}
+        </ul>
+        <p class="lp-note">Illustrative scenes. Meta, Google, Amazon, Blinkit and their logos belong to their owners.</p>
+      </div>
+    </section>
+
+    <section class="lp-band lp-band--ink no-section-bg" aria-labelledby="lp-how-h">
+      <div class="lp-wrap">
+        <header class="lp-head lp-head--dark">
+          <p class="lp-eyebrow">How it runs</p>
+          <h2 id="lp-how-h">From audit to weekly review, <em>in four steps.</em></h2>
+        </header>
+        <ol class="lp-steps">
+          {steps.map(([t, d], k) => <li><span class="lp-steps__n">{k + 1}</span><h3>{t}</h3><p>{d}</p></li>)}
+        </ol>
+      </div>
+    </section>
+
+    <section class="lp-band no-section-bg" aria-labelledby="lp-diff-h">
+      <div class="lp-wrap">
+        <header class="lp-head">
+          <p class="lp-eyebrow">How we work</p>
+          <h2 id="lp-diff-h">What we won't do, <em>and what we will.</em></h2>
+        </header>
+        <div class="lp-vs">
+          <div class="lp-vs__col lp-vs__col--no"><h3>We won't</h3><ul>{wont.map((t) => <li>{t}</li>)}</ul></div>
+          <div class="lp-vs__col lp-vs__col--yes"><h3>We will</h3><ul>{will.map((t) => <li>{t}</li>)}</ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-band lp-band--white no-section-bg" aria-labelledby="lp-who-h">
+      <div class="lp-wrap">
+        <header class="lp-head">
+          <p class="lp-eyebrow">Who it is for</p>
+          <h2 id="lp-who-h">D2C, B2B and education brands, <em>each set up differently.</em></h2>
+        </header>
+        <ul class="lp-who" aria-label="Who it is for">{who.map((x) => <li><img src={x.img} alt={x.alt} width="1024" height="688" loading="lazy" decoding="async" /><div class="lp-who__b"><h3>{x.h}</h3><p>{x.d}</p></div></li>)}</ul>
+      </div>
+    </section>
+
+    <section class="lp-band no-section-bg" aria-labelledby="lp-faq-h">
+      <div class="lp-wrap lp-faq">
+        <header class="lp-head">
+          <p class="lp-eyebrow">Questions</p>
+          <h2 id="lp-faq-h">Straight answers, <em>before you book.</em></h2>
+        </header>
+        <div class="lp-faq__list">
+          {faq.map((f, k) => (
+            <details class="lp-q" open={k === 0}><summary>{f.q}</summary><p>{f.a}</p></details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-close no-section-bg" aria-labelledby="lp-close-h">
+      <div class="lp-wrap lp-close__in">
+        <div class="lp-close__copy">
+          <p class="lp-eyebrow">Free audit</p>
+          <h2 id="lp-close-h">See where your {city} ad spend is <em>really going.</em></h2>
+          <p class="lp-lede">One call with a senior strategist and a clear next step. Prefer to talk first? <a href={"tel:" + PHONE_TEL}>Call {PHONE_DISPLAY}</a> or <a href={WHATSAPP} target="_blank" rel="noreferrer">message us on WhatsApp</a>.</p>
+        </div>
+        <div class="lp-close__form"><LpForm where="close" city={city} tone="light" /></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="lp-foot">
+    <div class="lp-wrap lp-foot__in">
+      <span>© Monday Marketing Company. WeWork Zenia, Hiranandani Business Park, Thane 400607.</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · mondaymarketing.company</span>
+    </div>
+  </footer>
+
+  <div class="lp-bar" role="region" aria-label="Quick contact">
+    <a class="lp-bar__a" href={"tel:" + PHONE_TEL}>Call</a>
+    <a class="lp-bar__a lp-wa" href={WHATSAPP} target="_blank" rel="noreferrer">WhatsApp</a>
+    <a class="lp-bar__a lp-bar__a--go" href="#audit" data-lp-go>Get my free audit</a>
+  </div>
+  <CookieBanner client:idle />
+
+  <script is:inline>
+    (function () {
+      var $ = function (s, r) { return (r || document).querySelector(s); };
+      var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+      // Where the visitor came from, kept for the lead source line (ad click ids and UTM tags stay in this tab only).
+      var q = new URLSearchParams(location.search), src = [];
+      ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid"].forEach(function (k) { if (q.get(k)) src.push(k + "=" + q.get(k)); });
+      try { if (src.length) sessionStorage.setItem("mmc_lp_src", src.join("&")); else src = (sessionStorage.getItem("mmc_lp_src") || "").split("&").filter(Boolean); } catch (e) {}
+
+      // "Get my free audit" buttons scroll to the nearer of the two forms (hero or closing) and focus its first field,
+      // so the phone bar never drags a visitor nine screens back up the page.
+      var forms = $$("[data-lp-form]");
+      var nearest = function () {
+        var best = null, dist = Infinity;
+        forms.forEach(function (f) { var r = f.getBoundingClientRect(), d = r.top > innerHeight ? r.top - innerHeight : r.bottom < 0 ? -r.bottom : 0; if (d < dist) { dist = d; best = f; } });
+        return best;
+      };
+      $$("[data-lp-go]").forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          var f = nearest(), still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+          if (f) { f.scrollIntoView({ behavior: still ? "auto" : "smooth", block: "start" }); setTimeout(function () { var i = $("input[name=name]", f); if (i) i.focus({ preventScroll: true }); }, still ? 0 : 500); }
+        });
+      });
+
+      // Phone bar: hidden while either form is on screen (it would cover the fields and repeat the form's own button).
+      var bar = $(".lp-bar");
+      if (bar && "IntersectionObserver" in window) {
+        var seen = new Set();
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (x) { if (x.isIntersecting) seen.add(x.target); else seen.delete(x.target); });
+          bar.classList.toggle("is-away", seen.size > 0);
+        }, { threshold: 0.15 });
+        forms.forEach(function (f) { io.observe(f); });
+      }
+
+      // Phone rails scroll sideways; give the ones without links of their own a keyboard stop (phones only, desktop lists stay plain).
+      var rails = function () { var on = matchMedia("(max-width: 720px)").matches; $$(".lp-looks, .lp-ch, .lp-who").forEach(function (u) { if (on) u.tabIndex = 0; else u.removeAttribute("tabindex"); }); };
+      rails(); matchMedia("(max-width: 720px)").addEventListener("change", rails);
+
+      // Work filter. Without JavaScript the chips and the "rest" button stay hidden and every card shows. With it, the chips hide
+      // the other kinds, "All" opens on the feature plus two rows (desktop) until asked for the rest, and the card widths are worked
+      // out again so every row stays full (same rule as `span` in the frontmatter). Phones swipe one rail, so nothing is held back.
+      var wk = $("[data-wk-grid]"), wkFlt = $("[data-wk-flt]");
+      if (wk && wkFlt) {
+        var wkCards = $$("[data-g]", wk), wkChips = $$("[data-k]", wkFlt), wkSay = $("[data-wk-say]"), wkMore = $("[data-wk-more]"), wkOpen = false, wkK = "all";
+        var wkRail = matchMedia("(max-width: 720px)");
+        var span = function (i, total) { if (i === 0) return "feat"; var n = total - 1; if (n === 1) return "feat"; var h = n % 3 === 1 ? 4 : n % 3 === 2 ? 2 : 0; return i - 1 < h ? "half" : "third"; };
+        var pick = function (k) {
+          wkK = k;
+          var cut = k === "all" && !wkOpen && !wkRail.matches;
+          var on = wkCards.filter(function (c, i) { var show = (k === "all" || c.getAttribute("data-g") === k) && !(cut && i >= 7); c.hidden = !show; return show; });
+          if (wkMore) wkMore.hidden = !cut;
+          on.forEach(function (c, i) { c.setAttribute("data-w", span(i, on.length)); });
+          wkChips.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-k") === k)); });
+          wk.scrollLeft = 0;
+          var chip = wkChips.filter(function (b) { return b.getAttribute("data-k") === k; })[0];
+          if (wkSay) wkSay.textContent = k === "all" ? "Showing all work." : "Showing " + chip.textContent + " work.";
+        };
+        wkChips.forEach(function (b) { b.addEventListener("click", function () { pick(b.getAttribute("data-k")); }); });
+        if (wkMore) wkMore.addEventListener("click", function () {
+          wkOpen = true; pick("all"); wkMore.setAttribute("aria-expanded", "true");
+          var next = $(".lp-wk__a", wkCards[7]); if (next) next.focus();
+        });
+        wkRail.addEventListener("change", function () { pick(wkK); });
+        wkFlt.hidden = false; pick("all");
+      }
+
+      // Break-even check: break-even ROAS = 1 / margin. Per ₹100 spent you keep (ROAS x margin x 100) - 100.
+      // The example numbers are not the visitor's, so they only travel with a lead once the visitor has changed them.
+      var calc = $("[data-lp-calc]"), calcState = "", touched = false;
+      if (calc) {
+        var raw = function (k) { return $("[data-in=" + k + "]", calc).value.trim(); };
+        var out = function (k) { return $("[data-out=" + k + "]", calc); };
+        var verdict = $("[data-out-wrap=verdict]", calc);
+        var rs = function (n) { return "₹" + Math.round(Math.abs(n)).toLocaleString("en-IN"); };
+        var say = function (be, cac, pl, state) { out("be").textContent = be; out("cac").textContent = cac; out("pl").textContent = pl; verdict.setAttribute("data-state", state); };
+        // The gauge draws the same answer: a red run up to break-even, a pin for break-even and one for the dashboard ROAS.
+        var gauge = $("[data-gauge]", calc);
+        var draw = function (be, roas) {
+          if (!gauge) return;
+          var ok = be > 0 && isFinite(be), max = Math.max(4, (ok ? be : 0) * 1.6, (roas >= 0 ? roas : 0) * 1.15);
+          var at = function (v) { return Math.min(100, Math.max(0, v / max * 100)).toFixed(2) + "%"; };
+          gauge.setAttribute("data-state", ok ? (roas >= 0 ? (roas >= be ? "ok" : "bad") : "be") : "na");
+          if (ok) { $("[data-g-loss]", gauge).style.width = at(be); $("[data-g-be]", gauge).style.left = at(be); }
+          if (roas >= 0) $("[data-g-you]", gauge).style.left = at(roas);
+        };
+        var run = function () {
+          var aov = parseFloat(raw("aov")), cm = parseFloat(raw("cm")) / 100, roas = parseFloat(raw("roas"));
+          calcState = "";
+          $$("input", calc).forEach(function (i) { i.removeAttribute("aria-invalid"); });
+          var bad = function (k) { $("[data-in=" + k + "]", calc).setAttribute("aria-invalid", "true"); };
+          if (!(cm > 0 && cm <= 1)) { bad("cm"); say("?", "?", "Enter a margin from 1 to 100%", "na"); draw(NaN, NaN); return; }
+          var be = 1 / cm;
+          if (!(aov > 0)) { bad("aov"); say(be.toFixed(1) + "x", "?", "Enter an order value above ₹0", "na"); draw(be, NaN); return; }
+          var cac = aov * cm;
+          if (!(roas >= 0) || raw("roas") === "") { bad("roas"); say(be.toFixed(1) + "x", rs(cac), "Enter the ROAS your dashboard shows", "na"); draw(be, NaN); return; }
+          var pl = roas * cm * 100 - 100;
+          draw(be, roas);
+          say(be.toFixed(1) + "x", rs(cac), (Math.round(pl) === 0 ? "You break even" : pl > 0 ? "You keep " + rs(pl) : "You lose " + rs(pl)), pl >= 0 ? "ok" : "bad");
+          if (touched) calcState = "Calculator: break-even ROAS " + be.toFixed(1) + "x at AOV " + rs(aov) + " and " + Math.round(cm * 100) + "% margin; dashboard ROAS " + roas + "x.";
+        };
+        $$("input", calc).forEach(function (i) { i.addEventListener("input", function () { touched = true; run(); }); }); run();
+      }
+
+      // Forms. Each field reports its own problem under itself; focus goes to the first one.
+      forms.forEach(function (form) {
+        var err = $(".lp-err", form), btn = $(".lp-btn--submit", form);
+        var show = function (m) { err.textContent = m; err.hidden = !m; };
+        var mark = function (k, m) {
+          var box = $("[data-err=" + k + "]", form), el = $("[name=" + k + "]", form);
+          if (box) { box.textContent = m; box.hidden = !m; }
+          $$("[name=" + k + "]", form).forEach(function (x) { if (m) x.setAttribute("aria-invalid", "true"); else x.removeAttribute("aria-invalid"); });
+          return el;
+        };
+        $$("input", form).forEach(function (i) { i.addEventListener(i.type === "radio" || i.type === "checkbox" ? "change" : "input", function () { if (i.getAttribute("aria-invalid")) mark(i.name, ""); show(""); }); });
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (btn.disabled) return;
+          var fd = new FormData(form), w = window, F = w.MMCForms;
+          var name = String(fd.get("name") || "").trim(), brand = String(fd.get("brand") || "").trim(), phoneRaw = String(fd.get("phone") || ""), spend = String(fd.get("spend") || "");
+          var first = null, check = function (k, m) { var el = mark(k, m); if (m && !first) first = el; };
+          check("name", name ? "" : "Please add your name.");
+          check("phone", !phoneRaw.trim() ? "Please add your WhatsApp number." : (F && F.validPhone ? F.validPhone(phoneRaw) : /\d{8,}/.test(phoneRaw)) ? "" : ((F && F.phoneMsg) || "Please enter a valid WhatsApp number."));
+          check("brand", brand ? "" : "Please add your website or brand name.");
+          check("spend", spend ? "" : "Please choose your monthly ad spend.");
+          check("consent", fd.get("consent") === "on" ? "" : "Please tick the box so we can reply.");
+          if (first) { first.focus(); return; }
+          show("");
+          var label = btn.firstChild, orig = label.textContent;
+          var busy = function (b) { btn.disabled = b; btn.setAttribute("aria-busy", String(b)); label.textContent = b ? "Sending…" : orig; };
+          busy(true);
+          var data = {
+            name: name, email: "", phone: F && F.cleanPhone ? F.cleanPhone(phoneRaw) : phoneRaw.trim(), brand: brand,
+            spend: spend, consent: true, systems: ["Performance"],
+            message: ["Paid landing page: performance marketing agency in " + form.dataset.city + " (" + form.dataset.where + " form).", calcState, src.join("&")].filter(Boolean).join(" "),
+            source: "LP performance marketing " + form.dataset.city
+          };
+          if (!F) { busy(false); show("We couldn't send that just now. Please email sales-in@mondaymarketing.company and we'll pick it up."); return; }
+          Promise.resolve(F.submitLead(data, { subject: "New paid-LP lead, " + brand + " (" + form.dataset.city + ")" })).then(function (r) { F.goThanks("brief", r, data); })
+            .catch(function () { busy(false); show("We couldn't send that just now. Please email sales-in@mondaymarketing.company and we'll pick it up."); });
+        });
+      });
+    })();
+  </script>
+
+  <script is:inline>
+    (function () {
+      var box = document.querySelector("[data-lp-orders]"); if (!box) return;
+      var list = box.querySelector(".lp-live__stack"), btn = document.querySelector("[data-lp-sound]");
+      var still = matchMedia("(prefers-reduced-motion: reduce)").matches, sound = false;
+      var names = ["Notic", "AwwBaby", "Arsya", "The Growing Giraffe", "Mittiy Made"];
+      var rs = function (n) { return "\u20B9" + n.toLocaleString("en-IN"); };
+      var snd = null;
+      function ding() {
+        if (!sound) return;
+        try { snd = snd || new Audio("/assets/audio/shopify-sale.mp3"); snd.currentTime = 0; var pl = snd.play(); if (pl && pl.catch) pl.catch(function () {}); } catch (e) {}
+      }
+      function pick(n) { return Math.floor(Math.random() * n); }
+      function layout() {
+        var items = [].slice.call(list.children);
+        items.forEach(function (el, i) { el.setAttribute("data-pos", i > 4 ? 4 : i); });
+        while (list.children.length > 6) list.removeChild(list.lastChild);
+      }
+      function add() {
+        var name = names[pick(names.length)], items = 1 + pick(3), amt = items * (7 + pick(13)) * 100 + 99 * items, li = document.createElement("li");
+        li.className = "lp-live__n"; li.setAttribute("data-pos", "new");
+        li.innerHTML = '<img src="/assets/platforms/shopify.svg" alt="" width="28" height="28"><div><b>Shopify <i>now</i></b><span>' + name + ' has a new order for ' + items + ' item' + (items > 1 ? "s" : "") + ' totalling <strong>' + rs(amt) + '</strong> from Online Store.</span></div>';
+        list.insertBefore(li, list.firstChild);
+        void li.offsetWidth;
+        layout();
+        ding();
+      }
+      function setTime() {
+        var now = new Date(), hm = now.toLocaleTimeString("en-IN", { hour: "numeric", minute: "2-digit", hour12: true }).replace(/\s?[ap]m/i, "");
+        var tt = box.querySelector("[data-lp-time]"), cc = box.querySelector("[data-lp-clock]"), dd = box.querySelector("[data-lp-date]");
+        if (tt) tt.textContent = hm; if (cc) cc.textContent = hm; if (dd) dd.textContent = now.toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long" });
+      }
+      setTime(); setInterval(setTime, 30000);
+      add(); if (still) { add(); add(); }
+      if (!still) { var seen = false, t = null; var io = new IntersectionObserver(function (e) { var on = e[0].isIntersecting; if (on && !t) t = setInterval(add, 3200); if (!on && t) { clearInterval(t); t = null; } }, { threshold: .3 }); io.observe(box); }
+      if (btn) btn.addEventListener("click", function () { sound = !sound; btn.setAttribute("aria-pressed", String(sound)); btn.textContent = sound ? "Sound on. Tap to turn off" : "Sound off. Tap to hear the alert"; if (sound) ding(); });
+    })();
+  </script>
+</BaseLayout>

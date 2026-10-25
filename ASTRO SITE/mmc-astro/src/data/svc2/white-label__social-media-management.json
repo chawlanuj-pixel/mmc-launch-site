@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "contact/brief.jpg",
+    "pos": "50% 50%",
+    "alt": "A woman working on a laptop at a cafe table with a notebook.",
+    "facts": [
+      {
+        "t": "The whole month.",
+        "d": "Calendar, post design, scheduling and replies handled for the client's channels."
+      },
+      {
+        "t": "Approvals built in.",
+        "d": "Nothing is published until you or the client has said yes."
+      },
+      {
+        "t": "Brand rules kept.",
+        "d": "Every post is checked against the client's brand sheet."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label social media"
+  },
+  "work": {
+    "panel": "ContentCalendar",
+    "eyebrow": "The work, shown",
+    "h2a": "How a month of client posts",
+    "h2b": "gets made and approved.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Set content pillars with your client's team.",
+        "d": "Themes, tone and brand rules are agreed once and written down, so every post can be checked against them."
+      },
+      {
+        "n": "02",
+        "t": "Draft the month in the client's style.",
+        "d": "Designs, captions and short video are made to the brand kit and gathered in a calendar you can open."
+      },
+      {
+        "n": "03",
+        "t": "Run approvals so nothing posts unseen.",
+        "d": "You and the client approve in the order you choose, and nothing is scheduled until it is signed off."
+      },
+      {
+        "n": "04",
+        "t": "Report and repeat under your brand.",
+        "d": "A monthly report in your format shows what worked, and next month's calendar is built from it."
+      }
+    ],
+    "illustrative": "Illustrative layout of a social content calendar. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "FeedGrid",
+    "barLogo": "",
+    "barTitle": "Client feed grid",
+    "pinsLabel": "Five places white-label social media goes wrong",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Rules"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Calendar"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Approvals"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Replies"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Report"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first social client",
+    "h2b": "gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and brand sheet",
+        "d": "We sign the NDA, then collect the client's brand rules, channels and approval path into one sheet.",
+        "get": "A brand sheet every post is checked against.",
+        "img": "contact/meeting.jpg",
+        "alt": "Three colleagues leaning over a printed plan on a table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot month of posts",
+        "d": "A single month is planned, designed and approved with you before anything is scheduled.",
+        "get": "A pilot calendar you can show the client.",
+        "img": "company/creative.jpg",
+        "alt": "A designer reviewing printed photography on a studio wall.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Approval and reply SOPs",
+        "d": "Who signs off, by when, and how replies and sensitive comments are handled is written down.",
+        "get": "A routine nobody has to remember.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale to more channels",
+        "d": "More channels and clients join on the same calendar routine, with one strategist across them.",
+        "get": "Social for more clients, same routine.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reviewing dashboards on two monitors.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/whiteboard.jpg",
+    "alt": "Four colleagues around a whiteboard while one draws out a plan.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label content marketing",
+        "href": "/white-label/content-marketing/"
+      },
+      {
+        "n": "White-label creative and video",
+        "href": "/white-label/creative-and-video/"
+      },
+      {
+        "n": "White-label Meta Ads",
+        "href": "/white-label/meta-ads/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

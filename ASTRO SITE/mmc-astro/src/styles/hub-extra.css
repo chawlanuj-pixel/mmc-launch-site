@@ -1,0 +1,7 @@
+/* Wordmark slot used by the brand wall (was injected at runtime by clients-strip.jsx). */
+.cs-wm { display: block; width: 100%; text-align: center; font-family: var(--font-display); font-weight: 700; font-size: calc(var(--cs-wm-size, 15px) * var(--cs-wm-k, 1)); line-height: 1.08; letter-spacing: -0.01em; color: var(--fg-1, #142F5B); overflow-wrap: break-word; hyphens: none; transition: color 200ms ease; }
+.cs-logo { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: inherit; }
+.cs-logo .cs-wm { transition: opacity 220ms ease; }
+.cs-logo .cs-wm.is-off { opacity: 0; }
+.cs-logo__img { position: absolute; inset: 0; margin: auto; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; opacity: 0; transition: opacity 220ms ease; }
+.cs-logo__img.is-on { opacity: 1; }

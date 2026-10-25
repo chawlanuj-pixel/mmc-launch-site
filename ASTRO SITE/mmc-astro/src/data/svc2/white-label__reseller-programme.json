@@ -1,0 +1,223 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "careers2/brief-review.jpg",
+    "pos": "50% 50%",
+    "alt": "Two colleagues reviewing a printed brief.",
+    "facts": [
+      {
+        "t": "Defined services, your name.",
+        "d": "Pick packages and rename them as your own."
+      },
+      {
+        "t": "Written scope for each.",
+        "d": "You know what the client gets, line by line."
+      },
+      {
+        "t": "Wholesale rate, your price.",
+        "d": "You buy each package wholesale and bill your client at the price you set."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies resell through the MMC programme"
+  },
+  "work": {
+    "panel": "ResellerDesk",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do inside the",
+    "h2b": "reseller programme.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Choose packages and put your name on them.",
+        "d": "Each package has a written scope and a slot for your own service name, so you sell it the way you describe it."
+      },
+      {
+        "n": "02",
+        "t": "Take every client through one intake.",
+        "d": "A single intake form per client, with a client code, keeps onboarding the same however many you sell."
+      },
+      {
+        "n": "03",
+        "t": "Follow delivery against the written scope.",
+        "d": "A tracker shows each client's stage against the scope, so you can answer a client without asking us first."
+      },
+      {
+        "n": "04",
+        "t": "Set your price and see your margin.",
+        "d": "You choose the client price. The gap between that and our wholesale rate is yours, and you can see it per package."
+      }
+    ],
+    "illustrative": "Illustrative layout of a reseller partner desk: packages, clients, delivery and margin. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Reseller programme hand-off",
+    "pinsLabel": "Five places reseller programmes slip",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "route",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Offer"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Scopes"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Onboarding"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Delivery"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Margin"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "star",
+        "head": "Offer",
+        "lines": [
+          "Hard to describe",
+          "No clear packages"
+        ],
+        "chip": "Vague",
+        "tone": "w"
+      },
+      {
+        "glyph": "doc",
+        "head": "Scopes",
+        "lines": [
+          "A custom scope each time",
+          "Nothing repeatable"
+        ],
+        "chip": "Bespoke",
+        "tone": "b"
+      },
+      {
+        "glyph": "users",
+        "head": "Set-up",
+        "lines": [
+          "Each client set up differently",
+          "Missing details"
+        ],
+        "chip": "Uneven",
+        "tone": "w"
+      },
+      {
+        "glyph": "eye",
+        "head": "Delivery",
+        "lines": [
+          "No view of progress",
+          "Clients chase you"
+        ],
+        "chip": "Unseen",
+        "tone": "b"
+      },
+      {
+        "glyph": "coin",
+        "head": "Margin",
+        "lines": [
+          "Priced by guess",
+          "Only seen later"
+        ],
+        "chip": "Guess",
+        "tone": "w"
+      }
+    ],
+    "base": "Package, onboard, deliver, price",
+    "artLabel": "Five stations on a hand-off line showing where reseller programmes slip: the offer, scopes, onboarding, delivery visibility and margin.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you as a reseller,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and package choice",
+        "d": "We sign the NDA and agree which packages you will resell first, with the service names you want to use.",
+        "get": "A short list of packages with written scopes.",
+        "img": "contact/call.jpg",
+        "alt": "A partner call about packages.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot client",
+        "d": "Your first client runs on one package, through the intake and the delivery tracker.",
+        "get": "A pilot delivery to judge us on.",
+        "img": "company/strategy.jpg",
+        "alt": "A partner meeting about a first client.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Intake form, naming, reporting and escalation are written so every client follows the same path.",
+        "get": "A reseller handbook for your sales team.",
+        "img": "company/creative.jpg",
+        "alt": "Sales material being laid out beside printed work.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the programme",
+        "d": "More clients and packages join, with your sales material and our scopes kept in step.",
+        "get": "A partner programme you can run repeatedly.",
+        "img": "contact/growth.jpg",
+        "alt": "A growth projection on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "about2/huddle.jpg",
+    "alt": "Three colleagues at a whiteboard working through a funnel.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label pricing models",
+        "href": "/white-label/pricing-models/"
+      },
+      {
+        "n": "White-label agency India",
+        "href": "/white-label/india/"
+      },
+      {
+        "n": "All services",
+        "href": "/services/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -1,0 +1,19 @@
+---
+// Breadcrumb restated inline for the hubs2 heroes, fed by the page's BreadcrumbList JSON-LD (same spec as shared/Breadcrumb.astro).
+import { href } from "../../lib/links";
+interface Props { jsonld: any[] }
+const SITE = "https://www.mondaymarketing.company";
+const bl = (Astro.props.jsonld || []).find((b: any) => b && b["@type"] === "BreadcrumbList");
+const items: { name: string; path: string }[] = (bl?.itemListElement || [])
+  .slice().sort((a: any, b: any) => a.position - b.position)
+  .map((i: any) => ({ name: String(i.name), path: String(i.item || "").replace(SITE, "") || "/" }));
+---
+{items.length > 1 && (
+  <nav class="h2-crumb" aria-label="Breadcrumb">
+    <ol>
+      {items.map((it, k) => (
+        <li>{k < items.length - 1 ? <a href={href(it.path)}>{it.name}</a> : <span aria-current="page">{it.name}</span>}</li>
+      ))}
+    </ol>
+  </nav>
+)}

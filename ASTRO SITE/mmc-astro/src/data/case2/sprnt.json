@@ -1,0 +1,195 @@
+{
+ "id": "sprnt",
+ "about": "{name} is a kids' activewear brand created by the founders of Aww Baby and sold through the Aww Baby store.",
+ "description": "{name} case study: launching a kids' activewear brand inside the Aww Baby store, with brand marketing, store pages, social, ads and AI-assisted shoots.",
+ "heroTone": "paper",
+ "kind": "D2C brand, kids' activewear",
+ "channels": [
+  "Brand, collection and product pages on Aww Baby",
+  "Social media",
+  "Meta ads",
+  "Google Shopping ads"
+ ],
+ "brief": [
+  "{name} is a kids' activewear brand, created by the founders of Aww Baby as one of their own labels. They wanted to enter kids' sportswear and launch {name} inside Aww Baby, their kids' shopping platform.",
+  "We ran the whole launch: brand marketing, the {name} pages on the website, social media, performance marketing, and AI-assisted shoots and content creation. It all rests on one idea for parents: a soft bamboo and spandex fabric that keeps kids comfortable, even in extreme heat."
+ ],
+ "showcases": [
+  {
+   "layout": "devices",
+   "kicker": "Brand page",
+   "title": "A brand page of its own inside Aww Baby",
+   "text": "{name} has its own menu in the Aww Baby store and a brand page that opens on kids in motion. Fabric benefits such as breathable, 4-way stretch and buttery soft run under the banner.",
+   "crops": [
+    "brand-web",
+    "brand-mob"
+   ]
+  },
+  {
+   "layout": "devices",
+   "kicker": "The positioning",
+   "title": "Comfort parents can feel, even in the heat",
+   "text": "The fabric is the reason to buy, so the store shows it plainly: 95% bamboo and 5% spandex in the tees, soft, breathable and anti-microbial. The same message carries into the product pages, social and ads.",
+   "crops": [
+    "fabric-web",
+    "fabric-mob"
+   ]
+  },
+  {
+   "layout": "devices",
+   "kicker": "Collection",
+   "title": "A collection that leads with the fabric",
+   "text": "A Bamboo Fabric badge on each tee, filters for availability and price, and a two-column grid on the phone. Payment options sit in the collection header.",
+   "crops": [
+    "category-web",
+    "category-mob"
+   ]
+  },
+  {
+   "layout": "devices",
+   "kicker": "Product page",
+   "title": "Fabric details one tap from add to cart",
+   "text": "Sizes by age, the price inclusive of taxes, the free delivery threshold, UPI, card and cash on delivery. The fabric and wash care sit just below add to cart.",
+   "crops": [
+    "product-web",
+    "product-mob"
+   ]
+  },
+  {
+   "layout": "devices",
+   "kicker": "Cart",
+   "title": "A first-order offer for {name}",
+   "text": "The cart shows a {name} code next to the store-wide one, so a parent buying {name} for the first time has a reason to check out today.",
+   "crops": [
+    "cart-web",
+    "cart-mob"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "kicker": "Creative and ads",
+   "title": "Social tiles, a Meta ad and a Google Shopping ad",
+   "text": "Launch creative from AI-assisted shoots: kids running, playing tennis, cycling and stretching, in the same lilac palette as the store, so an ad and the page it opens read as one brand.",
+   "crops": [
+    "social",
+    "meta",
+    "shopping"
+   ],
+   "captions": [
+    "Social creative tiles",
+    "Meta ad",
+    "Google Shopping ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "{name} activewear on kids at play",
+   "text": "Product photography from the same project.",
+   "crops": [
+    "products"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Brand page, collection, product pages and cart inside the Aww Baby store",
+  "reach": "Meta ads and Google Shopping ads",
+  "make": "Social tiles and ad creative from AI-assisted shoots"
+ },
+ "action": "order",
+ "shots": {
+  "brand-web": {
+   "w": 1280,
+   "h": 850,
+   "bg": "#E2DAF0"
+  },
+  "brand-mob": {
+   "w": 406,
+   "h": 850,
+   "bg": "#E2DAF0"
+  },
+  "fabric-web": {
+   "w": 1280,
+   "h": 815,
+   "bg": "#E2DAF0"
+  },
+  "fabric-mob": {
+   "w": 409,
+   "h": 815,
+   "bg": "#E2DAF0"
+  },
+  "category-web": {
+   "w": 1280,
+   "h": 850,
+   "bg": "#E2DAF0"
+  },
+  "category-mob": {
+   "w": 406,
+   "h": 850,
+   "bg": "#E2DAF0"
+  },
+  "product-web": {
+   "w": 1280,
+   "h": 830,
+   "bg": "#E2DAF0"
+  },
+  "product-mob": {
+   "w": 397,
+   "h": 830,
+   "bg": "#E2DAF0"
+  },
+  "cart-web": {
+   "w": 1280,
+   "h": 850,
+   "bg": "#E2DAF0"
+  },
+  "cart-mob": {
+   "w": 406,
+   "h": 850,
+   "bg": "#E2DAF0"
+  }
+ },
+ "results": {
+  "lead": "The launch creative earned the clicks, and the {name} social pages reached 6 lakh views in the first 15 days.",
+  "note": "Click-through rate is across the launch ads. Conversion rate is for the {name} range on the store. Page views are for the {name} social pages.",
+  "items": [
+   {
+    "value": "3.4%",
+    "label": "Click-through rate",
+    "basis": "Launch ads, driven by the creative"
+   },
+   {
+    "value": "1.2%",
+    "label": "Conversion rate",
+    "basis": "{name} range on the Aww Baby store"
+   },
+   {
+    "value": "6 lakh",
+    "label": "Social page views",
+    "basis": "First 15 days after launch"
+   }
+  ],
+  "h2a": "The launch,",
+  "h2b": "in numbers."
+ },
+ "alts": {
+  "web": "{name} brand page on a laptop and a phone inside the Aww Baby store, with a Move. Play. SPRNT. banner of kids at play",
+  "products": "Four children in {name} activewear running, dribbling a basketball, skateboarding and carrying a football on an outdoor court",
+  "card": "{name} logo between a girl and a boy running in {name} activewear",
+  "hero":"{name} store on a laptop and a phone, beside social tiles and a Meta ad in the brand's lilac palette",
+  "hero-live": "{name} brand page in the Aww Baby store on desktop, beside the {name} collection on a phone",
+  "brand-web": "{name} brand page on desktop inside the Aww Baby store, with a Shop SPRNT menu and a banner of kids playing in {name} activewear",
+  "brand-mob": "{name} brand page on a phone with the {name} logo, the Move. Play. SPRNT banner and an Explore Collection button",
+  "fabric-web": "{name} fabric section on desktop showing 95% bamboo and 5% spandex, anti-microbial, beside a product card",
+  "fabric-mob": "{name} fabric section on a phone with the 95% bamboo and 5% spandex visual",
+  "category-web": "{name} collection page on desktop with Bamboo Fabric badges, filters, sort and product cards with price and add to cart",
+  "category-mob": "{name} collection page on a phone with a filter button and a two-column product grid",
+  "product-web": "{name} Motion Raglan Tee product page on desktop with gallery, price, sizes by age, payment options and add to cart",
+  "product-mob": "{name} product page on a phone with sizes, add to cart and the fabric details open: anti-microbial, 95% bamboo and 5% spandex",
+  "cart-web": "Aww Baby cart on desktop with a {name} tee, a {name} first-order offer, subtotal and a checkout button",
+  "cart-mob": "Aww Baby cart on a phone with a {name} tee, available offers and a checkout button",
+  "social": "{name} social creative tiles: Move. Play. SPRNT. and Made for every move",
+  "meta": "{name} Meta ad carousel with kids running, playing tennis, stretching, cycling and doing yoga",
+  "shopping": "{name} Google Shopping ad with flared pants, a bamboo T-shirt, a tennis dress and shorts"
+ }
+}

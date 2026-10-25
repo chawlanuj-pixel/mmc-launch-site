@@ -1,0 +1,213 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "contact/growth.jpg",
+    "pos": "50% 50%",
+    "alt": "A metrics dashboard on a laptop.",
+    "facts": [
+      {
+        "t": "A care plan you sell and bill.",
+        "d": "We do the care across your client sites, you keep the client."
+      },
+      {
+        "t": "Sites you did not build are fine.",
+        "d": "We audit first, then bring them onto one routine."
+      },
+      {
+        "t": "A report you pass on.",
+        "d": "A plain monthly summary, branded as yours."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their site care to MMC"
+  },
+  "work": {
+    "panel": "MaintenanceBoard",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to look after your",
+    "h2b": "client sites.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Watch every client site, with named alerts.",
+        "d": "Uptime for the site, forms and checkout is watched, and an alert reaches a person, not an unread inbox."
+      },
+      {
+        "n": "02",
+        "t": "Keep off-site backups and test a restore.",
+        "d": "Copies are stored away from the host, and a restore is tried, so you know it works before you need it."
+      },
+      {
+        "n": "03",
+        "t": "Try updates on a copy first.",
+        "d": "Core, theme and plugin updates are tested on a copy, then made live, so a client site is not your test bed."
+      },
+      {
+        "n": "04",
+        "t": "Run security checks on a schedule.",
+        "d": "Malware scans, login protection and known vulnerabilities are reviewed on a routine, with fixes logged for you."
+      },
+      {
+        "n": "05",
+        "t": "Send a monthly report you can forward.",
+        "d": "Done, Watch and Next in plain words, ready to send to your client with your logo on it."
+      }
+    ],
+    "illustrative": "Illustrative layout of a site care board. Not a client site, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Care plan delivery",
+    "pinsLabel": "Five places white-label site care slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "bars",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Onboarding"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Updates"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Backups"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Requests"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Report"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Onboard",
+        "plan": 60,
+        "actual": 84,
+        "chip": "Slow start",
+        "tone": "w"
+      },
+      {
+        "head": "Updates",
+        "plan": 55,
+        "actual": 78,
+        "chip": "Live risk",
+        "tone": "b"
+      },
+      {
+        "head": "Backups",
+        "plan": 70,
+        "actual": 70,
+        "chip": "Untested",
+        "tone": "w"
+      },
+      {
+        "head": "Requests",
+        "plan": 45,
+        "actual": 88,
+        "chip": "Lost",
+        "tone": "b"
+      },
+      {
+        "head": "Report",
+        "plan": 50,
+        "actual": 64,
+        "chip": "Thin",
+        "tone": "w"
+      }
+    ],
+    "base": "One routine across every client site",
+    "artLabel": "Five columns of plan against actual bars showing where white-label site care slips: onboarding, updates, backups, requests and the report.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for site care,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and site audit",
+        "d": "We sign the NDA and audit a first batch of your client sites, covering updates, backups, security and speed.",
+        "get": "An audit per site and one agreed baseline.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A video call about a site audit.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot with a few sites",
+        "d": "A few sites go on the routine first, with updates, backups and a first report.",
+        "get": "A first monthly report you can judge us on.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A table of client sites on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Request route, update windows, escalation and report format are written down for every site.",
+        "get": "A one-page care policy for your clients.",
+        "img": "company/onepage.jpg",
+        "alt": "A care policy being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Add the rest of your sites",
+        "d": "The remaining client sites move onto the routine in batches, with a named contact on our side.",
+        "get": "Every client site on one routine.",
+        "img": "careers2/desk-close.jpg",
+        "alt": "A laptop with a notebook open beside it.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "careers2/team-screen.jpg",
+    "alt": "A small team looking at a screen together.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label Shopify development",
+        "href": "/white-label/shopify-development/"
+      },
+      {
+        "n": "White-label app development",
+        "href": "/white-label/app-development/"
+      },
+      {
+        "n": "Website maintenance",
+        "href": "/services/website-maintenance/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

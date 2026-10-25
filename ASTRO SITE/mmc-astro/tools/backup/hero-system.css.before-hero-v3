@@ -1,0 +1,182 @@
+/* Hero: "one loop" system diagram + animated blue background. Prefix hs-.
+   Sits inside .hv (home-v2b tokens: --hv-nav, --hv-top, --hv-bot, --sp-*, --t-*) and reuses the copy styles
+   of .hv-chip / .hv-pill / .hv-hero h1 / .hv-hero__sub / .hv-hero__cta from home-v2b.css.
+   Animation budget: transform + opacity only, one 14s loop, paused off-screen / in a hidden tab.
+   Loop timing: the signal reaches a node every 3.5s (25% of 14s); everything else is synced to that. */
+
+.hs-hero { --hs-padt: max(calc(var(--hv-nav) + var(--hv-top)), calc(80px + 8svh)); --hs-s: min(46vw, 640px); --hs-loop: 14s; position: relative; isolation: isolate; }
+@supports (height: 100svh) {
+  .hs-hero { --hs-s: min(46vw, calc(100svh - var(--hs-padt) - var(--hv-bot) - var(--sp-1) - 8px), 640px); }
+}
+@supports not (height: 100svh) {
+  .hs-hero { --hs-s: min(46vw, calc(100vh - var(--hs-padt) - var(--hv-bot) - var(--sp-1) - 8px), 640px); }
+}
+
+/* top clearance: at least 8% of the screen height below the nav pill (which ends ~80px down) */
+.hv > section.hs-hero { padding-top: var(--hs-padt); }
+/* short phones: drop the supporting paragraph (still in the page for search engines and screen readers) so the diagram keeps its room */
+@media (max-width: 559px) and (max-height: 700px) { .hs-hero .hv-hero__sub { display: none; } .hs-hero h1 { margin-bottom: var(--sp-3); } }
+@media (max-height: 520px) { .hs-diagram { --hs-rx: 32%; --hs-ry: 33%; } }
+
+/* ---------- Background ---------- */
+.hs-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none;
+  background:
+    radial-gradient(110% 90% at 82% 18%, #1a3cad 0%, rgba(26,60,173,0) 62%),
+    radial-gradient(90% 80% at 0% 100%, #0a1448 0%, rgba(10,20,72,0) 70%),
+    var(--n-ink); }
+.hs-blob { position: absolute; border-radius: 50%; will-change: transform; }
+.hs-blob--1 { width: 72vmax; height: 72vmax; right: -24vmax; top: -34vmax;
+  background: radial-gradient(closest-side, rgba(29,78,216,.78), rgba(29,78,216,0)); animation: hsDriftA 26s ease-in-out infinite alternate; }
+.hs-blob--2 { width: 64vmax; height: 64vmax; left: -26vmax; bottom: -36vmax;
+  background: radial-gradient(closest-side, rgba(86,134,255,.46), rgba(86,134,255,0)); animation: hsDriftB 32s ease-in-out infinite alternate; }
+.hs-blob--3 { width: 46vmax; height: 46vmax; right: 2vw; top: 26%;
+  background: radial-gradient(closest-side, rgba(255,197,40,.17), rgba(255,197,40,0)); animation: hsBreathe 18s ease-in-out infinite; }
+.hs-lines { position: absolute; inset: 0; -webkit-mask-image: radial-gradient(70% 80% at 72% 46%, #000 0%, rgba(0,0,0,0) 74%); mask-image: radial-gradient(70% 80% at 72% 46%, #000 0%, rgba(0,0,0,0) 74%); }
+.hs-lines::before { content: ""; position: absolute; left: -64px; top: -64px; right: 0; bottom: 0; will-change: transform;
+  background-image: linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px);
+  background-size: 64px 64px; animation: hsGrid 24s linear infinite; }
+.hs-beam { position: absolute; top: -10%; bottom: -10%; left: 0; width: 34vw; opacity: 0; will-change: transform, opacity;
+  background: linear-gradient(100deg, rgba(255,255,255,0), rgba(255,255,255,.075) 50%, rgba(255,255,255,0)); animation: hsBeam 16s ease-in-out 2s infinite; }
+.hs-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,16,64,.38), rgba(8,16,64,0) 58%); }
+
+@keyframes hsDriftA { to { transform: translate3d(-9vmax, 7vmax, 0) scale(1.12); } }
+@keyframes hsDriftB { to { transform: translate3d(10vmax, -6vmax, 0) scale(1.1); } }
+@keyframes hsBreathe { 0%, 100% { transform: scale(.92); opacity: .75; } 50% { transform: scale(1.1); opacity: 1; } }
+@keyframes hsGrid { to { transform: translate3d(64px, 64px, 0); } }
+@keyframes hsBeam { 0% { transform: translate3d(-45vw, 0, 0); opacity: 0; } 12% { opacity: 1; } 55% { opacity: 1; } 70%, 100% { transform: translate3d(125vw, 0, 0); opacity: 0; } }
+
+/* ---------- Layout ---------- */
+.hs-grid { position: relative; z-index: 1; flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) var(--hs-s); gap: clamp(28px, 5vw, 96px); align-items: center; }
+.hs-copy { min-width: 0; }
+.hs-visual { width: var(--hs-s); height: var(--hs-s); justify-self: end; min-height: 0; }
+@media (max-width: 900px) and (max-aspect-ratio: 5/4), (max-width: 559px) {
+  .hs-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); gap: var(--sp-3); align-items: start; }
+  .hs-visual { width: min(100%, 640px); height: 100%; justify-self: center; }
+}
+@media (max-width: 559px) and (max-height: 700px) { .hs-grid { gap: var(--sp-2); } }
+
+/* ---------- Diagram ---------- */
+.hs-diagram { --hs-rx: 34%; --hs-ry: 34%; position: relative; width: 100%; height: 100%; container: hs / size; color: var(--n-ink); }
+@media (max-width: 900px) and (max-aspect-ratio: 5/4), (max-width: 559px) { .hs-diagram { --hs-rx: 31%; --hs-ry: 33%; } }
+
+.hs-ring { position: absolute; border-radius: 50%; pointer-events: none; }
+.hs-ring--out { left: calc(50% - var(--hs-rx)); top: calc(50% - var(--hs-ry)); width: calc(var(--hs-rx) * 2); height: calc(var(--hs-ry) * 2); border: 2px dashed rgba(255,255,255,.4); }
+.hs-ring--in { left: calc(50% - var(--hs-rx) * .56); top: calc(50% - var(--hs-ry) * .56); width: calc(var(--hs-rx) * 1.12); height: calc(var(--hs-ry) * 1.12); border: 1.5px solid rgba(255,255,255,.14); }
+
+/* centre: MMC mark on a paper badge, a sun halo behind, and a ripple each time the signal passes a node */
+.hs-core { position: absolute; left: 50%; top: 50%; width: clamp(40px, 21cqmin, 120px); aspect-ratio: 1; transform: translate(-50%, -50%); display: grid; place-items: center; }
+.hs-core__glow { position: absolute; width: 230%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,197,40,.34), rgba(255,197,40,0)); animation: hsBreathe 7s ease-in-out infinite; will-change: transform, opacity; }
+.hs-core__ripple { position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(255,197,40,.85); opacity: 0; animation: hsRipple calc(var(--hs-loop) / 4) ease-out infinite; will-change: transform, opacity; }
+.hs-core__ripple--2 { animation-delay: calc(var(--hs-loop) / -8); }
+.hs-core__badge { position: relative; width: 100%; height: 100%; border-radius: 50%; background: var(--n-paper, #FBFAF6); display: grid; place-items: center; box-shadow: 0 10px 28px -8px rgba(5,10,50,.6), 0 0 0 4px rgba(255,255,255,.14); }
+.hs-core__badge img { width: 64%; height: auto; display: block; }
+@keyframes hsRipple { 0% { transform: scale(.9); opacity: .8; } 100% { transform: scale(2.1); opacity: 0; } }
+
+/* nodes */
+.hs-node { --i: 0; --x: 50%; --y: 50%; position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); z-index: 2; }
+.hs-node--0 { --i: 0; --x: 50%; --y: calc(50% - var(--hs-ry)); }
+.hs-node--1 { --i: 1; --x: calc(50% + var(--hs-rx)); --y: 50%; }
+.hs-node--2 { --i: 2; --x: 50%; --y: calc(50% + var(--hs-ry)); }
+.hs-node--3 { --i: 3; --x: calc(50% - var(--hs-rx)); --y: 50%; }
+.hs-card { --pulse-delay: calc(var(--hs-loop) / 4 * var(--i) - .5s); position: relative; display: flex; align-items: center; gap: clamp(6px, 1.8cqmin, 10px); padding: clamp(5px, 1.5cqmin, 8px) clamp(10px, 2.6cqmin, 16px) clamp(5px, 1.5cqmin, 8px) clamp(5px, 1.5cqmin, 8px);
+  border-radius: 999px; background: var(--n-paper, #FBFAF6); box-shadow: 0 14px 30px -14px rgba(5,10,50,.7); white-space: nowrap; animation: hsPop var(--hs-loop) ease-out var(--pulse-delay) infinite; will-change: transform; }
+.hs-card::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: var(--n-sun); opacity: 0; animation: hsLit var(--hs-loop) linear var(--pulse-delay) infinite; }
+.hs-card::after { content: ""; position: absolute; inset: -5px; border-radius: inherit; border: 2px solid var(--n-sun); box-shadow: 0 0 26px rgba(255,197,40,.6); opacity: 0; animation: hsLit var(--hs-loop) linear var(--pulse-delay) infinite; }
+.hs-ico { position: relative; z-index: 1; flex: none; width: clamp(26px, 6.6cqmin, 40px); aspect-ratio: 1; border-radius: 50%; background: var(--n-blue); color: #fff; display: grid; place-items: center; }
+.hs-ico svg { width: 56%; height: 56%; display: block; }
+.hs-txt { position: relative; z-index: 1; display: grid; gap: 1px; line-height: 1.1; text-align: left; }
+.hs-txt b { font: 800 clamp(13px, 3.3cqmin, 18px)/1.1 var(--font-display); letter-spacing: -.01em; color: var(--n-ink); }
+.hs-txt small { display: none; font: 700 clamp(12px, 2.4cqmin, 14px)/1.1 var(--font-body); color: var(--n-ink); }
+@container hs (min-width: 380px) and (min-height: 380px) { .hs-txt small { display: block; } }
+@keyframes hsLit { 0% { opacity: 0; } 3% { opacity: 1; } 17% { opacity: 1; } 27%, 100% { opacity: 0; } }
+@keyframes hsPop { 0% { transform: scale(1); } 3% { transform: scale(1.07); } 17% { transform: scale(1.07); } 27%, 100% { transform: scale(1); } }
+
+/* the signal: a lead dot plus a short trail, all riding the same keyframes */
+.hs-pk { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; animation: hsOrbit var(--hs-loop) linear infinite; will-change: transform; }
+.hs-pk::before { content: ""; position: absolute; left: 0; top: 0; width: var(--d, 12px); height: var(--d, 12px); margin: calc(var(--d, 12px) / -2) 0 0 calc(var(--d, 12px) / -2); border-radius: 50%; background: var(--n-sun); opacity: var(--o, 1); }
+.hs-pk--lead { --d: clamp(11px, 2.6cqmin, 15px); }
+.hs-pk--lead::before { box-shadow: 0 0 0 4px rgba(255,197,40,.3), 0 0 18px 4px rgba(255,197,40,.7); }
+.hs-pk--a { --d: clamp(9px, 2cqmin, 12px); --o: .7; animation-delay: -.22s; }
+.hs-pk--b { --d: clamp(7px, 1.6cqmin, 10px); --o: .45; animation-delay: -.44s; }
+.hs-pk--c { --d: clamp(5px, 1.2cqmin, 8px); --o: .25; animation-delay: -.66s; }
+
+@keyframes hsOrbit {
+  0% { transform: translate(calc(50% + var(--hs-rx) * 0), calc(50% - var(--hs-ry) * 1)); }
+  3% { transform: translate(calc(50% + var(--hs-rx) * 0), calc(50% - var(--hs-ry) * 1)); }
+  5.75% { transform: translate(calc(50% + var(--hs-rx) * 0.1951), calc(50% - var(--hs-ry) * 0.9808)); }
+  8.5% { transform: translate(calc(50% + var(--hs-rx) * 0.3827), calc(50% - var(--hs-ry) * 0.9239)); }
+  11.25% { transform: translate(calc(50% + var(--hs-rx) * 0.5556), calc(50% - var(--hs-ry) * 0.8315)); }
+  14% { transform: translate(calc(50% + var(--hs-rx) * 0.7071), calc(50% - var(--hs-ry) * 0.7071)); }
+  16.75% { transform: translate(calc(50% + var(--hs-rx) * 0.8315), calc(50% - var(--hs-ry) * 0.5556)); }
+  19.5% { transform: translate(calc(50% + var(--hs-rx) * 0.9239), calc(50% - var(--hs-ry) * 0.3827)); }
+  22.25% { transform: translate(calc(50% + var(--hs-rx) * 0.9808), calc(50% - var(--hs-ry) * 0.1951)); }
+  25% { transform: translate(calc(50% + var(--hs-rx) * 1), calc(50% - var(--hs-ry) * 0)); }
+  28% { transform: translate(calc(50% + var(--hs-rx) * 1), calc(50% - var(--hs-ry) * 0)); }
+  30.75% { transform: translate(calc(50% + var(--hs-rx) * 0.9808), calc(50% - var(--hs-ry) * -0.1951)); }
+  33.5% { transform: translate(calc(50% + var(--hs-rx) * 0.9239), calc(50% - var(--hs-ry) * -0.3827)); }
+  36.25% { transform: translate(calc(50% + var(--hs-rx) * 0.8315), calc(50% - var(--hs-ry) * -0.5556)); }
+  39% { transform: translate(calc(50% + var(--hs-rx) * 0.7071), calc(50% - var(--hs-ry) * -0.7071)); }
+  41.75% { transform: translate(calc(50% + var(--hs-rx) * 0.5556), calc(50% - var(--hs-ry) * -0.8315)); }
+  44.5% { transform: translate(calc(50% + var(--hs-rx) * 0.3827), calc(50% - var(--hs-ry) * -0.9239)); }
+  47.25% { transform: translate(calc(50% + var(--hs-rx) * 0.1951), calc(50% - var(--hs-ry) * -0.9808)); }
+  50% { transform: translate(calc(50% + var(--hs-rx) * 0), calc(50% - var(--hs-ry) * -1)); }
+  53% { transform: translate(calc(50% + var(--hs-rx) * 0), calc(50% - var(--hs-ry) * -1)); }
+  55.75% { transform: translate(calc(50% + var(--hs-rx) * -0.1951), calc(50% - var(--hs-ry) * -0.9808)); }
+  58.5% { transform: translate(calc(50% + var(--hs-rx) * -0.3827), calc(50% - var(--hs-ry) * -0.9239)); }
+  61.25% { transform: translate(calc(50% + var(--hs-rx) * -0.5556), calc(50% - var(--hs-ry) * -0.8315)); }
+  64% { transform: translate(calc(50% + var(--hs-rx) * -0.7071), calc(50% - var(--hs-ry) * -0.7071)); }
+  66.75% { transform: translate(calc(50% + var(--hs-rx) * -0.8315), calc(50% - var(--hs-ry) * -0.5556)); }
+  69.5% { transform: translate(calc(50% + var(--hs-rx) * -0.9239), calc(50% - var(--hs-ry) * -0.3827)); }
+  72.25% { transform: translate(calc(50% + var(--hs-rx) * -0.9808), calc(50% - var(--hs-ry) * -0.1951)); }
+  75% { transform: translate(calc(50% + var(--hs-rx) * -1), calc(50% - var(--hs-ry) * 0)); }
+  78% { transform: translate(calc(50% + var(--hs-rx) * -1), calc(50% - var(--hs-ry) * 0)); }
+  80.75% { transform: translate(calc(50% + var(--hs-rx) * -0.9808), calc(50% - var(--hs-ry) * 0.1951)); }
+  83.5% { transform: translate(calc(50% + var(--hs-rx) * -0.9239), calc(50% - var(--hs-ry) * 0.3827)); }
+  86.25% { transform: translate(calc(50% + var(--hs-rx) * -0.8315), calc(50% - var(--hs-ry) * 0.5556)); }
+  89% { transform: translate(calc(50% + var(--hs-rx) * -0.7071), calc(50% - var(--hs-ry) * 0.7071)); }
+  91.75% { transform: translate(calc(50% + var(--hs-rx) * -0.5556), calc(50% - var(--hs-ry) * 0.8315)); }
+  94.5% { transform: translate(calc(50% + var(--hs-rx) * -0.3827), calc(50% - var(--hs-ry) * 0.9239)); }
+  97.25% { transform: translate(calc(50% + var(--hs-rx) * -0.1951), calc(50% - var(--hs-ry) * 0.9808)); }
+  100% { transform: translate(calc(50% + var(--hs-rx) * 0), calc(50% - var(--hs-ry) * 1)); }
+}
+/* reduced motion: frozen trail, just clockwise of the Strategy node */
+.hs-pk--lead { --hs-static: translate(calc(50% + var(--hs-rx) * 0.7193), calc(50% - var(--hs-ry) * 0.6947)); }
+.hs-pk--a { --hs-static: translate(calc(50% + var(--hs-rx) * 0.6293), calc(50% - var(--hs-ry) * 0.7771)); }
+.hs-pk--b { --hs-static: translate(calc(50% + var(--hs-rx) * 0.5299), calc(50% - var(--hs-ry) * 0.848)); }
+.hs-pk--c { --hs-static: translate(calc(50% + var(--hs-rx) * 0.4226), calc(50% - var(--hs-ry) * 0.9063)); }
+@keyframes hsRect {
+  0%, 3% { transform: translate(22%, 22%); }
+  25%, 28% { transform: translate(78%, 22%); }
+  50%, 53% { transform: translate(78%, 78%); }
+  75%, 78% { transform: translate(22%, 78%); }
+  100% { transform: translate(22%, 22%); }
+}
+
+/* Wide, short shapes (phones in portrait under the copy): the loop becomes a rounded rectangle, nodes at its corners. */
+@container hs (min-aspect-ratio: 8/5) {
+  .hs-node--0 { --x: 22%; --y: 22%; }
+  .hs-node--1 { --x: 78%; --y: 22%; }
+  .hs-node--2 { --x: 78%; --y: 78%; }
+  .hs-node--3 { --x: 22%; --y: 78%; }
+  .hs-ring--out { left: 22%; top: 22%; width: 56%; height: 56%; border-radius: 28px; }
+  .hs-ring--in { display: none; }
+  .hs-core { width: clamp(32px, 30cqh, 96px); }
+  .hs-pk { animation-name: hsRect; }
+  .hs-pk--lead { --hs-static: translate(50%, 22%); }
+  .hs-pk--a { --hs-static: translate(44%, 22%); }
+  .hs-pk--b { --hs-static: translate(38%, 22%); }
+  .hs-pk--c { --hs-static: translate(32%, 22%); }
+}
+
+/* Off-screen or hidden tab: freeze everything (script toggles .is-paused) */
+.hs-hero.is-paused .hs-bg *, .hs-hero.is-paused .hs-bg::after, .hs-hero.is-paused .hs-diagram *, .hs-hero.is-paused .hs-diagram *::before, .hs-hero.is-paused .hs-diagram *::after, .hs-hero.is-paused .hs-lines::before { animation-play-state: paused !important; }
+
+/* Reduced motion: a still, composed frame. Signal trail sits just after Strategy, Strategy is lit, background glows frozen. */
+@media (prefers-reduced-motion: reduce) {
+  .hs-hero *, .hs-hero *::before, .hs-hero *::after { animation: none !important; }
+  .hs-pk { transform: var(--hs-static); }
+  .hs-beam, .hs-core__ripple { display: none; }
+  .hs-node--0 .hs-card::before, .hs-node--0 .hs-card::after { opacity: 1; }
+  .hs-node--0 .hs-card { transform: scale(1.07); }
+  .hs-blob--3 { opacity: .9; }
+}

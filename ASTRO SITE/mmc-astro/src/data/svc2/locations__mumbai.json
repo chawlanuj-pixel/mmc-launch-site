@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/performance.jpg",
+    "pos": "50% 50%",
+    "alt": "An analyst reviewing campaign dashboards on two monitors.",
+    "facts": [
+      {
+        "t": "One standard.",
+        "d": "Every outlet listing agrees."
+      },
+      {
+        "t": "Pages for areas.",
+        "d": "Written for the people who live there."
+      },
+      {
+        "t": "Ads on margin.",
+        "d": "Spend tied to what a sale is worth."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why Mumbai brands choose MMC for local marketing"
+  },
+  "work": {
+    "panel": "LocalProfile",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for your",
+    "h2b": "Mumbai outlets.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Verify one listing for each outlet.",
+        "d": "Duplicates across outlets are merged so each place has a single profile."
+      },
+      {
+        "n": "02",
+        "t": "Fit categories to what each outlet offers.",
+        "d": "Each profile gets the categories and services that suit its own searches."
+      },
+      {
+        "n": "03",
+        "t": "Set photos, hours and festival timings.",
+        "d": "Timings are set ahead of busy seasons, and photos stay current."
+      },
+      {
+        "n": "04",
+        "t": "Ask for reviews and reply outlet by outlet.",
+        "d": "A rota keeps replies honest and quick, and problems come to you."
+      },
+      {
+        "n": "05",
+        "t": "Write area pages and compare outlets.",
+        "d": "Each page matches its profile, and the report puts outlets side by side."
+      }
+    ],
+    "illustrative": "Illustrative layout of a business profile and map results. Not a real business, no real figures. Google Business Profile and Google Maps belong to Google."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaLocalMap",
+    "barLogo": "",
+    "barTitle": "Local search view",
+    "pinsLabel": "Five places Mumbai visits go missing",
+    "pins": [
+      {
+        "x": 12,
+        "y": 0,
+        "label": "Outlets"
+      },
+      {
+        "x": 44,
+        "y": 0,
+        "label": "Categories"
+      },
+      {
+        "x": 60,
+        "y": 0,
+        "label": "Timings"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Standing"
+      },
+      {
+        "x": 92,
+        "y": 0,
+        "label": "Area pages"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run local work in Mumbai,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Build the outlet sheet",
+        "d": "We record every outlet, claim or merge listings and complete the profiles.",
+        "get": "One record that every listing matches.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Colleagues planning on a whiteboard.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Reviews and area pages",
+        "d": "We set up the review routine and write pages for the neighbourhoods that matter most.",
+        "get": "Profiles and pages that agree.",
+        "img": "seo/intent.jpg",
+        "alt": "Pages planned around search intent.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Ads and side-by-side report",
+        "d": "We plan ads around margin where they suit, and report outlet by outlet.",
+        "get": "A monthly report by outlet.",
+        "img": "google/report.jpg",
+        "alt": "A monthly performance report.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "about2/huddle.jpg",
+    "alt": "Two colleagues at a whiteboard sketching a marketing funnel.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "All locations",
+        "href": "/locations/"
+      },
+      {
+        "n": "Thane",
+        "href": "/locations/thane/"
+      },
+      {
+        "n": "Indore",
+        "href": "/locations/indore/"
+      },
+      {
+        "n": "Google Business Profile",
+        "href": "/services/seo/google-business-profile/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

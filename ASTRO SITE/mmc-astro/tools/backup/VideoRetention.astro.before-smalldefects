@@ -1,0 +1,32 @@
+---
+// VISUAL: VideoRetention (kind "VideoRetention"). A watch-time curve for one video with the hook, the hold and the end marked, and a fresh cut that holds higher. Dots on the curve sit under the pins.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Reads X.zoneLabels (optional) only.
+// Styles are scoped to this file (prefix vr).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const pts = [[10, 110], [30, 190], [50, 215], [70, 240], [90, 300]];
+const cur = [[0, 40], ...pts, [100, 320]];
+const fresh = [[0, 40], [10, 90], [30, 140], [50, 160], [70, 185], [90, 225], [100, 240]];
+const path = (a: number[][]) => "M" + a.map(([x, y]) => `${x * 10} ${y}`).join(" L");
+---
+<div class="vr__row" aria-hidden="true"></div>
+<div class="vr__art">
+  <svg viewBox="0 0 1000 400" class="vr__svg" preserveAspectRatio="none" role="img" aria-label="A watch-time curve for one video. It drops after the hook, flattens, then falls near the end. A fresh cut holds higher.">
+    <rect class="vr__z" x="0" y="0" width="200" height="400" /><rect class="vr__z vr__z--2" x="400" y="0" width="200" height="400" />
+    <path class="vr__old" d={path(cur)} /><path class="vr__new" d={path(fresh)} />
+    {pts.map(([x, y]) => <g class="vr__leak"><line x1={x * 10} y1="0" x2={x * 10} y2={y} /><circle cx={x * 10} cy={y} r="9" /></g>)}
+  </svg>
+  <span class="vr__k vr__k--a">Fresh cut</span><span class="vr__k vr__k--b">Tired cut</span><span class="vr__ax">Start of the video to the end</span>
+</div>
+<style is:global>
+.vr__row { height: 78px; } .vr__art { position: relative; }
+.vr__svg { display: block; width: 100%; height: auto; aspect-ratio: 5 / 2; }
+.vr__z { fill: rgba(255, 197, 40, .16); } .vr__z--2 { fill: rgba(29, 78, 216, .07); }
+.vr__old, .vr__new { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.vr__old { stroke: #8A91A6; stroke-width: 3; stroke-dasharray: 8 8; } .vr__new { stroke: var(--mmc-blue); stroke-width: 4; }
+.vr__leak line { stroke: var(--s2-sun); stroke-width: 2.4; stroke-dasharray: 3 6; vector-effect: non-scaling-stroke; } .vr__leak circle { fill: var(--s2-sun); stroke: #fff; stroke-width: 3; vector-effect: non-scaling-stroke; }
+.vr__k { position: absolute; right: 2%; font: 800 clamp(10px, 1.2vw, 14px) var(--font-body); } .vr__k--a { top: 22%; color: var(--mmc-blue); } .vr__k--b { bottom: 10%; color: #5C6580; }
+.vr__ax { position: absolute; left: 0; bottom: 0; font: 700 clamp(10px, 1.1vw, 13px) var(--font-body); color: var(--s2-mute); }
+@media (max-width: 900px) { .vr__svg { aspect-ratio: 5 / 3; } }
+@media (max-width: 760px) { .vr__row { height: 58px; } }
+</style>

@@ -1,0 +1,511 @@
+{
+  "file": "white-label-shopify-development.html",
+  "path": "/white-label/shopify-development/",
+  "key": "wl_shopify_development",
+  "title": "White-Label Shopify Development for Agencies | MMC",
+  "description": "White-label Shopify development for agencies: theme builds, migrations, apps and speed work delivered under your brand, with code you own at handover.",
+  "ogTitle": "White-label Shopify development for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label Shopify development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label Shopify development",
+          "item": "https://www.mondaymarketing.company/white-label/shopify-development/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/shopify-development/",
+      "name": "White-Label Shopify Development for Agencies | MMC",
+      "description": "White-label Shopify development for agencies: theme builds, migrations, apps and speed work delivered under your brand, with code you own at handover.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#service",
+      "name": "White-label Shopify Development",
+      "serviceType": "White-label Shopify development",
+      "description": "White-label Shopify development delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/shopify-development/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/shopify-development/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you build Shopify Plus stores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do. Shopify Plus stores are built and maintained under your brand in the same way as standard Shopify stores. Tell us the plan your client is on and we scope the work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you use my designs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We can also supply designs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle payment gateways?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We set up common gateways with the client's accounts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you migrate from WooCommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with a plan for products, customers and redirects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label Shopify development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send the brief and any designs. After the NDA we return a scope for your review."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_shopify_development",
+    "wm": "White-label Shopify Development",
+    "eyebrow": "● White-label Shopify development",
+    "h1": [
+      "White-label Shopify",
+      [
+        "development for ",
+        "D2C agencies",
+        "."
+      ]
+    ],
+    "sub": "Store builds, theme work, apps, migrations and checkout improvements for your D2C clients, delivered under your brand.",
+    "tiles": [
+      {
+        "img": "shop/design.jpg",
+        "pos": "50% 50%",
+        "label": "Design",
+        "note": "Theme to brand"
+      },
+      {
+        "img": "shop/integrate.jpg",
+        "pos": "50% 50%",
+        "label": "Apps",
+        "note": "Integrated"
+      },
+      {
+        "img": "shop/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Lean pages"
+      },
+      {
+        "img": "shop/checkout.jpg",
+        "pos": "50% 50%",
+        "label": "Checkout",
+        "note": "Fewer drop-offs"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label Shopify development means MMC builds and improves Shopify stores for your agency's D2C clients while you present the work as yours. That includes theme build and customisation, app set-up, migrations from other platforms, checkout and speed work, with handover notes for the client team.",
+      "hl": "builds and improves Shopify stores",
+      "who": "Monday Marketing Company (MMC) delivers Shopify development for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "bag",
+          "title": "Store builds",
+          "text": "Theme and structure to design."
+        },
+        {
+          "icon": "layers",
+          "title": "Apps and integrations",
+          "text": "Selected, set up and tested."
+        },
+        {
+          "icon": "gauge",
+          "title": "Speed and checkout",
+          "text": "Faster pages and cleaner checkout."
+        }
+      ],
+      "image": "shop/design.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "shop-wl",
+          "h": "Where white-label Shopify helps agencies",
+          "paras": [
+            "Agencies selling ads to D2C brands often need a store fix before ads can work. We take those jobs so you do not have to staff a Shopify team.",
+            "Our direct service is described on the <a href=\"/services/shopify-development/\">Shopify development</a> page. For marketplace work see <a href=\"/white-label/ecommerce/\">white-label ecommerce</a>."
+          ],
+          "img": "shop/design.jpg",
+          "cap": "A Shopify theme in review.",
+          "table": {
+            "caption": "Shopify jobs and typical scope",
+            "head": [
+              "Job",
+              "Scope",
+              "Result"
+            ],
+            "rows": [
+              [
+                "New store",
+                "Theme, products, collections, payments",
+                "Live store"
+              ],
+              [
+                "Theme customisation",
+                "Sections and templates",
+                "Tailored look"
+              ],
+              [
+                "Migration",
+                "From other platforms",
+                "Catalogue and redirects"
+              ],
+              [
+                "Checkout and speed",
+                "Fixes",
+                "Cleaner path to buy"
+              ],
+              [
+                "App work",
+                "Selection and setup",
+                "Working integrations"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label Shopify.",
+      "lede": "Build, migrate and improve stores.",
+      "items": [
+        {
+          "t": "Store build",
+          "d": "Setup of products, collections and policies.",
+          "img": "shop/plan.jpg",
+          "alt": "Store build"
+        },
+        {
+          "t": "Theme customisation",
+          "d": "Sections and templates to the brand.",
+          "img": "shop/design.jpg",
+          "alt": "Theme customisation"
+        },
+        {
+          "t": "App integration",
+          "d": "Reviews, subscriptions and loyalty tools.",
+          "img": "shop/integrate.jpg",
+          "alt": "App integration"
+        },
+        {
+          "t": "Migrations",
+          "d": "Move to Shopify with redirects.",
+          "img": "web/plan.jpg",
+          "alt": "Migrations"
+        },
+        {
+          "t": "Speed work",
+          "d": "Trim apps and scripts.",
+          "img": "shop/speed.jpg",
+          "alt": "Speed work"
+        },
+        {
+          "t": "Checkout improvements",
+          "d": "Remove friction at checkout.",
+          "img": "shop/checkout.jpg",
+          "alt": "Checkout improvements"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label Shopify development.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "shop/design.jpg",
+      "alt": "Why agencies choose MMC for white-label Shopify development.",
+      "items": [
+        {
+          "t": "D2C experience",
+          "d": "We work with D2C brands daily."
+        },
+        {
+          "t": "Clean themes",
+          "d": "Few apps, less bloat."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label Shopify development works,",
+      "h2b": "step by step.",
+      "img": "shop/design.jpg",
+      "alt": "How white-label Shopify development works, step by step.",
+      "items": [
+        {
+          "t": "Brief",
+          "d": "You share the client brief and designs."
+        },
+        {
+          "t": "Build",
+          "d": "We build in a development store."
+        },
+        {
+          "t": "Review",
+          "d": "You test."
+        },
+        {
+          "t": "Launch",
+          "d": "We launch and hand over."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label Shopify development for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells Shopify development but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label Shopify development fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label app development",
+          "d": "Apps built behind your brand.",
+          "img": "app/build.jpg",
+          "href": "/white-label/app-development/",
+          "link": "See white-label app development"
+        },
+        {
+          "n": "White-label AI services",
+          "d": "AI by MMC behind your brand.",
+          "img": "ugc/shoot.jpg",
+          "href": "/white-label/ai-services/",
+          "link": "See white-label AI services"
+        },
+        {
+          "n": "White-label reporting",
+          "d": "Reports and dashboards in your format.",
+          "img": "res/insights.jpg",
+          "href": "/white-label/reporting/",
+          "link": "See white-label reporting"
+        },
+        {
+          "n": "Shopify development",
+          "d": "Stores built for browsing and checkout.",
+          "img": "shop/design.jpg",
+          "href": "/services/shopify-development/",
+          "link": "See Shopify development"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "Shopify development."
+    ],
+    "faq": [
+      {
+        "q": "Do you build Shopify Plus stores?",
+        "a": "We do. Shopify Plus stores are built and maintained under your brand in the same way as standard Shopify stores. Tell us the plan your client is on and we scope the work."
+      },
+      {
+        "q": "Can you use my designs?",
+        "a": "Yes. We can also supply designs."
+      },
+      {
+        "q": "Do you handle payment gateways?",
+        "a": "We set up common gateways with the client's accounts."
+      },
+      {
+        "q": "Can you migrate from WooCommerce?",
+        "a": "Yes, with a plan for products, customers and redirects."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label Shopify development?",
+        "a": "Send the brief and any designs. After the NDA we return a scope for your review."
+      }
+    ],
+    "cta": {
+      "h2a": "Add Shopify development",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first Shopify development client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Structure the catalogue",
+        "tag": "Catalogue",
+        "breaks": "Importing products without a structure.",
+        "why": "Messy variants and collections confuse shoppers and make every later change slower.",
+        "does": "We structure products, variants and collections around how shoppers browse, before the theme is touched."
+      },
+      {
+        "k": "Build a clean theme",
+        "tag": "Theme work",
+        "breaks": "Layering edits onto an unmaintained theme.",
+        "why": "Patches on patches slow the store and make the next change a risk.",
+        "does": "We customise cleanly, keep code tidy and write down what was changed, so the theme can be updated."
+      },
+      {
+        "k": "Audit the apps",
+        "tag": "Apps",
+        "breaks": "Installing an app for every small gap.",
+        "why": "Each app adds scripts and cost, and abandoned apps leave code behind.",
+        "does": "We replace apps with theme work where we can, and remove what is left behind."
+      },
+      {
+        "k": "Test checkout end to end",
+        "tag": "Checkout",
+        "breaks": "Launching without a full test of payment.",
+        "why": "A payment method that fails on one phone costs your client orders on the first day.",
+        "does": "We configure payment options with your client's gateway and test real flows, before launch, on real phones."
+      },
+      {
+        "k": "Write the handover for their team",
+        "tag": "Handover",
+        "breaks": "Handing over a store with no notes.",
+        "why": "Your client's staff cannot run it, and they call you for every edit.",
+        "does": "A short guide in your branding for products, collections, banners and discounts."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label Shopify work",
+      "h2b": "goes wrong for agencies.",
+      "lede": "D2C clients judge a store by how it feels on a phone and how it pays. These are the five places agency Shopify builds lose both."
+    },
+    "process": {
+      "h2a": "How we onboard you for Shopify,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and store scope",
+          "d": "We sign the NDA, take your designs and the client's catalogue, and write the build scope.",
+          "out": "A written store scope and migration plan."
+        },
+        {
+          "t": "Pilot store section",
+          "d": "One collection, one product template or one checkout fix, built to your standards.",
+          "out": "A preview store link to judge on."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Theme conventions, app policy, QA checklist and handover notes are written once.",
+          "out": "A store build runbook for your team."
+        },
+        {
+          "t": "Scale across D2C clients",
+          "d": "More stores and fixes run through the same flow, with capacity added as your client list grows.",
+          "out": "A Shopify service you can sell to every D2C client."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

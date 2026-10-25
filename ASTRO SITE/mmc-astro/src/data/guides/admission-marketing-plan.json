@@ -1,0 +1,524 @@
+{
+  "file": "guide-admission-marketing-plan.html",
+  "path": "/guides/admission-marketing-plan/",
+  "key": "guideadmissions",
+  "title": "Admission Marketing Plan for Colleges in India | MMC",
+  "description": "A practical plan for the whole admissions cycle: what to do before applications open, in peak enquiry weeks and after offers, with a month-by-month checklist.",
+  "ogTitle": "Admission marketing plan for colleges in India",
+  "ogDescription": "A plan for the whole intake, from first search to first day of class.",
+  "ogAlt": "Monday Marketing Company: admission marketing plan for colleges in India.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resources",
+          "item": "https://www.mondaymarketing.company/resources.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Guides",
+          "item": "https://www.mondaymarketing.company/guides.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Admission marketing plan for colleges",
+          "item": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#webpage",
+      "url": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html",
+      "name": "Admission Marketing Plan for Colleges in India | MMC",
+      "description": "A practical plan for the whole admissions cycle: what to do before applications open, in peak enquiry weeks and after offers, with a month-by-month checklist.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#article"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#article",
+      "headline": "Admission marketing plan for colleges",
+      "description": "A practical plan for the whole admissions cycle: what to do before applications open, in peak enquiry weeks and after offers, with a month-by-month checklist.",
+      "url": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html",
+      "author": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "datePublished": "2026-10-15",
+      "dateModified": "2026-10-15",
+      "mainEntityOfPage": {
+        "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#webpage"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/guide-admission-marketing-plan.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When should a college start admission marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Well before applications open. The groundwork of course pages, forms, tracking and CRM stages takes weeks, and it is cheaper to fix before you spend on ads. Count back from your own application opening date and plan the work in the months before it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which channel is best for college admissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No single channel wins for every college. Search reaches families already looking for a course, and Meta reaches families who have not started. Judge each by the cost per enrolment it produces in your CRM, not by clicks, and move budget toward what works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast should we reply to an enquiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As fast as your team can reliably sustain, and faster in peak weeks. Agree a first-reply target with admissions, measure response time every week and treat a missed target as a process problem to fix, not a counsellor to blame."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we reduce drop-off after an offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send a clear checklist at once, call families who have not confirmed as the fee deadline nears, answer doubts honestly and invite them to visit. Record why families decline, because the reasons show what to change in the next intake."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does MMC guarantee admissions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Families decide for their own reasons, and your follow-up and reputation matter as much as the ad. We commit to clear tracking, fast follow-up systems, honest reporting and no inflated claims."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MMC run this plan for us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We build the course pages and forms, connect your CRM and Meta CAPI, run search and paid media, set up follow-up and help with reviews. See education marketing and college admission marketing."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "guideadmissions",
+    "wm": "Guide",
+    "eyebrow": "● Guide",
+    "h1": [
+      "The admission marketing plan",
+      [
+        "for colleges in ",
+        "India",
+        ","
+      ],
+      "from first search to first day."
+    ],
+    "sub": "A plan for the whole intake: what to prepare before applications open, what to run while they are open, and how to keep families through the weeks after an offer.",
+    "tiles": [
+      {
+        "img": "edu/campus.jpg",
+        "pos": "50% 50%",
+        "label": "Before",
+        "note": "Fix the base"
+      },
+      {
+        "img": "edu/search.jpg",
+        "pos": "50% 50%",
+        "label": "Open",
+        "note": "Be found"
+      },
+      {
+        "img": "edu/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Peak",
+        "note": "Follow up fast"
+      },
+      {
+        "img": "edu/enrol.jpg",
+        "pos": "50% 50%",
+        "label": "After",
+        "note": "Keep the offer"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "An admission marketing plan is a calendar that follows a college's intake from the first search to the first day of class. It covers the preparation, the weeks applications are open, the peak enquiry weeks and the period after offers, and it is read through four numbers.",
+      "hl": "from the first search to the first day of class",
+      "who": "Monday Marketing Company (MMC) runs admission marketing for colleges and education brands in India.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Plan from your dates",
+          "text": "Start from your own admission calendar."
+        },
+        {
+          "icon": "loop",
+          "title": "Follow up to enrolment",
+          "text": "Stages, response targets and post-offer contact."
+        },
+        {
+          "icon": "gauge",
+          "title": "Read four numbers",
+          "text": "Judge the plan on the cost of an enrolment."
+        }
+      ],
+      "image": "edu/campus.jpg",
+      "chip": "Before, open, peak and after offers"
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Put the plan to work",
+      "h2b": "with the right service.",
+      "cards": [
+        {
+          "n": "Education marketing",
+          "d": "Admission marketing, lead generation and follow-up for colleges and education brands.",
+          "img": "shared/education.jpg",
+          "href": "/industries/education/",
+          "link": "See Education marketing"
+        },
+        {
+          "n": "Colleges",
+          "d": "Search, paid media and follow-up for families comparing colleges.",
+          "img": "edu/students.jpg",
+          "href": "/industries/education/colleges/",
+          "link": "See Colleges marketing"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "/services/lead-generation/",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Online reputation management",
+          "d": "Ratings, reviews and replies, so a parent or student finds a fair picture.",
+          "img": "orm/reply.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "admission marketing plans."
+    ],
+    "faq": [
+      {
+        "q": "When should a college start admission marketing?",
+        "a": "Well before applications open. The groundwork of course pages, forms, tracking and CRM stages takes weeks, and it is cheaper to fix before you spend on ads. Count back from your own application opening date and plan the work in the months before it."
+      },
+      {
+        "q": "Which channel is best for college admissions?",
+        "a": "No single channel wins for every college. Search reaches families already looking for a course, and Meta reaches families who have not started. Judge each by the cost per enrolment it produces in your CRM, not by clicks, and move budget toward what works."
+      },
+      {
+        "q": "How fast should we reply to an enquiry?",
+        "a": "As fast as your team can reliably sustain, and faster in peak weeks. Agree a first-reply target with admissions, measure response time every week and treat a missed target as a process problem to fix, not a counsellor to blame."
+      },
+      {
+        "q": "How do we reduce drop-off after an offer?",
+        "a": "Send a clear checklist at once, call families who have not confirmed as the fee deadline nears, answer doubts honestly and invite them to visit. Record why families decline, because the reasons show what to change in the next intake."
+      },
+      {
+        "q": "Does MMC guarantee admissions?",
+        "a": "No. Families decide for their own reasons, and your follow-up and reputation matter as much as the ad. We commit to clear tracking, fast follow-up systems, honest reporting and no inflated claims."
+      },
+      {
+        "q": "Can MMC run this plan for us?",
+        "a": "Yes. We build the course pages and forms, connect your CRM and Meta CAPI, run search and paid media, set up follow-up and help with reviews. See <a href=\"/industries/education/\">education marketing</a> and <a href=\"/industries/education/colleges/\">college admission marketing</a>."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan your next intake",
+      "h2b": "around real numbers.",
+      "lede": "On a call, with a senior strategist. We read your funnel against your admission calendar."
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "what",
+          "h": "What an admission marketing plan is",
+          "paras": [
+            "An admission marketing plan is a calendar of work that follows a college's intake from the first search to the first day of class. It says what to prepare before applications open, what to run while they are open, how to handle the weeks when enquiries peak, and how to keep families engaged after an offer is made.",
+            "Treating admissions as one campaign makes it easy to spend in the wrong weeks. A family decides over several weeks, compares more than one college, and often involves parents, relatives and a counsellor. The plan below is built around that pattern. It is a method to adapt to your own dates, not a promise of numbers."
+          ],
+          "img": "edu/campus.jpg",
+          "cap": "A college open day, the visit that usually comes before an enrolment."
+        },
+        {
+          "id": "calendar",
+          "h": "Start from your admission calendar",
+          "paras": [
+            "Every college has its own dates: entrance exams, results, counselling rounds, application windows, fee deadlines and the first day of class. Write them on one page before you plan any spend. The plan is measured in weeks and months before your own application opening date, so count the weeks between each date first."
+          ],
+          "table": {
+            "caption": "The four phases of an admissions cycle, and what each one asks of the college.",
+            "head": [
+              "Phase",
+              "What families are doing",
+              "What the college does",
+              "Number to read"
+            ],
+            "rows": [
+              [
+                "Before the cycle",
+                "Learning which colleges exist and shortlisting",
+                "Fixes course pages, forms, tracking and the CRM, and tidies reviews and profiles",
+                "Response time on test enquiries"
+              ],
+              [
+                "Applications open",
+                "Comparing colleges and checking fees and eligibility",
+                "Runs search and paid campaigns to course pages and keeps forms short",
+                "Cost per qualified enquiry"
+              ],
+              [
+                "Peak enquiry weeks",
+                "Asking questions, booking visits and deciding",
+                "Replies fast, works the CRM stages daily and books campus visits",
+                "Enquiry-to-application rate"
+              ],
+              [
+                "After offers",
+                "Holding offers and weighing alternatives",
+                "Reminds, answers doubts and helps with documents and fees",
+                "Cost per enrolment"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "before",
+          "h": "Before the cycle: fix the base",
+          "paras": [
+            "The cheapest enquiries are the ones you stop losing. Before you spend on ads, check the path a family walks from a search to a conversation with a counsellor."
+          ],
+          "steps": [
+            {
+              "t": "Course pages",
+              "d": "Give each course its own page with fees, eligibility, duration, the admission process and one clear next step, written in plain words and quick on a phone. <a href=\"/services/web-development/\">Website development</a> covers building them."
+            },
+            {
+              "t": "Enquiry forms",
+              "d": "Ask for a name, a phone number and the course. Every extra field costs you a family who was already interested. <a href=\"/services/cro/\">Conversion optimisation</a> tests the page and the form against each other."
+            },
+            {
+              "t": "Tracking",
+              "d": "Install analytics and the Meta pixel, and set up the Conversions API (CAPI), so that applied and enrolled stages can be sent back to the ad platform later."
+            },
+            {
+              "t": "CRM stages",
+              "d": "Agree the stages with admissions: new, contacted, qualified, visit booked, applied, offered, enrolled and lost, with a reason recorded for every lost enquiry."
+            },
+            {
+              "t": "Profiles and reviews",
+              "d": "Claim and complete the Google Business Profile for each campus, check that names, phone numbers and timings match everywhere, and read your current reviews. <a href=\"/services/seo/google-business-profile/\">Google Business Profile</a> work covers this."
+            },
+            {
+              "t": "A test enquiry",
+              "d": "Send an enquiry yourself, once at night and once at a weekend. Note how long a reply takes and what it says. That is your response time baseline."
+            }
+          ]
+        },
+        {
+          "id": "open",
+          "h": "When applications open: be found and make enquiring easy",
+          "paras": [
+            "Two kinds of family are looking at this point. Some are already searching for a course in a city, and some have not decided yet. Search reaches the first group, and social reaches the second.",
+            "<b>Search.</b> Run <a href=\"/services/performance-marketing/google-ads/\">Google Ads</a> on the courses, cities and intake terms families type, and send each campaign to the matching course page, not the home page. Keep organic <a href=\"/services/seo/\">SEO</a> going between intakes so that you are visible whenever families compare. Report brand searches and course searches separately, so you can see what each costs.",
+            "<b>Social.</b> Use <a href=\"/services/performance-marketing/meta-ads/\">Meta Ads</a> instant forms and short video to reach families who have not started searching. Write ads that sound like your institution: calm, factual and useful. Parents react badly to pressure, and a desperate tone damages trust before a counsellor has spoken.",
+            "<b>Landing pages.</b> Build one page for each course or group of courses, with the same promise as the ad. Show fees, eligibility, the admission process and one clear action, whether that is an enquiry, a call or a campus visit booking.",
+            "Do not optimise on form fills alone, because a form fill is not an applicant. Once your CRM records applications, send those stages back to Meta so that campaigns learn from real applicants. <a href=\"/services/lead-generation/\">Lead generation</a> explains how that loop works."
+          ],
+          "img": "edu/search.jpg",
+          "cap": "A parent searching for colleges on a phone."
+        },
+        {
+          "id": "peak",
+          "h": "Peak enquiry weeks: speed and follow-up decide the outcome",
+          "paras": [
+            "Peak weeks are when counsellors are busiest and enquiries are most likely to go cold. Plan for them before they arrive."
+          ],
+          "list": [
+            "<b>A response target.</b> Agree a first-reply target with admissions, for example a call or a WhatsApp message within an hour in working hours. The right number depends on counsellor capacity, so set one the team can keep, and measure it.",
+            "<b>Daily CRM work.</b> Every enquiry has a stage and a next action with a date. An enquiry with no next action is a lost enquiry in waiting.",
+            "<b>Several touches, not one call.</b> Mix calls, WhatsApp messages and email across several days, and stop when a family asks you to.",
+            "<b>A visit as the goal.</b> A campus visit or an online counselling session moves a family further than a brochure. Offer slots, confirm them the day before and follow up afterwards.",
+            "<b>Clear ownership.</b> Each counsellor owns a list. Unowned enquiries, especially those that arrive late in the evening or at a weekend, are the ones that cool.",
+            "<b>A weekly review.</b> Admissions and marketing look at the same board: which sources bring enquiries that apply, and which only fill forms."
+          ],
+          "img": "edu/crm.jpg",
+          "cap": "Enquiry stages in a CRM, from new to enrolled.",
+          "callout": {
+            "title": "Build the follow-up before the peak.",
+            "text": "<a href=\"/services/retention-marketing/\">Retention marketing</a> sets up WhatsApp, email and call reminders around your calendar, so the quiet families are not forgotten."
+          }
+        },
+        {
+          "id": "content",
+          "h": "Content for parents and students",
+          "paras": [
+            "Students and parents ask different questions, and both read before they enquire. Students look at courses, campus life and what comes after the degree. Parents look at fees, safety, reputation and whether the college will keep their child's interest."
+          ],
+          "list": [
+            "<b>Course and fee pages</b> that answer eligibility, fees, duration and process in plain words.",
+            "<b>Admission process explainers</b> with the dates, documents and steps in order.",
+            "<b>Campus and student-life content</b> that shows the real place, such as open days, labs and classrooms, rather than stock pictures.",
+            "<b>Answers to parent questions</b> given openly: fees, hostel, safety, placements and how the college handles problems.",
+            "<b>Short videos and posts</b> for the weeks around results and counselling, planned ahead and not made in a hurry."
+          ]
+        },
+        {
+          "id": "claims",
+          "h": "Keep every claim you publish provable",
+          "paras": [
+            "Publish only rankings, placement figures and recognitions that you can document, and say where each one comes from. A single claim that a parent can disprove costs more trust than a dozen modest facts earn. <a href=\"/services/content-marketing/\">Content marketing</a> plans this material around the questions families ask."
+          ]
+        },
+        {
+          "id": "melt",
+          "h": "After the offer: keep families from drifting away",
+          "paras": [
+            "An offer is not an enrolment. Between an offer and the first day, a family may be weighing other colleges, arranging fees or waiting on results. The drop-off between accepting an offer and enrolling is often called melt, and it is worth planning for."
+          ],
+          "list": [
+            "Send a clear checklist of documents, fee dates and next steps as soon as an offer goes out.",
+            "Call families who have not paid or confirmed as the fee deadline approaches, and ask what is holding them back.",
+            "Answer doubts honestly, including hostel, transport, scholarships and changes of course.",
+            "Invite offered families to a campus visit, a conversation with a student or a session for parents.",
+            "Record why families decline, and use the reasons to improve next year's plan."
+          ]
+        },
+        {
+          "id": "reputation",
+          "h": "Reviews and reputation all through the cycle",
+          "paras": [
+            "Before applying, parents read what students and other parents have written. A low rating with no reply, or no reviews at all, adds doubt at the last step."
+          ],
+          "list": [
+            "Ask current students, parents and alumni for honest reviews at natural moments, such as after an orientation or a good visit, and make it easy to leave one.",
+            "Reply to every review, thanking the positive ones and answering the critical ones calmly and specifically.",
+            "Never buy reviews or write them yourself. Fake reviews break platform rules and damage trust when they are found.",
+            "Check your profile on Google and on review sites each month for wrong timings, phone numbers or courses."
+          ],
+          "callout": {
+            "title": "Reputation is part of the plan.",
+            "text": "<a href=\"/services/online-reputation-management/\">Online reputation management</a> covers the audit, the review requests and the replies."
+          }
+        },
+        {
+          "id": "numbers",
+          "h": "The four numbers to track",
+          "paras": [
+            "A plan is only as good as the numbers that show whether it is working. Admissions and marketing should be able to read these four at any time from the CRM."
+          ],
+          "steps": [
+            {
+              "t": "Cost per qualified enquiry",
+              "d": "What you pay for a family that admissions accepts as a real prospect, not for any form fill."
+            },
+            {
+              "t": "Enquiry-to-application rate",
+              "d": "The share of enquiries that go on to apply. Read it by source and by course."
+            },
+            {
+              "t": "Cost per enrolment",
+              "d": "What you pay in total for a confirmed seat, including ad spend, tools and fees. This is the number to judge the plan on."
+            },
+            {
+              "t": "Response time",
+              "d": "How long an enquiry waits before someone replies. It affects every other number on this list."
+            }
+          ],
+          "callout": {
+            "title": "How to read them.",
+            "text": "Read each number by campaign, by course and by week, and compare like with like, such as this intake against the same stage of the last one. The <a href=\"/industries/education/\">education marketing</a> page shows how we read them."
+          }
+        },
+        {
+          "id": "checklist",
+          "h": "A month-by-month checklist",
+          "paras": [
+            "Count back from the date applications open at your college, and use your own calendar for the exact months."
+          ],
+          "steps": [
+            {
+              "t": "Months 6 to 4 before applications open",
+              "d": "Write the admission calendar. Audit course pages, forms, tracking, CRM stages, reviews and profiles. Decide the four numbers and who reads them each week."
+            },
+            {
+              "t": "Months 3 to 2 before",
+              "d": "Fix the course pages and forms. Install tracking and CAPI. Build the course landing pages. Prepare ads and parent content. Run test enquiries and set the response target."
+            },
+            {
+              "t": "Month 1 before",
+              "d": "Test campaigns on a small budget. Brief counsellors on stages, scripts and ownership. Set up reminders and visit slots. Start asking for reviews."
+            },
+            {
+              "t": "Applications open, weeks 1 to 4",
+              "d": "Launch search and paid campaigns to the course pages. Read the cost per qualified enquiry every week. Cut ads and keywords that bring form fills but no applicants."
+            },
+            {
+              "t": "Peak enquiry weeks",
+              "d": "Hold the daily CRM routine. Review response time every day. Book visits and sessions. Move budget toward the sources whose enquiries apply."
+            },
+            {
+              "t": "Offers and deadlines",
+              "d": "Send checklists and fee reminders. Call families who have not confirmed. Record the reasons families decline."
+            },
+            {
+              "t": "After the intake closes",
+              "d": "Compare the four numbers with your targets, note what each source cost per enrolment, and write down what to change for the next intake."
+            }
+          ]
+        },
+        {
+          "id": "mmc",
+          "h": "Where MMC fits in",
+          "paras": [
+            "MMC builds the course pages and enquiry forms, connects your CRM and Meta CAPI, runs search and paid media, sets up WhatsApp and call follow-up and helps with reviews, and judges the work on the cost of an enrolment. We cannot guarantee admissions, because families decide for their own reasons.",
+            "Read about <a href=\"/industries/education/\">education marketing</a> and <a href=\"/industries/education/colleges/\">college admission marketing</a>, or <a href=\"/audit/\">book the free audit</a>, where a senior strategist reads your funnel with you."
+          ]
+        }
+      ]
+    }
+  }
+}

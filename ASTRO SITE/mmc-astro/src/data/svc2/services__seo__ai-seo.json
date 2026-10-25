@@ -1,0 +1,260 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/performance.jpg",
+    "pos": "50% 50%",
+    "alt": "An analyst reviewing charts on two monitors while on a call.",
+    "facts": [
+      {
+        "t": "One plan, not three.",
+        "d": "Classic SEO, AEO and GEO are scoped together so work is not duplicated."
+      },
+      {
+        "t": "Questions first.",
+        "d": "Pages are built around what buyers actually ask, in the order they ask it."
+      },
+      {
+        "t": "Accurate by design.",
+        "d": "Facts, entities and structure that make being quoted correctly more likely."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for AI SEO"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for your",
+    "h2b": "AI visibility.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Check how you show up today.",
+        "d": "We ask your buyers' questions in search and assistants, and record where you appear, where you are missing and where you are described wrongly."
+      },
+      {
+        "n": "02",
+        "t": "Make the site readable by machines.",
+        "d": "Crawling, speed and structured data are fixed, and we review what AI crawlers are allowed to read."
+      },
+      {
+        "n": "03",
+        "t": "Rewrite pages to lead with the answer.",
+        "d": "Each priority page opens with a direct answer, then detail, FAQs and proof."
+      },
+      {
+        "n": "04",
+        "t": "Align your facts across the web.",
+        "d": "Your name, offer and facts match across your site, profiles and trusted sources, so AI summaries stay accurate."
+      },
+      {
+        "n": "05",
+        "t": "Track one fixed set of questions.",
+        "d": "The same buyer questions are rechecked over time, beside qualified traffic, enquiries and orders."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers.",
+    "serp": {
+      "tabs": [
+        "Search",
+        "AI answers",
+        "Tracking"
+      ],
+      "q": "best running shoe for flat feet",
+      "others": [
+        "guide.example",
+        "reviews.example",
+        "forum.example"
+      ],
+      "youTitle": "Running shoes for flat feet, explained",
+      "snipLabel": "Search result",
+      "snip": "Stable shoes with a firm midsole suit flat feet, and a wide base helps.",
+      "aiLabel": "AI summary",
+      "ai": "For flat feet, look for a stable shoe with firm arch support and a roomy toe box. Brands that publish clear sizing guides are easier to trust.",
+      "sources": [
+        "yourstore.example",
+        "reviews.example"
+      ],
+      "chips": [
+        "Crawlable",
+        "Structured data valid"
+      ],
+      "trackCap": "AI visibility check",
+      "trackSub": "Do we appear, and is it right?",
+      "track": [
+        [
+          "best running shoe for flat feet",
+          "Appears"
+        ],
+        [
+          "shoe brands for wide feet",
+          "Appears"
+        ],
+        [
+          "where to buy for a first marathon",
+          "Missing"
+        ]
+      ],
+      "okState": [
+        "Appears"
+      ],
+      "foot": "The same buyer questions, asked again and again over time."
+    }
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaSurfaceMap",
+    "variant": "ai",
+    "barLogo": "",
+    "barTitle": "AI visibility map",
+    "pinsLabel": "Five places AI visibility goes missing",
+    "base": "Search results, AI Overviews and assistants",
+    "artLabel": "Five cards showing where a brand drops out of AI answers.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Baseline"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Access"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Answers"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Consistency"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Tracking"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Ranking",
+        "lines": [
+          "Ranks in classic results",
+          "Missing from the AI answer"
+        ],
+        "chip": "Ranks, not named",
+        "tone": "w"
+      },
+      {
+        "head": "Crawlers",
+        "lines": [
+          "Content behind scripts",
+          "Blocked by robots rules"
+        ],
+        "chip": "Hard to read",
+        "tone": "b"
+      },
+      {
+        "head": "Page",
+        "lines": [
+          "Story about the brand",
+          "Answer far down the page"
+        ],
+        "chip": "No clear answer",
+        "tone": "w"
+      },
+      {
+        "head": "The web",
+        "lines": [
+          "Your site says one thing",
+          "Profiles say another"
+        ],
+        "chip": "Facts clash",
+        "tone": "w"
+      },
+      {
+        "head": "Tracking",
+        "lines": [
+          "One snapshot",
+          "Rankings only"
+        ],
+        "chip": "Proves little",
+        "tone": "w"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run AI SEO,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit and baseline",
+        "d": "We record how you appear in search and assistants for a fixed set of buyer questions and fix the technical blockers.",
+        "get": "A baseline you can compare against.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Plan the questions and pages",
+        "d": "We map the questions to pages, mark what to fix, merge or create, and align facts across your profiles.",
+        "get": "A page and entity plan.",
+        "img": "company/strategy.jpg",
+        "alt": "A consultant talking with a client at a table, notebook open.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Publish, structure and track",
+        "d": "Answer-first pages and structured data go live, and we start the repeat checks.",
+        "get": "Progress read over time, not from one screenshot.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      },
+      {
+        "n": "AEO",
+        "href": "/services/seo/aeo/"
+      },
+      {
+        "n": "GEO",
+        "href": "/services/seo/geo/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

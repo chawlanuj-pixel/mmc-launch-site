@@ -1,0 +1,222 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/creative.jpg",
+    "pos": "50% 50%",
+    "alt": "A designer reviewing printed photography on a studio wall.",
+    "facts": [
+      {
+        "t": "Made to brand rules.",
+        "d": "Every file is checked against the client's brand sheet."
+      },
+      {
+        "t": "Every format you need.",
+        "d": "Cuts and sizes for each placement, named so your team can drop them in."
+      },
+      {
+        "t": "Rounds agreed up front.",
+        "d": "Feedback is gathered into one list per round, so jobs finish."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label creative and video"
+  },
+  "work": {
+    "panel": "BriefBoard",
+    "eyebrow": "The work, shown",
+    "h2a": "How a brief becomes files",
+    "h2b": "your team can drop in.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Take the brief once, on one page.",
+        "d": "Hook, angle, must-show and must-say are written on one page and sent back, so nothing is assumed."
+      },
+      {
+        "n": "02",
+        "t": "Match creators and editors to the brand.",
+        "d": "Creator-style videos and edits are cast to the client's audience, with the pick sent for your approval."
+      },
+      {
+        "n": "03",
+        "t": "Return files in every format you need.",
+        "d": "Raw clips become cuts, captions and sizes for each placement, named in one convention."
+      },
+      {
+        "n": "04",
+        "t": "Prepare variants for the client's tests.",
+        "d": "Cuts are set side by side, so you can see which one is carried into the next brief."
+      }
+    ],
+    "illustrative": "Illustrative layout of a creative brief and creator board. Not a client account, no real figures or people."
+  },
+  "leak": {
+    "visual": "AgencyLeak",
+    "barLogo": "",
+    "barTitle": "Creative job view",
+    "pinsLabel": "Five places white-label creative goes wrong",
+    "base": "From the brief to files in your folder",
+    "artLabel": "Five cards showing where white-label creative and video goes wrong.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Brief"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Rounds"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Brand"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Formats"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Handover"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Brief",
+        "kind": "brief",
+        "lines": [
+          "Make it pop",
+          "No must-show"
+        ],
+        "chip": "Vague brief",
+        "tone": "w"
+      },
+      {
+        "head": "Rounds",
+        "kind": "rounds",
+        "lines": [
+          "Feedback by chat",
+          "No end date"
+        ],
+        "chip": "Never ends",
+        "tone": "b"
+      },
+      {
+        "head": "Brand",
+        "kind": "brand",
+        "lines": [
+          "Wrong colour",
+          "Found late"
+        ],
+        "chip": "Off brand",
+        "tone": "w"
+      },
+      {
+        "head": "Formats",
+        "kind": "formats",
+        "lines": [
+          "One size sent",
+          "Rest cropped"
+        ],
+        "chip": "Missing sizes",
+        "tone": "w"
+      },
+      {
+        "head": "Handover",
+        "kind": "handover",
+        "lines": [
+          "A loose pile",
+          "No final marked"
+        ],
+        "chip": "Messy folder",
+        "tone": "w"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first creative client",
+    "h2b": "gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and brand sheet",
+        "d": "We sign the NDA, then collect the client's brand rules, fonts, colours and the formats you usually need.",
+        "get": "A brand sheet every file is checked against.",
+        "img": "company/strategy.jpg",
+        "alt": "A consultant talking with a partner at a table, notebook open.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot job",
+        "d": "One brief goes through to final files in your naming, so you see how we take a brief and return work.",
+        "get": "A pilot job you can judge on the files.",
+        "img": "company/session.jpg",
+        "alt": "Colleagues around a table with laptops and printed creative.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Revision and naming SOPs",
+        "d": "Revision rounds, file naming, approvals and folder layout are written down.",
+        "get": "A routine that keeps jobs finishing.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Cover your busy weeks",
+        "d": "When your own designers are full, work flows to us on the same routine.",
+        "get": "Capacity you can switch on when needed.",
+        "img": "about2/huddle.jpg",
+        "alt": "Two colleagues at a whiteboard with a marketing funnel sketched on it.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "contact/meeting.jpg",
+    "alt": "Three colleagues leaning over a printed plan on a table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label social media",
+        "href": "/white-label/social-media-management/"
+      },
+      {
+        "n": "White-label Meta Ads",
+        "href": "/white-label/meta-ads/"
+      },
+      {
+        "n": "White-label web design",
+        "href": "/white-label/web-design/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -1,0 +1,11 @@
+---
+// One picture in a rounded frame. `src` is relative to /assets/ unless it starts with "/". alt is empty only when a
+// heading or caption beside the picture carries the meaning.
+interface Props { src: string; alt?: string; ratio?: string; eager?: boolean; pos?: string; class?: string; w?: number; h?: number; children?: any }
+const { src, alt = "", eager = false, pos, class: cls = "", w = 1024, h = 688 } = Astro.props;
+const url = src.startsWith("/") ? src : "/assets/" + src;
+---
+<figure class={"h2-pic " + cls}>
+  <img src={url} alt={alt} width={w} height={h} loading={eager ? "eager" : "lazy"} decoding="async" fetchpriority={eager ? "high" : undefined} style={pos ? `object-position:${pos}` : undefined} />
+  <slot />
+</figure>

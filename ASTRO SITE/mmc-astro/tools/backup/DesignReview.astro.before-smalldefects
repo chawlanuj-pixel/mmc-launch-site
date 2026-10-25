@@ -1,0 +1,88 @@
+---
+// PANEL: DesignReview (kind "DesignReview"). A design workspace. No platform mark. 5 steps.
+//   1 Research: sticky notes of what users said and did (illustrative wording). Tab: Research.
+//   2 Flow: a journey of four boxes with the one drop-off point flagged. Tab: Flow.
+//   3 Wireframes: a grey phone wireframe becoming a designed screen. Tab: Screens.
+//   4 Prototype test: a clickable prototype screen with tap hotspots and user-test notes beside it. Tab: Test.
+//   5 System: a small component library (button, input, card, tag) and rules. Tab: System.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix dr-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="Design review" label="Illustration of a design review: research notes, a flow, wireframes, a prototype test and a design system. Not a client project." caption={W.illustrative} tabs={["Research", "Flow", "Screens", "Test", "System"]} tabFor={[0, 1, 2, 3, 4]} accent="#7C3AED" accentSoft="#EFE7FD">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Research <span>What people do, not what we assume</span></p>
+    <ul class="dr-notes">
+      {["Could not find the size guide", "Looked for delivery time first", "Left at the long form", "Asked: is this in stock?"].map((t, k) => <li class={"dr-note dr-note--" + (k % 2)}>{t}</li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Journey <span>Built around the task</span></p>
+    <ol class="dr-flow">
+      {["Land", "Find", "Decide", "Pay"].map((t, k) => <li class={"s2p-card" + (k === 1 ? " dr-flag" : "")}><b>{t}</b>{k === 1 ? <em class="s2p-chip s2p-chip--warn">Users stall here</em> : <i class="s2p-line"></i>}</li>)}
+    </ol>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Wireframe to screen <span>Structure first, then style</span></p>
+    <div class="dr-pair">
+      <div class="dr-phone"><i class="dr-b dr-b--img"></i><i class="dr-b"></i><i class="dr-b dr-b--s"></i><i class="dr-b dr-b--btn"></i></div>
+      <span class="dr-arrow" aria-hidden="true">&rarr;</span>
+      <div class="dr-phone dr-phone--on"><i class="dr-b dr-b--img"></i><i class="dr-b"></i><i class="dr-b dr-b--s"></i><i class="dr-b dr-b--btn"></i></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Prototype test <span>Fixed before anything is built</span></p>
+    <div class="dr-test">
+      <div class="dr-phone dr-phone--on"><i class="dr-b dr-b--img"></i><i class="dr-b"></i><i class="dr-b dr-b--btn dr-tap"></i></div>
+      <ul class="dr-obs">
+        <li class="s2p-card"><em class="s2p-chip s2p-chip--ok">Worked</em><span>Found the product fast</span></li>
+        <li class="s2p-card"><em class="s2p-chip s2p-chip--warn">Stalled</em><span>Missed the size guide</span></li>
+        <li class="s2p-card"><em class="s2p-chip s2p-chip--blue">Change</em><span>Move size guide up</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Design system <span>Reusable, so new pages stay consistent</span></p>
+    <div class="dr-sys">
+      <div class="s2p-card"><p class="s2p-lbl">Button</p><span class="dr-btn">Primary</span><span class="dr-btn dr-btn--g">Secondary</span></div>
+      <div class="s2p-card"><p class="s2p-lbl">Input</p><span class="dr-in">Label</span></div>
+      <div class="s2p-card"><p class="s2p-lbl">Tag</p><em class="s2p-chip s2p-chip--blue">In stock</em><em class="s2p-chip s2p-chip--ok">Saved</em></div>
+      <div class="s2p-card"><p class="s2p-lbl">Card</p><i class="s2p-line"></i><i class="s2p-line s2p-line--s"></i></div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.dr-notes { list-style: none; margin: 0; padding: 0; flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: .9em; align-content: center; }
+.dr-note { padding: 1.1em; min-height: 5.5em; border-radius: .3em; font: 700 1em/1.3 var(--font-body); background: #FFF3B0; color: #3D3300; box-shadow: 0 .4em .8em -.5em rgba(0, 0, 0, .35); transform: rotate(-1.2deg); }
+.dr-note--1 { background: #FFD6E7; color: #4A0F2C; transform: rotate(1.2deg); }
+.dr-flow { list-style: none; margin: 0; padding: 0; flex: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8em; align-content: center; }
+.dr-flow li { position: relative; display: grid; gap: .6em; justify-items: start; align-content: start; }
+.dr-flow li + li::before { content: ""; position: absolute; left: -.8em; top: 1.2em; width: .8em; border-top: 2px solid #C4B5FD; }
+.dr-flow b { font: 800 1.1em var(--font-display); }
+.dr-flag .s2p-chip { white-space: normal; max-width: 100%; }
+@media (max-width: 520px) { .dr-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8em; } .dr-flow li + li::before { display: none; } }
+.dr-flag { border-color: #E8A100; box-shadow: 0 0 0 2px #E8A100; }
+.dr-pair { flex: 1; display: flex; align-items: center; justify-content: center; gap: 1.5em; }
+.dr-arrow { font: 800 2em var(--font-body); color: #7C3AED; }
+.dr-phone { width: 9em; padding: .7em; display: grid; gap: .5em; border: 2px solid #CED0D4; border-radius: 1.4em; background: #F5F6F7; }
+.dr-b { display: block; height: 1.2em; border-radius: .3em; background: #DADDE1; border: 1px dashed #BCC0C4; }
+.dr-b--img { height: 5em; } .dr-b--s { width: 60%; } .dr-b--btn { height: 1.8em; }
+.dr-phone--on { background: #fff; border-color: #7C3AED; }
+.dr-phone--on .dr-b { border: 0; background: #EFE7FD; }
+.dr-phone--on .dr-b--img { background: linear-gradient(135deg, #A78BFA, #7C3AED); }
+.dr-phone--on .dr-b--btn { background: var(--mmc-blue-900); }
+.dr-test { flex: 1; display: grid; grid-template-columns: auto 1fr; gap: 1.2em; align-items: center; }
+.dr-tap { position: relative; }
+.dr-tap::after { content: ""; position: absolute; right: .6em; top: 50%; width: 1.6em; height: 1.6em; margin-top: -.8em; border-radius: 50%; background: rgba(255, 197, 40, .75); box-shadow: 0 0 0 .4em rgba(255, 197, 40, .35); }
+.dr-obs { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.dr-obs li { display: flex; align-items: center; gap: .7em; font-weight: 700; padding-block: .6em; }
+.dr-sys { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: .8em; align-content: center; }
+.dr-sys .s2p-card { display: grid; gap: .5em; justify-items: start; }
+.dr-btn { padding: .45em 1.2em; border-radius: .5em; background: var(--mmc-blue-900); color: #fff; font: 800 .9em var(--font-body); }
+.dr-btn--g { background: #fff; color: var(--mmc-blue-900); box-shadow: inset 0 0 0 2px var(--mmc-blue-900); }
+.dr-in { width: 100%; padding: .5em .7em; border: 1.5px solid #BCC0C4; border-radius: .4em; color: #65676B; font: 600 .9em var(--font-body); }
+@media (max-width: 560px) { .dr-flow { gap: .4em; } .dr-phone { width: 7em; } .dr-notes { gap: .5em; } .dr-note { padding: .7em; min-height: 4em; } }
+@media (max-width: 420px) { .s2-ui:has(.dr-phone) .s2-ui__tab:nth-child(n+4) { display: block; } .s2-ui:has(.dr-phone) .s2-ui__tab { padding: 6px 6px; } .s2-ui:has(.dr-phone) .s2-ui__bar b { display: none; } }
+@media (max-width: 900px) { .s2-ui:has(.dr-phone) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

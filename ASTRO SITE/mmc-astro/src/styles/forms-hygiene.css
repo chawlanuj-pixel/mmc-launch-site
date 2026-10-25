@@ -1,0 +1,12 @@
+/* Form hygiene pieces: consent, pre-launch note, inline errors. Shared by the
+   brief modal, contact form and job application. */
+.audit__note, .fh-note { margin: -6px 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(var(--mmc-blue-rgb), 0.08); font: 600 14px/1.5 var(--font-body); color: var(--fg-1); }
+.audit__note a, .fh-note a { color: var(--mmc-blue); border-bottom: 1px solid currentColor; }
+.audit__consent, .fh-consent { display: flex; gap: 10px; align-items: flex-start; margin: 4px 0 14px; font: 500 14px/1.45 var(--font-body); color: var(--fg-2); cursor: pointer; }
+.audit__consent input, .fh-consent input { width: 20px; height: 20px; margin-top: 1px; flex: none; accent-color: var(--mmc-blue); }
+.audit__consent a, .fh-consent a { color: var(--mmc-blue); border-bottom: 1px solid currentColor; }
+.audit__err, .fh-err { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: rgba(200, 40, 40, 0.09); color: var(--mmc-error); font: 600 13px/1.45 var(--font-body); }
+.fh-err:empty { display: none; }
+.fh-fallback { margin: 12px 0 0; font: 500 15px/1.5 var(--font-body); color: var(--fg-2); }
+.fh-fallback a { color: var(--mmc-blue); border-bottom: 1px solid currentColor; }
+.audit__submit[disabled], .fh-submit[disabled] { opacity: .7; cursor: progress; }

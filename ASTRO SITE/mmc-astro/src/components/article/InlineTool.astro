@@ -1,0 +1,14 @@
+---
+// "Try it" box that sits inside the article, linking to the matching calculator.
+interface Props { label: string; href: string; line: string; img: string }
+const { label, href, line, img } = Astro.props;
+---
+<a class="ar-tool" href={href}>
+  <span class="ar-tool__pic"><img src={img} alt="" width="320" height="200" loading="lazy" decoding="async" /></span>
+  <span class="ar-tool__txt">
+    <span class="ix-tag">Free tool</span>
+    <b>{label}</b>
+    <span>{line}</span>
+  </span>
+  <span class="ix-chip" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+</a>

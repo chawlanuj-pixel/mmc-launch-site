@@ -1,0 +1,64 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 11200,
+      "title": "Homepage · Desktop"
+    },
+    {
+      "file": "D2CHub.dc.html",
+      "x": 1600,
+      "y": 0,
+      "w": 1440,
+      "h": 8800,
+      "title": "D2C hub · Desktop"
+    },
+    {
+      "file": "Education.dc.html",
+      "x": 3200,
+      "y": 0,
+      "w": 1440,
+      "h": 10400,
+      "title": "Education landing page · Desktop"
+    },
+    {
+      "file": "ServiceMetaAds.dc.html",
+      "x": 4800,
+      "y": 0,
+      "w": 1440,
+      "h": 9200,
+      "title": "Service page: Meta Ads · Desktop"
+    },
+    {
+      "file": "HomeMobile.dc.html",
+      "x": 6400,
+      "y": 0,
+      "w": 390,
+      "h": 7600,
+      "title": "Homepage · Mobile"
+    },
+    {
+      "file": "EducationMobile.dc.html",
+      "x": 6950,
+      "y": 0,
+      "w": 390,
+      "h": 6200,
+      "title": "Education landing page · Mobile"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "round-1-notes",
+      "x": 0,
+      "y": -300,
+      "w": 760,
+      "text": "Round 1: evolves today's MMC look (royal blue, sun yellow, Raleway, Cormorant italic) for the two audiences, D2C brands and educational institutes.\nReal client work and logos throughout. Bracketed text marks quotes, names and video still to come; figures labelled Sample are illustrative calculator and dashboard values.\nMobile shown for Homepage and Education; D2C hub and service page follow the same patterns."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

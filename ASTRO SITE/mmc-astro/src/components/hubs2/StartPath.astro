@@ -1,0 +1,45 @@
+---
+// "Not sure where to start?": problems mapped to the service that fixes them, then two existing destinations:
+// the free audit and the D2C calculators. Ink band.
+import Pic from "./Pic.astro";
+import { TOOLS } from "../../lib/site";
+interface Props { problems: [string, string, string][] }
+const { problems } = Astro.props;
+const calcs = ["breakeven-roas", "unit-economics", "funnel-roas"].map((s) => TOOLS.find((t) => t.slug === s)!).filter(Boolean);
+---
+<section class="n-band n-band--ink" id="start">
+  <div class="n-wrap">
+    <header class="h2-head h2-rv">
+      <span class="n-eyebrow">Not sure where to start?</span>
+      <h2 class="n-h2">Start from the problem, <span class="n-serif">not the service.</span></h2>
+    </header>
+    <div class="h2-start">
+      <ul class="h2-prob h2-rv">
+        {problems.map(([p, to, name]) => (
+          <li><a href={to}><span>{p}</span><b>{name}</b><span class="h2-ring" aria-hidden="true"><i class="h2-arr"></i></span></a></li>
+        ))}
+      </ul>
+      <div class="h2-paths h2-rv">
+        <div class="h2-path">
+          <Pic src="au/audit-call.jpg" alt="A strategist reviewing a brand's ad account on a video call." />
+          <div>
+            <h3>Get a free audit</h3>
+            <p>A senior strategist reads your accounts and names your biggest leak, then says where to start.</p>
+            <a class="btn btn--primary" href="/audit/">Get my free audit<span class="arrow"></span></a>
+          </div>
+        </div>
+        <div class="h2-path">
+          <Pic src="au/look-breakeven.jpg" alt="A notebook with a per-order cost breakdown beside a calculator." />
+          <div>
+            <h3>Run the numbers yourself</h3>
+            <p>Free D2C calculators for the numbers we read first.</p>
+            <ul>
+              {calcs.map((t) => <li><a href={t.href}>{t.long}<i class="h2-arr" aria-hidden="true"></i></a></li>)}
+              <li><a href="/tools/">All D2C calculators<i class="h2-arr" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

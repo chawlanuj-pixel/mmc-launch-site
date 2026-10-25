@@ -1,0 +1,192 @@
+{
+  "_note": "Preview copy for the redesigned Meta Ads service page (/preview/service-meta-ads/). Tightened from src/data/hubs/services__performance-marketing__meta-ads.json, which stays the source of truth for the live page. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/performance.jpg",
+    "pos": "42% 50%",
+    "alt": "A strategist reading two performance dashboards at a desk.",
+    "facts": [
+      {
+        "t": "One funnel.",
+        "d": "Prospecting, retargeting and conversion built to work together."
+      },
+      {
+        "t": "One idea per creative round.",
+        "d": "Every test teaches the next brief."
+      },
+      {
+        "t": "Real results back to Meta.",
+        "d": "Purchases, or qualified leads from your CRM, through the Conversions API."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands run Meta Ads with MMC"
+  },
+  "work": {
+    "panel": "MetaAdsManager",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do in your",
+    "h2b": "Meta account.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Merge small campaigns into one funnel.",
+        "d": "Prospecting, retargeting and conversion share a budget big enough for Meta to learn."
+      },
+      {
+        "n": "02",
+        "t": "Test creative on one idea.",
+        "d": "Ads are briefed from a single thesis and tested in rounds, so each result shapes the next brief."
+      },
+      {
+        "n": "03",
+        "t": "Start broad, let results decide.",
+        "d": "We begin with what your best customers share, then test broad reach beside tighter audiences."
+      },
+      {
+        "n": "04",
+        "t": "Send real results back.",
+        "d": "Purchases, or qualified leads from your CRM, reach Meta through the Conversions API and are checked against your own data."
+      },
+      {
+        "n": "05",
+        "t": "Scale only where margin holds.",
+        "d": "Budget moves where contribution margin, or cost per qualified lead, still holds."
+      }
+    ],
+    "illustrative": "Illustrative layout of a Meta Ads Manager view. Not a client account, no real figures. Meta and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "MetaFunnel",
+    "barLogo": "/assets/platforms/meta.svg",
+    "barTitle": "Funnel view",
+    "pinsLabel": "Five places Meta spend leaks",
+    "eyebrow": "Where it leaks",
+    "stageLabels": [
+      "Reach",
+      "Clicks",
+      "Visits",
+      "Carts",
+      "Orders or leads"
+    ],
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 7,
+        "y": 0,
+        "label": "Structure"
+      },
+      {
+        "x": 20.8,
+        "y": 0,
+        "label": "Creative"
+      },
+      {
+        "x": 40.5,
+        "y": 0,
+        "label": "Audience"
+      },
+      {
+        "x": 79.8,
+        "y": 0,
+        "label": "Tracking"
+      },
+      {
+        "x": 97,
+        "y": 0,
+        "label": "Scale"
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we run Meta for.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: the Meta ad and the product page tell one story."
+      },
+      {
+        "id": "giraffe",
+        "line": "A festive gifting push, from social tiles and Meta Ads through to the cart."
+      },
+      {
+        "id": "mbb",
+        "line": "Body care: Meta carousel and Google Shopping ads tied to one storefront."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run Meta Ads,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit and set the floor",
+        "d": "We read the account against your margins, fix tracking and agree the break-even before spend changes.",
+        "get": "A clear floor: the result each rupee has to clear.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Rebuild the structure",
+        "d": "One funnel, clean audiences and a naming system, so every campaign has a job.",
+        "get": "An account where every campaign has a job and a result you can read.",
+        "img": "about2/huddle.jpg",
+        "alt": "Two colleagues mapping a marketing funnel on a whiteboard.",
+        "pos": "50% 40%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Run the creative test lane",
+        "d": "A fixed testing rule, one idea per round. Winners stay, losers retire on evidence.",
+        "get": "A test lane that shows which angles earn their budget.",
+        "img": "meta/creative.jpg",
+        "alt": "Ad creatives in a Meta Ads Manager library beside a phone showing an ad.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Scale and review weekly",
+        "d": "Budget follows contribution margin or qualified-lead cost, and a weekly note explains each move.",
+        "get": "Spend that grows only where the maths still works.",
+        "img": "meta/scale.jpg",
+        "alt": "A performance report open in Meta Ads Manager on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "UGC and video",
+        "href": "/services/ugc-and-video/"
+      },
+      {
+        "n": "AI UGC by MMC",
+        "href": "/ai-by-mmc/ugc/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

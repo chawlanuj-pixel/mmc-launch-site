@@ -1,0 +1,515 @@
+{
+  "file": "white-label-social-media-management.html",
+  "path": "/white-label/social-media-management/",
+  "key": "wl_social_media_management",
+  "title": "Done-for-You White-Label Social Media Management | MMC",
+  "description": "Done-for-you white-label social media management for agencies: calendars, posts, community replies and reports, made by people and sent under your brand.",
+  "ogTitle": "White-label social media management for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label social media management.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label social media management",
+          "item": "https://www.mondaymarketing.company/white-label/social-media-management/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/social-media-management/",
+      "name": "Done-for-You White-Label Social Media Management | MMC",
+      "description": "Done-for-you white-label social media management for agencies: calendars, posts, community replies and reports, made by people and sent under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#service",
+      "name": "White-label Social Media Management",
+      "serviceType": "White-label social media management",
+      "description": "White-label social media management delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/social-media-management/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/social-media-management/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you post on the client's behalf?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if you give us access or use a scheduling tool with approval steps. You choose the approval level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle comments and messages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reply drafts or live replies can be included, within rules you set. Sensitive cases come to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instagram, Facebook, LinkedIn, YouTube and X are the usual. We agree the set per client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you produce original photos and video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We can edit supplied footage and create designs. Shoots are a separate scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label social media management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send the client's brand guidelines and channels. After the NDA, we draft a first month's calendar for your review."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_social_media_management",
+    "wm": "White-label Social Media Management",
+    "eyebrow": "● White-label social media management",
+    "h1": [
+      "White-label social media",
+      [
+        "management, ",
+        "done for you",
+        "."
+      ]
+    ],
+    "sub": "Calendars, post design, scheduling, community replies and monthly reports for your social clients, under your brand.",
+    "tiles": [
+      {
+        "img": "social/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Plan",
+        "note": "Calendar by theme"
+      },
+      {
+        "img": "social/design.jpg",
+        "pos": "50% 50%",
+        "label": "Design",
+        "note": "Posts to brand"
+      },
+      {
+        "img": "social/video.jpg",
+        "pos": "50% 50%",
+        "label": "Video",
+        "note": "Reels and shorts"
+      },
+      {
+        "img": "social/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Insights",
+        "note": "Read each month"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label social media management means MMC runs your client's social channels while you stay the agency they hire. We plan the calendar, design the posts, schedule and publish, handle community replies where agreed, and send a monthly report you can put your name on.",
+      "hl": "plan the calendar, design the posts",
+      "who": "Monday Marketing Company (MMC) delivers social media management for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "grid",
+          "title": "Calendar and plan",
+          "text": "Themes and posts planned ahead."
+        },
+        {
+          "icon": "window",
+          "title": "Post design",
+          "text": "Static, carousel and short video."
+        },
+        {
+          "icon": "chart",
+          "title": "Monthly report",
+          "text": "Reach, engagement and what we learned."
+        }
+      ],
+      "image": "social/calendar.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "social-wl",
+          "h": "What is in a white-label social package",
+          "paras": [
+            "Each package is built from the same parts. We agree which parts your client needs, how many posts a month, which channels, and who approves.",
+            "Our direct work is described on the <a href=\"/services/social-media/\">social media service</a> page, and we can pair it with <a href=\"/white-label/creative-and-video/\">creative and video production</a>."
+          ],
+          "img": "social/calendar.jpg",
+          "cap": "A monthly social calendar for a client.",
+          "table": {
+            "caption": "White-label social media package components",
+            "head": [
+              "Component",
+              "What it includes",
+              "Approval"
+            ],
+            "rows": [
+              [
+                "Strategy and calendar",
+                "Themes, formats, posting plan",
+                "Agency signs off"
+              ],
+              [
+                "Content creation",
+                "Copy and design for each post",
+                "Agency or client approves"
+              ],
+              [
+                "Publishing",
+                "Scheduling and posting",
+                "Done by MMC"
+              ],
+              [
+                "Community",
+                "Reply drafts or live replies as agreed",
+                "Rules agreed up front"
+              ],
+              [
+                "Reporting",
+                "Monthly summary under your brand",
+                "Agency sends"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label social.",
+      "lede": "From the calendar to the monthly report.",
+      "items": [
+        {
+          "t": "Content calendar",
+          "d": "A month of posts planned by theme and channel.",
+          "img": "social/calendar.jpg",
+          "alt": "Content calendar"
+        },
+        {
+          "t": "Post design",
+          "d": "Static, carousel and story designs to the client's brand.",
+          "img": "social/design.jpg",
+          "alt": "Post design"
+        },
+        {
+          "t": "Short video",
+          "d": "Reels and shorts edited from client footage or stock.",
+          "img": "social/video.jpg",
+          "alt": "Short video"
+        },
+        {
+          "t": "Scheduling and publishing",
+          "d": "Posts scheduled in the approved tool and times.",
+          "img": "social/plan.jpg",
+          "alt": "Scheduling and publishing"
+        },
+        {
+          "t": "Community management",
+          "d": "Reply drafts or live replies within agreed rules.",
+          "img": "orm/reply.jpg",
+          "alt": "Community management"
+        },
+        {
+          "t": "Reporting",
+          "d": "Reach, engagement and learnings in your format.",
+          "img": "social/insights.jpg",
+          "alt": "Reporting"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label social media management.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "social/calendar.jpg",
+      "alt": "Why agencies choose MMC for white-label social media management.",
+      "items": [
+        {
+          "t": "Approvals built in",
+          "d": "You or the client see posts before they go out."
+        },
+        {
+          "t": "Brand rules respected",
+          "d": "We work to the client's guidelines."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label social media management works,",
+      "h2b": "step by step.",
+      "img": "social/calendar.jpg",
+      "alt": "How white-label social media management works, step by step.",
+      "items": [
+        {
+          "t": "Brand intake",
+          "d": "We take the client's guidelines and tone through you."
+        },
+        {
+          "t": "Calendar",
+          "d": "A month is planned and approved."
+        },
+        {
+          "t": "Create and publish",
+          "d": "Posts are designed and scheduled."
+        },
+        {
+          "t": "Report",
+          "d": "A monthly summary closes the loop."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label social media management for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells social media management but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label social media management fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label content marketing",
+          "d": "Articles and guides behind your brand.",
+          "img": "sv/content.jpg",
+          "href": "/white-label/content-marketing/",
+          "link": "See white-label content marketing"
+        },
+        {
+          "n": "White-label email and retention",
+          "d": "Flows and campaigns behind your brand.",
+          "img": "rt/journey.jpg",
+          "href": "/white-label/email-marketing/",
+          "link": "See white-label email and retention"
+        },
+        {
+          "n": "White-label CRO",
+          "d": "Conversion work behind your brand.",
+          "img": "cro/test.jpg",
+          "href": "/white-label/cro/",
+          "link": "See white-label CRO"
+        },
+        {
+          "n": "Social media",
+          "d": "Calendars, creatives and community.",
+          "img": "social/calendar.jpg",
+          "href": "/services/social-media/",
+          "link": "See Social media"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "social media management."
+    ],
+    "faq": [
+      {
+        "q": "Do you post on the client's behalf?",
+        "a": "Yes, if you give us access or use a scheduling tool with approval steps. You choose the approval level."
+      },
+      {
+        "q": "Can you handle comments and messages?",
+        "a": "Reply drafts or live replies can be included, within rules you set. Sensitive cases come to you."
+      },
+      {
+        "q": "Which platforms do you cover?",
+        "a": "Instagram, Facebook, LinkedIn, YouTube and X are the usual. We agree the set per client."
+      },
+      {
+        "q": "Do you produce original photos and video?",
+        "a": "We can edit supplied footage and create designs. Shoots are a separate scope."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label social media management?",
+        "a": "Send the client's brand guidelines and channels. After the NDA, we draft a first month's calendar for your review."
+      }
+    ],
+    "cta": {
+      "h2a": "Add social media management",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first social media management client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Rules",
+        "tag": "Brand",
+        "breaks": "Brand rules live in someone's head.",
+        "why": "Posts drift from the client's look as soon as a new person touches the account.",
+        "does": "We capture colours, tone and no-go topics in a one-page brand sheet and design every post from it."
+      },
+      {
+        "k": "Calendar",
+        "tag": "Planning",
+        "breaks": "The month is planned the week before.",
+        "why": "Last-minute posts are thin, and the client sees gaps.",
+        "does": "We plan the month by theme and channel and share the calendar, so you can see holes early."
+      },
+      {
+        "k": "Approvals",
+        "tag": "Sign-off",
+        "breaks": "Approvals arrive after the post is due.",
+        "why": "A late sign-off forces a choice between a missed date and an unchecked post.",
+        "does": "Approval steps and cut-off times are agreed with you, and nothing is published without a recorded yes."
+      },
+      {
+        "k": "Replies",
+        "tag": "Community",
+        "breaks": "Comments sit unanswered.",
+        "why": "A client's followers expect a reply, and silence looks like neglect.",
+        "does": "We draft replies, or answer within rules you set, and flag anything sensitive to you."
+      },
+      {
+        "k": "Report",
+        "tag": "Reporting",
+        "breaks": "The report is a screenshot of likes.",
+        "why": "Likes do not tell your client what to do next.",
+        "does": "Your monthly report covers reach, engagement and what we change next month, in your format."
+      }
+    ],
+    "leaks": {
+      "style": "stack",
+      "note": "Illustrative diagram, not a client account. No real figures.",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five places white-label social",
+      "h2b": "goes wrong.",
+      "lede": "Social is many small tasks, and one missed approval is noticed publicly. Each stage below is where it goes wrong, and how we run it."
+    },
+    "process": {
+      "h2a": "How your first social client",
+      "h2b": "gets onboarded.",
+      "note": "The stages show the order of onboarding, not a promise of timing. The client's approval speed decides how long each stage takes.",
+      "steps": [
+        {
+          "when": "Stage 1",
+          "t": "NDA and brand sheet",
+          "d": "We sign the NDA, then collect the client's brand rules, channels and approval path into one sheet.",
+          "out": "A brand sheet every post is checked against."
+        },
+        {
+          "when": "Stage 2",
+          "t": "Pilot month of posts",
+          "d": "A single month is planned, designed and approved with you before anything is scheduled.",
+          "out": "A pilot calendar you can show the client."
+        },
+        {
+          "when": "Stage 3",
+          "t": "Approval and reply SOPs",
+          "d": "Who signs off, by when, and how replies and sensitive comments are handled is written down.",
+          "out": "A routine nobody has to remember."
+        },
+        {
+          "when": "Stage 4",
+          "t": "Scale to more channels",
+          "d": "More channels and clients join on the same calendar routine, with one strategist across them.",
+          "out": "Social for more clients, same routine."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

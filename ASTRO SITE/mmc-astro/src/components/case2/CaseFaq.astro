@@ -1,0 +1,25 @@
+---
+// Answer-first questions, built only from facts on record (src/lib/case2.ts faqFor). Same text feeds the FAQPage JSON-LD in the page.
+import { href } from "../../lib/links";
+interface Props { faq: { q: string; a: string; links?: { label: string; href: string }[] }[]; name: string }
+const { faq, name } = Astro.props as Props;
+---
+<section class="c2-band c2-faq" id="faq" aria-labelledby="c2-faq-h">
+  <div class="c2-wrap c2-faq__grid">
+    <header class="c2-rv">
+      <p class="c2-eyebrow">Common questions</p>
+      <h2 class="c2-h2 c2-h2--sm" id="c2-faq-h">About the work for <em>{name}</em>.</h2>
+    </header>
+    <div class="c2-faq__list c2-rv c2-d1">
+      {faq.map((f, i) => (
+        <details class="c2-q" open={i === 0}>
+          <summary><span>{f.q}</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg></summary>
+          <div class="c2-q__a">
+            <p>{f.a}</p>
+            {f.links && f.links.length > 0 && <p class="c2-q__links">{f.links.map((l, k) => <Fragment>{k > 0 && <span aria-hidden="true"> · </span>}<a href={href(l.href)}>{l.label}</a></Fragment>)}</p>}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

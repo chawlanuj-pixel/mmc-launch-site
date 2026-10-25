@@ -1,0 +1,68 @@
+---
+// PANEL: FlowBuilder (kind "FlowBuilder"). A WhatsApp and email retention flow on a canvas, WhatsApp mark. 5 steps. Nodes appear step by step (s2p-from-N).
+//   1 Trigger: "Order placed" starts the flow. Tab: Flows.
+//   2 Post-purchase: wait 2 days, then an email with a care guide. Tab: Flows.
+//   3 Branch: "Opened the email?" yes goes to the reminder path, no goes to a gentle nudge. Tab: Flows.
+//   4 Replenishment: the yes path sends a WhatsApp restock reminder; a phone shows the message. Tab: Messages.
+//   5 Win-back: a third flow (win-back) goes live; a strip lists the three flows with Live status. Tab: Flows.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix fb-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+// nodes: [from step, x%, y%, kind, label, sub]
+const nodes: [number, number, number, string, string, string][] = [
+  [1, 2, 38, "trig", "Order placed", "Trigger"],
+  [2, 21, 38, "wait", "Wait", "2 days"],
+  [2, 40, 38, "mail", "Email", "Care guide"],
+  [3, 59, 38, "if", "Opened it?", "Branch"],
+  [4, 78, 8, "wa", "WhatsApp", "Restock reminder"],
+  [3, 78, 68, "mail", "Email", "Gentle nudge"],
+];
+const NW = 17, NH = 24;
+const links: [number, number][] = [[0, 1], [1, 2], [2, 3], [3, 4], [3, 5]];
+---
+<Frame logo="/assets/platforms/whatsapp.svg" title="Retention flows" label="Illustration of a WhatsApp and email retention flow. Not a client account." caption={W.illustrative} tabs={["Flows", "Messages"]} tabFor={[0, 0, 0, 1, 0]} accent="#128C7E" accentSoft="#DDF3EF">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4 s2-st--5 fb">
+    <div class="fb-canvas">
+      <svg class="fb-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        {links.map(([a, b]) => {
+          const A = nodes[a], B = nodes[b];
+          const x1 = A[1] + NW, y1 = A[2] + NH / 2, x2 = B[1], y2 = B[2] + NH / 2, mx = (x1 + x2) / 2;
+          return <path class={"s2p-from-" + B[0]} d={`M${x1} ${y1} C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}`} />;
+        })}
+      </svg>
+      {nodes.map(([from, x, y, kind, label, sub]) => (
+        <div class={`fb-n fb-n--${kind}` + (from > 1 ? ` s2p-from-${from}` : "")} style={`left:${x}%;top:${y}%;width:${NW}%;height:${NH}%`}>
+          <b>{kind === "wa" ? <img src="/assets/platforms/whatsapp.svg" alt="" width="14" height="14" /> : null}{label}</b><small>{sub}</small>
+        </div>
+      ))}
+      <div class="fb-phone s2p-only-4" style="--show:grid" role="img" aria-label="Reminder message on a phone">
+        <img src="/assets/platforms/whatsapp.svg" alt="" width="16" height="16" />
+        <span>Running low? Reorder in one tap.</span>
+      </div>
+    </div>
+    <ul class="fb-strip s2p-only-5" style="--show:flex">
+      <li class="s2p-card"><span class="s2p-dot"></span>Post-purchase<em class="s2p-chip s2p-chip--ok">Live</em></li>
+      <li class="s2p-card"><span class="s2p-dot"></span>Replenishment<em class="s2p-chip s2p-chip--ok">Live</em></li>
+      <li class="s2p-card"><span class="s2p-dot"></span>Win-back<em class="s2p-chip s2p-chip--ok">Live</em></li>
+    </ul>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.fb { gap: .7em; }
+.fb-canvas { position: relative; flex: 1; min-height: 0; border-radius: .9em; background: #F6F8F8 radial-gradient(#D5DBDB 1px, transparent 1.2px) 0 0 / 1.3em 1.3em; border: 1px solid #DADDE1; }
+.fb-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+.fb-lines path { fill: none; stroke: #128C7E; stroke-width: 2; vector-effect: non-scaling-stroke; stroke-linecap: round; }
+.fb-n { position: absolute; display: grid; align-content: center; gap: .15em; padding: 0 .8em; border-radius: .8em; background: #fff; border: 1px solid #DADDE1; box-shadow: 0 .3em .8em -.5em rgba(0, 0, 0, .3); min-width: 0; }
+.fb-n b { display: flex; align-items: center; gap: .4em; font: 800 .86em/1.15 var(--font-body); color: #1C2B33; }
+.fb-n small { font: 600 .74em/1.2 var(--font-body); color: #65676B; }
+.fb-n--trig { background: #128C7E; border-color: #128C7E; } .fb-n--trig b, .fb-n--trig small { color: #fff; }
+.fb-n--if { background: #FFF3D6; border-color: #E8A100; }
+.fb-n--wa { border-color: #25D366; box-shadow: 0 0 0 2px #25D366; }
+.fb-phone { position: absolute; left: 38%; bottom: 6%; width: 36%; padding: .6em .7em; border-radius: .2em .9em .9em .9em; background: #D9FDD3; grid-template-columns: auto 1fr; gap: .5em; align-items: center; font: 600 .82em/1.3 var(--font-body); color: #1C2B33; box-shadow: 0 .5em 1em -.5em rgba(0, 0, 0, .4); }
+.fb-strip { list-style: none; margin: 0; padding: 0; gap: .6em; }
+.fb-strip li { flex: 1; display: flex; align-items: center; gap: .6em; font: 800 .86em var(--font-body); padding: .5em .7em; }
+.fb-strip em { margin-left: auto; }
+@media (max-width: 560px) { .fb-n small { display: none; } .fb-n b { font-size: .74em; } .fb-n { padding: 0 .4em; } .fb-strip { flex-direction: column; } .fb-phone { font-size: .7em; } }
+@media (max-width: 560px) { .fb-strip { flex-direction: row; gap: .4em; } .fb-strip li { padding: .4em .5em; gap: .4em; font-size: .72em; } .fb-strip em { display: none; } }
+</style>

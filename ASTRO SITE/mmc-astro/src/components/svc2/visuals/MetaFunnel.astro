@@ -1,0 +1,49 @@
+---
+// VISUAL: MetaFunnel (kind "MetaFunnel"). Five funnel segments (reach, clicks, visits, carts, orders or leads) with a leak droplet under
+// each of five pins. Pins sit in a row above the funnel (y = 0). Reads:
+//   X.stageLabels  five strings, one per segment, left to right.
+//   pins           five { x, y, label }; x drives where each leak line falls (percent of width). Use y: 0 for this visual.
+// Styles are scoped to this file (is:global; classes it owns: s2-fun__art, __svg, __leak, __lbls, __row).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+// Five funnel segments (viewBox 1200 x 400): x, width, half-height. Each leader drops to a droplet at `bottom` (svg units).
+const seg = [
+  { x: 20, w: 224, h: 150 }, { x: 256, w: 224, h: 120 }, { x: 492, w: 224, h: 92 }, { x: 728, w: 224, h: 64 }, { x: 964, w: 216, h: 40 },
+];
+const bottom = [50, 80, 108, 136, 160]; // each leader ends at the top edge of its segment, clear of the segment label
+---
+<div class="s2-fun__row" aria-hidden="true"></div>
+<div class="s2-fun__art">
+  <svg viewBox="0 0 1200 400" class="s2-fun__svg" preserveAspectRatio="none" role="img" aria-label="A funnel from reach to orders or leads, with five places where spend leaks.">
+    <defs>
+      <linearGradient id="s2fg" x1="0" x2="1"><stop offset="0" stop-color="#9DB8F7" /><stop offset="1" stop-color="#1D4ED8" /></linearGradient>
+    </defs>
+    {seg.map((s, k) => <rect x={s.x} y={200 - s.h} width={s.w} height={s.h * 2} rx="16" fill="url(#s2fg)" opacity={0.5 + k * 0.125} />)}
+    {pins.map((p, k) => {
+      const x = p.x * 12, y = bottom[k] ?? 300;
+      return (
+        <g class="s2-fun__leak">
+          <line x1={x} y1="0" x2={x} y2={y} stroke-dasharray="3 6" />
+          <path d={`M${x} ${y} c-13 22 -13 36 0 46 c13 -10 13 -24 0 -46z`} />
+        </g>
+      );
+    })}
+  </svg>
+  <div class="s2-fun__lbls" aria-hidden="true">
+    {seg.map((s, k) => <span class={k > 2 ? "is-l" : ""} style={`left:${((s.x + s.w / 2) / 12).toFixed(2)}%`}>{X.stageLabels[k]}</span>)}
+  </div>
+</div>
+<style is:global>
+.s2-fun__row { height: 78px; }
+.s2-fun__art { position: relative; }
+.s2-fun__svg { display: block; width: 100%; height: auto; aspect-ratio: 5 / 1; }
+.s2-fun__svg rect { rx: 14px; }
+.s2-fun__leak line { stroke: var(--s2-sun); stroke-width: 2.4; vector-effect: non-scaling-stroke; }
+.s2-fun__leak path { fill: var(--s2-sun); }
+.s2-fun__lbls { position: absolute; inset: 0; pointer-events: none; }
+.s2-fun__lbls span { position: absolute; top: 50%; width: 18%; transform: translate(-50%, -50%); text-align: center; font: 800 clamp(10px, 1.45vw, 19px)/1.15 var(--font-display); color: var(--s2-ink); letter-spacing: -.01em; }
+.s2-fun__lbls span.is-l { color: #fff; }
+@media (max-width: 900px) { .s2-fun__svg { aspect-ratio: 2.1 / 1; } }
+@media (max-width: 900px) and (min-width: 561px) { .s2-fun__svg { aspect-ratio: 3.2 / 1; } }
+@media (max-width: 760px) { .s2-fun__row { height: 58px; } }
+</style>

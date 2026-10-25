@@ -1,0 +1,223 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "google/report.jpg",
+    "pos": "50% 50%",
+    "alt": "A performance report open on a laptop.",
+    "facts": [
+      {
+        "t": "Your format, your logo.",
+        "d": "Dashboards and reports follow your template."
+      },
+      {
+        "t": "Written, not just charted.",
+        "d": "Every report says what happened and what to do next."
+      },
+      {
+        "t": "Reports on work you did not do.",
+        "d": "We read other teams' numbers too."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their reporting to MMC"
+  },
+  "work": {
+    "panel": "ReportBuilder",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to build your",
+    "h2b": "client reports.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Connect the sources and audit the tracking.",
+        "d": "Analytics, ads and store data are connected, and tracking is checked before the first report, not after a client questions it."
+      },
+      {
+        "n": "02",
+        "t": "Build your template once.",
+        "d": "Your logo, colours and section order go into the report, so every client gets the same recognisable pack from you."
+      },
+      {
+        "n": "03",
+        "t": "Write what happened and what to do.",
+        "d": "Each report has Done, Watch and Next in plain words, so your client reads advice, not a wall of charts."
+      },
+      {
+        "n": "04",
+        "t": "Send it only after you have reviewed it.",
+        "d": "Reports arrive as a draft for you to edit, then go out from your address on schedule."
+      }
+    ],
+    "illustrative": "Illustrative layout of a report builder. Not a client account, no real figures. Platform names and logos belong to their owners."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Report delivery",
+    "pinsLabel": "Five places white-label reporting slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "board",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Numbers"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Tracking"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Format"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Commentary"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Margin"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "chart",
+        "head": "Numbers",
+        "lines": [
+          "Pulled by hand",
+          "Hours every month"
+        ],
+        "chip": "Manual",
+        "tone": "w"
+      },
+      {
+        "glyph": "eye",
+        "head": "Tracking",
+        "lines": [
+          "Never audited",
+          "Conversions wrong"
+        ],
+        "chip": "Unreliable",
+        "tone": "b"
+      },
+      {
+        "glyph": "layers",
+        "head": "Format",
+        "lines": [
+          "A new layout per client",
+          "Nothing repeatable"
+        ],
+        "chip": "Ad hoc",
+        "tone": "w"
+      },
+      {
+        "glyph": "chat",
+        "head": "Advice",
+        "lines": [
+          "Charts, no advice",
+          "Client asks why"
+        ],
+        "chip": "Silent",
+        "tone": "b"
+      },
+      {
+        "glyph": "coin",
+        "head": "Margin",
+        "lines": [
+          "Reports ignore cost",
+          "Spend looks fine"
+        ],
+        "chip": "Hidden",
+        "tone": "w"
+      }
+    ],
+    "base": "One template, your edit, then sent",
+    "artLabel": "Five cards showing where white-label reporting slips: the numbers, tracking, format, commentary and margin.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for reporting,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and reporting scope",
+        "d": "We sign the NDA, list your clients' sources and write down what each report needs to cover.",
+        "get": "A scope for sources, template and schedule.",
+        "img": "contact/call.jpg",
+        "alt": "A scoping call about reporting.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot report",
+        "d": "One client's report built end to end, with sources connected and commentary written.",
+        "get": "A first report you can send under your name.",
+        "img": "social/insights.jpg",
+        "alt": "A social insights screen on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Template, review step, send date and what the commentary covers are written once.",
+        "get": "A one-page reporting standard.",
+        "img": "company/onepage.jpg",
+        "alt": "A reporting standard written on a notepad.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Roll out across clients",
+        "d": "More client reports move to the template in batches, each with the same review step.",
+        "get": "Every client report on one template.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A table of client dashboards.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/strategy.jpg",
+    "alt": "Two colleagues in a planning conversation.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label ORM",
+        "href": "/white-label/orm/"
+      },
+      {
+        "n": "White-label digital marketing",
+        "href": "/white-label/digital-marketing/"
+      },
+      {
+        "n": "Free tools",
+        "href": "/tools/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

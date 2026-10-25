@@ -1,0 +1,163 @@
+---
+// /sitemap/: the human-readable sitemap linked from the footer's legal row. Built from the real data at build time, so a new
+// hub, case study, guide, calculator or role appears here without an edit: src/data/hubs/*.json (paths and titles),
+// src/data/ai/pages.json, src/lib/work.ts CASES, src/lib/guides.ts GUIDES, src/lib/site.ts TOOLS, src/data/roles.json.
+// Never lists noindex or private pages (preview, thank-you, admin, the private pricing pages). Styles: sitemap-page.css (smp-).
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import "../styles/sitemap-page.css";
+import { CASES } from "../lib/work";
+import { GUIDES } from "../lib/guides";
+import { TOOLS } from "../lib/site";
+import rolesData from "../data/roles.json";
+import heads from "../data/pages/heads.json";
+import aiPages from "../data/ai/pages.json";
+import { postsBySection } from "../lib/posts";
+
+interface L { name: string; href: string; meta?: string }
+interface Sub { h?: string; href?: string; links: L[] }
+interface Group { id: string; h: string; href?: string; subs: Sub[] }
+
+const SITE = "https://www.mondaymarketing.company";
+// "Meta Ads Agency India for D2C and B2B Brands | MMC" -> "Meta Ads Agency India for D2C and B2B Brands"
+const clean = (t: string) => String(t || "").split(" | ")[0].trim();
+const PRIVATE = /\/(pricing-model|preview|admin|thank-you|home-previous|home-v2b?)\//;
+
+const hubMods = import.meta.glob("../data/hubs/*.json", { eager: true, import: "default" }) as Record<string, any>;
+const hubs: L[] = Object.values(hubMods)
+  .filter((d) => d && d.path && !d.noindex && !PRIVATE.test(d.path))
+  .map((d) => ({ name: clean(d.title), href: d.path }))
+  .sort((a, b) => a.href.localeCompare(b.href));
+const under = (prefix: string) => hubs.filter((h) => h.href.startsWith(prefix) && h.href !== prefix);
+const hubAt = (path: string) => hubs.find((h) => h.href === path);
+const H = heads as Record<string, { title: string }>;
+
+/* Services: the four groups of the footer proposal. A new service hub is placed by its first path segment; unknown ones join Marketing. */
+const SVC_GROUPS: { h: string; slugs: string[] }[] = [
+  { h: "Marketing", slugs: ["performance-marketing", "lead-generation", "retention-marketing", "influencer-marketing"] },
+  { h: "Search and AI visibility", slugs: ["seo", "content-marketing", "cro", "online-reputation-management"] },
+  { h: "Design and build", slugs: ["branding", "packaging-design", "ui-ux-design", "shopify-development", "web-development", "website-maintenance", "mobile-app-development"] },
+  { h: "Content and AI", slugs: ["ugc-and-video", "social-media"] },
+];
+const svcHubs: L[] = [{ name: clean(H.pm.title), href: "/services/performance-marketing/" }, ...under("/services/")]
+  .filter((l, i, a) => a.findIndex((x) => x.href === l.href) === i);
+const seg1 = (p: string) => p.split("/")[2] || "";
+const groupOf = (p: string) => { const i = SVC_GROUPS.findIndex((g) => g.slugs.includes(seg1(p))); return i < 0 ? 0 : i; };
+const rank = (p: string) => { const s = SVC_GROUPS[groupOf(p)].slugs.indexOf(seg1(p)); return s < 0 ? 99 : s; };
+const svcSubs: Sub[] = SVC_GROUPS.map((g, gi) => ({
+  h: g.h,
+  links: svcHubs.filter((l) => groupOf(l.href) === gi).sort((a, b) => rank(a.href) - rank(b.href) || a.href.localeCompare(b.href)),
+}));
+const ai = Object.values(aiPages as Record<string, any>).filter((p) => p && p.path && !PRIVATE.test(p.path))
+  .map((p) => ({ name: clean(p.title), href: p.path }))
+  .sort((a, b) => (a.href === "/ai-by-mmc/" ? -1 : b.href === "/ai-by-mmc/" ? 1 : a.href.localeCompare(b.href)));
+svcSubs[3].links.push(...ai);
+
+/* Industries: the three audiences, each with its verticals. */
+const AUD = [
+  { h: "D2C brands", path: "/industries/d2c/", fallback: clean(H.d2c.title) },
+  { h: "B2B companies", path: "/industries/b2b/" },
+  { h: "Education", path: "/industries/education/" },
+];
+const indSubs: Sub[] = AUD.map((a) => ({
+  h: a.h, href: a.path,
+  links: [{ name: hubAt(a.path)?.name || a.fallback || a.h, href: a.path }, ...under(a.path)],
+}));
+
+/* White label: the hub, every white-label page, then registration. */
+const wl: L[] = [...(hubAt("/white-label/") ? [hubAt("/white-label/")!] : []), ...under("/white-label/"),
+  { name: "Register as a white-label partner", href: "/white-label/register/" }];
+
+/* Work: the case studies, in the /work/ filter order. */
+const work: L[] = [{ name: "All case studies", href: "/work/" },
+  ...CASES.filter((c) => c.href).map((c) => ({ name: `${c.name} case study`, href: c.href!, meta: c.label }))];
+
+/* Company: careers with its open roles, locations with its city pages. */
+const roles = (rolesData as any).roles as { slug: string; title: string; location: string }[];
+const locations: L[] = [hubAt("/locations/") || { name: "Locations", href: "/locations/" }, ...under("/locations/")];
+
+const groups: Group[] = [
+  { id: "services", h: "Services", href: "/services/", subs: [
+    { links: [{ name: clean(H.services.title), href: "/services/" }] }, ...svcSubs] },
+  { id: "industries", h: "Industries", href: "/industries/", subs: [
+    { links: [hubAt("/industries/") || { name: "All industries", href: "/industries/" }] }, ...indSubs] },
+  { id: "white-label", h: "White label", href: "/white-label/", subs: [{ links: wl }] },
+  { id: "work", h: "Work", href: "/work/", subs: [{ links: work }] },
+  { id: "resources", h: "Resources", href: "/resources/", subs: [
+    { links: [hubAt("/resources/") || { name: "Resources", href: "/resources/" }] },
+    { h: "Guides", href: "/guides/", links: [{ name: "All guides", href: "/guides/" }, ...GUIDES.map((g) => ({ name: g.title, href: g.href })),
+      ...postsBySection("guides").map((p) => ({ name: p.title, href: p.path }))] },
+    // Command Centre blog (Phase 4): only when /blog/ exists (at least one indexable post). Noindex posts are never listed.
+    ...(postsBySection("blog").length ? [{ h: "Blog", href: "/blog/", links: [{ name: "All posts", href: "/blog/" }, ...postsBySection("blog").map((p) => ({ name: p.title, href: p.path }))] }] : []),
+    { h: "Calculators", href: "/tools/", links: [{ name: "All D2C calculators", href: "/tools/" }, ...TOOLS.map((t) => ({ name: t.long, href: t.href }))] },
+    { h: "Glossary", href: "/glossary/", links: [{ name: "D2C marketing glossary", href: "/glossary/" }] },
+  ] },
+  { id: "company", h: "Company", href: "/about/", subs: [
+    { links: [{ name: "Home", href: "/" }, { name: "About MMC", href: "/about/" }, { name: "Contact MMC", href: "/contact/" }] },
+    { h: "Careers", href: "/careers/", links: [{ name: "Careers at MMC", href: "/careers/" }, ...roles.map((r) => ({ name: `${r.title}, ${r.location}`, href: `/careers/${r.slug}/` }))] },
+    { h: "Locations", href: "/locations/", links: locations },
+  ] },
+  { id: "legal", h: "Legal and audit", subs: [{ links: [
+    { name: "Privacy policy", href: "/privacy/" },
+    { name: "Terms of use", href: "/terms/" },
+    { name: clean(H.audit.title), href: "/audit/" },
+  ] }] },
+];
+// Belt and braces: nothing private ever renders, whatever the data says.
+for (const g of groups) for (const s of g.subs) s.links = s.links.filter((l) => !PRIVATE.test(l.href));
+
+const title = "Sitemap | Monday Marketing Company";
+const description = "Every public page on the Monday Marketing Company site in one place: services, industries, white label, case studies, guides, calculators, careers and legal.";
+const path = "/sitemap/";
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": `${SITE}${path}#breadcrumb`, itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+    { "@type": "ListItem", position: 2, name: "Sitemap", item: `${SITE}${path}` },
+  ] },
+  { "@context": "https://schema.org", "@type": "WebPage", "@id": `${SITE}${path}#webpage`, url: `${SITE}${path}`, name: title, description,
+    isPartOf: { "@id": `${SITE}/#website` }, breadcrumb: { "@id": `${SITE}${path}#breadcrumb` }, publisher: { "@id": `${SITE}/#organization` }, inLanguage: "en" },
+];
+---
+<BaseLayout title={title} description={description} path={path} jsonld={jsonld}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app smp">
+      <section class="smp-hero">
+        <div class="n-wrap">
+          <nav class="smp-crumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li><span aria-current="page">Sitemap</span></li>
+            </ol>
+          </nav>
+          <h1 class="smp-h1">Sitemap</h1>
+          <p class="smp-lede">Every public page on the site, grouped the way the menu is: what we do, who we do it for, the work, the free resources and the company behind it.</p>
+          <nav class="smp-jump" aria-label="Sitemap sections">
+            {groups.map((g) => <a href={`#${g.id}`}>{g.h}</a>)}
+          </nav>
+        </div>
+      </section>
+
+      <div class="smp-body">
+        <div class="n-wrap">
+          {groups.map((g) => (
+            <section class="smp-grp" id={g.id} aria-labelledby={`smp-${g.id}`}>
+              <h2 class="smp-h2" id={`smp-${g.id}`}>{g.href ? <a href={g.href}>{g.h}</a> : g.h}</h2>
+              <div class="smp-cols">
+                {g.subs.map((s) => (
+                  <div class={"smp-sub" + (s.links.length > 8 ? " smp-sub--long" : "")}>
+                    {s.h && <h3 class="smp-h3">{s.h}</h3>}
+                    <ul class="smp-list">
+                      {s.links.map((l) => (
+                        <li><a href={l.href}>{l.name}</a>{l.meta && <span class="smp-meta">{l.meta}</span>}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </div>
+    </main>
+  </Shell>
+</BaseLayout>

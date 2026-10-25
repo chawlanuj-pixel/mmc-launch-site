@@ -1,0 +1,56 @@
+---
+// PANEL: AiStudio (kind "AiStudio"). White-label AI production, shown as an agency would see it. No platform mark. 4 steps.
+//   1 Brief: the client's brand rules (voice, do, do not, product images) saved once. Tab: Brief.
+//   2 Drafts: four drafts generated from the same brief, as plain shaded tiles. Tab: Drafts.
+//   3 Review: one draft with two review comments from a person and an Approve state. Tab: Review.
+//   4 Handover: final files in the agency's template plus a usage note. Tab: Handover.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix ais-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="AI studio" label="Illustration of an AI production desk: brief, drafts, human review and handover. Not a client project." caption={W.illustrative} tabs={["Brief", "Drafts", "Review", "Handover"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Client brief <span>Brand rules saved once</span></p>
+    <div class="ais-brief">
+      {[["Voice", "Warm, plain, no hype"], ["Do", "Show the product in use"], ["Do not", "Invent claims or badges"]].map(([k, v]) => <div class="s2p-card ais-row"><p class="s2p-lbl">{k}</p><b>{v}</b></div>)}
+      <div class="ais-imgs" aria-hidden="true"><i></i><i></i><i></i><em class="s2p-chip s2p-chip--blue">Product images</em></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Drafts <span>Four takes from one brief</span></p>
+    <div class="ais-grid" aria-hidden="true">{["A", "B", "C", "D"].map((d, k) => <div class={"ais-tile ais-tile--" + k}><em class="s2p-chip">Draft {d}</em></div>)}</div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Human review <span>Checked before it leaves us</span></p>
+    <div class="ais-rev">
+      <div class="ais-big ais-tile ais-tile--1" aria-hidden="true"><span class="ais-mark ais-mark--1">1</span><span class="ais-mark ais-mark--2">2</span></div>
+      <ul class="ais-notes">
+        <li class="s2p-card"><span class="ais-n">1</span><b>Label text unclear</b><em class="s2p-chip s2p-chip--warn">Fixed</em></li>
+        <li class="s2p-card"><span class="ais-n">2</span><b>Hands look off</b><em class="s2p-chip s2p-chip--warn">Redone</em></li>
+        <li class="s2p-card"><b>Matches brand rules</b><em class="s2p-chip s2p-chip--ok">Approved</em></li>
+      </ul>
+    </div>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Handover <span>In your format, ready to send on</span></p>
+    <ul class="ais-files">
+      {[["Final images", "Your folder structure"], ["Video cuts", "Named to your template"], ["Usage note", "What is AI-made, for your client"]].map(([a, b]) => <li class="s2p-card"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2h7l4 4v12H5z M12 2v4h4" /></svg><span><b>{a}</b><small class="s2p-mute">{b}</small></span><em class="s2p-chip s2p-chip--ok">Ready</em></li>)}
+    </ul>
+  </div>
+</Frame>
+<style is:global>
+.ais-brief { flex: 1; min-height: 0; display: grid; gap: .6em; align-content: space-evenly; }
+.ais-row { display: grid; grid-template-columns: 6em minmax(0, 1fr); align-items: center; gap: .6em; padding-block: .5em; } .ais-row b { font: 800 .98em var(--font-body); }
+.ais-imgs { display: flex; align-items: center; gap: .5em; } .ais-imgs i { width: 3.4em; height: 2.6em; border-radius: .5em; background: linear-gradient(135deg, #CFE0FF, #F2F6FF); border: 1px solid #DADDE1; } .ais-imgs em { margin-left: auto; }
+.ais-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: minmax(0, 1fr); gap: .7em; }
+.ais-tile { position: relative; border-radius: .8em; border: 1px solid #DADDE1; display: flex; align-items: flex-end; padding: .5em; background: linear-gradient(135deg, #DCE8FF, #F7F9FF); }
+.ais-tile--1 { background: linear-gradient(160deg, #FFE9A8, #FFF8E0); } .ais-tile--2 { background: linear-gradient(135deg, #D6F0E0, #F2FBF5); } .ais-tile--3 { background: linear-gradient(200deg, #E4DCFF, #F6F3FF); }
+.ais-rev { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: .8em; }
+.ais-big { min-height: 0; } .ais-mark { position: absolute; width: 1.7em; height: 1.7em; border-radius: 50%; background: #1C2B33; color: #fff; display: grid; place-items: center; font: 800 .85em var(--font-display); box-shadow: 0 0 0 .25em rgba(255,255,255,.8); } .ais-mark--1 { left: 24%; top: 26%; } .ais-mark--2 { right: 22%; top: 55%; }
+.ais-notes { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; align-content: center; } .ais-notes li { display: flex; align-items: center; gap: .6em; padding-block: .5em; } .ais-notes b { margin-right: auto; font: 800 .92em/1.25 var(--font-body); }
+.ais-n { flex: none; width: 1.6em; height: 1.6em; border-radius: 50%; background: #1C2B33; color: #fff; display: grid; place-items: center; font: 800 .8em var(--font-display); }
+.ais-files { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .7em; align-content: space-evenly; } .ais-files li { display: flex; align-items: center; gap: .8em; padding-block: .7em; } .ais-files li > span { display: grid; margin-right: auto; min-width: 0; } .ais-files b { font: 800 .98em var(--font-body); } .ais-files svg { width: 1.5em; flex: none; fill: none; stroke: var(--mmc-blue); stroke-width: 1.6; stroke-linejoin: round; }
+@media (max-width: 560px) { .ais-row { grid-template-columns: 4.6em minmax(0, 1fr); } .ais-imgs i:nth-child(3) { display: none; } .ais-rev { grid-template-columns: 1fr; grid-template-rows: minmax(4em, 1fr) auto; } .ais-files small { display: none; } }
+@media (max-width: 900px) { .s2-ui:has(.ais-brief) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

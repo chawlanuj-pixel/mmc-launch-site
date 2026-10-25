@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Shell from "../../components/Shell.astro";
+import PageFx from "../../components/pages/PageFx.astro";
+import ToolExplainer from "../../components/shared/ToolExplainer.astro";
+import PreFooterCta from "../../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../../components/shared/StickyBookingBar.astro";
+import { TOOL_CLOSINGS } from "../../lib/prefooter";
+import "../../styles/tools.css";
+import { metaHead } from "../../lib/metaHead";
+import { GrowthTrajectory } from "../../islands/tools/GrowthTrajectory.jsx";
+---
+<BaseLayout {...metaHead("tools__growth-trajectory", "/tools/growth-trajectory/")}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main"><GrowthTrajectory client:load />
+      <ToolExplainer slug="growth-trajectory" />
+      <PreFooterCta source="tool-growth-trajectory" eyebrow="Next step" {...TOOL_CLOSINGS["growth-trajectory"]} />
+    </main>
+    <StickyBookingBar source="tool-growth-trajectory" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

@@ -1,0 +1,62 @@
+---
+// Selected work: the whole portfolio reached by scrolling. Desktop pins the section and turns vertical
+// scroll into horizontal travel (CSS sticky + a small rAF handler in scripts/work-rail.ts), then releases
+// it. Phones, tablets, touch, short or reduced-motion screens get a plain vertical stack of the same cards.
+// Styles: styles/work-rail.css (wk- prefix). The section id stays "work"; the skip control targets #voices.
+import "../../styles/work-rail.css";
+
+import { railBrands, tagsFor } from "../../lib/work";
+
+interface Project { id: string; name: string; tags: string[]; href?: string | null; }
+interface Props { projects?: Project[]; nextId?: string; allHref?: string; }
+
+/* The cards come from the one client book (work-clients.json, home.rail): name, tags and the case-study link are read, never typed here.
+   A card links (and shows "View") only when /work/<id>/ exists. */
+const DEFAULTS: Project[] = railBrands().map((b) => ({ id: b.id, name: b.name, tags: tagsFor(b.id, true), href: b.href }));
+const { projects = DEFAULTS, nextId = "voices", allHref = "/work/" } = Astro.props as Props;
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+const down = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>`;
+---
+<section class="wk no-section-bg" id="work" data-wk data-wk-next={nextId} aria-labelledby="wk-title">
+  <div class="wk__pin" data-wk-pin>
+    <div class="wk__head hn-wrap">
+      <div class="wk__title">
+        <p class="hn-eyebrow">Selected work</p>
+        <h2 id="wk-title">Real projects, <em>shown properly.</em></h2>
+      </div>
+      <a class="wk__skip" href={"#" + nextId} data-wk-skip>Skip to next section<Fragment set:html={down} /></a>
+    </div>
+    <div class="wk__view" data-wk-view>
+      <ul class="wk__track" data-wk-track>
+        {projects.map((c, i) => (
+          <li class="wk__item">
+            {c.href ? (
+              <a class="wk__card" href={c.href} data-wk-card>
+                <img src={`/assets/clients/${c.id}-work.jpg`} alt={c.name + " project"} loading={i < 2 ? "eager" : "lazy"} decoding="async" width="1280" height="720" />
+                <span class="wk__tags">{c.tags.map((t) => <span>{t}</span>)}</span>
+                <span class="wk__foot"><b>{c.name}</b><span class="wk__view-cta">View<Fragment set:html={arrow} /></span></span>
+              </a>
+            ) : (
+              <div class="wk__card" data-wk-card style="cursor:default">
+                <img src={`/assets/clients/${c.id}-work.jpg`} alt={c.name + " project"} loading={i < 2 ? "eager" : "lazy"} decoding="async" width="1280" height="720" />
+                <span class="wk__tags">{c.tags.map((t) => <span>{t}</span>)}</span>
+                <span class="wk__foot"><b>{c.name}</b></span>
+              </div>
+            )}
+          </li>
+        ))}
+        <li class="wk__item wk__item--end">
+          <a class="wk__card wk__card--end" href={allHref} data-wk-card>
+            <span class="wk__end-eyebrow">The full portfolio</span>
+            <b>Every project, in one place.</b>
+            <span class="wk__end-cta">See all our work<Fragment set:html={arrow} /></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="wk__bar hn-wrap" aria-hidden="true"><span class="wk__line"><i data-wk-fill></i></span></div>
+  </div>
+</section>
+<script>
+  import "../../scripts/work-rail";
+</script>

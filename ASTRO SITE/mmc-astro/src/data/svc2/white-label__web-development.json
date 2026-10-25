@@ -1,0 +1,223 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "company/technology.jpg",
+    "pos": "50% 50%",
+    "alt": "A developer building a storefront on a desk.",
+    "facts": [
+      {
+        "t": "Built from your designs.",
+        "d": "We take your approved files and produce working code."
+      },
+      {
+        "t": "Tested before it reaches you.",
+        "d": "Staging, testing and notes arrive before your client does."
+      },
+      {
+        "t": "Documented for whoever is next.",
+        "d": "Your team or another partner can pick it up."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their builds to MMC"
+  },
+  "work": {
+    "panel": "WebBuild",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do when you hand us",
+    "h2b": "approved designs.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Check the plan against the designs.",
+        "d": "We read your sitemap and designs first and list gaps, so questions reach you before the build, not during it."
+      },
+      {
+        "n": "02",
+        "t": "Build in reusable blocks on a staging site.",
+        "d": "Clean templates on a private staging link that you review, so nothing half-done reaches your client."
+      },
+      {
+        "n": "03",
+        "t": "Test speed, access and structure.",
+        "d": "Speed, accessibility, titles and structured data are checked as part of the build, then noted in the handover."
+      },
+      {
+        "n": "04",
+        "t": "Launch and wire forms to the client's CRM.",
+        "d": "Forms, tracking and handover notes go live together, and the site ships with an editing guide for your client."
+      }
+    ],
+    "illustrative": "Illustrative layout of a site build, from sitemap to launch. Not a client site, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "Build hand-off",
+    "pinsLabel": "Five places white-label web development slips",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "route",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Designs"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Staging"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Deadlines"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Code"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Changes"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "doc",
+        "head": "Designs",
+        "lines": [
+          "Gaps found mid-build",
+          "Rework"
+        ],
+        "chip": "Late",
+        "tone": "b"
+      },
+      {
+        "glyph": "layers",
+        "head": "Staging",
+        "lines": [
+          "Changes made live",
+          "Client sees bugs"
+        ],
+        "chip": "Exposed",
+        "tone": "b"
+      },
+      {
+        "glyph": "clock",
+        "head": "Deadline",
+        "lines": [
+          "Slip told on the day",
+          "Client chasing you"
+        ],
+        "chip": "Silent",
+        "tone": "w"
+      },
+      {
+        "glyph": "code",
+        "head": "Code",
+        "lines": [
+          "Only one developer knows it",
+          "No notes"
+        ],
+        "chip": "Fragile",
+        "tone": "w"
+      },
+      {
+        "glyph": "coin",
+        "head": "Changes",
+        "lines": [
+          "Post-launch asks",
+          "Not in scope"
+        ],
+        "chip": "Unbilled",
+        "tone": "w"
+      }
+    ],
+    "base": "Plan, staging, build, notes, launch",
+    "artLabel": "Five stations on a hand-off line showing where white-label web development slips: designs, staging, deadlines, code and changes.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for web development,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and build scope",
+        "d": "We sign the NDA, review your designs and write the build scope, platform and handover list.",
+        "get": "A written build scope you can share.",
+        "img": "contact/call.jpg",
+        "alt": "A scoping call between an agency lead and a delivery partner.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot build",
+        "d": "One small site or a single template, built on staging to your standards.",
+        "get": "A staging link and notes to judge the way we work.",
+        "img": "app/build.jpg",
+        "alt": "A developer building at a desk with a phone prototype.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Design handoff format, staging, QA checklist and release steps are written down once.",
+        "get": "A short build runbook for your team.",
+        "img": "company/onepage.jpg",
+        "alt": "A runbook being written on a notepad.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the build queue",
+        "d": "More sites go through the same flow, with developers added as your pipeline fills.",
+        "get": "A build capacity you can promise clients.",
+        "img": "shop/speed.jpg",
+        "alt": "A page speed report on a laptop.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "careers2/studio-wide.jpg",
+    "alt": "A studio team working around a shared table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label WordPress",
+        "href": "/white-label/wordpress-development/"
+      },
+      {
+        "n": "White-label website maintenance",
+        "href": "/white-label/website-maintenance/"
+      },
+      {
+        "n": "Web development",
+        "href": "/services/web-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

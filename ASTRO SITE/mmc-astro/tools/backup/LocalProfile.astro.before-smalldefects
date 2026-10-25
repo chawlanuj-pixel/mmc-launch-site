@@ -1,0 +1,58 @@
+---
+// PANEL: LocalProfile (kind "LocalProfile"). A Google Business Profile card beside a map pack, no platform mark (generic layout,
+// no real business). 5 steps. Registered as "LocalProfile" with 5 steps (see V2-SVC2-REGISTRY-searchai.txt).
+//   1 Claim: two duplicate listings on the map and in the list are merged into one, the card gets "Owner verified". Tab: Profile.
+//   2 Categories and services: a primary category, secondary categories and a short services list fill in. Tab: Info.
+//   3 Details: hours, holiday hours, a photo strip and a recent post fill in. Tab: Photos.
+//   4 Reviews: a review appears with a drafted reply; a review request link is shown. Tab: Reviews.
+//   5 Local page and report: the website button points to a location page; calls, directions and enquiries chips show. Tab: Report.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix lp-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+---
+<Frame title="Business Profile" label="Illustration of a business profile card beside a map with local results. Not a real business." caption={W.illustrative} tabs={["Profile", "Info", "Photos", "Reviews", "Report"]} tabFor={[0, 1, 2, 3, 4]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1 s2-st--2 s2-st--3 s2-st--4 s2-st--5 lp">
+    <div class="lp-q"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="M13 13l5 5" /></svg><span>sports store near me</span></div>
+    <div class="lp-grid">
+      <div class="lp-map" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 70 C 25 60, 40 80, 100 55 M30 0 C 35 30, 55 40, 50 100 M0 25 L100 40" /></svg>
+        <span class="lp-mk" style="left:40%;top:42%"></span>
+        <span class="lp-mk lp-mk--dup s2p-only-1" style="left:50%;top:50%"></span>
+        <span class="lp-mk lp-mk--dim" style="left:70%;top:68%"></span>
+        <span class="lp-mk lp-mk--dim" style="left:22%;top:72%"></span>
+        <small class="lp-tag s2p-only-1">Duplicate</small>
+      </div>
+      <div class="s2p-card lp-card s2p-hl-1 s2p-hl-2 s2p-hl-3 s2p-hl-4 s2p-hl-5">
+        <div class="lp-head"><b class="lp-name">Your store</b><em class="s2p-chip s2p-chip--warn s2p-only-1">Duplicate listing</em><em class="s2p-chip s2p-chip--ok s2p-from-2 lp-own">Owner verified</em></div>
+        <div class="lp-row s2p-from-2"><span class="s2p-chip s2p-chip--blue">Sports store</span><span class="s2p-chip">Shoe shop</span><span class="s2p-chip">Kids apparel</span></div>
+        <ul class="lp-svc s2p-from-2"><li>Running shoes</li><li>Fitting help</li><li>Pickup</li></ul>
+        <div class="lp-row s2p-from-3"><span class="lp-hrs">Open today, holiday hours set</span><span class="lp-ph"><i></i><i></i><i></i></span></div>
+        <p class="lp-post s2p-from-3"><span class="s2p-lbl">Post</span> New season range is in store.</p>
+        <div class="lp-rev s2p-from-4"><span class="lp-st" aria-hidden="true">★★★★★</span><span>Great help picking a pair.</span><em class="s2p-chip s2p-chip--ok">Reply drafted</em></div>
+        <div class="lp-row s2p-from-5"><span class="lp-btn">Website</span><span class="s2p-chip">Location page</span><span class="s2p-chip s2p-chip--blue">Calls</span><span class="s2p-chip s2p-chip--blue">Directions</span><span class="s2p-chip s2p-chip--blue">Enquiries</span></div>
+      </div>
+    </div>
+  </div>
+</Frame>
+<style is:global>
+.s2-st.lp { gap: .8em; }
+.lp-q { display: flex; align-items: center; gap: .7em; padding: .6em 1em; border: 1px solid #DADDE1; border-radius: 99px; box-shadow: 0 .2em .6em -.3em rgba(0, 0, 0, .25); font: 600 1em var(--font-body); color: #1C2B33; flex: none; }
+.lp-q svg { width: 1.2em; height: 1.2em; fill: none; stroke: #65676B; stroke-width: 2; stroke-linecap: round; flex: none; }
+.lp-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: 38% 1fr; gap: .9em; }
+.lp-map { position: relative; border-radius: .9em; overflow: hidden; background: #E7EEF9; border: 1px solid #DADDE1; }
+.lp-map svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: #fff; stroke-width: 6; vector-effect: non-scaling-stroke; }
+.lp-mk { position: absolute; width: 1.5em; height: 1.5em; margin: -1.5em 0 0 -.75em; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--mmc-blue); box-shadow: 0 0 0 .2em #fff; }
+.lp-mk--dup { background: #B42318; } .lp-mk--dim { background: #9DB8F7; }
+.lp-tag { position: absolute; left: .6em; bottom: .6em; padding: .2em .6em; border-radius: 99px; background: #FDE8E8; color: #B42318; font: 800 .72em var(--font-body); text-transform: uppercase; letter-spacing: .04em; }
+.lp-card { display: flex; flex-direction: column; gap: .6em; min-height: 0; overflow: hidden; }
+.lp-head { display: flex; align-items: center; flex-wrap: wrap; gap: .5em; } .lp-name { font: 800 1.15em var(--font-display); color: #1C2B33; margin-right: auto; }
+.lp-row { display: flex; align-items: center; flex-wrap: wrap; gap: .4em; }
+.lp-svc { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3em .9em; font: 600 .85em var(--font-body); color: #47506A; } .lp-svc li::before { content: "+ "; color: var(--mmc-blue); font-weight: 800; }
+.lp-hrs { padding: .25em .7em; border-radius: .5em; background: #E3F6E9; color: #1B7A3D; font: 800 .75em var(--font-body); }
+.lp-ph { display: flex; gap: .4em; margin-left: auto; } .lp-ph i { width: 2.4em; height: 1.8em; border-radius: .4em; background: #CBD3E4; } .lp-ph i:nth-child(2) { background: #B9C9F2; }
+.lp-post { margin: 0; font: 600 .85em/1.35 var(--font-body); color: #1C2B33; } .lp-post .s2p-lbl { margin-right: .5em; }
+.lp-rev { display: flex; align-items: center; flex-wrap: wrap; gap: .5em; font: 600 .85em var(--font-body); color: #1C2B33; } .lp-st { color: #E8A100; letter-spacing: 1px; }
+.lp-btn { padding: .45em 1.1em; border-radius: 99px; background: var(--mmc-blue); color: #fff; font: 800 .8em var(--font-body); }
+@media (max-width: 560px) { .lp-grid { grid-template-columns: 1fr; grid-template-rows: 22% 1fr; } .lp-svc, .lp-post { display: none; } .lp-ph i { width: 1.6em; } }
+</style>

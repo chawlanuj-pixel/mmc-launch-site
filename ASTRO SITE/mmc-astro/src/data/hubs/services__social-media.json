@@ -1,0 +1,471 @@
+{
+  "file": "social-media-creatives.html",
+  "path": "/services/social-media/",
+  "key": "social",
+  "title": "Social Media Creatives Agency for D2C and B2B | MMC",
+  "description": "Social media creatives agency for D2C, B2B and education brands: content pillars, statics, carousels and short video for paid and organic social.",
+  "ogTitle": "Social media creatives that keep a brand present",
+  "ogDescription": "Content pillars, designed posts and short video.",
+  "ogAlt": "Monday Marketing Company: social media creatives.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/social-media-creatives.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Social media creatives",
+          "item": "https://www.mondaymarketing.company/social-media-creatives.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/social-media-creatives.html#webpage",
+      "url": "https://www.mondaymarketing.company/social-media-creatives.html",
+      "name": "Social Media Creatives Agency for D2C and B2B | MMC",
+      "description": "Social media creatives agency for D2C, B2B and education brands: content pillars, statics, carousels and short video for paid and organic social.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/social-media-creatives.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/social-media-creatives.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/social-media-creatives.html#service",
+      "name": "Social media creatives",
+      "serviceType": "Social media creatives",
+      "description": "Social media creative planning, design and short video for D2C, B2B and education brands.",
+      "url": "https://www.mondaymarketing.company/social-media-creatives.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/social-media-creatives.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is social media creative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Social media creatives are the posts, carousels, stories and short videos that a brand publishes, planned around a few themes and designed in one consistent style."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does social media creative work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We set pillars and a design style, produce on a rhythm your team can sustain, and read what earns attention so the best content can also run as paid creative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does social media creative cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee reach, followers or sales. We commit to well-made, consistent creative tied to a goal, and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is social media creative for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brands that want a consistent presence tied to results. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on creative that feeds ads, B2B on credibility and thought leadership, education on campus life and admissions moments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brand assets, product or service details, access to your social accounts, and a named person who can approve posts."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "social",
+    "wm": "Social",
+    "eyebrow": "● Social media creatives agency",
+    "h1": [
+      "Social media creatives",
+      [
+        "that ",
+        "keep your brand present",
+        "."
+      ]
+    ],
+    "sub": "Content pillars, designed posts and short video, planned on a rhythm and built to work alongside your paid media.",
+    "tiles": [
+      {
+        "img": "social/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Plan",
+        "note": "Pillars and calendar"
+      },
+      {
+        "img": "social/design.jpg",
+        "pos": "50% 50%",
+        "label": "Design",
+        "note": "Posts that look like you"
+      },
+      {
+        "img": "social/video.jpg",
+        "pos": "50% 50%",
+        "label": "Video",
+        "note": "Short and vertical"
+      },
+      {
+        "img": "social/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Learn",
+        "note": "What earns attention"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Social media creative is the work of planning and producing the posts, carousels and short videos that keep a brand visible and consistent where its audience spends time. MMC produces it for D2C, B2B and education brands, set around a few content pillars and one design style, on a rhythm your team can sustain.",
+      "hl": "visible and consistent",
+      "who": "Monday Marketing Company (MMC) produces social media creatives for D2C, B2B and education brands.",
+      "points": [
+        {
+          "icon": "grid",
+          "title": "Planned pillars",
+          "text": "A few clear themes, so the feed says something."
+        },
+        {
+          "icon": "layers",
+          "title": "Designed to match",
+          "text": "Posts and carousels in one consistent visual style."
+        },
+        {
+          "icon": "loop",
+          "title": "Works with paid",
+          "text": "The best posts become ads, and ad results shape what we post."
+        }
+      ],
+      "image": "social/design.jpg",
+      "chip": "Consistent, on a rhythm"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where social media goes wrong",
+      "h2a": "Five ways social media",
+      "h2b": "goes wrong.",
+      "lede": "Social works when it is planned and consistent. Each stage below is where feeds lose people, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Choose your pillars",
+        "tag": "Content strategy",
+        "breaks": "Posting whatever comes to mind.",
+        "why": "A feed with no themes gives followers no reason to expect anything from you.",
+        "does": "We define a few content pillars tied to what your audience cares about, and plan a calendar around them.",
+        "href": "services.html#content",
+        "img": "social/plan.jpg"
+      },
+      {
+        "k": "Design for the feed",
+        "tag": "Design and carousels",
+        "breaks": "Posts that look different every time.",
+        "why": "Consistency is what makes a brand recognisable in a fast scroll.",
+        "does": "We design posts, carousels and templates in one visual style that is recognisably yours.",
+        "href": "branding.html",
+        "img": "social/design.jpg"
+      },
+      {
+        "k": "Add short video",
+        "tag": "Short-form video",
+        "breaks": "Relying on static posts alone.",
+        "why": "Short vertical video is a large part of what people watch, and it gives a brand a human face.",
+        "does": "We plan and produce short vertical videos, from scripts to edits, for the formats each platform favours.",
+        "href": "ugc-and-video.html",
+        "img": "social/video.jpg"
+      },
+      {
+        "k": "Keep a rhythm",
+        "tag": "Publishing calendar",
+        "breaks": "Bursts of posting followed by silence.",
+        "why": "Irregular posting makes a brand feel inactive and weakens the habit of following you.",
+        "does": "We plan a realistic publishing rhythm that your team and ours can sustain.",
+        "href": "services.html#content",
+        "img": "social/calendar.jpg"
+      },
+      {
+        "k": "Learn what works",
+        "tag": "Analytics and iteration",
+        "breaks": "Counting likes and stopping there.",
+        "why": "Likes do not show whether social supports the business. Reach, saves, clicks and enquiries say more.",
+        "does": "We review what earns attention and action, and use it to shape the next round, including which posts to turn into ads.",
+        "href": "performance-marketing.html",
+        "img": "social/insights.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "social is working.",
+      "note": "Read alongside your business results.",
+      "cards": [
+        {
+          "n": "Reach among the right audience",
+          "d": "Whether the people seeing it are the ones you want."
+        },
+        {
+          "n": "Saves and shares",
+          "d": "Whether people find it worth keeping or passing on."
+        },
+        {
+          "n": "Clicks and enquiries",
+          "d": "What social sends to the business."
+        },
+        {
+          "n": "Posting consistency",
+          "d": "Whether the rhythm holds."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where social media creatives fit in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "UGC and video",
+          "d": "Creator-style video made to run as ads and refreshed before it tires.",
+          "img": "ugc/shoot.jpg",
+          "href": "ugc-and-video.html",
+          "link": "See UGC and video"
+        },
+        {
+          "n": "Branding",
+          "d": "Positioning, naming, logo, voice and guidelines.",
+          "img": "brand/logo.jpg",
+          "href": "branding.html",
+          "link": "See Branding"
+        },
+        {
+          "n": "Meta Ads",
+          "d": "Instagram and Facebook campaigns built as one funnel.",
+          "img": "meta/creative.jpg",
+          "href": "meta-ads.html",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "Content marketing",
+          "d": "Strategy, writing and distribution built around buyer questions.",
+          "img": "sv/content.jpg",
+          "href": "/services/content-marketing/",
+          "link": "See Content marketing"
+        },
+        {
+          "n": "White-label social media",
+          "d": "Calendars and posts behind your brand.",
+          "img": "social/calendar.jpg",
+          "href": "/white-label/social-media-management/",
+          "link": "See white-label social media management"
+        },
+        {
+          "n": "White-label creative and video",
+          "d": "Design, video and UGC behind your brand.",
+          "img": "ugc/edit.jpg",
+          "href": "/white-label/creative-and-video/",
+          "link": "See white-label creative and video"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "social media creative."
+    ],
+    "faq": [
+      {
+        "q": "What is social media creative?",
+        "a": "Social media creatives are the posts, carousels, stories and short videos that a brand publishes, planned around a few themes and designed in one consistent style."
+      },
+      {
+        "q": "How does social media creative work with MMC?",
+        "a": "We set pillars and a design style, produce on a rhythm your team can sustain, and read what earns attention so the best content can also run as paid creative."
+      },
+      {
+        "q": "What does social media creative cost?",
+        "a": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee reach, followers or sales. We commit to well-made, consistent creative tied to a goal, and honest reporting."
+      },
+      {
+        "q": "Who is social media creative for?",
+        "a": "Brands that want a consistent presence tied to results. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on creative that feeds ads, B2B on credibility and thought leadership, education on campus life and admissions moments."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Brand assets, product or service details, access to your social accounts, and a named person who can approve posts."
+      }
+    ],
+    "cta": {
+      "h2a": "See what your feed",
+      "h2b": "could say.",
+      "lede": "On a call, with a senior strategist. We look at your social presence and your audience together."
+    },
+    "proof": {
+      "codes": [
+        "social"
+      ],
+      "does": "make social content for"
+    },
+    "process": {
+      "h2a": "How we run social creatives,",
+      "h2b": "month to month.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Set pillars and style",
+          "d": "We choose a few themes and one consistent design style.",
+          "out": "A content plan and a look."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Produce on a rhythm",
+          "d": "Posts, carousels and short video go out on a rhythm your team can sustain.",
+          "out": "A steady, consistent feed."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Learn and reuse",
+          "d": "We read what earns attention and turn the best into paid creative.",
+          "out": "A feed that gets sharper each month."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Social creatives for brands that",
+      "h2b": "want it to do a job.",
+      "good": {
+        "t": "You want a consistent, well-made presence that supports sales or enquiries.",
+        "why": "D2C brands get creative that feeds ads, and B2B and education brands get credibility families and buyers see. See <a href=\"/industries/education/\">education marketing</a>."
+      },
+      "not": {
+        "t": "You want posting only, with no performance goal.",
+        "why": "Content with no job rarely pays back, so we tie it to a goal."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What social media",
+      "h2b": "covers.",
+      "lede": "Six parts of a feed that builds trust and sends people to act.",
+      "items": [
+        {
+          "t": "Content pillars",
+          "d": "A few themes that fit your brand and what your audience wants to see.",
+          "img": "social/plan.jpg",
+          "alt": "Content pillars"
+        },
+        {
+          "t": "Feed design",
+          "d": "Templates and visuals that look like you at a glance.",
+          "img": "social/design.jpg",
+          "alt": "Feed design"
+        },
+        {
+          "t": "Short video",
+          "d": "Reels and short clips planned, shot and edited for each platform.",
+          "img": "social/video.jpg",
+          "alt": "Short video"
+        },
+        {
+          "t": "Content calendar",
+          "d": "A steady rhythm that your team can see and approve ahead of time.",
+          "img": "social/calendar.jpg",
+          "alt": "Content calendar"
+        },
+        {
+          "t": "Community care",
+          "d": "Timely replies to comments and messages.",
+          "img": "social/insights.jpg",
+          "alt": "Community care"
+        },
+        {
+          "t": "Insights and review",
+          "d": "What worked, what did not and what we will change next month.",
+          "img": "services/creative.jpg",
+          "alt": "Insights and review"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands work on social",
+      "h2b": "with MMC.",
+      "lede": "We connect organic content to what your paid and search teams learn.",
+      "img": "social/video.jpg",
+      "alt": "Why brands work on social with MMC.",
+      "items": [
+        {
+          "t": "One idea, many formats",
+          "d": "A single brand idea carried through posts, reels and stories."
+        },
+        {
+          "t": "Paid and organic aligned",
+          "d": "Strong organic posts become ads, and ad insights shape what we post."
+        },
+        {
+          "t": "Approval you can keep up with",
+          "d": "A calendar that fits the way your team reviews work."
+        },
+        {
+          "t": "Fits each audience",
+          "d": "Brand community for D2C, thought leadership for B2B and campus life for education."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

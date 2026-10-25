@@ -1,0 +1,31 @@
+---
+// Lead quality for B2B and education: the CRM to Meta Conversions API loop, on ink, beside the CRM photo.
+import Pic from "./Pic.astro";
+interface Props { L: any; id?: string }
+const { L, id = "quality" } = Astro.props;
+---
+<section class="n-band n-band--ink" id={id}>
+  <div class="n-wrap">
+    <div class="h2-loop">
+      <div class="h2-loop__media h2-rv">
+        <Pic src={L.img} alt={L.imgCaption || ""} />
+        {L.imgCaption && <p class="h2-note">{L.imgCaption}</p>}
+      </div>
+      <div class="h2-rv">
+        <header class="h2-head" style="margin-bottom:clamp(20px,2.4vw,32px)">
+          <span class="n-eyebrow">{L.eyebrow}</span>
+          <h2 class="n-h2">{L.h2a} <span class="n-serif">{L.h2b}</span></h2>
+          <p class="n-lede">{L.lede}</p>
+        </header>
+        <ol>{L.steps.map((s: any) => <li><b>{s.k}</b><span>{s.d}</span></li>)}</ol>
+        {L.returnLabel && <p class="h2-loop__ret">{L.returnLabel}.</p>}
+        {L.without && L.with && (
+          <div class="h2-vs">
+            <div><b>{L.without.t}</b><p>{L.without.d}</p></div>
+            <div><b>{L.with.t}</b><p>{L.with.d}</p></div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

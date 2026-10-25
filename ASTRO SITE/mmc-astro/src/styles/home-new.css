@@ -1,0 +1,3 @@
+/* Home page: small additions on top of the shared hub styles. */
+.home-more { margin: clamp(26px, 3.2vw, 42px) 0 0; }
+.home-more .pm-textlink { color: #fff; }

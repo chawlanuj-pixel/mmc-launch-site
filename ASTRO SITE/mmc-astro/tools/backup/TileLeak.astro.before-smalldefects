@@ -1,0 +1,26 @@
+---
+// VISUAL: TileLeak (kind "TileLeak"). Five phone-style zones: the product tile, a bid across the whole app, an area without stock, the shelf signal and app data against blended sales.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Styles scoped to this file (prefix tl).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+---
+<div class="tl__row" aria-hidden="true"></div>
+<div class="tl__art" role="img" aria-label="Five zones of a quick-commerce listing: product tile, app-wide bidding, an area out of stock, stock signal and blended sales.">
+  <div class="tl__z"><span class="tl__tile"><u></u><i></i></span><small class="tl__cap">Product tile</small></div>
+  <div class="tl__z"><span class="tl__grid"><u></u><u></u><u></u><u></u><u></u><u></u></span><small class="tl__cap">App-wide bids</small></div>
+  <div class="tl__z"><span class="tl__map"><u class="ok"></u><u class="ok"></u><u class="bad"></u><u class="ok"></u></span><small class="tl__cap">Area out of stock</small></div>
+  <div class="tl__z"><span class="tl__sig"><u style="--h:70%"></u><u style="--h:40%"></u><u style="--h:14%"></u></span><small class="tl__cap">Stock signal</small></div>
+  <div class="tl__z"><span class="tl__sig tl__sig--b"><u style="--h:34%"></u><u style="--h:80%"></u></span><small class="tl__cap">App vs total</small></div>
+</div>
+<style is:global>
+.tl__row { height: 78px; }
+.tl__art { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2%; height: clamp(190px, 26vw, 320px); }
+.tl__z { position: relative; display: grid; align-content: center; justify-items: center; padding: 12px 12px 34px; border: 1px solid var(--s2-line); border-radius: 18px; background: #fff; min-width: 0; }
+.tl__tile { display: grid; gap: 8px; width: 70%; padding: 8px; border: 1px solid #DADDE1; border-radius: 12px; } .tl__tile u { display: block; aspect-ratio: 1.2; border-radius: 8px; background: linear-gradient(135deg, #EFE7FD, #6D28D9); } .tl__tile i { display: block; height: 8px; width: 60%; border-radius: 99px; background: #DADDE1; }
+.tl__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; width: 80%; } .tl__grid u { aspect-ratio: 1; border-radius: 6px; background: #EFE7FD; } .tl__grid u:nth-child(2) { background: #6D28D9; }
+.tl__map { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 70%; } .tl__map u { aspect-ratio: 1.2; border-radius: 8px; background: #E3F6E9; } .tl__map u.bad { background: #FDE8E8; outline: 2px dashed #B42318; }
+.tl__sig { display: flex; align-items: flex-end; gap: 8px; width: 70%; height: 60%; min-height: 70px; } .tl__sig u { flex: 1; height: var(--h); border-radius: 6px 6px 0 0; background: #6D28D9; } .tl__sig--b u:first-child { background: #CED0D4; } .tl__sig--b u:last-child { background: var(--mmc-blue-900); }
+@media (max-width: 760px) { .tl__row { height: 58px; } .tl__art { height: 170px; } .tl__z { padding: 8px 6px; border-radius: 12px; } }
+.tl__cap { position: absolute; left: 4px; right: 4px; bottom: 10px; text-align: center; font: 800 clamp(9px, .95vw, 12px)/1.15 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--s2-mute); }
+@media (max-width: 900px) { .tl__cap { display: none; } }
+</style>

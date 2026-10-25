@@ -1,0 +1,60 @@
+---
+// Our Work / portfolio landing (work3, prefix wk3-, src/styles/work3.css). Its own hero shape: big type over an
+// edge-to-edge reel of real client artwork; then large case-study previews with no-JS filter chips, the approved
+// brand wall (logo hover-to-project, WorkWall), how we work with each kind of brand, FAQ and the closing band.
+// Every case-study preview opens its /work/<id>/ page. Previous version: tools/backup/gd3-wk3/work.astro.bak.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import Faq from "../components/hub/Faq.astro";
+import PreFooterCta from "../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
+import { SECONDARY } from "../lib/site";
+import { CASES } from "../lib/work";
+import WorkWall from "../components/work/WorkWall.astro";
+import Hero from "../components/work3/Hero.astro";
+import CaseGrid from "../components/work3/CaseGrid.astro";
+import Kinds from "../components/work3/Kinds.astro";
+import "../styles/case-study.css";
+import "../styles/work-pages.css";
+import "../styles/work3.css";
+
+const cases = CASES;
+
+const title = "Our Work: Case Studies and Brands We Work With | MMC";
+const description = "Case studies and a brand wall from Monday Marketing Company, grouped by D2C, B2B, education and other consumer brands, with the services recorded for each.";
+const SITE = "https://www.mondaymarketing.company";
+
+const faq = [
+  { q: "What kinds of brands does MMC work with?", a: 'D2C brands that sell direct to shoppers, B2B companies that win business from other businesses, and education brands that enrol students. We also work with other consumer-facing brands such as property, hospitality and mobility. See the <a href="/industries/d2c/">D2C</a>, <a href="/industries/b2b/">B2B</a> and <a href="/industries/education/">education</a> pages.' },
+  { q: "Why do some brands only show a logo, with no case study?", a: "Not every project can be shown in full. Where we can show the work, there is a case study. For the other brands we list the services we provide and stop there, rather than show work we cannot share or guess at it." },
+  { q: "Do you publish results for each brand?", a: 'Not on this page. We do not publish performance figures unless we can back them up with real, checkable numbers. The way we judge our own work is in the <a href="/guides/contribution-margin-roas/">contribution margin and break-even ROAS guide</a>.' },
+  { q: "Can you work with a brand like ours if it is not on the wall?", a: 'Very likely. The approach is the same whatever the category: work out what a sale or an enrolment is worth, then build the media, creative and follow-up around it. A <a href="/audit/">free audit</a> is the quickest way to find out.' },
+];
+
+const jsonld = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + "/work/#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "Our Work", item: SITE + "/work/" } ] },
+  { "@context": "https://schema.org", "@type": "CollectionPage", "@id": SITE + "/work/#webpage", url: SITE + "/work/", name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + "/work/#breadcrumb" }, publisher: { "@id": SITE + "/#organization" }, inLanguage: "en",
+    hasPart: cases.map((c) => ({ "@type": "CreativeWork", name: `${c.name} case study`, url: SITE + `/work/${c.id}/` })) },
+  { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/work/#faq", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") } })) },
+];
+
+---
+<BaseLayout title={title} description={description} path="/work/" ogTitle="Our work: case studies and brands" ogDescription="Real case studies and a brand wall across D2C, B2B, education and other consumer categories." ogAlt="Monday Marketing Company: our work." jsonld={jsonld} preloadImage="/assets/case2/vagakids/web.jpg">
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app wk3">
+      <Hero />
+      <CaseGrid />
+      <WorkWall />
+      <Kinds />
+      <Faq title={["Questions about", "our work."]} faq={faq.map((f) => ({ q: f.q, a: f.a }))} tone="paper" />
+      <PreFooterCta source="work" eyebrow="Want to work with us" h2a="Put your brand" h2b="on this wall."
+        lede="On a call, with a senior strategist. We read your brand against what a sale, a lead or an enrolment is worth to you."
+        secondary={{ label: SECONDARY.brief, brief: true }} />
+    </main>
+    <StickyBookingBar source="work" />
+  </Shell>
+  <script>import "../scripts/hub.ts";</script>
+</BaseLayout>

@@ -1,0 +1,180 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "web/build.jpg",
+    "pos": "50% 50%",
+    "alt": "A WooCommerce store being built.",
+    "facts": [
+      {
+        "t": "A catalogue that stays clean.",
+        "d": "Variations and categories planned before code."
+      },
+      {
+        "t": "A checkout that is short.",
+        "d": "Payments and shipping set for your buyers."
+      },
+      {
+        "t": "A store your team runs.",
+        "d": "Orders, stock and a guide at handover."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for WooCommerce"
+  },
+  "work": {
+    "panel": "WooAdmin",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on your",
+    "h2b": "WooCommerce store.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Plan products, variations and categories.",
+        "d": "Attributes and categories are agreed first, so filters, feeds and stock counts stay clean."
+      },
+      {
+        "n": "02",
+        "t": "Set up a short checkout and payments.",
+        "d": "Cards, UPI, cash on delivery and the gateway you choose, with fewer fields to fill."
+      },
+      {
+        "n": "03",
+        "t": "Build shipping zones and tax rules.",
+        "d": "Rates come from your courier terms and your accountant's advice, not guesses."
+      },
+      {
+        "n": "04",
+        "t": "Keep plugins few and the shop fast.",
+        "d": "Extras are removed, caching is on, and updates are tested before they go live."
+      },
+      {
+        "n": "05",
+        "t": "Hand over orders and stock to your team.",
+        "d": "Order statuses, emails and low-stock alerts are set, and your team is trained to run them."
+      }
+    ],
+    "illustrative": "Illustrative layout of a WooCommerce-style store admin. Not a client store, no real figures. WooCommerce is a trademark of Automattic."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "ShopFunnelLeak",
+    "barLogo": "",
+    "barTitle": "Store journey",
+    "pinsLabel": "Five places a WooCommerce store loses the sale",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Catalogue"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Variations"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Speed"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Checkout"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Tracking"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures.",
+    "stageLabels": [
+      "Catalogue",
+      "Product page",
+      "Speed",
+      "Checkout",
+      "Tracking"
+    ]
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run WooCommerce builds,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Plan the store",
+        "d": "We map products, variations, shipping, payments and integrations, then agree the scope in writing.",
+        "get": "A written scope you have approved.",
+        "img": "web/plan.jpg",
+        "alt": "A store planned page by page.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Design and build",
+        "d": "Approved designs become a theme and a store set up for your catalogue.",
+        "get": "A store ready to test.",
+        "img": "web/seo.jpg",
+        "alt": "A store theme and its pages being built.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Test and launch",
+        "d": "We test checkout, speed, tracking and mobile before the switch, then migrate with redirects.",
+        "get": "A live store that loads fast and tracks orders.",
+        "img": "web/speed.jpg",
+        "alt": "A store tested for speed before launch.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Hand over and support",
+        "d": "Your team gets a store guide, and we can stay on under website maintenance.",
+        "get": "A store your team can run with confidence.",
+        "img": "web/crm.jpg",
+        "alt": "Orders and forms connected to a CRM.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "WordPress development",
+        "href": "/services/web-development/wordpress/"
+      },
+      {
+        "n": "Shopify development",
+        "href": "/services/shopify-development/"
+      },
+      {
+        "n": "Website maintenance",
+        "href": "/services/website-maintenance/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

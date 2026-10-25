@@ -1,0 +1,128 @@
+---
+// An audience's journey, one stage at a time (owner-approved "Option A", 2026-10-15): a numbered step row, then one
+// card per stage with a literal photo, where it leaks, what we do and the service that does it. Optional "numbers we
+// read" panel at the end. The previous route layout is in tools/backup/journey-a-2026-10-15/components/hubs2/.
+// Every stage is server-rendered as a stacked card (readable and crawlable without JavaScript); the script below adds
+// the step row (role=tablist) and Back / Next, and hides the inactive cards with the `hidden` attribute. Styles: hubs2.css.
+import Pic from "./Pic.astro";
+interface Stage { k: string; tag?: string; breaks: string; does: string; href?: string; img: string; alt?: string; go?: string }
+interface Read { n: string; d: string }
+interface Props { eyebrow: string; h2a: string; h2b: string; lede?: string; stages: Stage[]; reads?: { title: string; note?: string; cards: Read[] }; tone?: string; id?: string }
+const { eyebrow, h2a, h2b, lede, stages, reads, tone = "paper", id = "journey" } = Astro.props;
+const n = stages.length;
+---
+<section class={"n-band n-band--" + tone} id={id}>
+  <div class="n-wrap">
+    <header class="h2-head h2-head--split h2-rv">
+      <span class="n-eyebrow">{eyebrow}</span>
+      <h2 class="n-h2">{h2a} <span class="n-serif">{h2b}</span></h2>
+      {lede && <p class="n-lede">{lede}</p>}
+    </header>
+    <div class="h2-jr h2-rv" data-jr data-jr-id={id}>
+      <ol class="h2-jr__list">
+        {stages.map((s, k) => (
+          <li class="h2-jr__stage" id={`${id}-stage-${k + 1}`} data-k={s.k}>
+            <Pic src={s.img} alt={s.alt || ""} class="h2-jr__pic" />
+            <div class="h2-jr__b">
+              <span class="h2-jr__kick">Stage {k + 1} of {n}{s.tag && <Fragment> · {s.tag}</Fragment>}</span>
+              <h3>{s.k}</h3>
+              <div class="h2-jr__pair">
+                <p class="h2-jr__leak"><b>Where it leaks</b>{s.breaks}</p>
+                <p class="h2-jr__fix"><b>What we do</b>{s.does}</p>
+              </div>
+              {s.href && <div class="h2-jr__foot"><a class="h2-go" href={s.href}>{s.go || ("See " + (s.tag || s.k))}<i></i></a></div>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+    <p class="h2-note">Illustrative scenes. Screens in them are recreations, not client accounts and not real figures.</p>
+    {reads && (
+      <div class="h2-reads h2-rv">
+        <p class="h2-label">{reads.title}</p>
+        <ul>{reads.cards.map((c) => <li><b>{c.n}</b><span>{c.d}</span></li>)}</ul>
+        {reads.note && <p class="h2-note">{reads.note}</p>}
+      </div>
+    )}
+  </div>
+</section>
+
+<script>
+  // Upgrades each [data-jr] block to tabs. Without JavaScript nothing here runs and every stage stays stacked.
+  const reduce = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll<HTMLElement>("[data-jr]").forEach((root) => {
+    const panels = [...root.querySelectorAll<HTMLElement>(".h2-jr__stage")];
+    const list = root.querySelector<HTMLElement>(".h2-jr__list");
+    if (panels.length < 2 || !list) return;
+    const base = root.dataset.jrId || "journey";
+    const bar = document.createElement("div");
+    bar.className = "h2-jr__tabs";
+    bar.setAttribute("role", "tablist");
+    bar.setAttribute("aria-label", "Stages");
+    const tabs = panels.map((p, k) => {
+      const t = document.createElement("button");
+      t.type = "button";
+      t.className = "h2-jr__tab";
+      t.id = `${base}-tab-${k + 1}`;
+      t.setAttribute("role", "tab");
+      t.setAttribute("aria-controls", p.id);
+      const dot = document.createElement("span");
+      dot.className = "h2-jr__dot";
+      dot.textContent = String(k + 1);
+      const nm = document.createElement("span");
+      nm.className = "h2-jr__nm";
+      nm.textContent = p.dataset.k || "";
+      t.append(dot, nm);
+      p.setAttribute("role", "tabpanel");
+      p.setAttribute("aria-labelledby", t.id);
+      bar.append(t);
+      return t;
+    });
+    const nav = document.createElement("div");
+    nav.className = "h2-jr__nav";
+    const mk = (label: string, step: number, cls: string) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "h2-jr__btn " + cls;
+      b.textContent = label;
+      b.addEventListener("click", () => show(cur + step));
+      return b;
+    };
+    nav.append(mk("Back", -1, "h2-jr__btn--back"), mk("Next stage", 1, "h2-jr__btn--next"));
+    let cur = 0;
+    // Keep the active pill inside the scrolling step row (phones) without moving the page.
+    const reveal = (t: HTMLElement) => {
+      if (bar.scrollWidth <= bar.clientWidth + 1) return;
+      const l = t.offsetLeft - 16, r = t.offsetLeft + t.offsetWidth + 16;
+      const to = l < bar.scrollLeft ? l : r > bar.scrollLeft + bar.clientWidth ? r - bar.clientWidth : null;
+      if (to !== null) bar.scrollTo({ left: to, behavior: reduce() ? "auto" : "smooth" });
+    };
+    function show(i: number, focus = false) {
+      cur = (i + panels.length) % panels.length;
+      tabs.forEach((t, k) => {
+        const on = k === cur;
+        t.setAttribute("aria-selected", String(on));
+        t.tabIndex = on ? 0 : -1;
+        t.classList.toggle("is-done", k < cur);
+      });
+      panels.forEach((p, k) => { p.hidden = k !== cur; });
+      if (focus) tabs[cur].focus();
+      reveal(tabs[cur]);
+    }
+    bar.addEventListener("click", (e) => {
+      const t = (e.target as HTMLElement).closest<HTMLElement>(".h2-jr__tab");
+      if (t) show(tabs.indexOf(t as HTMLButtonElement));
+    });
+    bar.addEventListener("keydown", (e) => {
+      const keys: Record<string, number> = { ArrowRight: cur + 1, ArrowLeft: cur - 1, Home: 0, End: panels.length - 1 };
+      if (!(e.key in keys)) return;
+      e.preventDefault();
+      show(keys[e.key], true);
+    });
+    root.style.setProperty("--jr-n", String(panels.length));
+    root.prepend(bar);
+    root.append(nav);
+    root.classList.add("is-tabs");
+    show(0);
+  });
+</script>

@@ -1,0 +1,520 @@
+{
+  "file": "fashion-and-apparel.html",
+  "path": "/industries/d2c/fashion-and-apparel/",
+  "key": "d2cfash",
+  "title": "Fashion and Apparel Marketing Agency India | D2C | MMC",
+  "description": "Marketing for D2C fashion and apparel brands in India. Creative testing, catalogue ads, size and returns work, and drops planned on contribution margin.",
+  "ogTitle": "Fashion marketing that survives returns and discounts",
+  "ogDescription": "Marketing for d2c fashion and apparel brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: fashion and apparel.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "D2C",
+          "item": "https://www.mondaymarketing.company/industries/d2c/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Fashion and apparel",
+          "item": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/",
+      "name": "Fashion and Apparel Marketing Agency India | D2C | MMC",
+      "description": "Marketing for D2C fashion and apparel brands in India. Creative testing, catalogue ads, size and returns work, and drops planned on contribution margin.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/#service",
+      "name": "Fashion and apparel",
+      "serviceType": "Fashion and apparel marketing",
+      "description": "Marketing for D2C fashion and apparel brands: creative testing, catalogue ads, size and returns work and drops planned on contribution margin.",
+      "url": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/fashion-and-apparel/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is fashion marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Returns and discounts are heavy, creative fatigues fast, sizing drives cost and drops follow seasons. That makes margin after returns and a creative refresh loop the key numbers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you reduce returns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With clearer size guides, honest imagery and fit notes, and by reading returns by size and style. It is a marketing and product-page problem as well as an operations one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you run catalogue ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We set up feeds and dynamic ads for large ranges, and test creative alongside."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should creative change?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on spend and audience size. We read fatigue signals and plan a steady refresh rather than a fixed date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with creators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We shortlist, brief and track creators for fit. See influencer marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee growth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "d2cfash",
+    "wm": "FASHION",
+    "eyebrow": "● D2C fashion and apparel",
+    "h1": [
+      "Fashion marketing",
+      [
+        "that survives ",
+        "returns and discounts",
+        "."
+      ]
+    ],
+    "sub": "Fashion shoppers browse a lot, return a lot and tire of creative quickly. We plan creative, catalogue ads and size help around margin.",
+    "tiles": [
+      {
+        "img": "d2c/range.jpg",
+        "pos": "50% 50%",
+        "label": "The range",
+        "note": "Catalogue and drops"
+      },
+      {
+        "img": "meta/creative.jpg",
+        "pos": "50% 50%",
+        "label": "Creative",
+        "note": "Tested and refreshed"
+      },
+      {
+        "img": "inf/shortlist.jpg",
+        "pos": "50% 50%",
+        "label": "Creators",
+        "note": "Fit and style on real people"
+      },
+      {
+        "img": "guides/returns.jpg",
+        "pos": "50% 50%",
+        "label": "Returns",
+        "note": "Sizing and expectations"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "D2C fashion and apparel marketing is the work of turning browsing into profitable orders in a category with heavy discounting, size-driven returns and fast creative fatigue. It combines catalogue ads, a steady flow of tested creative, size help on product pages and drops planned around contribution margin.",
+      "hl": "size-driven returns and fast creative fatigue",
+      "who": "Monday Marketing Company (MMC) markets D2C fashion and apparel brands in India across creative, Meta and Google, product pages and retention.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Creative that lasts",
+          "text": "A steady test-and-refresh loop, not one big shoot."
+        },
+        {
+          "icon": "grid",
+          "title": "Size and returns",
+          "text": "Size help and honest imagery that reduce returns."
+        },
+        {
+          "icon": "link",
+          "title": "Catalogue-led ads",
+          "text": "Product feeds and dynamic ads for large ranges."
+        }
+      ],
+      "image": "d2c/range.jpg",
+      "chip": "Margin after returns, not just sales"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-fashion-buys",
+          "h": "How fashion shoppers behave",
+          "paras": [
+            "Fashion shoppers browse many options, compare on price and look, and are strongly influenced by creators and social feeds. Many order more than one size and return the rest, and cash on delivery brings its own returns.",
+            "Because looks go in and out of fashion fast, creative also tires quickly and needs a steady refresh."
+          ],
+          "img": "inf/shortlist.jpg",
+          "cap": "Shortlisting creators for a fashion drop."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "Returns and discounts quietly eat margin. A campaign can look strong on ROAS while contribution margin after returns is thin.",
+            "We measure margin after returns, test creative on a schedule and read the numbers with the <a href=\"/guides/\">guides</a> and <a href=\"/tools/\">free tools</a>."
+          ],
+          "callout": {
+            "title": "Size is a marketing problem.",
+            "text": "Clear size help and honest imagery are some of the cheapest ways to lower returns."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where fashion marketing leaks",
+      "h2a": "Five places fashion",
+      "h2b": "brands lose money.",
+      "lede": "Each stage below is where a fashion brand loses margin, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Keep the creative fresh",
+        "tag": "Creative testing",
+        "breaks": "Running the same ad until it tires.",
+        "why": "Fashion feeds move fast and fatigue sets in quickly.",
+        "does": "We run a test-and-refresh loop with new hooks, formats and creators. See Meta Ads.",
+        "href": "/services/performance-marketing/meta-ads/",
+        "img": "meta/creative.jpg"
+      },
+      {
+        "k": "Use creators who fit",
+        "tag": "Creators and influencers",
+        "breaks": "Choosing by follower count.",
+        "why": "Fit and style on a real body persuade more than reach.",
+        "does": "We shortlist creators for fit, audience and style, with clear terms. See influencer marketing.",
+        "href": "/services/influencer-marketing/",
+        "img": "inf/shortlist.jpg"
+      },
+      {
+        "k": "Sell the whole range",
+        "tag": "Catalogue and dynamic ads",
+        "breaks": "Promoting a handful of hero items.",
+        "why": "Large ranges need feeds and structure so ads show the right item.",
+        "does": "We set up catalogues, feeds and dynamic ads. See Google Ads.",
+        "href": "/services/performance-marketing/google-ads/",
+        "img": "google/feed.jpg"
+      },
+      {
+        "k": "Lower the returns",
+        "tag": "Size help and product pages",
+        "breaks": "Product pages with thin size information.",
+        "why": "Wrong-size orders are a main source of returns.",
+        "does": "We improve size guides, imagery and fit notes. See CRO.",
+        "href": "/services/cro/",
+        "img": "cro/pdp.jpg"
+      },
+      {
+        "k": "Buy on margin after returns",
+        "tag": "Reporting and retention",
+        "breaks": "Reporting on gross sales.",
+        "why": "Gross ROAS ignores returns and discounts.",
+        "does": "We report contribution margin after returns and build retention flows. See retention.",
+        "href": "/services/retention-marketing/",
+        "img": "d2c/retention.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "fashion marketing is working.",
+      "note": "Gross sales alone are not on the list.",
+      "cards": [
+        {
+          "n": "Contribution margin after returns",
+          "d": "What is left once returns and discounts are counted."
+        },
+        {
+          "n": "Return rate by size and style",
+          "d": "Where orders come back and why."
+        },
+        {
+          "n": "Creative fatigue",
+          "d": "How fast ads lose performance."
+        },
+        {
+          "n": "Repeat purchase rate",
+          "d": "Buyers who come back for the next drop."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where fashion and apparel marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Meta Ads",
+          "d": "Creative testing and catalogue ads.",
+          "img": "meta/creative.jpg",
+          "href": "/services/performance-marketing/meta-ads/",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "Influencer marketing",
+          "d": "Creator shortlists and terms for fashion.",
+          "img": "inf/shortlist.jpg",
+          "href": "/services/influencer-marketing/",
+          "link": "See Influencer marketing"
+        },
+        {
+          "n": "CRO",
+          "d": "Product pages and size help that lower returns.",
+          "img": "cro/pdp.jpg",
+          "href": "/services/cro/",
+          "link": "See CRO"
+        },
+        {
+          "n": "Food and beverage",
+          "d": "Marketing for low-basket, repeat-order food and drink brands.",
+          "img": "d2c/packing.jpg",
+          "href": "/industries/d2c/food-and-beverage/",
+          "link": "See Food and beverage marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "fashion and apparel marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is fashion marketing different?",
+        "a": "Returns and discounts are heavy, creative fatigues fast, sizing drives cost and drops follow seasons. That makes margin after returns and a creative refresh loop the key numbers."
+      },
+      {
+        "q": "How do you reduce returns?",
+        "a": "With clearer size guides, honest imagery and fit notes, and by reading returns by size and style. It is a marketing and product-page problem as well as an operations one."
+      },
+      {
+        "q": "Do you run catalogue ads?",
+        "a": "Yes. We set up feeds and dynamic ads for large ranges, and test creative alongside."
+      },
+      {
+        "q": "How often should creative change?",
+        "a": "It depends on spend and audience size. We read fatigue signals and plan a steady refresh rather than a fixed date."
+      },
+      {
+        "q": "Do you work with creators?",
+        "a": "Yes. We shortlist, brief and track creators for fit. See <a href=\"/services/influencer-marketing/\">influencer marketing</a>."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee growth?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Measure fashion margin",
+      "h2b": "after returns.",
+      "lede": "On a call, with a senior strategist. We read your returns and discounts and show what your ROAS really means."
+    },
+    "process": {
+      "h2a": "How we start with a fashion brand,",
+      "h2b": "step by step.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Read margin after returns",
+          "d": "We rebuild economics with returns and discounts, review creative and feeds and set targets.",
+          "out": "A true view of margin."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Test creative and fix pages",
+          "d": "A creative test plan, creators and size-help changes go live.",
+          "out": "A refresh loop and better pages."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Scale and retain",
+          "d": "Catalogue ads scale on margin and retention flows start.",
+          "out": "Growth that holds after returns."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Fashion marketing for brands that",
+      "h2b": "count returns.",
+      "good": {
+        "t": "You sell clothing or accessories in India online and want growth that holds after returns.",
+        "why": "We plan around margin after returns, creative refresh and size help."
+      },
+      "not": {
+        "t": "You want to scale on gross ROAS alone.",
+        "why": "Returns and discounts decide profit. We report on them."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "fashion brands.",
+      "lede": "Creative, catalogue ads, pages and retention for D2C fashion.",
+      "items": [
+        {
+          "t": "Creative testing",
+          "d": "New hooks, formats and creators on a schedule.",
+          "img": "meta/creative.jpg",
+          "alt": "Creative testing"
+        },
+        {
+          "t": "Creator shortlists",
+          "d": "Fit, audience and terms agreed before posting.",
+          "img": "inf/shortlist.jpg",
+          "alt": "Creator shortlists"
+        },
+        {
+          "t": "Catalogue and dynamic ads",
+          "d": "Feeds and structure for large ranges.",
+          "img": "google/feed.jpg",
+          "alt": "Catalogue and dynamic ads"
+        },
+        {
+          "t": "Size help and product pages",
+          "d": "Size guides, fit notes and imagery that lower returns.",
+          "img": "cro/pdp.jpg",
+          "alt": "Size help and product pages"
+        },
+        {
+          "t": "Checkout and COD handling",
+          "d": "A smoother checkout and sensible cash on delivery rules.",
+          "img": "d2c/checkout.jpg",
+          "alt": "Checkout and COD handling"
+        },
+        {
+          "t": "Drop and repeat flows",
+          "d": "Email and WhatsApp for launches and returning buyers.",
+          "img": "d2c/retention.jpg",
+          "alt": "Drop and repeat flows"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why fashion brands choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We count returns before we call a campaign good.",
+      "img": "d2c/range.jpg",
+      "alt": "Why fashion brands choose MMC for marketing.",
+      "items": [
+        {
+          "t": "Margin after returns",
+          "d": "Targets set on what is left, not on gross sales."
+        },
+        {
+          "t": "A creative engine",
+          "d": "A steady test-and-refresh loop."
+        },
+        {
+          "t": "Pages that sell",
+          "d": "Size help and imagery that reduce returns."
+        },
+        {
+          "t": "Joined-up teams",
+          "d": "Creative, media, pages and retention in one team."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a fashion engagement runs,",
+      "h2b": "step by step.",
+      "img": "meta/creative.jpg",
+      "alt": "How a fashion engagement runs, step by step.",
+      "items": [
+        {
+          "t": "Audit margin and feeds",
+          "d": "Returns, discounts, feeds and creative are reviewed."
+        },
+        {
+          "t": "Plan the test loop",
+          "d": "Creative tests, creators and page changes are scoped."
+        },
+        {
+          "t": "Launch and test",
+          "d": "Campaigns go live with a test plan."
+        },
+        {
+          "t": "Scale and retain",
+          "d": "Spend follows margin and retention flows start."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

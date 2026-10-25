@@ -1,0 +1,43 @@
+---
+// /work/ "how we work with each kind of brand": one photo-led column per kind (D2C, B2B, Education, Other consumer).
+// The "Other consumer" column carries the property, hospitality and mobility lines that used to be their own band.
+// Copy is the page's existing copy, moved here unchanged. Styles: work3.css (wk3-kind).
+import { AUDIENCES, SECONDARY } from "../../lib/site";
+import { GROUPS } from "../../lib/work";
+
+const KINDS = [
+  { k: GROUPS[0].label, href: "/industries/d2c/", tag: `See ${AUDIENCES[0]}`, breaks: "A shopper decides in seconds, on a phone.", does: "We start from the margin on an order, then shape ads, creative, the store and retention around it.", img: "d2c/range.jpg" },
+  { k: GROUPS[1].label, href: "/industries/b2b/", tag: `See ${AUDIENCES[1]}`, breaks: "A buyer researches for weeks and talks to several people.", does: "We build a clear website, useful proof and lead generation that filters for fit, then help the follow-up so leads become conversations.", img: "b2b/casestudy.jpg" },
+  { k: GROUPS[2].label, href: "/industries/education/", tag: `See ${AUDIENCES[2]}`, breaks: "A family compares colleges over weeks, with a deadline.", does: "We run search and paid campaigns around courses and intakes, and follow every enquiry up until it becomes an enrolment.", img: "edu/campus.jpg" },
+  { k: GROUPS[3].label, href: "/audit/", tag: SECONDARY.audit, breaks: "A big purchase, a long think, and the sale often closes offline.", does: "We build enquiry-led funnels: clear pages, targeted media and quick follow-up by call or message, judged on the cost of a real enquiry.", img: "work/enquiry.jpg",
+    more: [
+      { h: "Property", p: "Buyers visit, compare and come back. Follow-up decides who they choose." },
+      { h: "Hospitality", p: "People book a stay on a picture and a feeling. Photos and clear offers do the work." },
+      { h: "Mobility", p: "Local demand, quick decisions. Search and simple lead paths bring the calls." },
+    ] },
+];
+---
+<section class="wk3-band wk3-band--white" id="kinds" aria-labelledby="wk3-kinds-h">
+  <div class="n-wrap">
+    <div class="wk3-head">
+      <span class="n-eyebrow">How we work with each kind of brand</span>
+      <h2 class="n-h2" id="wk3-kinds-h">The same discipline. <span class="n-serif">A different job for each kind.</span></h2>
+      <p class="n-lede">Every audience buys differently, so the work starts from a different question.</p>
+    </div>
+    <div class="wk3-kinds">
+      {KINDS.map((k) => (
+        <article class="wk3-kind">
+          <span class="wk3-kind__pic"><img src={"/assets/" + k.img} alt="" width="1200" height="800" loading="lazy" decoding="async" /><span class="wk3-kind__k">{k.k}</span></span>
+          <h3>{k.breaks}</h3>
+          <p>{k.does}</p>
+          {k.more && (
+            <ul class="wk3-kind__more">
+              {k.more.map((m) => <li><b>{m.h}</b> {m.p}</li>)}
+            </ul>
+          )}
+          <a href={k.href}>{k.tag}<span aria-hidden="true">→</span></a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

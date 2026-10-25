@@ -1,0 +1,65 @@
+{
+ "id": "mbb",
+ "about": "{name} is a D2C brand that sells dessert-inspired body care.",
+ "description": "{name} case study: an ecommerce storefront for a body care range with matching social creative, a Meta carousel ad and a Google Shopping ad.",
+ "heroTone": "paper",
+ "kind": "D2C brand, body care",
+ "channels": [
+  "Meta carousel ad",
+  "Google Shopping"
+ ],
+ "brief": [
+  "{name} sells dessert-inspired body care. We built an ecommerce storefront for the range, paired with social creative and ads for the same products.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage on desktop and mobile",
+   "text": "A bright homepage with an offer bar, a hero built around the products, a 2 Freebies offer, a strip of product promises and a phone version that carries the same look.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Square tiles that use the product jars and the same pink and lilac palette as the site.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta carousel ad and a Google Shopping ad",
+   "text": "The carousel steps through products and offers. The Shopping ad lists products with price and sale tags.",
+   "crops": [
+    "meta",
+    "shopping"
+   ],
+   "captions": [
+    "Meta carousel ad",
+    "Google Shopping ad"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage on desktop and mobile",
+  "reach": "Meta carousel ad and Google Shopping ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Dessert for Your Skin hero with two women and the body butter range, an offer bar and a Start Your Body Care button",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "shopping": "{name} Google Shopping ad",
+  "card": "{name} logo beside a body butter jar, a body oil bottle and raspberries, with a woman resting her chin on her hand"
+ }
+}

@@ -1,0 +1,1830 @@
+{
+ "content_marketing_services": {
+  "disc": "content_marketing",
+  "level": "top",
+  "words": 2395,
+  "dedup_words": 2011,
+  "specific_words": 1716,
+  "seq": [
+   "INCLUDES",
+   "OTHER",
+   "INCLUDES",
+   "EXPERT_QUOTE",
+   "RESULTS",
+   "AWARDS_LOGOS",
+   "TECH",
+   "PRICING_CARD",
+   "OTHER",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "CLOSING_COPY"
+  ],
+  "faqs": [
+   "Why invest in content marketing services?",
+   "What is content marketing?",
+   "What are content marketing services?",
+   "What do content marketing services include?",
+   "What does a content marketing company do?",
+   "What types of content are used in content marketing?",
+   "How are content topics chosen?",
+   "Why use content marketing services?",
+   "How much do content marketing services cost?",
+   "What does a content marketer do?",
+   "What are the benefits of content marketing?",
+   "What are the different types of content formats?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 16
+ },
+ "content_marketing_services_blog_writing": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1857,
+  "dedup_words": 1816,
+  "specific_words": 1249,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "WHY_WEBFX",
+   "FAQ",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our blog writing services include?",
+   "Why partner with WebFX for your blog writing services?",
+   "How can blog writing services expand your business\u2019s growth?",
+   "How can blogging increase conversion rates?",
+   "What are the benefits of being a valued source in the industry?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 22
+ },
+ "content_marketing_services_brand_content_placement": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1532,
+  "dedup_words": 1498,
+  "specific_words": 919,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "INCLUDES",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do WebFX\u2019s brand content placement services include?"
+  ],
+  "cta_nonnav": 8,
+  "body_links": 17
+ },
+ "content_marketing_services_brand_voice_copy": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1739,
+  "dedup_words": 1261,
+  "specific_words": 544,
+  "seq": [
+   "OTHER",
+   "TECH",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "CLOSING_COPY",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do you get when you invest in WebFX\u2019s brand voice copy services?"
+  ],
+  "cta_nonnav": 7,
+  "body_links": 6
+ },
+ "content_marketing_services_content_creation": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 2365,
+  "dedup_words": 1886,
+  "specific_words": 1102,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "INCLUDES",
+   "PRICING_CARD",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our content creation services include?",
+   "What are content creation services?",
+   "How much do content creation services cost?"
+  ],
+  "cta_nonnav": 8,
+  "body_links": 15
+ },
+ "content_marketing_services_expert_copy": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1992,
+  "dedup_words": 1934,
+  "specific_words": 1332,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "OTHER",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "OTHER",
+   "PRICING_CARD",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do WebFX expert copy services include?",
+   "Why do businesses choose to partner with WebFX?",
+   "What is web copywriting?",
+   "What are expert copywriting services?",
+   "How much do expert copywriting services cost?"
+  ],
+  "cta_nonnav": 13,
+  "body_links": 21
+ },
+ "content_marketing_services_explainer_videos": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1739,
+  "dedup_words": 1453,
+  "specific_words": 928,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "OTHER",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our explainer video services include?",
+   "What industries can benefit from explainer video services?",
+   "What are explainer videos?",
+   "What are explainer video services?",
+   "What are the benefits of explainer videos?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 9
+ },
+ "content_marketing_services_infographics": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1707,
+  "dedup_words": 1409,
+  "specific_words": 868,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "PRICING_CARD",
+   "PACKAGES_TABLE",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "Why are infographics a rising internet marketing trend?",
+   "What are the many uses of infographics?",
+   "Why is data visualization so powerful?",
+   "What are video infographics?",
+   "What are micrographics?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 12
+ },
+ "content_marketing_services_mofu_bofu_content": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 2262,
+  "dedup_words": 1724,
+  "specific_words": 1100,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "WHY_WEBFX",
+   "FAQ",
+   "OTHER",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our MOFU and BOFU content plans include?",
+   "Why partner with WebFX for your MOFU and BOFU content services?",
+   "What is TOFU, MOFU, and BOFU content?",
+   "Why should you offer MOFU and BOFU specific content?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 19
+ },
+ "content_marketing_services_personalized_website_content": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 1559,
+  "dedup_words": 1255,
+  "specific_words": 701,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER",
+   "PACKAGES_TABLE",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "Why invest in website personalization services?",
+   "What is RevenueCloudFX?",
+   "How does RevenueCloudFX personalization work?",
+   "What is an example of using RevenueCloudFX to personalize your website?",
+   "What can you personalize with RevenueCloudFX?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 14
+ },
+ "content_marketing_services_seo_content_writing": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 2050,
+  "dedup_words": 2022,
+  "specific_words": 1469,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "TECH",
+   "FAQ",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our SEO content writing services include?",
+   "Why invest in AI-powered, expert-led SEO content services?",
+   "How can I use WebFX\u2019s AI-powered SEO content services?",
+   "When should my business use AI SEO content services?",
+   "What is SEO content?",
+   "What are AI SEO content analysis services?",
+   "How much do AI SEO content services cost?",
+   "What kinds of content can you write for SEO?",
+   "How long does SEO content take to write?",
+   "What are SEO content writing services?",
+   "How much do SEO writing services cost?"
+  ],
+  "cta_nonnav": 12,
+  "body_links": 2
+ },
+ "content_marketing_services_video": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 2425,
+  "dedup_words": 2320,
+  "specific_words": 2283,
+  "seq": [
+   "OTHER",
+   "INCLUDES",
+   "OTHER",
+   "WHY_WEBFX",
+   "INCLUDES",
+   "AWARDS_LOGOS",
+   "OTHER",
+   "PRICING_CARD"
+  ],
+  "faqs": [
+   "What do our video production services include?",
+   "Why partner with a top-rated video marketing agency?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 6
+ },
+ "content_marketing_services_website_copywriting": {
+  "disc": "content_marketing",
+  "level": "sub",
+  "words": 2200,
+  "dedup_words": 1793,
+  "specific_words": 1624,
+  "seq": [
+   "OTHER",
+   "RESULTS",
+   "INCLUDES",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "INCLUDES",
+   "FAQ",
+   "INCLUDES",
+   "OTHER"
+  ],
+  "faqs": [
+   "What Do Our Website Copywriting Services Include?",
+   "What are website copywriter services?",
+   "How much do website copywriter services cost?",
+   "Why invest in website copywriter services?",
+   "Do any digital marketing services from WebFX include professional copywriting?",
+   "Why is website copywriting so important?",
+   "Want the best website copywriting services for your business?"
+  ],
+  "cta_nonnav": 14,
+  "body_links": 20
+ },
+ "email_marketing_services": {
+  "disc": "email_marketing",
+  "level": "top",
+  "words": 2264,
+  "dedup_words": 1782,
+  "specific_words": 1249,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "FAQ",
+   "INCLUDES",
+   "PACKAGES_TABLE",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our email marketing management services include?",
+   "What is email marketing?",
+   "Why is email marketing important?",
+   "What is drip marketing?",
+   "What are email marketing management services?",
+   "What does an email marketing company do?",
+   "Do you need an email marketing management service provider?",
+   "Why should I hire an agency to take care of my email marketing management?",
+   "Is anyone on your team knowledgeable about email marketing?",
+   "How much do managed email marketing services cost?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 12
+ },
+ "email_marketing_services_design": {
+  "disc": "email_marketing",
+  "level": "sub",
+  "words": 1728,
+  "dedup_words": 1265,
+  "specific_words": 512,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "FAQ",
+   "OTHER",
+   "PACKAGES_TABLE",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our email design services include?",
+   "What do WebFX\u2019s email design services include?",
+   "Why use email marketing?",
+   "Why is email design important?",
+   "What are the benefits of email marketing?"
+  ],
+  "cta_nonnav": 8,
+  "body_links": 13
+ },
+ "martech_services": {
+  "disc": "martech",
+  "level": "top",
+  "words": 744,
+  "dedup_words": 513,
+  "specific_words": 106,
+  "seq": [
+   "OTHER",
+   "TECH",
+   "OTHER"
+  ],
+  "faqs": [
+   "What martech services do you offer?"
+  ],
+  "cta_nonnav": 5,
+  "body_links": 14
+ },
+ "martech_services_ai": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1221,
+  "dedup_words": 1203,
+  "specific_words": 1159,
+  "seq": [
+   "OTHER",
+   "RELATED_FOOTER",
+   "TECH",
+   "OTHER",
+   "FAQ",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "How can AI services help your business?",
+   "What is AI?",
+   "What is machine learning?",
+   "What is deep learning?",
+   "What is big data?",
+   "What are AI solutions?",
+   "Why should I hire an AI solutions company?"
+  ],
+  "cta_nonnav": 7,
+  "body_links": 10
+ },
+ "martech_services_ai_agent_development": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1040,
+  "dedup_words": 852,
+  "specific_words": 662,
+  "seq": [
+   "INCLUDES",
+   "OTHER",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "BENEFITS",
+   "OTHER",
+   "CLOSING_COPY",
+   "COMPARE",
+   "FAQ",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our AI agent development services include?",
+   "What are AI agent development and consulting services?",
+   "Why invest in AI agent development and consulting?",
+   "How much does AI agent development cost?",
+   "How long does developing an AI agent take?"
+  ],
+  "cta_nonnav": 8,
+  "body_links": 1
+ },
+ "martech_services_ai_integration": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 2055,
+  "dedup_words": 1530,
+  "specific_words": 774,
+  "seq": [
+   "INCLUDES",
+   "WHY_WEBFX",
+   "TECH",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "INCLUDES",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our AI and GPT integration services include?",
+   "Why collaborate with WebFX?",
+   "Why invest in AI and GPT integration?",
+   "What are the benefits of using AI and GPT in your marketing?",
+   "What are AI and GPT integration services?",
+   "What business systems can integrate with ChatGPT?",
+   "How does AI workflow automation work?",
+   "What are AI agents?",
+   "Can AI integrate with CRMs like Salesforce or HubSpot?",
+   "What are the benefits of API-based AI integrations?"
+  ],
+  "cta_nonnav": 7,
+  "body_links": 19
+ },
+ "martech_services_ai_media_mixed_modeling": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1750,
+  "dedup_words": 1275,
+  "specific_words": 529,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "CLOSING_COPY",
+   "FAQ",
+   "TECH",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do your media mixed modeling services include?",
+   "What are AI media mixed modeling services?",
+   "How much do WebFX\u2019s AI media mixed modeling services cost?",
+   "What level of involvement do you require from clients?",
+   "How does AI media mix modeling optimize media budgets?",
+   "What is omnichannel measurement in media mix modeling?",
+   "How does AI media mix modeling forecast revenue?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 18
+ },
+ "martech_services_consent_management_data_privacy": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1719,
+  "dedup_words": 1255,
+  "specific_words": 500,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "TECH",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do your CMP solutions include?",
+   "What is a consent management solution?",
+   "Why invest in a consent management and data privacy platform?",
+   "How much does consent management software cost?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 16
+ },
+ "martech_services_crm_integration": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1747,
+  "dedup_words": 1251,
+  "specific_words": 529,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "CLOSING_COPY",
+   "FAQ",
+   "INCLUDES",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do your CRM integration services include?",
+   "What are CRM integration services?",
+   "How long does a CRM integration take?",
+   "How much do CRM integration agencies cost?",
+   "What systems can you integrate with my CRM?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 18
+ },
+ "martech_services_customer_data_platform": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1434,
+  "dedup_words": 1200,
+  "specific_words": 740,
+  "seq": [
+   "OTHER",
+   "TECH",
+   "PRICING_CARD",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What is a customer data platform?",
+   "What does a CDP consultant do?",
+   "Do I need to invest in CDP solutions?"
+  ],
+  "cta_nonnav": 8,
+  "body_links": 7
+ },
+ "martech_services_data_warehouse_etl_pipelines": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 2090,
+  "dedup_words": 1578,
+  "specific_words": 776,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "CLOSING_COPY",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our data and API integration services include?",
+   "What is a Data Warehouse?",
+   "What is an ETL pipeline?",
+   "What do data warehouse integration services include?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 13
+ },
+ "martech_services_house_call_pro_consulting": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1105,
+  "dedup_words": 1093,
+  "specific_words": 818,
+  "seq": [
+   "OTHER",
+   "TECH",
+   "PROCESS",
+   "CLOSING_COPY",
+   "FAQ",
+   "CLOSING_COPY"
+  ],
+  "faqs": [
+   "What can RevenueCloudFX and Housecall Pro help you do?",
+   "What is Housecall Pro?",
+   "Who can use Housecall Pro?",
+   "How much does Housecall Pro cost?",
+   "Do I need a Housecall Pro consultant?",
+   "What does a Housecall Pro consultant help with?",
+   "Can Housecall Pro integrate with marketing and CRM platforms?",
+   "How can Housecall Pro consulting improve workflow automation?",
+   "Do you offer Housecall Pro consulting for HVAC companies?",
+   "Do you offer Housecall Pro consulting for plumbers?",
+   "Do you handle Housecall Pro onboarding for me?"
+  ],
+  "cta_nonnav": 6,
+  "body_links": 7
+ },
+ "martech_services_hubspot_consulting": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1075,
+  "dedup_words": 1069,
+  "specific_words": 801,
+  "seq": [
+   "OTHER",
+   "TECH",
+   "OTHER"
+  ],
+  "faqs": [
+   "What can I expect from your HubSpot consulting services?",
+   "What is HubSpot CRM?",
+   "What is HubSpot Marketing Hub?",
+   "Who uses HubSpot Marketing Hub and HubSpot CRM?",
+   "What is HubSpot consulting?",
+   "What does a HubSpot Marketing Hub consultant do?",
+   "What does a HubSpot CRM consultant do?",
+   "Is it worth it to partner with a HubSpot consultant?"
+  ],
+  "cta_nonnav": 6,
+  "body_links": 5
+ },
+ "martech_services_microsoft_dynamics": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1336,
+  "dedup_words": 1329,
+  "specific_words": 1046,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What is Microsoft Dynamics 365?",
+   "What is Microsoft Dynamics 365 Field Service?",
+   "How much does Dynamics 365 Field Service cost?",
+   "Who uses Microsoft Dynamics 365?",
+   "Who uses Dynamics 365 Field Service?",
+   "What are Microsoft Dynamics 365 marketing automation services?",
+   "What does a Dynamics 365 consultant do?",
+   "What should I expect from a Microsoft Dynamics 365 consulting firm?",
+   "Can Dynamics 365 integrate with other tools?"
+  ],
+  "cta_nonnav": 6,
+  "body_links": 7
+ },
+ "martech_services_salesforce_consultants": {
+  "disc": "martech",
+  "level": "sub",
+  "words": 1154,
+  "dedup_words": 1143,
+  "specific_words": 882,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "PROCESS",
+   "OTHER",
+   "FAQ",
+   "OTHER"
+  ],
+  "faqs": [
+   "What is Salesforce?",
+   "What is Salesforce Marketing Cloud?",
+   "What is Salesforce Data Cloud?",
+   "What does a Salesforce marketing consultant do?",
+   "Why should I hire a Salesforce integrator?"
+  ],
+  "cta_nonnav": 6,
+  "body_links": 2
+ },
+ "social_media_services": {
+  "disc": "social_media",
+  "level": "top",
+  "words": 2561,
+  "dedup_words": 2535,
+  "specific_words": 2095,
+  "seq": [
+   "INCLUDES",
+   "EXPERT_QUOTE",
+   "TECH",
+   "RESULTS",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "PROCESS",
+   "BENEFITS",
+   "CLOSING_COPY",
+   "PACKAGES_TABLE",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What are the benefits of social media marketing services?",
+   "What is social media marketing?",
+   "What are social media marketing services?",
+   "What platforms are used in social media marketing?",
+   "How much does social media marketing cost?",
+   "How much do social media agencies charge?",
+   "What are the best social media marketing companies?",
+   "What determines the cost of social media marketing services?",
+   "When should I invest in a social media agency\u2019s services?",
+   "Why hire a social media management agency?",
+   "Why is social media marketing important?",
+   "What is the difference between social media marketing, social media advertising, and social media management?",
+   "What is the difference between social media marketing and digital marketing?",
+   "Do you need to use social media marketing?",
+   "Which platforms should I use for social media marketing?",
+   "How do I market my business on social media?",
+   "Where can I learn more about social media marketing?",
+   "How do WebFX\u2019s social media marketing services work?"
+  ],
+  "cta_nonnav": 16,
+  "body_links": 27
+ },
+ "social_media_services_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 2147,
+  "dedup_words": 2071,
+  "specific_words": 1386,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "OTHER",
+   "PRICING_CARD",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our social media advertising services include?",
+   "What are social media advertising services?",
+   "What do social media advertising services include?",
+   "How do social media advertising services improve ROAS?",
+   "How much does social media advertising cost?",
+   "What do social media advertising services include?",
+   "Which social media platforms are best for paid advertising?",
+   "Should I use a social media advertising agency?",
+   "What are examples of social media platforms used for advertising?",
+   "How do you choose the best social ad agency?",
+   "What are the best social media advertising agencies?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 20
+ },
+ "social_media_services_design": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1415,
+  "dedup_words": 1131,
+  "specific_words": 449,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "FAQ",
+   "CLOSING_COPY",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do your social media design services include?",
+   "What do your social media design services include?",
+   "How much do your social media design services cost?",
+   "Looking for custom social media page or profile design?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 15
+ },
+ "social_media_services_ecommerce_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1567,
+  "dedup_words": 1276,
+  "specific_words": 691,
+  "seq": [
+   "INCLUDES",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "INCLUDES",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do ecommerce social media advertising services include?",
+   "What are ecommerce social media advertising services?",
+   "How much do ecommerce social media advertising services cost?",
+   "What ecommerce platforms do you offer social integrations for?",
+   "How do I use social media advertising for ecommerce?",
+   "What are the top social media platforms for ecommerce advertising?"
+  ],
+  "cta_nonnav": 12,
+  "body_links": 20
+ },
+ "social_media_services_enterprise_social_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1664,
+  "dedup_words": 1604,
+  "specific_words": 1012,
+  "seq": [
+   "CLOSING_COPY",
+   "TECH",
+   "PRICING_CARD",
+   "INCLUDES",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "How does enterprise social media advertising help your business?",
+   "What are enterprise social media advertising services?",
+   "What platforms can you advertise on?",
+   "What platforms are best for enterprise social media advertising?",
+   "Why invest in enterprise social media advertising services?",
+   "How much do enterprise social media advertising services cost?",
+   "How do enterprise social media advertising services improve ROAS?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 22
+ },
+ "social_media_services_facebook_advertising_services": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 2119,
+  "dedup_words": 1680,
+  "specific_words": 935,
+  "seq": [
+   "INCLUDES",
+   "CLOSING_COPY",
+   "PACKAGES_TABLE",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "INCLUDES",
+   "PACKAGES_TABLE",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our Facebook advertising services include?",
+   "How much do Facebook advertising services cost?",
+   "Why use Facebook advertising services?",
+   "What companies should use Facebook ad management services?",
+   "What should I look for in a Facebook advertising agency?",
+   "What metrics do Facebook ad services measure?",
+   "Why work with a Facebook ads company?",
+   "Which ad formats do Facebook ad services include?",
+   "What objectives do Facebook ad services cover?",
+   "What targeting do Facebook ad services use?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 8
+ },
+ "social_media_services_facebook_messenger_chatbot": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1521,
+  "dedup_words": 1227,
+  "specific_words": 652,
+  "seq": [
+   "CLOSING_COPY",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What is Facebook Messenger chatbot?",
+   "How does a chatbot compare to email marketing?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 3
+ },
+ "social_media_services_influencer_marketing": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1522,
+  "dedup_words": 1496,
+  "specific_words": 940,
+  "seq": [
+   "CLOSING_COPY",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "PROCESS",
+   "FAQ",
+   "CLOSING_COPY",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What is influencer marketing?",
+   "What do influencer marketing services include?",
+   "How do influencer marketing agencies find influencers?",
+   "Why invest in influencer marketing services?",
+   "What are the highlights of WebFX\u2019s influencer marketing services?",
+   "What value does WebFX provide with its influencer marketing services?",
+   "What kind of influencers do WebFX\u2019s services focus on?",
+   "What are the benefits of using WebFX for influencer marketing?",
+   "What is WebFX\u2019s process for influencer marketing?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 9
+ },
+ "social_media_services_instacart_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1512,
+  "dedup_words": 1488,
+  "specific_words": 924,
+  "seq": [
+   "CLOSING_COPY",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "INCLUDES",
+   "OTHER"
+  ],
+  "faqs": [
+   "What is Instacart advertising?",
+   "What is the benefit of promoting your business on Instacart?"
+  ],
+  "cta_nonnav": 14,
+  "body_links": 14
+ },
+ "social_media_services_instagram_marketing": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1496,
+  "dedup_words": 1209,
+  "specific_words": 673,
+  "seq": [
+   "INCLUDES",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "PROCESS",
+   "FAQ",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our Instagram marketing services include?",
+   "What are Instagram management services?",
+   "What should Instagram marketing services include?",
+   "Why use Instagram marketing services?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 9
+ },
+ "social_media_services_linkedin_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1572,
+  "dedup_words": 1538,
+  "specific_words": 932,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "WHY_WEBFX",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our LinkedIn advertising services include?",
+   "What are the best LinkedIn marketing and advertising agencies?",
+   "What type of LinkedIn ads work best?",
+   "How much should I pay for LinkedIn ads?",
+   "What do LinkedIn ad services include?",
+   "Is LinkedIn advertising worth the cost?",
+   "What are the common LinkedIn ads metrics?",
+   "Why Choose WebFX as Your LinkedIn Advertising Company?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 11
+ },
+ "social_media_services_pinterest_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1351,
+  "dedup_words": 1297,
+  "specific_words": 747,
+  "seq": [
+   "INCLUDES",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "OTHER"
+  ],
+  "faqs": [
+   "What do our Pinterest advertising services include?",
+   "Why should I use Pinterest advertising services?",
+   "Where do users see Pinterest ads?",
+   "What companies should use a Pinterest advertising agency?",
+   "Are there different types of Pinterest ads?",
+   "What goals can I set for my Pinterest ads?",
+   "How can I measure my Pinterest advertising campaign results?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 5
+ },
+ "social_media_services_snapchat_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1891,
+  "dedup_words": 1599,
+  "specific_words": 1043,
+  "seq": [
+   "CLOSING_COPY",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER"
+  ],
+  "faqs": [
+   "How do I choose the right Snapchat advertising company for my business?",
+   "How do Snapchat advertising services work?",
+   "What types of Snapchat ads are there?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 14
+ },
+ "social_media_services_social_media_consulting": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 2997,
+  "dedup_words": 2522,
+  "specific_words": 1774,
+  "seq": [
+   "RELATED_FOOTER",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "RELATED_FOOTER",
+   "FAQ",
+   "OTHER",
+   "CLOSING_COPY",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What is social media consulting?",
+   "What does a social media consultant do?",
+   "How much does a social media consultant cost?",
+   "How do I become a social media consultant?",
+   "How do our social media consulting services work?",
+   "What solutions support social media marketing?",
+   "Is social media consulting worth it?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 16
+ },
+ "social_media_services_tiktok_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 2273,
+  "dedup_words": 2196,
+  "specific_words": 1451,
+  "seq": [
+   "CLOSING_COPY",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "Why invest in TikTok advertising?"
+  ],
+  "cta_nonnav": 14,
+  "body_links": 8
+ },
+ "social_media_services_twitter_advertising": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1664,
+  "dedup_words": 1383,
+  "specific_words": 911,
+  "seq": [
+   "BENEFITS",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "OTHER",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "Why use Twitter advertising services?",
+   "What goals should I have for Twitter advertising?",
+   "Why should I advertise on Twitter?",
+   "How does targeting work for Twitter advertising?",
+   "How to measure Twitter advertising results?",
+   "What to expect when working with a Twitter advertising agency?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 4
+ },
+ "social_media_services_youtube_seo": {
+  "disc": "social_media",
+  "level": "sub",
+  "words": 1512,
+  "dedup_words": 1239,
+  "specific_words": 812,
+  "seq": [
+   "INCLUDES",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "OTHER",
+   "FAQ",
+   "BENEFITS",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our YouTube SEO services include?",
+   "Why invest in YouTube SEO services?",
+   "What are the advantages of YouTube SEO?",
+   "Are you ready to take advantage of YouTube SEO services?"
+  ],
+  "cta_nonnav": 8,
+  "body_links": 3
+ },
+ "web_design_services": {
+  "disc": "web_design",
+  "level": "top",
+  "words": 3149,
+  "dedup_words": 2547,
+  "specific_words": 1788,
+  "seq": [
+   "PRICING_CARD",
+   "INCLUDES",
+   "EXPERT_QUOTE",
+   "PORTFOLIO",
+   "AWARDS_LOGOS",
+   "RESULTS",
+   "AWARDS_LOGOS",
+   "WHY_WEBFX",
+   "COMPARE",
+   "TECH",
+   "CALCULATOR",
+   "FORM",
+   "BENEFITS",
+   "FAQ",
+   "INCLUDES",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What are web design services?",
+   "What do website design services include?",
+   "How much do web design services cost?",
+   "How do your web design services work?",
+   "What is a web design agency?",
+   "What does a web design agency do?",
+   "What platforms do web design companies work with?",
+   "What should I look for when hiring a web design company?",
+   "Do web design services include tracking and analytics?",
+   "Do web design services include domain and hosting setup?",
+   "What are the best web design agencies?"
+  ],
+  "cta_nonnav": 13,
+  "body_links": 13
+ },
+ "web_design_services_b2b": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 2657,
+  "dedup_words": 2197,
+  "specific_words": 1135,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "CLOSING_COPY",
+   "FORM",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER"
+  ],
+  "faqs": [
+   "What do our B2B web design services include?",
+   "Why partner with a B2B web design company?",
+   "How does our B2B web design company approach website design?",
+   "Why invest in B2B web design services?",
+   "What web design trends must B2B companies look out for?",
+   "What should you look for in B2B website design?",
+   "What are the top B2B web design companies?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 11
+ },
+ "web_design_services_conversion_design": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1489,
+  "dedup_words": 1462,
+  "specific_words": 819,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our website conversion design services include?",
+   "What is conversion web design?",
+   "Why invest in conversion web design?",
+   "How can I increase my website conversion rate?",
+   "Where should I test designs on my website?",
+   "Why choose WebFX\u201ds web design conversion services?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 15
+ },
+ "web_design_services_ecommerce": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1643,
+  "dedup_words": 1597,
+  "specific_words": 687,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "CALCULATOR",
+   "FORM",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "INCLUDES",
+   "FAQ",
+   "OTHER"
+  ],
+  "faqs": [
+   "What\u2019s included in WebFX ecommerce website development services?",
+   "What are ecommerce website development services?",
+   "How much do ecommerce website development services cost?",
+   "What is our process for ecommerce development services?",
+   "What\u2019s the difference between ecommerce websites and traditional websites?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 17
+ },
+ "web_design_services_enterprise": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 2642,
+  "dedup_words": 2547,
+  "specific_words": 2373,
+  "seq": [
+   "CLOSING_COPY",
+   "OTHER",
+   "AWARDS_LOGOS",
+   "WHY_WEBFX",
+   "OTHER",
+   "PRICING_CARD",
+   "FORM",
+   "RELATED_FOOTER",
+   "PRICING_CARD"
+  ],
+  "faqs": [
+   "Is there a set cost for hiring an enterprise web design agency?",
+   "Why should I hire an enterprise web design agency over a freelancer or consultant?"
+  ],
+  "cta_nonnav": 18,
+  "body_links": 9
+ },
+ "web_design_services_rainmakerfx": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1546,
+  "dedup_words": 1531,
+  "specific_words": 673,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "TECH",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "FAQ",
+   "CLOSING_COPY",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our rapid web design services include?",
+   "Why invest in rapid web design?"
+  ],
+  "cta_nonnav": 13,
+  "body_links": 18
+ },
+ "web_design_services_redesign": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1914,
+  "dedup_words": 1727,
+  "specific_words": 882,
+  "seq": [
+   "OTHER",
+   "CLOSING_COPY",
+   "FORM",
+   "AWARDS_LOGOS",
+   "CLOSING_COPY",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "RESULTS",
+   "OTHER",
+   "FAQ",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "Who will own my website?",
+   "How soon can you redesign a website?",
+   "Who will I work with during the redesign?",
+   "How will I stay informed during the redesign?",
+   "What are website redesign services?",
+   "Are there different types of web redesign services?",
+   "What do website redesign services include?",
+   "What do website redesign agencies do?",
+   "How much do website redesign services cost?",
+   "What are the benefits of website redesign services?",
+   "How long does a website redesign take?",
+   "How do I know when to redesign my site?",
+   "1. Is it easy to navigate and find information on my website?",
+   "2. Are my current website visitors converting into sales?",
+   "3. Have my competitors recently updated their site?",
+   "4. Is my content informative and correct?",
+   "5. Does my website represent my business well?",
+   "6. Are my website visitors being tracked and analyzed?",
+   "What are some best practices for website redesign?"
+  ],
+  "cta_nonnav": 13,
+  "body_links": 15
+ },
+ "web_design_services_responsive_web_design": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1903,
+  "dedup_words": 1435,
+  "specific_words": 664,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our responsive web design services include?",
+   "Why invest in responsive web design services?",
+   "What is responsive web design?",
+   "How is responsive web design different from mobile-friendly web design?",
+   "Why is responsive website design important?",
+   "How much do responsive website services cost?",
+   "What is a responsive web design agency?",
+   "What does a responsive web design and development agency do?",
+   "How do I choose the right resonsive web design and development company?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 14
+ },
+ "web_design_services_smb": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1979,
+  "dedup_words": 1519,
+  "specific_words": 434,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "FORM",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do your small business web design services include?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 7
+ },
+ "web_design_services_ux_design": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1483,
+  "dedup_words": 1440,
+  "specific_words": 821,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "OTHER"
+  ],
+  "faqs": [
+   "What do our UX design services include?",
+   "What are UX design services?",
+   "What is a UX design agency?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 12
+ },
+ "web_design_services_wordpress": {
+  "disc": "web_design",
+  "level": "sub",
+  "words": 1836,
+  "dedup_words": 1816,
+  "specific_words": 888,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "CALCULATOR",
+   "FORM",
+   "TECH",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do your WordPress web design services include?",
+   "What are WordPress web design services?",
+   "Why use WordPress?",
+   "What sites can use WordPress?",
+   "How much do WordPress web design services cost?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 11
+ },
+ "web_development_services": {
+  "disc": "web_development",
+  "level": "top",
+  "words": 2007,
+  "dedup_words": 1524,
+  "specific_words": 1012,
+  "seq": [
+   "INCLUDES",
+   "TECH",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "INCLUDES",
+   "OTHER",
+   "FAQ",
+   "CLOSING_COPY",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do WebFX web development services include?",
+   "What is web development?",
+   "What are web development services?",
+   "What\u2019s the difference between web development and web design?",
+   "What is the average cost of web development services?",
+   "What does a web development company do?",
+   "What are the different types of web development services?"
+  ],
+  "cta_nonnav": 15,
+  "body_links": 10
+ },
+ "web_development_services_ada_compliance": {
+  "disc": "web_development",
+  "level": "sub",
+  "words": 2256,
+  "dedup_words": 1934,
+  "specific_words": 1398,
+  "seq": [
+   "PRICING_CARD",
+   "OTHER",
+   "INCLUDES",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "WHY_WEBFX",
+   "FAQ",
+   "OTHER",
+   "PRICING_CARD",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "Why ADA Compliance?",
+   "Does your website need to be ADA compliant?",
+   "Why make your site accessible?",
+   "What disabilities does ADA compliance cover?",
+   "What do our ADA & Section 508 compliance services include?",
+   "Why partner with WebFX for ADA & 508 compliance services?",
+   "What is ADA compliance?",
+   "What are ADA compliance services?",
+   "How does RevenueCloudFX AI work?",
+   "Is 100% ADA compliance guaranteed?",
+   "How much do ADA compliance services cost?",
+   "What is 508 compliance?",
+   "How do companies comply with the ADA?",
+   "Who needs to follow ADA requirements?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 5
+ },
+ "web_development_services_cms": {
+  "disc": "web_development",
+  "level": "sub",
+  "words": 1785,
+  "dedup_words": 1497,
+  "specific_words": 660,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "CALCULATOR",
+   "FORM",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "FAQ",
+   "CLOSING_COPY",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do your CMS development services include?",
+   "What is a CMS?",
+   "What kind of CMS platforms are available?",
+   "When is it time for CMS development services?",
+   "How much does a CMS cost?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 1
+ },
+ "web_development_services_site_speed_optimization": {
+  "disc": "web_development",
+  "level": "sub",
+  "words": 2711,
+  "dedup_words": 2143,
+  "specific_words": 1555,
+  "seq": [
+   "OTHER",
+   "TECH",
+   "PRICING_CARD",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "COMPARE",
+   "BENEFITS",
+   "FAQ",
+   "OTHER"
+  ],
+  "faqs": [
+   "What is the difference between page speed and site speed?",
+   "What are Core Web Vitals?",
+   "Why are website speed optimization services important to website success?",
+   "Is mobile involved?",
+   "Why consider ongoing site speed optimization?",
+   "What factors contribute to slow load time?",
+   "Which tools help with page speed?",
+   "How much does site speed optimization cost?"
+  ],
+  "cta_nonnav": 16,
+  "body_links": 9
+ },
+ "web_development_services_website_maintenance": {
+  "disc": "web_development",
+  "level": "sub",
+  "words": 1779,
+  "dedup_words": 1481,
+  "specific_words": 1038,
+  "seq": [
+   "INCLUDES",
+   "OTHER",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "WHY_WEBFX",
+   "INCLUDES",
+   "RESULTS",
+   "FAQ",
+   "INCLUDES",
+   "PACKAGES_TABLE",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do our website maintenance services include?",
+   "What regular updates do website maintenance services include?",
+   "What are website maintenance services?",
+   "Why is website maintenance important?",
+   "How much do website maintenance services cost?",
+   "What don\u2019t website maintenance services include?"
+  ],
+  "cta_nonnav": 10,
+  "body_links": 5
+ },
+ "web_development_services_website_security_analysis": {
+  "disc": "web_development",
+  "level": "sub",
+  "words": 1399,
+  "dedup_words": 1098,
+  "specific_words": 573,
+  "seq": [
+   "INCLUDES",
+   "OTHER",
+   "WHY_WEBFX",
+   "CHALLENGES",
+   "COMPARE",
+   "FAQ",
+   "CLOSING_COPY",
+   "OTHER",
+   "RELATED_FOOTER"
+  ],
+  "faqs": [
+   "What do our website security services include?",
+   "What\u2019s the value of a website security scan audit?"
+  ],
+  "cta_nonnav": 9,
+  "body_links": 10
+ },
+ "web_development_services_wordpress": {
+  "disc": "web_development",
+  "level": "sub",
+  "words": 1885,
+  "dedup_words": 1575,
+  "specific_words": 736,
+  "seq": [
+   "INCLUDES",
+   "PORTFOLIO",
+   "PRICING_CARD",
+   "FORM",
+   "WHY_WEBFX",
+   "PRICE_ANCHOR",
+   "CHALLENGES",
+   "CLOSING_COPY",
+   "PROCESS",
+   "FAQ",
+   "CLOSING_COPY",
+   "INCLUDES"
+  ],
+  "faqs": [
+   "What do your WordPress development services include?",
+   "How much do our WordPress web development services cost?",
+   "How do our WordPress website development services work?",
+   "How much does a WordPress website cost?",
+   "Why do businesses choose WebFX for WordPress development services?"
+  ],
+  "cta_nonnav": 11,
+  "body_links": 9
+ }
+}

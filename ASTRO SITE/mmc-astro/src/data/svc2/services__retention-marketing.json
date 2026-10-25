@@ -1,0 +1,186 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__retention-marketing.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "rt/journey.jpg",
+    "pos": "50% 50%",
+    "alt": "A customer journey flow on a laptop.",
+    "facts": [
+      {
+        "t": "Your own data first.",
+        "d": "Groups by what people did."
+      },
+      {
+        "t": "Journeys, not blasts.",
+        "d": "WhatsApp and email on behaviour."
+      },
+      {
+        "t": "Measured by repeat.",
+        "d": "Second orders, or lead progress."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "FlowBuilder",
+    "eyebrow": "The work, shown",
+    "h2a": "The flows we actually",
+    "h2b": "build and run.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Start every flow from a real customer action.",
+        "d": "An order placed, a lead gone quiet or a cart left behind starts a journey, so each message has a reason."
+      },
+      {
+        "n": "02",
+        "t": "Send a useful post-purchase message.",
+        "d": "Two days after delivery, a care guide or next-step note arrives, not a sales push."
+      },
+      {
+        "n": "03",
+        "t": "Branch on what each customer did.",
+        "d": "Opened or ignored the email? Each path gets a different next message instead of the same blast."
+      },
+      {
+        "n": "04",
+        "t": "Time the WhatsApp reminder to likely reorder.",
+        "d": "A restock reminder lands when the product is likely to run out, in your brand voice."
+      },
+      {
+        "n": "05",
+        "t": "Run win-back flows for the lapsed.",
+        "d": "Customers who went quiet get a reason to return, and every live flow has one job."
+      }
+    ],
+    "illustrative": "Illustrative layout of a WhatsApp and email flow builder. Not a client account, no real figures. WhatsApp and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "RepeatCurve",
+    "barLogo": "",
+    "barTitle": "Repeat purchase view",
+    "pinsLabel": "Five places repeat purchase leaks",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Segments"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Welcome"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Nurture"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Reorder"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Win-back"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we work with.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: a store, ads and creative that bring first orders in."
+      },
+      {
+        "id": "awwbaby",
+        "line": "Baby products: a store and ads for a range families buy again."
+      },
+      {
+        "id": "mbb",
+        "line": "Body care: a store and ads for a category where reorders matter."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run retention,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Read your data",
+        "d": "We group customers or leads by what they bought or asked, and find where they drift away.",
+        "get": "Clear segments and the moments that lose people.",
+        "img": "rt/data.jpg",
+        "alt": "A customer segments dashboard on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Build the welcome and reorder flows",
+        "d": "Confirm, guide and remind over WhatsApp and email, in your brand voice.",
+        "get": "Live flows, each with a single job.",
+        "img": "rt/welcome.jpg",
+        "alt": "A hand holding a phone with a WhatsApp welcome message.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Add nurture and win-back",
+        "d": "Undecided leads and lapsed customers each get a path back, triggered from your data.",
+        "get": "A route back for everyone who went quiet.",
+        "img": "rt/winback.jpg",
+        "alt": "A hand holding a phone with a WhatsApp win-back message.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Measure and refine weekly",
+        "d": "Repeat purchase, or lead progress through each stage, is reviewed and the flows adjusted.",
+        "get": "A second order, or a decision, that comes sooner.",
+        "img": "rt/replenish.jpg",
+        "alt": "A hand holding a phone with a restock reminder beside a jar of face cream.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Lead generation",
+        "href": "/services/lead-generation/"
+      },
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "AI sales agent by MMC",
+        "href": "/ai-by-mmc/sales-agent/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "about2/callscreen.jpg",
+    "pos": "50% 50%",
+    "alt": "A video call open on a laptop beside a data table.",
+    "facts": [
+      {
+        "t": "Find the leak first.",
+        "d": "Research shows where visitors drop off before any page is touched."
+      },
+      {
+        "t": "A plan you can present.",
+        "d": "Tests are ranked by effort and likely effect, with a reason for each."
+      },
+      {
+        "t": "Losses reported too.",
+        "d": "Read-outs include the tests that did not win, and what they taught."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label CRO"
+  },
+  "work": {
+    "panel": "Heatmap",
+    "eyebrow": "The work, shown",
+    "h2a": "How a test goes from idea",
+    "h2b": "to your client report.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Read where visitors click on the client's page.",
+        "d": "Click maps and analytics show what people tap, what they miss and where they stall."
+      },
+      {
+        "n": "02",
+        "t": "Show how far visitors scroll.",
+        "d": "Scroll maps mark where attention ends, so key proof and calls to action sit above the drop."
+      },
+      {
+        "n": "03",
+        "t": "Write a test plan you can present.",
+        "d": "Each idea has a hypothesis, a variant and a reason, ranked by effort and likely effect."
+      },
+      {
+        "n": "04",
+        "t": "Report wins and losses in your format.",
+        "d": "Results, including tests that did not win, go into a short read-out with what we learned."
+      }
+    ],
+    "illustrative": "Illustrative layout of a page analytics view. Not a client page, no real figures."
+  },
+  "leak": {
+    "visual": "PdpFriction",
+    "barLogo": "",
+    "barTitle": "Page friction view",
+    "pinsLabel": "Five places white-label CRO goes wrong",
+    "pins": [
+      {
+        "x": 8,
+        "y": 0,
+        "label": "Drop-off"
+      },
+      {
+        "x": 36,
+        "y": 0,
+        "label": "Page"
+      },
+      {
+        "x": 56,
+        "y": 0,
+        "label": "Cart"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Form"
+      },
+      {
+        "x": 94,
+        "y": 0,
+        "label": "Tests"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first CRO client",
+    "h2b": "gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and analytics access",
+        "d": "We sign the NDA, then get read access to the client's analytics and agree the one outcome the work is judged on.",
+        "get": "A single agreed conversion goal.",
+        "img": "company/strategy.jpg",
+        "alt": "A consultant talking with a partner at a table, notebook open.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot audit and first test",
+        "d": "One funnel is audited and one test is planned, so you see how a read-out looks before you promise one.",
+        "get": "An audit and a test plan to present.",
+        "img": "company/technology.jpg",
+        "alt": "A developer at a laptop with a store design on a second screen.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Hypothesis and test log SOPs",
+        "d": "How ideas are written, ranked, run and logged is documented, so no test is lost or repeated.",
+        "get": "A test log your team can open.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Four colleagues around a whiteboard while one draws out a plan.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the test calendar",
+        "d": "A steady calendar of tests runs on that routine, and more clients join on the same one.",
+        "get": "CRO for more clients, same routine.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "contact/meeting.jpg",
+    "alt": "Three colleagues leaning over a printed plan on a table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label PPC",
+        "href": "/white-label/ppc/"
+      },
+      {
+        "n": "White-label lead generation",
+        "href": "/white-label/lead-generation/"
+      },
+      {
+        "n": "White-label web design",
+        "href": "/white-label/web-design/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "file": "influencer-marketing.html",
+  "path": "/services/influencer-marketing/",
+  "key": "influencer",
+  "title": "Influencer Marketing Agency for D2C Brands | MMC",
+  "description": "Influencer marketing agency for D2C brands in India. Creator shortlists, briefs, usage rights and results read against sales, not follower counts.",
+  "ogTitle": "Influencer marketing chosen for fit",
+  "ogDescription": "Creators shortlisted for audience fit and read against sales.",
+  "ogAlt": "Monday Marketing Company: influencer marketing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/influencer-marketing.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Influencer marketing",
+          "item": "https://www.mondaymarketing.company/influencer-marketing.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/influencer-marketing.html#webpage",
+      "url": "https://www.mondaymarketing.company/influencer-marketing.html",
+      "name": "Influencer Marketing Agency for D2C Brands | MMC",
+      "description": "Influencer marketing agency for D2C brands in India. Creator shortlists, briefs, usage rights and results read against sales, not follower counts.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/influencer-marketing.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/influencer-marketing.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/influencer-marketing.html#service",
+      "name": "Influencer marketing",
+      "serviceType": "Influencer marketing",
+      "description": "Influencer and creator partnership planning for D2C brands.",
+      "url": "https://www.mondaymarketing.company/influencer-marketing.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/influencer-marketing.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is influencer marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Influencer marketing is the work of partnering with creators whose audience matches your buyers, so their content introduces and recommends your product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does influencer marketing work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We shortlist for audience fit, brief against one idea, help agree deliverables and usage rights, track results to sales and reuse the best content as ads. Creators disclose paid partnerships as advertising rules require."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does influencer marketing cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee reach or sales from any creator. We commit to choosing for fit, clear terms, tracking and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is influencer marketing for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands that sell products a creator can show. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your product, brand guidelines, a budget range for creators, tracking set up on your store, and a person who can approve briefs."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "influencer",
+    "wm": "Creators",
+    "eyebrow": "● Influencer marketing agency",
+    "h1": [
+      "Influencer marketing",
+      [
+        "that ",
+        "picks fit over followers",
+        "."
+      ]
+    ],
+    "sub": "Creators shortlisted for audience fit, briefed against one idea, contracted with clear usage rights, and read against sales.",
+    "tiles": [
+      {
+        "img": "inf/shortlist.jpg",
+        "pos": "50% 50%",
+        "label": "Shortlist",
+        "note": "Audience fit"
+      },
+      {
+        "img": "inf/brief.jpg",
+        "pos": "50% 50%",
+        "label": "Brief",
+        "note": "One brand idea"
+      },
+      {
+        "img": "inf/terms.jpg",
+        "pos": "50% 50%",
+        "label": "Terms",
+        "note": "Usage rights"
+      },
+      {
+        "img": "inf/tracking.jpg",
+        "pos": "50% 50%",
+        "label": "Track",
+        "note": "Links and codes"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Influencer marketing is the work of partnering with creators whose audience matches your buyers, so their content introduces and recommends your product. MMC plans it for D2C brands: shortlisting creators for audience fit, agreeing deliverables and usage rights, tracking results to sales, and reusing the best content as paid ads.",
+      "hl": "whose audience matches your buyers",
+      "who": "Monday Marketing Company (MMC) plans influencer and creator partnerships for D2C brands, and can reuse the best content as paid ads.",
+      "points": [
+        {
+          "icon": "users",
+          "title": "Fit over reach",
+          "text": "Creators chosen for who follows them, not how many."
+        },
+        {
+          "icon": "link",
+          "title": "Tracked properly",
+          "text": "Links and codes so results can be read against sales."
+        },
+        {
+          "icon": "layers",
+          "title": "Rights agreed",
+          "text": "Terms that allow the best content to run as ads."
+        }
+      ],
+      "image": "inf/brief.jpg",
+      "chip": "Chosen for fit"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where influencer marketing goes wrong",
+      "h2a": "Five ways influencer marketing",
+      "h2b": "goes wrong.",
+      "lede": "Creators can introduce a brand well or waste a budget. Each stage below is where it goes wrong, and how we run it."
+    },
+    "stages": [
+      {
+        "k": "Choose for fit",
+        "tag": "Creator shortlisting",
+        "breaks": "Picking creators by follower count.",
+        "why": "A large audience that does not match your buyer produces reach, not sales.",
+        "does": "We shortlist creators by audience fit, engagement quality and past content, and check them before you commit.",
+        "href": "services.html#content",
+        "img": "inf/shortlist.jpg"
+      },
+      {
+        "k": "Brief around one idea",
+        "tag": "Creative briefs",
+        "breaks": "Sending a product and hoping for the best.",
+        "why": "Creators know their audience, but need to know the one thing you want said, and what to avoid.",
+        "does": "We write clear briefs around a single brand idea, leaving room for the creator's own voice.",
+        "href": "ugc-and-video.html",
+        "img": "inf/brief.jpg"
+      },
+      {
+        "k": "Agree the terms",
+        "tag": "Contracts and usage rights",
+        "breaks": "Paying for a post with no rights to reuse it.",
+        "why": "If you cannot run the content as an ad, you lose its best use.",
+        "does": "We agree deliverables, timelines and usage rights up front, including the right to run the content as ads.",
+        "href": "services.html#content",
+        "img": "inf/terms.jpg"
+      },
+      {
+        "k": "Track it to sales",
+        "tag": "Tracking and attribution",
+        "breaks": "Judging campaigns on views and likes.",
+        "why": "Views do not show whether anyone bought. Links, codes and blended sales do.",
+        "does": "We give each creator tracked links and codes and read results alongside your total sales.",
+        "href": "performance-marketing.html",
+        "img": "inf/tracking.jpg"
+      },
+      {
+        "k": "Reuse the best",
+        "tag": "Content reuse as ads",
+        "breaks": "Letting a great post disappear after a day.",
+        "why": "A post that earned attention organically often works as an ad too.",
+        "does": "We take the best creator content, with agreed rights, and run it as paid ads.",
+        "href": "meta-ads.html",
+        "img": "inf/reuse.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "creators are working.",
+      "note": "Read alongside your total sales.",
+      "cards": [
+        {
+          "n": "Audience fit",
+          "d": "How closely a creator's followers match your buyers."
+        },
+        {
+          "n": "Cost per creator result",
+          "d": "What each partnership produced, per rupee."
+        },
+        {
+          "n": "Sales from tracked links and codes",
+          "d": "What can be traced to each creator."
+        },
+        {
+          "n": "Content reused as ads",
+          "d": "How much of the best work keeps earning."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where influencer marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "UGC and video",
+          "d": "Creator-style video made to run as ads and refreshed before it tires.",
+          "img": "ugc/shoot.jpg",
+          "href": "ugc-and-video.html",
+          "link": "See UGC and video"
+        },
+        {
+          "n": "Meta Ads",
+          "d": "Instagram and Facebook campaigns built as one funnel.",
+          "img": "meta/creative.jpg",
+          "href": "meta-ads.html",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "Social media creatives",
+          "d": "Statics, carousels and short video for paid and organic social.",
+          "img": "social/design.jpg",
+          "href": "social-media-creatives.html",
+          "link": "See Social media creatives"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "influencer marketing."
+    ],
+    "faq": [
+      {
+        "q": "What is influencer marketing?",
+        "a": "Influencer marketing is the work of partnering with creators whose audience matches your buyers, so their content introduces and recommends your product."
+      },
+      {
+        "q": "How does influencer marketing work with MMC?",
+        "a": "We shortlist for audience fit, brief against one idea, help agree deliverables and usage rights, track results to sales and reuse the best content as ads. Creators disclose paid partnerships as advertising rules require."
+      },
+      {
+        "q": "What does influencer marketing cost?",
+        "a": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee reach or sales from any creator. We commit to choosing for fit, clear terms, tracking and honest reporting."
+      },
+      {
+        "q": "Who is influencer marketing for?",
+        "a": "D2C brands that sell products a creator can show. It also applies to B2B and education brands: the same method, measured on qualified leads, enquiries and admissions instead of orders."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Your product, brand guidelines, a budget range for creators, tracking set up on your store, and a person who can approve briefs."
+      }
+    ],
+    "cta": {
+      "h2a": "See who should be talking",
+      "h2b": "about your brand.",
+      "lede": "On a call, with a senior strategist. We look at your audience and your creator options together."
+    },
+    "proof": {
+      "codes": [],
+      "does": "run creator work for"
+    },
+    "process": {
+      "h2a": "How we run creator work,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Shortlist for fit",
+          "d": "Creators chosen by audience fit and content quality, not follower count.",
+          "out": "A shortlist you can approve."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Brief and contract",
+          "d": "One idea, clear deliverables and usage rights agreed up front.",
+          "out": "Content and terms in writing."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Track and reuse",
+          "d": "Results are read against sales, and the best content is reused as ads.",
+          "out": "Spend that is read against orders."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Creators for brands that can",
+      "h2b": "measure the result.",
+      "good": {
+        "t": "You sell a product a creator can show, and you can track sales.",
+        "why": "D2C brands get creator content that doubles as ad creative, and consumer-facing education and B2B brands can use it for trust."
+      },
+      "not": {
+        "t": "You want reach with no tracking, or one big name to fix everything.",
+        "why": "Fit and tracking decide results, and a big name rarely substitutes for either."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What influencer work",
+      "h2b": "includes.",
+      "lede": "Six steps from choosing creators to reusing the content that performs.",
+      "items": [
+        {
+          "t": "Creator shortlist",
+          "d": "Creators chosen for audience fit and past content quality, not for follower size alone.",
+          "img": "inf/shortlist.jpg",
+          "alt": "Creator shortlist"
+        },
+        {
+          "t": "Campaign brief",
+          "d": "One clear idea, the must-say points and room for the creator to sound like themselves.",
+          "img": "inf/brief.jpg",
+          "alt": "Campaign brief"
+        },
+        {
+          "t": "Terms and usage rights",
+          "d": "Deliverables, timelines and content usage agreed in writing before work starts.",
+          "img": "inf/terms.jpg",
+          "alt": "Terms and usage rights"
+        },
+        {
+          "t": "Tracking to sales",
+          "d": "Codes, links and platform data set up so posts can be tied to orders or enquiries.",
+          "img": "inf/tracking.jpg",
+          "alt": "Tracking to sales"
+        },
+        {
+          "t": "Content reuse",
+          "d": "The best posts adapted into paid ads and site content, within the agreed rights.",
+          "img": "inf/reuse.jpg",
+          "alt": "Content reuse"
+        },
+        {
+          "t": "Review and next round",
+          "d": "What worked and what did not, written up to shape the next campaign.",
+          "img": "services/creative.jpg",
+          "alt": "Review and next round"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands use MMC for",
+      "h2b": "influencer marketing.",
+      "lede": "We treat creators as a channel to measure, not a favour to hope for.",
+      "img": "inf/terms.jpg",
+      "alt": "Why brands use MMC for influencer marketing.",
+      "items": [
+        {
+          "t": "Fit before reach",
+          "d": "Shortlists are built around who your buyers follow and trust."
+        },
+        {
+          "t": "Paid media in the loop",
+          "d": "Strong posts are turned into ads, which stretches every creator fee further."
+        },
+        {
+          "t": "Clear paperwork",
+          "d": "Rights, timelines and payments are agreed up front."
+        },
+        {
+          "t": "Measured against goals",
+          "d": "Each campaign has a stated goal and a way to check it."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

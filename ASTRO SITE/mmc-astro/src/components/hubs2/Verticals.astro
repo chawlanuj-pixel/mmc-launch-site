@@ -1,0 +1,36 @@
+---
+// Sector pages as visual entries, grouped by audience. Optional `services` column (related service links) per group.
+import Pic from "./Pic.astro";
+interface Entry { n: string; d: string; img: string; href: string; alt?: string; pos?: string }
+interface Group { label: string; note?: string; all?: { label: string; href: string }; items: Entry[]; services?: { n: string; href: string }[] }
+interface Props { eyebrow: string; h2a: string; h2b: string; lede?: string; groups: Group[]; tone?: string; id?: string }
+const { eyebrow, h2a, h2b, lede, groups, tone = "white", id = "sectors" } = Astro.props;
+---
+<section class={"n-band n-band--" + tone} id={id}>
+  <div class="n-wrap">
+    <header class="h2-head h2-rv">
+      <span class="n-eyebrow">{eyebrow}</span>
+      <h2 class="n-h2">{h2a} <span class="n-serif">{h2b}</span></h2>
+      {lede && <p class="n-lede">{lede}</p>}
+    </header>
+    <div>
+      {groups.map((g) => (
+        <div class="h2-vgrp h2-rv">
+          <div class="h2-vgrp__h">
+            <h3>{g.label}</h3>
+            {g.note && <p>{g.note}</p>}
+            {g.all && <a class="h2-go" href={g.all.href}>{g.all.label}<i></i></a>}
+            {g.services && g.services.length > 0 && (
+              <ul class="h2-svcl">{g.services.map((s) => <li><a href={s.href}>{s.n}<i></i></a></li>)}</ul>
+            )}
+          </div>
+          <ul class={"h2-vlist h2-vlist--n" + Math.min(g.items.length, 4)}>
+            {g.items.map((e) => (
+              <li><a class="h2-vent" href={e.href}><Pic src={e.img} alt={e.alt || ""} pos={e.pos} /><b>{e.n}<i class="h2-arr" aria-hidden="true"></i></b><span>{e.d}</span></a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

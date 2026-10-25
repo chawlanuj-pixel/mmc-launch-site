@@ -1,0 +1,197 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "shop/design.jpg",
+    "pos": "50% 50%",
+    "alt": "A Shopify store being designed.",
+    "facts": [
+      {
+        "t": "Built for browsing.",
+        "d": "Structure and design follow how your customers shop."
+      },
+      {
+        "t": "Fast on a phone.",
+        "d": "Speed and checkout come first, because most visits are mobile."
+      },
+      {
+        "t": "Connected to growth.",
+        "d": "Analytics, Meta and your CRM are set up correctly from day one."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands build their Shopify store with MMC"
+  },
+  "work": {
+    "panel": "ShopifyAdmin",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do in your",
+    "h2b": "Shopify store.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Plan the catalogue around how people shop.",
+        "d": "Collections, navigation and page types are set from how customers search, before any design."
+      },
+      {
+        "n": "02",
+        "t": "Design product pages that earn trust.",
+        "d": "Proof, clarity and reassurance sit where the buying decision is made, starting on a phone."
+      },
+      {
+        "n": "03",
+        "t": "Cut apps and weight for speed.",
+        "d": "A lean theme, optimised images and only the apps that earn their place keep pages fast on mobile."
+      },
+      {
+        "n": "04",
+        "t": "Shorten checkout and add the payments shoppers expect.",
+        "d": "UPI, cards and cash on delivery, with no forced account and no surprises at the end."
+      },
+      {
+        "n": "05",
+        "t": "Connect tracking and retention tools.",
+        "d": "Analytics, Meta, your CRM and email or WhatsApp are wired up and tested before launch."
+      }
+    ],
+    "illustrative": "Illustrative layout of a Shopify store admin and a mobile storefront. Not a client store, no real figures. Shopify and its logo belong to Shopify Inc."
+  },
+  "leak": {
+    "visual": "ShopFunnelLeak",
+    "barLogo": "/assets/platforms/shopify.svg",
+    "barTitle": "Store journey",
+    "pinsLabel": "Five places a Shopify build goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Structure"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Trust"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Speed"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Checkout"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Tracking"
+      }
+    ],
+    "stageLabels": [
+      "Catalogue",
+      "Product page",
+      "Speed",
+      "Checkout",
+      "Tracking"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the stores",
+    "h2b": "we have built and run.",
+    "tiles": [
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: the ad and the product page tell one story."
+      },
+      {
+        "id": "mbb",
+        "line": "Body care: Meta carousel and Google Shopping ads tied to one storefront."
+      },
+      {
+        "id": "awwbaby",
+        "line": "Baby products: store, ads and creative from one team."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run Shopify builds,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Plan the store",
+        "d": "Structure, catalogue and the shopper's path are planned before design starts.",
+        "get": "A written plan of the store and what it must connect to.",
+        "img": "shop/plan.jpg",
+        "alt": "A store being planned page by page.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Design for trust",
+        "d": "Screens are designed for a phone first and reviewed with you.",
+        "get": "Approved designs for the pages that sell.",
+        "img": "shop/design.jpg",
+        "alt": "A store product page being designed.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Build for speed",
+        "d": "A lean theme with few apps, checkout and payments tuned.",
+        "get": "A store that is fast and measurable.",
+        "img": "shop/speed.jpg",
+        "alt": "A store being tuned for speed.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Launch and tune",
+        "d": "We test before launch, then watch the first orders and fix what the data shows.",
+        "get": "A live store with tracking you can trust.",
+        "img": "shop/integrate.jpg",
+        "alt": "A store connected to its tools.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "CRO",
+        "href": "/services/cro/"
+      },
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      },
+      {
+        "n": "WooCommerce development",
+        "href": "/services/web-development/woocommerce/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

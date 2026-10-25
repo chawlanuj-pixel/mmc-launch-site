@@ -1,0 +1,53 @@
+---
+// 3. Where it leaks: one wide annotated visual (chosen by S.leak.visual from ./visuals/index.ts) with numbered pins. Pin text comes from
+// the hub stages (breaks, why, does). All texts are in the DOM; the script only chooses which one is shown on desktop. On phones the
+// items are a plain list under the picture. Pins are placed from data: S.leak.pins = [{ x, y, label }] (percent of the visual stage).
+import { visuals } from "./visuals";
+interface Props { H: any; S: any }
+const { H, S } = Astro.props as Props;
+const L = H.leaks, X = S.leak;
+const stages = H.stages as any[];
+const Visual = visuals[(X.visual ?? "MetaFunnel") as keyof typeof visuals];
+if (!Visual) throw new Error(`svc2: unknown leak.visual "${X.visual}". Known: ${Object.keys(visuals).join(", ")}`);
+const pins = (X.pins ?? []) as { x: number; y: number; label?: string }[];
+if (pins.length !== stages.length) throw new Error(`svc2: leak.pins has ${pins.length} entries but the hub has ${stages.length} stages`);
+const barLogo = X.barLogo ?? "/assets/platforms/meta.svg";
+---
+<section class="s2-band s2-band--paper s2-leak" id="where-it-leaks" aria-labelledby="s2-leak-h" data-s2-leak>
+  <div class="s2-wrap">
+    <header class="s2-head">
+      <p class="s2-eyebrow">{X.eyebrow}</p>
+      <h2 class="s2-h2" id="s2-leak-h">{L.h2a} <em>{L.h2b}</em></h2>
+    </header>
+    <figure class="s2-fun">
+      <div class="s2-fun__bar">
+        {barLogo && <img src={barLogo} alt="" width="26" height="26" />}<b>{X.barTitle ?? "Funnel view"}</b><span>{X.hint}</span>
+      </div>
+      <div class="s2-fun__stage">
+        <ul class="s2-fun__pins" aria-label={X.pinsLabel ?? `${pins.length} places spend leaks`}>
+          {stages.map((st: any, k: number) => (
+            <li style={`--x:${pins[k].x}%;--y:${pins[k].y}%`}>
+              <button type="button" class={"s2-pin" + (k === 0 ? " is-on" : "")} data-pin={k} aria-label={`${k + 1}. ${pins[k].label ?? X.pinLabels?.[k]}: ${st.breaks}`}><span>{k + 1}</span></button>
+              <span class="s2-pin__lbl" aria-hidden="true">{pins[k].label ?? X.pinLabels?.[k]}</span>
+            </li>
+          ))}
+        </ul>
+        <Visual X={X} pins={pins} />
+      </div>
+      <figcaption class="s2-fun__note">{X.note ?? L.note}</figcaption>
+    </figure>
+    <ol class="s2-leaklist">
+      {stages.map((st: any, k: number) => (
+        <li class={"s2-leakitem" + (k === 0 ? " is-on" : "")} data-leak={k}>
+          <span class="s2-leakitem__n">{k + 1}</span>
+          <div class="s2-leakitem__b">
+            <p class="s2-leakitem__tag">{st.tag}</p>
+            <h3>{st.breaks}</h3>
+            <p class="s2-leakitem__why">{st.why}</p>
+            <p class="s2-leakitem__fix"><b>How we run it.</b> {st.does}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

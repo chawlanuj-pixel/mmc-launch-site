@@ -1,0 +1,449 @@
+{
+  "file": "branding.html",
+  "path": "/services/branding/",
+  "key": "branding",
+  "title": "D2C Branding Agency India: Brand Identity | MMC",
+  "description": "Branding agency in India for D2C, B2B and education brands: positioning, naming, logo, voice and the guidelines that keep a brand consistent.",
+  "ogTitle": "Branding and identity that makes you memorable",
+  "ogDescription": "Positioning, naming, logo, voice and guidelines.",
+  "ogAlt": "Monday Marketing Company: branding.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/branding.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Branding",
+          "item": "https://www.mondaymarketing.company/branding.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/branding.html#webpage",
+      "url": "https://www.mondaymarketing.company/branding.html",
+      "name": "D2C Branding Agency India: Brand Identity | MMC",
+      "description": "Branding agency in India for D2C, B2B and education brands: positioning, naming, logo, voice and the guidelines that keep a brand consistent.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/branding.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/branding.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/branding.html#service",
+      "name": "Branding",
+      "serviceType": "Branding",
+      "description": "Brand strategy, naming, identity, voice and guidelines for D2C, B2B and education brands.",
+      "url": "https://www.mondaymarketing.company/branding.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/branding.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is branding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Branding is the work of deciding who your brand is for and what it stands for, then giving it a name, a look and a voice that people recognise wherever they meet it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does branding work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We settle the position first, then naming and messaging, then the identity and voice, and finish with guidelines and templates your team can use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does branding cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can guarantee how a market will respond to a brand. We commit to a clear position, a coherent identity and honest advice, including telling you when an idea is not strong enough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is branding for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Founders and teams who want a brand that is clear and consistent. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on standing out on shelf and screen, B2B on looking as credible as the business is, education on a calm, trusted face for families."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your story and goals, what you know about your buyers, examples you like and dislike, and one decision-maker for each stage."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "branding",
+    "wm": "Brand",
+    "eyebrow": "● Branding agency",
+    "h1": [
+      "Branding",
+      [
+        "that ",
+        "makes you memorable",
+        "."
+      ]
+    ],
+    "sub": "Positioning, naming, logo, voice and guidelines built from a clear idea, so every touchpoint looks and sounds like the same brand.",
+    "tiles": [
+      {
+        "img": "brand/position.jpg",
+        "pos": "50% 50%",
+        "label": "Position",
+        "note": "Who you are for"
+      },
+      {
+        "img": "brand/naming.jpg",
+        "pos": "50% 50%",
+        "label": "Name",
+        "note": "Words that stick"
+      },
+      {
+        "img": "brand/logo.jpg",
+        "pos": "50% 50%",
+        "label": "Identity",
+        "note": "Logo, colour, type"
+      },
+      {
+        "img": "brand/guidelines.jpg",
+        "pos": "50% 50%",
+        "label": "Guidelines",
+        "note": "One system"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Branding is the work of deciding who your brand is for and what it stands for, then giving it a name, a look and a voice that people recognise everywhere they meet it. MMC does this for D2C, B2B and education brands: position first, then naming, identity and guidelines. It is judged on clarity and consistency.",
+      "hl": "recognise everywhere they meet it",
+      "who": "Monday Marketing Company (MMC) builds brand identity for D2C, B2B and education brands, from positioning to guidelines.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Position first",
+          "text": "Audience, promise and competitors are settled before anything is drawn."
+        },
+        {
+          "icon": "layers",
+          "title": "A full identity",
+          "text": "Name, logo, colour, type and voice that work together."
+        },
+        {
+          "icon": "grid",
+          "title": "A system that lasts",
+          "text": "Guidelines and templates so every team keeps it consistent."
+        }
+      ],
+      "image": "brand/logo.jpg",
+      "chip": "From position to guidelines"
+    },
+    "leaks": {
+      "style": "stack",
+      "eyebrow": "Where brands go wrong",
+      "h2a": "Five ways a brand",
+      "h2b": "goes wrong.",
+      "lede": "A brand is built in a sequence. Each stage below is where brands lose their edge, and how we build it."
+    },
+    "stages": [
+      {
+        "k": "Decide who you are for",
+        "tag": "Brand strategy",
+        "breaks": "Designing a logo before deciding what the brand stands for.",
+        "why": "A logo cannot fix an unclear idea. Without a position, every later choice is a matter of taste.",
+        "does": "We start with audience, promise and competitors, and write a clear position that every later decision can be checked against.",
+        "href": "services.html#brand",
+        "img": "brand/position.jpg"
+      },
+      {
+        "k": "Find a name that sticks",
+        "tag": "Naming and messaging",
+        "breaks": "Choosing a name because it is available.",
+        "why": "A name is used in every conversation. It needs to be easy to say, spell and remember, and not confuse a buyer.",
+        "does": "We generate and test name options against meaning, sound, availability and how they read in your markets.",
+        "href": "services.html#brand",
+        "img": "brand/naming.jpg"
+      },
+      {
+        "k": "Build the identity",
+        "tag": "Logo, colour and type",
+        "breaks": "Copying a category look so you blend in.",
+        "why": "If your brand looks like every other brand in the category, buyers cannot tell you apart.",
+        "does": "We design a logo, colour and typography that fit your position and stand apart from the category.",
+        "href": "services.html#brand",
+        "img": "brand/logo.jpg"
+      },
+      {
+        "k": "Give it a voice",
+        "tag": "Tone of voice and messaging",
+        "breaks": "Writing every message in a different tone.",
+        "why": "Inconsistent words make a brand feel less trustworthy, however good the design is.",
+        "does": "We define how the brand speaks, with examples for headlines, ads, emails and support, so anyone can write in its voice.",
+        "href": "services.html#brand",
+        "img": "brand/voice.jpg"
+      },
+      {
+        "k": "Make it easy to keep",
+        "tag": "Guidelines and rollout",
+        "breaks": "Handing over a logo file and nothing else.",
+        "why": "Without rules and templates, the brand drifts as more people and agencies touch it.",
+        "does": "We deliver guidelines and ready-to-use templates for the places the brand appears, and help you roll them out.",
+        "href": "packaging-design.html",
+        "img": "brand/guidelines.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What you get",
+      "h2a": "Four parts of a brand",
+      "h2b": "that holds together.",
+      "note": "The deliverables, in the order we build them.",
+      "cards": [
+        {
+          "n": "Positioning",
+          "d": "Who the brand is for and what it stands for."
+        },
+        {
+          "n": "Identity",
+          "d": "Name, logo, colour and typography."
+        },
+        {
+          "n": "Voice",
+          "d": "How the brand speaks, with examples."
+        },
+        {
+          "n": "Guidelines",
+          "d": "Rules and templates that keep it consistent."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where branding fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Packaging design",
+          "d": "Structure and graphics for shelf, tile and doorstep.",
+          "img": "pack/hierarchy.jpg",
+          "href": "packaging-design.html",
+          "link": "See Packaging design"
+        },
+        {
+          "n": "UI/UX design",
+          "d": "Research, flows, screens and a design system.",
+          "img": "ux/screens.jpg",
+          "href": "ui-ux-design.html",
+          "link": "See UI/UX design"
+        },
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready websites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "web-development.html",
+          "link": "See Website development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "branding."
+    ],
+    "faq": [
+      {
+        "q": "What is branding?",
+        "a": "Branding is the work of deciding who your brand is for and what it stands for, then giving it a name, a look and a voice that people recognise wherever they meet it."
+      },
+      {
+        "q": "How does branding work with MMC?",
+        "a": "We settle the position first, then naming and messaging, then the identity and voice, and finish with guidelines and templates your team can use."
+      },
+      {
+        "q": "What does branding cost?",
+        "a": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. Nobody can guarantee how a market will respond to a brand. We commit to a clear position, a coherent identity and honest advice, including telling you when an idea is not strong enough."
+      },
+      {
+        "q": "Who is branding for?",
+        "a": "Founders and teams who want a brand that is clear and consistent. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on standing out on shelf and screen, B2B on looking as credible as the business is, education on a calm, trusted face for families."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Your story and goals, what you know about your buyers, examples you like and dislike, and one decision-maker for each stage."
+      }
+    ],
+    "cta": {
+      "h2a": "Find what your brand",
+      "h2b": "should stand for.",
+      "lede": "On a call, with a senior strategist. We look at your brand and your market together."
+    },
+    "proof": {
+      "codes": [],
+      "does": "build brands for"
+    },
+    "process": {
+      "h2a": "How we build a brand,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "Decide who you are for",
+          "d": "Audience, promise and competitors are settled first.",
+          "out": "A written position."
+        },
+        {
+          "t": "Name and shape the idea",
+          "d": "Naming and messaging tested against meaning, sound and your markets.",
+          "out": "A name and message that fit."
+        },
+        {
+          "t": "Design the identity",
+          "d": "Logo, colour, type and voice designed together.",
+          "out": "An identity system, not a lone logo."
+        },
+        {
+          "t": "Hand over guidelines",
+          "d": "Guidelines and templates for every place the brand appears.",
+          "out": "A kit your team can use."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Branding for businesses ready to",
+      "h2b": "decide who they are.",
+      "good": {
+        "t": "You have a product or service that works and a brand that does not yet show it.",
+        "why": "D2C brands standing out on a crowded shelf, B2B firms that look smaller than they are, and schools that want a calm, credible face all gain."
+      },
+      "not": {
+        "t": "You are pre-revenue and want brand building on a very small monthly budget.",
+        "why": "A real brand needs research and craft, and early on that money does more in testing the product."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What a brand project",
+      "h2b": "covers.",
+      "lede": "Six pieces that make a brand clear, distinct and easy to keep consistent.",
+      "items": [
+        {
+          "t": "Positioning",
+          "d": "Who the brand is for, what it stands for and how it differs from others on the shelf or in search.",
+          "img": "brand/position.jpg",
+          "alt": "Positioning"
+        },
+        {
+          "t": "Naming",
+          "d": "Names tested for sound, meaning, spelling and availability.",
+          "img": "brand/naming.jpg",
+          "alt": "Naming"
+        },
+        {
+          "t": "Logo and identity",
+          "d": "A mark, colour and type system that works from an app icon to a hoarding.",
+          "img": "brand/logo.jpg",
+          "alt": "Logo and identity"
+        },
+        {
+          "t": "Brand voice",
+          "d": "How the brand writes and speaks, with examples for ads, emails and the website.",
+          "img": "brand/voice.jpg",
+          "alt": "Brand voice"
+        },
+        {
+          "t": "Brand guidelines",
+          "d": "A short, usable guide so every team and vendor applies the brand the same way.",
+          "img": "brand/guidelines.jpg",
+          "alt": "Brand guidelines"
+        },
+        {
+          "t": "Launch assets",
+          "d": "Social, packaging and web applications that put the new identity into use.",
+          "img": "services/brand.jpg",
+          "alt": "Launch assets"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build",
+      "h2b": "with MMC.",
+      "lede": "Our branding is made to perform in ads, on shelves and on screens.",
+      "img": "brand/logo.jpg",
+      "alt": "Why brands build with MMC.",
+      "items": [
+        {
+          "t": "Strategy first",
+          "d": "Positioning decisions come before any design, so the identity has a reason."
+        },
+        {
+          "t": "Designed to be used",
+          "d": "We test the identity in ads, packaging and web layouts before it is final."
+        },
+        {
+          "t": "Fits any audience",
+          "d": "D2C brands, B2B companies and educational institutes each need a different tone."
+        },
+        {
+          "t": "Handover that lasts",
+          "d": "Guidelines and files are organised so your team can keep going without us."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

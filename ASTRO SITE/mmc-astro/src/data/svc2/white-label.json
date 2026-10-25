@@ -1,0 +1,226 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/strategy.jpg",
+    "pos": "50% 50%",
+    "alt": "A consultant talking with a partner at a table, notebook open.",
+    "facts": [
+      {
+        "t": "Your brand, your client.",
+        "d": "We stay behind you and never approach your clients."
+      },
+      {
+        "t": "Every discipline.",
+        "d": "Search, paid, social, content, web, apps and AI from one team."
+      },
+      {
+        "t": "Reports your way.",
+        "d": "Deliverables carry your name, your format and your tone."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC as a white-label partner"
+  },
+  "work": {
+    "panel": "AgencyDashboard",
+    "eyebrow": "The work, shown",
+    "h2a": "What white label looks like",
+    "h2b": "from both sides.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Put your logo on what the client sees.",
+        "d": "The dashboard, the report and every deliverable carry your name, colours and format. MMC appears only if you choose it."
+      },
+      {
+        "n": "02",
+        "t": "Keep margin, notes and tasks on your side.",
+        "d": "Internal notes, costs and task lists sit in an agency view that your client never opens."
+      },
+      {
+        "n": "03",
+        "t": "Agree who sees what before work starts.",
+        "d": "A written split of client-facing and agency-only information means nothing reaches the client by accident."
+      },
+      {
+        "n": "04",
+        "t": "Send the monthly report from your domain.",
+        "d": "We prepare it, you read it, and it goes out from your address under your logo."
+      }
+    ],
+    "illustrative": "Illustrative layout of a white-label client dashboard. Not a client account, no real figures. Your logo goes in the logo slot."
+  },
+  "leak": {
+    "visual": "AgencyLeak",
+    "barLogo": "",
+    "barTitle": "Delivery pipeline",
+    "pinsLabel": "Five places agency delivery goes wrong",
+    "base": "From the first brief to the client's inbox",
+    "artLabel": "Five cards showing where agency delivery goes wrong: brief, deadline, quality, report and margin.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Brief"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Deadline"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Quality"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Report"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Margin"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Brief",
+        "kind": "brief",
+        "lines": [
+          "Goals unclear",
+          "Access missing"
+        ],
+        "chip": "Half a brief",
+        "tone": "w"
+      },
+      {
+        "head": "Deadline",
+        "kind": "clock",
+        "lines": [
+          "Date in your head",
+          "Not on the board"
+        ],
+        "chip": "Lands late",
+        "tone": "b"
+      },
+      {
+        "head": "Quality",
+        "kind": "check",
+        "lines": [
+          "Different hands",
+          "No second look"
+        ],
+        "chip": "Drifts",
+        "tone": "w"
+      },
+      {
+        "head": "Report",
+        "kind": "report",
+        "lines": [
+          "Numbers, no story",
+          "Nothing to say"
+        ],
+        "chip": "Thin report",
+        "tone": "w"
+      },
+      {
+        "head": "Margin",
+        "kind": "margin",
+        "lines": [
+          "Rework",
+          "Scope creep"
+        ],
+        "chip": "Eats margin",
+        "tone": "b"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How a white-label engagement",
+    "h2b": "starts, step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "Sign the NDA and agree scope",
+        "d": "We sign an NDA before we see client details, then write down the services you want and the scope per client.",
+        "get": "A written scope you can reuse.",
+        "img": "contact/meeting.jpg",
+        "alt": "Three colleagues leaning over a printed plan on a table.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Run one pilot client",
+        "d": "We pick one client, onboard them behind you and set check-in points, with reporting built in your format.",
+        "get": "A pilot you can judge on the work.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reviewing dashboards on two monitors.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Briefs, approvals, file names, deadlines and report layout are written down so delivery does not rely on one person.",
+        "get": "A short operating guide for your account.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale to more accounts",
+        "d": "When the pilot is steady, we add clients and services on the same routine, with the same strategist.",
+        "get": "More services without more payroll.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/creative.jpg",
+    "alt": "A designer reviewing printed photography on a studio wall.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "White-label reporting",
+        "href": "/white-label/reporting/"
+      },
+      {
+        "n": "White-label pricing models",
+        "href": "/white-label/pricing-models/"
+      },
+      {
+        "n": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

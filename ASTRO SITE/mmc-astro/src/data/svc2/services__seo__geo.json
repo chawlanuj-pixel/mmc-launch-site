@@ -1,0 +1,260 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/whiteboard.jpg",
+    "pos": "50% 40%",
+    "alt": "Three colleagues around a whiteboard while one draws a flow diagram.",
+    "facts": [
+      {
+        "t": "Clear entity facts.",
+        "d": "Who you are, what you offer and where, stated the same way everywhere."
+      },
+      {
+        "t": "Citable content.",
+        "d": "Original, specific pages that give a tool something worth quoting."
+      },
+      {
+        "t": "Trusted mentions.",
+        "d": "Reviews, listings and publications that describe you consistently."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for GEO"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to get you",
+    "h2b": "cited by AI.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Ask the AI tools about your brand.",
+        "d": "A fixed set of brand and category questions goes to the main tools, and we record what is said, cited and wrong."
+      },
+      {
+        "n": "02",
+        "t": "Make your entity unmistakable.",
+        "d": "Name, offer, locations and key facts match on your site, profiles and listings, and are marked up."
+      },
+      {
+        "n": "03",
+        "t": "Publish pages worth citing.",
+        "d": "Your methods, comparisons, definitions and shareable data give a tool a reason to quote you."
+      },
+      {
+        "n": "04",
+        "t": "Earn mentions on trusted sources.",
+        "d": "Reviews, listings and relevant media describe you consistently. No paid link schemes."
+      },
+      {
+        "n": "05",
+        "t": "Recheck citations over time.",
+        "d": "The same questions are asked again, with crawler access and your llms.txt policy reviewed alongside."
+      }
+    ],
+    "illustrative": "Illustrative layout of a search results page and AI answer. Not a client account, no real figures or brand answers.",
+    "serp": {
+      "tabs": [
+        "Search",
+        "AI answers",
+        "Citations"
+      ],
+      "q": "which store should I buy running shoes from",
+      "others": [
+        "guide.example",
+        "reviews.example",
+        "forum.example"
+      ],
+      "youTitle": "Your store: who we are and what we sell",
+      "snipLabel": "Entity panel",
+      "snip": "Your store, a running shoe retailer with sizing guides and a returns policy.",
+      "aiLabel": "AI answer",
+      "ai": "Retailers that publish clear sizing guides and honest returns terms are often recommended. Your store is among those named.",
+      "sources": [
+        "yourstore.example",
+        "reviews.example"
+      ],
+      "chips": [
+        "Name matches everywhere",
+        "Facts consistent"
+      ],
+      "trackCap": "Citation check",
+      "trackSub": "Are we named and linked?",
+      "track": [
+        [
+          "best store for running shoes",
+          "Cited"
+        ],
+        [
+          "where to buy for flat feet",
+          "Cited"
+        ],
+        [
+          "running shoe store near me",
+          "Not yet"
+        ]
+      ],
+      "okState": [
+        "Cited"
+      ],
+      "foot": "The same questions asked again, with crawler access reviewed."
+    }
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaSurfaceMap",
+    "variant": "geo",
+    "barLogo": "",
+    "barTitle": "Citation map",
+    "pinsLabel": "Five ways brands drop out of AI answers",
+    "base": "Sources generative tools draw on",
+    "artLabel": "Five linked cards showing where a brand fails to be cited.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Audit"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Entity"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Content"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Mentions"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Access"
+      }
+    ],
+    "cols": [
+      {
+        "head": "AI answer",
+        "lines": [
+          "Leaves you out",
+          "Names a rival"
+        ],
+        "chip": "Not cited",
+        "tone": "b"
+      },
+      {
+        "head": "Entity",
+        "lines": [
+          "Two names",
+          "Two blurbs"
+        ],
+        "chip": "Facts clash",
+        "tone": "w"
+      },
+      {
+        "head": "Your pages",
+        "lines": [
+          "Say what rivals say",
+          "Add nothing new"
+        ],
+        "chip": "Nothing to cite",
+        "tone": "w"
+      },
+      {
+        "head": "Sources",
+        "lines": [
+          "Your own site only",
+          "No outside voices"
+        ],
+        "chip": "No proof",
+        "tone": "w"
+      },
+      {
+        "head": "Crawlers",
+        "lines": [
+          "Blocked",
+          "Or wide open"
+        ],
+        "chip": "No policy",
+        "tone": "w"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run GEO,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit what AI says",
+        "d": "We record category and brand answers across the main tools and review crawler access.",
+        "get": "A baseline of mentions and errors.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Fix the entity",
+        "d": "We align facts across your site, profiles and listings and mark them up.",
+        "get": "One consistent description of you.",
+        "img": "company/strategy.jpg",
+        "alt": "A consultant talking with a client at a table.",
+        "pos": "50% 40%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Build citable content",
+        "d": "We publish specific pages and start the review and mention work, then recheck.",
+        "get": "Progress tracked over time.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "AI SEO",
+        "href": "/services/seo/ai-seo/"
+      },
+      {
+        "n": "AEO",
+        "href": "/services/seo/aeo/"
+      },
+      {
+        "n": "Online reputation management",
+        "href": "/services/online-reputation-management/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

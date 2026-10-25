@@ -1,0 +1,28 @@
+---
+// "In short": the answer-first paragraph beside a literal photo. `hl` is highlighted inside `lead`.
+// Optional `points` (three short facts) or `doors` (small photo links to the audience hubs).
+import Pic from "./Pic.astro";
+interface Point { title: string; text: string }
+interface Door { label: string; href: string; img: string }
+interface Props { lead: string; hl?: string; img: string; alt: string; pos?: string; label?: string; points?: Point[]; doors?: Door[]; tone?: string; id?: string; note?: string }
+const { lead, hl, img, alt, pos, note, label = "In short", points = [], doors = [], tone = "white", id = "in-short" } = Astro.props;
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const html = hl && lead.includes(hl) ? esc(lead).replace(esc(hl), `<mark>${esc(hl)}</mark>`) : esc(lead);
+---
+<section class={"n-band h2-lede-band n-band--" + tone} id={id}>
+  <div class="n-wrap">
+    <div class="h2-lede">
+      <div class="h2-rv"><Pic src={img} alt={alt} pos={pos} />{note && <p class="h2-note">{note}</p>}</div>
+      <div class="h2-rv">
+        <span class="n-eyebrow">{label}</span>
+        <p class="h2-lede__t" set:html={html} />
+        {points.length > 0 && (
+          <ul class="h2-lede__pts">{points.map((p) => <li><b>{p.title}</b><span>{p.text}</span></li>)}</ul>
+        )}
+        {doors.length > 0 && (
+          <ul class="h2-lede__aud">{doors.map((d) => <li><a href={d.href}><img src={"/assets/" + d.img} alt="" width="64" height="48" loading="lazy" /><b>{d.label}</b></a></li>)}</ul>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

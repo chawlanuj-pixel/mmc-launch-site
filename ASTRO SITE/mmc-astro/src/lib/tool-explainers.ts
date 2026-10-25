@@ -1,0 +1,81 @@
+// Plain-text method, formulas and a worked example for each D2C calculator, rendered server-side under the tool (AEO: quotable by search and AI answers).
+// All example numbers are illustrative and checked by arithmetic; none is a benchmark or a client result.
+export interface Explainer {
+  h2: string; intro: string; formulas: string[]; exTitle: string; exAssume: string;
+  rows: [string, string][]; result: string; read: string; notes: string[];
+  guide: { href: string; label: string }; related: { href: string; label: string };
+}
+export const EXPLAINERS: Record<string, Explainer> = {
+  "unit-economics": {
+    h2: "How the unit economics calculator works",
+    intro: "Monday Marketing Company built this calculator around the contribution ladder: three profit measures that each remove one more layer of cost from an order. CM3 is the one that has to pay for salaries, rent and profit.",
+    formulas: ["CM1 = net revenue − product cost", "CM2 = CM1 − fulfilment (shipping, gateway fees, packing)", "CM3 = CM2 − returns allowance − acquisition cost", "Break-even orders per month = fixed monthly cost ÷ CM3 per order"],
+    exTitle: "Worked example", exAssume: "Illustrative numbers for one order, not a benchmark.",
+    rows: [["Net revenue per order", "₹1,000"], ["Product cost", "−₹300"], ["CM1", "₹700"], ["Fulfilment (shipping ₹90, packing ₹40, gateway ₹20)", "−₹150"], ["CM2", "₹550"], ["Returns allowance", "−₹50"], ["Acquisition cost (CAC)", "−₹250"], ["CM3", "₹250"]],
+    result: "With ₹5,00,000 of fixed cost a month, break-even is 5,00,000 ÷ 250 = 2,000 orders a month. If CM3 is zero or negative there is no break-even volume: more orders only make the loss bigger, and the fix has to come from price, product cost, returns or CAC.",
+    read: "Start with CM3 per order. If it is positive, the question is volume: can the brand reach the break-even order count with the demand and the cash it has? If it is negative, look at which line is largest relative to the order value. Price, product cost, the returns rate and CAC are the four levers, and fixing the biggest one first moves CM3 the most. Re-run the numbers whenever a cost changes, such as a new courier rate or a price rise.",
+    notes: ["Adjust CAC for returns. You pay to acquire every order placed, including the ones that come back undelivered. At a 25% return rate, the effective cost per delivered order is CAC ÷ 0.75, a third higher than the figure in your ad account."],
+    guide: { href: "/guides/contribution-margin-roas/", label: "Read the guide: contribution margin and the ROAS you need to break even" },
+    related: { href: "/tools/breakeven-roas/", label: "Break-even ROAS calculator" },
+  },
+  "breakeven-roas": {
+    h2: "How the break-even ROAS calculator works",
+    intro: "Break-even ROAS is the return on ad spend at which an order pays for its own advertising and nothing more. Monday Marketing Company works it out from contribution, the money an order leaves behind before ads, not from the ROAS an ad platform reports.",
+    formulas: ["Contribution before ads = order value − product cost − packaging − shipping − payment fees − returns allowance", "Break-even ROAS = 1 ÷ (contribution before ads ÷ order value)", "Break-even CAC = contribution before ads"],
+    exTitle: "Worked example", exAssume: "Illustrative numbers for one ₹1,000 order, not a benchmark.",
+    rows: [["Order value (before tax)", "₹1,000"], ["Product cost", "−₹300"], ["Packaging", "−₹40"], ["Shipping", "−₹90"], ["Payment fees", "−₹20"], ["Returns allowance", "−₹50"], ["Contribution before ads", "₹500 (50%)"]],
+    result: "Break-even ROAS is 1 ÷ 0.5 = 2.0, and break-even CAC is ₹500. A campaign at ROAS 3.0 spends about ₹333 to win the order and leaves about ₹167. A campaign at ROAS 1.8 spends about ₹556 and loses about ₹56, even though the dashboard looks healthy.",
+    read: "Treat break-even ROAS as a floor, not a target. A campaign below it needs a fix or a pause, unless it brings customers who reorder. A campaign above it leaves margin, and the gap between the two is what ads add to profit. Compare it with the ROAS your platform reports on the same tax basis, and read blended results across channels, because each platform counts its own conversions.",
+    notes: ["Returns move the answer more than most people expect. A returned order earns nothing but still pays shipping, packaging and handling, so keep the returns allowance as its own line.", "Use the same tax basis for the ROAS you read and the margin you calculate."],
+    guide: { href: "/guides/contribution-margin-roas/", label: "Read the guide: contribution margin and the ROAS you need to break even" },
+    related: { href: "/tools/unit-economics/", label: "Unit economics calculator" },
+  },
+  "ltv-cac": {
+    h2: "How the LTV:CAC calculator works",
+    intro: "LTV:CAC compares what a customer is worth with what it cost to win them. Monday Marketing Company builds lifetime value on contribution, not revenue, because revenue ignores product cost, shipping and fees and flatters the number.",
+    formulas: ["LTV (contribution) = contribution per order × orders per customer over their lifetime", "LTV:CAC = LTV ÷ CAC", "CAC payback = the month cumulative contribution from a customer reaches CAC"],
+    exTitle: "Worked example", exAssume: "Illustrative numbers, not a benchmark.",
+    rows: [["Contribution per order", "₹500"], ["Orders per customer, on average", "1.8"], ["LTV (contribution)", "₹900"], ["CAC", "₹300"], ["LTV:CAC", "3.0 : 1"]],
+    result: "A 3:1 ratio is the commonly used benchmark: three rupees of lifetime contribution for every rupee spent winning the customer. With the same LTV and a CAC of ₹600, the ratio falls to 1.5:1 and the first order leaves the brand ₹100 short, so the customer pays back only if they order again.",
+    read: "Read the ratio and the payback together. A healthy ratio with a long payback still ties up cash, and a short payback with a thin ratio leaves little to scale on. If the ratio is low, the levers are higher contribution per order, a better repeat rate or a lower CAC. Use contribution for LTV so that the number reflects what is left to pay for acquisition and overhead.",
+    notes: ["Below about 2:1, growth generally burns cash. Far above 4:1 often means the brand is underspending and leaving growth on the table.", "Payback matters as much as the ratio. A three-month payback lets a brand recycle cash four times a year; a twelve-month payback only once."],
+    guide: { href: "/guides/contribution-margin-roas/", label: "Read the guide: contribution margin, the base for LTV" },
+    related: { href: "/tools/cac-runway/", label: "CAC runway calculator" },
+  },
+  "funnel-roas": {
+    h2: "How the funnel ROAS calculator works",
+    intro: "ROAS is not set by how much you spend. It is set by your CPM, your order value and the five conversion rates between an impression and a paid order. Monday Marketing Company uses this model to find which step is leaking.",
+    formulas: ["Impressions = ad spend ÷ CPM × 1,000", "Orders = impressions × click rate × landing rate × add-to-cart rate × checkout rate × order rate", "ROAS = orders × order value ÷ ad spend", "Cost per order = ad spend ÷ orders"],
+    exTitle: "Worked example", exAssume: "Illustrative numbers, not a benchmark: ₹1,00,000 spend, ₹200 CPM, ₹1,000 order value.",
+    rows: [["Impressions", "5,00,000"], ["Impression → click (1%)", "5,000 clicks"], ["Click → landing page (85%)", "4,250"], ["Landing page → add to cart (8%)", "340"], ["Add to cart → checkout (45%)", "153"], ["Checkout → order (60%)", "about 92 orders"]],
+    result: "That is about ₹91,800 of revenue on ₹1,00,000 of spend: a ROAS of about 0.92 and a cost per order of about ₹1,089. Lift only the add-to-cart rate from 8% to 10% and orders rise to about 115, a ROAS of about 1.15, with the same spend and the same ads.",
+    read: "Look for the step furthest from where it should be and with the most traffic behind it. A small lift early in the funnel, like click rate, carries through every later step, while a fix late in the funnel, like checkout, only affects the people who got that far. Compare the ROAS the model gives with your break-even ROAS before deciding whether the leak or the spend is the problem.",
+    notes: ["Doubling spend roughly doubles orders at the same ROAS. It does not make the funnel more efficient.", "Fix the step furthest from the benchmark first, weighted by traffic. Landing page to add to cart is usually the costliest to get wrong because every visitor has already been paid for."],
+    guide: { href: "/guides/attribution-overlap/", label: "Read the guide: why ad dashboards report more sales than you made" },
+    related: { href: "/tools/breakeven-roas/", label: "Break-even ROAS calculator" },
+  },
+  "cac-runway": {
+    h2: "How the CAC runway calculator works",
+    intro: "A new brand often pays more to acquire a customer than that customer is worth on the first order. This calculator shows how long that gap lasts and how much cash it burns. Monday Marketing Company looks at the total burn, not just the month the brand turns profitable.",
+    formulas: ["CAC in month n = starting CAC × (1 − monthly improvement) ^ n", "Gap per new customer = CAC − break-even CAC", "Total burn = the deepest point of the cumulative cash curve, the sum of monthly losses before the first profitable month"],
+    exTitle: "Worked example", exAssume: "Illustrative numbers, not a benchmark. Starting CAC ₹900, break-even CAC ₹670, CAC improving 6% a month, 100 new customers a month. This example leaves out repeat purchase and fixed costs to show the mechanics.",
+    rows: [["Month 1: CAC ₹846, gap ₹176 per customer", "−₹17,600"], ["Month 2: CAC ₹795, gap ₹125", "−₹12,524"], ["Month 3: CAC ₹748, gap ₹78", "−₹7,750"], ["Month 4: CAC ₹703, gap ₹33", "−₹3,267"]],
+    result: "CAC falls below ₹670 in month 5 (about ₹661), after about ₹41,000 of gap spend over the first four months. The full calculator also models repeat purchase, which is why the month the brand turns profitable usually sits later than the month CAC crosses break-even.",
+    read: "Focus on the total cash needed, not the month of profit. If the burn is larger than the brand can fund, the options are a lower starting CAC, a higher contribution per order, a stronger repeat rate or a slower ramp in new customers. Faster growth brings the profitable month closer but usually deepens the trough, so check the cash line before raising spend.",
+    notes: ["Growing faster usually deepens the trough, because more customers are acquired above break-even CAC each month. Repeat rate is the lever that shortens the burn, because repeat orders cost nothing to acquire."],
+    guide: { href: "/guides/contribution-margin-roas/", label: "Read the guide: what an order leaves behind, which sets break-even CAC" },
+    related: { href: "/tools/ltv-cac/", label: "LTV:CAC calculator" },
+  },
+  "growth-trajectory": {
+    h2: "How the growth trajectory calculator works",
+    intro: "Small monthly gains compound into large yearly ones. This calculator turns a starting run rate and a month-on-month growth rate into a year-on-year rate, a doubling time and a five-year path.",
+    formulas: ["YoY growth = (1 + MoM growth) ^ 12 − 1", "Months to double = ln 2 ÷ ln(1 + monthly growth rate)", "Revenue after n months = starting monthly revenue × (1 + MoM growth) ^ n"],
+    exTitle: "Worked example", exAssume: "Illustrative numbers, not a benchmark: a starting run rate of ₹10,00,000 a month.",
+    rows: [["Steady 10% month-on-month growth", "YoY growth of about 214%"], ["Monthly revenue after 12 months", "about ₹31,38,000"], ["Months to double at 10% a month", "about 7.3"], ["Months to double at 5% a month", "about 14.2"]],
+    result: "A steady 10% a month multiplies revenue about 3.1 times in a year, which is why small monthly gains matter more than they look. Any growth rate quoted without a starting revenue tells you very little: early brands can post high percentages for a while, and sustained growth gets harder at scale.",
+    read: "Use the doubling time to sense-check ambition against capacity. If revenue doubles in about seven months, stock, cash, team and ad budgets must grow at the same pace. Compare the monthly rate you assume with what the brand has actually delivered over the last six months, and keep the starting revenue next to any percentage you quote.",
+    notes: ["Treat the output as arithmetic, not a forecast. Real growth depends on margin, cash and the channels behind it."],
+    guide: { href: "/guides/", label: "Read the guides: the method behind the numbers" },
+    related: { href: "/tools/cac-runway/", label: "CAC runway calculator" },
+  },
+};

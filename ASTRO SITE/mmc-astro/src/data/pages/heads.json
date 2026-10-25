@@ -1,0 +1,624 @@
+{
+  "home": {
+    "title": "Performance Marketing That Survives the P&L | MMC India",
+    "description": "Media, creative, retention and technology run by one senior team, measured on contribution margin, not platform ROAS. For D2C, B2B and education brands.",
+    "ogTitle": "Performance marketing that survives the P&L",
+    "ogDescription": "One senior team across media, creative, retention and tech, measured on contribution margin.",
+    "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+    "canonical": "https://www.mondaymarketing.company/",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mondaymarketing.company/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.mondaymarketing.company/#webpage",
+        "url": "https://www.mondaymarketing.company/",
+        "name": "Performance Marketing That Survives the P&L | MMC India",
+        "description": "Media, creative, retention and tech run by one senior team, measured on contribution margin.",
+        "isPartOf": {
+          "@id": "https://www.mondaymarketing.company/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.mondaymarketing.company/#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "inLanguage": "en",
+        "about": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "primaryImageOfPage": "https://www.mondaymarketing.company/assets/og-card.jpg"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.mondaymarketing.company/#organization",
+        "name": "Monday Marketing Company",
+        "alternateName": "MMC",
+        "url": "https://www.mondaymarketing.company/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.mondaymarketing.company/assets/logo-primary.png"
+        },
+        "image": "https://www.mondaymarketing.company/assets/og-card.jpg",
+        "description": "Monday Marketing Company is a senior-led performance marketing studio for modern consumer brands. Media, creative, retention and technology run by one team and measured on contribution margin: not dashboard ROAS.",
+        "slogan": "Design × Marketing × Technology × Content × AI",
+        "foundingDate": "2015",
+        "email": "sales-in@mondaymarketing.company",
+        "telephone": "+917666309102",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park",
+          "addressLocality": "Thane",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400607",
+          "addressCountry": "IN"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "India"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/monday.marketing.co/",
+          "https://in.linkedin.com/company/monday-marketing-company"
+        ],
+        "knowsAbout": [
+          "Performance marketing",
+          "Contribution margin and break-even ROAS",
+          "Meta Ads",
+          "Google Ads",
+          "Amazon Ads",
+          "Quick commerce advertising",
+          "Retention marketing",
+          "Conversion rate optimisation",
+          "Shopify development",
+          "UGC and video production",
+          "Branding and packaging design",
+          "SEO and answer-engine optimisation",
+          "Lead generation"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.mondaymarketing.company/#website",
+        "url": "https://www.mondaymarketing.company/",
+        "name": "Monday Marketing Company",
+        "alternateName": "MMC",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        }
+      }
+    ]
+  },
+  "services": {
+    "title": "Marketing Services for D2C, B2B and Education Brands | MMC",
+    "description": "Paid media, SEO, conversion, brand, technology and content for D2C, B2B and education brands in India, run as connected systems by one team.",
+    "ogTitle": "Marketing services for D2C, B2B and education brands",
+    "ogDescription": "Connected systems run by one team: paid media, search, brand, technology and content.",
+    "ogAlt": "Monday Marketing Company: marketing services for D2C, B2B and education brands.",
+    "canonical": "https://www.mondaymarketing.company/services.html",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mondaymarketing.company/services.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.mondaymarketing.company/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.mondaymarketing.company/services.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://www.mondaymarketing.company/services.html#webpage",
+        "url": "https://www.mondaymarketing.company/services.html",
+        "name": "Marketing Services for D2C, B2B and Education Brands | MMC",
+        "description": "Paid media, SEO, conversion, brand, technology and content for D2C, B2B and education brands in India, run as connected systems by one team.",
+        "isPartOf": {
+          "@id": "https://www.mondaymarketing.company/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.mondaymarketing.company/services.html#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "inLanguage": "en",
+        "mainEntity": {
+          "@id": "https://www.mondaymarketing.company/services.html#services"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": "https://www.mondaymarketing.company/services.html#services",
+        "name": "MMC services",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Performance marketing",
+            "url": "https://www.mondaymarketing.company/performance-marketing.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lead generation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Retention marketing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "SEO strategy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "CRO for websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Logo and brand identity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "UI/UX systems"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Packaging strategy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Shopify and ecommerce development"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Website development"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "Mobile app development"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "UGC and video production"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "name": "Social media creatives"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "name": "Influencer marketing"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.mondaymarketing.company/services.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What marketing services does MMC offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Services across connected systems: Revenue Accelerators (performance marketing, lead generation, retention), Organic Growth Engines (SEO and conversion), Brand Foundation Builders (identity, UX, packaging), Technology Drivers (Shopify, websites, apps) and Content Magnets (UGC, video, social, influencers)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to buy every service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You can start with one. The audit call shows where your biggest leak is, and we begin there."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which service should I start with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If ad spend is your biggest cost, start with performance marketing. If traffic is fine but few visitors buy, start with conversion. If nobody finds you in search, start with SEO. The audit call settles it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on scope and, for media, on ad spend, so we quote after the audit call."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which kinds of brands do you work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "D2C brands, B2B companies and educational institutes, plus consumer-facing businesses such as real estate, hospitality and mobility. D2C brands buy on orders and repeat purchases. B2B and education brands buy on qualified leads and enrolments. The work is set up differently for each: see the D2C, B2B and education pages."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pm": {
+    "title": "Performance Marketing for D2C Brands in India | MMC",
+    "description": "MMC runs Meta, Google, Amazon and quick-commerce paid media for D2C brands in India, budgeted against contribution margin, not platform ROAS.",
+    "ogTitle": "Performance marketing for D2C brands in India",
+    "ogDescription": "Paid media run against profit, not platform screenshots.",
+    "ogAlt": "Monday Marketing Company: performance marketing that survives the P&L.",
+    "canonical": "https://www.mondaymarketing.company/performance-marketing.html",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mondaymarketing.company/performance-marketing.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.mondaymarketing.company/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.mondaymarketing.company/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Performance marketing",
+            "item": "https://www.mondaymarketing.company/performance-marketing.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.mondaymarketing.company/performance-marketing.html#webpage",
+        "url": "https://www.mondaymarketing.company/performance-marketing.html",
+        "name": "Performance Marketing for D2C Brands in India | MMC",
+        "description": "MMC runs Meta, Google, Amazon and quick-commerce paid media for D2C brands in India, budgeted against contribution margin, not platform ROAS.",
+        "isPartOf": {
+          "@id": "https://www.mondaymarketing.company/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.mondaymarketing.company/performance-marketing.html#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "inLanguage": "en",
+        "mainEntity": {
+          "@id": "https://www.mondaymarketing.company/performance-marketing.html#service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.mondaymarketing.company/performance-marketing.html#service",
+        "name": "Performance marketing for D2C brands",
+        "serviceType": "Performance marketing",
+        "description": "Paid media on Meta, Google, Amazon and quick commerce for D2C brands in India, run as one account structure and judged on contribution margin.",
+        "url": "https://www.mondaymarketing.company/performance-marketing.html",
+        "provider": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "India"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.mondaymarketing.company/performance-marketing.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does MMC's performance marketing cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Media buying on Meta, Google, Amazon and quick commerce, plus the creative and reporting that go with it, run as one account structure for D2C brands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Meta, Google, Amazon or quick commerce: what comes first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start where your buyers already look for you and where your margin can carry the spend. We settle the order in the audit, against your break-even ROAS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is success measured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On contribution margin, and on blended results reconciled to your store data, not on platform-reported ROAS. Break-even ROAS is the floor. It is revenue per order divided by contribution per order, and you can work yours out with the free break-even ROAS calculator."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on ad spend and scope, so we quote after the audit call, once we have seen your accounts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with B2B and education brands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. This page is about D2C, but we also run lead generation for B2B companies and educational institutes. There the goal is qualified leads and enrolments, not baskets and repeat orders, so the work is set up differently. See the B2B and education pages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a minimum commitment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We agree terms on the audit call, once we know what you need."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is break-even ROAS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Revenue per order divided by contribution per order. Below it, you are paying for revenue instead of profit. Try the break-even ROAS calculator."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "d2c": {
+    "title": "Marketing for D2C Brands in India | MMC",
+    "description": "MMC runs ads, creative, conversion and retention for D2C brands in India, judged on profit per order, not platform ROAS. Book a free paid-media audit.",
+    "ogTitle": "Marketing for D2C brands in India",
+    "ogDescription": "One team for the whole D2C growth stack, judged on profit per order.",
+    "ogAlt": "Monday Marketing Company: marketing for D2C brands in India.",
+    "canonical": "https://www.mondaymarketing.company/d2c.html",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mondaymarketing.company/d2c.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.mondaymarketing.company/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "D2C brands",
+            "item": "https://www.mondaymarketing.company/d2c.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.mondaymarketing.company/d2c.html#webpage",
+        "url": "https://www.mondaymarketing.company/d2c.html",
+        "name": "Marketing for D2C Brands in India | MMC",
+        "description": "MMC runs ads, creative, conversion and retention for D2C brands in India, judged on profit per order, not platform ROAS.",
+        "isPartOf": {
+          "@id": "https://www.mondaymarketing.company/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.mondaymarketing.company/d2c.html#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.mondaymarketing.company/d2c.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is D2C marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "D2C (direct-to-consumer) marketing sells a brand's products straight to shoppers online, with no retailer in between. Acquisition cost, delivery, returns and repeat purchase all sit on the brand's own P&L, so the marketing has to be judged on profit per order, not on platform-reported ROAS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does MMC do for D2C brands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Performance media, creative, conversion, retention and brand work, run by one team and measured on contribution margin. The tags on this page show what we run for some of the brands we work with."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you run Amazon and quick commerce?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We run Amazon and quick-commerce ads alongside media on the brand's own site. The Growing Giraffe is one brand we run them for."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you only work with D2C brands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. D2C is where we go deepest, but we also work with B2B companies and educational institutes. For them the goal is qualified leads and enrolments rather than orders, so the work is set up differently. See the B2B and education pages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which D2C brands is this for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brands that sell direct online and want ad spend judged on profit. If ROAS alone is the target, or there is no paid media to review yet, we will say so early."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on ad spend and scope, so we quote after the audit call, once we have seen your accounts."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audit": {
+    "title": "Free Paid-Media Audit for Brands in India | MMC",
+    "description": "Book a free 30-minute audit call. A senior strategist reads your ad accounts against your break-even numbers and tells you where to start the work.",
+    "ogTitle": "A free paid-media audit for brands in India",
+    "ogDescription": "We read your ad accounts against your break-even numbers and tell you where to start.",
+    "ogAlt": "Monday Marketing Company: a free paid-media audit for brands in India.",
+    "canonical": "https://www.mondaymarketing.company/audit.html",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://www.mondaymarketing.company/audit.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.mondaymarketing.company/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Free paid-media audit",
+            "item": "https://www.mondaymarketing.company/audit.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.mondaymarketing.company/audit.html#webpage",
+        "url": "https://www.mondaymarketing.company/audit.html",
+        "name": "Free Paid-Media Audit for Brands in India | MMC",
+        "description": "Book a free audit call. A senior strategist reads your ad accounts against your break-even numbers and tells you where to start.",
+        "isPartOf": {
+          "@id": "https://www.mondaymarketing.company/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.mondaymarketing.company/audit.html#breadcrumb"
+        },
+        "publisher": {
+          "@id": "https://www.mondaymarketing.company/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.mondaymarketing.company/audit.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is the audit really free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The audit call is free, and it does not commit you to anything."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the audit only for D2C brands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. D2C is where we go deepest, but we also audit paid media for B2B companies and educational institutes. For those, we look at what a qualified lead or an enrolment costs instead of ROAS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who runs the call?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A senior strategist at MMC. It is a conversation about your numbers, not a sales presentation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I have ready?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your ad spend and results for the last three months, and your margin if you know it. If you do not, we can work it out together on the call."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if MMC is not the right fit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We say so early. If ROAS alone is the target, or there is no paid media to review yet, another route will serve you better, and we will tell you which."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens after the call?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If it makes sense to work together, we agree scope and terms then, once we have seen your accounts. Pricing is quoted after the call, not before."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "file": "locations-thane.html",
+  "path": "/locations/thane/",
+  "key": "loc-thane",
+  "title": "Digital Marketing Agency in Thane | MMC",
+  "description": "MMC serves brands in Thane from its Mumbai team. Local search, ads and review handling for Thane businesses, on a call or in person, across a table.",
+  "ogTitle": "Digital marketing in Thane",
+  "ogDescription": "Local search, ads and stores for Thane businesses, served by our Mumbai team.",
+  "ogAlt": "Monday Marketing Company: digital marketing in Thane.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/locations/thane/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://www.mondaymarketing.company/locations/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Thane",
+          "item": "https://www.mondaymarketing.company/locations/thane/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/locations/thane/#webpage",
+      "url": "https://www.mondaymarketing.company/locations/thane/",
+      "name": "Digital Marketing Agency in Thane | MMC",
+      "description": "MMC serves brands in Thane from its Mumbai team. Local search, ads and review handling for Thane businesses, on a call or in person, across a table.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/locations/thane/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/locations/thane/#office"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": [
+        "ProfessionalService",
+        "LocalBusiness"
+      ],
+      "@id": "https://www.mondaymarketing.company/locations/thane/#office",
+      "name": "Monday Marketing Company, Thane",
+      "alternateName": "MMC",
+      "url": "https://www.mondaymarketing.company/locations/thane/",
+      "image": "https://www.mondaymarketing.company/assets/og-card.jpg",
+      "logo": "https://www.mondaymarketing.company/assets/logo-primary.png",
+      "telephone": "+917666309102",
+      "email": "sales-in@mondaymarketing.company",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park",
+        "addressLocality": "Thane",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400607",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "14:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Thane"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
+      "parentOrganization": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/locations/thane/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does MMC have an office in Thane?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve Thane from our Mumbai team and work from Mumbai and Indore. Our postal address is 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When can we reach you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our listed hours are Monday to Friday, 10:00 to 19:00, and Saturday, 10:00 to 14:00. You can also write to sales-in@mondaymarketing.company or call +91 766 630 9102. We reply inside one working day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to come to Thane to work with you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Most work runs on video calls and shared reports, so your business can be anywhere in India. If you want a first meeting in person, book a call and we will arrange it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does marketing for a Thane business involve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually four things: a complete Google Business Profile for each place customers visit, a page on your site that says Thane clearly, honest handling of reviews, and ads aimed at the areas your buyers come from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you manage several Thane outlets or branches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each outlet gets its own verified profile with consistent details, and a page on your site that matches it. For brands with many outlets across cities, see Mumbai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee a top local ranking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list."
+          }
+        }
+      ]
+    }
+  ],
+  "updated": "2026-10-11",
+  "hub": {
+    "key": "loc-thane",
+    "wm": "THANE",
+    "eyebrow": "● Thane",
+    "h1": [
+      "Digital marketing",
+      [
+        "in Thane, ",
+        "from our Mumbai team",
+        "."
+      ]
+    ],
+    "sub": "We serve Thane from our Mumbai team. If your customers are in Thane or the wider Mumbai region, we run your local search, ads and enquiry follow-up with you, on a call or across a table.",
+    "tiles": [
+      {
+        "img": "contact/meeting.jpg",
+        "pos": "50% 50%",
+        "label": "Meet",
+        "note": "First meeting, in person"
+      },
+      {
+        "img": "about2/callscreen.jpg",
+        "pos": "50% 50%",
+        "label": "Call",
+        "note": "Reviews on a shared screen"
+      },
+      {
+        "img": "orm/profile.jpg",
+        "pos": "50% 50%",
+        "label": "Profile",
+        "note": "Complete for Thane searches"
+      },
+      {
+        "img": "orm/reply.jpg",
+        "pos": "50% 50%",
+        "label": "Reviews",
+        "note": "Answered properly"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "A business in Thane competes twice: with the shop down the road, and with every Mumbai brand that appears for the same search. Winning means a complete Google Business Profile, a page that says Thane clearly, honest handling of reviews and ads aimed at the areas your buyers come from.",
+      "hl": "a complete Google Business Profile, a page that says Thane clearly",
+      "who": "Monday Marketing Company (MMC) serves brands in Thane from its Mumbai team. Our postal address is 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. We work from Mumbai and Indore, and serve brands across India.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Found by place",
+          "text": "Profiles and pages that match what Thane buyers search."
+        },
+        {
+          "icon": "users",
+          "title": "Met in person or on a call",
+          "text": "Our Mumbai team is close by, and most work runs on video."
+        },
+        {
+          "icon": "link",
+          "title": "A page for Thane",
+          "text": "Details on your site that match your profile."
+        }
+      ],
+      "image": "company/strategy.jpg",
+      "chip": "A Mumbai team close to Thane"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "thane-problem",
+          "h": "The problem a Thane business faces",
+          "paras": [
+            "Thane sits next to Mumbai, and searchers move between the two. A Thane clinic, coaching centre or store is often shown beside Mumbai results, and a buyer who types near me on a phone picks the listing that looks most complete and trusted.",
+            "Old hours, a missing category or reviews left unanswered hand the visit to someone else. The fix is plain work, done carefully, which we describe on <a href=\"/services/seo/google-business-profile/\">Google Business Profile optimisation</a>."
+          ],
+          "img": "orm/audit.jpg",
+          "cap": "A Thane listing checked for gaps."
+        },
+        {
+          "id": "thane-ways",
+          "h": "Two ways to work with us in Thane",
+          "paras": [
+            "Pick what suits your team. Both give you the same senior people and the same monthly scope."
+          ],
+          "table": {
+            "caption": "Working with MMC in Thane",
+            "head": [
+              "",
+              "On a call",
+              "In person"
+            ],
+            "rows": [
+              [
+                "Best for",
+                "Reviews, reports and quick questions",
+                "A first meeting or a planning session across a table, agreed on a call"
+              ],
+              [
+                "When",
+                "Any working day, booked in advance",
+                "Monday to Friday 10:00 to 19:00, Saturday 10:00 to 14:00"
+              ],
+              [
+                "Where",
+                "Video call, with a shared screen",
+                "Agreed when you book"
+              ],
+              [
+                "How to start",
+                "<a href=\"/contact/\">Book a call</a>",
+                "<a href=\"/contact/\">Book a call first</a> and we will confirm the time"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Other cities.",
+            "text": "Our team works from <a href=\"/locations/mumbai/\">Mumbai</a> and <a href=\"/locations/indore/\">Indore</a>. See <a href=\"/locations/\">all locations</a>."
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "Thane businesses.",
+      "lede": "From the profile to the report, for places people visit.",
+      "items": [
+        {
+          "t": "Thane Business Profile",
+          "d": "Claiming, verifying and completing each profile for the places customers visit.",
+          "img": "orm/audit.jpg",
+          "alt": "Thane Business Profile"
+        },
+        {
+          "t": "Thane pages on your site",
+          "d": "A page for each outlet or service area, with the same details as the profile.",
+          "img": "web/seo.jpg",
+          "alt": "Thane pages on your site"
+        },
+        {
+          "t": "Reviews and replies",
+          "d": "A respectful way to ask, and honest replies in your voice.",
+          "img": "orm/reply.jpg",
+          "alt": "Reviews and replies"
+        },
+        {
+          "t": "Local ads",
+          "d": "Search and Meta Ads aimed at the areas your buyers come from.",
+          "img": "google/search.jpg",
+          "alt": "Local ads"
+        },
+        {
+          "t": "Enquiry follow-up",
+          "d": "A WhatsApp or call path so a Thane enquiry gets an answer quickly.",
+          "img": "leadgen/capi.jpg",
+          "alt": "Enquiry follow-up"
+        },
+        {
+          "t": "Monthly local report",
+          "d": "Calls, direction requests and enquiries read each month.",
+          "img": "orm/report.jpg",
+          "alt": "Monthly local report"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why Thane brands choose MMC",
+      "h2b": "for local marketing.",
+      "lede": "We report like a careful owner would.",
+      "img": "orm/profile.jpg",
+      "alt": "Why Thane brands choose MMC for local marketing.",
+      "items": [
+        {
+          "t": "Close by",
+          "d": "Our Mumbai team is a short trip away, so a first meeting does not need a flight."
+        },
+        {
+          "t": "Senior people",
+          "d": "The strategist on the call is the one who reads your account."
+        },
+        {
+          "t": "Rules-first",
+          "d": "We follow Google's guidelines, so your listing is not put at risk."
+        },
+        {
+          "t": "Honest reporting",
+          "d": "We report what we can observe, and never promise a ranking."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a Thane engagement runs,",
+      "h2b": "step by step.",
+      "img": "orm/reply.jpg",
+      "alt": "How a Thane engagement runs, step by step.",
+      "items": [
+        {
+          "t": "Audit the places",
+          "d": "Each outlet is checked for ownership, duplicates and wrong details."
+        },
+        {
+          "t": "Complete the profile",
+          "d": "Categories, services, photos and hours are set for Thane searches."
+        },
+        {
+          "t": "Ask for reviews",
+          "d": "Real customers are asked in a respectful way, and every reply is honest."
+        },
+        {
+          "t": "Report each month",
+          "d": "Calls, directions and enquiries are reviewed with you."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Local marketing for businesses",
+      "h2b": "Thane people visit.",
+      "good": {
+        "t": "Customers find you by searching Thane, a neighbourhood or near me.",
+        "why": "This suits clinics, coaching centres, stores, offices and showrooms with a place to visit."
+      },
+      "not": {
+        "t": "You are online only, with no place to visit or serve.",
+        "why": "National SEO and ads are the better use of effort. See <a href=\"/services/seo/\">SEO</a>."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where Thane fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "All locations",
+          "d": "Thane, Mumbai and Indore, and how we work from each.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See all locations"
+        },
+        {
+          "n": "Mumbai",
+          "d": "A crowded market with many outlets and neighbourhoods.",
+          "img": "sv/organic.jpg",
+          "href": "/locations/mumbai/",
+          "link": "See Mumbai"
+        },
+        {
+          "n": "Indore",
+          "d": "A regional hub for colleges, food and manufacturers.",
+          "img": "edu/search.jpg",
+          "href": "/locations/indore/",
+          "link": "See Indore"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "The method behind the local work, step by step.",
+          "img": "orm/profile.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile optimisation"
+        },
+        {
+          "n": "Google Ads",
+          "d": "Search ads aimed at the areas your buyers come from.",
+          "img": "google/search.jpg",
+          "href": "/services/performance-marketing/google-ads/",
+          "link": "See Google Ads"
+        },
+        {
+          "n": "Online reputation management",
+          "d": "Reviews and mentions that shape trust.",
+          "img": "orm/earn.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "marketing in Thane."
+    ],
+    "faq": [
+      {
+        "q": "Does MMC have an office in Thane?",
+        "a": "We serve Thane from our Mumbai team and work from Mumbai and Indore. Our postal address is 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra."
+      },
+      {
+        "q": "When can we reach you?",
+        "a": "Our listed hours are Monday to Friday, 10:00 to 19:00, and Saturday, 10:00 to 14:00. You can also write to sales-in@mondaymarketing.company or call +91 766 630 9102. We reply inside one working day."
+      },
+      {
+        "q": "Do I need to come to Thane to work with you?",
+        "a": "No. Most work runs on video calls and shared reports, so your business can be anywhere in India. If you want a first meeting in person, book a call and we will arrange it."
+      },
+      {
+        "q": "What does marketing for a Thane business involve?",
+        "a": "Usually four things: a complete Google Business Profile for each place customers visit, a page on your site that says Thane clearly, honest handling of reviews, and ads aimed at the areas your buyers come from."
+      },
+      {
+        "q": "Can you manage several Thane outlets or branches?",
+        "a": "Yes. Each outlet gets its own verified profile with consistent details, and a page on your site that matches it. For brands with many outlets across cities, see <a href=\"/locations/mumbai/\">Mumbai</a>."
+      },
+      {
+        "q": "Do you guarantee a top local ranking?",
+        "a": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list."
+      }
+    ],
+    "cta": {
+      "h2a": "Talk to a team",
+      "h2b": "serving Thane.",
+      "lede": "On a call, with a senior strategist. We check your listings and pages for gaps and tell you what to fix first."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client account.",
+      "style": "stack",
+      "eyebrow": "Where Thane visits are lost",
+      "h2a": "Five ways a Thane business",
+      "h2b": "loses local visits.",
+      "lede": "Each stage below is where a Thane buyer is lost, and the work that brings them back."
+    },
+    "stages": [
+      {
+        "k": "Claim every Thane listing",
+        "tag": "Listings",
+        "breaks": "A listing from a past address or a former tenant.",
+        "why": "Buyers see the wrong phone number or hours and call someone else.",
+        "does": "We claim, verify and merge listings for each place you run in Thane."
+      },
+      {
+        "k": "Choose categories for Thane searches",
+        "tag": "Categories",
+        "breaks": "Generic categories that blend you into Mumbai-wide results.",
+        "why": "Categories tell Google which Thane searches you suit.",
+        "does": "We choose a primary category and secondary ones, and list services in plain words."
+      },
+      {
+        "k": "Keep hours and photos current",
+        "tag": "Hours and photos",
+        "breaks": "Stale timings that send walk-ins away.",
+        "why": "A listing that looks abandoned loses trust, and wrong hours lose the visit.",
+        "does": "We set hours and holiday timings, refresh photos and give your team a simple routine."
+      },
+      {
+        "k": "Reply to Thane reviews",
+        "tag": "Reviews",
+        "breaks": "Reviews left unanswered for weeks.",
+        "why": "Prospects read how a business replies, and silence looks like indifference.",
+        "does": "We set up a respectful way to ask and draft honest replies, and escalate problems to you."
+      },
+      {
+        "k": "Add a Thane page",
+        "tag": "Thane page",
+        "breaks": "A site that never mentions Thane.",
+        "why": "A page that matches the profile reinforces relevance and gives visitors a next step.",
+        "does": "We build a Thane page with the same details as the profile, then report calls and directions."
+      }
+    ],
+    "process": {
+      "note": "The days show the order of the work, not a promise of results. What we find in your listings decides how long each part takes.",
+      "h2a": "How we run local work in Thane,",
+      "h2b": "month to month.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit Thane listings",
+          "d": "We check each listing, merge duplicates and complete the profile content.",
+          "out": "Accurate profiles for each place."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Reviews and the Thane page",
+          "d": "We set up the review routine and build a Thane page that matches the profile.",
+          "out": "A profile and page that agree."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Local ads and report",
+          "d": "We add ads aimed at your areas if they suit, and report on calls, directions and enquiries.",
+          "out": "A monthly local report."
+        }
+      ]
+    }
+  }
+}

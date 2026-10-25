@@ -1,0 +1,45 @@
+---
+// Guide article body: paras/img/list/steps/table/callout blocks in the site language (styles/article-v2.css, ar-).
+interface Block {
+  id: string; h: string;
+  paras?: string[]; img?: string; cap?: string;
+  list?: string[];
+  steps?: { t: string; d: string }[];
+  table?: { caption: string; head: string[]; rows: string[][] };
+  callout?: { title: string; text: string };
+}
+import InlineTool from "./InlineTool.astro";
+interface Props { blocks: Block[]; after?: string; tool?: { label: string; href: string; line: string; img: string } }
+const { blocks, after, tool } = Astro.props;
+---
+<div class="ar-body">
+  {blocks.map((b) => (
+    <Fragment>
+    <section class="ar-sec" id={b.id}>
+      <h2 class="ar-h2">{b.h}</h2>
+      {(b.paras || []).map((t) => <p set:html={t} />)}
+      {b.img && (
+        <figure class="ar-fig">
+          <img src={"/assets/" + b.img} alt={b.cap || b.h} width="1200" height="800" loading="lazy" decoding="async" />
+          {b.cap && <figcaption>{b.cap}</figcaption>}
+        </figure>
+      )}
+      {b.list && <ul class="ar-list">{b.list.map((t) => <li set:html={t} />)}</ul>}
+      {b.steps && (
+        <ol class="ar-steps">{b.steps.map((st) => <li><b>{st.t}</b><span set:html={st.d} /></li>)}</ol>
+      )}
+      {b.table && (
+        <div class="ar-tablewrap">
+          <div class="ar-tablescroll" tabindex="0" role="region" aria-label={b.h + " table"}><table class="ar-table">
+            <thead><tr>{b.table.head.map((h) => <th>{h}</th>)}</tr></thead>
+            <tbody>{b.table.rows.map((r) => <tr>{r.map((c, j) => j === 0 ? <th scope="row">{c}</th> : <td>{c}</td>)}</tr>)}</tbody>
+          </table></div>
+          {b.table.caption && <p class="ar-table__note">{b.table.caption}</p>}
+        </div>
+      )}
+      {b.callout && <aside class="ar-callout"><b>{b.callout.title}</b><span set:html={b.callout.text} /></aside>}
+    </section>
+    {tool && b.id === after && <InlineTool {...tool} />}
+    </Fragment>
+  ))}
+</div>

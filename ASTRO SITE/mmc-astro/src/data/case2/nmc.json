@@ -1,0 +1,81 @@
+{
+ "id": "nmc",
+ "about": "{name} is a B2B HR and recruitment consultancy.",
+ "description": "{name} case study: a recruitment website with separate paths for employers and candidates, plus a LinkedIn ad and a Google search listing.",
+ "heroTone": "ink",
+ "kind": "B2B, HR and recruitment consultancy",
+ "channels": [
+  "LinkedIn ad",
+  "Google search listing"
+ ],
+ "brief": [
+  "{name} is an HR and recruitment consultancy. We built its website, with separate paths for employers (a role-brief form) and candidates (an open-roles search).",
+  "Two audiences arrive at the same homepage, so it splits them at the top: one card for people who need to hire, one for people looking for work. A LinkedIn ad and a Google search listing carry the same split."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Homepage",
+   "title": "Homepage with employer and candidate paths",
+   "text": "Two clear doors on the first screen, a sector strip beneath them, and a phone version that stacks the same two choices.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Forms and search",
+   "title": "A role-brief form and an open-roles search",
+   "text": "Employers describe the role in a short brief. Candidates search live roles by keyword, location and sector.",
+   "crops": [
+    "employers",
+    "roles"
+   ],
+   "captions": [
+    "Role-brief form",
+    "Open roles search page"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A LinkedIn ad and a Google search listing",
+   "text": "The LinkedIn ad speaks to employers. The Google listing links to both the employer and the candidate path.",
+   "crops": [
+    "linkedin",
+    "google"
+   ],
+   "captions": [
+    "LinkedIn ad",
+    "Google search listing"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "Brand",
+   "title": "the same identity carried onto stationery",
+   "text": "From the same artwork.",
+   "crops": [
+    "stationery"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, role-brief form and open-roles search",
+  "reach": "LinkedIn ad and Google search listing",
+  "make": "One brand across the site, ads and print"
+ },
+ "action": "enquiry",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: Finding People. Building Futures. with two paths, I need to hire and I'm looking for work",
+  "employers": "{name} employer role-brief form",
+  "roles": "{name} open roles search page",
+  "linkedin": "{name} LinkedIn ad",
+  "google": "{name} Google ad",
+  "stationery": "{name} brand stationery",
+  "card": "{name} logo above a recruiter talking with two candidates at a table in a bright office"
+ }
+}

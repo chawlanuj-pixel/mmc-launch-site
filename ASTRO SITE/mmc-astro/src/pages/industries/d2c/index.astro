@@ -1,0 +1,79 @@
+---
+// /industries/d2c/: the D2C audience hub on the hubs2 pattern (src/components/hubs2). The previous version is in
+// tools/backup/industries-d2c-index.astro.before-hubs2. Copy: src/data/pages/d2c.json; head: heads.json (d2c);
+// visuals and curation: src/data/hubs2/industries__d2c.json.
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Shell from "../../../components/Shell.astro";
+import PageFx from "../../../components/pages/PageFx.astro";
+import StickyBookingBar from "../../../components/shared/StickyBookingBar.astro";
+import AudienceHub from "../../../components/hubs2/AudienceHub.astro";
+import type { AudienceModel } from "../../../components/hubs2/model";
+import { pageHead } from "../../../lib/pagehead";
+import { fixDeep, href } from "../../../lib/links";
+import raw from "../../../data/pages/d2c.json";
+import X from "../../../data/hubs2/industries__d2c.json";
+
+const D = fixDeep(raw);
+const head = pageHead("d2c", "/industries/d2c/");
+
+// Visible FAQ and FAQPage JSON-LD come from one list, answer first.
+const FAQ = [
+  { q: "What is D2C marketing?", a: "D2C (direct-to-consumer) marketing sells a brand's products straight to shoppers online, with no retailer in between. Acquisition cost, delivery, returns and repeat purchase all sit on the brand's own P&L, so the marketing has to be judged on profit per order, not on platform-reported ROAS." },
+  { q: "What does MMC do for D2C brands?", a: "Performance media, creative, conversion, retention and brand work, run by one team and measured on contribution margin. The work tiles on this page show what we run for some of the brands we work with." },
+  { q: "Do you run Amazon and quick commerce?", a: `Yes. We run <a href="${href("amazon-ads.html")}">Amazon Ads</a> and <a href="${href("quick-commerce-ads.html")}">quick-commerce ads</a> alongside media on the brand's own site. The Growing Giraffe is one brand we run them for.` },
+  { q: "Do you only work with D2C brands?", a: `No. D2C is where we go deepest, but we also work with B2B companies and educational institutes. For them the goal is qualified leads and enrolments rather than orders, so the work is set up differently. See the <a href="/industries/b2b/">B2B</a> and <a href="/industries/education/">education</a> pages.` },
+  { q: "Which D2C brands is this for?", a: "Brands that sell direct online and want ad spend judged on profit. If ROAS alone is the target, or there is no paid media to review yet, we will say so early." },
+  { q: "What does it cost?", a: "It depends on ad spend and scope, so we quote after the audit call, once we have seen your accounts. Your ad spend is paid to the platforms and sits outside our fee." },
+];
+const strip = (s: string) => s.replace(/<[^>]+>/g, "");
+const jsonld = (head.jsonld as any[]).map((b) => b && b["@type"] === "FAQPage"
+  ? { ...b, mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: strip(f.a) } })) }
+  : b);
+
+const M: AudienceModel = {
+  source: "d2c",
+  jsonld,
+  hero: {
+    eyebrow: "Direct-to-consumer brands",
+    h1: ["D2C marketing", "that ", "protects your margin", "."],
+    sub: "One senior team for the whole D2C growth stack, from ads and creative to conversion and retention, judged on contribution margin.",
+    ...X.hero,
+  },
+  lede: {
+    lead: "D2C marketing sells a brand's products straight to shoppers online, with no retailer in between. Acquisition cost, delivery, returns and repeat purchase all sit on the brand's own P&L. Monday Marketing Company (MMC) runs ads, creative, conversion and retention together as one stack for D2C brands in India, judged on contribution margin.",
+    hl: "straight to shoppers",
+    points: [
+      { title: "It all lands on your P&L", text: "Acquisition cost, delivery, returns and repeat purchase sit with the brand, not a retailer." },
+      { title: "One stack, one team", text: "Ads, creative, conversion and retention, run together." },
+      { title: "Judged on contribution margin", text: "The profit left after variable costs." },
+    ],
+    ...X.lede,
+  },
+  journey: {
+    eyebrow: X.journey.eyebrow, h2a: X.journey.h2a, h2b: X.journey.h2b,
+    lede: "Follow one customer from first ad to second order. Each stage has its own way of costing you margin, and its own fix.",
+    stages: D.DC_STAGES.map((s: any, k: number) => ({ ...s, ...X.journey.stages[k] })),
+  },
+  calcs: {
+    slugs: ["unit-economics", "breakeven-roas", "cac-runway", "ltv-cac"],
+    eyebrow: "What we read",
+    h2a: "Four numbers that show whether",
+    h2b: "D2C marketing is working.",
+    lede: "Read against your own costs and margin. Each one is a free calculator.",
+    guide: { label: "Read the guide to contribution margin", href: href("guide-contribution-margin-roas.html") },
+  },
+  work: X.work,
+  sectors: X.sectors,
+  faq: { title: ["Questions about", "D2C marketing."], items: FAQ },
+  cta: { h2a: "Find where your D2C profit", h2b: "leaks.", lede: "On a call, with a senior strategist. We read your accounts against your break-even ROAS and plan the first 30 days." },
+};
+---
+<BaseLayout {...head} jsonld={jsonld} preloadImage={X.hero.img.startsWith("/") ? X.hero.img : "/assets/" + X.hero.img}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main n-app h2-page">
+      <AudienceHub M={M} />
+    </main>
+    <StickyBookingBar source="d2c" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

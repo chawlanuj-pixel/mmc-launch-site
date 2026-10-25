@@ -1,0 +1,25 @@
+---
+// "What we read": the ink band of metrics. Static cards only; it never links to a calculator and carries no counts.
+// The free-tools job lives in components/shared/FreeToolsStrip.astro. A card may link to a page (industries hub) when it has `go`.
+import Arrow from "./Arrow.astro";
+const N = Astro.props.N;
+---
+{N && (
+<section class="n-band n-band--ink pm-band" id="numbers">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">{N.eyebrow}</span>
+      <h2 class="n-h2">{N.h2a} <span class="n-serif">{N.h2b}</span></h2>
+      <p>{N.note}</p>
+    </div>
+    <div class="dcn n-rise d1">
+      {N.cards.map((x: any) => (x.href && x.go) ? (
+        <a class="dcn__card" href={x.href}><b>{x.n}</b><span>{x.d}</span><i>{x.go}<Arrow /></i></a>
+      ) : (
+        <div class="dcn__card dcn__card--static"><b>{x.n}</b><span>{x.d}</span></div>
+      ))}
+    </div>
+    {N.link && <p class="hbn__link n-rise d2"><a class="pm-textlink pm-textlink--quiet" href={N.link.href}>{N.link.text}<Arrow /></a></p>}
+  </div>
+</section>
+)}

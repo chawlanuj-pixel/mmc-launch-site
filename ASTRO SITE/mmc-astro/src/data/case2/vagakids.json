@@ -1,0 +1,75 @@
+{
+ "id": "vagakids",
+ "about": "{name} is a D2C brand that sells charm clogs for children.",
+ "description": "{name} case study: an ecommerce storefront for a charm clogs range, from homepage to product page, with matching social creative and ads.",
+ "heroTone": "paper",
+ "kind": "D2C brand, kids' charm clogs",
+ "channels": [
+  "Meta ad",
+  "Google Shopping ad"
+ ],
+ "brief": [
+  "{name} sells charm clogs for children. We built an ecommerce storefront, from the homepage through to a product detail page, with matching social creative and ads.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage on desktop and mobile",
+   "text": "A new-customer homepage with a 10% offer code, cash on delivery and easy exchange in the top bar, and a phone version that adds shop by age and size routes.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Two portrait tiles, one of children and one of the clogs with their charms.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google Shopping ad",
+   "text": "Product-card ads with the clog colours and prices.",
+   "crops": [
+    "meta",
+    "google"
+   ],
+   "captions": [
+    "Meta ad",
+    "Google Shopping ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "product photography from the same project",
+   "text": "Product photography from the same project.",
+   "crops": [
+    "shoes"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage and mobile product detail page",
+  "reach": "Meta ad and Google Shopping ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a New Here? Get 10% Off hero with the VAGA10 code and three children, and clogs on the phone",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad",
+  "shoes": "Children's feet in {name} clogs with charms, in blue, pink, aqua and green, on a pastel step",
+  "card": "{name} logo between two children wearing {name} clogs with charms"
+ }
+}

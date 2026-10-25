@@ -1,0 +1,136 @@
+---
+// Shared page shell: tracking, fonts/CSS, SEO head, JSON-LD, and the runtime helpers (booking, forms).
+import { isWhiteLabel } from "../lib/whitelabel";
+import tracking from "./tracking.html?raw";
+import "../styles/design-system/colors_and_type.css";
+import "../styles/styles.css";
+import "../styles/page-hero.css";
+import "../styles/home26.css";
+import "../styles/pm.css";
+import "../styles/faq.css";
+import "../styles/answer.css";
+import "../styles/dc.css";
+import "../styles/hb.css";
+import "../styles/hb-stack.css";
+import "../styles/hb-loop-b.css";
+import "../styles/hb-article.css";
+// Critical fonts (self-hosted, font-display: swap in colors_and_type.css): body Nunito 400 and heading Raleway 700.
+// ?url gives the same hashed file the stylesheet points at, so the preload is never a second download.
+import nunitoRegular from "../styles/design-system/fonts/Nunito-Regular.woff2?url";
+import ralewayBold from "../styles/design-system/fonts/Raleway-Bold.woff2?url";
+
+// Layout-level CSS kept verbatim by tools/optimise-build.mjs (data-keep): metric-matched fallback faces for Nunito and Raleway
+// (size-adjust and ascent/descent overrides measured against Arial) so the swap to the web fonts barely moves text, plus a CLS guard
+// that keeps the hero slider's mosaic unpainted until src/scripts/hero-slider.ts has mounted it (it is visible without JS).
+const keepCss = `@font-face{font-family:"Nunito Fallback";src:local("Arial");font-weight:300;size-adjust:100.2%;ascent-override:100.9%;descent-override:35.2%;line-gap-override:0%}@font-face{font-family:"Nunito Fallback";src:local("Arial");font-weight:400;size-adjust:102.0%;ascent-override:99.1%;descent-override:34.6%;line-gap-override:0%}@font-face{font-family:"Nunito Fallback";src:local("Arial");font-weight:500;size-adjust:102.9%;ascent-override:98.2%;descent-override:34.3%;line-gap-override:0%}@font-face{font-family:"Nunito Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:600;size-adjust:95.8%;ascent-override:105.5%;descent-override:36.8%;line-gap-override:0%}@font-face{font-family:"Nunito Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:700;size-adjust:97.9%;ascent-override:103.3%;descent-override:36.1%;line-gap-override:0%}@font-face{font-family:"Nunito Fallback";src:local("Arial Italic"),local("Arial-ItalicMT");font-style:italic;font-weight:400;size-adjust:102.0%;ascent-override:99.1%;descent-override:34.6%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial");font-weight:300;size-adjust:104.0%;ascent-override:90.4%;descent-override:22.5%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial");font-weight:400;size-adjust:105.4%;ascent-override:89.2%;descent-override:22.2%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial");font-weight:500;size-adjust:106.9%;ascent-override:88.0%;descent-override:21.9%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:600;size-adjust:99.8%;ascent-override:94.2%;descent-override:23.4%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:700;size-adjust:101.1%;ascent-override:93.0%;descent-override:23.1%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:800;size-adjust:102.6%;ascent-override:91.6%;descent-override:22.8%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial Bold"),local("Arial-BoldMT");font-weight:900;size-adjust:104.2%;ascent-override:90.2%;descent-override:22.4%;line-gap-override:0%}@font-face{font-family:"Raleway Fallback";src:local("Arial Italic"),local("Arial-ItalicMT");font-style:italic;font-weight:400;size-adjust:101.7%;ascent-override:92.4%;descent-override:23.0%;line-gap-override:0%}
+html:root{--font-display:"Raleway","Raleway Fallback","Helvetica Neue",Arial,sans-serif;--font-body:"Nunito","Nunito Fallback","Helvetica Neue",Arial,sans-serif;--font-serif:"Raleway","Raleway Fallback","Helvetica Neue",Arial,sans-serif}@media (scripting:enabled){.pmh__mosaic:not(.is-slider):has(>.pmh__tile+.pmh__tile){visibility:hidden}}`;
+
+interface Props {
+  title: string; description: string; path: string;
+  ogTitle?: string; ogDescription?: string; ogAlt?: string;
+  jsonld?: unknown[]; noindex?: boolean | string;
+  /** Social image: absolute URL or a /assets/... path. Defaults by section (see OG_BY_SECTION). */
+  image?: string;
+  /** "article" for guides; pair with publishedTime / modifiedTime (ISO date or datetime). */
+  ogType?: "website" | "article";
+  publishedTime?: string; modifiedTime?: string;
+  /** LCP image(s) to preload: a /assets/... path, or { href, type?, imagesrcset?, imagesizes? }. */
+  preloadImage?: string | { href: string; type?: string; imagesrcset?: string; imagesizes?: string } | Array<string | { href: string; type?: string; imagesrcset?: string; imagesizes?: string }>;
+  /** Absolute canonical URL when it is not this page (CMS articles with seo.canonical). Unset: the page's own URL. */
+  canonical?: string;
+}
+const { title, description, path, ogTitle, ogDescription, ogAlt, jsonld = [], noindex = false, image: imageProp, ogType, publishedTime, modifiedTime, preloadImage, canonical } = Astro.props;
+const site = "https://www.mondaymarketing.company";
+const url = canonical || site + path;
+// Per-section and per-page social cards, generated locally by tools/make-og.mjs into public/assets/og/.
+const og = (n: string) => `/assets/og/${n}.jpg`;
+const OG_BY_SECTION: Record<string, string> = {
+  services: og("services"), industries: og("industries"), guides: og("guides"), work: og("work"), tools: og("tools"),
+  "ai-by-mmc": og("ai-by-mmc"), "white-label": og("white-label"), about: og("about"), careers: og("careers"),
+  contact: og("contact"), audit: og("audit"),
+};
+// Finer map, matched on the longest path prefix first.
+const OG_BY_PATH: Array<[string, string]> = [
+  ["/services/performance-marketing/", og("performance-marketing")],
+  ["/services/seo/aeo/", og("aeo")], ["/services/seo/ai-seo/", og("ai-seo")], ["/services/seo/geo/", og("geo")],
+  ["/services/seo/", og("seo-and-ai-search")],
+  ["/services/web-development/", og("web-and-ecommerce")],
+  ["/services/shopify-development/", og("web-and-ecommerce")],
+  ["/services/ui-ux-design/", og("web-and-ecommerce")],
+  ["/services/cro/", og("web-and-ecommerce")],
+  ["/services/website-maintenance/", og("web-and-ecommerce")],
+  ["/services/mobile-app-development/", og("web-and-ecommerce")],
+  ["/services/ugc-and-video/", og("creative-and-content")],
+  ["/services/content-marketing/", og("creative-and-content")],
+  ["/services/social-media/", og("creative-and-content")],
+  ["/services/influencer-marketing/", og("creative-and-content")],
+  ["/services/branding/", og("creative-and-content")],
+  ["/services/packaging-design/", og("creative-and-content")],
+  ["/services/lead-generation/", og("performance-marketing")],
+  ["/services/retention-marketing/", og("performance-marketing")],
+  ["/services/online-reputation-management/", og("seo-and-ai-search")],
+];
+// Form endpoint: set PUBLIC_MMC_FORM_ENDPOINT (an https URL that accepts a JSON POST) at build time. Unset = mailto fallback.
+const formEndpoint = String(import.meta.env.PUBLIC_MMC_FORM_ENDPOINT || "");
+const hasEndpoint = /^https:\/\//.test(formEndpoint);
+const section = path.split("/").filter(Boolean)[0] || "";
+// Language and locale. The site is en-IN; /white-label/* is written for agencies abroad, so it uses plain "en" for html lang
+// and hreflang and sets no og:locale (the owner removed the India tag there, 22 Oct 2026). One rule, so later regional pages can follow it.
+const wl = isWhiteLabel(path);
+const lang = wl ? "en" : "en-IN";
+const ogLocale = wl ? "" : "en_IN";
+const abs = (u: string) => (/^https?:\/\//.test(u) ? u : site + (u.startsWith("/") ? u : "/" + u));
+const pathCard = path === "/" ? og("home") : OG_BY_PATH.find(([p]) => path.startsWith(p))?.[1];
+const imageRel = imageProp || pathCard || OG_BY_SECTION[section] || "/assets/og-card.jpg";
+const image = abs(imageRel);
+const isMmcCard = imageRel === "/assets/og-card.jpg" || imageRel.startsWith("/assets/og/");
+const type = ogType || (publishedTime ? "article" : "website");
+const preloads = (preloadImage ? (Array.isArray(preloadImage) ? preloadImage : [preloadImage]) : []).map((p) => (typeof p === "string" ? { href: p } : p));
+/* JSON for a <script> block: escape < > & and the two JS line separators so text from the CMS can never close the script tag. */
+const safeJson = (v: unknown): string => JSON.stringify(v).replace(/</g, "\\u003c").replace(/>/g, "\\u003e").replace(/&/g, "\\u0026").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <Fragment set:html={tracking} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={url} />
+    <link rel="alternate" hreflang={lang} href={url} />
+    <link rel="alternate" hreflang="x-default" href={url} />
+    <style is:inline data-keep set:html={keepCss}></style>
+    <link rel="preload" as="font" type="font/woff2" href={nunitoRegular} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={ralewayBold} crossorigin />
+    {preloads.map((p) => <link rel="preload" as="image" href={p.href} type={p.type} imagesrcset={p.imagesrcset} imagesizes={p.imagesizes} fetchpriority="high" />)}
+    {noindex && <meta name="robots" content={typeof noindex === "string" ? noindex : "noindex, follow"} />}
+    <meta property="og:type" content={type} />
+    {ogLocale && <meta property="og:locale" content={ogLocale} />}
+    {type === "article" && publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {type === "article" && (modifiedTime || publishedTime) && <meta property="article:modified_time" content={modifiedTime || publishedTime} />}
+    <meta property="og:site_name" content="Monday Marketing Company" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={ogTitle || title} />
+    <meta property="og:description" content={ogDescription || description} />
+    <meta property="og:image" content={image} />
+    {isMmcCard && <meta property="og:image:width" content="1200" />}
+    {isMmcCard && <meta property="og:image:height" content="630" />}
+    <meta property="og:image:alt" content={ogAlt || "Monday Marketing Company"} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle || title} />
+    <meta name="twitter:description" content={ogDescription || description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content={ogAlt || "Monday Marketing Company"} />
+    <link rel="icon" type="image/png" sizes="any" href="/assets/logo-mark.png" />
+    <link rel="apple-touch-icon" href="/assets/logo-mark.png" />
+    {jsonld.map((b) => <script type="application/ld+json" set:html={safeJson(b)} />)}
+  </head>
+  <body>
+    <slot />
+    {hasEndpoint && <script is:inline set:html={"window.MMC_FORM_ENDPOINT=" + safeJson(formEndpoint) + ";"}></script>}
+    <script is:inline src="/admin/mmc-data.js"></script>
+    <script is:inline src="/assets/mmc-forms.js"></script>
+    <script>import "../scripts/hero-slider.ts";</script>
+  </body>
+</html>

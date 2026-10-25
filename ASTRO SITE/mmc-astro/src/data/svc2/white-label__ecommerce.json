@@ -1,0 +1,173 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/google-amazon.jpg",
+    "pos": "50% 50%",
+    "alt": "An analyst at a desk with two ads dashboards open.",
+    "facts": [
+      {
+        "t": "In the client's seller account.",
+        "d": "We work with the access the client grants, and they keep ownership."
+      },
+      {
+        "t": "Marketplaces and quick commerce.",
+        "d": "Amazon, Blinkit, Zepto and Instamart handled on one plan."
+      },
+      {
+        "t": "Whole-business reporting.",
+        "d": "Ad sales are read beside total sales and margin."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label ecommerce"
+  },
+  "work": {
+    "panel": "AmazonAds",
+    "eyebrow": "The work, shown",
+    "h2a": "How a marketplace account",
+    "h2b": "is run behind you.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Fix the listing before spending on it.",
+        "d": "Titles, bullets, images and rich content are reviewed in the client's seller account, with edits sent for your approval."
+      },
+      {
+        "n": "02",
+        "t": "Give each campaign one job.",
+        "d": "Sponsored Products, Brands and Display are set up so you can explain what each one is for."
+      },
+      {
+        "n": "03",
+        "t": "Trim search terms against break-even.",
+        "d": "Terms are read against the client's margin, and the negatives and bids we change are listed for your notes."
+      },
+      {
+        "n": "04",
+        "t": "Watch stock so ads do not burn.",
+        "d": "Ads shift or pause as stock cover falls, and we tell you before a stockout reaches the client's page."
+      },
+      {
+        "n": "05",
+        "t": "Report ad sales next to total sales.",
+        "d": "Your report puts ad sales beside total marketplace sales and margin, so the client sees the whole picture."
+      }
+    ],
+    "illustrative": "Illustrative layout of an Amazon Ads console view. Not a client account, no real figures. Amazon and its logo belong to Amazon."
+  },
+  "leak": {
+    "visual": "AmazonLeak",
+    "barLogo": "/assets/platforms/amazon.svg",
+    "barTitle": "Marketplace account view",
+    "pinsLabel": "Five places white-label ecommerce goes wrong",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Listing"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Campaigns"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Stock"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Store"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reporting"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first marketplace",
+    "h2b": "client gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and seller access",
+        "d": "We sign the NDA, then work in the client's own seller account with the access they grant, and agree what we may change.",
+        "get": "An access and permissions sheet.",
+        "img": "contact/call.jpg",
+        "alt": "A woman on a phone call at her desk, notebook open.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot catalogue",
+        "d": "A few listings and one campaign are taken through review and launch, with every edit sent for your approval.",
+        "get": "A pilot you can judge on the work.",
+        "img": "company/technology.jpg",
+        "alt": "A developer at a laptop with a store design on a second screen.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Stock and report SOPs",
+        "d": "Stock checks, approval of budget changes and the report layout are written down for the account.",
+        "get": "A routine that protects spend.",
+        "img": "company/onepage.jpg",
+        "alt": "A hand writing a plan in a notebook on a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale across marketplaces",
+        "d": "More products, and quick commerce platforms such as Blinkit, Zepto and Instamart, join on the same routine.",
+        "get": "More channels, same routine.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/whiteboard.jpg",
+    "alt": "Four colleagues around a whiteboard while one draws out a plan.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label Meta Ads",
+        "href": "/white-label/meta-ads/"
+      },
+      {
+        "n": "White-label PPC",
+        "href": "/white-label/ppc/"
+      },
+      {
+        "n": "White-label Shopify development",
+        "href": "/white-label/shopify-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

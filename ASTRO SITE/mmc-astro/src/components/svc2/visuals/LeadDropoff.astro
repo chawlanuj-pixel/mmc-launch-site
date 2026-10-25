@@ -1,0 +1,23 @@
+---
+// VISUAL: LeadDropoff (kind "LeadDropoff"). Five columns from enquiry to won; each loses people, and the hatched part is what drops out. Lead quality drop-off.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Reads X.zoneLabels (optional) only.
+// Styles are scoped to this file (prefix ld).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const cols = [["Enquiries", 100, 0], ["Contacted", 80, 20], ["Qualified", 54, 26], ["Meeting", 32, 22], ["Won", 16, 16]];
+---
+<div class="ld__row" aria-hidden="true"></div>
+<div class="ld__art" role="img" aria-label="Five columns from enquiries to won, each shorter than the last, showing where lead quality drops off.">
+  {cols.map(([n, h, lost], k) => (
+    <div class="ld__col"><span class="ld__lost" style={`height:${lost}%`}></span><span class="ld__bar" style={`height:${h}%;opacity:${0.55 + k * 0.11}`}></span><b>{X.zoneLabels?.[k] ?? n}</b></div>
+  ))}
+</div>
+<style is:global>
+.ld__row { height: 78px; }
+.ld__art { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2%; align-items: end; height: clamp(190px, 26vw, 330px); padding-bottom: 30px; position: relative; }
+.ld__col { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; }
+.ld__bar { display: block; border-radius: 14px 14px 0 0; background: linear-gradient(180deg, var(--mmc-blue), var(--mmc-blue-900)); }
+.ld__lost { display: block; border: 2px dashed rgba(15, 30, 94, .35); border-bottom: 0; border-radius: 14px 14px 0 0; background: repeating-linear-gradient(135deg, rgba(255, 197, 40, .55) 0 6px, transparent 6px 12px); }
+.ld__col b { position: absolute; left: 0; right: 0; bottom: -28px; text-align: center; font: 800 clamp(10px, 1.2vw, 15px)/1.1 var(--font-display); color: var(--s2-ink); }
+@media (max-width: 760px) { .ld__row { height: 58px; } }
+</style>

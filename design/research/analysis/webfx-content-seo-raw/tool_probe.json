@@ -1,0 +1,1470 @@
+{
+ "roas": {
+  "url": "https://www.webfx.com/tools/roas-calculator/",
+  "fill": {
+   "action": {
+    "clicked": null,
+    "result": "ROAS Calculator Save Results AI Interpretation Revenue derived from Ad Source $ ? Cost of AD Source $ ? Your ROAS 500.00% Include break-even ? ?"
+   },
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11593846",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457021954&cv=11&fst=1789457021954&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45892e69b1v896980",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115938465",
+     ""
+    ],
+    [
+     "GET",
+     "https://d1ae0zx28z2bae.cloudfront.net/webfx.com?t=1789457022000",
+     ""
+    ]
+   ]
+  },
+  "save_results": {
+   "action": "Save Results",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288za20kzb831519267zd831519267&_p=1789457016858&gcs=G111&gcd=13t3t3Z3t5l1&npa=0&dma=",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/g/measurement/conversion?random=1789457026987&cv=11&tid=G-ZZHX7HEXTL&fst=1789457026987&fmt=8&en=qualified_lead_madKudu&gtm=45g92e69b1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457016858&gcs=G111&gcd=13t3t3Z3t5l1",
+     ""
+    ]
+   ]
+  },
+  "ai_interpretation": {
+   "action": "AI Interpretation",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": []
+  },
+  "result_text": {
+   "action": "Your ROAS 500.00% Include break-even ? ? All About ROAS Frequently Asked Questions What does WebFX\u2019s ROAS calculator help you do? How does AI interpret my results? What is a good return on ad spend? Is a high ROAS good? What is ROAS? What does break-even ROAS mean? What is the formula for return on ad spend? How is break-even ROAS calculated? What affects your ROAS? Other Available Calculators Data Maturity Scorecard Take a quick assessment to receive a personalized score of your business\u2019s marketing technology stack! Click-through Rate (CTR) Calculator CTR, or click-through-rate, is determined by how ",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": []
+  }
+ },
+ "cpc": {
+  "url": "https://www.webfx.com/tools/cpc-calculator/",
+  "fill": {
+   "action": {
+    "inputs": [
+     [
+      "cost",
+      "e.g. 1500"
+     ],
+     [
+      "clicks",
+      "e.g. 500"
+     ]
+    ],
+    "selects": [
+     "channel",
+     "industry"
+    ]
+   },
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11593846",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457041399&cv=11&fst=1789457041399&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45892e69b1v896980",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457037607&gcs=G111&gcd=13t3t3Z3t5l1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115938466",
+     ""
+    ]
+   ]
+  },
+  "calc": {
+   "action": "Calculate my CPC",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://t.marketingcloudfx.com/event",
+     "{\"type\":\"form\",\"category\":null,\"action\":null,\"label\":null,\"value\":{\"id\":\"f8a11558-7ddb-4e5d-ae94-665dec976259\",\"form\":{\"method\":\"post\",\"name\":\"CALC-form\",\"class\":\".CALC-form.modern-calc-form\",\"id\":\"CA"
+    ],
+    [
+     "POST",
+     "https://api.segment.io/v1/t",
+     "{\"timestamp\":\"2026-09-15T07:24:02.463Z\",\"integrations\":{\"Actions Amplitude\":{\"session_id\":1789453729503}},\"event\":\"ppc_tool_use\",\"type\":\"track\",\"properties\":{\"name\":\"cpc-calculator\",\"pageUrl\":\"https:/"
+    ],
+    [
+     "GET",
+     "https://d1ae0zx28z2bae.cloudfront.net/webfx.com?t=1789457042711",
+     ""
+    ]
+   ]
+  },
+  "explain": {
+   "action": "Analyzing your results\u2026",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288za20kzb831519267zd831519267&_p=1789457037607&gcs=G111&gcd=13t3t3Z3t5l1&npa=0&dma=",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/g/measurement/conversion?random=1789457047686&cv=11&tid=G-ZZHX7HEXTL&fst=1789457047686&fmt=8&en=qualified_lead_madKudu&gtm=45g92e69b1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457037607&gcs=G111&gcd=13t3t3Z3t5l1",
+     ""
+    ]
+   ]
+  },
+  "download_report": {
+   "action": null,
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": []
+  }
+ },
+ "conversion": {
+  "url": "https://www.webfx.com/tools/conversion-rate-calculator/",
+  "fill": {
+   "action": {
+    "inputs": [
+     [
+      "conversions",
+      "e.g., 150"
+     ],
+     [
+      "visits",
+      "e.g., 5000"
+     ]
+    ],
+    "selects": [
+     "industry"
+    ]
+   },
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11593846",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457062101&cv=11&fst=1789457062101&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45892e69b1v896980",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457057456&gcs=G111&gcd=13t3t3Z3t5l1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115938466",
+     ""
+    ],
+    [
+     "GET",
+     "https://d1ae0zx28z2bae.cloudfront.net/webfx.com?t=1789457062548",
+     ""
+    ]
+   ]
+  },
+  "calc": {
+   "action": "Calculate My Rate & Compare",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://t.marketingcloudfx.com/event",
+     "{\"type\":\"form\",\"category\":null,\"action\":null,\"label\":null,\"value\":{\"id\":\"9a083fe7-54ca-4a46-9224-580147316701\",\"form\":{\"method\":\"post\",\"name\":\"CALC-form\",\"class\":\".CALC-form.modern-calc-form\",\"id\":\"CA"
+    ]
+   ]
+  },
+  "result_text": {
+   "action": "Your Strategy with Our Conversion Rate Calculator Follow these simple steps to calculate your conversion rate and compare it against industry benchmarks \u00a1 1 Select industry 2 Enter data 3 View results Industry ? Choose your industry\u2026 Other / General Addiction Treatment Agency Animals & Pets Apparel & Fashion Arts & Entertainment Attorneys & Legal Services Automotive B2B eCommerce B2B SaaS B2B Services B2B Tech B2C Services Beauty & Personal Care Biotech Business Services Career & Employment Commerci",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288za20kzb831519267zd831519267&_p=1789457057456&gcs=G111&gcd=13t3t3Z3t5l1&npa=0&dma=",
+     ""
+    ]
+   ]
+  }
+ },
+ "marketing_calculator": {
+  "url": "https://www.webfx.com/tools/marketing-calculator/",
+  "fill": {
+   "action": {
+    "inputs": [
+     [
+      "revenue_exact",
+      ""
+     ],
+     [
+      "current_budget",
+      "e.g., 10000"
+     ]
+    ],
+    "selects": [
+     "industry",
+     "size"
+    ]
+   },
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11561698",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457072646&cv=11&fst=1789457072646&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45892e69b1v896980",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457068247&gcs=G111&gcd=13t3t3Z3t5l1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115616985",
+     ""
+    ],
+    [
+     "GET",
+     "https://d1ae0zx28z2bae.cloudfront.net/webfx.com?t=1789457073358",
+     ""
+    ]
+   ]
+  },
+  "pdf": {
+   "action": "Generating...",
+   "after": {
+    "dialogs": [
+     {
+      "cls": "budget-popup-overlay",
+      "text": "\u00d7 Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "budget-popup-wrapper",
+      "text": "\u00d7 Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "budget-popup-close",
+      "text": "\u00d7",
+      "inputs": []
+     },
+     {
+      "cls": "budget-popup-content",
+      "text": "Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "budget-popup-body",
+      "text": "Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework marketin",
+      "text": "Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     }
+    ],
+    "emailInputsVisible": [
+     [
+      "input_5",
+      "Enter your work email",
+      ""
+     ]
+    ],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288za20kzb831519267zd831519267&_p=1789457068247&gcs=G111&gcd=13t3t3Z3t5l1&npa=0&dma=",
+     ""
+    ]
+   ]
+  },
+  "gate_fields": {
+   "action": [
+    {
+     "id": "budget-form",
+     "action": "https://www.webfx.com/tools/marketing-calculator/",
+     "fields": [
+      [
+       "text",
+       "",
+       "",
+       "Annual Revenue"
+      ],
+      [
+       "text",
+       "",
+       "e.g., 10000",
+       "Current Monthly Digital Marketing Budget (Optional)"
+      ],
+      [
+       "select-one",
+       "",
+       null,
+       "Industry"
+      ],
+      [
+       "radio",
+       "model",
+       "",
+       "B2B"
+      ],
+      [
+       "radio",
+       "model",
+       "",
+       "B2C"
+      ],
+      [
+       "radio",
+       "model",
+       "",
+       "Both"
+      ],
+      [
+       "select-one",
+       "",
+       null,
+       ""
+      ],
+      [
+       "radio",
+       "growth",
+       "",
+       "Maintain"
+      ],
+      [
+       "radio",
+       "growth",
+       "",
+       "Grow"
+      ],
+      [
+       "radio",
+       "growth",
+       "",
+       "Aggressive"
+      ],
+      [
+       "select-one",
+       "",
+       null,
+       ""
+      ],
+      [
+       "select-one",
+       "",
+       null,
+       ""
+      ],
+      [
+       "select-one",
+       "",
+       null,
+       ""
+      ]
+     ]
+    },
+    {
+     "id": "gform_44",
+     "action": "https://www.webfx.com/tools/marketing-calculator/#gf_44",
+     "fields": [
+      [
+       "text",
+       "input_34",
+       "",
+       "X/Twitter"
+      ],
+      [
+       "text",
+       "input_33",
+       "Enter your full name",
+       "Full Name*"
+      ],
+      [
+       "email",
+       "input_5",
+       "Enter your work email",
+       "Work Email Address*"
+      ],
+      [
+       "text",
+       "input_8",
+       "",
+       "ajs_anonymous_id"
+      ],
+      [
+       "text",
+       "input_9",
+       "",
+       "cf_country"
+      ],
+      [
+       "text",
+       "input_10",
+       "",
+       "mcfxlp"
+      ],
+      [
+       "text",
+       "input_11",
+       "",
+       "mcfxsource"
+      ],
+      [
+       "text",
+       "input_12",
+       "",
+       "mcfxreferrer"
+      ],
+      [
+       "text",
+       "input_13",
+       "",
+       "mcfxmedium"
+      ],
+      [
+       "text",
+       "input_14",
+       "",
+       "mcfxterm"
+      ],
+      [
+       "text",
+       "input_15",
+       "",
+       "qlflag"
+      ],
+      [
+       "text",
+       "input_20",
+       "",
+       "ipaddress"
+      ],
+      [
+       "text",
+       "input_24",
+       "",
+       "cf_city"
+      ],
+      [
+       "text",
+       "input_26",
+       "",
+       "cf_postalcode"
+      ],
+      [
+       "text",
+       "input_27",
+       "",
+       "cf_region"
+      ],
+      [
+       "text",
+       "input_25",
+       "",
+       "cf_timezone"
+      ],
+      [
+       "text",
+       "input_29",
+       "",
+       "Industry"
+      ],
+      [
+       "text",
+       "input_30",
+       "",
+       "Business Model"
+      ],
+      [
+       "text",
+       "input_31",
+       "",
+       "Budget Breakdown"
+      ],
+      [
+       "text",
+       "input_28",
+       "",
+       "ChartJS Base64"
+      ],
+      [
+       "text",
+       "input_32",
+       "",
+       "Marketing Budget PDF URL"
+      ],
+      [
+       "submit",
+       "",
+       "",
+       ""
+      ],
+      [
+       "submit",
+       "",
+       "",
+       ""
+      ]
+     ]
+    },
+    {
+     "id": "",
+     "action": "https://www.webfx.com/free-quote-alt/",
+     "fields": []
+    },
+    {
+     "id": "",
+     "action": "https://www.webfx.com/free-quote-alt/",
+     "fields": []
+    },
+    {
+     "id": "",
+     "action": "https://www.webfx.com/free-quote-alt/",
+     "fields": [
+      [
+       "text",
+       "website",
+       "Enter your website",
+       ""
+      ]
+     ]
+    }
+   ],
+   "after": {
+    "dialogs": [
+     {
+      "cls": "budget-popup-overlay",
+      "text": "\u00d7 Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "budget-popup-wrapper",
+      "text": "\u00d7 Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "budget-popup-close",
+      "text": "\u00d7",
+      "inputs": []
+     },
+     {
+      "cls": "budget-popup-content",
+      "text": "Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "budget-popup-body",
+      "text": "Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     },
+     {
+      "cls": "gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework marketin",
+      "text": "Enter your email to get your Custom Budget PDF We\u2019ll deliver it straight to your inbox.",
+      "inputs": [
+       [
+        "text",
+        "input_33",
+        "Enter your full name",
+        false
+       ],
+       [
+        "email",
+        "input_5",
+        "Enter your work email",
+        false
+       ],
+       [
+        "submit",
+        "",
+        "",
+        false
+       ]
+      ]
+     }
+    ],
+    "emailInputsVisible": [
+     [
+      "input_5",
+      "Enter your work email",
+      ""
+     ]
+    ],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/g/measurement/conversion?random=1789457078280&cv=11&tid=G-ZZHX7HEXTL&fst=1789457078280&fmt=8&en=qualified_lead_madKudu&gtm=45g92e69b1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457068247&_gaz=1&gcs=G111&gcd=13t3t",
+     ""
+    ],
+    [
+     "POST",
+     "https://analytics.google.com/g/s/collect?_gsid=rVpSgN-ml5bsjjtY7u31dDMLye7ScN1zOA&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267",
+     ""
+    ]
+   ]
+  }
+ },
+ "seo_checker": {
+  "url": "https://www.webfx.com/seo-checker/",
+  "forms": {
+   "action": [
+    {
+     "id": "gform_48",
+     "action": "https://www.webfx.com/seo-checker/",
+     "vis": true,
+     "text": "Your Website URL Next",
+     "fields": [
+      [
+       "text",
+       "input_1",
+       "www.example.com",
+       false,
+       "Your Website URL"
+      ],
+      [
+       "text",
+       "input_5",
+       "John Doe",
+       false,
+       "Your Name*"
+      ],
+      [
+       "email",
+       "input_7",
+       "johndoe@email.com",
+       false,
+       "Your Email Address*"
+      ],
+      [
+       "textarea",
+       "g-recaptcha-response",
+       "",
+       false,
+       ""
+      ],
+      [
+       "submit",
+       "",
+       "",
+       false,
+       ""
+      ]
+     ]
+    },
+    {
+     "id": "",
+     "action": "https://webfx.com/free-quote",
+     "vis": true,
+     "text": "",
+     "fields": [
+      [
+       "text",
+       "website",
+       "Enter your website",
+       false,
+       ""
+      ],
+      [
+       "submit",
+       "",
+       "",
+       false,
+       ""
+      ]
+     ]
+    },
+    {
+     "id": "",
+     "action": "https://www.webfx.com/free-quote-alt/",
+     "vis": true,
+     "text": "Discover how we can help your business grow Send Me a Proposal!",
+     "fields": [
+      [
+       "text",
+       "website",
+       "Enter your website",
+       true,
+       ""
+      ]
+     ]
+    }
+   ],
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267&_p=1789457080528&gcs=G111&gcd=13t3t3Z3t5l1",
+     ""
+    ],
+    [
+     "GET",
+     "https://d1ae0zx28z2bae.cloudfront.net/webfx.com?t=1789457085656",
+     ""
+    ]
+   ]
+  },
+  "enter_url_next": {
+   "action": "Next",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xecxf4&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11561",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457086074&cv=11&fst=1789457086074&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45892e69b1v896980",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xecxf4&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115616",
+     ""
+    ]
+   ]
+  }
+ },
+ "data_maturity": {
+  "url": "https://www.webfx.com/tools/data-maturity-score-card/",
+  "fill": {
+   "action": 2,
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11593846",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457094061&cv=11&fst=1789457094061&fmt=8&bg=ffffff&guid=ON&async=1&en=form_start&gtm=45892e69b1v896980",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267xf4&_p=1789457090096&gcs=G111&gcd=13t3t3Z3t",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115938466",
+     ""
+    ]
+   ]
+  },
+  "score": {
+   "action": "Get My Score",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://t.marketingcloudfx.com/visit",
+     "{\"sid\":\"762d23be-9eaa-4b3c-947d-9fd9c576e46c\",\"r\":\"\",\"lp\":\"https://www.webfx.com/\",\"uid\":\"17bf0ca3-1193-4b07-8092-787d981579fa\",\"gaId\":\"GA1.1.1763164242.1789453667\",\"ttl\":1789457990796,\"l\":{\"country\":"
+    ],
+    [
+     "POST",
+     "https://t.marketingcloudfx.com/visit",
+     "{\"sid\":\"762d23be-9eaa-4b3c-947d-9fd9c576e46c\",\"r\":\"\",\"lp\":\"https://www.webfx.com/\",\"uid\":\"17bf0ca3-1193-4b07-8092-787d981579fa\",\"gaId\":\"GA1.2.1763164242.1789453667\",\"ttl\":1789457995132,\"l\":{\"country\":"
+    ],
+    [
+     "GET",
+     "https://d1ae0zx28z2bae.cloudfront.net/webfx.com?t=1789457095208",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/pagead/form-data/1072243529?gtm=45892e69b1v896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=11593846",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/rmkt/collect/1072243529/?random=1789457096137&cv=11&fst=1789457096137&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45892e69b1v8969807",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288za20kzb831519267zd831519267xf4&_p=1789457090096&gcs=G111&gcd=13t3t3Z3t5l1&npa=0&d",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=0&auid=1703214677.1789453666&dt=Data%20Maturity%20Score%20Card%20-%20WebFX&tid=AW-1072243529&en=page_view&d",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/d/ccm/form-data/1072243529?gtm=45892e69b1phv896980718za20kzb831519267zd831519267xec&gcs=G111&gcd=13t3t3Z3t5l1&dma=0&tag_exp=115938466",
+     ""
+    ]
+   ]
+  },
+  "result": {
+   "action": "Your Data Maturity Score Industry Real Estate & Construction Business size Small Business (1-50 employees) We analyzed your tech stack based on the technologies you indicated you're currently using, and compared it to our recommendations for other small businesses in the Real Estate & Construction industry. Learn more about our recommendations below and connect with our team to see how the WebFX marketing technology experts can improve your marketing technology foundation! 25 Get Expert Help Edit My Answers Print Resul",
+   "after": {
+    "dialogs": [],
+    "emailInputsVisible": [],
+    "ls": [
+     "fx_cpc_calc_history",
+     "roas-calculator-results",
+     "mkjs_group_properties",
+     "lastExternalReferrer",
+     "vwo_apm_sent",
+     "cb_user_traits",
+     "vwoSn",
+     "li_adsId",
+     "ajs_anonymous_id",
+     "cb_group_properties",
+     "mkjs_user_traits",
+     "fx-tracking-data",
+     "lastExternalReferrerTime",
+     "fx-tracking-time",
+     "analytics_session_id.last_access",
+     "analytics_session_id",
+     "debug",
+     "ajs_user_id"
+    ]
+   },
+   "xhr": [
+    [
+     "POST",
+     "https://www.webfx.com/5brr/g/measurement/conversion?random=1789457100120&cv=11&tid=G-ZZHX7HEXTL&fst=1789457100120&fmt=8&en=qualified_lead_madKudu&gtm=45g92e69b1",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288za20kzb831519267zd831519267xf4&_p=1789457090096&gcs=G111&gcd=13t3t3Z3t5l1&npa=0&d",
+     ""
+    ],
+    [
+     "POST",
+     "https://www.webfx.com/5brr/ag/g/c?v=2&tid=G-ZZHX7HEXTL&gtm=45g92e69b1v896979288z8831519267za20kzb831519267zd831519267xf4&_p=1789457090096&gcs=G111&gcd=13t3t3Z3t",
+     ""
+    ]
+   ]
+  }
+ }
+}

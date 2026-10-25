@@ -1,0 +1,520 @@
+{
+  "file": "manufacturing.html",
+  "path": "/industries/b2b/manufacturing/",
+  "key": "b2bmfg",
+  "title": "Manufacturing Marketing Agency India for B2B | MMC",
+  "description": "Marketing for Indian manufacturers and industrial suppliers. Spec-led search, case studies, RFQ forms and CRM tracking that bring qualified enquiries.",
+  "ogTitle": "Manufacturing marketing that brings qualified RFQs",
+  "ogDescription": "Marketing for b2b manufacturing brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: manufacturing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/manufacturing/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "B2B",
+          "item": "https://www.mondaymarketing.company/industries/b2b/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Manufacturing",
+          "item": "https://www.mondaymarketing.company/industries/b2b/manufacturing/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/manufacturing/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/b2b/manufacturing/",
+      "name": "Manufacturing Marketing Agency India for B2B | MMC",
+      "description": "Marketing for Indian manufacturers and industrial suppliers. Spec-led search, case studies, RFQ forms and CRM tracking that bring qualified enquiries.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/b2b/manufacturing/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/b2b/manufacturing/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/manufacturing/#service",
+      "name": "Manufacturing",
+      "serviceType": "Manufacturing marketing",
+      "description": "Marketing for Indian manufacturers and industrial suppliers: specification-led search, case studies, RFQ forms and CRM tracking.",
+      "url": "https://www.mondaymarketing.company/industries/b2b/manufacturing/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/b2b/manufacturing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is manufacturing marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buyers search by specification, several people decide, cycles are long and distributors and events matter. The aim is a qualified request for quote, not a click."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help with RFQ forms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We design forms that ask for the details sales needs and connect them to your CRM. See lead generation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with export enquiries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We plan search and content for the markets you target and the language buyers use, and track enquiries by region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about dealers and distributors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We build pages and enquiry paths for dealers and direct buyers, and track which route an enquiry came from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On the cost of a qualified enquiry and how many progress to quotes and orders, using your CRM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee leads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "b2bmfg",
+    "wm": "MANUFACTURING",
+    "eyebrow": "● B2B manufacturing",
+    "h1": [
+      "Manufacturing marketing",
+      [
+        "that brings ",
+        "qualified RFQs",
+        "."
+      ]
+    ],
+    "sub": "Engineers and buyers search by specification, shortlist suppliers and ask for quotes. We build the search, proof and enquiry path for that journey.",
+    "tiles": [
+      {
+        "img": "b2b/found.jpg",
+        "pos": "50% 50%",
+        "label": "Found by spec",
+        "note": "Search by part and process"
+      },
+      {
+        "img": "b2b/casestudy.jpg",
+        "pos": "50% 50%",
+        "label": "Proof",
+        "note": "Case studies and capability"
+      },
+      {
+        "img": "b2b/capture.jpg",
+        "pos": "50% 50%",
+        "label": "The RFQ",
+        "note": "A form that qualifies"
+      },
+      {
+        "img": "b2b/seminar.jpg",
+        "pos": "50% 50%",
+        "label": "Trade events",
+        "note": "Follow-up that continues"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "B2B manufacturing marketing is the work of getting industrial buyers, engineers and procurement teams to find your plant by specification, trust your capability and send a qualified request for quote. It combines search by product and process, case studies, a clear RFQ path and a CRM that tracks enquiries to orders.",
+      "hl": "find your plant by specification",
+      "who": "Monday Marketing Company (MMC) markets manufacturers and industrial suppliers in India, building the website, search, content and paid media that feed a sales team.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Search by spec",
+          "text": "Pages for the parts, processes and standards buyers search."
+        },
+        {
+          "icon": "grid",
+          "title": "Proof that travels",
+          "text": "Case studies and capability pages a buying team can forward."
+        },
+        {
+          "icon": "link",
+          "title": "RFQs that qualify",
+          "text": "Forms and CRM tracking that separate real requests from noise."
+        }
+      ],
+      "image": "b2b/casestudy.jpg",
+      "chip": "Qualified requests, not just traffic"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-industrial-buys",
+          "h": "How industrial buyers buy",
+          "paras": [
+            "An engineer or purchase manager usually searches by part, material, standard or process, reads datasheets and compares several suppliers. Several people sign off, and the cycle can be long. Distributors, dealers and trade events also play a part.",
+            "A site that lists products without specifications, certifications or proof gives them little to work with."
+          ],
+          "img": "b2b/explain.jpg",
+          "cap": "A capability page explained to a buying team."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "Many manufacturers depend on referrals and dealers, have a brochure website, and receive enquiries that are unqualified or wrongly specified. Sales spends time on requests that never close.",
+            "The fix is to publish the specifications buyers search, show proof, ask the right questions on the RFQ form and track what becomes an order. See the <a href=\"/industries/b2b/\">B2B marketing</a> overview and the <a href=\"/guides/\">guides</a>."
+          ],
+          "callout": {
+            "title": "Cost of a qualified lead.",
+            "text": "We judge the work on the cost of a qualified enquiry and the orders it leads to, not on clicks."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where manufacturing marketing leaks",
+      "h2a": "Five places manufacturing",
+      "h2b": "enquiries are lost.",
+      "lede": "Each stage below is where an industrial buyer is lost or a request goes to waste, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Be found by specification",
+        "tag": "Search and content",
+        "breaks": "A site that lists a catalogue but not what buyers search.",
+        "why": "Buyers search by part, material, process and standard, not by company name.",
+        "does": "We build product, process and application pages around those searches. See SEO.",
+        "href": "/services/seo/",
+        "img": "b2b/found.jpg"
+      },
+      {
+        "k": "Explain the capability",
+        "tag": "Website and case studies",
+        "breaks": "A brochure site with no proof.",
+        "why": "Buyers need to see capacity, certifications, quality process and similar jobs before they quote.",
+        "does": "We build capability pages and case studies that a buying team can forward. See website development.",
+        "href": "/services/web-development/",
+        "img": "b2b/explain.jpg"
+      },
+      {
+        "k": "Reach buyers while the need is live",
+        "tag": "Search and LinkedIn ads",
+        "breaks": "Waiting for referrals.",
+        "why": "Paid search and professional-network ads reach buyers when a need is live.",
+        "does": "We run Google Ads and lead generation campaigns by product and region.",
+        "href": "/services/lead-generation/",
+        "img": "google/search.jpg"
+      },
+      {
+        "k": "Make the RFQ qualify itself",
+        "tag": "Forms and landing pages",
+        "breaks": "A generic contact form.",
+        "why": "Without drawing, quantity, material or timeline, sales cannot tell a real request from noise.",
+        "does": "We design RFQ forms and landing pages that ask the right questions. See CRO.",
+        "href": "/services/cro/",
+        "img": "b2b/capture.jpg"
+      },
+      {
+        "k": "Follow up and track to orders",
+        "tag": "CRM and follow-up",
+        "breaks": "Losing enquiries between teams.",
+        "why": "Long cycles need follow-up and a record of what becomes an order.",
+        "does": "We connect forms to your CRM, set follow-up steps and report enquiry to order.",
+        "href": "/services/lead-generation/",
+        "img": "b2b/followup.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "manufacturing marketing is working.",
+      "note": "Traffic alone is not on the list.",
+      "cards": [
+        {
+          "n": "Cost of a qualified enquiry",
+          "d": "What it costs to get a real, well-specified RFQ."
+        },
+        {
+          "n": "RFQ quality",
+          "d": "Share of requests sales accepts as real."
+        },
+        {
+          "n": "Enquiry to quote to order",
+          "d": "How far requests progress."
+        },
+        {
+          "n": "Visibility for specification searches",
+          "d": "Position for the searches that lead to quotes."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where manufacturing marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "B2B marketing",
+          "d": "The overview for B2B companies in India.",
+          "img": "shared/b2b.jpg",
+          "href": "/industries/b2b/",
+          "link": "See B2B marketing"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and CRM-connected follow-up.",
+          "img": "b2b/qualify.jpg",
+          "href": "/services/lead-generation/",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready sites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/",
+          "link": "See Website development"
+        },
+        {
+          "n": "SaaS and software",
+          "d": "Search, funnels and CRM signals for trial-led software buyers.",
+          "img": "b2b/qualify.jpg",
+          "href": "/industries/b2b/saas-and-software/",
+          "link": "See SaaS and software marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "manufacturing marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is manufacturing marketing different?",
+        "a": "Buyers search by specification, several people decide, cycles are long and distributors and events matter. The aim is a qualified request for quote, not a click."
+      },
+      {
+        "q": "Do you help with RFQ forms?",
+        "a": "Yes. We design forms that ask for the details sales needs and connect them to your CRM. See <a href=\"/services/lead-generation/\">lead generation</a>."
+      },
+      {
+        "q": "Can you help with export enquiries?",
+        "a": "Yes. We plan search and content for the markets you target and the language buyers use, and track enquiries by region."
+      },
+      {
+        "q": "What about dealers and distributors?",
+        "a": "We build pages and enquiry paths for dealers and direct buyers, and track which route an enquiry came from."
+      },
+      {
+        "q": "How do you measure it?",
+        "a": "On the cost of a qualified enquiry and how many progress to quotes and orders, using your CRM."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee leads?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Turn specification searches",
+      "h2b": "into qualified RFQs.",
+      "lede": "On a call, with a senior strategist. We review your site and enquiries and show what to build first."
+    },
+    "process": {
+      "h2a": "How we start with a manufacturer,",
+      "h2b": "step by step.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Audit and map",
+          "d": "We review site, enquiries and CRM, and list the specifications and proof you hold.",
+          "out": "A map of search and proof."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build pages and the RFQ path",
+          "d": "Product and capability pages, case studies and an RFQ form go live.",
+          "out": "A site that qualifies."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Run demand and track",
+          "d": "Search and paid campaigns start and enquiries are tracked to orders.",
+          "out": "Reporting by qualified enquiry."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Manufacturing marketing for companies that",
+      "h2b": "sell on specification.",
+      "good": {
+        "t": "You make or supply industrial products in India and rely on referrals, dealers or trade events.",
+        "why": "We build a search, proof and enquiry path that works beside your sales team."
+      },
+      "not": {
+        "t": "You want a guaranteed number of orders.",
+        "why": "Sales cycles are outside anyone's control. We commit to the method and honest reporting."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "manufacturers.",
+      "lede": "Search, proof, forms and tracking for B2B manufacturing.",
+      "items": [
+        {
+          "t": "Specification-led search",
+          "d": "Pages for the parts, processes and standards buyers search.",
+          "img": "b2b/found.jpg",
+          "alt": "Specification-led search"
+        },
+        {
+          "t": "Capability pages",
+          "d": "Capacity, quality and certifications explained clearly.",
+          "img": "b2b/explain.jpg",
+          "alt": "Capability pages"
+        },
+        {
+          "t": "Case studies",
+          "d": "Similar jobs shown so a buying team can forward them.",
+          "img": "b2b/casestudy.jpg",
+          "alt": "Case studies"
+        },
+        {
+          "t": "RFQ forms and landing pages",
+          "d": "Forms that ask for the details sales needs.",
+          "img": "b2b/capture.jpg",
+          "alt": "RFQ forms and landing pages"
+        },
+        {
+          "t": "Paid media",
+          "d": "Search and professional-network ads by product and region.",
+          "img": "google/search.jpg",
+          "alt": "Paid media"
+        },
+        {
+          "t": "CRM and follow-up",
+          "d": "Enquiries tracked from request to order.",
+          "img": "b2b/followup.jpg",
+          "alt": "CRM and follow-up"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why manufacturers choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We build for the buying committee, not the click.",
+      "img": "b2b/call.jpg",
+      "alt": "Why manufacturers choose MMC for marketing.",
+      "items": [
+        {
+          "t": "Built for long cycles",
+          "d": "We plan for several decision-makers and long timelines."
+        },
+        {
+          "t": "Judged on qualified enquiries",
+          "d": "Cost of a qualified RFQ, not clicks."
+        },
+        {
+          "t": "Connected to your CRM",
+          "d": "Enquiries tracked through to orders."
+        },
+        {
+          "t": "Spec-aware content",
+          "d": "Pages written with the details engineers look for."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a manufacturing engagement runs,",
+      "h2b": "step by step.",
+      "img": "b2b/explain.jpg",
+      "alt": "How a manufacturing engagement runs, step by step.",
+      "items": [
+        {
+          "t": "Audit site and enquiries",
+          "d": "Site, enquiries and CRM are reviewed."
+        },
+        {
+          "t": "Map specs and proof",
+          "d": "Search topics, specifications and proof are listed."
+        },
+        {
+          "t": "Build and launch",
+          "d": "Pages, case studies and the RFQ path go live."
+        },
+        {
+          "t": "Run, track and refine",
+          "d": "Demand campaigns start and enquiries are tracked to orders."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

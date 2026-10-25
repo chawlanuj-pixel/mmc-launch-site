@@ -1,0 +1,53 @@
+# WebFX: The Digital Marketing Agency That Drives Revenue®
+
+> WebFX is a full-service digital marketing agency that helps businesses grow revenue through SEO, PPC, AI search optimization, web design, and the proprietary RevenueCloudFX platform.
+
+WebFX has driven over $10 billion in client revenue, delivers data-driven strategies across every major digital channel, and publishes in-depth educational content on SEO, PPC, generative AI search, and broader digital marketing topics. This file highlights the most useful pages for LLMs to understand WebFX's services, pricing, technology, and expertise.
+
+## Services
+
+- [Digital Marketing Services](https://www.webfx.com/digital-marketing/services/): Overview of WebFX's full-service digital marketing offerings across SEO, PPC, content, social, email, and more.
+- [SEO Services](https://www.webfx.com/seo/services/): Search engine optimization plans, deliverables, and strategy for organic growth.
+- [AI Search Optimization](https://www.webfx.com/seo/services/ai-search-optimization/): Services for optimizing visibility in generative AI search engines like ChatGPT, Gemini, and AI Overviews.
+- [PPC Services](https://www.webfx.com/ppc/services/): Paid search and paid media management services across Google Ads, Bing, and paid social platforms.
+
+## Pricing
+
+- [Digital Marketing Pricing](https://www.webfx.com/digital-marketing/pricing/): Breakdown of digital marketing pricing across channels, including average monthly costs and factors that influence overall investment.
+- [SEO Pricing](https://www.webfx.com/seo/pricing/): SEO pricing guide covering average monthly and hourly costs, pricing models, and factors that affect SEO investment.
+- [PPC Pricing](https://www.webfx.com/ppc/pricing/): PPC pricing guide covering average costs per click, per impression, and per month across paid advertising campaigns, including a free cost calculator.
+- [Generative Engine Optimization Cost](https://www.webfx.com/blog/ai/generative-engine-optimization-cost/): Breakdown of what generative engine optimization typically costs and what factors influence pricing.
+
+## Glossaries
+
+- [Digital Marketing Glossary](https://www.webfx.com/digital-marketing/glossary/): Definitions of common digital marketing terms, acronyms, and concepts.
+- [SEO Glossary](https://www.webfx.com/seo/glossary/): Reference glossary of SEO terminology, ranking factors, and technical concepts.
+- [PPC Glossary](https://www.webfx.com/ppc/glossary/): Pay-per-click advertising glossary basics including definitions for terms such as CPC, AD Rank, Quality Score, and more.
+
+## Portfolio
+
+- [WebFX Portfolio](https://www.webfx.com/portfolio/): Showcase of WebFX client work, web design projects, and case examples across industries.
+- [WebFX Case Studies](https://www.webfx.com/portfolio/case-studies/): Collection of WebFX client case studies across industries showcasing measurable results from web design and digital marketing campaigns.
+
+## Technology
+
+- [RevenueCloudFX](https://www.webfx.com/technology/revenuecloudfx/): Overview of RevenueCloudFX, WebFX's proprietary revenue-generating marketing technology platform.
+- [OmniSEO in RevenueCloudFX](https://www.webfx.com/technology/revenuecloudfx/omniseo/): OmniSEO capabilities within RevenueCloudFX for optimizing across traditional and AI-driven search.
+- [Nutshell CRM Integration](https://www.webfx.com/technology/nutshell/): Overview of how WebFX integrates Nutshell CRM with RevenueCloudFX to unify sales and marketing data and drive revenue growth.
+- [Technology Partners](https://www.webfx.com/technology/partners/): Directory of WebFX's technology partnerships and platform integrations used to power client digital marketing results.
+
+## Blog: AI & Search
+
+- [Generative Engine Optimization (GEO)](https://www.webfx.com/blog/ai/generative-engine-optimization/): Introduction to generative engine optimization and how to earn visibility in AI-powered search results.
+- [How to Build the Business Case for AI SEO](https://www.webfx.com/blog/ai/how-to-build-the-business-case-for-ai-seo/): Practical framework for making the internal business case to invest in AI-focused SEO.
+- [Generative AI Search Trends](https://www.webfx.com/blog/seo/gen-ai-search-trends/): Latest data and trends on how generative AI is reshaping search behavior and strategy.
+- [The OmniSEO Approach](https://www.webfx.com/blog/seo/omniseo-approach/): How WebFX's OmniSEO methodology unifies optimization across traditional and AI search surfaces.
+- [SEO FAQ](https://www.webfx.com/blog/seo/seo-faq/): Frequently asked questions about SEO, including what it is, benefits, ROI, and more.
+
+## Optional
+
+- [WebFX Homepage](https://www.webfx.com/): Main entry point for WebFX with top-level information about services, results, and company.
+- [About WebFX](https://www.webfx.com/about/): Company background, mission, team, and culture information.
+- [Our Approach](https://www.webfx.com/about/our-approach/): Overview of WebFX's data-fueled digital marketing methodology, combining 750+ experts with proprietary technology to drive measurable client revenue.
+- [Contact WebFX](https://www.webfx.com/contact/): Ways to get in touch with WebFX for quotes, consultations, or general inquiries.
+- [Privacy Policy](https://www.webfx.com/privacy-policy/): WebFX's privacy policy detailing how the company collects, uses, and protects user data across its website and services.

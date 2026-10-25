@@ -1,0 +1,8 @@
+---
+// One crop of client artwork, with its real width and height, a descriptive alt, and a display cap of 1.2x native so nothing is upscaled into blur.
+import type { Img } from "../../lib/case2";
+interface Props { img: Img; eager?: boolean; class?: string; cap?: number }
+const { img, eager = false, cap = 1.2 } = Astro.props as Props;
+---
+<img class={"c2-pic " + (Astro.props.class || "")} src={img.src} width={img.w} height={img.h} alt={img.alt}
+  style={`max-width:${Math.round(img.w * cap)}px`} loading={eager ? "eager" : "lazy"} decoding={eager ? "sync" : "async"} fetchpriority={eager ? "high" : undefined} />

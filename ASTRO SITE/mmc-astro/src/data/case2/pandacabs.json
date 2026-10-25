@@ -1,0 +1,76 @@
+{
+ "id": "pandacabs",
+ "about": "{name} is a consumer cab service for outstation, one-way, airport and local rides.",
+ "description": "{name} case study: a website with a fare and booking search, a mobile booking flow, social ad posters, a Meta ad and a Google search ad.",
+ "heroTone": "ink",
+ "kind": "Consumer service, outstation and local cab rides",
+ "channels": [
+  "Meta ad",
+  "Google search ad",
+  "Social ad creative"
+ ],
+ "brief": [
+  "{name} offers outstation, one-way, airport and local rides. We built its website around a fare and booking search, with a matching mobile booking flow.",
+  "The booking search is the first thing on the page, because it is the one thing a visitor comes to do. The ads and posters use the same mascot and colours."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Website",
+   "title": "Homepage with booking search",
+   "text": "A full-width road scene, a ride-type selector for one way, round trip, airport and local, and the pick-up and drop fields in one row.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "left",
+   "kicker": "Mobile",
+   "title": "Mobile booking flow",
+   "text": "The same choices stacked for a phone, ending in the cab list.",
+   "crops": [
+    "mobile"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social ads",
+   "title": "Social ad creative",
+   "text": "Two portrait posters for weekend trips and airport rides.",
+   "crops": [
+    "posters"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google search ad",
+   "text": "The Meta ad lists routes with a per-kilometre rate. The Google ad answers a search for outstation cabs.",
+   "crops": [
+    "meta",
+    "google"
+   ],
+   "captions": [
+    "Meta ad",
+    "Google search ad"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage booking search and mobile booking flow",
+  "reach": "Meta ad, Google search ad and social posters",
+  "make": "Mascot-led social creative"
+ },
+ "action": "booking",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} website on a desktop screen",
+  "mobile": "{name} mobile page on a phone screen",
+  "posters": "{name} social ad posters",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad"
+ }
+}

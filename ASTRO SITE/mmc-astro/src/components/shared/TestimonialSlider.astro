@@ -1,0 +1,19 @@
+---
+// Only renders when MMC has recorded real, approved quotes (case-studies.json items[].testimonial = {quote, name, role}).
+// No quotes today, so this renders nothing. Never add invented quotes. CSS scroll-snap, no JS.
+import "../../styles/hub-v2.css";
+import cs from "../../data/case-studies.json";
+const quotes = ((cs as any).items as any[]).map((i) => i.testimonial).filter((t) => t && t.quote && t.name);
+---
+{quotes.length > 0 ? (
+<section class="n-band pm-band n-band--ink" id="client-voices" aria-labelledby="hv2h-t-h">
+  <div class="n-wrap">
+    <div class="hv2h-head n-rise"><span class="n-eyebrow">In their words</span><h2 class="n-h2" id="hv2h-t-h">What clients <span class="n-serif">say.</span></h2></div>
+    <ul class="hv2h-quotes" tabindex="0" aria-label="Client quotes">
+      {quotes.map((q) => (
+        <li class="hv2h-quote"><blockquote>{q.quote}</blockquote><p><b>{q.name}</b>{q.role ? ", " + q.role : ""}</p></li>
+      ))}
+    </ul>
+  </div>
+</section>
+) : null}

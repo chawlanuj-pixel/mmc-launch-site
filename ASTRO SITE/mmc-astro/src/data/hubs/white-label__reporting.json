@@ -1,0 +1,506 @@
+{
+  "file": "white-label-reporting.html",
+  "path": "/white-label/reporting/",
+  "key": "wl_reporting",
+  "title": "White-Label Reporting for Agency Clients | MMC",
+  "description": "White-label reporting for agencies: monthly SEO, PPC and social reports prepared by MMC, sent from your domain under your logo, in the format clients expect.",
+  "ogTitle": "White-label reporting and analytics for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label reporting and analytics.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/reporting/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label reporting and analytics",
+          "item": "https://www.mondaymarketing.company/white-label/reporting/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/reporting/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/reporting/",
+      "name": "White-Label Reporting for Agency Clients | MMC",
+      "description": "White-label reporting for agencies: monthly SEO, PPC and social reports prepared by MMC, sent from your domain under your logo, in the format clients expect.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/reporting/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/reporting/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/reporting/#service",
+      "name": "White-label Reporting and Analytics",
+      "serviceType": "White-label reporting and analytics",
+      "description": "White-label reporting and analytics delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/reporting/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/reporting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you work in my existing reporting tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We use the tools you already have where we can."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you write the commentary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in plain language for your client. You edit before sending."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you report on work you did not do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If we have data access, yes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide attribution modelling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide clear attribution notes and explain limits. We do not promise perfect attribution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label reporting and analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Share your current report format and tools. After the NDA we rebuild one client report so you can compare."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_reporting",
+    "wm": "White-label Reporting and Analytics",
+    "eyebrow": "● White-label reporting and analytics",
+    "h1": [
+      "White-label reporting",
+      [
+        "your clients ",
+        "can read",
+        "."
+      ]
+    ],
+    "sub": "Dashboards, monthly client reports and tracking set-up in your format, so you spend time advising, not formatting.",
+    "tiles": [
+      {
+        "img": "res/insights.jpg",
+        "pos": "50% 50%",
+        "label": "Reports",
+        "note": "Monthly and clear"
+      },
+      {
+        "img": "guides/ga4.jpg",
+        "pos": "50% 50%",
+        "label": "Tracking",
+        "note": "GA4 set up properly"
+      },
+      {
+        "img": "res/funnel.jpg",
+        "pos": "50% 50%",
+        "label": "Funnels",
+        "note": "Where results come from"
+      },
+      {
+        "img": "res/roas.jpg",
+        "pos": "50% 50%",
+        "label": "Return",
+        "note": "Against margin"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label reporting is the analytics and reporting work MMC does for your agency: tracking set-up, dashboards and monthly client reports built in your format and branding. It saves your team the hours spent pulling numbers, and gives your client a report that explains what happened and what to do next.",
+      "hl": "tracking set-up, dashboards and monthly client reports",
+      "who": "Monday Marketing Company (MMC) delivers reporting and analytics for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "chart",
+          "title": "Dashboards",
+          "text": "Live views of the numbers that matter."
+        },
+        {
+          "icon": "gauge",
+          "title": "Tracking",
+          "text": "GA4, tags and events set up correctly."
+        },
+        {
+          "icon": "window",
+          "title": "Client reports",
+          "text": "Written, branded and ready to send."
+        }
+      ],
+      "image": "res/insights.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "rep-wl",
+          "h": "Reporting that explains, not just displays",
+          "paras": [
+            "A good report says what happened, why and what happens next. We write reports with notes for your client call, so the meeting is about decisions.",
+            "Reporting supports every other white-label service, so you can add it to <a href=\"/white-label/ppc/\">PPC</a>, <a href=\"/white-label/seo/\">SEO</a> or <a href=\"/white-label/social-media-management/\">social</a> accounts. Our free tools are on the <a href=\"/tools/\">tools page</a>."
+          ],
+          "img": "res/insights.jpg",
+          "cap": "A monthly report being drafted.",
+          "table": {
+            "caption": "Reporting layers and what each answers",
+            "head": [
+              "Layer",
+              "Answers",
+              "Format"
+            ],
+            "rows": [
+              [
+                "Tracking",
+                "Is the data right?",
+                "Tags, events, audit notes"
+              ],
+              [
+                "Dashboard",
+                "How are we doing now?",
+                "Live view"
+              ],
+              [
+                "Monthly report",
+                "What happened and why?",
+                "PDF or slides in your brand"
+              ],
+              [
+                "Review notes",
+                "What should we do next?",
+                "Talking points for the call"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label reporting.",
+      "lede": "Tracking, dashboards and monthly reports.",
+      "items": [
+        {
+          "t": "Tracking audit",
+          "d": "GA4, tags and events checked against what should fire.",
+          "img": "guides/ga4.jpg",
+          "alt": "Tracking audit"
+        },
+        {
+          "t": "Dashboards",
+          "d": "Live views built in the tool you prefer.",
+          "img": "res/insights.jpg",
+          "alt": "Dashboards"
+        },
+        {
+          "t": "Monthly reports",
+          "d": "Branded reports written with commentary.",
+          "img": "res/funnel.jpg",
+          "alt": "Monthly reports"
+        },
+        {
+          "t": "Attribution notes",
+          "d": "Plain-language notes on what channels did.",
+          "img": "guides/overlap.jpg",
+          "alt": "Attribution notes"
+        },
+        {
+          "t": "Margin-aware reporting",
+          "d": "Return shown against the client's costs.",
+          "img": "res/roas.jpg",
+          "alt": "Margin-aware reporting"
+        },
+        {
+          "t": "Review talking points",
+          "d": "Notes so your client call is decision-led.",
+          "img": "res/unit.jpg",
+          "alt": "Review talking points"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label reporting and analytics.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "res/insights.jpg",
+      "alt": "Why agencies choose MMC for white-label reporting and analytics.",
+      "items": [
+        {
+          "t": "Commentary included",
+          "d": "Numbers come with an explanation."
+        },
+        {
+          "t": "Your format",
+          "d": "We build in your template or ours, with your brand."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label reporting and analytics works,",
+      "h2b": "step by step.",
+      "img": "res/insights.jpg",
+      "alt": "How white-label reporting and analytics works, step by step.",
+      "items": [
+        {
+          "t": "Share the template",
+          "d": "Your report format and tools."
+        },
+        {
+          "t": "Set up tracking",
+          "d": "We audit and fix tracking."
+        },
+        {
+          "t": "Build",
+          "d": "Dashboards and reports are built."
+        },
+        {
+          "t": "Run",
+          "d": "Reports arrive each month."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label reporting and analytics for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells reporting and analytics but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label reporting and analytics fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label ORM",
+          "d": "Reviews and replies behind your brand.",
+          "img": "orm/reply.jpg",
+          "href": "/white-label/orm/",
+          "link": "See white-label ORM"
+        },
+        {
+          "n": "White-label digital marketing",
+          "d": "The full mix behind your brand.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/digital-marketing/",
+          "link": "See white-label digital marketing"
+        },
+        {
+          "n": "Agency outsourcing",
+          "d": "A dedicated team that works as yours.",
+          "img": "about2/huddle.jpg",
+          "href": "/white-label/outsourcing/",
+          "link": "See agency outsourcing"
+        },
+        {
+          "n": "Free tools",
+          "d": "Calculators for the numbers that matter.",
+          "img": "res/unit.jpg",
+          "href": "/tools/",
+          "link": "See Free tools"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "reporting and analytics."
+    ],
+    "faq": [
+      {
+        "q": "Can you work in my existing reporting tool?",
+        "a": "Yes. We use the tools you already have where we can."
+      },
+      {
+        "q": "Do you write the commentary?",
+        "a": "Yes, in plain language for your client. You edit before sending."
+      },
+      {
+        "q": "Can you report on work you did not do?",
+        "a": "If we have data access, yes."
+      },
+      {
+        "q": "Do you provide attribution modelling?",
+        "a": "We provide clear attribution notes and explain limits. We do not promise perfect attribution."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label reporting and analytics?",
+        "a": "Share your current report format and tools. After the NDA we rebuild one client report so you can compare."
+      }
+    ],
+    "cta": {
+      "h2a": "Add reporting and analytics",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first reporting and analytics client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Automate the pull",
+        "tag": "Numbers",
+        "breaks": "Pulling numbers by hand every month.",
+        "why": "Your best strategist spends the last days of the month in spreadsheets instead of advising.",
+        "does": "Sources are connected once and refreshed on schedule, so the numbers are ready when the writing starts."
+      },
+      {
+        "k": "Audit the tracking first",
+        "tag": "Tracking",
+        "breaks": "Reporting on tracking nobody checked.",
+        "why": "A wrong conversion count is worse than none, because your client will act on it.",
+        "does": "We audit tags, events and attribution before the first report and note any known gaps in plain words."
+      },
+      {
+        "k": "Use one template",
+        "tag": "Format",
+        "breaks": "Building a new report layout for each client.",
+        "why": "Every client gets a different pack, nothing is reusable, and quality depends on who built it.",
+        "does": "Your template, with your branding and a fixed section order, is applied to every client."
+      },
+      {
+        "k": "Write the commentary",
+        "tag": "Commentary",
+        "breaks": "Sending charts with no advice.",
+        "why": "Clients cannot read a chart for what to do next, so they ask you, or they leave.",
+        "does": "Each report says what happened, what to watch and the one change we suggest, ready for your edit."
+      },
+      {
+        "k": "Show margin, not only clicks",
+        "tag": "Margin view",
+        "breaks": "Reporting on platform numbers alone.",
+        "why": "Spend can look healthy while contribution margin shrinks, and no one is told.",
+        "does": "Where your client shares cost data, we add margin-aware views so decisions follow profit, not only platform figures."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label reporting",
+      "h2b": "goes wrong for agencies.",
+      "lede": "Reporting is the part of the work your client sees most. These are the five places agency reporting loses hours and credibility."
+    },
+    "process": {
+      "h2a": "How we onboard you for reporting,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and reporting scope",
+          "d": "We sign the NDA, list your clients' sources and write down what each report needs to cover.",
+          "out": "A scope for sources, template and schedule."
+        },
+        {
+          "t": "Pilot report",
+          "d": "One client's report built end to end, with sources connected and commentary written.",
+          "out": "A first report you can send under your name."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Template, review step, send date and what the commentary covers are written once.",
+          "out": "A one-page reporting standard."
+        },
+        {
+          "t": "Roll out across clients",
+          "d": "More client reports move to the template in batches, each with the same review step.",
+          "out": "Every client report on one template."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

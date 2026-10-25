@@ -1,0 +1,501 @@
+{
+  "file": "white-label-app-development.html",
+  "path": "/white-label/app-development/",
+  "key": "wl_app_development",
+  "title": "White-Label App Development for Agencies | MMC",
+  "description": "White-label mobile app development for agencies: iOS and Android apps built from your client's brief, with design, build, testing and release support.",
+  "ogTitle": "White-label app development for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label app development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/app-development/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label app development",
+          "item": "https://www.mondaymarketing.company/white-label/app-development/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/app-development/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/app-development/",
+      "name": "White-Label App Development for Agencies | MMC",
+      "description": "White-label mobile app development for agencies: iOS and Android apps built from your client's brief, with design, build, testing and release support.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/app-development/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/app-development/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/app-development/#service",
+      "name": "White-label App Development",
+      "serviceType": "White-label app development",
+      "description": "White-label app development delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/app-development/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/app-development/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which platforms do you build for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iOS and Android, native or cross-platform, depending on the brief."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Terms are written into the agreement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support apps after release?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, under a separate maintenance scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you add features to an existing app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, after a code review."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label app development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Share the client brief. After the NDA we hold a scoping call and return an outline you can discuss with your client."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_app_development",
+    "wm": "White-label App Development",
+    "eyebrow": "● White-label app development",
+    "h1": [
+      "White-label app",
+      [
+        "development for ",
+        "agencies that sell",
+        " apps."
+      ]
+    ],
+    "sub": "iOS and Android apps built from your client's brief, with design, testing and release support, delivered under your brand.",
+    "tiles": [
+      {
+        "img": "app/journey.jpg",
+        "pos": "50% 50%",
+        "label": "Journey",
+        "note": "Flows first"
+      },
+      {
+        "img": "app/build.jpg",
+        "pos": "50% 50%",
+        "label": "Build",
+        "note": "Cross-platform or native"
+      },
+      {
+        "img": "app/data.jpg",
+        "pos": "50% 50%",
+        "label": "Data",
+        "note": "Events tracked"
+      },
+      {
+        "img": "app/launch.jpg",
+        "pos": "50% 50%",
+        "label": "Launch",
+        "note": "Store ready"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label app development is mobile app work that MMC delivers for your agency's client while you lead the relationship. We take the brief, shape the journey, build for iOS and Android, test and support store release, then hand over code and documentation under your brand.",
+      "hl": "mobile app work",
+      "who": "Monday Marketing Company (MMC) delivers app development for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Journeys",
+          "text": "Flows mapped before screens."
+        },
+        {
+          "icon": "layers",
+          "title": "Build",
+          "text": "iOS and Android."
+        },
+        {
+          "icon": "gauge",
+          "title": "Release",
+          "text": "Store submission support."
+        }
+      ],
+      "image": "app/build.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "app-wl",
+          "h": "How an app project is split with your agency",
+          "paras": [
+            "App projects fail when the brief is vague. We help you shape it before build: users, journeys and what the first release should and should not do.",
+            "See our direct work on the <a href=\"/services/mobile-app-development/\">mobile app development</a> page. Design can come from <a href=\"/white-label/web-design/\">white-label design</a>."
+          ],
+          "img": "app/journey.jpg",
+          "cap": "App journeys mapped for a client.",
+          "table": {
+            "caption": "App build options compared",
+            "head": [
+              "Approach",
+              "Strength",
+              "Trade-off"
+            ],
+            "rows": [
+              [
+                "Cross-platform",
+                "One codebase for both stores",
+                "Some native features need extra work"
+              ],
+              [
+                "Native",
+                "Best fit to each platform",
+                "Two builds to maintain"
+              ],
+              [
+                "Progressive web app",
+                "No store needed",
+                "Fewer device features"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label app development.",
+      "lede": "From brief to store release.",
+      "items": [
+        {
+          "t": "Discovery",
+          "d": "Users, goals and scope for the first release.",
+          "img": "app/decide.jpg",
+          "alt": "Discovery"
+        },
+        {
+          "t": "UX and UI",
+          "d": "Journeys and screens.",
+          "img": "ux/screens.jpg",
+          "alt": "UX and UI"
+        },
+        {
+          "t": "Development",
+          "d": "iOS and Android builds.",
+          "img": "app/build.jpg",
+          "alt": "Development"
+        },
+        {
+          "t": "Integrations",
+          "d": "APIs, payments and analytics.",
+          "img": "app/data.jpg",
+          "alt": "Integrations"
+        },
+        {
+          "t": "Testing",
+          "d": "Device and flow testing.",
+          "img": "ux/test.jpg",
+          "alt": "Testing"
+        },
+        {
+          "t": "Release support",
+          "d": "Store listing and submission help.",
+          "img": "app/launch.jpg",
+          "alt": "Release support"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label app development.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "app/build.jpg",
+      "alt": "Why agencies choose MMC for white-label app development.",
+      "items": [
+        {
+          "t": "Scope kept honest",
+          "d": "We scope the first release tightly."
+        },
+        {
+          "t": "Documented",
+          "d": "Code and notes handed over."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label app development works,",
+      "h2b": "step by step.",
+      "img": "app/build.jpg",
+      "alt": "How white-label app development works, step by step.",
+      "items": [
+        {
+          "t": "Shape the brief",
+          "d": "We refine scope with you."
+        },
+        {
+          "t": "Design",
+          "d": "Journeys and screens are agreed."
+        },
+        {
+          "t": "Build and test",
+          "d": "Development and testing in stages."
+        },
+        {
+          "t": "Release",
+          "d": "We support submission and handover."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label app development for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells app development but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label app development fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label AI services",
+          "d": "AI by MMC behind your brand.",
+          "img": "ugc/shoot.jpg",
+          "href": "/white-label/ai-services/",
+          "link": "See white-label AI services"
+        },
+        {
+          "n": "White-label reporting",
+          "d": "Reports and dashboards in your format.",
+          "img": "res/insights.jpg",
+          "href": "/white-label/reporting/",
+          "link": "See white-label reporting"
+        },
+        {
+          "n": "White-label ORM",
+          "d": "Reviews and replies behind your brand.",
+          "img": "orm/reply.jpg",
+          "href": "/white-label/orm/",
+          "link": "See white-label ORM"
+        },
+        {
+          "n": "Mobile app development",
+          "d": "Apps for iOS and Android.",
+          "img": "app/build.jpg",
+          "href": "/services/mobile-app-development/",
+          "link": "See Mobile app development"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "app development."
+    ],
+    "faq": [
+      {
+        "q": "Which platforms do you build for?",
+        "a": "iOS and Android, native or cross-platform, depending on the brief."
+      },
+      {
+        "q": "Who owns the code?",
+        "a": "Terms are written into the agreement."
+      },
+      {
+        "q": "Do you support apps after release?",
+        "a": "Yes, under a separate maintenance scope."
+      },
+      {
+        "q": "Can you add features to an existing app?",
+        "a": "Yes, after a code review."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label app development?",
+        "a": "Share the client brief. After the NDA we hold a scoping call and return an outline you can discuss with your client."
+      }
+    ],
+    "cta": {
+      "h2a": "Add app development",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first app development client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Write the scope down",
+        "tag": "Scope",
+        "breaks": "Letting the brief grow every call.",
+        "why": "Features arrive in meetings and nothing leaves, so the date and the fee both break.",
+        "does": "A written scope with a feature list and a change process, so new asks are quoted instead of absorbed."
+      },
+      {
+        "k": "Test the journey on phones",
+        "tag": "Journey",
+        "breaks": "Signing off a flow that nobody tried on a phone.",
+        "why": "Thumb reach and small screens expose problems that a slide deck hides.",
+        "does": "A clickable journey tested on real phones before code, so the first build is the right build."
+      },
+      {
+        "k": "Plan the store review",
+        "tag": "Release",
+        "breaks": "Promising a launch date before store review.",
+        "why": "A rejection or a missing asset costs days that your client counts on you for.",
+        "does": "We prepare listings, privacy details and test builds early, and tell you where review risk sits."
+      },
+      {
+        "k": "Track what the app does",
+        "tag": "App data",
+        "breaks": "Shipping without events to learn from.",
+        "why": "Without data you cannot show your client what the app earned or where users drop.",
+        "does": "Key events are set up during the build, with a plain note of what each one measures."
+      },
+      {
+        "k": "Settle code ownership",
+        "tag": "Code and handover",
+        "breaks": "Leaving code ownership vague.",
+        "why": "When the relationship changes, vague ownership becomes a dispute you did not plan for.",
+        "does": "Ownership terms are written into the agreement, and code and documentation are handed over under your brand."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label app projects",
+      "h2b": "go wrong for agencies.",
+      "lede": "An app is the longest promise you make a client. These are the five places agency app projects slip, from the first brief to the last release."
+    },
+    "process": {
+      "h2a": "How we onboard you for apps,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and app scope",
+          "d": "We sign the NDA, take your client's brief and write a scope with the app-or-site decision stated.",
+          "out": "A written scope and a platform recommendation."
+        },
+        {
+          "t": "Pilot prototype",
+          "d": "One core journey as a clickable prototype, tested on phones.",
+          "out": "A prototype your client can tap through."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Design handoff, build cadence, device testing and release steps are written once.",
+          "out": "A short app delivery runbook."
+        },
+        {
+          "t": "Scale to more apps",
+          "d": "More briefs use the same flow, and we add engineers when two projects overlap.",
+          "out": "An app service you can sell more than once."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

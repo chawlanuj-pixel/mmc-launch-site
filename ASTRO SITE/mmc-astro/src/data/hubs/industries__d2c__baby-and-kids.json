@@ -1,0 +1,520 @@
+{
+  "file": "baby-and-kids.html",
+  "path": "/industries/d2c/baby-and-kids/",
+  "key": "d2cbaby",
+  "title": "Baby and Kids Brand Marketing Agency India | MMC",
+  "description": "Marketing for D2C baby and kids brands in India. Parent-led creative, safety and trust content, gifting seasons and age-stage retention, built on margin.",
+  "ogTitle": "Baby and kids marketing for brands parents trust",
+  "ogDescription": "Marketing for d2c baby and kids brands in India, planned on the numbers that matter.",
+  "ogAlt": "Monday Marketing Company: baby and kids.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://www.mondaymarketing.company/industries/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "D2C",
+          "item": "https://www.mondaymarketing.company/industries/d2c/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Baby and kids",
+          "item": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/#webpage",
+      "url": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/",
+      "name": "Baby and Kids Brand Marketing Agency India | MMC",
+      "description": "Marketing for D2C baby and kids brands in India. Parent-led creative, safety and trust content, gifting seasons and age-stage retention, built on margin.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/#service",
+      "name": "Baby and kids",
+      "serviceType": "Baby and kids marketing",
+      "description": "Marketing for D2C baby and kids brands: parent-led creative, safety and trust content, gifting seasons and age-stage retention.",
+      "url": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/industries/d2c/baby-and-kids/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is baby and kids marketing different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The buyer is a parent or gift-giver, trust and safety weigh heavily, products are outgrown, and gifting seasons matter. Targeting rules around children also shape how ads are built."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you target children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our ads speak to parents and gift-givers. Platform rules limit targeting around minors, and we follow them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What safety claims can you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only claims you can document, such as tested materials or certifications. We do not invent them, and we ask for proof."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you plan for gifting seasons?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We set the calendar ahead of festivals and birthdays, build gift-ready pages and packs, and plan media around when gift buyers search."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help with marketplaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, where you sell there. See Amazon Ads and quick commerce."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee growth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "d2cbaby",
+    "wm": "BABY & KIDS",
+    "eyebrow": "● D2C baby and kids",
+    "h1": [
+      "Baby and kids marketing",
+      [
+        "for brands ",
+        "parents trust",
+        "."
+      ]
+    ],
+    "sub": "Parents buy for safety first and change what they need as a child grows. We plan content, ads and retention around trust, gifting and age stages.",
+    "tiles": [
+      {
+        "img": "d2c/unboxing.jpg",
+        "pos": "50% 50%",
+        "label": "Unboxing",
+        "note": "Gift-ready first look"
+      },
+      {
+        "img": "ugc/brief.jpg",
+        "pos": "50% 50%",
+        "label": "Parent voices",
+        "note": "Real families on camera"
+      },
+      {
+        "img": "d2c/packing.jpg",
+        "pos": "50% 50%",
+        "label": "Packing",
+        "note": "Care in every order"
+      },
+      {
+        "img": "d2c/retention.jpg",
+        "pos": "50% 50%",
+        "label": "Age stages",
+        "note": "Next size, next need"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "D2C baby and kids marketing is the work of reaching parents and gift-givers who buy for safety and trust, and bringing them back as the child grows. Ads speak to parents, not to children, and the funnel is planned around gifting seasons and age stages rather than a single purchase.",
+      "hl": "parents and gift-givers",
+      "who": "Monday Marketing Company (MMC) markets D2C baby and kids brands in India, from parent-led creative to age-stage retention.",
+      "points": [
+        {
+          "icon": "target",
+          "title": "Parent-first",
+          "text": "Messages for the buyer, with safety and quality made clear."
+        },
+        {
+          "icon": "grid",
+          "title": "Gifting built in",
+          "text": "Gift-ready pages, packs and seasonal plans."
+        },
+        {
+          "icon": "link",
+          "title": "Grows with the child",
+          "text": "Flows that suggest the next size or stage."
+        }
+      ],
+      "image": "d2c/unboxing.jpg",
+      "chip": "Safe, gift-ready, and ready for the next stage"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "how-parents-buy",
+          "h": "How parents and gift-givers decide",
+          "paras": [
+            "Parents look for signs of safety and quality: materials, certifications they can verify, honest reviews and recommendations from other parents. Gift-givers want something that looks good, arrives well and can be exchanged.",
+            "Platform rules restrict targeting and the use of children in ads. We aim every message at the adult buyer and keep to the rules."
+          ],
+          "img": "ugc/brief.jpg",
+          "cap": "A parent briefing a creator."
+        },
+        {
+          "id": "recurring-problem",
+          "h": "The problem that keeps coming back",
+          "paras": [
+            "A child outgrows a product, so each purchase is short-lived. A brand that sells only the first product keeps paying to find new parents.",
+            "The answer is to plan for age stages and gifting: suggest the next size or product, and prepare for the seasons when gifting peaks.  We read this against your numbers with the <a href=\"/tools/\">free tools</a>."
+          ],
+          "callout": {
+            "title": "Verify before you claim.",
+            "text": "We use only safety and certification claims you can document."
+          }
+        }
+      ]
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where baby and kids marketing leaks",
+      "h2a": "Five places baby and kids",
+      "h2b": "brands lose money.",
+      "lede": "Each stage below is where a baby or kids brand loses a parent or a repeat order, and the work that fixes it."
+    },
+    "stages": [
+      {
+        "k": "Be there when parents search",
+        "tag": "Search and content",
+        "breaks": "Waiting for parents to find you by name.",
+        "why": "New parents search for what they need and compare. Brands that answer well become the shortlist.",
+        "does": "We build guides and search campaigns around parent questions. See SEO.",
+        "href": "/services/seo/",
+        "img": "seo/intent.jpg"
+      },
+      {
+        "k": "Make safety and quality visible",
+        "tag": "Trust content",
+        "breaks": "Claims with no proof.",
+        "why": "Parents are cautious. Materials, testing and honest reviews carry weight.",
+        "does": "We put verified proof on pages and in creative, and leave out anything we cannot document.",
+        "href": "/services/ugc-and-video/",
+        "img": "ugc/brief.jpg"
+      },
+      {
+        "k": "Win the gifting moments",
+        "tag": "Seasonal campaigns",
+        "breaks": "Treating gifting as ordinary sales.",
+        "why": "Gifting spikes around birthdays and festivals and needs gift-ready pages, packs and messages.",
+        "does": "We plan gift hubs, packs and campaigns ahead of peaks. See Meta Ads.",
+        "href": "/services/performance-marketing/meta-ads/",
+        "img": "d2c/unboxing.jpg"
+      },
+      {
+        "k": "Remove friction at checkout",
+        "tag": "Pages and checkout",
+        "breaks": "Parents abandoning with a child in hand.",
+        "why": "Parents shop in short windows. Slow or confusing checkout loses them.",
+        "does": "We simplify product pages, size help and checkout. See CRO.",
+        "href": "/services/cro/",
+        "img": "d2c/checkout.jpg"
+      },
+      {
+        "k": "Plan for the next stage",
+        "tag": "Age-stage retention",
+        "breaks": "Losing the buyer when the child grows.",
+        "why": "The parent is still a customer, but the need changes.",
+        "does": "We build flows by age stage and past purchase. See retention.",
+        "href": "/services/retention-marketing/",
+        "img": "d2c/retention.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "baby and kids marketing is working.",
+      "note": "The first-order ROAS alone is not on the list.",
+      "cards": [
+        {
+          "n": "Contribution margin per order",
+          "d": "What is left after product, shipping, returns and discounts."
+        },
+        {
+          "n": "Repeat or next-stage purchase",
+          "d": "Buyers who return for the next size or product."
+        },
+        {
+          "n": "Gifting share of orders",
+          "d": "How much of the business comes from gifting seasons."
+        },
+        {
+          "n": "Return and exchange rate",
+          "d": "Whether sizing and expectations are set right."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where baby and kids marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Meta Ads",
+          "d": "Creative and audience testing aimed at parents.",
+          "img": "meta/creative.jpg",
+          "href": "/services/performance-marketing/meta-ads/",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "Packaging design",
+          "d": "Packs that look good in a gift and on a shelf.",
+          "img": "pack/tile.jpg",
+          "href": "/services/packaging-design/",
+          "link": "See Packaging design"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "Flows that follow the child's age.",
+          "img": "d2c/retention.jpg",
+          "href": "/services/retention-marketing/",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Skincare",
+          "d": "Marketing for brands where buyers research ingredients and reorder on a cycle.",
+          "img": "d2c/range.jpg",
+          "href": "/industries/d2c/skincare/",
+          "link": "See Skincare marketing"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "baby and kids marketing."
+    ],
+    "faq": [
+      {
+        "q": "How is baby and kids marketing different?",
+        "a": "The buyer is a parent or gift-giver, trust and safety weigh heavily, products are outgrown, and gifting seasons matter. Targeting rules around children also shape how ads are built."
+      },
+      {
+        "q": "Do you target children?",
+        "a": "No. Our ads speak to parents and gift-givers. Platform rules limit targeting around minors, and we follow them."
+      },
+      {
+        "q": "What safety claims can you use?",
+        "a": "Only claims you can document, such as tested materials or certifications. We do not invent them, and we ask for proof."
+      },
+      {
+        "q": "How do you plan for gifting seasons?",
+        "a": "We set the calendar ahead of festivals and birthdays, build gift-ready pages and packs, and plan media around when gift buyers search."
+      },
+      {
+        "q": "Do you help with marketplaces?",
+        "a": "Yes, where you sell there. See <a href=\"/services/performance-marketing/amazon-ads/\">Amazon Ads</a> and <a href=\"/services/performance-marketing/quick-commerce/\">quick commerce</a>."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list because the right scope depends on your brand, your market and how much you want done."
+      },
+      {
+        "q": "Can you guarantee growth?",
+        "a": "No. Nobody can honestly guarantee a result or a timeline, and platforms change. We commit to the work in the scope, honest tracking and reporting on the numbers that matter."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan baby and kids marketing",
+      "h2b": "around trust and stage.",
+      "lede": "On a call, with a senior strategist. We read your numbers and say where parents drop off and which stages to plan for."
+    },
+    "process": {
+      "h2a": "How we start with a baby or kids brand,",
+      "h2b": "step by step.",
+      "note": "The steps show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Read the numbers",
+          "d": "We review economics, returns, tracking and creative, and list the trust proof you hold.",
+          "out": "A plan built on margin."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build trust and gifting",
+          "d": "Parent-led creative, proof on pages and a gifting calendar go live.",
+          "out": "Pages and creative that parents trust."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Add stage retention",
+          "d": "Flows by age stage start and media follows margin.",
+          "out": "A funnel that grows with the child."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Baby and kids marketing for brands that",
+      "h2b": "parents recommend.",
+      "good": {
+        "t": "You sell for babies and children in India online and want parents to trust and return.",
+        "why": "We plan around trust proof, gifting and age stages."
+      },
+      "not": {
+        "t": "You want to target children directly.",
+        "why": "Platforms restrict it and it is the wrong buyer. We speak to parents."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "baby and kids brands.",
+      "lede": "Content, creative, media and retention for D2C baby and kids.",
+      "items": [
+        {
+          "t": "Parent guides",
+          "d": "Content that answers new-parent questions and shortlists you.",
+          "img": "seo/pages.jpg",
+          "alt": "Parent guides"
+        },
+        {
+          "t": "Parent-led creative",
+          "d": "Real families and routines, shown to adults.",
+          "img": "ugc/brief.jpg",
+          "alt": "Parent-led creative"
+        },
+        {
+          "t": "Gifting plans",
+          "d": "Gift hubs, packs and campaigns ahead of peak seasons.",
+          "img": "d2c/unboxing.jpg",
+          "alt": "Gifting plans"
+        },
+        {
+          "t": "Checkout and size help",
+          "d": "Fewer drop-offs when parents shop in short windows.",
+          "img": "d2c/checkout.jpg",
+          "alt": "Checkout and size help"
+        },
+        {
+          "t": "Packing and unboxing",
+          "d": "Care in packing as a part of trust.",
+          "img": "d2c/packing.jpg",
+          "alt": "Packing and unboxing"
+        },
+        {
+          "t": "Age-stage flows",
+          "d": "Email and WhatsApp by stage and past purchase.",
+          "img": "d2c/retention.jpg",
+          "alt": "Age-stage flows"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why baby and kids brands choose MMC",
+      "h2b": "for marketing.",
+      "lede": "We respect the buyer and the rules.",
+      "img": "d2c/packing.jpg",
+      "alt": "Why baby and kids brands choose MMC for marketing.",
+      "items": [
+        {
+          "t": "Trust-first creative",
+          "d": "Proof you can document, and nothing exaggerated."
+        },
+        {
+          "t": "Planned for gifting",
+          "d": "Calendars and gift-ready pages ahead of peaks."
+        },
+        {
+          "t": "Retention that follows growth",
+          "d": "Flows by age stage, not one-off blasts."
+        },
+        {
+          "t": "Margin-based decisions",
+          "d": "Targets from contribution margin, including returns."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a baby and kids engagement runs,",
+      "h2b": "step by step.",
+      "img": "d2c/unboxing.jpg",
+      "alt": "How a baby and kids engagement runs, step by step.",
+      "items": [
+        {
+          "t": "Audit economics and proof",
+          "d": "Margin, returns and trust proof are reviewed."
+        },
+        {
+          "t": "Plan trust and gifting",
+          "d": "Creative, pages and a gifting calendar are scoped."
+        },
+        {
+          "t": "Launch and test",
+          "d": "Campaigns and pages go live with a test plan."
+        },
+        {
+          "t": "Add stage retention",
+          "d": "Flows by age stage start and spend follows margin."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

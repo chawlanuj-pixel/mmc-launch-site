@@ -1,0 +1,62 @@
+---
+// Closing band: inline audit form (lead capture 2). Posts through window.MMCForms.submitLead (public/assets/mmc-forms.js),
+// which sends to window.MMC_FORM_ENDPOINT when set and otherwise opens a pre-filled email, so a lead is never lost.
+// TODO(owner): set window.MMC_FORM_ENDPOINT (see mmc-forms.js) so this form posts to a real inbox/CRM instead of the mailto fallback.
+// Without JavaScript the form submits as a plain mailto (progressive fallback). No response-time promise is made here.
+import { WHATSAPP } from "../../lib/site";
+const MAIL = "anuj@mondaymarketing.company";
+---
+<section class="hv2-sec hv2-close no-section-bg" id="close" aria-labelledby="hv2-close-h">
+  <div class="hn-wrap hv2-close__in">
+    <div class="hv2-close__copy">
+      <p class="hn-eyebrow">Ready when you are</p>
+      <h2 id="hv2-close-h">Let's find out what a customer is <em>actually worth.</em></h2>
+      <p>Tell us what you sell and where it lives online. A senior strategist reads your numbers and tells you the first things to fix. No deck, no pitch.</p>
+      <figure class="hv2-close__fig">
+        <img src="/assets/home2/closing.jpg" alt="The MMC team around a table with a laptop, planning a client's growth" loading="lazy" decoding="async" width="1200" height="806" />
+      </figure>
+      <div class="hv2-close__alt">
+        <button type="button" class="btn btn--primary glow-btn" data-book="home-final">
+          <span class="glow-btn__glow" aria-hidden="true"></span>
+          <span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span>
+        </button>
+        <a class="hv2-close__wa" href={WHATSAPP} target="_blank" rel="noreferrer" data-wa="home-close">Or message us on WhatsApp</a>
+      </div>
+    </div>
+    <form class="hv2-form" data-hv2-form action={"mailto:" + MAIL} method="post" enctype="text/plain" aria-labelledby="hv2-form-h">
+      <h3 id="hv2-form-h">Get my free audit</h3>
+      <label>Your name<input type="text" name="name" autocomplete="name" enterkeyhint="next" required /></label>
+      <label>Work email<input type="email" name="email" autocomplete="email" enterkeyhint="next" required /></label>
+      <label>Phone or WhatsApp<input type="tel" name="phone" inputmode="tel" autocomplete="tel" enterkeyhint="next" placeholder="+91 98765 43210" maxlength="20" required /></label>
+      <label>Website<input type="text" name="website" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false" enterkeyhint="next" placeholder="yourbrand.com" required /></label>
+      <label>What do you sell?<input type="text" name="sells" autocomplete="off" enterkeyhint="send" placeholder="Skincare, ERP software, a school" required /></label>
+      <input type="text" name="company_url" tabindex="-1" autocomplete="off" aria-hidden="true" class="hv2-form__hp" />
+      <button type="submit" class="btn btn--primary glow-btn">
+        <span class="glow-btn__glow" aria-hidden="true"></span>
+        <span class="glow-btn__inner">Send for my audit<span class="arrow"></span></span>
+      </button>
+      <p class="hv2-form__status" role="status" aria-live="polite" data-hv2-status></p>
+      <p class="hv2-form__fine">We use these details only to prepare your audit.</p>
+    </form>
+  </div>
+  <script is:inline>
+    (function () {
+      var f = document.querySelector("[data-hv2-form]"); if (!f) return;
+      var status = f.querySelector("[data-hv2-status]");
+      f.addEventListener("submit", function (e) {
+        var w = window;
+        if (!w.MMCForms || !w.MMCForms.submitLead) return; /* no script: let the mailto fallback run */
+        e.preventDefault();
+        if (f.company_url && f.company_url.value) return;
+        var okPhone = w.MMCForms.validPhone ? w.MMCForms.validPhone(f.phone.value) : /\d{8,}/.test(f.phone.value);
+        if (!okPhone) { status.setAttribute("data-err", ""); status.textContent = (w.MMCForms.phoneMsg || "Please enter a valid phone number."); f.phone.focus(); return; }
+        var data = { name: f.name.value.trim(), email: f.email.value.trim(), phone: (w.MMCForms.cleanPhone ? w.MMCForms.cleanPhone(f.phone.value) : f.phone.value.trim()), website: f.website.value.trim(), sells: f.sells.value.trim(), source: "Home closing form" };
+        var btn = f.querySelector("button[type=submit]"); btn.disabled = true; status.removeAttribute("data-err"); status.textContent = "Sending...";
+        Promise.resolve(w.MMCForms.submitLead(data, { subject: "Audit request, " + (data.website || data.name) })).then(function (r) {
+          status.textContent = "Thanks. We have your details.";
+          if (w.MMCForms.goThanks) w.MMCForms.goThanks("audit", r, data);
+        }).catch(function () { btn.disabled = false; status.setAttribute("data-err", ""); status.textContent = "Something went wrong. Please email " + "anuj@mondaymarketing.company" + " instead."; });
+      });
+    })();
+  </script>
+</section>

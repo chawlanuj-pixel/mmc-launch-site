@@ -1,0 +1,181 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__branding.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "brand/voice.jpg",
+    "pos": "50% 50%",
+    "alt": "A mood board of photos, colour and short phrases for a brand voice.",
+    "facts": [
+      {
+        "t": "Position first.",
+        "d": "Audience and promise before design."
+      },
+      {
+        "t": "A full identity.",
+        "d": "Name, mark, colour, type, voice."
+      },
+      {
+        "t": "A system that lasts.",
+        "d": "Guidelines and templates."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "BrandSystem",
+    "eyebrow": "The work, shown",
+    "h2a": "How a brand gets built,",
+    "h2b": "step by step.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Write the position before drawing anything.",
+        "d": "Audience, promise and competitors are settled, and every later choice is checked against one line."
+      },
+      {
+        "n": "02",
+        "t": "Test names for meaning, sound and market.",
+        "d": "Options are checked for availability and for how they read where you sell."
+      },
+      {
+        "n": "03",
+        "t": "Design mark, colour and type together.",
+        "d": "One identity system that stands apart from the category, not a lone logo."
+      },
+      {
+        "n": "04",
+        "t": "Hand over guidelines and templates.",
+        "d": "Rules and ready files for each place the brand appears, so any team keeps it consistent."
+      }
+    ],
+    "illustrative": "Illustrative layout of a brand board. Not a client brand, no real figures."
+  },
+  "leak": {
+    "visual": "BrandZones",
+    "barLogo": "",
+    "barTitle": "Brand view",
+    "pinsLabel": "Five places a brand goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Position"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Name"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Identity"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Voice"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Guidelines"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we work with.",
+    "tiles": [
+      {
+        "id": "mbb",
+        "line": "Body care: a website and performance creative on one look."
+      },
+      {
+        "id": "giraffe",
+        "line": "Gifting: a site, ads and creative across one brand."
+      },
+      {
+        "id": "vagakids",
+        "line": "Kids' products: a storefront and ad creative for a kids' brand."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we build a brand,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Decide who you are for",
+        "d": "Audience, promise and competitors are settled first, and written down.",
+        "get": "A written position.",
+        "img": "brand/position.jpg",
+        "alt": "A team around a brand positioning map on a wall.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Name and shape the idea",
+        "d": "Naming and messaging are tested against meaning, sound and your markets.",
+        "get": "A name and message that fit.",
+        "img": "brand/naming.jpg",
+        "alt": "A notebook of brand name ideas.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Design the identity",
+        "d": "Logo, colour, type and voice are designed together.",
+        "get": "An identity system, not a lone logo.",
+        "img": "brand/logo.jpg",
+        "alt": "Logo sketches and colour swatches on a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Hand over guidelines",
+        "d": "Guidelines and templates for every place the brand appears.",
+        "get": "A kit your team can use.",
+        "img": "brand/guidelines.jpg",
+        "alt": "A brand guidelines book open to logo usage and colour pages.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Packaging design",
+        "href": "/services/packaging-design/"
+      },
+      {
+        "n": "Social media",
+        "href": "/services/social-media/"
+      },
+      {
+        "n": "AI photoshoot by MMC",
+        "href": "/ai-by-mmc/photoshoot/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

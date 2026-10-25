@@ -1,0 +1,553 @@
+{
+  "file": "education.html",
+  "path": "/industries/education/",
+  "key": "education",
+  "title": "Education Marketing Agency India for Institutes | MMC",
+  "description": "Education marketing agency in India for colleges and institutes. Admission marketing, lead generation, CRM and Meta CAPI tracking, follow-up and reputation.",
+  "ogTitle": "Education marketing agency for institutes in India",
+  "ogDescription": "Admission marketing, lead generation and follow-up for colleges and education brands, judged on the cost of an enrolment.",
+  "ogAlt": "Monday Marketing Company: education marketing agency for colleges and education brands in India.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/education.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Education",
+          "item": "https://www.mondaymarketing.company/education.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/education.html#webpage",
+      "url": "https://www.mondaymarketing.company/education.html",
+      "name": "Education Marketing Agency India for Institutes | MMC",
+      "description": "Education marketing agency in India for colleges and institutes. Admission marketing, lead generation, CRM and Meta CAPI tracking, follow-up and reputation.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/education.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/industries/education/#service",
+      "name": "Education marketing",
+      "serviceType": "Education marketing",
+      "description": "Education marketing for colleges and education brands in India: admission marketing, lead generation, CRM and Meta CAPI tracking, follow-up and reputation work.",
+      "url": "https://www.mondaymarketing.company/industries/education/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Educational institutes"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/education.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is admission marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Admission marketing reaches students and parents, turns their interest into enquiries, and follows those up until they enrol. The measure that matters is the cost of an enquiry that becomes a visit and then an admission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does admission marketing work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We learn your courses and intake calendar, build clear course pages and short mobile forms, connect your CRM and Meta CAPI, and set up WhatsApp and call follow-up. Ads are written to sound like your institution: calm, factual and useful, so they never read as desperate. We also help you ask for genuine reviews and reply to them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does admission marketing cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scoped after a call. Your ad spend is paid to the platforms and sits outside our fee. Our fee covers the strategy, the landing pages, the CRM and CAPI tracking and the weekly optimisation, and we quote it once we know your funnel and your CRM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee admissions, and we would be wary of any agency that does. Families decide for their own reasons, and your follow-up and reputation matter as much as the ad. We commit to clear tracking, fast follow-up systems, honest reporting and no inflated claims."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is admission marketing for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Admissions and marketing heads at colleges and education brands, and the trustees or directors who approve the work. Not only education: we also work with D2C and B2B brands, set up differently for each. See the D2C and B2B pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your ad accounts and enquiry records or CRM, your course and fee information, your intake calendar, and counsellors who can follow up quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does an education marketing agency do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It plans and runs the work that takes a family from a search to an enrolment: search and paid campaigns, clear course pages, short enquiry forms, CRM and tracking, follow-up over WhatsApp and calls, and review handling. A good agency judges that work on the cost of an enrolment, not on clicks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose an education marketing agency in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask how it tracks an enquiry through to an enrolment, not only to a form fill. Ask who runs your account, how follow-up and reviews are handled, and what it will not promise. Be wary of anyone who guarantees admissions, and ask to see real work before you decide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between education marketing and admission marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Education marketing covers how an institute is found, trusted and chosen across the year. Admission marketing is the part tied to the intake: turning searches into enquiries, visits and enrolments before the deadline. We run both. For one college, see college admission marketing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a college need digital marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Families compare colleges on their phones before they enquire, reading course pages, fees and reviews. A college that is hard to find, or slow to reply, can drop out of that comparison. How much it needs depends on its intake, its reputation and the seats it must fill, which we review on a call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does admission marketing take to show results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your admission calendar and your budget, so we give no fixed date. Our 90-day process aims to leave you a readable cost per enquiry, visit and admission by day 90, while search and reputation work builds over longer. We never guarantee admissions. See our admission marketing plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should an education marketing agency report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The four numbers your admissions team can check in the CRM: cost per qualified enquiry, enquiry-to-application rate, cost per enrolment and response time. Reports should also show which campaigns produced applications, not only clicks, and say plainly what is not yet known."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you manage reputation for a college?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our online reputation management service audits what families see on Google and review sites, asks real students and parents for honest reviews, replies to every review and reports what changes. We never buy or write reviews, and we cannot promise a rating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with schools and coaching institutes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our lead generation, Google Ads, reputation and Google Business Profile services apply to schools and coaching institutes as well as colleges. Our education pages describe colleges and study abroad in most detail, so we plan school and coaching work around their own calendars on a call. We promise no results."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "education",
+    "wm": "Edu",
+    "eyebrow": "● Education marketing agency",
+    "h1": [
+      "Education marketing",
+      [
+        "that ",
+        "turns enquiries into enrolments",
+        "."
+      ]
+    ],
+    "sub": "Admission marketing, lead generation, follow-up and reputation work for colleges and education brands, turning a parent's search into an enquiry, a visit and an enrolment.",
+    "tiles": [
+      {
+        "img": "edu/campus.jpg",
+        "pos": "50% 50%",
+        "label": "Campus",
+        "note": "Open days and visits"
+      },
+      {
+        "img": "edu/students.jpg",
+        "pos": "50% 50%",
+        "label": "Students",
+        "note": "Who you are talking to"
+      },
+      {
+        "img": "shared/education.jpg",
+        "pos": "50% 50%",
+        "label": "Counselling",
+        "note": "The conversation that decides"
+      },
+      {
+        "img": "edu/site.jpg",
+        "pos": "50% 50%",
+        "label": "The website",
+        "note": "Courses, fees and eligibility"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "An education marketing agency wins enquiries from students and parents, then turns them into enrolments. Several people make the decision and there is often a deadline, so speed and clarity matter. MMC runs admission marketing for colleges and education brands in India, judged on the cost of an enquiry that becomes an admission.",
+      "hl": "turns them into enrolments",
+      "who": "Monday Marketing Company (MMC) builds websites, creative and lead generation for colleges and education brands in India.",
+      "points": [
+        {
+          "icon": "link",
+          "title": "Connect the enquiry",
+          "text": "Enquiries go to a CRM and Meta's Conversions API (CAPI), so campaigns learn from real applicants."
+        },
+        {
+          "icon": "loop",
+          "title": "Nurture to enrolment",
+          "text": "Retention funnels follow enquiries up until they enrol, and online reputation (ORM) is managed alongside."
+        },
+        {
+          "icon": "gauge",
+          "title": "Measure the enrolment",
+          "text": "The work is measured by the cost of an enrolment."
+        }
+      ],
+      "image": "edu/students.jpg",
+      "chip": "Measured by cost of an enrolment"
+    },
+    "leaks": {
+      "style": "stack",
+      "eyebrow": "Where admissions go missing",
+      "h2a": "Seven places a family slips away.",
+      "h2b": "Seven services that stop it.",
+      "lede": "An admission is a considered decision with a deadline. Each stage below is a moment where a family can leave, and the service that keeps them."
+    },
+    "stages": [
+      {
+        "k": "Be found",
+        "tag": "Search and paid media",
+        "breaks": "Parents research on their phones long before anyone calls you.",
+        "why": "A course decision is made over weeks, and a parent compares colleges before they ever enquire. If you are not on the first screen for your course and city, you are not in the comparison.",
+        "does": "We run search and paid campaigns around the courses, cities and intakes families search for, and build the SEO that keeps you visible between intakes.",
+        "href": "services.html#organic",
+        "img": "edu/search.jpg"
+      },
+      {
+        "k": "Explain the course",
+        "tag": "Website development",
+        "breaks": "The page a parent lands on hides the answers.",
+        "why": "Fees, eligibility, placements and campus life decide the shortlist. When they sit behind a brochure download, families leave for the college that shows them.",
+        "does": "We build course pages that answer those questions in plain words, load fast on a phone and lead to one clear next step.",
+        "href": "services.html#tech",
+        "img": "edu/site.jpg"
+      },
+      {
+        "k": "Capture the enquiry",
+        "tag": "Conversion and landing pages",
+        "breaks": "The enquiry form asks too much of a parent on a phone.",
+        "why": "Most enquiries start on a small screen, often in the evening. Every extra field costs you a family who was already interested.",
+        "does": "We design short, mobile-first forms and course-specific landing pages, and test them so more of the visitors you pay for become enquiries.",
+        "href": "services.html#organic",
+        "img": "edu/enquiry.jpg"
+      },
+      {
+        "k": "Qualify",
+        "tag": "Lead generation, CRM and Meta CAPI",
+        "breaks": "The ad platform is told a form was filled, so it finds cheap fills.",
+        "why": "A form fill is not an applicant. Optimised on fills, Meta brings volume that admissions cannot convert, and counsellors spend intake season on families who were never going to apply.",
+        "does": "We connect your enquiries to a CRM and send the applied and enrolled stages back to Meta through the Conversions API (CAPI), so campaigns learn from real applicants.",
+        "href": "#quality",
+        "img": "edu/crm.jpg"
+      },
+      {
+        "k": "Nurture",
+        "tag": "Retention marketing",
+        "breaks": "One call, then silence.",
+        "why": "Most families are not ready on day one. The college that follows up sensibly, at the right moments before the deadline, is the one they remember.",
+        "does": "We build retention funnels of WhatsApp, email and call reminders around your intake calendar, to guide each family to apply and to win back the quiet ones.",
+        "href": "services.html#revenue",
+        "img": "edu/nurture.jpg"
+      },
+      {
+        "k": "Protect your reputation",
+        "tag": "Online reputation management",
+        "breaks": "Reviews and ratings go unanswered.",
+        "why": "Before applying, parents read what students and other parents wrote. A low rating with no reply, or no reviews at all, raises doubt at the last step.",
+        "does": "We encourage genuine reviews, reply to them, and keep the profile families see on Google and review sites accurate and credible.",
+        "href": "services.html#brand",
+        "img": "edu/orm.jpg"
+      },
+      {
+        "k": "Reach enrolment",
+        "tag": "Tracking and reporting",
+        "breaks": "Nobody can say which campaign produced a seat.",
+        "why": "Without ad-to-enrolment tracking, budget follows clicks instead of admissions, and your strongest channel looks the same as your weakest.",
+        "does": "We track each family from ad to enquiry to enrolment in your CRM, so spend is judged on the cost of an enrolment, not on clicks.",
+        "href": "audit.html",
+        "img": "edu/enrol.jpg"
+      }
+    ],
+    "loop": {
+      "img": "edu/crm.jpg",
+      "imgCaption": "Enquiry stages in the CRM, events into Meta",
+      "eyebrow": "Lead quality",
+      "h2a": "How CRM and Meta CAPI bring in better",
+      "h2b": "applicants.",
+      "lede": "An enquiry form tells Meta that someone showed interest, not that they will apply. Your CRM knows what happened next. The Conversions API (CAPI) carries that back to Meta.",
+      "steps": [
+        {
+          "k": "The enquiry arrives",
+          "d": "An ad brings a form fill, a call or a WhatsApp message.",
+          "chip": "An enquiry"
+        },
+        {
+          "k": "Your CRM records what happens",
+          "d": "Admissions marks it contacted, applied, admitted or enrolled.",
+          "chip": "Applied · Admitted · Enrolled"
+        },
+        {
+          "k": "CAPI sends the stage to Meta",
+          "d": "The stage goes back to Meta as a server-side event, not a browser guess.",
+          "chip": "Server-side event"
+        },
+        {
+          "k": "Meta learns your best applicants",
+          "d": "The platform stops chasing cheap enquiries and finds more families like the ones who enrolled.",
+          "chip": "Better targeting"
+        }
+      ],
+      "returnLabel": "The next ads find more families like the ones who enrolled",
+      "without": {
+        "t": "Optimised for enquiries",
+        "d": "The platform sees only that a form was submitted. It finds whoever fills forms cheapest, and counsellors spend the week on families who were never going to apply."
+      },
+      "with": {
+        "t": "Optimised for applicants",
+        "d": "The platform sees which enquiries applied and which enrolled. Spend moves toward those families, and the cost of an enrolment becomes the number to watch."
+      }
+    },
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "admissions marketing is working.",
+      "note": "The numbers an admissions team should be able to read at any time, from your CRM.",
+      "cards": [
+        {
+          "n": "Cost per qualified enquiry",
+          "d": "What you pay for a family that admissions accepts, not for any form fill."
+        },
+        {
+          "n": "Enquiry-to-application rate",
+          "d": "The share of enquiries that go on to apply."
+        },
+        {
+          "n": "Cost per enrolment",
+          "d": "What you pay, in total, for a confirmed seat."
+        },
+        {
+          "n": "Response time",
+          "d": "How long an enquiry waits before someone replies."
+        }
+      ],
+      "link": {
+        "href": "audit.html",
+        "text": "See how the audit reads them"
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where education marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Online reputation management",
+          "d": "Ratings, reviews and replies, so a buyer, parent or student finds a fair picture.",
+          "img": "orm/reply.jpg",
+          "href": "online-reputation-management.html",
+          "link": "See Online reputation management"
+        },
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Retention marketing",
+          "d": "WhatsApp, email and loyalty funnels that bring buyers back.",
+          "img": "rt/journey.jpg",
+          "href": "retention-marketing.html",
+          "link": "See Retention marketing"
+        },
+        {
+          "n": "Colleges",
+          "d": "Search, paid media and follow-up for families comparing colleges.",
+          "img": "edu/campus.jpg",
+          "href": "/industries/education/colleges/",
+          "link": "See Colleges marketing"
+        },
+        {
+          "n": "Study abroad",
+          "d": "Search, ads and follow-up for students planning countries and intakes.",
+          "img": "edu/students.jpg",
+          "href": "/industries/education/study-abroad/",
+          "link": "See Study abroad marketing"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "Local answers for searches by place and for voice queries.",
+          "img": "orm/profile.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "education marketing."
+    ],
+    "faq": [
+      {
+        "q": "What is admission marketing?",
+        "a": "Admission marketing reaches students and parents, turns their interest into enquiries, and follows those up until they enrol. The measure that matters is the cost of an enquiry that becomes a visit and then an admission."
+      },
+      {
+        "q": "How does admission marketing work with MMC?",
+        "a": "We learn your courses and intake calendar, build clear course pages and short mobile forms, connect your CRM and Meta CAPI, and set up WhatsApp and call follow-up. Ads are written to sound like your institution: calm, factual and useful, so they never read as desperate. We also help you ask for genuine reviews and reply to them."
+      },
+      {
+        "q": "What does admission marketing cost?",
+        "a": "Scoped after a call. Your ad spend is paid to the platforms and sits outside our fee. Our fee covers the strategy, the landing pages, the CRM and CAPI tracking and the weekly optimisation, and we quote it once we know your funnel and your CRM."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee admissions, and we would be wary of any agency that does. Families decide for their own reasons, and your follow-up and reputation matter as much as the ad. We commit to clear tracking, fast follow-up systems, honest reporting and no inflated claims."
+      },
+      {
+        "q": "Who is admission marketing for?",
+        "a": "Admissions and marketing heads at colleges and education brands, and the trustees or directors who approve the work. Not only education: we also work with D2C and B2B brands, set up differently for each. See the <a href=\"d2c.html\">D2C</a> and <a href=\"b2b.html\">B2B</a> pages."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your ad accounts and enquiry records or CRM, your course and fee information, your intake calendar, and counsellors who can follow up quickly."
+      },
+      {
+        "q": "What does an education marketing agency do?",
+        "a": "It plans and runs the work that takes a family from a search to an enrolment: search and paid campaigns, clear course pages, short enquiry forms, CRM and tracking, follow-up over WhatsApp and calls, and review handling. A good agency judges that work on the cost of an enrolment, not on clicks."
+      },
+      {
+        "q": "How do I choose an education marketing agency in India?",
+        "a": "Ask how it tracks an enquiry through to an enrolment, not only to a form fill. Ask who runs your account, how follow-up and reviews are handled, and what it will not promise. Be wary of anyone who guarantees admissions, and ask to see real work before you decide."
+      },
+      {
+        "q": "What is the difference between education marketing and admission marketing?",
+        "a": "Education marketing covers how an institute is found, trusted and chosen across the year. Admission marketing is the part tied to the intake: turning searches into enquiries, visits and enrolments before the deadline. We run both. For one college, see <a href=\"/industries/education/colleges/\">college admission marketing</a>."
+      },
+      {
+        "q": "Does a college need digital marketing?",
+        "a": "Families compare colleges on their phones before they enquire, reading course pages, fees and reviews. A college that is hard to find, or slow to reply, can drop out of that comparison. How much it needs depends on its intake, its reputation and the seats it must fill, which we review on a call."
+      },
+      {
+        "q": "How long does admission marketing take to show results?",
+        "a": "It depends on your admission calendar and your budget, so we give no fixed date. Our 90-day process aims to leave you a readable cost per enquiry, visit and admission by day 90, while search and reputation work builds over longer. We never guarantee admissions. See our <a href=\"/guides/admission-marketing-plan/\">admission marketing plan</a>."
+      },
+      {
+        "q": "What should an education marketing agency report?",
+        "a": "The four numbers your admissions team can check in the CRM: cost per qualified enquiry, enquiry-to-application rate, cost per enrolment and response time. Reports should also show which campaigns produced applications, not only clicks, and say plainly what is not yet known."
+      },
+      {
+        "q": "Can you manage reputation for a college?",
+        "a": "Yes. Our <a href=\"/services/online-reputation-management/\">online reputation management</a> service audits what families see on Google and review sites, asks real students and parents for honest reviews, replies to every review and reports what changes. We never buy or write reviews, and we cannot promise a rating."
+      },
+      {
+        "q": "Do you work with schools and coaching institutes?",
+        "a": "Our lead generation, Google Ads, reputation and Google Business Profile services apply to schools and coaching institutes as well as colleges. Our education pages describe colleges and study abroad in most detail, so we plan school and coaching work around their own calendars on a call. We promise no results."
+      }
+    ],
+    "cta": {
+      "h2a": "Find what an enrolment",
+      "h2b": "really costs.",
+      "lede": "On a call, with a senior strategist. We read your campaigns against what a confirmed seat is worth to you."
+    },
+    "proof": {
+      "ids": [
+        "mvj",
+        "bloom",
+        "sprouts"
+      ],
+      "does": "work with"
+    },
+    "process": {
+      "h2a": "How we run admission marketing,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Understand your families",
+          "d": "We learn your courses, intake calendar and counsellor capacity, then audit your pages, forms and follow-up.",
+          "out": "A clear view of where enquiries are lost."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build the path to a visit",
+          "d": "Plain course pages, short mobile forms, CRM stages passed to Meta through CAPI, and calm follow-up over WhatsApp and calls.",
+          "out": "Enquiries your counsellors can actually work."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Run, follow up and protect trust",
+          "d": "Campaigns are optimised on enquiries that become visits and applications, and reviews are answered honestly.",
+          "out": "A cost per enquiry, visit and admission you can read."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Admission marketing for institutes that",
+      "h2b": "want calm, credible growth.",
+      "good": {
+        "t": "You lead admissions or marketing, or you are a trustee or director who signs off, and enquiries are falling or counsellors waste time on unqualified ones.",
+        "why": "Families decide over weeks and check reviews and Instagram, so we focus on speed of follow-up, a trustworthy online picture and ads that sound like your institution."
+      },
+      "not": {
+        "t": "You want guaranteed admissions, a ranking, or a seat count by a date.",
+        "why": "Families make their own decisions, so any agency promising admissions is promising what it cannot control."
+      }
+    }
+  }
+}

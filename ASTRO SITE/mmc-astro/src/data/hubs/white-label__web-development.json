@@ -1,0 +1,506 @@
+{
+  "file": "white-label-web-development.html",
+  "path": "/white-label/web-development/",
+  "key": "wl_web_development",
+  "title": "White-Label Web Development for Agencies | MMC",
+  "description": "White-label web development for agencies: WordPress, Shopify and custom builds delivered under your brand, with code handover and documented QA.",
+  "ogTitle": "White-label web development for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label web development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/web-development/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label web development",
+          "item": "https://www.mondaymarketing.company/white-label/web-development/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/web-development/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/web-development/",
+      "name": "White-Label Web Development for Agencies | MMC",
+      "description": "White-label web development for agencies: WordPress, Shopify and custom builds delivered under your brand, with code handover and documented QA.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/web-development/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/web-development/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/web-development/#service",
+      "name": "White-label Web Development",
+      "serviceType": "White-label web development",
+      "description": "White-label web development delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/web-development/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/web-development/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work from my designs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We can also provide the designs through white-label web design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who hosts the site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually the client or you. We can advise on hosting and set it up if you give access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide a staging site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, where hosting allows, so you can review before launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about changes after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Small changes can fall under website maintenance or a block of hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label web development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send the designs or brief. After the NDA we return a spec and a plan for review."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_web_development",
+    "wm": "White-label Web Development",
+    "eyebrow": "● White-label web development",
+    "h1": [
+      "White-label web development",
+      [
+        "that turns your designs ",
+        "into working sites",
+        "."
+      ]
+    ],
+    "sub": "Front-end and back-end builds from your designs, tested and documented, delivered under your agency's name.",
+    "tiles": [
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Build",
+        "note": "From your designs"
+      },
+      {
+        "img": "web/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Lean code"
+      },
+      {
+        "img": "web/crm.jpg",
+        "pos": "50% 50%",
+        "label": "Integrations",
+        "note": "CRM and tools"
+      },
+      {
+        "img": "web/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Plan",
+        "note": "Specified first"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label web development is the build stage of a website, carried out by MMC for your agency to present as its own. We take your approved designs and produce working code: templates, back-end features, integrations, testing and documentation, on the platform your client needs.",
+      "hl": "templates, back-end features, integrations, testing and documentation",
+      "who": "Monday Marketing Company (MMC) delivers web development for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Front-end",
+          "text": "Responsive builds from your designs."
+        },
+        {
+          "icon": "layers",
+          "title": "Back-end",
+          "text": "Features, forms and integrations."
+        },
+        {
+          "icon": "gauge",
+          "title": "Tested",
+          "text": "Speed, mobile and forms checked."
+        }
+      ],
+      "image": "web/build.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "wdev-wl",
+          "h": "Platforms and builds we take on",
+          "paras": [
+            "We build on WordPress, Shopify and custom stacks, depending on what your client needs. Before we start we agree a spec so there are no surprises on either side.",
+            "For platform detail see <a href=\"/white-label/wordpress-development/\">WordPress</a> and <a href=\"/white-label/shopify-development/\">Shopify</a>; our own work is on the <a href=\"/services/web-development/\">web development</a> page."
+          ],
+          "img": "web/build.jpg",
+          "cap": "A build spec being reviewed.",
+          "table": {
+            "caption": "Web development builds by platform",
+            "head": [
+              "Platform",
+              "Typical build",
+              "Best for"
+            ],
+            "rows": [
+              [
+                "WordPress",
+                "Custom theme and plugins",
+                "Content and lead-gen sites"
+              ],
+              [
+                "Shopify",
+                "Theme and app work",
+                "D2C stores"
+              ],
+              [
+                "Custom",
+                "Bespoke front-end and APIs",
+                "Unusual logic"
+              ],
+              [
+                "Static and landing pages",
+                "Fast single pages",
+                "Campaign pages"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we handle in",
+      "h2b": "white-label web development.",
+      "lede": "Build, test and document.",
+      "items": [
+        {
+          "t": "Front-end build",
+          "d": "Responsive templates from design files.",
+          "img": "web/build.jpg",
+          "alt": "Front-end build"
+        },
+        {
+          "t": "Back-end features",
+          "d": "Custom forms, logic and admin tools.",
+          "img": "web/crm.jpg",
+          "alt": "Back-end features"
+        },
+        {
+          "t": "Integrations",
+          "d": "CRM, payment and marketing tools connected.",
+          "img": "shop/integrate.jpg",
+          "alt": "Integrations"
+        },
+        {
+          "t": "Speed work",
+          "d": "Lean code and image handling.",
+          "img": "web/speed.jpg",
+          "alt": "Speed work"
+        },
+        {
+          "t": "QA and testing",
+          "d": "Cross-device and form testing before handover.",
+          "img": "web/plan.jpg",
+          "alt": "QA and testing"
+        },
+        {
+          "t": "Documentation",
+          "d": "Notes your team can use after launch.",
+          "img": "web/seo.jpg",
+          "alt": "Documentation"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label web development.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "web/build.jpg",
+      "alt": "Why agencies choose MMC for white-label web development.",
+      "items": [
+        {
+          "t": "Spec before code",
+          "d": "We write down what will be built."
+        },
+        {
+          "t": "Search-aware builds",
+          "d": "Clean structure for SEO."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label web development works,",
+      "h2b": "step by step.",
+      "img": "web/build.jpg",
+      "alt": "How white-label web development works, step by step.",
+      "items": [
+        {
+          "t": "Spec",
+          "d": "We agree the build in writing."
+        },
+        {
+          "t": "Build",
+          "d": "Development runs in stages."
+        },
+        {
+          "t": "Test",
+          "d": "Speed, devices and forms are checked."
+        },
+        {
+          "t": "Handover",
+          "d": "Code, notes and access go to you."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label web development for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells web development but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label web development fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label WordPress",
+          "d": "WordPress builds behind your brand.",
+          "img": "web/build.jpg",
+          "href": "/white-label/wordpress-development/",
+          "link": "See white-label WordPress development"
+        },
+        {
+          "n": "White-label website maintenance",
+          "d": "Care plans for your client sites.",
+          "img": "web/speed.jpg",
+          "href": "/white-label/website-maintenance/",
+          "link": "See white-label website maintenance"
+        },
+        {
+          "n": "White-label Shopify development",
+          "d": "Stores built behind your brand.",
+          "img": "shop/design.jpg",
+          "href": "/white-label/shopify-development/",
+          "link": "See white-label Shopify development"
+        },
+        {
+          "n": "Web development",
+          "d": "Websites built for search, speed and leads.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/",
+          "link": "See Web development"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "web development."
+    ],
+    "faq": [
+      {
+        "q": "Do you work from my designs?",
+        "a": "Yes. We can also provide the designs through white-label web design."
+      },
+      {
+        "q": "Who hosts the site?",
+        "a": "Usually the client or you. We can advise on hosting and set it up if you give access."
+      },
+      {
+        "q": "Do you provide a staging site?",
+        "a": "Yes, where hosting allows, so you can review before launch."
+      },
+      {
+        "q": "What about changes after launch?",
+        "a": "Small changes can fall under website maintenance or a block of hours."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label web development?",
+        "a": "Send the designs or brief. After the NDA we return a spec and a plan for review."
+      }
+    ],
+    "cta": {
+      "h2a": "Add web development",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first web development client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Read the designs first",
+        "tag": "Design gaps",
+        "breaks": "Starting a build before the designs are checked.",
+        "why": "Missing states and unclear behaviour surface halfway through, and the rework is argued over.",
+        "does": "We review your designs before coding and send you one list of gaps and questions, so the build starts from decisions."
+      },
+      {
+        "k": "Build on staging",
+        "tag": "Staging",
+        "breaks": "Editing a live client site to test a change.",
+        "why": "Clients see half-finished work, and mistakes become incidents with your name on them.",
+        "does": "Every build goes to a private staging site you can review and forward. Live changes happen only after you approve."
+      },
+      {
+        "k": "Say early when dates move",
+        "tag": "Deadlines",
+        "breaks": "Hearing about a slipped date on the day.",
+        "why": "You promised a date to your client on the strength of ours. A late warning leaves you nothing to manage.",
+        "does": "We flag risk as soon as we see it, so you can reset the expectation with your client in good time."
+      },
+      {
+        "k": "Document the code",
+        "tag": "Code ownership",
+        "breaks": "Code that only the person who wrote it understands.",
+        "why": "When that person is unavailable, a simple fix becomes a rescue project.",
+        "does": "Handover notes, repository access and a short guide for whoever maintains the site next, you or another partner."
+      },
+      {
+        "k": "Scope the after-launch asks",
+        "tag": "Post-launch changes",
+        "breaks": "Treating every post-launch request as free.",
+        "why": "Small asks add up and your margin pays for them.",
+        "does": "We log change requests against the scope and quote anything outside it, so you can bill your client for it."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label web development",
+      "h2b": "goes wrong for agencies.",
+      "lede": "A build touches your client's calendar, so each slip is yours to explain. These are the five places builds go off course between your designs and a launch."
+    },
+    "process": {
+      "h2a": "How we onboard you for web development,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and build scope",
+          "d": "We sign the NDA, review your designs and write the build scope, platform and handover list.",
+          "out": "A written build scope you can share."
+        },
+        {
+          "t": "Pilot build",
+          "d": "One small site or a single template, built on staging to your standards.",
+          "out": "A staging link and notes to judge the way we work."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Design handoff format, staging, QA checklist and release steps are written down once.",
+          "out": "A short build runbook for your team."
+        },
+        {
+          "t": "Scale the build queue",
+          "d": "More sites go through the same flow, with developers added as your pipeline fills.",
+          "out": "A build capacity you can promise clients."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

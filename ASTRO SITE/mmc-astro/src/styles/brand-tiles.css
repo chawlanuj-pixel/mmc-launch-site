@@ -1,0 +1,39 @@
+/* BrandTiles: the one brands section on service and industry pages. Half-size cousins of the home tiles (.hv-client). */
+.bt { padding-block: clamp(40px, 5vw, 72px); }
+.bt--white { background: #fff; }
+.bt--paper { background: var(--n-paper, #FBFAF6); }
+.bt__wrap { width: 100%; max-width: var(--n-max, var(--shell-max, 1240px)); margin: 0 auto; padding-inline: var(--n-pad, var(--shell-pad, 20px)); }
+.bt__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 32px; margin-bottom: clamp(18px, 2.4vw, 28px); }
+.bt__eyebrow { margin: 0 0 8px; font: 800 11px/1.2 var(--font-body, "Nunito", sans-serif); letter-spacing: .2em; text-transform: uppercase; color: var(--n-blue-d, #1E40AF); }
+.bt__h { margin: 0; font: 800 clamp(26px, 3vw, 40px)/1.08 var(--font-display, "Raleway", sans-serif); letter-spacing: -.03em; color: var(--n-ink, #0F1E5E); text-wrap: balance; }
+.bt__serif { font-family: var(--font-serif, Georgia, serif); font-style: italic; font-weight: 600; letter-spacing: -.01em; color: var(--n-blue, #1D4ED8); }
+.bt__all { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font: 700 14px var(--font-body, "Nunito", sans-serif); color: var(--n-blue-d, #1E40AF); text-decoration: none; }
+.bt__all svg { width: 14px; height: 14px; transition: transform .25s ease; }
+.bt__all:hover svg, .bt__all:focus-visible svg { transform: translateX(4px); }
+.bt__all:focus-visible { outline: 3px solid var(--n-blue, #1D4ED8); outline-offset: 2px; border-radius: 6px; }
+
+.bt__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.bt__grid > li { margin: 0; min-width: 0; }
+@media (min-width: 640px) { .bt__grid { grid-template-columns: repeat(auto-fill, minmax(138px, 1fr)); gap: 12px; } }
+@media (min-width: 1100px) { .bt__grid { grid-template-columns: repeat(8, minmax(0, 1fr)); } }
+
+.bt__tile { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%; min-height: 44px; padding: 10px; background: #fff; border: 1px solid var(--n-line, #E3E7F1); border-radius: var(--r-card, 18px); color: inherit; text-decoration: none; transition: border-color .25s ease, transform .28s ease, box-shadow .28s ease; }
+.bt--white .bt__tile { background: #FBFAF6; }
+.bt__logo { display: flex; align-items: center; justify-content: center; height: 76px; background: #fff; border: 1px solid var(--n-line, #E3E7F1); border-radius: var(--r-in, 12px); padding: 10px 12px; }
+.bt__logo img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.bt__type { align-self: flex-start; font: 700 10.5px/1 var(--font-body, "Nunito", sans-serif); letter-spacing: .06em; text-transform: uppercase; color: var(--n-blue-d, #1E40AF); background: color-mix(in srgb, var(--n-blue, #1D4ED8) 10%, transparent); padding: 4px 8px; border-radius: var(--r-tag, 999px); white-space: nowrap; }
+.bt__go { position: absolute; right: 16px; top: 16px; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: var(--n-ink, #0F1E5E); color: #fff; transition: transform .25s ease, background .25s ease; }
+.bt__go svg { width: 11px; height: 11px; }
+.bt__tile--link:hover, .bt__tile--link:focus-visible { border-color: var(--n-blue, #1D4ED8); transform: translateY(-3px); box-shadow: 0 12px 22px -14px rgba(15, 30, 94, .4); }
+.bt__tile--link:hover .bt__go, .bt__tile--link:focus-visible .bt__go { transform: translateX(3px); background: var(--n-blue, #1D4ED8); }
+.bt__tile--link:focus-visible { outline: 3px solid var(--n-blue, #1D4ED8); outline-offset: 2px; }
+
+@media (max-width: 639px) {
+  .bt__tile { padding: 8px; gap: 6px; }
+  .bt__logo { height: 60px; padding: 8px; }
+  .bt__go { right: 8px; bottom: 8px; width: 20px; height: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bt__tile, .bt__go, .bt__all svg { transition: none; }
+  .bt__tile--link:hover, .bt__tile--link:focus-visible, .bt__tile--link:hover .bt__go, .bt__all:hover svg { transform: none; }
+}

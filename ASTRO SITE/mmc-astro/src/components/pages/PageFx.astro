@@ -1,0 +1,66 @@
+---
+// Tiny shared runtime for the hand-built pages: reveal-on-scroll (.n-rise), hero entrance ([data-enter]),
+// pointer glow on .glow-btn, and count-up numbers ([data-count]). No framework, no GSAP.
+---
+<script>
+  const w = window as any;
+  if (!w.__mmcPageFx) {
+    w.__mmcPageFx = true;
+    const reduced = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+    // Hero entrance: two frames after load, like the original.
+    requestAnimationFrame(() => requestAnimationFrame(() =>
+      document.querySelectorAll("[data-enter]").forEach((e) => e.classList.add("in"))));
+
+    // Reveal on scroll. The original re-observes every 700 ms because React re-renders can drop the is-in class.
+    if (typeof IntersectionObserver === "undefined") {
+      document.querySelectorAll(".n-rise").forEach((el) => el.classList.add("is-in"));
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+      }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+      const tick = () => document.querySelectorAll(".n-rise:not(.is-in)").forEach((el) => io.observe(el));
+      tick();
+      setInterval(tick, 700);
+    }
+
+    // Glow that follows the pointer inside .glow-btn
+    window.addEventListener("pointermove", (e) => {
+      document.querySelectorAll<HTMLElement>(".glow-btn").forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom) {
+          el.style.setProperty("--gx", e.clientX - r.left + "px");
+          el.style.setProperty("--gy", e.clientY - r.top + "px");
+        }
+      });
+    });
+
+    // Count-up numbers. Server HTML carries the final value; we reset to 0 and animate when on screen.
+    document.querySelectorAll<HTMLElement>("[data-count]").forEach((el) => {
+      const to = parseFloat(el.dataset.count || "0");
+      const dec = parseInt(el.dataset.dec || "0", 10);
+      const prefix = el.dataset.prefix || "";
+      const txt = el.firstChild as Text;
+      if (reduced || !txt) return;
+      const set = (v: number) => { txt.data = prefix + v.toFixed(dec); };
+      set(0);
+      let done = false, raf = 0;
+      const run = () => {
+        if (done) return; done = true;
+        const t0 = performance.now();
+        const step = (now: number) => {
+          const p = Math.min(1, (now - t0) / 1500);
+          set(to * (1 - Math.pow(1 - p, 4)));
+          if (p < 1) raf = requestAnimationFrame(step); else set(to);
+        };
+        raf = requestAnimationFrame(step);
+      };
+      const onScreen = () => { const r = el.getBoundingClientRect(); return r.top < window.innerHeight && r.bottom > 0; };
+      if (typeof IntersectionObserver === "undefined" || onScreen()) { run(); return; }
+      const io2 = new IntersectionObserver((es) => { if (es[0].isIntersecting) { io2.disconnect(); run(); } }, { threshold: 0.05, rootMargin: "0px 0px -4% 0px" });
+      io2.observe(el);
+      setTimeout(() => { if (!done && onScreen()) run(); }, 1200);
+    });
+  }
+</script>
+<noscript><style>[data-enter]{opacity:1!important;transform:none!important}[data-enter].clip-reveal>span{transform:none!important}.n-rise{opacity:1!important;transform:none!important}</style></noscript>

@@ -1,0 +1,41 @@
+---
+// Real work for an audience: client-approved artwork from public/assets/clients/<id>-work.jpg, the client's logo,
+// its label and service tags from the one client book (src/lib/work.ts). Only brands with a case-study page link out.
+// No counts, no results: "a few of the brands we work with".
+import { brand, tagsFor } from "../../lib/work";
+import { ARTWORK_LINE } from "../../lib/site";
+interface Props { ids: string[]; eyebrow?: string; h2a: string; h2b: string; lede?: string; tone?: string; id?: string }
+const { ids, eyebrow = "A few of the brands we work with", h2a, h2b, lede, tone = "white", id = "proof" } = Astro.props;
+const list = ids.map((x) => brand(x)).filter((b) => b && b.hasCase && b.workArt) as NonNullable<ReturnType<typeof brand>>[];
+const kind: Record<string, string> = { d2c: "D2C", b2b: "B2B", edu: "Education", consumer: "Consumer" };
+---
+{list.length > 0 && (
+<section class={"n-band n-band--" + tone} id={id}>
+  <div class="n-wrap">
+    <header class="h2-head h2-rv">
+      <span class="n-eyebrow">{eyebrow}</span>
+      <h2 class="n-h2">{h2a} <span class="n-serif">{h2b}</span></h2>
+      {lede && <p class="n-lede">{lede}</p>}
+    </header>
+    <ul class={"h2-work h2-work--n" + Math.min(list.length, 6)}>
+      {list.slice(0, 6).map((b, k) => (
+        <li class="h2-rv">
+          <a class="h2-tile" href={b.href!}>
+            <figure class="h2-pic">
+              <img src={`/assets/clients/${b.id}-work.jpg`} alt={`${b.name}: a selection of the work we built`} width="1280" height="720" loading="lazy" decoding="async" />
+              <span class="h2-tile__logo"><img src={`/assets/clients/${b.id}.png`} alt="" width="112" height="56" loading="lazy" /></span>
+            </figure>
+            <div class="h2-tile__meta"><h3>{b.name}</h3><span class="h2-tile__kind">{kind[b.group] || ""}</span></div>
+            <p>{tagsFor(b.id, true).slice(0, 4).join(", ")}</p>
+            <span class="h2-go">See the work<i></i></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <div class="h2-work__foot">
+      <p class="h2-note">{ARTWORK_LINE}</p>
+      <a class="btn btn--link" href="/work/">See more of our work<span class="arrow"></span></a>
+    </div>
+  </div>
+</section>
+)}

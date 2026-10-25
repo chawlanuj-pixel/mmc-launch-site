@@ -1,0 +1,218 @@
+/* hub/hb-data-guidecreative.js: How D2C brands test creative page. Reuses the audience-hub template. No result, price or client outcome is stated.
+   Brand tags come from content/clients.json. */
+window.HUB = {
+  "key": "guidecreative",
+  "wm": "Guide",
+  "eyebrow": "● Guide",
+  "h1": [
+    "How D2C brands",
+    [
+      "test ad ",
+      "creative",
+      " without"
+    ],
+    "guessing."
+  ],
+  "sub": "Creative decides whether the right people stop scrolling. Here is a repeatable way to test it, read the results and refresh before ads tire.",
+  "tiles": [
+    {
+      "img": "guides/cards.jpg",
+      "pos": "50% 50%",
+      "label": "Concepts",
+      "note": "One idea each"
+    },
+    {
+      "img": "guides/hook.jpg",
+      "pos": "50% 50%",
+      "label": "Hooks",
+      "note": "First three seconds"
+    },
+    {
+      "img": "guides/test.jpg",
+      "pos": "50% 50%",
+      "label": "Test",
+      "note": "Set up to compare"
+    },
+    {
+      "img": "guides/fatigue.jpg",
+      "pos": "50% 50%",
+      "label": "Refresh",
+      "note": "Before it tires"
+    }
+  ],
+  "answer": {
+    "label": "In short",
+    "lead": "Creative testing is the practice of running different ads against each other in a controlled way, so you learn which hook, angle or format works instead of guessing.",
+    "hl": "in a controlled way, so you learn which hook, angle or format works",
+    "who": "Monday Marketing Company (MMC) plans creative as a series of tests, produces UGC-style video and static ads for them, and reads results against cost per purchase and margin.",
+    "points": [
+      {
+        "icon": "target",
+        "title": "One change at a time",
+        "text": "Change the hook or the angle, not everything at once."
+      },
+      {
+        "icon": "grid",
+        "title": "A clear test set-up",
+        "text": "Testing kept apart from scaling spend."
+      },
+      {
+        "icon": "loop",
+        "title": "A steady refresh",
+        "text": "New ads ready before old ones tire."
+      }
+    ],
+    "image": "guides/cards.jpg",
+    "chip": "Test, read, refresh"
+  },
+  "beyond": {
+    "eyebrow": "Related",
+    "h2a": "Keep reading and",
+    "h2b": "check your own numbers.",
+    "cards": [
+      {
+        "n": "UGC and video",
+        "d": "Creator-style video made to run as ads and refreshed before it tires.",
+        "img": "ugc/shoot.jpg",
+        "href": "ugc-and-video.html",
+        "link": "See UGC and video"
+      },
+      {
+        "n": "Meta Ads",
+        "d": "Instagram and Facebook campaigns built as one funnel.",
+        "img": "meta/creative.jpg",
+        "href": "meta-ads.html",
+        "link": "See Meta Ads"
+      },
+      {
+        "n": "Contribution margin and break-even ROAS",
+        "d": "What an order really leaves behind, and the ROAS you need to break even.",
+        "img": "guides/cost.jpg",
+        "href": "guide-contribution-margin-roas.html",
+        "link": "Read the guide"
+      }
+    ]
+  },
+  "faqTitle": [
+    "Questions people ask about",
+    "how d2c brands test creative."
+  ],
+  "faq": [
+    {
+      "q": "What should I test first?",
+      "a": "Start with the hook, since it decides whether the rest of the ad is seen. Then test angles, then formats."
+    },
+    {
+      "q": "How many ads should I test at once?",
+      "a": "Few enough that each can collect meaningful results on your budget. Testing many ads with little spend gives noisy answers."
+    },
+    {
+      "q": "How do I know an ad is winning?",
+      "a": "Read cost per purchase against your break-even ROAS, then confirm the result in a second round."
+    },
+    {
+      "q": "How often should I refresh creative?",
+      "a": "When signs of fatigue appear, such as rising frequency and a rising cost per purchase. Have the next round ready before that point."
+    },
+    {
+      "q": "Can MMC make and test the creative for us?",
+      "a": "Yes. See <a href=\"ugc-and-video.html\">UGC and video</a> and <a href=\"meta-ads.html\">Meta Ads</a>."
+    }
+  ],
+  "cta": {
+    "h2a": "Turn your ads into",
+    "h2b": "a testing system.",
+    "lede": "On a call, with a senior strategist. We plan, make and read the tests with you."
+  },
+  "article": {
+    "blocks": [
+      {
+        "id": "why",
+        "h": "Why creative needs a system",
+        "paras": [
+          "On paid social, the ad is often what decides whether someone stops, and the targeting matters less than it used to. That makes creative one of the main things a brand controls. Without a system, teams make ads on instinct and cannot say why one worked.",
+          "A testing system turns each ad into a lesson. Over a few rounds you build a clear picture of which hooks, angles and formats work for your buyers."
+        ],
+        "img": "guides/cards.jpg",
+        "cap": "Each concept carries one clear idea, so results can be read."
+      },
+      {
+        "id": "vars",
+        "h": "What to test",
+        "list": [
+          "<b>Hook</b>: the first seconds or first line that stops the scroll.",
+          "<b>Angle</b>: the reason to buy, such as a problem solved, a result, a comparison or social proof.",
+          "<b>Format</b>: creator video, product demo, static image, carousel.",
+          "<b>Offer</b>: bundle, discount or free shipping, tested separately from the creative idea."
+        ]
+      },
+      {
+        "id": "plan",
+        "h": "How to run a test",
+        "steps": [
+          {
+            "t": "Pick one question",
+            "d": "For example, does a problem-first hook beat a product-first hook?"
+          },
+          {
+            "t": "Make variants that differ in one way",
+            "d": "Keep everything else the same so the difference can be read."
+          },
+          {
+            "t": "Decide the rules first",
+            "d": "Agree the budget, the length and the metric before the test starts, so the result is not judged after the fact."
+          },
+          {
+            "t": "Keep testing apart from scaling",
+            "d": "Run tests in their own campaign, then move winners into your scaling campaigns."
+          },
+          {
+            "t": "Log the result",
+            "d": "Write down what won and the reason you think it won, so the next round starts smarter."
+          }
+        ],
+        "img": "guides/test.jpg",
+        "cap": "A testing campaign compares several ads against the same goal."
+      },
+      {
+        "id": "hooks",
+        "h": "Spend the most time on the hook",
+        "paras": [
+          "For video, the first three seconds decide whether the rest is watched. Test several openings of the same video before you test whole new videos. It is faster and cheaper, and it shows what earns attention.",
+          "Read hook performance on how many people keep watching, and read the ad as a whole on cost per purchase. An ad that gets attention but does not sell needs a different message, not a different opening."
+        ],
+        "img": "guides/hook.jpg",
+        "cap": "Editing several openings of the same video makes hooks easy to compare."
+      },
+      {
+        "id": "read",
+        "h": "How to read the results",
+        "paras": [
+          "Judge ads on cost per purchase read against your <a href=\"guide-contribution-margin-roas.html\">break-even ROAS</a>, not on clicks or likes. Use attention measures such as hold rate to work out why an ad won or lost.",
+          "Be careful with small samples. A result from a handful of purchases can change with more spend, so let each test collect enough results before you call a winner, and confirm the winner in a second round. Also remember that platforms <a href=\"guide-attribution-overlap.html\">over-count</a>, so compare ads against each other inside one platform."
+        ]
+      },
+      {
+        "id": "fatigue",
+        "h": "Refresh before ads tire",
+        "paras": [
+          "Ads wear out as the same people see them again and again. Signs include rising frequency, falling click-through and a rising cost per purchase for the same ad.",
+          "Plan the next round of creative before the current winners tire. Keep the winning idea and change the hook, the creator or the format, so the ad feels new without losing what worked."
+        ],
+        "img": "guides/fatigue.jpg",
+        "cap": "Frequency rising while click-through falls is a common sign of fatigue."
+      },
+      {
+        "id": "mmc",
+        "h": "Where MMC fits in",
+        "paras": [
+          "MMC plans the test, produces the creative and reads the results. See <a href=\"ugc-and-video.html\">UGC and video</a> for the creative side and <a href=\"meta-ads.html\">Meta Ads</a> for how the campaigns are run."
+        ]
+      }
+    ]
+  },
+  "hero2": {
+    "href": "#guide",
+    "label": "Read the guide"
+  }
+};

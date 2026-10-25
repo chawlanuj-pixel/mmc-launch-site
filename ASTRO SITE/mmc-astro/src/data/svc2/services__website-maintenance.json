@@ -1,0 +1,179 @@
+{
+  "_note": "svc2 copy. Tightened from the matching hub JSON, which stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "web/speed.jpg",
+    "pos": "50% 50%",
+    "alt": "A website being checked and tuned.",
+    "facts": [
+      {
+        "t": "Updates and backups.",
+        "d": "Core, plugins and themes kept current, with restore points."
+      },
+      {
+        "t": "Security and uptime.",
+        "d": "Scans, hardening and monitoring with alerts."
+      },
+      {
+        "t": "A monthly report.",
+        "d": "A plain summary of what was done and what is next."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for maintenance"
+  },
+  "work": {
+    "panel": "MaintenanceBoard",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do each month to",
+    "h2b": "your site.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Watch uptime and alert a person.",
+        "d": "Monitoring covers the site, forms and checkout, with alerts that reach someone who knows your site."
+      },
+      {
+        "n": "02",
+        "t": "Keep off-site backups and test restores.",
+        "d": "A bad update is reversible because the restore has been tried, not assumed."
+      },
+      {
+        "n": "03",
+        "t": "Test updates on a copy first.",
+        "d": "Core, theme and plugins are checked on a copy, then made live on a schedule."
+      },
+      {
+        "n": "04",
+        "t": "Scan, harden and patch.",
+        "d": "Malware scans, login protection, firewall rules and fixes for known vulnerabilities."
+      },
+      {
+        "n": "05",
+        "t": "Send a plain monthly report.",
+        "d": "What was done, what to watch and what we suggest next, with extras quoted first."
+      }
+    ],
+    "illustrative": "Illustrative layout of a site care board. Not a client site, no real figures."
+  },
+  "leak": {
+    "visual": "MetaFunnel",
+    "barLogo": "",
+    "barTitle": "Care routine",
+    "pinsLabel": "Four places site care goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 9.3,
+        "y": 0,
+        "label": "Audit"
+      },
+      {
+        "x": 29,
+        "y": 0,
+        "label": "Updates"
+      },
+      {
+        "x": 48.7,
+        "y": 0,
+        "label": "Routine"
+      },
+      {
+        "x": 68.3,
+        "y": 0,
+        "label": "Report"
+      }
+    ],
+    "stageLabels": [
+      "Audit",
+      "Updates",
+      "Routine",
+      "Report",
+      "Next"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we run website maintenance,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Audit the site",
+        "d": "We check versions, plugins, hosting, backups, security and speed, and list what needs fixing first.",
+        "get": "A ranked list of what to fix first.",
+        "img": "web/plan.jpg",
+        "alt": "A site audited against a checklist.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Stabilise",
+        "d": "We fix the urgent items, set up backups and monitoring, and create a safe way to test updates.",
+        "get": "Backups, monitoring and a safe place to test.",
+        "img": "web/build.jpg",
+        "alt": "A site being stabilised.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Run the routine",
+        "d": "Updates, scans, checks and small edits happen on a schedule you can see.",
+        "get": "A routine you do not have to remember.",
+        "img": "web/speed.jpg",
+        "alt": "A monthly site routine.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Report and improve",
+        "d": "Each month you get a summary, and we suggest changes worth making next.",
+        "get": "A plain report and a short list of next steps.",
+        "img": "res/insights.jpg",
+        "alt": "A monthly report being read.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Web development",
+        "href": "/services/web-development/"
+      },
+      {
+        "n": "WordPress development",
+        "href": "/services/web-development/wordpress/"
+      },
+      {
+        "n": "CRO",
+        "href": "/services/cro/"
+      },
+      {
+        "n": "WooCommerce development",
+        "href": "/services/web-development/woocommerce/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

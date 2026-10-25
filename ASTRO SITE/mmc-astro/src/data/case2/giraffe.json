@@ -1,0 +1,68 @@
+{
+ "id": "giraffe",
+ "about": "{name} is a D2C brand that sells packaged snacks.",
+ "description": "{name} case study: storefront and festive campaign creative, with homepage, cart, category pages, social tiles and ads, shown as artwork.",
+ "heroTone": "ink",
+ "kind": "D2C brand, packaged snacks and gifting",
+ "channels": [
+  "Meta ad",
+  "Google ad"
+ ],
+ "brief": [
+  "{name} sells packaged snacks. We built its storefront and campaign creative: the homepage, cart and category pages, plus social tiles and ads for a festive gifting push.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Festive homepage on desktop and mobile",
+   "text": "A Diwali homepage hero with three special hampers and one button, and a phone version that leads into shop by category.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Festive and product tiles that echo the hero of the site.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "stage",
+   "kicker": "Ads",
+   "title": "A Meta ad and a Google ad",
+   "text": "Both reuse the festive hamper imagery from the homepage hero.",
+   "crops": [
+    "ads"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "the products behind the pages",
+   "text": "Product photography from the same project.",
+   "crops": [
+    "products"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage, cart and shop-by-category pages",
+  "reach": "Meta ad and Google ad",
+  "make": "Festive social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Make Diwali Extra Delicious hero with three Diwali special hampers and an orange button, and Shop By Categories on the phone",
+  "social": "{name} social media creative tiles",
+  "ads": "{name} Meta and Google Ads",
+  "products": "Three children laughing and eating {name} tomato crackers, ragi cookies and jowar mix at a table, with the packs in front of them",
+  "card": "{name} logo with two children eating {name} ragi cookies at a table"
+ }
+}

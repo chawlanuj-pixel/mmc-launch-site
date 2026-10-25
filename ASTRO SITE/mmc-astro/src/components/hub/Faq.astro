@@ -1,0 +1,23 @@
+---
+// THE FAQ component (every page). Native <details>, styled once in src/styles/faq.css.
+// Heading is "Questions about [X]." with the eyebrow "Common questions". title = [plain, italic-blue] (second part optional).
+// variant: "light" (default; paper / white bands) or "dark" (void / ink bands: pass tone="void" or "ink").
+import "../../styles/faq.css";
+const { title, faq, tone = "paper", variant = "light" } = Astro.props;
+---
+<section class={"n-band pm-band n-band--" + tone} id="faq">
+  <div class="n-wrap">
+    <div class="pm-head n-rise">
+      <span class="n-eyebrow">Common questions</span>
+      <h2 class="n-h2">{title[0]}{title[1] ? " " : ""}{title[1] && <span class="n-serif">{title[1]}</span>}</h2>
+    </div>
+    <div class={"mmc-faq n-rise" + (variant === "dark" ? " mmc-faq--dark" : "")}>
+      {faq.map((f: any, k: number) => (
+        <details open={k === 0}>
+          <summary>{f.q}</summary>
+          <div class="mmc-faq__a"><p set:html={f.a} /></div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+---
+// "n-wall pm-wall": brands with service tags underneath (services, performance, D2C pages).
+import WallCell from "./WallCell.astro";
+import BrandMeta from "../work/BrandMeta.astro";
+import "../../styles/pg-fixes.css";
+// Only the ids are used; names, labels and tags come from src/lib/work.ts (any `svc` passed in is ignored).
+const { items } = Astro.props as { items: { id: string; svc?: string[] }[] };
+---
+<div class="n-wall pm-wall">
+  {items.map((p) => (
+    <div class="pm-wall__item">
+      <WallCell id={p.id} />
+      <BrandMeta id={p.id} caseLink />
+    </div>
+  ))}
+</div>

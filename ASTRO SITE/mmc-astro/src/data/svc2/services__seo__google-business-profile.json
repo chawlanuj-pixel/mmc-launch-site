@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy for this page. Tightened from the hub JSON of the same name, which stays the source of truth for FAQ, stages and leaks. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "orm/audit.jpg",
+    "pos": "50% 50%",
+    "alt": "A laptop showing a business listing with its reviews, beside a notebook.",
+    "facts": [
+      {
+        "t": "Complete profile.",
+        "d": "Name, address, hours, categories, services and photos kept accurate."
+      },
+      {
+        "t": "Reviews handled.",
+        "d": "Requests and replies handled in your voice, and problems escalated."
+      },
+      {
+        "t": "Local pages.",
+        "d": "City or branch pages on your site that match the profile."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for local search"
+  },
+  "work": {
+    "panel": "LocalProfile",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do to your",
+    "h2b": "Business Profile.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Claim and merge your listings.",
+        "d": "Each store, campus or office gets one verified listing, and duplicates are merged so the details stay yours."
+      },
+      {
+        "n": "02",
+        "t": "Choose categories and list services.",
+        "d": "A primary category, secondary categories and plain-words services tell Google which searches you suit."
+      },
+      {
+        "n": "03",
+        "t": "Keep hours, photos and posts current.",
+        "d": "Hours and holiday timings are set, photos stay fresh and your team gets a simple routine."
+      },
+      {
+        "n": "04",
+        "t": "Ask for reviews and reply to them.",
+        "d": "A respectful way to ask, and honest replies drafted in your voice, with problems escalated to you."
+      },
+      {
+        "n": "05",
+        "t": "Match location pages and report.",
+        "d": "Each profile links to a page with the same details, and we report calls, directions and enquiries."
+      }
+    ],
+    "illustrative": "Illustrative layout of a business profile and map results. Not a real business, no real figures. Google Business Profile and Google Maps belong to Google."
+  },
+  "leak": {
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "visual": "SaLocalMap",
+    "barLogo": "",
+    "barTitle": "Local search view",
+    "pinsLabel": "Five places local visits go missing",
+    "pins": [
+      {
+        "x": 12,
+        "y": 0,
+        "label": "Listings"
+      },
+      {
+        "x": 44,
+        "y": 0,
+        "label": "Categories"
+      },
+      {
+        "x": 60,
+        "y": 0,
+        "label": "Details"
+      },
+      {
+        "x": 76,
+        "y": 0,
+        "label": "Reviews"
+      },
+      {
+        "x": 92,
+        "y": 0,
+        "label": "Local pages"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we run local search,",
+    "h2b": "month to month.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "Audit and set up",
+        "d": "We check every listing, claim or merge duplicates and complete the profile content.",
+        "get": "Accurate, complete profiles.",
+        "img": "company/call.jpg",
+        "alt": "A strategist in a headset on a call, taking notes beside a laptop.",
+        "pos": "50% 40%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Reviews and local pages",
+        "d": "We set up the review process and build location pages that match each profile.",
+        "get": "Profiles and pages that agree.",
+        "img": "about2/callscreen.jpg",
+        "alt": "A strategist on a video call, reviewing an account on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Post and report",
+        "d": "We start regular posts and photos and report on calls, directions and enquiries.",
+        "get": "A monthly local report.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a campaign spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 55%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      },
+      {
+        "n": "Online reputation management",
+        "href": "/services/online-reputation-management/"
+      },
+      {
+        "n": "Social media",
+        "href": "/services/social-media/"
+      },
+      {
+        "n": "Locations",
+        "href": "/locations/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

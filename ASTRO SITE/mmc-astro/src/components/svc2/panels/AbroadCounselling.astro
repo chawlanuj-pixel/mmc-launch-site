@@ -1,0 +1,95 @@
+---
+// PANEL: AbroadCounselling (kind "AbroadCounselling"). A student's path from a country page to a booked counselling session, as five screens.
+// WhatsApp mark on step 4 only. 5 steps.
+//   1 Country and course: a destination page with course, cost, intake and process sections a student can open. Tab: Country.
+//   2 Qualifying form: country, course, budget band, test status and intake, beside a "ready for a counsellor" check. Tab: Qualify.
+//   3 Webinar: registered, attended, asked a question, as a narrowing row under a session card. Tab: Webinar.
+//   4 Counsellor: a queue sorted by fit and a WhatsApp message offering a session. Tab: Counsellor.
+//   5 Intake plan: nurture messages laid along two intakes, with "counselling booked" and "applied" marks. Tab: Intake.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real consultancy. Styles scoped to this file (prefix abr-).
+import Frame from "./Frame.astro";
+import { crop } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const sections = ["Courses", "Costs", "Intakes", "Visa process"];
+const fields = [["Country", "Chosen"], ["Course", "Chosen"], ["Budget", "Band picked"], ["Test", "Booked"], ["Intake", "Named"]];
+const queue = [["Strong fit", "ok"], ["Needs nurture", "warn"], ["Too early", ""]];
+const flow = [["Registered", 100], ["Attended", 62], ["Asked a question", 28]];
+---
+<Frame cls="abr-ui" title="Counselling funnel" label="Illustration of a study abroad funnel from a country page and a qualifying form to a webinar, a counsellor and an intake plan. Not a client account." caption={W.illustrative} tabs={["Country", "Qualify", "Webinar", "Counsellor", "Intake"]} tabFor={[0, 1, 2, 3, 4]} accent="#0B7285" accentSoft="#DDF1F4">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Found by destination and course <span>One page per country</span></p>
+    <div class="abr-page">
+      <span class="s2p-ph abr-hero" style={crop("/assets/edu/students.jpg", 0.5, 0.4, 1.4, 3)} role="img" aria-label="Students"></span>
+      <div class="s2p-card abr-hd"><b>Study in a country</b><i class="s2p-line s2p-line--m"></i></div>
+      <ul class="abr-tabs">{sections.map((s, k) => <li class={"s2p-card" + (k === 2 ? " abr-on" : "")}>{s}</li>)}</ul>
+    </div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Qualify at the first touch <span>Five questions, no guessing</span></p>
+    <div class="abr-form">
+      <div class="s2p-card abr-fields">{fields.map(([a, b]) => <div class="abr-f"><small>{a}</small><span>{b}</span></div>)}</div>
+      <div class="s2p-card abr-score"><p class="s2p-lbl">Lead check</p><em class="s2p-chip s2p-chip--ok">Ready for a counsellor</em><small class="s2p-mute">Not ready? It goes to a nurture series.</small></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">A webinar that shows intent <span>Attendance is tracked</span></p>
+    <div class="s2p-card abr-web"><p class="s2p-lbl">Webinar</p><b>Studying abroad, your questions answered</b><i class="s2p-line s2p-line--m"></i></div>
+    <ul class="abr-flow">
+      {flow.map(([n, w]) => <li><span>{n}</span><i style={`width:${w}%`}></i></li>)}
+    </ul>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Counsellor time goes to fit <span>Routed and answered fast</span></p>
+    <div class="abr-pair">
+      <ul class="abr-q">{queue.map(([n, c], k) => <li class={"s2p-card" + (k === 0 ? " abr-on" : "")}><span class="s2p-dot"></span><i class="s2p-line s2p-line--s"></i><em class={"s2p-chip" + (c ? " s2p-chip--" + c : "")}>{n}</em></li>)}</ul>
+      <div class="abr-chat"><div class="abr-chat__hd"><img src="/assets/platforms/whatsapp.svg" alt="" width="20" height="20" /><b>WhatsApp</b></div><p class="abr-b">Hi, thanks for joining. Shall we book a counselling session?</p></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">Nurture by intake <span>Months of messages, not one call</span></p>
+    <div class="abr-lanes">
+      {["Autumn intake", "Spring intake"].map((n, r) => (
+        <div class="abr-lane"><b>{n}</b><span class="abr-track"><i></i><i></i><i class={r === 0 ? "is-on" : ""}></i><i></i></span><em class={"s2p-chip s2p-chip--" + (r === 0 ? "ok" : "blue")}>{r === 0 ? "Counselling booked" : "Nurture running"}</em></div>
+      ))}
+    </div>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .abr-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.abr-page { flex: 1; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto auto; gap: .6em; }
+.abr-hero { display: block; border-radius: .7em; min-height: 3.4em; }
+.abr-hd { display: grid; gap: .4em; padding: .5em .8em; } .abr-hd b { font: 800 1em var(--font-display); }
+.abr-tabs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5em; }
+.abr-tabs li { padding: .45em .5em; text-align: center; font: 800 .8em var(--font-body); }
+.abr-on { border-color: #0B7285; box-shadow: 0 0 0 2px #0B7285; }
+.abr-form { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: .8em; align-content: center; }
+.abr-fields { display: grid; gap: .45em; }
+.abr-f { display: grid; grid-template-columns: 6em minmax(0, 1fr); align-items: center; gap: .6em; padding: .35em .6em; border: 1px solid #DADDE1; border-radius: .6em; }
+.abr-f small { font: 800 .76em var(--font-body); text-transform: uppercase; letter-spacing: .05em; color: #65676B; } .abr-f span { font: 700 .88em var(--font-body); }
+.abr-score { display: grid; gap: .6em; align-content: center; justify-items: start; }
+.abr-web { display: grid; gap: .5em; border-color: #0B7285; } .abr-web b { font: 800 1.05em var(--font-display); }
+.abr-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.abr-flow li { display: grid; grid-template-columns: 8em minmax(0, 1fr); align-items: center; gap: .8em; font: 700 .9em var(--font-body); }
+.abr-flow i { display: block; height: .8em; border-radius: 99px; background: #0B7285; }
+.abr-pair { flex: 1; min-height: 0; display: flex; align-items: center; gap: .8em; } .abr-pair > * { flex: 1; min-width: 0; }
+.abr-q { list-style: none; margin: 0; padding: 0; display: grid; gap: .5em; }
+.abr-q li { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .6em; padding: .5em .7em; }
+.abr-chat { display: flex; flex-direction: column; gap: .5em; padding: .8em; border-radius: .9em; background: #EFEAE2; }
+.abr-chat__hd { display: flex; align-items: center; gap: .5em; font: 800 .95em var(--font-body); }
+.abr-b { margin: 0; padding: .55em .8em; border-radius: .8em; background: #D9FDD3; border-top-right-radius: .2em; font: 600 .9em/1.3 var(--font-body); color: #1C2B33; align-self: flex-end; }
+.abr-lanes { display: grid; gap: .9em; flex: 1; align-content: center; }
+.abr-lane { display: grid; grid-template-columns: 7em minmax(0, 1fr) auto; align-items: center; gap: .8em; font: 800 .9em var(--font-body); }
+.abr-track { display: flex; justify-content: space-between; align-items: center; position: relative; }
+.abr-track::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 2px dashed #8CC6D0; }
+.abr-track i { position: relative; width: 1em; height: 1em; border-radius: 50%; background: #fff; border: 3px solid #8CC6D0; }
+.abr-track i.is-on { background: #0B7285; border-color: #0B7285; box-shadow: 0 0 0 .3em #DDF1F4; }
+@media (max-width: 560px) {
+  .abr-hd .s2p-line, .abr-score small, .abr-f:nth-child(n+5), .abr-web .s2p-line, .abr-q li:nth-child(3) { display: none; }
+  .abr-tabs { gap: .3em; } .abr-tabs li { padding: .35em .2em; font-size: .68em; }
+  .abr-form { grid-template-columns: 1fr; gap: .5em; } .abr-f { grid-template-columns: 4.8em minmax(0, 1fr); }
+  .abr-flow { gap: .4em; } .abr-flow li { grid-template-columns: 6.4em minmax(0, 1fr); font-size: .82em; }
+  .abr-pair { gap: .4em; } .abr-chat { padding: .5em; } .abr-lane { grid-template-columns: 5em minmax(0, 1fr); } .abr-lane .s2p-chip { display: none; }
+}
+@container (max-height: 230px) { .abr-hero, .abr-web .s2p-line { display: none; } }
+</style>

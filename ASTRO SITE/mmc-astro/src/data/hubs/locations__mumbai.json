@@ -1,0 +1,532 @@
+{
+  "file": "locations-mumbai.html",
+  "path": "/locations/mumbai/",
+  "key": "loc-mumbai",
+  "title": "Digital Marketing Agency in Mumbai | MMC",
+  "description": "MMC works from Mumbai for brands with many outlets and neighbourhoods: verified profiles, local pages, review handling and ads judged on margin, not clicks.",
+  "ogTitle": "Digital marketing in Mumbai",
+  "ogDescription": "Profiles, local pages and ads for Mumbai brands with many outlets.",
+  "ogAlt": "Monday Marketing Company: digital marketing in Mumbai.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/locations/mumbai/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Locations",
+          "item": "https://www.mondaymarketing.company/locations/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mumbai",
+          "item": "https://www.mondaymarketing.company/locations/mumbai/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/locations/mumbai/#webpage",
+      "url": "https://www.mondaymarketing.company/locations/mumbai/",
+      "name": "Digital Marketing Agency in Mumbai | MMC",
+      "description": "MMC works from Mumbai for brands with many outlets and neighbourhoods: verified profiles, local pages, review handling and ads judged on margin, not clicks.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/locations/mumbai/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/locations/mumbai/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://www.mondaymarketing.company/locations/mumbai/#service",
+      "name": "Monday Marketing Company, Mumbai",
+      "alternateName": "MMC",
+      "url": "https://www.mondaymarketing.company/locations/mumbai/",
+      "image": "https://www.mondaymarketing.company/assets/og-card.jpg",
+      "logo": "https://www.mondaymarketing.company/assets/logo-primary.png",
+      "description": "Local search, ads and store work for businesses in Mumbai, delivered by a team that works from Mumbai.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Mumbai"
+      },
+      "parentOrganization": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/locations/mumbai/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does MMC work from Mumbai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Mumbai is one of the two cities we work from, with Indore. Our team also hires for Mumbai roles, which you can see on the careers page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a Mumbai street address I can visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do not list a street address for Mumbai on this site. The only street address we publish is our postal address, 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. To meet, book a call and we will agree where and when."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you handle a brand with many outlets across Mumbai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each outlet gets its own verified profile with consistent details, and a page on your site that matches it. We keep a single sheet of names, addresses, hours and categories so every listing agrees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is local marketing harder in Mumbai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are many outlets of every kind within a short distance, so buyers compare more options. A profile has to be complete and its reviews well handled to be chosen, and paid media has to be judged on margin, not clicks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you run ads for Mumbai businesses too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, where they suit. Ads are planned around the margin on an order or the value of an enquiry. See Meta Ads and Google Ads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee a top local ranking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list."
+          }
+        }
+      ]
+    }
+  ],
+  "updated": "2026-10-11",
+  "hub": {
+    "key": "loc-mumbai",
+    "wm": "MUMBAI",
+    "eyebrow": "● Mumbai",
+    "h1": [
+      "Digital marketing",
+      [
+        "for Mumbai brands ",
+        "in a crowded market",
+        "."
+      ]
+    ],
+    "sub": "Mumbai is one of the two cities we work from. For brands with many outlets and neighbourhoods, we make every listing agree, and judge the ads on margin rather than clicks.",
+    "tiles": [
+      {
+        "img": "sv/organic.jpg",
+        "pos": "50% 50%",
+        "label": "Outlets",
+        "note": "One profile for each"
+      },
+      {
+        "img": "orm/audit.jpg",
+        "pos": "50% 50%",
+        "label": "Audit",
+        "note": "Every listing checked"
+      },
+      {
+        "img": "d2c/range.jpg",
+        "pos": "50% 50%",
+        "label": "Range",
+        "note": "Shown to the right area"
+      },
+      {
+        "img": "google/search.jpg",
+        "pos": "50% 50%",
+        "label": "Ads",
+        "note": "Judged on margin"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "In Mumbai, buyers can choose between many outlets of every kind within a short distance. A brand wins when each outlet has a verified, complete profile, each neighbourhood has a page that reads as its own, and the ads are judged on margin rather than clicks.",
+      "hl": "a verified, complete profile, each neighbourhood has a page that reads as its own",
+      "who": "Monday Marketing Company (MMC) works from Mumbai and Indore and serves brands across India. We do not publish a Mumbai street address on this site. Our published postal address is in Thane, and meetings are agreed on a call.",
+      "points": [
+        {
+          "icon": "grid",
+          "title": "Many outlets, one standard",
+          "text": "Names, hours and categories that agree on every listing."
+        },
+        {
+          "icon": "target",
+          "title": "Neighbourhood pages",
+          "text": "Pages that read as local, not a copied template."
+        },
+        {
+          "icon": "chart",
+          "title": "Ads judged on margin",
+          "text": "Spend tied to what an order or enquiry is worth."
+        }
+      ],
+      "image": "company/performance.jpg",
+      "chip": "Built for brands with many outlets"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "mumbai-problem",
+          "h": "The problem a Mumbai brand faces",
+          "paras": [
+            "A shopper in Mumbai rarely picks the first option. Nearby outlets are close together, so the choice comes down to a profile that looks complete, reviews that read well and a page that answers the question quickly.",
+            "Brands with several outlets add a second problem: listings drift apart. One has old hours, another a different phone number, a third a duplicate. The work is to make them agree and keep them that way."
+          ],
+          "img": "company/whiteboard.jpg",
+          "cap": "Colleagues planning on a whiteboard."
+        },
+        {
+          "id": "mumbai-ways",
+          "h": "How we work with a Mumbai brand",
+          "paras": [
+            "Mumbai is one of the two cities we work from, so a call or a meeting is easy to arrange. Most of the work runs on shared sheets and monthly reports."
+          ],
+          "table": {
+            "caption": "How the work splits for a Mumbai brand",
+            "head": [
+              "",
+              "Single outlet",
+              "Many outlets"
+            ],
+            "rows": [
+              [
+                "First step",
+                "Check one profile and page",
+                "Build one sheet of names, addresses, hours and categories"
+              ],
+              [
+                "Pages",
+                "One page that reads as local",
+                "A page for each neighbourhood, written for it"
+              ],
+              [
+                "Reviews",
+                "Ask and reply",
+                "Ask and reply, with a rota for each outlet"
+              ],
+              [
+                "Reports",
+                "Calls, directions and enquiries",
+                "The same, by outlet, side by side"
+              ]
+            ]
+          },
+          "callout": {
+            "title": "Meeting in person.",
+            "text": "We do not publish a Mumbai street address here. <a href=\"/contact/\">Book a call</a> and we will agree where to meet. Our postal address is in <a href=\"/locations/thane/\">Thane</a>."
+          }
+        },
+        {
+          "id": "mumbai-education",
+          "h": "Education brands in Mumbai",
+          "paras": [
+            "Families in Mumbai compare colleges and institutes across the city and beyond, usually on a phone and long before a campus visit. For an educational institute, local work means an accurate Google Business Profile for the campus, genuine reviews that get replies, and course pages that answer fee and eligibility questions. The same groundwork supports <a href=\"/industries/education/\">education marketing</a>: ads and follow-up judged on enquiries that become visits and admissions. For a single college, see <a href=\"/industries/education/colleges/\">college admission marketing</a>."
+          ]
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we do for",
+      "h2b": "Mumbai brands.",
+      "lede": "From the sheet of outlets to the monthly report.",
+      "items": [
+        {
+          "t": "Outlet sheet",
+          "d": "One record of every name, address, hour and category, so listings agree.",
+          "img": "orm/audit.jpg",
+          "alt": "Outlet sheet"
+        },
+        {
+          "t": "Verified profiles",
+          "d": "Each outlet claimed, verified and completed, with duplicates merged.",
+          "img": "orm/profile.jpg",
+          "alt": "Verified profiles"
+        },
+        {
+          "t": "Neighbourhood pages",
+          "d": "Pages written for each area, not a template with the name swapped.",
+          "img": "seo/pages.jpg",
+          "alt": "Neighbourhood pages"
+        },
+        {
+          "t": "Review handling",
+          "d": "Requests and replies for each outlet, with problems escalated.",
+          "img": "orm/reply.jpg",
+          "alt": "Review handling"
+        },
+        {
+          "t": "Margin-led ads",
+          "d": "Meta and Google campaigns planned around contribution margin.",
+          "img": "google/pmax.jpg",
+          "alt": "Margin-led ads"
+        },
+        {
+          "t": "Side-by-side reporting",
+          "d": "Calls, directions and enquiries by outlet, each month.",
+          "img": "google/report.jpg",
+          "alt": "Side-by-side reporting"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why Mumbai brands choose MMC",
+      "h2b": "for local marketing.",
+      "lede": "A crowded market punishes loose ends.",
+      "img": "orm/earn.jpg",
+      "alt": "Why Mumbai brands choose MMC for local marketing.",
+      "items": [
+        {
+          "t": "A team that works from Mumbai",
+          "d": "Meetings in the city are easy to arrange on a call."
+        },
+        {
+          "t": "Built for many outlets",
+          "d": "One standard across every listing and page."
+        },
+        {
+          "t": "Margin first",
+          "d": "Ads are judged on what an order or enquiry is worth."
+        },
+        {
+          "t": "Honest reporting",
+          "d": "We report what we can observe, and never promise a ranking."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How a Mumbai engagement runs,",
+      "h2b": "step by step.",
+      "img": "company/whiteboard.jpg",
+      "alt": "How a Mumbai engagement runs, step by step.",
+      "items": [
+        {
+          "t": "List the outlets",
+          "d": "Every outlet is recorded with its name, address, hours and category."
+        },
+        {
+          "t": "Fix the profiles",
+          "d": "Duplicates are merged and each profile is completed."
+        },
+        {
+          "t": "Write the area pages",
+          "d": "Each neighbourhood page is written for the people there."
+        },
+        {
+          "t": "Report side by side",
+          "d": "Outlets are compared each month so effort goes where it pays."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Local marketing for brands with",
+      "h2b": "many Mumbai outlets.",
+      "good": {
+        "t": "You run several outlets or serve several neighbourhoods and need them to agree.",
+        "why": "This suits restaurants, clinics, retail brands, coaching centres and showrooms."
+      },
+      "not": {
+        "t": "You have one outlet in a quiet area and an online-only plan.",
+        "why": "Start with <a href=\"/locations/thane/\">a single profile</a> or national SEO instead."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where Mumbai fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "All locations",
+          "d": "Thane, Mumbai and Indore, and how we work from each.",
+          "img": "company/call.jpg",
+          "href": "/locations/",
+          "link": "See all locations"
+        },
+        {
+          "n": "Thane",
+          "d": "A service area, served by our Mumbai team.",
+          "img": "contact/meeting.jpg",
+          "href": "/locations/thane/",
+          "link": "See Thane"
+        },
+        {
+          "n": "Indore",
+          "d": "A regional hub for colleges, food and manufacturers.",
+          "img": "edu/search.jpg",
+          "href": "/locations/indore/",
+          "link": "See Indore"
+        },
+        {
+          "n": "Google Business Profile",
+          "d": "The method behind the local work, step by step.",
+          "img": "orm/profile.jpg",
+          "href": "/services/seo/google-business-profile/",
+          "link": "See Google Business Profile optimisation"
+        },
+        {
+          "n": "Meta Ads",
+          "d": "Ads planned around the margin on an order.",
+          "img": "meta/creative.jpg",
+          "href": "/services/performance-marketing/meta-ads/",
+          "link": "See Meta Ads"
+        },
+        {
+          "n": "Online reputation management",
+          "d": "Reviews and mentions that shape trust.",
+          "img": "orm/earn.jpg",
+          "href": "/services/online-reputation-management/",
+          "link": "See Online reputation management"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "marketing in Mumbai."
+    ],
+    "faq": [
+      {
+        "q": "Does MMC work from Mumbai?",
+        "a": "Yes. Mumbai is one of the two cities we work from, with Indore. Our team also hires for Mumbai roles, which you can see on the <a href=\"/careers/\">careers page</a>."
+      },
+      {
+        "q": "Is there a Mumbai street address I can visit?",
+        "a": "We do not list a street address for Mumbai on this site. The only street address we publish is our postal address, 4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park, Thane 400607, Maharashtra. To meet, book a call and we will agree where and when."
+      },
+      {
+        "q": "How do you handle a brand with many outlets across Mumbai?",
+        "a": "Each outlet gets its own verified profile with consistent details, and a page on your site that matches it. We keep a single sheet of names, addresses, hours and categories so every listing agrees."
+      },
+      {
+        "q": "Why is local marketing harder in Mumbai?",
+        "a": "There are many outlets of every kind within a short distance, so buyers compare more options. A profile has to be complete and its reviews well handled to be chosen, and paid media has to be judged on margin, not clicks."
+      },
+      {
+        "q": "Do you run ads for Mumbai businesses too?",
+        "a": "Yes, where they suit. Ads are planned around the margin on an order or the value of an enquiry. See <a href=\"/services/performance-marketing/meta-ads/\">Meta Ads</a> and <a href=\"/services/performance-marketing/google-ads/\">Google Ads</a>."
+      },
+      {
+        "q": "Do you guarantee a top local ranking?",
+        "a": "No. Nobody can honestly guarantee a ranking, a review or a timeline. We commit to the work in the monthly scope and report what we can observe."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "A monthly scope, agreed after a call and written down so you can see what each month covers. We do not publish a price list."
+      }
+    ],
+    "cta": {
+      "h2a": "Make every Mumbai outlet",
+      "h2b": "agree and get found.",
+      "lede": "On a call, with a senior strategist. We read your outlets and listings and tell you what to fix first."
+    },
+    "leaks": {
+      "note": "Illustrative layout, not a client account.",
+      "style": "stack",
+      "eyebrow": "Where Mumbai visits are lost",
+      "h2a": "Five ways a Mumbai brand",
+      "h2b": "loses local visits.",
+      "lede": "Each stage below is where a Mumbai buyer is lost, and the work that brings them back."
+    },
+    "stages": [
+      {
+        "k": "List every outlet",
+        "tag": "Outlets",
+        "breaks": "Listings that drift apart across outlets.",
+        "why": "One wrong phone number or old hour sends a buyer to the next outlet down the road.",
+        "does": "We build one sheet of names, addresses, hours and categories, then claim and merge each listing."
+      },
+      {
+        "k": "Fit categories to each outlet",
+        "tag": "Categories",
+        "breaks": "The same categories on every outlet.",
+        "why": "Different outlets suit different searches, and one template blurs them.",
+        "does": "We choose categories and services for each outlet from what it actually offers."
+      },
+      {
+        "k": "Keep timings right",
+        "tag": "Timings",
+        "breaks": "Festival and holiday hours left unset.",
+        "why": "Busy seasons are when a wrong timing costs the most visits.",
+        "does": "We set holiday timings in advance and give each outlet a simple update routine."
+      },
+      {
+        "k": "Earn a standing in a crowded area",
+        "tag": "Standing",
+        "breaks": "A rating that reads weaker than the next outlet.",
+        "why": "With many options nearby, buyers sort by rating and recent reviews.",
+        "does": "We set up a respectful way to ask for reviews and answer every one, with a rota for each outlet."
+      },
+      {
+        "k": "Write for each neighbourhood",
+        "tag": "Area pages",
+        "breaks": "One page for all of Mumbai.",
+        "why": "A page that names no area gives a buyer no reason to choose you over a nearer outlet.",
+        "does": "We write a page for each neighbourhood with its own details, then report by outlet."
+      }
+    ],
+    "process": {
+      "note": "The days show the order of the work, not a promise of results. The number of outlets decides how long each part takes.",
+      "h2a": "How we run local work in Mumbai,",
+      "h2b": "month to month.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Build the outlet sheet",
+          "d": "We record every outlet, claim or merge listings and complete the profiles.",
+          "out": "One record that every listing matches."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Reviews and area pages",
+          "d": "We set up the review routine and write pages for the neighbourhoods that matter most.",
+          "out": "Profiles and pages that agree."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Ads and side-by-side report",
+          "d": "We plan ads around margin where they suit, and report outlet by outlet.",
+          "out": "A monthly report by outlet."
+        }
+      ]
+    }
+  }
+}

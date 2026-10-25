@@ -1,0 +1,221 @@
+/* hub/hb-data-qcads.js: Quick commerce ads page. Reuses the audience-hub template. No result, price or client outcome is stated.
+   Brand tags come from content/clients.json. */
+window.HUB = {
+  "key": "qcads",
+  "wm": "Quick",
+  "eyebrow": "● Quick commerce ads",
+  "h1": [
+    "Quick commerce ads",
+    [
+      "for ",
+      "D2C",
+      " brands"
+    ],
+    "in India."
+  ],
+  "sub": "Listings, sponsored placements and availability planning for quick-commerce apps, read at blended level because platform data is thin.",
+  "tiles": [
+    {
+      "img": "qc/listing.jpg",
+      "pos": "50% 50%",
+      "label": "Listings",
+      "note": "Made for a scroll of seconds"
+    },
+    {
+      "img": "qc/ads.jpg",
+      "pos": "50% 50%",
+      "label": "Sponsored tiles",
+      "note": "Search and category"
+    },
+    {
+      "img": "qc/darkstore.jpg",
+      "pos": "50% 50%",
+      "label": "Dark stores",
+      "note": "Where stock sits"
+    },
+    {
+      "img": "qc/availability.jpg",
+      "pos": "50% 50%",
+      "label": "Availability",
+      "note": "By area"
+    }
+  ],
+  "answer": {
+    "label": "In short",
+    "lead": "Quick commerce marketing is the work of winning visibility and sales on apps that deliver in minutes, where shoppers choose in seconds and availability decides what they see.",
+    "hl": "availability decides what they see",
+    "who": "Monday Marketing Company (MMC) runs quick-commerce listings and ads for D2C brands, including The Growing Giraffe, across apps such as Blinkit, Zepto and Instamart.",
+    "points": [
+      {
+        "icon": "grid",
+        "title": "Tiles first",
+        "text": "A listing has a second or two to earn a tap."
+      },
+      {
+        "icon": "target",
+        "title": "Availability decides",
+        "text": "Ads only help where the product is on the shelf."
+      },
+      {
+        "icon": "chart",
+        "title": "A blended view",
+        "text": "Platform data is thin, so results are read at total level."
+      }
+    ],
+    "image": "qc/listing.jpg",
+    "chip": "Made for a scroll of seconds"
+  },
+  "leaks": {
+    "style": "stack",
+    "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+    "eyebrow": "Where quick commerce goes wrong",
+    "h2a": "Five ways quick-commerce spend",
+    "h2b": "goes to waste.",
+    "lede": "On quick-commerce apps, the tile, the placement and the stock decide the sale. Each stage below is where brands lose, and how we run it."
+  },
+  "stages": [
+    {
+      "k": "Win the tile",
+      "tag": "Listings and imagery",
+      "breaks": "Reusing marketplace images on a tile-sized screen.",
+      "why": "Shoppers scroll fast on a small screen. The image, name and claim must work in a second.",
+      "does": "We re-cut images, names and claims for tile-first browsing, so the product reads at a glance.",
+      "href": "services.html#brand",
+      "img": "qc/listing.jpg"
+    },
+    {
+      "k": "Advertise where it counts",
+      "tag": "Sponsored placements",
+      "breaks": "Bidding broadly across the app.",
+      "why": "Search and category placements behave differently, and spend is wasted where the product is not the obvious choice.",
+      "does": "We plan sponsored placements by the search terms and categories that fit the product, and adjust bids as results come in.",
+      "href": "services.html#revenue",
+      "img": "qc/ads.jpg"
+    },
+    {
+      "k": "Know where stock sits",
+      "tag": "Dark-store availability",
+      "breaks": "Advertising where the product is not stocked.",
+      "why": "Each dark store serves a small area. If your product is out of stock there, an ad reaches shoppers who cannot buy it.",
+      "does": "We plan ads around availability by area, so spend follows where the product can actually be delivered.",
+      "href": "amazon-ads.html",
+      "img": "qc/darkstore.jpg"
+    },
+    {
+      "k": "Keep the shelf stocked",
+      "tag": "Availability and replenishment",
+      "breaks": "Treating stock as someone else's job.",
+      "why": "Out-of-stock products lose visibility and shoppers, and it can take time to win them back.",
+      "does": "We work with your supply team on availability signals and replenishment, so visibility does not lapse.",
+      "href": "services.html#revenue",
+      "img": "qc/availability.jpg"
+    },
+    {
+      "k": "Read it at blended level",
+      "tag": "Measurement",
+      "breaks": "Expecting clean attribution from each app.",
+      "why": "Platform data is limited, so app-level numbers can mislead.",
+      "does": "We read quick-commerce results alongside your total sales and margin, and judge the channel on what it adds to the business.",
+      "href": "performance-marketing.html",
+      "img": "qc/report.jpg"
+    }
+  ],
+  "numbers": {
+    "eyebrow": "The numbers we start with",
+    "h2a": "Know these four before you",
+    "h2b": "go quick.",
+    "note": "One has a free calculator. Use your own numbers.",
+    "cards": [
+      {
+        "n": "Availability by area",
+        "d": "How often the product is in stock where shoppers are."
+      },
+      {
+        "n": "Sell-through",
+        "d": "How fast stock moves once it is listed."
+      },
+      {
+        "n": "Blended sales impact",
+        "d": "What the channel adds to total sales."
+      },
+      {
+        "n": "Break-even ROAS",
+        "d": "The ROAS you need to stop losing money.",
+        "href": "breakeven-roas-calculator.html"
+      }
+    ]
+  },
+  "brands": {
+    "h2a": "A brand we run",
+    "h2b": "quick-commerce ads for.",
+    "lede": "The tags show what we run for the brand. On a computer, hover the logo to see the work.",
+    "list": [
+      {
+        "id": "giraffe",
+        "svc": [
+          "Performance",
+          "CRO",
+          "Creative",
+          "Amazon",
+          "Quick commerce"
+        ]
+      }
+    ]
+  },
+  "beyond": {
+    "eyebrow": "Related",
+    "h2a": "See where quick commerce fits in",
+    "h2b": "the wider picture.",
+    "cards": [
+      {
+        "n": "Amazon Ads",
+        "d": "Sponsored ads, listings and brand content, read against total sales.",
+        "img": "pm-v3/channel-amazon.jpg",
+        "href": "amazon-ads.html",
+        "link": "See Amazon Ads"
+      },
+      {
+        "n": "Performance marketing",
+        "d": "Media buying on Meta, Google, Amazon and quick commerce, judged on contribution margin.",
+        "img": "pm-v3/channel-meta.jpg",
+        "href": "performance-marketing.html",
+        "link": "See performance marketing"
+      }
+    ]
+  },
+  "faqTitle": [
+    "What people ask about quick commerce",
+    "first."
+  ],
+  "faq": [
+    {
+      "q": "What is quick commerce marketing?",
+      "a": "It is the work of winning visibility and sales on apps that deliver in minutes, through better listings, well-placed sponsored ads and careful planning around what is in stock."
+    },
+    {
+      "q": "Which apps do you work with?",
+      "a": "Apps such as Blinkit, Zepto and Instamart. We agree the list that fits your product and your stock."
+    },
+    {
+      "q": "Why do you read results at blended level?",
+      "a": "Platform-level data on these apps is limited, so app numbers alone can mislead. Reading them next to total sales and margin shows what the channel really adds."
+    },
+    {
+      "q": "Do you manage our stock?",
+      "a": "No, stock is yours. We plan ads around availability and work with your supply team on the signals that affect visibility."
+    },
+    {
+      "q": "Do you guarantee results?",
+      "a": "No. We commit to well-made listings, careful placement and honest reporting."
+    },
+    {
+      "q": "What does it cost?",
+      "a": "It depends on scope and, for media, on ad spend, so we quote after the <a href=\"audit.html\">audit call</a>, once we have seen your accounts."
+    }
+  ],
+  "cta": {
+    "h2a": "Find out what quick commerce",
+    "h2b": "could add.",
+    "lede": "On a call, with a senior strategist. We look at your listings, stock and placements together."
+  }
+};

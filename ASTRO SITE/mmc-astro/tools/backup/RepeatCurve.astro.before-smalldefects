@@ -1,0 +1,37 @@
+---
+// VISUAL: RepeatCurve (kind "RepeatCurve"). A repeat-purchase curve: customers still buying after the first order, with and without follow-up. Dots on the curve sit under the pins.
+// Pins sit in a row above the picture (y = 0), at x = 10, 30, 50, 70, 90, one over each of the five zones. Reads X.zoneLabels (optional) only.
+// Styles are scoped to this file (prefix rc).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const pts = [[10, 150], [30, 168], [50, 214], [70, 250], [90, 276]]; // y on the "with" curve (viewBox 1000 x 400), x in percent
+const path = (a: number[][]) => "M" + a.map(([x, y]) => `${x * 10} ${y}`).join(" L");
+const without = [[2, 120], [10, 200], [30, 290], [50, 330], [70, 350], [90, 358], [98, 360]];
+const withf = [[2, 120], ...pts, [98, 280]];
+---
+<div class="rc__row" aria-hidden="true"></div>
+<div class="rc__art">
+  <svg viewBox="0 0 1000 400" class="rc__svg" preserveAspectRatio="none" role="img" aria-label="Two curves of customers still buying after a first order: one falls away, the other holds up with follow-up.">
+    <g class="rc__grid">{[100, 200, 300].map((y) => <line x1="0" x2="1000" y1={y} y2={y} />)}</g>
+    <path class="rc__area" d={path(withf) + " L980 400 L20 400z"} />
+    <path class="rc__without" d={path(without)} />
+    <path class="rc__with" d={path(withf)} />
+    {pts.map(([x, y]) => <g class="rc__leak"><line x1={x * 10} y1="0" x2={x * 10} y2={y} /><circle cx={x * 10} cy={y} r="9" /></g>)}
+  </svg>
+  <span class="rc__k rc__k--a">With follow-up</span><span class="rc__k rc__k--b">Without</span>
+  <span class="rc__ax">Time since the first order</span>
+</div>
+<style is:global>
+.rc__row { height: 78px; }
+.rc__art { position: relative; }
+.rc__svg { display: block; width: 100%; height: auto; aspect-ratio: 5 / 2; }
+.rc__grid line { stroke: rgba(15, 30, 94, .1); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.rc__area { fill: rgba(29, 78, 216, .1); }
+.rc__with, .rc__without { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.rc__with { stroke: var(--mmc-blue); stroke-width: 4; } .rc__without { stroke: #8A91A6; stroke-width: 3; stroke-dasharray: 8 8; }
+.rc__leak line { stroke: var(--s2-sun); stroke-width: 2.4; stroke-dasharray: 3 6; vector-effect: non-scaling-stroke; } .rc__leak circle { fill: var(--s2-sun); stroke: #fff; stroke-width: 3; vector-effect: non-scaling-stroke; }
+.rc__k { position: absolute; font: 800 clamp(10px, 1.2vw, 14px) var(--font-body); } .rc__k--a { right: 2%; top: 52%; color: var(--mmc-blue); } .rc__k--b { right: 2%; top: 77%; color: #5C6580; }
+.rc__ax { position: absolute; left: 0; bottom: 0; font: 700 clamp(10px, 1.1vw, 13px) var(--font-body); color: var(--s2-mute); }
+@media (max-width: 900px) { .rc__svg { aspect-ratio: 5 / 3; } }
+@media (max-width: 760px) { .rc__row { height: 58px; } }
+</style>

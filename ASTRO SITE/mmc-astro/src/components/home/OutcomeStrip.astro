@@ -1,0 +1,58 @@
+---
+// What we run for each: one card per audience (D2C, B2B, education). Qualitative only, no figures.
+// Service chips come from src/data/work-clients.json (the services each client in that group carries),
+// so this strip can never claim a service the work book does not show.
+import { href } from "../../lib/links";
+import book from "../../data/work-clients.json";
+import { SERVICES } from "../../lib/work";
+
+const clients = (book as any).clients as { group: string; services: string[] }[];
+const order = SERVICES.map((s) => s.key);
+const short = Object.fromEntries(SERVICES.map((s) => [s.key, s.short]));
+const svcFor = (g: string) => {
+  const set = new Set<string>();
+  clients.filter((c) => c.group === g).forEach((c) => c.services.forEach((s) => set.add(s)));
+  return order.filter((k) => set.has(k)).map((k) => short[k]);
+};
+
+const LANES = [
+  { id: "d2c", n: "D2C brands", img: "/assets/meta/scale.jpg", alt: "Meta Ads Manager style view of campaigns being scaled", plat: [["meta.svg", "Meta"], ["google.svg", "Google Ads"], ["amazon-wordmark.svg", "Amazon"], ["shopify.svg", "Shopify"], ["klaviyo.png", "Klaviyo"]],
+    run: "Prospecting and retargeting on Meta and Google, Amazon and quick commerce listings, the store itself, and the email and WhatsApp flows that bring buyers back.", lens: "Judged on contribution margin, not platform ROAS.", href: "d2c.html", go: "How we run D2C" },
+  { id: "b2b", n: "B2B companies", img: "/assets/google/report.jpg", alt: "Google Ads style report showing lead campaigns", plat: [["google.svg", "Google Ads"], ["linkedin.svg", "LinkedIn"], ["meta.svg", "Meta"], ["ga4.svg", "GA4"]],
+    run: "A website built to explain a considered purchase, paid search and social that reach the buying committee, and lead capture that reports qualified leads back to the platforms.", lens: "Judged on qualified leads, not form fills.", href: "b2b.html", go: "How we run B2B" },
+  { id: "edu", n: "Education", img: "/assets/edu/crm.jpg", alt: "Admissions CRM view with enquiries and follow-up status", plat: [["google.svg", "Google Ads"], ["meta.svg", "Meta"], ["whatsapp.svg", "WhatsApp"], ["ga4.svg", "GA4"]],
+    run: "Search and social for the parents and students deciding, landing pages that answer their questions, and a CRM and WhatsApp follow-up that carries an enquiry through to admission.", lens: "Judged on admissions, not clicks.", href: "education.html", go: "How we run education" },
+];
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+---
+<section class="hv2-sec hv2-out no-section-bg" id="who" aria-labelledby="hv2-out-h">
+  <div class="hn-wrap">
+    <div class="hv-head">
+      <p class="hn-eyebrow">Who we work with</p>
+      <h2 id="hv2-out-h">Three kinds of business, <em>one method run three ways.</em></h2>
+      <p class="hv-head__p">D2C, B2B and education buy differently, so the stack, the follow-up and the number we judge the work on differ.</p>
+    </div>
+    <ul class="hv2-out__grid">
+      {LANES.map((l) => (
+        <li class={"hv2-out__card hv2-out__card--" + l.id}>
+          <figure class="hv2-out__fig">
+            <img src={l.img} alt={l.alt} loading="lazy" decoding="async" width="1024" height="688" />
+            <figcaption>Illustrative view</figcaption>
+            <span class="hv2-out__plat">
+              {l.plat.map(([f, n]) => <img src={"/assets/platforms/" + f} alt={n} height="22" loading="lazy" decoding="async" />)}
+            </span>
+          </figure>
+          <div class="hv2-out__body">
+            <h3>{l.n}</h3>
+            <p>{l.run}</p>
+            <p class="hv2-out__lens">{l.lens}</p>
+            <ul class="hv2-out__chips" aria-label={`Services we have run for ${l.n}`}>
+              {svcFor(l.id).map((s) => <li>{s}</li>)}
+            </ul>
+            <a class="hv2-out__go" href={href(l.href)}>{l.go}<Fragment set:html={arrow} /></a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

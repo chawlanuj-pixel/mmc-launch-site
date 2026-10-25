@@ -1,0 +1,96 @@
+---
+// PANEL: BabyGiftHub (kind "BabyGiftHub"). How a parent buys for a child, as five screens. No platform mark. 5 steps.
+//   1 Parent search: a parent's question and the brand's age-by-age guide in the results. Tab: Guide.
+//   2 Trust: a safety and quality card (material, testing, care) with documents marked as held. Tab: Trust.
+//   3 Gift hub: gift-ready packs with a message card option and a "ships before the day" chip. Tab: Gifts.
+//   4 Checkout: a phone checkout with age-range size help and quick payment. Tab: Checkout.
+//   5 Next stage: a timeline of age stages with the "time for the next size" message between two of them. Tab: Stages.
+// Needs S.work.illustrative. Illustrative layout, no figures, no real brand. Styles scoped to this file (prefix bgh-).
+import Frame from "./Frame.astro";
+import { THUMBS } from "./crops";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const packs = [[THUMBS.unbox, "Welcome pack"], [THUMBS.pack, "Bath time set"], [THUMBS.jar, "First birthday"]];
+const proof = [["Material", "Named on the page"], ["Testing", "Report held on file"], ["Care", "Washing and safe use"], ["Age range", "Marked on the pack"]];
+const stages = ["Newborn", "Infant", "Toddler", "Child"];
+---
+<Frame cls="bgh-ui" title="Parent buying path" label="Illustration of a parent buying path for baby and kids products: guide, trust card, gift hub, checkout and age stages. Not a client brand." caption={W.illustrative} tabs={["Guide", "Trust", "Gifts", "Checkout", "Stages"]} tabFor={[0, 1, 2, 3, 4]} accent="#0E9AA7" accentSoft="#DDF3F5">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">The question a parent types <span>Answered by age, not by catalogue</span></p>
+    <div class="bgh-q"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="M13 13l5 5" /></svg><span>what do I need for a newborn bath</span></div>
+    <div class="s2p-card bgh-me"><small class="bgh-url">yourbrand.example <span>› parent guides</span></small><b>Bath time basics, age by age</b><i class="s2p-line s2p-line--m"></i><span class="bgh-tags"><em class="s2p-chip s2p-chip--ok">Written for parents</em><em class="s2p-chip s2p-chip--ok">What to skip</em></span></div>
+    <div class="bgh-r"><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i></div>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Safety you can see <span>Only what we can document</span></p>
+    <ul class="bgh-proof">
+      {proof.map(([a, b]) => <li class="s2p-card"><i class="bgh-tick" aria-hidden="true"></i><b>{a}</b><span class="s2p-mute">{b}</span><em class="s2p-chip s2p-chip--ok">Documented</em></li>)}
+    </ul>
+    <small class="s2-st__foot">A claim with no document behind it stays out of the ad and the page.</small>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">A gift hub <span>Gift-ready, with a message</span></p>
+    <ul class="bgh-packs">
+      {packs.map(([th, n], k) => <li class={"s2p-card" + (k === 0 ? " bgh-on" : "")}><span class="s2p-ph bgh-ph" style={th as string} role="img" aria-label="Gift pack"></span><b>{n}</b><em class="s2p-chip s2p-chip--blue">Gift-ready</em></li>)}
+    </ul>
+    <p class="bgh-row"><em class="s2p-chip s2p-chip--sun">Add a message card</em><em class="s2p-chip s2p-chip--ok">Ships before the day</em></p>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Checkout in a short window <span>Size help and quick payment</span></p>
+    <div class="bgh-co">
+      <div class="s2p-card bgh-size"><p class="s2p-lbl">Size by age</p><span class="bgh-chips">{stages.map((s, k) => <em class={"s2p-chip" + (k === 1 ? " s2p-chip--blue" : "")}>{s}</em>)}</span><small class="s2p-mute">Not sure? Size help is one tap away.</small><span class="bgh-help">Size help</span></div>
+      <div class="s2p-card bgh-pay"><p class="s2p-lbl">Pay</p><span class="bgh-opt is-on">UPI</span><span class="bgh-opt">Card</span><span class="bgh-opt">Cash on delivery</span><span class="bgh-cta">Pay now</span></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--5">
+    <p class="s2-st__cap">The child grows, the parent stays <span>Flows by age stage</span></p>
+    <ol class="bgh-tl">
+      {stages.map((s, k) => <li class={k === 1 ? "is-on" : ""}><i></i><b>{s}</b></li>)}
+    </ol>
+    <div class="bgh-msg"><span>Time for the next size? See what fits a toddler.</span><em>See sizes</em></div>
+    <div class="bgh-msg bgh-msg--2"><span>A birthday coming up? See gift-ready packs.</span><em>See gifts</em></div>
+  </div>
+</Frame>
+<style is:global>
+@media (min-width: 561px) { .bgh-ui .s2-st { --u: clamp(11.5px, 2.5cqw, 16.5px); justify-content: center; } }
+.bgh-q { display: flex; align-items: center; gap: .7em; padding: .6em 1em; border: 1px solid #DADDE1; border-radius: 99px; box-shadow: 0 .2em .6em -.3em rgba(0, 0, 0, .25); font: 600 1.02em var(--font-body); color: #1C2B33; flex: none; }
+.bgh-q svg { width: 1.2em; height: 1.2em; fill: none; stroke: #65676B; stroke-width: 2; stroke-linecap: round; flex: none; }
+.bgh-me { display: grid; gap: .4em; border-color: #0E9AA7; box-shadow: 0 0 0 2px #0E9AA7; }
+.bgh-me b { font: 800 1.1em/1.2 var(--font-body); color: #0A6E78; }
+.bgh-tags { display: flex; flex-wrap: wrap; gap: .5em; }
+.bgh-r { display: grid; gap: .4em; padding: .3em .8em; opacity: .75; }
+.bgh-url { font: 600 .82em var(--font-body); color: #1C2B33; } .bgh-url span { color: #65676B; }
+.bgh-proof { list-style: none; margin: 0; padding: 0; display: grid; gap: .6em; }
+.bgh-proof li { display: grid; grid-template-columns: auto 6em minmax(0, 1fr) auto; align-items: center; gap: .8em; font-size: .95em; }
+.bgh-proof b { font: 800 1em var(--font-body); }
+.bgh-tick { width: 1.3em; height: 1.3em; border-radius: 50%; background: #1B7A3D; position: relative; }
+.bgh-tick::after { content: ""; position: absolute; left: .42em; top: .22em; width: .3em; height: .6em; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(40deg); }
+.bgh-packs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7em; }
+.bgh-packs li { display: grid; gap: .45em; padding: .5em; justify-items: start; }
+.bgh-packs b { font: 800 .86em var(--font-body); }
+.bgh-on { border-color: #0E9AA7; box-shadow: 0 0 0 2px #0E9AA7; }
+.bgh-ph { display: block; width: 100%; aspect-ratio: 4 / 3; border-radius: .6em; }
+.bgh-row { margin: 0; display: flex; flex-wrap: wrap; gap: .5em; }
+.bgh-co { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .8em; align-content: center; }
+.bgh-size, .bgh-pay { display: grid; gap: .6em; align-content: start; }
+.bgh-chips { display: flex; flex-wrap: wrap; gap: .4em; }
+.bgh-opt { display: block; padding: .5em .7em; border: 1px solid #D2D5D8; border-radius: .6em; font: 700 .9em var(--font-body); }
+.bgh-opt.is-on { border-color: #0E9AA7; background: #DDF3F5; }
+.bgh-cta { display: block; padding: .6em; border-radius: .6em; background: #1C2B33; color: #fff; text-align: center; font: 800 .9em var(--font-body); }
+.bgh-tl { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; position: relative; gap: .5em; }
+.bgh-tl::before { content: ""; position: absolute; left: 8%; right: 8%; top: .55em; border-top: 2px dashed #8FD3DA; }
+.bgh-tl li { position: relative; flex: 1; display: grid; justify-items: center; gap: .5em; font: 800 .9em var(--font-body); color: #65676B; }
+.bgh-tl i { width: 1.1em; height: 1.1em; border-radius: 50%; background: #fff; border: 3px solid #8FD3DA; }
+.bgh-tl li.is-on { color: #0A6E78; } .bgh-tl li.is-on i { background: #0E9AA7; border-color: #0E9AA7; box-shadow: 0 0 0 .35em #DDF3F5; }
+.bgh-msg { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .8em; padding: .8em 1em; border-radius: .3em 1em 1em 1em; background: #E7FFDB; font: 600 .95em/1.35 var(--font-body); color: #1C2B33; box-shadow: 0 .6em 1.2em -.7em rgba(0, 0, 0, .4); }
+.bgh-help { justify-self: start; padding: .4em .9em; border-radius: 99px; border: 1px solid #0E9AA7; color: #0A6E78; font: 800 .8em var(--font-body); }
+.bgh-msg em { font: 800 .8em var(--font-body); font-style: normal; background: #fff; border-radius: 99px; padding: .4em .9em; }
+@media (max-width: 560px) {
+  .bgh-msg--2, .bgh-help { display: none; }
+  .bgh-r, .bgh-me .s2p-line, .bgh-proof li .s2p-chip { display: none; } .bgh-proof li { grid-template-columns: auto 5em minmax(0, 1fr); gap: .5em; }
+  .bgh-packs li { padding: .3em; } .bgh-packs b { font-size: .72em; } .bgh-packs .s2p-chip { display: none; }
+  .bgh-co { grid-template-columns: 1fr; gap: .5em; } .bgh-pay .bgh-opt:nth-child(3), .bgh-size small { display: none; }
+  .bgh-pay { grid-template-columns: repeat(3, auto); } .bgh-pay .s2p-lbl { grid-column: 1 / -1; }
+}
+@container (max-height: 230px) { .bgh-row, .bgh-r, .bgh-ph { display: none; } .bgh-packs li { grid-template-columns: 1fr; } .bgh-proof li:nth-child(3) { display: none; } }
+</style>

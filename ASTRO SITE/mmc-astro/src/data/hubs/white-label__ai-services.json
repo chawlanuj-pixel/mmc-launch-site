@@ -1,0 +1,511 @@
+{
+  "file": "white-label-ai-services.html",
+  "path": "/white-label/ai-services/",
+  "key": "wl_ai_services",
+  "title": "White-Label AI Services for Agencies | MMC",
+  "description": "White-label AI services for agencies: AI product photoshoots, UGC and spokesperson video, landing pages and sales agents from AI by MMC, under your brand.",
+  "ogTitle": "White-label AI services for agencies",
+  "ogDescription": "Delivered behind your brand, reported your way.",
+  "ogAlt": "Monday Marketing Company: white-label AI services.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/white-label/ai-services/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "White label",
+          "item": "https://www.mondaymarketing.company/white-label/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "White-label AI services",
+          "item": "https://www.mondaymarketing.company/white-label/ai-services/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/white-label/ai-services/#webpage",
+      "url": "https://www.mondaymarketing.company/white-label/ai-services/",
+      "name": "White-Label AI Services for Agencies | MMC",
+      "description": "White-label AI services for agencies: AI product photoshoots, UGC and spokesperson video, landing pages and sales agents from AI by MMC, under your brand.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/white-label/ai-services/#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/white-label/ai-services/#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/white-label/ai-services/#service",
+      "name": "White-label AI Services",
+      "serviceType": "White-label AI services",
+      "description": "White-label AI services delivered by MMC for agencies, studios and consultancies, under the agency's own brand.",
+      "url": "https://www.mondaymarketing.company/white-label/ai-services/",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/white-label/ai-services/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is AI-generated content disclosed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That depends on the client and platform rules. We follow the rules of each platform and flag where disclosure may be required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI replace a real photoshoot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For some product images yes; for others no. We advise per product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the output?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rights are set out in the agreement before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is client data used to train models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We handle client assets under the NDA and do not share them with other clients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my client know MMC is involved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we get started with white-label AI services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose one AI service for one client. After the NDA we produce a sample so you can judge quality."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "wl_ai_services",
+    "wm": "White-label AI Services",
+    "eyebrow": "● White-label AI services",
+    "h1": [
+      "White-label AI services",
+      [
+        "that give your agency ",
+        "a new product line",
+        "."
+      ]
+    ],
+    "sub": "AI photoshoots, UGC and spokesperson video, landing pages and sales agents from AI by MMC, delivered under your brand.",
+    "tiles": [
+      {
+        "img": "seo/aeo.jpg",
+        "pos": "50% 50%",
+        "label": "Photoshoots",
+        "note": "Product images"
+      },
+      {
+        "img": "ugc/shoot.jpg",
+        "pos": "50% 50%",
+        "label": "UGC",
+        "note": "Creator-style video"
+      },
+      {
+        "img": "web/build.jpg",
+        "pos": "50% 50%",
+        "label": "Pages",
+        "note": "Landing pages"
+      },
+      {
+        "img": "b2b/followup.jpg",
+        "pos": "50% 50%",
+        "label": "Agent",
+        "note": "Handles enquiries"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "White-label AI services let your agency sell AI-made creative and tools without building them. MMC runs AI by MMC for you: product photoshoots, UGC and spokesperson videos, video generation, landing pages and sales agents, produced from your client's brief, checked by people and delivered under your brand.",
+      "hl": "AI-made creative and tools",
+      "who": "Monday Marketing Company (MMC) delivers AI services for agencies and works behind your brand. You own the client relationship; we do the work.",
+      "points": [
+        {
+          "icon": "layers",
+          "title": "AI creative",
+          "text": "Photoshoots, UGC and video."
+        },
+        {
+          "icon": "window",
+          "title": "AI pages",
+          "text": "Landing pages built quickly."
+        },
+        {
+          "icon": "users",
+          "title": "AI agents",
+          "text": "A sales agent for enquiries."
+        }
+      ],
+      "image": "ugc/shoot.jpg",
+      "chip": "Delivered behind your brand"
+    },
+    "article": {
+      "blocks": [
+        {
+          "id": "ai-wl",
+          "h": "What you can sell from AI by MMC",
+          "paras": [
+            "AI work is cheaper and faster for some jobs and wrong for others. We help you pick: where AI creative suits a client, where a real shoot is still better, and what needs a human check.",
+            "See the direct tools on <a href=\"/ai-by-mmc/\">AI by MMC</a>. For search visibility in AI tools, see <a href=\"/white-label/geo-aeo/\">white-label GEO and AEO</a>."
+          ],
+          "img": "ugc/shoot.jpg",
+          "cap": "AI creative being reviewed before delivery.",
+          "table": {
+            "caption": "AI by MMC services and where they fit",
+            "head": [
+              "Service",
+              "Good for",
+              "Human check"
+            ],
+            "rows": [
+              [
+                "Product photoshoots",
+                "Catalogues and ads",
+                "Brand and accuracy review"
+              ],
+              [
+                "UGC and spokesperson video",
+                "Paid social tests",
+                "Script and claim review"
+              ],
+              [
+                "Video generation",
+                "Short ads and social",
+                "Edit and approval"
+              ],
+              [
+                "Landing page builder",
+                "Campaign pages",
+                "Copy and layout review"
+              ],
+              [
+                "Sales agent",
+                "Enquiry handling",
+                "Rules and escalation set"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What you can sell from",
+      "h2b": "AI by MMC.",
+      "lede": "Six AI services, delivered with a human check.",
+      "items": [
+        {
+          "t": "AI product photoshoots",
+          "d": "Product images in new scenes for catalogues and ads.",
+          "img": "seo/aeo.jpg",
+          "alt": "AI product photoshoots"
+        },
+        {
+          "t": "AI UGC videos",
+          "d": "Creator-style videos for paid social tests.",
+          "img": "ugc/shoot.jpg",
+          "alt": "AI UGC videos"
+        },
+        {
+          "t": "Spokesperson video",
+          "d": "A presenter-style video from a script.",
+          "img": "ugc/edit.jpg",
+          "alt": "Spokesperson video"
+        },
+        {
+          "t": "Video generation",
+          "d": "Short clips for ads and social.",
+          "img": "social/video.jpg",
+          "alt": "Video generation"
+        },
+        {
+          "t": "Landing page builder",
+          "d": "Pages built fast from a brief.",
+          "img": "web/build.jpg",
+          "alt": "Landing page builder"
+        },
+        {
+          "t": "Sales agent",
+          "d": "An agent that answers and qualifies enquiries.",
+          "img": "b2b/followup.jpg",
+          "alt": "Sales agent"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why agencies choose MMC",
+      "h2b": "for white-label AI services.",
+      "lede": "A delivery partner that behaves like part of your team.",
+      "img": "ugc/shoot.jpg",
+      "alt": "Why agencies choose MMC for white-label AI services.",
+      "items": [
+        {
+          "t": "Human-checked",
+          "d": "People review the output before it reaches you."
+        },
+        {
+          "t": "Honest about limits",
+          "d": "We say where AI is the wrong fit."
+        },
+        {
+          "t": "Under your brand",
+          "d": "Deliverables and reports can carry your name and format. You decide what the client sees."
+        },
+        {
+          "t": "NDA first",
+          "d": "We sign an NDA before we see client details, and we do not approach your clients."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How white-label AI services works,",
+      "h2b": "step by step.",
+      "img": "ugc/shoot.jpg",
+      "alt": "How white-label AI services works, step by step.",
+      "items": [
+        {
+          "t": "Pick the use",
+          "d": "You and we choose which AI service fits."
+        },
+        {
+          "t": "Brief",
+          "d": "You send assets and rules."
+        },
+        {
+          "t": "Produce and review",
+          "d": "We produce and check."
+        },
+        {
+          "t": "Deliver",
+          "d": "Files or tools go to you."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "White-label AI services for agencies",
+      "h2b": "that sell more than they can staff.",
+      "good": {
+        "t": "You are an agency, studio or consultancy that sells AI services but does not want to hire and manage the team for it.",
+        "why": "It suits digital agencies, web studios, consultancies, freelancers and in-house marketing teams."
+      },
+      "not": {
+        "t": "You want us to pitch or contact your client under our own name.",
+        "why": "That is our direct service. We will point you to the right page and talk through it."
+      }
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "Where white-label AI services fits in",
+      "h2b": "the wider white-label range.",
+      "cards": [
+        {
+          "n": "White-label services",
+          "d": "The full white-label range for agencies.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/",
+          "link": "See all white-label services"
+        },
+        {
+          "n": "White-label reporting",
+          "d": "Reports and dashboards in your format.",
+          "img": "res/insights.jpg",
+          "href": "/white-label/reporting/",
+          "link": "See white-label reporting"
+        },
+        {
+          "n": "White-label ORM",
+          "d": "Reviews and replies behind your brand.",
+          "img": "orm/reply.jpg",
+          "href": "/white-label/orm/",
+          "link": "See white-label ORM"
+        },
+        {
+          "n": "White-label digital marketing",
+          "d": "The full mix behind your brand.",
+          "img": "company/strategy.jpg",
+          "href": "/white-label/digital-marketing/",
+          "link": "See white-label digital marketing"
+        },
+        {
+          "n": "AI by MMC",
+          "d": "AI creative, pages and agents.",
+          "img": "ugc/shoot.jpg",
+          "href": "/ai-by-mmc/",
+          "link": "See AI by MMC"
+        },
+        {
+          "n": "White-label pricing models",
+          "d": "How scopes and prices are set.",
+          "img": "contact/brief.jpg",
+          "href": "/white-label/pricing-models/",
+          "link": "See white-label pricing models"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about white-label",
+      "AI services."
+    ],
+    "faq": [
+      {
+        "q": "Is AI-generated content disclosed?",
+        "a": "That depends on the client and platform rules. We follow the rules of each platform and flag where disclosure may be required."
+      },
+      {
+        "q": "Can AI replace a real photoshoot?",
+        "a": "For some product images yes; for others no. We advise per product."
+      },
+      {
+        "q": "Who owns the output?",
+        "a": "Rights are set out in the agreement before work starts."
+      },
+      {
+        "q": "Is client data used to train models?",
+        "a": "We handle client assets under the NDA and do not share them with other clients."
+      },
+      {
+        "q": "Will my client know MMC is involved?",
+        "a": "Only if you choose to tell them. We sign an NDA, work under your brand, send deliverables in your format and do not contact your clients unless you ask us to."
+      },
+      {
+        "q": "How do we get started with white-label AI services?",
+        "a": "Choose one AI service for one client. After the NDA we produce a sample so you can judge quality."
+      }
+    ],
+    "cta": {
+      "h2a": "Add AI services",
+      "h2b": "without adding headcount.",
+      "lede": "On a call, with a senior strategist. We scope your first AI services client and agree how we work behind you.",
+      "secondary": {
+        "label": "Register your agency",
+        "href": "/white-label/register/"
+      }
+    },
+    "stages": [
+      {
+        "k": "Start from brand rules",
+        "tag": "Brand rules",
+        "breaks": "Prompting without the client's brand rules.",
+        "why": "The output looks plausible and wrong, so your client rejects it and trust drops.",
+        "does": "We capture voice, colours and do-not rules from the brief and apply them to every piece."
+      },
+      {
+        "k": "Put a person in the loop",
+        "tag": "Human check",
+        "breaks": "Sending raw AI output to a client.",
+        "why": "Garbled labels, odd hands and invented claims are easy to spot and hard to forgive.",
+        "does": "Every piece is read and fixed by a person before delivery, and rejected drafts never reach you."
+      },
+      {
+        "k": "Be clear on rights and disclosure",
+        "tag": "Usage and rights",
+        "breaks": "Leaving ownership and disclosure unsaid.",
+        "why": "Clients ask who owns the output and whether they must say it is AI-made. You need an answer ready.",
+        "does": "Ownership terms are in the agreement, and every delivery has a usage note you can forward."
+      },
+      {
+        "k": "Keep each client distinct",
+        "tag": "Sameness",
+        "breaks": "Letting every client's output look alike.",
+        "why": "A generic AI feel makes your clients look like each other, and makes you look interchangeable.",
+        "does": "Brand rules and references are kept per client, so each set of work stays recognisable."
+      },
+      {
+        "k": "Package it so it can be sold",
+        "tag": "Packaging",
+        "breaks": "Offering AI as a vague idea.",
+        "why": "A client cannot buy something you cannot name, scope and describe in a line.",
+        "does": "We help you scope AI photoshoots, UGC, video, landing pages and sales agents as products with a written deliverable."
+      }
+    ],
+    "leaks": {
+      "note": "Illustrative diagram of where agency delivery slips. Not a client account.",
+      "style": "stack",
+      "eyebrow": "Where agency delivery goes wrong",
+      "h2a": "Five ways white-label AI work",
+      "h2b": "goes wrong for agencies.",
+      "lede": "AI makes output cheap and mistakes cheaper to make. These are the five ways agencies get hurt when they resell AI work without a process behind it."
+    },
+    "process": {
+      "h2a": "How we onboard you for AI services,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "NDA and AI scope",
+          "d": "We sign the NDA, take a client brief and agree which AI services you plan to sell first.",
+          "out": "A written scope with disclosure and rights terms."
+        },
+        {
+          "t": "Pilot set",
+          "d": "One small deliverable, such as a set of product images or one short video, made from your brief.",
+          "out": "A pilot you can show a client as a sample."
+        },
+        {
+          "t": "Write the SOPs",
+          "d": "Brief template, review checklist, file naming and disclosure wording are written once.",
+          "out": "A one-page AI delivery policy."
+        },
+        {
+          "t": "Scale the product line",
+          "d": "More clients and formats use the same brief and checks, with the line growing as you sell it.",
+          "out": "An AI line your sales team can quote."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

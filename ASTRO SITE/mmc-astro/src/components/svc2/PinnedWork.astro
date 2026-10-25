@@ -1,0 +1,37 @@
+---
+// 2. The work, shown: ink band. A sticky panel on the left (chosen by S.work.panel from ./panels/index.ts) and the steps on the right.
+// src/scripts/svc2.ts reads scroll position and sets data-step on the section; each panel swaps state with CSS only. Without JS the
+// panel stays on step 1 and every step's text is still on the page. Panel kinds and their step counts: see ./panels/index.ts.
+import { panels, panelSteps } from "./panels";
+interface Props { S: any }
+const { S } = Astro.props as Props;
+const W = S.work;
+const kind = (W.panel ?? "MetaAdsManager") as keyof typeof panels;
+const Panel = panels[kind];
+if (!Panel) throw new Error(`svc2: unknown work.panel "${W.panel}". Known: ${Object.keys(panels).join(", ")}`);
+if (W.steps.length !== panelSteps[kind]) throw new Error(`svc2: panel ${kind} needs exactly ${panelSteps[kind]} steps, got ${W.steps.length}`);
+---
+<section class="s2-band s2-band--ink s2-work" id="the-work" data-s2-work data-step="1" aria-labelledby="s2-work-h">
+  <div class="s2-wrap">
+    <div class="s2-work__grid">
+      <div class="s2-work__stage" data-s2-stage>
+        <Panel W={W} />
+      </div>
+      <div class="s2-work__col">
+      <header class="s2-head">
+        <p class="s2-eyebrow s2-eyebrow--sun">{W.eyebrow}</p>
+        <h2 class="s2-h2" id="s2-work-h">{W.h2a} <em>{W.h2b}</em></h2>
+      </header>
+      <ol class="s2-work__steps">
+        {W.steps.map((st: any, k: number) => (
+          <li class={"s2-step" + (k === 0 ? " is-on" : "")} data-n={k + 1}>
+            <span class="s2-step__n">{st.n}</span>
+            <h3>{st.t}</h3>
+            <p>{st.d}</p>
+          </li>
+        ))}
+      </ol>
+      </div>
+    </div>
+  </div>
+</section>

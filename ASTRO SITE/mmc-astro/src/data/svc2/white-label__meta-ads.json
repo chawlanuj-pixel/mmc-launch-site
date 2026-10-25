@@ -1,0 +1,179 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/creative.jpg",
+    "pos": "50% 50%",
+    "alt": "A designer reviewing printed photography on a studio wall.",
+    "facts": [
+      {
+        "t": "Built to the brief.",
+        "d": "Campaigns are set up in the client's ad account to the goal you agreed."
+      },
+      {
+        "t": "Creative you approve.",
+        "d": "Hooks and formats are tested in a plan you see before anything runs."
+      },
+      {
+        "t": "Weekly notes.",
+        "d": "What changed, why, and what happens next, for your client call."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label Meta Ads"
+  },
+  "work": {
+    "panel": "MetaAdsManager",
+    "eyebrow": "The work, shown",
+    "h2a": "How a Meta account is built",
+    "h2b": "to your client's brief.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Build the account to match the client's goal.",
+        "d": "Campaigns and ad sets are set up inside the client's own ad account, named so your team can read them."
+      },
+      {
+        "n": "02",
+        "t": "Test creative in batches you can approve.",
+        "d": "Hooks, formats and offers go into a test plan first, so no ad runs that you have not seen."
+      },
+      {
+        "n": "03",
+        "t": "Build audiences from the client's own data.",
+        "d": "Custom and lookalike audiences come from first-party lists, with consent rules respected."
+      },
+      {
+        "n": "04",
+        "t": "Check tracking before you scale spend.",
+        "d": "Pixel and Conversions API events are tested, so the numbers in your report can be trusted."
+      },
+      {
+        "n": "05",
+        "t": "Send weekly notes you can read on the call.",
+        "d": "Each week's changes come with a short reason, and scaling follows the client's margin, not platform ROAS."
+      }
+    ],
+    "illustrative": "Illustrative layout of a Meta Ads Manager view. Not a client account, no real figures. Meta and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "MetaFunnel",
+    "barTitle": "Account funnel view",
+    "pinsLabel": "Five places white-label Meta Ads goes wrong",
+    "stageLabels": [
+      "Creative",
+      "Audience",
+      "Tracking",
+      "Rotation",
+      "Report"
+    ],
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Creative"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Audience"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Tracking"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Fatigue"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Report"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first Meta Ads",
+    "h2b": "client gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and account access",
+        "d": "We sign the NDA and are added to the client's ad account with the access you grant, then agree the goal and the budget rules.",
+        "get": "An access and goal sheet.",
+        "img": "company/call.jpg",
+        "alt": "A strategist on a headset call, notebook open beside a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot campaign",
+        "d": "One small campaign launches with a creative test you have approved, so you see how we build and report.",
+        "get": "A pilot you can judge on process.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reviewing dashboards on two monitors.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Creative and report SOPs",
+        "d": "Creative intake, naming, approval of budget changes and the weekly note format are written down.",
+        "get": "A weekly routine for the account.",
+        "img": "contact/brief.jpg",
+        "alt": "A woman working on a laptop at a cafe table with a notebook.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale spend and clients",
+        "d": "Budget follows margin, and more clients join on the same routine.",
+        "get": "Meta for more clients, same routine.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "Colleagues around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label PPC",
+        "href": "/white-label/ppc/"
+      },
+      {
+        "n": "White-label creative and video",
+        "href": "/white-label/creative-and-video/"
+      },
+      {
+        "n": "White-label CRO",
+        "href": "/white-label/cro/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

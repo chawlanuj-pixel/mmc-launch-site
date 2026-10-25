@@ -1,0 +1,85 @@
+---
+// VISUAL: IndLeakBoard (kind "IndLeakBoard"). Data-driven five-card board for the industry pages. Each card is a small wireframe scene of one
+// place a vertical loses money, with a head and a status chip. Pins sit in a row above (y = 0, x = 10, 30, 50, 70, 90). Reads:
+//   X.accent    optional css colour for the scene accent (default blue)
+//   X.base      label of the bar under the cards
+//   X.artLabel  aria label of the picture
+//   X.cols[5]   { head, k, rows, chip, tone }
+//     k     scene shape: "search" (first row is the query pill), "bars" (row.w is bar length in percent), "page" (stacked blocks),
+//           "form" (rows are fields; a row with s "dim" is a surplus field), "chat" (rows alternate in and out), "tiles" (2 x 2 tiles), "list" (rows with a status dot)
+//     rows  [{ t: text, s?: "ok" | "warn" | "bad" | "dim", w?: number }]  text 1 to 4 words
+//     chip  2 to 3 words; tone "w" (amber) | "b" (red) | "ok" (green)
+// No figures: bar lengths are illustrative. On phones the row text is hidden and the scenes read as wireframes. Styles scoped (prefix ilb-).
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X } = Astro.props as Props;
+type Row = { t: string; s?: string; w?: number };
+const cols = (X.cols ?? []) as { head: string; k: string; rows: Row[]; chip: string; tone?: string }[];
+const accent = X.accent ?? "#1D4ED8";
+---
+<div class="ilb-row" aria-hidden="true"></div>
+<div class="ilb-art" style={`--a:${accent}`} role="img" aria-label={X.artLabel ?? "Five cards, each showing one place money is lost."}>
+  {cols.map((c) => (
+    <div class="ilb-c">
+      <b class="ilb-h"><i aria-hidden="true"></i>{c.head}</b>
+      <div class={"ilb-b ilb-b--" + c.k}>
+        {c.rows.map((r, n) => (
+          <span class={"ilb-r" + (r.s ? " ilb-r--" + r.s : "") + (c.k === "chat" ? (n % 2 ? " ilb-r--out" : " ilb-r--in") : "")} style={r.w ? `--w:${r.w}%` : undefined}><span class="ilb-t">{r.t}</span></span>
+        ))}
+      </div>
+      <em class={"ilb-chip ilb-chip--" + (c.tone ?? "w")}>{c.chip}</em>
+    </div>
+  ))}
+</div>
+<div class="ilb-base" aria-hidden="true"><span>{X.base}</span></div>
+<style is:global>
+.ilb-row { height: 78px; }
+.ilb-art { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(6px, 1.2vw, 14px); }
+.ilb-c { position: relative; display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: clamp(8px, 1.1vw, 14px); border: 1px solid #DADDE1; border-radius: 14px; background: #fff; }
+.ilb-c::after { content: ""; position: absolute; left: 50%; bottom: -18px; width: 0; height: 18px; border-left: 2px dashed #9DB8F7; }
+.ilb-h { display: flex; align-items: center; gap: 7px; font: 800 clamp(10px, .95vw, 12.5px)/1.2 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: #65676B; }
+.ilb-h i { flex: none; width: 10px; height: 10px; background: var(--a); border-radius: 50%; }
+.ilb-b { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 6px; min-height: 104px; }
+.ilb-r { display: block; min-width: 0; padding: 6px 8px; border-radius: 8px; background: #F1F5FF; font: 700 clamp(10.5px, .88vw, 12px)/1.25 var(--font-body); color: var(--mmc-blue-900); overflow-wrap: anywhere; }
+.ilb-r--ok { background: #E3F6E9; color: #1B7A3D; } .ilb-r--warn { background: #FFF3D6; color: #8A5A00; } .ilb-r--bad { background: #FDE8E8; color: #B42318; }
+.ilb-r--dim { background: transparent; border: 1px dashed #8A93A6; color: #65676B; font-weight: 600; }
+/* search: query pill then results */
+.ilb-b--search .ilb-r:first-child { border-radius: 99px; background: #fff; border: 1px solid #C9CED6; padding-inline: 12px; }
+.ilb-b--search .ilb-r:not(:first-child) { background: transparent; border-left: 3px solid #C9CED6; border-radius: 0; padding: 3px 8px; color: #65676B; font-weight: 600; }
+.ilb-b--search .ilb-r--ok { border-left-color: #1B7A3D; color: #1B7A3D; font-weight: 800; } .ilb-b--search .ilb-r--bad { border-left-color: #B42318; color: #B42318; border-left-style: dashed; }
+/* bars: label over a bar */
+.ilb-b--bars .ilb-r { background: transparent; padding: 0; display: grid; gap: 3px; color: #3A4256; font-size: clamp(10px, .82vw, 11.5px); }
+.ilb-b--bars .ilb-r::after { content: ""; display: block; height: 9px; width: var(--w, 60%); border-radius: 99px; background: var(--a); }
+.ilb-b--bars .ilb-r--bad::after { background: #D93025; } .ilb-b--bars .ilb-r--warn::after { background: repeating-linear-gradient(135deg, rgba(255, 197, 40, .9) 0 5px, rgba(255, 197, 40, .45) 5px 10px); } .ilb-b--bars .ilb-r--ok::after { background: #1B7A3D; } .ilb-b--bars .ilb-r--dim::after { background: #CED0D4; }
+/* page: stacked blocks */
+.ilb-b--page .ilb-r { min-height: 26px; display: flex; align-items: center; }
+.ilb-b--page .ilb-r:first-child { background: linear-gradient(135deg, #DCE6FF, #EEF3FF); min-height: 34px; }
+/* form: fields */
+.ilb-b--form .ilb-r { background: #fff; border: 1px solid #C9CED6; color: #65676B; font-weight: 600; }
+.ilb-b--form .ilb-r--dim { border-style: dashed; opacity: .75; } .ilb-b--form .ilb-r--ok { border-color: #1B7A3D; color: #1B7A3D; background: #fff; }
+/* chat bubbles */
+.ilb-b--chat .ilb-r { max-width: 88%; font-weight: 600; } .ilb-r--in { background: #fff; border: 1px solid #DADDE1; border-top-left-radius: 2px; align-self: flex-start; } .ilb-r--out { background: #D9FDD3; border-top-right-radius: 2px; align-self: flex-end; color: #1C2B33; }
+.ilb-b--chat .ilb-r--bad { background: #FDE8E8; color: #B42318; } .ilb-b--chat .ilb-r--warn { background: #FFF3D6; color: #8A5A00; }
+/* tiles: 2 x 2 */
+.ilb-b--tiles { display: grid; grid-template-columns: 1fr 1fr; align-content: center; }
+.ilb-b--tiles .ilb-r { min-height: 44px; display: grid; place-items: center; text-align: center; background: linear-gradient(135deg, #EEF3FF, #fff); border: 1px solid #DDE6FA; }
+.ilb-b--tiles .ilb-r--bad { background: #FDE8E8; border-color: #F4C7C3; } .ilb-b--tiles .ilb-r--dim { background: #fff; } .ilb-b--tiles .ilb-r--warn { background: #FFF3D6; border-color: #F0D9A0; } .ilb-b--tiles .ilb-r--ok { background: #E3F6E9; border-color: #BFE3CA; }
+/* list: status dot rows */
+.ilb-b--list .ilb-r { position: relative; padding-left: 22px; background: #F7F8FA; font-weight: 600; color: #1C2B33; }
+.ilb-b--list .ilb-r::before { content: ""; position: absolute; left: 8px; top: 50%; width: 8px; height: 8px; margin-top: -4px; border-radius: 50%; background: var(--a); }
+.ilb-b--list .ilb-r--ok::before { background: #1B7A3D; } .ilb-b--list .ilb-r--warn::before { background: #E8A100; } .ilb-b--list .ilb-r--bad::before { background: #D93025; } .ilb-b--list .ilb-r--dim::before { background: #BCC0C4; }
+.ilb-chip { align-self: flex-start; padding: 4px 9px; border-radius: 99px; font: 800 10px/1.25 var(--font-body); font-style: normal; text-transform: uppercase; letter-spacing: .04em; }
+.ilb-chip--w { background: #FFF3D6; color: #8A5A00; } .ilb-chip--b { background: #FDE8E8; color: #B42318; } .ilb-chip--ok { background: #E3F6E9; color: #1B7A3D; }
+.ilb-base { margin-top: 18px; height: 40px; border-radius: 12px; background: var(--mmc-blue-900); display: grid; place-items: center; padding-inline: 12px; } .ilb-base span { font: 800 12px var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: #fff; text-align: center; }
+@media (max-width: 1080px) { .ilb-b { min-height: 96px; } .ilb-r { padding: 5px 6px; } .ilb-h { letter-spacing: .02em; } }
+@media (max-width: 760px) {
+  .ilb-row { height: 58px; } .ilb-h { display: none; } .ilb-t { display: none; } .ilb-b { min-height: 84px; gap: 5px; }
+  .ilb-r { min-height: 14px; padding: 0; } .ilb-b--search .ilb-r:first-child { min-height: 16px; } .ilb-b--page .ilb-r:first-child { min-height: 24px; } .ilb-b--page .ilb-r { min-height: 18px; }
+  .ilb-b--tiles .ilb-r { min-height: 30px; } .ilb-b--list .ilb-r { padding: 0; min-height: 14px; }
+  .ilb-b--bars .ilb-r { min-height: 10px; display: block; } .ilb-b--bars .ilb-r::after { margin-top: 0; }
+  .ilb-chip { font-size: 8.5px; padding: 3px 6px; overflow-wrap: anywhere; } .ilb-c { padding: 6px; gap: 6px; } .ilb-base { height: 32px; } .ilb-base span { font-size: 10px; }
+}
+@media (max-width: 560px) { .ilb-chip { display: none; } .ilb-b { min-height: 96px; } }
+@media (max-width: 440px) { .ilb-art { gap: 4px; } .ilb-c { padding: 5px 4px; } }
+/* Readable floor on phones (small-defects pass): micro labels >= 10px, words that carry meaning >= 11px. */
+@media (max-width: 760px) { .ilb-chip { font-size: 10px; } .ilb-base span { font-size: 11px; } }
+</style>

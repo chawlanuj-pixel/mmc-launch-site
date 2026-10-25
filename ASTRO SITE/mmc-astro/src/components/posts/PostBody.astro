@@ -1,0 +1,99 @@
+---
+// Same as guides3/GuideBody.astro (which the repo guides keep using, unchanged) plus what the Command Centre editor can write:
+// ordered section text (paragraphs, sub-headings, lists, quotes: `body`), a picture with its own alt text (also an https address),
+// and a call-to-action button after the section. Articles saved before these existed (`paras`, `list`) render as they always did.
+// Original note: key takeaways first (answer-first, from the guide's own "In short" block), then every article
+// block exactly as stored in src/data/guides/*.json (paras, figure, list, steps, table, callout), numbered, at a
+// 68ch measure with figures and tables allowed wider. The calculator callout sits after the block named in
+// `after` (src/lib/guides.ts). `skipImg` is the picture already shown in the header: its block keeps the text and
+// the caption moves to the header figure, so no image appears twice.
+interface Block {
+  id: string; h: string;
+  paras?: string[]; img?: string; cap?: string; alt?: string;
+  body?: ({ k: "p" | "quote" | "h3"; x: string } | { k: "ul" | "ol"; items: string[] })[];
+  button?: { label: string; href: string; external?: boolean; style: "primary" | "link" | "book" };
+  list?: string[];
+  steps?: { t: string; d: string }[];
+  table?: { caption: string; head: string[]; rows: string[][] };
+  callout?: { title: string; text: string };
+}
+interface Props {
+  blocks: Block[];
+  lead: string; label?: string; points?: { title: string; text: string }[];
+  after?: string; tool?: { label: string; href: string; line: string; img: string; blurb?: string };
+  skipImg?: string; source?: string;
+}
+const { blocks, lead, label = "In short", points = [], after, tool, skipImg, source = "post" } = Astro.props;
+const pad = (i: number) => String(i + 1).padStart(2, "0");
+---
+<div class="gd3-body" data-gd3-body>
+  <aside class="gd3-take" aria-labelledby="gd3-take-k">
+    <p class="gd3-label" id="gd3-take-k">{label}</p>
+    <p class="gd3-take__lead">{lead}</p>
+    {points.length > 0 && (
+      <ul class="gd3-take__pts">
+        {points.map((p) => (
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" /></svg>
+            <span><b>{p.title}</b> {p.text}</span>
+          </li>
+        ))}
+      </ul>
+    )}
+  </aside>
+
+  {blocks.map((b, i) => (
+    <Fragment>
+      <section class="gd3-sec" id={b.id} aria-labelledby={b.id + "-h"}>
+        <p class="gd3-sec__n" aria-hidden="true">{pad(i)}</p>
+        <h2 class="gd3-sec__h" id={b.id + "-h"}>{b.h}</h2>
+        {(b.paras || []).map((t) => <p set:html={t} />)}
+        {(b.body || []).map((it) => it.k === "p" ? <p set:html={it.x} />
+          : it.k === "h3" ? <h3 class="pst-h3">{it.x}</h3>
+          : it.k === "quote" ? <blockquote class="pst-quote" set:html={it.x} />
+          : it.k === "ul" ? <ul class="gd3-list">{it.items.map((t) => <li set:html={t} />)}</ul>
+          : <ol class="gd3-list pst-ol">{it.items.map((t) => <li set:html={t} />)}</ol>)}
+        {b.img && b.img !== skipImg && (
+          <figure class="gd3-fig">
+            <img src={/^https:/.test(b.img) ? b.img : "/assets/" + b.img} alt={b.alt || b.cap || b.h} width="1200" height="806" loading="lazy" decoding="async" />
+            {b.cap && <figcaption>{b.cap}</figcaption>}
+          </figure>
+        )}
+        {b.list && <ul class="gd3-list">{b.list.map((t) => <li set:html={t} />)}</ul>}
+        {b.steps && (
+          <ol class="gd3-steps">{b.steps.map((st) => <li><b>{st.t}</b><span set:html={st.d} /></li>)}</ol>
+        )}
+        {b.table && (
+          <div class="gd3-table">
+            <div class="gd3-table__scroll" tabindex="0" role="region" aria-label={b.h + " table"}>
+              <table>
+                <thead><tr>{b.table.head.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+                <tbody>{b.table.rows.map((r) => <tr>{r.map((c, j) => j === 0 ? <th scope="row">{c}</th> : <td>{c}</td>)}</tr>)}</tbody>
+              </table>
+            </div>
+            {b.table.caption && <p class="gd3-table__note">{b.table.caption}</p>}
+          </div>
+        )}
+        {b.callout && <aside class="gd3-callout"><b>{b.callout.title}</b><span set:html={b.callout.text} /></aside>}
+        {b.button && (
+          <p class="pst-cta">
+            {b.button.style === "book"
+              ? <button type="button" class="btn btn--primary" onclick={`window.mmcBookCall && window.mmcBookCall('${source}-${b.id}', event)`}>{b.button.label}<span class="arrow"></span></button>
+              : <a class={b.button.style === "link" ? "btn btn--link" : "btn btn--primary"} href={b.button.href} rel={b.button.external ? "noopener" : undefined}>{b.button.label}<span class="arrow"></span></a>}
+          </p>
+        )}
+      </section>
+      {tool && b.id === after && (
+        <a class={"gd3-toolbox" + (tool.img ? "" : " gd3-toolbox--text")} href={tool.href}>
+          {tool.img && <span class="gd3-toolbox__pic"><img src={tool.img} alt="" width="1200" height="806" loading="lazy" decoding="async" /></span>}
+          <span class="gd3-toolbox__txt">
+            <span class="gd3-toolbox__k">Free calculator</span>
+            <b>{tool.label}</b>
+            <span>{tool.line}</span>
+          </span>
+          <span class="gd3-toolbox__go" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span>
+        </a>
+      )}
+    </Fragment>
+  ))}
+</div>

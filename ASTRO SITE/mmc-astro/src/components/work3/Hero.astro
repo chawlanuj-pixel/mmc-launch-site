@@ -1,0 +1,39 @@
+---
+// /work/ hero: big type over an edge-to-edge reel of real client artwork (the case-study hero crops in
+// public/assets/case2/<id>/web.jpg: the website view, so the reel does not repeat the hero crops used on the case
+// cards below), one per kind of brand, each opening its case study. Styles: work3.css (wk3-).
+import { caseById } from "../../lib/work";
+import { SECONDARY } from "../../lib/site";
+import crops from "../../data/case2/_crops.json";
+// Each web.jpg is a whole desktop-plus-phone mockup, so it is shown complete (contain) on its own edge colour rather than cropped by the cell.
+const PICK = ["vagakids", "mvj", "nmc"];
+const REEL = PICK.map((id) => ({ c: caseById(id)!, ...(crops as any)[id].web as { w: number; h: number; bg: string } })).filter((x) => x.c);
+---
+<section class="wk3-hero" id="top">
+  <div class="n-wrap">
+    <nav class="wk3-crumbs" aria-label="Breadcrumb">
+      <ol><li><a href="/">Home</a></li><li><span aria-current="page">Our Work</span></li></ol>
+    </nav>
+    <div class="wk3-hero__grid">
+      <div>
+        <p class="wk3-kicker">Our work</p>
+        <h1 class="wk3-h1">Real projects,<br /> not a <em>slide deck.</em></h1>
+      </div>
+      <div class="wk3-hero__side">
+        <p class="wk3-lede">Case studies built from the actual sites, ad creative and social work we shipped, plus a wall of a few of the other brands we work with across D2C, B2B and education.</p>
+        <div class="wk3-hero__act">
+          <a class="btn btn--primary" href="#cases">{SECONDARY.work}<span class="arrow"></span></a>
+          <a class="btn btn--link" href="#brands">See the full brand wall<span class="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wk3-reel" aria-label="A few of the case studies">
+    {REEL.map(({ c, w, h, bg }, i) => (
+      <a class={"wk3-reel__item" + (i === 0 ? " wk3-reel__item--big" : "")} href={`/work/${c.id}/`}>
+        <img src={`/assets/case2/${c.id}/web.jpg`} alt={`${c.name}: the website we built, on desktop and phone`} width={w} height={h} style={`object-fit:contain;background:${bg}`} loading="eager" decoding="async" fetchpriority={i === 0 ? "high" : undefined} />
+        <span class="wk3-reel__cap"><b>{c.name}</b><span>{c.label}</span></span>
+      </a>
+    ))}
+  </div>
+</section>

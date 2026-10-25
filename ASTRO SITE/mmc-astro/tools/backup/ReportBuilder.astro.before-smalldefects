@@ -1,0 +1,59 @@
+---
+// PANEL: ReportBuilder (kind "ReportBuilder"). White-label reporting built for an agency. Real marks for GA4, Meta, Google and Shopify only as
+// "connected source" rows (public/assets/platforms). 4 steps.
+//   1 Sources: four connected data sources with a "tracking checked" chip. Tab: Sources.
+//   2 Template: a report page with a dashed "Your logo" slot, brand colour swatches and the page sections. Tab: Template.
+//   3 Commentary: Done / Watch / Next written in plain words with one "Your edit" marker. Tab: Commentary.
+//   4 Send: Draft, Your review, Sent as a three-step flow, with the sender shown as the agency's own address. Tab: Send.
+// Needs S.work.illustrative. Illustrative layout, no figures. Styles scoped to this file (prefix rpb-).
+import Frame from "./Frame.astro";
+interface Props { W: any }
+const { W } = Astro.props as Props;
+const src = [["ga4.svg", "Web analytics"], ["meta.svg", "Paid social"], ["google.svg", "Search ads"], ["shopify.svg", "Store orders"]];
+---
+<Frame title="Report builder" label="Illustration of a white-label report builder: sources, your template, commentary and sending. Not a client account." caption={W.illustrative} tabs={["Sources", "Template", "Commentary", "Send"]} tabFor={[0, 1, 2, 3]} accent="#1D4ED8" accentSoft="#E3EAFC">
+  <div class="s2-st s2-st--1">
+    <p class="s2-st__cap">Sources <span>Connected, then checked</span></p>
+    <ul class="rpb-src">
+      {src.map(([f, n]) => <li class="s2p-card"><img src={"/assets/platforms/" + f} alt="" width="24" height="24" /><b>{n}</b><em class="s2p-chip s2p-chip--ok">Connected</em></li>)}
+    </ul>
+    <small class="s2p-mute">Tracking is audited before the first report.</small>
+  </div>
+  <div class="s2-st s2-st--2">
+    <p class="s2-st__cap">Template <span>Your logo, your colours, your order</span></p>
+    <div class="rpb-tpl">
+      <div class="s2p-card rpb-page"><span class="rpb-logo">Your logo</span><i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--s"></i><svg viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 32 C 20 30, 40 24, 60 20 S 100 10, 120 6" /></svg></div>
+      <div class="rpb-side"><p class="s2p-lbl">Colours</p><span class="rpb-sw"><i></i><i></i><i></i></span><p class="s2p-lbl">Sections</p><b>Summary</b><b>Channels</b><b>Next steps</b></div>
+    </div>
+  </div>
+  <div class="s2-st s2-st--3">
+    <p class="s2-st__cap">Commentary <span>What happened and what to do</span></p>
+    <div class="rpb-com">
+      {[["Done", "s2p-chip--ok", "Work shipped this month"], ["Watch", "s2p-chip--warn", "A page or channel to keep an eye on"], ["Next", "s2p-chip--blue", "The one change we suggest"]].map(([h, c, t]) => <div class="s2p-card"><em class={"s2p-chip " + c}>{h}</em><b>{t}</b><i class="s2p-line"></i></div>)}
+    </div>
+    <em class="s2p-chip s2p-chip--sun rpb-edit">Your edit: add a line for your client</em>
+  </div>
+  <div class="s2-st s2-st--4">
+    <p class="s2-st__cap">Send <span>Nothing goes out without your say</span></p>
+    <ol class="rpb-flow">
+      <li class="s2p-card"><b>Draft</b><em class="s2p-chip s2p-chip--ok">Built</em></li>
+      <li class="s2p-card rpb-now"><b>Your review</b><em class="s2p-chip s2p-chip--warn">Waiting</em></li>
+      <li class="s2p-card"><b>Sent</b><em class="s2p-chip">From your address</em></li>
+    </ol>
+    <div class="s2p-card rpb-mail"><span class="rpb-logo">Your logo</span><span><b>reports@youragency.example</b><small class="s2p-mute">To: your client, monthly</small></span></div>
+  </div>
+</Frame>
+<style is:global>
+.rpb-src { list-style: none; margin: 0; padding: 0; flex: 1; min-height: 0; display: grid; gap: .6em; align-content: space-evenly; } .rpb-src li { display: flex; align-items: center; gap: .8em; padding-block: .55em; } .rpb-src img { width: 1.7em; height: 1.7em; object-fit: contain; flex: none; } .rpb-src b { margin-right: auto; font: 800 .98em var(--font-body); }
+.rpb-logo { display: inline-grid; place-items: center; min-width: 5.6em; height: 2.2em; padding: 0 .6em; border: 1.5px dashed #8AA2E6; border-radius: .5em; color: var(--mmc-blue); font: 800 .7em var(--font-body); text-transform: uppercase; letter-spacing: .06em; flex: none; }
+.rpb-tpl { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: .8em; }
+.rpb-page { display: grid; gap: .6em; align-content: start; } .rpb-page .rpb-logo { justify-self: start; } .rpb-page svg { width: 100%; height: 3.4em; fill: none; stroke: var(--mmc-blue); stroke-width: 3; vector-effect: non-scaling-stroke; } .rpb-page svg path { vector-effect: non-scaling-stroke; }
+.rpb-side { display: grid; align-content: start; gap: .5em; } .rpb-side b { padding: .45em .7em; border: 1px solid #DADDE1; border-radius: .5em; font: 800 .88em var(--font-body); }
+.rpb-sw { display: flex; gap: .4em; } .rpb-sw i { width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--mmc-blue); } .rpb-sw i:nth-child(2) { background: var(--mmc-yellow); } .rpb-sw i:nth-child(3) { background: var(--mmc-blue-900); }
+.rpb-com { display: grid; flex: 1; min-height: 0; max-height: 14em; align-content: stretch; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7em; } .rpb-com .s2p-card { display: grid; gap: .5em; align-content: start; justify-items: start; } .rpb-com b { font: 800 .95em/1.25 var(--font-body); }
+.rpb-edit { align-self: flex-start; }
+.rpb-flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8em; counter-reset: rpb; } .rpb-flow li { min-height: 5em; display: grid; gap: .5em; justify-items: start; align-content: start; } .rpb-flow b { font: 800 1em var(--font-body); } .rpb-now { border-color: var(--mmc-blue); box-shadow: 0 0 0 2px var(--mmc-blue); }
+.rpb-mail { display: flex; align-items: center; gap: .8em; } .rpb-mail > span:last-child { display: grid; min-width: 0; } .rpb-mail b { font: 800 .92em var(--font-body); overflow-wrap: anywhere; }
+@media (max-width: 560px) { .rpb-com { max-height: 9em; align-content: start; } .rpb-tpl { grid-template-columns: 1fr; } .rpb-side { display: none; } .rpb-com .s2p-line { display: none; } .rpb-com, .rpb-flow { gap: .4em; } .rpb-flow .s2p-chip { white-space: normal; } }
+@media (max-width: 900px) { .s2-ui:has(.rpb-src) .s2-st { padding: 10px 12px; gap: .6em; } }
+</style>

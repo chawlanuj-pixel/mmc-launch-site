@@ -1,0 +1,78 @@
+{
+ "id": "mvj",
+ "about": "{name} is an autonomous engineering college.",
+ "description": "{name} case study: an admissions website with programme listings and an apply-now form, plus social creative and ads, from MMC.",
+ "heroTone": "paper",
+ "kind": "Education, engineering college",
+ "channels": [
+  "Meta lead ad",
+  "Google search listing"
+ ],
+ "brief": [
+  "{name} is an autonomous engineering college. We built a website around admissions: a homepage with programme listings and an apply-now enquiry form, on desktop and mobile.",
+  "Admissions is the action, so the apply-now form sits directly under the hero on desktop and inside the first screen on a phone, with the programmes beneath. Admissions social creative, a Meta lead ad and a Google search listing sit alongside it."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Homepage",
+   "title": "College homepage on desktop and mobile",
+   "text": "A student-led hero with the reasons to choose the college, why MVJCE, the environment and placements, set out as steps, and the same page on a phone with a campus video.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "split",
+   "side": "right",
+   "kicker": "Mobile",
+   "title": "The same page on a phone",
+   "text": "The enquiry form sits inside the first phone screen and the programme cards follow.",
+   "crops": [
+    "mobile"
+   ]
+  },
+  {
+   "layout": "stage",
+   "kicker": "Enquiry form",
+   "title": "Apply-now enquiry form",
+   "text": "Name, email, mobile number and programme choice in a single row on desktop.",
+   "crops": [
+    "form"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 3,
+   "kicker": "Creative, lead ad and search",
+   "title": "Social creative, a Meta lead ad and a Google search listing",
+   "text": "Admissions messaging in the same colours as the site.",
+   "crops": [
+    "social",
+    "meta",
+    "seo"
+   ],
+   "captions": [
+    "Admissions social creative",
+    "Meta lead ad",
+    "Google search listing"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Admissions homepage and apply-now form",
+  "reach": "Meta lead ad and Google search listing",
+  "make": "Admissions social creative"
+ },
+ "action": "application enquiry",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a student reading in a library beside a rising arrow marking Why MVJCE, Engaging Environment and Placements",
+  "mobile": "{name} mobile page on a phone screen",
+  "form": "{name} enquiry form",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "seo": "{name} Google search listing",
+  "card": "{name} logo above two graduates in gowns and caps outside the campus"
+ }
+}

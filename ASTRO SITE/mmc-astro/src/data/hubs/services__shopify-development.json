@@ -1,0 +1,501 @@
+{
+  "file": "shopify-development.html",
+  "path": "/services/shopify-development/",
+  "key": "shopify",
+  "title": "Shopify Development Agency India for D2C | MMC",
+  "description": "Shopify development agency in India building and redesigning fast D2C stores, with checkout, UPI and COD set up and tracking connected from day one.",
+  "ogTitle": "Shopify development for D2C brands in India",
+  "ogDescription": "Stores built for browsing, speed and checkout.",
+  "ogAlt": "Monday Marketing Company: shopify development.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/shopify-development.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Shopify development",
+          "item": "https://www.mondaymarketing.company/shopify-development.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/shopify-development.html#webpage",
+      "url": "https://www.mondaymarketing.company/shopify-development.html",
+      "name": "Shopify Development Agency India for D2C | MMC",
+      "description": "Shopify development agency in India building and redesigning fast D2C stores, with checkout, UPI and COD set up and tracking connected from day one.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/shopify-development.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/shopify-development.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/shopify-development.html#service",
+      "name": "Shopify development",
+      "serviceType": "Shopify development",
+      "description": "Shopify and ecommerce development for D2C brands.",
+      "url": "https://www.mondaymarketing.company/shopify-development.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/shopify-development.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Shopify development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shopify development is the work of designing, building and connecting an online store, so shoppers can find products, trust the brand and check out with little friction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Shopify development work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We plan the structure, design for a phone first, build a lean fast theme, tune checkout and payments, connect analytics, Meta and your CRM, and test before launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Shopify development cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee sales from a store, because traffic, price and product matter too. We commit to a fast, measurable build, tested before launch, and honest reporting afterwards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Shopify development for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shopify is mainly for D2C brands that sell online, so most of this work is for D2C. B2B and education brands that sell online use the same method, judged on orders and enquiries. For marketing sites, see website development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your catalogue and product content, brand assets, the current store if you have one, and a person who can approve designs. We say on the first call what we can set up for you."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "shopify",
+    "wm": "Shopify",
+    "eyebrow": "● Shopify development agency",
+    "h1": [
+      "Shopify development",
+      [
+        "that ",
+        "loads fast and converts",
+        "."
+      ]
+    ],
+    "sub": "Stores designed for how customers browse, built to load fast on a phone, and connected to the tracking and tools that run growth.",
+    "tiles": [
+      {
+        "img": "shop/plan.jpg",
+        "pos": "50% 50%",
+        "label": "Plan",
+        "note": "Structure before design"
+      },
+      {
+        "img": "shop/design.jpg",
+        "pos": "50% 50%",
+        "label": "Design",
+        "note": "Made to browse and trust"
+      },
+      {
+        "img": "shop/speed.jpg",
+        "pos": "50% 50%",
+        "label": "Speed",
+        "note": "Fast on a phone"
+      },
+      {
+        "img": "shop/checkout.jpg",
+        "pos": "50% 50%",
+        "label": "Checkout",
+        "note": "UPI, cards and COD"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Shopify development is the work of designing, building and connecting an online store, so shoppers can find products, trust the brand and check out with little friction. MMC builds and redesigns Shopify stores for D2C brands in India, with phone-first design, a lean fast theme, tuned checkout and analytics, Meta and CRM connected and tested before launch.",
+      "hl": "find products, trust the brand and check out",
+      "who": "Monday Marketing Company (MMC) builds and redesigns Shopify stores for D2C brands in India.",
+      "points": [
+        {
+          "icon": "bag",
+          "title": "Built for browsing",
+          "text": "Structure and design around how your customers actually shop."
+        },
+        {
+          "icon": "gauge",
+          "title": "Fast on a phone",
+          "text": "Most visits are on mobile, so speed and checkout come first."
+        },
+        {
+          "icon": "link",
+          "title": "Connected to growth",
+          "text": "Analytics, Meta and your CRM are set up correctly from day one."
+        }
+      ],
+      "image": "shop/design.jpg",
+      "chip": "Built on Shopify"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where online stores go wrong",
+      "h2a": "Five ways a Shopify build",
+      "h2b": "goes wrong.",
+      "lede": "A store is hard to fix once it is live. Each stage below is where stores go wrong, and how we build it right."
+    },
+    "stages": [
+      {
+        "k": "Plan the structure",
+        "tag": "Store planning",
+        "breaks": "Starting with a template and a logo.",
+        "why": "Navigation, collections and page types decide how easily shoppers find things. Fixing them after launch is slow and costly.",
+        "does": "We plan the catalogue, navigation and page types first, from how your customers search and shop, before any design.",
+        "href": "services.html#tech",
+        "img": "shop/plan.jpg"
+      },
+      {
+        "k": "Design for trust",
+        "tag": "Store design",
+        "breaks": "A beautiful home page and weak product pages.",
+        "why": "Most buying decisions are made on product pages, where shoppers look for proof, clarity and reassurance.",
+        "does": "We design the home page, collections and product pages so the brand feels credible and the product is easy to understand.",
+        "href": "services.html#brand",
+        "img": "shop/design.jpg"
+      },
+      {
+        "k": "Build for speed",
+        "tag": "Performance engineering",
+        "breaks": "Loading heavy images and unnecessary apps.",
+        "why": "Slow pages lose shoppers before they see a product, especially on mobile networks.",
+        "does": "We build lean themes, optimise images and limit apps, so the store loads fast on a phone.",
+        "href": "services.html#tech",
+        "img": "shop/speed.jpg"
+      },
+      {
+        "k": "Make checkout easy",
+        "tag": "Checkout and payments",
+        "breaks": "A checkout that surprises shoppers at the end.",
+        "why": "Extra steps, forced accounts and missing payment options end sales that were already decided.",
+        "does": "We set up checkout with the payment methods Indian shoppers expect, including UPI, cards and cash on delivery, and keep it short.",
+        "href": "conversion-rate-optimisation.html",
+        "img": "shop/checkout.jpg"
+      },
+      {
+        "k": "Connect the tools",
+        "tag": "Tracking and integrations",
+        "breaks": "Launching without proper tracking.",
+        "why": "Without correct analytics and event tracking, ad platforms and your team cannot see what works.",
+        "does": "We connect analytics, Meta, your CRM and email or WhatsApp tools, and check that events fire correctly before launch.",
+        "href": "lead-generation.html",
+        "img": "shop/integrate.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "your store is working.",
+      "note": "Read against your own costs and margin.",
+      "cards": [
+        {
+          "n": "Mobile page speed",
+          "d": "How fast the store loads on a typical phone."
+        },
+        {
+          "n": "Checkout completion",
+          "d": "The share of shoppers who finish what they started."
+        },
+        {
+          "n": "Unit economics",
+          "d": "What each order leaves behind after costs."
+        },
+        {
+          "n": "Break-even ROAS",
+          "d": "The ROAS you need to stop losing money."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where Shopify development fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Conversion optimisation",
+          "d": "Find where visitors leave your store and test fixes.",
+          "img": "cro/pdp.jpg",
+          "href": "conversion-rate-optimisation.html",
+          "link": "See Conversion optimisation"
+        },
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready websites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "web-development.html",
+          "link": "See Website development"
+        },
+        {
+          "n": "D2C brands",
+          "d": "Ads, creative, conversion and retention for brands that sell direct to shoppers.",
+          "img": "d2c/packing.jpg",
+          "href": "d2c.html",
+          "link": "See D2C brands"
+        },
+        {
+          "n": "White-label Shopify development",
+          "d": "Stores built behind your brand.",
+          "img": "shop/design.jpg",
+          "href": "/white-label/shopify-development/",
+          "link": "See white-label Shopify development"
+        },
+        {
+          "n": "WooCommerce development",
+          "d": "Stores on WordPress: catalogue, checkout, shipping and speed.",
+          "img": "d2c/checkout.jpg",
+          "href": "/services/web-development/woocommerce/",
+          "link": "See WooCommerce development"
+        },
+        {
+          "n": "WordPress development",
+          "d": "Themes, plugins and editing for content-led sites.",
+          "img": "web/build.jpg",
+          "href": "/services/web-development/wordpress/",
+          "link": "See WordPress development"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "Shopify development."
+    ],
+    "faq": [
+      {
+        "q": "What is Shopify development?",
+        "a": "Shopify development is the work of designing, building and connecting an online store, so shoppers can find products, trust the brand and check out with little friction."
+      },
+      {
+        "q": "How does Shopify development work with MMC?",
+        "a": "We plan the structure, design for a phone first, build a lean fast theme, tune checkout and payments, connect analytics, Meta and your CRM, and test before launch."
+      },
+      {
+        "q": "What does Shopify development cost?",
+        "a": "We quote per project, after a call, once the scope is clear: what you need, how much of it, and what it has to connect to. The scope and the fee are agreed in writing before work starts."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee sales from a store, because traffic, price and product matter too. We commit to a fast, measurable build, tested before launch, and honest reporting afterwards."
+      },
+      {
+        "q": "Who is Shopify development for?",
+        "a": "Shopify is mainly for D2C brands that sell online, so most of this work is for D2C. B2B and education brands that sell online use the same method, judged on orders and enquiries. For marketing sites, see <a href=\"web-development.html\">website development</a>."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Your catalogue and product content, brand assets, the current store if you have one, and a person who can approve designs. We say on the first call what we can set up for you."
+      }
+    ],
+    "cta": {
+      "h2a": "Plan a store that",
+      "h2b": "sells.",
+      "lede": "On a call, with a senior strategist. We look at your store and where it loses shoppers."
+    },
+    "proof": {
+      "codes": [
+        "web"
+      ],
+      "types": [
+        "D2C"
+      ],
+      "does": "build stores for"
+    },
+    "process": {
+      "h2a": "How we build your store,",
+      "h2b": "step by step.",
+      "note": "Timing depends on scope. We agree it with you before work starts.",
+      "steps": [
+        {
+          "t": "Plan the store",
+          "d": "Structure, catalogue and the shopper's path are planned before design starts.",
+          "out": "A written plan of the store and what it must connect to."
+        },
+        {
+          "t": "Design for trust",
+          "d": "Screens designed for a phone first, reviewed with you.",
+          "out": "Approved designs for the pages that sell."
+        },
+        {
+          "t": "Build for speed",
+          "d": "A lean theme with few apps, checkout and payments tuned, and tracking connected.",
+          "out": "A store that is fast and measurable."
+        },
+        {
+          "t": "Launch and tune",
+          "d": "We test before launch, then watch the first orders and fix what the data shows.",
+          "out": "A live store with tracking you can trust."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Shopify builds for brands that",
+      "h2b": "sell direct.",
+      "good": {
+        "t": "You sell products online and your store is slow, dated, or hard to shop on a phone.",
+        "why": "D2C founders get a store that holds up under paid traffic, and B2B and education brands that sell online are welcome too."
+      },
+      "not": {
+        "t": "You want the cheapest template, or a store with no plan for traffic.",
+        "why": "A store is only half the job, so we plan how it gets customers and keeps them."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What we build on",
+      "h2b": "Shopify.",
+      "lede": "A store planned around the buyer, built for speed and wired to the tools you already use.",
+      "items": [
+        {
+          "t": "Structure and navigation",
+          "d": "Collections, filters and menus planned from how your customers actually shop.",
+          "img": "shop/plan.jpg",
+          "alt": "Structure and navigation"
+        },
+        {
+          "t": "Theme design for trust",
+          "d": "Product pages, reviews and policies laid out so a first-time visitor feels safe to buy.",
+          "img": "shop/design.jpg",
+          "alt": "Theme design for trust"
+        },
+        {
+          "t": "Speed and Core Web Vitals",
+          "d": "Lean code, compressed media and apps kept to what earns its weight.",
+          "img": "shop/speed.jpg",
+          "alt": "Speed and Core Web Vitals"
+        },
+        {
+          "t": "Checkout and payments",
+          "d": "A short path to pay with the Indian payment methods and COD options your buyers expect.",
+          "img": "shop/checkout.jpg",
+          "alt": "Checkout and payments"
+        },
+        {
+          "t": "App and tool integrations",
+          "d": "Email, WhatsApp, reviews, subscriptions and analytics connected and tested.",
+          "img": "shop/integrate.jpg",
+          "alt": "App and tool integrations"
+        },
+        {
+          "t": "Migration and handover",
+          "d": "Products, customers and redirects moved safely, with training so your team can run the store.",
+          "img": "web/speed.jpg",
+          "alt": "Migration and handover"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands build Shopify",
+      "h2b": "with MMC.",
+      "lede": "We build the store and run the marketing that sends it traffic.",
+      "img": "shop/speed.jpg",
+      "alt": "Why brands build Shopify with MMC.",
+      "items": [
+        {
+          "t": "Built by people who run the ads",
+          "d": "We see how a page converts paid traffic, so the build reflects what works."
+        },
+        {
+          "t": "Speed is part of the brief",
+          "d": "A fast store keeps more of the traffic you already pay for."
+        },
+        {
+          "t": "SEO built in",
+          "d": "Clean structure, schema and redirects are set at build time, not patched on later."
+        },
+        {
+          "t": "A store your team can own",
+          "d": "Plain admin set-up and handover, so changes do not need an agency ticket."
+        }
+      ]
+    },
+    "accordion": {
+      "eyebrow": "How it works",
+      "h2a": "How we build your Shopify store,",
+      "h2b": "step by step.",
+      "img": "shop/integrate.jpg",
+      "alt": "How we build your Shopify store, step by step.",
+      "items": [
+        {
+          "t": "Plan the structure",
+          "d": "Catalogue, collections, key pages and the tools to connect are agreed before design begins."
+        },
+        {
+          "t": "Design and build",
+          "d": "Mobile-first templates for the home page, collections, product pages and cart, built on a clean theme."
+        },
+        {
+          "t": "Connect and test",
+          "d": "Payments, shipping, email, WhatsApp and analytics are connected and tested end to end."
+        },
+        {
+          "t": "Launch and hand over",
+          "d": "Redirects are checked, the store goes live and your team is trained to run it."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

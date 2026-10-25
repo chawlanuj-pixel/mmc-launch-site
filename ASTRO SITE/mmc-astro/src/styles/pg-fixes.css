@@ -1,0 +1,5 @@
+/* hb.css (hub pages) is imported globally by BaseLayout and re-flows every .n-wall.pm-wall. The services, performance
+   and D2C pages keep the original auto-fill grid. */
+@media (min-width: 861px) {
+  .n-wall.pm-wall { grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); }
+}

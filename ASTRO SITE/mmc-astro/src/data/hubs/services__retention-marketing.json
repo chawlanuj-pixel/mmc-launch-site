@@ -1,0 +1,455 @@
+{
+  "file": "retention-marketing.html",
+  "path": "/services/retention-marketing/",
+  "key": "retention",
+  "title": "Retention Marketing Agency India: WhatsApp, Email | MMC",
+  "description": "Retention marketing agency in India building WhatsApp, email and loyalty funnels that bring D2C buyers back and nurture B2B and education enquiries.",
+  "ogTitle": "Retention marketing that brings buyers back",
+  "ogDescription": "WhatsApp, email and loyalty funnels built on your own data.",
+  "ogAlt": "Monday Marketing Company: retention marketing.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/retention-marketing.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.mondaymarketing.company/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Retention marketing",
+          "item": "https://www.mondaymarketing.company/retention-marketing.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/retention-marketing.html#webpage",
+      "url": "https://www.mondaymarketing.company/retention-marketing.html",
+      "name": "Retention Marketing Agency India: WhatsApp, Email | MMC",
+      "description": "Retention marketing agency in India building WhatsApp, email and loyalty funnels that bring D2C buyers back and nurture B2B and education enquiries.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/retention-marketing.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en",
+      "mainEntity": {
+        "@id": "https://www.mondaymarketing.company/retention-marketing.html#service"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://www.mondaymarketing.company/retention-marketing.html#service",
+      "name": "Retention marketing",
+      "serviceType": "Retention marketing",
+      "description": "Retention marketing funnels across WhatsApp, email and loyalty for D2C, B2B and education brands.",
+      "url": "https://www.mondaymarketing.company/retention-marketing.html",
+      "provider": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/retention-marketing.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is retention marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retention marketing is the work of keeping the customers and enquiries you already paid for, through timely messages on WhatsApp, email and calls and through loyalty programmes, so they buy again or complete a decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does retention marketing work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We start from your own data, build funnels for welcome, reorder, nurture and win-back, and measure repeat purchase or lead progress every week. We adjust the flows as the numbers come in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does retention marketing cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee a repeat rate, because it depends on the product, the price and the customer. We commit to well-built flows, clean measurement and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is retention marketing for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D2C brands that want more second orders, and B2B and education teams that need follow-up so enquiries do not go cold. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your store, email tool or CRM, your customer or lead data, and a view of how your team follows up today."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "retention",
+    "wm": "Retain",
+    "eyebrow": "● Retention marketing agency",
+    "h1": [
+      "Retention marketing",
+      [
+        "that ",
+        "brings buyers back",
+        "."
+      ]
+    ],
+    "sub": "WhatsApp, email and loyalty funnels that bring customers back and turn enquiries into customers, built on your own data.",
+    "tiles": [
+      {
+        "img": "rt/data.jpg",
+        "pos": "50% 50%",
+        "label": "Know your customers",
+        "note": "Segments from your data"
+      },
+      {
+        "img": "rt/welcome.jpg",
+        "pos": "50% 50%",
+        "label": "Welcome",
+        "note": "The first weeks"
+      },
+      {
+        "img": "rt/journey.jpg",
+        "pos": "50% 50%",
+        "label": "Journeys",
+        "note": "WhatsApp and email flows"
+      },
+      {
+        "img": "rt/replenish.jpg",
+        "pos": "50% 50%",
+        "label": "Reorder",
+        "note": "Right time, right nudge"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "Retention marketing is the work of keeping the customers and enquiries you already paid for, so they come back, buy again or complete a decision. MMC builds WhatsApp, email and loyalty funnels for D2C brands, and nurture funnels for B2B and education leads, and measures repeat purchase or lead progress every week.",
+      "hl": "come back, buy again",
+      "who": "Monday Marketing Company (MMC) builds retention funnels over WhatsApp, email and loyalty for D2C brands, and nurture funnels for B2B and education leads.",
+      "points": [
+        {
+          "icon": "users",
+          "title": "Start with your own data",
+          "text": "Customers and leads are grouped by what they did, so every message has a reason."
+        },
+        {
+          "icon": "loop",
+          "title": "Funnels, not blasts",
+          "text": "Automated WhatsApp and email journeys triggered by behaviour and stage."
+        },
+        {
+          "icon": "gauge",
+          "title": "Measured by repeat",
+          "text": "Repeat purchase for D2C, and progress through the funnel for leads."
+        }
+      ],
+      "image": "rt/journey.jpg",
+      "chip": "Built on your own data"
+    },
+    "leaks": {
+      "note": "Screens are illustrative recreations of each platform's interface, not client data. Platform names and logos belong to their owners.",
+      "style": "stack",
+      "eyebrow": "Where retention goes missing",
+      "h2a": "Five ways retention",
+      "h2b": "goes wrong.",
+      "lede": "Most brands spend on acquisition and stop there. Each stage below is where a customer or lead is lost, and the retention work that keeps them."
+    },
+    "stages": [
+      {
+        "k": "Know who you have",
+        "tag": "Data and segmentation",
+        "breaks": "Sending the same message to everyone.",
+        "why": "A first-time buyer, a loyal repeat customer and an enquiry that went quiet need different things. One message for all of them fits none of them.",
+        "does": "We group your customers and leads by what they did (bought, browsed, enquired, went quiet), so every message has a reason to be sent.",
+        "href": "services.html#revenue",
+        "img": "rt/data.jpg"
+      },
+      {
+        "k": "Welcome them properly",
+        "tag": "Onboarding flows",
+        "breaks": "An order confirmation, then silence.",
+        "why": "The first weeks decide whether someone buys again. A buyer who does not know how to use a product, or a lead who hears nothing, drifts away.",
+        "does": "We build welcome journeys on WhatsApp and email that confirm, guide and reassure, so the first experience is a good one.",
+        "href": "services.html#revenue",
+        "img": "rt/welcome.jpg"
+      },
+      {
+        "k": "Nurture the undecided",
+        "tag": "Nurture funnels",
+        "breaks": "One follow-up call, then nothing.",
+        "why": "Many enquiries are not ready on day one, in B2B and in education especially. The brand that keeps sensible contact is the one remembered.",
+        "does": "We build nurture funnels of WhatsApp, email and call reminders, triggered from your CRM, that keep each lead warm until they are ready.",
+        "href": "lead-generation.html",
+        "img": "rt/journey.jpg"
+      },
+      {
+        "k": "Bring them back to buy",
+        "tag": "Repeat and replenishment",
+        "breaks": "Waiting for customers to remember you.",
+        "why": "For products that get used up, the moment to reorder is predictable. Miss it, and the customer buys from someone else.",
+        "does": "We time reorder reminders and cross-sell messages to when a customer is likely to need the product again.",
+        "href": "d2c.html",
+        "img": "rt/replenish.jpg"
+      },
+      {
+        "k": "Win back the lapsed",
+        "tag": "Win-back and loyalty",
+        "breaks": "Treating a lapsed customer as lost.",
+        "why": "Winning a new customer costs more than reactivating one who already knows you.",
+        "does": "We run win-back offers and loyalty programmes that recognise repeat customers and give lapsed ones a reason to return.",
+        "href": "services.html#revenue",
+        "img": "rt/winback.jpg"
+      }
+    ],
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "retention is working.",
+      "note": "Read against your own costs and margin.",
+      "cards": [
+        {
+          "n": "Repeat purchase rate",
+          "d": "The share of customers who buy again."
+        },
+        {
+          "n": "Time to second order",
+          "d": "How long a new customer takes to come back."
+        },
+        {
+          "n": "LTV:CAC",
+          "d": "What a customer is worth and how fast you recover the cost of winning one."
+        },
+        {
+          "n": "Unit economics",
+          "d": "What each order leaves behind after costs."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where retention marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "D2C brands",
+          "d": "Ads, creative, conversion and retention for brands that sell direct to shoppers.",
+          "img": "d2c/packing.jpg",
+          "href": "d2c.html",
+          "link": "See D2C brands"
+        },
+        {
+          "n": "UGC and video",
+          "d": "Creator-style video made to run as ads and refreshed before it tires.",
+          "img": "ugc/shoot.jpg",
+          "href": "ugc-and-video.html",
+          "link": "See UGC and video"
+        },
+        {
+          "n": "White-label email and retention",
+          "d": "Flows and campaigns behind your brand.",
+          "img": "rt/journey.jpg",
+          "href": "/white-label/email-marketing/",
+          "link": "See white-label email and retention"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "retention marketing."
+    ],
+    "faq": [
+      {
+        "q": "What is retention marketing?",
+        "a": "Retention marketing is the work of keeping the customers and enquiries you already paid for, through timely messages on WhatsApp, email and calls and through loyalty programmes, so they buy again or complete a decision."
+      },
+      {
+        "q": "How does retention marketing work with MMC?",
+        "a": "We start from your own data, build funnels for welcome, reorder, nurture and win-back, and measure repeat purchase or lead progress every week. We adjust the flows as the numbers come in."
+      },
+      {
+        "q": "What does retention marketing cost?",
+        "a": "A monthly scope, agreed after a call. It is written down so you can see what each month covers. We do not publish a price list, because the right scope depends on your site, your market and how much you want done."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee a repeat rate, because it depends on the product, the price and the customer. We commit to well-built flows, clean measurement and honest reporting."
+      },
+      {
+        "q": "Who is retention marketing for?",
+        "a": "D2C brands that want more second orders, and B2B and education teams that need follow-up so enquiries do not go cold. Not only D2C. We work with D2C, B2B and education brands, and set the work up differently for each: D2C on contribution margin and repeat purchase, B2B on the cost of a qualified lead, education on enquiries, visits and admissions."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your store, email tool or CRM, your customer or lead data, and a view of how your team follows up today."
+      }
+    ],
+    "cta": {
+      "h2a": "Find out what your customers",
+      "h2b": "do next.",
+      "lede": "On a call, with a senior strategist. We look at what happens after the first order or enquiry."
+    },
+    "proof": {
+      "codes": [],
+      "does": "build retention for"
+    },
+    "process": {
+      "h2a": "How we build retention,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Read your data",
+          "d": "We segment customers or leads by what they bought or asked, and find where they drift away.",
+          "out": "Clear segments and the moments that lose people."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build the funnels",
+          "d": "Welcome, reorder, nurture and win-back flows over WhatsApp, email and calls, in your brand voice.",
+          "out": "Live flows, each with a single job."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Measure and refine",
+          "d": "Repeat purchase, or lead progress through each stage, is reviewed each week and the flows adjusted.",
+          "out": "A second order, or a decision, that comes sooner."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "Retention for brands with",
+      "h2b": "customers worth keeping.",
+      "good": {
+        "t": "You already have customers or leads, and repeat purchase or follow-up is weaker than it should be.",
+        "why": "Keeping a customer you paid for is cheaper than finding a new one, which helps D2C repeat rate and keeps B2B and education enquiries from going cold. For admissions, see <a href=\"/industries/education/\">education marketing</a>."
+      },
+      "not": {
+        "t": "You have no customer or lead base yet, or want mass blasts.",
+        "why": "Retention needs data to work from, and we build timed, relevant flows rather than blasts."
+      }
+    },
+    "grid": {
+      "eyebrow": "What we do",
+      "h2a": "What retention marketing",
+      "h2b": "covers.",
+      "lede": "Six flows that bring customers and enquirers back.",
+      "items": [
+        {
+          "t": "Customer data set-up",
+          "d": "Clean lists and segments so messages fit the person receiving them.",
+          "img": "rt/data.jpg",
+          "alt": "Customer data set-up"
+        },
+        {
+          "t": "Welcome flows",
+          "d": "The first emails and messages a new customer or subscriber receives.",
+          "img": "rt/welcome.jpg",
+          "alt": "Welcome flows"
+        },
+        {
+          "t": "Nurture flows",
+          "d": "Helpful follow-ups for people who browsed, enquired or abandoned a cart.",
+          "img": "rt/journey.jpg",
+          "alt": "Nurture flows"
+        },
+        {
+          "t": "Replenishment and repeat",
+          "d": "Reminders timed to when a product runs out or a course renews.",
+          "img": "rt/replenish.jpg",
+          "alt": "Replenishment and repeat"
+        },
+        {
+          "t": "Win-back",
+          "d": "Respectful outreach to customers who have gone quiet.",
+          "img": "rt/winback.jpg",
+          "alt": "Win-back"
+        },
+        {
+          "t": "Reporting",
+          "d": "Repeat purchase and revenue per customer tracked on your own data.",
+          "img": "services/retention.jpg",
+          "alt": "Reporting"
+        }
+      ]
+    },
+    "why": {
+      "eyebrow": "Why MMC",
+      "h2a": "Why brands invest in retention",
+      "h2b": "with MMC.",
+      "lede": "Winning back an existing customer usually costs less than finding a new one.",
+      "img": "rt/journey.jpg",
+      "alt": "Why brands invest in retention with MMC.",
+      "items": [
+        {
+          "t": "Email, WhatsApp and SMS together",
+          "d": "Channels are planned as one conversation, not three competing ones."
+        },
+        {
+          "t": "Segments that make sense",
+          "d": "Messages follow behaviour such as first order, second order and lapsed."
+        },
+        {
+          "t": "Consent respected",
+          "d": "Lists are built and used within the rules of each channel."
+        },
+        {
+          "t": "Works for every audience",
+          "d": "Repeat orders for D2C, renewals for B2B and re-enquiries for education."
+        }
+      ]
+    }
+  },
+  "updated": "2026-10-09"
+}

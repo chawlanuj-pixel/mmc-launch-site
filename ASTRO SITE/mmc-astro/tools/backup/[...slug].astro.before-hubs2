@@ -1,0 +1,112 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import Hero from "../components/hub/Hero.astro";
+import Answer from "../components/hub/Answer.astro";
+import Article from "../components/hub/Article.astro";
+import Stages from "../components/hub/Stages.astro";
+import LoopB from "../components/hub/LoopB.astro";
+import Numbers from "../components/hub/Numbers.astro";
+import BrandTiles from "../components/shared/BrandTiles.astro";
+import WhoFor from "../components/shared/WhoFor.astro";
+import PlatformShowcase from "../components/shared/PlatformShowcase.astro";
+import Beyond from "../components/hub/Beyond.astro";
+import AiVersion from "../components/hub/AiVersion.astro";
+import Breadcrumb from "../components/shared/Breadcrumb.astro";
+import CtaBand from "../components/shared/CtaBand.astro";
+import NumberedGrid from "../components/hub/NumberedGrid.astro";
+import WhyUs from "../components/hub/WhyUs.astro";
+import ProcessAccordion from "../components/hub/ProcessAccordion.astro";
+import TestimonialSlider from "../components/shared/TestimonialSlider.astro";
+import Faq from "../components/hub/Faq.astro";
+import FreeToolsStrip from "../components/shared/FreeToolsStrip.astro";
+import { TOOLS_FOR } from "../lib/site";
+import PreFooterCta from "../components/shared/PreFooterCta.astro";
+import LinkStrip from "../components/shared/LinkStrip.astro";
+import { guidesFor } from "../lib/links-map";
+import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
+import AnswerSpread from "../components/svc2/AnswerSpread.astro";
+import PinnedWork from "../components/svc2/PinnedWork.astro";
+import LeakDiagram from "../components/svc2/LeakDiagram.astro";
+import Proof from "../components/svc2/Proof.astro";
+import First90Days from "../components/svc2/First90Days.astro";
+import FitAndQuestions from "../components/svc2/FitAndQuestions.astro";
+import Close from "../components/svc2/Close.astro";
+import "../styles/hub-extra.css";
+import "../styles/svc2.css";
+import { fixDeep } from "../lib/links";
+import { rewriteJsonld } from "../lib/hub";
+import { GUIDES } from "../lib/guides";
+import { closingFor } from "../lib/prefooter";
+import { proofRows } from "../lib/proof";
+
+export async function getStaticPaths() {
+  const mods = import.meta.glob("../data/hubs/*.json", { eager: true, import: "default" }) as Record<string, any>;
+  return Object.values(mods).map((d) => ({
+    params: { slug: d.path.replace(/^\/|\/$/g, "") },
+    props: { d },
+  }));
+}
+const { d } = Astro.props;
+const H = fixDeep(d.hub);
+const updated: string = d.updated || "2026-10-09";
+// /guides/ card names come from the one guide catalogue (src/lib/guides.ts), never from this JSON.
+if (H.key === "guides" && Array.isArray(H.stages)) {
+  H.stages = H.stages.map((st: any) => { const g = GUIDES.find((x) => String(st.href).includes(x.slug)); return g ? { ...st, tag: g.short, href: g.href, img: st.img } : st; });
+}
+const jsonld = rewriteJsonld(d.jsonld, updated);
+const seg = d.path.replace(/^\/|\/$/g, "").split("/");
+const toolsKey = seg[0] === "industries" ? "industries-" + seg[1] : seg[seg.length - 1];
+const C = closingFor(H.key, H.cta);
+// Redesigned 7-section layout (src/components/svc2). A page uses it when src/data/svc2/<hub path with __>.json exists; otherwise the classic template renders.
+const svc2 = import.meta.glob("../data/svc2/*.json", { eager: true, import: "default" }) as Record<string, any>;
+const S2 = Object.entries(svc2).find(([k]) => k.endsWith("/" + seg.join("__") + ".json"))?.[1];
+// The brand tiles only render when at least one client carries this service; the hero "See the work" link must agree (#proof, else /work/).
+const hasProof = !!H.proof && proofRows(H.proof).length > 0;
+const hasTools = !!TOOLS_FOR[toolsKey];
+const guideCards = (H.key === "guides" || H.key === "resources" || H.key === "industries") ? [] : guidesFor(toolsKey).map((g) => ({ title: g.short, meta: g.tag, text: g.desc, href: g.href, go: "Read the guide" }));
+---
+<BaseLayout title={d.title} description={d.description} path={d.path} ogTitle={d.ogTitle} ogDescription={d.ogDescription} ogAlt={d.ogAlt} jsonld={jsonld} preloadImage={H.tiles?.[0]?.img ? "/assets/" + H.tiles[0].img : undefined}>
+  <Shell>
+    <main id="main" tabindex="-1" class={"app-main n-app" + (S2 ? " s2" : "")}>
+      <Hero H={H} proof={hasProof} />
+      {S2 ? (
+        <Fragment>
+          <AnswerSpread H={H} S={S2} jsonld={jsonld} updated={updated} source={H.key} />
+          <PinnedWork S={S2} />
+          <LeakDiagram H={H} S={S2} />
+          <Proof H={H} S={S2} />
+          <First90Days H={H} S={S2} />
+          <FitAndQuestions H={H} S={S2} />
+          <Close H={H} S={S2} source={H.key} toolsKey={toolsKey} />
+        </Fragment>
+      ) : (
+        <Fragment>
+        <Breadcrumb jsonld={jsonld} />
+        <Answer {...H.answer} />
+        <Article A={H.article} updated={updated} />
+        {H.platform ? <PlatformShowcase kind={H.platform} /> : null}
+        <NumberedGrid G={H.grid} />
+        <Stages L={H.leaks} S={H.stages} hubKey={H.key} />
+        <WhyUs W={H.why} />
+        {H.loop ? <LoopB H={H} /> : null}
+        <Numbers N={H.numbers} />
+        <ProcessAccordion A={H.accordion} P={H.process} fallbackImg={H.why?.img || H.answer?.image} fallbackAlt={H.process ? H.process.h2a + " " + H.process.h2b + " Illustrative scene." : ""} />
+        {H.who ? <WhoFor {...H.who} tone="paper" /> : null}
+        {hasProof ? <BrandTiles {...H.proof} tone="white" /> : null}
+        <TestimonialSlider />
+        <Beyond Y={H.beyond} tone="paper" />
+        <AiVersion slug={seg[seg.length - 1]} />
+        <Faq title={H.faqTitle} faq={H.faq} tone="white" />
+        <CtaBand source={H.key} img={H.tiles?.[0]?.img} alt="" />
+        {TOOLS_FOR[toolsKey] && <FreeToolsStrip page={toolsKey} bg="paper" />}
+        <LinkStrip id="read-the-method" eyebrow="Read the method" h1="Guides behind" h2="the numbers." cards={guideCards} bg={hasTools ? "paper" : "white"} all={{ href: "/guides/", label: "All guides" }} />
+        </Fragment>
+      )}
+      <PreFooterCta source={H.key} h2a={C.h2a} h2b={C.h2b} lede={C.lede} eyebrow={C.eyebrow} secondary={C.secondary} />
+    </main>
+    <StickyBookingBar source={H.key} />
+  </Shell>
+  <script>import "../scripts/hub.ts";</script>
+  {S2 && <script>import "../scripts/svc2.ts";</script>}
+</BaseLayout>

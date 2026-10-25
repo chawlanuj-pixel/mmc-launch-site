@@ -1,0 +1,269 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/strategy.jpg",
+    "pos": "50% 50%",
+    "alt": "A consultant talking with a partner at a table, notebook open.",
+    "facts": [
+      {
+        "t": "Fit before volume.",
+        "d": "Every site is scored for topic and audience before an editor hears from you."
+      },
+      {
+        "t": "A log you can pass on.",
+        "d": "Each link is recorded with date, page, anchor and status."
+      },
+      {
+        "t": "Pitched as you.",
+        "d": "Outreach goes out from an address you approve, never from ours."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label link building"
+  },
+  "work": {
+    "panel": "SerpAndAnswer",
+    "eyebrow": "The work, shown",
+    "h2a": "How a placement travels from",
+    "h2b": "target to your report.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Agree link standards before outreach starts.",
+        "d": "Relevance, site quality and anchor rules are written with you, so every placement fits what you promised the client."
+      },
+      {
+        "n": "02",
+        "t": "Send the target list for your approval.",
+        "d": "Sites are scored for topic and audience, and you can edit the list before any editor is contacted."
+      },
+      {
+        "n": "03",
+        "t": "Pitch and place under your agency's name.",
+        "d": "Pitches go from an address you approve, and content is written to the standards of the host site."
+      },
+      {
+        "n": "04",
+        "t": "Log every placement in your format.",
+        "d": "Date, page, anchor and status for each link, ready to paste into your client report."
+      },
+      {
+        "n": "05",
+        "t": "Review the link profile each month.",
+        "d": "Live links are rechecked, risky ones are flagged, and next month's targets are agreed with you."
+      }
+    ],
+    "illustrative": "Illustrative layout of search results and a placement log. Not a client account, no real figures or sites.",
+    "serp": {
+      "tabs": [
+        "Results",
+        "Mentions",
+        "Link log"
+      ],
+      "q": "project software for small agencies",
+      "others": [
+        "guide.example",
+        "reviews.example",
+        "forum.example"
+      ],
+      "youTitle": "Your client: project software for small teams",
+      "snipLabel": "Editorial mention",
+      "snip": "A trade roundup lists your client's guide among tools for small teams.",
+      "aiLabel": "Source check",
+      "ai": "Pages that trusted sites link to are easier for search and AI tools to find and name.",
+      "sources": [
+        "trade.example",
+        "news.example"
+      ],
+      "chips": [
+        "Relevant site",
+        "Natural anchor"
+      ],
+      "trackCap": "Placement log",
+      "trackSub": "Where each link stands",
+      "track": [
+        [
+          "trade-roundup.example",
+          "Live"
+        ],
+        [
+          "industry-guide.example",
+          "Live"
+        ],
+        [
+          "news-feature.example",
+          "Pending"
+        ]
+      ],
+      "okState": [
+        "Live"
+      ],
+      "foot": "Every placement logged and rechecked each month."
+    }
+  },
+  "leak": {
+    "visual": "SaSurfaceMap",
+    "variant": "geo",
+    "barLogo": "",
+    "barTitle": "Outreach chain",
+    "pinsLabel": "Five places white-label link building goes wrong",
+    "base": "From outreach to a link in your report",
+    "artLabel": "Five linked cards showing where link building goes wrong.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Targets"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Pitch"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Placement"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Anchors"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Log"
+      }
+    ],
+    "cols": [
+      {
+        "head": "Targets",
+        "lines": [
+          "Chosen by size",
+          "Not by topic"
+        ],
+        "chip": "Wrong sites",
+        "tone": "b"
+      },
+      {
+        "head": "Pitch",
+        "lines": [
+          "One template",
+          "Sent to all"
+        ],
+        "chip": "Ignored",
+        "tone": "w"
+      },
+      {
+        "head": "Placement",
+        "lines": [
+          "Weak page",
+          "Or a long list"
+        ],
+        "chip": "Little value",
+        "tone": "w"
+      },
+      {
+        "head": "Anchors",
+        "lines": [
+          "Same phrase",
+          "Again and again"
+        ],
+        "chip": "Looks forced",
+        "tone": "b"
+      },
+      {
+        "head": "Log",
+        "lines": [
+          "A loose sheet",
+          "No status"
+        ],
+        "chip": "Cannot report",
+        "tone": "w"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first link building",
+    "h2b": "client gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and link standards",
+        "d": "We sign the NDA, then agree what counts as a good site, which anchors are allowed and what we will not do.",
+        "get": "Written link standards for your client.",
+        "img": "company/call.jpg",
+        "alt": "A strategist on a headset call, notebook open beside a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot outreach batch",
+        "d": "A small batch of targets is pitched for one client, so you see the pitch, the replies and the log before you commit more.",
+        "get": "A pilot log you can show the client.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Outreach SOPs",
+        "d": "Who approves targets, how pitches are worded and how editor replies reach you are written down.",
+        "get": "A short outreach playbook.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Four colleagues around a whiteboard while one draws out a plan.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the workstream",
+        "d": "Monthly outreach runs to the agreed plan, and more clients join without extra headcount on your side.",
+        "get": "A steady authority workstream across clients.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "contact/meeting.jpg",
+    "alt": "Three colleagues leaning over a printed plan on a table.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "White-label GEO and AEO",
+        "href": "/white-label/geo-aeo/"
+      },
+      {
+        "n": "White-label content marketing",
+        "href": "/white-label/content-marketing/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

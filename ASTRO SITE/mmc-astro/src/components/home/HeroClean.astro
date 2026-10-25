@@ -1,0 +1,48 @@
+---
+// Home hero (v3): typographic and text-led. One headline, one line of proof, the booking button, three audience links
+// and a slim row of the platforms we run. No photography, no diagram. Styles: hero-clean.css (hc- prefix).
+// Swap back to the previous hero by changing the import and tag in pages/index.astro to HeroSystem.
+import "../../styles/hero-clean.css";
+import { href } from "../../lib/links";
+
+const AUDIENCES = [
+  { n: "D2C brands", h: "d2c.html" },
+  { n: "B2B companies", h: "b2b.html" },
+  { n: "Education", h: "education.html" },
+];
+const PLATFORMS = [
+  { n: "Meta", f: "meta.svg" },
+  { n: "Google", f: "google.svg" },
+  { n: "Amazon", f: "amazon.svg" },
+  { n: "Shopify", f: "shopify.svg" },
+];
+---
+<section class="hc-hero no-section-bg" id="top" aria-labelledby="hc-h1">
+  <div class="hn-wrap hc-in">
+    <h1 id="hc-h1" class="hc-h1">Performance marketing that survives the <em>P&amp;L.</em></h1>
+    <div class="hc-mid">
+      <div class="hc-copy">
+        <p class="hc-sub">Media, creative, retention and technology run by one senior team, measured on contribution margin, not on the dashboard screenshot.</p>
+        <div class="hc-cta">
+          <button class="btn btn--primary glow-btn" type="button" data-book="home-hero">
+            <span class="glow-btn__glow" aria-hidden="true"></span>
+            <span class="glow-btn__inner">Book a strategy call<span class="arrow"></span></span>
+          </button>
+          <a class="btn btn--link" href="#clients">See the work<span class="arrow"></span></a>
+        </div>
+      </div>
+      <nav class="hc-aud" aria-label="Who we work with">
+        <p class="hc-lab">Who we work with</p>
+        <ul>
+          {AUDIENCES.map((a) => <li><a href={href(a.h)}>{a.n}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>)}
+        </ul>
+      </nav>
+    </div>
+    <div class="hc-rail">
+      <p class="hc-lab">Platforms we run</p>
+      <ul>
+        {PLATFORMS.map((p) => <li><span class="hc-logo"><img src={"/assets/platforms/" + p.f} alt="" width="20" height="20" decoding="async" /></span>{p.n}</li>)}
+      </ul>
+    </div>
+  </div>
+</section>

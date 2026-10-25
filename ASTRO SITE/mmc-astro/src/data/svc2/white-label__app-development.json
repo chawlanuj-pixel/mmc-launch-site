@@ -1,0 +1,223 @@
+{
+  "_note": "svc2 copy for a white-label child page. Agency-first. Hub JSON stays the source of truth for Hero, FAQ and JSON-LD. No numbers, results, client names or quotes.",
+  "answer": {
+    "label": "In short",
+    "img": "app/decide.jpg",
+    "pos": "50% 50%",
+    "alt": "Two people comparing an app and a website on paper.",
+    "facts": [
+      {
+        "t": "You lead, we build.",
+        "d": "You hold the client, we handle design, code and release."
+      },
+      {
+        "t": "iOS and Android.",
+        "d": "Built from your client's brief with testing on real phones."
+      },
+      {
+        "t": "Code you can hand on.",
+        "d": "Documentation and ownership terms are agreed up front."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies hand their app projects to MMC"
+  },
+  "work": {
+    "panel": "AppFlow",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do on an",
+    "h2b": "app project.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Test if the client needs an app.",
+        "d": "We compare an app with a good mobile site on repeat use and phone features, and give you an honest verdict to share."
+      },
+      {
+        "n": "02",
+        "t": "Map the core journey on three screens.",
+        "d": "Home, product and reorder are joined into one path your client can approve before any code."
+      },
+      {
+        "n": "03",
+        "t": "Build, test on devices and track events.",
+        "d": "Code is built and tested on real phones, with the events your client needs to track set up from day one."
+      },
+      {
+        "n": "04",
+        "t": "Support release and the next version.",
+        "d": "Store listing, beta, review and live are handled with you, and the next release is already on the list."
+      }
+    ],
+    "illustrative": "Illustrative layout of phone screens, a build pipeline and a release train. Not a client app, no real figures."
+  },
+  "leak": {
+    "visual": "WlDeliveryLeak",
+    "barLogo": "",
+    "barTitle": "App project hand-off",
+    "pinsLabel": "Five places white-label app projects slip",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it slips and how we run it.",
+    "variant": "route",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Scope"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Journey"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Release"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Data"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Code"
+      }
+    ],
+    "cols": [
+      {
+        "glyph": "doc",
+        "head": "Scope",
+        "lines": [
+          "Brief grows each call",
+          "No written limit"
+        ],
+        "chip": "Creeping",
+        "tone": "b"
+      },
+      {
+        "glyph": "phone",
+        "head": "Journey",
+        "lines": [
+          "Never tried on a phone",
+          "Flow signed off blind"
+        ],
+        "chip": "Untested",
+        "tone": "w"
+      },
+      {
+        "glyph": "flag",
+        "head": "Release",
+        "lines": [
+          "Store review surprises",
+          "Date promised early"
+        ],
+        "chip": "Rejected",
+        "tone": "b"
+      },
+      {
+        "glyph": "chart",
+        "head": "Data",
+        "lines": [
+          "No events tracked",
+          "No way to learn"
+        ],
+        "chip": "Blind",
+        "tone": "w"
+      },
+      {
+        "glyph": "code",
+        "head": "Code",
+        "lines": [
+          "Owner unclear",
+          "No documentation"
+        ],
+        "chip": "Stuck",
+        "tone": "w"
+      }
+    ],
+    "base": "Scope, journey, build, release, handover",
+    "artLabel": "Five stations on a hand-off line showing where white-label app projects slip: scope, journey, release, data and code.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "How onboarding runs",
+    "h2a": "How we onboard you for apps,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and app scope",
+        "d": "We sign the NDA, take your client's brief and write a scope with the app-or-site decision stated.",
+        "get": "A written scope and a platform recommendation.",
+        "img": "contact/brief.jpg",
+        "alt": "A brief being read at a desk.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot prototype",
+        "d": "One core journey as a clickable prototype, tested on phones.",
+        "get": "A prototype your client can tap through.",
+        "img": "ux/test.jpg",
+        "alt": "A prototype being tested on a phone.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Write the SOPs",
+        "d": "Design handoff, build cadence, device testing and release steps are written once.",
+        "get": "A short app delivery runbook.",
+        "img": "company/onepage.jpg",
+        "alt": "A runbook being written.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale to more apps",
+        "d": "More briefs use the same flow, and we add engineers when two projects overlap.",
+        "get": "An app service you can sell more than once.",
+        "img": "careers2/team-screen.jpg",
+        "alt": "Colleagues looking at a screen together.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/whiteboard.jpg",
+    "alt": "Three people planning on a whiteboard.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label AI services",
+        "href": "/white-label/ai-services/"
+      },
+      {
+        "n": "White-label reporting",
+        "href": "/white-label/reporting/"
+      },
+      {
+        "n": "Mobile app development",
+        "href": "/services/mobile-app-development/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

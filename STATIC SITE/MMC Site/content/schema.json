@@ -1,0 +1,724 @@
+{
+ "index.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/#webpage",
+   "url": "https://www.mondaymarketing.company/",
+   "name": "Performance Marketing That Survives the P&L | MMC India",
+   "description": "Media, creative, retention and tech run by one senior team and measured on contribution margin, not the dashboard screenshot.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "primaryImageOfPage": "https://www.mondaymarketing.company/assets/og-card.jpg"
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "Organization",
+   "@id": "https://www.mondaymarketing.company/#organization",
+   "name": "Monday Marketing Company",
+   "alternateName": "MMC",
+   "url": "https://www.mondaymarketing.company/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.mondaymarketing.company/assets/logo-primary.png"
+   },
+   "image": "https://www.mondaymarketing.company/assets/og-card.jpg",
+   "description": "Monday Marketing Company is a senior-led performance marketing studio for modern consumer brands. Media, creative, retention and technology run by one team and measured on contribution margin: not dashboard ROAS.",
+   "slogan": "Design × Marketing × Technology × Content × AI",
+   "foundingDate": "2019",
+   "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 28
+   },
+   "email": "sales-in@mondaymarketing.company",
+   "telephone": "+917666309102",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park",
+    "addressLocality": "Thane",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400607",
+    "addressCountry": "IN"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "India"
+    },
+    {
+     "@type": "Country",
+     "name": "United Arab Emirates"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom"
+    },
+    {
+     "@type": "Country",
+     "name": "United States"
+    }
+   ],
+   "sameAs": [
+    "https://www.instagram.com/monday.marketing.co/",
+    "https://in.linkedin.com/company/monday-marketing-company"
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebSite",
+   "@id": "https://www.mondaymarketing.company/#website",
+   "url": "https://www.mondaymarketing.company/",
+   "name": "Monday Marketing Company",
+   "alternateName": "MMC",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ],
+ "About.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/About.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "About",
+     "item": "https://www.mondaymarketing.company/About.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/About.html#webpage",
+   "url": "https://www.mondaymarketing.company/About.html",
+   "name": "About MMC: Built for How Modern Brands Actually Grow",
+   "description": "Most teams still sell campaigns while buying behaviour has moved on. We built a growth company around five connected systems and a 27-month median tenure.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/About.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ],
+ "Our Work.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Our%20Work.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Our Work",
+     "item": "https://www.mondaymarketing.company/Our%20Work.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "CollectionPage",
+   "@id": "https://www.mondaymarketing.company/Our%20Work.html#webpage",
+   "url": "https://www.mondaymarketing.company/Our%20Work.html",
+   "name": "Our Work: Brands We Grow Across D2C, B2B and Education | MMC",
+   "description": "Read the handbooks, not the logo wall. What we shipped for each brand, why it worked and what we'd have done sooner. 27-month median tenure.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Our%20Work.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ],
+ "Careers.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Careers.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Careers",
+     "item": "https://www.mondaymarketing.company/Careers.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Careers.html#webpage",
+   "url": "https://www.mondaymarketing.company/Careers.html",
+   "name": "Careers at MMC: Senior Bands, Zero Account Managers",
+   "description": "We hire senior, pay top of market and hand you a P&L instead of a task list. A team of four, hiring across every discipline. Apply with a single page, no resume required.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Careers.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.mondaymarketing.company/Careers.html#open-roles"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "ItemList",
+   "@id": "https://www.mondaymarketing.company/Careers.html#open-roles",
+   "name": "Open roles at Monday Marketing Company",
+   "url": "https://www.mondaymarketing.company/Careers.html",
+   "numberOfItems": 8,
+   "itemListOrder": "https://schema.org/ItemListUnordered",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Senior Meta Buyer",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=senior-meta-buyer"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Google + Amazon Specialist",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=google-amazon-specialist"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Senior Art Director",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=senior-art-director"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Performance Copywriter",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=performance-copywriter"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Growth Strategist · D2C",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=growth-strategist"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "name": "Shopify Plus Engineer",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=shopify-engineer"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "name": "AI Workflow Engineer",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=ai-workflow-engineer"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "name": "Account Director · Growth",
+     "url": "https://www.mondaymarketing.company/Job%20Detail.html?role=account-director"
+    }
+   ]
+  }
+ ],
+ "Contact.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Contact.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Contact",
+     "item": "https://www.mondaymarketing.company/Contact.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "ContactPage",
+   "@id": "https://www.mondaymarketing.company/Contact.html#webpage",
+   "url": "https://www.mondaymarketing.company/Contact.html",
+   "name": "Contact MMC: Book a Strategy Call, WhatsApp or Brief",
+   "description": "Thirty minutes with a senior strategist and a straight read on the three things to fix first. No pitch. We reply inside one working day, often in four.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Contact.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "ProfessionalService",
+   "@id": "https://www.mondaymarketing.company/#localbusiness",
+   "name": "Monday Marketing Company",
+   "alternateName": "MMC",
+   "url": "https://www.mondaymarketing.company/",
+   "logo": "https://www.mondaymarketing.company/assets/logo-primary.png",
+   "image": "https://www.mondaymarketing.company/assets/og-card.jpg",
+   "telephone": "+917666309102",
+   "email": "sales-in@mondaymarketing.company",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4th Floor, Office No. 105, WeWork, Zenia Building, Hiranandani Business Park",
+    "addressLocality": "Thane",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400607",
+    "addressCountry": "IN"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "India"
+    },
+    {
+     "@type": "Country",
+     "name": "United Arab Emirates"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom"
+    },
+    {
+     "@type": "Country",
+     "name": "United States"
+    }
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "10:00",
+     "closes": "19:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Saturday"
+     ],
+     "opens": "10:00",
+     "closes": "14:00"
+    }
+   ],
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "sales",
+     "email": "sales-in@mondaymarketing.company",
+     "telephone": "+919619472727",
+     "availableLanguage": "en",
+     "areaServed": "IN"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "human resources",
+     "email": "hr@mondaymarketing.company",
+     "availableLanguage": "en"
+    }
+   ],
+   "sameAs": [
+    "https://www.instagram.com/monday.marketing.co/",
+    "https://in.linkedin.com/company/monday-marketing-company"
+   ],
+   "parentOrganization": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ],
+ "Job Detail.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Job%20Detail.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Careers",
+     "item": "https://www.mondaymarketing.company/Careers.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Senior Meta Buyer",
+     "item": "https://www.mondaymarketing.company/Job%20Detail.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Job%20Detail.html#webpage",
+   "url": "https://www.mondaymarketing.company/Job%20Detail.html",
+   "name": "Senior Meta Buyer, Mumbai & Bengaluru | MMC Careers",
+   "description": "Own ₹50L+ of monthly Meta spend across three D2C accounts, brief 60+ creatives a month and report straight to founders. Senior band, ₹24L to ₹38L OTE.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Job%20Detail.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en"
+  }
+ ],
+ "Privacy.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Privacy.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Privacy Policy",
+     "item": "https://www.mondaymarketing.company/Privacy.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Privacy.html#webpage",
+   "url": "https://www.mondaymarketing.company/Privacy.html",
+   "name": "Privacy Policy: What Data We Collect and Your Rights",
+   "description": "We collect the minimum needed to run this site and our retainers, and we have never sold data. Access, correction and deletion honoured in 30 days.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Privacy.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ],
+ "Terms.html": [
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "@id": "https://www.mondaymarketing.company/Terms.html#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.mondaymarketing.company/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Terms & Conditions",
+     "item": "https://www.mondaymarketing.company/Terms.html"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "WebPage",
+   "@id": "https://www.mondaymarketing.company/Terms.html#webpage",
+   "url": "https://www.mondaymarketing.company/Terms.html",
+   "name": "Terms & Conditions: Site Use, IP and Liability | MMC",
+   "description": "The agreement between MMC and anyone using this site: what you accept on arrival, who owns the content, the limits of our liability and the governing law.",
+   "isPartOf": {
+    "@id": "https://www.mondaymarketing.company/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://www.mondaymarketing.company/Terms.html#breadcrumb"
+   },
+   "publisher": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   },
+   "inLanguage": "en",
+   "about": {
+    "@id": "https://www.mondaymarketing.company/#organization"
+   }
+  }
+ ],
+ "_report": {
+  "index.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage",
+    "Organization",
+    "WebSite"
+   ],
+   "omitted": [
+    "WebSite.potentialAction (SearchAction): no search endpoint exists in the repo. The only search UI is the client-side glossary filter in tools/Glossary.jsx, which has no query URL.",
+    "Organization.aggregateRating / review / award: none published anywhere in the repo.",
+    "Organization.founder / employee: no named people in the repo.",
+    "Organization.vatID / taxID / legalName: not stated anywhere."
+   ],
+   "notes": [
+    "index.html already carries three legacy JSON-LD blocks. Remove them when injecting these, or the page ends up with two Organization nodes.",
+    "The legacy Organization block states addressLocality 'Bengaluru'. Every address source in the repo (Footer.jsx 'Thane · Mumbai · Maharashtra', Menu.jsx 'Est. 2019 · Thane', contact/CtPage.jsx HQ block) says Thane. Bengaluru is listed in CtPage.jsx only as a satellite team. This file uses Thane.",
+    "The legacy WebSite block declares a SearchAction whose target is tools.html, which is not a search endpoint. That SearchAction is fabricated and is not reproduced here.",
+    "foundingDate 2019 from Footer.jsx 'Quietly outperforming, since 2019.' and Menu.jsx 'Est. 2019 · Thane'. numberOfEmployees 28 from careers/CrPage.jsx '28 people'."
+   ]
+  },
+  "About.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage"
+   ],
+   "omitted": [
+    "AboutPage subtype not used: spec asked for a WebPage node.",
+    "Organization.founder / employee / member: about/*.jsx names no individual people.",
+    "Organization node not repeated here, it is referenced by @id from the homepage node."
+   ]
+  },
+  "Our Work.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "CollectionPage"
+   ],
+   "omitted": [
+    "ItemList of the 12 brands in work/WorkGrid.jsx: only one of them resolves to a real page (Brand Handbook.html). The rest link to Our Work.html#slug anchors, so listing them as ListItems would publish URLs that do not exist.",
+    "The per-brand result tags (ROAS, revenue, traffic figures) are not restated as structured data. They are marketing copy on the page with no schema.org property that fits, and restating them as machine-readable claims is exactly what the no-invented-results rule guards against.",
+    "aggregateRating / review: none published."
+   ]
+  },
+  "Brand Handbook.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage",
+    "Article"
+   ],
+   "omitted": [
+    "datePublished / dateModified: no publication date anywhere on the page or in handbook/*.jsx. 'Q4 2024 – Q1 2026' in HbHero.jsx is the engagement window, not a publish date.",
+    "author as a Person: no byline on the page, so author falls back to the Organization.",
+    "wordCount / timeRequired: not stated.",
+    "The four hero figures (11.8× blended ROAS D90, 78% D90 retention, ₹24.6Cr net revenue over 12mo, +587% YoY) are carried in 'abstract' because schema.org has no property for standalone result figures. They are quoted from handbook/HbHero.jsx, not computed or extrapolated."
+   ]
+  },
+  "Careers.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage",
+    "ItemList (8 roles from careers/CrPage.jsx)"
+   ],
+   "omitted": [
+    "JobPosting nodes for each role: JobPosting needs datePosted and validThrough, and neither exists anywhere in careers/CrPage.jsx or job/JdPage.jsx. Emitting them without a date would be inventing the field, so each ListItem carries name and url only.",
+    "baseSalary: only job/JdPage.jsx carries a band, and only for some roles. Left out rather than emitted for a subset.",
+    "Department, location, workMode and employment type per role are in CrPage.jsx but have no home on a bare ListItem, and belong on the JobPosting that cannot be dated."
+   ],
+   "notes": [
+    "careers/CrPage.jsx defines 8 roles and renders {roles.length}, so the live page shows 8. The baked prerender in Careers.html and the meta description still say '6 open roles'. This file follows the source array (8). Worth reconciling the copy."
+   ]
+  },
+  "Contact.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "ContactPage",
+    "ProfessionalService"
+   ],
+   "omitted": [
+    "priceRange: no pricing published anywhere.",
+    "aggregateRating / review: none published.",
+    "geo coordinates / hasMap: contact/CtPage.jsx links to a bare https://maps.app.goo.gl/ with no place id, so there is no real map URL or lat/long to cite.",
+    "The Bengaluru, Dubai, London and New York satellite teams are not emitted as separate LocalBusiness branches: CtPage.jsx gives them no address, phone or hours."
+   ],
+   "notes": [
+    "The ProfessionalService uses the same @id as the homepage Organization on purpose. ProfessionalService is a subtype of Organization, so it is the same entity described in more detail, not a second company.",
+    "telephone and addressLocality come from Footer.jsx (tel:+917666309102, 'Thane · Mumbai · Maharashtra'). Street, postcode and hours come from contact/CtPage.jsx. The +919619472727 contactPoint is the WhatsApp number from the same file."
+   ]
+  },
+  "Insights.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage"
+   ],
+   "omitted": [
+    "Blog / ItemList of BlogPosting: every one of the 8 posts in insights/InFeed.jsx links to href='#article'. None has a real URL, so there is nothing to point a BlogPosting at.",
+    "datePublished per post: the dates exist in InFeed.jsx but are useless without an article URL to attach them to."
+   ]
+  },
+  "Job Detail.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage"
+   ],
+   "omitted": [
+    "JobPosting: needs datePosted and validThrough, neither of which exists in job/JdPage.jsx. Also this is one template page serving every role through a ?role= query string, so a single baked JobPosting in <head> would describe the wrong job for 7 of the 8 links.",
+    "baseSalary: the page states a band but the JobPosting it would hang off cannot be emitted.",
+    "The breadcrumb leaf uses the default role, Senior Meta Buyer, which is what the canonical URL and the baked <title> resolve to."
+   ]
+  },
+  "Service Detail.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage",
+    "Service"
+   ],
+   "omitted": [
+    "FAQPage: this page has no FAQ component.",
+    "Offer / price: service-detail/SdPackages.jsx names packages but publishes no prices.",
+    "This is a template page reused for several sub-services. The Service node describes Meta Ads, which is what the canonical URL, the baked <title> and the SdHero.jsx breadcrumb resolve to."
+   ]
+  },
+  "Privacy.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage"
+   ],
+   "omitted": [
+    "dateModified: legal/LegalPage.jsx carries no last-updated date."
+   ]
+  },
+  "Terms.html": {
+   "emitted": [
+    "BreadcrumbList",
+    "WebPage"
+   ],
+   "omitted": [
+    "dateModified: legal/LegalPage.jsx carries no last-updated date."
+   ]
+  },
+  "_global": {
+   "origin": "https://www.mondaymarketing.company/",
+   "pages_covered": 26,
+   "faq_pairs_emitted": 105,
+   "shared_ids": {
+    "organization": "https://www.mondaymarketing.company/#organization",
+    "website": "https://www.mondaymarketing.company/#website",
+    "per_page": "<pageUrl>#breadcrumb, <pageUrl>#webpage, <pageUrl>#service, <pageUrl>#faq, <pageUrl>#article, <pageUrl>#open-roles"
+   },
+   "not_covered": [
+    "home-classic.html and home-v1.html: both are Disallow'd in robots.txt as duplicate homepage variants, so structured data on them would only compete with index.html.",
+    "tools.html, the 6 calculators and d2c-marketing-glossary.html: these already ship BreadcrumbList plus WebApplication / DefinedTermSet / FAQPage. Untouched. They could later be pointed at the shared Organization @id, which they currently are not.",
+    "admin/: noindex."
+   ],
+   "source_conflicts_found": [
+    "Brand count: index.html meta description says '24 brands', Our Work.html and Menu.jsx say '14 brands'. Neither number is emitted as structured data. The homepage WebPage.description quotes its own meta verbatim, so it carries the 24 as-is.",
+    "Open roles: careers/CrPage.jsx defines 8 roles and renders {roles.length}. The baked prerender in Careers.html and the Careers meta description still say 6. The ItemList follows the source array (8).",
+    "Locality: the legacy Organization block in index.html says Bengaluru. Footer.jsx, Menu.jsx and contact/CtPage.jsx all say Thane. This file uses Thane and treats Bengaluru as a satellite team, which is how CtPage.jsx describes it.",
+    "Our Work.html links a client to Brand Handbook.html, but the handbook itself is DeoBar Skin Co. The Article node describes DeoBar, which is what the page actually contains."
+   ],
+   "injection_notes": [
+    "Each value is an array of complete, standalone JSON-LD objects, each with its own @context. Emit one <script type=\"application/ld+json\"> per object, or wrap the array in a single script tag. Both parse.",
+    "Nodes are cross-linked by @id, so the order within each array does not matter.",
+    "Do not hand-edit inside the <!--prerender--> markers. These belong in <head>, above or beside the existing meta tags."
+   ],
+   "site_wide_omissions": [
+    "aggregateRating, reviewCount, review: no ratings or reviews are published anywhere in the repo.",
+    "Offer, price, priceRange, priceSpecification: no pricing is published anywhere.",
+    "award: none published.",
+    "SearchAction: no search endpoint exists. tools/Glossary.jsx filters client side with no query URL.",
+    "founder, employee, Person nodes: the repo names no individuals.",
+    "datePublished / dateModified: no page in scope carries a publication or revision date."
+   ]
+  }
+ }
+}

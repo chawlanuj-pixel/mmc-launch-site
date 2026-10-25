@@ -1,0 +1,299 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "ugc/shoot.jpg",
+    "pos": "50% 50%",
+    "alt": "A creator showing a small product box to a phone on a tripod.",
+    "facts": [
+      {
+        "t": "Parent-first.",
+        "d": "Messages for the buyer, with safety and quality made clear."
+      },
+      {
+        "t": "Gifting built in.",
+        "d": "Gift-ready pages, packs and seasonal plans."
+      },
+      {
+        "t": "Grows with the child.",
+        "d": "Flows that suggest the next size or stage."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why baby and kids brands choose MMC"
+  },
+  "work": {
+    "panel": "BabyGiftHub",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "baby or kids brand.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Answer the parent's question at search.",
+        "d": "Age-by-age guides cover what to buy and what to skip, so your brand makes the shortlist."
+      },
+      {
+        "n": "02",
+        "t": "Put documented safety on the page.",
+        "d": "Materials, testing and care are shown only where we hold the proof. Claims we cannot document stay out."
+      },
+      {
+        "n": "03",
+        "t": "Build a gift hub ahead of the peak.",
+        "d": "Gift-ready packs, a message card and a clear ship-by date are planned before birthdays and festivals."
+      },
+      {
+        "n": "04",
+        "t": "Shorten checkout for a parent in a hurry.",
+        "d": "Size help by age, quick payment and no forced account stop a short shopping window ending in an abandoned cart."
+      },
+      {
+        "n": "05",
+        "t": "Follow the child through each stage.",
+        "d": "Flows by age stage and past purchase suggest the next size before the child outgrows the last."
+      }
+    ],
+    "illustrative": "Illustrative layout of a parent buying path. Not a client brand, no real figures."
+  },
+  "leak": {
+    "visual": "IndLeakBoard",
+    "barLogo": "",
+    "barTitle": "A parent's path",
+    "pinsLabel": "Five places a baby or kids brand loses a parent",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Search"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Safety"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Gifting"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Checkout"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Next stage"
+      }
+    ],
+    "base": "From the first question to the next size",
+    "artLabel": "Five cards: a search with no answer, a claim with no proof, no gift pack, a checkout that asks too much and a buyer lost when the child grows.",
+    "accent": "#0E9AA7",
+    "cols": [
+      {
+        "head": "Search",
+        "k": "search",
+        "rows": [
+          {
+            "t": "what for a newborn bath"
+          },
+          {
+            "t": "Marketplace answers first",
+            "s": "dim"
+          },
+          {
+            "t": "You: not listed",
+            "s": "bad"
+          }
+        ],
+        "chip": "Missing at search",
+        "tone": "b"
+      },
+      {
+        "head": "Safety",
+        "k": "list",
+        "rows": [
+          {
+            "t": "Gentle and safe",
+            "s": "warn"
+          },
+          {
+            "t": "No material named",
+            "s": "bad"
+          },
+          {
+            "t": "No test on file",
+            "s": "bad"
+          }
+        ],
+        "chip": "Claim, no proof",
+        "tone": "b"
+      },
+      {
+        "head": "Gifting",
+        "k": "tiles",
+        "rows": [
+          {
+            "t": "Same page as always",
+            "s": "dim"
+          },
+          {
+            "t": "No gift pack",
+            "s": "bad"
+          },
+          {
+            "t": "No message card",
+            "s": "bad"
+          },
+          {
+            "t": "Ships too late",
+            "s": "warn"
+          }
+        ],
+        "chip": "Gifting missed",
+        "tone": "w"
+      },
+      {
+        "head": "Checkout",
+        "k": "form",
+        "rows": [
+          {
+            "t": "Name"
+          },
+          {
+            "t": "Address"
+          },
+          {
+            "t": "Create an account",
+            "s": "dim"
+          },
+          {
+            "t": "Size? No help",
+            "s": "bad"
+          }
+        ],
+        "chip": "Cart left behind",
+        "tone": "b"
+      },
+      {
+        "head": "Stage",
+        "k": "bars",
+        "rows": [
+          {
+            "t": "First purchase",
+            "s": "ok",
+            "w": 100
+          },
+          {
+            "t": "Next size, no reminder",
+            "s": "warn",
+            "w": 36
+          },
+          {
+            "t": "Next stage lost",
+            "s": "bad",
+            "w": 12
+          }
+        ],
+        "chip": "Outgrown, gone",
+        "tone": "w"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the baby and kids",
+    "h2b": "brands we market.",
+    "tiles": [
+      {
+        "id": "awwbaby",
+        "line": "A baby and kids store: category pages, product pages and social creative from one team."
+      },
+      {
+        "id": "sprnt",
+        "line": "Kids' activewear: the ad and the product page tell one story."
+      },
+      {
+        "id": "vagakids",
+        "line": "Kids' charm clogs: storefront, creative and ads for one range."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a baby or kids brand,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Read the numbers",
+        "d": "We review economics, returns, tracking and creative, and list the trust proof you hold.",
+        "get": "A plan built on margin.",
+        "img": "company/performance.jpg",
+        "alt": "An analyst reading two dashboards.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Build trust with parents",
+        "d": "Parent-led creative and documented proof go onto pages and into ads.",
+        "get": "Pages and creative parents trust.",
+        "img": "ugc/edit.jpg",
+        "alt": "An editor cutting a short video on a monitor.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Plan the gifting calendar",
+        "d": "Gift hubs, packs and campaign dates are set ahead of each peak.",
+        "get": "A gifting calendar.",
+        "img": "ugc/refresh.jpg",
+        "alt": "A wall of weekly creative planned in rows.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Add stage retention",
+        "d": "Flows by age stage start and media follows margin.",
+        "get": "A funnel that grows with the child.",
+        "img": "company/whiteboard.jpg",
+        "alt": "Three people planning flows at a whiteboard.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Retention marketing",
+        "href": "/services/retention-marketing/"
+      },
+      {
+        "n": "Performance marketing",
+        "href": "/services/performance-marketing/"
+      },
+      {
+        "n": "CRO",
+        "href": "/services/cro/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

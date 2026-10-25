@@ -1,0 +1,46 @@
+---
+// 6. Fit and questions: 5/7 split. Left: good fit / not a fit as two big statements. Right: the six FAQ questions as <details>, first
+// open. The FAQPage JSON-LD is emitted by the page from the same hub data, so it is identical to the live page.
+// `agency` (direct service pages with a white-label twin, src/lib/whitelabel.ts): one "Are you an agency?" line under "Not a fit".
+import { AGENCY_LINE } from "../../lib/whitelabel";
+interface Props { H: any; S: any; agency?: { href: string; anchor: string } }
+const { H, S, agency } = Astro.props as Props;
+const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+const F = S.fit, W = H.who;
+---
+<section class="s2-band s2-band--white s2-fit" id="faq" aria-labelledby="s2-fit-h">
+  <div class="s2-wrap s2-fit__grid">
+    <div class="s2-fit__l">
+      <h2 class="s2-h2 s2-h2--sm" id="s2-fit-h">{W.h2a} <em>{W.h2b}</em></h2>
+      <div class="s2-say s2-say--yes">
+        <p class="s2-say__lbl"><span class="s2-say__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500" /></svg></span>{F.goodLabel}</p>
+        <p class="s2-say__t">{W.good.t}</p>
+        <p class="s2-say__w" set:html={W.good.why} />
+      </div>
+      <div class="s2-say s2-say--no">
+        <p class="s2-say__lbl"><span class="s2-say__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" /></svg></span>{F.notLabel}</p>
+        <p class="s2-say__t">{W.not.t}</p>
+        <p class="s2-say__w" set:html={W.not.why} />
+        {agency && <p class="s2-say__w s2-say__agency">{AGENCY_LINE.lead} {AGENCY_LINE.see} <a class="s2-link" href={agency.href}>{agency.anchor}<Fragment set:html={arrow} /></a></p>}
+      </div>
+    </div>
+    <div class="s2-fit__r">
+      <p class="s2-eyebrow">{F.faqLabel}</p>
+      <h2 class="s2-h2 s2-h2--sm">{H.faqTitle[0]} <em>{H.faqTitle[1]}</em></h2>
+      <div class="s2-faq">
+        {H.faq.map((f: any, k: number) => (
+          <details open={k === 0}>
+            <summary><span>{f.q}</span><i aria-hidden="true"></i></summary>
+            <div class="s2-faq__a"><p set:html={f.a} /></div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+<style is:global>
+  /* "Are you an agency?" line: the link flows inside the sentence (inline, not an inline-flex block), so a narrow column wraps the
+     words instead of dropping the whole link under "See". Vertical padding keeps a tall hit area without changing the line height. */
+  .s2-say__agency .s2-link { display: inline; min-height: 0; padding-block: 12px; font-size: inherit; }
+  .s2-say__agency .s2-link svg { display: inline-block; vertical-align: -3px; margin-left: 6px; }
+</style>

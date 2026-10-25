@@ -1,0 +1,417 @@
+{
+  "file": "b2b.html",
+  "path": "/industries/b2b/",
+  "key": "b2b",
+  "title": "B2B Lead Generation Agency India | MMC",
+  "description": "B2B lead generation agency in India: websites, creative and paid media with CRM and Meta CAPI tracking, so leads are judged on quality, not volume.",
+  "ogTitle": "Marketing for B2B companies in India",
+  "ogDescription": "Lead generation, websites and creative judged on the cost of a qualified lead.",
+  "ogAlt": "Monday Marketing Company: marketing for b2b companies in india.",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mondaymarketing.company/b2b.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.mondaymarketing.company/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "B2B companies",
+          "item": "https://www.mondaymarketing.company/b2b.html"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.mondaymarketing.company/b2b.html#webpage",
+      "url": "https://www.mondaymarketing.company/b2b.html",
+      "name": "B2B Lead Generation Agency India | MMC",
+      "description": "B2B lead generation agency in India: websites, creative and paid media with CRM and Meta CAPI tracking, so leads are judged on quality, not volume.",
+      "isPartOf": {
+        "@id": "https://www.mondaymarketing.company/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.mondaymarketing.company/b2b.html#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://www.mondaymarketing.company/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://www.mondaymarketing.company/b2b.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is B2B marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "B2B marketing wins business from other businesses. Sales cycles are longer, several people take part in the decision, and the goal is a qualified lead and then pipeline, not a basket."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does B2B marketing work with MMC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We define a qualified lead with your sales team, build a site and landing pages that answer a buying group, connect your CRM and Meta CAPI, and optimise on cost per qualified lead every week. B2B cycles are long, so we plan for several touchpoints. Offers and qualifying questions aim at decision-makers rather than students or job seekers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does B2B marketing cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scoped after a call. Your ad spend is paid to the platforms and sits outside our fee. Our fee covers the strategy, the landing pages, the CRM and CAPI tracking and the weekly optimisation, and we quote it once we know your funnel and your CRM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you guarantee results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We cannot guarantee leads, meetings or pipeline, because buyers decide on their own timeline and your follow-up matters as much as the ad. We commit to a clear definition of a qualified lead, accurate tracking and honest reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is B2B marketing for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "B2B companies, led by founders, MDs and sales or marketing heads. Not only B2B: we also work with D2C and education brands, set up differently for each. Tell us what you sell and we will say which approach fits. See the D2C and education pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do you need from us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to your ad accounts and CRM, a written view from sales of what a qualified lead is, your offer and case material, and someone who follows up quickly."
+          }
+        }
+      ]
+    }
+  ],
+  "hub": {
+    "key": "b2b",
+    "wm": "B2B",
+    "eyebrow": "● B2B companies",
+    "h1": [
+      "B2B marketing",
+      [
+        "that ",
+        "brings in qualified leads",
+        "."
+      ]
+    ],
+    "sub": "Lead generation, websites and creative that bring in decision-maker enquiries, judged on what a lead costs once your sales team accepts it.",
+    "tiles": [
+      {
+        "img": "b2b/call.jpg",
+        "pos": "60% 50%",
+        "label": "The sales call",
+        "note": "Where a lead becomes a conversation"
+      },
+      {
+        "img": "b2b/casestudy.jpg",
+        "pos": "50% 50%",
+        "label": "Proof",
+        "note": "Case studies and capability decks"
+      },
+      {
+        "img": "shared/b2b.jpg",
+        "pos": "50% 50%",
+        "label": "The buying committee",
+        "note": "Several people decide"
+      },
+      {
+        "img": "b2b/seminar.jpg",
+        "pos": "50% 50%",
+        "label": "Events",
+        "note": "Seminars and webinars"
+      }
+    ],
+    "answer": {
+      "label": "In short",
+      "lead": "B2B marketing wins business from other businesses. Sales cycles are longer, several people take part in the decision, and the goal is a qualified lead rather than a basket. MMC builds the website, creative and paid media for B2B companies in India, and optimises every week on the cost per qualified lead, agreed with your sales team.",
+      "hl": "a qualified lead",
+      "who": "Monday Marketing Company (MMC) builds the website, creative and paid media for B2B companies in India.",
+      "points": [
+        {
+          "icon": "window",
+          "title": "Built for a group decision",
+          "text": "Website, creative and paid media for a purchase that takes longer and involves several people."
+        },
+        {
+          "icon": "link",
+          "title": "Connect the CRM",
+          "text": "Leads go to a CRM and Meta's Conversions API (CAPI), so campaigns learn from the leads sales accepts."
+        },
+        {
+          "icon": "gauge",
+          "title": "Measure the qualified lead",
+          "text": "The work is measured by the cost of a qualified lead."
+        }
+      ],
+      "image": "b2b/seminar.jpg",
+      "chip": "Measured by cost of a qualified lead"
+    },
+    "leaks": {
+      "style": "stack",
+      "eyebrow": "Where B2B leads go missing",
+      "h2a": "Five places a buyer slips away.",
+      "h2b": "Five services that stop it.",
+      "lede": "A B2B sale takes several people and several weeks. Each stage below is a moment where a buyer can go quiet, and the service that keeps the conversation going."
+    },
+    "stages": [
+      {
+        "k": "Get found",
+        "tag": "Search and paid media",
+        "breaks": "A buyer searches for the problem and finds your competitors.",
+        "why": "B2B buyers research alone before they contact any supplier, and shortlist from what they find. If you are not there while the problem is live, you are not on the list.",
+        "does": "We aim search and paid media at the queries buyers type when the problem is live, and build the SEO that earns visibility between campaigns.",
+        "href": "services.html#organic",
+        "img": "b2b/found.jpg"
+      },
+      {
+        "k": "Explain",
+        "tag": "Website development",
+        "breaks": "The site lists services but never says why you are the safer choice.",
+        "why": "A B2B purchase involves several people and real risk. Each needs proof they can forward: case studies, capabilities and answers to their objections.",
+        "does": "We build websites, case studies and creative that answer a whole buying committee, not just the first visitor.",
+        "href": "services.html#tech",
+        "img": "b2b/explain.jpg"
+      },
+      {
+        "k": "Capture",
+        "tag": "Conversion and landing pages",
+        "breaks": "A contact page with a long form and no clear next step.",
+        "why": "Interested buyers rarely fill a long form for an unknown supplier. They want a demo, a call or a sample with little effort.",
+        "does": "We build landing pages and short forms around one next step, such as a demo or a call, and test them so more of your traffic becomes enquiries.",
+        "href": "services.html#organic",
+        "img": "b2b/capture.jpg"
+      },
+      {
+        "k": "Qualify",
+        "tag": "Lead generation, CRM and Meta CAPI",
+        "breaks": "Sales says the leads are poor, and marketing cannot show why.",
+        "why": "Optimised on form fills, platforms learn to find the cheapest enquiries, not the ones sales accepts. Volume rises while pipeline quality falls.",
+        "does": "We connect leads to your CRM and send the qualified, meeting-booked and won stages back to Meta through the Conversions API (CAPI), so campaigns learn what a good lead looks like.",
+        "href": "#quality",
+        "img": "b2b/qualify.jpg"
+      },
+      {
+        "k": "Follow up",
+        "tag": "Retention marketing",
+        "breaks": "Leads go cold because nobody follows up in the first day, or after.",
+        "why": "B2B sales cycles are long. Most leads are not ready at first contact, and the supplier who keeps sensible contact is the one remembered when budget frees up.",
+        "does": "We build retention funnels of CRM-triggered email and WhatsApp follow-ups that keep a lead warm until sales is ready.",
+        "href": "services.html#revenue",
+        "img": "b2b/followup.jpg"
+      }
+    ],
+    "loop": {
+      "variant": "b",
+      "img": "b2b/qualify.jpg",
+      "imgCaption": "Your CRM, feeding Meta",
+      "eyebrow": "Lead quality",
+      "h2a": "How CRM and Meta CAPI make leads",
+      "h2b": "better.",
+      "lede": "A form fill tells Meta that someone showed interest, not that they were a good lead. Your CRM knows what happened next. The Conversions API (CAPI) carries that back to Meta.",
+      "steps": [
+        {
+          "k": "The lead arrives",
+          "d": "An ad brings a form fill or an enquiry.",
+          "chip": "A form fill"
+        },
+        {
+          "k": "Your CRM records what happens",
+          "d": "Sales marks it qualified, meeting booked, proposal sent or won.",
+          "chip": "Qualified · Meeting · Won"
+        },
+        {
+          "k": "CAPI sends the stage to Meta",
+          "d": "The stage goes back to Meta as a server-side event, not a browser guess.",
+          "chip": "Server-side event"
+        },
+        {
+          "k": "Meta learns your best leads",
+          "d": "The platform stops chasing cheap form fills and finds more people like the ones sales accepted.",
+          "chip": "Better targeting"
+        }
+      ],
+      "returnLabel": "The next ads find more leads like the good ones",
+      "without": {
+        "t": "Optimised for form fills",
+        "d": "The platform sees only that a form was submitted. It finds whoever fills forms cheapest, and sales spends its week on leads that never fit."
+      },
+      "with": {
+        "t": "Optimised for qualified leads",
+        "d": "The platform sees which leads sales accepted and which became customers. Spend moves toward that kind of buyer, and the cost of a qualified lead becomes the number to watch."
+      }
+    },
+    "numbers": {
+      "eyebrow": "What we read",
+      "h2a": "Four numbers that show whether",
+      "h2b": "B2B marketing is working.",
+      "note": "Read against your own sales data.",
+      "cards": [
+        {
+          "n": "Cost per qualified lead",
+          "d": "What you pay for a lead that sales accepts, not for any form fill."
+        },
+        {
+          "n": "Lead-to-customer rate",
+          "d": "The share of qualified leads that become customers."
+        },
+        {
+          "n": "CAC runway",
+          "d": "How long spend runs before new customers pay it back."
+        },
+        {
+          "n": "LTV:CAC",
+          "d": "What a customer is worth and how fast you recover the cost of winning one."
+        }
+      ]
+    },
+    "beyond": {
+      "eyebrow": "Related",
+      "h2a": "See where B2B marketing fits in",
+      "h2b": "the wider picture.",
+      "cards": [
+        {
+          "n": "Lead generation",
+          "d": "Paid media, landing pages and follow-up funnels connected to your CRM.",
+          "img": "b2b/qualify.jpg",
+          "href": "lead-generation.html",
+          "link": "See Lead generation"
+        },
+        {
+          "n": "Website development",
+          "d": "Fast, search-ready websites connected to your CRM.",
+          "img": "web/build.jpg",
+          "href": "web-development.html",
+          "link": "See Website development"
+        },
+        {
+          "n": "D2C brands",
+          "d": "Ads, creative, conversion and retention for brands that sell direct to shoppers.",
+          "img": "d2c/packing.jpg",
+          "href": "d2c.html",
+          "link": "See D2C brands"
+        },
+        {
+          "n": "Manufacturing",
+          "d": "Search, proof and quote funnels for manufacturers and suppliers.",
+          "img": "b2b/found.jpg",
+          "href": "/industries/b2b/manufacturing/",
+          "link": "See Manufacturing marketing"
+        },
+        {
+          "n": "SaaS and software",
+          "d": "Search, funnels and CRM signals for trial-led software buyers.",
+          "img": "b2b/qualify.jpg",
+          "href": "/industries/b2b/saas-and-software/",
+          "link": "See SaaS and software marketing"
+        },
+        {
+          "n": "AI SEO",
+          "d": "One plan for being found and recommended across classic and AI search.",
+          "img": "seo/aeo.jpg",
+          "href": "/services/seo/ai-seo/",
+          "link": "See AI SEO"
+        }
+      ]
+    },
+    "faqTitle": [
+      "Questions about",
+      "B2B marketing."
+    ],
+    "faq": [
+      {
+        "q": "What is B2B marketing?",
+        "a": "B2B marketing wins business from other businesses. Sales cycles are longer, several people take part in the decision, and the goal is a qualified lead and then pipeline, not a basket."
+      },
+      {
+        "q": "How does B2B marketing work with MMC?",
+        "a": "We define a qualified lead with your sales team, build a site and landing pages that answer a buying group, connect your CRM and Meta CAPI, and optimise on cost per qualified lead every week. B2B cycles are long, so we plan for several touchpoints. Offers and qualifying questions aim at decision-makers rather than students or job seekers."
+      },
+      {
+        "q": "What does B2B marketing cost?",
+        "a": "Scoped after a call. Your ad spend is paid to the platforms and sits outside our fee. Our fee covers the strategy, the landing pages, the CRM and CAPI tracking and the weekly optimisation, and we quote it once we know your funnel and your CRM."
+      },
+      {
+        "q": "Do you guarantee results?",
+        "a": "No. We cannot guarantee leads, meetings or pipeline, because buyers decide on their own timeline and your follow-up matters as much as the ad. We commit to a clear definition of a qualified lead, accurate tracking and honest reporting."
+      },
+      {
+        "q": "Who is B2B marketing for?",
+        "a": "B2B companies, led by founders, MDs and sales or marketing heads. Not only B2B: we also work with D2C and education brands, set up differently for each. Tell us what you sell and we will say which approach fits. See the <a href=\"d2c.html\">D2C</a> and <a href=\"education.html\">education</a> pages."
+      },
+      {
+        "q": "What do you need from us?",
+        "a": "Access to your ad accounts and CRM, a written view from sales of what a qualified lead is, your offer and case material, and someone who follows up quickly."
+      }
+    ],
+    "cta": {
+      "h2a": "Find what a qualified lead",
+      "h2b": "really costs.",
+      "lede": "On a call, with a senior strategist. We read your campaigns against what a customer is worth to you."
+    },
+    "proof": {
+      "ids": [
+        "nmc",
+        "skyfling",
+        "bloom",
+        "sprouts"
+      ],
+      "does": "work with"
+    },
+    "process": {
+      "h2a": "How we run B2B marketing,",
+      "h2b": "step by step.",
+      "note": "The days show the order of the work, not a promise of results. What we find in your account decides how long each part takes.",
+      "steps": [
+        {
+          "when": "Days 1 to 30",
+          "t": "Define the buyer and the lead",
+          "d": "We agree who the decision-makers are and what a qualified lead is with sales, then audit your site, forms and CRM.",
+          "out": "One written definition of a qualified lead."
+        },
+        {
+          "when": "Days 31 to 60",
+          "t": "Build the path",
+          "d": "A site that answers a buying group, short forms around one next step, and CRM stages passed back to Meta through CAPI.",
+          "out": "A path from search or ad to a booked call."
+        },
+        {
+          "when": "Days 61 to 90",
+          "t": "Run, qualify and follow up",
+          "d": "Campaigns are optimised on cost per qualified lead, and follow-up keeps slower leads warm.",
+          "out": "A cost per qualified lead and a pipeline view you can check."
+        }
+      ]
+    },
+    "who": {
+      "h2a": "B2B marketing for teams that",
+      "h2b": "want pipeline, not likes.",
+      "good": {
+        "t": "You are a founder, MD or sales or marketing head with leads that are junk, growth that is mostly referrals, or a site that undersells you.",
+        "why": "We plan for long cycles and several decision-makers, and judge on cost per qualified lead, SQL rate and pipeline, never on ROAS."
+      },
+      "not": {
+        "t": "You want guaranteed leads or meetings by a fixed date.",
+        "why": "Sales cycles and buyers are outside anyone's control, so we commit to the method, the tracking and honest reporting instead."
+      }
+    }
+  }
+}

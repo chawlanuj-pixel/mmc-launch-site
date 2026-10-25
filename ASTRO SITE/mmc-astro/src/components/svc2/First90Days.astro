@@ -1,0 +1,30 @@
+---
+// 5. First 90 days: horizontal four-stop timeline, one literal scene per stop, a "You get:" line. All text visible.
+// Snap-scroll row on phones.
+interface Props { H: any; S: any }
+const { H, S } = Astro.props as Props;
+const D = S.days;
+---
+<section class="s2-band s2-band--paper s2-days" id="first-90-days" aria-labelledby="s2-days-h">
+  <div class="s2-wrap">
+    <header class="s2-head">
+      <p class="s2-eyebrow">{D.eyebrow}</p>
+      <h2 class="s2-h2" id="s2-days-h">{D.h2a} <em>{D.h2b}</em></h2>
+    </header>
+  </div>
+  <div class="s2-days__scroller" tabindex="0" role="region" aria-label={`${D.eyebrow}, ${D.stops.length} stops. Swipe or scroll sideways.`}>
+    <ol class="s2-tl">
+      {D.stops.map((st: any, k: number) => (
+        <li class="s2-stop">
+          <span class="s2-stop__dot" aria-hidden="true"><b>{k + 1}</b></span>
+          <figure class="s2-stop__pic"><img src={"/assets/" + st.img} alt={st.alt} width="1024" height="688" loading="lazy" decoding="async" style={`object-position:${st.pos}`} /></figure>
+          <p class="s2-stop__when">{st.when}</p>
+          <h3>{st.t}</h3>
+          <p class="s2-stop__d">{st.d}</p>
+          <p class="s2-stop__get"><b>You get:</b> {st.get}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+  <div class="s2-wrap"><p class="s2-days__note">{H.process.note}</p></div>
+</section>

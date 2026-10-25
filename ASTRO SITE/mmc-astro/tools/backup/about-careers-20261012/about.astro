@@ -1,0 +1,174 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Shell from "../components/Shell.astro";
+import PageHero from "../components/pages/PageHero.astro";
+import AudienceCards from "../components/company/AudienceCards.astro";
+import { BOOK, SECONDARY } from "../lib/site";
+import PageFx from "../components/pages/PageFx.astro";
+import FreeToolsStrip from "../components/shared/FreeToolsStrip.astro";
+import PreFooterCta from "../components/shared/PreFooterCta.astro";
+import StickyBookingBar from "../components/shared/StickyBookingBar.astro";
+import { fixDeep, href } from "../lib/links";
+import { rewriteJsonld } from "../lib/hub";
+import Faq from "../components/hub/Faq.astro";
+import "../styles/about2.css";
+
+const SITE = "https://www.mondaymarketing.company";
+const title = "About Monday Marketing Company | Thane, India";
+const description = "MMC is an India-based growth partner for D2C, B2B and education brands, founded in 2019 in Thane. One senior team, measured on contribution margin.";
+
+const ARR = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>';
+
+const SYSTEMS = [
+  { k: "Performance media", img: "company/performance.jpg", p: "Meta, Google, Amazon and quick commerce run as one account structure, budgeted against contribution margin rather than platform ROAS.", href: "performance-marketing.html", link: "Performance marketing" },
+  { k: "Creative and UGC", img: "sv/content.jpg", p: "Creator content, performance edits, statics and landing-page copy, written against a single brand thesis.", href: "ugc-and-video.html", link: "UGC and video" },
+  { k: "Retention and follow-up", img: "services/retention.jpg", p: "Email, WhatsApp and loyalty, built on the reason customers come back.", href: "retention-marketing.html", link: "Retention marketing" },
+  { k: "Conversion and technology", img: "sv/tech.jpg", p: "Shopify builds, checkout, site speed and conversion rate optimisation, so the media has somewhere good to land.", href: "conversion-rate-optimisation.html", link: "Conversion rate optimisation" },
+  { k: "Brand and packaging", img: "sv/brand.jpg", p: "Identity, packaging and design systems that everything else is built on.", href: "branding.html", link: "Branding" },
+];
+
+const BELIEFS = [
+  ["Ideas matter more than designations.", "Anyone can bring the idea that changes the plan."],
+  ["Execution matters more than noise.", "Shipping the work beats looking busy."],
+  ["Speed beats hierarchy.", "Fewer layers between the person with the plan and the person who builds it."],
+  ["Honesty over polish.", "If the numbers say a plan is not working, we say so."],
+  ["Build for the next ten years.", "Quick spikes are exciting. Sustainable growth is worth more."],
+];
+
+const FAQ = [
+  { q: "What is Monday Marketing Company?", a: "Monday Marketing Company (MMC) is an India-based growth partner for D2C, B2B and education brands, founded in 2019 and based in Thane, Maharashtra. It is led by D2C performance marketing." },
+  { q: "What are the connected systems?", a: "Performance media, creative and UGC, retention and follow-up, conversion and technology, and brand and packaging. They are run by one senior team under one strategist and one P&amp;L, rather than by five separate vendors." },
+  { q: "Who does MMC work with?", a: "D2C brands, B2B companies and educational institutes. D2C is where we go deepest, but the work is not D2C only. Tell us what you run and we will say which approach fits." },
+  { q: "What does measured on contribution margin mean?", a: "Contribution margin is the profit left after variable costs. We budget and judge media against it, not against platform ROAS alone, because a platform can report a healthy ROAS on an order that loses money. <a href=\"guide-contribution-margin-roas.html\">Read the guide</a>." },
+  { q: "Where is MMC based?", a: "Thane, Maharashtra, India. You can reach us through the <a href=\"Contact.html\">contact page</a>." },
+  { q: "How do we start?", a: "With a free paid-media audit: a call where a senior strategist reads your ad accounts against your break-even ROAS. <a href=\"audit.html\">See how it works</a>." },
+  { q: "Does MMC publish pricing or client results?", a: "No. Cost depends on scope and, for media, on ad spend, so we quote after the audit call. We list the services we run for each brand but do not publish per-client results." },
+];
+const FAQF = fixDeep(FAQ);
+
+const jsonld = rewriteJsonld([
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": SITE + "/about/#breadcrumb", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+    { "@type": "ListItem", position: 2, name: "About", item: SITE + "/about/" } ] },
+  { "@context": "https://schema.org", "@type": "AboutPage", "@id": SITE + "/about/#webpage", url: SITE + "/about/", name: title, description,
+    isPartOf: { "@id": SITE + "/#website" }, breadcrumb: { "@id": SITE + "/about/#breadcrumb" }, publisher: { "@id": SITE + "/#organization" },
+    about: { "@id": SITE + "/#organization" }, mainEntity: { "@id": SITE + "/#organization" }, inLanguage: "en" },
+  { "@context": "https://schema.org", "@type": "FAQPage", "@id": SITE + "/about/#faq", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&") } })) },
+]);
+---
+<BaseLayout title={title} description={description} path="/about/" ogTitle="About Monday Marketing Company" ogDescription="An India-based growth partner for D2C, B2B and education brands. Connected systems, one senior team." ogAlt="Monday Marketing Company: about the agency." jsonld={jsonld}>
+  <Shell>
+    <main id="main" tabindex="-1" class="app-main ab-page">
+
+      <PageHero wm="About" eyebrow="● About Monday Marketing Company"
+        lines={["A growth partner measured", 'the way <span class="em-serif">your business</span>', "is measured."]}
+        sub="Monday Marketing Company runs media, creative, retention, conversion and brand as connected systems, for D2C brands, B2B companies and educational institutes, under one senior team."
+        primary={{ label: BOOK, book: "about-hero" }} secondary={{ label: SECONDARY.work, href: "/work/" }} rightClass="abh__r">
+        <figure class="abh__fig">
+          <img src="/assets/about2/desk-open.jpg" alt="A desk with a laptop open to a campaign performance sheet, a notebook of next steps and a cup of chai" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async" />
+          <figcaption><strong>Where the plan starts</strong><span>Every account begins on a sheet like this, not a pitch deck.</span></figcaption>
+        </figure>
+        <ul slot="chips" class="pmh__chips abh__meta"><li>Est. 2019</li><li>Based in Thane, Maharashtra</li><li>Works with D2C · B2B · Education</li></ul>
+      </PageHero>
+
+      <section class="ab-open">
+        <div class="container ab-open__grid">
+          <div class="ab-open__head n-rise">
+            <span class="ab-open__eyebrow">Why we exist</span>
+            <h2>A coordination problem, not a marketing problem</h2>
+          </div>
+          <div class="ab-open__body n-rise d1">
+            <p><span class="ab-open__cap">M</span>ost growing brands do not lack marketing. They lack coordination: a media buyer who never speaks to the creative team, a website the performance numbers never reach, a retention email that goes out a week after the launch it should have supported.</p>
+            <p>MMC was built to close that gap. Founded in 2019 and based in Thane, Maharashtra, we run performance media, creative and UGC, retention and follow-up, conversion and technology, and brand and packaging as one connected system, under one senior team and one P&L, instead of five separate vendors.</p>
+            <p>The same team that reads your ad account also briefs your creative, rebuilds your landing page and writes your retention flow, so the work is planned together instead of stitched together after the fact.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ab-systems" id="systems">
+        <div class="container">
+          <div class="ab-systems__head n-rise">
+            <span class="ab-open__eyebrow">How it works</span>
+            <h2>One senior team, every system</h2>
+            <p>Each system does one job. Because the same senior team runs every system, the media, the creative, the site and the follow-up are planned as one thing rather than reported on separately.</p>
+          </div>
+          <ol class="ab-sys-list n-rise d1">
+            {SYSTEMS.map((s, k) => (
+              <li class="ab-sys-row">
+                <span class="ab-sys-row__n">{String(k + 1).padStart(2, "0")}</span>
+                <figure class="ab-sys-row__thumb"><img src={"/assets/" + s.img} alt="" width="200" height="150" loading="lazy" decoding="async" /></figure>
+                <div class="ab-sys-row__body">
+                  <h3>{s.k}</h3>
+                  <p>{s.p}</p>
+                </div>
+                <a class="ab-sys-row__link" href={href(s.href)}>{s.link}<Fragment set:html={ARR} /></a>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <figure class="ab-quote">
+        <img src="/assets/about2/huddle.jpg" alt="Two people at a whiteboard walking through a marketing funnel diagram together" width="1200" height="800" loading="lazy" decoding="async" />
+        <div class="ab-quote__wrap"><div class="container"><blockquote>Ideas matter more than designations.</blockquote></div></div>
+      </figure>
+
+      <section class="ab-beliefs" id="principles">
+        <div class="container">
+          <div class="ab-beliefs__head n-rise">
+            <span class="ab-open__eyebrow">What we believe</span>
+            <h2>Things we would put on the wall</h2>
+          </div>
+          <div class="ab-beliefs__list n-rise d1">
+            {BELIEFS.map((b, k) => (
+              <div class="ab-beliefs__item">
+                <b>{String(k + 1).padStart(2, "0")}</b>
+                <strong>{b[0]}</strong>
+                <span>{b[1]}</span>
+              </div>
+            ))}
+            <div class="ab-beliefs__item ab-beliefs__item--last">
+              <a href={href("services.html")}>See every service<Fragment set:html={ARR} /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ab-aud" id="who">
+        <div class="container">
+          <div class="ab-aud__head n-rise">
+            <span class="ab-open__eyebrow">Who we work with</span>
+            <h2>Three kinds of brand, one way of working</h2>
+            <p>Lead generation for a college and performance media for a D2C brand look different day to day. The senior team, the audit-first start and the measure against contribution margin or cost per qualified lead stay the same.</p>
+          </div>
+          <AudienceCards />
+        </div>
+      </section>
+
+      <section class="ab-practice" id="practice">
+        <div class="container ab-practice__grid">
+          <figure class="ab-practice__fig n-rise"><img src="/assets/about2/callscreen.jpg" alt="A senior strategist walking a client through a growth chart on a video call" width="1200" height="800" loading="lazy" decoding="async" /></figure>
+          <div class="ab-practice__body n-rise d1">
+            <span class="ab-open__eyebrow">What it is like to work with us</span>
+            <h2>Your numbers on screen first</h2>
+            <ul class="ab-practice__list">
+              <li><b>1</b><span><strong>A free audit, not a pitch.</strong> The first step is a call where a senior strategist reads your ad accounts against your break-even ROAS.</span></li>
+              <li><b>2</b><span><strong>One senior team.</strong> Media, creative, retention and technology run under one strategist and one P&L. The person doing the work talks to you.</span></li>
+              <li><b>3</b><span><strong>Judged on contribution margin.</strong> Profit left after variable costs, not the platform dashboard.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <Faq title={["What people ask about MMC", ""]} faq={FAQF} tone="paper" />
+
+      <FreeToolsStrip slugs={["unit-economics", "breakeven-roas", "ltv-cac"]} bg="white" />
+      <PreFooterCta source="about" h2a="See what a senior team" h2b="reads in your numbers."
+        lede="On a call, with a senior strategist. We show what your first 30 days would look like and who works on your account." />
+
+    </main>
+    <StickyBookingBar source="about" />
+  </Shell>
+  <PageFx />
+</BaseLayout>

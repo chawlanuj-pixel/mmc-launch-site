@@ -1,0 +1,75 @@
+{
+ "id": "mittiy",
+ "about": "{name} is a D2C brand that sells car perfume.",
+ "description": "{name} case study: product and bundle-builder pages for a car perfume range, with matching social creative, a Meta carousel and a Google Shopping ad.",
+ "heroTone": "ink",
+ "kind": "D2C brand, car perfume",
+ "channels": [
+  "Meta ad carousel",
+  "Google Shopping ad"
+ ],
+ "brief": [
+  "{name} sells car perfume. We built product and bundle-builder pages for the range, paired with social creative and ads for the same products.",
+  "The storefront, the ads and the social creative share one look, so an ad and the page it points to read as the same brand."
+ ],
+ "showcases": [
+  {
+   "layout": "stage",
+   "kicker": "Storefront",
+   "title": "Homepage and bundle builder, on desktop and mobile",
+   "text": "A warm, scent-led homepage with a combo pack offer, and a build your bundle bar under the hero on desktop and on the phone.",
+   "crops": [
+    "web"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 1,
+   "kicker": "Social",
+   "title": "Social creative tiles",
+   "text": "Two tiles built around the scents and the idea of building a bundle.",
+   "crops": [
+    "social"
+   ]
+  },
+  {
+   "layout": "tiles",
+   "cols": 2,
+   "kicker": "Ads",
+   "title": "A Meta ad carousel and a Google Shopping ad",
+   "text": "One card per scent, in the colour of its pack.",
+   "crops": [
+    "meta",
+    "google"
+   ],
+   "captions": [
+    "Meta ad carousel",
+    "Google Shopping ad"
+   ]
+  },
+  {
+   "layout": "ribbon",
+   "kicker": "The range",
+   "title": "product photography from the same project",
+   "text": "From the same artwork.",
+   "crops": [
+    "products"
+   ]
+  }
+ ],
+ "flow": {
+  "site": "Homepage and bundle-builder pages",
+  "reach": "Meta ad carousel and Google Shopping ad",
+  "make": "Social creative tiles"
+ },
+ "action": "order",
+ "alts": {
+  "hero": "{name} website, ads and social creative shown together",
+  "web": "{name} homepage on a laptop and a phone: a Premium Combo Pack hero with car perfume boxes, a buy any five offer badge and a build your bundle bar",
+  "social": "{name} social media creative tiles",
+  "meta": "{name} Meta ad",
+  "google": "{name} Google ad",
+  "products": "{name} car fresheners hanging from a rear-view mirror above a row of scent boxes on the dashboard, with a sea view through the windscreen",
+  "card": "{name} logo on a windscreen view at sunset, with a {name} car freshener hanging from the mirror"
+ }
+}

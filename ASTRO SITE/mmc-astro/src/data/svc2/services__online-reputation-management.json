@@ -1,0 +1,190 @@
+{
+  "_note": "New-layout copy for this service page. Tightened from the hub JSON (src/data/hubs/services__online-reputation-management.json), which stays the source of truth for hero, FAQ and schema. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "orm/reply.jpg",
+    "pos": "50% 50%",
+    "alt": "A person replying to a customer review on a laptop.",
+    "facts": [
+      {
+        "t": "Audit first.",
+        "d": "What people see, before we change it."
+      },
+      {
+        "t": "Genuine reviews.",
+        "d": "Real customers, every review answered."
+      },
+      {
+        "t": "Reported monthly.",
+        "d": "Rating, speed and themes."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why brands choose MMC for this"
+  },
+  "work": {
+    "panel": "ReviewMonitor",
+    "eyebrow": "The work, shown",
+    "h2a": "How we keep what people",
+    "h2b": "find about you fair.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Audit what people see when they search you.",
+        "d": "Ratings, reviews, profiles and search results, laid out the way a buyer sees them."
+      },
+      {
+        "n": "02",
+        "t": "Ask real customers for honest reviews.",
+        "d": "A short request after the order or visit, sent within each platform's rules."
+      },
+      {
+        "n": "03",
+        "t": "Reply to every review in your voice.",
+        "d": "We draft the reply and you approve it. Real problems go to your team to fix."
+      },
+      {
+        "n": "04",
+        "t": "Correct hours, numbers and profile gaps.",
+        "d": "One accurate set of facts across every listing, with current photos and answers."
+      },
+      {
+        "n": "05",
+        "t": "Watch ratings and report the themes monthly.",
+        "d": "Rating, volume, response time and what people keep saying, so problems surface early."
+      }
+    ],
+    "illustrative": "Illustrative layout of a reviews inbox and rating trend. Not a client account, no real reviews or figures. WhatsApp and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "ReviewLeak",
+    "barLogo": "",
+    "barTitle": "Reputation view",
+    "pinsLabel": "Five places reputation goes wrong",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Search"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Reviews"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Replies"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Facts"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Alerts"
+      }
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "A few of the brands",
+    "h2b": "we work with.",
+    "tiles": [
+      {
+        "id": "mvj",
+        "line": "A college: a website and lead capture for families who read reviews first."
+      },
+      {
+        "id": "bloom",
+        "line": "Education tours: a site and enquiry path for a choice parents research."
+      },
+      {
+        "id": "pandacabs",
+        "line": "Cab service: a website and lead capture where ratings shape the choice."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "Your first 90 days",
+    "h2a": "How we manage reputation,",
+    "h2b": "week to week.",
+    "stops": [
+      {
+        "when": "Days 1 to 30",
+        "t": "See what they see",
+        "d": "We audit ratings, reviews, profiles and search results across the places buyers look.",
+        "get": "A clear picture of your reputation today.",
+        "img": "orm/audit.jpg",
+        "alt": "A business rating and reviews page on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Earn and answer reviews",
+        "d": "We help you ask real customers, parents and students for honest reviews, and draft replies.",
+        "get": "More genuine reviews and calm replies.",
+        "img": "orm/earn.jpg",
+        "alt": "A person scanning a thank-you card QR code with a phone.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 31 to 60",
+        "t": "Correct the facts",
+        "d": "Hours, phone numbers, photos and answers are made consistent across every profile.",
+        "get": "One accurate set of facts.",
+        "img": "orm/profile.jpg",
+        "alt": "A business profile on a map listing on a phone.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Days 61 to 90",
+        "t": "Monitor and report",
+        "d": "Ratings and reviews are watched, and a monthly report covers volume, response time and themes.",
+        "get": "A fair picture that stays current.",
+        "img": "orm/report.jpg",
+        "alt": "A printed monthly reputation report with a rating trend.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Google Business Profile",
+        "href": "/services/seo/google-business-profile/"
+      },
+      {
+        "n": "Social media",
+        "href": "/services/social-media/"
+      },
+      {
+        "n": "AI sales agent by MMC",
+        "href": "/ai-by-mmc/sales-agent/"
+      },
+      {
+        "n": "Locations",
+        "href": "/locations/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

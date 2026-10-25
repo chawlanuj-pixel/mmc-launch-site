@@ -1,0 +1,185 @@
+{
+  "_note": "svc2 copy for an industry page. Hub JSON stays the source of truth for Hero, FAQ, who-for and JSON-LD. No numbers, results or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "shared/education.jpg",
+    "pos": "50% 50%",
+    "alt": "A counsellor talking with a parent and a student over brochures at a table.",
+    "facts": [
+      {
+        "t": "Course and city search.",
+        "d": "Pages and ads for the courses families search."
+      },
+      {
+        "t": "Visit funnels.",
+        "d": "Open days and campus visits that turn enquiries into applicants."
+      },
+      {
+        "t": "Tracked to admission.",
+        "d": "Enquiry, visit and admission recorded in a CRM."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why colleges choose MMC"
+  },
+  "work": {
+    "panel": "CollegeAdmissions",
+    "eyebrow": "The work, shown",
+    "h2a": "What we actually do for a",
+    "h2b": "college admissions team.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Write course pages that answer first.",
+        "d": "Eligibility, fees process and documented outcomes sit on the page, with one clear next step."
+      },
+      {
+        "n": "02",
+        "t": "Keep the enquiry form short.",
+        "d": "Course, city and who is asking, on a phone, sent straight to your CRM with its source."
+      },
+      {
+        "n": "03",
+        "t": "Call the family while interest is warm.",
+        "d": "Routing and reply timing put the right counsellor on the right enquiry first."
+      },
+      {
+        "n": "04",
+        "t": "Book the campus visit, then confirm it.",
+        "d": "Open-day slots and a WhatsApp confirmation turn an enquiry into someone who has seen the campus."
+      },
+      {
+        "n": "05",
+        "t": "Read admissions by source.",
+        "d": "Enquiry, visit and admission are tracked by channel, so budget follows what filled seats."
+      }
+    ],
+    "illustrative": "Illustrative layout of an admissions path. Not a client account, no real figures. WhatsApp and its logo belong to Meta Platforms."
+  },
+  "leak": {
+    "visual": "LeadDropoff",
+    "barLogo": "",
+    "barTitle": "Enquiry to admission",
+    "pinsLabel": "Five places a college loses an applicant",
+    "eyebrow": "Where it leaks",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Search"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Site"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Enquiry"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Follow-up"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reviews"
+      }
+    ],
+    "zoneLabels": [
+      "Found",
+      "Answered",
+      "Enquired",
+      "Followed up",
+      "Trusted"
+    ],
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "An admissions site",
+    "h2b": "we built for a college.",
+    "tiles": [
+      {
+        "id": "mvj",
+        "line": "An admissions website: programme listings, an apply-now enquiry form, and ads for the intake."
+      }
+    ],
+    "moreLabel": "A few more. Hover or tap a logo.",
+    "readLabel": "What we read"
+  },
+  "days": {
+    "eyebrow": "How the work runs",
+    "h2a": "How we start with a college,",
+    "h2b": "step by step.",
+    "stops": [
+      {
+        "when": "Step 1",
+        "t": "Audit enquiries and follow-up",
+        "d": "We review ads, site, CRM and follow-up speed against your intake plan.",
+        "get": "A funnel map.",
+        "img": "edu/enquiry.jpg",
+        "alt": "A parent and a student researching on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 2",
+        "t": "Build course pages and capture",
+        "d": "Course pages, enquiry forms and routing go live.",
+        "get": "A site that answers and captures.",
+        "img": "edu/site.jpg",
+        "alt": "A course page on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 3",
+        "t": "Follow up and book visits",
+        "d": "Reply timing, nurture series and open-day booking start.",
+        "get": "Enquiries that reach a counsellor.",
+        "img": "edu/nurture.jpg",
+        "alt": "A nurture sequence on a laptop.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Step 4",
+        "t": "Run campaigns and track",
+        "d": "Search and paid campaigns start and enquiry to admission is tracked.",
+        "get": "Reporting by admission source.",
+        "img": "edu/enrol.jpg",
+        "alt": "A student celebrating a confirmed admission.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "The MMC team around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "Lead generation",
+        "href": "/services/lead-generation/"
+      },
+      {
+        "n": "Online reputation",
+        "href": "/services/online-reputation-management/"
+      },
+      {
+        "n": "SEO",
+        "href": "/services/seo/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}

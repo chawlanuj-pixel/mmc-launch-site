@@ -1,0 +1,150 @@
+{
+  "_note": "hubs2 layer for /industries/d2c/ (its own page file, src/pages/industries/d2c/index.astro). Copy comes from src/data/pages/d2c.json and heads.json; this file adds the visuals, links and curation.",
+  "kind": "audience",
+  "hero": {
+    "img": "d2c/unboxing.jpg",
+    "pos": "50% 50%",
+    "alt": "A customer opening a delivered order from a D2C brand.",
+    "cap": {
+      "label": "The unboxing",
+      "note": "Ads, store, checkout and delivery all sit on your P&L"
+    },
+    "route": [
+      "Ad",
+      "Creative",
+      "Checkout",
+      "Repeat order",
+      "Marketplaces"
+    ]
+  },
+  "lede": {
+    "img": "/assets/home2/hero-detail.jpg",
+    "alt": "Skincare ad creatives open on a laptop beside the brand's products."
+  },
+  "journey": {
+    "eyebrow": "The D2C journey",
+    "h2a": "From the first ad to",
+    "h2b": "the second order.",
+    "stages": [
+      {
+        "go": "See Performance marketing",
+        "alt": "A shopper scrolling a brand's ad on Instagram."
+      },
+      {
+        "go": "See UGC and video",
+        "alt": "A creator filming a product video with a ring light."
+      },
+      {
+        "go": "See Conversion optimisation",
+        "alt": "A checkout page on a phone."
+      },
+      {
+        "go": "See Retention marketing",
+        "alt": "A WhatsApp reorder message from a brand on a phone."
+      },
+      {
+        "go": "See Amazon Ads",
+        "alt": "A Blinkit delivery rider on a scooter in a city street."
+      }
+    ]
+  },
+  "work": {
+    "ids": [
+      "giraffe",
+      "sprnt",
+      "mittiy",
+      "notic"
+    ],
+    "h2a": "D2C work,",
+    "h2b": "from storefront to campaign.",
+    "lede": "Stores, ads and creative for D2C brands we work with."
+  },
+  "sectors": {
+    "eyebrow": "Go deeper",
+    "h2a": "D2C categories",
+    "h2b": "we plan for.",
+    "groups": [
+      {
+        "label": "D2C categories",
+        "note": "Each category buys, reorders and returns in its own way.",
+        "items": [
+          {
+            "n": "Skincare",
+            "d": "For brands where buyers research ingredients and reorder on a cycle.",
+            "img": "/ai-by-mmc/assets/img/ugc-use-d2c.jpg",
+            "href": "/industries/d2c/skincare/",
+            "alt": "A woman applying a face serum at a mirror."
+          },
+          {
+            "n": "Baby and kids",
+            "d": "For brands where parents buy for safety and needs change with age.",
+            "img": "/assets/case2/awwbaby/hero.jpg",
+            "href": "/industries/d2c/baby-and-kids/",
+            "alt": "AwwBaby storefront artwork, a baby and kids brand we work with.",
+            "pos": "30% 50%"
+          },
+          {
+            "n": "Food and beverage",
+            "d": "For low-basket, repeat-order food and drink brands.",
+            "img": "/ai-by-mmc/assets/img/video-use-d2c.jpg",
+            "href": "/industries/d2c/food-and-beverage/",
+            "alt": "A pack of trail mix with nuts and dried fruit around it."
+          },
+          {
+            "n": "Fashion and apparel",
+            "d": "For brands with heavy browsing, returns and creative fatigue.",
+            "img": "d2c/range.jpg",
+            "href": "/industries/d2c/fashion-and-apparel/",
+            "alt": "A folded striped T-shirt beside other D2C products."
+          }
+        ],
+        "services": [
+          {
+            "n": "Performance marketing",
+            "href": "/services/performance-marketing/"
+          },
+          {
+            "n": "Shopify development",
+            "href": "/services/shopify-development/"
+          },
+          {
+            "n": "Conversion optimisation",
+            "href": "/services/cro/"
+          },
+          {
+            "n": "Retention marketing",
+            "href": "/services/retention-marketing/"
+          },
+          {
+            "n": "UGC and video",
+            "href": "/services/ugc-and-video/"
+          },
+          {
+            "n": "Content marketing",
+            "href": "/services/content-marketing/"
+          }
+        ]
+      },
+      {
+        "label": "Other audiences",
+        "note": "Not only D2C. Set up differently for each.",
+        "items": [
+          {
+            "n": "B2B companies",
+            "d": "Websites, creative and lead generation for companies that win business from other businesses.",
+            "img": "shared/b2b.jpg",
+            "href": "/industries/b2b/",
+            "alt": "A B2B team reviewing a proposal around a laptop."
+          },
+          {
+            "n": "Educational institutes",
+            "d": "Websites, lead generation and reputation for colleges and education brands.",
+            "img": "shared/education.jpg",
+            "href": "/industries/education/",
+            "alt": "An admissions counsellor talking with a student and parent."
+          }
+        ]
+      }
+    ]
+  }
+}

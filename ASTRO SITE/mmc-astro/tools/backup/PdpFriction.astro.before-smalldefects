@@ -1,0 +1,53 @@
+---
+// VISUAL: PdpFriction (kind "PdpFriction"). A product page with five friction markers. Pins sit in a row above (y = 0) at
+// x = 8, 36, 56, 76, 94 and a dashed leader falls from each pin to its marker on the page:
+//   1 (8,16) drop-off strip   2 (36,47) price with no delivery or returns line   3 (56,79) add to cart   4 (76,60) long enquiry form
+//   5 (94,31) A/B tag. Keep pins.x equal to those values. Product photo is a crop of an existing d2c photo. Prefix pdpf-.
+import { THUMBS } from "../panels/crops";
+interface Props { X: any; pins: { x: number; y: number; label: string }[] }
+const { X, pins } = Astro.props as Props;
+const marks = [[8, 16], [36, 47], [56, 79], [76, 60], [94, 31]];
+---
+<div class="pdpf-row" aria-hidden="true"></div>
+<div class="pdpf" aria-hidden="true">
+  <div class="pdpf-strip">
+    <span style="width:100%"></span><span style="width:70%"></span><span style="width:44%"></span><span style="width:24%"></span>
+  </div>
+  <span class="s2p-ph pdpf-photo" style={THUMBS.shirt}></span>
+  <div class="pdpf-info">
+    <i class="s2p-line s2p-line--m"></i><i class="s2p-line s2p-line--xs"></i>
+    <div class="pdpf-price"><b>Price</b><em>Delivery and returns?</em></div>
+    <div class="pdpf-sz"><em>S</em><em>M</em><em>L</em></div>
+    <span class="pdpf-cta">Add to cart</span>
+  </div>
+  <div class="pdpf-form"><b>Enquire</b><i></i><i></i><i></i><i></i><i></i><span>Send</span></div>
+  <span class="pdpf-ab">A | B</span>
+  {marks.map(([x, y]) => (
+    <Fragment>
+      <i class="pdpf-lead" style={`left:${x}%;height:calc(${y}% + 78px)`}></i>
+      <i class="pdpf-dot" style={`left:${x}%;top:${y}%`}></i>
+    </Fragment>
+  ))}
+</div>
+<style is:global>
+.pdpf-row { height: 78px; }
+.pdpf { position: relative; height: clamp(230px, 33vw, 400px); border: 1px solid #DADDE1; border-radius: 14px; background: #F8F9FA; container-type: inline-size; }
+.pdpf > * { position: absolute; }
+.pdpf-strip { left: 3%; top: 5%; width: 27%; height: 20%; display: grid; gap: 4%; align-content: space-between; }
+.pdpf-strip span { display: block; height: 18%; border-radius: 4px; background: #BFD0FA; }
+.pdpf-photo { left: 3%; top: 30%; width: 27%; height: 64%; border-radius: 10px; }
+.pdpf-info { left: 33%; top: 30%; width: 31%; height: 64%; display: flex; flex-direction: column; justify-content: space-between; }
+.pdpf-price { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font: 800 clamp(9px, 1.2vw, 14px) var(--font-body); color: #1C2B33; }
+.pdpf-price em { padding: 2px 8px; border-radius: 99px; background: #FFF3D6; color: #8A5A00; font: 800 clamp(7px, .9vw, 11px) var(--font-body); font-style: normal; }
+.pdpf-sz { display: flex; gap: 6px; }
+.pdpf-sz em { padding: 3px 10px; border-radius: 99px; background: #EEF0F2; color: #65676B; font: 800 clamp(8px, 1vw, 12px) var(--font-body); font-style: normal; }
+.pdpf-cta { padding: 8px; border-radius: 8px; background: #1C2B33; color: #fff; text-align: center; font: 800 clamp(8px, 1.1vw, 13px) var(--font-body); }
+.pdpf-form { left: 67%; top: 26%; width: 21%; height: 68%; padding: 6px 8px; display: flex; flex-direction: column; justify-content: space-between; gap: 4px; border: 1px solid #DADDE1; border-radius: 10px; background: #fff; }
+.pdpf-form b { font: 800 clamp(8px, 1vw, 12px) var(--font-body); color: #1C2B33; }
+.pdpf-form i { display: block; height: 7px; border-radius: 4px; background: #DADDE1; }
+.pdpf-form span { padding: 3px; border-radius: 6px; background: var(--mmc-blue-900); color: #fff; text-align: center; font: 800 clamp(7px, .9vw, 11px) var(--font-body); }
+.pdpf-ab { left: 90%; top: 26%; padding: 3px 7px; border-radius: 99px; background: var(--mmc-yellow); color: var(--mmc-blue-900); font: 800 clamp(7px, .9vw, 11px) var(--font-body); white-space: nowrap; }
+.pdpf-lead { top: -78px; border-left: 2.4px dashed var(--mmc-yellow); z-index: 1; }
+.pdpf-dot { z-index: 2; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background: var(--mmc-yellow); box-shadow: 0 0 0 4px rgba(255, 197, 40, .4); }
+@media (max-width: 560px) { .pdpf-form i:nth-of-type(n+4) { display: none; } .pdpf-price em { display: none; } }
+</style>

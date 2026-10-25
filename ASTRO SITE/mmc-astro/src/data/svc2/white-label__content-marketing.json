@@ -1,0 +1,168 @@
+{
+  "_note": "svc2 copy for this white-label page. The hub JSON of the same name stays the source of truth for FAQ, stages and answer. No numbers, results, clients or quotes are invented here.",
+  "answer": {
+    "label": "In short",
+    "img": "company/onepage.jpg",
+    "pos": "50% 50%",
+    "alt": "A hand writing a plan in a notebook on a desk.",
+    "facts": [
+      {
+        "t": "Written to the voice.",
+        "d": "Each piece follows the client's voice sheet and brand terms."
+      },
+      {
+        "t": "Facts checked.",
+        "d": "A second editor reviews claims and sources before you see a draft."
+      },
+      {
+        "t": "Briefs you can reuse.",
+        "d": "The same briefs work with your own writers when you need them."
+      }
+    ],
+    "guideLabel": "Read the full guide",
+    "moreHeading": "Why agencies choose MMC for white-label content"
+  },
+  "work": {
+    "panel": "ContentCalendar",
+    "eyebrow": "The work, shown",
+    "h2a": "How a client article goes from",
+    "h2b": "brief to your inbox.",
+    "steps": [
+      {
+        "n": "01",
+        "t": "Turn the client's goals into an editorial plan.",
+        "d": "Topics, formats and a calendar come from what the client's buyers ask, written so you can present it."
+      },
+      {
+        "n": "02",
+        "t": "Write drafts to the client's voice.",
+        "d": "Each piece is researched, structured and written to a voice sheet, with facts the client supplied marked clearly."
+      },
+      {
+        "n": "03",
+        "t": "Edit and fact-check before it reaches you.",
+        "d": "A second editor checks claims, sources and tone, so you approve a finished draft and not a first pass."
+      },
+      {
+        "n": "04",
+        "t": "Publish, refresh and report.",
+        "d": "Pieces go out as agreed, older pages are refreshed, and the report ties each piece to its purpose."
+      }
+    ],
+    "illustrative": "Illustrative layout of an editorial calendar. Not a client account, no real figures."
+  },
+  "leak": {
+    "visual": "SaContentPath",
+    "barLogo": "",
+    "barTitle": "Content pipeline",
+    "pinsLabel": "Five places white-label content goes wrong",
+    "pins": [
+      {
+        "x": 10,
+        "y": 0,
+        "label": "Reader"
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "label": "Plan"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "label": "Draft"
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "label": "Formats"
+      },
+      {
+        "x": 90,
+        "y": 0,
+        "label": "Reach"
+      }
+    ],
+    "eyebrow": "Where agency delivery goes wrong",
+    "hint": "Tap a number to see where it breaks and how we run it.",
+    "note": "Illustrative diagram, not a client account. No real figures."
+  },
+  "proof": {
+    "eyebrow": "Selected work",
+    "h2a": "",
+    "h2b": "",
+    "tiles": [],
+    "moreLabel": "",
+    "readLabel": ""
+  },
+  "days": {
+    "eyebrow": "Your onboarding",
+    "h2a": "How your first content client",
+    "h2b": "gets onboarded.",
+    "stops": [
+      {
+        "when": "Stage 1",
+        "t": "NDA and voice sheet",
+        "d": "We sign the NDA, then collect the client's voice, terms to use and avoid, and the facts they can supply.",
+        "get": "A voice sheet every draft follows.",
+        "img": "company/strategy.jpg",
+        "alt": "A consultant talking with a partner at a table, notebook open.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 2",
+        "t": "Pilot piece",
+        "d": "One article goes from brief to fact-checked draft, so you see how we research, write and edit.",
+        "get": "A finished piece to judge us on.",
+        "img": "contact/brief.jpg",
+        "alt": "A woman working on a laptop at a cafe table with a notebook.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 3",
+        "t": "Brief and edit SOPs",
+        "d": "Brief format, fact-check steps, review rounds and file naming are written down.",
+        "get": "A routine that keeps quality steady.",
+        "img": "about2/desk-open.jpg",
+        "alt": "A laptop with a spreadsheet open beside a notebook of next steps.",
+        "pos": "50% 50%"
+      },
+      {
+        "when": "Stage 4",
+        "t": "Scale the calendar",
+        "d": "A monthly calendar runs on that routine, and more clients join on the same one.",
+        "get": "Content for more clients without more hires.",
+        "img": "contact/growth.jpg",
+        "alt": "A laptop showing a growth projection beside a notebook.",
+        "pos": "50% 50%"
+      }
+    ]
+  },
+  "fit": {
+    "goodLabel": "A good fit",
+    "notLabel": "Not a fit",
+    "faqLabel": "Common questions"
+  },
+  "close": {
+    "img": "company/session.jpg",
+    "alt": "Colleagues around a table with laptops and printed creative.",
+    "toolsLabel": "Run the numbers, read the method",
+    "toolsH1": "Tools and guides",
+    "toolsH2": "behind the numbers.",
+    "chips": [
+      {
+        "n": "White-label SEO",
+        "href": "/white-label/seo/"
+      },
+      {
+        "n": "White-label social media",
+        "href": "/white-label/social-media-management/"
+      },
+      {
+        "n": "White-label email marketing",
+        "href": "/white-label/email-marketing/"
+      }
+    ],
+    "chipsLabel": "Related"
+  }
+}
